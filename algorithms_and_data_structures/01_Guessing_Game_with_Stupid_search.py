@@ -1,17 +1,18 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
+from random import randrange
+
 """
 Purpose: Stupid Search.
 
 In a list of numbers, user guesses a number.
     if it is correct, all is good. Else, next time, he/she will guess among the unguessed numbers.
 """
-
-from random import randrange
+__author__ = "Udhay Prakash Pethakamsetty"
 
 list_of_numbers = range(10, 20)
 
-winning_number = randrange(10, 20)
-# placing this statement within while loop with increase probability of failure
+winning_number = randrange(10, 20)  # place this statement in while loop, to increase probability of failure
 
 # attempts = len(list_of_numbers)
 
