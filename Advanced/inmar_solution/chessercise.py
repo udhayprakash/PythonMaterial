@@ -1,87 +1,113 @@
 #!/usr/bin/python
 import argparse
-from pprint import pprint
+# from pprint import pprint
+from random import choice
 
 """
 Chess Board Game 
 """
 
-# constants
+# constants  - Memoization
 ROWS_ALPHABETS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 ROWS = [97, 98, 99, 100, 101, 102, 103, 104]
-COLUMNS = xrange(1, 9)
+COLUMNS = [1, 2, 3, 4, 5, 6, 7, 8]
+
+chess_board = [[(r, c) for r in ROWS] for c in COLUMNS]
+chess_board_display = [[r + str(c) for r in ROWS_ALPHABETS] for c in COLUMNS]
+all_fields = reduce(lambda r, c: r + c, chess_board)
+all_fields_display = reduce(lambda r, c: r + c, chess_board_display)
+
+fields_map = dict(zip(all_fields_display, all_fields))
+fields_map_reverse = dict(zip(all_fields, all_fields_display))
 
 
-class ChessField(object):
-    def __init__(self):
-        self.chess_board = [[(r, c) for r in ROWS] for c in COLUMNS]
-        self.chess_board_display = [[r + str(c) for r in ROWS_ALPHABETS] for c in COLUMNS]
+# def current_position(self, pos):
+#     self.row = pos[0]
+#     self.column = pos[1]
+#
+# def display_current_position(self):
+#     return chr(self.row) + str(self.column)
 
-        self.all_fields = reduce(lambda r, c: r + c, self.chess_board)
-        self.all_fields_display = reduce(lambda r, c: r + c, self.chess_board_display)
-        self.fields_map = dict(zip(self.all_fields_display, self.all_fields))
-        self.fields_map_reverse = dict(zip(self.all_fields, self.all_fields_display))
-        self.x = 97
-        self.y = 1
+class Knight(object):  # Horse
+    def __init__(self, current_position):
+        self.row = ord(current_position[0])
+        self.column = int(current_position[1])
+        self.legal_moves = []
 
-    def current_position(self, pos):
-        self.x = pos[0]
-        self.y = pos[1]
+    def cur_pos(self):
+        return chr(self.row)+str(self.column)
 
-    def display_current_position(self):
-        return chr(self.x) + str(self.y)
+    def moves(self):
+        self.legal_moves = []
+        for pos in [(self.row - 2, self.column + 1), (self.row - 1, self.column + 2),
+                    (self.row + 2, self.column + 1), (self.row + 1, self.column + 2),
+                    (self.row - 2, self.column - 1), (self.row - 1, self.column - 2),
+                    (self.row + 2, self.column - 1), (self.row + 1, self.column - 2)]:
+            if pos in all_fields and pos != (self.row, self.column):
+                self.legal_moves.append(pos)
+        return self.legal_moves
 
-    def knightMoves(self):  # Horse
-        legal_moves = []
-        for pos in [(self.x - 2, self.y + 1), (self.x - 1, self.y + 2),
-                    (self.x + 2, self.y + 1), (self.x + 1, self.y + 2),
-                    (self.x - 2, self.y - 1), (self.x - 1, self.y - 2),
-                    (self.x + 2, self.y - 1), (self.x + 1, self.y - 2)]:
-            if pos in self.all_fields:
-                legal_moves.append(pos)
-        return legal_moves
 
-    def rookMoves(self):  # Elephant
-        legal_moves = []
+class Rook(object):  # Elephant
+    def __init__(self, current_position):
+        self.row = ord(current_position[0])
+        self.column = int(current_position[1])
+        self.legal_moves = []
+
+    def cur_pos(self):
+        return chr(self.row) + str(self.column)
+
+    def moves(self):
+        self.legal_moves = []
         for i in xrange(-8, 8):
-            if (self.x + i, self.y) in self.all_fields:
-                legal_moves.append((self.x + i, self.y))
-
-        if (self.x, self.y) in legal_moves:
-            legal_moves.remove((self.x, self.y))  # remove current position
-
+            if (self.row + i, self.column) in all_fields:
+                self.legal_moves.append((self.row + i, self.column))
 
         for j in xrange(-8, 8):
-            if (self.x, self.y + j) in self.all_fields:
-                legal_moves.append((self.x, self.y + j))
+            if (self.row, self.column + j) in all_fields:
+                self.legal_moves.append((self.row, self.column + j))
 
-        if (self.x, self.y) in legal_moves:
-            legal_moves.remove((self.x, self.y))  # remove current position
+        # avoid current position
+        for _ in xrange(0, self.legal_moves.count((self.row, self.column))):
+            self.legal_moves.remove((self.row, self.column))
 
-        return legal_moves
+        return self.legal_moves
 
-    def queenMoves(self):  # Mantri
-        legal_moves = []
-        legal_moves.extend(self.rookMoves())
+
+class Queen(Rook):  # Mantri
+    def __init__(self, current_position):
+        self.row = ord(current_position[0])
+        self.column = int(current_position[1])
+        self.legal_moves = []
+        super(Queen, self).__init__(current_position)
+
+    def cur_pos(self):
+        return chr(self.row) + str(self.column)
+
+    def moves(self):
+        self.legal_moves = []
+        self.legal_moves.extend(super(Queen, self).moves())
         for i, j in zip(xrange(-8, 8), xrange(-8, 8)):  # principal diagonal
-            if (self.x + i, self.y + j) in self.all_fields:
-                legal_moves.append((self.x + i, self.y + j))
-
-        if (self.x, self.y) in legal_moves:
-            legal_moves.remove((self.x, self.y))  # remove current position
+            if (self.row + i, self.column + j) in all_fields:
+                self.legal_moves.append((self.row + i, self.column + j))
 
         for i, j in zip(xrange(8, -8, -1), xrange(-8, 8)):  # reverse principal diagonal
-            if (self.x + i, self.y + j) in self.all_fields:
-                legal_moves.append((self.x + i, self.y + j))
+            if (self.row + i, self.column + j) in all_fields:
+                self.legal_moves.append((self.row + i, self.column + j))
 
-        if (self.x, self.y) in legal_moves:
-            legal_moves.remove((self.x, self.y))  # remove current position
+        # avoid current position
+        for _ in xrange(0, self.legal_moves.count((self.row, self.column))):
+            self.legal_moves.remove((self.row, self.column))
 
-        return legal_moves
+        return self.legal_moves
+
+
+def get_rook_distance(x1, y1, x2, y2):
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Script to learn basic argparse')
+    parser = argparse.ArgumentParser(description='Chess board game')
     parser.add_argument('-pi', '--piece',
                         help='chess piece name: knight, rook or queen',
                         required='True',
@@ -97,57 +123,59 @@ if __name__ == '__main__':
                                  'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8'],
                         default='d2')
     parser.add_argument('-t', '--target',
-                        action='store_true', # to take argument without value
+                        action='store_true',  # to take argument without value
                         help='target mode')
     parser.add_argument('-c', '--collector',
                         action='store_true',
                         help='collector mode')
     args = parser.parse_args()
-    print args
-
-    # field creation
-    field = ChessField()
+    # print args
 
     # display chess board
     print '-' * 80
     print 'CHESS BOARD'.center(80)
     print '-' * 80
 
-    for each in field.chess_board_display:
+    for each in chess_board_display:
         print each
 
     print '-' * 80
 
-
-    field.current_position(field.fields_map[args.position])
-    print 'Current position is ', field.display_current_position()
-
+    print 'LEGAL Moves for', args.piece
+    print 'current position:', args.position
     if args.piece == 'KNIGHT':
-        print 'Legal positions to move for KNIGHT:'
-        for fld in field.knightMoves():
-            print field.fields_map_reverse[fld],
-        print '\n', len(field.queenMoves())
-        moves = field.knightMoves()
-    elif args.piece == 'QUEEN':
-        print 'Legal positions to move for QUEEN:'
-        for fld in field.queenMoves():
-            print field.fields_map_reverse[fld],
-        print '\n', len(field.queenMoves())
-        moves = field.queenMoves()
+        kt = Knight(args.position)
+        for fld in kt.moves():
+            print fields_map_reverse[fld],
+        print '\n', 'No. of legal moves available:', len(kt.moves())
+
     elif args.piece == 'ROOK':
-        print 'Legal positions to move for ROOK:'
-        for fld in field.rookMoves():
-            print field.fields_map_reverse[fld],
-        print '\n', len(field.rookMoves())
-        moves = field.rookMoves()
+        rk = Rook(args.position)
+        for fld in rk.moves():
+            print fields_map_reverse[fld],
+        print '\n', 'No. of legal moves available:', len(rk.moves())
+
+        if args.target:
+            r1 = Rook(choice(all_fields_display))  # Mersenne Twister algorithm
+            print r1.cur_pos()
+            print rk.cur_pos()
+            print len(r1.moves()), [fields_map_reverse[i] for i in r1.moves()]
+            print len(rk.moves()), [fields_map_reverse[i] for i in rk.moves()]
+            # r2 = Rook(choice(all_fields_display))
+            # r3 = Rook(choice(all_fields_display))
+            # r4 = Rook(choice(all_fields_display))
+            # r5 = Rook(choice(all_fields_display))
+            # r6 = Rook(choice(all_fields_display))
+            # r7 = Rook(choice(all_fields_display))
+            # r8 = Rook(choice(all_fields_display))
+            #
+            # for i in [r1, r2, r3, r4, r5, r6, r7, r8]:
+            #     print chr(i.row) + str(i.column)
+            #     # print get_distance(rk.row, rk.column, i.row, i.column)
+    elif args.piece == 'QUEEN':
+        qn = Queen(args.position)
+        for fld in qn.moves():
+            print fields_map_reverse[fld],
+        print '\n', 'No. of legal moves available:', len(qn.moves())
     else:
         pass
-
-    if args.target:
-        print 'moves:', moves
-
-
-
-import random
-print random.choice(field.all_fields_display)  # Mersenne Twister algorithm
-
