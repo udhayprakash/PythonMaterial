@@ -43,7 +43,7 @@ class ChessField(object):
 
     def rookMoves(self):  # Elephant
         legal_moves = []
-        for i in range(-8, 8):
+        for i in xrange(-8, 8):
             if (self.x + i, self.y) in self.all_fields:
                 legal_moves.append((self.x + i, self.y))
 
@@ -51,7 +51,7 @@ class ChessField(object):
             legal_moves.remove((self.x, self.y))  # remove current position
 
 
-        for j in range(-8, 8):
+        for j in xrange(-8, 8):
             if (self.x, self.y + j) in self.all_fields:
                 legal_moves.append((self.x, self.y + j))
 
@@ -63,14 +63,14 @@ class ChessField(object):
     def queenMoves(self):  # Mantri
         legal_moves = []
         legal_moves.extend(self.rookMoves())
-        for i, j in zip(range(-8, 8), range(-8, 8)):  # principal diagonal
+        for i, j in zip(xrange(-8, 8), xrange(-8, 8)):  # principal diagonal
             if (self.x + i, self.y + j) in self.all_fields:
                 legal_moves.append((self.x + i, self.y + j))
 
         if (self.x, self.y) in legal_moves:
             legal_moves.remove((self.x, self.y))  # remove current position
 
-        for i, j in zip(range(8, -8, -1), range(-8, 8)):  # reverse principal diagonal
+        for i, j in zip(xrange(8, -8, -1), xrange(-8, 8)):  # reverse principal diagonal
             if (self.x + i, self.y + j) in self.all_fields:
                 legal_moves.append((self.x + i, self.y + j))
 
@@ -108,6 +108,7 @@ if __name__ == '__main__':
     # field creation
     field = ChessField()
 
+    # display chess board
     print '-' * 80
     print 'CHESS BOARD'.center(80)
     print '-' * 80
@@ -117,26 +118,36 @@ if __name__ == '__main__':
 
     print '-' * 80
 
-    # print field.all_fields
-    # pprint(field.fields_map)
 
     field.current_position(field.fields_map[args.position])
-
     print 'Current position is ', field.display_current_position()
 
     if args.piece == 'KNIGHT':
         print 'Legal positions to move for KNIGHT:'
         for fld in field.knightMoves():
             print field.fields_map_reverse[fld],
+        print '\n', len(field.queenMoves())
+        moves = field.knightMoves()
     elif args.piece == 'QUEEN':
         print 'Legal positions to move for QUEEN:'
         for fld in field.queenMoves():
             print field.fields_map_reverse[fld],
         print '\n', len(field.queenMoves())
+        moves = field.queenMoves()
     elif args.piece == 'ROOK':
         print 'Legal positions to move for ROOK:'
         for fld in field.rookMoves():
             print field.fields_map_reverse[fld],
         print '\n', len(field.rookMoves())
+        moves = field.rookMoves()
     else:
         pass
+
+    if args.target:
+        print 'moves:', moves
+
+
+
+import random
+print random.choice(field.all_fields_display)  # Mersenne Twister algorithm
+
