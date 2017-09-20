@@ -1,102 +1,142 @@
 #!/usr/bin/python
 import argparse
+from pprint import pprint
 
 """
 Chess Board Game 
 """
 
-# ROWS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+# constants
+ROWS_ALPHABETS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 ROWS = [97, 98, 99, 100, 101, 102, 103, 104]
 COLUMNS = xrange(1, 9)
 
-chess_board = [[(x, y) for x in ROWS] for y in COLUMNS]
-all_fields = reduce(lambda x, y: x + y, chess_board)
+
+class ChessField(object):
+    def __init__(self):
+        self.chess_board = [[(r, c) for r in ROWS] for c in COLUMNS]
+        self.chess_board_display = [[r + str(c) for r in ROWS_ALPHABETS] for c in COLUMNS]
+
+        self.all_fields = reduce(lambda r, c: r + c, self.chess_board)
+        self.all_fields_display = reduce(lambda r, c: r + c, self.chess_board_display)
+        self.fields_map = dict(zip(self.all_fields_display, self.all_fields))
+        self.fields_map_reverse = dict(zip(self.all_fields, self.all_fields_display))
+        self.x = 97
+        self.y = 1
+
+    def current_position(self, pos):
+        self.x = pos[0]
+        self.y = pos[1]
+
+    def display_current_position(self):
+        return chr(self.x) + str(self.y)
+
+    def knightMoves(self):  # Horse
+        legal_moves = []
+        for pos in [(self.x - 2, self.y + 1), (self.x - 1, self.y + 2),
+                    (self.x + 2, self.y + 1), (self.x + 1, self.y + 2),
+                    (self.x - 2, self.y - 1), (self.x - 1, self.y - 2),
+                    (self.x + 2, self.y - 1), (self.x + 1, self.y - 2)]:
+            if pos in self.all_fields:
+                legal_moves.append(pos)
+        return legal_moves
+
+    def rookMoves(self):  # Elephant
+        legal_moves = []
+        for i in range(-8, 8):
+            if (self.x + i, self.y) in self.all_fields:
+                legal_moves.append((self.x + i, self.y))
+
+        if (self.x, self.y) in legal_moves:
+            legal_moves.remove((self.x, self.y))  # remove current position
 
 
-def knightMoves(x, y):  # Horse
-    legal_moves = []
+        for j in range(-8, 8):
+            if (self.x, self.y + j) in self.all_fields:
+                legal_moves.append((self.x, self.y + j))
 
-    for pos in [(x - 2, y + 1), (x - 1, y + 2),
-                (x + 2, y + 1), (x + 1, y + 2),
-                (x - 2, y - 1), (x - 1, y - 2),
-                (x + 2, y - 1), (x + 1, y - 2)]:
-        if pos in all_fields:
-            legal_moves.append(pos)
-    return legal_moves
+        if (self.x, self.y) in legal_moves:
+            legal_moves.remove((self.x, self.y))  # remove current position
 
+        return legal_moves
 
-def rookMoves(x, y):  # Elephant
-    legal_moves = []
-    for i in range(-8, 8):
-        if (x + i, y) in all_fields:
-            legal_moves.append((x + i, y))
-    for j in range(-8, 8):
-        if (x, y + j) in all_fields:
-            legal_moves.append((x, y + j))
-    return legal_moves
+    def queenMoves(self):  # Mantri
+        legal_moves = []
+        legal_moves.extend(self.rookMoves())
+        for i, j in zip(range(-8, 8), range(-8, 8)):  # principal diagonal
+            if (self.x + i, self.y + j) in self.all_fields:
+                legal_moves.append((self.x + i, self.y + j))
 
+        if (self.x, self.y) in legal_moves:
+            legal_moves.remove((self.x, self.y))  # remove current position
 
-def queenMoves(x, y):  # Mantri
-    legal_moves = []
-    for i, j in zip(range(-8, 8), range(-8, 8)):  # principal diagonal
-        if (x + i, y + j) in all_fields:
-            legal_moves.append((x + i, y + j))
+        for i, j in zip(range(8, -8, -1), range(-8, 8)):  # reverse principal diagonal
+            if (self.x + i, self.y + j) in self.all_fields:
+                legal_moves.append((self.x + i, self.y + j))
 
-    for i, j in zip(range(8, -8, -1), range(-8, 8)):  # reverse principal diagonal
-        if (x + i, y + j) in all_fields:
-            legal_moves.append((x + i, y + j))
-    return legal_moves
+        if (self.x, self.y) in legal_moves:
+            legal_moves.remove((self.x, self.y))  # remove current position
+
+        return legal_moves
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Script to learn basic argparse')
+    parser.add_argument('-pi', '--piece',
+                        help='chess piece name: knight, rook or queen',
+                        required='True',
+                        choices=['KNIGHT', 'QUEEN', 'ROOK'],
+                        default='KNIGHT')
+    parser.add_argument('-pos', '--position',
+                        help='current position name in chess board',
+                        required='True',
+                        choices=['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6',
+                                 'b7', 'b8', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2', 'd3', 'd4',
+                                 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2',
+                                 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8',
+                                 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8'],
+                        default='d2')
+    parser.add_argument('-t', '--target',
+                        action='store_true', # to take argument without value
+                        help='target mode')
+    parser.add_argument('-c', '--collector',
+                        action='store_true',
+                        help='collector mode')
+    args = parser.parse_args()
+    print args
+
+    # field creation
+    field = ChessField()
+
     print '-' * 80
-    print 'CHESS BOARD GAME'.center(80)
+    print 'CHESS BOARD'.center(80)
     print '-' * 80
 
-    for m in chess_board:
-        print m
+    for each in field.chess_board_display:
+        print each
+
     print '-' * 80
 
-    userChoice = 'd2'  # b3 c4 f3 e4 b1 f1
-    for each in knightMoves(ord(userChoice[0]), int(userChoice[1])):
-        print chr(each[0]) + str(each[1]),
+    # print field.all_fields
+    # pprint(field.fields_map)
 
+    field.current_position(field.fields_map[args.position])
 
-# print '-' * 80
-# print 'KNIGHT MOVES'
-# print 'center             :(100, 5)     :', knightMoves(100, 5)
-# print 'left top-corner    :(97, 1)      :', knightMoves(97, 1)
-# print 'right top-corner   :(104, 1)     :', knightMoves(104, 1)
-# print 'left bottom-corner :(97, 8)      :', knightMoves(97, 8)
-# print 'right bottom-corner:(104, 8)     :', knightMoves(104, 8)
-# print
-# print 'top middle         :(100, 1)     :', knightMoves(100, 1)
-# print 'left middle        :(97, 4)      :', knightMoves(97, 4)
-# print 'right middle       :(104, 4)     :', knightMoves(104, 4)
-# print 'bottom middle      :(100, 8)     :', knightMoves(100, 8)
-#
-# print '-' * 80
-# print 'ROCK MOVES'
-# print 'center             :(100, 5)     :', rookMoves(100, 5)
-# print 'left top-corner    :(97, 1)      :', rookMoves(97, 1)
-# print 'right top-corner   :(104, 1)     :', rookMoves(104, 1)
-# print 'left bottom-corner :(97, 8)      :', rookMoves(97, 8)
-# print 'right bottom-corner:(104, 8)     :', rookMoves(104, 8)
-# print
-# print 'top middle         :(100, 1)     :', rookMoves(100, 1)
-# print 'left middle        :(97, 4)      :', rookMoves(97, 4)
-# print 'right middle       :(104, 4)     :', rookMoves(104, 4)
-# print 'bottom middle      :(100, 8)     :', rookMoves(100, 8)
-#
-# print '-' * 80
-# print 'QUEEN MOVES'
-# print 'center             :(100, 5)     :', queenMoves(100, 5)
-# print 'left top-corner    :(97, 1)      :', queenMoves(97, 1)
-# print 'right top-corner   :(104, 1)     :', queenMoves(104, 1)
-# print 'left bottom-corner :(97, 8)      :', queenMoves(97, 8)
-# print 'right bottom-corner:(104, 8)     :', queenMoves(104, 8)
-#
-# print 'top middle         :(100, 1)     :', queenMoves(100, 1)
-# print 'left middle        :(97, 4)      :', queenMoves(97, 4)
-# print 'right middle       :(104, 4)     :', queenMoves(104, 4)
-# print 'bottom middle      :(100, 8)     :', queenMoves(100, 8)
+    print 'Current position is ', field.display_current_position()
+
+    if args.piece == 'KNIGHT':
+        print 'Legal positions to move for KNIGHT:'
+        for fld in field.knightMoves():
+            print field.fields_map_reverse[fld],
+    elif args.piece == 'QUEEN':
+        print 'Legal positions to move for QUEEN:'
+        for fld in field.queenMoves():
+            print field.fields_map_reverse[fld],
+        print '\n', len(field.queenMoves())
+    elif args.piece == 'ROOK':
+        print 'Legal positions to move for ROOK:'
+        for fld in field.rookMoves():
+            print field.fields_map_reverse[fld],
+        print '\n', len(field.rookMoves())
+    else:
+        pass
