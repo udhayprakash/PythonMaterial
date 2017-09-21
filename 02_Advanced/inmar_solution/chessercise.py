@@ -21,21 +21,15 @@ fields_map = dict(zip(all_fields_display, all_fields))
 fields_map_reverse = dict(zip(all_fields, all_fields_display))
 
 
-# def current_position(self, pos):
-#     self.row = pos[0]
-#     self.column = pos[1]
-#
-# def display_current_position(self):
-#     return chr(self.row) + str(self.column)
-
 class Knight(object):  # Horse
     def __init__(self, current_position):
         self.row = ord(current_position[0])
         self.column = int(current_position[1])
         self.legal_moves = []
+        self.cpos = current_position
 
     def cur_pos(self):
-        return chr(self.row)+str(self.column)
+        return chr(self.row) + str(self.column)
 
     def moves(self):
         self.legal_moves = []
@@ -53,6 +47,7 @@ class Rook(object):  # Elephant
         self.row = ord(current_position[0])
         self.column = int(current_position[1])
         self.legal_moves = []
+        self.cpos = current_position
 
     def cur_pos(self):
         return chr(self.row) + str(self.column)
@@ -79,6 +74,7 @@ class Queen(Rook):  # Mantri
         self.row = ord(current_position[0])
         self.column = int(current_position[1])
         self.legal_moves = []
+        self.cpos = current_position
         super(Queen, self).__init__(current_position)
 
     def cur_pos(self):
@@ -102,8 +98,19 @@ class Queen(Rook):  # Mantri
         return self.legal_moves
 
 
-def get_rook_distance(x1, y1, x2, y2):
-    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+def rook_distance(my_pos, target_pos):
+    print 'my_pos', my_pos
+    print 'target_pos', target_pos
+    distance = 14
+    least_distant_position = target_pos[0]
+
+    for pos in my_pos:
+        temp = abs(pos[0] - target_pos[0]) + abs(pos[1] - target_pos[1])
+        if distance > temp:
+            distance = temp
+            least_distant_position = pos
+    # return distance, least_distant_position
+    print 'with minimum', distance, ' moves, most distant tile is at', fields_map_reverse[least_distant_position]
 
 
 if __name__ == '__main__':
@@ -116,11 +123,7 @@ if __name__ == '__main__':
     parser.add_argument('-pos', '--position',
                         help='current position name in chess board',
                         required='True',
-                        choices=['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6',
-                                 'b7', 'b8', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'd1', 'd2', 'd3', 'd4',
-                                 'd5', 'd6', 'd7', 'd8', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', 'f1', 'f2',
-                                 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8',
-                                 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8'],
+                        choices=all_fields_display,
                         default='d2')
     parser.add_argument('-t', '--target',
                         action='store_true',  # to take argument without value
@@ -151,16 +154,24 @@ if __name__ == '__main__':
 
     elif args.piece == 'ROOK':
         rk = Rook(args.position)
+        print 'Legal moves for this r'
         for fld in rk.moves():
             print fields_map_reverse[fld],
         print '\n', 'No. of legal moves available:', len(rk.moves())
 
         if args.target:
-            r1 = Rook(choice(all_fields_display))  # Mersenne Twister algorithm
-            print r1.cur_pos()
-            print rk.cur_pos()
-            print len(r1.moves()), [fields_map_reverse[i] for i in r1.moves()]
-            print len(rk.moves()), [fields_map_reverse[i] for i in rk.moves()]
+            available_fields = [i for i in all_fields_display if i != (rk.row, rk.column)]
+            r1 = Rook(choice(available_fields))  # Mersenne Twister algorithm
+            r2 = Rook(choice(available_fields))
+            r3 = Rook(choice(available_fields))
+            r4 = Rook(choice(available_fields))
+            r5 = Rook(choice(available_fields))
+            r6 = Rook(choice(available_fields))
+            r7 = Rook(choice(available_fields))
+            r8 = Rook(choice(available_fields))
+
+            rook_distance(rk.moves(), rk.cpos)
+
             # r2 = Rook(choice(all_fields_display))
             # r3 = Rook(choice(all_fields_display))
             # r4 = Rook(choice(all_fields_display))
@@ -172,6 +183,11 @@ if __name__ == '__main__':
             # for i in [r1, r2, r3, r4, r5, r6, r7, r8]:
             #     print chr(i.row) + str(i.column)
             #     # print get_distance(rk.row, rk.column, i.row, i.column)
+
+            # print 'rk.cur_pos()', rk.cur_pos()
+            # print 'r1.cur_pos()', r1.cur_pos()
+            # print len(r1.moves()), [fields_map_reverse[i] for i in r1.moves()]
+            # print len(rk.moves()), [fields_map_reverse[i] for i in rk.moves()]
     elif args.piece == 'QUEEN':
         qn = Queen(args.position)
         for fld in qn.moves():
@@ -179,3 +195,5 @@ if __name__ == '__main__':
         print '\n', 'No. of legal moves available:', len(qn.moves())
     else:
         pass
+
+        # print all_fields_display
