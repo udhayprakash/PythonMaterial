@@ -1,0 +1,6 @@
+I am file1 line1
+I am file1 line2
+I am common line in both files
+I am file1 line3
+I am file1 line4
+I am file1 line5
