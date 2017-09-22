@@ -2,6 +2,7 @@ import unittest
 from chessercise import *
 """"
 Unit test script for chessercise.py file
+
 """
 
 class TestConstants(unittest.TestCase):
