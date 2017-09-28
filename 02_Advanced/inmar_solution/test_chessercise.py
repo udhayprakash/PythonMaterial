@@ -1,15 +1,17 @@
 import unittest
 from chessercise import *
+
 """"
 Unit test script for chessercise.py file
 
 """
 
+
 class TestConstants(unittest.TestCase):
     def test_constants(self):
-        self.assertEqual(ROWS_ALPHABETS, ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
-        self.assertEqual(ROWS, [97, 98, 99, 100, 101, 102, 103, 104])
-        self.assertEqual(COLUMNS, [1, 2, 3, 4, 5, 6, 7, 8])
+        self.assertEqual(ROWS_ALPHABETS, ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'))
+        self.assertEqual(ROWS, (97, 98, 99, 100, 101, 102, 103, 104))
+        self.assertEqual(COLUMNS, (1, 2, 3, 4, 5, 6, 7, 8))
 
         self.assertEqual(all_fields_display,
                          ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1', 'a2', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2',
@@ -21,15 +23,18 @@ class TestConstants(unittest.TestCase):
 
 class TestKnight(unittest.TestCase):
     def __init__(self):
-        self.assertEqual(ROWS_ALPHABETS, ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+        self.assertEqual(ROWS_ALPHABETS, ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'))
+
 
 class TestRook(unittest.TestCase):
     def __init__(self):
-        self.assertEqual(ROWS_ALPHABETS, ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+        self.assertEqual(ROWS_ALPHABETS, ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'))
+
 
 class TestQueen(unittest.TestCase):
     def __init__(self):
-        self.assertEqual(ROWS_ALPHABETS, ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+        self.assertEqual(ROWS_ALPHABETS, ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'))
+
 
 if __name__ == '__main__':
     print all_fields_display
