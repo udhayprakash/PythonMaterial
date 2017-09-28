@@ -1,12 +1,16 @@
 #!/usr/bin/python
 import argparse
 from random import sample
+from pprint import pprint
 
 """
 Purpose: Command-line based CHESS GAME 
 
 To  implement three pieces: Knight, Rook and Queen  
 
+Knight - Horse 
+Rook   - Elephant 
+Queen - Mantri 
 
 USAGE: 
     python chessercise.py --piece KNIGHT --position d2 --target --collector
@@ -113,8 +117,20 @@ class Opponents(object):
 
         if piece_name == 'KNIGHT':
             self.opponents = [Knight(op_pos) for op_pos in self.opponent_positions]
+            print self.opponents[0].cur_pos()
+            # print self.aaaaaaaa(piece, self.opponents[0].cur_pos())
+            print 'piece.moves()', piece.moves()
+
         elif piece_name == 'ROOK':
             self.opponents = [Rook(op_pos) for op_pos in self.opponent_positions]
+            self.opponents_distance = []
+            min_distance = 14
+            for opponent in self.opponents:
+                distance, least_distant_position = self.rook_distance(piece, opponent)
+                self.opponents_distance.append((opponent.cur_pos(), distance, least_distant_position))
+            pprint(self.opponents_distance)
+
+
         elif piece_name == 'QUEEN':
             self.opponents = [Queen(op_pos) for op_pos in self.opponent_positions]
         else:
@@ -123,22 +139,24 @@ class Opponents(object):
         self.available_fields = list(set(self.available_fields) - set(self.opponent_positions))
 
 
+
+
+    def rook_distance(self, piece, target_pos):
+        distance = 14
+        least_distant_position = target_pos.row
+
+        for pos in piece.moves():
+            temp = abs(pos[0] - target_pos.row) + abs(pos[1] - target_pos.column)
+            if distance > temp:
+                distance = temp
+                least_distant_position = pos
+        print 'with minimum', distance, ' moves, most distant tile is at', fields_map_reverse[least_distant_position]
+        return distance, least_distant_position
+
+
 def most_distant_opponent(): pass
 
 
-def rook_distance(my_pos, target_pos):
-    print 'my_pos', my_pos
-    print 'target_pos', target_pos
-    distance = 14
-    least_distant_position = target_pos[0]
-
-    for pos in my_pos:
-        temp = abs(pos[0] - target_pos[0]) + abs(pos[1] - target_pos[1])
-        if distance > temp:
-            distance = temp
-            least_distant_position = pos
-    # return distance, least_distant_position
-    print 'with minimum', distance, ' moves, most distant tile is at', fields_map_reverse[least_distant_position]
 
 
 if __name__ == '__main__':
@@ -209,7 +227,7 @@ if __name__ == '__main__':
             # 8 opponent ROOK positions at random positions
             opponent_rooks = Opponents(args.piece, rk)
 
-            most_distant_opponent()
+#            most_distant_opponent()
 
             # rook_distance(rk.moves(), rk.cpos)
 
