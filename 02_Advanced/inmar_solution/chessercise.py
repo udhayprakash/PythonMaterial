@@ -1,16 +1,24 @@
 #!/usr/bin/python
 import argparse
-# from pprint import pprint
-from random import choice
+from random import sample
 
 """
-Chess Board Game 
+Purpose: Command-line based CHESS GAME 
+
+To  implement three pieces: Knight, Rook and Queen  
+
+
+USAGE: 
+    python chessercise.py --piece KNIGHT --position d2 --target --collector
+    
 """
+__author__ = 'Udhay Prakash Pethakamsetty'
+__contact__ = 'uday3prakash@gmail.com'
 
 # constants  - Memoization
-ROWS_ALPHABETS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-ROWS = [97, 98, 99, 100, 101, 102, 103, 104]
-COLUMNS = [1, 2, 3, 4, 5, 6, 7, 8]
+ROWS_ALPHABETS = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+ROWS = (97, 98, 99, 100, 101, 102, 103, 104)
+COLUMNS = (1, 2, 3, 4, 5, 6, 7, 8)
 
 chess_board = [[(r, c) for r in ROWS] for c in COLUMNS]
 chess_board_display = [[r + str(c) for r in ROWS_ALPHABETS] for c in COLUMNS]
@@ -98,6 +106,26 @@ class Queen(Rook):  # Mantri
         return self.legal_moves
 
 
+class Opponents(object):
+    def __init__(self, piece_name, piece):
+        self.available_fields = [i for i in all_fields_display if i != chr(piece.row) + str(piece.column)]
+        self.opponent_positions = sample(self.available_fields, 8)
+
+        if piece_name == 'KNIGHT':
+            self.opponents = [Knight(op_pos) for op_pos in self.opponent_positions]
+        elif piece_name == 'ROOK':
+            self.opponents = [Rook(op_pos) for op_pos in self.opponent_positions]
+        elif piece_name == 'QUEEN':
+            self.opponents = [Queen(op_pos) for op_pos in self.opponent_positions]
+        else:
+            pass
+
+        self.available_fields = list(set(self.available_fields) - set(self.opponent_positions))
+
+
+def most_distant_opponent(): pass
+
+
 def rook_distance(my_pos, target_pos):
     print 'my_pos', my_pos
     print 'target_pos', target_pos
@@ -144,56 +172,79 @@ if __name__ == '__main__':
 
     print '-' * 80
 
-    print 'LEGAL Moves for', args.piece
-    print 'current position:', args.position
+    print 'For "%s" with current position: "%s"' % (args.piece, args.position)
+    print 'Legal Moves :',
     if args.piece == 'KNIGHT':
         kt = Knight(args.position)
         for fld in kt.moves():
             print fields_map_reverse[fld],
-        print '\n', 'No. of legal moves available:', len(kt.moves())
+        print '\n', 'No. of moves:', len(kt.moves())
+
+        if args.target:
+            print '=' * 80
+            print 'Entered TARGET MODE'.center(80)
+            print '=' * 80
+
+            # 8 opponent KNIGHTS positions at random positions
+            opponent_knights = Opponents(args.piece, kt)
+            print kt.moves()
+            print [(op.row, op.column) for op in opponent_knights.opponents]
+
+        if args.collector:
+            print '=' * 80
+            print 'Entered COLLECTOR MODE'.center(80)
+            print '=' * 80
 
     elif args.piece == 'ROOK':
         rk = Rook(args.position)
-        print 'Legal moves for this r'
         for fld in rk.moves():
             print fields_map_reverse[fld],
-        print '\n', 'No. of legal moves available:', len(rk.moves())
+        print '\n', 'No. of moves:', len(rk.moves())
 
         if args.target:
-            available_fields = [i for i in all_fields_display if i != (rk.row, rk.column)]
-            r1 = Rook(choice(available_fields))  # Mersenne Twister algorithm
-            r2 = Rook(choice(available_fields))
-            r3 = Rook(choice(available_fields))
-            r4 = Rook(choice(available_fields))
-            r5 = Rook(choice(available_fields))
-            r6 = Rook(choice(available_fields))
-            r7 = Rook(choice(available_fields))
-            r8 = Rook(choice(available_fields))
+            print '=' * 80
+            print 'Entered TARGET MODE'.center(80)
+            print '=' * 80
 
-            rook_distance(rk.moves(), rk.cpos)
+            # 8 opponent ROOK positions at random positions
+            opponent_rooks = Opponents(args.piece, rk)
 
-            # r2 = Rook(choice(all_fields_display))
-            # r3 = Rook(choice(all_fields_display))
-            # r4 = Rook(choice(all_fields_display))
-            # r5 = Rook(choice(all_fields_display))
-            # r6 = Rook(choice(all_fields_display))
-            # r7 = Rook(choice(all_fields_display))
-            # r8 = Rook(choice(all_fields_display))
-            #
-            # for i in [r1, r2, r3, r4, r5, r6, r7, r8]:
-            #     print chr(i.row) + str(i.column)
-            #     # print get_distance(rk.row, rk.column, i.row, i.column)
+            most_distant_opponent()
+
+            # rook_distance(rk.moves(), rk.cpos)
+
+            # print get_distance(rk.row, rk.column, r1.row,r1.column)
 
             # print 'rk.cur_pos()', rk.cur_pos()
             # print 'r1.cur_pos()', r1.cur_pos()
             # print len(r1.moves()), [fields_map_reverse[i] for i in r1.moves()]
             # print len(rk.moves()), [fields_map_reverse[i] for i in rk.moves()]
+        if args.collector:
+            print '=' * 80
+            print 'Entered COLLECTOR MODE'.center(80)
+            print '=' * 80
+
     elif args.piece == 'QUEEN':
         qn = Queen(args.position)
         for fld in qn.moves():
             print fields_map_reverse[fld],
-        print '\n', 'No. of legal moves available:', len(qn.moves())
+        print '\n', 'No. of moves:', len(qn.moves())
+        if args.target:
+            print '=' * 80
+            print 'Entered TARGET MODE'.center(80)
+            print '=' * 80
+
+            # 8 opponent QUEEN positions at random positions
+            opponent_queens = Opponents(args.piece, qn)
+
+        if args.collector:
+            print '=' * 80
+            print 'Entered COLLECTOR MODE'.center(80)
+            print '=' * 80
     else:
         pass
 
-        # print all_fields_display
+print '\n' * 10
+print '-' * 80
+print 'GAME COMPLETED'.center(80)
+print '-' * 80
