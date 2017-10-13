@@ -1,0 +1,14 @@
+2017-01-05 08:00:46,857 - WARNING - newApp - Hello this is a warning 
+
+2017-01-05 08:01:39,944 - WARNING - newApp - Hello this is a warning 
+
+2017-01-05 08:01:39,944 - ERROR - newApp - Hello this is an error 
+
+2017-01-05 08:01:39,944 - CRITICAL - newApp - Hello this an critical error 
+
+2017-01-05 08:01:52,513 - WARNING - newApp - Hello this is a warning 
+
+2017-01-05 08:01:52,513 - ERROR - newApp - Hello this is an error 
+
+2017-01-05 08:01:52,513 - CRITICAL - newApp - Hello this an critical error 
+
