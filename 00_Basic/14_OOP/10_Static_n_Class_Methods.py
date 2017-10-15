@@ -1,23 +1,24 @@
 #!/usr/bin/python
 # Default Decorators: @staticmethod, @classmethod
 
-class myClass(object):
-    def display(self,x):
-        print "executing instance method display(%s,%s)"%(self,x)
+class MyClass(object):
+    def display(self, x):
+        print "executing instance method display(%s,%s)" % (self, x)
 
     @classmethod
-    def cmDisplay(cls,x):
-        print "executing class method display(%s,%s)"%(cls,x)
+    def cmDisplay(cls, x):
+        print "executing class method display(%s,%s)" % (cls, x)
 
     @staticmethod
     def smDisplay(x):
-        print "executing static method display(%s)"%x
+        print "executing static method display(%s)" % x
 
-a = myClass()
-a.display('Django')             # accessing instance method
 
-myClass.cmDisplay('Django')     # accessing class method
+a = MyClass()
+a.display('Django')  # accessing instance method
 
-a.smDisplay('Django')           # accessing static method
+MyClass.cmDisplay('Django')  # accessing class method
 
-myClass.smDisplay('Django')     # accessing static method
+a.smDisplay('Django')  # accessing static method
+
+MyClass.smDisplay('Django')  # accessing static method

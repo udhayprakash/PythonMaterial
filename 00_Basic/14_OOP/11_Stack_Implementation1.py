@@ -2,7 +2,7 @@
 
 # Stack Abstract Data Type (ADT) Implementation
 
-class Stack:
+class Stack(object):
     def __init__(self):
         self.items = []
 
@@ -16,7 +16,7 @@ class Stack:
         return self.items.pop()
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        return self.items[len(self.items) - 1]
 
     def size(self):
         return len(self.items)

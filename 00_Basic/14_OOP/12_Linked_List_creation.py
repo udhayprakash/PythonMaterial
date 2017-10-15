@@ -1,8 +1,9 @@
 #!/usr/bin/python
-'''
+"""
 Purpose: linkedList creation
-'''
+"""
 __author__ = 'Udhay Prakash'
+
 
 class LinkedList:
     def __init__(self, initData):

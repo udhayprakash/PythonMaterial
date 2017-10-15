@@ -1,26 +1,41 @@
 #!/usr/bin/python
+"""
+Purpose: Single Inheritance
+"""
 
-# parent class
+
 class Account:
-  def __init__(self):
-    self.balance=0
-  def deposit(self,amount):
-    self.balance = self.balance + amount
-    return self.balance
-  def withdraw(self,amount):
-    self.balance = self.balance - amount
-    return self.balance
+    """
+    parent class
+    """
 
-# child class    
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+        return self.balance
+
+    def withdraw(self, amount):
+        self.balance = self.balance - amount
+        return self.balance
+
+
 class MinBalanceAccount(Account):
-  def __init__(self):
-    Account.__init__(self)
-  def withdraw(self,amount):
-    if self.balance - amount < 1000:
-      print "buddy !!! you need to maintain a minimum balance"
-    else:
-      Account.withdraw(self,amount)
-      
+    """
+    child class
+    """
+
+    def __init__(self):
+        Account.__init__(self)
+
+    def withdraw(self, amount):
+        if self.balance - amount < 1000:
+            print "buddy !!! you need to maintain a minimum balance"
+        else:
+            Account.withdraw(self, amount)
+
+
 # Main
 # student
 shiva = MinBalanceAccount()
