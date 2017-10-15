@@ -1,6 +1,0 @@
-05-Jan-2017 07:38:54 AM - DEBUG - root - Hello this is a debug message 
-05-Jan-2017 07:38:54 AM - INFO - root - Hello this is information 
-05-Jan-2017 07:38:54 AM - WARNING - root - Hello this is a warning 
-05-Jan-2017 07:38:54 AM - ERROR - root - Hello this is an error 
-05-Jan-2017 07:38:54 AM - CRITICAL - root - Hello this an critical error 
-

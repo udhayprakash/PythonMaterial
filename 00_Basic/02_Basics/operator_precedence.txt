@@ -1,0 +1,20 @@
+Order of evaluation
+------------------------------------------------------------
+operators                            descriptions
+------------------------------------------------------------
+(), [], {}, ‘’                       tuple, list, dictionnary, string
+x.attr, x[], x[i:j], f()             attribute, index, slide, function call
++x, -x, ~x                           unary negation, bitwise invert
+**                                   exponent
+*, /, %                              multiplication, division, modulo
++, -                                 addition, substraction
+<<, >>                               bitwise shifts
+&                                    bitwise and
+^                                    bitwise xor
+|                                    bitwise or
+<, <=, >=, >,==, !=                  comparison operators
+is, is not, in,not in                comparison operators (continue)
+not                                  boolean NOT
+and                                  boolean AND
+or                                   boolean OR
+lambda                               lambda expression
