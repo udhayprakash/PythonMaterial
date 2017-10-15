@@ -1,8 +1,9 @@
 #!/usr/bin/python
-'''
+"""
 Purpose: Stack data structure implementation
-'''
+"""
 __author__ = 'Udhay Prakash'
+
 
 class Stack:
     def __init__(self):
@@ -18,7 +19,8 @@ class Stack:
         return self.items[0]
 
     def size(self):
-        return  len(self.items)
+        return len(self.items)
+
 
 s = Stack()
 

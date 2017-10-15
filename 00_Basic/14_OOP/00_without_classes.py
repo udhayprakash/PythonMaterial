@@ -1,17 +1,20 @@
 #!/usr/bin/python
 
-balance=0
+balance = 0
+
 
 def deposit(amount):
-  global balance
-  balance = balance + amount
-  return balance
-  
+    global balance
+    balance = balance + amount
+    return balance
+
+
 def withdraw(amount):
-  global balance
-  balance = balance - amount
-  return balance
-  
+    global balance
+    balance = balance - amount
+    return balance
+
+
 # Main
 
 # kumar
@@ -23,4 +26,3 @@ print "my balance after movie is {}".format(balance)
 
 # yash
 print "my initial balance {}".format(balance)
-	

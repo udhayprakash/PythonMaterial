@@ -6,9 +6,9 @@ Purpose: demo of OOP
 
 class Person:
     def __init__(self):
-        '''
+        """
         This is constructor
-        '''
+        """
         self.name = 'Suresh'  # ''
         self.age = 99  # 0
 
