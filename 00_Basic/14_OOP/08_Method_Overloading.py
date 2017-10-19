@@ -1,10 +1,9 @@
 #!/usr/bin/python
-
 """
 Purpose: Method Overloading & Method Overwriting demonstration
 
 """
-__author__ = ''
+__author__ = 'Udhay Prakash Pethakamsetty'
 
 
 class MyNewClass(object):
@@ -36,5 +35,6 @@ class MyOverLoadEx(object):
 
 
 n = MyOverLoadEx()
+
 n.myOverLoadFunction('Udhay')
 n.myOverLoadFunction()
