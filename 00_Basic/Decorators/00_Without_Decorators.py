@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Without decirators
+"""
+
 def div(a, b):
     try:
         a / b
@@ -17,6 +22,7 @@ def add(a, b):
 
 
 print div(4, 2)
-div(4, 0)
+print div(4, 0)
+
 print add(2, 3)
 print add('a', 3)
