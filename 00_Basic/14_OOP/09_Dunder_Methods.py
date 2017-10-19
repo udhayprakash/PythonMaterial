@@ -34,6 +34,7 @@ class RationalNumber:
     __repr__ = __str__
 
 
+
 # Main
 a = RationalNumber(1, 2)  # a.n = 1,a.d=2
 b = RationalNumber(2, 3)
