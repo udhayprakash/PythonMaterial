@@ -41,4 +41,9 @@ c = 29
 print isinstance(a, RationalNumber)
 print isinstance(b, RationalNumber)
 print isinstance(c, RationalNumber)
-print a + b
+
+print a.__add__(b)
+print a + b                  # same as a.__add__(b)
+
+print a.__str__()
+print str(a)                 # same as a.__str__()
