@@ -3,7 +3,6 @@
 """
 Purpose:   Testing https://www.metaweather.com/api/
 """
-__author__ = "Udhay Prakash Pethakamsetty"
 
 import requests
 from pprint import pprint
