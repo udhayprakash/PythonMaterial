@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Without decirators
+Without decorators
 """
 
 def div(a, b):

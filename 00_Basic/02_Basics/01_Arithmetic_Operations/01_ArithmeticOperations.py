@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Purpose: demonstartion of Arithmetic Operations
+Purpose: Demonstration of Arithmetic Operations
 """
 
 # + - * / // %
@@ -121,15 +121,3 @@ print '1 * 10.0 ** 1 = ', 1 * 10.0 ** 1
 
 print '3e2 =', 3e2   # 3 * 10.0 ** 2
 print '-2.3e4 = ', -2.3e4
-
-
-
-
-
-
-
-
-
-
-
-

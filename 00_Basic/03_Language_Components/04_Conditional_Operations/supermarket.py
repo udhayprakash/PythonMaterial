@@ -2,6 +2,7 @@
 """
 Purpose:print different amount based on various customer types
 """
+__author__ = 'Python Tutor'
 
 apple = 10
 mango = 5

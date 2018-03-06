@@ -1,6 +1,9 @@
 #!/usr/bin/python
+"""
+Purpose: Stack Abstract Data Type (ADT) Implementation
+"""
+__author__ = 'Udhay Prakash'
 
-# Stack Abstract Data Type (ADT) Implementation
 
 class Stack(object):
     def __init__(self):
