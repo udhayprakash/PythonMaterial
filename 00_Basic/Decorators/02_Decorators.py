@@ -1,6 +1,7 @@
 #!/usr/bin/python
 '''
-# http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
+Purpose: Demonstration of the importance of Decorators
+Ref: http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
 '''
 
 def outer(func):

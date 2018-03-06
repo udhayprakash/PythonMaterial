@@ -2,7 +2,7 @@ Python important links
 -------------------------
 
 world made with python blog 
-	- 
+	- https://udhayprakash.blogspot.in/2015/07/world-made-with-python.html
 
 Python installation in windows (installation not required in linux/Unix/os x)
 	- https://www.youtube.com/watch?v=86wSlQLCkV8
@@ -22,3 +22,6 @@ To start a new notebook:
 	
 To install pycharm in linux/unix
 	http://ubuntuhandbook.org/index.php/2015/07/install-pycharm-ubuntu-1404/
+
+To install python IDLE in MAC OS, 
+	brew install python-IDLE

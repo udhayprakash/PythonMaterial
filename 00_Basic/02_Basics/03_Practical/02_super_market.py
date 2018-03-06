@@ -14,6 +14,8 @@ discount = 13%
 
 User will give in run time
 """
+__author__ = 'Python Tutor'
+
 DISCOUNT = 13/100.0  # int/float = float
 
 costOfDall = 7

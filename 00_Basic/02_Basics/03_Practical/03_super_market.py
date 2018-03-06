@@ -22,6 +22,8 @@ raw_input()     # in python, this is called input()
 
 raw_input() will take any input as string type only. we need to convert it to the required data type.
 """
+__author__ = 'Python Tutor'
+
 DISCOUNT = 13 / 100.0  # int/float = float
 
 costOfDall = 7

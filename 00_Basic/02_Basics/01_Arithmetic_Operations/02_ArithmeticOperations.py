@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Arithmetic Operations
+Purpose: Demonstration of Arithmetic Operations
 """
 
 # compound operators

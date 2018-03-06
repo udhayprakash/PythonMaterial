@@ -2,6 +2,7 @@
 """
 Purpose:Electricity Board Current Bill Slab rates 
 """
+__author__ = 'Python Tutor'
 
 name = str(raw_input ("Please enter your name: "))
 number = int(raw_input ("Please enter service number?: "))

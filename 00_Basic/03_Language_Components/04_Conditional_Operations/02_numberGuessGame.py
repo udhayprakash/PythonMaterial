@@ -4,6 +4,7 @@ Purpose: Number Guessing Game
 
 luckyNumber = 67
 """
+__author__ = 'Python Tutor'
 
 guessingNumber = int(raw_input('Enter a number:'))
 print 'type(guessingNumber)', type(guessingNumber)
