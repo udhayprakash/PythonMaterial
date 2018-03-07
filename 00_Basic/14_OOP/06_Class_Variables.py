@@ -1,5 +1,5 @@
 class Employee:
-    "comman base class for employee"
+    "common base class for employee"
     empcount = 0  # class variable
 
     def __init__(self, name, salary):
@@ -13,9 +13,16 @@ class Employee:
     def displayemployee(self):
         print("name:", self.name, ",salary:", self.salary)
 
+    def __del__(self):
+        print 'Destructor is called'
 
-# "this would create first obkect of employee class"
+# "this would create first object of employee class"
 
 
-Emp1 = Employee("zara", 2000)  # "this would create second obkect of employee class"
-Emp2 = Employee("manni", 60000)
+Emp1 = Employee("Udhay", 2000)  # "this would create second object of employee class"
+Emp2 = Employee("Prakash", 60000)
+
+print 'Total employee count:', Employee.empcount
+
+# Emp2 was terminated
+del Emp2

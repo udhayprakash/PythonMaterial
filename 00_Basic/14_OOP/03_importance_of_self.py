@@ -18,3 +18,5 @@ n = Name()
 
 # we need to call all other methods, except constructor
 n.displayNames()
+
+n.__init__()
