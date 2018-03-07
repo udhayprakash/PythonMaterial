@@ -2,18 +2,12 @@
 
 class RationalNumber:
     """
-    Rational Numbers with support for arthmetic operations.
+    Rational Numbers with support for arithmetic operations.
 
         >>> a = RationalNumber(1, 2)
         >>> b = RationalNumber(1, 3)
         >>> a + b
         5/6
-        >>> a - b
-        1/6
-        >>> a * b
-        1/6
-        >>> a/b
-        3/2
     """
 
     def __init__(self, numerator, denominator=1):

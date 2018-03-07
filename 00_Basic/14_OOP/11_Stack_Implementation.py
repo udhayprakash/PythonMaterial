@@ -16,7 +16,9 @@ class Stack:
         self.items.insert(0, item)
 
     def pop(self):
-        return self.items[0]
+        poped_item = self.items[0]
+        del self.items[0]
+        return poped_item
 
     def size(self):
         return len(self.items)

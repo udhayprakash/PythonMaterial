@@ -3,26 +3,25 @@
 Purpose: demo of OOP
 """
 
-
 class Person:
     def __init__(self):
         """
         This is constructor
         """
-        self.name = 'Suresh'  # ''
-        self.age = 99  # 0
+        self.name = ''
+        self.age = 0
 
     def enterAge(self, age):
         self.age = age
 
     def displayAge(self):
-        print('Person age is ', self.age)
+        print('Person age is %d' % self.age)
 
     def enterName(self, name):
         self.name = name
 
     def displayName(self):
-        print('Person name is ', self.name)
+        print('Person name is ' + self.name)
 
 
 p = Person()
