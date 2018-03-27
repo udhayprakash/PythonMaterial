@@ -7,7 +7,7 @@ import logging
 '''
 
 # creating you logger.
-logger = logging.getLogger('myapp')    # 'logger' object was created
+logger = logging.getLogger('myapp')  # 'logger' object was created
 logger.setLevel(logging.DEBUG)
 
 # create console handler and set level to debug

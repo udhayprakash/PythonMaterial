@@ -3,36 +3,34 @@ import sys
 import logging
 from datetime import datetime
 
-print __file__
-print os.path.basename(__file__)
-
+print '__file__', __file__
+print 'os.path.basename(__file__)', os.path.basename(__file__)
 
 fileName = os.path.splitext(os.path.basename(__file__))[0]
-print fileName
+print 'fileName', fileName
 
 try:
     myLogFolder = None
-    if sys.platform == "linux" or sys.platform == "linux2": # linux
+    if sys.platform == "linux" or sys.platform == "linux2":  # linux
         myLogFolder = "/usr/mylogs"
-    elif sys.platform == "win32":                       # windows
+    elif sys.platform == "win32":  # windows
         myLogFolder = "C:/mylogs"
     else:
-        pass 
+        pass
     debug = 0
     logger = logging.getLogger(fileName)
     logger.debug('my log folder is %s', myLogFolder)
+
     # formatting the log
-    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")   # ex: 20-Jul-2016
-    print currentTimeInfo
+    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 27-Mar-2018
+    print 'currentTimeInfo', currentTimeInfo
+
     if not os.path.exists(myLogFolder):
         os.makedirs(myLogFolder)
-    if not os.path.exists(myLogFolder + '/' + currentTimeInfo):
-        os.makedirs(myLogFolder + '/' + currentTimeInfo)
-    log_file = myLogFolder + '/' + currentTimeInfo + '/' + fileName +'.log'
-    
-    if not os.path.exists(log_file):
-        open(log_file, 'w').close()
 
+    if not os.path.exists(myLogFolder + os.sep + currentTimeInfo):
+        os.makedirs(myLogFolder + os.sep + currentTimeInfo)
+    log_file = myLogFolder + os.sep + currentTimeInfo + '/' + fileName + '.log'
 
     myLogHandler = logging.StreamHandler(sys.stdout)
     if debug:
@@ -44,17 +42,16 @@ try:
 
     LogfileFormatter = logging.Formatter(
         '%(asctime)s [%(process)-5d] [%(funcName)-10s] [%(levelname)-8s] %(message)s')
-    
+
     myLogHandler.setFormatter(LogfileFormatter)
     logger.addHandler(myLogHandler)
 
-    fileHandler = logging.FileHandler(log_file, mode='w')
+    fileHandler = logging.FileHandler(log_file, mode='w')  # default is append mode
     logger.addHandler(fileHandler)
 
 except:
     print "Exception occurred.Unable to perform logging."
     sys.exit(1)
-
 
 logger.debug("Hello this is a debug message \n")
 logger.info("Hello this is information \n")
