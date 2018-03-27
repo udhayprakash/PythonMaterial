@@ -27,7 +27,10 @@ import logging
 #
 
 # basicConfig - to set the format of log test
-logging.basicConfig(filename="first.log",format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',level=logging.DEBUG,datefmt='%d-%b-%Y %I:%M:%S %p')
+logging.basicConfig(filename="first.log",
+                    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
+                    level=logging.DEBUG,
+                    datefmt='%d-%b-%Y %I:%M:%S %p')
 # based on the logging level placed, the logs will be placed.
 # If the path is not specified, the log file will be created in the current working directory of python script.
 logging.debug("Hello this is a debug message ")
