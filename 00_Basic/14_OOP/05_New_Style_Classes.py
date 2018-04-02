@@ -21,7 +21,7 @@ class Shape(object):
 
 rectangle = Shape(100, 45)  # instantiation
 
-print rectangle.x
+print 'rectangle.x', rectangle.x
 print "dir(rectangle) ", dir(rectangle)
 print rectangle.perimeter()
 print rectangle.describe("wide rectangle more than twice as wide as tall")

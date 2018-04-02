@@ -27,7 +27,7 @@ class MinBalanceAccount(Account):
     """
 
     def __init__(self):
-        Account.__init__(self)
+        Account.__init__(self)  # calling the constructor of the parent class
 
     def withdraw(self, amount):
         if self.balance - amount < 1000:

@@ -1,21 +1,26 @@
 #!/usr/bin/python
 """
-Purpose: Half Diamond
+Purpose: To display the astrickes in a half-diamond pattern
 """
 
-for i in xrange(0,9, 1):
-    print i * '*'
-for j in xrange(9, 0, -1):
-    print j * '*'
+size = 10
+j=0
+print 'j=',j
+while j<size:
+	print '*'*j
+	j+=1
 
+print 'j=',j
 
-i = 0
-while i < 9:
-    print '*' * i
-    i += 1
-    
-#print 'i=', i
-while i >0:
-    print '*' * i
-    i -= 1
-print 'i=', i
+while j>0:
+	print '*'*j
+	j-=1
+
+print 'j=',j
+
+# implementation with for loop
+for j in range(size):
+    print '*'*j
+
+for j in range(size,0, -1):
+    print '*'*j
