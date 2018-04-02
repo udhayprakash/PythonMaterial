@@ -1,3 +1,4 @@
+
 class Employee:
     "common base class for employee"
     empcount = 0  # class variable
@@ -14,7 +15,12 @@ class Employee:
         print("name:", self.name, ",salary:", self.salary)
 
     def __del__(self):
+        """
+        destructor
+        :return:
+        """
         print 'Destructor is called'
+
 
 # "this would create first object of employee class"
 

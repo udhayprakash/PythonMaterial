@@ -14,7 +14,6 @@ def withdraw(amount):
     balance = balance - amount
     return balance
 
-
 # Main
 
 # kumar
