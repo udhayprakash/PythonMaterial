@@ -12,7 +12,7 @@ def location_search(query):
     try:
         response = requests.get(r'https://www.metaweather.com//api/location/search/?query=' + query)
         if response.status_code == 200:
-            # pprint(response.json())
+            pprint(response.json())
             for res in response.json():
                 print res['title'] + ' is a ' + res['location_type'] + ' located at ' + res['latt_long']
         else:
