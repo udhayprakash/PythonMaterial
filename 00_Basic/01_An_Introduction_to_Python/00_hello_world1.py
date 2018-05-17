@@ -2,6 +2,7 @@
 # shebang line
 
 print 'hello world!'
+print "hello world!"
 
 # python is a dynamic typed language
 a = 12

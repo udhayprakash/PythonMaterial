@@ -3,6 +3,7 @@
 '''
 Purpose: This is a demonstration script
 '''
+__name__ = 'author name'
 
 print "Hello World!"
 

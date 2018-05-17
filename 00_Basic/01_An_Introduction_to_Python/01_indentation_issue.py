@@ -11,11 +11,11 @@ summation = 34 + 99
 
 print summation
 
-print "Summation result is ", summation
+print "Summation result is ", summation   # , (comma) operator works as a logic separator
 
 
-#for i in range(9):
-#print i            # IndentationError
+# for i in range(9):
+# print i            # IndentationError
 
 for i in range(9):
 	print i 
@@ -32,4 +32,5 @@ if 2 < 3:
 
 
 # tabs vs white-space
+# PEP 8 (Python Enhancement Proposal) - code style guide 
 # four white-spaces 
