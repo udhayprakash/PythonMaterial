@@ -13,8 +13,8 @@ name123_two = 'eedasdasdasdsa'
 PI = 3.14
 __babu = 'Nagababu'
 
-#$name = 'uqwqwqw'
-#2name = 'dfdfsdf'
+# $name = 'uqwqwqw'
+# 2name = 'dfdfsdf'
 
 
 
@@ -32,7 +32,7 @@ __babu = 'Nagababu'
 animal = 'cow'
 Animal = 'Dog'
 
-print ANIMAL
+# print ANIMAL
 
 
 # variable casing

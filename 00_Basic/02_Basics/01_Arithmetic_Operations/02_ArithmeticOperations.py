@@ -17,6 +17,10 @@ print 'myNumber = ', myNumber
 myNumber += 1   # myNumber = myNumber + 1
 print 'myNumber = ', myNumber
 
+newNumber = 56
+myNumber += newNumber + 1   # myNumber = myNumber + newNumber + 1
+print 'myNumber = ', myNumber
+
 myNumber -= 58   # myNumber = myNumber - 58
 print 'myNumber = ', myNumber
 
@@ -44,6 +48,9 @@ print 'result = ', result
 
 result = 14 >> 2
 print "14 >> 2 = ", result
-#    8 4 2 1
-#14  1 1 1 0
->>2  0 0 1 1
+#       8 4 2 1
+#14     1 1 1 0
+#>>2    0 0 1 1
+
+result = 3 << 2
+print "3 << 2 = ", result
