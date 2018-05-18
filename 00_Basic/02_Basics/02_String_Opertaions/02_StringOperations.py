@@ -38,7 +38,7 @@ print '------------------------------'
 print 'String Slicing'
 #P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
 #0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
-#-18                                    -3 -2 -1 - reverse indexing
+#-18                                    -3 -2 -1    - reverse indexing
 #
 print language
 print language[0:11]
@@ -62,17 +62,19 @@ print language[18:7:-1] # 18-1 = 17
 print language[18:7:-3] # 18-3 = 15
 
 # default start_index = 0
-# default final_index = last index of string
-print 'language[:7] :', language[:7]  # equal to language[0:7]
-print 'language[0:] :', language[0:]
+# default final_index = last index of string + 1
+print 'language[:7] :', language[:7]    # equal to language[0:7:+1]
+print 'language[0:] :', language[0:]    # equal to language[0:18:+1]
 print 'language[6:] :', language[6:]
 
-print 'language[:]  :', language[:]
+print 'language[:]  :', language[:]     # equal to language[0:18:+1]
 print language
 
 print 'language[::] :', language[::]  # default step = +1
 print 'language[::-1] :', language[::-1]  # string reversal
-# If step is -ve, then start_index = last string index and
+                                # equal to language[17:-1:-1]
+# If step is -ve, and start_index and final_index were not given, 
+# then start_index = last string index and
 # final_index = 0
 
 print '==========================================='
@@ -98,12 +100,14 @@ print 'language.find("n")   :', language.find('n')
 print 'language.rfind("n")   :', language.rfind('n')
 
 print 'language.find("Prog")   :', language.find('Prog')
+print 'language.rfind("Prog")  :', language.rfind('Prog')
 
 print 'language.index("t")   :', language.index('t')
 print 'language.index("n")   :', language.index('n')
-print 'language.rindex("n")   :', language.rindex('n')
+print 'language.rindex("n")  :', language.rindex('n')
 
 print 'language.index("Prog")   :', language.index('Prog')
+print 'language.rindex("Prog")   :', language.rindex('Prog')
 
 # index vs find
 print 'language.find("Q")   :', language.find('Q')
@@ -129,7 +133,7 @@ print 'Python Production'.split('p')
 print 'Python Production'.split('P')
 print 'Python Production'.rsplit('P')
 
-print '--------STRINg FORMATTING-------'
+print '--------STRING FORMATTING-------'
 print ''%()
 print '%d'%(12)
 # %d - integer
@@ -141,3 +145,5 @@ print 'my name is %s.'%('Udhay Prakash')
 
 print 'My name is %s. I am %d old paying a tax of %f'
 print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33, 15.5 )
+# print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ) 
+#   #TypeError: not enough arguments for format string
