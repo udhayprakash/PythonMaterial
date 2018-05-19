@@ -19,5 +19,5 @@ elif (luckyNumber > guessingNumber):
 else:
     print 'You Guessed greater number!'
 
-# else:
-#     print 'Try Again!'
+# else condition is optional in python
+

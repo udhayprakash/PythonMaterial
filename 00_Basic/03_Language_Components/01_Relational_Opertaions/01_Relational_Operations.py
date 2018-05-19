@@ -23,7 +23,7 @@ print "89 <= 49", 89 <= 49
 
 
 print "89 == 89", 89 == 89  # dont confuse with = (assignment Operator)
-#print "89 = 89", 89 = 89   Syntax Error
+# print "89 = 89", 89 = 89   Syntax Error
 
 
 print "12 != 12.0  ", 12 != 12.0
