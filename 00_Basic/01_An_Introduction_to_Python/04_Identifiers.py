@@ -17,7 +17,6 @@ __babu = 'Nagababu'
 # 2name = 'dfdfsdf'
 
 
-
 # OOP
 # _variable   -- Private variable
 # __variable  --> Protected variable
@@ -49,9 +48,9 @@ No_of_processes_running = 123
 # camel casing
 costOfMangos = 34
 costOfApples = 12
-
-SalaryOfWorkers = 3000
-
 outputOfSensor = 'asdd'
+
+# pascal casing
+SalaryOfWorkers = 3000
 NoOfProcessesRunning = 123
 
