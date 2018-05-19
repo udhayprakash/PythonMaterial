@@ -26,7 +26,7 @@ cost_of_apple = 15
 qty_of_mangos = 3 * DOZEN
 qty_of_apples = 8 * DOZEN
 
-Total_cost_price = (cost_of_mango * qty_of_mangos) + (cost_of_apple * qty_of_apples)
+Total_cost_price = (cost_of_mango * qty_of_mangos) + (cost_of_apple * qty_of_apples)  #PEDMAS
 
 print 'Total cost Price is', Total_cost_price
 
