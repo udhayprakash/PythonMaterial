@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # shebang line
 
+'''
+Purpose: This is a demonstration script
+'''
 print 'hello world!'
 print "hello world!"
 
@@ -14,4 +17,7 @@ print c
 type(a)  # until we place print statement, nothing from the script will be
          # displayed on console
 
+print type(a)
+
+a = 56.98798798
 print type(a)
