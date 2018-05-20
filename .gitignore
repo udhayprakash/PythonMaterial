@@ -1,2 +1,8 @@
 # Pycharm IDE specific 
 .idea
+
+# virtual Environments
+venv
+
+# visual studio code files
+.vscode
