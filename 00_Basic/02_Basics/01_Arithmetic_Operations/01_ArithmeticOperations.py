@@ -2,6 +2,14 @@
 
 """
 Purpose: Demonstration of Arithmetic Operations
+
+
+Integer family 
+    int 
+    long 
+    float 
+
+    complex
 """
 
 # + - * / // %
@@ -48,7 +56,7 @@ num3 = 3445678909876545678909876556789098765
 print 'num3 = ', num3
 print 'type(num3)= ', type(num3)
 
-print 'num1 + num3= ', num1 + num3  # long
+print 'num1 + num3= ', num1 + num3  # int + long = long
 
 
 # going back to division
@@ -72,8 +80,10 @@ print 'float(3.333) = ', float(3.333)
 
 print '10/float(3)= ', 10/float(3)
 
-print 'num1 / num2 = ', num1 / num2
-print 'float(num1) / num2 = ', float(num1) / num2
+print 'num1 / num2 = ', num1 / num2   # int/int
+
+print 'float(num1) / num2 = ', float(num1) / num2 
+print 'float(num1 / num2) = ', float(num1 / num2)   #wrong
 
 
 print 'floor division  //'
@@ -82,6 +92,7 @@ print '10//3 = ', 10//3
 
 print '10/3.0 = ', 10/3.0
 print '10//3.0 = ', 10//3.0   # 3 < 3.3333 < 4 
+print '-10//3.0 = ', -10//3.0   # -4 < -3.3333 <  -3
 
 
 print '10/2.5 = ', 10/2.5
@@ -114,12 +125,12 @@ print '-13 % -2=', -13 % -2
 print 'power operation **'
 
 print '4 ** 2 = ', 4 ** 2
-print '64 ** 0.5 = ', 64 ** 0.5  # square root
-print '64 ** (1/2) = ', 64 ** (1/2)
+print '64 ** (1/2) = ', 64 ** (1/2) # square root
+print '64 ** 0.5 = ', 64 ** 0.5     # square root
 
 print 'pow(4,2)=', pow(4,2)
-print 'pow(64,0.5)=', pow(64, 0.5)
 print 'pow(64,1/2)=', pow(64,1/2)
+print 'pow(64,0.5)=', pow(64, 0.5)
 
 print 'pow(4,2, 9)=', pow(4,2, 9)
 
@@ -130,4 +141,4 @@ print '1e1 = ', 1e1
 print '1 * 10.0 ** 1 = ', 1 * 10.0 ** 1
 
 print '3e2 =', 3e2   # 3 * 10.0 ** 2
-print '-2.3e4 = ', -2.3e4
+print '-2.3e4 = ', -2.3e4  # -2.3 * 10.0 ** 4
