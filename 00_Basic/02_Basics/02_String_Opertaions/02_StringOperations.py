@@ -10,7 +10,13 @@ print 'type(language) = ', type(language)
 junkData = '$%^%^&^* &^\'*&^ * uhk'
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
+
+junkData = "$%^%^&^* &^'*&^ * uhk"
+print 'junkData       = ', junkData
+print 'type(junkData) = ', type(junkData)
+
 print
+
 print 'STRING OPERATIONS'
 print '--------------------------------------'
 print 'string Indexing'
@@ -25,7 +31,7 @@ print 'language[0] :', language[0]
 print 'language[14]:', language[14]
 print 'language[6] :', language[6]
 print 'language[17] :', language[17]
-#print 'language[18] :', language[18] # IndexError:
+#print 'language[18] :', language[18] # IndexError
 
 print
 print 'language[-0] :', language[-0]
@@ -51,7 +57,7 @@ print language[0:6]
 print language[7:18]
 print language[7:999]  # 999 index isn't present
 print language[45:87]  # indexes are not present
-# striing slicing - string[start_index, final_index, step]
+# string slicing - string[start_index: final_index: step]
 # Default - step = +1
 
 print language[7:18]
@@ -71,6 +77,8 @@ print 'language[:]  :', language[:]     # equal to language[0:18:+1]
 print language
 
 print 'language[::] :', language[::]  # default step = +1
+
+
 print 'language[::-1] :', language[::-1]  # string reversal
                                 # equal to language[17:-1:-1]
 # If step is -ve, and start_index and final_index were not given, 

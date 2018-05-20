@@ -39,9 +39,8 @@ print 'bitwise Operations'
 myNewNumber = 4
 print 'myNewNumber =', myNewNumber
 
-result = myNewNumber << 1
-print 'result = ', result
-
+myNewNumber <<=  1  # myNewNumber = myNewNumber << 1
+print 'myNewNumber = ', myNewNumber
 #    8 4 2 1
 #4-  0 1 0 0
 #<<  1 0 0 0
