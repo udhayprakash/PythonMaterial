@@ -3,6 +3,21 @@
 Purpose: Number Guessing Game
 
 luckyNumber = 67
+
+
+while loop syntax:
+-----------------
+    initilization
+    while(condition check):
+        logic 
+        increment/decrement
+
+example:
+--------
+    i = 0
+    while(i <10):
+        print i
+        i+=1
 """
 __author__ = 'Python Tutor'
 
@@ -13,7 +28,7 @@ __author__ = 'Python Tutor'
 luckyNumber = 67
 
 choice = 'y'
-print choice.lower() != 'n'
+
 while (choice.lower() != 'n'):
     print choice.lower() != 'n'
     guessingNumber = int(raw_input('Enter a number:'))
