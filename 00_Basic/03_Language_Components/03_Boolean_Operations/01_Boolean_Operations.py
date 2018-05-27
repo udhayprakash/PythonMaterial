@@ -64,3 +64,5 @@ print "bool(-0.000000001)", bool(-0.000000001)
 print "true", true
 print "bool(true)", bool(true)
 print "bool('')", bool('')
+
+# [], (), {}

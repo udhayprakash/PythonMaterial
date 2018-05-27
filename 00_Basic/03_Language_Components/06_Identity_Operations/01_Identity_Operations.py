@@ -80,6 +80,7 @@ q = 323232
 print 'p=', p, 'q=', q
 
 print p is q 
+print 'id(p)=', id(p), 'id(q)=', id(q)
 # print p not is q  # SyntaxError: invalid syntax
 print p is not q 
 print p !=q

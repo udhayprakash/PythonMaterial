@@ -17,7 +17,7 @@ elif units > 100 and units < 150:
 elif units > 150:
     amt = ((10 * (units - 150)) + 750)
 else :
-    amt = undefined
+    amt = 'undefined'
     
 print(("Total taxable amount Rs: %d/-")%(amt))    
 print("Service tax is 14.5%")
