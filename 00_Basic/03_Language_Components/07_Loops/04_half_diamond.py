@@ -7,7 +7,7 @@ size = 10
 j=0               # initialization
 print 'j=',j
 while j<size:     # condition
-	print '*'*j
+	print '*' * j
 	j+=1          #increment/decrement 
 
 print 'j=',j

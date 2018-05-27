@@ -13,6 +13,15 @@ print 'language      :', language
 print 'type(language):', type(language)
 print 'dir(language) :', dir(language)
 
+# string concatenation 
+mystr1 = 'Taj'
+mystr2 = "Mahal"
+result = mystr1 + mystr2
+print 'result=', result 
+
+result = mystr1.__add__(mystr2)
+print 'result=', result 
+
 print language
 print 'language.capitalize():', language.capitalize()
 print 'language.title()     :', language.title()
@@ -23,6 +32,10 @@ print 'language.swapcase()  :', language.swapcase()
 print 'language.isupper()   :', language.isupper()
 print 'language.islower()   :', language.islower()
 print 'language.istitle()   :', language.istitle()
+print 'language.isdigit()   :', language.isdigit()
+print 'language.isalpha()   :', language.isalpha()
+print 'language.isalnum()   :', language.isalnum()
+print 'language.isspace()   :', language.isspace()
 
 
 print 'language.find("t")   :', language.find('t')
@@ -41,7 +54,7 @@ print 'language.rindex("Prog")   :', language.rindex('Prog')
 
 # index vs find
 print 'language.find("Q")   :', language.find('Q')
-#print 'language.index("Q")   :', language.index('Q')  # ValueError
+# print 'language.index("Q")   :', language.index('Q')  # ValueError
 print
 print '  python Production  '
 print '  python Production  '.strip()
@@ -63,13 +76,27 @@ print 'Python Production'.split('p')
 print 'Python Production'.split('P')
 print 'Python Production'.rsplit('P')
 
+
+print ''.join(['Python', 'Production'])
+print '@'.join(['Python', 'Production'])
+print '___'.join(['Python', 'Production'])
+print '___'.join('Python Production'.split('P'))
+print 'P'.join('Python Production'.split('P'))
+print ' '.join('Python Production'.split(' '))
+
+
 print '--------STRING FORMATTING-------'
 print ''%()
 print '%d'%(12)
+# print '%d'%('12')  # TypeError: %d format: a number is required, not str
+print '%s'%('12')
+print '%f'%(12.34)
+print '%f'%(12)
 # %d - integer
 # %s - string/char
 # %f - floating-point
 print 'lucky number is %d only.'%(786)
+print 'lucky number is %d only.'% 786
 print 'pi value is %f!!!!!!!!!!'%(3.1416)
 print 'my name is %s.'%('Udhay Prakash')
 

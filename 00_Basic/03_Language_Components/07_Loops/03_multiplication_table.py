@@ -8,7 +8,7 @@ while a < MAX:        # condition
     a += 1            #  increment
     b = MIN
     while b < MAX:
-        b += 1       
+        b += 1  
         # print a, '*', b, '=', a * b, '|'
         print '| %2d * %2d = %3d  |'%(a, b, a * b)
-    print '-'*20
+    print '-'*18

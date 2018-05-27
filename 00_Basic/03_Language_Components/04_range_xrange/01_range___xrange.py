@@ -51,7 +51,7 @@ print values4
 print '-'*80
 
 for i in range(9):
-    print i,        # , acts as a new-line suppressor
+    print i,       # , acts as a new-line suppressor
 
 print
 
