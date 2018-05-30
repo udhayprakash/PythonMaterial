@@ -1,5 +1,5 @@
 import string
-from random import *
+from random import choice, randint
 
 print 'string.ascii_letters :', string.ascii_letters
 print 'string.digits        :', string.digits
