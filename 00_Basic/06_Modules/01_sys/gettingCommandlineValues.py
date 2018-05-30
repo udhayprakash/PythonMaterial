@@ -40,7 +40,7 @@ else:
 if winningTicket == userEnteredTicket:
     print 'You won the lottery'
 else:
-    print 'Try again!'
+    print 'You Lost. Try again!'
 
 
 
