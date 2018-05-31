@@ -4,7 +4,7 @@
 import calendar
 
 yy = 2018
-mm = 6
+mm = 8
 
 # To ask month and year from the user
 # yy = int(input("Enter year: "))
@@ -12,3 +12,5 @@ mm = 6
 
 # display the calendar
 print(calendar.month(yy, mm))
+
+print help(calendar)
