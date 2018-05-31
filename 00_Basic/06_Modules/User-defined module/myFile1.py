@@ -10,8 +10,8 @@ statement will convert the returning value to tuple
 NOTE: Default return is None
 """
 
-num1 = 20
-num2 = 80
+NUM1 = 20
+NUM2 = 80
 
 
 # function definitions
