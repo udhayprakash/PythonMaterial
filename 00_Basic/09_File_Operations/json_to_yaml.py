@@ -8,7 +8,8 @@ Example usage:
 $ python json_to_yaml.py json_test.json
 """
 
-if len(sys.argv) != 3:
+if len(sys.argv) != 2:
+    print len(sys.argv)
     print "USAGE"
     print "$ python json_to_yaml.py json_test.json"
     sys.exit(1)
