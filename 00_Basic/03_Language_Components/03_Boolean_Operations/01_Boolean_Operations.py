@@ -63,6 +63,16 @@ print "bool(-0.000000001)", bool(-0.000000001)
 #  False - empty string
 print "true", true
 print "bool(true)", bool(true)
-print "bool('')", bool('')
+print "bool('')", bool('') # empty string
+print "bool(' ')", bool(' ')  # white-space
 
 # [], (), {}
+print '(1)', bool((1))
+print '(1,)', bool((1,))
+print '[1]', bool([1])
+print '{1}', bool({1})
+print '{1:2}', bool({1:2})
+
+print '()', bool(())
+print '[]', bool([])
+print '{}', bool({})
