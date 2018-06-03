@@ -49,7 +49,7 @@ print 'a is b ', a is b
 # Dual memory management strategy 
 # -------------------------------------
 # if each object created in independent line,
-    # 0- 256 --- no new object created
+    # -5- 256 --- no new object created
     # > 256 ---  new object created for every assignment 
 # else 
     # no new object get created on new variable assignment for the same value 

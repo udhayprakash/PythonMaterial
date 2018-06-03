@@ -4,6 +4,7 @@ Purpose:
 	break     - breaks the complete loop
 	continue  - skip the current loop
 	pass      - will do nothing. it is like a todo
+	sys.exit  - wil exit the script execution
 """
 
 print 'importance of break'
