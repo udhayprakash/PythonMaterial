@@ -7,6 +7,15 @@ except ImportError:
 """
 Purpose: to get the ISS pass time over a particular location on earth
     API ref: http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
+
+
+REST API 
+    METHODS
+        - GET 
+        - POST
+        - PUT
+        - DELETE
+        
 """
 
 # Set up the parameters we want to pass to the API.
@@ -14,7 +23,8 @@ Purpose: to get the ISS pass time over a particular location on earth
 parameters = {"lat": 40.71, "lon": -74}
 
 # Make a get request with the parameters.
-response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
+response = requests.get("http://api.open-notify.org/iss-pass.json", 
+                        params=parameters)
 
 # Print the content of the response (the data the server returned)
 print(response.content)
