@@ -14,6 +14,11 @@ API
         }
     }
 
+http response codes 
+2XX - success
+3XX - redirecting 
+4XX - client side errors
+5XX - server side issues
 """
 import urllib2
 import json
