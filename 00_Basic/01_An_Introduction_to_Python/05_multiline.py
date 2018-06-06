@@ -19,7 +19,7 @@ sumOfValues = 12 + 45 + 34534545 + 343 - 34234 + \
 
 print 'sumOfValues:', sumOfValues
 
-# , logic separator
+# , logic separation operator
 
 
 sumOfValues = (12 + 45 + 34534545 + 343 - 34234 + 

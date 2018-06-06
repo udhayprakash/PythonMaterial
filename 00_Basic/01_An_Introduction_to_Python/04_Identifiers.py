@@ -18,7 +18,7 @@ __babu = 'Nagababu'
 
 
 # OOP
-# _variable   -- Private variable
+# _variable   --> Private variable
 # __variable  --> Protected variable
 
 # __variable__  --> Builtin functions
