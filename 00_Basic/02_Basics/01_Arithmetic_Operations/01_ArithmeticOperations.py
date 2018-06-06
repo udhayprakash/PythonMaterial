@@ -67,7 +67,7 @@ print '10/5= ', 10/5   # int/int = int
 print '10/3= ', 10/3   # int/int = int    # 3.333333
 print '10/3.0= ', 10/3.0   # int/float = float    # 3.333333
 
-
+print
 # type conversions
 # int()
 # float()
@@ -126,13 +126,14 @@ print 'power operation **'
 
 print '4 ** 2 = ', 4 ** 2
 print '64 ** (1/2) = ', 64 ** (1/2) # square root
+print '64 ** (1/2.0) = ', 64 ** (1/2.0) # square root
 print '64 ** 0.5 = ', 64 ** 0.5     # square root
 
 print 'pow(4,2)=', pow(4,2)
 print 'pow(64,1/2)=', pow(64,1/2)
 print 'pow(64,0.5)=', pow(64, 0.5)
 
-print 'pow(4,2, 9)=', pow(4,2, 9)
+print 'pow(4,2,9)=', pow(4,2,9)
 
 
 print 'Exponent Notation'
