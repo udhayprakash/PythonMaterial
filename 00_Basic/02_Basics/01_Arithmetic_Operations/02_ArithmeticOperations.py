@@ -53,3 +53,7 @@ print "14 >> 2 = ", result
 
 result = 3 << 2
 print "3 << 2 = ", result
+#       8 4 2 1
+#3      0 0 1 1
+#<<2    1 1 0 0  = > 12
+

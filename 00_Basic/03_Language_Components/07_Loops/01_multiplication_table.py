@@ -12,3 +12,7 @@ while a < MAX:        # condition
         # print a, '*', b, '=', a * b, '|'
         print '| %2d * %2d = %3d  |'%(a, b, a * b)
     print '-'*18
+else:
+    print 'All iterations in while loop completed'
+
+print 'next statement'

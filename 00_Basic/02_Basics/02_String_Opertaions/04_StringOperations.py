@@ -28,7 +28,7 @@ print 'language.title()     :', language.title()
 print 'language.upper()     :', language.upper()
 print 'language.lower()     :', language.lower()
 print 'language.swapcase()  :', language.swapcase()
-
+print
 print 'language.isupper()   :', language.isupper()
 print 'language.islower()   :', language.islower()
 print 'language.istitle()   :', language.istitle()
@@ -36,15 +36,15 @@ print 'language.isdigit()   :', language.isdigit()
 print 'language.isalpha()   :', language.isalpha()
 print 'language.isalnum()   :', language.isalnum()
 print 'language.isspace()   :', language.isspace()
-
+print 
 
 print 'language.find("t")   :', language.find('t')
 print 'language.find("n")   :', language.find('n')
 print 'language.rfind("n")   :', language.rfind('n')
-
+print
 print 'language.find("Prog")   :', language.find('Prog')
 print 'language.rfind("Prog")  :', language.rfind('Prog')
-
+print
 print 'language.index("t")   :', language.index('t')
 print 'language.index("n")   :', language.index('n')
 print 'language.rindex("n")  :', language.rindex('n')
@@ -61,7 +61,7 @@ print '  python Production  '.strip()
 print '  python Production  '.strip('p')
 print '  python Production  '.strip('p ')
 print '  python Production  '.strip('p thno')
-
+print
 print '  python Production  '.strip()
 print '  python Production  '.lstrip()
 print '  python Production  '.rstrip()
@@ -69,19 +69,21 @@ print '  python Production  '.rstrip()
 
 print ' abcba '.lstrip('a ')
 print ' abcba '.rstrip('a ')
-
+print
 print 'Python Production'.split(' ')
 print 'Python Production'.split('r')
 print 'Python Production'.split('p')
 print 'Python Production'.split('P')
 print 'Python Production'.rsplit('P')
-
+print 'Python Production'.split('Prod')
+print
 
 print ''.join(['Python', 'Production'])
 print '@'.join(['Python', 'Production'])
 print '___'.join(['Python', 'Production'])
 print '___'.join('Python Production'.split('P'))
 print 'P'.join('Python Production'.split('P'))
+print 'R'.join('Python Production'.split('P'))
 print ' '.join('Python Production'.split(' '))
 
 
@@ -102,5 +104,6 @@ print 'my name is %s.'%('Udhay Prakash')
 
 print 'My name is %s. I am %d old paying a tax of %f'
 print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33, 15.5 )
+print 'My name is %r. I am %r old paying a tax of %r'%('Udhay', 33, 15.5 )
 # print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ) 
 #   #TypeError: not enough arguments for format string
