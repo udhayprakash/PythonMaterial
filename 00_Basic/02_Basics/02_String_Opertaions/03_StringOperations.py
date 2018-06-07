@@ -51,7 +51,8 @@ print language[45:87]  # indexes are not present
 # Default - step = +1
 
 print language[7:18]
-print language[7:18:1]
+print "language[7:18:1] =", language[7:18:1]
+print "language[7:18:3] =", language[7:18:3]
 print language[7:18:-1]  # 7-1 = 6 ; it is not between 7 and 18
 
 print language[18:7:-1] # 18-1 = 17
@@ -67,6 +68,8 @@ print 'language[:]  :', language[:]     # equal to language[0:18:+1]
 print language
 
 print 'language[::] :', language[::]  # default step = +1
+print 'language[::1] :', language[::1]  
+print 'language[::3] :', language[::3]  
 
 
 print 'language[::-1] :', language[::-1]  # string reversal

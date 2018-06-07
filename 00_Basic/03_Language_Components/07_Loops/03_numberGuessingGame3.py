@@ -41,5 +41,7 @@ while (choice.lower() != 'n'):
         print 'You Guessed greater number!'
 
     choice = raw_input('Enter N or n to exit:')  # Y
-# else:
-#     print 'Try Again!'
+else:
+    print 'Try Again!'
+
+print 'next statement'

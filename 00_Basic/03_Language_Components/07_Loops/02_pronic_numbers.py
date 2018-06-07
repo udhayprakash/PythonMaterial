@@ -14,3 +14,7 @@ for i in range(1, n):
     if i * (i+1) == n:
         print "%d is a pronic number." % n
         break
+else:
+    print 'All iterations in for loop completed'
+
+print 'next statement'

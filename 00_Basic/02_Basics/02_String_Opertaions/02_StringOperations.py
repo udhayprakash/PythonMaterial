@@ -7,11 +7,11 @@ language = 'Python Programming'
 print 'language       = ', language
 print 'type(language) = ', type(language)
 
-junkData = '$%^%^&^* &^\'*&^ * uhk'
+junkData = '$%^%^&^* &^\'*&^ * uhk'  # escaping '
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
-junkData = "$%^%^&^* &^'*&^ * uhk"
+junkData = "$%^%^&^* &^'*&^ * uhk"  # single quote enclosed in double quotes
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
