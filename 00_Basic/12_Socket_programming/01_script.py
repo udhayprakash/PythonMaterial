@@ -4,9 +4,9 @@ import socket,sys
 # creating a socket
 try:
   s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-except socket.error,error:
+except socket.error as error:
   print 'Failed to create a socket. Error Code: ' + str(error[0]) + ' , Error message :' + str(error[1])
-  sys.exit()
+  sys.exit(1)
 
 print 'socket created'
 
