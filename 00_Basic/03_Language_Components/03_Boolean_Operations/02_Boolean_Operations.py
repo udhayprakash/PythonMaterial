@@ -20,3 +20,18 @@ print "False != 3 ", False != 3
 # to strings
 print "str(1) != str(True)", str(1) != str(True)
 print "str(0) != str(False)", str(0) != str(False)
+
+
+print str(1)
+print str(True)
+'''
+    >>> str(1)
+    '1'
+    >>> str('True')
+    'True'
+    >>> str(0)
+    '0'
+    >>> str(False)
+    'False'
+    >>>
+'''
