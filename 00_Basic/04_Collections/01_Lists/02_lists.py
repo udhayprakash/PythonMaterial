@@ -8,7 +8,7 @@ It can store asymmetric data types
 """
 
 numbers = [88, 99, 666]
-         # non-homogenous
+         # homogenous
 print 'type(numbers)', type(numbers)
 print 'dir(numbers)=', dir(numbers)
 
@@ -52,5 +52,7 @@ print 'numbers\t\t\t\t=', numbers  # first object IS changed
 
 print numbers.__class__()
 print "numbers.__contains__(12) =", numbers.__contains__(12)
+print "12 in numbers =", 12 in numbers
+
 # print numbers.__sizeof__()
 # print help(numbers.__sizeof__())

@@ -12,7 +12,7 @@ numbers = [12, 334, 23, 2, -323]   # Homogenous list
 print 'numbers=', numbers
 print 'type(numbers)', type(numbers)
 
-numbers = [12, 3.4, -0.00004, 434243432432, 'abc', True]
+numbers = [12, 3.4, -0.00004, 434243432432, 'abc', True, 4+55/6 ]
          # non-homogenous
 print 'numbers=', numbers
 print 'type(numbers)', type(numbers)
