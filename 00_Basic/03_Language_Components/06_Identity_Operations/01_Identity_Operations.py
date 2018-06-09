@@ -64,7 +64,9 @@ id(m)= 36646032 id(n) 36646008
 >>> print 'm == n ', m == n
 m == n  True
 >>> print 'm is n ', m is n
-m is n  False>>> m = 300; n = 300
+m is n  False
+
+>>> m = 300; n = 300
 >>> print 'm=', m, 'n=', n
 m= 300 n= 300
 >>> print 'id(m)=', id(m), 'id(n)', id(n)   # id(a)= 4370044 id(b) 4370044

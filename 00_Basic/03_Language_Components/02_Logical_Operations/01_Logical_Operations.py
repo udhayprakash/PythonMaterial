@@ -32,7 +32,7 @@ print "True or True  ", True or True
 print "True or False ", True or False
 print "False or True  ", False or True
 print "False or False ", False or False
-
+print
 print "True     ", True
 print "not True ", not True
 print "not False ", not False
@@ -51,7 +51,7 @@ print expr2
 
 
 expr3 = 0 and 1
-print expr3
+print 'expr3=', expr3
 
 expr4 = 3 and 9 
-print expr4
+print 'expr4=', expr4
