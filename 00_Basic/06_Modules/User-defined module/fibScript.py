@@ -2,6 +2,7 @@
 """
 Purpose: To make a Fibonacci generator: 0, 1, 1, 2, 3, 5, ...
 """
+
 def fibonacci(max):
     """
     fibonacci function
