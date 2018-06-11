@@ -4,6 +4,8 @@ def main(a, b):
     """ Short script to add two numbers """
     return a + b
 
+print '__name__', __name__
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Add two numbers")
