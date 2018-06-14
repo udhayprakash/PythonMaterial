@@ -2,11 +2,11 @@
  
 class Car:
  
-    __maxspeed = 0
+    __maxspeed = 0    # class variable
     __name = ""
  
     def __init__(self):
-        self.__maxspeed = 200
+        self.__maxspeed = 200   # instance variable
         self.__name = "Supercar"
  
     def drive(self):
