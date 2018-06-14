@@ -6,5 +6,5 @@ def fun(x):
 
 
 class MyTest(unittest.TestCase):
-    def test(self):
+    def testing_equaivalence(self):
         self.assertEqual(fun(3), 4)

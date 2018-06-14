@@ -17,3 +17,6 @@ print 'n     :', n
 print 'type(Name)  :', type(Name)
 print 'type(Name()):', type(Name())
 print 'type(n)     :', type(n)
+
+
+print "__name__", __name__

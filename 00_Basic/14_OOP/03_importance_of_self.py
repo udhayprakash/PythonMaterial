@@ -20,3 +20,5 @@ n = Name()
 n.displayNames()
 
 n.__init__()
+
+print Name.displayNames(n)

@@ -39,7 +39,7 @@ print isinstance(c, RationalNumber)
 
 print a.__add__(b)
 print a + b                  # same as a.__add__(b)
-
+# - __sub__
 print a.__str__()
 print str(a)                 # same as a.__str__()
 print repr(a)

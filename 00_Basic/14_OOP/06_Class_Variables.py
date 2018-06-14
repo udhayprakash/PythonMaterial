@@ -4,12 +4,12 @@ class Employee:
     empcount = 0  # class variable
 
     def __init__(self, name, salary):
-        self.name = name
+        self.name = name   # instance variable
         self.salary = salary
         Employee.empcount += 1
 
     def displaycount(self):
-        print("total employee%" % Employee.empcount)
+        print "total employee%s" % Employee.empcount 
 
     def displayemployee(self):
         print("name:", self.name, ",salary:", self.salary)
@@ -32,3 +32,4 @@ print 'Total employee count:', Employee.empcount
 
 # Emp2 was terminated
 del Emp2
+print 'Total employee count:', Employee.empcount
