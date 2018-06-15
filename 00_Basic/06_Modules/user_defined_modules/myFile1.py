@@ -10,8 +10,8 @@ statement will convert the returning value to tuple
 NOTE: Default return is None
 """
 
-num1 = 20
-num2 = 80
+NUM1 = 20
+NUM2 = 80
 
 
 # function definitions
@@ -58,8 +58,8 @@ print '__name__=', __name__
 
 if __name__ == '__main__':
     # function calls
-    addResult =  addition(num1, num2)
+    addResult =  addition(NUM1, NUM2)
     print 'addResult=', addResult
-    print subtraction(num1, num2)
-    print multiplication(num1, num2)
-    print division(num1, num2)
+    print subtraction(NUM1, NUM2)
+    print multiplication(NUM1, NUM2)
+    print division(NUM1, NUM2)

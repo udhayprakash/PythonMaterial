@@ -13,11 +13,9 @@ def fibonacci(max):
         a, b = b, a + b
         n = n + 1
 
+print '__name__', __name__
 
 if __name__ == '__main__':     # This condition gets executed, only if the python script is directly executed
     fib10 = fibonacci(10)
     for i in fib10:
         print i,
-    print '__name__', __name__
-else:
-    print '__name__', __name__
