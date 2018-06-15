@@ -33,7 +33,7 @@ x = random.sample(mountains,  1)
 print x[0]
 
 # Pick 4 random items from the list
-y = random.sample(mountains, 4)    
+y = random.sample(mountains, 3)    
 print y
 
 
