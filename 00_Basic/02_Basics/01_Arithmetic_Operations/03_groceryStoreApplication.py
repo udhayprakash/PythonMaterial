@@ -3,17 +3,15 @@
 Purpose: Grocery Store Demonstration
 
 Products: Apples and Mangos
-quantity in dozens
 
 """
-DOZEN = 12
 
 costOfApples = 12
 costOfMangos = 5
 
-quantityInDozensOfApples = 3
-quantityInDozensOfMangos = 7
+quantityOfApples = 3
+quantityOfMangos = 7
 
-TotalCost = costOfApples * (quantityInDozensOfApples * DOZEN) + \
-                 costOfMangos * quantityInDozensOfMangos * DOZEN  # PEMDAS rule
-print "Total Cost = ", TotalCost                 # left to right and top to bottom 
+# TotalCost = (costOfApples * quantityOfApples) + (costOfMangos * quantityOfMangos)
+TotalCost = costOfApples * quantityOfApples + costOfMangos * quantityOfMangos   # PEMDAS rule
+print "Total Cost = ", TotalCost
