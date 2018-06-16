@@ -33,23 +33,14 @@ print 4j
 # NOTE: 4\*j, j4, j*4 are not possible. 
 # In these cases, interpreter treats 'j' as a variable.
 
+print "num1.real + num2.imag =", num1.real + num2.imag 
+# print "num1.real + num2.imag * j =", num1.real + num2.imag * j
+            # NameError: name 'j' is not defined
+print "num1.real + num2.imag * 1j = ", num1.real + num2.imag * 1j
 
-print
-print "num1             = ", num1
-print "num1.conjugate() = ", num1.conjugate() 
-print "num1.real        = ", num1.real
-print "num1.imag        = ", num1.imag
+# complex()  - Builtin function
+print "complex(2,-3.456)", complex(2,-3.456)      
+print "complex(2,0)", complex(2,0)      
 
-     # Observe the signs of imaginary numbers
-print '========================================'
-print 'arithmetic operations on complex numbers'
-print '========================================'
-
-print "num1 + num2 = ", num1 + num2
-print "num1 - num2 = ", num1 - num2
-print "num1 * num2 = ", num1 * num2
-print "num1 / num2 = ", num1 / num2
-
-print
-print "num1 / 2    = ", num1/2
-
+# == checks value equivalence
+print "(3 + 4j) == (4j + 3)= ", (3 + 4j) == (4j + 3)
