@@ -18,7 +18,7 @@ print 'Hello  #World5'
 
 #print #'Hello ' #'World6'
 
-# sldkjlkdj;wl kf'w;  dp'kwf';e kr'
+# sldkjlkdj;wl kf'w;  dp'kwf';e kr'!@#$%^&*()
 
 print '''
 Used to handle multi-line strings
