@@ -3,49 +3,17 @@
 Purpose: Grocery Store Demonstration
 
 Products: Apples and Mangos
+quantity in dozens
 
 """
+DOZEN = 12
 
-costOfApple = 12
-costOfMango = 5
+costOfApples = 12
+costOfMangos = 5
 
+quantityInDozensOfApples = 3
+quantityInDozensOfMangos = 7
 
-quantityOfApples = input('quantityOfApples=') 
-quantityOfMangos = input('quantityOfMangos=') 
-print "type(quantityOfApples) = ", type(quantityOfApples)
-
-TotalCost = (costOfApple * quantityOfApples) + (costOfMango * quantityOfMangos)
-print "Total Cost = ", TotalCost
-# NOTE: Due to security issues, input() is discarded
-
-"""
-#python 04_groceryStoreApplication.1.py
-quantityOfApples=2
-quantityOfMangos=4
-type(quantityOfApples) =  <type 'int'>
-Total Cost =  44
-
-#python 04_groceryStoreApplication.1.py
-quantityOfApples=2.5
-quantityOfMangos=4.66666
-type(quantityOfApples) =  <type 'float'>
-Total Cost =  53.3333
-
-#python 04_groceryStoreApplication.1.py
-quantityOfApples='2'
-quantityOfMangos='4'
-type(quantityOfApples) =  <type 'str'>
-Total Cost =  22222222222244444
-
-#python 04_groceryStoreApplication.1.py
-quantityOfApples="2"
-quantityOfMangos="4"
-type(quantityOfApples) =  <type 'str'>
-Total Cost =  22222222222244444
-
-#python 04_groceryStoreApplication.1.py
-quantityOfApples=True
-quantityOfMangos=False
-type(quantityOfApples) =  <type 'bool'>
-Total Cost =  12
-"""
+TotalCost = costOfApples * (quantityInDozensOfApples * DOZEN) + \
+                 costOfMangos * quantityInDozensOfMangos * DOZEN  # PEMDAS rule
+print "Total Cost = ", TotalCost                 # left to right and top to bottom 
