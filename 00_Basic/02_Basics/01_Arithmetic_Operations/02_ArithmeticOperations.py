@@ -1,59 +1,47 @@
 #!/usr/bin/python
+
 """
 Purpose: Demonstration of Arithmetic Operations
+
+
+Integer family 
+    int 
+    long 
+    float 
+
+    complex
+    bool
 """
 
-# compound operators
-#  += -= *= /= %=
+# + - * / // %
+# NOTE: PEP 8 recommends to place one space around the operator
+print 'Modulo Operation  % - remainder'
 
-myNumber = 123
-print 'myNumber = ', myNumber
+print '13 % 2=', 13 % 2
 
-myNumber = myNumber + 1
-print 'myNumber = ', myNumber
+print '-13 % 2=', -13 % 2
+print '13 % -2=', 13 % -2
+print '-13 % -2=', -13 % -2
 
-# In cases, where the same variable is present both the sides, then compound operations are valid
+print
+print 'power operation **'
 
-myNumber += 1   # myNumber = myNumber + 1
-print 'myNumber = ', myNumber
+print '4 ** 2 = ', 4 ** 2
+print '64 ** (1/2) = ', 64 ** (1/2) # square root
+print '64 ** (1/2.0) = ', 64 ** (1/2.0) # square root
+print '64 ** 0.5 = ', 64 ** 0.5     # square root
 
-newNumber = 56
-myNumber += newNumber + 1   # myNumber = myNumber + newNumber + 1
-print 'myNumber = ', myNumber
+print 'pow(4,2)=', pow(4,2)
+print 'pow(64,1/2)=', pow(64,1/2)
+print 'pow(64,0.5)=', pow(64, 0.5)
 
-myNumber -= 58   # myNumber = myNumber - 58
-print 'myNumber = ', myNumber
+print 'pow(4,2,9)=', pow(4,2,9)
 
-myNumber *= 100   # myNumber = myNumber * 100
-print 'myNumber = ', myNumber
+print
+print 'Exponent Notation'
+print '1e1 = ', 1e1
 
-myNumber /= 10   # myNumber = myNumber / 10
-print 'myNumber = ', myNumber
+print '1 * 10.0 ** 1 = ', 1 * 10.0 ** 1
 
-myNumber %= 10   # myNumber = myNumber % 10
-print 'myNumber = ', myNumber
-
-print '-----------------------------------------------'
-print 'bitwise Operations'
-# >> <<
-myNewNumber = 4
-print 'myNewNumber =', myNewNumber
-
-myNewNumber <<=  1  # myNewNumber = myNewNumber << 1
-print 'myNewNumber = ', myNewNumber
-#    8 4 2 1
-#4-  0 1 0 0
-#<<  1 0 0 0
-
-result = 14 >> 2
-print "14 >> 2 = ", result
-#       8 4 2 1
-#14     1 1 1 0
-#>>2    0 0 1 1
-
-result = 3 << 2
-print "3 << 2 = ", result
-#       8 4 2 1
-#3      0 0 1 1
-#<<2    1 1 0 0  = > 12
-
+print '3e2 =', 3e2   # 3 * 10.0 ** 2
+print '-2.3e4 = ', -2.3e4  # -2.3 * 10.0 ** 4
