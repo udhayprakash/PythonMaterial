@@ -10,6 +10,7 @@ Integer family
     float 
 
     complex
+    bool
 """
 
 # + - * / // %
@@ -64,8 +65,8 @@ print 'num1 + num3= ', num1 + num3  # int + long = long
 print '10/2= ', 10/2   # int/int = int 
 print '10/5= ', 10/5   # int/int = int
 
-print '10/3= ', 10/3   # int/int = int    # 3.333333
-print '10/3.0= ', 10/3.0   # int/float = float    # 3.333333
+print '10/3= ', 10/3        # int/int = int         # 3
+print '10/3.0= ', 10/3.0    # int/float = float     # 3.333333
 
 print
 # type conversions
@@ -75,21 +76,22 @@ print
 
 print 'int(3.333333)=', int(3.333333)
 print 'float(3) = ', float(3)
-
 print 'float(3.333) = ', float(3.333)
 
+print
+print '10/3= ', 10/3
 print '10/float(3)= ', 10/float(3)
 
+print
 print 'num1 / num2 = ', num1 / num2   # int/int
-
 print 'float(num1) / num2 = ', float(num1) / num2 
 print 'float(num1 / num2) = ', float(num1 / num2)   #wrong
 
-
+print
 print 'floor division  //'
 print '10/3 = ', 10/3
 print '10//3 = ', 10//3
-
+print
 print '10/3.0 = ', 10/3.0
 print '10//3.0 = ', 10//3.0   # 3 < 3.3333 < 4 
 print '-10//3.0 = ', -10//3.0   # -4 < -3.3333 <  -3
@@ -122,6 +124,7 @@ print '-13 % 2=', -13 % 2
 print '13 % -2=', 13 % -2
 print '-13 % -2=', -13 % -2
 
+print
 print 'power operation **'
 
 print '4 ** 2 = ', 4 ** 2
@@ -135,7 +138,7 @@ print 'pow(64,0.5)=', pow(64, 0.5)
 
 print 'pow(4,2,9)=', pow(4,2,9)
 
-
+print
 print 'Exponent Notation'
 print '1e1 = ', 1e1
 

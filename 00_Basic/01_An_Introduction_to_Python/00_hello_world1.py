@@ -12,7 +12,7 @@ a = 12
 b = 34
 
 c = a + b
-print c
+print 'c', c
 
 type(a)  # until we place print statement, nothing from the script will be
          # displayed on console

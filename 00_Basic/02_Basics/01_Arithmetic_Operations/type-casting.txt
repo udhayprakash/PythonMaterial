@@ -5,7 +5,7 @@ type-casting is present in python 2.x only
             be of the same data type.
     2. If one of them is different, the end result is higher data type among them
                 
-				int < long int < float
+				int < long < float
 
 
         0 < 0.2 < 1
