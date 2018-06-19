@@ -4,8 +4,9 @@
 Purpose:   Testing https://www.metaweather.com/api/
 """
 
-import requests
 from pprint import pprint
+
+import requests
 
 
 def location_search(query):

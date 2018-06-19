@@ -1,14 +1,15 @@
 import time
-import requests
 
+import requests
 from tomorrow import threads
+
 
 @threads(5)
 def download(url):
     return requests.get(url)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     urls = [
         'http://google.com',
         'http://facebook.com',

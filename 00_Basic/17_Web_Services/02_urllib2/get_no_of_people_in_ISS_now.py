@@ -15,8 +15,8 @@ API
     }
 
 """
-import urllib2
 import json
+import urllib2
 
 req = urllib2.Request("http://api.open-notify.org/astros.json")
 response = urllib2.urlopen(req)
@@ -26,4 +26,4 @@ obj = json.loads(response.read())
 print obj['message']
 if obj['message'] == 'success':
     people_count = obj['number']
-    print "Currently, total number of people living in ISS now are %d in number"%people_count
+    print "Currently, total number of people living in ISS now are %d in number" % people_count

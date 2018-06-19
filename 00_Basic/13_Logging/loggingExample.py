@@ -1,15 +1,17 @@
 #!/usr/bin/python
 import logging
+
 __author__ = 'Udhay Prakash'
+
 
 class Loggable(object):
     """Mixing class to add logging. """
 
     # Initialize Loggable
     def __init__(self,
-                 logFileName = 'log.txt',
-                 logLevel = logging.INFO,
-                 logName = 'MyApp'):
+                 logFileName='log.txt',
+                 logLevel=logging.INFO,
+                 logName='MyApp'):
         self.logFileName = logFileName
         self.logLevel = logLevel
         self.logName = logName
@@ -28,12 +30,11 @@ class Loggable(object):
         return logger
 
     # Logging methods
-    def log(self, logLine, severity = None):
+    def log(self, logLine, severity=None):
         self.logger.log(severity or self.logLevel, logLine)
 
     def warn(self, logLine):
         self.logger.warn(logLine)
-
 
 
 class MyClass(Loggable):
@@ -48,6 +49,7 @@ class MyClass(Loggable):
         self.log("I did something!")
         self.log("Some debugging info", logging.DEBUG)
         self.warn("Something bad happened!")
+
 
 test = MyClass()
 test.doSomeThing()

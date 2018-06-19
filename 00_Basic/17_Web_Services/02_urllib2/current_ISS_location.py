@@ -20,8 +20,8 @@ http response codes
 4XX - client side errors
 5XX - server side issues
 """
-import urllib2
 import json
+import urllib2
 
 req = urllib2.Request("http://api.open-notify.org/iss-now.json")
 response = urllib2.urlopen(req)

@@ -1,5 +1,5 @@
-import urllib
 import re
+import urllib
 
 print "we will try to open this url, in order to get IP Address"
 
@@ -28,6 +28,4 @@ print response
 # Method 2
 theIP = re.findall(r"\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}", response)[0]
 
-print "your IP Address is: ",  theIP
-
-
+print "your IP Address is: ", theIP

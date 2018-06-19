@@ -38,4 +38,3 @@ logging.info("Hello this is information ")
 logging.warning("Hello this is a warning ")
 logging.error("Hello this is an error ")
 logging.critical("Hello this an critical error \n")
-
