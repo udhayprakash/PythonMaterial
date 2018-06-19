@@ -9,9 +9,8 @@ Products: Apples and Mangos
 costOfApple = 12
 costOfMango = 5
 
-
-quantityOfApples = input('quantityOfApples=') 
-quantityOfMangos = input('quantityOfMangos=') 
+quantityOfApples = input('quantityOfApples=')
+quantityOfMangos = input('quantityOfMangos=')
 print "type(quantityOfApples) = ", type(quantityOfApples)
 
 TotalCost = (costOfApple * quantityOfApples) + (costOfMango * quantityOfMangos)

@@ -13,5 +13,5 @@ quantityOfApples = 3
 quantityOfMangos = 7
 
 # TotalCost = (costOfApples * quantityOfApples) + (costOfMangos * quantityOfMangos)
-TotalCost = costOfApples * quantityOfApples + costOfMangos * quantityOfMangos   # PEMDAS rule
+TotalCost = costOfApples * quantityOfApples + costOfMangos * quantityOfMangos  # PEMDAS rule
 print "Total Cost = ", TotalCost
