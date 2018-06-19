@@ -8,28 +8,27 @@ It can store asymmetric data types
 """
 
 numbers = [88, 99, 666]
-         # homogenous
+# homogenous
 print 'type(numbers)', type(numbers)
 print 'dir(numbers)=', dir(numbers)
 
-alphabets = [ 'b', 'c']
+alphabets = ['b', 'c']
 
 print "len(numbers)=", len(numbers)
 print "numbers.__len__()=", numbers.__len__()
-print len(numbers) == numbers.__len__()           # True
+print len(numbers) == numbers.__len__()  # True
 
 print "str(numbers)           =", str(numbers)
 print "type(str(numbers))     =", type(str(numbers))
 print "numbers.__str__()      =", numbers.__str__()
 print "type(numbers.__str__())=", type(numbers.__str__())
 
-
 print "help(numbers)=", help(numbers)
 print "numbers.__doc__=", numbers.__doc__
 
-print "numbers * 3         =", numbers * 3        # original object not modified
+print "numbers * 3         =", numbers * 3  # original object not modified
 print 'numbers             =', numbers
-print "numbers.__imul__(3) =", numbers.__imul__(3)# original object IS modified
+print "numbers.__imul__(3) =", numbers.__imul__(3)  # original object IS modified
 print 'numbers             =', numbers
 
 print "id(numbers)=", id(numbers)
@@ -48,7 +47,6 @@ print 'numbers\t\t\t\t=', numbers
 
 print "numbers.__iadd__(alphabets)\t=", numbers.__iadd__(alphabets)
 print 'numbers\t\t\t\t=', numbers  # first object IS changed 
-
 
 print numbers.__class__()
 print "numbers.__contains__(12) =", numbers.__contains__(12)

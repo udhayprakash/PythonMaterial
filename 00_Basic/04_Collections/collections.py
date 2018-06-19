@@ -55,7 +55,6 @@ print 'randomList:', randomList
 randomList.append(['a', 'b', 'c'])
 print 'randomList:', randomList
 
-
 # randomList.extend(12)  # TypeError: '
 randomList.extend([12])
 print 'randomList:', randomList

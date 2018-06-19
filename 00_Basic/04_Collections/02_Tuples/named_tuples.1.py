@@ -6,21 +6,21 @@ named tuples provide
 3. using getattr()
 """
 import collections
- 
+
 # Declaring namedtuple()
-Student = collections.namedtuple('Student',['name','age','DOB'])
- 
+Student = collections.namedtuple('Student', ['name', 'age', 'DOB'])
+
 # Adding values
-S = Student('Nandini','19','2541997')
- 
+S = Student('Nandini', '19', '2541997')
+
 # Access using index
 print "The Student age using index is : "
 print S[1]
- 
+
 # Access using name 
 print "The Student name using keyname is : "
 print S.name
- 
+
 # Access using getattr()
 print "The Student DOB using getattr() is : "
-print getattr(S,'DOB')
+print getattr(S, 'DOB')
