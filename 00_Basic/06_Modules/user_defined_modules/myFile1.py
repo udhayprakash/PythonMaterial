@@ -23,7 +23,8 @@ def addition(a, b):
     input types: int, int
     return type: int
     '''
-    return a + b   
+    return a + b
+
 
 def subtraction(a, b):
     """
@@ -52,13 +53,14 @@ def division(m, n):
     input types: int, int
     return type: int
     """
-    return m/float(n)
+    return m / float(n)
+
 
 print '__name__=', __name__
 
 if __name__ == '__main__':
     # function calls
-    addResult =  addition(NUM1, NUM2)
+    addResult = addition(NUM1, NUM2)
     print 'addResult=', addResult
     print subtraction(NUM1, NUM2)
     print multiplication(NUM1, NUM2)

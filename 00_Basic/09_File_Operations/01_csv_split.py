@@ -1,7 +1,7 @@
-import sys
-import os
-import csv
 import argparse
+import csv
+import os
+import sys
 
 """
 
@@ -73,7 +73,7 @@ def is_valid_csv(parser, file_name, row_limit):
     if row_limit > row_count:
         parser.error(
             "The 'row_count' of '{}' is > the number of rows in '{}'!"
-            .format(row_limit, file_name)
+                .format(row_limit, file_name)
         )
         sys.exit(1)
 
