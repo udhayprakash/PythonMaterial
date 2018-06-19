@@ -4,11 +4,11 @@ Purpose: python syntax and basics
 """
 name = "Almighty"
 
-print name 
+print name
 
 print "Name of the student:", name
 # , (comma) logic separator operator
-print "Name of the student:"+ name
+print "Name of the student:" + name
 
 name = 123
 print "Name of the student:", name
@@ -22,7 +22,7 @@ print "Name of the student:", name
 print 'Hello'
 print 'world'
 
-print 'Hello',  
+print 'Hello',
 print 'world'
 
 # if ,(comma) is present at the end of print statement, 

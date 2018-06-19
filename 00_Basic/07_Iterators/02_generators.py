@@ -3,6 +3,7 @@ def count(n):
     i = 0
     while i<n:
         yield i
+        # print i
         i+=1
     print '$', i
     # return i 
@@ -13,5 +14,8 @@ def count(n):
 c = count(9)
 print c
 
+print 'c.next() ', c.next()
+
+print 'looping'
 for val in c:
     print val
