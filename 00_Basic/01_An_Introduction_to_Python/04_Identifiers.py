@@ -44,7 +44,6 @@ cost_of_apples = 12
 output_of_sensor = 'asdd'
 No_of_processes_running = 123
 
-
 # camel casing
 costOfMangos = 34
 costOfApples = 12
@@ -53,4 +52,3 @@ outputOfSensor = 'asdd'
 # pascal casing
 SalaryOfWorkers = 3000
 NoOfProcessesRunning = 123
-
