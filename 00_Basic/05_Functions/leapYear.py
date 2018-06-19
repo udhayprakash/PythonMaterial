@@ -31,4 +31,3 @@ if __name__ == '__main__':
     years = xrange(1900, 2000)
     for y in years:
         print y, is_leap(y)
-

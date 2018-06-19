@@ -10,21 +10,25 @@ Three Laws of Recursion:
 3. A recursive algorithm must call itself, recursively.
 """
 
+
 # calculating sum of a list of numbers
 
-def sumOfList(numList):              # conventional implementation
+def sumOfList(numList):  # conventional implementation
     total = 0
     for i in numList:
-        total+=i
+        total += i
     return total
+
 
 print sumOfList([12, 23, 34, 546, 1])
 
-def sumOfListRec(numList):           # implementation using recursions
+
+def sumOfListRec(numList):  # implementation using recursions
     if len(numList) == 1:
         return numList[0]
     else:
-        return numList[0]+sumOfListRec(numList[1:])
+        return numList[0] + sumOfListRec(numList[1:])
+
 
 print sumOfListRec([12, 23, 34, 546, 1])
 
