@@ -6,10 +6,10 @@ matrix = [
 
 print 'ORIGINAL matrix:'
 for row in matrix:
-    print row 
+    print row
 
 transposed_matrix = zip(*matrix)
 
 print 'TRANSPOSED matrix:'
 for row in transposed_matrix:
-    print row 
+    print row
