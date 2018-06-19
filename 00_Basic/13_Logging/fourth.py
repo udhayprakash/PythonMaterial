@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # fourth.py
-import logging as l   # alias import 
+import logging as l  # alias import
 
 # starting of logger
 logger = l.getLogger()
 
-#creating a handler
+# creating a handler
 
 han = l.FileHandler('fourth.log')
 
