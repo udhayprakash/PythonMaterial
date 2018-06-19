@@ -16,18 +16,18 @@ upper = int(raw_input("Enter upper range: "))
 
 for num in range(lower, upper + 1):
 
-   # order of number
-   order = len(str(num))
-    
-   # initialize sum
-   sum = 0
+    # order of number
+    order = len(str(num))
 
-   # find the sum of the cube of each digit
-   temp = num
-   while temp > 0:
-       digit = temp % 10
-       sum += digit ** order
-       temp //= 10
+    # initialize sum
+    sum = 0
 
-   if num == sum:
-       print(num)
+    # find the sum of the cube of each digit
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+
+    if num == sum:
+        print(num)

@@ -28,7 +28,7 @@ print "type(True) =", type(True)
 print "type(true) =", type(true)
 
 print "True = ", True
-print "True * 30 = ", True * 30   # True has a value of one
+print "True * 30 = ", True * 30  # True has a value of one
 
 print "False = ", False
-print "False * 30 = ", False * 30   # False has a value of zero
+print "False * 30 = ", False * 30  # False has a value of zero

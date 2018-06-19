@@ -10,7 +10,6 @@ print "True == 1 ", True == 1
 print "True == 3 ", True == 3
 print "True != 3 ", True != 3
 
-
 print "False == 0 ", False == 0
 print "False == 3 ", False == 3
 print "False != 3 ", False != 3
@@ -20,7 +19,6 @@ print "False != 3 ", False != 3
 # to strings
 print "str(1) != str(True)", str(1) != str(True)
 print "str(0) != str(False)", str(0) != str(False)
-
 
 print str(1)
 print str(True)
