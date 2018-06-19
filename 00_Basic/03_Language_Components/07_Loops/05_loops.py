@@ -9,38 +9,37 @@ Purpose:
 
 print 'importance of break'
 i = 0
-while i <10:
-	i += 1
-	if i == 5:
-		break
-	print i
+while i < 10:
+    i += 1
+    if i == 5:
+        break
+    print i
 
 print 'importance of continue'
 i = 0
-while i <10:
-	i += 1
-	if i == 5:
-		continue
-	print i
+while i < 10:
+    i += 1
+    if i == 5:
+        continue
+    print i
 
 print 'importance of pass'
 i = 0
-while i <10:
-	i += 1
-	if i == 5:
-		pass
-	print i
-
+while i < 10:
+    i += 1
+    if i == 5:
+        pass
+    print i
 
 import sys
 
 print 'importance of sys.exit'
 i = 0
-while i <10:
-	i += 1
-	if i == 5:
-		sys.exit(0)
-	print i
+while i < 10:
+    i += 1
+    if i == 5:
+        sys.exit(0)
+    print i
 
 print 'next statement'
 

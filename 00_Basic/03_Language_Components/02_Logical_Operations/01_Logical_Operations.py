@@ -10,7 +10,7 @@ not - negate the existing value
 
 # and,  or,  not  
 
-expr1 = (12 > 34)  and (99 >= 9)
+expr1 = (12 > 34) and (99 >= 9)
 #        False          True
 print expr1
 
@@ -53,5 +53,5 @@ print expr2
 expr3 = 0 and 1
 print 'expr3=', expr3
 
-expr4 = 3 and 9 
+expr4 = 3 and 9
 print 'expr4=', expr4
