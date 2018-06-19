@@ -1,8 +1,10 @@
 import argparse
 
-def main(m,n,p):
+
+def main(m, n, p):
     """ Short script to add two numbers """
     return m + n + p
+
 
 print '__name__', __name__
 
@@ -15,7 +17,7 @@ if __name__ == '__main__':
                         default=0)
     parser.add_argument('-b',
                         help='Second value',
-                        type=float, 
+                        type=float,
                         required=True)
     parser.add_argument('-c',
                         help='Third value',

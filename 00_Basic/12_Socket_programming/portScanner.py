@@ -11,7 +11,7 @@ from datetime import datetime
 if sys.platform == 'win32':
     subprocess.call('cls', shell=True)
 else:
-    subprocess.call('clear', shell = True)
+    subprocess.call('clear', shell=True)
 
 # Ask for input
 remoteServer = raw_input("Enter a remote host to scan: ")
@@ -29,7 +29,7 @@ t1 = datetime.now()
 # We also put in some error handling for catching errors
 
 try:
-    for port in range(1,1025):  
+    for port in range(1, 1025):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
@@ -52,7 +52,7 @@ except socket.error:
 t2 = datetime.now()
 
 # Calculates the difference of time, to see how long it took to run the script
-total =  t2 - t1
+total = t2 - t1
 
 # Printing the information to screen
 print 'Scanning Completed in: ', total

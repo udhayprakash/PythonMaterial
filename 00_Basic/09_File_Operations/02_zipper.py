@@ -3,11 +3,11 @@ from datetime import datetime
 from zipfile import ZipFile
 
 
-
 def zipdir(path, zip):
     for root, dirs, files in os.walk(path):
         for file in files:
             zip.write(os.path.join(root, file))
+
 
 if __name__ == '__main__':
     # set file name and time of creation
