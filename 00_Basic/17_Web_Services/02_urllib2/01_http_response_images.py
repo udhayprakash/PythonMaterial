@@ -10,5 +10,5 @@ req = urllib2.Request(URL)
 response = urllib2.urlopen(req)
 
 print response.getcode
-print response.readline()
+print response.readline()  # image 
 print dir(response)

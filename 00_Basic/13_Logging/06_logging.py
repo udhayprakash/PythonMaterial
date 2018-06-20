@@ -3,10 +3,12 @@
 
 import logging
 
-logging.basicConfig(filename="second.log",
-                    format="%(asctime)s - %(levelname)s - %(message)s",
-                    datefmt='%m/%d/%Y %I:%M:%S %p',
-                    level=logging.DEBUG)
+logging.basicConfig(
+    filename="06_logging.log",
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt='%m/%d/%Y %I:%M:%S %p',
+    level=logging.DEBUG)
+    
 # diskspace=90
 choice = 'Y'
 while choice.upper() == 'Y':

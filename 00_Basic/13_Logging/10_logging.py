@@ -1,14 +1,14 @@
 #!/usr/bin/python
 # fifth.py
 import logging
-
+import os
 # create logger
 
 # logger = logging.getLogger(__name__)										# method 1
 # logger = logging.getLogger(__file__)										# method 2
 # logger = logging.getLogger(os.path.basename(__file__)) 					# method 3
-# logger = logging.getLogger(os.path.splitext(os.path.basename(__file__))[0])  # method 4
-logger = logging.getLogger('myApp')  # method 5
+logger = logging.getLogger(os.path.splitext(os.path.basename(__file__))[0])  # method 4
+# logger = logging.getLogger('myApp')  # method 5
 logger.setLevel(logging.DEBUG)
 
 # create console handler and set level to debug

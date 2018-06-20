@@ -22,7 +22,7 @@ try:
     logger.debug('my log folder is %s', myLogFolder)
 
     # formatting the log
-    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 27-Mar-2018
+    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 20-Jun-2018
     print 'currentTimeInfo', currentTimeInfo
 
     if not os.path.exists(myLogFolder):
@@ -49,8 +49,10 @@ try:
     fileHandler = logging.FileHandler(log_file, mode='w')  # default is append mode
     logger.addHandler(fileHandler)
 
-except:
+
+except Exception as ex:
     print "Exception occurred.Unable to perform logging."
+    print ex
     sys.exit(1)
 
 logger.debug("Hello this is a debug message \n")
