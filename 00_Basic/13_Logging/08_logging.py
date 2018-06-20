@@ -7,7 +7,7 @@ logger = l.getLogger()
 
 # creating a handler
 
-han = l.FileHandler('fourth.log')
+han = l.FileHandler('08_logging.log')
 
 # Formatter
 format = l.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
@@ -20,4 +20,4 @@ logger.addHandler(han)
 
 # setting the level for logs.
 logmessage = "testing the log messages"
-l.error(logmessage)
+logger.error(logmessage)

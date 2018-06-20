@@ -12,3 +12,9 @@
 
 2017-01-05 08:01:52,513 - CRITICAL - newApp - Hello this an critical error 
 
+2018-06-20 22:49:58,622 - WARNING - newApp - Hello this is a warning 
+
+2018-06-20 22:49:58,674 - ERROR - newApp - Hello this is an error 
+
+2018-06-20 22:49:58,724 - CRITICAL - newApp - Hello this an critical error 
+
