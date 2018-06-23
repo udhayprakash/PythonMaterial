@@ -12,5 +12,7 @@ mm = 8
 
 # display the calendar
 print(calendar.month(yy, mm))
+print calendar.isleap(2018)
 
-# print dir(calendar)
+# print help(calendar)
+print dir(calendar)

@@ -14,4 +14,12 @@ print f.next()
 print
 print f.next()
 print
-print f.next()
+
+try:
+    print f.next()
+except StopIteration:
+    print 'error is StopIteration'
+
+print 'using loop to get remaining elements'
+for i in f:
+    print i
