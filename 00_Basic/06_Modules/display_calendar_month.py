@@ -13,4 +13,4 @@ mm = 8
 # display the calendar
 print(calendar.month(yy, mm))
 
-print dir(calendar)
+# print dir(calendar)

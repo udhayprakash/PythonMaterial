@@ -28,3 +28,8 @@ print ml[5]
 print ml[5][1]
 print ml[5][3]
 print ml[5][3][0]
+
+print 'ml[5][3][0]', ml[5][3][0]
+ml[5][3][0] = '99999'
+print 'ml[5][3][0]', ml[5][3][0]
+

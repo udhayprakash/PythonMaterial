@@ -21,3 +21,16 @@ print type(a)
 
 a = 56.98798798
 print type(a)
+
+a = 'number'
+print type(a)
+
+
+
+
+
+
+
+
+
+
