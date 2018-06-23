@@ -7,7 +7,8 @@ Purpose: demonstration of random module
     called the Mersenne Twister. 
 """
 # Pick a random number between 1 and 100.
-print random.randint(1, 100)  # randint also includes the upper bound value
+print random.randint(1, 100)  
+# randint also includes the upper bound value
 
 # Pick a random floating point number between 1 and 10 
 # random.uniform(a,b) => a <= N <= b
@@ -27,7 +28,8 @@ print x
 y = random.sample(items, 4)
 print y
 
-mountains = ['Andes', 'Himalayas', 'Alphes', 'Aplachein', 'Ural', 'Vindhya']
+mountains = ['Andes', 'Himalayas', 
+       'Alphes', 'Aplachein', 'Ural', 'Vindhya']
 
 # Pick a random item from the list
 x = random.sample(mountains, 1)

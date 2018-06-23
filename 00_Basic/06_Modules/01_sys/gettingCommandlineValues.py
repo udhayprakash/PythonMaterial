@@ -14,9 +14,9 @@ import sys
 #
 # # Run time value
 # word = raw_input('Enter some word:')
-#
+
 # print 'You entered:'+ word
-#
+
 
 # sys.argv
 

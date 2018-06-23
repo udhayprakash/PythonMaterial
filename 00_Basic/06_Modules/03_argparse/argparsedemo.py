@@ -2,7 +2,7 @@ import argparse
 
 
 def main(m, n, p):
-    """ Short script to add two numbers """
+    """ Short script to add three numbers """
     return m + n + p
 
 
@@ -10,7 +10,7 @@ print '__name__', __name__
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Add two numbers")
+        description="Add three numbers")
     parser.add_argument('-a',
                         help='First value',
                         type=float,

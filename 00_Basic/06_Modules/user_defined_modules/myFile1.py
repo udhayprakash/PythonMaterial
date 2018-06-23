@@ -10,7 +10,7 @@ statement will convert the returning value to tuple
 NOTE: Default return is None
 """
 
-NUM1 = 20
+NUM1 = 120
 NUM2 = 80
 
 
