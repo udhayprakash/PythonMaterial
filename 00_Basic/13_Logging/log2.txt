@@ -1,2 +1,0 @@
-2017-01-05 08:28:42,687: MyApp - INFO - I did something!
-2017-01-05 08:28:42,687: MyApp - WARNING - Something bad happened!
