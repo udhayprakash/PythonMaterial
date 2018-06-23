@@ -1,0 +1,6 @@
+20-Jun-2018 11:11:26 PM - DEBUG - root - Hello this is a debug message 
+20-Jun-2018 11:11:26 PM - INFO - root - Hello this is information 
+20-Jun-2018 11:11:26 PM - WARNING - root - Hello this is a warning 
+20-Jun-2018 11:11:26 PM - ERROR - root - Hello this is an error 
+20-Jun-2018 11:11:26 PM - CRITICAL - root - Hello this an critical error 
+
