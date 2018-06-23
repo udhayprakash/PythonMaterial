@@ -1,0 +1,3 @@
+#!python -u
+
+print 'hello'

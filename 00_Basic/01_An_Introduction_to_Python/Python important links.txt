@@ -1,0 +1,27 @@
+Python important links 
+-------------------------
+
+world made with python blog 
+	- https://udhayprakash.blogspot.in/2015/07/world-made-with-python.html
+
+Python installation in windows (installation not required in linux/Unix/os x)
+	- https://www.youtube.com/watch?v=86wSlQLCkV8
+	- Install python 2.7 
+
+VC++ compiler for python (needed in windows only)
+	- https://www.microsoft.com/en-in/download/details.aspx?id=44266
+	- download and install 
+
+Open new cmd prompt, and type 
+	python -m pip install jupyter 
+	
+	
+To start a new notebook:
+	jupyter notebook 
+	
+	
+To install pycharm in linux/unix
+	http://ubuntuhandbook.org/index.php/2015/07/install-pycharm-ubuntu-1404/
+
+To install python IDLE in MAC OS, 
+	brew install python-IDLE
