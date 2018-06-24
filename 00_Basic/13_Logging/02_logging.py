@@ -5,7 +5,8 @@ import logging
 
 # Fixing the level of severity
 logging.basicConfig(
-    level=logging.ERROR)
+    level=logging.DEBUG)
+
 
 logging.debug("This is a debug2")
 logging.warning("This is a warning2")
