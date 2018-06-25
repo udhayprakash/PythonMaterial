@@ -1,7 +1,15 @@
 import json
 import urllib2
+import ConfigParser
 
-f = urllib2.urlopen('http://api.wunderground.com/api/bef95257316a31ed/conditions/q/CA/San_Francisco.json')
+config = ConfigParser.ConfigParser()
+config.read('weather.ini')
+
+api_key = config.get('prod', 'APIKEY') 
+URL = 'http://api.wunderground.com/api/{apikey}/conditions/q/CA/San_Francisco.json'.format(apikey=api_key)
+print 'URL=', URL
+
+f = urllib2.urlopen(URL)
 json_string = f.read()
 parsed_json = json.loads(json_string)
 
