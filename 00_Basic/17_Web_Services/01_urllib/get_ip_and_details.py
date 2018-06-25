@@ -1,5 +1,7 @@
 import urllib
-
+"""
+GET https://ipapi.co/{format}/
+"""
 
 def print_n_write_response(url):
     connection = urllib.urlopen(url)
