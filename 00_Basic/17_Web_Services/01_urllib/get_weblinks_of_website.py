@@ -6,6 +6,10 @@ connection = urllib.urlopen('https://www.stackoverflow.com')
 
 data = connection.read()
 
+with open('stackoverflow.html', 'wb') as f:
+    f.write(data)
+    f.close()
+
 dom = lxml.html.fromstring(data)
 
 print dom

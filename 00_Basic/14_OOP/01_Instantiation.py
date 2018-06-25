@@ -18,5 +18,5 @@ print 'type(Name)  :', type(Name)
 print 'type(Name()):', type(Name())
 print 'type(n)     :', type(n)
 
-
+print 'isinstance(n, Name) :', isinstance(n, Name)
 print "__name__", __name__
