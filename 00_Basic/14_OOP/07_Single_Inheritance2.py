@@ -18,6 +18,10 @@ class Cars:
     def Get_Engine(self):
         print "Engine for the car %s is : %d" % (self.car_name, self.engine)
 
+    def hello(self):
+        print "I am Cars class"
+
+
 
 class Bmw(Cars):
     def __init__(self, name, chs, eng, auto_gear):
@@ -28,6 +32,8 @@ class Bmw(Cars):
     def Auto_Gear(self):
         print "Auto Gear availability : %s" % self.auto_gear
 
+    def hello(self):
+        print "I am Bmw class"
 
 class Volvo(Cars):
     def __init__(self, name, chs, eng, auto_driving):
@@ -38,12 +44,15 @@ class Volvo(Cars):
     def Auto_Drive(self):
         print "Auto Driving availability : %s" % self.auto_driving
 
+    def hello(self):
+        print "I am Volvo class"
 
 asd = Bmw('AB121', 142211, 908790, 'Available')
 asd.Get_Chasis()
+asd.hello()
 
-zxc =
- Volvo('V189B', 22222, 33333, 'Not Available')
-zxc.Get_Chasis()
+# zxc = Volvo('V189B', 22222, 33333, 'Not Available')
+# zxc.Get_Chasis()
 
-zxc.Auto_Drive()
+# zxc.Auto_Drive()
+# zxc.hello()

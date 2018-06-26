@@ -1,239 +1,219 @@
 {
+   "Type" : "D",
    "Redirect" : "",
-   "Results" : [],
+   "AbstractURL" : "https://en.wikipedia.org/wiki/Harsh",
+   "Entity" : "",
+   "Answer" : "",
+   "Heading" : "Harsh",
+   "Abstract" : "",
+   "DefinitionSource" : "",
    "AbstractSource" : "Wikipedia",
+   "Definition" : "",
+   "DefinitionURL" : "",
+   "Image" : "",
+   "Infobox" : "",
+   "AbstractText" : "",
+   "ImageIsLogo" : 0,
+   "ImageHeight" : 0,
+   "meta" : {
+      "src_domain" : "en.wikipedia.org",
+      "unsafe" : 0,
+      "dev_date" : null,
+      "developer" : [
+         {
+            "name" : "DDG Team",
+            "url" : "http://www.duckduckhack.com",
+            "type" : "ddg"
+         }
+      ],
+      "src_id" : 1,
+      "production_state" : "online",
+      "is_stackexchange" : null,
+      "perl_module" : "DDG::Fathead::Wikipedia",
+      "tab" : "About",
+      "js_callback_name" : "wikipedia",
+      "src_url" : null,
+      "attribution" : null,
+      "blockgroup" : null,
+      "live_date" : null,
+      "created_date" : null,
+      "name" : "Wikipedia",
+      "example_query" : "nikola tesla",
+      "repo" : "fathead",
+      "src_options" : {
+         "src_info" : "",
+         "is_mediawiki" : 1,
+         "skip_icon" : 0,
+         "skip_qr" : "",
+         "language" : "en",
+         "skip_abstract" : 0,
+         "source_skip" : "",
+         "skip_end" : "0",
+         "min_abstract_length" : "20",
+         "skip_abstract_paren" : 0,
+         "is_wikipedia" : 1,
+         "skip_image_name" : 0,
+         "directory" : "",
+         "is_fanon" : 0
+      },
+      "src_name" : "Wikipedia",
+      "designer" : null,
+      "description" : "Wikipedia",
+      "id" : "wikipedia_fathead",
+      "status" : "live",
+      "dev_milestone" : "live",
+      "maintainer" : {
+         "github" : "duckduckgo"
+      },
+      "producer" : null,
+      "topic" : [
+         "productivity"
+      ],
+      "signal_from" : "wikipedia_fathead"
+   },
+   "AnswerType" : "",
    "RelatedTopics" : [
       {
+         "Text" : "Harsha An Indian emperor who ruled North India from 606 to 647 CE. He was a member of the Pushyabhuti...",
+         "Result" : "<a href=\"https://duckduckgo.com/Harsha\">Harsha</a>An Indian emperor who ruled North India from 606 to 647 CE. He was a member of the Pushyabhuti...",
          "Icon" : {
             "Height" : "",
             "Width" : "",
-            "URL" : "https://duckduckgo.com/i/d3503925.png"
+            "URL" : "https://duckduckgo.com/i/e0a4e6df.jpg"
          },
-         "FirstURL" : "https://duckduckgo.com/Hyderabad",
-         "Result" : "<a href=\"https://duckduckgo.com/Hyderabad\">Hyderabad</a> The capital of the southern Indian state of Telangana and de jure capital of Andhra Pradesh.",
-         "Text" : "Hyderabad The capital of the southern Indian state of Telangana and de jure capital of Andhra Pradesh."
+         "FirstURL" : "https://duckduckgo.com/Harsha"
       },
       {
-         "Icon" : {
-            "Width" : "",
-            "Height" : "",
-            "URL" : "https://duckduckgo.com/i/879cede7.png"
-         },
-         "FirstURL" : "https://duckduckgo.com/Hyderabad_State",
-         "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_State\">Hyderabad State</a>An Indian princely state located in the south-central region of India with its capital at the...",
-         "Text" : "Hyderabad State An Indian princely state located in the south-central region of India with its capital at the..."
-      },
-      {
-         "Result" : "<a href=\"https://duckduckgo.com/Hyderabad%2C_Sindh\">Hyderabad, Sindh</a>A city located in the Sindh province of Pakistan.",
-         "Text" : "Hyderabad, Sindh A city located in the Sindh province of Pakistan.",
-         "FirstURL" : "https://duckduckgo.com/Hyderabad%2C_Sindh",
+         "FirstURL" : "https://duckduckgo.com/Griffith_R._Harsh",
+         "Text" : "Griffith R. Harsh An American neurosurgeon. He is married to Hewlett Packard Enterprise President and CEO, Meg...",
+         "Result" : "<a href=\"https://duckduckgo.com/Griffith_R._Harsh\">Griffith R. Harsh</a>An American neurosurgeon. He is married to Hewlett Packard Enterprise President and CEO, Meg...",
          "Icon" : {
             "Height" : "",
-            "Width" : "",
-            "URL" : "https://duckduckgo.com/i/53c3bfc3.jpg"
+            "URL" : "",
+            "Width" : ""
          }
       },
       {
+         "Icon" : {
+            "Width" : "",
+            "URL" : "",
+            "Height" : ""
+         },
+         "Text" : "Harsh Rajput An Indian actor and model who has appeared in television soap operas.",
+         "Result" : "<a href=\"https://duckduckgo.com/Harsh_Rajput\">Harsh Rajput</a>An Indian actor and model who has appeared in television soap operas.",
+         "FirstURL" : "https://duckduckgo.com/Harsh_Rajput"
+      },
+      {
          "Topics" : [
             {
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_district%2C_India",
                "Icon" : {
-                  "URL" : "https://duckduckgo.com/i/ee02033f.png",
                   "Height" : "",
-                  "Width" : ""
+                  "Width" : "",
+                  "URL" : "https://duckduckgo.com/i/8ee0c217.jpg"
                },
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_district%2C_India\">Hyderabad District, India</a>A district in the state of Telangana in India that contains a part of the metropolitan area of...",
-               "Text" : "Hyderabad District, India A district in the state of Telangana in India that contains a part of the metropolitan area of..."
+               "Text" : "Harsh Chitale The previous CEO of HCL Infosystems.",
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Chitale\">Harsh Chitale</a> The previous CEO of HCL Infosystems.",
+               "FirstURL" : "https://duckduckgo.com/Harsh_Chitale"
             },
             {
-               "Text" : "Hyderabad State (1948\u201356) A state of Union of India.",
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_State_(1948%E2%80%9356)\">Hyderabad State (1948\u201356)</a> A state of Union of India.",
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_State_(1948%E2%80%9356)",
+               "FirstURL" : "https://duckduckgo.com/Harsh_Goenka",
                "Icon" : {
-                  "URL" : "",
+                  "Width" : "",
+                  "URL" : "https://duckduckgo.com/i/74e7a436.jpg",
+                  "Height" : ""
+               },
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Goenka\">Harsh Goenka</a>Harsh Goenka has been the chairman of RPG Enterprises, one of India's largest business groups...",
+               "Text" : "Harsh Goenka Harsh Goenka has been the chairman of RPG Enterprises, one of India's largest business groups..."
+            },
+            {
+               "Icon" : {
                   "Height" : "",
+                  "Width" : "",
+                  "URL" : "https://duckduckgo.com/i/1bbec8d8.jpg"
+               },
+               "Text" : "Harsh Mander An activist, who works with survivors of mass violence and hunger, as well as homeless persons...",
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mander\">Harsh Mander</a>An activist, who works with survivors of mass violence and hunger, as well as homeless persons...",
+               "FirstURL" : "https://duckduckgo.com/Harsh_Mander"
+            },
+            {
+               "FirstURL" : "https://duckduckgo.com/Harsh_Mankad",
+               "Icon" : {
+                  "Height" : "",
+                  "URL" : "",
                   "Width" : ""
+               },
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mankad\">Harsh Mankad</a>A former world ranked ATP Professional tennis player from India.",
+               "Text" : "Harsh Mankad A former world ranked ATP Professional tennis player from India."
+            },
+            {
+               "FirstURL" : "https://duckduckgo.com/Harsh_Mayar",
+               "Text" : "Harsh Mayar An Indian film actor working in Hindi Bollywood films.",
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mayar\">Harsh Mayar</a>An Indian film actor working in Hindi Bollywood films.",
+               "Icon" : {
+                  "Height" : "",
+                  "Width" : "",
+                  "URL" : "https://duckduckgo.com/i/cfb3bcdc.jpg"
                }
             },
             {
+               "FirstURL" : "https://duckduckgo.com/Harsh_Narain",
+               "Text" : "Harsh Narain An Indian author. He has a Ph.D. from Lucknow University, and was a professor at Banaras Hindu...",
+               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Narain\">Harsh Narain</a>An Indian author. He has a Ph.D. from Lucknow University, and was a professor at Banaras Hindu...",
                "Icon" : {
-                  "Height" : "",
                   "Width" : "",
-                  "URL" : ""
-               },
-               "FirstURL" : "https://duckduckgo.com/Hyderabad%2C_Uttar_Pradesh",
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad%2C_Uttar_Pradesh\">Hyderabad, Uttar Pradesh</a> A nagar panchayat in Unnao District in the Indian state of Uttar Pradesh.",
-               "Text" : "Hyderabad, Uttar Pradesh A nagar panchayat in Unnao District in the Indian state of Uttar Pradesh."
-            }
-         ],
-         "Name" : "India"
-      },
-      {
-         "Topics" : [
-            {
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_District%2C_Sindh",
-               "Icon" : {
-                  "Height" : 16,
-                  "Width" : 16,
-                  "URL" : "https://duckduckgo.com/i/www.hyderabad.gov.pk.ico"
-               },
-               "Text" : "Hyderabad District, Pakistan A district of Sindh, Pakistan. Its capital is the city of Hyderabad.",
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_District%2C_Sindh\">Hyderabad District, Pakistan</a>A district of Sindh, Pakistan. Its capital is the city of Hyderabad."
+                  "URL" : "",
+                  "Height" : ""
+               }
             },
             {
+               "FirstURL" : "https://duckduckgo.com/John_Harsh",
                "Icon" : {
                   "URL" : "",
                   "Width" : "",
                   "Height" : ""
                },
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_Division",
-               "Text" : "Hyderabad Division An administrative division of the Sindh Province of Pakistan.",
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_Division\">Hyderabad Division</a>An administrative division of the Sindh Province of Pakistan."
+               "Result" : "<a href=\"https://duckduckgo.com/John_Harsh\">John Harsh</a> An American farmer and politician.",
+               "Text" : "John Harsh An American farmer and politician."
             },
             {
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_Taluka_(rural)\">Hyderabad Taluka (rural)</a>An administrative subdivision of Hyderabad District in the Sindh province of Pakistan.",
-               "Text" : "Hyderabad Taluka (rural) An administrative subdivision of Hyderabad District in the Sindh province of Pakistan.",
+               "FirstURL" : "https://duckduckgo.com/Vivian_G._Harsh",
+               "Text" : "Vivian G. Harsh Vivian G. Harsh was an American librarian.",
+               "Result" : "<a href=\"https://duckduckgo.com/Vivian_G._Harsh\">Vivian G. Harsh</a>Vivian G. Harsh was an American librarian.",
                "Icon" : {
-                  "Width" : "",
-                  "Height" : "",
-                  "URL" : "https://duckduckgo.com/i/bca2c296.png"
-               },
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_Taluka_(rural)"
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_City_Taluka",
-               "Icon" : {
-                  "Height" : "",
-                  "Width" : "",
-                  "URL" : "https://duckduckgo.com/i/bca2c296.png"
-               },
-               "Text" : "Hyderabad City Taluka An administrative subdivision of Hyderabad District in the Sindh province of Pakistan.",
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_City_Taluka\">Hyderabad City Taluka</a>An administrative subdivision of Hyderabad District in the Sindh province of Pakistan."
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Hyderabad_Colony",
-               "Icon" : {
-                  "Height" : "",
-                  "Width" : "",
-                  "URL" : ""
-               },
-               "Result" : "<a href=\"https://duckduckgo.com/Hyderabad_Colony\">Hyderabad Colony</a>A neighborhood of Gulshan Town, Karachi, Sindh, Pakistan.",
-               "Text" : "Hyderabad Colony A neighborhood of Gulshan Town, Karachi, Sindh, Pakistan."
-            }
-         ],
-         "Name" : "Pakistan"
-      },
-      {
-         "Name" : "Miscellaneous",
-         "Topics" : [
-            {
-               "Result" : "<a href=\"https://duckduckgo.com/Handley_Page_Hyderabad\">Handley Page Hyderabad</a>The Handley Page H.P.24 Hyderabad was a British twin-engine biplane heavy bomber built by Handley...",
-               "Text" : "Handley Page Hyderabad The Handley Page H.P.24 Hyderabad was a British twin-engine biplane heavy bomber built by Handley...",
-               "Icon" : {
-                  "URL" : "https://duckduckgo.com/i/aec6c82d.jpg",
-                  "Height" : "",
-                  "Width" : ""
-               },
-               "FirstURL" : "https://duckduckgo.com/Handley_Page_Hyderabad"
-            },
-            {
-               "Icon" : {
-                  "URL" : "https://duckduckgo.com/i/38f25083.png",
+                  "URL" : "",
                   "Width" : "",
                   "Height" : ""
-               },
-               "FirstURL" : "https://duckduckgo.com/Hydrabad_(ship)",
-               "Text" : "Hydrabad (ship) An iron cargo and passenger sailing ship, built in Scotland and launched in 1865.",
-               "Result" : "<a href=\"https://duckduckgo.com/Hydrabad_(ship)\">Hydrabad (ship)</a>An iron cargo and passenger sailing ship, built in Scotland and launched in 1865."
+               }
             }
-         ]
+         ],
+         "Name" : "People"
       },
       {
          "Topics" : [
             {
+               "FirstURL" : "https://duckduckgo.com/Harshness",
+               "Text" : "Harshness A Non-Contextual Low-Level Audio Descriptors that represents one dimension of the...",
+               "Result" : "<a href=\"https://duckduckgo.com/Harshness\">Harshness</a>A Non-Contextual Low-Level Audio Descriptors that represents one dimension of the...",
+               "Icon" : {
+                  "URL" : "",
+                  "Width" : "",
+                  "Height" : ""
+               }
+            },
+            {
+               "FirstURL" : "https://duckduckgo.com/d/Harsh_Vardhan",
                "Icon" : {
                   "Width" : "",
-                  "Height" : "",
-                  "URL" : ""
+                  "URL" : "",
+                  "Height" : ""
                },
-               "FirstURL" : "https://duckduckgo.com/d/Heydarabad",
-               "Text" : "Heydarabad Meanings Numerous places.",
-               "Result" : "<a href=\"https://duckduckgo.com/d/Heydarabad\">Heydarabad Meanings</a>  Numerous places."
+               "Result" : "<a href=\"https://duckduckgo.com/d/Harsh_Vardhan\">Harsh Vardhan Meanings</a>  Multiple people.",
+               "Text" : "Harsh Vardhan Meanings Multiple people."
             }
          ],
          "Name" : "See also"
       }
    ],
-   "ImageHeight" : 0,
-   "Abstract" : "",
-   "DefinitionSource" : "",
-   "AbstractURL" : "https://en.wikipedia.org/wiki/Hyderabad_(disambiguation)",
-   "Infobox" : "",
-   "DefinitionURL" : "",
-   "Image" : "",
-   "meta" : {
-      "production_state" : "online",
-      "example_query" : "nikola tesla",
-      "tab" : "About",
-      "maintainer" : {
-         "github" : "duckduckgo"
-      },
-      "signal_from" : "wikipedia_fathead",
-      "src_url" : null,
-      "topic" : [
-         "productivity"
-      ],
-      "attribution" : null,
-      "developer" : [
-         {
-            "type" : "ddg",
-            "url" : "http://www.duckduckhack.com",
-            "name" : "DDG Team"
-         }
-      ],
-      "blockgroup" : null,
-      "created_date" : null,
-      "is_stackexchange" : null,
-      "perl_module" : "DDG::Fathead::Wikipedia",
-      "src_name" : "Wikipedia",
-      "src_domain" : "en.wikipedia.org",
-      "js_callback_name" : "wikipedia",
-      "unsafe" : 0,
-      "dev_milestone" : "live",
-      "name" : "Wikipedia",
-      "designer" : null,
-      "id" : "wikipedia_fathead",
-      "description" : "Wikipedia",
-      "producer" : null,
-      "dev_date" : null,
-      "status" : "live",
-      "src_id" : 1,
-      "live_date" : null,
-      "src_options" : {
-         "skip_abstract_paren" : 0,
-         "language" : "en",
-         "skip_qr" : "",
-         "is_wikipedia" : 1,
-         "directory" : "",
-         "skip_icon" : 0,
-         "skip_abstract" : 0,
-         "source_skip" : "",
-         "skip_end" : "0",
-         "is_fanon" : 0,
-         "is_mediawiki" : 1,
-         "min_abstract_length" : "20",
-         "src_info" : "",
-         "skip_image_name" : 0
-      },
-      "repo" : "fathead"
-   },
-   "Entity" : "",
-   "AnswerType" : "",
-   "Definition" : "",
-   "Answer" : "",
-   "Heading" : "Hyderabad",
-   "Type" : "D",
-   "ImageWidth" : 0,
-   "ImageIsLogo" : 0,
-   "AbstractText" : ""
+   "Results" : [],
+   "ImageWidth" : 0
 }

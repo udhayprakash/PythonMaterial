@@ -2,6 +2,10 @@
  
 class Car:
  
+    a = 1
+    _a = 2
+    __a = 3   # private variable
+
     def __init__(self):
         self.__updateSoftware()
  
@@ -14,3 +18,8 @@ class Car:
 redcar = Car()
 redcar.drive()
 # redcar.__updateSoftware()  #not accesible from object.
+
+print dir(Car)
+
+print '----------------'
+redcar._Car__updateSoftware()

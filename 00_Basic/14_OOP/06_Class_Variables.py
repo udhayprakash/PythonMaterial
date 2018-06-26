@@ -19,6 +19,7 @@ class Employee:
         destructor
         :return:
         """
+        Employee.empcount -= 1
         print 'Destructor is called'
 
 
@@ -26,9 +27,11 @@ class Employee:
 
 
 Emp1 = Employee("Udhay", 2000)  # "this would create second object of employee class"
-Emp2 = Employee("Prakash", 60000)
-
 print 'Total employee count:', Employee.empcount
+
+Emp2 = Employee("Prakash", 60000)
+print 'Total employee count:', Employee.empcount
+
 
 # Emp2 was terminated
 del Emp2
