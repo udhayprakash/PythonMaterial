@@ -8,7 +8,7 @@ class Person:
         """
         This is constructor
         """
-        self.name = ''
+        self.name = ''  # instance variables
         self.age = 0
 
     def enterAge(self, age):

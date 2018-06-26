@@ -3,6 +3,8 @@
 """
 Purpose: Usage of duckduckgo api 
     https://duckduckgo.com/api
+
+    pip install duckduckgo
 """
 
 import duckduckgo 
@@ -12,7 +14,8 @@ import sys
 # print dir(duckduckgo)
 
 try:
-    response = duckduckgo.query('1 + 1')
+    query_string = raw_input('Enter the query:')
+    response = duckduckgo.query(query_string)
 except Exception as ex:
     print "request failed with error:", repr(ex) 
     sys.exit(1)
