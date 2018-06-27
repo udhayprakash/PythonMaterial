@@ -15,10 +15,12 @@ class MyClass(object):
 
 
 a = MyClass()
-a.display('Django')  # accessing instance method
+a.display('Django')             # accessing instance method
 
-MyClass.cmDisplay('Django')  # accessing class method
+MyClass.display(a, 'Django')    # accessing instance method
 
-a.smDisplay('Django')  # accessing static method
+MyClass.cmDisplay('Django')     # accessing class method
+a.cmDisplay('Django')           # accessing class method
 
-MyClass.smDisplay('Django')  # accessing static method
+a.smDisplay('Django')           # accessing static method
+MyClass.smDisplay('Django')     # accessing static method

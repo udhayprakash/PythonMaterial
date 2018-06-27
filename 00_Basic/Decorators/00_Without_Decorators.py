@@ -7,7 +7,7 @@ def div(a, b):
     try:
         a / b
     except Exception as e:
-        print e
+        return e
     else:
         return a / b
 
