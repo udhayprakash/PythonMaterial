@@ -36,6 +36,18 @@ class MinBalanceAccount(Account):
             Account.withdraw(self, amount)
 
 
+
+mb = MinBalanceAccount()
+
+print dir(mb)
+
+print 'mb.balance', mb.balance
+print 'mb.deposit(10)', mb.deposit(10)
+print 'mb.balance', mb.balance
+print 'mb.withdraw(100)', mb.withdraw(100)
+
+print '================================='
+
 # Main
 # student
 shiva = MinBalanceAccount()
@@ -57,4 +69,4 @@ print "balance of kanth {}".format(kanth.balance)
 kanth.withdraw(600)
 print "balance of kanth {}".format(kanth.balance)
 
-# https://www.edx.org/
+# # https://www.edx.org/
