@@ -1,0 +1,2 @@
+int encode(char *, char *);
+
