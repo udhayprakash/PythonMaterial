@@ -16,12 +16,12 @@ def withdraw(amount):
 
 # Main
 
-# kumar
-print "my initial balance {}".format(balance)
+# Madhavi
+print "Madhavi -  initial balance {}".format(balance)
 deposit(1000)
-print "my balance after dads deposit {}".format(balance)
+print "Madhavi -  balance after dads deposit {}".format(balance)
 withdraw(300)
-print "my balance after movie is {}".format(balance)
+print "Madhavi -  balance after movie is {}".format(balance)
 
 # yash
-print "my initial balance {}".format(balance)
+print "yash -  initial balance {}".format(balance)

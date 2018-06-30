@@ -4,7 +4,7 @@ Purpose: OOP demos
 """
 __author__ = 'Developer Name'
 
-
+# __new__
 class Name:
     def __init__(self):  # constructor
         print('I am a constructor. ')
@@ -16,3 +16,8 @@ m = Name()
 p = Name  # class object assignment
 
 p()
+
+
+print 
+print '----------calling contructor'
+n.__init__()

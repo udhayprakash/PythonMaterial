@@ -14,12 +14,12 @@ def withdraw(account, amount):
     return account['balance']
 
 
-# kumar
-kumar = new()
-print "The basic amount for kumar {}".format(kumar['balance'])
-deposit(kumar, 1000)
-print "The  amount for kumar {} after deposit".format(kumar['balance'])
-withdraw(kumar, 300)
+# Madhavi
+Madhavi = new()
+print "The basic amount for Madhavi {}".format(Madhavi['balance'])
+deposit(Madhavi, 1000)
+print "The  amount for Madhavi {} after deposit".format(Madhavi['balance'])
+withdraw(Madhavi, 300)
 
 # yash
 yash = new()
@@ -28,5 +28,5 @@ deposit(yash, 2000)
 print "The  amount for yash {} after deposit".format(yash['balance'])
 withdraw(yash, 300)
 
-print "The  amount for kumar {} after withdraw".format(kumar['balance'])
+print "The  amount for Madhavi {} after withdraw".format(Madhavi['balance'])
 print "The  amount for yash {} after withdraw".format(yash['balance'])

@@ -2,7 +2,9 @@
 # second2.py
 import logging as lg
 
-lg.basicConfig(filename="disk.log", filemode='a', datefmt='%m/%d/%Y %I:%M:%S %p',
+lg.basicConfig(filename="disk.log", 
+                filemode='w', 
+                datefmt='%m/%d/%Y %I:%M:%S %p',
                format='%(asctime)s - %(levelname)s - %(name)s - %(message)s', level=lg.INFO)
 
 size = int(raw_input("please enter the disk size:"))
