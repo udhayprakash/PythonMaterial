@@ -27,10 +27,10 @@ class Employee:
 
 
 Emp1 = Employee("Udhay", 2000)  # "this would create second object of employee class"
-print 'Total employee count:', Employee.empcount
+print 'After Emp1 creation, Total employee count:', Employee.empcount
 
 Emp2 = Employee("Prakash", 60000)
-print 'Total employee count:', Employee.empcount
+print 'After Emp2 creation, Total employee count:', Employee.empcount
 
 
 # Emp2 was terminated

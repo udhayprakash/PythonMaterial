@@ -8,6 +8,7 @@ class Person:
         """
         This is constructor
         """
+        pass
         self.name = ''  # instance variables
         self.age = 0
 

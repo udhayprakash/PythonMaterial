@@ -9,6 +9,8 @@ print 'os.path.basename(__file__)', os.path.basename(__file__)
 fileName = os.path.splitext(os.path.basename(__file__))[0]
 print 'fileName', fileName
 
+SET_DEBUG = 0
+
 try:
     myLogFolder = None
     if sys.platform == "linux" or sys.platform == "linux2":  # linux
@@ -17,12 +19,12 @@ try:
         myLogFolder = "C:/mylogs"
     else:
         pass
-    debug = 0
+
     logger = logging.getLogger(fileName)
     logger.debug('my log folder is %s', myLogFolder)
 
     # formatting the log
-    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 20-Jun-2018
+    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 30-Jun-2018
     print 'currentTimeInfo', currentTimeInfo
 
     if not os.path.exists(myLogFolder):
@@ -30,10 +32,10 @@ try:
 
     if not os.path.exists(myLogFolder + os.sep + currentTimeInfo):
         os.makedirs(myLogFolder + os.sep + currentTimeInfo)
-    log_file = myLogFolder + os.sep + currentTimeInfo + '/' + fileName + '.log'
+    log_file = myLogFolder + os.sep + currentTimeInfo + os.sep + fileName + '.log'
 
     myLogHandler = logging.StreamHandler(sys.stdout)
-    if debug:
+    if SET_DEBUG:
         logger.setLevel(logging.DEBUG)
         myLogHandler.setLevel(logging.DEBUG)
     else:
@@ -55,8 +57,8 @@ except Exception as ex:
     print ex
     sys.exit(1)
 
-logger.debug("Hello this is a debug message \n")
-logger.info("Hello this is information \n")
-logger.warning("Hello this is a warning \n")
-logger.error("Hello this is an error \n")
-logger.critical("Hello this an critical error \n")
+logger.debug("Hello this is a debug message")
+logger.info("Hello this is information")
+logger.warning("Hello this is a warning")
+logger.error("Hello this is an error")
+logger.critical("Hello this an critical error")
