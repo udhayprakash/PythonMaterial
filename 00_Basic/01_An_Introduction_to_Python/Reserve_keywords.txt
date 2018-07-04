@@ -1,0 +1,19 @@
+Reserved Keywords  (27 in python 2.x)
+--------------------------------------
+and        assert         break          class         continue           def         del
+elif       else           except         exec          finally            for         from
+global     if             import         in            is                 lambda      not
+or         pass           print          raise         return             try         while
+yield
+
+Reserved Keywords (33 in python 3.x)
+-------------------------------------
+False    class        finally       is            return
+None     continue     for           lambda        try
+True     def          from          nonlocal      while
+and      del          global        not           with
+as       elif         if            or            yield
+assert   else         import        pass
+break    except       in            raise
+
+NOTE: These reserved keywords should not be used for the names of user-defined identifiers.
