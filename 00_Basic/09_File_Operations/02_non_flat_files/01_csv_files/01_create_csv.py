@@ -1,8 +1,14 @@
-with open('mydata.csv', 'wb') as fh:
+#!/usr/bin/python
+
+'''
+Purpose: creating a new CSV file
+'''
+
+with open('sampleCSVFile.csv', 'ab+') as myCsv:
     # csv header
-    fh.write('Name, position, location\n')
+    myCsv.write("fruits, vegetables, cars\n")
     # csv body 
-    fh.write('Madhavi,Sr. developer,texas\n')
-    fh.write('udhay,developer,hyderabad\n')
-    fh.write('prakash,Architect,ontario\n')
-    fh.close()
+    myCsv.write("Apple, Cabbagge, Benz\n")
+    myCsv.write("Mango, Cucumber, Volvo\n")
+    myCsv.write("Banana, Raddish, Maruthi suzuki\n")
+    myCsv.close()
