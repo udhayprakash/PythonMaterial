@@ -14,7 +14,7 @@ name = 123
 print "Name of the student:", name
 # , (comma) logic separator operator
 # print "Name of the student:"+ name # TypeError: cannot concatenate 'str' and 'int' objects
-
+# print '12' + 34
 
 # no difference between single and double quotes
 # for strings 

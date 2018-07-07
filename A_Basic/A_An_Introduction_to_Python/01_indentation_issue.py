@@ -27,6 +27,6 @@ if 2 < 3:
         print '2 < 3 < 6'
 
 
-        # tabs vs white-space
-        # PEP 8 (Python Enhancement Proposal) - code style guide
-        # four white-spaces
+# tabs vs white-space
+# PEP 8 (Python Enhancement Proposal) - code style guide
+# four white-spaces
