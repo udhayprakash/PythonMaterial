@@ -6,7 +6,7 @@ Purpose: Single Inheritance
 
 class Account:
     """
-    parent class
+    parent or super class
     """
 
     def __init__(self):
@@ -23,7 +23,7 @@ class Account:
 
 class MinBalanceAccount(Account):
     """
-    child class
+    child or sub class
     """
 
     def __init__(self):
