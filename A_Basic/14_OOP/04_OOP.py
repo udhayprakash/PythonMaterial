@@ -4,24 +4,23 @@ Purpose: demo of OOP
 """
 
 class Person:
-    def __init__(self):
+    def __init__(self):         # instance methods
         """
         This is constructor
         """
-        pass
-        self.name = ''  # instance variables
+        self.name = ''          # instance variables
         self.age = 0
 
-    def enterAge(self, age):
+    def enterAge(self, age):    # instance methods
         self.age = age
 
-    def displayAge(self):
+    def displayAge(self):       # instance methods
         print('Person age is %d' % self.age)
 
-    def enterName(self, name):
+    def enterName(self, name): # instance methods 
         self.name = name
 
-    def displayName(self):
+    def displayName(self):      # instance methods
         print('Person name is ' + self.name)
 
 

@@ -30,6 +30,7 @@ Emp1 = Employee("Udhay", 2000)  # "this would create second object of employee c
 print 'After Emp1 creation, Total employee count:', Employee.empcount
 
 Emp2 = Employee("Prakash", 60000)
+print 'Emp2.salary', Emp2.salary
 print 'After Emp2 creation, Total employee count:', Employee.empcount
 
 

@@ -14,5 +14,9 @@ class Car:
  
 redcar = Car()
 redcar.drive()
+
 redcar.__maxspeed = 10  # will not change variable because its private
+redcar.drive()
+
+redcar._Car__maxspeed = 10   # accessing private variable
 redcar.drive()

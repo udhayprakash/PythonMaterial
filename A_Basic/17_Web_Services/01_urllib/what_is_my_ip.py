@@ -20,6 +20,7 @@ print etree.tostring(document_root,
 
 """
 <html><head><title>Current IP Check</title></head><body>Current IP Address: 103.70.129.81</body></html>
+
 <html>
 <head>
     <title>Current IP Check</title>

@@ -1,6 +1,12 @@
 #!/usr/bin/python
-# Default Decorators: @staticmethod, @classmethod
+"""
+class Methods 
+    1. Instance Methods 
+    2. class Methods
+    3. static Methods
 
+Default Decorators: @staticmethod, @classmethod
+"""
 class MyClass(object):
     def display(self, x):
         print "executing instance method display(%s,%s)" % (self, x)
@@ -16,7 +22,6 @@ class MyClass(object):
 
 a = MyClass()
 a.display('Django')             # accessing instance method
-
 MyClass.display(a, 'Django')    # accessing instance method
 
 MyClass.cmDisplay('Django')     # accessing class method

@@ -31,11 +31,11 @@ class RationalNumber:
 
 # Main
 a = RationalNumber(1, 2)  # a.n = 1,a.d=2
-b = RationalNumber(2, 3)
+b = RationalNumber(2)
 c = 29
-print isinstance(a, RationalNumber)
-print isinstance(b, RationalNumber)
-print isinstance(c, RationalNumber)
+print isinstance(a, RationalNumber)  # True
+print isinstance(b, RationalNumber)  # True
+print isinstance(c, RationalNumber)  # False
 
 print a.__add__(b)
 print a + b                  # same as a.__add__(b)

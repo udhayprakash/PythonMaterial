@@ -4,12 +4,12 @@ Purpose: classes (OOP) introduction
 """
 
 
-class Name:  # class definition
-    def hello(self):
+class Name:               # class definition
+    def hello(self):      # class method
         print 'hello world'
 
 
-n = Name()  # instantiation
+n = Name()                # Instantiation
 
 print 'Name  :', Name
 print 'Name():', Name()

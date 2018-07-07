@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: Stack data structure implementation
+            LIFO
 """
 __author__ = 'Udhay Prakash'
 
@@ -10,7 +11,7 @@ class Stack:
         self.items = []
 
     def is_empty(self):
-        return self.items == []
+        return self.items == []  # len(self.items) != 0
 
     def push(self, item):
         self.items.insert(0, item)
