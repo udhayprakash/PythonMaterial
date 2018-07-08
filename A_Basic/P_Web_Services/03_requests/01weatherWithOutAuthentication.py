@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Purpose:   Testing https://www.metaweather.com/api/
+
+pip install requests
 """
 
 from pprint import pprint

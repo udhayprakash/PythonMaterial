@@ -1,5 +1,4 @@
 from pprint import pprint
-from xml.etree import ElementTree
 
 import requests
 

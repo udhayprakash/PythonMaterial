@@ -2,6 +2,7 @@ import json
 import urllib2
 import ConfigParser
 import sys 
+from pprint import pprint 
 
 config = ConfigParser.ConfigParser()
 config.read('weather.ini')
@@ -20,7 +21,11 @@ json_string = f.read()
 parsed_json = json.loads(json_string)
 
 # pprint(parsed_json)
+with open('weather.json', 'wb') as g:
+    g.write(json_string)
+    g.close()
+
 location = parsed_json['current_observation']['display_location']['city']
-temp_f = parsed_json['current_observation']['temp_f']
-print "Current temperature in %s is: %s" % (location, temp_f)
+temperature_string = parsed_json['current_observation']['temperature_string']
+print "Current temperature in %s is: %s" % (location, temperature_string)
 f.close()

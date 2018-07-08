@@ -1,219 +1,129 @@
 {
-   "Type" : "D",
-   "Redirect" : "",
-   "AbstractURL" : "https://en.wikipedia.org/wiki/Harsh",
-   "Entity" : "",
-   "Answer" : "",
-   "Heading" : "Harsh",
-   "Abstract" : "",
    "DefinitionSource" : "",
    "AbstractSource" : "Wikipedia",
-   "Definition" : "",
-   "DefinitionURL" : "",
-   "Image" : "",
-   "Infobox" : "",
-   "AbstractText" : "",
-   "ImageIsLogo" : 0,
-   "ImageHeight" : 0,
+   "Redirect" : "",
    "meta" : {
-      "src_domain" : "en.wikipedia.org",
+      "description" : "Wikipedia",
+      "signal_from" : "wikipedia_fathead",
+      "live_date" : null,
       "unsafe" : 0,
-      "dev_date" : null,
-      "developer" : [
-         {
-            "name" : "DDG Team",
-            "url" : "http://www.duckduckhack.com",
-            "type" : "ddg"
-         }
-      ],
-      "src_id" : 1,
-      "production_state" : "online",
       "is_stackexchange" : null,
-      "perl_module" : "DDG::Fathead::Wikipedia",
-      "tab" : "About",
+      "src_id" : 1,
+      "attribution" : null,
       "js_callback_name" : "wikipedia",
       "src_url" : null,
-      "attribution" : null,
-      "blockgroup" : null,
-      "live_date" : null,
-      "created_date" : null,
-      "name" : "Wikipedia",
-      "example_query" : "nikola tesla",
-      "repo" : "fathead",
-      "src_options" : {
-         "src_info" : "",
-         "is_mediawiki" : 1,
-         "skip_icon" : 0,
-         "skip_qr" : "",
-         "language" : "en",
-         "skip_abstract" : 0,
-         "source_skip" : "",
-         "skip_end" : "0",
-         "min_abstract_length" : "20",
-         "skip_abstract_paren" : 0,
-         "is_wikipedia" : 1,
-         "skip_image_name" : 0,
-         "directory" : "",
-         "is_fanon" : 0
-      },
-      "src_name" : "Wikipedia",
-      "designer" : null,
-      "description" : "Wikipedia",
-      "id" : "wikipedia_fathead",
-      "status" : "live",
-      "dev_milestone" : "live",
-      "maintainer" : {
-         "github" : "duckduckgo"
-      },
-      "producer" : null,
       "topic" : [
          "productivity"
       ],
-      "signal_from" : "wikipedia_fathead"
+      "production_state" : "online",
+      "designer" : null,
+      "src_domain" : "en.wikipedia.org",
+      "developer" : [
+         {
+            "type" : "ddg",
+            "url" : "http://www.duckduckhack.com",
+            "name" : "DDG Team"
+         }
+      ],
+      "id" : "wikipedia_fathead",
+      "example_query" : "nikola tesla",
+      "blockgroup" : null,
+      "created_date" : null,
+      "status" : "live",
+      "dev_date" : null,
+      "maintainer" : {
+         "github" : "duckduckgo"
+      },
+      "src_name" : "Wikipedia",
+      "src_options" : {
+         "skip_abstract" : 0,
+         "is_fanon" : 0,
+         "is_wikipedia" : 1,
+         "source_skip" : "",
+         "skip_icon" : 0,
+         "skip_qr" : "",
+         "min_abstract_length" : "20",
+         "language" : "en",
+         "src_info" : "",
+         "skip_end" : "0",
+         "is_mediawiki" : 1,
+         "directory" : "",
+         "skip_abstract_paren" : 0,
+         "skip_image_name" : 0
+      },
+      "dev_milestone" : "live",
+      "name" : "Wikipedia",
+      "producer" : null,
+      "repo" : "fathead",
+      "tab" : "About",
+      "perl_module" : "DDG::Fathead::Wikipedia"
    },
+   "Entity" : "",
+   "ImageWidth" : 0,
+   "Results" : [],
+   "AbstractText" : "",
    "AnswerType" : "",
+   "Answer" : "",
+   "Heading" : "Madhavi",
+   "Abstract" : "",
+   "DefinitionURL" : "",
+   "Type" : "D",
+   "Image" : "",
+   "ImageIsLogo" : 0,
+   "AbstractURL" : "https://en.wikipedia.org/wiki/Madhavi",
+   "Infobox" : "",
    "RelatedTopics" : [
       {
-         "Text" : "Harsha An Indian emperor who ruled North India from 606 to 647 CE. He was a member of the Pushyabhuti...",
-         "Result" : "<a href=\"https://duckduckgo.com/Harsha\">Harsha</a>An Indian emperor who ruled North India from 606 to 647 CE. He was a member of the Pushyabhuti...",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(actress)\">Madhavi (actress)</a>An Indian film actress known for her works in Telugu, Malayalam, Hindi, Tamil, Kannada, Oriya and...",
          "Icon" : {
-            "Height" : "",
-            "Width" : "",
-            "URL" : "https://duckduckgo.com/i/e0a4e6df.jpg"
+            "Height" : 16,
+            "URL" : "https://duckduckgo.com/i/maadhavi.com.ico",
+            "Width" : 16
          },
-         "FirstURL" : "https://duckduckgo.com/Harsha"
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(actress)",
+         "Text" : "Madhavi (actress) An Indian film actress known for her works in Telugu, Malayalam, Hindi, Tamil, Kannada, Oriya and..."
       },
       {
-         "FirstURL" : "https://duckduckgo.com/Griffith_R._Harsh",
-         "Text" : "Griffith R. Harsh An American neurosurgeon. He is married to Hewlett Packard Enterprise President and CEO, Meg...",
-         "Result" : "<a href=\"https://duckduckgo.com/Griffith_R._Harsh\">Griffith R. Harsh</a>An American neurosurgeon. He is married to Hewlett Packard Enterprise President and CEO, Meg...",
+         "Text" : "Madhavi (Silappatikaram) An important character in the Silappatikaram, one of the epics in Tamil literature.",
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(Silappatikaram)",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(Silappatikaram)\">Madhavi (Silappatikaram)</a>An important character in the Silappatikaram, one of the epics in Tamil literature.",
          "Icon" : {
-            "Height" : "",
+            "Width" : "",
             "URL" : "",
-            "Width" : ""
+            "Height" : ""
          }
       },
       {
+         "Text" : "Madhavi (play) A Hindi play written by Bhisham Sahni. This play recounts an ancient tale from the Mahabharata.",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(play)\">Madhavi (play)</a> A Hindi play written by Bhisham Sahni. This play recounts an ancient tale from the Mahabharata.",
          "Icon" : {
             "Width" : "",
             "URL" : "",
             "Height" : ""
          },
-         "Text" : "Harsh Rajput An Indian actor and model who has appeared in television soap operas.",
-         "Result" : "<a href=\"https://duckduckgo.com/Harsh_Rajput\">Harsh Rajput</a>An Indian actor and model who has appeared in television soap operas.",
-         "FirstURL" : "https://duckduckgo.com/Harsh_Rajput"
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(play)"
       },
       {
-         "Topics" : [
-            {
-               "Icon" : {
-                  "Height" : "",
-                  "Width" : "",
-                  "URL" : "https://duckduckgo.com/i/8ee0c217.jpg"
-               },
-               "Text" : "Harsh Chitale The previous CEO of HCL Infosystems.",
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Chitale\">Harsh Chitale</a> The previous CEO of HCL Infosystems.",
-               "FirstURL" : "https://duckduckgo.com/Harsh_Chitale"
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Harsh_Goenka",
-               "Icon" : {
-                  "Width" : "",
-                  "URL" : "https://duckduckgo.com/i/74e7a436.jpg",
-                  "Height" : ""
-               },
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Goenka\">Harsh Goenka</a>Harsh Goenka has been the chairman of RPG Enterprises, one of India's largest business groups...",
-               "Text" : "Harsh Goenka Harsh Goenka has been the chairman of RPG Enterprises, one of India's largest business groups..."
-            },
-            {
-               "Icon" : {
-                  "Height" : "",
-                  "Width" : "",
-                  "URL" : "https://duckduckgo.com/i/1bbec8d8.jpg"
-               },
-               "Text" : "Harsh Mander An activist, who works with survivors of mass violence and hunger, as well as homeless persons...",
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mander\">Harsh Mander</a>An activist, who works with survivors of mass violence and hunger, as well as homeless persons...",
-               "FirstURL" : "https://duckduckgo.com/Harsh_Mander"
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Harsh_Mankad",
-               "Icon" : {
-                  "Height" : "",
-                  "URL" : "",
-                  "Width" : ""
-               },
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mankad\">Harsh Mankad</a>A former world ranked ATP Professional tennis player from India.",
-               "Text" : "Harsh Mankad A former world ranked ATP Professional tennis player from India."
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Harsh_Mayar",
-               "Text" : "Harsh Mayar An Indian film actor working in Hindi Bollywood films.",
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Mayar\">Harsh Mayar</a>An Indian film actor working in Hindi Bollywood films.",
-               "Icon" : {
-                  "Height" : "",
-                  "Width" : "",
-                  "URL" : "https://duckduckgo.com/i/cfb3bcdc.jpg"
-               }
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Harsh_Narain",
-               "Text" : "Harsh Narain An Indian author. He has a Ph.D. from Lucknow University, and was a professor at Banaras Hindu...",
-               "Result" : "<a href=\"https://duckduckgo.com/Harsh_Narain\">Harsh Narain</a>An Indian author. He has a Ph.D. from Lucknow University, and was a professor at Banaras Hindu...",
-               "Icon" : {
-                  "Width" : "",
-                  "URL" : "",
-                  "Height" : ""
-               }
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/John_Harsh",
-               "Icon" : {
-                  "URL" : "",
-                  "Width" : "",
-                  "Height" : ""
-               },
-               "Result" : "<a href=\"https://duckduckgo.com/John_Harsh\">John Harsh</a> An American farmer and politician.",
-               "Text" : "John Harsh An American farmer and politician."
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/Vivian_G._Harsh",
-               "Text" : "Vivian G. Harsh Vivian G. Harsh was an American librarian.",
-               "Result" : "<a href=\"https://duckduckgo.com/Vivian_G._Harsh\">Vivian G. Harsh</a>Vivian G. Harsh was an American librarian.",
-               "Icon" : {
-                  "URL" : "",
-                  "Width" : "",
-                  "Height" : ""
-               }
-            }
-         ],
-         "Name" : "People"
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(TV_series)",
+         "Icon" : {
+            "Height" : "",
+            "URL" : "https://duckduckgo.com/i/91942591.png",
+            "Width" : ""
+         },
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(TV_series)\">Madhavi (TV series)</a>An Tamil soap opera that aired on Sun TV from 21 December 2009 to 11 November 2011 on Monday...",
+         "Text" : "Madhavi (TV series) An Tamil soap opera that aired on Sun TV from 21 December 2009 to 11 November 2011 on Monday..."
       },
       {
-         "Topics" : [
-            {
-               "FirstURL" : "https://duckduckgo.com/Harshness",
-               "Text" : "Harshness A Non-Contextual Low-Level Audio Descriptors that represents one dimension of the...",
-               "Result" : "<a href=\"https://duckduckgo.com/Harshness\">Harshness</a>A Non-Contextual Low-Level Audio Descriptors that represents one dimension of the...",
-               "Icon" : {
-                  "URL" : "",
-                  "Width" : "",
-                  "Height" : ""
-               }
-            },
-            {
-               "FirstURL" : "https://duckduckgo.com/d/Harsh_Vardhan",
-               "Icon" : {
-                  "Width" : "",
-                  "URL" : "",
-                  "Height" : ""
-               },
-               "Result" : "<a href=\"https://duckduckgo.com/d/Harsh_Vardhan\">Harsh Vardhan Meanings</a>  Multiple people.",
-               "Text" : "Harsh Vardhan Meanings Multiple people."
-            }
-         ],
-         "Name" : "See also"
+         "Text" : "Madhavi (1969 film) A 1969 Bollywood film starring Aruna Irani.",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(1969_film)\">Madhavi (1969 film)</a> A 1969 Bollywood film starring Aruna Irani.",
+         "Icon" : {
+            "Height" : "",
+            "URL" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(1969_film)"
       }
    ],
-   "Results" : [],
-   "ImageWidth" : 0
+   "ImageHeight" : 0,
+   "Definition" : ""
 }
