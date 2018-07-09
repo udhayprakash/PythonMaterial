@@ -39,7 +39,7 @@ print
 print 'Division'
 print 'num1 / num2 = ', num1 / num2
 
-
+print
 # integers - int, long, float
 print 'type(num1)= ', type(num1)
 print 'type(num2)= ', type(num2)
