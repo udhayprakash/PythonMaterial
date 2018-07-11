@@ -17,6 +17,7 @@ costOfMango = 5
 quantityOfApples = float(raw_input('quantityOfApples='))
 quantityOfMangos = float(raw_input('quantityOfMangos='))
 print "type(quantityOfApples) = ", type(quantityOfApples)
+print 'quantityOfApples:', quantityOfApples
 
 TotalCost = (costOfApple * quantityOfApples) + (costOfMango * quantityOfMangos)
 print "Total Cost = ", TotalCost

@@ -1,17 +1,25 @@
 #!/usr/bin/python
 """
-Purpose: Grocery Store Demonstration
+Purpose:  Grocery Store application 
 
-Products: Apples and Mangos
-
+Store items:
+    Rice 
+    wheat
 """
 
-costOfApples = 12
-costOfMangos = 5
+# selling price
+rice_selling_price = 52 # per kg 
+wheat_selling_price = 40 # per kg 
 
-quantityOfApples = 3
-quantityOfMangos = 7
+# quantity (in kgs)
+rice_quantity = 12 
+wheat_quantity = 5
 
-# TotalCost = (costOfApples * quantityOfApples) + (costOfMangos * quantityOfMangos)
-TotalCost = costOfApples * quantityOfApples + costOfMangos * quantityOfMangos  # PEMDAS rule
-print "Total Cost = ", TotalCost
+# costs
+cost_of_rice = rice_selling_price * rice_quantity
+cost_of_wheat = wheat_selling_price * wheat_quantity
+
+
+# amount to pay 
+total_cost = cost_of_rice + cost_of_wheat
+print "total_cost", total_cost
