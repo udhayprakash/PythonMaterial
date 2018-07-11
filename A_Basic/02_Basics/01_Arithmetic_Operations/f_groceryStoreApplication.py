@@ -9,13 +9,14 @@ Products: Apples and Mangos
 costOfApple = 12
 costOfMango = 5
 
-quantityOfApples = input('quantityOfApples=')
+quantityOfApples = input('Enter quantity of Apples:')
 quantityOfMangos = input('quantityOfMangos=')
 print "type(quantityOfApples) = ", type(quantityOfApples)
 
-TotalCost = (costOfApple * quantityOfApples) + (costOfMango * quantityOfMangos)
+TotalCost = ((costOfApple * quantityOfApples) 
+    + (costOfMango * quantityOfMangos))
 print "Total Cost = ", TotalCost
-# NOTE: Due to security issues, input() is discarded
+# # NOTE: Due to security issues, input() is discarded
 
 """
 #python 04_groceryStoreApplication.1.py
