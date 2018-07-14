@@ -1,3 +1,9 @@
+#!/usr/bin/python
+"""
+
+pip install pillow
+"""
+
 from PIL import Image, ImageDraw
 
 img = Image.new('RGB', (60, 30), color = 'red')
