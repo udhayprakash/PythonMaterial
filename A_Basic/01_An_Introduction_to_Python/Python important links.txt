@@ -12,6 +12,15 @@ VC++ compiler for python (needed in windows only)
 	- https://www.microsoft.com/en-in/download/details.aspx?id=44266
 	- download and install 
 
+
+
+Python Environment Variable setup
+---------------------------
+MacOS X ( edit)
+
+
+Juypter(ipython) setup
+-----------------------
 Open new cmd prompt, and type 
 	python -m pip install jupyter 
 	
