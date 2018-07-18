@@ -16,7 +16,18 @@ VC++ compiler for python (needed in windows only)
 
 Python Environment Variable setup
 ---------------------------
-MacOS X ( edit)
+MacOS X ( edit ~/.profile):
+	Step 1: export PATH=<pydir>:$PATH
+
+UNIX/Linux (edit ~/.bashrc):
+	Step 1: export PATH=<pydir>:$PATH
+
+Windows:
+	Step 1: Open Advanced System Settings control panel 
+	Step 2: Click Environment Variables. Edit PATH	
+			Add ;<pydir> at the end 
+
+
 
 
 Juypter(ipython) setup
