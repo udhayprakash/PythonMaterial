@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""
+"""  
 divmod(x,y) returns x//y, x%y 
 """
 
