@@ -14,3 +14,8 @@ print 'type(junkData) = ', type(junkData)
 junkData = "$%^%^&^* &^'*&^ * uhk"  # single quote enclosed in double quotes
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
+
+
+
+
+

@@ -21,3 +21,6 @@ print "type(myString) =", type(myString)
 
 print '===================================='
 print myString
+
+
+

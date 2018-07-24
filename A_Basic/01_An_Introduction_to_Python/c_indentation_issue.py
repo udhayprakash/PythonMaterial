@@ -4,7 +4,7 @@ Purpose: Indentation Issues demo
 """
 __author__ = "PYthon Tutor"
 
-print "Hello World"
+print "Hello World"    
 
 summation = 34 + 99
 # dynamic typed languages 
@@ -30,3 +30,12 @@ if 2 < 3:
 # tabs vs white-space
 # PEP 8 (Python Enhancement Proposal) - code style guide
 # four white-spaces
+
+
+
+
+
+
+
+
+

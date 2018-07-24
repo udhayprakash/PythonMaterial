@@ -23,3 +23,11 @@ cost_of_wheat = wheat_selling_price * wheat_quantity
 # amount to pay 
 total_cost = cost_of_rice + cost_of_wheat
 print "total_cost", total_cost
+
+
+
+
+
+
+
+

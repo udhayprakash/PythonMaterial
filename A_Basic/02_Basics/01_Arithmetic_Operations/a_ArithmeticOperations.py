@@ -46,6 +46,7 @@ print 'type(num2)= ', type(num2)
 
 # int < long < float
 # int + int  = int
+# int / int  = int 
 
 # int + long = long
 # int + float = float

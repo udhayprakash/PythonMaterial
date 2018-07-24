@@ -21,3 +21,9 @@ print 'quantityOfApples:', quantityOfApples
 
 TotalCost = (costOfApple * quantityOfApples) + (costOfMango * quantityOfMangos)
 print "Total Cost = ", TotalCost
+
+
+
+
+
+
