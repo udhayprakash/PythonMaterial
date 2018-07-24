@@ -34,3 +34,12 @@ print 'type(a)=', type(a)
 
 
 
+
+
+
+
+
+
+
+
+
