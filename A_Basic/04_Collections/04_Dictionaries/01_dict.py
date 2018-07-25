@@ -1,7 +1,8 @@
 mydict = {
     'name': 'udhay',
     'blog': 'udhayprakash.blogspot.in', 
-    'age': 99
+    'age': 99, 
+    'titles': ('Dr', 'Mr')
 }
 
 print mydict

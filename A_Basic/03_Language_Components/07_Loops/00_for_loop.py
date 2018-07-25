@@ -16,7 +16,24 @@ numbers = [12, 34, 5, 6, 7, 99, 888]
 
 # Iterating over a list of elements
 for number in numbers:
-    print number
+    print number,
+print
 
 for index, number in enumerate(numbers):
     print index, '-->', number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
