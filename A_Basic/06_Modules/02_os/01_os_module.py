@@ -4,7 +4,7 @@ print os.path.dirname("/home/user/temp.txt")   # /home/user
 print os.path.abspath('temp.txt')              # /home/user/temp.txt
 print os.path.realpath("/home/user/temp.txt")
 print
-print os.path.splitext("/home/user/temp.txt")  # ('/home/user/temp', '.txt')
+print os.path.splitext("/home/user/temp.log")  # ('/home/user/temp', '.log')
 print os.path.splitdrive("/home/user/temp.txt")  # ('', '/home/user/temp.txt')
 print os.path.extsep                            # .
 print os.sep                                    # /

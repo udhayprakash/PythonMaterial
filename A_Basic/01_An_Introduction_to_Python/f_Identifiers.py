@@ -3,7 +3,7 @@
 
 # Identifier naming conventions
 ################################
-# first character     : a-z, A-Z, _ 
+# first character     :  a-z, A-Z, _ 
 # remaining characters:  a-z, A-Z, 0-9, _
 
 name = 'python'

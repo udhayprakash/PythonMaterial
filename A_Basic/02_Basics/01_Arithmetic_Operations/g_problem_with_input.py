@@ -1,8 +1,9 @@
-import os
-import sys
- 
+import os 
+
 data = input()
- 
+
+print "entered data is", data
+print type(data)
 print "done"
 
 """

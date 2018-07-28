@@ -3,7 +3,7 @@
 purpose: comment operator
 """
 
-print 'Hello World1'
+print 'Hello World1'#
 
 print 'Hello ' 'World2'#,
 

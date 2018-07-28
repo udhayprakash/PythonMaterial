@@ -36,3 +36,14 @@ delta = tomorrow - local_now
 print('tomorrow - now = {}'.format(delta))
 print('days: {}, seconds: {}'.format(delta.days, delta.seconds))
 print('total seconds: {}'.format(delta.total_seconds()))
+
+
+
+
+
+
+
+
+
+
+

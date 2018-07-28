@@ -30,7 +30,7 @@ print
 print 4j
 # print j4 # NameError: name 'j4' is not defined
 
-# NOTE: 4\*j, j4, j*4 are not possible. 
+# NOTE: 4*j, j4, j*4 are not possible. 
 # In these cases, interpreter treats 'j' as a variable.
 
 print "num1.real + num2.imag =", num1.real + num2.imag
@@ -44,3 +44,4 @@ print "complex(2,0)", complex(2, 0)
 
 # == checks value equivalence
 print "(3 + 4j) == (4j + 3)= ", (3 + 4j) == (4j + 3)
+print "(3 + 4j) == (4 + 3j)= ", (3 + 4j) == (4 + 3j)

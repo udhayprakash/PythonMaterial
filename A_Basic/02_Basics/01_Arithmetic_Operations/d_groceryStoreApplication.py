@@ -8,7 +8,7 @@ Store items:
 """
 
 # selling price
-rice_selling_price = 52 # per kg 
+rice_selling_price = 52  # per kg 
 wheat_selling_price = 40 # per kg 
 
 # quantity (in kgs)
