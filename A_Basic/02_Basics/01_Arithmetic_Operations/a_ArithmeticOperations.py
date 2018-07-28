@@ -37,7 +37,7 @@ print 'Multiplication'
 print 'num1 * num2 = ', num1 * num2
 print
 print 'Division'
-print 'num1 / num2 = ', num1 / num2
+print 'num1 / num2 = ', num1 / num2 
 
 print
 # integers - int, long, float
@@ -91,8 +91,11 @@ print 'float(num1 / num2) = ', float(num1 / num2)   #wrong
 
 print
 print 'floor division  //'
+print '10//2', 10//2
+print '10//5', 10//5
+
 print '10/3 = ', 10/3
-print '10//3 = ', 10//3
+print '10//3 = ', 10//3    # 3 < 3.3333 < 4
 print
 print '10/3.0 = ', 10/3.0
 print '10//3.0 = ', 10//3.0   # 3 < 3.3333 < 4 

@@ -1,12 +1,11 @@
 import argparse
 
-
 def main(m, n, p):
     """ Short script to add three numbers """
     return m + n + p
 
 
-print '__name__', __name__
+# print '__name__', __name__
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

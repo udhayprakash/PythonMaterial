@@ -9,7 +9,8 @@ print "Hello World"
 summation = 34 + 99
 # dynamic typed languages 
 
-print summation
+
+print summation     
 
 print "Summation result is ", summation  # , (comma) operator works as a logic separator
 

@@ -12,7 +12,7 @@ a = 12
 b = 34
 
 c = a + b
-print 'c=', c
+print 'c=', c   # , logic separator
 
 type(a)  # until we place print statement, nothing from the script will be
          # displayed on console

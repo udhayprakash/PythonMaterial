@@ -45,14 +45,18 @@ print 'myNewNumber = ', myNewNumber
 # 4-  0 1 0 0
 # <<  1 0 0 0
 
+# 13  1 1 0 1
+#  7  0 1 1 1
+# 15  1 1 1 1
+
 result = 14 >> 2
 print "14 >> 2 = ", result
 #        8 4 2 1
 # 14     1 1 1 0
 # >>2    0 0 1 1
 
-# result = 3 << 2
-# print "3 << 2 = ", result
-# #       8 4 2 1
-# # 3      0 0 1 1
-# # <<2    1 1 0 0  = > 12
+result = 3 << 2
+print "3 << 2 = ", result
+#        8 4 2 1
+# 3      0 0 1 1
+# <<2    1 1 0 0  =>  12

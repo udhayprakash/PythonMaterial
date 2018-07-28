@@ -14,7 +14,7 @@ another_tuple = (99,)
 print 'type(another_tuple)',type(another_tuple)
 print 'len(mytuple)', len(mytuple)
 
-empty_tuple = ()
+empty_tuple = () 
 print 'type(empty_tuple)',type(empty_tuple)
 print 'len(empty_tuple)', len(empty_tuple)
 

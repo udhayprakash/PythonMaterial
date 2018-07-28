@@ -15,3 +15,16 @@ divisibility_test(6, 9)
 divisibility_test(6.0, 6)
 divisibility_test(-6, 9.0)
 divisibility_test(-6, -6)
+
+
+
+
+
+
+
+
+
+
+
+
+
