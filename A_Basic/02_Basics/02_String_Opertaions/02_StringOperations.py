@@ -15,7 +15,8 @@ junkData = "$%^%^&^* &^'*&^ * uhk"  # single quote enclosed in double quotes
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
-
+myString = 'what\'s next'
+print myString
 
 
 

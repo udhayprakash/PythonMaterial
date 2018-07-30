@@ -9,7 +9,7 @@ Products: Apples and Mangos
 costOfApple = 12
 costOfMango = 5
 # NOTE: raw_input() takes every input as a string type only
-#       raw_input() in python 2 is input() in python 3 
+#       raw_input() in python 2 is input() in python 3
 
 # quantityOfApples = raw_input('quantityOfApples=')
 # quantityOfMangos = raw_input('quantityOfMangos=')
