@@ -4,20 +4,20 @@
 Purpose: Demonstration of Arithmetic Operations
 
 
-Integer family 
-    int 
-    long 
-    float 
+Integer family
+	int
+	long
+	float
 
-    complex
-    bool
+	complex
+	bool
 """
 
 # + - * / // %
 # NOTE: PEP 8 recommends to place one space around the operator
 
-num1 = 10       # int 
-num2 = 200      # int 
+num1 = 10       # int
+num2 = 200      # int
 
 
 print "num1=", num1
@@ -37,7 +37,7 @@ print 'Multiplication'
 print 'num1 * num2 = ', num1 * num2
 print
 print 'Division'
-print 'num1 / num2 = ', num1 / num2 
+print 'num1 / num2 = ', num1 / num2
 
 print
 # integers - int, long, float
@@ -46,7 +46,7 @@ print 'type(num2)= ', type(num2)
 
 # int < long < float
 # int + int  = int
-# int / int  = int 
+# int / int  = int
 
 # int + long = long
 # int + float = float
@@ -64,7 +64,7 @@ print 'num1 + num3= ', num1 + num3  # int + long = long
 
 # going back to division
 
-print '10/2= ', 10/2   # int/int = int 
+print '10/2= ', 10/2   # int/int = int
 print '10/5= ', 10/5   # int/int = int
 
 print '10/3= ', 10/3        # int/int = int         # 3
@@ -86,7 +86,7 @@ print '10/float(3)= ', 10/float(3)
 
 print
 print 'num1 / num2 = ', num1 / num2   # int/int
-print 'float(num1) / num2 = ', float(num1) / num2 
+print 'float(num1) / num2 = ', float(num1) / num2
 print 'float(num1 / num2) = ', float(num1 / num2)   #wrong
 
 print
@@ -98,7 +98,7 @@ print '10/3 = ', 10/3
 print '10//3 = ', 10//3    # 3 < 3.3333 < 4
 print
 print '10/3.0 = ', 10/3.0
-print '10//3.0 = ', 10//3.0   # 3 < 3.3333 < 4 
+print '10//3.0 = ', 10//3.0     # 3 < 3.3333 < 4
 print '-10//3.0 = ', -10//3.0   # -4 < -3.3333 <  -3
 
 

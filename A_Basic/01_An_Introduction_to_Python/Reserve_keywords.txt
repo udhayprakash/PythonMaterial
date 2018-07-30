@@ -17,3 +17,12 @@ assert   else         import        pass
 break    except       in            raise
 
 NOTE: These reserved keywords should not be used for the names of user-defined identifiers.
+
+======================
+
+variable
+    keyword  -- variables defined by the language 
+    identifier  --- variables defined by user
+
+
+object

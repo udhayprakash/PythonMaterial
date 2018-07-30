@@ -28,7 +28,7 @@ print 'language[-0] :', language[-0]
 print 'language[-3] :', language[-3]
 
 print 'language[-18] :', language[-18]
-# print 'language[-19] :', language[-19] # # IndexError
+# print 'language[-19] :', language[-19]  # IndexError
 
 print '------------------------------'
 print 'String Slicing'
@@ -45,8 +45,9 @@ print language[0:5]
 print language[0:6]
 
 print language[7:18]
-print language[7:999]  # 999 index isn't present
-print language[45:87]  # indexes are not present
+print 'language[7:999]', language[7:999]  # 999 index isn't present
+print 'language[45:87]', language[45:87]  # indexes are not present
+
 # string slicing - string[start_index: final_index: step]
 # Default - step = +1
 
@@ -55,8 +56,8 @@ print "language[7:18:1] =", language[7:18:1]
 print "language[7:18:3] =", language[7:18:3]
 print language[7:18:-1]  # 7-1 = 6 ; it is not between 7 and 18
 
-print language[18:7:-1]  # 18-1 = 17
-print language[18:7:-3]  # 18-3 = 15
+print 'language[18:7:-1]', language[18:7:-1]  # 18-1 = 17
+print 'language[18:7:-3]', language[18:7:-3]  # 18-3 = 15
 
 # default start_index = 0
 # default final_index = last index of string + 1
@@ -73,6 +74,6 @@ print 'language[::3] :', language[::3]
 
 print 'language[::-1] :', language[::-1]  # string reversal
 # equal to language[17:-1:-1]
-# If step is -ve, and start_index and final_index were not given, 
+# If step is -ve, and start_index and final_index were not given,
 # then start_index = last string index and
 # final_index = 0
