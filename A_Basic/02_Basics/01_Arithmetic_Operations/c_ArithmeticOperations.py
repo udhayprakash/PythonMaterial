@@ -33,6 +33,12 @@ print 'myNumber = ', myNumber
 myNumber %= 10  # myNumber = myNumber % 10
 print 'myNumber = ', myNumber
 
+
+
+
+
+
+
 print '-----------------------------------------------'
 print 'bitwise Operations'
 # >> <<
@@ -42,7 +48,7 @@ print 'myNewNumber =', myNewNumber
 myNewNumber <<= 1  # myNewNumber = myNewNumber << 1
 print 'myNewNumber = ', myNewNumber
 #     8 4 2 1
-# 4-  0 1 0 0
+# 4   0 1 0 0
 # <<  1 0 0 0
 
 # 13  1 1 0 1

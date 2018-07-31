@@ -16,7 +16,7 @@ print "type(quantityOfApples) = ", type(quantityOfApples)
 TotalCost = ((costOfApple * quantityOfApples) 
     + (costOfMango * quantityOfMangos))
 print "Total Cost = ", TotalCost
-# # NOTE: Due to security issues, input() is discarded
+# NOTE: Due to security issues, input() is discarded
 
 """
 #python 04_groceryStoreApplication.1.py
