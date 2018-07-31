@@ -20,3 +20,14 @@ print myString
 
 
 
+print "'"
+print '"'
+print '\''
+
+print "'''  '''"
+
+print '""'
+print "''"
+
+print ''' """ """ '''
+print """ ''' ''' """

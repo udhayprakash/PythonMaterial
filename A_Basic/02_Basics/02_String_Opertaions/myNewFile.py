@@ -56,14 +56,3 @@ name = 'yash'; print 'My name is ', name
 print "who's name is ", name, '?'
 
 
-print "'"
-print '"'
-print '\''
-
-print "'''  '''"
-
-print '""'
-print "''"
-
-print ''' """ """ '''
-print """ ''' ''' """

@@ -26,7 +26,7 @@ print "89 == 89", 89 == 89  # dont confuse with = (assignment Operator)
 
 
 print "12 != 12.0  ", 12 != 12.0
-print "12 != 12.1  ", 12 != 12.1
+print "12 != 12.1  ", 12 != 12.1   # <>
 
 
 

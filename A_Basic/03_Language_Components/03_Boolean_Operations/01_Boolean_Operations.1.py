@@ -1,9 +1,10 @@
 #!/usr/bin/python
 """
 Purpose: Boolean Operations
+
+    True, False
 """
 
-# True, False
 
 choice = True
 print 'choice = ', choice
