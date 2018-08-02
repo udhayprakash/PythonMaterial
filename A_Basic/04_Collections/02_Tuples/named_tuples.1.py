@@ -2,7 +2,7 @@
 """
 named tuples provide 
 1. access by index - like normal tuples
-2. access by keynaame - like dictionaries
+2. access by keyname - like dictionaries
 3. using getattr()
 """
 import collections
@@ -20,6 +20,8 @@ print S[1]
 # Access using name 
 print "The Student name using keyname is : "
 print S.name
+print S.age
+print S.DOB
 
 # Access using getattr()
 print "The Student DOB using getattr() is : "
