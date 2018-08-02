@@ -1,6 +1,11 @@
 #!/usr/bin/python
 """
 Purpose: range() and xrange()
+
+
+range(initialValue, finalValue, step)
+default initialValue = 0
+default step = +1
 """
 
 values = range(9)  # builtin function
@@ -15,9 +20,6 @@ print values1
 values2 = range(0, 9, 1)  # builtin function
 print values2
 
-# range(initialValue, finalValue, step)
-# default initialValue = 0
-# default step = +1
 
 values3 = range(9, 0, -1)  # builtin function
 print values3
@@ -38,7 +40,7 @@ print values1
 values2 = xrange(0, 9, 1)  # builtin function
 print values2
 
-# range(initialValue, finalValue, step)
+# xrange(initialValue, finalValue, step)
 # default initialValue = 0
 # default step = +1
 

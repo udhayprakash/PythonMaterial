@@ -9,10 +9,16 @@ is not
 
 == - object level equivalence ( value and type) check
 is - object level equivalence (address location, value and type) check
+
+Object
+    - value(s)
+    - type(s)
+    - address location where it is stored
 """
 
-print '4 == 4', 4 == 4
-print '4 is 4', 4 is 4
+print '4 == 4  ', 4 == 4
+print '4 == "4"', 4 == "4"
+print '4 is 4  ', 4 is 4
 
 a = 100
 b = 200
@@ -21,12 +27,15 @@ print 'a=', a, 'b=', b
 
 print 'a == b ', a == b
 print 'a is b ', a is b
+print 'id(a)=', id(a), 'id(b)', id(b)  # id(a)= 4368732 id(b) 4368732
+print
 
 a = 200
 print 'a=', a, 'b=', b
 print 'id(a)=', id(a), 'id(b)', id(b)  # id(a)= 4368732 id(b) 4368732
 print 'a == b ', a == b
 print 'a is b ', a is b
+print
 
 m = 300
 n = 300
@@ -34,6 +43,7 @@ print 'm=', m, 'n=', n
 print 'id(m)=', id(m), 'id(n)', id(n)  # id(m)= 36645972 id(n) 36645972
 print 'm == n ', m == n
 print 'm is n ', m is n
+print
 
 a = 255
 b = 255

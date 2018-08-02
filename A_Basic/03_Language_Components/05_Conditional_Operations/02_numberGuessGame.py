@@ -6,11 +6,12 @@ luckyNumber = 67
 """
 __author__ = 'Python Tutor'
 
+luckyNumber = 67
+
 guessingNumber = int(raw_input('Enter a number:'))
 print 'type(guessingNumber)', type(guessingNumber)
 print 'You entered ', guessingNumber
 
-luckyNumber = 67
 
 if (guessingNumber == luckyNumber):
     print 'You Guessed the Correct Number!'

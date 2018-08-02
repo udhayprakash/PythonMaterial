@@ -9,8 +9,10 @@ while a < MAX:  # condition
     b = MIN
     while b < MAX:
         b += 1
-        # print a, '*', b, '=', a * b, '|'
-        print '| %2d * %2d = %3d  |' % (a, b, a * b)
+        # print a,  '*', b, '=', a*b
+        # print "{} * {} = {}".format(a, b, a*b)
+        # print "%d * %d = %d" % (a, b, a * b)
+        print "%2d * %2d = %3d" % (a, b, a * b)
     print '-' * 18
 else:
     print 'All iterations in while loop completed'
