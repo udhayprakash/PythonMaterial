@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 mylist = [12, 34, 5, 6, 8]
-print 'type(mylist)', type(mylist)
-print 'len(mylist)', len(mylist)
+print 'type(running_ports)', type(mylist)
+print 'len(running_ports)', len(mylist)
 
 mytuple = (12, 34, 5, 6, 8, (5,))
 print 'type(mytuple)',type(mytuple)

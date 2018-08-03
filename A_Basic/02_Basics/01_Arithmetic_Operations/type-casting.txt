@@ -9,9 +9,3 @@ type-casting is present in python 2.x only
         0 < 0.2 < 1
         2 < 2.5 < 3
 
-assignment:
-        ? 5//-2    -- -3 < -2.5 < -2
-        ? -5//2.0  -- -3.0
-
-        ? pow(25,1/2) --
-        ? 2.3e4

@@ -1,14 +1,14 @@
 
 mylist = [1, 2, 3]
 #         0  1  2
-print 'mylist', mylist
-print 'type(mylist)', type(mylist)
+print 'running_ports', mylist
+print 'type(running_ports)', type(mylist)
 
-print 'mylist[2]', mylist[2]
+print 'running_ports[2]', mylist[2]
 mylist[2] = '3333'
-print 'mylist[2]', mylist[2]
+print 'running_ports[2]', mylist[2]
 
-print 'mylist', mylist
+print 'running_ports', mylist
 
 print '-------------tuple'
 
