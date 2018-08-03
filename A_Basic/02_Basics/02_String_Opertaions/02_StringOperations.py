@@ -11,7 +11,7 @@ junkData = '$%^%^&^* &^\'*&^ * uhk'  # escaping '
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
-junkData = "$%^%^&^* &^'*&^ * uhk"  # single quote enclosed in double quotes
+junkData = "$%^%'^&^* &^'*&^' * uhk"  # single quote enclosed in double quotes
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
@@ -24,7 +24,7 @@ print "'"
 print '"'
 print '\''
 
-print "'''  '''"
+print "''' ' '''"
 
 print '""'
 print "''"
