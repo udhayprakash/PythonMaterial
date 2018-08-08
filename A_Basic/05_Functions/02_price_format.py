@@ -18,19 +18,3 @@ def formatted_result(price):
 print formatted_result(4321)  # '43 dollor(s) and 21 cent(s)'
 
 print formatted_result(501)  # '5 dollor(s) and 1 cent(s)'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
