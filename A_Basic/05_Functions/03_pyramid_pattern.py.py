@@ -20,7 +20,7 @@ def triangle(n):
     k = 2 * n - 2
     for i in range(0, n):
         for j in range(0, k):
-            print()
+            print()  # observe the difference after importing print_function
             k = k - 1
     for j in range(0, i + 1):
         print("* ")
