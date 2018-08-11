@@ -8,10 +8,10 @@ import sys
 
 # for i in  dir(sys):
 #     print i
-#
-#
+
+print "sys.platfom", sys.platform
 # print '-' * 80
-#
+
 # # Run time value
 # word = raw_input('Enter some word:')
 

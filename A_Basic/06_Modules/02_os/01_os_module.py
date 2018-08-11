@@ -5,9 +5,10 @@ print os.path.abspath('temp.txt')              # /home/user/temp.txt
 print os.path.realpath("/home/user/temp.txt")
 print
 print os.path.splitext("/home/user/temp.log")  # ('/home/user/temp', '.log')
+print os.path.splitext("temp.log")             # ('temp', '.log')
 print os.path.splitdrive("/home/user/temp.txt")  # ('', '/home/user/temp.txt')
 print os.path.extsep                            # .
-print os.sep                                    # /
+print os.sep                                    # / 
 print 
 
 print os.getcwd()
