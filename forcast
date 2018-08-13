@@ -1,15 +1,5 @@
-02/08   - lists
-03/08   - tuple
-04/08   - set, dictionary
-05/08   - functions
-06/08   - sys, os, random, argparse, getpass
-07/08   - subprocess, time related, user- defined
-08/08   - exceptions
-09/08   - file operations
-10/08	- debugging, logging
-11/08   - web services
-12/08   - iterators, generators
-13/08   - OOP
+12/08   - exceptions, file operations, debugging, logging
+13/08   - web services
 14/08   - OOP, decorators, code quality
 15/08   - regular expressions
 16/08   - PEP 8, python 2 to 3 conversion, ...
