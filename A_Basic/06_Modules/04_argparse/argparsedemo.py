@@ -9,7 +9,7 @@ def main(m, n, p):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Add three numbers")
+        description="Script to add three numbers")
     parser.add_argument('-a',
                         help='First value',
                         type=float,

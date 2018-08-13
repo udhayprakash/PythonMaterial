@@ -9,7 +9,7 @@ import sys
 # for i in  dir(sys):
 #     print i
 
-print "sys.platfom", sys.platform
+print("sys.platfom", sys.platform)
 # print '-' * 80
 
 # # Run time value
