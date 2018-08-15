@@ -28,3 +28,6 @@ def second_assert_demo():
         print "Handle the error here.  The message is: %s" % message
 
 print 'From the interpreter call first_assert_demo() and second_assert_demo()'
+
+# first_assert_demo()
+second_assert_demo()
