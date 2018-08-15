@@ -1,3 +1,4 @@
+from __future__ import print_function
 import urllib
 import xml.etree.ElementTree as ET
 
@@ -22,6 +23,7 @@ while True:
 
     print('lat', lat, 'lng', lng)
     print(location)
-    print '-' * 80
+    print('-' * 80)
     choice = raw_input("Do you want to retry: Y or N: ")
-    if choice.lower() == 'n': break
+    if choice.lower() == 'n':
+        break

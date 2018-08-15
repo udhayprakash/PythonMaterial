@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+    <status>OK</status>
+    <result>
+        <type>country</type>
+        <type>political</type>
+        <formatted_address>Djibouti</formatted_address>
+        <address_component>
+            <long_name>Djibouti</long_name>
+            <short_name>DJ</short_name>
+            <type>country</type>
+            <type>political</type>
+        </address_component>
+        <geometry>
+            <location>
+                <lat>11.8251380</lat>
+                <lng>42.5902750</lng>
+            </location>
+            <location_type>APPROXIMATE</location_type>
+            <viewport>
+                <southwest>
+                    <lat>10.9129530</lat>
+                    <lng>41.7708460</lng>
+                </southwest>
+                <northeast>
+                    <lat>12.7136972</lat>
+                    <lng>43.4839000</lng>
+                </northeast>
+            </viewport>
+            <bounds>
+                <southwest>
+                    <lat>10.9129530</lat>
+                    <lng>41.7708460</lng>
+                </southwest>
+                <northeast>
+                    <lat>12.7136972</lat>
+                    <lng>43.4839000</lng>
+                </northeast>
+            </bounds>
+        </geometry>
+        <place_id>ChIJAfb5NGfUIhYRiFsP76e7chQ</place_id>
+    </result>
+</GeocodeResponse>
