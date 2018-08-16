@@ -1,18 +1,18 @@
-asn: AS134305
-city: Hyderabad
-continent_code: AS
-country: IN
-country_calling_code: '+91'
-country_name: India
-currency: INR
+asn: AS7922
+city: Nashua
+continent_code: NA
+country: US
+country_calling_code: '+1'
+country_name: United States
+currency: USD
 in_eu: false
-ip: 157.119.108.242
-languages: en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc
-latitude: '17.375300'
-longitude: '78.474400'
-org: Sampath Venkateswara Communications Pvt Ltd.
-postal: null
-region: Telangana
-region_code: TG
-timezone: Asia/Kolkata
-utc_offset: '+0530'
+ip: 24.61.88.57
+languages: en-US,es-US,haw,fr
+latitude: '42.730500'
+longitude: '-71.495800'
+org: Comcast Cable Communications, LLC
+postal: '03062'
+region: New Hampshire
+region_code: NH
+timezone: America/New_York
+utc_offset: '-0400'

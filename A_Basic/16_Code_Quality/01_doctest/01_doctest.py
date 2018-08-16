@@ -1,3 +1,6 @@
+import doctest
+
+
 def square(x):
     """Return the square of x.
 
@@ -11,6 +14,4 @@ def square(x):
 
 
 if __name__ == '__main__':
-    import doctest
-
     doctest.testmod()

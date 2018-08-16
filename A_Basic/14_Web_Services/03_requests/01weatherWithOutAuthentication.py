@@ -4,6 +4,14 @@
 Purpose:   Testing https://www.metaweather.com/api/
 
 pip install requests
+
+http request methods
+    GET
+    POST
+    PUT
+    UPDATE
+    DELETE
+
 """
 
 from pprint import pprint

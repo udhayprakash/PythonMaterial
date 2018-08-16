@@ -26,25 +26,25 @@ def write_response_to_file(data, extension_name):
 
 print '-' * 20
 print 'JSON response'
-print_n_write_response('157.119.108.242', 'json')
+print_n_write_response('24.61.88.57', 'json')
 print
 
 print '-' * 20
 print 'JSONP response'
-print_n_write_response('157.119.108.242', 'jsonp')
+print_n_write_response('24.61.88.57', 'jsonp')
 print
 
 print '-' * 20
 print 'XML response'
-print_n_write_response('157.119.108.242', 'xml')
+print_n_write_response('24.61.88.57', 'xml')
 print
 
 print '-' * 20
 print 'CSV response'
-print_n_write_response('157.119.108.242', 'csv')
+print_n_write_response('24.61.88.57', 'csv')
 print
 
 print '-' * 20
 print 'YAML response'
-print_n_write_response('157.119.108.242', 'yaml')
+print_n_write_response('24.61.88.57', 'yaml')
 print
