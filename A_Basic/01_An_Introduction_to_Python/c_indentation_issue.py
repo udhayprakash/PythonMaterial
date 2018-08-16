@@ -14,8 +14,8 @@ print summation
 
 print "Summation result is ", summation  # , (comma) operator works as a logic separator
 
-#for i in range(9):
-#print i            # IndentationError
+# for i in range(9):
+# print i            # IndentationError
 
 for i in range(9):
     print i
