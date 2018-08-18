@@ -10,11 +10,14 @@ In python, 'j' is used to represent the imaginary number.
 num1 = 2 + 3j
 print "num1=", num1
 print "type(num1)=", type(num1)
+print 'num1.real', num1.real
+print 'num1.imag', num1.imag
 
 print
 num2 = 0.0 - 2j
 print "num2 = ", num2
 print "type(num2) = ", type(num2)
+print 'num2.real', num1.real
 
 print
 num3 = 1.0 - 0j
