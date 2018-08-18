@@ -13,8 +13,8 @@ quantityOfApples = input('Enter quantity of Apples:')
 quantityOfMangos = input('quantityOfMangos=')
 print "type(quantityOfApples) = ", type(quantityOfApples)
 
-TotalCost = ((costOfApple * quantityOfApples) 
-    + (costOfMango * quantityOfMangos))
+TotalCost = ((costOfApple * quantityOfApples)
+             + (costOfMango * quantityOfMangos))
 print "Total Cost = ", TotalCost
 # NOTE: Due to security issues, input() is discarded
 
