@@ -10,3 +10,9 @@
 30-Jun-2018 06:22:42 AM - ERROR - root - Hello this is an error 
 30-Jun-2018 06:22:42 AM - CRITICAL - root - Hello this an critical error 
 
+21-Aug-2018 10:48:10 PM - DEBUG - root - Hello this is a debug message 
+21-Aug-2018 10:48:10 PM - INFO - root - Hello this is information 
+21-Aug-2018 10:48:10 PM - WARNING - root - Hello this is a warning 
+21-Aug-2018 10:48:10 PM - ERROR - root - Hello this is an error 
+21-Aug-2018 10:48:10 PM - CRITICAL - root - Hello this an critical error 
+

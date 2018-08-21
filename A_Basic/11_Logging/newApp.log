@@ -24,3 +24,30 @@
 
 2018-06-30 06:36:47,451 - CRITICAL - newApp - Hello this an critical error 
 
+2018-08-21 22:58:57,335 - WARNING - newApp - Hello this is a warning 
+
+2018-08-21 22:58:57,364 - ERROR - newApp - Hello this is an error 
+
+2018-08-21 22:58:57,364 - CRITICAL - newApp - Hello this an critical error 
+
+2018-08-21 23:00:01,559 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:01,561 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:01,561 - CRITICAL - newApp - Hello this an critical error
+2018-08-21 23:00:07,017 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:07,017 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:07,019 - CRITICAL - newApp - Hello this an critical error
+2018-08-21 23:00:08,653 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:08,653 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:08,654 - CRITICAL - newApp - Hello this an critical error
+2018-08-21 23:00:19,339 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:19,341 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:19,341 - CRITICAL - newApp - Hello this an critical error
+
+2018-08-21 23:00:24,290 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:24,292 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:24,292 - CRITICAL - newApp - Hello this an critical error
+
+2018-08-21 23:00:25,953 - WARNING - newApp - Hello this is a warning
+2018-08-21 23:00:25,953 - ERROR - newApp - Hello this is an error
+2018-08-21 23:00:25,953 - CRITICAL - newApp - Hello this an critical error
+
