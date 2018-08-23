@@ -7,7 +7,7 @@ language = 'Python Programming'
 print 'language       = ', language
 print 'type(language) = ', type(language)
 
-junkData = '$%^%^&^* &^\'*&^ * uhk'  # escaping '
+junkData = '$%^%^    &^* &^\'*&^ * uhk'  # escaping '
 print 'junkData       = ', junkData
 print 'type(junkData) = ', type(junkData)
 
@@ -24,7 +24,7 @@ print "'"
 print '"'
 print '\''
 
-print "''' ' '''"
+print " ''' ' '''  "
 
 print '""'
 print "''"
