@@ -7,13 +7,14 @@ on python objects
 dozen = 12  # int 
 print type(dozen)
 print dir(dozen)
-print help(dozen)
+help(dozen)
 
-mountain = "Himalayas"  # string 
+print '='*40
+mountain = "Himalayas"  # string
 print type(mountain)
 print dir(mountain)
-print help(mountain)
-print help(mountain.isalpha)
+help(mountain)
+help(mountain.isalpha)
 
 
 # NOTE: help() uasage differs only for string objects
