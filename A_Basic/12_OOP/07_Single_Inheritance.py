@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: Single Inheritance
+MRO - method resolution order
 """
 
 
@@ -31,10 +32,9 @@ class MinBalanceAccount(Account):
 
     def withdraw(self, amount):
         if self.balance - amount < 1000:
-            print "buddy !!! you need to maintain a minimum balance"
+            return "buddy !!! you need to maintain a minimum balance"
         else:
             Account.withdraw(self, amount)
-
 
 
 mb = MinBalanceAccount()
@@ -50,23 +50,21 @@ print '================================='
 
 # Main
 # student
-shiva = MinBalanceAccount()
-print "Initial balance of shiva {}".format(shiva.balance)
-shiva.deposit(2000)
-print "balance of shiva {}".format(shiva.balance)
-shiva.withdraw(500)
-print "balance of shiva {}".format(shiva.balance)
-shiva.withdraw(600)
-print "balance of shiva {}".format(shiva.balance)
+will_smith = MinBalanceAccount()
+print "Initial balance of will_smith {}".format(will_smith.balance)
+will_smith.deposit(2000)
+print "balance of will_smith {}".format(will_smith.balance)
+will_smith.withdraw(500)
+print "balance of will_smith {}".format(will_smith.balance)
+will_smith.withdraw(600)
+print "balance of will_smith {}".format(will_smith.balance)
 
 # working
-kanth = Account()
-print "Initial balance of kanth {}".format(kanth.balance)
-kanth.deposit(2000)
-print "balance of kanth {}".format(kanth.balance)
-kanth.withdraw(500)
-print "balance of kanth {}".format(kanth.balance)
-kanth.withdraw(600)
-print "balance of kanth {}".format(kanth.balance)
-
-# # https://www.edx.org/
+federer = Account()
+print "Initial balance of federer {}".format(federer.balance)
+federer.deposit(2000)
+print "balance of federer {}".format(federer.balance)
+federer.withdraw(500)
+print "balance of federer {}".format(federer.balance)
+federer.withdraw(600)
+print "balance of federer {}".format(federer.balance)

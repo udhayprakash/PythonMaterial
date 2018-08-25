@@ -22,6 +22,14 @@ class RationalNumber:
         d = self.d * other.d
         return RationalNumber(n, d)
 
+    def __sub__(self, other):
+        if not isinstance(other, RationalNumber):
+            other = RationalNumber(other)
+
+        n = self.n * other.d - self.d * other.n
+        d = self.d * other.d
+        return RationalNumber(n, d)
+
     def __str__(self):
         return "%s/%s" % (self.n, self.d)
 
@@ -39,7 +47,11 @@ print isinstance(c, RationalNumber)  # False
 
 print a.__add__(b)
 print a + b                  # same as a.__add__(b)
-# - __sub__
+
+print a.__sub__(b)
+print a - b                  # same as a.__sub__(b)
+
+
 print a.__str__()
 print str(a)                 # same as a.__str__()
 

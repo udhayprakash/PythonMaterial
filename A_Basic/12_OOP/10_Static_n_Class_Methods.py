@@ -21,6 +21,7 @@ class MyClass(object):
 
 
 a = MyClass()
+
 a.display('Django')             # accessing instance method
 MyClass.display(a, 'Django')    # accessing instance method
 

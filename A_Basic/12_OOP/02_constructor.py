@@ -18,6 +18,6 @@ p = Name  # class object assignment
 p()
 
 
-print 
+print
 print '----------calling contructor'
 n.__init__()

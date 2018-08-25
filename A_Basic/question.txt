@@ -1,1 +1,3 @@
 >>> re.search('\bclass\b', 'declassified algorithm is classified in bclassb')
+
+In [73]: re.search('w*', "I want to become a backend developer").group()

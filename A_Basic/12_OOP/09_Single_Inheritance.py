@@ -39,7 +39,7 @@ class Volvo(Cars):
     def __init__(self, name, chs, eng, auto_driving):
         Cars.__init__(self, name, chs, eng)
         self.auto_driving = auto_driving
-        print "BMW Constructor - Initializing Car %s" % name
+        print "Volvo Constructor - Initializing Car %s" % name
 
     def Auto_Drive(self):
         print "Auto Driving availability : %s" % self.auto_driving
@@ -51,8 +51,8 @@ asd = Bmw('AB121', 142211, 908790, 'Available')
 asd.Get_Chasis()
 asd.hello()
 
-# zxc = Volvo('V189B', 22222, 33333, 'Not Available')
-# zxc.Get_Chasis()
+zxc = Volvo('V189B', 22222, 33333, 'Not Available')
+zxc.Get_Chasis()
 
-# zxc.Auto_Drive()
-# zxc.hello()
+zxc.Auto_Drive()
+zxc.hello()

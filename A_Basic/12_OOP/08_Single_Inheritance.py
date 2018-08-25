@@ -16,8 +16,8 @@ age = int(raw_input("please enter your age:"))
 
 try:
     validate_age(age)
-except Exception as e:
-    print "buddy!!! you are still young {}".format(e.age)
+except Exception as err:
+    print "buddy!!! you are still young {}".format(err.age)
 else:
     print "Whom do you want to vote for"
 

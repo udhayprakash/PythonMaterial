@@ -1,4 +1,5 @@
 import time
+
 def function_logger(func):
     def wrapper(*args, **kwargs):
         start_time, temp = time.time(), func(*args, **kwargs)

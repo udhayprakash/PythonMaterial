@@ -4,24 +4,24 @@ Purpose: classes (OOP) introduction
 """
 
 
-class Name:               # class definition
+class MyClassName:        # class definition
     def hello(self):      # class method
         print 'hello world'
 
 
-n = Name()                # Instantiation
+n = MyClassName()                # Instantiation
 
-print 'Name  :', Name
-print 'Name():', Name()
-print 'n     :', n
+print 'MyClassName  :', MyClassName
+print 'MyClassName():', MyClassName()
+print 'n            :', n
 print
-print 'type(Name)  :', type(Name)
-print 'type(Name()):', type(Name())
-print 'type(n)     :', type(n)
+print 'type(MyClassName)  :', type(MyClassName)
+print 'type(MyClassName()):', type(MyClassName())
+print 'type(n)            :', type(n)
 print
-print 'isinstance(n, Name) :', isinstance(n, Name)
-print 'isinstance(1, Name) :', isinstance(1, Name)
+print 'isinstance(n, MyClassName) :', isinstance(n, MyClassName)
+print 'isinstance(1, MyClassName) :', isinstance(1, MyClassName)
 print "__name__", __name__
 
-print 
+print
 n.hello()

@@ -3,24 +3,25 @@
 Purpose: demo of OOP
 """
 
+
 class Person:
-    def __init__(self):         # instance methods
+    def __init__(self):  # constructor method
         """
         This is constructor
         """
-        self.name = ''          # instance variables
-        self.age = 0
+        self.name = ''  # instance variables
+        self.age = 0  # instance variables
 
-    def enterAge(self, age):    # instance methods
+    def enter_age(self, age):  # instance methods
         self.age = age
 
-    def displayAge(self):       # instance methods
+    def display_age(self):  # instance methods
         print('Person age is %d' % self.age)
 
-    def enterName(self, name): # instance methods 
+    def enter_name(self, name):  # instance methods
         self.name = name
 
-    def displayName(self):      # instance methods
+    def display_name(self):  # instance methods
         print('Person name is ' + self.name)
 
 
@@ -28,10 +29,10 @@ p = Person()
 
 print(dir(p))
 
-p.displayAge()
-p.enterAge(23)
-p.displayAge()
+p.display_age()
+p.enter_age(23)
+p.display_age()
 
-p.displayName()
-p.enterName('Ramesh')
-p.displayName()
+p.display_name()
+p.enter_name('Ramesh')
+p.display_name()
