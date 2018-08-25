@@ -25,7 +25,7 @@ print 'sam.balance', sam.balance
 print 'krish.balance', krish.balance
 
 # Deposit
-sam.deposit(1000)   # deposit(sam, 1000)  -- deposit(self, amount)
+sam.deposit(1000)  # deposit(sam, 1000)  -- deposit(self, amount)
 krish.deposit(10000)
 
 print "after deposit"

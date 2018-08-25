@@ -47,16 +47,16 @@ sandwich()
 # ~salad~
 #<\______/>
 
-
-print('-'*80)
-print('============order of declaration of decorators matters===')
-
-@ingredients
-@bread
-def strange_sandwich(food="--ham--"):
-    print(food)
-
-strange_sandwich()
+#
+# print('-'*80)
+# print('============order of declaration of decorators matters===')
+#
+# @ingredients
+# @bread
+# def strange_sandwich(food="--ham--"):
+#     print(food)
+#
+# strange_sandwich()
 #outputs:
 ##tomatoes#
 #</''''''\>

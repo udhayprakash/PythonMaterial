@@ -24,11 +24,11 @@ n = Name()
 
 print 'n=', n
 print dir(n)
-print help(n)
+help(n)
 
 # we need to call all other methods, except constructor
 n.display_names()
 
 n.__init__()
 
-# print Name.display_names(n)
+print Name.display_names(n)
