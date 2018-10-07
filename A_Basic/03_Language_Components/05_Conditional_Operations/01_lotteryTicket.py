@@ -9,9 +9,3 @@ __author__ = 'Python Tutor'
 
 winningTicket = 'Ajvhvj87689'
 
-userTicket = raw_input('Enter the ticket number:')
-
-if userTicket == winningTicket:
-    print 'Congratulation!You won the lottery!'
-else:
-    print 'Sorry! Try again.'

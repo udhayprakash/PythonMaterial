@@ -30,7 +30,14 @@ print '(1,)', bool((1,))
 print '[1]', bool([1])
 print '{1}', bool({1})
 print '{1:2}', bool({1: 2})
-
+print
 print '()', bool(())
 print '[]', bool([])
 print '{}', bool({})
+
+if 1:
+    print "hello"
+
+a = -0.000000056
+if a:
+    print "a=", a
