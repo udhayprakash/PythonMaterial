@@ -9,11 +9,11 @@ Purpose: Boolean Operations
 print "bool(12)", bool(12)
 print "bool(-12)", bool(-12)
 print "bool(0)", bool(0)
-
+print
 print "bool(0.00)", bool(0.00)
 print "bool(0.000000001)", bool(0.000000001)
 print "bool(-0.000000001)", bool(-0.000000001)
-
+print
 # strings
 #  True - non-empty string 
 #  False - empty string
@@ -23,7 +23,7 @@ print "bool(true)", bool(true)
 print "bool('ball')", bool('ball')
 print "bool('')", bool('')  # empty string
 print "bool(' ')", bool(' ')  # white-space
-
+print
 # [], (), {}
 print '(1)', bool((1))
 print '(1,)', bool((1,))

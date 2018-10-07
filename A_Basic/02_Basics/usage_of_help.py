@@ -13,7 +13,7 @@ print '='*40
 mountain = "Himalayas"  # string
 print type(mountain)
 print dir(mountain)
-help(mountain)
+# help(mountain)
 help(mountain.isalpha)
 
 

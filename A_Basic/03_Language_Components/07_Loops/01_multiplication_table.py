@@ -14,6 +14,7 @@ while a < MAX:  # condition
         # print "%d * %d = %d" % (a, b, a * b)
         print "%2d * %2d = %3d" % (a, b, a * b)
     print '-' * 18
+    #break
 else:
     print 'All iterations in while loop completed'
 

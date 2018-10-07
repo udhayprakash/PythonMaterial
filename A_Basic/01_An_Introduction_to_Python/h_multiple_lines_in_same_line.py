@@ -3,6 +3,7 @@
 Purpose: Multiple statements in same line
 
 ; statement completion operator
+, logic separator
 """
 
 
