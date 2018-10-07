@@ -4,9 +4,9 @@ Purpose: Indentation Issues demo
 """
 __author__ = "PYthon Tutor"
 
-print "Hello World"    
+print "Hello World"
 
-summation = 34 + 99
+summation = 34 + 99    
 # dynamic typed languages 
 
 

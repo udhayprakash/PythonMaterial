@@ -16,9 +16,8 @@ Integer family
 # + - * / // %
 # NOTE: PEP 8 recommends to place one space around the operator
 
-num1 = 10       # int
-num2 = 200      # int
-
+num1 = 10  # int
+num2 = 200  # int
 
 print "num1=", num1
 print 'num2=', num2
@@ -44,7 +43,6 @@ print
 print 'type(num1)= ', type(num1)
 print 'type(num2)= ', type(num2)
 
-
 # int + int  = int
 # int / int  = int
 
@@ -63,14 +61,13 @@ print 'type(num3)= ', type(num3)
 
 print 'num1 + num3= ', num1 + num3  # int + long = long
 
-
 # going back to division
 
-print '10/2= ', 10/2   # int/int = int
-print '10/5= ', 10/5   # int/int = int
+print '10/2= ', 10 / 2  # int/int = int
+print '10/5= ', 10 / 5  # int/int = int
 
-print '10/3= ', 10/3        # int/int = int         # 3
-print '10/3.0= ', 10/3.0    # int/float = float     # 3.333333
+print '10/3= ', 10 / 3  # int/int = int         # 3
+print '10/3.0= ', 10 / 3.0  # int/float = float     # 3.333333
 
 print
 # type conversions
@@ -83,30 +80,30 @@ print 'float(3) = ', float(3)
 print 'float(3.333) = ', float(3.333)
 
 print
-print '10/3= ', 10/3
-print '10/float(3)= ', 10/float(3)
+print '10/3= ', 10 / 3
+print '10/float(3)= ', 10 / float(3)
 
 print
-print 'num1 / num2 = ', num1 / num2   # int/int
+print num1/num2/10
+print 'num1 / num2 = ', num1 / num2  # int/int
 print 'float(num1) / num2 = ', float(num1) / num2
-print 'float(num1 / num2) = ', float(num1 / num2)   #wrong
+print 'float(num1 / num2) = ', float(num1 / num2)  # wrong
 
 print
 print 'floor division  //'
-print '10//2', 10//2
-print '10//5', 10//5
+print '10//2', 10 // 2
+print '10//5', 10 // 5
 
-print '10/3 = ', 10/3
-print '10//3 = ', 10//3    # 3 < 3.3333 < 4
+print '10/3 = ', 10 / 3
+print '10//3 = ', 10 // 3  # 3 < 3.3333 < 4
 print
-print '10/3.0 = ', 10/3.0
-print '10//3.0 = ', 10//3.0     # 3 < 3.3333 < 4
-print '-10//3.0 = ', -10//3.0   # -4 < -3.3333 <  -3
+print '10/3.0 = ', 10 / 3.0
+print '10//3.0 = ', 10 // 3.0  # 3 < 3.3333 < 4
+print '-10//3.0 = ', -10 // 3.0  # -4 < -3.3333 <  -3
 .0
 
-print '10/2.5 = ', 10/2.5
-print '10//2.5 = ', 10//2.5   # 4.0
-
+print '10/2.5 = ', 10 / 2.5
+print '10//2.5 = ', 10 // 2.5  # 4.0
 
 '''
 >>> 13/2

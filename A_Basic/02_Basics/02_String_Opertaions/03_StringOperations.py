@@ -35,7 +35,7 @@ print 'String Slicing'
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
 # -18                                    -3 -2 -1    - reverse indexing
-#
+#-0]
 print 'language       :', language
 print 'language[0:11] :', language[0:11]
 print 'language[5:17] :', language[5:17]

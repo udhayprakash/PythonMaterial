@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# variable
+# 1. keyword
+# 2. identifier
 
 # Identifier naming conventions
 ################################
@@ -14,6 +17,7 @@ PI = 3.14
 _job = 'farming'
 __babu = 'Nagababu'
 
+# my$name = 'uqwqwqw'
 # $name = 'uqwqwqw'
 # 2name = 'dfdfsdf'
 
@@ -25,14 +29,13 @@ __babu = 'Nagababu'
 # __variable__  --> Builtin functions
 
 
-
 # PYTHON IS CASE-SENSITIVE
 ###########################
 
 animal = 'cow'
 Animal = 'Dog'
 
-# print ANIMAL
+# print ANIMAL # NameError
 
 
 # variable casing

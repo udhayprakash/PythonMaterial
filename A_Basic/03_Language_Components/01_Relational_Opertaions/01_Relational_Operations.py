@@ -9,10 +9,11 @@ Purpose: Relational Operations
  <= less than or equal to
  >= greater than or equal to
  != not equal to
+ <> not equal to
 '''
 
-usd = 70
-cand = 49
+usd = 73
+cand = 50
 
 print  "usd < cand ", usd < cand
 print "70 < 49", 70 < 49

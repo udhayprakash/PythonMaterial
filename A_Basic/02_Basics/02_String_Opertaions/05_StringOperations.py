@@ -18,6 +18,7 @@ print '  python Production  '.rstrip()
 print ' abcba '.lstrip('a ')
 print ' abcba '.rstrip('a ')
 print
+# HOw to covert a string to a list
 print 'Python Production'.split(' ')
 print 'Python Production'.split('r')
 print 'Python Production'.split('t')
@@ -26,7 +27,7 @@ print 'Python Production'.split('P')
 print 'Python Production'.rsplit('P')
 print 'Python Production'.split('Prod')
 print
-
+# HOw to convert list of strings to a single string
 print ''.join(['Python', 'Production', 'language'])
 print '@'.join(['Python', 'Production', 'language'])
 print '___'.join(['Python', 'Production', 'language'])
