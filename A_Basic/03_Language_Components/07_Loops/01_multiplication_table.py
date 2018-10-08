@@ -1,4 +1,11 @@
 #!/usr/bin/python
+"""
+while loop
+    initialization
+    condition
+    increment/decrement
+    logic
+"""
 
 MIN = 0
 MAX = 12
@@ -13,8 +20,8 @@ while a < MAX:  # condition
         # print "{} * {} = {}".format(a, b, a*b)
         # print "%d * %d = %d" % (a, b, a * b)
         print "%2d * %2d = %3d" % (a, b, a * b)
-    print '-' * 18
-    #break
+    print '-' * 18, a
+    # break
 else:
     print 'All iterations in while loop completed'
 
