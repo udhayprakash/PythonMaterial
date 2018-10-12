@@ -19,6 +19,7 @@ print
 print 'mylist1.count(11):', mylist1.count(11)
 print 'mylist1.count(2) :', mylist1.count(2)
 
+# difference between list attributes: append and extend
 print '=====mylist1.extend(mylist2)====='
 mylist1.extend(mylist2)
 print 'mylist1       = ', mylist1

@@ -8,7 +8,7 @@ Purpose: Functions Demo
 # Function Definition
 def hello(name, age):
     print "%s's age is %d"%(name, age)
-    return
+    return {}
     # default return is None type object
 
 # Function Call 
