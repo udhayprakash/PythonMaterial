@@ -25,7 +25,7 @@ print type(other_dict)
 
 mydict = {
     'name': ['udhay', 'prakash'],
-    'blog': 'udhayprakash.blogspot.in', 
+    'blog': 'udhayprakash.blogspot.in',
     0.000001 : other_dict,
      99 : ('age', 'price'),
     ('Dr', 'Mr'): 'titles'
@@ -70,5 +70,5 @@ print mydict.pop('name')
 print mydict
 
 
-print mydict.clear()
+mydict.clear()
 print mydict

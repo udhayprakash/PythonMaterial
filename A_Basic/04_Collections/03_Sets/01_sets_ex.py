@@ -1,6 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+"""
+Properties of sets '
+    - sets are unordered
+    - can't be indexed
+    - can't store duplicates
+    - stores only immutable object
+    - sets are mutable objects
+"""
 running_ports = [11, 22, 11, 44, 22, 11]
 print 'type(running_ports)', type(running_ports)
 print 'len(running_ports)', len(running_ports)
@@ -24,10 +31,10 @@ print 'filtered_list:', filtered_list
 print 
 
 print myset
-print 'myset.add(12)', myset.add(12)
+myset.add(12)
 print myset
 
-# myset.update(22) # TypeError: 'int' object is not iterable
+# myset.update(22) # TypeErroOut[16]: {11, 12, 22, 44}r: 'int' object is not iterable
 myset.update([12, 34])
 print myset
 

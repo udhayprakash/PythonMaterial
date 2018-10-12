@@ -5,6 +5,8 @@ List can be classified as single-­dimensional and multi­-dimensional.
 List is representing using [].
 List is a mutable object, which means elements in list can be changed.
 It can store asymmetric data types
+
+basic types -- int, long, float, string
 """
 
 numbers = [12, 334, 23, 2, -323]  # Homogenous list 

@@ -6,7 +6,7 @@ Purpose: Functions Demo
 """
 
 # Function Definition
-def hello(name, age=20000):
+def hello(name, age=200):
     print "%s's age is %d"%(name, age)
 
 
