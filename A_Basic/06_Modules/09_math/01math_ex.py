@@ -11,3 +11,5 @@ degrees = 45
 radians = degrees/360.0 * 2 * math.pi
 print 'math.pi          ', math.pi
 print 'math.sin(radians)', math.sin(radians)
+
+print 'math.factorial(9)', math.factorial(9)

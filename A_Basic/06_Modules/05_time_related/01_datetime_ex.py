@@ -16,6 +16,7 @@ print('date: {}'.format(local_now.date()))
 print('time: {}'.format(local_now.time()))
 
 # datetime.strftime - For string formatting the datetime
+# For more datetime related string formatters, go to http://strftime.org/
 formatted1 = local_now.strftime('%Y/%m/%d-%H:%M:%S')
 print(formatted1)
 
@@ -35,7 +36,7 @@ print('tomorrow this time: {}'.format(tomorrow))
 delta = tomorrow - local_now
 print('tomorrow - now = {}'.format(delta))
 print('days: {}, seconds: {}'.format(delta.days, delta.seconds))
-print('total seconds: {}'.format(delta.total_seconds()))
+print('total seconds: {}'.format(delta.total_seconds()), 'print_function')
 
 
 
