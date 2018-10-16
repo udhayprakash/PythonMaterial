@@ -20,6 +20,6 @@ if __name__ == '__main__':
                         required=True)
     parser.add_argument('-c',
                         help='Third value',
-                        type=float)
+                        type=int)
     args = parser.parse_args()
     print(main(args.a, args.b, args.c))
