@@ -15,7 +15,7 @@ if platform in ['linux', 'linux2', 'darwin']:
 elif platform == 'win32':
     print os.system('dir /x C:\Python27')
     print call('dir /x C:\Python27', shell=True)
-    result = Popen('dir /x C:\Python27', shell=True)
+    result = Popen('dir /x C:\Python27', shell=True) #TODO
     print 'result==============\n', result
 else:
     print "unhandled platform :", platform

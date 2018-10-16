@@ -3,13 +3,13 @@
 """
 Purpose: Demo of Command line inputs
 """
-
+from __future__ import print_function
 import sys
 
 # for i in  dir(sys):
 #     print i
 
-print("sys.platfom", sys.platform)
+print("sys.platform", sys.platform)
 # print '-' * 80
 
 # # Run time value
@@ -20,22 +20,22 @@ print("sys.platfom", sys.platform)
 
 # sys.argv
 
-print "sys.argv     :", sys.argv
-print "len(sys.argv):", len(sys.argv)
+print("sys.argv     :", sys.argv)
+print("len(sys.argv):", len(sys.argv))
 
 winningTicket = '123Alpha'
 
 if len(sys.argv) >= 2:
     userEnteredTicket = sys.argv[1]
 else:
-    print 'Please enter the ticket number\n'
-    print 'USAGE:'
-    print '      python gettingCommandlineValues.py 231asdas'
-    print '__file__ :', __file__
-    print '      python', __file__, '231sads'
+    print('Please enter the ticket number\n')
+    print('USAGE:')
+    print('      python gettingCommandlineValues.py 231asdas')
+    print('__file__ :', __file__)
+    print('      python', __file__, '231sads')
     sys.exit(1)
 
 if winningTicket == userEnteredTicket:
-    print 'You won the lottery'
+    print('You won the lottery')
 else:
-    print 'You Lost. Try again!'
+    print('You Lost. Try again!')
