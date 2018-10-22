@@ -2,6 +2,8 @@
 
 '''
 Purpose: creating a new CSV file
+
+with - context manager
 '''
 
 with open('sampleCSVFile.csv', 'ab+') as myCsv:
