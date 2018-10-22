@@ -1,4 +1,14 @@
+#!/usr/bin/python
+"""
+Purpose:
 
+Generator objects
+    - designed for user-defined functions
+    - disposable
+    - can't be indexed
+    - stores the state
+    - used for large data handling
+"""
 # definition
 def foo():  
     print "Start the function!"
@@ -24,8 +34,8 @@ print
 
 try:
     print f.next()
-except StopIteration:
-    print 'error is StopIteration'
+except StopIteration as ex:
+    print 'error is StopIteration', repr(ex)
 
 print 'using loop to get remaining elements'
 for i in f:
@@ -33,6 +43,6 @@ for i in f:
 
 
 print "====reinitialize call "
-f = foo() 
+f = foo()
 for i in f:
     print i

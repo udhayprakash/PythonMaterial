@@ -6,7 +6,7 @@ with open('mydata.csv', 'rb') as csv_fh:
     data = csv.reader(csv_fh, delimiter=',')
     print data, type(data)
 
-    for loopnumber, eachline in enumerate(data[1:]):
+    for loopnumber, eachline in enumerate(data):
         if not loopnumber:
             continue
         print eachline[0]
