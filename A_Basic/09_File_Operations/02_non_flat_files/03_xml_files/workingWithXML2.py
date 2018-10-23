@@ -1,3 +1,4 @@
+from __future__ import print_function
 import xml.etree.ElementTree as ET
 '''
 XML - looping through nodes
@@ -12,8 +13,8 @@ input = '''
         <user x="7">
             <id>009</id>
             <name>Brent</name>
-            </user>
-        </users>
+        </user>
+    </users>
 </stuff>'''
 
 stuff = ET.fromstring(input)

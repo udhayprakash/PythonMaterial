@@ -2,7 +2,7 @@ from __future__ import print_function
 # files -- read , write , append
        #   r       w      a
        #   rb      wb     ab
-       #   r+             a+
+       #   r+      w+       a+
 
 # default mode is 'read'
 my_file_handler = open('myfile.txt')
@@ -11,6 +11,9 @@ print(dir(my_file_handler))
 
 print("my_file_handler.closed", my_file_handler.closed)
 print("my_file_handler.read()", my_file_handler.read())
+# .read -- all content as single string
+# .readline ---  current line as a string
+# .readlines --- all content as a list of strings, each string containing one line data
 my_file_handler.close()
 print("my_file_handler.closed", my_file_handler.closed)
 # print("my_file_handler.read()", my_file_handler.read())#ValueError: I/O operation on closed file

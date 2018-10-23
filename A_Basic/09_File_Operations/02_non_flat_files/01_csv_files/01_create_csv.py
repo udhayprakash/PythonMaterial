@@ -4,6 +4,10 @@
 Purpose: creating a new CSV file
 
 with - context manager
+
+garbage collector -- java, python , ..
+    - cpu clock cycle
+
 '''
 
 with open('sampleCSVFile.csv', 'ab+') as myCsv:
