@@ -9,7 +9,7 @@ url = "http://checkip.dyndns.org"
 print url
 
 response = urllib.urlopen(url).read()
-print response
+print "response", response
 
 document_root = html.fromstring(response)
 print etree.tostring(document_root, 

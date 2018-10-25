@@ -25,8 +25,8 @@ import logging
 # logging.info('Logging app started')
 # logging.warning('An example logging message.')
 # logging.warning('Another log message')
+# #
 #
-
 # basicConfig - to set the format of log test
 logging.basicConfig(filename="04_logging.log",
                     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
