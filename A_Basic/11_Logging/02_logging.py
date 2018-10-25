@@ -1,12 +1,7 @@
 import logging
 
-# logging.basicConfig(filename='program.log',level=logging.DEBUG)
-
-
 # Fixing the level of severity
-logging.basicConfig(
-    level=logging.DEBUG)
-
+logging.basicConfig(level=logging.INFO)
 
 logging.debug("This is a debug2")
 logging.info("This is a info2")

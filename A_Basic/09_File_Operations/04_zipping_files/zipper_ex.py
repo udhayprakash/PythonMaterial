@@ -14,7 +14,7 @@ if __name__ == '__main__':
     today = datetime.now()
     dir_name = os.environ.get('TEMP', None)  # update path
     print 'dir_name', dir_name
-    file_name = dir_name + os.sep + 'zipper_' + today.strftime('%Y.%m.%dh%H%M') + '.zip'
+    file_name = dir_name + os.sep + 'zipper_' + today.strftime('%Y.%m.%d_h%H%M') + '.zip'
     print 'file_name', file_name
 
     # Zipping work

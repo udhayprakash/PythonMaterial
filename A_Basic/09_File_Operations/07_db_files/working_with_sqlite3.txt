@@ -1,0 +1,98 @@
+Sqlite Installation and setup
+-----------------------------
+Step 1:  From https://www.sqlite.org/download.html, download the desired sqlite binary.
+         Say in windows, download sqlite-tools-win32-x86-3250200.zip
+Step 2:  Extract the files and place them in new folder "C:\sqlite3".
+Step 3:  Add the path in the environmental variables - "C:\sqlite3".
+Step 4: In the sqlite GUI tool - https://sqlitestudio.pl/index.rvt
+
+
+Sqlite3 Commands
+-----------------
+/*select * from albums where Title like 'F%'*/
+
+SELECT  trackid,  name,  composer,  unitprice FROM  tracks;
+
+SELECT  trackid, name, albumid, mediatypeid, genreid, composer, milliseconds, bytes, unitprice FROM  tracks;
+
+SELECT  * FROM  tracks;
+
+SELECT  city FROM  customers ORDER BY  city;
+
+Select distinct city from customers;
+
+SELECT  city, country FROM  customers ORDER BY  country;
+
+SELECT  DISTINCT  city, country FROM  customers ORDER BY  country;
+
+SELECT  company FROM  customers;
+
+SELECT  DISTINCT company FROM  customers;
+
+SELECT  name, milliseconds, albumid FROM  tracks;
+
+SELECT  name, milliseconds, albumid FROM  tracks ORDER BY  albumid ASC;
+
+SELECT  name, milliseconds, albumid FROM  tracks ORDER BY  albumid;
+
+SELECT  name, milliseconds, albumid FROM  tracks ORDER BY  albumid ASC, milliseconds DESC;
+
+--order by column position
+SELECT  name, milliseconds, albumid FROM  tracks ORDER BY  3,2;
+
+--LIMIT - to limit the no. of output records from query
+SELECT  trackId, name FROM  tracks LIMIT 10;
+
+--LIMIT row_count OFFSET offset --
+SELECT  trackId, name FROM  tracks LIMIT 9 OFFSET 5; -- to get 9 rows, skipping first 5 rows
+
+SELECT  trackid, name, bytes FROM  tracks ORDER BY  bytes DESC LIMIT 10;
+
+SELECT  trackid, name, bytes FROM  tracks ORDER BY  milliseconds ASC LIMIT 5;
+
+SELECT  trackid, name, bytes, albumid FROM  tracks WHERE albumid = 1;
+
+SELECT  trackid, name, bytes, albumid, milliseconds FROM  tracks WHERE albumid = 1 AND milliseconds > 25000;
+
+SELECT  name, albumid, composer FROM  tracks WHERE composer LIKE '%Smith%';
+
+SELECT  name, albumid, mediatypeid FROM  tracks WHERE  mediatypeid IN (2, 3);
+
+SELECT  name, albumid, mediatypeid FROM  tracks WHERE  mediatypeid IN (2, 3) ORDER BY name ASC;
+
+SELECT  name, albumid, mediatypeid FROM  tracks WHERE  mediatypeid = 1 OR mediatypeid = 2 ORDER BY name ASC;
+
+SELECT albumid FROM  albums WHERE artistid = 12;
+
+SELECT  trackid, name, albumid FROM  tracks
+ WHERE albumid IN (
+         SELECT  albumid FROM albums WHERE artistid = 12
+ );
+
+SELECT  trackid, name, genreid FROM  tracks WHERE  genreid NOT IN (1, 2,3);
+
+-- pattern can be created using % and _
+-- % wildcard matches any sequence of zero or more characters
+-- _ wildcard matches any single character
+SELECT trackid, name FROM tracks WHERE name LIKE 'Wild%';
+
+SELECT trackid, name FROM tracks WHERE name LIKE '%Wild';
+
+SELECT trackid, name FROM tracks WHERE name LIKE '%Wild%';
+
+SELECT trackid, name FROM tracks WHERE name LIKE '%Br_wn%';
+
+-- GLOB us siilar rto LIKE; but is case sensitive and uses UNIX wildcards
+-- * matches any number of characters
+-- ? matches exact number of characters
+SELECT  trackid, name FROM tracks WHERE name GLOB 'Man*';
+
+SELECT  trackid, name FROM tracks WHERE name GLOB '*Man';
+
+SELECT  trackid, name FROM tracks WHERE name GLOB '?ere*';
+
+SELECT  trackid, name FROM tracks WHERE name GLOB '*[1-9]*';
+
+SELECT  trackid, name FROM tracks WHERE name GLOB '*[^1-9]*';
+
+SELECT  trackid, name FROM tracks WHERE name GLOB '*[1-9]';

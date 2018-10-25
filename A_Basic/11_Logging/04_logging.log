@@ -16,3 +16,9 @@
 21-Aug-2018 10:48:10 PM - ERROR - root - Hello this is an error 
 21-Aug-2018 10:48:10 PM - CRITICAL - root - Hello this an critical error 
 
+25-Oct-2018 10:36:18 PM - DEBUG - root - Hello this is a debug message 
+25-Oct-2018 10:36:18 PM - INFO - root - Hello this is information 
+25-Oct-2018 10:36:18 PM - WARNING - root - Hello this is a warning 
+25-Oct-2018 10:36:18 PM - ERROR - root - Hello this is an error 
+25-Oct-2018 10:36:18 PM - CRITICAL - root - Hello this an critical error 
+

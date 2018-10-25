@@ -31,7 +31,7 @@ response = urllib2.urlopen(req)
 
 obj = json.loads(response.read())
 
-# print 'obj', obj
+print 'obj', obj
 pprint(obj, indent=2, depth=4)
 # print help(pprint)
 print obj['timestamp'], 'is equal to ', datetime.fromtimestamp(obj['timestamp'])
