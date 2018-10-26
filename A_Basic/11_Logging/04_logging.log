@@ -22,3 +22,21 @@
 25-Oct-2018 10:36:18 PM - ERROR - root - Hello this is an error 
 25-Oct-2018 10:36:18 PM - CRITICAL - root - Hello this an critical error 
 
+26-Oct-2018 09:46:13 PM - DEBUG - root - Hello this is a debug message 
+26-Oct-2018 09:46:13 PM - INFO - root - Hello this is information 
+26-Oct-2018 09:46:13 PM - WARNING - root - Hello this is a warning 
+26-Oct-2018 09:46:13 PM - ERROR - root - Hello this is an error 
+26-Oct-2018 09:46:13 PM - CRITICAL - root - Hello this an critical error 
+
+26-Oct-2018 21:48:26 PM - DEBUG - root - Hello this is a debug message 
+26-Oct-2018 21:48:26 PM - INFO - root - Hello this is information 
+26-Oct-2018 21:48:26 PM - WARNING - root - Hello this is a warning 
+26-Oct-2018 21:48:26 PM - ERROR - root - Hello this is an error 
+26-Oct-2018 21:48:26 PM - CRITICAL - root - Hello this an critical error 
+
+26-Oct-2018 21:48:32 PM - DEBUG - root - Hello this is a debug message 
+26-Oct-2018 21:48:32 PM - INFO - root - Hello this is information 
+26-Oct-2018 21:48:32 PM - WARNING - root - Hello this is a warning 
+26-Oct-2018 21:48:32 PM - ERROR - root - Hello this is an error 
+26-Oct-2018 21:48:32 PM - CRITICAL - root - Hello this an critical error 
+

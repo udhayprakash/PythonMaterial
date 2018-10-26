@@ -20,6 +20,7 @@ print "The basic amount for Madhavi {}".format(Madhavi['balance'])
 deposit(Madhavi, 1000)
 print "The  amount for Madhavi {} after deposit".format(Madhavi['balance'])
 withdraw(Madhavi, 300)
+print
 
 # yash
 yash = new()
