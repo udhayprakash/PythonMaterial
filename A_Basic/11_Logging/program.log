@@ -21,3 +21,8 @@ INFO:root:This is a info2
 WARNING:root:This is a warning2
 ERROR:root:This is a error2
 CRITICAL:root:This is a critical2
+DEBUG:root:This is a debug1
+INFO:root:This is a info1
+WARNING:root:This is a warning1
+ERROR:root:This is a error1
+CRITICAL:root:This is a critical1

@@ -49,6 +49,7 @@ try:
     logger.addHandler(myLogHandler)
 
     fileHandler = logging.FileHandler(log_file, mode='w')  # default is append mode
+    fileHandler.setFormatter(LogfileFormatter)
     logger.addHandler(fileHandler)
 
 
