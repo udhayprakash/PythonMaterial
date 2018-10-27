@@ -1,10 +1,12 @@
-import csv 
+import csv
 
-print dir(csv)
+print("dir(csv)", dir(csv))
 
 with open('mydata.csv', 'rb') as csv_fh:
     data = csv.reader(csv_fh, delimiter=',')
-    print data, type(data)
+    next(data, None)  # skip the headers
+
+    print(data, type(data))
 
     # for index, eachline in enumerate(data):
     #     print index
@@ -12,6 +14,6 @@ with open('mydata.csv', 'rb') as csv_fh:
     for loopnumber, eachline in enumerate(data):
         if not loopnumber:
             continue
-        print eachline[0]
+        print("eachline[0]", eachline[0])
 
     csv_fh.close()

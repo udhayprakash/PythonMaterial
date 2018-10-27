@@ -1,4 +1,4 @@
-import csv 
+import csv
 
 with open('names.csv', 'wb') as csvfile:
     # csv header
@@ -10,7 +10,5 @@ with open('names.csv', 'wb') as csvfile:
     writer.writerow({'first_name': 'udhay', 'last_name': 'prakash'})
     writer.writerow({'first_name': 'Madhavi', 'last_name': 'm'})
     writer.writerow({'first_name': 'john', 'last_name': 'hasten'})
-
-       
 
     csvfile.close()
