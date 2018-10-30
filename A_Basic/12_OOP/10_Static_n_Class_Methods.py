@@ -25,8 +25,8 @@ a = MyClass()
 a.display('Django')             # accessing instance method
 MyClass.display(a, 'Django')    # accessing instance method
 
-MyClass.cmDisplay('Django')     # accessing class method
 a.cmDisplay('Django')           # accessing class method
+MyClass.cmDisplay('Django')     # accessing class method
 
 a.smDisplay('Django')           # accessing static method
 MyClass.smDisplay('Django')     # accessing static method

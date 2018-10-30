@@ -8,10 +8,10 @@ name = "Almighty"
 
 print name
 
-# Python is a strictly typed language
 print "Name of the student:", name
 # , (comma) logic separator operator
 
+# Python is a strictly typed language
 print "Name of the student:" + name
 
 name = 123

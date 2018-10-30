@@ -21,8 +21,6 @@ class Cars:
     def hello(self):
         print "I am Cars class"
 
-
-
 class Bmw(Cars):
     def __init__(self, name, chs, eng, auto_gear):
         Cars.__init__(self, name, chs, eng)
