@@ -2,7 +2,7 @@
 
 import pdb
 
-
+# new style classes
 class ExampleClass(object):
 
     def __init__(self, name, number):
@@ -16,4 +16,5 @@ class ExampleClass(object):
 
 if __name__ == '__main__':
     example = ExampleClass("Carla", 456)
+    print dir(example)
     example.example_entry()

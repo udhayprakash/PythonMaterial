@@ -10,21 +10,27 @@ Decorators slow down the function call. Keep that in mind.
 
 
 def makebold(fn):
-    def wrapped():
+    def wrapped(*args, **kwargs):
+        print "makebold - args", args
+        print "makebold  - kwargs", kwargs
+
         return "<b>" + fn() + "</b>"
 
     return wrapped
 
 
 def makeitalic(fn):
-    def wrapped():
+    def wrapped(*args, **kwargs):
+        print "makeitalic - args", args
+        print "makeitalic  - kwargs", kwargs
+
         return "<i>" + fn() + "</i>"
 
     return wrapped
 
 
-@makebold
-@makeitalic
+@makebold#('first')
+@makeitalic#('second')
 def hello():
     return "hello world"
 

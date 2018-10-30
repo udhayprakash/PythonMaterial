@@ -36,3 +36,7 @@ p.display_age()
 p.display_name()
 p.enter_name('Ramesh')
 p.display_name()
+
+
+print callable(p.age)
+print callable(p.display_age)

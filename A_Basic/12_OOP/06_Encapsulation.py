@@ -11,13 +11,25 @@ class Car:
     def drive(self):
         print 'driving'
 
-    def __updateSoftware(self):
+    def _cleaning(self):
+        print 'cleaning'
+
+    def __updateSoftware(self): # private instance method
         print 'updating software'
 
 
 redcar = Car()
+
+# Accessing public method
 redcar.drive()
+
+# Accessing protected method
+redcar._cleaning()
+
+# Accessing private method
 # redcar.__updateSoftware()  #not accesible from object.
+redcar._Car__updateSoftware()
+
 
 print dir(Car)
 
