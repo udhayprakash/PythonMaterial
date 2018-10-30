@@ -17,7 +17,7 @@ PI = 3.14
 _job = 'farming'
 __babu = 'Nagababu'
 
-# my$name = 'uqwqwqw'
+# my$name = 'uqwqwqw'# SyntaxError: invalid syntax
 # $name = 'uqwqwqw'
 # 2name = 'dfdfsdf'
 
@@ -35,7 +35,7 @@ __babu = 'Nagababu'
 animal = 'cow'
 Animal = 'Dog'
 
-# print ANIMAL # NameError
+# print ANIMAL #NameError: name 'ANIMAL' is not defined
 
 
 # variable casing

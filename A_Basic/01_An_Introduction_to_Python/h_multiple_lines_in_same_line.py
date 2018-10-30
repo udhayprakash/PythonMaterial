@@ -7,7 +7,7 @@ Purpose: Multiple statements in same line
 """
 
 
-num1 = 123
+num1 = 123;
 num2 = 456
 
 sumOfNumbers = num1 + num2
