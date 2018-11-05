@@ -1,0 +1,5 @@
+Assignment 1: Get data from the below URL:
+    https://www.w3.org/TR/PNG/iso_8859-1.txt
+    Create two sheets within the same excel file, and add each set of two columns in each sheet. 
+
+Assignment 2: create a free-trail account in SendGrid, and try sending email with it. 

@@ -13,7 +13,7 @@ costOfMangos = 5
 
 quantityInDozensOfApples = 3
 quantityInDozensOfMangos = 7
-
-TotalCost = costOfApples * (quantityInDozensOfApples * DOZEN) + \
-            costOfMangos * quantityInDozensOfMangos * DOZEN  # PEMDAS rule
-print "Total Cost = ", TotalCost  # left to right and top to bottom
+# PEMDAS rule
+TotalCost = costOfApples * (quantityInDozensOfApples * DOZEN) + \ 
+            costOfMangos * quantityInDozensOfMangos * DOZEN  # left to right and top to bottom
+print "Total Cost = ", TotalCost 

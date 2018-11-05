@@ -56,3 +56,9 @@ outputOfSensor = 'asdd'
 # pascal casing
 SalaryOfWorkers = 3000
 NoOfProcessesRunning = 123
+
+'''
+PEP (python Enhancement Proposal) 8 - coding style guide 
+ - class names should be camelcase
+ - identifier names should be in snake case .
+'''

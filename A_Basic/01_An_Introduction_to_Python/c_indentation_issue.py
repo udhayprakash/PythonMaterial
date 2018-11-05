@@ -31,12 +31,3 @@ if 2 < 3:
 # tabs vs white-space
 # PEP 8 (Python Enhancement Proposal) - code style guide
 # four white-spaces
-
-
-
-
-
-
-
-
-
