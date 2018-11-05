@@ -1,6 +1,7 @@
 import os 
 
-data = input()
+# data = input()
+data = raw_input() # renamed as input() in python 3
 
 print "entered data is", data
 print type(data)
