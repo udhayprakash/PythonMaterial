@@ -17,10 +17,3 @@ print 'Sum of Numbers:', sumOfNumbers
 #################################################
 
 num1 = 123; num2 = 456; sumOfNumbers = num1 + num2; print 'Sum of Numbers:', sumOfNumbers
-
-
-
-
-
-
-

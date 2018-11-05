@@ -25,9 +25,12 @@ total_cost = cost_of_rice + cost_of_wheat
 print "total cost is", total_cost
 
 
+# discount of 12% 
+total_discount = (12.0/total_cost)  * 100
+print "total_discount", total_discount
 
-
-
+final_price = total_cost - total_discount
+print "final Price", final_price
 
 
 

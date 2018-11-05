@@ -33,7 +33,7 @@ Windows:
 Juypter(ipython) setup
 -----------------------
 Open new cmd prompt, and type 
-	python -m pip install jupyter 
+	python -m pip install jupyter ipython
 	
 	
 To start a new notebook:
