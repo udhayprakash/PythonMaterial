@@ -11,6 +11,7 @@ costOfMango = 5
 # NOTE: raw_input() takes every input as a string type only
 #       raw_input() in python 2 is input() in python 3
 
+# secure coding - OWASP
 # quantityOfApples = raw_input('quantityOfApples=')
 # quantityOfMangos = raw_input('quantityOfMangos=')
 
