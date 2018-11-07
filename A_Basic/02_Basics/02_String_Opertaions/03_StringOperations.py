@@ -11,12 +11,13 @@ print 'STRING OPERATIONS'
 print '--------------------------------------'
 print 'string Indexing'
 
+print 'len(language):', len(language)
+
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
 # -18                                    -3 -2 -1    - reverse indexing
 #
 
-print 'len(language):', len(language)
 print 'language[0] :', language[0]
 print 'language[14]:', language[14]
 print 'language[6] :', language[6]

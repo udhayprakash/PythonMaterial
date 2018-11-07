@@ -29,8 +29,8 @@ def makeitalic(fn):
     return wrapped
 
 
-@makebold#('first')
-@makeitalic#('second')
+@makeitalic
+@makebold
 def hello():
     return "hello world"
 
