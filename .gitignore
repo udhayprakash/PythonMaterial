@@ -101,4 +101,4 @@ ENV/
 .ropeproject
 
 # executables
-.exe
+*.exe
