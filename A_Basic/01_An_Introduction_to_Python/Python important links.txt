@@ -45,3 +45,47 @@ To install pycharm in linux/unix
 
 To install python IDLE in MAC OS, 
 	brew install python-IDLE
+
+
+IDEs to work with Python
+------------------------
+1. IDLE 
+2. Pycharam 
+3. Python Toold for visual Studio 
+4. Intellij IDEA with python plugin 
+5. Komodo IDE 
+6. Komodo Edit 
+7. Spyder 
+8. Thonny 
+9. Geany 
+10. PyScripter 
+11. Ninja's IDE 
+12. Eric
+13. Eclipse with PyDev
+14. Liclipse 
+15. Koding 
+16. PIDA 
+17. MonoDevelop 
+18. Stani's Python Editor 
+19. PythonAnywhere
+20. Koding 
+21. Understand 
+22. Anjuta
+23. KDevelop 
+24. SourceLair
+25. Pyzo 
+
+
+Virtual Environment 
+--------------------
+Step 1: Installation of virtualenv module 
+    pip install virtualenv 
+    virtualenv VIRTUAL_ENVIRONMENT_NAME
+        ex: virtualenv venev
+
+    windows
+        venev\Scripts\activate.bat 
+    Linux
+        venev\bin\activate.sh
+
+

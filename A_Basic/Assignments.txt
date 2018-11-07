@@ -1,3 +1,13 @@
+Assignment 1:
+
+    >>> float('9.0')
+    9.0
+    >>> int('2.0')
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    ValueError: invalid literal for int() with base 10: '2.0'
+    >>>
+
 Assignment 1: Get data from the below URL:
     https://www.w3.org/TR/PNG/iso_8859-1.txt
     Create two sheets within the same excel file, and add each set of two columns in each sheet. 
