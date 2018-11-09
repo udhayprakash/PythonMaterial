@@ -22,6 +22,13 @@ if ((year % 4) == 0) and ((year % 100) == 0) and ((year % 400) == 0):
 else:
     print("{0} is not a leap year".format(year))
 
+##################################################
+if (not year % 4) and (not year % 100) and (not year % 400):
+    # 0               0                  0
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+
 """
     >>>
     >>> "{0} is a leap year".format('1998')

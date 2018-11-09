@@ -20,11 +20,3 @@ else:
     print 'You Guessed greater number!'
 
 # else condition is optional in python
-
-
-
-
-
-
-
-

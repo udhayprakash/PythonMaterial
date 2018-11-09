@@ -33,12 +33,3 @@ print "True * 30 = ", True * 30  # True has a value of one
 
 print "False = ", False
 print "False * 30 = ", False * 30  # False has a value of zero
-
-
-
-
-
-
-
-
-

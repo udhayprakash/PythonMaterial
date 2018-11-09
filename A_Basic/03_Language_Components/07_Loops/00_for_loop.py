@@ -25,5 +25,11 @@ print
 for index, number in enumerate(numbers):
     print index, '-->', number
 
-
-
+print '-'*20
+######################
+for index, number in enumerate(range(-100,100000, 3)): 
+    # print '\n', i,
+    if not number:
+        print 'number', number
+        continue
+    print '\r', index/float(number), '% completed',

@@ -27,7 +27,7 @@ b_string[9:17] = 'is '
 print "b_string", b_string
 
 #############################
-
+print
 # indexing a bytearray string
 print "ordinary_string[6]", ordinary_string[6]
 print "b_string[6]       ", b_string[6]

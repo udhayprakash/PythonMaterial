@@ -35,9 +35,22 @@ print '()', bool(())
 print '[]', bool([])
 print '{}', bool({})
 
+##########################
 if 1:
     print "hello"
 
-a = -0.000000056
-if a:
-    print "a=", a
+while 1:
+    print "hello"
+    break 
+
+num1 = -0.000000056
+if num1:
+    print "a=", num1
+
+
+if num1>=9:
+    print "a=", num1
+
+
+if not num1>=9:
+    print "a=", num1
