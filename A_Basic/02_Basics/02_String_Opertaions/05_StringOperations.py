@@ -28,6 +28,9 @@ print 'Python Production'.split('P')
 print 'Python Production'.rsplit('P')
 print 'Python Production'.split('Prod')
 print
+
+print list('Python Production')
+print 
 # HOw to convert list of strings to a single string
 print ''.join(['Python', 'Production', 'language'])
 print '@'.join(['Python', 'Production', 'language'])
@@ -39,6 +42,7 @@ print 'R'.join('Python Production'.split('P'))
 print ' '.join('Python Production'.split(' '))
 
 print '--------STRING FORMATTING-------'
+print '-----OLD STYLE FORMATTING----'
 print '' % ()
 print '%d' % (12)
 # print '%d'%('12')  # TypeError: %d format: a number is required, not str
@@ -59,3 +63,28 @@ print 'My name is %s. I am %d old paying a tax of %f' % ('Udhay', 33, 15.5)
 print 'My name is %r. I am %r old paying a tax of %r' % ('Udhay', 33, 15.5)
 # print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 )
   #TypeError: not enough arguments for format string
+
+
+
+print '------NEW Style formating------'
+print '{}'.format('')
+print '{} and {}'.format('cat', 'mouse')
+
+print 'Name:{} Age:{} Salary:{}'.format('udhay', 99, 9999.9999)
+
+print '''
+        Name  :{} 
+        Age   :{} 
+        Salary:{}'''.format('udhay', 99, 9999.9999)
+
+print '''
+        Name  :{2} 
+        Age   :{0} 
+        Salary:{0}'''.format('udhay', 99, 9999.9999)
+
+print '''
+        Name  :{NAME} 
+        Age   :{AGE} 
+        Salary:{SALARY}'''.format(NAME='udhay', AGE=99, SALARY=9999.9999)
+
+

@@ -1,8 +1,7 @@
 #!/usr/bin/python
 """
-while loop
-    initialization
-    condition
+initialization
+while loop- condition
     increment/decrement
     logic
 """
@@ -17,9 +16,9 @@ while a < MAX:  # condition
     while b < MAX:
         b += 1
         # print a,  '*', b, '=', a*b
-        # print "{} * {} = {}".format(a, b, a*b)
         # print "%d * %d = %d" % (a, b, a * b)
-        print "%2d * %2d = %3d" % (a, b, a * b)
+        # print "%2d * %2d = %3d" % (a, b, a * b)
+        print "{} * {} = {}".format(a, b, a*b)
     print '-' * 18, a
     # break
 else:

@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
 Purpose: Collections
-    - Lists
-    - Tuples
-    - sets
-    - Dictionaries
+    - Lists         []
+    - Tuples        ()
+    - sets          {}
+    - Dictionaries  {}
 """
 
 myEmptyList = []
@@ -39,6 +39,8 @@ print 'randomList[3:58]:', randomList[3:58]
 print 'randomList[6:57]:', randomList[6:57]
 
 multiDimensionList = [1, 2, [3, 4, 5], [6, 7, 8]]
+                     #0  1      2          3
+                     #       0  1  2    0  1  2
 print 'multiDimensionList:', multiDimensionList
 
 print 'multiDimensionList[2]:', multiDimensionList[2]
@@ -46,6 +48,8 @@ print 'multiDimensionList[2][0]:', multiDimensionList[2][0]
 
 print '=======================List Attributes============='
 print dir(randomList)
+
+randomList = [12, 23.4, True]
 
 print 'randomList:', randomList
 randomList.append(12)
@@ -59,7 +63,10 @@ print 'randomList:', randomList
 randomList.extend([12])
 print 'randomList:', randomList
 
-randomList.extend(['a', 'b', 'c'])
+randomList.extend(['a', 'c'])
+print 'randomList:', randomList
+
+randomList.insert(2, 'ppp')
 print 'randomList:', randomList
 
 print 'randomList.pop():', randomList.pop()
@@ -68,7 +75,7 @@ print 'randomList:', randomList
 print 'randomList.pop():', randomList.pop()
 print 'randomList:', randomList
 
-print "randomList.remove(876876876876L):", randomList.remove(876876876876L)
+print "randomList.remove(12):", randomList.remove(12)
 print 'randomList:', randomList
 
 print 'randomList.count(12) :', randomList.count(12)

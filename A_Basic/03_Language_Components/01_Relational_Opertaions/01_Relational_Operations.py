@@ -15,7 +15,7 @@ Purpose: Relational Operations
 usd = 73
 cand = 50
 
-print  "usd < cand ", usd < cand
+print  "usd < cand ",usd  < cand
 print "70 < 49", 70 < 49
 print "70 > 49", 70 > 49
 
