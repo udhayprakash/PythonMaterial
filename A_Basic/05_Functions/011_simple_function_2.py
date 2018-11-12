@@ -3,11 +3,13 @@
 Purpose: Functions Demo
 
    Scope - Global and local 
+
+Immutable Objects - int, long, float, str, tuple, fronzenset
+Mutable Objects   - list, set, dictionary 
 """
 pi = 3.141617  # immutable  - call by value
 details = {  # mutable  - call by reference
-    'language': 'Python',
-    'version': '2.7.14'
+    'lang': 'Python'
 }
 
 
@@ -23,4 +25,4 @@ print "before function call, pi", pi, "details", details
 simple_function(pi)
 print "after function call, pi", pi, "details", details
 
-
+# print 'phi=', phi # NameError: name 'phi' is not defined

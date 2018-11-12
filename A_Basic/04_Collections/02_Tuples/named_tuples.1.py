@@ -19,8 +19,8 @@ print S[1]
 
 # Access using name 
 print "The Student name using keyname is : "
-print S.name
-print S.age
+print 'S.name', S.name
+print ' S.age',  S.age
 print S.DOB
 
 # Access using getattr()

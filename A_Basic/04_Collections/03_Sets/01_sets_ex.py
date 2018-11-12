@@ -30,26 +30,37 @@ print 'len(filtered_list)', len(filtered_list)
 print 'filtered_list:', filtered_list
 print 
 
-print myset
+print 'before addition - myset', myset
 myset.add(12)
-print myset
-
+print 'ater addition  - myset', myset
+print
 # myset.update(22) # TypeErroOut[16]: {11, 12, 22, 44}r: 'int' object is not iterable
 myset.update([12, 34])
 print myset
-
+print
 myset.update((12, 34, (23, 8)))
 print myset
 
 # myset.update((99, [11, 11])) # TypeError: unhashable type: 'list'
 # print myset
 
+# myset.update((99, {11, 11})) # TypeError: unhashable type: 'set'
+# print myset
+print
 myset.update('tomato')
 print myset
 
+print
+myset.add('tomato')
+print myset
+
+print
 myset.update(['tomato', 'ASa'])
 print myset
 
+print
+myset.add(('tomato', 'ASa'))
+print myset
 
 
 

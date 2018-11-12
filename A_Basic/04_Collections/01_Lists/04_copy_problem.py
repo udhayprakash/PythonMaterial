@@ -2,6 +2,8 @@
 """
 Purpose: COPY PROBLEM
     assignment vs Shallow copy vs deep copy
+
+Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
 
 par_list = [1, 11, 111, 1111]
@@ -20,7 +22,7 @@ print 'par_list ', par_list, type(par_list)
 
 # leakage problem
 print 'hard_copy_list', hard_copy_list, type(hard_copy_list)
-
+print
 import copy
 
 soft_copy_list = copy.copy(par_list)

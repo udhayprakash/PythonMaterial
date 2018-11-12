@@ -12,7 +12,7 @@ Purpose: dictionary demo
 
 from pprint import pprint 
 
-mydict = {}
+mydict = dict() # {}
 
 print type(mydict)
 
@@ -28,7 +28,8 @@ mydict = {
     'blog': 'udhayprakash.blogspot.in',
     0.000001 : other_dict,
      99 : ('age', 'price'),
-    ('Dr', 'Mr'): 'titles'
+    ('Dr', 'Mr'): 'titles',
+    'name': 'somebody'
 }
 
 print mydict
@@ -40,14 +41,15 @@ print 'mydict.keys()', mydict.keys()
 print 'mydict.values()', mydict.values()
 print 'mydict.items()', mydict.items()
 
-########################################
+# ########################################
 
 print "mydict['name']:", mydict['name']
 
 #  dictionary is a mutable object 
 mydict['name'] = 'shyam'
 
-print "mydict['name']:", mydict.get('names')
+print "mydict.get('name'):", mydict.get('name', 'not present')
+
 mydict['company'] = 'abc infotech'
 
 print 'mydict', mydict
@@ -56,7 +58,7 @@ print 'mydict', mydict
 pprint(mydict.keys() + mydict.values())
 print(mydict.keys() + mydict.values())
 
-####################################
+# ####################################
 print dir(mydict)
 print '==============='
 print mydict.popitem()
@@ -68,7 +70,12 @@ print mydict
 
 print mydict.pop('name')
 print mydict
-
+print
+del mydict['company']
+print mydict
 
 mydict.clear()
 print mydict
+
+del mydict
+print mydict #NameError: name 'mydict' is not defined
