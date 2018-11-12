@@ -12,3 +12,6 @@ def hello():
 
 # Function Call 
 hello()
+
+print hello
+print hello()

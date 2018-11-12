@@ -1,0 +1,16 @@
+
+all_colors = {'red', 'blue', 'orange', 'yellow'}
+
+colors_present = {'orange', 'blue'}
+
+
+print colors_present.issubset(all_colors)
+print all_colors.issuperset(colors_present)
+
+
+books = {'ramayana', 'bible'}
+
+print all_colors.isdisjoint(books)
+print all_colors.isdisjoint(colors_present)
+
+print all_colors.intersection(colors_present)

@@ -12,13 +12,20 @@ print small_set
 
 small_set = {12, 3242, 45}
 print type(small_set)
+print small_set
 
 set_with_one_ele = {12}
 print type(set_with_one_ele)
+print
+print 'set_with_one_ele', set_with_one_ele
+set_with_one_ele.discard(12)
+print 'set_with_one_ele', set_with_one_ele
+print
 
 print 'set_with_one_ele', set_with_one_ele
 set_with_one_ele.discard(12)
 print 'set_with_one_ele', set_with_one_ele
+
 
 
 #############
@@ -28,7 +35,7 @@ veto_countries = frozenset({'France', 'US', 'UK', 'China', 'Russia'})
 print 'type(veto_countries)', type(veto_countries)
 print veto_countries
 
-
+print dir(veto_countries)
 # veto_countries.discard('China')
 # AttributeError: 'frozenset' object has no attribute 'discard'
 

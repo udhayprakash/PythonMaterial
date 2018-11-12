@@ -3,11 +3,12 @@
 Purpose: Functions Demo
 
     Function with variable arguments
+    variadic functions
 """
 
 # Function Definition
 def hello(*feed_in):
-    print "type(feed_in)",  type(feed_in)
+    print "\ntype(feed_in)",  type(feed_in)
     print "inputs are"+ str(feed_in)
 
 

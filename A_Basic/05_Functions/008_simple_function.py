@@ -9,6 +9,7 @@ Purpose: Functions Demo
 def hello(name, age=200):
     print "%s's age is %d"%(name, age)
 
+# NOTE: default arguments should be at the end
 
 # Function Call 
 hello('HARI')
