@@ -30,16 +30,9 @@ random.seed('slartibartfast')
 s = [random.random() for i in range(3)]
 print s  # should give [0.34210536499528865, 0.32598885901995334, 0.8052429197795312]
 print
+
+print 'os.urandom(1024)', os.urandom(1024)
 random.seed(os.urandom(1024))
 print random.random()  # should give 0.679793618408
 print random.random()  # should give 0.912271261187
 print random.random()  # should give 0.129267233016
-
-
-
-
-
-
-
-
-

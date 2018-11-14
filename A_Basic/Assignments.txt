@@ -50,3 +50,15 @@ In [13]: randomList = [12, 23.4, True, [12], 1 , '1']
 
 In [14]: randomList.count(1)
 Out[14]: 2
+
+
+
+
+Assignment: Users should enter the below details
+    username 
+    password 
+    email address
+
+    Method 1 : using raw_input
+    Method 2 : using sys.argv 
+    Method 3 : using argparse 

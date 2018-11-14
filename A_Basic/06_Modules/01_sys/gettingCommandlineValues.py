@@ -10,13 +10,18 @@ import sys
 #     print i
 
 print("sys.platform", sys.platform)
-# print '-' * 80
+'''
+Windows                 - win32 
+Linux (debain/ubuntu)   - linux
+Linux( redhat/centos/fedora) - linux2
+mac                     - darwin 
+'''
+print('-' * 60)
 
 # # Run time value
 # word = raw_input('Enter some word:')
 
-# print 'You entered:'+ word
-
+# print('You entered:'+ word)
 
 # sys.argv
 
@@ -25,15 +30,15 @@ print("len(sys.argv):", len(sys.argv))
 
 winningTicket = '123Alpha'
 
-if len(sys.argv) >= 2:
-    userEnteredTicket = sys.argv[1]
-else:
+if len(sys.argv) == 1:
     print('Please enter the ticket number\n')
     print('USAGE:')
     print('      python gettingCommandlineValues.py 231asdas')
     print('__file__ :', __file__)
     print('      python', __file__, '231sads')
     sys.exit(1)
+
+userEnteredTicket = sys.argv[1]
 
 if winningTicket == userEnteredTicket:
     print('You won the lottery')
