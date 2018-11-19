@@ -22,14 +22,20 @@ print("type(vegetables_iter):", type(vegetables_iter))
 # print("vegetables_iter[1]", vegetables_iter[1])
 print(dir(vegetables_iter))
 
+print
 print(vegetables_iter.next)
 print(callable(vegetables_iter.next))
 
 print(vegetables_iter.next())
 print(vegetables_iter.next())
 print(vegetables_iter.next())
-# print(vegetables_iter.next()) # StopIteration
 
+try:
+    print(vegetables_iter.next()) # StopIteration
+except:
+    pass
+
+print('looping with for')
 # Iterator objects are disposable objects
 for each_vegetable in vegetables_iter:
     print("each_vegetable", each_vegetable)
