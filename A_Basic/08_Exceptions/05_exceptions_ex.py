@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 try:
+    raise ValueError('This is my ValueError')
     raise Exception('This is my error')
 except Exception as ex2:
     print 'error is ', ex2

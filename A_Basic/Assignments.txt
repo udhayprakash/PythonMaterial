@@ -62,3 +62,8 @@ Assignment: Users should enter the below details
     Method 1 : using raw_input
     Method 2 : using sys.argv 
     Method 3 : using argparse 
+
+
+def chunking(mylist, size):
+     for i in mylist:
+         yield  mylist[i:i + size]

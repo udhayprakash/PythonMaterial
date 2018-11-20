@@ -3,8 +3,12 @@
 try:
     result = 1 / 0 + bat
     print 'result=', result
-except (ZeroDivisionError, NameError, Exception) as ex2:
+except (ZeroDivisionError, NameError) as ex2:
     print 'error is ', ex2
+    print 'error is ', str(ex2)
+    print 'error is ', repr(ex2)
+except Exception as ex2:
+    print 'Exception error is ', ex2
     print 'error is ', str(ex2)
     print 'error is ', repr(ex2)
 else:
