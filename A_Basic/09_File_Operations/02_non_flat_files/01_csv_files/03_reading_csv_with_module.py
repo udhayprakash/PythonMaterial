@@ -1,6 +1,6 @@
 import csv
 
-print("dir(csv)", dir(csv))
+# print("dir(csv)", dir(csv))
 
 with open('mydata.csv', 'rb') as csv_fh:
     data = csv.reader(csv_fh, delimiter=',')
@@ -8,8 +8,8 @@ with open('mydata.csv', 'rb') as csv_fh:
 
     print(data, type(data))
 
-    # for index, eachline in enumerate(data):
-    #     print index
+    for index, eachline in enumerate(data):
+        print index, '->', eachline
 
     for loopnumber, eachline in enumerate(data):
         if not loopnumber:
