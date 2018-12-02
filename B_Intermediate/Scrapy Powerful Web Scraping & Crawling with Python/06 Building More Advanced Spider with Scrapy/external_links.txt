@@ -1,0 +1,2 @@
+- b'Whare-are-the-differences-between-XPath-symbols-'
+- b'https://www.udemy.com/scrapy-tutorial-web-scraping-with-python/learn/v4/questions/2264866'

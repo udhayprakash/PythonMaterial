@@ -1,0 +1,134 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>068 Yield Data Items from 2 Functions</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Usually, we use one function to grab URLs of web pages and another function to parse each page. Sometimes,you need to parse and yield data from themain page because they are not available in the crawled pages. For example, if you are crawling a mobile phone store, there might be details about each phone on the main page that are not on the phone page.</p><p><br></p><p><strong>Here is how to do that:</strong><br></p><p>In the yield of the first function where we Request URL, there is another argument called <code>meta</code> by which we can pass details from the first function to the second one in a dictionary.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p><p>For example, in the first function, we well have:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>yield Request(url, callback=self.parse_function, meta={'Date Added':date, 'Category':category})</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p><p>In the second function, what we yield is rather this <code>meta</code> dictionary. This will be like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>yield response.meta</code></p><p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>What about the details we get from the second function? We 
+should first add them to the dictionary before yield, just as adding to 
+any dictionary, like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">response.meta['Brand'] = brand
+response.meta['Model'] = model
+response.meta['Price'] = price
+        
+yield response.meta</pre><p><br></p><p><br></p><p>The other way to do that if most of the details are in the second 
+function is to get the value(s) from the meta dictionary into a 
+variable(s), like this:</p>
+
+
+
+
+
+<pre class="prettyprint linenums">date = response.meta.get('Date')
+category = response.meta.get('Category')
+        
+yield{'Date Added':date, 'Category':category, 'Brand':brand, 'Model':model, 'Price':price}</pre>
+
+
+
+
+
+<p><br></p><p>If you have questions, please feel free to send them to the <strong>Q&amp;A</strong> section of this course.</p><p><br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

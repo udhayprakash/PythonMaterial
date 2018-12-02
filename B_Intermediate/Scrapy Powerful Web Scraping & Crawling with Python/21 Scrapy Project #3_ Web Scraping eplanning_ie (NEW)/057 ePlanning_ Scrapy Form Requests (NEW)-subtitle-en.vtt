@@ -1,0 +1,612 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:07.500
+Hey there! So this is the third part of our
+video. And, currently, we are iterating
+
+00:00:07.500 --> 00:00:13.980
+over the county URLs that follow this
+domain name. After that, we go to the
+
+00:00:13.980 --> 00:00:20.580
+Received Applications listings only. And
+here on this third part of this section,
+
+00:00:20.580 --> 00:00:26.010
+we will pretty much automate filling out
+the form, which will limit our time,
+
+00:00:26.010 --> 00:00:32.399
+for example, for 42 Days, and 
+only use Applications Received,
+
+00:00:32.399 --> 00:00:36.899
+and sort of click Search, right? We will 
+get returned results, as you will see.
+
+00:00:36.899 --> 00:00:43.890
+So it's going to be similar to this one. So to pretty 
+much do this, we have to use form requests.
+
+00:00:43.890 --> 00:00:51.600
+So let's first import it. So go back to
+the text editor and put here the comma,
+
+00:00:51.600 --> 00:00:58.949
+and then FormRequest. We can copy this
+line, and then go back to the Terminal
+
+00:00:58.949 --> 00:01:06.780
+and paste it into the Scrapy Shell. Hit
+Enter, and that's it. So the first thing
+
+00:01:06.780 --> 00:01:13.080
+that we need to do is, of course, 
+as always, inspect the elements.
+
+00:01:13.080 --> 00:01:18.420
+So this is called a form. This page has two forms, 
+as you will see in a moment. So if we go to Inspect,
+
+00:01:18.420 --> 00:01:26.369
+and then ctrl + F, and then
+type in form here, and, let's see,
+
+00:01:26.369 --> 00:01:30.990
+there are 20 instances. But as you can see,
+ this is the first form that I was talking about,
+
+00:01:30.990 --> 00:01:37.049
+and it is for the Search Results. 
+And then the second one,
+
+00:01:37.049 --> 00:01:42.930
+as you will see in a moment. So 
+these are all classes or comments,
+
+00:01:42.930 --> 00:01:48.270
+and this is the second one. So if we zoom out this, 
+you will see that as I'm highlighting right now,
+
+00:01:48.270 --> 00:01:52.979
+this is the form that we are 
+looking to get. So as you can see,
+
+00:01:52.979 --> 00:02:00.450
+it contains method as a post, so if we then
+ load more data here, you will get the input,
+
+00:02:00.450 --> 00:02:09.060
+the IDs, the headers, field sets, etc. So 
+a lot of data. So if we go back to the Terminal,
+
+00:02:09.060 --> 00:02:14.730
+and first thing that we need to
+do is . . . let's actually do this in the
+
+00:02:14.730 --> 00:02:21.930
+text editor because it's probably going to
+ be easier. So after we are in this type of page.
+
+00:02:21.930 --> 00:02:29.010
+So this type of page will be the
+response in the parse_form.
+
+00:02:29.010 --> 00:02:36.200
+So we just need to yield the form request, 
+so yield FormRequest.from_response.
+
+00:02:36.200 --> 00:02:41.340
+So this from_response will pretty 
+much read from this response,
+
+00:02:41.340 --> 00:02:48.840
+meaning this type of page. The reason why is 
+because we want to get to the response so we can
+
+00:02:48.840 --> 00:02:54.420
+have the HTML and values, such as this
+one, for example. And any other, really,
+
+00:02:54.420 --> 00:03:01.530
+such as Time Limit and different, really,
+buttons. Go back to the text editor, and
+
+00:03:01.530 --> 00:03:06.690
+then the first parameter, because 
+we use the from_response,
+
+00:03:06.690 --> 00:03:15.420
+is going to be response, of course. And then, 
+comma, and then the second one is going to be called
+
+00:03:15.420 --> 00:03:22.140
+formdata={} and then in the 
+curly brackets we will here,
+
+00:03:22.140 --> 00:03:27.239
+pretty much, get our data in the dictionary keys
+and values. Now let me show you how this
+
+00:03:27.239 --> 00:03:34.170
+actually works on the site end. So most
+of the time, and when there's some kind
+
+00:03:34.170 --> 00:03:40.620
+of JavaScript generated pages, 
+you can just go to the Network tab,
+
+00:03:40.620 --> 00:03:45.600
+then here to the . . . this tab, specifically, 
+or let's just go to the All because
+
+00:03:45.600 --> 00:03:51.690
+sometimes there will be, in different
+tabs, data. So then let's say the Time Limit,
+
+00:03:51.690 --> 00:03:57.030
+we set it to 42 Days, and only
+Applications Received. So we are going to
+
+00:03:57.030 --> 00:04:04.230
+leave this open, and then we will click
+Search here. And then only after a
+
+00:04:04.230 --> 00:04:08.790
+second or two, after the loading of the page 
+is started, then you can click here to the
+
+00:04:08.790 --> 00:04:15.449
+Record or Stop Recording network log.
+This is done, pretty much,
+
+00:04:15.449 --> 00:04:19.449
+to isolate all of the . . . or really 
+to isolate the first requests.
+
+00:04:19.449 --> 00:04:22.300
+So the first request here is 
+going to be the right one.
+
+00:04:22.300 --> 00:04:27.639
+We don't care, really, about the . . . any, like, 
+images or something like that, as you can
+
+00:04:27.639 --> 00:04:33.069
+see from the response, and any other,
+really, data such as JavaScript, CSS,
+
+00:04:33.069 --> 00:04:39.129
+Images, Media, Fonts, Documents, 
+as you can see, WebSockets, etc.
+
+00:04:39.129 --> 00:04:45.909
+So we just want to use this one. So,
+once again, this is pretty straightforward.
+
+00:04:45.909 --> 00:04:51.069
+And, really, it's always done when it comes to 
+scraping this type of pages. And, also, the way that
+
+00:04:51.069 --> 00:04:55.270
+you know that this is JavaScript
+generated is from the URL,
+
+00:04:55.270 --> 00:04:59.800
+as you will see in a moment. So go to the
+ Network tab, then click Search after you're ready,
+
+00:04:59.800 --> 00:05:05.770
+and set up all of your arguments. And then
+just click here, Stop. As you can see,
+
+00:05:05.770 --> 00:05:10.750
+we got here the Search Results. And if we
+go to the second page, you will see that
+
+00:05:10.750 --> 00:05:16.389
+we get the append /2. So iterating, really, 
+over the pages will be pretty straightforward.
+
+00:05:16.389 --> 00:05:21.940
+Okay, so let's first then 
+go to the URL that we need,
+
+00:05:21.940 --> 00:05:27.940
+which is going to be this one. 
+So here we've got the Headers, Preview,
+
+00:05:27.940 --> 00:05:35.380
+Response, Cookies, Timing. So five
+different tabs. What we're interesting . . . or
+
+00:05:35.380 --> 00:05:41.740
+interested in . . . is only Headers and only the 
+Response. And now for the Headers,
+
+00:05:41.740 --> 00:05:47.440
+here we've got the Request Method POST. So that's 
+how I know that we need to use form request, okay?
+
+00:05:47.440 --> 00:05:54.190
+So if it . . . Request Methods, 
+by the way, are either GET or POST.
+
+00:05:54.190 --> 00:05:58.300
+In this case, because it's POST it's going
+to have the form request. If it was GET,
+
+00:05:58.300 --> 00:06:03.639
+then we could get it with the, just, yield
+Request Method. We get our Status Code
+
+00:06:03.639 --> 00:06:10.990
+and a bunch of other, really, data points. 
+So this is the, really, the URL that is going
+
+00:06:10.990 --> 00:06:17.319
+to be pretty much the same as here on 
+this function, so it's going to be totally fine.
+
+00:06:17.319 --> 00:06:22.530
+And, let's see, and then we don't care, 
+really, for the Response Headers.
+
+00:06:22.530 --> 00:06:28.700
+As you can see here, the 
+page is loaded with the ASP.NET.
+
+00:06:28.700 --> 00:06:34.350
+Request Headers, we really don't, also, care
+ about this. What we care about is the Form Data.
+
+00:06:34.350 --> 00:06:39.540
+So as you can see here, well, 
+most of the time, there will be some
+
+00:06:39.540 --> 00:06:43.440
+kind of token or as you can see a
+RequestVerificationToken, in this case.
+
+00:06:43.440 --> 00:06:49.590
+And this is the value. Now, pretty much,
+ these data points, you can copy this
+
+00:06:49.590 --> 00:06:54.660
+and paste this into the text editor and define 
+them as the keys and values in the formdata.
+
+00:06:54.660 --> 00:07:00.510
+But we don't actually need to do all of that.
+
+00:07:00.510 --> 00:07:06.930
+So the default values that are going 
+to be the 7 Days Applications Received,
+
+00:07:06.930 --> 00:07:14.820
+and then this also checked out button. And so 
+with this, you don't actually have to define, pretty much,
+
+00:07:14.820 --> 00:07:21.810
+really, anything when it comes to
+having a form request. But if you wanted
+
+00:07:21.810 --> 00:07:26.820
+to, for example, change the 
+Time Limit from 7 Days to,
+
+00:07:26.820 --> 00:07:32.610
+for example, 28 Days, then you would
+have to enter the key and value to the formdata.
+
+00:07:32.610 --> 00:07:38.610
+Now let me show you how this is 
+actually done. So as we see here,
+
+00:07:38.610 --> 00:07:45.660
+we get the Time Limit to 42. So this corresponds 
+to the, pretty much, selecting this, right?
+
+00:07:45.660 --> 00:07:53.970
+Let me show you if I select here 
+35 Days. So we go to Inspect,
+
+00:07:53.970 --> 00:08:01.610
+go to the Network tab, and then click 
+Search. Stop it and go to the Search Results.
+
+00:08:01.610 --> 00:08:11.550
+Sorry. Do this. And as you can see here,
+the Time Limit is 35. The rest here we got 42.
+
+00:08:11.550 --> 00:08:18.450
+So you get the point. Also, 
+this check box list, and then they
+
+00:08:18.450 --> 00:08:24.810
+use list slicing to have zero, then ID, 
+as you can see. So this all can be changed.
+
+00:08:24.810 --> 00:08:30.380
+So this also can be changed to False, and
+then also this can also be changed to True.
+
+00:08:30.380 --> 00:08:38.620
+App status probably can be to 1 to 2, etc. 
+So the only thing, really, that we would
+
+00:08:38.620 --> 00:08:45.920
+need to change, in this case, is if we
+want to change it to . . . from the default
+
+00:08:45.920 --> 00:08:53.360
+7 Days to 42 Days is going to be this. 
+So if we copy this, and then go back
+
+00:08:53.360 --> 00:09:02.560
+to the text editor, and set it as a key,
+and then as a value. We can set 42, right?
+
+00:09:02.560 --> 00:09:10.580
+So define this as a string, and that will be it
+for the formdata. You can also copy and paste this,
+
+00:09:10.580 --> 00:09:15.260
+but probably verification token 
+will be changed. And because we
+
+00:09:15.260 --> 00:09:20.270
+read from the response, we are going to get 
+generated our token without any issues.
+
+00:09:20.270 --> 00:09:27.800
+So then the second thing that we
+need to do is put a comma here,
+
+00:09:27.800 --> 00:09:34.220
+since we are done with the formdata. 
+Then we can set dont_filter to True.
+
+00:09:34.220 --> 00:09:39.860
+And now what this will be done . . . or doing . . . 
+is not filtering out the same URL. Because, again,
+
+00:09:39.860 --> 00:09:44.780
+this is done with the ASP.NET. Most of
+the time this type of pages don't change
+
+00:09:44.780 --> 00:09:51.860
+their URL, as you can see so here. Let's
+see. So since we are going to be in this
+
+00:09:51.860 --> 00:09:58.610
+page, we are going to go to the very next function, 
+which will also have or read from the response.
+
+00:09:58.610 --> 00:10:04.670
+And, of course, response will 
+have exactly the same HTML,
+
+00:10:04.670 --> 00:10:09.590
+and also that includes the URLs. So Scrapy by
+default will filter out duplicate requests.
+
+00:10:09.590 --> 00:10:14.030
+So sometimes this is a good
+thing. Well, in most cases,
+
+00:10:14.030 --> 00:10:19.730
+this is a good thing, but sometimes it's not. So 
+you can set the dont_filter to equal to True, really.
+
+00:10:19.730 --> 00:10:24.710
+You can do the same thing, really. 
+So if we copy this and paste it,
+
+00:10:24.710 --> 00:10:31.160
+you can do it also here in this function. You
+can do it in any Request method, but since we
+
+00:10:31.160 --> 00:10:35.190
+are not going to process, 
+really, in this type of case,
+
+00:10:35.190 --> 00:10:39.329
+duplicate URLs, and really we don't need
+them. We are good to go, really,
+
+00:10:39.329 --> 00:10:45.500
+and we don't need to define this. So 
+dont_filter is set to True, and then we define the
+
+00:10:45.500 --> 00:10:53.939
+formxpath is equal to the single quotes and then 
+parentheses, and then we can type in find every form,
+
+00:10:53.939 --> 00:11:01.350
+and then we will use our second form. 
+Then put comma, and then
+
+00:11:01.350 --> 00:11:09.079
+finally define callback to self parse, 
+for example, pages. So let's define it.
+
+00:11:11.420 --> 00:11:18.750
+(self, response) And, for now, let's
+pass it. Let's first figure out if this
+
+00:11:18.750 --> 00:11:24.569
+is going to be working. I've done this in
+sublime text because it's easier to see it
+
+00:11:24.569 --> 00:11:30.540
+than doing this in the Terminal. But
+if this is working, then we will do this
+
+00:11:30.540 --> 00:11:34.709
+in the Terminal, which is the preferred way,
+really, to test out the form requests.
+
+00:11:34.709 --> 00:11:41.449
+And this type of pages or figuring out all
+of the, like, form data that is requested
+
+00:11:41.449 --> 00:11:48.269
+or required, really, is time-consuming, especially 
+on your first time. So I know your pain, really.
+
+00:11:48.269 --> 00:11:56.420
+So let's save it, go back to the 
+Terminal, and run the script.
+
+00:11:56.660 --> 00:12:02.550
+Let's see, hopefully, this will work. And
+because we set the dont_filter to True,
+
+00:12:02.550 --> 00:12:10.439
+it will not filter out duplicate requests, 
+which seems like it's actually doing right now.
+
+00:12:10.439 --> 00:12:14.670
+So, I believe . . . okay, so here. As you can see,
+
+00:12:14.670 --> 00:12:20.040
+most of the time we get the GET, but here
+we get the POST. So this is our post request
+
+00:12:20.040 --> 00:12:25.680
+from the FormRequest here. And
+because it's 200, it seems like
+
+00:12:25.680 --> 00:12:32.550
+everything is working fine. Now this 
+will not be true in most cases.
+
+00:12:32.550 --> 00:12:37.439
+Because even though sometimes they 
+will display post request and 200,
+
+00:12:37.439 --> 00:12:41.020
+then you will not get loaded the right data. 
+Now I know that this is really confusing,
+
+00:12:41.020 --> 00:12:46.240
+but when it comes to
+scraping JavaScript pages,
+
+00:12:46.240 --> 00:12:51.310
+it gets kind of confusing. So the same thing
+really happens when you try to log in.
+
+00:12:51.310 --> 00:12:57.240
+There are kind of redirects and stuff like that,
+which sometimes Scrapy doesn't offer,
+
+00:12:57.240 --> 00:13:02.520
+and so this is really or can be really time-consuming.
+
+00:13:02.520 --> 00:13:08.050
+Now since everything is . . . seems like
+everything is working fine, let's go back to the shell.
+
+00:13:08.050 --> 00:13:14.860
+And then we imported the 
+FormRequest, which is fine.
+
+00:13:14.860 --> 00:13:25.180
+And then let's go back to the sublime text, and 
+name this, for example, form. So form is equal to this.
+
+00:13:25.180 --> 00:13:33.340
+We can copy this or cut it. 
+Let's . . . this will actually not work.
+
+00:13:33.340 --> 00:13:37.720
+So dont_filter True is not needed. And also callback 
+is not needed because we are using this in the shell.
+
+00:13:37.720 --> 00:13:43.620
+Okay, so finally we can cut it 
+and paste the same to the Terminal.
+
+00:13:43.620 --> 00:13:51.040
+So we can call in the magic function 
+%paste. Hit Enter, and no form element found
+
+00:13:51.040 --> 00:14:00.160
+with the . . . I'll see this with url. This is 
+probably not the URL, so let's try to
+
+00:14:00.160 --> 00:14:10.240
+do it with fetch and first fetch the correct 
+URL. Let's go and also cut it once again.
+
+00:14:10.240 --> 00:14:17.710
+Okay, so here we paste it, and let's see. 
+So it seems like form would work.
+
+00:14:17.710 --> 00:14:24.400
+Okay. And then we can fetch our form. 
+So to do that, of course, just like with
+
+00:14:24.400 --> 00:14:31.750
+loading pages, ordinary pages, you call in
+fetch, and then the form. Okay. So . . . and then,
+
+00:14:31.750 --> 00:14:36.910
+let's see, response.body. So it 
+seems like it crawled it with the 200
+
+00:14:36.910 --> 00:14:42.540
+as a successful response. Okay. 
+So data is, as you can see, there.
+
+00:14:42.540 --> 00:14:50.020
+Sometimes you will get response.body as
+an empty list, really, of the Unicode.
+
+00:14:50.020 --> 00:14:54.910
+So in that case, you messed something up,
+unfortunately. We can also call in view(response).
+
+00:14:54.910 --> 00:15:01.830
+Hit Enter. And then this will, 
+of course, in our preferred editor,
+
+00:15:01.830 --> 00:15:08.140
+get or load the data, as you can see in
+the TMP file. So everything is working fine,
+
+00:15:08.140 --> 00:15:14.440
+and we got into the 
+Results file, which is great.
+
+00:15:14.440 --> 00:15:19.150
+So, hopefully, this was not too hard. 
+In this course, we'll have in the later
+
+00:15:19.150 --> 00:15:25.570
+sections a few more videos where we
+cover form requests. And there are a ton of,
+
+00:15:25.570 --> 00:15:29.590
+really, variations when it comes to form 
+requests. So I know that this can be hard,
+
+00:15:29.590 --> 00:15:34.330
+and will be hard, and time-consuming. 
+But, unfortunately, when it comes to, again,
+
+00:15:34.330 --> 00:15:39.460
+scraping JavaScript pages, 
+it's going to be a bit trickier
+
+00:15:39.460 --> 00:15:45.160
+than scraping ordinary pages.
+So that'll be it in this video,
+
+00:15:45.160 --> 00:15:48.360
+and I'll see you in the very next one.
+

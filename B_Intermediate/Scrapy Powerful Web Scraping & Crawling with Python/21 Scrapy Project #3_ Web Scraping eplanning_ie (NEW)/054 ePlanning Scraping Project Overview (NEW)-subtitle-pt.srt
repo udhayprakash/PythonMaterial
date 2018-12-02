@@ -1,0 +1,43 @@
+﻿1
+00:00:00,030 --> 00:00:05,950
+Olá! Então nesta seção, vamos extrair
+o eplanning.ie -- aplicativo de planejamento.
+
+2
+00:00:06,350 --> 00:00:11,080
+Então a forma que vamos fazer isso é indo
+para cada região desta lista.
+
+3
+00:00:12,080 --> 00:00:18,100
+E depois disso, vamos para as únicas
+listagens que são Received Applications.
+
+4
+00:00:19,100 --> 00:00:24,300
+Depois disso, vamos aqui fazer requisições de formulário com Scrapy,
+
+5
+00:00:24,300 --> 00:00:30,179
+e vamos definir 42 dias como o tempo limite.
+E então vamos para uma página similar a esta.
+
+6
+00:00:31,179 --> 00:00:35,730
+Depois disso, vamos iterar sobre as páginas
+dos resultados e em cada página,
+
+7
+00:00:35,730 --> 00:00:43,260
+vamos rastrear os seguintes URLs. Então
+todos os números de arquivos, tabela de dados de URLs.
+
+8
+00:00:43,260 --> 00:00:48,510
+E então se o botão Agents for encontrado,
+vamos extrair pontos de dados como
+
+9
+00:00:48,510 --> 00:00:52,059
+Name, Address, Phone, Fax, e também o email.
+

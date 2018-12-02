@@ -1,0 +1,132 @@
+﻿1
+00:00:00,567 --> 00:00:01,400
+Hey there!
+
+2
+00:00:01,400 --> 00:00:03,501
+So today we will cover running Scrapy Spider
+
+3
+00:00:03,501 --> 00:00:05,726
+with the runspider command.
+
+4
+00:00:05,726 --> 00:00:08,952
+Normally we would navigate to root directory of our project,
+
+5
+00:00:08,952 --> 00:00:12,563
+and then you would, from here use Scrapy Crawl command
+
+6
+00:00:12,563 --> 00:00:14,230
+with the runspider.
+
+7
+00:00:14,230 --> 00:00:16,638
+We can run it similar to pretty much
+
+8
+00:00:16,638 --> 00:00:18,641
+how we would run the Python script,
+
+9
+00:00:18,641 --> 00:00:22,147
+so pretty much without having to create a project.
+
+10
+00:00:22,147 --> 00:00:25,147
+If you need quick Spider for some short and quick job,
+
+11
+00:00:25,147 --> 00:00:28,258
+then runspider has a lot less boiler plate
+
+12
+00:00:28,258 --> 00:00:29,908
+that is required.
+
+13
+00:00:29,908 --> 00:00:33,150
+For now, let's actually just copy and paste this code,
+
+14
+00:00:33,150 --> 00:00:35,733
+and open it in the Text Editor.
+
+15
+00:00:37,135 --> 00:00:39,727
+And let's clean it up a little bit.
+
+16
+00:00:39,727 --> 00:00:42,810
+So, this is fine, this we don't need,
+
+17
+00:00:43,956 --> 00:00:47,166
+also these other two imports we don't need,
+
+18
+00:00:47,166 --> 00:00:50,833
+and also we don't need opening, ItemLoaders,
+
+19
+00:00:52,478 --> 00:00:56,645
+and finally, we don't need these trailing three lines.
+
+20
+00:00:58,117 --> 00:01:00,867
+We can just print out the h1_tag.
+
+21
+00:01:02,211 --> 00:01:05,800
+And finally, print out the tags, and that will be fine,
+
+22
+00:01:05,800 --> 00:01:09,967
+so let's save it, and run back to our Desktop,
+
+23
+00:01:10,119 --> 00:01:13,814
+Open in Terminal, change the directory to the Desktop,
+
+24
+00:01:13,814 --> 00:01:16,897
+and finally let's run our new Spider.
+
+25
+00:01:18,089 --> 00:01:21,181
+To run it type in,
+
+26
+00:01:21,234 --> 00:01:25,392
+scrapy runspide quotes.py
+
+27
+00:01:27,022 --> 00:01:29,246
+And, as you can see, it's similar,
+
+28
+00:01:29,246 --> 00:01:31,582
+or the output is pretty much exact
+
+29
+00:01:31,582 --> 00:01:34,673
+as the scrapy crawl command,
+
+30
+00:01:34,673 --> 00:01:36,960
+which pretty much means that
+
+31
+00:01:36,960 --> 00:01:40,362
+really scraping would be done the same way,
+
+32
+00:01:40,362 --> 00:01:43,061
+and once again, you would use runspider command
+
+33
+00:01:43,061 --> 00:01:46,669
+for some quick and dirty, so to speak, jobs.
+

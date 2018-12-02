@@ -1,0 +1,619 @@
+﻿1
+00:00:00,030 --> 00:00:05,000
+Hey there! So this is the fourth part of
+our LinkedIn automation project,
+
+2
+00:00:05,000 --> 00:00:11,600
+and in this part we will finally scrape some data
+points from each and every LinkedIn profile.
+
+3
+00:00:11,600 --> 00:00:19,100
+So we go back to our script.py file,
+and we start to iterate over LinkedIn URLs.
+
+4
+00:00:19,100 --> 00:00:24,380
+So if we copy this and if you
+remember... let's actually close this,
+
+5
+00:00:24,380 --> 00:00:30,900
+and just use this one. So if you
+remember correctly, in the LinkedIn URLs,
+
+6
+00:00:30,900 --> 00:00:37,000
+it's going to be really the ten URLs
+per page of the LinkedIn profiles.
+
+7
+00:00:37,000 --> 00:00:43,500
+So to go, what we really need to do is go
+into each and every one, and then scrape
+
+8
+00:00:43,500 --> 00:00:51,100
+data points from them, such as name, also the
+job title, school location, and also the LinkedIn URL.
+
+9
+00:00:51,100 --> 00:00:57,390
+Let's close this, go back to our
+text editor, and to iterate, of course,
+
+10
+00:00:57,390 --> 00:01:09,000
+we can use for loops. So let's do that. So
+for linkedin_url in linkedin_urls or, really, this link.
+
+11
+00:01:09,000 --> 00:01:16,200
+We go and type in driver.get()
+and we can copy pretty much this.
+
+12
+00:01:16,200 --> 00:01:24,500
+Sorry, not cut. Copy, paste it here, and then
+we can type in, for example here, to sleep,
+
+13
+00:01:24,500 --> 00:01:31,000
+let's say, five seconds between
+loading each and every profile link.
+
+14
+00:01:31,000 --> 00:01:37,500
+And then we will also use Parsel. So if
+you don't already have Parsel installed,
+
+15
+00:01:37,500 --> 00:01:45,200
+it's a library, really, for extracting data
+points from the site similar to the Scrapy one
+
+16
+00:01:45,200 --> 00:01:48,700
+that we used previously.
+So if you don't already have it,
+
+17
+00:01:48,700 --> 00:01:54,500
+you can install it by simply entering
+pip install parsel. That's it, really.
+
+18
+00:01:54,500 --> 00:02:02,930
+So let's go here and import it. So
+from parsel, we will use Selector.
+
+19
+00:02:03,380 --> 00:02:11,300
+Selenium also has the selector, but it's not
+really that well done as something like Parsel is.
+
+20
+00:02:11,300 --> 00:02:18,600
+So we can copy this, and paste
+this into our Terminal, hit Enter.
+
+21
+00:02:18,600 --> 00:02:27,900
+And then, let's see. So we can
+type in here the sel = Selector
+
+22
+00:02:27,900 --> 00:02:31,800
+And then in open and closed
+parentheses, we are going to type in
+
+23
+00:02:31,800 --> 00:02:40,200
+(text=driver.page_source)
+So if we copy and paste this,
+
+24
+00:02:40,200 --> 00:02:45,700
+and go back to the Terminal,
+paste this in, hit Enter, as you can see,
+
+25
+00:02:45,700 --> 00:02:55,300
+this will pretty much load our source code for this
+specific page. So it's... when it comes to scraping,
+
+26
+00:02:55,300 --> 00:03:03,200
+we did response.body. In the Selenium,
+it's going to be driver.page_source
+
+27
+00:03:03,200 --> 00:03:11,000
+So pretty simple. Let's see, sublime text,
+and so let's copy and paste this.
+
+28
+00:03:11,000 --> 00:03:16,000
+We don't actually have to... let's
+go back and enter some profile.
+
+29
+00:03:16,000 --> 00:03:25,500
+And let's now enter or copy and
+paste this. Copy and then paste this in.
+
+30
+00:03:25,500 --> 00:03:34,000
+And then, finally, we can start to scrape or locate first
+the data points. The first one is going to be Name.
+
+31
+00:03:34,000 --> 00:03:38,000
+Most of the time, it's going
+to be either in h1 or h2 tags.
+
+32
+00:03:38,000 --> 00:03:45,000
+So let's see which one it is here, Inspect.
+And here we can, pretty much,
+
+33
+00:03:45,000 --> 00:03:51,100
+I can see at least three different ways
+to scrape this. You can scrape it by class,
+
+34
+00:03:51,100 --> 00:03:58,200
+and then this value by tag name of h1.
+The ID can be equal to the name,
+
+35
+00:03:58,200 --> 00:04:03,000
+and also the class can be
+equal to the, as you can see, fn,
+
+36
+00:04:03,000 --> 00:04:09,300
+which probably stands for full name, or something
+like that. We can just scrape it by a tag name of h1
+
+37
+00:04:09,300 --> 00:04:14,800
+because it's probably the easiest one. Let's see.
+Let's go back to the Terminal and type in,
+
+38
+00:04:14,800 --> 00:04:20,900
+since we are using the Parsel
+Selector, we can type in sel.xpath,
+
+39
+00:04:20,900 --> 00:04:28,500
+and then locate every h1 tag. Hit Enter,
+and Perfect. So here we can see our data.
+
+40
+00:04:28,500 --> 00:04:36,100
+And the syntax, it's going to be,
+really, the same as with Scrapy, previously.
+
+41
+00:04:36,100 --> 00:04:41,500
+So we can type in text, open and closed
+parentheses, and then extract_first()
+
+42
+00:04:41,500 --> 00:04:45,000
+So really, really simple. Hit
+Enter, and, as you can see,
+
+43
+00:04:45,000 --> 00:04:52,900
+it's in the unicode Paul Garner, which
+corresponds to this name. We can copy this,
+
+44
+00:04:52,900 --> 00:04:58,500
+and paste this into our text editor.
+Let's name this name,
+
+45
+00:04:58,500 --> 00:05:06,500
+and let's see what else is going to be interesting.
+Let's see... let's see, job title, for example.
+
+46
+00:05:06,500 --> 00:05:14,500
+So this guy is a freelance Python developer
+at Depop. So we go in Inspect here on this element,
+
+47
+00:05:14,500 --> 00:05:22,700
+and we have the headline title. Let's see,
+let's actually go back to a few more.
+
+48
+00:05:22,700 --> 00:05:28,000
+And let's see if it's going to be the same
+data points. So the titles, for some reason,
+
+49
+00:05:28,000 --> 00:05:36,900
+it seems like we are not currently on
+the... like we haven't logged in. This is weird.
+
+50
+00:05:36,900 --> 00:05:45,700
+Anyway, let's go and here see the h1 tag.
+Okay, here the guy has the name,
+
+51
+00:05:45,700 --> 00:05:51,300
+and also, let's see, so headline title. So it seems
+like it corresponds to each and every profile.
+
+52
+00:05:51,300 --> 00:05:55,700
+So we can copy this. And let's see if
+it's also...  this is going to be the same.
+
+53
+00:05:55,700 --> 00:06:01,600
+So Inspect, headline title. So it
+seems like it's going to be the same,
+
+54
+00:06:01,600 --> 00:06:07,970
+but let's actually login first and see if
+the data points are going to be there.
+
+55
+00:06:07,970 --> 00:06:14,100
+Okay, so I'm logged in. So let's go to the
+first profile, and let's see if it changed.
+
+56
+00:06:14,100 --> 00:06:19,900
+So it's going to be changed. So, as you can see,
+scraping LinkedIn is going to be extra hard,
+
+57
+00:06:19,900 --> 00:06:26,700
+because the pages do differ from the time
+that you are logged in and logged out.
+
+58
+00:06:26,700 --> 00:06:29,100
+So that's also one thing to note.
+
+59
+00:06:29,100 --> 00:06:35,500
+So, let's see, the name is probably not going
+to be changed. So, let's see, it's going to be h1 tag
+
+60
+00:06:35,500 --> 00:06:41,100
+with the specific class, but scraping it
+from h1 tag is going to be probably easier.
+
+61
+00:06:41,100 --> 00:06:45,700
+So, currently, Selenium... so if we go to the Terminal,
+
+62
+00:06:45,700 --> 00:06:55,300
+and type in driver.current_url, it's going to be
+displaying the Google... the URL, as you can see here.
+
+63
+00:06:55,300 --> 00:07:00,500
+So these two pages are not loaded.
+So the way that you can load them is...
+
+64
+00:07:00,500 --> 00:07:07,000
+let's copy this, and paste this in.
+And, right now, if we go back to our Terminal,
+
+65
+00:07:07,000 --> 00:07:11,550
+and type in driver.current_url,
+and hit Enter, as you can see,
+
+66
+00:07:11,550 --> 00:07:16,900
+it's going to be corresponding to this URL.
+So that's also one thing to note
+
+67
+00:07:16,900 --> 00:07:21,480
+when it comes to scraping data with Scrapy.
+Let's verify that everything is working.
+
+68
+00:07:21,480 --> 00:07:28,680
+To do that we go back to our text editor.
+We can copy and paste this statement,
+
+69
+00:07:28,680 --> 00:07:35,040
+and paste this in here. But before that, sorry,
+we need to also make sure that we have
+
+70
+00:07:35,040 --> 00:07:42,800
+our Parsel Selector at the current
+page source because, previously,
+
+71
+00:07:42,800 --> 00:07:50,200
+it was on Google or the profile
+that was logged off. Sorry.
+
+72
+00:07:50,200 --> 00:07:55,800
+Let's go to the text editor, and let's copy this,
+
+73
+00:07:55,800 --> 00:08:04,200
+paste this in, hit Enter, and perfect. So it works.
+So the next one data point that we would like
+
+74
+00:08:04,200 --> 00:08:08,600
+to scrape is going to be job title, which
+is going to be, in this case, this value.
+
+75
+00:08:08,600 --> 00:08:18,000
+So we go to Inspect, and let's see. So it
+seems like it's going to be in the h2 tag.
+
+76
+00:08:18,000 --> 00:08:24,680
+So let's see if just typing
+sel.xpath, select every h2 tag,
+
+77
+00:08:24,680 --> 00:08:36,400
+let's see, let's extract text from it and extract.
+Let's see. Senior software developer at Kalo (contract)
+
+78
+00:08:36,400 --> 00:08:40,500
+So it seems like if we just type in extract_first()
+
+79
+00:08:40,500 --> 00:08:48,190
+it will locate our data. The other way that
+you can scrape this data point is just by,
+
+80
+00:08:48,190 --> 00:08:53,700
+pretty much, copying and pasting this class.
+Let's see if this is going to be working.
+
+81
+00:08:53,700 --> 00:08:58,500
+Let's go back to our Terminal,
+and then type in sel.xpath
+
+82
+00:08:58,500 --> 00:09:07,459
+and then locate every class with the
+previously copied class value,
+
+83
+00:09:07,459 --> 00:09:11,800
+and extracting text from it. Let's
+see if this is going to be working,
+
+84
+00:09:11,800 --> 00:09:17,400
+data Senior software developer, as you
+can see. So it's going to be working also here.
+
+85
+00:09:17,400 --> 00:09:23,000
+But let's just copy and paste this h2 tag.
+So we are just going to be extracting
+
+86
+00:09:23,000 --> 00:09:29,200
+the first instance of the h2 tag
+and extract, of course, text from it.
+
+87
+00:09:29,200 --> 00:09:37,480
+Let's paste this in here and name this,
+for example, job_title is equal to this value.
+
+88
+00:09:37,480 --> 00:09:43,900
+The very next data point that we will
+scrape is going to be the school.
+
+89
+00:09:43,900 --> 00:09:49,800
+So the school, in this case, is going to be
+this data point that I'm highlighting right now.
+
+90
+00:09:49,800 --> 00:09:57,500
+So let's go and Inspect it. And, as you can see,
+they kind of share the same classes,
+
+91
+00:09:57,500 --> 00:10:06,000
+which goes to pv-top-card-section, and then headline,
+for example, experience, company, and also schools.
+
+92
+00:10:06,000 --> 00:10:10,200
+So it's going to be pretty straightforward
+to scrape these data points.
+
+93
+00:10:10,200 --> 00:10:17,100
+However, this part of the class
+will probably not be changed.
+
+94
+00:10:17,100 --> 00:10:23,000
+But here, this part will... may be
+changed, and maybe it's dynamic.
+
+95
+00:10:23,000 --> 00:10:28,500
+So, as you can see, it's going
+to contain the typeface or font values.
+
+96
+00:10:28,500 --> 00:10:34,200
+As you can see here, 17 pixel, black, 70%
+This is probably something like capacity,
+
+97
+00:10:34,200 --> 00:10:39,500
+or something like that. So we just
+need to, pretty much, scrape this class.
+
+98
+00:10:39,500 --> 00:10:46,500
+So let's copy and paste this in here, and perfect.
+So it seems like there will be only one instance,
+
+99
+00:10:46,500 --> 00:10:52,700
+as you can see here. So we can
+type in, in our Terminal, sel.xpath,
+
+100
+00:10:52,700 --> 00:11:03,100
+then in open and closed parentheses, we
+type in to find every selector that starts with,
+
+101
+00:11:03,100 --> 00:11:07,020
+and, let's see, in the ordinary
+parentheses we type in class,
+
+102
+00:11:07,020 --> 00:11:14,200
+and then comma, and then the value,
+which is going to be, sorry, this one.
+
+103
+00:11:14,200 --> 00:11:21,600
+So let's see if this is going to be working.
+Let's see, something is not entered correctly.
+
+104
+00:11:21,600 --> 00:11:29,300
+It starts... oh, sorry... with.
+And let's see why this doesn't work.
+
+105
+00:11:29,300 --> 00:11:42,600
+So XPath error: Unregistered function in...
+Let's see, this should be working.
+
+106
+00:11:42,600 --> 00:11:50,300
+Let's see if there is... okay, so this is
+ordinary parentheses, square brackets.
+
+107
+00:11:50,300 --> 00:11:57,500
+Yeah, it's going to be there, and it should
+be working, but starts... oh, sorry.
+
+108
+00:11:57,500 --> 00:12:03,550
+The "s" is missing here. Perfect.
+So the "s" was... so it should be
+
+109
+00:12:03,550 --> 00:12:12,500
+starts with, not start with. Let's see, let's
+use the text from it and use extract_first()
+
+110
+00:12:12,500 --> 00:12:17,200
+because there's only one element that we
+are interested in. And here, as you can see,
+
+111
+00:12:17,200 --> 00:12:24,700
+it's going to be this value. Perfect. So, as you
+can see here, we have the white space and \n,
+
+112
+00:12:24,700 --> 00:12:33,400
+which stands for new space, really.
+And so if we copy this or new line,
+
+113
+00:12:33,400 --> 00:12:38,500
+let's see where we need to enter this
+in our text editor. We can type in here,
+
+114
+00:12:38,500 --> 00:12:46,700
+for example, school is equal to this.
+And then if school, so if school:
+
+115
+00:12:46,700 --> 00:12:52,900
+Then we will use school = school.strip()
+
+116
+00:12:52,900 --> 00:13:01,000
+So if we copy this statement, copy. And, let's see,
+let's go back to the Terminal, paste this in, hit Enter.
+
+117
+00:13:01,000 --> 00:13:08,000
+And then also call in school.strip()
+You will see if we paste this in,
+
+118
+00:13:08,000 --> 00:13:13,800
+that after we enter it here, we will not
+get the new lines and white spaces.
+
+119
+00:13:13,800 --> 00:13:19,500
+As you can see it from here,
+it's going to be changed. So if we...
+
+120
+00:13:19,500 --> 00:13:25,000
+so since we are going to enter
+this into the CSV file, you will get,
+
+121
+00:13:25,000 --> 00:13:32,500
+pretty much, unordered cells. So it's probably
+easier to just call a strip on it to make it more tidier.
+
+122
+00:13:32,500 --> 00:13:37,000
+And that will be it for this video.
+In the very next one, we will continue
+
+123
+00:13:37,000 --> 00:13:43,300
+to scrape location, and also LinkedIn URL.
+And, finally, save these data points
+
+124
+00:13:43,300 --> 00:13:48,400
+to the CSV file, which is going
+to be named in the parameters.py file.
+
+125
+00:13:48,400 --> 00:13:51,250
+So I'll see you there.
+

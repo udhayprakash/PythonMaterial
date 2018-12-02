@@ -1,0 +1,966 @@
+﻿WEBVTT
+
+1
+00:00:00.430 --> 00:00:01.807
+Hi! So today we will cover
+
+2
+00:00:01.807 --> 00:00:04.564
+using Selenium alongside with Scrapy.
+
+3
+00:00:04.564 --> 00:00:08.105
+We will already, or use already existing Spider,
+
+4
+00:00:08.105 --> 00:00:09.733
+and modify it.
+
+5
+00:00:09.733 --> 00:00:11.733
+So let's go to our Spider code,
+
+6
+00:00:11.733 --> 00:00:13.549
+and let's remove some stuff.
+
+7
+00:00:13.549 --> 00:00:16.056
+We will use the, let's see,
+
+8
+00:00:16.056 --> 00:00:20.223
+we will use the default Scrapy Spider,
+
+9
+00:00:20.945 --> 00:00:23.566
+that we already used in our previous videos,
+
+10
+00:00:23.566 --> 00:00:25.214
+and let's see what else we don't need,
+
+11
+00:00:25.214 --> 00:00:27.561
+we don't need the start_urls.
+
+12
+00:00:27.561 --> 00:00:29.144
+Also rules are not needed,
+
+13
+00:00:29.144 --> 00:00:31.123
+and finally this last function.
+
+14
+00:00:31.123 --> 00:00:33.973
+So all in all only, let's see, four or five really,
+
+15
+00:00:33.973 --> 00:00:36.472
+lines of codes are left.
+
+16
+00:00:36.472 --> 00:00:37.773
+To talk more about Selenium,
+
+17
+00:00:37.773 --> 00:00:41.584
+we already covered this in our first video,
+
+18
+00:00:41.584 --> 00:00:43.042
+from this screen cast.
+
+19
+00:00:43.042 --> 00:00:46.144
+Selenium again, to reiterate is a tool,
+
+20
+00:00:46.144 --> 00:00:50.311
+simply for web testing purposes and it's not built
+
+21
+00:00:51.088 --> 00:00:54.287
+for scraping, but it can be used to scrape
+
+22
+00:00:54.353 --> 00:00:55.886
+some JavaScript heavy pages.
+
+23
+00:00:56.053 --> 00:00:59.084
+The page that we today, are going to scrape
+
+24
+00:00:59.084 --> 00:01:02.196
+is not JavaScript heavy, but we are just going
+
+25
+00:01:02.196 --> 00:01:05.304
+to use it to show you as an example,
+
+26
+00:01:05.304 --> 00:01:08.706
+how you can use the really Selenium
+
+27
+00:01:08.706 --> 00:01:12.763
+to help you out if you are, for example,
+
+28
+00:01:12.763 --> 00:01:15.452
+encountering some issues gathering the data
+
+29
+00:01:15.452 --> 00:01:17.223
+with just Scrapy.
+
+30
+00:01:17.223 --> 00:01:20.214
+Installing Selenium is going to be really easy,
+
+31
+00:01:20.214 --> 00:01:23.404
+so pretty much just with the pip install,
+
+32
+00:01:23.404 --> 00:01:25.479
+you can install the tool.
+
+33
+00:01:25.479 --> 00:01:27.974
+There are really more than a few.
+
+34
+00:01:27.974 --> 00:01:31.996
+ChromeDriver, or sorry Selenium driver instances.
+
+35
+00:01:31.996 --> 00:01:34.397
+I'm going to use ChromeDriver.
+
+36
+00:01:34.397 --> 00:01:36.397
+Let's actually show the,
+
+37
+00:01:38.564 --> 00:01:40.085
+the one that you can use,
+
+38
+00:01:40.085 --> 00:01:42.419
+so for example, you can use the Firefox,
+
+39
+00:01:42.419 --> 00:01:45.792
+so you would, after of course you install Selenium,
+
+40
+00:01:45.792 --> 00:01:48.672
+import it with this command,
+
+41
+00:01:48.672 --> 00:01:52.472
+and then you can define driver instance,
+
+42
+00:01:52.472 --> 00:01:56.292
+and then pretty much call the Firefox as it is.
+
+43
+00:01:56.292 --> 00:01:59.425
+Bear in mind that especially with the Firefox,
+
+44
+00:01:59.425 --> 00:02:03.592
+at least with the Linux installed and in pair with it,
+
+45
+00:02:04.111 --> 00:02:07.061
+they don't work sometimes, as expected,
+
+46
+00:02:07.061 --> 00:02:08.753
+so just bear that in mind.
+
+47
+00:02:08.753 --> 00:02:12.868
+Also for some reason, Chrome, or ChromeDriver better said,
+
+48
+00:02:12.868 --> 00:02:15.516
+is a lot faster on my end at least,
+
+49
+00:02:15.516 --> 00:02:17.691
+so I'm going to use the Chrome,
+
+50
+00:02:17.691 --> 00:02:19.269
+or better said once again, ChromeDriver.
+
+51
+00:02:19.269 --> 00:02:23.142
+So to install or download the ChromeDriver,
+
+52
+00:02:23.142 --> 00:02:25.426
+because you will have to install it.
+
+53
+00:02:25.426 --> 00:02:28.681
+Firefox as a browser, it just needs to be installed,
+
+54
+00:02:28.681 --> 00:02:31.763
+but Chrome has to be installed sort of manually
+
+55
+00:02:31.763 --> 00:02:34.215
+if you don't already have it.
+
+56
+00:02:34.215 --> 00:02:37.267
+So once you go to the ChromeDriver or type it in
+
+57
+00:02:37.267 --> 00:02:40.827
+to the Google, the first link that is going to pop up
+
+58
+00:02:40.827 --> 00:02:43.056
+is the official site of the ChromeDriver,
+
+59
+00:02:43.056 --> 00:02:46.881
+so just go to the latest release and then from then on,
+
+60
+00:02:46.881 --> 00:02:51.048
+install or download the zip file from the operating system,
+
+61
+00:02:52.297 --> 00:02:54.616
+corresponding operating system that you use,
+
+62
+00:02:54.616 --> 00:02:58.117
+and then just unzip it and you will get pretty much
+
+63
+00:02:58.117 --> 00:03:00.534
+similar or exactly this file.
+
+64
+00:03:01.675 --> 00:03:03.605
+So this is, once again, driver instance
+
+65
+00:03:03.605 --> 00:03:07.495
+that we are going to use, so let's actually load it,
+
+66
+00:03:07.495 --> 00:03:11.620
+and show a bit more what can be done with this.
+
+67
+00:03:13.261 --> 00:03:16.167
+Let's go to the Terminal, a new one,
+
+68
+00:03:16.167 --> 00:03:17.834
+and let's Import it.
+
+69
+00:03:21.102 --> 00:03:25.269
+So, we will type in from selenium import webdriver,
+
+70
+00:03:27.652 --> 00:03:31.802
+let's see, and we will also use that in a moment.
+
+71
+00:03:33.606 --> 00:03:37.014
+We will also copy and paste this pretty much in our
+
+72
+00:03:37.014 --> 00:03:41.063
+Scrapy Spider code, so we don't forget it.
+
+73
+00:03:41.063 --> 00:03:43.202
+Let's see what else, so just like with
+
+74
+00:03:43.202 --> 00:03:46.752
+the Firefox, we will call our driver instance
+
+75
+00:03:46.752 --> 00:03:49.692
+driver really, and then define Chrome,
+
+76
+00:03:49.692 --> 00:03:52.477
+that we want the Chrome, that we want to use really,
+
+77
+00:03:52.477 --> 00:03:54.529
+the Chrome driver instance.
+
+78
+00:03:54.529 --> 00:03:56.938
+And then here, we need to specify the path
+
+79
+00:03:56.938 --> 00:03:59.879
+to the pretty much this file.
+
+80
+00:03:59.879 --> 00:04:03.350
+In this case, it's in the home directory.
+
+81
+00:04:03.350 --> 00:04:06.235
+My username, and then the chromedriver,
+
+82
+00:04:06.235 --> 00:04:09.587
+and once I click Enter, as you will see in a moment,
+
+83
+00:04:09.587 --> 00:04:12.040
+web driver instance will be loaded,
+
+84
+00:04:12.040 --> 00:04:16.207
+and then you have a pretty much self-explanatory way
+
+85
+00:04:16.919 --> 00:04:21.086
+to fetch some sites, so let's just go to the
+
+86
+00:04:21.178 --> 00:04:23.964
+google.com and let's see.
+
+87
+00:04:23.964 --> 00:04:26.534
+As you can see, it loads pretty much instantly,
+
+88
+00:04:26.534 --> 00:04:28.380
+and then you can use for example,
+
+89
+00:04:28.447 --> 00:04:32.390
+stuff like driver.title to get the title of the page,
+
+90
+00:04:32.390 --> 00:04:36.490
+the driver.page_source, which we are going to use,
+
+91
+00:04:36.512 --> 00:04:39.920
+I think it here, even has the status.
+
+92
+00:04:39.920 --> 00:04:41.527
+Nope, it doesn't, I think it has it,
+
+93
+00:04:41.527 --> 00:04:43.378
+but it's different call,
+
+94
+00:04:43.378 --> 00:04:47.378
+and you can pretty much click the Google search,
+
+95
+00:04:48.879 --> 00:04:51.218
+and stuff like that, but we will get
+
+96
+00:04:51.218 --> 00:04:52.948
+back to that in a moment.
+
+97
+00:04:52.948 --> 00:04:55.000
+So let's actually load our page.
+
+98
+00:04:55.000 --> 00:04:58.464
+Our page is going to be this one.
+
+99
+00:04:58.464 --> 00:05:02.622
+So let's actually go to our page, and inspect it
+
+100
+00:05:04.839 --> 00:05:08.506
+or add the first http, and this should work,
+
+101
+00:05:10.540 --> 00:05:12.589
+so let's see, perfect it works.
+
+102
+00:05:12.589 --> 00:05:16.756
+So let's actually do this or as we are testing
+
+103
+00:05:16.920 --> 00:05:18.690
+what will work and what will not,
+
+104
+00:05:18.690 --> 00:05:21.466
+let's actually go to our Scrapy code,
+
+105
+00:05:21.466 --> 00:05:24.982
+and add line by line, because this is definitely
+
+106
+00:05:24.982 --> 00:05:27.760
+ten times easier to follow it that way.
+
+107
+00:05:27.760 --> 00:05:31.677
+So we will actually define first, our function.
+
+108
+00:05:32.573 --> 00:05:36.740
+The function is going to be called start_requests,
+
+109
+00:05:36.871 --> 00:05:39.803
+and the only parameter here will be the self.
+
+110
+00:05:39.803 --> 00:05:42.381
+We will not get a response, because we don't have
+
+111
+00:05:42.381 --> 00:05:46.547
+the start_urls defined, and Spider alongside with
+
+112
+00:05:47.700 --> 00:05:51.021
+these two reserved variable names is going to look
+
+113
+00:05:51.021 --> 00:05:55.188
+for the first function called start_requests.
+
+114
+00:05:55.241 --> 00:05:58.701
+If it's present and if it is this function name
+
+115
+00:05:58.701 --> 00:06:01.701
+has to return Request pretty much
+
+116
+00:06:01.701 --> 00:06:03.203
+to the URL.
+
+117
+00:06:03.203 --> 00:06:05.638
+It doesn't matter which one, but it has to be,
+
+118
+00:06:05.638 --> 00:06:09.010
+or Request has to be returned or yielded.
+
+119
+00:06:09.010 --> 00:06:12.314
+So just like with the parse, function name start_requests
+
+120
+00:06:12.314 --> 00:06:15.231
+is going to be restricted or really
+
+121
+00:06:17.492 --> 00:06:20.659
+the Spider, sort of Spider attribute.
+
+122
+00:06:22.162 --> 00:06:24.211
+So let's define our Spider.
+
+123
+00:06:24.211 --> 00:06:28.378
+We will use of course, self. and then the variable name,
+
+124
+00:06:29.519 --> 00:06:32.161
+because we are in the class,
+
+125
+00:06:32.161 --> 00:06:36.303
+so let's define the webdriver.
+
+126
+00:06:36.860 --> 00:06:40.610
+Let's see, webdriver.Chrome, and then let's define path,
+
+127
+00:06:40.610 --> 00:06:43.511
+so this is going to be pretty much the same line
+
+128
+00:06:43.511 --> 00:06:45.720
+that we typed in previously,
+
+129
+00:06:45.720 --> 00:06:49.861
+and then let's define to go to the site.
+
+130
+00:06:50.782 --> 00:06:52.811
+Let's actually just copy and paste this,
+
+131
+00:06:52.811 --> 00:06:54.894
+it's going to be quicker.
+
+132
+00:06:57.751 --> 00:06:58.781
+And let's see,
+
+133
+00:06:58.781 --> 00:07:02.000
+so the next thing that we are going to use,
+
+134
+00:07:02.000 --> 00:07:04.000
+is use Scrapy selectors.
+
+135
+00:07:05.650 --> 00:07:08.999
+Scrapy selectors are going to be imported from
+
+136
+00:07:08.999 --> 00:07:12.574
+scrapy.selector import Selector,
+
+137
+00:07:13.012 --> 00:07:17.179
+so here we are going to select it just like this.
+
+138
+00:07:17.241 --> 00:07:21.360
+And this will be used pretty much for gathering
+
+139
+00:07:21.360 --> 00:07:24.952
+the URLs from the site.
+
+140
+00:07:25.751 --> 00:07:29.191
+Also, Selenium can be used for this task,
+
+141
+00:07:29.191 --> 00:07:32.149
+but I'm just going to show you the Scrapy way.
+
+142
+00:07:32.149 --> 00:07:35.451
+So then we define variable name called sel,
+
+143
+00:07:35.451 --> 00:07:39.618
+and then define Selector, and in it, in Selector object
+
+144
+00:07:40.380 --> 00:07:43.404
+we will collect or the text that we are going to collect
+
+145
+00:07:43.404 --> 00:07:45.912
+is going to be from the driver.page_source,
+
+146
+00:07:45.912 --> 00:07:49.350
+so it's going to be pretty much this string,
+
+147
+00:07:49.350 --> 00:07:50.933
+so all of the HTML.
+
+148
+00:07:52.862 --> 00:07:55.943
+Click Enter, and then we can pretty much use the,
+
+149
+00:07:55.943 --> 00:07:59.166
+as you can see, selector or Scrapy.
+
+150
+00:07:59.166 --> 00:08:00.840
+This is sort of like Scrapy Shell,
+
+151
+00:08:00.840 --> 00:08:03.159
+and then we can define for example,
+
+152
+00:08:03.159 --> 00:08:06.477
+to select every &lt;h1&gt; tag and stuff like that.
+
+153
+00:08:06.477 --> 00:08:10.644
+But here, we will concentrate on getting to the book URLs,
+
+154
+00:08:12.438 --> 00:08:15.521
+so they are for example, in this case
+
+155
+00:08:16.906 --> 00:08:19.999
+it's in this exact node,
+
+156
+00:08:19.999 --> 00:08:24.019
+so here we see the &lt;h3&gt;, and then in that &lt;a&gt; tag
+
+157
+00:08:24.019 --> 00:08:28.186
+we have the source, or the, in this case, href to the URL.
+
+158
+00:08:29.085 --> 00:08:32.418
+So, let's actually try to, just type in,
+
+159
+00:08:33.446 --> 00:08:37.521
+to select every &lt;h3&gt; and then go to that header,
+
+160
+00:08:37.521 --> 00:08:40.011
+and select the &lt;a&gt; tag, and let's see
+
+161
+00:08:40.011 --> 00:08:41.506
+how many of them are found,
+
+162
+00:08:41.506 --> 00:08:44.466
+so there seems to be everything from
+
+163
+00:08:44.466 --> 00:08:46.994
+a-light-in-the-attic, and the last one
+
+164
+00:08:46.994 --> 00:08:49.228
+is going to be the URL to the
+
+165
+00:08:49.228 --> 00:08:52.376
+catalogue/its-only-the,
+
+166
+00:08:52.376 --> 00:08:54.126
+so let's see if this will be,
+
+167
+00:08:54.126 --> 00:08:56.457
+pretty much this will be the last one.
+
+168
+00:08:56.457 --> 00:08:57.536
+Great.
+
+169
+00:08:57.536 --> 00:09:00.940
+So we are currently selecting all of the book URLs
+
+170
+00:09:00.940 --> 00:09:02.390
+as selectors,
+
+171
+00:09:02.390 --> 00:09:04.482
+as the selectors.
+
+172
+00:09:04.482 --> 00:09:07.149
+And let's actually get the href,
+
+173
+00:09:08.169 --> 00:09:10.851
+and then finally call the extract().
+
+174
+00:09:10.851 --> 00:09:13.211
+Now this is going to be part of the URL.
+
+175
+00:09:13.211 --> 00:09:14.928
+As you can see, this is not the full URL.
+
+176
+00:09:14.928 --> 00:09:17.811
+If we go to any really book URL,
+
+177
+00:09:17.811 --> 00:09:21.978
+you will see that it goes to the books.toscrape.com,
+
+178
+00:09:22.161 --> 00:09:25.641
+and then it goes to the catalog and then name of the book
+
+179
+00:09:25.641 --> 00:09:27.288
+and stuff like that.
+
+180
+00:09:27.288 --> 00:09:31.288
+So let's just go back and go to our Scrapy code.
+
+181
+00:09:34.807 --> 00:09:36.790
+Define the selector.
+
+182
+00:09:36.790 --> 00:09:40.457
+Here we will initialize the Scrapy selector,
+
+183
+00:09:41.390 --> 00:09:44.390
+so I forgot the self parameter here,
+
+184
+00:09:45.290 --> 00:09:47.781
+and let's see what else, selector,
+
+185
+00:09:47.781 --> 00:09:51.948
+and this doesn't have to contain the self in it so,
+
+186
+00:09:52.890 --> 00:09:55.371
+and then we will collect the, or really assigned
+
+187
+00:09:55.371 --> 00:09:59.437
+book variables to the selector,
+
+188
+00:09:59.650 --> 00:10:01.750
+let's see, this one.
+
+189
+00:10:03.310 --> 00:10:05.701
+So once again, this is going to collect pretty much
+
+190
+00:10:05.701 --> 00:10:09.868
+all of the book URLs on any given page.
+
+191
+00:10:11.100 --> 00:10:14.433
+And then we will iterate over each link.
+
+192
+00:10:15.320 --> 00:10:17.311
+So for book in books.
+
+193
+00:10:17.311 --> 00:10:21.478
+And here we are going to first assign the variable name URL,
+
+194
+00:10:21.822 --> 00:10:25.514
+just to specify that we need to go to books
+
+195
+00:10:25.514 --> 00:10:29.681
+or to add books.toscrape.com, and then this type of string.
+
+196
+00:10:30.688 --> 00:10:34.855
+So let's do that, so http://books.toscrape.com,
+
+197
+00:10:40.675 --> 00:10:43.317
+and then a trailing slash because this doesn't offer
+
+198
+00:10:43.317 --> 00:10:47.484
+the slash as really as the starting part of the URL,
+
+199
+00:10:48.776 --> 00:10:51.688
+and then let's just add the book.
+
+200
+00:10:51.688 --> 00:10:54.688
+And finally let's yield the Request.
+
+201
+00:10:56.131 --> 00:10:59.389
+So we will yield Request and let's actually,
+
+202
+00:10:59.389 --> 00:11:01.370
+just first define it,
+
+203
+00:11:01.370 --> 00:11:05.537
+so this is going to be from scrapy.http import Request.
+
+204
+00:11:09.047 --> 00:11:11.741
+Let's see, so the URL, or the first parameter
+
+205
+00:11:11.741 --> 00:11:13.942
+is going to be of course, the URL to the page,
+
+206
+00:11:13.942 --> 00:11:17.936
+and then the callback, it's just going to be self.
+
+207
+00:11:17.936 --> 00:11:20.353
+for example parse, let's see,
+
+208
+00:11:21.704 --> 00:11:23.938
+parse_book or something like that.
+
+209
+00:11:23.938 --> 00:11:27.435
+And let's see if something is missing.
+
+210
+00:11:27.435 --> 00:11:28.908
+Yeah, that should work.
+
+211
+00:11:28.908 --> 00:11:32.869
+So let's actually try it, and see if it does work actually,
+
+212
+00:11:32.869 --> 00:11:35.119
+so we change our directory.
+
+213
+00:11:36.370 --> 00:11:38.198
+This is actually the way that I work,
+
+214
+00:11:38.198 --> 00:11:42.031
+so hopefully I do know what I'm talking about,
+
+215
+00:11:43.138 --> 00:11:44.320
+so let's see if it works.
+
+216
+00:11:44.320 --> 00:11:47.809
+But sometimes it doesn't work for whatever reason.
+
+217
+00:11:47.809 --> 00:11:50.678
+So let's see, perfect it does have the error,
+
+218
+00:11:50.678 --> 00:11:52.485
+so let's see why that is.
+
+219
+00:11:52.485 --> 00:11:56.652
+So driver and, of course the self is not referenced
+
+220
+00:11:57.999 --> 00:12:00.580
+so that is definitely the issue.
+
+221
+00:12:00.580 --> 00:12:02.997
+So let's try this once again.
+
+222
+00:12:04.129 --> 00:12:06.689
+And the callback or book Spider object,
+
+223
+00:12:06.689 --> 00:12:10.856
+of course I haven't assigned or defined the function name,
+
+224
+00:12:10.950 --> 00:12:14.492
+and this will have the self and response,
+
+225
+00:12:14.492 --> 00:12:17.111
+and we will just pass it as of right now,
+
+226
+00:12:17.111 --> 00:12:19.194
+let's try the third time,
+
+227
+00:12:20.562 --> 00:12:23.322
+and here we don't have the,
+
+228
+00:12:23.322 --> 00:12:25.905
+of course defined properly UR,
+
+229
+00:12:26.933 --> 00:12:29.933
+so let's try it for the fourth time.
+
+230
+00:12:31.763 --> 00:12:34.154
+Perfect, so it, right now it works.
+
+231
+00:12:34.154 --> 00:12:38.321
+So as you can see, we got the 200 as the successful one,
+
+232
+00:12:38.363 --> 00:12:41.591
+or as the successful response, so that's perfect.
+
+233
+00:12:41.591 --> 00:12:45.001
+In the very next video, we will cover iterating,
+
+234
+00:12:45.001 --> 00:12:47.834
+or using while loop to iterate over
+
+235
+00:12:50.121 --> 00:12:51.772
+clicking of this button,
+
+236
+00:12:51.772 --> 00:12:54.312
+and then once it goes to the last page,
+
+237
+00:12:54.312 --> 00:12:56.622
+once this bottom is not present,
+
+238
+00:12:56.622 --> 00:12:58.573
+we will add an exception,
+
+239
+00:12:58.573 --> 00:13:02.053
+and we will scrape all of the URLs with the Scrapy,
+
+240
+00:13:02.053 --> 00:13:06.220
+and maybe scrape some title or price of the, every book.
+
+241
+00:13:08.296 --> 00:13:09.329
+Talk to you soon!
+

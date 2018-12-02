@@ -1,0 +1,217 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:06.210
+Hey there! So today we are going 
+to learn how to transform the CSV file
+
+00:00:06.210 --> 00:00:10.440
+to the XLSX or aka Excel file. 
+If you don't already have
+
+00:00:10.440 --> 00:00:17.880
+the tool called openpyxl, then
+you can go to either the Terminal
+
+00:00:17.880 --> 00:00:26.189
+or your Command Prompt, and then type in
+sudo or just pip install openpyxl. Hit Enter.
+
+00:00:26.189 --> 00:00:30.359
+Then if prompted, of course, as always, 
+make sure to enter your password.
+
+00:00:30.359 --> 00:00:35.880
+Hit once again Enter and then 
+the tool should be downloaded.
+
+00:00:35.880 --> 00:00:44.129
+Now we can close the Terminal, and go 
+to the Course Content. And, pretty much,
+
+00:00:44.129 --> 00:00:49.739
+the code, really, that I'm going to write can
+be, really, modified to, really, any other spider,
+
+00:00:49.739 --> 00:00:56.000
+but for now we can use on the Section 3 
+called Building Basic Spider with Scrapy,
+
+00:00:56.000 --> 00:01:00.300
+we can download this 
+3.3.quotes-spider-basic.zip file.
+
+00:01:00.300 --> 00:01:08.400
+And since I've already done this, if I go
+to the Desktop, and then extract it.
+
+00:01:08.400 --> 00:01:15.119
+We can remove it. And then we can go to 
+the spider quotes, which is located here,
+
+00:01:15.119 --> 00:01:20.520
+and then open it with the text editor. 
+So this is fairly straightforward.
+
+00:01:20.520 --> 00:01:25.799
+Or let's use, not the example.py, let's use 
+the quotes.py. The spider, as you can see,
+
+00:01:25.799 --> 00:01:30.299
+it's pretty straightforward. So it 
+goes to the quotes.toscrape.com,
+
+00:01:30.299 --> 00:01:38.220
+and then it just scrapes the h1 tag, 
+and also the tags. So if we run it,
+
+00:01:38.220 --> 00:01:43.610
+let's go to the root directory. So we 
+run it with the scrapy crawl quotes.
+
+00:01:43.610 --> 00:01:53.159
+So we open the Terminal in the root directory, 
+and then type in scrapy crawl quotes. Hit Enter.
+
+00:01:53.159 --> 00:01:57.770
+And, as you can see, it's already finished. 
+So since we are only scraped one page,
+
+00:01:57.770 --> 00:02:05.200
+we are then if we use a feed export, 
+such as -o items.csv, for example,
+
+00:02:05.200 --> 00:02:10.200
+we will just generate one row 
+of data, as you can see from here.
+
+00:02:10.200 --> 00:02:15.300
+Okay. We can delete this, and now 
+there are a few imports that we need to use.
+
+00:02:15.300 --> 00:02:22.890
+The first one is the os, so we import 
+the os. Also, we import the csv module,
+
+00:02:22.890 --> 00:02:33.330
+also the glob, and, finally, 
+the already installed, openpyxl,
+
+00:02:33.330 --> 00:02:39.000
+and we import Workbook from it, so 
+Workbook. And that will be it for the imports.
+
+00:02:39.239 --> 00:02:45.319
+Then here we need to add 
+another method called close.
+
+00:02:45.319 --> 00:02:51.750
+This is one of the Scrapy default 
+names such as, for example, parse.
+
+00:02:51.750 --> 00:02:57.000
+Close is also one of the, again,
+Scrapy default names that Scrapy uses.
+
+00:02:57.000 --> 00:03:02.400
+And the two parameters, the first one is
+self, and then the second one is reason.
+
+00:03:02.400 --> 00:03:07.920
+Okay? So it's not the response. And 
+then this method is only called once
+
+00:03:07.920 --> 00:03:13.829
+the Scrapy is completely 
+finished, really, with the scraping.
+
+00:03:13.829 --> 00:03:20.040
+So the first thing that we'll do is call 
+in the CSV file as a variable name,
+
+00:03:20.040 --> 00:03:24.989
+and then, pretty much, this line that I'm 
+going to write will get the latest CSV file.
+
+00:03:24.989 --> 00:03:32.090
+So we type in max(glob.iglob), and then 
+in open and closed parentheses we will,
+
+00:03:32.090 --> 00:03:39.390
+pretty much, find every CSV file. So the
+syntax is dot csv and then asterisk (*)
+
+00:03:39.390 --> 00:03:46.400
+for every, really, file that has the CSV
+extension. And then we will define key
+
+00:03:46.400 --> 00:03:54.300
+as os.path.getctime
+Then here we will assign
+
+00:03:54.300 --> 00:04:03.800
+wb is equal to the already referenced Workbook from 
+the openpyxl module, open and closed parentheses,
+
+00:04:03.800 --> 00:04:13.400
+and type in then ws = wb.active
+Then, finally, we will open the CSV
+
+00:04:13.400 --> 00:04:21.600
+and save the... or first append rows
+and then save the file as Excel or xlsx file.
+
+00:04:21.600 --> 00:04:24.750
+So to do that, first, again, we need to open the file.
+
+00:04:24.750 --> 00:04:33.350
+We do that with the with open, then the CSV file.
+So we can copy this, paste it here,
+
+00:04:33.350 --> 00:04:45.060
+then set the CSV file to read mode, 
+and then set the CSV file as an "f"
+
+00:04:45.060 --> 00:04:53.760
+and then we can start to iterate 
+over it. So for row in csv.reader
+
+00:04:53.760 --> 00:05:05.490
+Then we can reference the "f" ws.append, 
+obviously, the row. And then we can finally...
+
+00:05:05.490 --> 00:05:14.729
+the last line is for saving. So we can call in
+wb.save csv file. Then we are going
+
+00:05:14.729 --> 00:05:21.270
+to replace the .csv with nothing.
+
+00:05:21.270 --> 00:05:28.400
+And then we will add plus .xlsx. 
+So this will be our Excel file.
+
+00:05:28.400 --> 00:05:37.410
+Finally, we can save this, then go 
+to the Terminal and then run this once again.
+
+00:05:37.410 --> 00:05:41.340
+And then go to the root directory. And, 
+as you can see, right now we have the items.csv
+
+00:05:41.340 --> 00:05:47.460
+and then also items.xlsx or Excel file. 
+So if we open the CSV file,
+
+00:05:47.460 --> 00:05:50.500
+we can see the results. And then, 
+obviously, if we open the Excel file,
+
+00:05:50.500 --> 00:05:57.500
+you will see the same, really, results. 
+But in the Excel or .xlsx extension.
+
+00:05:57.500 --> 00:06:04.340
+So that will be it for this video, 
+and I'll see you in the very next one.

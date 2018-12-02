@@ -1,0 +1,1281 @@
+﻿1
+00:00:00,636 --> 00:00:02,314
+Olá! Então estamos continuando
+
+2
+00:00:02,314 --> 00:00:05,306
+do nosso vídeo anterior, e aqui nós vamos pegar
+
+3
+00:00:05,306 --> 00:00:07,620
+alguns pontos de dados interessantes e usar "yield"
+
+4
+00:00:07,620 --> 00:00:10,307
+neles, finalmente, para cada URL de livro.
+
+5
+00:00:10,307 --> 00:00:11,154
+Então vamos começar.
+
+6
+00:00:11,154 --> 00:00:14,494
+O primeiro deles vai ser o título, então vamos para o "Inspect".
+
+7
+00:00:14,494 --> 00:00:18,515
+Na maior parte do tempo, isso estará na tag &lt;h1&gt;, como aqui.
+
+8
+00:00:18,515 --> 00:00:20,015
+Então podemos pegá-lo.
+
+9
+00:00:21,133 --> 00:00:25,300
+Vamos na verdade, apenas ir para a página URL do livro.
+
+10
+00:00:27,387 --> 00:00:31,281
+E então podemos pegá-lo digitando "response.xpath"
+
+11
+00:00:31,281 --> 00:00:33,476
+e então coletando toda tag &lt;h1&gt;.
+
+12
+00:00:33,476 --> 00:00:35,309
+Neste caso, há apenas um,
+
+13
+00:00:35,309 --> 00:00:36,988
+então se chamarmos o "extract()",
+
+14
+00:00:36,988 --> 00:00:40,229
+veremos que está no nó HTML.
+
+15
+00:00:40,229 --> 00:00:42,687
+Você pode usar também o seletor CSS.
+
+16
+00:00:42,687 --> 00:00:46,741
+Neste caso, a sintaxe vai ser um pouco diferente.
+
+17
+00:00:46,741 --> 00:00:48,859
+Então como você pode ver, esta será a sintaxe
+
+18
+00:00:48,859 --> 00:00:50,973
+se você está usando seletores CSS,
+
+19
+00:00:50,973 --> 00:00:53,261
+e também apenas selecionando o texto.
+
+20
+00:00:53,261 --> 00:00:55,213
+Esta será a sintaxe.
+
+21
+00:00:55,213 --> 00:00:57,377
+Vamos chamar o "extract_first()".
+
+22
+00:00:57,377 --> 00:01:01,044
+E vamos copiar e colar isto no nosso código.
+
+23
+00:01:01,991 --> 00:01:04,096
+Então isto será a variável title,
+
+24
+00:01:04,096 --> 00:01:06,008
+e o segundo ponto de dado
+
+25
+00:01:06,008 --> 00:01:08,710
+que queremos usar ou selecionar
+
+26
+00:01:08,710 --> 00:01:10,116
+vai ser o preço.
+
+27
+00:01:10,116 --> 00:01:13,973
+Na maior parte do tempo, isso vai estar em algum container,
+
+28
+00:01:13,973 --> 00:01:16,473
+sobretudo em um &lt;div&gt;, como está aqui,
+
+29
+00:01:17,529 --> 00:01:20,731
+mas estamos atrás do nome da classe.
+
+30
+00:01:20,731 --> 00:01:23,326
+E o nome de classe é price_color.
+
+31
+00:01:23,326 --> 00:01:26,659
+Então vamos coletar este ponto de dado, então "response.xpath",
+
+32
+00:01:26,659 --> 00:01:28,909
+e então selecionar toda classe
+
+33
+00:01:31,310 --> 00:01:33,893
+que tem o price_color.
+
+34
+00:01:35,209 --> 00:01:36,755
+Perfeito, isso funciona.
+
+35
+00:01:36,755 --> 00:01:40,922
+Vamos coletar o texto e selecionar a primeira instância.
+
+36
+00:01:43,126 --> 00:01:47,293
+E aqui, como você pode ver, há representações unicode
+
+37
+00:01:47,789 --> 00:01:49,758
+do sinal "£".
+
+38
+00:01:49,758 --> 00:01:52,720
+Se nós digitarmos o nome da variável,
+
+39
+00:01:52,720 --> 00:01:56,887
+que vai ser price e então apenas chamar o price,
+
+40
+00:01:57,233 --> 00:01:59,382
+esse monte de caracteres
+
+41
+00:01:59,382 --> 00:02:01,650
+ou a representação unicode da moeda
+
+42
+00:02:01,650 --> 00:02:04,641
+vai continuar o mesmo, mas se imprimirmos o price,
+
+43
+00:02:04,641 --> 00:02:07,741
+vamos ver que quando imprimirmos
+
+44
+00:02:07,741 --> 00:02:10,740
+vai ser a moeda
+
+45
+00:02:10,740 --> 00:02:13,157
+que estará visível, por falar.
+
+46
+00:02:14,723 --> 00:02:17,482
+Então vamos digitar ou copiar e colar isto.
+
+47
+00:02:17,482 --> 00:02:21,649
+O terceiro ponto de dado que queremos pegar é esta URL da imagem.
+
+48
+00:02:21,960 --> 00:02:25,254
+Então vamos para "Inspect", e na maioria das vezes, como aqui,
+
+49
+00:02:25,254 --> 00:02:29,421
+está na forma de src e também no &lt;img&gt;.
+
+50
+00:02:29,461 --> 00:02:33,628
+Então vamos digitar "response.xpath", selecionar toda imagem.
+
+51
+00:02:34,458 --> 00:02:38,625
+Perfeito, tem só uma, então vamos coletar a primeira,
+
+52
+00:02:38,879 --> 00:02:43,046
+e vamos também, de cada img, coletar o src.
+
+53
+00:02:44,229 --> 00:02:46,523
+Então isso vai ser meio complicado,
+
+54
+00:02:46,523 --> 00:02:50,304
+porque essa é a URL parcial para a página.
+
+55
+00:02:50,304 --> 00:02:54,054
+Então vamos chamar isso image_url aqui.
+
+56
+00:02:55,106 --> 00:02:57,039
+E o que precisamos fazer agora,
+
+57
+00:02:57,039 --> 00:03:01,206
+ou o que faço na maioria dos casos, é copiar e colar isso.
+
+58
+00:03:01,682 --> 00:03:05,849
+E então inspecionar a URL da imagem, como está aqui.
+
+59
+00:03:05,864 --> 00:03:10,031
+Então esta é a URL do HTML... desculpe, a URL completa da imagem.
+
+60
+00:03:11,816 --> 00:03:15,021
+E vamos ver o que vai continuar o mesmo.
+
+61
+00:03:15,021 --> 00:03:18,165
+Então parece que o media também vai continuar o mesmo,
+
+62
+00:03:18,165 --> 00:03:21,474
+então aqui você pode ver que nós precisamos
+
+63
+00:03:21,474 --> 00:03:25,443
+substituir estes caracteres, e substituí-los por este aqui.
+
+64
+00:03:25,443 --> 00:03:29,610
+Então porque esta URL parcial vai continuar o mesmo.
+
+65
+00:03:30,931 --> 00:03:33,273
+Então para fazer isso, digitamos
+
+66
+00:03:33,273 --> 00:03:36,940
+image_url é igual ao image_url.replace.
+
+67
+00:03:38,301 --> 00:03:40,792
+E estamos substituindo,
+
+68
+00:03:40,792 --> 00:03:43,555
+vamos ver, esta string,
+
+69
+00:03:43,555 --> 00:03:46,722
+e vamos substituir isso com...
+
+70
+00:03:50,479 --> 00:03:53,994
+Nestas strings, então vamos ser se isto vai funcionar.
+
+71
+00:03:53,994 --> 00:03:57,577
+Novamente, então vamos precisar também...
+
+72
+00:04:01,214 --> 00:04:04,297
+Nós vamos precisar do "/" nele.
+
+73
+00:04:06,259 --> 00:04:08,787
+E então, vamos ver se está funcionando realmente.
+
+74
+00:04:08,787 --> 00:04:10,950
+Vamos copiar e colar isto no nosso código,
+
+75
+00:04:10,950 --> 00:04:15,117
+ou no nosso Shell, e image_url, imprimir ele.
+
+76
+00:04:16,992 --> 00:04:19,819
+Copiar o endereço do link e colar ele.
+
+77
+00:04:19,819 --> 00:04:22,550
+E está funcionado perfeitamente bem, ótimo.
+
+78
+00:04:22,550 --> 00:04:26,717
+O quarto ponto de dados que queremos pegar é o rating.
+
+79
+00:04:27,482 --> 00:04:29,342
+Então vamos inspecionar ele.
+
+80
+00:04:29,342 --> 00:04:31,675
+e ver onde o rating está.
+
+81
+00:04:32,747 --> 00:04:34,613
+Então ele está na forma de uma classe,
+
+82
+00:04:34,613 --> 00:04:38,513
+e aqui nós temos as três estrelas, assim falando,
+
+83
+00:04:38,513 --> 00:04:42,650
+então vamos pegar a classe ou o nome parcial da classe,
+
+84
+00:04:42,650 --> 00:04:44,658
+que vai ser star_rating.
+
+85
+00:04:44,658 --> 00:04:48,825
+E então vamos pegar a classe e então extrair ou substituir,
+
+86
+00:04:49,209 --> 00:04:51,459
+usar o replace como fizemos aqui.
+
+87
+00:04:54,272 --> 00:04:57,022
+Então vamos substituir esses caracteres
+
+88
+00:04:58,778 --> 00:05:01,174
+por basicamente nada, então vamos finalizar
+
+89
+00:05:01,174 --> 00:05:04,591
+com a string do rating.
+
+90
+00:05:06,323 --> 00:05:08,740
+Vamos ver como podemos fazer isto.
+
+91
+00:05:09,983 --> 00:05:13,602
+Então a sintaxe para isso vai ser "response.xpath",
+
+92
+00:05:13,602 --> 00:05:16,811
+e então, se lembro corretamente,
+
+93
+00:05:16,811 --> 00:05:20,719
+vai ser "//",
+
+94
+00:05:21,842 --> 00:05:23,425
+então "*" contains,
+
+95
+00:05:25,925 --> 00:05:30,092
+e então vai ser, nos parênteses, class.
+
+96
+00:05:32,070 --> 00:05:33,660
+O class vai ser,
+
+97
+00:05:33,660 --> 00:05:35,577
+vamos ver, star-rating.
+
+98
+00:05:38,022 --> 00:05:41,315
+E então, vamos fechar os parênteses.
+
+99
+00:05:41,315 --> 00:05:45,118
+Finalmente, vamos ver se isto está funcionando.
+
+100
+00:05:45,118 --> 00:05:47,833
+Não está, porque eu não fechei isto.
+
+101
+00:05:47,833 --> 00:05:52,000
+Perfeito, funciona, então vamos chamar o "extract()" para ver melhor.
+
+102
+00:05:53,349 --> 00:05:57,078
+Ok, então deste nó HTML, tudo o que precisamos
+
+103
+00:05:57,078 --> 00:05:59,538
+selecionar vai ser esta classe.
+
+104
+00:05:59,538 --> 00:06:02,205
+Para fazer isso, vamos apenas
+
+105
+00:06:03,299 --> 00:06:06,466
+digitar o sinal "@", e então class.
+
+106
+00:06:07,437 --> 00:06:09,955
+E isso funciona perfeitamente bem,
+
+107
+00:06:09,955 --> 00:06:12,622
+então vamos chamar o "extract_first()".
+
+108
+00:06:13,673 --> 00:06:15,402
+E então, para esta string,
+
+109
+00:06:15,402 --> 00:06:17,109
+vamos substituir esta substring
+
+110
+00:06:17,109 --> 00:06:21,228
+e então vamos ficar com a, novamente,
+
+111
+00:06:21,228 --> 00:06:23,745
+string do rating.
+
+112
+00:06:23,745 --> 00:06:27,328
+Vamos copiar e colar isto para nosso código.
+
+113
+00:06:28,571 --> 00:06:31,178
+Então o rating vai ser este aqui,
+
+114
+00:06:31,178 --> 00:06:34,874
+e então vamos chamar o rating que vai ser igual
+
+115
+00:06:34,874 --> 00:06:36,824
+ao rating.replace.
+
+116
+00:06:36,824 --> 00:06:40,128
+Vamos ver o que precisamos substituir mais uma vez.
+
+117
+00:06:40,128 --> 00:06:42,461
+Então vamos substituir isto
+
+118
+00:06:44,854 --> 00:06:46,404
+por basicamente nada,
+
+119
+00:06:46,404 --> 00:06:48,911
+então vamos ficar, novamente,
+
+120
+00:06:48,911 --> 00:06:51,328
+neste caso, com o Three.
+
+121
+00:06:52,229 --> 00:06:53,721
+E vamos ver o que mais podemos pegar.
+
+122
+00:06:53,721 --> 00:06:56,380
+Podemos pegar também o description.
+
+123
+00:06:56,380 --> 00:06:59,963
+A maioria das vezes, o description vai ser meio complicado
+
+124
+00:06:59,963 --> 00:07:01,963
+porque ele vai ser
+
+125
+00:07:03,063 --> 00:07:05,396
+no parágrafo ou
+
+126
+00:07:06,270 --> 00:07:09,270
+também em negrito, em itálico,
+
+127
+00:07:11,135 --> 00:07:12,620
+em algum tipo de &lt;div&gt;, e coisas como essa.
+
+128
+00:07:12,620 --> 00:07:16,037
+Então na maioria dos casos, em sites mais complexos,
+
+129
+00:07:18,533 --> 00:07:21,883
+o description vai levar muito tempo
+
+130
+00:07:21,883 --> 00:07:23,461
+para conseguir pegar ele.
+
+131
+00:07:23,461 --> 00:07:26,367
+Neste caso, vai ser na realidade muito simples.
+
+132
+00:07:26,367 --> 00:07:29,571
+Então vamos basicamente pegar isto pelo id.
+
+133
+00:07:29,571 --> 00:07:32,680
+O id vai ser product_description.
+
+134
+00:07:32,680 --> 00:07:34,765
+E então, no product_description,
+
+135
+00:07:34,765 --> 00:07:37,682
+vamos seguir o irmão,
+
+136
+00:07:38,636 --> 00:07:41,626
+e vamos coletar ou pegar o &lt;p&gt;
+
+137
+00:07:41,626 --> 00:07:44,445
+e então vamos selecionar este texto.
+
+138
+00:07:44,445 --> 00:07:46,569
+Vamos fazer isto.
+
+139
+00:07:46,569 --> 00:07:49,497
+No nosso Scrapy Shell, então response.xpath,
+
+140
+00:07:49,497 --> 00:07:52,747
+e então vamos mais uma vez ir para o id,
+
+141
+00:07:54,549 --> 00:07:56,299
+que vai ser
+
+142
+00:07:58,576 --> 00:07:59,912
+chamado, vamos ver,
+
+143
+00:07:59,912 --> 00:08:01,662
+product_description.
+
+144
+00:08:03,887 --> 00:08:06,554
+e então vamos "following-sibling"
+
+145
+00:08:07,728 --> 00:08:10,730
+e vamos coletar a tag &lt;p&gt;
+
+146
+00:08:10,730 --> 00:08:12,351
+e extrair o texto dele.
+
+147
+00:08:12,351 --> 00:08:14,421
+Então vamos ver se está funcionando.
+
+148
+00:08:14,421 --> 00:08:16,648
+E você pode pegar o nó HTML,
+
+149
+00:08:16,648 --> 00:08:19,387
+precisamos chamar o extract(), perfeito.
+
+150
+00:08:19,387 --> 00:08:22,183
+Então o começo do description
+
+151
+00:08:22,183 --> 00:08:25,266
+vai ser "It's hard to imagine"
+
+152
+00:08:26,745 --> 00:08:30,098
+e a última string ou palavra vai ser "more."
+
+153
+00:08:30,098 --> 00:08:32,959
+Então isso funciona no nosso caso, mas como eu disse,
+
+154
+00:08:32,959 --> 00:08:36,088
+a maior parte das vezes vai ser um pouco complicado,
+
+155
+00:08:36,088 --> 00:08:39,507
+porque a descrição vai ser
+
+156
+00:08:39,507 --> 00:08:43,674
+mais de um ponto de dado que você precisa coletar.
+
+157
+00:08:45,457 --> 00:08:49,374
+Vamos chamar o description e então formatá-lo.
+
+158
+00:08:50,606 --> 00:08:54,773
+E finalmente vamos usar o "yield" nos pontos de dados que coletamos
+
+159
+00:08:56,129 --> 00:08:59,886
+e ver ou testar se tudo está funcionando corretamente.
+
+160
+00:08:59,886 --> 00:09:02,303
+Então vamos copiar e colar isto.
+
+161
+00:09:03,229 --> 00:09:06,396
+(digitando e clicando)
+
+162
+00:09:15,744 --> 00:09:18,033
+Vamos acelerar isto um pouco,
+
+163
+00:09:18,033 --> 00:09:20,767
+e espero que isto funcione.
+
+164
+00:09:20,767 --> 00:09:21,767
+Eu esqueci de
+
+165
+00:09:22,870 --> 00:09:24,870
+adicionar as aspas.
+
+166
+00:09:30,024 --> 00:09:31,521
+Então vamos ver se está funcionando,
+
+167
+00:09:31,521 --> 00:09:35,021
+então se digitarmos "scrapy crawl books".
+
+168
+00:09:37,215 --> 00:09:39,366
+Então parece que tudo está funcionando corretamente.
+
+169
+00:09:39,366 --> 00:09:43,033
+Vamos apenas quando estiver finalizado
+
+170
+00:09:44,206 --> 00:09:46,873
+e mandar ele para o arquivo CSV.
+
+171
+00:09:48,699 --> 00:09:50,400
+E podemos fechar ele agora,
+
+172
+00:09:50,400 --> 00:09:53,305
+então o item_scraped_count, porque fechamos ele,
+
+173
+00:09:53,305 --> 00:09:54,888
+vai ser 109.
+
+174
+00:09:56,532 --> 00:09:58,597
+Nós abrimos o items.csv, vamos ver
+
+175
+00:09:58,597 --> 00:10:01,848
+se a URL da imagem está funcionando.
+
+176
+00:10:01,848 --> 00:10:05,939
+Então ela está, então o price vai ser selecionado
+
+177
+00:10:06,690 --> 00:10:09,357
+e o rating vai ser o outro.
+
+178
+00:10:09,357 --> 00:10:12,841
+Description também parece não conter nenhum caractere lixo
+
+179
+00:10:12,841 --> 00:10:17,008
+e o title vai ser o título do livro,
+
+180
+00:10:17,109 --> 00:10:18,395
+o que está correto,
+
+181
+00:10:18,395 --> 00:10:21,776
+então parece que tudo está funcionando corretamente.
+
+182
+00:10:21,776 --> 00:10:23,943
+Vamos fechar este arquivo CSV.
+
+183
+00:10:25,455 --> 00:10:26,848
+O próximo ponto de dado,
+
+184
+00:10:26,848 --> 00:10:30,231
+o último que vamos pegar de cada URL de livro
+
+185
+00:10:30,231 --> 00:10:34,148
+vai ser o ponto de dado do product information.
+
+186
+00:10:35,441 --> 00:10:38,974
+E isto pode ser abstraído
+
+187
+00:10:38,974 --> 00:10:42,208
+escrevendo uma função e então apenas chamando essa função
+
+188
+00:10:42,208 --> 00:10:45,256
+e pegando esse ponto de dado.
+
+189
+00:10:45,256 --> 00:10:48,506
+Então vamos para nosso código Scrapy
+
+190
+00:10:50,002 --> 00:10:53,002
+e chamar o ponto de dados do
+
+191
+00:10:55,420 --> 00:10:56,503
+product information.
+
+192
+00:10:57,517 --> 00:11:01,350
+O primeiro deles vai ser o upc.
+
+193
+00:11:01,350 --> 00:11:05,517
+E vamos escrever primeiro nosso XPath
+
+194
+00:11:05,683 --> 00:11:07,766
+que vamos usar.
+
+195
+00:11:08,781 --> 00:11:11,698
+Vamos ver, o UPC está na tabela.
+
+196
+00:11:12,558 --> 00:11:15,669
+Como você pode ver, ele tem a classe "table-stripped".
+
+197
+00:11:15,669 --> 00:11:17,601
+E então no &lt;tbody&gt;,
+
+198
+00:11:17,601 --> 00:11:20,654
+aqui nós temos todos os &lt;tr&gt;.
+
+199
+00:11:20,654 --> 00:11:21,756
+Em cada &lt;tr&gt;,
+
+200
+00:11:21,756 --> 00:11:25,507
+nós temos o &lt;th&gt;, e então o &lt;td&gt;.
+
+201
+00:11:25,507 --> 00:11:29,589
+Agora o que precisamos fazer é ir para &lt;th&gt;
+
+202
+00:11:29,589 --> 00:11:32,868
+que tem a string "UPC",
+
+203
+00:11:32,868 --> 00:11:37,035
+e então seguir a próxima instância do &lt;td&gt;
+
+204
+00:11:37,051 --> 00:11:38,927
+e este vai ser o valor,
+
+205
+00:11:38,927 --> 00:11:42,219
+ou nós selecionamos o texto deste &lt;td&gt;.
+
+206
+00:11:42,219 --> 00:11:43,748
+Muito simples.
+
+207
+00:11:43,748 --> 00:11:47,915
+Vamos então para nosso Scrapy Shell, response.xpath,
+
+208
+00:11:48,185 --> 00:11:49,185
+e então...
+
+209
+00:11:50,432 --> 00:11:54,599
+Então vamos selecionar todo &lt;th&gt;
+
+210
+00:11:54,813 --> 00:11:57,563
+com o texto que se lê o "UPC".
+
+211
+00:11:59,802 --> 00:12:03,969
+Vamos ver se isto está funcionando e então vamos seguir,
+
+212
+00:12:04,473 --> 00:12:06,806
+como nós fizemos com o...
+
+213
+00:12:09,405 --> 00:12:11,373
+como nós fizemos com o description,
+
+214
+00:12:11,373 --> 00:12:13,039
+nós vamos usar o following-sibling.
+
+215
+00:12:13,039 --> 00:12:15,563
+E aqui, no lugar da tag &lt;p&gt;,
+
+216
+00:12:15,563 --> 00:12:18,951
+nós vamos coletar o &lt;td&gt;.
+
+217
+00:12:18,951 --> 00:12:23,118
+Então following-sibling, e então digite o td,
+
+218
+00:12:23,525 --> 00:12:26,617
+e então selecione o text() dele.
+
+219
+00:12:26,617 --> 00:12:29,804
+E então, finalmente, chamando o extract_first().
+
+220
+00:12:29,804 --> 00:12:33,192
+Então como você pode ver, este é o valor
+
+221
+00:12:33,192 --> 00:12:35,474
+que corresponde ao UPC.
+
+222
+00:12:35,474 --> 00:12:39,641
+Se nós, por exemplo, digitarmos ou substituir aqui,
+
+223
+00:12:39,917 --> 00:12:41,750
+o UPC por Tax,
+
+224
+00:12:42,878 --> 00:12:47,045
+como você verá em um momento, nós vamos coletar
+
+225
+00:12:49,357 --> 00:12:52,690
+este ponto de dado, então ele vai ser £0.
+
+226
+00:12:54,321 --> 00:12:58,488
+Vamos agora copiar e colar isto na nossa função.
+
+227
+00:12:58,523 --> 00:13:02,690
+Nós não escrevemos a função, então vamos escrevê-la, finalmente.
+
+228
+00:13:03,173 --> 00:13:06,446
+Então def, e então podemos digitar,
+
+229
+00:13:06,446 --> 00:13:08,696
+por exemplo, product_info
+
+230
+00:13:10,648 --> 00:13:12,565
+e então os argumentos,
+
+231
+00:13:13,481 --> 00:13:17,648
+ou parâmetros, vão ser response e então o value.
+
+232
+00:13:18,674 --> 00:13:21,841
+E então vamos retornar esta declaração,
+
+233
+00:13:23,810 --> 00:13:25,239
+e vamos ver o que precisa ser mudado.
+
+234
+00:13:25,239 --> 00:13:28,542
+Isto vai ser modificado, então isto vai ser
+
+235
+00:13:28,542 --> 00:13:32,027
+o valor que vamos adicionar.
+
+236
+00:13:32,027 --> 00:13:33,855
+Isto, a partir de agora, deve funcionar,
+
+237
+00:13:33,855 --> 00:13:36,438
+então vamos testar no Shell.
+
+238
+00:13:37,475 --> 00:13:39,539
+Então se nós digitarmos "product_info"
+
+239
+00:13:39,539 --> 00:13:41,006
+e então o primeiro parâmetro
+
+240
+00:13:41,006 --> 00:13:43,224
+is always going to be the response.
+
+241
+00:13:43,224 --> 00:13:46,502
+E então o value pode ser, por exemplo, UPC.
+
+242
+00:13:46,502 --> 00:13:49,572
+Perfeito, isso funciona bem, vamos tentar Tax.
+
+243
+00:13:49,572 --> 00:13:51,420
+Perfeito, isso funciona.
+
+244
+00:13:51,420 --> 00:13:52,752
+Vamos para nosso código,
+
+245
+00:13:52,752 --> 00:13:56,919
+e então digitar o UPC, e então product_description,
+
+246
+00:13:57,551 --> 00:14:01,718
+reponse e então vamos deixar como está.
+
+247
+00:14:01,731 --> 00:14:04,674
+E digite o resto dos pontos de dados
+
+248
+00:14:04,674 --> 00:14:06,323
+que nós vamos selecionar.
+
+249
+00:14:06,323 --> 00:14:10,490
+O segundo deles vai ser o product_type,
+
+250
+00:14:10,549 --> 00:14:12,745
+e isto vai ser o mesmo.
+
+251
+00:14:12,745 --> 00:14:16,407
+E o terceiro vai ser o preço sem os impostos,
+
+252
+00:14:16,407 --> 00:14:17,490
+então
+
+253
+00:14:20,055 --> 00:14:22,555
+price_without_tax vai ser
+
+254
+00:14:22,555 --> 00:14:23,722
+igual a isto.
+
+255
+00:14:26,263 --> 00:14:30,013
+E o quarto vai ser o price_with_tax.
+
+256
+00:14:35,028 --> 00:14:37,190
+Então vamos ver o que mais
+
+257
+00:14:37,190 --> 00:14:41,351
+tax, availability, e number_of_reviews.
+
+258
+00:14:41,351 --> 00:14:42,184
+Então tax...
+
+259
+00:14:44,026 --> 00:14:47,193
+(digitando e clicando)
+
+260
+00:14:48,712 --> 00:14:51,629
+E finalmente, vamos ver,
+
+261
+00:14:53,605 --> 00:14:54,605
+number_of_reviews.
+
+262
+00:15:00,037 --> 00:15:04,204
+Então haverá sete linhas, ou sete pontos de dados.
+
+263
+00:15:05,645 --> 00:15:09,024
+Um, dois, três, quatro, cinco, seis, sete, perfeito.
+
+264
+00:15:09,024 --> 00:15:12,760
+Então o primeiro vai ser o UPC.
+
+265
+00:15:12,760 --> 00:15:16,343
+O segundo vai ser o Product Type,
+
+266
+00:15:18,962 --> 00:15:23,129
+e o type vai ser em caixa alta.
+
+267
+00:15:23,145 --> 00:15:24,554
+Então, vamos ver, preço sem os impostos,
+
+268
+00:15:24,554 --> 00:15:28,721
+talvez seja mais rápido copiar e colar isto.
+
+269
+00:15:30,734 --> 00:15:33,901
+(clicando e digitando)
+
+270
+00:15:38,560 --> 00:15:41,221
+E haverá, como você viu,
+And there are going to be, as you saw,
+
+271
+00:15:41,221 --> 00:15:43,060
+o espaço em branco,
+
+272
+00:15:43,060 --> 00:15:47,227
+mas como ele não está na página HTML,
+
+273
+00:15:47,725 --> 00:15:50,308
+usar os espaços em branco,
+
+274
+00:15:51,642 --> 00:15:53,642
+isso não vai funcionar.
+
+275
+00:15:55,696 --> 00:15:57,995
+Então tax vai ser o Tax,
+
+276
+00:15:57,995 --> 00:16:00,995
+e então availability vai ser
+
+277
+00:16:03,820 --> 00:16:05,751
+este ponto de dado ou string.
+
+278
+00:16:05,751 --> 00:16:09,918
+E então finalmente, Number of reviews, copie e cole isto.
+
+279
+00:16:12,988 --> 00:16:15,171
+E vamos estar prontos para continuar.
+
+280
+00:16:15,171 --> 00:16:17,299
+Então a última coisa que precisamos fazer é
+
+281
+00:16:17,299 --> 00:16:21,346
+apenas como nestes cinco ou mais pontos de dados,
+
+282
+00:16:21,346 --> 00:16:25,179
+apenas copie e cole este ponto de dados, então
+
+283
+00:16:26,650 --> 00:16:29,900
+para pegar ou colocar isso no dicionário.
+
+284
+00:16:32,186 --> 00:16:36,287
+Então para fazer isso, vamos digitar o upc,
+
+285
+00:16:36,287 --> 00:16:37,923
+ou vai ser mais fácil
+
+286
+00:16:37,923 --> 00:16:40,173
+apenas copiar e colar isto
+
+287
+00:16:41,040 --> 00:16:41,957
+como está...
+
+288
+00:16:47,457 --> 00:16:49,414
+Isto, por algum motivo, não vai funcionar
+
+289
+00:16:49,414 --> 00:16:53,081
+porque a última instância não contém a
+
+290
+00:16:54,647 --> 00:16:57,314
+vírgula, então vamos tentar como está.
+
+291
+00:16:59,698 --> 00:17:02,948
+Perfeito, e nós precisamos adicionar as aspas.
+
+292
+00:17:09,717 --> 00:17:13,227
+Eu tenho certeza que há formas melhores de fazer isto,
+
+293
+00:17:13,227 --> 00:17:14,644
+para automatizar isto.
+
+294
+00:17:15,517 --> 00:17:19,032
+Isso deve funcionar, então vamos testar.
+
+295
+00:17:19,032 --> 00:17:22,615
+A partir de agora, há 12 ou mais,
+
+296
+00:17:23,832 --> 00:17:27,999
+12 pontos de dados que devem ser coletados de cada URL de livro.
+
+297
+00:17:28,305 --> 00:17:31,036
+Então vamos ver se está funcionando.
+
+298
+00:17:31,036 --> 00:17:33,513
+Parece que algo não está certo.
+
+299
+00:17:33,513 --> 00:17:37,624
+Vamos ver, product_description não está definido.
+
+300
+00:17:37,624 --> 00:17:40,874
+Então, vamos ver, product_description.
+
+301
+00:17:43,155 --> 00:17:45,822
+product_info vai ser o
+
+302
+00:17:47,255 --> 00:17:48,790
+nome da função.
+
+303
+00:17:48,790 --> 00:17:50,531
+Vamos tentar como está.
+
+304
+00:17:50,531 --> 00:17:53,749
+E parece que tudo está funcionando bem.
+
+305
+00:17:53,749 --> 00:17:55,916
+Vamos tentar novamente.
+
+306
+00:17:58,914 --> 00:18:02,255
+Vamos fechar isso e vamos ver se recebemos algum erro.
+
+307
+00:18:02,255 --> 00:18:05,982
+Perfeito, então parece que tudo está funcionando.
+
+308
+00:18:05,982 --> 00:18:08,338
+item_scraped_count é 215,
+
+309
+00:18:08,338 --> 00:18:11,171
+então 200 ou mais URLs de livros
+
+310
+00:18:13,035 --> 00:18:14,236
+são extraídos
+
+311
+00:18:14,236 --> 00:18:17,696
+ou os pontos de dados que seguem, então price,
+
+312
+00:18:17,696 --> 00:18:20,208
+tax, tax sempre vai ser
+
+313
+00:18:20,208 --> 00:18:23,285
+o mesmo número, reviews também.
+
+314
+00:18:23,285 --> 00:18:26,685
+availability, product_type, então title,
+
+315
+00:18:26,685 --> 00:18:29,195
+upc, que vão ser diferentes,
+
+316
+00:18:29,195 --> 00:18:32,827
+price_with_tax e without_tax e o image_urls.
+
+317
+00:18:32,827 --> 00:18:36,373
+Então parece que tudo foi extraído corretamente,
+
+318
+00:18:36,373 --> 00:18:38,258
+e isso é tudo para este vídeo.
+
+319
+00:18:38,258 --> 00:18:41,049
+No próximo, nós vamos falar sobre argumentos do Scrapy.
+
+320
+00:18:41,049 --> 00:18:41,882
+Falamos em breve!
+

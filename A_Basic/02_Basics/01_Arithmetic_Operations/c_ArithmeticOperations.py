@@ -34,7 +34,8 @@ myNumber %= 10  # myNumber = myNumber % 10
 print 'myNumber = ', myNumber
 
 
-
+# python dosnt support unary operations ; ++i, i++, --i, i--
+# it should used as i += 1, i -=1
 
 
 

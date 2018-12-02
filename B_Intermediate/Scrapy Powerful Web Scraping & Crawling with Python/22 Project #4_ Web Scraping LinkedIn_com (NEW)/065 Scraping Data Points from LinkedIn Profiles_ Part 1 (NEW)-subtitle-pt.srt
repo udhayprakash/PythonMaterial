@@ -1,0 +1,619 @@
+﻿1
+00:00:00,030 --> 00:00:05,000
+Olá! Então esta é a quarta parte do nosso
+projeto de automatização do LinkedIn,
+
+2
+00:00:05,000 --> 00:00:11,600
+e nesta parte vamos finalmente extrair alguns pontos
+de dados de cada um dos perfis do LinkedIn.
+
+3
+00:00:11,600 --> 00:00:19,100
+Então vamos voltar para nosso arquivo script.py,
+e começamos a iterar sobre as URLs do LinkedIn.
+
+4
+00:00:19,100 --> 00:00:24,380
+Então se copiarmos isto e se você
+lembrar... vamos fechar isto,
+
+5
+00:00:24,380 --> 00:00:30,900
+e apenas usar este aqui. Então se você se
+lembrar corretamente, nas URLs do LinkedIn,
+
+6
+00:00:30,900 --> 00:00:37,000
+vai ter dez URLs por página dos
+perfis do LinkedIn.
+
+7
+00:00:37,000 --> 00:00:43,500
+Então para continuar, o que precisamos fazer é ir
+para cada uma e então extrair
+
+8
+00:00:43,500 --> 00:00:51,100
+pontos de dados deles como nome, o título de trabalho,
+escola, localização, e a URL do LinkedIn também.
+
+9
+00:00:51,100 --> 00:00:57,390
+Vamos fechar isto, voltar para nosso
+editor de texto, e para iterar, claro,
+
+10
+00:00:57,390 --> 00:01:09,000
+podemos usar laços for. Então vamos fazer isso, então
+"for linkedin_url in linkedin_urls" ou, na verdade, este é o link.
+
+11
+00:01:09,000 --> 00:01:16,200
+Nós vamos e digitamos "driver.get()"
+e podemos copiar isto.
+
+12
+00:01:16,200 --> 00:01:24,500
+Desculpe, não recortar. Copiar, colar isto aqui, e então
+podemos digitar aqui, por exemplo, para usar sleep,
+
+13
+00:01:24,500 --> 00:01:31,000
+digamos, cinco segundos entre o
+carregamento de cada link de perfil.
+
+14
+00:01:31,000 --> 00:01:37,500
+E então vamos usar também Parsel. Então se
+você ainda não tem o Parsel instalado,
+
+15
+00:01:37,500 --> 00:01:45,200
+ela é uma biblioteca, para extrair pontos de
+dados de sites similares ao do Scrapy
+
+16
+00:01:45,200 --> 00:01:48,700
+que usamos anteriormente.
+Então se você ainda não o tem,
+
+17
+00:01:48,700 --> 00:01:54,500
+você pode instalar ele colocando
+"pip install parsel". Isso é tudo.
+
+18
+00:01:54,500 --> 00:02:02,930
+Então vamos aqui e importar ele. Então
+"from parsel", vamos usar o Selector.
+
+19
+00:02:03,380 --> 00:02:11,300
+Selenium também tem o Selector, mas ele não
+é tão bem feito como algo como o Parsel é.
+
+20
+00:02:11,300 --> 00:02:18,600
+Então podemos copiar isto, e colar
+isto no nosso Terminal, pressionar Enter.
+
+21
+00:02:18,600 --> 00:02:27,900
+E então, vamos ver. Então podemos
+digitar aqui "sel = Selector"
+
+22
+00:02:27,900 --> 00:02:31,800
+e então entre parênteses,
+vamos digitar
+
+23
+00:02:31,800 --> 00:02:40,200
+"text=driver.page_source".
+Então se copiarmos e colarmos isto,
+
+24
+00:02:40,200 --> 00:02:45,700
+e voltar para o Terminal,
+colar ele aqui, pressionarmos Enter, como você pode ver,
+
+25
+00:02:45,700 --> 00:02:55,300
+isto vai carregar nosso código-fonte para esta
+página específica. Então quando se trata da extração,
+
+26
+00:02:55,300 --> 00:03:03,200
+nós fizemos response.body. No Selenium,
+vai ser driver.page_source.
+
+27
+00:03:03,200 --> 00:03:11,000
+Então muito simples. Vamos ver, Sublime Text,
+e vamos copiar e colar isto.
+
+28
+00:03:11,000 --> 00:03:16,000
+Nós não precisamos na verdade... vamos
+voltar e colocar algum perfil.
+
+29
+00:03:16,000 --> 00:03:25,500
+E vamos agora colocar, ou copiar e
+colar isto. Copiar e então colar isto aqui.
+
+30
+00:03:25,500 --> 00:03:34,000
+E então, finalmente, podemos começar a extrair, ou localizar primeiro,
+os pontos de dados. O primeiro deles vai ser o Name.
+
+31
+00:03:34,000 --> 00:03:38,000
+Na maioria das vezes, ele vai
+estar nas tags h1 ou h2.
+
+32
+00:03:38,000 --> 00:03:45,000
+Então vamos ver qual deles é aqui, Inspect.
+E aqui podemos, basicamente,
+
+33
+00:03:45,000 --> 00:03:51,100
+eu posso ver pelo menos três formas diferentes
+de extrair isto. Você pode extrair isso pela classe,
+
+34
+00:03:51,100 --> 00:03:58,200
+e então este valor pela tag do h1.
+O id pode ser igual ao name,
+
+35
+00:03:58,200 --> 00:04:03,000
+e também a classe pode ser
+igual ao, como você pode ver, "fn",
+
+36
+00:04:03,000 --> 00:04:09,300
+que provavelmente significa "full name" ou algo como
+isso. Podemos apenas extrair ele pela tag h1
+
+37
+00:04:09,300 --> 00:04:14,800
+porque provavelmente é a mais fácil. Vamos ver.
+Vamos voltar para o Terminal e digitar,
+
+38
+00:04:14,800 --> 00:04:20,900
+já que estamos usando o Parsel
+Selector, podemos digitar "sel.xpath",
+
+39
+00:04:20,900 --> 00:04:28,500
+e então localizar cada tag h1, pressionar Enter,
+e perfeito. Então aqui podemos ver nossos dados.
+
+40
+00:04:28,500 --> 00:04:36,100
+E a sintaxe vai ser, na verdade,
+o mesmo que com o Scrapy, anteriormente.
+
+41
+00:04:36,100 --> 00:04:41,500
+Então podemos digitar "text()",
+e então "extract_first()".
+
+42
+00:04:41,500 --> 00:04:45,000
+Então realmente muito simples. Pressione
+Enter e, como você pode ver,
+
+43
+00:04:45,000 --> 00:04:52,900
+ele está no unicode Paul Garner, que
+corresponde a este nome. Podemos copiar isto,
+
+44
+00:04:52,900 --> 00:04:58,500
+e colar no nosso editor de texto.
+Vamos nomear isto como name,
+
+45
+00:04:58,500 --> 00:05:06,500
+e vamos ver o que mais vai ser interessante.
+Vamos ver, vamos ver, título de trabalho, por exemplo.
+
+46
+00:05:06,500 --> 00:05:14,500
+Então este cara é um desenvolvedor Python freelancer
+no Depop. Então vamos no Inspect aqui neste elemento,
+
+47
+00:05:14,500 --> 00:05:22,700
+e temos o title. Vamos ver,
+vamos na verdade voltar para mais alguns.
+
+48
+00:05:22,700 --> 00:05:28,000
+E vamos ver se vai ser o mesmo ponto
+de dados. Então os títulos, por algum motivo,
+
+49
+00:05:28,000 --> 00:05:36,900
+parece que não estamos atualmente no...
+como se não estivéssemos logados. Isto é estranho.
+
+50
+00:05:36,900 --> 00:05:45,700
+De qualquer forma, vamos continuar. E aqui vemos a tag h1.
+Ok, aqui o cara tem o nome,
+
+51
+00:05:45,700 --> 00:05:51,300
+e também, vamos ver, então o título. Então parece
+que ele corresponde a cada um dos perfis.
+
+52
+00:05:51,300 --> 00:05:55,700
+Então podemos copiar isto. E vamos ver se
+isso é também... isto vai ser o mesmo.
+
+53
+00:05:55,700 --> 00:06:01,600
+Então Inspect, headline title. Então
+parece que isso vai ser o mesmo,
+
+54
+00:06:01,600 --> 00:06:07,970
+mas vamos logar primeiro e ver se os
+pontos de dados vão estar aqui.
+
+55
+00:06:07,970 --> 00:06:14,100
+Ok, então estou logado. Então vamos para o
+primeiro perfil, e vamos ver se ele mudou.
+
+56
+00:06:14,100 --> 00:06:19,900
+Então ele vai mudar. Então, como você pode ver,
+extrair o LinkedIn vai ser muito difícil,
+
+57
+00:06:19,900 --> 00:06:26,700
+porque as páginas diferem no tempo que
+você está logado e deslogado.
+
+58
+00:06:26,700 --> 00:06:29,100
+Então isso é também uma coisa para notar.
+
+59
+00:06:29,100 --> 00:06:35,500
+Então, vamos ver, o nome provavelmente não
+vai mudar. Então, vamos ver, ele vai ser a tag h1
+
+60
+00:06:35,500 --> 00:06:41,100
+com a tag específica, mas extrair ele
+da tag h1 vai ser provavelmente mais fácil.
+
+61
+00:06:41,100 --> 00:06:45,700
+Então atualmente o Selenium... Então se voltarmos para o Terminal,
+
+62
+00:06:45,700 --> 00:06:55,300
+e digitar "driver.current_url", ele vai mostrar
+o Google... a URL, como você pode ver aqui.
+
+63
+00:06:55,300 --> 00:07:00,500
+Então estas duas páginas não são carregadas.
+Então a forma que você carrega elas é...
+
+64
+00:07:00,500 --> 00:07:07,000
+vamos copiar isto e colar isto aqui.
+E, agora, se voltarmos para nosso Terminal,
+
+65
+00:07:07,000 --> 00:07:11,550
+e digitar driver.current_url,
+e pressionar Enter, como você pode ver,
+
+66
+00:07:11,550 --> 00:07:16,900
+vai ser correspondente a esta URL.
+Então essa é outra coisa para se notar
+
+67
+00:07:16,900 --> 00:07:21,480
+quando se trata de extrair dados com o Scrapy.
+Vamos verificar que tudo está funcionando.
+
+68
+00:07:21,480 --> 00:07:28,680
+Para fazer isso, voltamos para nosso editor de texto,
+podemos copiar e colar esta declaração,
+
+69
+00:07:28,680 --> 00:07:35,040
+e colar isto aqui. Mas antes disso, desculpa,
+precisamos também garantir que temos
+
+70
+00:07:35,040 --> 00:07:42,800
+nosso Parsel Selector na página fonte
+atual porque, anteriormente,
+
+71
+00:07:42,800 --> 00:07:50,200
+ele estava no Google ou o perfil
+que estava deslogado. Desculpa.
+
+72
+00:07:50,200 --> 00:07:55,800
+Vamos para o editor de texto, e vamos copiar isto,
+
+73
+00:07:55,800 --> 00:08:04,200
+colar isto aqui, pressionar Enter e perfeito. Então funciona.
+Então o próximo ponto de dados que gostaríamos
+
+74
+00:08:04,200 --> 00:08:08,600
+de extrair vai ser o job title, que
+vai ser, neste caso, este valor.
+
+75
+00:08:08,600 --> 00:08:18,000
+Então vamos para Inspect e vamos ver. Então
+parece que ele vai estar na tag h2.
+
+76
+00:08:18,000 --> 00:08:24,680
+Então vamos ver se apenas digitando
+"sel.xpat", selecione toda tag h2,
+
+77
+00:08:24,680 --> 00:08:36,400
+vamos ver, vamos extrair o texto dele e extract.
+Vamos ver. "Senior software developer at Kalo (contract)"
+
+78
+00:08:36,400 --> 00:08:40,500
+Então parece que se apenas digitarmos "extract_first()"
+
+79
+00:08:40,500 --> 00:08:48,190
+ele vai localizar nosso dado. A outra forma que
+você pode extrair este ponto de dado é apenas
+
+80
+00:08:48,190 --> 00:08:53,700
+copiando e colando esta classe.
+Vamos ver se tudo vai funcionar.
+
+81
+00:08:53,700 --> 00:08:58,500
+Vamos voltar para nosso Terminal,
+e então digitar "sel.xpath"
+
+82
+00:08:58,500 --> 00:09:07,459
+e então localizar cada classe com o
+valor de classe copiado previamente,
+
+83
+00:09:07,459 --> 00:09:11,800
+e extrair o texto dele. Vamos ver
+se tudo vai funcionar,
+
+84
+00:09:11,800 --> 00:09:17,400
+"data Senior software developer", como você
+pode ver. Então vai funcionar aqui também.
+
+85
+00:09:17,400 --> 00:09:23,000
+Mas vamos apenas copiar e colar esta tag h2.
+Então vamos apenas extrair
+
+86
+00:09:23,000 --> 00:09:29,200
+a primeira instância da tag h2
+e extrair, claro, o texto dela.
+
+87
+00:09:29,200 --> 00:09:37,480
+Vamos colar isto aqui e nomear ele,
+por exemplo, job_title é igual a este valor.
+
+88
+00:09:37,480 --> 00:09:43,900
+O próximo ponto de dados que vamos
+extrair vai ser a escola.
+
+89
+00:09:43,900 --> 00:09:49,800
+Então a escola, neste caso, vai ser este
+ponto de dado que estou destacando agora.
+
+90
+00:09:49,800 --> 00:09:57,500
+Então vamos para o Inspect e, como você pode ver,
+eles compartilham as mesmas classes,
+
+91
+00:09:57,500 --> 00:10:06,000
+que vai para pv-top-card-section, e então headline,
+por exemplo, experience, company e também schools.
+
+92
+00:10:06,000 --> 00:10:10,200
+Então isso vai ser bem direto
+para extrair esses pontos de dados.
+
+93
+00:10:10,200 --> 00:10:17,100
+No entanto, esta parte da classe
+provavelmente não vai mudar.
+
+94
+00:10:17,100 --> 00:10:23,000
+Mas aqui, esta parte vai talvez mudar
+e talvez seja dinâmico.
+
+95
+00:10:23,000 --> 00:10:28,500
+Então, como você pode ver, ele vai
+conter o typeface ou valores da fonte.
+
+96
+00:10:28,500 --> 00:10:34,200
+Como você pode ver aqui, 17 pixel, black, 70%.
+Isto é provavelmente algo como opacidade,
+
+97
+00:10:34,200 --> 00:10:39,500
+ou algo assim. Então precisamos apenas
+extrair esta classe, basicamente.
+
+98
+00:10:39,500 --> 00:10:46,500
+Então vamos copiar e colar isto aqui, e perfeito.
+Então parece que haverá apenas uma instância,
+
+99
+00:10:46,500 --> 00:10:52,700
+como você pode ver aqui. Então podemos
+digitar no nosso Terminal "sel.xpath",
+
+100
+00:10:52,700 --> 00:11:03,100
+então entre parênteses, podemos
+digitar para encontrar todo seletor que começa com,
+
+101
+00:11:03,100 --> 00:11:07,020
+e vamos ver, no parênteses normal
+digitamos "class"
+
+102
+00:11:07,020 --> 00:11:14,200
+e então vírgula, e então o value,
+que vai ser, desculpe, este aqui.
+
+103
+00:11:14,200 --> 00:11:21,600
+Então vamos ver se isto vai funcionar.
+Vamos ver, algo não foi colocado corretamente.
+
+104
+00:11:21,600 --> 00:11:29,300
+Start, desculpe, with.
+E vamos ver porque isto não funciona.
+
+105
+00:11:29,300 --> 00:11:42,600
+Então "XPath error: Unregistered function in"...
+Vamos ver, isto deveria funcionar.
+
+106
+00:11:42,600 --> 00:11:50,300
+Vamos ver se tem... Ok, então isto é
+parênteses normal, colchetes.
+
+107
+00:11:50,300 --> 00:11:57,500
+É, vai estar lá, e isso deveria funcionar,
+mas starts... oh, desculpe.
+
+108
+00:11:57,500 --> 00:12:03,550
+O "s" está faltando aqui. Perfeito.
+Então o "s" estava... deveria ser
+
+109
+00:12:03,550 --> 00:12:12,500
+"starts with", não "start with". Vamos ver, vamos
+usar o texto dele e usar "extract_first()"
+
+110
+00:12:12,500 --> 00:12:17,200
+porque há apenas um elemento que estamos
+interessados. E aqui, como você pode ver,
+
+111
+00:12:17,200 --> 00:12:24,700
+vai ser este valor. Perfeito. Então, como
+você pode ver aqui, temos o espaço em branco e "\n",
+
+112
+00:12:24,700 --> 00:12:33,400
+que significa novo espaço.
+E então se copiarmos isto,
+
+113
+00:12:33,400 --> 00:12:38,500
+vamos ver onde precisamos colocar isto
+no nosso editor de texto. Podemos digitar aqui,
+
+114
+00:12:38,500 --> 00:12:46,700
+por exemplo, school é igual a isto.
+E então se escola, então "if school".
+
+115
+00:12:46,700 --> 00:12:52,900
+Então vamos usar "school = school.strip()".
+
+116
+00:12:52,900 --> 00:13:01,000
+Então se copiarmos esta declaração, copiar. E vamos ver,
+vamos voltar para o Terminal, colar isto, pressionar Enter.
+
+117
+00:13:01,000 --> 00:13:08,000
+E então chamar o "school.strip()".
+Você verá que se colarmos isto,
+
+118
+00:13:08,000 --> 00:13:13,800
+depois de colocarmos isso aqui, não vamos
+ter novas linhas e espaços brancos.
+
+119
+00:13:13,800 --> 00:13:19,500
+Como você ver aqui,
+ele vai mudar. Então
+
+120
+00:13:19,500 --> 00:13:25,000
+como vamos colocar isto
+no arquivo CSV, você terá
+
+121
+00:13:25,000 --> 00:13:32,500
+células desordenadas. Então provavelmente é mais fácil
+apenas chamar um strip para deixar ele mais arrumado.
+
+122
+00:13:32,500 --> 00:13:37,000
+E isso é tudo para este vídeo.
+No próximo, vamos continuar
+
+123
+00:13:37,000 --> 00:13:43,300
+a extrair a localização e o URL do LinkedIn.
+E finalmente, salvar esses pontos de dados
+
+124
+00:13:43,300 --> 00:13:48,400
+para o arquivo CSV, que vai
+ser chamado no arquivo parameters.py.
+
+125
+00:13:48,400 --> 00:13:51,250
+Vejo você por aí.
+

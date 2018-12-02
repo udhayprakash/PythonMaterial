@@ -1,0 +1,312 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00.330 --> 00:07.530
+Olá! Entã hoje vamos aprender como escrever
+os dados que foram extraídos para o MongoDB. O spider que vamos
+
+00:07.530 --> 00:09.620
+reutilizar é o books_crawler.
+
+00:09.660 --> 00:16.080
+Este é um spider bem conhecido, que vai para 
+a página inicial do books.toscrape.com e então processa
+
+00:16.590 --> 00:25.870
+cada um dos livros e olha as páginas
+e ele extrai, ou pega o callback para o parse_book
+
+00:25.930 --> 00:33.660
+pela URL do livro, e então de cada URL de livro,
+ele vai extrair sete pontos de dados
+
+00:33.660 --> 00:36.270
+diferentes que estou destacando agora.
+
+00:36.270 --> 00:44.040
+Eu vou deletar esta lógica para extrair ou rastrear
+o site inteiro porque isto é mais um exemplo
+
+00:44.040 --> 00:48.460
+de MongoDB como um database do que de scraping.
+
+00:48.750 --> 00:55.870
+Então a primeira coisa que precisamos fazer é digitar
+para instalar uma dependência que vamos usar, então
+
+00:55.920 --> 00:59.770
+para fazer isso, podemos digitar "sudo pip install pymongo".
+
+00:59.820 --> 01:05.010
+Eu já fiz isso então eu vou receber
+que os requisitos já estão satisfeitos.
+
+01:05.010 --> 01:13.620
+E a segunda coisa que precisamos fazer é ir para o settings.py
+e então navegar para o ITEM_PIPELINES,
+
+01:13.740 --> 01:26.130
+que vão estar aqui, descomente eles
+e então escreva, por exemplo, "MongoDBPipeline" que
+
+01:26.130 --> 01:33.350
+vai para o pipelines.py
+e então defina a classe MongoDBPipeline em um momento.
+
+01:33.600 --> 01:39.530
+E a segunda coisa que precisamos fazer
+é definir atributos MongoDB diferentes.
+
+01:39.540 --> 01:47.450
+Um deles vai ser "MONGODB_SERVER",
+que vai ser "localhost".
+
+01:47.460 --> 01:57.210
+A segunda coisa que precisamos atribuir é
+a porta, que vai ser "27017".
+
+01:57.210 --> 02:03.900
+A terceira coisa é "MONGODB_DB" ou o nome do database,
+que vai ser, vamos chamar ele de "books".
+
+02:04.400 --> 02:11.550
+E a quarta ou a última coisa que precisamos definir
+é o "MONGODB_COLLECTION", o nome da coleção
+
+02:11.590 --> 02:18.360
+vai ser, por exemplo, "products".
+A coleção, novamente, quando eu me referir a coleção isso basicamente
+
+02:18.360 --> 02:24.210
+quer dizer a tabela do MySQL.
+Salve, então volte
+
+02:24.240 --> 02:27.020
+e então finalmente vá para o Pipelines.
+
+02:27.250 --> 02:34.090
+Aqui podemos deletar isto
+e então vamos digitar "from pymongo
+
+02:34.420 --> 02:37.900
+import MongoClient".
+
+02:37.980 --> 02:46.170
+Segunda coisa que precisamos fazer é importar as configurações do Scrapy.
+Para fazer isso, pode digitar "from scrapy.conf import settings"
+
+02:46.570 --> 02:57.810
+Então definir a "class", que vai ser
+"MongoDBPipeline". Esta é a mesma classe que aqui,
+
+02:58.500 --> 03:04.320
+já que ele vai para o pipelines.py
+e então MongoDBPipeline.
+
+03:04.320 --> 03:11.940
+E então nos atributos, ou parâmetros,
+podemos atribuir ele como um "object".
+
+03:12.300 --> 03:16.530
+Vamos inicializar parâmetros diferentes do settings.py.
+
+03:16.530 --> 03:20.620
+"self" é o parâmetro.
+
+03:20.670 --> 03:27.670
+A primeira coisa que podemos atribuir é o "connection",
+que vai ser "MongoClient", então ele vai herdar
+
+03:27.670 --> 03:40.400
+do pymongo, e aqui vamos para "settings['MONGODB_SERVER']",
+que vai para o settings.py
+
+03:40.400 --> 03:47.300
+e então vai para o MONGODB_SERVER,
+que vai ser definido para o localhost.
+
+03:47.300 --> 03:51.710
+A segunda coisa que precisa ser feita é, novamente, "settings".
+
+03:56.510 --> 03:56.860
+Ok.
+
+03:56.890 --> 03:58.600
+Isto é mais parecido com isso.
+
+03:58.930 --> 04:08.350
+E então "MONGODB_PORT", que vai ser este número
+e vamos ver o que mais falta
+
+04:08.350 --> 04:08.990
+ser feito.
+
+04:09.040 --> 04:15.000
+Então a segunda coisa que precisa ser feita aqui é
+definir o database, que vai para o settings
+
+04:15.550 --> 04:22.360
+e vai herdar do...
+ou vai ser chamado books, então para fazer isso, digitamos
+
+04:22.360 --> 04:30.960
+"db = connection", e então vamos ver,
+nos colchetes podemos digitar
+
+04:32.020 --> 04:33.260
+"settings['MONGODB_DB']"
+
+04:37.470 --> 04:38.430
+Está certo.
+
+04:38.750 --> 04:39.380
+OK.
+
+04:39.390 --> 04:47.670
+E então finalmente "self.collection",
+self vai ser necessário porque vamos digitar, em um
+
+04:47.670 --> 04:55.690
+momento, outra função
+e "self.collection = db[]".
+
+04:56.030 --> 05:02.930
+Vamos ver o settings, então "settings['MONGODB_COLLECTION']".
+
+05:03.000 --> 05:10.610
+Finalmente vamos definir outra função,
+que vai ser o "process_item", e essa função
+
+05:10.610 --> 05:12.030
+terá
+
+05:12.060 --> 05:21.320
+self, item, spider, isto também é
+uma função bem conhecida que já cobrimos.
+
+05:22.360 --> 05:32.920
+E então digitamos "self.collection.insert(dict(item))"
+
+05:32.920 --> 05:37.660
+e então fechamos, novamente, parênteses.
+
+05:37.680 --> 05:41.970
+E então finalmente "return item". Vamos salvar isso e
+
+05:42.230 --> 05:46.890
+vamos ver se há alguma mistura de tabs e espaços em algum lugar.
+
+05:47.060 --> 05:56.430
+Não há, então esta linha vai inserir
+os dados no database Mongo, auto-explicativo.
+
+05:56.430 --> 05:58.480
+E se rodarmos ele.
+
+05:58.500 --> 06:00.840
+Então voltamos para o diretório raiz,
+
+06:01.370 --> 06:04.760
+abrimos o Terminal, vamos maximizá-lo,
+
+06:04.820 --> 06:06.020
+"scrapy crawl books".
+
+06:06.060 --> 06:13.020
+E não queremos atribuir nenhum outro atributo
+e coisas como essa para ter isto escrito no database Mongo.
+
+06:13.020 --> 06:16.170
+Então vamos pressionar Enter e ver.
+
+06:16.200 --> 06:17.580
+Então 20 ou mais.
+
+06:17.640 --> 06:20.210
+É, exatamente 20 livros foram extraídos.
+
+06:20.580 --> 06:24.120
+E vamos para o mongo e vamos ver.
+
+06:24.160 --> 06:29.000
+"show dbs", eu não criei nenhum outro database.
+
+06:29.010 --> 06:34.200
+E como você pode ver o database book do settings.py foi criado.
+
+06:34.200 --> 06:44.250
+Então se irmos e escrevermos "use books",
+e então "show collections", vamos ver
+
+06:44.250 --> 06:47.250
+os produtos listados.
+
+06:47.310 --> 06:47.900
+Perfeito.
+
+06:47.940 --> 06:54.220
+E se digitarmos agora, vamos ver, "db.collection"
+
+06:57.110 --> 07:02.980
+não collections, desculpe, "products.find();".
+
+07:03.130 --> 07:03.860
+Perfeito.
+
+07:04.140 --> 07:11.170
+E se novamente formos e usar pretty(),
+por exemplo, está mais legível, perfeito.
+
+07:11.190 --> 07:16.280
+E como você pode ver, temos nossos dados escritos no database.
+
+07:16.350 --> 07:24.330
+Então se quisermos ir para outro lote,
+podemos apenas rodar o spider como está ou apenas fechar ele
+
+07:24.990 --> 07:27.430
+e então rastrear mais uma vez.
+
+07:27.600 --> 07:32.780
+E a forma que testamos isso é, vamos ver.
+
+07:32.910 --> 07:34.470
+Então "show collections".
+
+07:34.470 --> 07:35.400
+Desculpe,
+
+07:35.550 --> 07:46.110
+"use books"
+
+07:46.110 --> 07:49.830
+"db.products.find().pretty();"
+
+07:50.100 --> 08:03.950
+E aqui, se deletarmos ele ou, vamos ver,
+ele deve estar em algum lugar 40 livros, e aqui se digitarmos,
+
+08:04.190 --> 08:15.490
+vamos ver, "db" e se minha memória está correta
+então podemos digitar "db.products
+
+08:15.500 --> 08:21.180
+.remove({});".
+
+08:21.230 --> 08:28.970
+Vamos ver que devem ter sido removidos 40 produtos
+porque já extraímos o site duas vezes, ou
+
+08:28.970 --> 08:37.190
+a página inicial duas vezes.
+Perfeito, então há 40 produtos removidos ou nós, neste caso,
+
+08:37.190 --> 08:37.810
+como este aqui.
+
+08:38.000 --> 08:40.110
+E isso deve ser tudo para este vídeo.
+
+08:40.140 --> 08:41.050
+E obrigado por assistir!

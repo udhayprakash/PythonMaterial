@@ -1,0 +1,169 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>040 Editing Scrapy settings_py</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>In the same Scrapy project folder, you can find a file called <em><strong>settings.py</strong></em> which includes several options you can use. Lets explain a couple of regularly used options. Note that sometimes the option is already in the file and you have just to uncomment it, and sometimes you have to add it yourself.</p>
+
+<p><br></p>
+
+
+
+<h4>Arranging Scrapy Output CSV Columns</h4>
+
+
+
+
+
+
+
+
+
+
+
+<p>As you might noticed by now, Scrapy does not arrange the CSV columns in the same order of your dictionary.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Open the file settings.py found in the Scrapy project folder and add this line; it will give you the order you need:<br><code>FEED_EXPORT_FIELDS = ['Title','URL', 'Address', 'Compensation', 'Employment Type','Description']</code> <br><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>Note: </strong>If your run the command of generating the CSV again, make sure you first delete the current CSV file or it will add the new output at the end of the current one.</p>
+
+
+
+
+
+
+
+
+
+<h4><br>Setting a User Agent</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>If you are using a regular browser to navigate a website, your web browser will send what is known as a User Agent for every page you access. So it is recommended to use the Scrapy <code>USER_AGENT</code> option while web scraping to make it look more natural. The option is already in Scrapy settings.py so you can enable it by deleting the <code>#</code> sign.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>You can find lists of user agents online; select a recent one for <a href="http://www.useragentstring.com/pages/useragentstring.php?name=Chrome" rel="nofollow" target="_blank">Chrome</a> or <a href="http://www.useragentstring.com/pages/useragentstring.php?name=Firefox" rel="nofollow" target="_blank">Firefox</a>. You can even <a href="http://www.whoishostingthis.com/tools/user-agent/" rel="nofollow" target="_blank">check your own user agent</a>; however, it is not required to use the same one in Scrapy.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Here is an example:<br><code>USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1'</code><br><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4>Setting Scrapy DOWNLOAD_DELAY</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The option <code>DOWNLOAD_DELAY</code> is already there in Scrapy settings.py so you can just enable it by deleting the # sign. According to Scrapy documentation, this can be used to throttle the crawling speed to avoid hitting servers too hard.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>You can see that the offered number is 3 seconds; however, you can make them less or more. Still, this makes sense because there is another option that is activated by default which is <code>RANDOMIZE_DOWNLOAD_DELAY</code> and it is set from 0.5 to 1.5 seconds.</p>
+
+
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

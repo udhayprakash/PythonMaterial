@@ -1,0 +1,496 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:07.800
+Hey there! So this is the second part of this 
+section where we'll automate scraping LinkedIn.
+
+00:00:07.800 --> 00:00:12.000
+So let's begin. We go back to the sublime text.
+
+00:00:12.000 --> 00:00:19.000
+First, what we'll do is load google.com. 
+The reason why we'll load google.com...
+
+00:00:19.000 --> 00:00:24.900
+so we will, pretty much, do or go to the
+google.com homepage. Then we will,
+
+00:00:24.900 --> 00:00:31.600
+just like we did here, we will first locate
+this input here. Then we will, pretty much,
+
+00:00:31.600 --> 00:00:39.700
+enter some text field or, really, search query, 
+and then scrape specific linkedin.com/in.
+
+00:00:39.700 --> 00:00:44.800
+As you will see in a moment, 
+part of the URLs, and go to the profiles.
+
+00:00:44.800 --> 00:00:50.000
+So the way that we'll do that in
+the code is by doing the following.
+
+00:00:50.000 --> 00:01:02.200
+So we type in:  
+driver.get('https://www.google.com')
+
+00:01:02.200 --> 00:01:12.600
+We'll also load the sleep method from the
+ time module. The reason why we are doing this
+
+00:01:12.600 --> 00:01:21.300
+is just to have some, really, sleeping or, really, 
+just a pause between inputting certain things.
+
+00:01:21.300 --> 00:01:26.000
+So we ensure that after logging in, 
+the script doesn't go straight away,
+
+00:01:26.000 --> 00:01:32.500
+and then go to google.com, etc. So just to 
+make sure that everything will be working correctly,
+
+00:01:32.500 --> 00:01:37.500
+and probably using time module is the
+easiest way to do something like this.
+
+00:01:37.500 --> 00:01:46.000
+So let's add, for example, sleep function
+here of 0.5 seconds. Also, let's do it here.
+
+00:01:46.000 --> 00:01:52.500
+So we can paste this in, and let's
+also use it after we go and type this in.
+
+00:01:52.500 --> 00:01:59.500
+So sign_in_button, and we also just 
+need to type in here sign_in_button.click
+
+00:01:59.500 --> 00:02:06.000
+to pretty much mimic this clicking in. And
+then we can type in here sleep, for example, 5.
+
+00:02:06.000 --> 00:02:10.400
+So this will, pretty much, 
+pause our script for 5 seconds.
+
+00:02:10.400 --> 00:02:18.100
+Just to, again, make sure or ensure that the 
+script will or the page will get loaded.
+
+00:02:18.100 --> 00:02:26.300
+So we go to google.com. So we can copy this,
+and paste this into our Terminal.
+
+00:02:26.300 --> 00:02:33.400
+So paste it in. And as you can see, 
+it's going to load Google.
+
+00:02:33.400 --> 00:02:39.900
+And then we need to input our or, really, 
+locate our input. So to do that, of course,
+
+00:02:39.900 --> 00:02:46.120
+we go to the right-click, then Inspect. And here we
+have a bunch of different, as you can see,
+
+00:02:46.120 --> 00:02:53.300
+values, types, value, aria, labels, etc. 
+So one that probably will not change
+
+00:02:53.300 --> 00:03:01.000
+in the future is going to be name="q"  
+So we already used name when it comes to locating.
+
+00:03:01.000 --> 00:03:09.300
+And it was by going into the
+driver.find_element_by_id
+
+00:03:09.300 --> 00:03:17.000
+As you will see in a moment, this is where 
+we use this. So we're inputting password.
+
+00:03:17.000 --> 00:03:24.300
+So driver.find_element_by_id. And then 
+we type in just the 'q' as you can see.
+
+00:03:24.300 --> 00:03:30.500
+Then hit Enter. And if we go back to the 
+Terminal... for some reason it's not found.
+
+00:03:30.500 --> 00:03:32.300
+Let's try to do it once again.
+
+00:03:32.300 --> 00:03:39.500
+Oh, sorry... by_name. My bad. 
+So I'm not sure how I did miss this.
+
+00:03:39.500 --> 00:03:47.500
+Let's see it once again. Inspect it, name='q' 
+For some reason, I saw somewhere ID,
+
+00:03:47.500 --> 00:03:56.900
+so I got confused. Anyway, so we can copy this, 
+and name it something like, let's say,
+
+00:03:56.900 --> 00:04:03.000
+search_query is equal to this value. 
+And we can copy this,
+
+00:04:03.000 --> 00:04:10.900
+and paste this into the Terminal. And
+let's see if this is now working. Perfect.
+
+00:04:10.900 --> 00:04:15.200
+Okay, so it's working. And then what 
+we need to do is type in the following.
+
+00:04:15.200 --> 00:04:27.500
+So search_query.send_keys
+Then in open and closed parentheses,
+
+00:04:27.500 --> 00:04:33.000
+let's type in, for example, the search... 
+following search query. So it's going to be equal to
+
+00:04:33.000 --> 00:04:49.600
+site:linkedin.com/in/ AND "python developer"
+
+00:04:49.600 --> 00:04:57.900
+And we want to search it in, for example,
+London. So we type this in. And as you can see,
+
+00:04:57.900 --> 00:05:04.500
+it will return ten or so different
+profiles per page. Also, one thing to note
+
+00:05:04.500 --> 00:05:12.000
+is that even though Google will display
+or say that it contains 5040 results,
+
+00:05:12.000 --> 00:05:15.900
+it will load a maximum thousand results.
+
+00:05:15.900 --> 00:05:23.100
+So this is also true when it comes to also 
+LinkedIn. The reason why is because, really,
+
+00:05:23.100 --> 00:05:30.900
+it doesn't really matter what search query you 
+are using. Google will restrict your displaying
+
+00:05:30.900 --> 00:05:36.800
+of the results per thousand, really. 
+So any, really, search query that
+
+00:05:36.800 --> 00:05:40.330
+you enter even Facebook, Instagram, or
+something like that, which will return
+
+00:05:40.330 --> 00:05:45.930
+probably a few million, at least, results,
+it will only display up to a thousand.
+
+00:05:45.930 --> 00:05:52.480
+Google does this because, really, nobody... 
+bottom line is nobody is going to even
+
+00:05:52.480 --> 00:05:57.100
+bother going to the hundred or so page.
+Same thing, really, with the LinkedIn.
+
+00:05:57.100 --> 00:06:03.600
+But, generally speaking, LinkedIn is going to
+be extra restrictive when it comes to scraping.
+
+00:06:03.600 --> 00:06:07.000
+So, in this course, we'll just
+scrape ten or so different profiles
+
+00:06:07.000 --> 00:06:10.700
+so your account doesn't get banned 
+or restricted or something like that.
+
+00:06:10.700 --> 00:06:15.200
+So I would be extra careful 
+when it comes to scraping LinkedIn.
+
+00:06:15.200 --> 00:06:20.480
+Let's go back to the Terminal. And, 
+let's see, so we can copy, pretty much,
+
+00:06:20.480 --> 00:06:30.300
+and paste this in. So, let's see, let's
+actually go back to the text editor
+
+00:06:30.300 --> 00:06:37.900
+and type in search_query is equal... or sorry, 
+dot send_keys.  And then we can type this in.
+
+00:06:37.900 --> 00:06:41.210
+Let's see if it's going to be working.
+Yeah, it's going to be fine.
+
+00:06:41.210 --> 00:06:50.800
+So we can copy this, and let's go back a page. 
+Perfect. So to verify that the page was loaded,
+
+00:06:50.800 --> 00:06:56.700
+you can type in driver.current_url
+Hit Enter. And, as you can see,
+
+00:06:56.700 --> 00:07:02.000
+it's going to be corresponding to the URL
+here, which is going to be Google home page.
+
+00:07:02.000 --> 00:07:07.100
+And if we copy our previous
+statement, hit Enter... let's see,
+
+00:07:07.100 --> 00:07:11.400
+Message: stale element... okay, perfect. 
+So this is also one thing to note when
+
+00:07:11.400 --> 00:07:21.500
+it comes to scraping with Selenium. You 
+will have to enter it or, really, search for the input
+
+00:07:21.500 --> 00:07:25.700
+every time you load the page. 
+So, as you can see here,
+
+00:07:25.700 --> 00:07:30.200
+we get the Message: stale element reference: 
+element is not attached to the page document
+
+00:07:30.200 --> 00:07:36.020
+This happened because we were going to this
+page, and then manually going or, really,
+
+00:07:36.020 --> 00:07:42.900
+automating going here. So Selenium 
+thinks that this is the page that, currently,
+
+00:07:42.900 --> 00:07:49.600
+it's active, but it's actually this one.
+So you have to input your, in this case,
+
+00:07:49.600 --> 00:07:56.000
+inputs once again. So search_query, 
+and then we can load our history and,
+
+00:07:56.000 --> 00:08:03.200
+pretty much, hit Enter. And, as you can see, 
+it's loaded. So then what we need to do is,
+
+00:08:03.200 --> 00:08:09.000
+pretty much, let's see, we can... 
+since we... let's say this is too complicated
+
+00:08:09.000 --> 00:08:16.400
+because it's going to be language
+dependent. So if your first language is English,
+
+00:08:16.400 --> 00:08:19.630
+it will probably say something like Google Search.
+
+00:08:19.630 --> 00:08:25.400
+Or here from the first hand, as you can see here, 
+it's going to be Serbian because I'm from Serbia.
+
+00:08:25.400 --> 00:08:31.000
+So what we can do, pretty much, is 
+automate previously mentioned in Part 1,
+
+00:08:31.000 --> 00:08:38.900
+automating clicking Return button. 
+So to do that, really, it's going to be extra easy.
+
+00:08:38.900 --> 00:08:43.100
+So we type in search_query.send_keys
+
+00:08:43.100 --> 00:08:52.000
+And then we type in here Keys, and then 
+RETURN. But first we need to input or, really,
+
+00:08:52.000 --> 00:08:59.300
+let's first copy this, and paste this 
+into your sublime text or text editor.
+
+00:08:59.300 --> 00:09:05.600
+So first we will need to import the keys 
+because it's not going to be the same as
+
+00:09:05.600 --> 00:09:13.700
+with the, let's see, send_keys. So to 
+import it, we type in from selenium,
+
+00:09:13.700 --> 00:09:24.500
+common, sorry, webdriver, and then 
+common dot keys, import, uppercase Keys.
+
+00:09:24.500 --> 00:09:34.600
+So we copy this. Let's go back to our 
+Terminal, and we can paste this in.
+
+00:09:34.600 --> 00:09:45.800
+And we can also copy and paste this right now. 
+So this will automate clicking the key Return.
+
+00:09:45.800 --> 00:09:51.000
+So let's hit Enter and, as you can see, 
+page that we just previously loaded
+
+00:09:51.000 --> 00:09:56.600
+is going to be loaded, really. Pretty 
+simple. Let's see what's in the next step.
+
+00:09:56.600 --> 00:10:05.700
+So next step is locating the, really, the
+linkedin.com/in/ part of the page.
+
+00:10:05.700 --> 00:10:11.400
+So it's going to be all of these
+different green URLs. So to do that,
+
+00:10:11.400 --> 00:10:19.100
+we are going to go back to our 
+Terminal, and then type in the following.
+
+00:10:19.100 --> 00:10:24.000
+So we need to first locate the,
+specifically, the HTTPS,
+
+00:10:24.000 --> 00:10:29.200
+as you can see this green part 
+of the text that I'm highlighting right now.
+
+00:10:29.200 --> 00:10:35.110
+To do that, it's going to be extra quick 
+and extra easy. We go and, as always,
+
+00:10:35.110 --> 00:10:40.200
+type in Inspect or click Inspect. 
+And then let's see where it is.
+
+00:10:40.200 --> 00:10:47.500
+It's, as you can see, in the cite class. 
+So probably this is something specific.
+
+00:10:47.500 --> 00:10:52.000
+So we can copy and paste this, and see 
+how many times this actually displays.
+
+00:10:52.000 --> 00:10:56.500
+So it seems like it's only 12 times. 
+So this is, actually, by the way,
+
+00:10:56.500 --> 00:11:02.950
+the way that I figure out the exact selectors. 
+So this is the exact process that I use.
+
+00:11:02.950 --> 00:11:08.650
+And, as you can see, probably, yeah, 
+always they are going to be in the cite class,
+
+00:11:08.650 --> 00:11:14.200
+and then some specific value. This 
+specific value is going to be changed.
+
+00:11:14.200 --> 00:11:20.300
+So we need to, pretty much, locate the 
+element by cite command. And then we are,
+
+00:11:20.300 --> 00:11:25.900
+pretty much, good to go. So it's 
+going to be fairly easy. So, let's see.
+
+00:11:25.900 --> 00:11:33.500
+Let's type in the linkedin_urls, for example, 
+ driver.find_element_by_tag_name.
+
+00:11:33.500 --> 00:11:40.800
+So tag names are, in this case, it's going 
+to be div, div, h3, div, div, and then cite.
+
+00:11:40.800 --> 00:11:49.500
+So we need to type in driver.find_element_by_tag_name. 
+And then we type in just the cite.
+
+00:11:49.500 --> 00:11:58.600
+Let's go back to our Terminal, and then
+type in the length of the linkedin_urls.
+
+00:11:58.620 --> 00:12:05.000
+Let's see, sorry. We need to find
+elements, not the element.
+
+00:12:05.000 --> 00:12:14.670
+So, as you can see, if I type in, right now, 
+the length of the linkedin_urls, it's going to be 10,
+
+00:12:14.670 --> 00:12:26.700
+which corresponds to the number of pages.
+And let's copy this to our text editor.
+
+00:12:26.700 --> 00:12:37.200
+And, let's see, we need to type in... 
+okay, so this is the Terminal, so linkedin_urls.
+
+00:12:37.200 --> 00:12:44.100
+If we really isolate the first one in the 
+list slicing and type in 0, you will see
+
+00:12:44.100 --> 00:12:50.400
+selenium.webdriver.remote.webelement.WebElement
+So it doesn't contain the text.
+
+00:12:50.400 --> 00:12:56.200
+And the way that you'll type in or,
+really, extract the text is not by typing in
+
+00:12:56.200 --> 00:13:01.500
+/text() like with Scrapy or lxml.
+
+00:13:01.500 --> 00:13:10.000
+You type in just .text, hit Enter, 
+and, as you can see, this is going to be pauljgarner.
+
+00:13:10.000 --> 00:13:14.220
+So it's going to be, as you
+can see, corresponding to the first one.
+
+00:13:14.220 --> 00:13:22.000
+So it's going to be extra easy 
+logging this or, really, scraping this.
+
+00:13:22.000 --> 00:13:26.500
+So linkedin_urls is going to be 
+equal to the list comprehension,
+
+00:13:26.500 --> 00:13:36.100
+and the list comprehension is following. So 
+for url in linkedin_urls. So this is our ordinary for loop.
+
+00:13:36.100 --> 00:13:43.000
+And then we will do... or unpack every value, and 
+then extract just the text from each and every one.
+
+00:13:43.000 --> 00:13:50.000
+So if we copy and paste this, 
+go back to our Terminal, paste this in,
+
+00:13:50.000 --> 00:13:54.500
+and type in, right now, linkedin_urls, hit Enter,
+
+00:13:54.500 --> 00:13:58.000
+you will see that this 
+corresponds to the URLs.
+
+00:13:58.000 --> 00:14:03.560
+So that will be it for this video, 
+and I'll see you in the very next one.
+

@@ -1,0 +1,201 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>072 Extracting Hidden Phone Number without Selenium</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>In the previous tutorial, we have seen how to handle it with Selenium, but in this tutorial we will see how to handle this without Selenium.<br></p>
+
+<p>Go to <a href="https://www.olx.co.ke/" rel="nofollow" target="_blank">Olx website</a>
+ and then open any active product. On the product page, you can see that the phone number is 
+hidden and replaced by xxxx. This requires the user to click the "<strong>Show phone</strong>" button to show the number.</p>
+
+
+
+
+
+
+
+
+
+<figure><img src="https://udemy-images.s3.amazonaws.com:443/redactor/2017-02-11_14-34-18-eed6d43100c94d244c8ff533751353e3/hidden-phone.png"></figure>
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+
+
+<p>So, in this tutorial we will see how to handle this with Scrapy.</p>
+
+
+
+<p>Note: Use the product URL you have just opened. Products are getting changing frequently, so we cannot have a fixed URL in this tutorial. So just make sure you are using an active one.</p>
+
+
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+<ol><li>Open the page in Chrome or FireFox.</li><li>Right-Click anywhere and select "Inspect"</li><li>Go to the "Network" tab and "XHR" sub-tab.</li><li>Click on the button in your browser.</li><li>In the "XHR" sub-tab, you can see a link similar to (<a href="https://www.olx.co.ke/ajax/misc/contact/phone/15PcCi/" rel="nofollow" target="_blank">https://www.olx.co.ke/ajax/misc/contact/phone/15PcCi/</a>). Open it in a new tab.</li><li>You can see this:</li></ol>
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">{"value":"+254 72 536 6675"}</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol><li>You can either use the <strong>json</strong> library to handle this (or convert it to Dictionary using the <strong>ast</strong> library in complicated cases). Here is how to handle it as JSON:</li></ol>
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">import json
+ 
+# Scrapy code here
+ 
+body = response.body
+data = json.loads(body)
+phone = data['value']</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+<p><strong>How to automatically get the phone URL?</strong></p>
+
+
+
+
+
+
+
+
+
+<p>Compare these two URLs:</p>
+
+
+
+
+
+
+
+
+
+<p>Page: https://www.olx.co.ke/ad/private-tutors-and-home-tuition-services-<code>ID15PcCi</code>.html<br></p>
+
+
+
+
+
+
+
+
+
+<p>Phone: https://www.olx.co.ke/ajax/misc/contact/phone/<code>15PcCi</code>/</p>
+
+
+
+
+
+
+
+
+
+<p>As you can see, this part after ID in the original URL  is what should be in the phone URL, which means you can use a Python string concatenation to find the phone URL from the page URL.</p>
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+<p>Try this, and if you have questions, please feel free to send them to the <strong>Q&amp;A</strong> section of this course.<br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

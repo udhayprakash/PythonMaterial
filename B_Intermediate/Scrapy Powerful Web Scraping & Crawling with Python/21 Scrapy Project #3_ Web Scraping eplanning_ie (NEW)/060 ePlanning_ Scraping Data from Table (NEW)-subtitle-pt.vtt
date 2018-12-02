@@ -1,0 +1,552 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00:00.030 --> 00:00:05.520
+Olá! Então este é nosso último vídeo nesta
+seção e, como previamente discutido
+
+00:00:05.520 --> 00:00:09.719
+no último vídeo, aqui vamos extrair
+pontos de dados como Name, Address,
+
+00:00:09.719 --> 00:00:16.440
+Phone, Fax, e-mail, e a URL para a
+página Planning Application, como esta aqui.
+
+00:00:16.440 --> 00:00:22.080
+Então vamos começar agora.
+Então quando de trata de extrair,
+
+00:00:22.080 --> 00:00:28.170
+como discutido anteriormente, tabelas, é geralmente mais
+complexo do que extrair a maioria dos outros pontos de dados.
+
+00:00:28.170 --> 00:00:33.960
+Uma vantagem quando se trata de tabelas
+é que quando você descobrir como
+
+00:00:33.960 --> 00:00:40.260
+extrair o Name, por exemplo, então
+provavelmente Address, ou extrair Phone,
+
+00:00:40.260 --> 00:00:44.640
+Fax, ou emails vão ser o mesmo.
+Então isso é uma das vantagens.
+
+00:00:44.640 --> 00:00:49.800
+Mas vamos voltar para nosso projeto, e vamos
+ver como podemos extrair de mais eficientemente
+
+00:00:49.800 --> 00:00:56.640
+os pontos de dados que estamos procurando. Então
+vamos para o Inspect e aqui temos a linha da tabela,
+
+00:00:56.640 --> 00:01:02.100
+como você pode ver. E nela você tem
+o "th" que significa table header, ou cabeçalho da tabela.
+
+00:01:02.100 --> 00:01:09.420
+Então temos nosso valor Name,
+e então temos o "td".
+
+00:01:09.420 --> 00:01:15.810
+Então "td", claro, significa table data, ou dado da tabela,
+e então este é o valor que estamos procurando,
+
+00:01:15.810 --> 00:01:22.830
+depois nós chegarmos para a variável name,
+ou o valor. Então para fazer isto, voltamos
+
+00:01:22.830 --> 00:01:30.920
+para o Terminal e digitamos "response.xpath",
+e precisamos selecionar toda linha da tabela.
+
+00:01:30.920 --> 00:01:37.860
+Então vamos para cada uma das linhas
+da tabela, como esta aqui.
+
+00:01:37.860 --> 00:01:45.329
+Então vamos para cada um dos "th", mas precisamos
+colocar ele nestes colchetes porque
+
+00:01:45.329 --> 00:01:52.350
+queremos extrair ou pegar os "th"s, apenas
+os que tem este valor. Ok?
+
+00:01:52.350 --> 00:02:01.909
+Então copiamos isto e colamos aqui.
+E então precisamos ir para o "td",
+
+00:02:01.909 --> 00:02:06.460
+que vai estar localizado aqui.
+E então vamos ver se isto vai funcionar.
+
+00:02:06.460 --> 00:02:14.650
+Vamos ver, parece que alguma coisa está faltando.
+Desculpe. E isto deve funcionar.
+
+00:02:14.650 --> 00:02:21.350
+Então agora funciona. Então temos aqui nosso dado,
+como você pode ver aqui.
+
+00:02:21.350 --> 00:02:29.440
+Então precisamos apenas ir para o texto,
+e então chamar o extract_first(), pressionar Enter, e perfeito.
+
+00:02:29.440 --> 00:02:35.620
+Então conseguimos nossos dados. Então a
+expressão XPath é meio complexa.
+
+00:02:35.620 --> 00:02:41.470
+Então, novamente, vamos passar por cima. Vamos para
+cada uma das linhas da tabela. Então vamos para o "th",
+
+00:02:41.470 --> 00:02:47.920
+mas apenas esse "th" que
+tem o valor Name.
+
+00:02:47.920 --> 00:02:53.950
+Então isto é o mesmo ponto de dado.
+E então depois disso, vamos para o "td",
+que vai ser este aqui.
+
+00:02:53.950 --> 00:02:58.240
+Então td, e extraímos o texto dele,
+
+00:02:58.240 --> 00:03:05.890
+que vai ser este valor, ok? Então,
+agora está mais claro. Então podemos copiar isto,
+
+00:03:05.890 --> 00:03:13.830
+e voltar para o Sublime Text. E,
+vamos ver, então aqui podemos definir ele como name.
+
+00:03:13.830 --> 00:03:20.680
+E, depois disso, estamos prontos para continuar.
+O segundo ponto de dado, vamos ver qual ele é.
+
+00:03:20.680 --> 00:03:26.950
+E ele vai ser o Address. Agora o
+Address, como você pode ver, neste caso,
+
+00:03:26.950 --> 00:03:34.060
+tem as quatro linhas de dado, ou quatro
+"td", como você verá em um momento.
+
+00:03:34.060 --> 00:03:42.730
+Então Inspect, desculpe, "td" no primeiro, e
+o "td" aqui está no "tr", como você pode ver.
+
+00:03:42.730 --> 00:03:48.820
+Então isto é razoavelmente complexo
+de chegar, como você pode ver.
+
+00:03:48.820 --> 00:03:55.390
+Então ele também contém mais alguns "td". Então,
+vamos ver, então provavelmente o que vamos precisar fazer
+
+00:03:55.390 --> 00:04:02.050
+é dividir isto em duas partes
+para extrair o Address.
+
+00:04:02.050 --> 00:04:10.520
+Vamos dizer, por exemplo,
+address_first e address_second.
+
+00:04:10.520 --> 00:04:18.859
+Então estas duas variáveis vão conter os
+seletores do Address para selecionar tudo aqui.
+
+00:04:18.859 --> 00:04:25.700
+Então podemos escrever o primeiro. Então
+vamos no Inspect no primeiro dado da tabela.
+
+00:04:25.700 --> 00:04:32.240
+Vamos ver. Então precisamos ir para o
+"tr" que tem o "th",
+
+00:04:32.240 --> 00:04:39.010
+como você pode ver, o Adress. E então precisamos
+ir para o "td" e extrair o texto dele.
+
+00:04:39.010 --> 00:04:44.900
+Ok? Então depois nós chamamos... vamos chamar
+não o extract_first(), mas vamos chamar
+
+00:04:44.900 --> 00:04:53.810
+extract porque então isso vai,
+espero, pegar também o segundo ponto de dado.
+
+00:04:53.810 --> 00:04:57.790
+Vamos ver se isso é verdade.
+Ok, vamos escrever isso
+
+00:04:57.790 --> 00:05:05.680
+porque isto vai ser um pouco mais
+complexo. Então isto vai funcionar
+
+00:05:05.680 --> 00:05:13.300
+do nosso último seletor. Então em vez de
+"extract_first()", vamos chamar o "extract"
+
+00:05:13.300 --> 00:05:19.729
+para pegar mais resultados. E também
+em vez de Name, podemos digitar Address.
+
+00:05:19.729 --> 00:05:24.370
+Vamos ver se tudo vai estar ok.
+Então isso deve funcionar.
+
+00:05:24.370 --> 00:05:31.130
+Ok. Então apenas o "Block B" vai ser selecionado.
+Isso é bom e, por enquanto, vamos ver como
+
+00:05:31.130 --> 00:05:39.560
+podemos pegar os outros pontos de dados,
+como este aqui. Ok, então vamos ver.
+
+00:05:39.560 --> 00:05:45.590
+Então precisamos ir para cada uma das linhas da tabela,
+como sempre. E então precisamos ir para o Address,
+
+00:05:45.590 --> 00:05:52.490
+e então usar "following" ou
+"following-sibling". Precisamos então ir
+
+00:05:52.490 --> 00:05:59.660
+para as "tr" seguinte, que vai ser
+esta. Não, não vai ser isso.
+
+00:05:59.660 --> 00:06:07.669
+Então "tr" e então "td". Ok.
+Então deixe-me explicar ou passar por cima disso.
+
+00:06:07.669 --> 00:06:14.420
+Então precisamos ir para cada um das,
+novamente, linhas da tabela com o "th"
+
+00:06:14.420 --> 00:06:21.320
+que tem o Address. Então vamos remover
+isto, agora.
+
+00:06:21.320 --> 00:06:27.770
+Então precisamos ir para, por exemplo,
+o following_sibling vai funcionar aqui.
+
+00:06:27.770 --> 00:06:33.530
+O motivo é porque queremos selecionar as linhas
+da tabela. Então precisamos selecionar todo "tr",
+
+00:06:33.530 --> 00:06:42.020
+que vai ser, neste caso,
+estes três. E então precisamos...
+
+00:06:42.020 --> 00:06:46.250
+depois de irmos para cada uma das "tr"...
+então, atualmente, estamos selecionando
+
+00:06:46.250 --> 00:06:51.620
+todas as linhas da tabela, que vai daqui
+até aqui. Então precisamos ir para o "td",
+
+00:06:51.620 --> 00:06:56.030
+que vai estar apenas aqui. Então, atualmente,
+estamos aqui. Então precisamos ir para o "td".
+
+00:06:56.030 --> 00:07:02.540
+E então, claro, precisamos
+extrair o texto dele.
+
+00:07:02.540 --> 00:07:08.480
+Ok. Então isto não foi difícil. E pressione
+Enter. Vamos ver. Isto vai funcionar. Ok.
+
+00:07:08.480 --> 00:07:14.570
+Então temos aqui nossos números de telefone.
+Então obviamente não queremos fazer isso.
+
+00:07:14.570 --> 00:07:22.070
+Então vamos ver. Então queremos extrair apenas os três
+primeiros. Então vamos para o list slicing e digitamos aqui.
+
+00:07:22.070 --> 00:07:27.380
+E vamos ver se isto é o
+ponto de dado que precisamos.
+
+00:07:27.380 --> 00:07:34.010
+Este é o primeiro, o segundo e o terceiro.
+Ok. Então parece que está funcionando.
+
+00:07:34.010 --> 00:07:44.030
+Perfeito. Ok, então vamos copiar isto
+e então colar isto no nosso editor de texto.
+
+00:07:44.030 --> 00:07:52.460
+Então este é para o segundo e
+para o primeiro. Vamos ver onde isso estava.
+
+00:07:52.460 --> 00:07:59.120
+Deixe-me ver se isto vai funcionar.
+"Block B" deve ser a saída. Ok, então é isso.
+
+00:07:59.120 --> 00:08:07.550
+Precisamos chamar apenas o "extract_first()".
+Ok, então extract_first() aqui.
+
+00:08:07.550 --> 00:08:14.810
+E então podemos adicionar estes dois
+para o... e declarando
+
+00:08:14.810 --> 00:08:25.039
+"address = address_first + address_second".
+
+00:08:25.039 --> 00:08:30.919
+Então é isso. Ok, pressionamos Enter algumas
+vezes. E vamos ver se isto vai funcionar.
+
+00:08:30.919 --> 00:08:38.659
+Então podemos copiar estas duas linhas... vamos
+copiar isto e colar no nosso Terminal.
+
+00:08:38.659 --> 00:08:47.839
+E então digitar, ou copiar e colar, esta linha no
+Terminal. Vamos ver... o Unicode. Ok.
+
+00:08:47.839 --> 00:08:54.380
+Então podemos usar isto aqui como extract(),
+não extract_first() porque, do contrário,
+
+00:08:54.380 --> 00:08:59.390
+vamos ter um tipo de erro, claro, porque isto é
+o primeiro, ou o address_first, é Unicode ou string.
+
+00:08:59.390 --> 00:09:04.520
+E a variável address_second vai 
+estar na lista.
+
+00:09:04.520 --> 00:09:11.660
+Então não podemos adicionar esses dois.
+Ok? Então vamos colar estes dois,
+
+00:09:11.660 --> 00:09:17.890
+e então chamar o address. Ok, agora
+se digitarmos, você verá os pontos de dados
+
+00:09:17.890 --> 00:09:24.589
+claramente aqui para o Address. Então isso
+foi um pouco mais complexo, mas, espero,
+	
+00:09:24.589 --> 00:09:31.520
+você vai dar conta disso. Vamos voltar para o
+site, e os três pontos de dados seguintes
+
+00:09:31.520 --> 00:09:35.360
+vão ser extraídos também. Então vamos começar com
+o primeiro, que vai ser o Phone.
+
+00:09:35.360 --> 00:09:44.690
+Então o Phone vai ter a mesma lógica
+que o Name.
+
+00:09:44.690 --> 00:09:51.260
+Então ele precisa ir para o "th" e então ele
+vai para o "td" e extrai o texto dele.
+
+00:09:51.260 --> 00:09:56.839
+Então vamos ver se o Fax vai fazer isso também.
+Parece que o Fax vai fazer isso também.
+
+00:09:56.839 --> 00:10:01.579
+E, finalmente, com o e-mail vai ser um
+pouco diferente porque
+
+00:10:01.579 --> 00:10:07.940
+o e-mail vai ser uma tag "a", como você pode ver.
+E então podemos extrair o texto da tag "a".
+
+00:10:07.940 --> 00:10:14.990
+Então essa é a única que muda.
+Então podemos, basicamente,
+
+00:10:14.990 --> 00:10:25.310
+copiar e colar nossa variável. Ok? Defina ele como
+phone e então defina, em vez de nome, como Phone.
+
+00:10:25.310 --> 00:10:28.890
+Vamos ver se isto vai funcionar. Então copie
+
+00:10:28.890 --> 00:10:36.480
+e cole isto no nosso Terminal,
+pressione Enter e Phone funciona.
+
+00:10:36.480 --> 00:10:45.060
+Vamos ver se Fax está presente.
+Está presente, então ele também deve funcionar.
+
+00:10:45.060 --> 00:10:53.220
+Então se copiarmos esta linha e colarmos ela,
+e renomear para fax, e aqui, colocar Fax.
+
+00:10:53.220 --> 00:10:59.610
+Copie isto, cole no nosso Terminal,
+pressione Enter e, como você pode ver,
+
+00:10:59.610 --> 00:11:06.180
+ele vai corresponder ao Fax Number.
+E vamos ver, então o último ponto de dado que vamos
+
+00:11:06.180 --> 00:11:16.440
+extrair deste site é o e-mail.
+Então e-mail. Ok.
+
+00:11:16.440 --> 00:11:22.800
+E se formos para o "td", ok. Então aqui vamos
+pegar, a única coisa para notar aqui é
+
+00:11:22.800 --> 00:11:28.460
+que precisamos adicionar aqui o "/a" e então
+ir para o href ou, desculpe, para o texto da tag "a".
+
+00:11:28.460 --> 00:11:35.850
+Então vamos voltar para o editor de texto,
+e podemos copiar isto,
+
+00:11:35.850 --> 00:11:46.320
+e colar isso, também, definir ele como email. Ok,
+então aqui temos o e-mail. E precisamos apenas,
+
+00:11:46.320 --> 00:11:52.290
+novamente, depois de irmos para o "td" aqui,
+não podemos, na verdade, extrair o texto dele
+
+00:11:52.290 --> 00:11:55.969
+porque nada vai ser extraído.
+Precisamos ir para a tag "a".
+
+00:11:55.969 --> 00:12:03.630
+Então digitamos aqui "/a" e então podemos extrair o
+texto, que vai ser o endereço de e-mail, espero.
+
+00:12:03.630 --> 00:12:11.310
+Então se copiarmos isto, e colar isso
+no Terminal, você pode ver o
+
+00:12:11.310 --> 00:12:16.770
+email extraído perfeitamente. Então
+finalmente, a última coisa que queremos
+
+00:12:16.770 --> 00:12:22.430
+extrair é a URL, que vai ser lida do
+response.url. É isso.
+
+00:12:22.430 --> 00:12:30.150
+Então, finalmente vamos usar "yield" em todos
+esses pontos de dados. Então podemos copiar isto e colar.
+
+00:12:30.150 --> 00:12:35.540
+Então name, address, phone, fax, email, url.
+
+00:12:35.580 --> 00:12:40.100
+E então podemos indentar isto corretamente.
+
+00:12:40.580 --> 00:12:52.589
+Ok. Podemos agora definir a sintaxe correta.
+Ok e então colar isso mais uma vez,
+
+00:12:52.589 --> 00:12:59.250
+coloque uma vírgula e fazer linhas apropriadas.
+
+00:12:59.250 --> 00:13:07.700
+Ok, então eu acredito que deve ser isso.
+Então vamos tentar rodar isso. Ok, então salve ele,
+
+00:13:07.700 --> 00:13:14.370
+e rode isso no Terminal. Vamos primeiro
+verificar que isso vai funcionar.
+
+00:13:14.370 --> 00:13:21.180
+Então nós vamos e digitamos, claro, "scrapy crawl eplanning",
+pressiona Enter, e, espero, em alguns segundos,
+
+00:13:21.180 --> 00:13:28.560
+a extração vai começar.
+Ok, então parece que está funcionando.
+
+00:13:28.560 --> 00:13:35.640
+Então podemos fechar isso agora, e podemos definir nosso,
+por exemplo, arquivo JSON. Então podemos digitar "-o items.json".
+
+00:13:35.640 --> 00:13:41.339
+O "-o" significa output, ou saída.
+Então definimos o
+
+00:13:41.339 --> 00:13:48.540
+nome da saída, e então a extensão,
+como json. Pressionamos Enter,
+
+00:13:48.540 --> 00:13:53.720
+e vamos esperar mais algumas páginas serem extraídas.
+
+00:13:54.870 --> 00:14:00.330
+Ok, então deve ser isso. Eu não vou 
+extrair muito desse site.
+
+00:14:00.330 --> 00:14:07.710
+Então podemos fechar ele agora, voltar para
+o Desktop e ver o arquivo JSON.
+
+00:14:07.710 --> 00:14:14.220
+Então podemos abrir isto no nosso
+editor de texto, e então definir o formato.
+
+00:14:14.220 --> 00:14:26.430
+Vamos ver. Alguma coisa, provavelmente, não está funcionando. Ok.
+Então o problema aqui é que o último item,
+
+00:14:26.430 --> 00:14:35.000
+já que o spider estava extraindo, ele não
+está indentado apropriadamente, ou algo como isso.
+
+00:14:35.000 --> 00:14:41.040
+Então, isto está presente aqui, e ele está também,
+então vamos deixar mais bonito. E isso funciona.
+
+00:14:41.040 --> 00:14:46.470
+Então aqui nós temos o fax, name, url,
+
+00:14:46.470 --> 00:14:50.670
+phone_number está presente, address vai
+sempre estar presente, e o email.
+
+00:14:50.670 --> 00:14:56.100
+Então, como você pode ver, se os dados não estiverem aqui,
+ele vai ser null ou uma string vazia.
+
+00:14:56.100 --> 00:15:00.600
+Claro, podemos definir para sempre
+ser null, ou algo assim,
+
+00:15:00.600 --> 00:15:07.140
+ou você pode definir para sempre ser uma string vazia.
+Então, como você pode ver, conseguimos os pontos de dados extraídos,
+
+00:15:07.140 --> 00:15:13.020
+e o address não tem os quatro items na lista,
+como aqui. O quarto ou
+
+00:15:13.020 --> 00:15:18.240
+qualquer outro, vai estar vazio, como você pode,
+ver aqui, por exemplo.
+
+00:15:18.240 --> 00:15:24.840
+Ou qualquer outro ponto de dado, novamente, pode ser
+null neste site ou uma string vazia,
+
+00:15:24.840 --> 00:15:29.730
+ou uma string com um espaço em branco,
+como você pode ver aqui.
+
+00:15:29.730 --> 00:15:35.390
+Então isso é tudo para esta seção,
+e vejo você na próxima.

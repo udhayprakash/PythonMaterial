@@ -1,0 +1,520 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.471 --> 00:00:02.199
+Ok, então continuando 
+
+2
+00:00:02.199 --> 00:00:04.834
+do vídeo anterior,
+
+3
+00:00:04.834 --> 00:00:07.320
+nós vamos apenas imprimir
+
+4
+00:00:07.320 --> 00:00:11.237
+os resultados. Então copiamos e colamos cada instância.
+
+5
+00:00:13.170 --> 00:00:16.837
+Então colamos eles e, para cada um,
+
+6
+00:00:17.998 --> 00:00:21.487
+vamos digitar "print" também vamos imprimir
+
+7
+00:00:21.487 --> 00:00:24.260
+uma nova linha, só pra ficar mais legível.
+
+8
+00:00:24.260 --> 00:00:28.427
+Então podemos copiar esta linha, colá-la aqui
+
+9
+00:00:28.580 --> 00:00:30.293
+e então apenas salvar o arquivo como está,
+
+10
+00:00:30.293 --> 00:00:33.626
+e também podemos remover o código anterior
+
+11
+00:00:35.331 --> 00:00:36.995
+e, finalmente, salvá-lo.
+
+12
+00:00:36.995 --> 00:00:39.328
+Então vamos para o Terminal,
+
+13
+00:00:41.417 --> 00:00:43.602
+e vamos primeiro para o Desktop,
+
+14
+00:00:43.602 --> 00:00:46.922
+então mudar o diretório para o Desktop
+
+15
+00:00:46.922 --> 00:00:50.104
+e então para o quotes_spider, pressionar Enter
+
+16
+00:00:50.104 --> 00:00:54.271
+e então digitar "scrapy crawl quotes", pressionar Enter.
+
+17
+00:00:54.810 --> 00:00:58.532
+Então como você pode ver, aqui é nosso texto,
+
+18
+00:00:58.532 --> 00:01:02.463
+aqui é nosso autor e aqui são nossas tags.
+
+19
+00:01:02.463 --> 00:01:05.674
+E novamente, esta é da nona,
+
+20
+00:01:05.674 --> 00:01:08.674
+ou dessa citação,
+
+21
+00:01:09.049 --> 00:01:11.029
+aqui está o texto, autor,
+
+22
+00:01:11.029 --> 00:01:13.934
+e finalmente, as citações.
+
+23
+00:01:13.934 --> 00:01:15.655
+Desculpa, as tags.
+
+24
+00:01:15.655 --> 00:01:17.405
+Uma tag estranha, mas é...
+
+25
+00:01:18.635 --> 00:01:22.320
+Então a segunda coisa que vamos fazer neste vídeo
+
+26
+00:01:22.320 --> 00:01:25.511
+é descobrir a iteração sobre as páginas.
+
+27
+00:01:25.511 --> 00:01:27.343
+Então como você faz isso
+
+28
+00:01:27.343 --> 00:01:31.510
+é indo para o Next e então apenas inspecione o elemento,
+
+29
+00:01:31.583 --> 00:01:33.388
+como qualquer outra coisa.
+
+30
+00:01:33.388 --> 00:01:35.898
+E aqui, como você pode ver, nós temos nas listas
+
+31
+00:01:35.898 --> 00:01:39.444
+com a classe next, nós temos a tag <a>, com o href
+
+32
+00:01:39.444 --> 00:01:42.367
+para nossa página, como você pode ver como estou mostrando aqui.
+
+33
+00:01:42.367 --> 00:01:46.534
+Vamos para o http/quotes.toscrape.com/page/2.
+
+34
+00:01:48.583 --> 00:01:51.475
+Então isso indica que nós vamos para a próxima página,
+
+35
+00:01:51.475 --> 00:01:53.377
+como você pode ver no momento.
+
+36
+00:01:53.377 --> 00:01:56.151
+E a próxima página, se você for para o inferior da página,
+
+37
+00:01:56.151 --> 00:02:00.019
+terá uma terceira página, como você pode ver aqui.
+
+38
+00:02:00.019 --> 00:02:02.428
+Então se você for de novo para o Inspect,
+
+39
+00:02:02.428 --> 00:02:06.527
+você verá que agora a próxima página será a página três.
+
+40
+00:02:06.527 --> 00:02:10.682
+Se nós formos para a página três, será a página quatro, etc.
+
+41
+00:02:10.682 --> 00:02:12.503
+Vamos para a página inicial.
+
+42
+00:02:12.503 --> 00:02:15.517
+Então novamente, ir para Inspect
+
+43
+00:02:15.517 --> 00:02:18.759
+e, vamos ver, então há, novamente, múltiplas formas
+
+44
+00:02:18.759 --> 00:02:21.342
+de conseguir chegar nos dados,
+
+45
+00:02:22.230 --> 00:02:24.983
+ou no nosso caso, para o link para a segunda página.
+
+46
+00:02:24.983 --> 00:02:27.718
+Então este é o dado que estamos atrás.
+
+47
+00:02:27.718 --> 00:02:31.191
+Nós estamos apenas indo selecionar todas as classes
+
+48
+00:02:31.191 --> 00:02:33.244
+com o next como valor.
+
+49
+00:02:33.244 --> 00:02:35.737
+Então vamos para a tag <a>,
+
+50
+00:02:35.737 --> 00:02:39.695
+e finalmente extrair ou chegar no href.
+
+51
+00:02:39.695 --> 00:02:42.529
+Isso soa complicado, mas é muito fácil.
+
+52
+00:02:42.529 --> 00:02:44.254
+Vamos para nosso Terminal
+
+53
+00:02:44.254 --> 00:02:46.298
+e digitar response.
+
+54
+00:02:46.298 --> 00:02:50.465
+Desculpe, este é nosso spider, ou o diretório raiz do spider,
+
+55
+00:02:50.787 --> 00:02:54.954
+então se formos para o Shell e digitarmos "response.xpath",
+
+56
+00:02:55.902 --> 00:02:57.569
+para encontrar todas as classes.
+
+57
+00:03:00.628 --> 00:03:03.519
+O valor será "next".
+
+58
+00:03:03.519 --> 00:03:05.987
+Então vamos pressionar Enter e ver se algo foi encontrado.
+
+59
+00:03:05.987 --> 00:03:09.401
+Perfeito, então vamos para as tags <a>.
+
+60
+00:03:09.401 --> 00:03:11.939
+E o jeito, claro, que faríamos isso,
+
+61
+00:03:11.939 --> 00:03:16.106
+digitamos "/a" e pressionamos Enter e aqui nós temos nosso href,
+
+62
+00:03:17.753 --> 00:03:21.108
+como você pode ver, e ainda temos o texto Next.
+
+63
+00:03:21.108 --> 00:03:24.691
+Não precisamos disso, mas é bom saber.
+
+64
+00:03:26.448 --> 00:03:29.612
+E nós digitamos aqui "/@href"
+
+65
+00:03:29.612 --> 00:03:32.529
+porque nós queremos extrair apenas o
+
+66
+00:03:33.531 --> 00:03:36.827
+texto que estou destacando neste momento, ou o link no nosso caso.
+
+67
+00:03:36.827 --> 00:03:38.477
+Pressione Enter e, como você pode ver,
+
+68
+00:03:38.477 --> 00:03:41.419
+aqui está o ponto de dados que estamos atrás.
+
+69
+00:03:41.419 --> 00:03:42.699
+Então isso é perfeito.
+
+70
+00:03:42.699 --> 00:03:44.800
+Digitamos apenas "extract_first" porque
+
+71
+00:03:44.800 --> 00:03:48.967
+atualmente esta declaração ou o seletor XPath está em um Selector,
+
+72
+00:03:49.620 --> 00:03:52.407
+então digite "extract_first()".
+
+73
+00:03:52.407 --> 00:03:55.993
+Como você pode ver, nós temos nosso next_page_url.
+
+74
+00:03:55.993 --> 00:03:56.910
+Nós copiamos nosso
+
+75
+00:03:58.576 --> 00:04:02.743
+URL ou declaração, copiamos, voltamos para o editor de texto,
+
+76
+00:04:03.699 --> 00:04:07.282
+digitamos aqui o nome de variável
+
+77
+00:04:08.487 --> 00:04:12.178
+"next_page_url" que é igual a esta declaração,
+
+78
+00:04:12.178 --> 00:04:15.976
+pressione Enter e vamos "yield Request".
+
+79
+00:04:15.976 --> 00:04:18.643
+Mas antes disso, vamos digitar
+
+80
+00:04:22.516 --> 00:04:24.433
+"absolute_next_page_url",
+
+81
+00:04:25.622 --> 00:04:29.455
+vai ser igual a "response", que
+
+82
+00:04:30.430 --> 00:04:33.187
+vou explicar esta declaração em um momento,
+
+83
+00:04:33.187 --> 00:04:35.854
+"urljoin", e então "next_page_url".
+
+84
+00:04:37.742 --> 00:04:41.074
+Então aqui o next_page_url, se copiarmos e colarmos isso
+
+85
+00:04:41.074 --> 00:04:42.574
+no nosso Terminal,
+
+86
+00:04:44.192 --> 00:04:48.247
+você verá que o next_page_url vai ser 
+
+87
+00:04:48.247 --> 00:04:50.080
+somente esta parte da URL.
+
+88
+00:04:51.284 --> 00:04:55.438
+Esta não é a url absoluta, e se tentarmos usar o "yield Request"
+
+89
+00:04:55.438 --> 00:04:59.210
+com o Scrapy, isso não vai para lugar nenhum.
+
+90
+00:04:59.210 --> 00:05:03.377
+Então o que fazemos é digitar a declaração "response.urljoin"
+
+91
+00:05:05.038 --> 00:05:09.205
+e, entre os parênteses, digitamos "next_page_url",
+
+92
+00:05:10.402 --> 00:05:11.927
+pressionamos Enter e, como você pode ver,
+
+93
+00:05:11.927 --> 00:05:14.844
+aqui está nosso absolute_next_page_url.
+
+94
+00:05:15.879 --> 00:05:18.360
+Então se formos para a segunda página,
+
+95
+00:05:18.360 --> 00:05:21.154
+a saída que teremos desta declaração
+
+96
+00:05:21.154 --> 00:05:24.018
+será esta aqui e, em vez de duas,
+
+97
+00:05:24.018 --> 00:05:25.519
+nós teremos as três.
+
+98
+00:05:25.519 --> 00:05:28.213
+Então isso será a terceira página,
+
+99
+00:05:28.213 --> 00:05:29.713
+o que faz sentido.
+
+100
+00:05:31.881 --> 00:05:34.026
+ENtão precisamos usar o "yield Request".
+
+101
+00:05:34.026 --> 00:05:36.518
+Então vamos ver, para fazer isso digitamos
+
+102
+00:05:36.518 --> 00:05:40.177
+"scrapy.Request"
+
+103
+00:05:41.736 --> 00:05:44.138
+e então entre os parênteses,
+
+104
+00:05:44.138 --> 00:05:48.305
+a url para a página será o absolute_next_page_url.
+
+105
+00:05:48.706 --> 00:05:50.362
+E então é isso.
+
+106
+00:05:50.362 --> 00:05:53.795
+Então normalmente, se isso não está no Request,
+
+107
+00:05:53.795 --> 00:05:56.540
+se não está na função parse,
+
+108
+00:05:56.540 --> 00:06:00.182
+então você terá também que atribuir a função callback.
+
+109
+00:06:00.182 --> 00:06:03.750
+Então isso será "self.parse_page" ou qualquer 
+
+110
+00:06:03.750 --> 00:06:05.500
+que seja o nome da função.
+
+111
+00:06:06.738 --> 00:06:09.339
+Mas como nós estamos na nossa função parse,
+
+112
+00:06:09.339 --> 00:06:11.567
+não precisamos fazer isso, na verdade.
+
+113
+00:06:11.567 --> 00:06:15.734
+Então vamos salvar isto, voltar para o Terminal,
+
+114
+00:06:15.736 --> 00:06:17.992
+e navergar para o diretório raiz
+
+115
+00:06:17.992 --> 00:06:21.037
+e rastrear o site inteiro mais uma vez.
+
+116
+00:06:21.037 --> 00:06:25.204
+Então isso vai rastrear todo o site, vamos pressionar Enter,
+
+117
+00:06:25.960 --> 00:06:26.996
+e, como você pode ver,
+
+118
+00:06:26.996 --> 00:06:31.163
+muito mais páginas, ou citações no nosso caso, são retornadas.
+
+119
+00:06:32.632 --> 00:06:36.019
+Então isto indica que extraimos a página inteira
+
+120
+00:06:36.019 --> 00:06:37.186
+ou o site inteiro
+
+121
+00:06:38.140 --> 00:06:42.256
+e para assegurar, nós temos dez requisições
+
+122
+00:06:43.093 --> 00:06:46.053
+que são 200, o que significa que foi bem sucedido, ou que 
+
+123
+00:06:46.053 --> 00:06:48.741
+estamos bem para continuar.
+
+124
+00:06:48.741 --> 00:06:50.710
+Então isso é tudo para este vídeo.
+
+125
+00:06:50.710 --> 00:06:54.644
+No próximo vídeo, nós vamos fornecer nossos três pontos de dados
+
+126
+00:06:54.644 --> 00:06:58.016
+que foram extraídos anteriormente e vamos falar sobre
+
+127
+00:06:58.016 --> 00:07:01.232
+alimentar exportações Scrapy e como exportar dados
+
+128
+00:07:01.232 --> 00:07:03.830
+para o CSV, JSON e XML.
+
+129
+00:07:03.830 --> 00:07:04.759
+Vejo você!
+

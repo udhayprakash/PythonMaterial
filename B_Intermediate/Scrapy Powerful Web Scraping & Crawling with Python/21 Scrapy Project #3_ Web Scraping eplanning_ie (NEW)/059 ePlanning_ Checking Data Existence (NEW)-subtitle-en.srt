@@ -1,0 +1,280 @@
+﻿1
+00:00:00,020 --> 00:00:06,299
+Hey there! So in this video, we are going
+to go into each and every file number
+
+2
+00:00:06,299 --> 00:00:12,960
+or, really, the application URL.
+Then we will figure out first here if we will get
+
+3
+00:00:12,960 --> 00:00:20,010
+Agents button present, like here. Then,
+if so, then we can proceed, which will be
+
+4
+00:00:20,010 --> 00:00:24,390
+discussed in the very last video or
+very next video. We will then proceed
+
+5
+00:00:24,390 --> 00:00:30,929
+with scraping the following data points,
+such as Name, Address, Phone, Fax, and email.
+
+6
+00:00:30,929 --> 00:00:35,460
+If not... so something like this. So if
+Agents button is not present anywhere,
+
+7
+00:00:35,460 --> 00:00:40,800
+then we will add just a log message, and say
+something, like, that Agents button is not found,
+
+8
+00:00:40,800 --> 00:00:45,690
+and that we are going to pass this specific
+URL and not scrape any data points.
+
+9
+00:00:45,690 --> 00:00:53,670
+So let's begin. So if we Inspect the Agents
+button, we will see here the input that has the
+
+10
+00:00:53,670 --> 00:01:00,510
+value Agents in it, that class that has
+button primary, and then on click we see
+
+11
+00:01:00,510 --> 00:01:06,840
+that JavaScript is going to be executed.
+And we have here title Show Agents pop up,
+
+12
+00:01:06,840 --> 00:01:14,909
+and also stuff like Name, Type,
+and also Style. So let's see.
+
+13
+00:01:14,909 --> 00:01:20,340
+So first suggestion is to go to the Title
+because it should be unique. So the way that I
+
+14
+00:01:20,340 --> 00:01:26,520
+test it out if it's unique or not is by
+copying it, and then going to a page that
+
+15
+00:01:26,520 --> 00:01:32,610
+should not have this type of value in it.
+So we go to Inspect, then Ctrl + F,
+
+16
+00:01:32,610 --> 00:01:39,630
+and then paste it in. And, as you can see
+here, even though the Agents button is
+
+17
+00:01:39,630 --> 00:01:46,710
+not found anywhere or visible, we still
+get our input. But the thing here is that
+
+18
+00:01:46,710 --> 00:01:52,110
+if you look closely, the style that I'm highlighting
+right now on both of the pages is different.
+
+19
+00:01:52,110 --> 00:01:58,170
+So here we get style that is
+display none, visibility hidden.
+
+20
+00:01:58,170 --> 00:02:06,329
+The reason why, even though Agents
+button is sort of present, it's not really there
+
+21
+00:02:06,329 --> 00:02:12,880
+or it's set to none and the visibility
+is hidden. Here on the page
+
+22
+00:02:12,880 --> 00:02:17,590
+that has the Agents button, here we see
+the style that has display inline, visibility visible.
+
+23
+00:02:17,590 --> 00:02:26,050
+Okay? So this is a way that
+we can approach this problem.
+
+24
+00:02:26,050 --> 00:02:32,050
+So we go back to the Terminal, and then
+after we open a page such as this one.
+
+25
+00:02:32,050 --> 00:02:40,330
+So copy this and verify that we are on the
+correct page. We type in response.xpath,
+
+26
+00:02:40,330 --> 00:02:47,920
+and then in it, let's see, we are...
+we want to get to the style.
+
+27
+00:02:47,920 --> 00:02:51,630
+That's the bottom line. And
+then if the style has this value,
+
+28
+00:02:51,630 --> 00:02:58,540
+then we'll proceed to scrape the following
+data points. If the style is not as defined here,
+
+29
+00:02:58,540 --> 00:03:05,650
+then or, really, this will be the
+one case page. Then we will just
+
+30
+00:03:05,650 --> 00:03:10,510
+skip this URL and not scrape any data points
+from it because there is no Agent to be scraped. Okay?
+
+31
+00:03:10,510 --> 00:03:16,989
+So to do that, we are going to go
+into this value and get the Agents,
+
+32
+00:03:16,989 --> 00:03:23,050
+which, of course, will be present on both pages,
+even those that don't have the Agents button.
+
+33
+00:03:23,050 --> 00:03:27,660
+Let's go back to the Terminal.
+
+34
+00:03:27,660 --> 00:03:38,320
+We can paste this in. And that's it.
+So to select it, only to do this.
+
+35
+00:03:38,320 --> 00:03:45,820
+Let's hit Enter. Okay, so it's there, and we
+also just then need to go to the @style.
+
+36
+00:03:45,820 --> 00:03:52,720
+So similar as we've done previously with
+the href or source or images, whatever.
+
+37
+00:03:52,720 --> 00:03:57,040
+We can do the same thing with the style.
+Hit Enter and, as you can see here, we get our data,
+
+38
+00:03:57,040 --> 00:04:02,319
+that it's inline and that visibility is visible.
+
+39
+00:04:02,319 --> 00:04:07,450
+We then call in extract_first, open/close parenthesis,
+and we get our Unicode data, which is great.
+
+40
+00:04:07,450 --> 00:04:15,459
+So if we copy this, and go back to the
+text editor, and name the variable name,
+
+41
+00:04:15,459 --> 00:04:23,410
+for example, agent button is equal to
+this value. So then we define an if statement.
+
+42
+00:04:23,410 --> 00:04:33,070
+So if... let's go to the Terminal... so if
+this is present in the agent button...
+
+43
+00:04:33,070 --> 00:04:42,040
+so if this is present in agent
+button... so we can paste it in here...
+
+44
+00:04:42,040 --> 00:04:47,770
+then we are going to be good to go, really. We can
+scrape the data here, else. We will log our message,
+
+45
+00:04:47,770 --> 00:04:53,919
+so self.logger info. It will
+be the type of message,
+
+46
+00:04:53,919 --> 00:05:00,730
+and then we can type in here our message,
+really. So we can say something like
+
+47
+00:05:00,730 --> 00:05:11,229
+Agent button not found on page, comma, passing invalid url. Okay?
+And for now let's pass it so we can test it out.
+
+48
+00:05:11,229 --> 00:05:20,620
+So, finally, we can save this, go back
+to the Terminal, and run our script.
+
+49
+00:05:20,620 --> 00:05:28,290
+So scrapy crawl eplanning. Hit Enter.
+
+50
+00:05:28,840 --> 00:05:35,440
+And, let's see, it should be now loading the
+Agents button not present, somewhere here.
+
+51
+00:05:35,440 --> 00:05:40,120
+Okay? I believe I found it
+somewhere. So let's see it.
+
+52
+00:05:40,120 --> 00:05:45,669
+Okay, here it is. So Agent button was not
+found at the page, passing invalid url.
+
+53
+00:05:45,669 --> 00:05:52,419
+As you can see, this is the case with also
+this one. So it seems like some of them will not,
+
+54
+00:05:52,419 --> 00:05:58,060
+of course, have the Agents button
+found on the page. And, in that case,
+
+55
+00:05:58,060 --> 00:06:02,380
+of course, as discussed previously, we are going
+to pass or not scrape those type of data points.
+
+56
+00:06:02,380 --> 00:06:08,080
+So the very next video will be the last one,
+
+57
+00:06:08,080 --> 00:06:12,600
+and we will discuss scraping the data points.
+

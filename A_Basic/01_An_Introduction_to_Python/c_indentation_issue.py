@@ -6,7 +6,7 @@ __author__ = "PYthon Tutor"
 
 print "Hello World"
 
-summation = 34 + 99             
+summation = 34 + 99                  
 # dynamic typed languages 
 
 print summation     
@@ -25,7 +25,7 @@ if 2 < 3:
 if 2 < 3:
     if 2 < 6:
         print '2 < 3 < 6'
-        print ""
+    print ""
 
 
 # tabs vs white-space

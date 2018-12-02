@@ -1,0 +1,552 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:05.520
+Hey there! So this is our last video in
+this section and, as previously discussed
+
+00:00:05.520 --> 00:00:09.719
+in the last video, here we will scrape
+data points such as Name, Address,
+
+00:00:09.719 --> 00:00:16.440
+Phone Number, Fax, email, and also URL to the
+Planning Application page, such as this one.
+
+00:00:16.440 --> 00:00:22.080
+So let's begin right away. 
+So when it comes to scraping,
+
+00:00:22.080 --> 00:00:28.170
+as previously discussed tables, it's generally more
+complex than scraping most of the other data points.
+
+00:00:28.170 --> 00:00:33.960
+One advantage when it comes
+to tables is once you figure out
+
+00:00:33.960 --> 00:00:40.260
+how to scrape Name, for example, then 
+probably Address, or scraping Phone Numbers,
+
+00:00:40.260 --> 00:00:44.640
+Faxes, or emails are going to be the 
+same. So that's one of the advantages.
+
+00:00:44.640 --> 00:00:49.800
+But let's get back to our project, and let's
+see how we can scrape most effectively
+
+00:00:49.800 --> 00:00:56.640
+the data points that we're after. So we go 
+to Inspect, and here we have the table row,
+
+00:00:56.640 --> 00:01:02.100
+as you can see. And in it we have 
+the "th" which stands for table header.
+
+00:01:02.100 --> 00:01:09.420
+Then we have our value Name, 
+and then we have the "td."
+
+00:01:09.420 --> 00:01:15.810
+So "td," of course, stands for table data, 
+and then this is the value that we are after,
+
+00:01:15.810 --> 00:01:22.830
+after we get to the name variable, really, 
+or the value. So to do this, we go back
+
+00:01:22.830 --> 00:01:30.920
+to the Terminal and type in response.xpath, 
+and we need to select every table row.
+
+00:01:30.920 --> 00:01:37.860
+So we go into each and every 
+table row, such as this one.
+
+00:01:37.860 --> 00:01:45.329
+Then we go to each and every "th," but we need 
+to put them into these square brackets because
+
+00:01:45.329 --> 00:01:52.350
+we want to scrape or get to the table
+headers, only ones that have this value. Okay?
+
+00:01:52.350 --> 00:02:01.909
+So we copy this and paste it in here. 
+And then we need to go into the "td,"
+
+00:02:01.909 --> 00:02:06.460
+which is going to be located here. 
+And then let's see if this will work.
+
+00:02:06.460 --> 00:02:14.650
+Let's see, it seems like something is missing. 
+Sorry. And this should be working okay.
+
+00:02:14.650 --> 00:02:21.350
+So now it works. So we have here our data,
+as you can see it right here.
+
+00:02:21.350 --> 00:02:29.440
+So we need to just go to the text,
+and then call in extract_first(). Hit Enter, and perfect.
+
+00:02:29.440 --> 00:02:35.620
+So we get our data. So the XPath
+expression is sort of complex,
+
+00:02:35.620 --> 00:02:41.470
+so, once again, let's go over it. We go into each
+and every table row. We then go to the table header,
+
+00:02:41.470 --> 00:02:47.920
+but only that table header
+that has the value Name.
+
+00:02:47.920 --> 00:02:53.950
+So this is, pretty much, the same data point. 
+And then after that, we go to the "td," 
+which is going to be this one.
+
+00:02:53.950 --> 00:02:58.240
+So table data, and we extract text from it,
+
+00:02:58.240 --> 00:03:05.890
+so which is going to be this value. Okay? So, 
+hopefully, now it's more clear. So we can copy this,
+
+00:03:05.890 --> 00:03:13.830
+and go back to the sublime text. And, 
+let's see, so here we can define it as a name.
+
+00:03:13.830 --> 00:03:20.680
+And, after that, we are pretty much good to go. 
+The second data point, let's see what it is.
+
+00:03:20.680 --> 00:03:26.950
+And it's going to be Address. Now
+Address, as you can see, in this case,
+
+00:03:26.950 --> 00:03:34.060
+has the four rows of data, really, or four
+table data as you will see in a moment.
+
+00:03:34.060 --> 00:03:42.730
+So Inspect, sorry, table data in the first one, and 
+the table data here is in the table row, as you can see.
+
+00:03:42.730 --> 00:03:48.820
+So this is fairly complex 
+to get at, as you can see.
+
+00:03:48.820 --> 00:03:55.390
+So it also contains a few more table data. So, 
+let's see, so probably what we will need to do
+
+00:03:55.390 --> 00:04:02.050
+is split this into two parts 
+of scraping the Address.
+
+00:04:02.050 --> 00:04:10.520
+Let's say, for example, 
+address_first, and address_second.
+
+00:04:10.520 --> 00:04:18.859
+So these two variable names will contain 
+the Address selectors to select everything here.
+
+00:04:18.859 --> 00:04:25.700
+So we can write the first one. So 
+let's go and Inspect the first table data.
+
+00:04:25.700 --> 00:04:32.240
+Let's see. So we need to go to the 
+table row that has the table header,
+
+00:04:32.240 --> 00:04:39.010
+as you can see, the Address. And then we need 
+to go to the table data and extract text from it.
+
+00:04:39.010 --> 00:04:44.900
+Okay? So then after we call in... we will
+not call extract_first(), but we will call
+
+00:04:44.900 --> 00:04:53.810
+extract because then that will, 
+hopefully, get also the second data point.
+
+00:04:53.810 --> 00:04:57.790
+Let's see if that will be true.
+Okay, let's actually write it down
+
+00:04:57.790 --> 00:05:05.680
+because this is going to be a bit more
+complex. So this, pretty much, will work
+
+00:05:05.680 --> 00:05:13.300
+from our last selector. So instead of
+extract_first(), we can call in extract
+
+00:05:13.300 --> 00:05:19.729
+to get to the more results. And also 
+instead of name, we can type in Address.
+
+00:05:19.729 --> 00:05:24.370
+Let's see if this will be okay. 
+So it should be working.
+
+00:05:24.370 --> 00:05:31.130
+Okay. So only Block B will be selected.
+That is fine, and, for now, let's see how
+
+00:05:31.130 --> 00:05:39.560
+we can get to the other data point, 
+such as this one. Okay. So, let's see.
+
+00:05:39.560 --> 00:05:45.590
+So we need to go into each and every table row, 
+as always. And then we need to go to the Address,
+
+00:05:45.590 --> 00:05:52.490
+and then either following or
+following-sibling. We then need to go
+
+00:05:52.490 --> 00:05:59.660
+to the following table rows, which is 
+going to be this one. No, this will not be it.
+
+00:05:59.660 --> 00:06:07.669
+So table row and then table data. Okay. 
+So let me explain or walk you through it.
+
+00:06:07.669 --> 00:06:14.420
+So we need to go into each and every, 
+again, table row with the table header
+
+00:06:14.420 --> 00:06:21.320
+that has the Address in it. Then we 
+need to remove this, as of right now.
+
+00:06:21.320 --> 00:06:27.770
+So we then need to go to the following, 
+for example, sibling will only work here.
+
+00:06:27.770 --> 00:06:33.530
+The reason why is because we want to select 
+the table rows. So we want to select every table row,
+
+00:06:33.530 --> 00:06:42.020
+which is going to be, in this case, 
+these three. And then we need to...
+
+00:06:42.020 --> 00:06:46.250
+after we go to the each and every
+table row... so, currently, we are selecting
+
+00:06:46.250 --> 00:06:51.620
+all the table rows which range from here
+to here. Then we need to go into table data,
+
+00:06:51.620 --> 00:06:56.030
+which is going to be just here. So, currently, 
+we are here. So we need to go into "td."
+
+00:06:56.030 --> 00:07:02.540
+And then, of course, we need 
+to scrape the text from it.
+
+00:07:02.540 --> 00:07:08.480
+Okay. So, hopefully, this was not hard. And
+hit Enter. Let's see. This will work. Okay.
+
+00:07:08.480 --> 00:07:14.570
+So we got here our phone numbers. 
+So we obviously don't want to do that.
+
+00:07:14.570 --> 00:07:22.070
+So let's see. So we want to extract only the first
+three. So we go into list slicing and type this here.
+
+00:07:22.070 --> 00:07:27.380
+And let's see if this is the 
+data points that we need.
+
+00:07:27.380 --> 00:07:34.010
+This is the first one, the second one, and 
+the third one. Okay. So it seems like it's working.
+
+00:07:34.010 --> 00:07:44.030
+Perfect. Okay, so we go and copy this 
+and paste this into our text editor.
+
+00:07:44.030 --> 00:07:52.460
+So this is for the second, and 
+for the first. Let's see where it was.
+
+00:07:52.460 --> 00:07:59.120
+Let me see if this is going to be working. 
+Block B should be the output. Okay, so this is it.
+
+00:07:59.120 --> 00:08:07.550
+We just need to call in extract_first().
+Okay, so extract_first() here.
+
+00:08:07.550 --> 00:08:14.810
+And then we can add these two up 
+by going into the... and calling in
+
+00:08:14.810 --> 00:08:25.039
+address = address_first + address_second
+
+00:08:25.039 --> 00:08:30.919
+So that will be it.  Okay, we can hit Enter 
+a few times. And let's see if this will work.
+
+00:08:30.919 --> 00:08:38.659
+So we can copy these two lines... let's 
+copy this and paste it into our Terminal.
+
+00:08:38.659 --> 00:08:47.839
+And then type in the... or copy and paste this line
+into the Terminal. Let's see... to Unicode. Okay.
+
+00:08:47.839 --> 00:08:54.380
+So we can use this here as extract() 
+not extract_first() because, otherwise,
+
+00:08:54.380 --> 00:08:59.390
+we will get a type error, of course, because this is
+the first or the address_first is Unicode or string.
+
+00:08:59.390 --> 00:09:04.520
+And the address_second 
+variable name is going to be in the list,
+
+00:09:04.520 --> 00:09:11.660
+so we can't really add those two up. 
+Okay? So we are going to paste these two,
+
+00:09:11.660 --> 00:09:17.890
+and then call in the address. Okay, now 
+if we type in, you'll see the data points
+
+00:09:17.890 --> 00:09:24.589
+clearly here for the address. So it was
+a bit more complex, but, hopefully,
+
+00:09:24.589 --> 00:09:31.520
+you will get around it. Let's go back to the
+site, and the following three data points
+
+00:09:31.520 --> 00:09:35.360
+will be also scraped. So let's start with 
+the first one, which is going to be Phone.
+
+00:09:35.360 --> 00:09:44.690
+So Phone will, pretty much, have 
+the same, really, logic as with the Name.
+
+00:09:44.690 --> 00:09:51.260
+So it will need to go to the "th," and then it 
+will go to the table data, and extract text from it.
+
+00:09:51.260 --> 00:09:56.839
+So let's see if the Fax will also do it. 
+It seems like Fax will also do it.
+
+00:09:56.839 --> 00:10:01.579
+And, finally, with the email, it's
+going to be a bit different because
+
+00:10:01.579 --> 00:10:07.940
+email is going to be in the "a" tag, as you can see. 
+And then we can scrape the text from the "a" tag.
+
+00:10:07.940 --> 00:10:14.990
+So that's the only, really, the change.
+So we can, pretty much,
+
+00:10:14.990 --> 00:10:25.310
+copy and paste our name variable. Okay? Name it 
+to phone, and then set, instead of Name, to Phone.
+
+00:10:25.310 --> 00:10:28.890
+So let's see if this will work. So copy...
+
+00:10:28.890 --> 00:10:36.480
+and paste this into our Terminal, 
+hit Enter, and phone number works.
+
+00:10:36.480 --> 00:10:45.060
+Let's see if Fax is present. 
+It's present, so it should be also working.
+
+00:10:45.060 --> 00:10:53.220
+So if we copy this line, and paste it in, 
+and rename it to fax, and here, name Fax here.
+
+00:10:53.220 --> 00:10:59.610
+Copy this, paste it into our Terminal,
+hit Enter, and as you can see,
+
+00:10:59.610 --> 00:11:06.180
+it's going to be the corresponding fax number. 
+And, let's see, so the last data point that we're going
+
+00:11:06.180 --> 00:11:16.440
+to scrape from this site is the email.
+So email, so e-mail. Okay.
+
+00:11:16.440 --> 00:11:22.800
+And if we go to the "td," okay. So here we will 
+only get the only, really, thing to note here is
+
+00:11:22.800 --> 00:11:28.460
+that we need to add here the slash "a" and then 
+go to the href, or, sorry, to the text for the "a" tag.
+
+00:11:28.460 --> 00:11:35.850
+So let's go back to the
+text editor, and we can copy this,
+
+00:11:35.850 --> 00:11:46.320
+and paste it, also, and name it email. Okay, 
+so here we got e-mail. And we just need to…
+
+00:11:46.320 --> 00:11:52.290
+again after we go to the "td" here, 
+we can't really extract text from it
+
+00:11:52.290 --> 00:11:55.969
+because nothing will be extracted. 
+We need to go to the "a" tag.
+
+00:11:55.969 --> 00:12:03.630
+So we type in here slash "a" and then we can extract 
+the text, which is going to be email address, hopefully.
+
+00:12:03.630 --> 00:12:11.310
+So if we copy this, and paste it 
+into the Terminal, you can see the
+
+00:12:11.310 --> 00:12:16.770
+email scraped perfectly fine. So and
+then, finally, the last thing that we want
+
+00:12:16.770 --> 00:12:22.430
+to scrape is the URL, which is going 
+to be read from the response.url. That's it.
+
+00:12:22.430 --> 00:12:30.150
+So then, finally, we yield all of the data
+points. So we can copy this and paste it.
+
+00:12:30.150 --> 00:12:35.540
+So name, address, phone, fax, email, url.
+
+00:12:35.580 --> 00:12:40.100
+And then we can indent this correctly.
+
+00:12:40.580 --> 00:12:52.589
+Okay. We can right away set the correct
+syntax. Okay, and also paste it one more time,
+
+00:12:52.589 --> 00:12:59.250
+put a comma in it, and do proper lines.
+
+00:12:59.250 --> 00:13:07.700
+Okay, so I believe that that should be it.
+So let's try to run it. Okay, so save it,
+
+00:13:07.700 --> 00:13:14.370
+and run it in the Terminal. Let's 
+first verify that it will work.
+
+00:13:14.370 --> 00:13:21.180
+So we go in and type in, of course, scrapy crawl 
+eplanning, hit Enter, and, hopefully, in a few seconds,
+
+00:13:21.180 --> 00:13:28.560
+this scraping will be started. 
+Okay, so it seems like it's working.
+
+00:13:28.560 --> 00:13:35.640
+So we can close it for now, and we can define our, for
+example, JSON file. So we can type in -o items.json
+
+00:13:35.640 --> 00:13:41.339
+Dash "o" of course stands
+for the output. So we then define the
+
+00:13:41.339 --> 00:13:48.540
+name of the output, and then 
+extensions, such as json. Hit enter,
+
+00:13:48.540 --> 00:13:53.720
+and let's wait for a few pages to be scraped.
+
+00:13:54.870 --> 00:14:00.330
+Okay, so this should be it. I will not
+scrape too much of the site.
+
+00:14:00.330 --> 00:14:07.710
+So we can close it for right now. Go back 
+to the Desktop and see the JSON file.
+
+00:14:07.710 --> 00:14:14.220
+So we can open this into the... our 
+text editor, and then set the Format.
+
+00:14:14.220 --> 00:14:26.430
+Let's see. Something is not probably working. Okay. 
+So the issue here is that the very last one item,
+
+00:14:26.430 --> 00:14:35.000
+since the spider was scraping, it's not
+properly indented or something like that.
+
+00:14:35.000 --> 00:14:41.040
+So, okay, so this is present here, and it's also 
+present here, so if we prettify it right now, it will work.
+
+00:14:41.040 --> 00:14:46.470
+So here we got the fax, name, url,
+
+00:14:46.470 --> 00:14:50.670
+phone number is  present, address, it's 
+always going to be present, and the email.
+
+00:14:50.670 --> 00:14:56.100
+So as you can see, if the data is not there, 
+it will be either null or in the empty strings.
+
+00:14:56.100 --> 00:15:00.600
+Of course, we can set it to always 
+be null or something like that,
+
+00:15:00.600 --> 00:15:07.140
+or we can set it to always be empty string. So, 
+as you can see, we got our data point scraped,
+
+00:15:07.140 --> 00:15:13.020
+and the address doesn't have the four items 
+in the list, such as here. The fourth one or
+
+00:15:13.020 --> 00:15:18.240
+any other, really, one will be empty one,
+as you can see from here, for example.
+
+00:15:18.240 --> 00:15:24.840
+Or any other data point, again, can be either
+null on this site or empty string, really,
+
+00:15:24.840 --> 00:15:29.730
+or string, really, with the one white
+space, as you can see from here.
+
+00:15:29.730 --> 00:15:35.390
+So that will be it for this section, 
+and I'll see you in the very next one.

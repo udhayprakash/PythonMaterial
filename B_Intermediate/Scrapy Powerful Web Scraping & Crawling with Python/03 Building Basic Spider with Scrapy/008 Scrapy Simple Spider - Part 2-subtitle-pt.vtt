@@ -1,0 +1,1205 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.019 --> 00:00:00.852
+Olá!
+
+2
+00:00:00.852 --> 00:00:02.497
+Hoje nós vamos aprender
+
+3
+00:00:02.497 --> 00:00:05.495
+como começar a extrair os dados com Scrapy,
+
+4
+00:00:05.495 --> 00:00:09.416
+e esses pontos de dados que vamos coletar.
+
+5
+00:00:09.416 --> 00:00:11.991
+Primeiro, vai ser esse aqui.
+
+6
+00:00:11.991 --> 00:00:14.294
+Então o cabeçalho e o segundo
+
+7
+00:00:14.294 --> 00:00:17.568
+vai ser essa lista do top 10 tags.
+
+8
+00:00:17.568 --> 00:00:19.740
+E o dado vai ser capturado de um lugar
+
+9
+00:00:19.740 --> 00:00:22.387
+chamado quotes.toscrape.com
+
+10
+00:00:22.387 --> 00:00:23.537
+Vamos começar agora.
+
+11
+00:00:23.537 --> 00:00:25.537
+Vamos abrir nosso Terminal,
+
+12
+00:00:26.811 --> 00:00:29.026
+maximizar a janela de novo
+
+13
+00:00:29.026 --> 00:00:31.359
+e dar um pouco de zoom.
+
+14
+00:00:33.148 --> 00:00:35.200
+Algo como isso.
+
+15
+00:00:35.200 --> 00:00:37.914
+Então a primeira coisa é, claro: scrapy,
+
+16
+00:00:37.914 --> 00:00:41.747
+e o melhor jeito de descobrir como extrair dados
+
+17
+00:00:44.575 --> 00:00:48.236
+com Scrapy é tentando com o Scrapy Shell.
+
+18
+00:00:48.236 --> 00:00:50.304
+O Scrapy Shell é construído no IPython,
+
+19
+00:00:50.304 --> 00:00:54.120
+então ele tem funções mágicas, autocompletar, etc.
+
+20
+00:00:54.120 --> 00:00:56.011
+Então, o comando é localizado aqui.
+
+21
+00:00:56.011 --> 00:00:59.630
+Então se nós digitarmos somente "scrapy shell".
+
+22
+00:00:59.630 --> 00:01:03.144
+Então vamos copiar e colar isso, pressionar Enter.
+
+23
+00:01:03.144 --> 00:01:05.497
+Você vai ver um bando de saídas diferentes.
+
+24
+00:01:05.497 --> 00:01:08.762
+Você não precisa se preocupar com todas essas coisas
+
+25
+00:01:08.762 --> 00:01:11.047
+ou com o começo disso...
+
+26
+00:01:11.047 --> 00:01:14.258
+simplesmente tem um monte de informação,
+
+27
+00:01:14.258 --> 00:01:15.831
+mensagens e mensagens de depuração
+
+28
+00:01:15.831 --> 00:01:19.332
+que só imprimem diferentes middlewares,
+
+29
+00:01:19.332 --> 00:01:22.901
+as extensões que são ativadas por padrão,
+
+30
+00:01:22.901 --> 00:01:26.124
+e configurações substituídas, etc.
+
+31
+00:01:26.124 --> 00:01:28.781
+A coisa mais importante que você precisa saber
+
+32
+00:01:28.781 --> 00:01:32.138
+agora é que você deveria usar
+
+33
+00:01:32.138 --> 00:01:34.605
+a função "fetch", previamente discutida,
+
+34
+00:01:34.605 --> 00:01:36.906
+para buscar a URL.
+
+35
+00:01:36.906 --> 00:01:39.102
+Então para fazer isso, você digita "fetch"
+
+36
+00:01:39.102 --> 00:01:41.082
+e então abre e fecha parênteses
+
+37
+00:01:41.082 --> 00:01:44.384
+E então, tanto com aspas simples ou duplas,
+
+38
+00:01:44.384 --> 00:01:47.516
+você deve colocar aqui a URL do site
+
+39
+00:01:47.516 --> 00:01:50.224
+que você gostaria de abrir com o Scrapy.
+
+40
+00:01:50.224 --> 00:01:54.391
+Então vamos copiar e colar essa URL no nosso Terminal.
+
+41
+00:01:54.778 --> 00:01:58.035
+Então copie aqui e pressione Enter.
+
+42
+00:01:58.035 --> 00:02:00.788
+Agora nós temos duas linhas diferentes de dados,
+
+43
+00:02:00.788 --> 00:02:04.695
+e a primeira é somente a data e a hora
+
+44
+00:02:04.695 --> 00:02:06.759
+que a mensagem foi enviada,
+
+45
+00:02:06.759 --> 00:02:10.904
+e essa mensagem INFO é que o spider está aberto.
+
+46
+00:02:10.904 --> 00:02:14.459
+E então esse segundo é a mensagem DEBUG
+
+47
+00:02:14.459 --> 00:02:15.961
+e que ela já foi extraída
+
+48
+00:02:15.961 --> 00:02:19.686
+Então esse 200 no parênteses indica
+
+49
+00:02:19.686 --> 00:02:22.019
+que a resposta foi bem sucedida.
+
+50
+00:02:23.447 --> 00:02:27.030
+A maioria de vocês sabem que 404 é retornado
+
+51
+00:02:28.406 --> 00:02:30.809
+provavelmente se a página não foi encontrada,
+
+52
+00:02:30.809 --> 00:02:33.435
+301 se foi redirecionada, etc.
+
+53
+00:02:33.435 --> 00:02:36.685
+Então enquanto for 200 ou 300
+
+54
+00:02:38.438 --> 00:02:40.396
+nós estamos muito bem para continuar.
+
+55
+00:02:40.396 --> 00:02:44.563
+E, como você pode ver, essa é a URL que especificamos.
+
+56
+00:02:45.890 --> 00:02:48.390
+Então vamos voltar para o site,
+
+57
+00:02:49.307 --> 00:02:52.223
+e a forma que você normalmente extrai os dados
+
+58
+00:02:52.223 --> 00:02:54.806
+ou inpeciona o código-fonte
+
+59
+00:02:55.922 --> 00:02:57.325
+é clicando com o botão direito
+
+60
+00:02:57.325 --> 00:03:00.492
+e então indo para o código-fonte,
+
+61
+00:03:01.456 --> 00:03:03.658
+com "View page source",
+
+62
+00:03:03.658 --> 00:03:05.424
+ou você pode só ir no elemento
+
+63
+00:03:05.424 --> 00:03:06.973
+que você gostaria de extrair
+
+64
+00:03:06.973 --> 00:03:09.184
+que, no nosso caso, vai ser esse aqui.
+
+65
+00:03:09.184 --> 00:03:12.434
+Clicar com o botão direito, e então em "Inspect".
+
+66
+00:03:12.434 --> 00:03:15.169
+Você conseguirá aqui os elementos
+
+67
+00:03:15.169 --> 00:03:16.897
+e aqui você verá que,
+
+68
+00:03:16.897 --> 00:03:20.954
+enquanto estou sobre o elemento HTML &lt;h1&gt; e então sobre o &lt;a&gt;,
+
+69
+00:03:20.954 --> 00:03:25.121
+temos diferentes tipos de destaque como você pode ver.
+
+70
+00:03:25.367 --> 00:03:28.950
+Então os cabeçalhos estão, em sua maioria, localizados em &lt;h1&gt;
+
+71
+00:03:30.009 --> 00:03:32.592
+e o Scrapy oferece a resposta.
+
+72
+00:03:34.337 --> 00:03:37.796
+Então você verá no Scrapy
+
+73
+00:03:37.796 --> 00:03:41.535
+ou "response" ou, desculpe, não posso escrever aqui,
+
+74
+00:03:41.535 --> 00:03:45.522
+você verá ou o "response" ou o "request".
+
+75
+00:03:45.522 --> 00:03:47.351
+o "response" será
+
+76
+00:03:47.351 --> 00:03:49.321
+como o nome indica,
+
+77
+00:03:49.321 --> 00:03:52.017
+a resposta que vai ser retornada.
+
+78
+00:03:52.017 --> 00:03:54.752
+Então nesse caso nós temos 200 como uma bem sucedida
+
+79
+00:03:54.752 --> 00:03:58.002
+e então a URL para a resposta.
+
+80
+00:04:01.476 --> 00:04:05.256
+"request" é para requisitar as URLs
+
+81
+00:04:05.256 --> 00:04:07.754
+e descobrir a FormRequest, etc.
+
+82
+00:04:07.754 --> 00:04:10.313
+Isso vai ser discutido daqui a pouco.
+
+83
+00:04:10.313 --> 00:04:14.480
+Então "response" vai oferecer para coletar os dados
+
+84
+00:04:14.669 --> 00:04:17.169
+tanto XPath quanto seletores CSS.
+
+85
+00:04:18.582 --> 00:04:21.496
+Vamos cobrir brevemente os seletores CSS.
+
+86
+00:04:21.496 --> 00:04:24.413
+Para selecionar o cabeçalho neste momento,
+
+87
+00:04:26.124 --> 00:04:29.335
+esse ponto de dado que estou destacando agora,
+
+88
+00:04:29.335 --> 00:04:31.253
+ou esse container,
+
+89
+00:04:31.253 --> 00:04:34.627
+que contém &lt;h1&gt; e aqui nós temos a tag &lt;a&gt;, 
+
+90
+00:04:34.627 --> 00:04:37.064
+nós digitamos aqui "response.css"
+
+91
+00:04:37.064 --> 00:04:39.027
+e então abre e fecha parênteses,
+
+92
+00:04:39.027 --> 00:04:41.674
+e, tanto com aspas simples ou duplas,
+
+93
+00:04:41.674 --> 00:04:43.976
+nó podemos digitar somente "h1",
+
+94
+00:04:43.976 --> 00:04:46.963
+presssionar Enter e então você verá que o seletor foi encontrado
+
+95
+00:04:46.963 --> 00:04:50.374
+e que o XPath vai ser
+
+96
+00:04:50.374 --> 00:04:54.207
+o nó HTML que estou destacando neste momento.
+
+97
+00:04:55.540 --> 00:04:58.850
+Então para chegar no texto
+
+98
+00:04:58.850 --> 00:05:00.631
+você pode digitar isso
+
+99
+00:05:00.631 --> 00:05:04.798
+e você verá que o texto de &lt;h1&gt; é encontrado em duas instâncias.
+
+100
+00:05:06.967 --> 00:05:10.810
+E, vamos para o exemplo concetrar primeiro
+
+101
+00:05:10.810 --> 00:05:13.915
+no XPath, porque ele será provavelmente mais fácil.
+
+102
+00:05:13.915 --> 00:05:17.082
+Então a chamada para isso é muito simples.
+
+103
+00:05:18.496 --> 00:05:22.663
+É provavelmente melhor usar XPath, não CSS,
+
+104
+00:05:23.240 --> 00:05:26.039
+pelo menos na minha experiência eles são mais robustos
+
+105
+00:05:26.039 --> 00:05:29.539
+e escrever seletores mais avançados
+
+106
+00:05:31.232 --> 00:05:33.537
+provavelmente será mais fácil
+
+107
+00:05:33.537 --> 00:05:35.597
+com o XPath do que com CSS.
+
+108
+00:05:35.597 --> 00:05:39.582
+E, também, seletores CSS são transformados
+
+109
+00:05:39.582 --> 00:05:43.245
+em XPaths antes de serem impressos.
+
+110
+00:05:43.245 --> 00:05:46.657
+Então se nós apenas imprimirmos o response.xpath
+
+111
+00:05:46.657 --> 00:05:49.500
+e então o h1, você erá que nós recebemos um erro,
+
+112
+00:05:49.500 --> 00:05:51.778
+ou apenas uma lista vazia,
+
+113
+00:05:51.778 --> 00:05:54.702
+o que é ainda pior no nosso caso.
+
+114
+00:05:54.702 --> 00:05:58.086
+Então, para conseguir todas as instâncias
+
+115
+00:05:58.086 --> 00:06:02.253
+da tag &lt;h1&gt;, nós digitamos as barras duplas,
+
+116
+00:06:02.410 --> 00:06:04.051
+e pressiona Enter.
+
+117
+00:06:04.051 --> 00:06:04.923
+E, como vocês verão,
+
+118
+00:06:04.923 --> 00:06:08.774
+o ponto de dados localizado aqui,
+
+119
+00:06:08.774 --> 00:06:11.382
+ou o seletor, corresponde a este aqui
+
+120
+00:06:11.382 --> 00:06:15.424
+quando digitamos response.css('h1').
+
+121
+00:06:16.389 --> 00:06:18.706
+Então, no nosso XPath,
+
+122
+00:06:19.439 --> 00:06:22.812
+o jeito que chegamos na tag &lt;a&gt;, por exemplo.
+
+123
+00:06:22.812 --> 00:06:25.965
+Então atualmente, nós estamos nesse nó HTML.
+
+124
+00:06:25.965 --> 00:06:28.134
+Nós gostaríamos de chegar neste texto,
+
+125
+00:06:28.134 --> 00:06:29.896
+então a forma que fazemos isso
+
+126
+00:06:29.896 --> 00:06:32.629
+é indo nesta tag &lt;a&gt;,
+
+127
+00:06:33.596 --> 00:06:37.752
+e então nós gostaríamos de extrair somente o texto.
+
+128
+00:06:37.752 --> 00:06:39.993
+Então vamos navegar para o Terminal
+
+129
+00:06:39.993 --> 00:06:42.640
+e digitar novamente barra e então "a"
+
+130
+00:06:42.640 --> 00:06:46.600
+E isso vai para todas as instâncias da tag &lt;h1&gt;,
+
+131
+00:06:46.600 --> 00:06:50.104
+e então, se encontrado, vai para todas as tags &lt;a&gt;.
+
+132
+00:06:50.104 --> 00:06:51.704
+Pressione Enter e você verá
+
+133
+00:06:51.704 --> 00:06:54.674
+que o XPath é diferente aqui
+
+134
+00:06:54.674 --> 00:06:57.770
+e que o dado que será retornado vai ser
+
+135
+00:06:57.770 --> 00:06:58.603
+diferente.
+
+136
+00:06:58.603 --> 00:07:02.278
+Então anteriormente estávamos na tag &lt;h1&gt;.
+
+137
+00:07:04.255 --> 00:07:06.583
+Agora estamos na nossa tag &lt;a&gt;,
+
+138
+00:07:06.583 --> 00:07:07.416
+como vocês podem ver.
+
+139
+00:07:07.416 --> 00:07:11.210
+Então nós conseguimos chegar na tag &lt;a&gt;,
+
+140
+00:07:11.210 --> 00:07:13.484
+e o que gostaríamos de fazer,
+
+141
+00:07:13.484 --> 00:07:17.088
+ou o que nós gostaríamos de extrair novamente,
+
+142
+00:07:17.088 --> 00:07:18.551
+é somente o texto.
+
+143
+00:07:18.551 --> 00:07:21.080
+Então a forma com que chegamos no texto
+
+144
+00:07:21.080 --> 00:07:24.762
+é digitando novamente
+
+145
+00:07:24.762 --> 00:07:26.549
+"/text()"
+
+146
+00:07:26.549 --> 00:07:29.445
+Pressione Enter e você verá que agora
+
+147
+00:07:29.445 --> 00:07:32.946
+o dado é igual a "Quotes to Scrape",
+
+148
+00:07:32.946 --> 00:07:36.995
+o que corresponde a essa seção
+
+149
+00:07:36.995 --> 00:07:39.911
+no nó &lt;a&gt;.
+
+150
+00:07:40.509 --> 00:07:44.576
+Para nos livrarmos dos seletores e XPaths,
+
+151
+00:07:46.477 --> 00:07:50.535
+nós digitamos ".extract()",
+
+152
+00:07:50.535 --> 00:07:52.011
+pressionamos Enter, e você verá
+
+153
+00:07:52.011 --> 00:07:55.448
+que nós conseguimos a lista.
+
+154
+00:07:55.448 --> 00:07:57.868
+E o "u" significa, obviamente, Unicode,
+
+155
+00:07:57.868 --> 00:08:00.937
+e nós temos "Quotes to Scrape".
+
+156
+00:08:00.937 --> 00:08:03.140
+Agora, se nós quisermos somente a string
+
+157
+00:08:03.140 --> 00:08:06.807
+e não esta lista, nós digitamos "extract_first()".
+
+158
+00:08:09.036 --> 00:08:11.132
+Pressione Enter e você verá agora
+
+159
+00:08:11.132 --> 00:08:13.787
+que ele está em aspas simples
+
+160
+00:08:13.787 --> 00:08:16.152
+e está na forma de uma string.
+
+161
+00:08:16.152 --> 00:08:20.104
+Então é assim que você extrai o primeiro ponto de dado.
+
+162
+00:08:20.104 --> 00:08:22.755
+Como você extrai o segundo ponto de dado
+
+163
+00:08:22.755 --> 00:08:24.358
+vai ser um pouco mais complicado,
+
+164
+00:08:24.358 --> 00:08:27.080
+mas ainda assim é simples.
+
+165
+00:08:27.080 --> 00:08:29.029
+Então nós gostaríamos de extrair
+
+166
+00:08:29.029 --> 00:08:32.126
+todas as diferentes tags agora
+
+167
+00:08:32.126 --> 00:08:35.111
+do lado direito da página.
+
+168
+00:08:35.111 --> 00:08:38.631
+Então nós podemor ir novamente para "View page source",
+
+169
+00:08:38.631 --> 00:08:40.544
+o que vai levar um tempo para descobrir
+
+170
+00:08:40.544 --> 00:08:43.648
+onde exatamente as tags estão,
+
+171
+00:08:43.648 --> 00:08:46.929
+ou nós vamos para a primeira instância da tag
+
+172
+00:08:46.929 --> 00:08:48.846
+e então clicamos em "Inspect".
+
+173
+00:08:49.732 --> 00:08:51.027
+E nós veremos aqui
+
+174
+00:08:51.027 --> 00:08:54.222
+que o formato é diferente aqui, obviamente.
+
+175
+00:08:54.222 --> 00:08:57.991
+Então não conseguimos nenhuma tag &lt;h1&gt; ou algo assim.
+
+176
+00:08:57.991 --> 00:09:01.419
+Nós temos &lt;span&gt;, e nesse &lt;span&gt; nós temos 
+
+177
+00:09:01.419 --> 00:09:03.252
+uma classe com valor "tag-item".
+
+178
+00:09:04.172 --> 00:09:06.755
+E então nós temos o próximo,
+
+179
+00:09:07.914 --> 00:09:11.525
+digamos, nó HTML irmão que é a tag &lt;a&gt;
+
+180
+00:09:11.525 --> 00:09:12.984
+com a classe "tag"
+
+181
+00:09:12.984 --> 00:09:15.269
+e então nós temos o "href",
+
+182
+00:09:15.269 --> 00:09:18.087
+que vai para uma página diferente,
+
+183
+00:09:18.087 --> 00:09:20.309
+e então temos o texto,
+
+184
+00:09:20.309 --> 00:09:21.946
+onde lemos "love",
+
+185
+00:09:21.946 --> 00:09:25.069
+que é nossa primeira tag
+
+186
+00:09:25.069 --> 00:09:26.953
+que gostaríamos.
+
+187
+00:09:26.953 --> 00:09:29.670
+Então existem diversas formas
+
+188
+00:09:29.670 --> 00:09:31.830
+de conseguir os dados.
+
+189
+00:09:31.830 --> 00:09:34.896
+A forma que usaremos é muito simples.
+
+190
+00:09:34.896 --> 00:09:37.238
+Então nós vamos isolar
+
+191
+00:09:37.238 --> 00:09:40.261
+praticamente todas as classes que tem uma tag
+
+192
+00:09:40.261 --> 00:09:42.025
+ou o valor tag,
+
+193
+00:09:42.025 --> 00:09:44.066
+e então vamos só extrair o texto.
+
+194
+00:09:44.066 --> 00:09:45.706
+Simples, não?
+
+195
+00:09:45.706 --> 00:09:49.528
+Para fazer isso, vamos para o Terminal,
+
+196
+00:09:49.528 --> 00:09:52.195
+e então digitar "response.xpath",
+
+197
+00:09:53.849 --> 00:09:55.225
+abrir e fechar parênteses,
+
+198
+00:09:55.225 --> 00:09:57.104
+e então, em aspas simples,
+
+199
+00:09:57.104 --> 00:10:00.004
+vamos achar todas as instâncias da classe.
+
+200
+00:10:00.004 --> 00:10:02.037
+Então o jeito que você faz isso é digitando
+
+201
+00:10:02.037 --> 00:10:03.863
+"//*",
+
+202
+00:10:03.863 --> 00:10:06.446
+e então nos colchetes
+
+203
+00:10:08.542 --> 00:10:10.386
+você digita o "@"
+
+204
+00:10:10.386 --> 00:10:11.934
+e então a classe.
+
+205
+00:10:11.934 --> 00:10:13.723
+E então você vai digitar aqui
+
+206
+00:10:13.723 --> 00:10:15.469
+somente o valor vazio.
+
+207
+00:10:15.469 --> 00:10:16.746
+Então essa é a forma
+
+208
+00:10:16.746 --> 00:10:20.079
+que você escreve o seletor de classes XPath.
+
+209
+00:10:22.065 --> 00:10:25.045
+A lógica muda, por exemplo,
+
+210
+00:10:25.045 --> 00:10:27.906
+se você gostaria de selecionar somente o id
+
+211
+00:10:27.906 --> 00:10:30.083
+com algum valor, você digitaria isso.
+
+212
+00:10:30.083 --> 00:10:32.828
+Então ele é completamente customizável,
+
+213
+00:10:32.828 --> 00:10:34.745
+e também bem simples.
+
+214
+00:10:35.662 --> 00:10:37.263
+Então nós digitamos "class",
+
+215
+00:10:37.263 --> 00:10:39.678
+e a classe que estamos procurando
+
+216
+00:10:39.678 --> 00:10:43.041
+tem o valor "tag", como você pode ver aqui.
+
+217
+00:10:43.041 --> 00:10:46.370
+Então vamos digitar isso aqui e pressionar Enter.
+
+218
+00:10:46.370 --> 00:10:48.797
+Então nós conseguimos várias tags diferentes,
+
+219
+00:10:48.797 --> 00:10:51.579
+que não correspondem
+
+220
+00:10:51.579 --> 00:10:55.179
+com os pontos de dados que gostaríamos.
+
+221
+00:10:55.179 --> 00:10:56.448
+Então como você pode ver aqui
+
+222
+00:10:56.448 --> 00:11:00.115
+nós temos 10 classes diferentes, ou tags, desculpe.
+we have 10 different classes or tags, sorry.
+
+223
+00:11:01.837 --> 00:11:05.058
+E aqui nós temos provavelmente 50
+
+224
+00:11:05.058 --> 00:11:08.705
+seletores diferentes que foram retornados.
+
+225
+00:11:08.705 --> 00:11:10.429
+Então isso não é bom.
+
+226
+00:11:10.429 --> 00:11:14.212
+Então a forma que você isola isso
+
+227
+00:11:14.212 --> 00:11:16.432
+é indo para... por exemplo,
+
+228
+00:11:16.432 --> 00:11:20.285
+ou tentando na classe que tem "tag-item",
+
+229
+00:11:20.285 --> 00:11:24.452
+que provavelmente vai ser muito mais fácil
+
+230
+00:11:24.684 --> 00:11:25.790
+de conseguir.
+
+231
+00:11:25.790 --> 00:11:29.957
+Então a razão de você ter as diferentes tags &lt;a&gt;
+
+232
+00:11:30.252 --> 00:11:32.689
+é porque, se nós virmos aqui você verá
+
+233
+00:11:32.689 --> 00:11:35.268
+que o seletor, ou o nó HTML,
+
+234
+00:11:35.268 --> 00:11:37.534
+vai ser praticamente o mesmo.
+
+235
+00:11:37.534 --> 00:11:40.141
+Então nós ainda temos a classe do &lt;a&gt;
+
+236
+00:11:40.141 --> 00:11:43.151
+e então, na classe que temos "tag"
+
+237
+00:11:43.151 --> 00:11:44.292
+como valor.
+
+238
+00:11:44.292 --> 00:11:46.703
+Então esse seletor que nós escrevemos
+
+239
+00:11:46.703 --> 00:11:48.782
+vai praticamente na página inteira
+
+240
+00:11:48.782 --> 00:11:51.202
+e extrai todas essas tags diferentes,
+
+241
+00:11:51.202 --> 00:11:53.344
+que nós não gostaríamos de pegar.
+
+242
+00:11:53.344 --> 00:11:57.511
+Nós gostaríamos apenas desses 10 primeiros pontos de dados.
+
+243
+00:11:58.212 --> 00:12:02.295
+Então para arrumar isso nós digitamos no nosso novo seletor XPath. 
+
+244
+00:12:04.736 --> 00:12:07.416
+Então nós vamos para Inspect,
+
+245
+00:12:07.416 --> 00:12:11.246
+e então nós vamos para o nó HTML acima.
+
+246
+00:12:11.246 --> 00:12:12.239
+E nós vemos aqui
+
+247
+00:12:12.239 --> 00:12:15.217
+que estamos selecionando &lt;span&gt;
+
+248
+00:12:15.217 --> 00:12:16.217
+com a classe,
+
+249
+00:12:16.217 --> 00:12:18.780
+e essa classe tem o valor "tag-item".
+
+250
+00:12:18.780 --> 00:12:21.704
+Vamos copiar e colar isso no Terminal.
+
+251
+00:12:21.704 --> 00:12:24.909
+Então nós vamos selecionar todas as classes
+
+252
+00:12:24.909 --> 00:12:27.661
+que tem "tag-item", pressionar Enter,
+
+253
+00:12:27.661 --> 00:12:31.828
+e você verá aqui que nós temos muito menos pontos de dados,
+
+254
+00:12:33.009 --> 00:12:35.131
+ou seletores em nosso caso.
+
+255
+00:12:35.131 --> 00:12:37.722
+Então vamos calcular o tamanho disso,
+
+256
+00:12:37.722 --> 00:12:39.613
+que deve ser 10.
+
+257
+00:12:39.613 --> 00:12:43.022
+Vamos ver, o tamanho é 10, o que é perfeito.
+
+258
+00:12:43.022 --> 00:12:44.875
+Então a segunda coisa que precisamos fazer
+
+259
+00:12:44.875 --> 00:12:48.718
+é isolar mais ou chegar no texto.
+
+260
+00:12:48.718 --> 00:12:51.146
+Então atualmente, nós estamos selecionando 10 instâncias
+
+261
+00:12:51.146 --> 00:12:52.894
+de "tag-item".
+
+262
+00:12:52.894 --> 00:12:56.206
+Então aqui eles estão online ou no Chrome,
+
+263
+00:12:56.206 --> 00:12:57.336
+e o que precisamos fazer
+
+264
+00:12:57.336 --> 00:12:59.352
+é ir para cada um deles
+
+265
+00:12:59.352 --> 00:13:02.655
+e ir para a tag &lt;a&gt; e então extrair o texto.
+
+266
+00:13:02.655 --> 00:13:06.031
+Simples ou muito similar
+
+267
+00:13:06.031 --> 00:13:09.435
+ao primeiro ponto de dados que coletamos aqui
+
+268
+00:13:09.435 --> 00:13:10.826
+do cabeçalho.
+
+269
+00:13:10.826 --> 00:13:14.857
+Então, como vamos para o próximo nó HTML,
+
+270
+00:13:14.857 --> 00:13:17.656
+que no nosso caso é &lt;a&gt;, vai ser a mesma coisa
+
+271
+00:13:17.656 --> 00:13:20.097
+que extrair o primeiro ponto de dado.
+
+272
+00:13:20.097 --> 00:13:23.920
+Então digitamos "/a" e pressionamos Enter,
+
+273
+00:13:23.920 --> 00:13:27.438
+e você verá que o seletor mudou.
+
+274
+00:13:27.438 --> 00:13:31.163
+E então o que queremos fazer se estivermos na tag &lt;a&gt;,
+
+275
+00:13:31.163 --> 00:13:33.403
+nós queremos só selecionar o texto
+
+276
+00:13:33.403 --> 00:13:35.570
+de cada uma das tags &lt;a&gt;.
+
+277
+00:13:36.507 --> 00:13:38.974
+Para fazer isso, claro, nós vamos e digitamos
+
+278
+00:13:38.974 --> 00:13:41.233
+mais uma vez
+
+279
+00:13:41.233 --> 00:13:43.769
+"/text()", pressiona Enter,
+
+280
+00:13:43.769 --> 00:13:47.936
+e você verá que aqui nossos dados estão mais limpos.
+
+281
+00:13:48.367 --> 00:13:52.076
+E não podemos chamar, como da última vez,
+
+282
+00:13:52.076 --> 00:13:55.851
+extract_first() para conseguir o próprio dado,
+
+283
+00:13:57.212 --> 00:13:59.804
+porque ele vai selecionar somente o "love",
+
+284
+00:13:59.804 --> 00:14:01.756
+ou, na verdade, o primeiro deles.
+
+285
+00:14:01.756 --> 00:14:04.698
+Então o que precisamos fazer é chamar o "extract()",
+
+286
+00:14:04.698 --> 00:14:06.695
+pressionar Enter,
+
+287
+00:14:06.695 --> 00:14:09.323
+e você verá ele na forma de uma lista.
+
+288
+00:14:09.323 --> 00:14:11.709
+Então, isso não foi muito difícil.
+
+289
+00:14:11.709 --> 00:14:14.506
+Na próxima seção, eu acredito,
+
+290
+00:14:14.506 --> 00:14:17.697
+nós vamos cobrir como escrever
+
+291
+00:14:17.697 --> 00:14:20.708
+simples e mais avançados XPaths.
+
+292
+00:14:20.708 --> 00:14:23.974
+Mas você tem muito mais detalhes online
+
+293
+00:14:23.974 --> 00:14:25.646
+em como fazer isso,
+
+294
+00:14:25.646 --> 00:14:28.131
+e se você tiver alguma questão
+
+295
+00:14:28.131 --> 00:14:29.758
+de como extrair algum ponto de dados,
+
+296
+00:14:29.758 --> 00:14:31.977
+ou se alguma coisa estava confusa,
+
+297
+00:14:31.977 --> 00:14:36.144
+você tem um Q&amp;A aqui, então teste ele,
+
+298
+00:14:36.625 --> 00:14:39.236
+e vou voltar o mais rápido possível
+
+299
+00:14:39.236 --> 00:14:40.574
+com a resposta.
+
+300
+00:14:40.574 --> 00:14:42.563
+Falo com você no próximo vídeo.
+

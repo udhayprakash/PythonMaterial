@@ -1,0 +1,585 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00:00.667 --> 00:00:05.092
+Olá! Hoje, nós vamos falar um 
+pouco mais sobre a Arquitetura do Scrapy.
+
+
+00:00:05.739 --> 00:00:09.121
+Quando eu digo "Arquitetura", eu quero dizer 
+a visão geral do layout de um projeto Scrapy.
+
+
+00:00:09.650 --> 00:00:15.094
+O que cada campo representa e como podemos
+finalmente usá-lo em conjunto com nosso código spider.
+
+
+00:00:15.467 --> 00:00:20.451
+Vamos começar com o diretório raiz que
+contém a pasta do projeto, que é essa.
+
+
+00:00:20.811 --> 00:00:22.811
+E então o arquivo de configuração.
+
+
+00:00:23.296 --> 00:00:27.626
+Esse arquivo, o Scrapy precisa que ele 
+redirecione para onde todo o projeto está.
+
+
+00:00:27.906 --> 00:00:33.454
+O arquivo de configuração precisa estar no diretório
+raiz para que o código possa ser executado corretamente.
+
+
+00:00:34.477 --> 00:00:37.506
+Se nós entrarmos neste arquivo, você verá
+que ele é muito direto.
+
+
+00:00:38.073 --> 00:00:42.648
+Então aqui nós temos duas abas: a primeira delas 
+é o [settings], e o segundo é o [deploy].
+
+
+00:00:43.362 --> 00:00:50.501
+As abas [settings] vai herdar ou ir para
+nossa pasta do projeto e vai para o settings.py.
+
+00:00:51.058 --> 00:00:55.596
+E a aba [deploy] vai ter a
+URL que vai ser o localhost...
+
+00:00:55.871 --> 00:00:59.805
+...e a variável "project" vai 
+redirecionar para a pasta do projeto.
+
+
+00:01:00.300 --> 00:01:06.157
+Falando sobre a pasta do projeto, vamos para ele,
+e o primeiro arquivo, por exemplo, é o __init__.py
+
+00:01:06.513 --> 00:01:12.446
+Este arquivo é, claro, usado para marcar diretórios
+no disco como diretórios de pacotes Python.
+
+00:01:12.471 --> 00:01:15.291
+O próximo é o items.py.
+
+
+00:01:15.864 --> 00:01:22.519
+Então você pode tanto usar o "return" ou "yield",
+como fizemos no nosso código spider.
+
+00:01:22.819 --> 00:01:28.042
+Então este é o spider que é o
+básico do terceiro vídeo.
+
+00:01:28.282 --> 00:01:35.375
+E mais uma vez, você pode usar o yield
+direto nos itens do código spider como fizemos aqui.
+
+
+00:01:35.891 --> 00:01:43.996
+Ou você pode definí-los em items.py, por exemplo, e você
+tem mais do que algumas razões para fazer isso.
+
+
+00:01:44.364 --> 00:01:49.276
+scrapy.Item são objetos.
+
+
+00:01:50.376 --> 00:01:57.077
+Bem, o ponto de partida é que eles são
+simples containers usados para coletar os dados extraídos.
+
+
+00:01:57.517 --> 00:02:00.786
+E eles fornecem uma API similar aos dicionários
+
+
+00:02:01.906 --> 00:02:07.553
+com uma sintaxe conveniente
+para declarar campos disponíveis.
+
+
+00:02:07.943 --> 00:02:12.854
+Agora, por que você gostaria de usar
+pontos de dados definidos em items?
+
+
+00:02:13.284 --> 00:02:20.105
+Por exemplo, se você quer pegar os dados
+em um arquivo CSV em uma ordem específica,
+
+
+00:02:20.105 --> 00:02:25.928
+por exemplo, a primeira coluna sempre tem que
+ser a "H1 Tag" e a segunda tem que ser "Tags",
+
+
+00:02:26.531 --> 00:02:32.342
+então definindo itens aqui e, mais ou menos,
+misturando eles com o código spider...
+
+
+00:02:33.180 --> 00:02:38.150
+...deve ser uma opção disponível e
+isso será a solução para o problema.
+
+
+00:02:38.944 --> 00:02:45.952
+Por exemplo, serialização pode ser personalizada e
+você pode achar vazamentos de memória mais fácil se eles existirem.
+
+
+00:02:46.212 --> 00:02:52.715
+E você terá uma saída mais legível para o dado extraído
+nos logs do Scrapy, como você verá em alguns minutos.
+
+
+00:02:53.315 --> 00:02:55.402
+Então vamos definir nossos itens.
+
+
+00:02:55.582 --> 00:03:00.422
+Atualmente, temos apenas dois itens.
+Podemos deletar este "yield"...
+
+
+00:03:01.040 --> 00:03:09.618
+e "pass", podemos também deletar isso
+e vamos definí-los como scrapy.Field().
+
+
+00:03:09.778 --> 00:03:12.039
+Salvar, então ir para o código spider.
+
+
+00:03:12.309 --> 00:03:18.052
+O que precisamos fazer é importar dois módulos,
+o primeiro deles vai ser o ItemLoader.
+
+
+00:03:18.417 --> 00:03:24.487
+E ele vai ser uma ferramenta para misturar os itens que
+redireciona a saída com o código spider ou segura esse redirecionamento.
+
+
+00:03:25.046 --> 00:03:32.756
+Então vamos fazer isso. Então
+"from scrapy.loader import ItemLoader"
+
+
+00:03:32.836 --> 00:03:36.975
+Vamos fazer a mesma coisa para
+o spider Scrapy.
+
+
+00:03:36.975 --> 00:03:47.172
+Então "from scrapy import Spider"
+e, finalmente, vamos usar aspas simples em vez da dupla.
+
+
+00:03:48.185 --> 00:03:50.968
+O último módulo vai
+ser o local.
+
+
+00:03:50.968 --> 00:03:58.588
+Então estamos indo para o arquivo items.py
+no nosso diretório do projeto e buscar esta classe...
+
+
+00:03:58.588 --> 00:04:06.251
+...e então esta classe vai buscar automaticamente
+estas duas tags definidas aqui como campos Scrapy.
+
+
+00:04:07.027 --> 00:04:14.372
+Então para fazer isso, você deve digitar
+"from quotes_spider" que é o nome do projeto...
+
+
+00:04:15.385 --> 00:04:20.719
+e então, vamos ver, ".items"
+que vai para o items.py.
+
+
+00:04:21.357 --> 00:04:25.907
+Vamos importar a classe que vai
+ser o QuoteSpiderItem
+
+
+00:04:27.341 --> 00:04:35.773
+e então na função parse, precisamos definir o
+primeiro ItemLoader, então vamos definí-lo como a variável "l"
+
+
+00:04:36.154 --> 00:04:43.383
+Então digitamos ItemLoader.
+O "item" vai ser esta classe.
+
+
+00:04:43.497 --> 00:04:48.878
+Isto foi definido no items.py e então response
+vai apenas ser igual ao response...
+
+
+00:04:49.152 --> 00:04:54.047
+...o que significa esta página, ou seja,
+a página inicial do quotes.toscrape.com
+
+
+00:04:56.136 --> 00:04:58.903
+Então vamos carregá-la.
+
+
+00:04:59.146 --> 00:05:13.613
+Para fazer isso, você deve digitar "l.add_value()"
+e então vamos copiar e colar este código.
+
+
+00:05:14.291 --> 00:05:20.615
+E você pode digitar "h1_tag", como
+você pode ver, e então "tags" aqui.
+
+
+00:05:20.915 --> 00:05:31.737
+Finalmente, você pode apenas usar o "return" neles como fizemos ou usar o "yield"
+anteriormente digitando "l.load_item()".
+
+
+00:05:32.305 --> 00:05:38.642
+Salve isso, vá para o Terminal, digite "scrapy crawl quotes",
+agora vamos ver se isso funciona.
+
+
+00:05:41.213 --> 00:05:43.213
+Como você pode ver, ele funciona.
+
+
+00:05:43.890 --> 00:05:50.825
+Então anteriormente, não tínhamos
+itens pré-definidos, assim falando,
+
+
+00:05:51.259 --> 00:06:00.729
+o que significa que todo sub-item vai ser, ou
+cada item vai ser declarado ou usar uma nova linha.
+
+
+00:06:01.000 --> 00:06:08.262
+Por exemplo, se você tem uma tarefa de extrair mais
+de 50 itens de uma página específica...
+
+00:06:08.818 --> 00:06:15.974
+...então, por causa desses itens, uma vez que você está usando o items.py
+e misturando o spider com esses itens...
+
+
+00:06:16.504 --> 00:06:21.209
+...você terá eles em uma lista ordenada,
+ou em um dicionário ordenado.
+
+
+00:06:21.336 --> 00:06:31.539
+O que vai ser ótimo para navegação rápida
+e depurar itens se, claro, for necessário.
+
+
+00:06:32.563 --> 00:06:35.090
+Vamos voltar para nosso código spider.
+
+
+00:06:36.003 --> 00:06:39.268
+E vamos ver mais uma vez
+o que falta ser resolvido.
+
+
+00:06:40.185 --> 00:06:43.670
+O próximo arquivo será chamado pipelines.py.
+
+
+00:06:43.943 --> 00:06:49.959
+O pipelines.py vai ser usado quando receber
+um item ou realizar uma ação sobre ele.
+
+
+00:06:50.322 --> 00:06:58.264
+Decidindo também se o item deve continuar no pipeline
+ou ser derrubado e não mais processado.
+
+
+00:06:58.304 --> 00:07:02.633
+Por exemplo, vamos dizer que você tem uma tarefa
+de extrair algum site de e-commerce...
+
+
+00:07:02.633 --> 00:07:08.563
+...e o preço incluído não inclui, por exemplo,
+seus impostos locais ou algo como isso.
+
+
+00:07:08.966 --> 00:07:19.812
+Então você isolaria alguns nomes de itens específicos como
+"preço" e então multiplicar ele por 20 ou 50, ou qualquer porcentagem...
+
+
+00:07:20.466 --> 00:07:24.050
+...e então retornar o item,
+como fizemos ou como vemos aqui.
+
+
+00:07:24.901 --> 00:07:29.525
+Vamos fazer um exemplo
+e ir para nosso código spider.
+
+00:07:29.885 --> 00:07:33.718
+h1_tag, como você pode ver, a
+saída está na forma de uma lista.
+
+
+00:07:33.789 --> 00:07:39.963
+O primeiro e único item da lista está
+na forma de Unicode...
+
+
+00:07:39.963 --> 00:07:42.577
+...e nele se lê "Quotes to Scrape".
+
+
+00:07:43.222 --> 00:07:47.713
+Então vamos ir para o
+pipelines.py e encontrar, por exemplo
+
+
+00:07:47.713 --> 00:07:54.991
+as declarações if, então "if item" e então
+a chave do dicionário for "h1_tag".
+
+
+00:07:56.096 --> 00:07:58.591
+Então, se item é h1_tag
+
+
+00:07:58.672 --> 00:08:03.064
+ou a chave do dicionário do item
+é h1_tag, vamos processá-lo
+
+
+00:08:04.270 --> 00:08:13.651
+usando ou, basicamente,
+definindo ele como uma letra maiúscula.
+
+
+00:08:14.035 --> 00:08:18.306
+Então isso vai tudo em maiúscula,
+como você verá em um momento.
+
+
+00:08:19.184 --> 00:08:23.430
+E então você pode apenas retornar o item,
+isso deve funcionar, então vamos tentar.
+
+
+00:08:23.830 --> 00:08:26.827
+Provavelmente não vai...
+Ok, então não vai.
+
+
+00:08:27.155 --> 00:08:34.049
+A razão é porque precisamos ir para nosso último arquivo
+que é chamado settings.py e então achar aqui, pipelines.
+
+
+00:08:34.227 --> 00:08:37.718
+Aqui, como você pode ver,
+nós temos ITEM_PIPELINES.
+
+
+00:08:38.597 --> 00:08:44.909
+E descomentando isso e indo
+e copiando e colando esta classe específica.
+
+
+00:08:45.378 --> 00:08:49.549
+Salvando ele e então rodando
+ele mais uma vez, como você verá.
+
+
+00:08:49.975 --> 00:08:54.996
+Temos aqui, novamente,
+algum erro com o processamento.
+
+
+00:08:54.996 --> 00:08:58.168
+Então vamos ver qual o problema.
+
+
+00:09:01.312 --> 00:09:11.258
+Ok, então h1_tag e se for... então...
+ok, então já sei o motivo.
+
+
+00:08:40.432 --> 00:09:16.508
+O motivo é que nós estamos
+usando o upper na nossa lista.
+
+
+00:09:16.533 --> 00:09:20.112
+E isso não vai funcionar, então
+nós temos que usar com slicing.
+
+
+00:09:20.334 --> 00:09:27.291
+Então vamos rodar novamente e, como você pode ver, ele
+está na forma de um Unicode agora e está todo em maiúscula.
+	
+
+00:09:28.046 --> 00:09:29.663
+Muito bom.
+
+
+00:09:29.823 --> 00:09:38.452
+Para voltar para o settings.py... vamos ver, este
+é nosso último arquivo que vamos cobrir hoje.
+
+
+00:09:39.547 --> 00:09:47.385
+Aqui já cobrimos algumas das configurações como,
+como mencionado anteriormente, o ITEM_PIPELINES.
+
+
+00:09:47.633 --> 00:09:51.942
+Por exemplo, ROBOTSTXT_OBEY está como False.
+
+
+00:09:52.609 --> 00:10:06.528
+Por exemplo, alguns sites não vão declarar,
+ou você não será capaz de ver seus pontos de dados
+
+
+00:10:06.780 --> 00:10:10.961
+ou, na verdade,
+nada do site
+
+
+00:10:11.480 --> 00:10:20.110
+se você não usar um USER_AGENT, então tenha isso em mente:
+Se o site, por exemplo, usar algum código de status como
+
+
+00:10:20.689 --> 00:10:30.093
+503 ou 504, algo como isso, provavelmente você estará
+sendo detectado sem ter nenhum user agent.
+
+
+00:10:30.446 --> 00:10:32.340
+E então você terá que definí-lo aqui.
+
+
+00:10:33.116 --> 00:10:40.774
+O mais importante, para mim pelo menos,
+é chamado DOWNLOAD_DELAY.
+
+
+00:10:41.874 --> 00:10:48.864
+Se você salvar o settings.py dessa forma, você irá
+baixar cada requisição por 3 segundos.
+
+
+00:10:49.580 --> 00:10:54.422
+E você poderá usar isso para ser
+"um pouco mais amigável para sites".
+
+
+00:10:55.967 --> 00:11:02.418
+E você pode também, por exemplo, cada configuração 
+você pode definir aqui quando você rodar o spider.
+
+
+00:11:02.538 --> 00:11:06.257
+Então você pode definir ele como
+-s que quer dizer settings.
+
+
+00:11:06.709 --> 00:11:11.841
+Então tudo em letra maiúscula, por exemplo,
+DOWNLOAD_DELAY e então definí-lo como 5.
+
+
+00:11:11.841 --> 00:11:14.536
+Então isso vai atrasar, novamente,
+cada requisição por 5 segundos.
+
+
+00:11:16.688 --> 00:11:19.231
+Tem muitas configurações para ser honesto.
+
+
+00:11:19.388 --> 00:11:26.311
+Cookies, por exemplo, por algum motivo
+podem causar alguns problemas
+
+
+00:11:27.291 --> 00:11:32.277
+com você, então você pode apenas
+definí-los ou usá-los.
+
+
+00:11:32.803 --> 00:11:37.445
+Tem ainda o DEFAULT_REQUEST_HEADERS,
+algo similar ao USER_AGENT.
+
+
+00:11:37.445 --> 00:11:43.116
+Alguns sites não permitem você ver
+os dados deles sem um request header.
+
+
+00:11:44.003 --> 00:11:46.989
+Também tem um monte de extensões
+ou middlewares.
+
+
+00:11:47.447 --> 00:11:49.607
+ITEMS_PIPELINES, novamente, já cobrimos isso.
+
+
+00:11:50.169 --> 00:11:53.548
+Estes são para auto-throttling.
+
+
+00:11:54.108 --> 00:11:59.610
+E este é para cache HTTP e
+as configurações correspondentes a ele.
+
+
+00:12:00.627 --> 00:12:05.524
+E isso vai ser tudo, então novamente você pode
+basicamente definir isso aqui nas configurações.
+
+
+00:12:05.881 --> 00:12:10.173
+Ou você pode quando você rodá-lo
+e então definir, por exemplo,
+
+
+00:12:11.054 --> 00:12:18.413
+claro, tudo em letra maiúscula, USER_AGENT e então definir
+ele como Mozilla e então o número de versão, etc.
+
+
+00:12:19.629 --> 00:12:27.830
+E isso vai ser tudo para o quinto vídeo. Vamos voltar
+para contruir alguma coisa no próximo.
+	
+
+00:12:28.010 --> 00:12:30.262
+E vejo você por aí. Falamos em breve!
+

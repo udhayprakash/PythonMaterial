@@ -1,0 +1,178 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:07.180
+Hey there! So this is our second part of the 
+video. And in this part with the eplanning spider,
+
+00:00:07.180 --> 00:00:11.429
+we will pretty much go . . . after 
+we go to this type of pages,
+
+00:00:11.429 --> 00:00:17.000
+which was done or handled in the
+previous or first part of this section,
+
+00:00:17.000 --> 00:00:22.710
+we will then go to the Received
+Applications listings. So let's do that.
+
+00:00:22.710 --> 00:00:28.289
+So to do that we, of course, as always, need
+to inspect first how exactly we will get to
+
+00:00:28.289 --> 00:00:35.280
+the similar to this URL. So, let's see,
+here we have the div and also span, and
+
+00:00:35.280 --> 00:00:44.370
+finally the href in the "a" tag. So it
+seems like we can find every "a" tag that
+
+00:00:44.370 --> 00:00:50.640
+has this text, or we can select this class, 
+ and then use following or following-sibling;
+
+00:00:50.640 --> 00:00:56.940
+following-sibling will be 
+probably the better idea.
+
+00:00:56.940 --> 00:01:03.480
+And then after we get our following-sibling, we can then 
+select first instance of the "a" tag and select href.
+
+00:01:03.480 --> 00:01:12.510
+So enough talk. Let's go to our Terminal.
+
+00:01:12.510 --> 00:01:17.939
+Let's copy this link and paste it in. First, 
+we'll fetch it. So fetch and then this URL.
+
+00:01:17.939 --> 00:01:23.040
+Okay, so let's see. So we are
+looking to get the class with this value.
+
+00:01:23.040 --> 00:01:29.549
+So we can copy this, go back to the
+Terminal, and then type in our XPath selector.
+
+00:01:29.549 --> 00:01:38.970
+So response.xpath, then we will find 
+all class or classes that have this value.
+
+00:01:38.970 --> 00:01:44.549
+Hit Enter. And as you can see here, 
+we got one instance, which is great.
+
+00:01:44.549 --> 00:01:52.920
+And after that, we can type in either 
+following and then extract . . . well,
+
+00:01:52.920 --> 00:01:57.780
+this will extract probably more than one
+instance, as you will see. As you can see,
+
+00:01:57.780 --> 00:02:02.310
+there are a lot of the different hrefs,
+so we don't need this. So there's two
+
+00:02:02.310 --> 00:02:08.069
+ways that you can get to the first href,
+which is going to be this one. So we are
+
+00:02:08.069 --> 00:02:16.800
+looking to get this one. You can use
+extract_first() which will select it,
+
+00:02:16.800 --> 00:02:22.950
+and you can also use here list slicing in 
+the "a" tag. So if you type this, you can see
+
+00:02:22.950 --> 00:02:29.790
+that it's going to be received or
+ SearchListing/RECEIVED URL.
+
+00:02:29.790 --> 00:02:36.330
+And then the third thing that you can use
+ is remove this and use following-sibling.
+
+00:02:36.330 --> 00:02:41.310
+And then, yeah, we don't need here list slicing
+because this will select just the first
+
+00:02:41.310 --> 00:02:48.750
+instance, as you can see. So then we 
+ need to go into href. So since we are
+
+00:02:48.750 --> 00:02:54.150
+currently here, so we then need to
+go to the href. And, finally, by calling in,
+
+00:02:54.150 --> 00:03:00.930
+of course, the extract_first() at the
+end, we are going to get to our URL.
+
+00:03:00.930 --> 00:03:05.160
+Here as you can see, this is the part of the
+URL, so we will have to use response.urljoin,
+
+00:03:05.160 --> 00:03:13.170
+and then paste or, really, name the variable 
+name, and then paste it into the parenthesis.
+
+00:03:13.170 --> 00:03:22.380
+So let's go to the text editor, and let's name this
+
+00:03:22.380 --> 00:03:28.230
+app_url is equal to the statement that we
+previously wrote. And then we just need
+
+00:03:28.230 --> 00:03:37.980
+to yield the request, so yield Request, 
+response.urljoin, and then in it we
+
+00:03:37.980 --> 00:03:47.280
+can copy and paste this app_url. 
+And then define our callback,
+
+00:03:47.280 --> 00:03:55.080
+which is going to be equal parse_form. In this function, 
+we will pretty much . . . let's actually type it first.
+
+00:03:55.080 --> 00:04:00.810
+In this function, as I was saying,
+we will play around with the form request
+
+00:04:00.810 --> 00:04:04.650
+from the response, as you will
+see. So it's going to be pretty interesting,
+
+00:04:04.650 --> 00:04:08.910
+as you will see in the very
+next video. So (self,  response):
+
+00:04:08.910 --> 00:04:13.470
+And for now, we will pass it.
+Just to verify that everything is
+
+00:04:13.470 --> 00:04:18.989
+working fine on this front. So we 
+can save it, go back to the Terminal,
+
+00:04:18.989 --> 00:04:30.090
+and then call in our scrapy crawl 
+command. Hit enter, and let's see.
+
+00:04:30.090 --> 00:04:35.009
+So 200 redirection pages, and only 
+one 404 page which is, of course,
+
+00:04:35.009 --> 00:04:39.879
+previously mentioned, robot.txt 
+page. And let's see, the URLs,
+
+00:04:39.879 --> 00:04:45.930
+everything is working fine. So I'll 
+then see you in the very next video.
+

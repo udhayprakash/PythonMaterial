@@ -1,0 +1,385 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00:00.030 --> 00:00:06.200
+Olá! Então neste vídeo, ou nesta seção,
+vamos automatizar o login no LinkedIn,
+
+00:00:06.200 --> 00:00:11.800
+e então vamos para 10 ou mais perfis diferentes
+e extrair alguns pontos de dados interessantes.
+
+00:00:11.800 --> 00:00:17.900
+Então vamos começar nesse momento.
+Primeiro, precisamos abrir o Terminal.
+
+00:00:17.900 --> 00:00:24.560
+Vamos maximizar isso, e então vamos começar
+a contruí-lo. Então vamos usar o ipython.
+
+00:00:24.560 --> 00:00:28.949
+E então a primeira coisa que
+vamos fazer é importar o Selenium.
+
+00:00:28.949 --> 00:00:41.000
+Então "from selenium import webdriver". Então
+vamos digitar "driver = webdriver.Chrome"
+
+00:00:41.000 --> 00:00:51.000
+e então vamos especificar o caminho para o ChromeDriver,
+que no meu caso vai ser este aqui.
+
+00:00:51.000 --> 00:00:57.000
+Então depois de pressionar Enter, vamos,
+como você pode ver, ter uma janela do Chrome.
+
+00:00:57.000 --> 00:01:01.800
+Então vamos para o linkedin.com,
+como você verá em um momento.
+
+00:01:01.800 --> 00:01:09.500
+Então driver.get e então, em aspas
+simples ou duplas,
+
+00:01:09.500 --> 00:01:17.000
+você pode digitar "https://www.linkedin.com"
+
+00:01:17.000 --> 00:01:22.110
+pressionar Enter e isso vai rodar aqui, como você
+verá em um momento. O motivo que nós estamos
+
+00:01:22.110 --> 00:01:26.200
+usando o Selenium é porque
+LinkedIn é cheio de JavaScript,
+
+00:01:26.200 --> 00:01:31.100
+e é praticamente impossível
+extrair ele com o Scrapy.
+
+00:01:31.100 --> 00:01:37.800
+E também ele muda, às vezes de forma semanal.
+Então isso vai ser um pouco complicado
+
+00:01:37.800 --> 00:01:43.100
+de fazer com o Scrapy. Então Selenium vai
+ser 10 vezes melhor. Então como estava dizendo
+
+00:01:43.100 --> 00:01:47.000
+no começo do vídeo, vamos
+automatizar o login primeiro,
+
+00:01:47.000 --> 00:01:51.500
+e vamos povoar alguns formulários aqui,
+como email e senha.
+
+00:01:51.500 --> 00:01:56.300
+Para fazer isso, clicamos com
+o botão direito, e então Inspect Element.
+
+00:01:56.300 --> 00:02:03.300
+Vamos fazer algo como isto. E vamos 
+maximizar isto. Vamos ver, vamos fechar isto.
+
+00:02:03.300 --> 00:02:10.500
+E agora, vamos para o Inspect,
+e vamos ver que agora temos aqui
+
+00:02:10.500 --> 00:02:18.000
+name="session_ key" e então class="login-email".
+Então há algumas formas diferentes de,
+
+00:02:18.000 --> 00:02:24.720
+vamos dizer, selecionar o email.
+Podemos usar o name,
+
+00:02:24.720 --> 00:02:28.920
+que vai ter este valor,
+ou a classe, que vai ter este valor.
+
+00:02:28.920 --> 00:02:34.500
+Vamos com a classe.
+Selenium tem o próprio seletor,
+
+00:02:34.500 --> 00:02:42.700
+e ele vai pelo driver.find_element,
+ou elements, como você pode ver aqui.
+
+00:02:42.700 --> 00:02:49.000
+Então se você precisa achar múltiplos elementos, você
+então usar o find_elements, mas se você quer usar
+
+00:02:49.000 --> 00:02:55.200
+apenas um elemento, então você usa
+find_element. Então precisamos agora ir para o
+
+00:02:55.200 --> 00:03:02.800
+find_element_by_class_name, como você pode ver,
+porque ele vai ter este valor "login-email".
+
+00:03:02.800 --> 00:03:08.000
+Então vamos usar find_element_by_class_name, e então
+
+00:03:08.000 --> 00:03:15.200
+entre parênteses, digitamos este
+valor. Então podemos copiar isto,
+
+00:03:15.200 --> 00:03:21.500
+e colar isto aqui e então pressionar Enter. E,
+como você pode ver, ele vai nos redirecionar para a página.
+
+00:03:21.500 --> 00:03:26.900
+Isto é totalmente normal. Então voltamos
+para o Terminal, e como você pode ver, ele foi encontrado.
+
+00:03:26.900 --> 00:03:32.690
+Então o que precisamos fazer
+é apenas digitar, por exemplo,
+
+00:03:32.690 --> 00:03:40.100
+username é igual a este valor, e
+então username.send_keys. Então send_keys,
+
+00:03:40.100 --> 00:03:47.000
+como você verá em um momento, vai povoar
+as chaves que colocarmos aqui.
+
+00:03:47.000 --> 00:03:51.900
+Então podemos digitar qualquer email
+que queremos. Então vamos dizer, por exemplo,
+
+00:03:51.900 --> 00:03:58.200
+foo@gmail.com, pressionar Enter e, como você
+pode ver, ele está povoado aqui.
+
+00:03:58.200 --> 00:04:04.300
+Vamos voltar para nosso editor de texto,
+e vamos digitar algumas linhas.
+
+00:04:04.300 --> 00:04:13.500
+Então "from selenium import webdriver" vai ser
+o primeiro. Selecione Python como a sintaxe.
+
+00:04:13.500 --> 00:04:17.139
+Vamos voltar para o Terminal,
+e vamos ver. Então o driver vai ser
+
+00:04:17.139 --> 00:04:29.700
+igual a este valor, então cole ele.
+Então vamos para a página inicial do LinkedIn.
+
+00:04:29.700 --> 00:04:36.150
+Também colamos isto. Podemos fazer
+algo como isto. E então encontramos o
+
+00:04:36.150 --> 00:04:43.400
+input do username ou email, que vai
+ser este aqui. E então digitamos
+
+00:04:43.400 --> 00:04:51.200
+username.send_keys, por exemplo,
+este email. A próxima coisa é localizar...
+
+00:04:51.200 --> 00:04:55.400
+vamos voltar. A próxima coisa
+é localizar o password.
+
+00:04:55.400 --> 00:04:59.000
+Então o processo é o mesmo,
+como você verá em um momento.
+
+00:04:59.000 --> 00:05:02.000
+E na maioria do tempo, ele vai
+ser bem direto.
+
+00:05:02.000 --> 00:05:07.300
+Então você clica e vai para o Inspect. E
+então, como você pode ver, nós temos o type,
+
+00:05:07.300 --> 00:05:13.000
+name, class, ID, etc. Então vamos usar,
+por exemplo, o ID,
+
+00:05:13.000 --> 00:05:19.000
+já que da última vez usamos a classe.
+Então podemos voltar para nosso Terminal,
+
+00:05:19.000 --> 00:05:30.400
+digitar "driver.find_element" e então, como você
+pode ver... vamos ver onde está... find_element_by_id.
+
+00:05:30.400 --> 00:05:37.900
+Então podemos fazer isto e
+então também, entre parênteses,
+
+00:05:37.900 --> 00:05:42.100
+podemos copiar e colar este valor.
+Então id="login-password".
+
+00:05:42.100 --> 00:05:48.800
+Vamos copiar e voltar para o Terminal,
+e então colar isto aqui. Pressione Enter.
+
+00:05:48.800 --> 00:05:55.500
+E, como você pode ver, ele ai ser
+encontrado aqui. E então podemos, vamos dizer,
+
+00:05:55.500 --> 00:06:03.500
+atribuir ele para algo como password
+é igual a este valor. Vamos copiar isto,
+
+00:06:03.500 --> 00:06:11.900
+e colar no Terminal. E então podemos
+escrever aqui "password.send_keys".
+
+00:06:11.900 --> 00:06:15.729
+Então a mesma coisa, como com o
+username ou o email.
+
+00:06:15.729 --> 00:06:24.800
+E então podemos digitar, por exemplo.
+Copiar isto. Vamos voltar para o Terminal.
+
+00:06:24.800 --> 00:06:28.539
+E podemos colar isto aqui. Depois de
+pressionarmos Enter, você verá que
+
+00:06:28.539 --> 00:06:33.300
+ele vai ser povoado aqui. O password,
+claro, em asteriscos.
+
+00:06:33.300 --> 00:06:38.000
+Então, como você pode ver, está funcionando bem.
+Isto é, a propósito, apenas uma conta falsa,
+
+00:06:38.000 --> 00:06:44.900
+ou, na verdade, informação falsa. Então depois de
+clicarmos aqui no Inspect no Sign In,
+
+00:06:44.900 --> 00:06:52.600
+porque queremos clicar no botão Sign In, há
+múltiplas formas de se logar usando o Selenium.
+
+00:06:52.600 --> 00:06:57.069
+Uma coisa para se notar é que você
+pode também, se o valor Sign In mudar,
+
+00:06:57.069 --> 00:07:02.600
+você pode apenas colocar Enter como uma tecla.
+Então isso é uma boa coisa para se saber.
+
+00:07:02.600 --> 00:07:08.300
+E também o Selenium oferece para mandar
+valores de teclas. Então algumas delas,
+
+00:07:08.300 --> 00:07:14.400
+como o Return ou o Enter foram discutidas
+previamente, mas algumas vezes, por exemplo, para rolar a página,
+
+00:07:14.400 --> 00:07:21.400
+você pode usar o Page Down ou End, etc.
+Então é uma boa coisa para se ter às vezes.
+
+00:07:21.400 --> 00:07:25.900
+Então vamos para o Sign In, e vamos ver
+que valores ele oferece.
+
+00:07:25.900 --> 00:07:31.500
+Então nós temos aqui o ID, como você pode ver,
+"login-submit", class, type.
+
+00:07:31.500 --> 00:07:39.969
+Vamos usar, por exemplo, type. Então vamos para o... então
+temos que ter o type e o submit. Então vamos ver se,
+
+00:07:39.969 --> 00:07:50.500
+o Selenium oferece o type primeiro.
+Então vamos "driver.find_element_by_"
+
+00:07:50.500 --> 00:07:56.000
+E, vamos ver, então ele contém type?
+Não, ele não contém o type.
+
+00:07:56.000 --> 00:08:02.439
+Mas contém o by_xpath. Então podemos
+escrever nosso XPath personalizado. Então ele vai ser
+
+00:08:02.439 --> 00:08:08.500
+similar ao com Scrapy. Então digitamos
+"driver.find_element_by_xpath",
+
+00:08:08.500 --> 00:08:16.000
+e então aqui digitamos nosso seletor XPath,
+que vai ser "//*"
+
+00:08:16.000 --> 00:08:22.000
+e então em colchetes, type vai
+ser igual a, vamos ver,
+
+00:08:22.000 --> 00:08:28.500
+type vai ser igual a submit. Então digitamos
+aqui "submit", e então pressionamos Enter.
+
+00:08:28.500 --> 00:08:35.500
+Vamos voltar para o Terminal. Perfeito.
+Foi encontrado. Algumas vezes é bom saber
+
+00:08:35.500 --> 00:08:41.500
+quando for depurar. Por exemplo,
+vamos dizer que digitamos "T" duas vezes, e pressionamos Enter.
+
+00:08:41.500 --> 00:08:45.000
+Como você pode ver, recebemos a
+messangem "NoSuchElementException".
+
+00:08:45.000 --> 00:08:51.200
+Então esta é uma boa coisa para notar, que
+nem sempre quando o valor
+
+00:08:51.200 --> 00:08:57.200
+com o Selenium é vazio, então você 
+receberá o "NoSuchElementException".
+
+00:08:57.200 --> 00:09:02.900
+Então você terá que descobrir o
+seletor correto. Então digitamos "submit".
+
+00:09:02.900 --> 00:09:13.500
+Ok, então funciona. E vamos digitar, por exemplo,
+sign_in_button é igual a este valor,
+
+00:09:13.500 --> 00:09:20.800
+e copiamos e colamos isto
+no nosso editor de texto preferido.
+
+00:09:20.800 --> 00:09:27.420
+Cole isso e então, finalmente, vamos clicar
+nisso. Então a forma que você clica nele,
+
+00:09:27.420 --> 00:09:35.800
+vai ser bem direta.
+Então digitamos "sign_in_button.click()" e é isso.
+
+00:09:35.800 --> 00:09:40.800
+Isso imita o clique no botão,
+então vamos fazer isso.
+
+00:09:40.800 --> 00:09:45.000
+E, como você pode ver, ele mudou,
+mas, claro, já que isto vai ser
+
+00:09:45.000 --> 00:09:50.800
+uma conta falsa, como você pode ver,
+ela precisa resetar sua senha, etc.
+
+00:09:50.800 --> 00:09:56.900
+Mas se isso fosse uma conta real, então ele
+deveria funcionar perfeitamente bem.
+
+00:09:56.900 --> 00:10:01.200
+Então isso é tudo para este vídeo. No próximo,
+vamos continuar
+
+00:10:01.200 --> 00:10:05.240
+com a automação da extração do LinkedIn.
+

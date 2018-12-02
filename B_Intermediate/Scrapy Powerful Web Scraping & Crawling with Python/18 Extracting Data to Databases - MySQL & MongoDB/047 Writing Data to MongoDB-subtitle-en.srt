@@ -1,0 +1,398 @@
+﻿1
+00:00:00,330 --> 00:00:07,530
+Hi there! So today we are going to learn how to
+write data that is scraped to MongoDB, the spider that we will
+
+2
+00:00:07,530 --> 00:00:09,620
+reuse is books_crawler.
+
+3
+00:00:09,660 --> 00:00:16,080
+This is a well known spider that will go to
+the home page of the books.toscrape.com and then process
+
+4
+00:00:16,590 --> 00:00:25,870
+each and every book and looks to the page
+and it will scrape or get the callback to the parse_book
+
+5
+00:00:25,930 --> 00:00:33,660
+by the book URL, and then from the each book URL,
+it will scrape seven different data
+
+6
+00:00:33,660 --> 00:00:36,270
+points that I'm highlighting right now.
+
+7
+00:00:36,270 --> 00:00:44,040
+I'm going to delete this logic for scraping or crawling
+the entire site because this is just an example
+
+8
+00:00:44,040 --> 00:00:48,460
+more of MongoDB as a database not as a scraping.
+
+9
+00:00:48,750 --> 00:00:55,870
+So the first thing that we need to do is type in to
+install a dependency that we will have to use so
+
+10
+00:00:55,920 --> 00:00:59,770
+to do that we can type in "sudo pip install pymongo".
+
+11
+00:00:59,820 --> 00:01:05,010
+I already have this so I will get
+the requirement is already satisfied.
+
+12
+00:01:05,010 --> 00:01:13,620
+And the second thing that we need to do is go to the settings.py
+and then navigate to the ITEM_PIPELINES
+
+13
+00:01:13,740 --> 00:01:26,130
+which are going to be here, uncomment them
+and then write the for example "MongoDBPipeline" which
+
+14
+00:01:26,130 --> 00:01:33,350
+will actually go to the pipelines.py
+and then assign class MongoDBPipeline in a moment or so.
+
+15
+00:01:33,600 --> 00:01:39,530
+And the second thing that we need to do
+is to assign different MongoDB attributes.
+
+16
+00:01:39,540 --> 00:01:47,450
+One of them is going to be "MONGODB_SERVER",
+which is going to be a "localhost".
+
+17
+00:01:47,460 --> 00:01:57,210
+The second thing that we need to assign is
+the port which is going to be "27017".
+
+18
+00:01:57,210 --> 00:02:03,900
+Third thing is "MONGODB_DB" or the name of the database
+which is going to be, let's call it "books".
+
+19
+00:02:04,400 --> 00:02:11,550
+And the fourth or the last thing that  we need to do
+is assign "MONGODB_COLLECTION", name of the collection
+
+20
+00:02:11,590 --> 00:02:18,360
+is going to be for example "products",
+collection once again once I refer to the collection that pretty
+
+21
+00:02:18,360 --> 00:02:24,210
+much means table in the MySQL.
+Save it, then go back
+
+22
+00:02:24,240 --> 00:02:27,020
+and then finally go to the Pipelines
+
+23
+00:02:27,250 --> 00:02:34,090
+Here we can delete this
+and then type in "from pymongo"
+
+24
+00:02:34,420 --> 00:02:37,900
+we will "import MongoClient".
+
+25
+00:02:37,980 --> 00:02:46,170
+Second thing that we need to do is import Scrapy settings.
+To do that from we can type in "from scrapy.conf import settings"
+
+26
+00:02:46,570 --> 00:02:57,810
+Then assign "class" which is going to be
+"MongoDBPipeline" this is same class as here.
+
+27
+00:02:58,500 --> 00:03:04,320
+Since it's going to go to the pipelines.py
+and then MongoDBPipeline.
+
+28
+00:03:04,320 --> 00:03:11,940
+And then in the attributes, or parameters,
+we can assign it to be an "object".
+
+29
+00:03:12,300 --> 00:03:16,530
+We will initialize different parameters from the settings.py.
+
+30
+00:03:16,530 --> 00:03:20,620
+"self" is the parameter.
+
+31
+00:03:20,670 --> 00:03:27,670
+The first thing is we can assign the "connection"
+which is going to be "MongoClient" so it will inherit
+
+32
+00:03:27,670 --> 00:03:40,400
+from the pymongo, and here we will go to the "settings['MONGODB_SERVER']",
+which is going to go to the settings.py
+
+33
+00:03:40,400 --> 00:03:47,300
+and then go to the MONGODB_SERVER
+which is going to be set to the localhost.
+
+34
+00:03:47,300 --> 00:03:51,710
+Second thing that needs to be done is once again "settings".
+
+35
+00:03:56,510 --> 00:03:56,860
+Okay.
+
+36
+00:03:56,890 --> 00:03:58,600
+This is more like it.
+
+37
+00:03:58,930 --> 00:04:08,350
+And then "MONGODB_PORT", which is going to be this number
+and let's see what else needs
+
+38
+00:04:08,350 --> 00:04:08,990
+to be done.
+
+39
+00:04:09,040 --> 00:04:15,000
+Then the second thing that needs to be done here is
+to assign database which is going to go to the settings
+
+40
+00:04:15,550 --> 00:04:22,360
+and it's going to inherit from the...
+or it will be named books, so to do that we can type in
+
+41
+00:04:22,360 --> 00:04:30,960
+"db = connection", and then let's see
+in the square brackets we can type in
+
+42
+00:04:32,020 --> 00:04:33,260
+"settings['MONGODB_DB']"
+
+43
+00:04:37,470 --> 00:04:38,430
+That's right.
+
+44
+00:04:38,750 --> 00:04:39,380
+OK.
+
+45
+00:04:39,390 --> 00:04:47,670
+And then finally "self.collection",
+self is going to be necessary because we are going to write in a
+
+46
+00:04:47,670 --> 00:04:55,690
+moment or so another function
+and "self.collection = db[]".
+
+47
+00:04:56,030 --> 00:05:02,930
+Let's see the settings, so "settings['MONGODB_COLLECTION']".
+
+48
+00:05:03,000 --> 00:05:10,610
+Finally we will assign another function
+which is going to be "process_item", and that function
+
+49
+00:05:10,610 --> 00:05:12,030
+will have
+
+50
+00:05:12,060 --> 00:05:21,320
+"self, item, spider", this is also
+a well known function that we already covered.
+
+51
+00:05:22,360 --> 00:05:32,920
+And so we type in "self.collection.insert(dict(item))"
+
+52
+00:05:32,920 --> 00:05:37,660
+and then close once again parenthesis.
+
+53
+00:05:37,680 --> 00:05:41,970
+And then finally return item. We will save it and
+
+54
+00:05:42,230 --> 00:05:46,890
+let's see if there is some mixture of tabs and spaces somewhere.
+
+55
+00:05:47,060 --> 00:05:56,430
+There is not, so pretty much this line is going to
+insert the data into the Mongo database, pretty self-explanatory.
+
+56
+00:05:56,430 --> 00:05:58,480
+And if we run it.
+
+57
+00:05:58,500 --> 00:06:00,840
+So go back to the root directory.
+
+58
+00:06:01,370 --> 00:06:04,760
+Open in Terminal, let's maximize it.
+
+59
+00:06:04,820 --> 00:06:06,020
+"scrapy crawl books".
+
+60
+00:06:06,060 --> 00:06:13,020
+And we don't assign any other attributes
+and stuff like that to get this written to the Mongo database.
+
+61
+00:06:13,020 --> 00:06:16,170
+So let's hit Enter and let's see.
+
+62
+00:06:16,200 --> 00:06:17,580
+So 20 or so.
+
+63
+00:06:17,640 --> 00:06:20,210
+Yeah exactly 20 books are scraped.
+
+64
+00:06:20,580 --> 00:06:24,120
+And let's go to the "mongo" and let's see.
+
+65
+00:06:24,160 --> 00:06:29,000
+"show dbs", I haven't created any other database.
+
+66
+00:06:29,010 --> 00:06:34,200
+And as you can see books database from the settings.py is created.
+
+67
+00:06:34,200 --> 00:06:44,250
+So if we go in and then hit "use books",
+and then "show collections", we should see
+
+68
+00:06:44,250 --> 00:06:47,250
+the products listed.
+
+69
+00:06:47,310 --> 00:06:47,900
+Perfect.
+
+70
+00:06:47,940 --> 00:06:54,220
+And if we type in right now, let's see "db.collection"
+
+71
+00:06:57,110 --> 00:07:02,980
+not collections, sorry, "products.find();"
+
+72
+00:07:03,130 --> 00:07:03,860
+Perfect.
+
+73
+00:07:04,140 --> 00:07:11,170
+And if we once again go and prettify it,
+for example, perfect this is more readable.
+
+74
+00:07:11,190 --> 00:07:16,280
+And as you can see we get written our data into the database.
+
+75
+00:07:16,350 --> 00:07:24,330
+So if we want to get another batch,
+we can just pretty much run the Spider as it is or just close it
+
+76
+00:07:24,990 --> 00:07:27,430
+and then crawl it once again.
+
+77
+00:07:27,600 --> 00:07:32,780
+And the way that we test it out is, let's see.
+
+78
+00:07:32,910 --> 00:07:34,470
+So "show collections".
+
+79
+00:07:34,470 --> 00:07:35,400
+Sorry.
+
+80
+00:07:35,550 --> 00:07:46,110
+"use books"
+
+81
+00:07:46,110 --> 00:07:49,830
+"db.products.find().pretty();"
+
+82
+00:07:50,100 --> 00:08:03,950
+And here if we delete it or let's see
+it should be somewhere around 40 or so books and here if we type in
+
+83
+00:08:04,190 --> 00:08:15,490
+let's see "db" and if my memory is correct
+then we can type in "db.products"
+
+84
+00:08:15,500 --> 00:08:21,180
+".remove({});"
+
+85
+00:08:21,230 --> 00:08:28,970
+We will see that there should be removed 40 products
+because we already scrape the site two times, or
+
+86
+00:08:28,970 --> 00:08:37,190
+the home page two times.
+Perfect, so there are 40 removed products or really nodes in this case,
+
+87
+00:08:37,190 --> 00:08:37,810
+such as this one.
+
+88
+00:08:38,000 --> 00:08:40,110
+And that will be pretty much it for this video.
+
+89
+00:08:40,140 --> 00:08:41,050
+And thanks for watching!
+

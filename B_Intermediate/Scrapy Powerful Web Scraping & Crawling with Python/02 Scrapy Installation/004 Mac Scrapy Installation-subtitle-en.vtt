@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00:01.690 --> 00:00:07.005
+Hey There! So in this video, we are going to cover
+how to install Scrapy on Mac operating system
+
+00:00:07.315 --> 00:00:12.626
+Recent systems with Mac come with
+Python 2 out of the box
+
+00:00:12.626 --> 00:00:14.835
+a.k. pre-installed
+
+00:00:14.835 --> 00:00:21.057
+So unless you want to install Python 3,
+you do not have to install or configure Python yourself
+
+00:00:23.298 --> 00:00:27.088
+Now if I go to the Terminal
+So type in here: Terminal
+
+00:00:27.789 --> 00:00:29.932
+and press Enter
+
+00:00:29.932 --> 00:00:32.743
+and type in here: python
+
+00:00:32.743 --> 00:00:35.090
+and hit once again Enter
+
+00:00:35.090 --> 00:00:37.357
+this will start the Python Interpreter
+
+00:00:37.357 --> 00:00:42.981
+and show some information such as for example
+the type (version) of Python that is currently installed
+
+00:00:42.981 --> 00:00:44.537
+So we are ready to go
+
+00:00:44.537 --> 00:00:48.957
+If we type in now: exit()
+
+00:00:48.957 --> 00:00:50.333
+hit Enter once again
+
+00:00:50.333 --> 00:00:54.103
+it will redirect us to the normal
+Terminal command promt
+
+00:00:54.103 --> 00:00:56.361
+where we can install packages
+
+00:00:56.361 --> 00:00:59.439
+The installation process for Scrapy on Mac
+is straightforward
+
+00:00:59.439 --> 00:01:04.565
+So you can just type in:
+sudo pip install scrapy
+
+00:01:05.108 --> 00:01:06.572
+hit Enter
+
+00:01:06.572 --> 00:01:09.628
+It will prapably ask you for 
+your system password
+
+00:01:09.628 --> 00:01:12.628
+So you can type it also in
+and hit Enter once again
+
+00:01:12.900 --> 00:01:16.221
+As you can see here, we are collecting Scrapy
+
+00:01:16.221 --> 00:01:20.432
+and some requirements, 
+might be already satisfied
+
+00:01:21.549 --> 00:01:22.168
+Let's see
+
+00:01:24.000 --> 00:01:27.146
+And as you can see,
+we successfully installed scrapy
+
+00:01:27.146 --> 00:01:27.512
+Subtitle
+
+00:01:27.512 --> 00:01:29.173
+So we are ready to go
+
+00:01:29.542 --> 00:01:32.911
+To verify it, you type in: scrapy
+
+00:01:32.911 --> 00:01:33.970
+and hit Enter
+
+00:01:37.938 --> 00:01:43.873
+If successfully installed, Scrapy will show 
+the type (version) of Scrapy that is installed
+
+00:01:43.873 --> 00:01:45.328
+and also "Available Commands"
+
+00:01:47.950 --> 00:01:49.789
+Let's also install IPython
+
+00:01:49.819 --> 00:01:52.138
+as we will need to run 
+Scrapy Shell with it
+
+00:01:52.138 --> 00:01:59.001
+To install IPython, just type in:
+sudo pip install ipython
+
+00:02:00.081 --> 00:02:01.941
+and then just hit Enter
+
+00:02:03.054 --> 00:02:06.347
+And as you can see,
+it has successfully installed IPython
+
+00:02:10.008 --> 00:02:12.504
+So that will be
+pretty much it for this video
+
+00:02:12.504 --> 00:02:17.589
+If you encounter any kind of issues 
+or errors in the installation process
+
+00:02:17.589 --> 00:02:20.760
+make sure to head over to 
+our Q&A section
+
+00:02:20.760 --> 00:02:25.240
+where we will get over details 
+and help you out
+
