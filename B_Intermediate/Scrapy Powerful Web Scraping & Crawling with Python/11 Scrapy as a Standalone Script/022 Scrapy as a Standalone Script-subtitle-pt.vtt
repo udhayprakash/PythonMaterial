@@ -1,0 +1,136 @@
+﻿WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.567 --> 00:00:01.400
+Olá!
+
+2
+00:00:01.400 --> 00:00:03.501
+Então hoje vamos cobrir como rodar o spider do Scrapy
+
+3
+00:00:03.501 --> 00:00:05.726
+com o comando runspider.
+
+4
+00:00:05.726 --> 00:00:08.952
+Normalmente, navegaríamos para o diretório raiz do nosso projeto,
+
+5
+00:00:08.952 --> 00:00:12.563
+e então você usar, daqui, o comando "scrapy crawl".
+
+6
+00:00:12.563 --> 00:00:14.230
+Com o runspider,
+
+7
+00:00:14.230 --> 00:00:16.638
+podemos rodar ele de forma similar a
+
+8
+00:00:16.638 --> 00:00:18.641
+como executaríamos um script Python,
+
+9
+00:00:18.641 --> 00:00:22.147
+então sem precisar criar um projeto.
+
+10
+00:00:22.147 --> 00:00:25.147
+Se você precisa de um spider para algum tabalho pequeno ou rápido,
+
+11
+00:00:25.147 --> 00:00:28.258
+então o runspider com muito menos rigidez
+
+12
+00:00:28.258 --> 00:00:29.908
+que é requirido.
+
+13
+00:00:29.908 --> 00:00:33.150
+Por enquanto, vamos apenas copiar e colar este código,
+
+14
+00:00:33.150 --> 00:00:35.733
+e abrir ele no editor de texto.
+
+15
+00:00:37.135 --> 00:00:39.727
+E vamos limpar isto um pouco.
+
+16
+00:00:39.727 --> 00:00:42.810
+Então isto é bom, não precisamos disto,
+
+17
+00:00:43.956 --> 00:00:47.166
+e também não precisamos desses dois imports,
+
+18
+00:00:47.166 --> 00:00:50.833
+e não precisamos também do open, ItemLoaders,
+
+19
+00:00:52.478 --> 00:00:56.645
+e finalmente, não precisamos dessas três linhas.
+
+20
+00:00:58.117 --> 00:01:00.867
+Podemos apenas imprimir o h1_tag.
+
+21
+00:01:02.211 --> 00:01:05.800
+E finalmente imprimir o tags, e vamos estar bem,
+
+22
+00:01:05.800 --> 00:01:09.967
+então vamos salvar isso e voltar para nosso Desktop,
+
+23
+00:01:10.119 --> 00:01:13.814
+abrir o Terminal, mudar o diretório para o Desktop,
+
+24
+00:01:13.814 --> 00:01:16.897
+e finalmente executar nosso novo spider.
+
+25
+00:01:18.089 --> 00:01:21.181
+Para rodar ele, digite
+
+26
+00:01:21.234 --> 00:01:25.392
+"scrapy runspider quotes.py"
+
+27
+00:01:27.022 --> 00:01:29.246
+e, como você pode ver, é similar,
+
+28
+00:01:29.246 --> 00:01:31.582
+ou a saída é basicamente a mesma
+
+29
+00:01:31.582 --> 00:01:34.673
+que o comando "scrapy crawl",
+
+30
+00:01:34.673 --> 00:01:36.960
+o que significa que
+
+31
+00:01:36.960 --> 00:01:40.362
+a extração deve ser feita da mesma forma,
+
+32
+00:01:40.362 --> 00:01:43.061
+e você, novamente, deveria usar o comando "runspider"
+
+33
+00:01:43.061 --> 00:01:46.669
+para alguns trabalhos rápidos e sujos, por assim dizer.
+

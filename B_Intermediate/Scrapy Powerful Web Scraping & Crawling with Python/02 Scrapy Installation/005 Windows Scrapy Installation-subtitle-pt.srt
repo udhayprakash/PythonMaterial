@@ -1,0 +1,228 @@
+﻿1
+00:00:00,000 --> 00:00:02,116
+Olá! Hoje nós vamos aprender
+
+2
+00:00:02,116 --> 00:00:04,452
+como instalar Scrapy em uma máquina Windows.
+
+3
+00:00:04,452 --> 00:00:07,319
+Então se você for para scrapy.org,
+
+4
+00:00:07,319 --> 00:00:08,977
+e ir para "Documentation",
+
+5
+00:00:08,977 --> 00:00:12,502
+você será redirecionado para a última documentação.
+
+6
+00:00:12,502 --> 00:00:16,441
+E nós devemos ir para "installation guide".
+
+7
+00:00:16,441 --> 00:00:20,093
+Depois nós podemos instalar tanto Anaconda quanto Miniconda.
+
+8
+00:00:20,093 --> 00:00:23,533
+A ferramenta que nós vamos instalar é chamada Anaconda.
+
+9
+00:00:23,533 --> 00:00:26,273
+Então podemos ir para "download Anaconda"
+
+10
+00:00:26,273 --> 00:00:28,769
+e isso vai abrir uma nova aba para especificar
+
+11
+00:00:28,769 --> 00:00:30,529
+o sistema operacional que você tem,
+
+12
+00:00:30,529 --> 00:00:34,016
+então como esse é o processo de instalação para Windows
+
+13
+00:00:34,016 --> 00:00:35,415
+nós vamos para Windows,
+
+14
+00:00:35,415 --> 00:00:38,827
+e aqui nós temos quatro pacotes diferentes.
+
+15
+00:00:38,827 --> 00:00:42,879
+Vamos utilizar o instalador Python 2.7 64-bit.
+
+16
+00:00:42,879 --> 00:00:47,046
+Clique aqui para fazer o download, salve o arquivo e clique no "x",
+
+17
+00:00:48,531 --> 00:00:52,091
+e depois espere [algum tempo] para fazer o download.
+
+18
+00:00:52,091 --> 00:00:54,424
+Depois disso, abra o arquivo,
+
+19
+00:00:57,590 --> 00:01:01,488
+e quando isso aparecer, nós vamos clicar no "Run".
+
+20
+00:01:01,488 --> 00:01:04,279
+O processo de instalação é muito simples
+
+21
+00:01:04,279 --> 00:01:07,237
+e direto, "Next", "I Agree",
+
+22
+00:01:07,237 --> 00:01:09,320
+e clique em "All Users".
+
+23
+00:01:12,309 --> 00:01:15,892
+Clique em "Yes", "Next", e então em
+
+24
+00:01:16,502 --> 00:01:20,395
+"Add Anaconda to the system PATH environment variable"
+
+25
+00:01:20,395 --> 00:01:22,167
+e clique em "Install".
+
+26
+00:01:22,167 --> 00:01:24,601
+A instalação vai levar alguns minutos,
+
+27
+00:01:24,601 --> 00:01:26,733
+talvez uns 10 minutos,
+
+28
+00:01:26,733 --> 00:01:28,504
+então vou pausar o vídeo agora
+
+29
+00:01:28,504 --> 00:01:32,671
+e então voltar logo que ele estiver concluído.
+
+30
+00:01:33,068 --> 00:01:36,682
+Okay, então ele está completo, clicamos em "Next",
+
+31
+00:01:36,682 --> 00:01:40,250
+e depois desmarcamos essas duas opções,
+
+32
+00:01:40,250 --> 00:01:42,285
+e finalmente clicamos em "Finish".
+
+33
+00:01:42,285 --> 00:01:44,303
+Nós vamos para a documentação
+
+34
+00:01:44,303 --> 00:01:47,663
+e então só precisamos copiar e colar este comando.
+
+35
+00:01:47,663 --> 00:01:51,330
+Nós então pressionamos a tecla Windows, e digita "cmd"
+
+36
+00:01:52,623 --> 00:01:54,959
+o que vai ser o "Command Prompt",
+
+37
+00:01:54,959 --> 00:01:57,186
+e então só cole o comando
+
+38
+00:01:57,186 --> 00:01:59,522
+"pip install scrapy" e pressione Enter.
+
+39
+00:01:59,522 --> 00:02:01,769
+Isso vai instalar o Scrapy
+
+40
+00:02:01,769 --> 00:02:05,843
+e todas as dependências que do Scrapy,
+
+41
+00:02:05,843 --> 00:02:09,760
+e isso deve estar completo em 30 segundos.
+
+42
+00:02:17,814 --> 00:02:20,793
+Algumas dependências estão prontas, como você pode ver,
+
+43
+00:02:20,793 --> 00:02:23,286
+e todos os requisitos já estão satisfeitos,
+
+44
+00:02:23,286 --> 00:02:26,520
+então a instalação não deve durar mais
+
+45
+00:02:26,520 --> 00:02:29,280
+de 10 segundos agora.
+
+46
+00:02:29,280 --> 00:02:32,519
+E se você encontrar algum tipo de problema ou erro,
+
+47
+00:02:32,519 --> 00:02:36,225
+certifique-se de ir para a seção de perguntas e respostas,
+
+48
+00:02:36,225 --> 00:02:39,378
+e só faça perguntas
+
+49
+00:02:39,378 --> 00:02:42,467
+sobre os erros que você recebeu.
+
+50
+00:02:42,467 --> 00:02:44,679
+Como você pode ver, está completo.
+
+51
+00:02:44,679 --> 00:02:47,094
+Se nós digitarmos agora "python"
+
+52
+00:02:47,094 --> 00:02:49,223
+e digitar "import scrapy" para verificar
+
+53
+00:02:49,223 --> 00:02:51,711
+se tudo está instalado corretamente,
+
+54
+00:02:51,711 --> 00:02:54,257
+nós não devemos receber nenhum tipo de erro,
+
+55
+00:02:54,257 --> 00:02:56,342
+então como você pode ver, ele funciona perfeitamente.
+
+56
+00:02:56,342 --> 00:02:58,042
+Então isso é tudo para este vídeo
+
+57
+00:02:58,042 --> 00:03:00,438
+e vejo você na próxima aula.
+

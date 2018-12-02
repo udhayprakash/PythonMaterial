@@ -1,0 +1,280 @@
+﻿1
+00:00:00,020 --> 00:00:06,299
+Olá! Então neste vídeo, vamos para
+cada um dos  File Number
+
+2
+00:00:06,299 --> 00:00:12,960
+ou a URL da aplicação.
+Então vamos descobrir se vamos ter
+
+3
+00:00:12,960 --> 00:00:20,010
+o botão Agents presente, como aqui. Se
+estiver, podemos então prosseguir, o que vai ser
+
+4
+00:00:20,010 --> 00:00:24,390
+discutido no último vídeo ou no próximo
+vídeo. Vamos então prosseguir
+
+5
+00:00:24,390 --> 00:00:30,929
+com a extração dos seguintes pontos de dados,
+como Name, Address, Phone, Fax e Email.
+
+6
+00:00:30,929 --> 00:00:35,460
+Senão... então algo como isto. Então se
+o botão Agentes não está presente em nenhum lugar,
+
+7
+00:00:35,460 --> 00:00:40,800
+então vamos adicionar uma mensagem log, e dizer
+algo, como, que o botão Agents não foi encontrado,
+
+8
+00:00:40,800 --> 00:00:45,690
+e que vamos passar esta URL específica e
+não vamos extrair nenhum dos pontos de dado.
+
+9
+00:00:45,690 --> 00:00:53,670
+Então vamos começar. Então se usarmos Inspect no
+botão Agents, vamos ver aqui o input que tem o
+
+10
+00:00:53,670 --> 00:01:00,510
+valor Agents, essa classe que tem o
+btn-primary, e então no onclick vemos que
+
+11
+00:01:00,510 --> 00:01:06,840
+o Javascript vai ser executado.
+E temos aqui o title "Show Agents Popup",
+
+12
+00:01:06,840 --> 00:01:14,909
+e outra coisa como Name, Type,
+e também Style. Então vamos ver.
+
+13
+00:01:14,909 --> 00:01:20,340
+Então primeira sugestão é ir para o Title
+porque ele deve ser único. Então o jeito que eu
+
+14
+00:01:20,340 --> 00:01:26,520
+testo se ele é único ou não, é copiando ele e
+então indo para uma página que
+
+15
+00:01:26,520 --> 00:01:32,610
+não deveria ter este tipo de valor.
+Então vamos para o Inspect, então Ctrl + F,
+
+16
+00:01:32,610 --> 00:01:39,630
+e então cole ele. E, como você pode ver aqui,
+apesar do botão Agents não ser
+
+17
+00:01:39,630 --> 00:01:46,710
+encontrado em nenhum lugar ou visível, nós ainda
+temos nosso input. Mas a coisa aqui é que
+
+18
+00:01:46,710 --> 00:01:52,110
+se você olhar atentamente, o style que estou destacando
+agora nas duas páginas é diferente.
+
+19
+00:01:52,110 --> 00:01:58,170
+Então aqui temos um style que é
+"display: none; visibility: hidden".
+
+20
+00:01:58,170 --> 00:02:06,329
+O motivo, apesar do botão Agents estar
+de certa forma presente, ele não está realmente ali
+
+21
+00:02:06,329 --> 00:02:12,880
+ou ele está definido para none e a visibilidade
+é escondida. Aqui na página
+
+22
+00:02:12,880 --> 00:02:17,590
+que tem o botão Agents, aqui vemos o
+style que tem o "display: inline; visibility: visible".
+
+23
+00:02:17,590 --> 00:02:26,050
+Ok? Então esta é a forma que
+podemos abordar este problema.
+
+24
+00:02:26,050 --> 00:02:32,050
+Então se voltarmos para o Terminal, e então
+depois abrimos uma página como esta.
+
+25
+00:02:32,050 --> 00:02:40,330
+Então copie isto e verifique que nós estamos na
+página correta. Digitamos response.xpath,
+
+26
+00:02:40,330 --> 00:02:47,920
+e então nele, vamos ver, vamos
+querer chegar no style.
+
+27
+00:02:47,920 --> 00:02:51,630
+Esse é o ponto de partida. E então
+se o style tem este valor,
+
+28
+00:02:51,630 --> 00:02:58,540
+então vamos continuar extraindo os seguintes pontos
+de dados. Se o style não está definido como aqui,
+
+29
+00:02:58,540 --> 00:03:05,650
+então este vai ser o único caso de
+página. Então vamos apenas
+
+30
+00:03:05,650 --> 00:03:10,510
+pular esta URL e não extrair nenhum ponto de dado
+dele porque não há Agent para ser extraído, ok?
+
+31
+00:03:10,510 --> 00:03:16,989
+Então para fazer isso, vamos para
+este value e pegar o Agents,
+
+32
+00:03:16,989 --> 00:03:23,050
+que, claro, vai estar presente nas duas páginas,
+mesmo que não tenha o botão Agents.
+
+33
+00:03:23,050 --> 00:03:27,660
+Vamos voltar para o Terminal.
+
+34
+00:03:27,660 --> 00:03:38,320
+Podemos colar isto aqui. E é isso.
+Então para selecionar isso, apenas para fazer isto,
+
+35
+00:03:38,320 --> 00:03:45,820
+vamos pressionar Enter, ok, então está aqui, e
+então precisamos apenas ir para o @style.
+
+36
+00:03:45,820 --> 00:03:52,720
+Então similar ao que fizemos anteriormente com
+o href ou o source ou as imagens, tanto faz,
+
+37
+00:03:52,720 --> 00:03:57,040
+podemos fazer a mesma coisa com o style,
+pressionar Enter e, como você pode ver aqui, temos nossos dados,
+
+38
+00:03:57,040 --> 00:04:02,319
+que tem "inline" e o visibility é visible.
+
+39
+00:04:02,319 --> 00:04:07,450
+Então chamamos o extract_first, abre e fecha parênteses,
+e conseguimos nosso dado Unicode, o que é ótimo.
+
+40
+00:04:07,450 --> 00:04:15,459
+Então se copiarmos isto, e voltarmos para o
+editor de texto, e definirmos o nome da variável como,
+
+41
+00:04:15,459 --> 00:04:23,410
+por exemplo, agent_btn que é igual a
+este valor. Então definimos uma declaração if.
+
+42
+00:04:23,410 --> 00:04:33,070
+Então vamos para o Terminal... então se
+isto está presente no agent_btn...
+
+43
+00:04:33,070 --> 00:04:42,040
+Então se isto está presente no agent_button,
+então podemos copiar isto aqui...
+
+44
+00:04:42,040 --> 00:04:47,770
+então vamos estar prontos. Nós podemos extrair
+o dado aqui. Vamos registrar nossa mensagem,
+
+45
+00:04:47,770 --> 00:04:53,919
+então self.logger.info. Isso vai
+ser o tipo da mensagem,
+
+46
+00:04:53,919 --> 00:05:00,730
+e então podemos digitar aqui nossa mensagem.
+Então podemos dizer algo como
+
+47
+00:05:00,730 --> 00:05:11,229
+"Agent button not found on page, passing invalid url". Ok?
+E por enquanto vamos usar "pass" para que possamos testar isso.
+
+48
+00:05:11,229 --> 00:05:20,620
+Então finalmente, podemos salvar isto, voltar
+para o Terminal, e executar nosso script.
+
+49
+00:05:20,620 --> 00:05:28,290
+Então "scrapy crawl eplanning", pressione Enter.
+
+50
+00:05:28,840 --> 00:05:35,440
+E vamo ver, isso deve estar agora carregando o
+"botão Agents não presente", em algum lugar aqui.
+
+51
+00:05:35,440 --> 00:05:40,120
+Ok? Eu acho que encontrei isso
+em algum lugar. Então vamos ver.
+
+52
+00:05:40,120 --> 00:05:45,669
+Ok, aqui está. Então "Agent button was not
+found at the page, passing invalid url."
+
+53
+00:05:45,669 --> 00:05:52,419
+E como você pode ver, este é o caso também
+com este aqui. Então parece que alguns deles não vai,
+
+54
+00:05:52,419 --> 00:05:58,060
+claro, ter o botão Agents encontrado
+na página. E, nesse caso,
+
+55
+00:05:58,060 --> 00:06:02,380
+claro, como discutido anteriormente, vamos usar pass
+ou não extrair esse tipo de pontos de dados.
+
+56
+00:06:02,380 --> 00:06:08,080
+Então o próximo vídeo vari ser o último,
+
+57
+00:06:08,080 --> 00:06:12,600
+e vamos discutir como extrair os pontos de dados.
+

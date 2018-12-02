@@ -1,0 +1,391 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00:00.030 --> 00:00:05.500
+Olá! Então nesta seção vamos aprender
+como extrair páginas específicas em JSON.
+
+00:00:05.500 --> 00:00:12.500
+Vamos usar um site chamado Trump Twitter
+Archive ponto com para extrair esse tipo de páginas,
+
+00:00:12.500 --> 00:00:17.670
+e aqui está como isto vai funcionar.
+Então depois que formos para a página inicial,
+
+00:00:17.670 --> 00:00:23.000
+vai ver aqui Latest Tweets, e
+então see all. Então se clicarmos aqui,
+
+00:00:23.000 --> 00:00:32.149
+nós temos, ou ele vai nos redirecionar para o /archive.
+Depois disso, como você pode ver, haverá
+
+00:00:32.149 --> 00:00:39.000
+assim falando, uma página sem fim
+com os dados. Então, na maioria do tempo,
+
+00:00:39.000 --> 00:00:46.160
+o que você fará aqui é ir para o
+Inspect, então finalmente, para o Network,
+
+00:00:46.160 --> 00:00:52.590
+e então recarregar a página. Então se fizermos isso,
+vamos ver um monte de requests diferentes.
+
+00:00:52.590 --> 00:00:59.219
+O que estamos interessados principalmente
+vai ser esta aba específica,
+
+00:00:59.219 --> 00:01:04.500
+os arquivos JSON. Então sempre que você
+ver um request JSON, quase sempre
+
+00:01:04.500 --> 00:01:12.000
+eles vão conter dados nos arquivos JSON, ok?
+Então como você pode ver aqui na aba Response,
+
+00:01:12.000 --> 00:01:16.000
+depois que formos para ele, 2009,
+isto corresponde
+
+00:01:16.000 --> 00:01:27.479
+a todos os tweets armazenas desde 2009,
+todo o caminho até 2017. Então se copiarmos isto,
+
+00:01:27.479 --> 00:01:36.000
+então copiamos o endereço do link, e então colamos ele,
+você verá que os dados estão meio que
+
+00:01:36.000 --> 00:01:43.720
+ilegíveis, certo? Mas se copiarmos isto
+e então abrir no nosso editor de texto,
+
+00:01:43.720 --> 00:01:50.500
+colar ele, e então usar a formatação
+para JSON, você verá agora
+
+00:01:50.500 --> 00:01:58.100
+que os dados estão no formato JSON. Então vai ser
+extremamente fácil extrair este tipo de informação.
+
+00:01:58.100 --> 00:02:06.900
+Sempre que você ver que arquivos JSON estão disponíveis,
+então você pode rapidamente escrever um spider,
+
+00:02:06.900 --> 00:02:10.179
+e não se preocupar
+com a extração do HTML,
+
+00:02:10.179 --> 00:02:14.000
+e descobrir se você vai isolar
+primeiro as linhas,
+
+00:02:14.000 --> 00:02:18.000
+ou apenas extrair todos os dados de uma vez, etc.
+
+00:02:18.000 --> 00:02:25.300
+Isto é 10 vezes mais fácil. Então
+agora, vamos para o Desktop.
+
+00:02:25.300 --> 00:02:31.900
+E eu criei apenas um spider de modelo
+com o startproject e genspider.
+
+00:02:31.900 --> 00:02:39.400
+Então depois que você for para spider, apenas abra isto.
+Como você pode ver, nada incomum.
+
+00:02:39.400 --> 00:02:55.000
+Então se fizermos isto e
+a URL inicial vai ser, por exemplo,
+
+00:02:55.000 --> 00:03:01.500
+vamos dizer que queremos extrair apenas os tweets
+de 2017. Então podemos copiar este endereço,
+
+00:03:01.500 --> 00:03:12.600
+voltar para o Sublime Text, e colar
+a URL aqui. Agora se abrirmos o Terminal,
+
+00:03:12.600 --> 00:03:22.100
+e abrir o scrapy shell, ok?
+Então digitamos "scrapy shell",
+
+00:03:22.100 --> 00:03:30.600
+e então colamos a URL para o arquivo JSON,
+e então digitamoa "response.body".
+
+00:03:30.600 --> 00:03:38.500
+E, como você pode ver, isto vai ser nosso arquivo
+JSON previamente aberto. E se digitarmos "view(response)",
+
+00:03:38.500 --> 00:03:43.400
+para abrir isto, isto vai ser aberto.
+Como você pode ver, via seu editor de texto.
+
+00:03:43.400 --> 00:03:47.000
+Isso é também como sabemos que
+isto é um tipo de página diferente.
+
+00:03:47.000 --> 00:03:52.000
+Como você pode ver, ele vai ter
+ou terá uma extensão .txt.
+
+00:03:52.000 --> 00:03:59.160
+Então vamos voltar para o Terminal. Então a
+forma que você analisa o arquivo JSON é
+
+00:03:59.160 --> 00:04:06.000
+por um módulo do Python chamado json.
+Então o que você precisa fazer é apenas usar
+
+00:04:06.000 --> 00:04:16.100
+o comando "import json". Então definir a 
+variável jsonresponse como json.loads.
+
+00:04:16.100 --> 00:04:20.300
+Load é, basicamente, load
+quer dizer loading, ou carga, claro.
+
+00:04:20.300 --> 00:04:29.500
+E então "s" quer dizer string. Então load
+string, e chamamos então load response.body, ou
+
+00:04:29.500 --> 00:04:33.600
+todo o conteúdo
+que estou destacando agora.
+
+00:04:33.600 --> 00:04:37.650
+Pressione Enter e então digite "jsonresponse", pressione Enter,
+
+00:04:37.650 --> 00:04:42.800
+você verá que vai ser de certa forma
+mais legível, ou mais bonito.
+
+00:04:42.800 --> 00:04:48.810
+Então o texto que estou destacando agora é
+um tweet, e então podemos rapidamente
+
+00:04:48.810 --> 00:04:53.500
+escrever um laço for simples, como você verá
+em um momento, e iterar sobre cada
+
+00:04:53.500 --> 00:04:57.300
+um dos tweets, e então, para cada um dos
+tweets, podemos pegar, basicamente,
+
+00:04:57.300 --> 00:05:04.600
+todos os pontos de dados que você pode ver aqui
+nesta observação. Então vamos para o editor de texto.
+
+00:05:04.600 --> 00:05:09.400
+Então o que precisamos fazer aqui
+é importar o módulo json,
+
+00:05:09.400 --> 00:05:17.000
+e aqui na função parse, definimos
+nosso jsonresponse = json.loads
+
+00:05:17.000 --> 00:05:24.800
+e então entre parênteses response.body,
+que, claro, vai listar ou
+
+00:05:24.800 --> 00:05:34.200
+pegar para nós o código-fonte ou o texto. E,
+finalmente, então podemos começar a iterar sobre cada tweet.
+
+00:05:34.200 --> 00:05:43.010
+Então "for tweet in jsonresponse" então podemos digitar
+
+00:05:43.010 --> 00:05:48.500
+ou ir, na verdade, para o
+Terminal. Então podemos digitar
+
+00:05:48.500 --> 00:05:57.900
+jsonresponse é igual ao, desculpa,
+tweet = jsonresponse,
+
+00:05:57.900 --> 00:06:02.600
+e então usar a primeira instância. E
+então podemos digitar "tweet", pressionar Enter,
+
+00:06:02.600 --> 00:06:08.500
+e, como você verá, este vai ser nosso
+primeiro tweet. Então podemos descobrir
+
+00:06:08.500 --> 00:06:13.040
+rapidamente quais são os pontos de dados que
+podemos pegar. Então podemos pegar apenas o
+
+00:06:13.040 --> 00:06:17.600
+texto dele ou qualquer outro ponto de
+dado que você vê aqui. E a forma que
+
+00:06:17.600 --> 00:06:24.900
+você pega ele é bem direta.
+Então podemos chamar o "yield" agora,
+
+00:06:24.900 --> 00:06:34.000
+e então vamos definir primeiro, todos
+estes pontos de dados diferentes, um por um.
+
+00:06:34.000 --> 00:06:47.000
+Então created_at, favorite_count, também o ID, in_reply,
+
+00:06:47.000 --> 00:06:59.100
+is_retweet... então apenas copie e cole
+isto... retweet_count, source e, finalmente, o texto.
+
+00:06:59.100 --> 00:07:13.900
+Ok? Então vamos indentar isto apropriadamente.
+
+00:07:13.900 --> 00:07:20.100
+Ok, perfeito. Então deixe me mostrar a você
+como extrair do JSON.
+
+00:07:20.100 --> 00:07:25.600
+Então depois de digitarmos "tweets", como você pode
+ver, aqui temos todas as chaves do dicionário
+
+00:07:25.600 --> 00:07:30.800
+e os valores do dicionário. Então ele vai 
+ser a mesma coisa que estamos fazendo.
+
+00:07:30.800 --> 00:07:36.600
+Quero dizer, isto é na realidade um dicionario,
+então tudo que estamos fazendo aqui é pegando ele.
+
+00:07:36.600 --> 00:07:39.700
+Se quisermos pegar este valor,
+vamos digitar "tweet",
+
+00:07:39.700 --> 00:07:47.500
+e então nos colchetes, podemos, copiar
+e colar isto aqui, a chave do dicionário,
+
+00:07:47.500 --> 00:07:52.100
+e pressionar Enter. E como você pode ver,
+aqui está o valor correspondente a este aqui.
+
+00:07:52.100 --> 00:07:57.600
+Muito fácil, como você pode ver. Se você
+quer extrair apenas o texto dele,
+
+00:07:57.600 --> 00:08:04.200
+então você pode digitar, em aspas
+simples ou duplas, "text"
+
+00:08:04.200 --> 00:08:10.000
+e, como você pode ver aqui, nos temos nosso valor
+retornado. Então não poderia ser mais simples.
+
+00:08:10.000 --> 00:08:20.500
+Então vamos para o Sublime Text, e 
+vamos selecionar cada instância
+
+00:08:20.500 --> 00:08:25.900
+dos nossos pontos de dados e digitar
+aqui, e então nos colchetes,
+
+00:08:25.900 --> 00:08:32.700
+vamos deixar isto aberto por enquanto. E
+vamos rapidamente copiar isto, todos os pontos de dados,
+
+00:08:32.700 --> 00:08:38.700
+e selecionar todas as intâncias dos
+colchetes, e colar ele.
+
+00:08:38.700 --> 00:08:44.100
+Então se salvarmos isto, e então 
+voltar para o Terminal, e rodar ele,
+
+00:08:44.100 --> 00:08:55.200
+então com "scrapy crawl". Vamos ver como nosso spider se chama.
+Então ele é chamado "tweets". Então "scrapy crawl tweets",
+
+00:08:55.200 --> 00:09:01.000
+pressione Enter, e vamos ver.
+Na sintaxe, vamos ver o que está acontecendo. Ok.
+
+00:09:01.000 --> 00:09:11.000
+Então eu esqueci a vírgula, claro. Ok, então se
+nós salvarmos isto agora, voltar para o Terminal,
+
+00:09:11.000 --> 00:09:17.010
+e então pressionar Enter, vamos ver,
+"cannot import name Scrapy".
+
+00:09:17.010 --> 00:09:24.300
+Vamos ver, "from scrapy import"... é,
+um erro bobo. Ok, vamos rodar isso agora.
+
+00:09:24.300 --> 00:09:31.290
+E, como você pode ver, nós extraimos
+1500 resultados. E está pronto, como você pode ver,
+
+00:09:31.290 --> 00:09:37.800
+isto foi feito em alguns segundos, na verdade,
+um ou dois segundos. Isso é porque todo tweet
+
+00:09:37.800 --> 00:09:42.270
+está na mesma página. Então ele é
+extremamente eficiente, como você pode ver.
+
+00:09:42.270 --> 00:09:48.800
+Então se quisermos adicionar, talvez, dados
+de 2016, podemos copiar este link,
+
+00:09:48.800 --> 00:09:55.300
+voltar para o Sublime Text, e
+então colocar ele no start_urls,
+
+00:09:55.300 --> 00:10:01.100
+salvar, voltar para o Terminal
+e então executar novamente o spider.
+
+00:10:01.100 --> 00:10:04.400
+E vamos ver quantas páginas
+serão extraídas agora.
+
+00:10:04.400 --> 00:10:15.300
+Então 5780 tweets foram extraídos.
+Então se nós usarmos o "-o items.csv",
+
+00:10:15.300 --> 00:10:21.840
+ou listar os dados no arquivo CSV...
+Vamos para os arquivos,
+
+00:10:21.840 --> 00:10:28.830
+voltar para o diretório raiz, e aqui
+vamos ter nossos arquivos. Então vamos abrir ele,
+
+00:10:28.830 --> 00:10:35.200
+e vamos abri-lo novamente. Como você pode ver,
+este são nossos dados. Então o ponto de partida é que
+
+00:10:35.200 --> 00:10:42.930
+sempre que você ver que páginas JSON
+são geradas, nós adicionamos a aba Network.
+
+00:10:42.930 --> 00:10:48.300
+Então você pode ter a certeza de que
+a extração vai ser feita mais fácil,
+
+00:10:48.300 --> 00:10:53.100
+porque na maioria do tempo eles
+vão listar os dados em um formato limpo.
+
+00:10:53.100 --> 00:11:02.300
+Então o que você precisa fazer é usar o
+módulo json e então carregar a string ou o response.body,
+
+00:11:02.300 --> 00:11:07.400
+e então você pode rapidamente descobrir,
+usando um simples laço for, como exatamente
+
+00:11:07.400 --> 00:11:13.430
+você pode extrair os pontos de dados
+direto do arquivo JSON.
+

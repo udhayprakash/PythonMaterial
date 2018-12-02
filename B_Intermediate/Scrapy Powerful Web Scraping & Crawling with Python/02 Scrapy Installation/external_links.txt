@@ -1,0 +1,6 @@
+- b'Linux-Scrapy-Installation'
+- b'https://docs.scrapy.org/en/latest/intro/install.html#ubuntu-12-04-or-above'
+- b'Mac-Scrapy-Installation-Aulternative-Method'
+- b'https://docs.scrapy.org/en/latest/intro/install.html#mac-os-x'
+- b'Windows-Scrapy-Installation'
+- b'https://docs.scrapy.org/en/latest/intro/install.html#windows'

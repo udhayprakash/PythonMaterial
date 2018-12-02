@@ -1,0 +1,384 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:05.730
+Hey there! So today we are going to learn
+how to populate forms such as this one
+
+00:00:05.730 --> 00:00:11.100
+and scrape it on this specific page 
+with using Scrapy FormRequest.
+
+00:00:11.100 --> 00:00:21.800
+FormRequests are most similar to the Request that 
+we previously used. So if we open a new Terminal,
+
+00:00:21.800 --> 00:00:27.420
+then let's type in scrapy shell.
+We can then import FormRequest
+
+00:00:27.420 --> 00:00:37.000
+simply by going into the 
+from scrapy.http import FormRequest. Hit Enter.
+
+00:00:37.000 --> 00:00:43.200
+And FormRequest as the name 
+indicates or prefix of the name is
+
+00:00:43.200 --> 00:00:52.200
+for the populating HTML forms such as this one. So if 
+we click... or we need to first have the Stock Code.
+
+00:00:52.200 --> 00:00:57.600
+So let's use the first one, and then click Search. 
+You will see that URL will not change
+
+00:00:57.600 --> 00:01:03.500
+even though results or, really, 
+the page was changed in the meantime.
+
+00:01:03.500 --> 00:01:07.200
+That means that we have
+the POST request and, mainly,
+
+00:01:07.200 --> 00:01:13.320
+as you can see from the first page, we have 
+here the form. So how we can then figure out
+
+00:01:13.320 --> 00:01:21.100
+what exactly URL we are looking for is
+to go to Inspect, then go to the Network tab,
+
+00:01:21.100 --> 00:01:27.900
+and, finally, to the All. Now if we 
+click Search and wait for the requests
+
+00:01:27.900 --> 00:01:31.850
+or, generally, page to get loaded, you 
+will see a bunch of different requests,
+
+00:01:31.850 --> 00:01:37.500
+including most of them are images, as you
+can see. Some of them are JavaScript pages,
+
+00:01:37.500 --> 00:01:43.600
+and here we got the aspx page. 
+And as you can see from here,
+
+00:01:43.600 --> 00:01:49.900
+this pretty much corresponds to the page
+that we would like to get. So if we click here,
+
+00:01:49.900 --> 00:01:54.500
+and go to the Headers tab, you can see 
+in the General, Request URL will be
+
+00:01:54.500 --> 00:02:01.000
+pretty much the same as this one. Then we have
+here the Request Method is equal to the POST.
+
+00:02:01.000 --> 00:02:05.500
+So request methods are either 
+GET or POST. If it was GET,
+
+00:02:05.500 --> 00:02:13.500
+then we would probably have something 
+like this. So id=00001 if it was GET.
+
+00:02:13.500 --> 00:02:18.500
+But since it's POST, then we will... 
+or the URL really didn't change,
+
+00:02:18.500 --> 00:02:26.200
+and the parameters are located down below, here
+in the Form Data, which we'll get into in a moment.
+
+00:02:26.200 --> 00:02:31.800
+So Request Method is once 
+again POST. Status Code is 200.
+
+00:02:31.800 --> 00:02:36.200
+So everything is working fine. 
+And then we go to the Form Data.
+
+00:02:36.200 --> 00:02:44.800
+So this is the, really, mainly, or the most 
+important tab here in the Headers. So we can...
+
+00:02:44.800 --> 00:02:53.000
+let's copy and paste this into our text 
+editor so it's more... so it's more visible.
+
+00:02:53.000 --> 00:02:59.600
+So we can paste this here, and then 
+Set Syntax to Python. And just to make sure
+
+00:02:59.600 --> 00:03:06.200
+that we are on the right URL, you should 
+always check the Response tab and see if the data
+
+00:03:06.200 --> 00:03:12.290
+that you would like to grab is actually there. 
+Okay? So let's go back to the text editor,
+
+00:03:12.290 --> 00:03:17.590
+and let's see. So here we got a bunch 
+of different, really, keys and values,
+
+00:03:17.590 --> 00:03:25.100
+including the date, the day, month, year. As you 
+can see, txtStockCode corresponds, pretty much.
+
+00:03:25.100 --> 00:03:30.100
+So if we go to the first page,
+corresponds, really, to this Stock Code.
+
+00:03:30.100 --> 00:03:35.100
+And then the Enter or, really, the
+value that we entered here is going to
+
+00:03:35.100 --> 00:03:40.300
+be entered in this specific 
+form data as we will populate it.
+
+00:03:40.300 --> 00:03:45.300
+So if we change it to 2, it will go to the
+second symbol. And if we change,
+
+00:03:45.300 --> 00:03:51.400
+of course, the date, or the year, month, 
+day, it will, of course, be changed also.
+
+00:03:51.400 --> 00:03:58.200
+We have then the first button, which corresponds
+to the Search, and then the second one
+
+00:03:58.200 --> 00:04:06.100
+is going to be Clear button. So the thing that 
+we need to do here is to make the dictionary.
+
+00:04:06.100 --> 00:04:11.510
+So we need to... let's see how
+we can do this most quickest.
+
+00:04:11.510 --> 00:04:19.600
+And let's try to automate adding
+dictionary keys and values to,
+
+00:04:19.600 --> 00:04:26.200
+let's see, to everything here. So we are 
+going to collect, yeah, this is going to be
+
+00:04:26.200 --> 00:04:36.400
+time-consuming, and boring, also. So, let's
+see, hopefully, we can do this more quicker.
+
+00:04:36.400 --> 00:04:43.900
+And let's see the first issue is that we
+need to copy and paste these two here.
+
+00:04:43.900 --> 00:04:52.400
+And, let's see, so if we select every instance
+here, put a space in it... no, it's not going to work
+
+00:04:52.400 --> 00:04:58.000
+because we have to do it manually 
+because some values are empty.
+
+00:04:58.000 --> 00:05:07.500
+Okay? And let's put curly brackets here.
+And then for these three... these three are,
+
+00:05:07.500 --> 00:05:12.700
+by the way... let's see if we selected 
+every one of them with it. Okay.
+
+00:05:12.700 --> 00:05:19.200
+So these three are VIEWSTATE, 
+VIEWSTATEGENERATOR, and EVENTVALIDATION.
+
+00:05:19.200 --> 00:05:24.500
+On most sites, they will be listed out as a token.
+So these are dynamic values that change.
+
+00:05:24.500 --> 00:05:29.700
+And if they do, then you can write simply
+selectors for it. So if we copy and paste
+
+00:05:29.700 --> 00:05:36.600
+this VIEWSTATE -- so go to Inspect, 
+and then paste it in here -- then you can
+
+00:05:36.600 --> 00:05:40.700
+pretty much extract it either by going in and
+selecting all of the names with the VIEWSTATE,
+
+00:05:40.700 --> 00:05:46.900
+or all of the IDs with the VIEWSTATE. So, 
+really, the XPath selector is extremely easy.
+
+00:05:46.900 --> 00:05:52.400
+And then you can type in
+/@value, and then extract the first,
+
+00:05:52.400 --> 00:05:57.300
+really, value, which is going to be
+corresponding to this specific value
+
+00:05:57.300 --> 00:06:02.500
+that I'm highlighting right now. So it's
+extremely easy. Sometimes some sites
+
+00:06:02.500 --> 00:06:08.500
+do change their token or, really, the values
+that you enter today will not work tomorrow,
+
+00:06:08.500 --> 00:06:13.800
+but some don't, really. 
+Okay, so let's do this.
+
+00:06:13.800 --> 00:06:20.800
+And for the first value, let's finish it.
+And then the only value that we are left with
+
+00:06:20.800 --> 00:06:28.800
+is going to be the third one. Okay, so we 
+should be good to go. We start with a bracket,
+
+00:06:28.800 --> 00:06:33.700
+and then type in, for example,
+data is equal to the specific value.
+
+00:06:33.700 --> 00:06:41.000
+So we can copy this, and go to 
+the Terminal, and then paste it in here,
+
+00:06:41.000 --> 00:06:47.000
+and everything is working fine. 
+And then, finally, we are going to have
+
+00:06:47.000 --> 00:06:53.600
+the page variable name is equal to the FormRequest. 
+And similar to the Request, you can enter
+
+00:06:53.600 --> 00:07:00.840
+the first parameter to be URL. And the URL, 
+you check the URL to the...  you go to the
+
+00:07:00.840 --> 00:07:06.200
+Network tab, and then once you click 
+the Search, you go to the specific URL.
+
+00:07:06.200 --> 00:07:12.600
+So in this case, this is our URL, and you 
+get it from the Request URL. So you copy it,
+
+00:07:12.600 --> 00:07:20.300
+paste it from here. And then, finally, the
+only other or the second parameter that
+
+00:07:20.300 --> 00:07:25.900
+you need to use is called formdata.
+And that will be equal to the data that
+
+00:07:25.900 --> 00:07:31.000
+we have here with the dictionary keys 
+and values. So, again, you can modify it,
+
+00:07:31.000 --> 00:07:36.100
+or probably even remove these empty 
+values. If you want to modify, for example,
+
+00:07:36.100 --> 00:07:44.100
+let's use the first StockCode here. And so 
+formdata=data. So we need to also
+
+00:07:44.100 --> 00:07:53.700
+copy and paste this updated data
+variable to have the first StockCode,
+
+00:07:53.700 --> 00:08:02.000
+so we can have some results. And then 
+if we copy and paste this variable name,
+
+00:08:02.050 --> 00:08:08.000
+hit Enter, and then the final thing that
+we need to do here is fetch the page.
+
+00:08:08.000 --> 00:08:13.200
+So to do that, of course, we go to the fetch, 
+and then type in here page, hit Enter.
+
+00:08:13.200 --> 00:08:18.080
+And it should be loaded in around five 
+to ten seconds. This, obviously, depends,
+
+00:08:18.080 --> 00:08:24.800
+really, on the page-to-page basis. 
+And, right now, we are... so, let's see,
+
+00:08:24.800 --> 00:08:31.000
+we crawled 200 posts, as you can see, so it's not GET.
+And the URL, pretty much, corresponds to this one.
+
+00:08:31.000 --> 00:08:35.750
+So it seems like everything is
+working fine. So if we try to verify it,
+
+00:08:35.750 --> 00:08:42.200
+we go to the view(response), hit Enter. 
+And this, of course, will load the page that
+
+00:08:42.200 --> 00:08:47.720
+is returned from the Scrapy in the 
+"tmp" or, really, local file. And we see that
+
+00:08:47.720 --> 00:08:52.900
+Scrapy sees the results page, which
+pretty much corresponds to the online one,
+
+00:08:52.900 --> 00:08:58.010
+or, really, the real one. So we
+successfully made the FormRequest.
+
+00:08:58.010 --> 00:09:03.410
+FormRequests are, generally, quite 
+a bit... I'm not going to say hard, but really
+
+00:09:03.410 --> 00:09:10.100
+time-consuming to get it right. 
+If you change even slightly,
+
+00:09:10.100 --> 00:09:14.100
+like something like this, right? 
+You can't really even notice it,
+
+00:09:14.100 --> 00:09:19.400
+but you would not get the real results. 
+So it's really time-consuming,
+
+00:09:19.400 --> 00:09:27.700
+so make sure to really approach it with, 
+at least, half an hour or an hour, really,
+
+00:09:27.700 --> 00:09:34.000
+if you're approaching the first time. The 
+reason why I use this specific site is because
+
+00:09:34.000 --> 00:09:40.100
+it's a pretty basic one, and with slight
+modification to the form or, really,
+
+00:09:40.100 --> 00:09:46.579
+the data variable and the URL here. So it
+should be working on any other, really,
+
+00:09:46.579 --> 00:09:52.500
+site that uses the FormRequest or
+really POST requests on the site.
+
+00:09:52.500 --> 00:09:58.209
+So that will be it in this video, 
+and I'll see you in the very next one.
+

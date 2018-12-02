@@ -1,0 +1,533 @@
+﻿1
+00:00:00,308 --> 00:00:04,015
+Olá! Neste vídeo nós vamos
+
+2
+00:00:04,015 --> 00:00:07,112
+extrair os três pontos de dados que nós falamos
+
+3
+00:00:07,112 --> 00:00:09,623
+anteriormente no vídeo. Então, o texto, o autor, e então
+
+4
+00:00:09,623 --> 00:00:12,557
+finalmente as tags. Então vamos começar.
+
+5
+00:00:12,557 --> 00:00:16,724
+Vamos voltar para nosso Terminal, e colocar de lado agora,
+
+6
+00:00:17,018 --> 00:00:21,185
+então o texto vai ser, ou este ponto de dado vai ser o
+
+7
+00:00:21,697 --> 00:00:24,738
+primeiro ponto de dado que vamos coletar.
+
+8
+00:00:24,738 --> 00:00:28,831
+Então para fazer isso, nós digitamos "quote.xpath".
+
+9
+00:00:28,831 --> 00:00:32,997
+Então isto é chamado de seletor dinâmico ou personalizado.
+
+10
+00:00:34,744 --> 00:00:37,446
+Então nós não vamos digitar "response.xpath", vamos
+
+11
+00:00:37,446 --> 00:00:39,762
+digitar "quote.xpath".
+
+12
+00:00:39,762 --> 00:00:43,929
+quote.xpath vai buscar este HTML inteiro.
+
+13
+00:00:44,352 --> 00:00:48,519
+Então se digitarmos "response.xpath", isto vai
+
+14
+00:00:49,303 --> 00:00:53,470
+procurar a página inteira ou a saída inteira ou a
+
+15
+00:00:54,887 --> 00:00:56,326
+página inteira.
+
+16
+00:00:56,326 --> 00:01:00,159
+Então nós digitamos aqui '//a', com o
+
+17
+00:01:01,763 --> 00:01:04,117
+response.xpath, pressionamos Enter e você verá que
+
+18
+00:01:04,117 --> 00:01:05,867
+muitos dados serão retornados.
+
+19
+00:01:05,867 --> 00:01:08,486
+Se nós fizermos a mesma coisa com o quote ou qualquer outro
+
+20
+00:01:08,486 --> 00:01:12,177
+seletor personalizado que escrevermos, teremos que usar
+
+21
+00:01:12,177 --> 00:01:16,094
+o ponto para assegurar que pegaremos só
+
+22
+00:01:19,354 --> 00:01:23,029
+o conteúdo do próprio seletor, então neste caso
+
+23
+00:01:23,088 --> 00:01:27,255
+este HTML. Então vamos pressionar Enter e, como você pode ver,
+
+24
+00:01:27,535 --> 00:01:31,035
+muito menos tags &lt;a&gt; ou nós HTML &lt;a&gt; foram encontrados.
+
+25
+00:01:32,583 --> 00:01:36,531
+Então vamos digitar "quote.xpath", por agora vamos
+
+26
+00:01:36,531 --> 00:01:40,377
+somente deixar como está, então vamos digitar ".", só
+
+27
+00:01:40,377 --> 00:01:44,544
+para não esquecer. E então vamos para o texto, vamos para "Inspect"
+
+28
+00:01:46,411 --> 00:01:50,578
+e aqui temos a classe do &lt;span&gt; e com o valor "text",
+
+29
+00:01:50,625 --> 00:01:54,648
+e também o itemprop que é igual a "text". E então nele
+
+30
+00:01:54,648 --> 00:01:58,815
+temos nosso texto em aspas duplas, por assim dizer.
+
+31
+00:02:00,619 --> 00:02:04,786
+Então existem diversas formas de chegar nos dados.
+
+32
+00:02:04,920 --> 00:02:08,525
+Eu vou compartilhar duas formas diferentes. A primeira vai ser
+
+33
+00:02:08,525 --> 00:02:11,428
+com a classe, e então a segunda vai ser com o
+
+34
+00:02:11,428 --> 00:02:12,609
+itemprop.
+
+35
+00:02:12,609 --> 00:02:16,776
+Então com a classe, nós vamos para o Terminal e digitamos "class"
+
+36
+00:02:17,381 --> 00:02:20,909
+para encontrar toda instância da classe. Então isso é
+
+37
+00:02:20,909 --> 00:02:24,576
+o mesmo XPath, a mesma sintaxa XPath como anteriormente.
+
+38
+00:02:25,508 --> 00:02:29,513
+Então digiamos aqui 'class="text"', então "text" vai ser
+
+39
+00:02:29,513 --> 00:02:33,680
+o valor, pressionamos Enter, e então vemos que algo está errado.
+
+40
+00:02:34,468 --> 00:02:38,635
+Desculpe, eu esqueci o asterisco e então pressionamos Enter.
+
+41
+00:02:38,696 --> 00:02:42,333
+E então veremos que a classe "text" do &lt;span&gt;, itemprop "text",
+
+42
+00:02:42,333 --> 00:02:45,067
+é igual e então esta é a aspa dupla.
+
+43
+00:02:45,067 --> 00:02:49,234
+Então se digitarmos ".extract()", você verá que nós
+
+44
+00:02:49,720 --> 00:02:52,053
+conseguimos os dados da própria lista.
+
+45
+00:02:53,276 --> 00:02:56,393
+Para deixar isto mais bonito, ou deixá-lo mais legível,
+
+46
+00:02:56,393 --> 00:03:00,123
+nós devemos ir para o texto ou extrair o texto e chamar
+
+47
+00:03:00,123 --> 00:03:01,290
+"extract_first()",
+
+48
+00:03:02,236 --> 00:03:06,308
+pressionar Enter e, como você pode ver, aqui está nossos dados.
+
+49
+00:03:06,308 --> 00:03:10,308
+Eu acredito que se só fizermor "print quote", nós teremos
+
+50
+00:03:11,744 --> 00:03:15,911
+algo mais legível. Como você pode ver, isto
+
+51
+00:03:16,060 --> 00:03:20,227
+corresponde às aspas duplas que podem ser lidas aqui.
+
+52
+00:03:20,530 --> 00:03:24,697
+Então se digitarmos "print" antes da declaração, você terá
+
+53
+00:03:24,796 --> 00:03:28,387
+uma saída mais bonita. Vamos chamá-lo desta forma.
+
+54
+00:03:28,423 --> 00:03:32,590
+Então está será a variável "text", então pressionamos Enter
+
+55
+00:03:33,751 --> 00:03:36,758
+e copiamos e colamos isto no nosso editor de texto.
+
+56
+00:03:36,758 --> 00:03:40,758
+Então copie e cole isto, então vamos colocar aqui.
+
+57
+00:03:41,735 --> 00:03:45,902
+O próximo ponto de dado que queremos coletar é o autor.
+
+58
+00:03:47,725 --> 00:03:51,231
+Então nós clicamos aqui "Inspect" e aqui... ah, desculpe,
+
+59
+00:03:51,231 --> 00:03:54,553
+esqueci de mencionar a segunda forma de conseguir
+
+60
+00:03:54,553 --> 00:03:58,271
+os dados. Você pode também usar o itemprop e então o texto.
+
+61
+00:03:58,271 --> 00:04:02,438
+Então, acredite ou não, é muito simples. Você só precisa
+
+62
+00:04:03,951 --> 00:04:08,118
+mudar o "class" e colocar "itemprop", e isso vai ser
+
+63
+00:04:10,299 --> 00:04:11,469
+suficiente.
+
+64
+00:04:11,469 --> 00:04:14,382
+Então o valor "text" vai ser o mesmo que no "class",
+
+65
+00:04:14,382 --> 00:04:17,634
+como você pode ver, então se pressionarmos Enter você verá o mesmo
+
+66
+00:04:17,634 --> 00:04:20,641
+dado exibido, então se digitarmos aqui "text" você verá
+
+67
+00:04:20,641 --> 00:04:23,743
+que a mesma citação vai ser selecionada.
+
+68
+00:04:23,743 --> 00:04:27,910
+Agora, se não usarmos o, vamos remover a variável,
+
+69
+00:04:29,713 --> 00:04:33,202
+se nós não usarmos o ponto, como você verá em um momento,
+
+70
+00:04:33,202 --> 00:04:36,962
+se pressionarmos Enter o mesmo ponto de dado vai ser coletado,
+
+71
+00:04:36,962 --> 00:04:40,306
+mas se digitarmos "extract()" você verá que
+
+72
+00:04:40,306 --> 00:04:43,455
+dez citações vão ser selecionadas, e esse é o motivo que
+
+73
+00:04:43,455 --> 00:04:46,645
+você tem que usar o ponto quando você está pegando
+
+74
+00:04:46,645 --> 00:04:50,006
+dados do seletor personalizado como fizemos aqui da
+
+75
+00:04:50,006 --> 00:04:54,173
+primeira citação. Então está declaração é a mesma
+
+76
+00:04:54,638 --> 00:04:58,367
+que lê response.xpath, e então
+
+77
+00:04:58,367 --> 00:04:59,364
+esta declaração.
+
+78
+00:04:59,364 --> 00:05:03,531
+Então você deveria prestar atenção para não estragar isto,
+
+79
+00:05:04,878 --> 00:05:09,045
+porque isso é meio complicado para iniciantes.
+
+80
+00:05:09,356 --> 00:05:11,840
+Ok, então vamos começar com os autores.
+
+81
+00:05:11,840 --> 00:05:15,424
+Vamos para o "Inspect" e aqui nós temos a classe author
+
+82
+00:05:15,424 --> 00:05:19,073
+e itemprop author, então vamos usar, por exemplo, o itemprop
+
+83
+00:05:19,073 --> 00:05:20,707
+author.
+
+84
+00:05:20,707 --> 00:05:24,863
+Praticamente toda a declaração vai ser a mesma, então
+
+85
+00:05:24,863 --> 00:05:28,175
+itemprop text, então no lugar do "text" o valor vai
+
+86
+00:05:28,175 --> 00:05:30,834
+ser "author", então isto é muito simples.
+
+87
+00:05:30,834 --> 00:05:35,001
+Então você digita aqui "author", o itemprop... então esta
+
+88
+00:05:35,684 --> 00:05:39,411
+declaração lê, mais uma vez, encontra todo itemprop com
+
+89
+00:05:39,411 --> 00:05:42,226
+o valor "author", seleciona o texto e seleciona a
+
+90
+00:05:42,226 --> 00:05:43,901
+primeira instância.
+
+91
+00:05:43,901 --> 00:05:48,068
+Pressione Enter, e não vamos esquecer o ".",	 pressione Enter
+
+92
+00:05:50,240 --> 00:05:54,407
+e esse será o dado que estamos procurando,
+
+93
+00:05:55,050 --> 00:05:57,070
+como você pode ver.
+
+94
+00:05:57,070 --> 00:06:01,237
+Então copie e cole isto no nosso editor de texto, então
+
+95
+00:06:01,418 --> 00:06:05,585
+isto vai ser o "author" que vai ser igual a esta declaração
+
+96
+00:06:06,070 --> 00:06:08,237
+o o último é "tags."
+
+97
+00:06:09,089 --> 00:06:13,256
+Isto vai ser igual ao... então se nós formos
+
+98
+00:06:13,353 --> 00:06:17,520
+para o Inspect, isto vai ser da classe, então temos aqui
+
+99
+00:06:18,319 --> 00:06:22,486
+quatro tags diferentes, como você pode ver, e cada uma está no
+
+100
+00:06:22,528 --> 00:06:26,695
+nó HTML &lt;a&gt; e tem a classe e o valor é "tag".
+
+101
+00:06:26,957 --> 00:06:31,124
+E podemos também ir e extrair ele pelo meta class.
+
+102
+00:06:32,300 --> 00:06:36,467
+Então vamos fazer isto, por exemplo, então podemor ir para o itemprop
+So, let's do this for example, so we can go to the itemprop
+
+103
+00:06:36,843 --> 00:06:41,010
+e então digitar "keywords" e então podemos extrair não o
+
+104
+00:06:41,098 --> 00:06:43,100
+texto, mas o conteúdo.
+
+105
+00:06:43,100 --> 00:06:46,033
+Como você pode ver, ele contém nosso dado em um formato
+
+106
+00:06:46,033 --> 00:06:47,814
+mais legível, um pouco mais fácil.
+
+107
+00:06:48,123 --> 00:06:52,290
+Então itemprop, então vamos para o Terminal, então vamos
+
+108
+00:06:54,615 --> 00:06:57,807
+para o itemprop e então o valor vai ser
+
+109
+00:06:57,982 --> 00:07:02,149
+"keyword", então podemos copiar e colar isso.
+
+110
+00:07:02,626 --> 00:07:06,793
+Cole isso aqui e então pressione Enter e, como você verá em
+
+111
+00:07:08,283 --> 00:07:11,931
+um momento, nada vai acontecer e a razão é porque
+
+112
+00:07:11,931 --> 00:07:15,251
+nós estamos selecionando o texto, mas o que queremos fazer é selecionar
+
+113
+00:07:15,251 --> 00:07:18,644
+o conteúdo, como você pode ver aqui.
+
+114
+00:07:18,644 --> 00:07:22,139
+Então digitamos... a sintaxe vai ser um pouco diferente, então digite aqui
+
+115
+00:07:22,472 --> 00:07:26,542
+"@" neste ponto e então content, pressione Enter e, como você
+
+116
+00:07:26,592 --> 00:07:28,817
+pode ver, aqui está nosso dado.
+
+117
+00:07:29,575 --> 00:07:33,742
+Você pode escrever também "class" e então "tag", para fazer isso
+
+118
+00:07:34,929 --> 00:07:39,012
+vamos usar o "extract()", vamos selecionar o "text()",
+
+119
+00:07:42,518 --> 00:07:46,500
+porque nós vamos selecionar, basicamente,
+
+120
+00:07:46,500 --> 00:07:49,316
+os pontos de dados que estou destacando neste momento.
+
+121
+00:07:49,316 --> 00:07:53,483
+E aqui vamos usar o "tag" e, finalmente, isto não vai ser
+
+122
+00:07:53,945 --> 00:07:55,695
+"itemprop", isto vai ser "class".
+
+123
+00:07:55,695 --> 00:07:58,824
+Então como você pode ver, é bem simples e direto,
+
+124
+00:07:58,824 --> 00:08:02,991
+e neste caso, nós temos apenas uma lista das tags e aqui
+
+125
+00:08:03,578 --> 00:08:07,745
+nós temos a string, ou o unicode, da tag, então qualquer um
+
+126
+00:08:07,886 --> 00:08:09,219
+vai dar conta do trabalho.
+
+127
+00:08:10,629 --> 00:08:14,796
+Copie e cole a saída, ou a declaração, do
+
+128
+00:08:15,444 --> 00:08:19,611
+Terminal, cole isso e isso será tudo
+
+129
+00:08:20,573 --> 00:08:22,523
+para este vídeo.
+
+130
+00:08:22,523 --> 00:08:25,846
+Então no próximo vídeo, nós vamos imprimir nossos dados para
+
+131
+00:08:25,846 --> 00:08:30,013
+o Scrapy Shell e vamos começar a iterar sobre as páginas dos
+
+132
+00:08:30,702 --> 00:08:33,740
+resultados e pegar umas cem citações.
+
+133
+00:08:33,740 --> 00:08:34,573
+Vejo você!
+

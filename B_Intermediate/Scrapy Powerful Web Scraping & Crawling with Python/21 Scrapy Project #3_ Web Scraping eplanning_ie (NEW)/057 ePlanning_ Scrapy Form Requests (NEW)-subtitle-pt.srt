@@ -1,0 +1,760 @@
+﻿1
+00:00:00,030 --> 00:00:07,500
+Olá! Então esta vai ser nossa terceira parte do nosso
+vídeo e, atualmente, estamos iterando
+
+2
+00:00:07,500 --> 00:00:13,980
+sobre as URLs das regiões que seguem esse
+nome de domínio. Depois disso, vamos para a
+
+3
+00:00:13,980 --> 00:00:20,580
+listagem Received Applications. E aqui
+nesta terceira parte desta seção,
+
+4
+00:00:20,580 --> 00:00:26,010
+vamos automatizar o preenchimento do
+formulário, o que vai limitar nosso tempo,
+
+5
+00:00:26,010 --> 00:00:32,399
+por exemplo, para 42 dias, e
+apenas usar o Applications Received,
+
+6
+00:00:32,399 --> 00:00:36,899
+e clicar no Search, certo? Vamos ter
+resultados retornados, como você pode ver.
+
+7
+00:00:36,899 --> 00:00:43,890
+Então isso vai ser similar a este aqui. Então para
+fazer isto, temos que usar FormRequests.
+
+8
+00:00:43,890 --> 00:00:51,600
+Então primeiro vamos importar ele, voltar para
+o editor de texto e colocar aqui uma vírgula,
+
+9
+00:00:51,600 --> 00:00:58,949
+e então FormRequest. Podemos copiar esta
+linha, e então voltar para o Terminal
+
+10
+00:00:58,949 --> 00:01:06,780
+e colar isso no Scrapy Shell. Pressione Enter
+e é isso. Então a primeira coisa
+
+11
+00:01:06,780 --> 00:01:13,080
+que precisamos fazer é, claro,
+sempre, Inpect nos elementos.
+
+12
+00:01:13,080 --> 00:01:18,420
+Então isto é chamado de form. Esta página tem dois forms,
+como você verá em um momento. Então se formos para o Inspect,
+
+13
+00:01:18,420 --> 00:01:26,369
+e então ctrl + f, e então
+digitar "form" aqui, vamos ver,
+
+14
+00:01:26,369 --> 00:01:30,990
+há 20 instâncias. Mas como você pode ver,
+esta é o primeiro form que eu estava falando sobre,
+
+15
+00:01:30,990 --> 00:01:37,049
+e ele é para o Search Results.
+E então o segundo,
+
+16
+00:01:37,049 --> 00:01:42,930
+como você verá em um momento. Então
+estas são todas classes ou comentários,
+
+17
+00:01:42,930 --> 00:01:48,270
+e este é o segundo. Então se dermos um zoom nisso,
+você verá que, como estou destacando agora,
+
+18
+00:01:48,270 --> 00:01:52,979
+este é o form que estamos procurando.
+Então como você pode ver,
+
+19
+00:01:52,979 --> 00:02:00,450
+ele contém o method como post, então se
+carregarmos mais dados aqui, você terá o input,
+
+20
+00:02:00,450 --> 00:02:09,060
+os IDs, os headers, field sets, etc. Então
+um monte de dados. Então se voltarmos para o Terminal,
+
+21
+00:02:09,060 --> 00:02:14,730
+e a primeira coisa que precisamos
+fazer é... vamos fazer isto no
+
+22
+00:02:14,730 --> 00:02:21,930
+editor de texto porque provavelmente vai ser
+mais fácil. Então depois de chegarmos neste tipo de página.
+
+23
+00:02:21,930 --> 00:02:29,010
+Então este tipo de página vai ser o
+response no parse_form.
+
+24
+00:02:29,010 --> 00:02:36,200
+Então precisamos apenas fornecer o form request,
+então "yield FormRequest.from_response".
+
+25
+00:02:36,200 --> 00:02:41,340
+Então este from_response vai
+ler deste response
+
+26
+00:02:41,340 --> 00:02:48,840
+este tipo de página. O motivo é porque
+queremos pegar o response para que possamos
+
+27
+00:02:48,840 --> 00:02:54,420
+ter o HTML e valores, como este, por exemplo.
+E qualquer outro, na verdade,
+
+28
+00:02:54,420 --> 00:03:01,530
+como Time Limit e diferentes botões.
+Volte para o editor de texto, e
+
+29
+00:03:01,530 --> 00:03:06,690
+então o primeiro parâmetro, porque
+usamos o from_response,
+
+30
+00:03:06,690 --> 00:03:15,420
+vai ser o response, claro. E então, vírgula,
+e então o segundo deles vai ser o
+
+31
+00:03:15,420 --> 00:03:22,140
+formdata={} e então nas chaves
+vamos aqui, basicamente,
+
+32
+00:03:22,140 --> 00:03:27,239
+colocar nossos dados nas chaves e valores do dicionário.
+Agora deixe-me mostrar como isto
+
+33
+00:03:27,239 --> 00:03:34,170
+funciona no lado do site. Então na maioria
+do tempo, e quando há algum tipo
+
+34
+00:03:34,170 --> 00:03:40,620
+de páginas geradas por JavaScript,
+você pode apenas ir para a aba Network,
+
+35
+00:03:40,620 --> 00:03:45,600
+então aqui para esta aba, especificamente, ou
+vamos apenas para o All porque
+
+36
+00:03:45,600 --> 00:03:51,690
+às vezes haverá dados, em diferentes abas.
+Então vamos dizer que o Time Limit,
+
+37
+00:03:51,690 --> 00:03:57,030
+vai difinido como "42 Days" e apenas
+Applications Received. Então vamos deixar
+
+38
+00:03:57,030 --> 00:04:04,230
+isto aberto, e então vamos clicar no
+Search aqui. E então apenas depois de
+
+39
+00:04:04,230 --> 00:04:08,790
+um segundo ou dois, depois que o carregamento da página
+foi iniciado, então você pode clicar aqui no
+
+40
+00:04:08,790 --> 00:04:15,449
+Record or Stop Recording network log.
+Isto é feito, basicamente,
+
+41
+00:04:15,449 --> 00:04:19,449
+para isolar todos os... na verdade,
+para isolar os primeiros requests.
+
+42
+00:04:19,449 --> 00:04:22,300
+Então o primeiro request aqui vai
+ser o da direita.
+
+43
+00:04:22,300 --> 00:04:27,639
+Não ligamos muito para qualquer imagem ou
+coisas como essa, como você pode
+
+44
+00:04:27,639 --> 00:04:33,069
+ver do response, e qualquer outro
+dado, como Javscript, CSS,
+
+45
+00:04:33,069 --> 00:04:39,129
+Images, Media, Fonts, Documents,
+como você pode ver, WebSockets, etc.
+
+46
+00:04:39,129 --> 00:04:45,909
+Então apenas queremos usar este aqui. Então,
+novamente, isto é bem direto.
+
+47
+00:04:45,909 --> 00:04:51,069
+E isso sempre é feito quando se trata de
+extrair este tipo de página. E, também, o jeito que
+
+48
+00:04:51,069 --> 00:04:55,270
+você sabe que este é um
+Javascript é gerado da URL,
+
+49
+00:04:55,270 --> 00:04:59,800
+como você verá em um momento. Então vá para a
+aba Network, então clique Search depois que estiver pronto,
+
+50
+00:04:59,800 --> 00:05:05,770
+e defina todos os seus argumentos. E então
+apenas clique aqui, Stop. Como você pode ver,
+
+51
+00:05:05,770 --> 00:05:10,750
+nós conseguimos aqui o Search Results. E se
+formos para a segunda página, você verá que
+
+52
+00:05:10,750 --> 00:05:16,389
+recebemos o anexo "/2". Então iterando
+sobre as páginas vai ser bem direto.
+
+53
+00:05:16,389 --> 00:05:21,940
+Ok, então vamos primeiro para
+a URL que precisamos,
+
+54
+00:05:21,940 --> 00:05:27,940
+que vai ser esta aqui.
+Então aqui temos o Headers, Preview,
+
+55
+00:05:27,940 --> 00:05:35,380
+Response, Cookies, Timing. Então cinco
+abas diferentes. O que estamos interessados
+
+56
+00:05:35,380 --> 00:05:41,740
+é apenas no Headers e apenas o Response.
+E agora para o Headers,
+
+57
+00:05:41,740 --> 00:05:47,440
+aqui conseguimos o Request Method POST. Então á assim
+que eu sei que precisamos usar o Form Request, ok?
+
+58
+00:05:47,440 --> 00:05:54,190
+Então se Request Methods, a propósito,
+for GET ou POST.
+
+59
+00:05:54,190 --> 00:05:58,300
+Neste caso, porque ele é POST ele vai ter o
+Form Request. Se ele fosse GET,
+
+60
+00:05:58,300 --> 00:06:03,639
+então conseguiríamos ele com apenas o método
+yield request. Conseguimos nosso Status Code
+
+61
+00:06:03,639 --> 00:06:10,990
+e um punhado de outros, na verdade, pontos de dados.
+Então esta é a URL que vai ser
+
+62
+00:06:10,990 --> 00:06:17,319
+a mesma que aqui nesta função,
+então vai ser muito bom.
+
+63
+00:06:17,319 --> 00:06:22,530
+E vamos ver, e então não nos importamos
+com o Response Headers.
+
+64
+00:06:22,530 --> 00:06:28,700
+Como você pode ver aqui, a
+página está carregada com ASP.NET.
+
+65
+00:06:28,700 --> 00:06:34,350
+Request Headers, também não ligamos muito para
+isto. O que nos importa é o Form Data.
+
+66
+00:06:34,350 --> 00:06:39,540
+Então como você pode ver aqui,
+na maioria do tempo, haverá algum tipo
+
+67
+00:06:39,540 --> 00:06:43,440
+de token ou, como você pode ver, um
+RequestVerificarionToken, neste caso.
+
+68
+00:06:43,440 --> 00:06:49,590
+E este é o valor. Então, estes pontos de dados,
+você pode copiar isto
+
+69
+00:06:49,590 --> 00:06:54,660
+e colar isto no editor de texto e definir
+eles como as chaves e valores no formdata.
+
+70
+00:06:54,660 --> 00:07:00,510
+Mas não precisamos fazer tudo isso, na verdade.
+
+71
+00:07:00,510 --> 00:07:06,930
+Então os valores padrões que vão ser
+"7 Days" e "Applications Received",
+
+72
+00:07:06,930 --> 00:07:14,820
+e então também este botão selecionado. E então
+com isto, você não precisa definir, basicamente,
+
+73
+00:07:14,820 --> 00:07:21,810
+nada quando se trata de ter um
+form request. Mas se você quis,
+
+74
+00:07:21,810 --> 00:07:26,820
+por exemplo, mudar o Time Limit de "7 Days" para,
+
+75
+00:07:26,820 --> 00:07:32,610
+por exemplo, "28 Days", então você terá
+que colocar a chave e o valor para o formdata.
+
+76
+00:07:32,610 --> 00:07:38,610
+Então deixe-me mostrar como isto é
+feito realmente. Então como vemos aqui,
+
+77
+00:07:38,610 --> 00:07:45,660
+temos o Time Limit para 42. Então isto corresponde
+a selecionar isto, certo?
+
+78
+00:07:45,660 --> 00:07:53,970
+Deixe-me mostrar se você selecionar aqui
+35 Days. Então vamos para o Inspect,
+
+79
+00:07:53,970 --> 00:08:01,610
+vamos para a aba Network, e então clique
+Search. Pare ele e vá para o Search Results.
+
+80
+00:08:01,610 --> 00:08:11,550
+Desculpe. Faça isto e, como você pode ver aqui,
+o Time Limit é 35. O resto temos 42.
+
+81
+00:08:11,550 --> 00:08:18,450
+Então você chegou no ponto. Também,
+esta lista de check box, e então eles
+
+82
+00:08:18,450 --> 00:08:24,810
+usam list slicing para ter zero, então ID,
+como você pode ver. Então isto tudo pode ser mudado.
+
+83
+00:08:24,810 --> 00:08:30,380
+Então isto também pode ser mudado para False, e
+então isso pode ser mudado para True.
+
+84
+00:08:30,380 --> 00:08:38,620
+App status provavelmente pode ser 1, 2, etc.
+Então a única coisa que precisaríamos
+
+85
+00:08:38,620 --> 00:08:45,920
+mudar, neste caso, é se quiséssemos mudar
+ele para... do padrão de
+
+86
+00:08:45,920 --> 00:08:53,360
+"7 Days" para "42 Days" vai ser este.
+Então se copiarmos isto, e então voltar
+
+87
+00:08:53,360 --> 00:09:02,560
+para o editor de texto, e definir ele como uma chave,
+e então como um valor. Podemos definir 42, certo?
+
+88
+00:09:02,560 --> 00:09:10,580
+Então defina isto como uma string, e isso deve ser tudo
+para o formdata. Você pode também copiar e colar isto,
+
+89
+00:09:10,580 --> 00:09:15,260
+mas provavelmente o token de verificação
+vai ser mudado. E porque nós
+
+90
+00:09:15,260 --> 00:09:20,270
+lemos do response, vamos gerar nossos tokens
+sem nenhum problema.
+
+91
+00:09:20,270 --> 00:09:27,800
+Então a segunda coisa que precisamos
+precisamos fazer é colocar uma vírgula aqui,
+
+92
+00:09:27,800 --> 00:09:34,220
+já que estamos feitos com os formdata.
+Então podemos definir dont_filter para True.
+
+93
+00:09:34,220 --> 00:09:39,860
+E agora o que isto vai fazer é
+não filtrar a mesma URL. Porque, novamente,
+
+94
+00:09:39,860 --> 00:09:44,780
+isto é feito com o ASP.NET. Na maioria
+das vezes, este tipo de página não muda
+
+95
+00:09:44,780 --> 00:09:51,860
+suas URLs, como você pode ver aqui. Vamos ver.
+Então já que vamos estar nesta página,
+
+96
+00:09:51,860 --> 00:09:58,610
+vamos para a próxima função, que vai
+também ler do response.
+
+97
+00:09:58,610 --> 00:10:04,670
+E, claro, response vai ter
+exatamente o mesmo HTML,
+
+98
+00:10:04,670 --> 00:10:09,590
+e também isso inclui as URL. Então o Scrapy por
+padrão vai filtrar as requests duplicadas.
+
+99
+00:10:09,590 --> 00:10:14,030
+Então às vezes isto é um coisa
+boa. Bem, na maioria dos casos,
+
+100
+00:10:14,030 --> 00:10:19,730
+isto é uma coisa boa, mas às vezes não é. Então você
+pode definir o dont_filter como True.
+
+101
+00:10:19,730 --> 00:10:24,710
+Você pode fazer a mesma coisa.
+Então se copiarmos isto e colar,
+
+102
+00:10:24,710 --> 00:10:31,160
+você pde fazer isso aqui também nesta função. Você
+pode fazer isso em qualquer método Request, mas já que
+
+103
+00:10:31,160 --> 00:10:35,190
+não vamos processas,
+neste tipo de caso,
+
+104
+00:10:35,190 --> 00:10:39,329
+URLs duplicadas, e não precisamos delas,
+na verdade, estamos prontos para continuar.
+
+105
+00:10:39,329 --> 00:10:45,500
+E não precisamos definir isto. Então
+dont_filter é definido para True, e então definimos o
+
+106
+00:10:45,500 --> 00:10:53,939
+formxpath é igual ao, aspas simples e então parênteses,
+e então podemos digitar para encontrar todos os forms,
+
+107
+00:10:53,939 --> 00:11:01,350
+e então vamos usar nosso segundo form.
+Então coloque a vírgula e então
+
+108
+00:11:01,350 --> 00:11:09,079
+finalmente defina o callback para "self", "parse_",
+por exemplo, "pages". Então vamos definir ele,
+
+109
+00:11:11,420 --> 00:11:18,750
+"(self, response)" e, por enquanto, vamos usar o pass.
+Vamos primeiro descobrir se isto
+
+110
+00:11:18,750 --> 00:11:24,569
+vai funcionar. Eu fiz isto no Sublime Text
+porque é mais fácil de ver ele
+
+111
+00:11:24,569 --> 00:11:30,540
+do que fazer isto no Terminal. Mas
+se isto estiver funcionando, então vamos fazer isto
+
+112
+00:11:30,540 --> 00:11:34,709
+no Terminal, que é a forma preferida de
+testar os form requests.
+
+113
+00:11:34,709 --> 00:11:41,449
+E este de tipo de páginas ou descobrir todos
+os form data que são requeridos
+
+114
+00:11:41,449 --> 00:11:48,269
+é muito demorado, especialmente na sua primeira vez.
+Então eu conheço sua dor, realmente.
+
+115
+00:11:48,269 --> 00:11:56,420
+Então vamos salvar isso, voltar para o
+Terminal e executar o script.
+
+116
+00:11:56,660 --> 00:12:02,550
+Vamos ver, espero que isto funcione. E
+porque definimos o dont_filter para True,
+
+117
+00:12:02,550 --> 00:12:10,439
+ele não vai filtrar requests duplicadas,
+o que parece que ele está fazendo agora.
+
+118
+00:12:10,439 --> 00:12:14,670
+Então, eu acredito... ok, então aqui, como você pode ver,
+
+119
+00:12:14,670 --> 00:12:20,040
+a maioria das vezes recebemos o GET, mas aqui nós
+recebemos o POST. Então este é nosso post request
+
+120
+00:12:20,040 --> 00:12:25,680
+do FormRequest aqui. E como ele
+é 200, parece que tudo
+
+121
+00:12:25,680 --> 00:12:32,550
+está funcionando bem. Agora isto
+não vai ser verdadeiro na maioria dos casos.
+
+122
+00:12:32,550 --> 00:12:37,439
+Porque apesar de às vezes eles
+mostrarem post request e 200,
+
+123
+00:12:37,439 --> 00:12:41,020
+então você não vai carregar os dados certos.
+Agora eu sei que isto é realmente confuso,
+
+124
+00:12:41,020 --> 00:12:46,240
+mas quando se trata de extrair
+páginas Javascript,
+
+125
+00:12:46,240 --> 00:12:51,310
+isso fica meio confuso. Então a mesma coisa
+acontece quando você tenta se logar.
+
+126
+00:12:51,310 --> 00:12:57,240
+Há alguns tipo de redirecionamentos e coisas como essa,
+que às vezes o Scrapy não oferece,
+
+127
+00:12:57,240 --> 00:13:02,520
+e então isto é ou pode ser muito demorado.
+
+128
+00:13:02,520 --> 00:13:08,050
+Agora, como tudo está, parece que tudo
+está funcionando bem, vamos voltar para o shell.
+
+129
+00:13:08,050 --> 00:13:14,860
+E então nós importamos o
+FormRequest, o que é bom.
+
+130
+00:13:14,860 --> 00:13:25,180
+E então vamos voltar para o Sublime Text, e nomear isto,
+por exemplo, como form. Então form é igual a isto.
+
+131
+00:13:25,180 --> 00:13:33,340
+Podemos copiar isto ou recortar isso.
+Isto na verdade não vai funcionar.
+
+132
+00:13:33,340 --> 00:13:37,720
+Então dont_filter True não é necessário. E também o callback
+não é necessário porque estamos usando isto no shell.
+
+133
+00:13:37,720 --> 00:13:43,620
+Ok, então finalmente podemos recortar isso
+e colar o mesmo no Terminal.
+
+134
+00:13:43,620 --> 00:13:51,040
+Então podemos chamar a função mágica
+%paste. Pressionar Enter, e no form element found
+
+135
+00:13:51,040 --> 00:14:00,160
+with the... Eu vou ver isto com a url. Isto
+provavelmente não é a URL, então vamos tentar
+
+136
+00:14:00,160 --> 00:14:10,240
+fazer isso com o fetch e primeiro buscar a URL
+correta. Vamos também recortar isso novamente.
+
+137
+00:14:10,240 --> 00:14:17,710
+Ok, então aqui colamos isso, e vamos ver.
+Então parece que o form deveria funcionar.
+
+138
+00:14:17,710 --> 00:14:24,400
+Ok. E então podemos buscar nosso form.
+Para fazer isso, claro, da mesma forma que
+
+139
+00:14:24,400 --> 00:14:31,750
+com páginas carregando, páginas normais, você pode
+chamar o fetch e então o form. Ok. E então,
+
+140
+00:14:31,750 --> 00:14:36,910
+vamos ver, response.body. Então ele
+parece que foi rastreado com o 200
+
+141
+00:14:36,910 --> 00:14:42,540
+como uma resposta bem sucedida. Ok.
+Então o dado está, como você vê, aqui.
+
+142
+00:14:42,540 --> 00:14:50,020
+Ás vezes, você terá o response.body como
+uma lista vazia de Unicode.
+
+143
+00:14:50,020 --> 00:14:54,910
+Então nesse caso, você confundiu algo,
+infelizmente. Podemos também chamar o "view(response)",
+
+144
+00:14:54,910 --> 00:15:01,830
+pressionar Enter e então isto vai,
+claro, no seu editor favorito,
+
+145
+00:15:01,830 --> 00:15:08,140
+pegar ou carregar os dados, como você pode ver
+no arquivo TMP. Então tudo está funcionando bem,
+
+146
+00:15:08,140 --> 00:15:14,440
+e chegamos no arquivo Results,
+o que é ótimo.
+
+147
+00:15:14,440 --> 00:15:19,150
+Então isto não foi tão difícil.
+Neste curso, vamos ter nas próximas
+
+148
+00:15:19,150 --> 00:15:25,570
+seções, um pouco mais vídeos onde
+cobrimos form requests. E há um monte
+
+149
+00:15:25,570 --> 00:15:29,590
+de variações quando se trata de form
+requests. Então eu sei que isso pode ser difícil,
+
+150
+00:15:29,590 --> 00:15:34,330
+e vai ser difícil, e trabalhoso.
+Mas, infelizmente, quando se trata, novamente,
+
+151
+00:15:34,330 --> 00:15:39,460
+de extrair páginas de JavaScript,
+vai ser um pouco mais complicado
+
+152
+00:15:39,460 --> 00:15:45,160
+que extrair páginas normais.
+Então isso é tudo para este vídeo,
+
+153
+00:15:45,160 --> 00:15:48,360
+e vejo você no próximo.
+

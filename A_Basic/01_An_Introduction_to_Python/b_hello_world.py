@@ -26,5 +26,5 @@ print 'type(a)=', type(a)
 a = 'False'
 print 'type(a)=', type(a)
 
-a = '12'
+a = "12"
 print 'type(a)=', type(a)

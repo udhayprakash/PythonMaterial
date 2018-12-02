@@ -1,0 +1,595 @@
+WEBVTT
+
+0
+00:01.300 --> 00:07.690
+So today we are going to learn how to scrape tables from the site the site that we are going to be using
+
+1
+00:07.820 --> 00:09.130
+is this one.
+
+2
+00:09.400 --> 00:18.040
+And this is sort of universal way or path with tips and tricks on how to successfully or more efficiently
+
+3
+00:18.130 --> 00:29.010
+and easy scrape or parse the table data or table rows and then really the table data itself, or a.k. the values.
+
+4
+00:29.080 --> 00:30.190
+So let's begin!
+
+5
+00:30.340 --> 00:37.660
+So we go to the inspection tool to figure out how Firstly this table on the site is.
+
+6
+00:37.690 --> 00:40.480
+really presented on this page.
+
+7
+00:40.510 --> 00:49.870
+So here is the iframe as you can see HTML and all and most of the time really will encounter table
+
+8
+00:50.050 --> 00:55.790
+notes and then in those table notes you will encounter table rows in the first table row.
+
+9
+00:55.960 --> 01:01.870
+Most of the time of course will be the table header and then in that table header we will get the table
+
+10
+01:01.870 --> 01:03.490
+data points.
+
+11
+01:03.490 --> 01:07.280
+So this will be the first table data, and this will be the second table data.
+
+12
+01:07.300 --> 01:13.070
+The third one and fourth one, etc.
+So this side uses the divs and classes.
+
+13
+01:13.090 --> 01:13.480
+Why?
+
+14
+01:13.480 --> 01:22.060
+Because probably because it's really loaded in a matter of request and that request will be in the source.
+
+15
+01:22.090 --> 01:29.590
+So if we try to parse this table from here from this specific yourself with Scrapy it will last forever
+
+16
+01:29.680 --> 01:31.280
+because it's going to be long.
+
+17
+01:31.300 --> 01:43.420
+So it's actually trying to do it to compete and go to the Terminal and then type in the shell and let's
+
+18
+01:43.510 --> 01:52.180
+open it right away or see how exactly Scrapy sees it so we taken your response and it is going to be
+
+19
+01:52.180 --> 01:56.780
+loaded right away for fear of if it's going to be over.
+
+20
+01:56.830 --> 01:58.950
+Of course you just need to.
+
+21
+01:59.170 --> 02:03.580
+Let's use the most easier solution.
+
+22
+02:03.580 --> 02:09.890
+So I was thinking about writing some selector to select maybe just the team names or something like that.
+
+23
+02:09.940 --> 02:17.760
+But you can go more easier by just typing in response.body, hit Enter, and then go to the site.
+
+24
+02:17.880 --> 02:22.600
+Let's see for example copy and paste "Golden State".
+
+25
+02:22.820 --> 02:30.580
+And then Find in your prompt and it's going to be located I'll see "Houston Rockets vs.
+
+26
+02:30.590 --> 02:30.950
+Golden State".
+
+27
+02:30.950 --> 02:33.200
+So this is not what we are looking for.
+
+28
+02:33.380 --> 02:38.020
+And so trying to click once again fine you will see that they will not be caught.
+
+29
+02:38.060 --> 02:44.240
+So this is the most easier way to figure out know the data is going to be in the Scrapy response.
+
+30
+02:44.240 --> 02:52.100
+If it's not then there are some specific route to the server that Scrapy will not see it really.
+
+31
+02:52.610 --> 02:55.120
+And that is why that's great.
+
+32
+02:55.400 --> 03:00.960
+OK so let's copy and paste this URL to the table itself and open it.
+
+33
+03:02.520 --> 03:05.230
+And you'll see the.
+
+34
+03:05.340 --> 03:09.030
+It's going to be loaded without the rest of the page.
+
+35
+03:09.030 --> 03:18.460
+So you can go to the Terminal and then "fetch" this specific URL, hit Enter, and then once again type in response.body
+
+36
+03:18.470 --> 03:23.790
+hit Enter and then navigate to "Golden State", you can see here
+
+37
+03:23.850 --> 03:33.480
+that is going to be loaded in the -as you can see here- class with the value "team" which is perfect so everything is fine.
+
+38
+03:33.980 --> 03:41.870
+So once again as previously discussed try to show you sort of a universal way of how to parse
+
+39
+03:41.880 --> 03:48.260
+the tables if you can for stripping tables and you don't know exactly.
+
+40
+03:48.380 --> 03:57.380
+You always have our assistance in the Q&A section so make sure you get over there and ask any questions
+
+41
+03:57.410 --> 04:00.160
+or really any concerns that you have.
+
+42
+04:00.210 --> 04:03.560
+And I'll try to get back to you as soon as possible.
+
+43
+04:03.650 --> 04:13.220
+So the idea once again is to make this as efficient as possible to do that when you encounter scripting
+
+44
+04:13.220 --> 04:15.130
+or famous themselves.
+
+45
+04:15.260 --> 04:26.360
+Always try to isolate us the main why we would like to do that is to further isolate the table data
+
+46
+04:26.440 --> 04:29.680
+or generally data points that we like straight.
+
+47
+04:29.720 --> 04:37.800
+So whenever we have maybe some conflict sites such for example go to the page on the first page.
+
+48
+04:37.810 --> 04:39.420
+So for example this one.
+
+49
+04:39.470 --> 04:47.780
+So if you maybe like to just grab the first let's say first call from the tables and then if you parse
+
+50
+04:47.780 --> 04:57.940
+this page as it is and it works then it also selects this or really this year table data themselves.
+
+51
+04:57.950 --> 05:01.180
+And of course you wouldn't really want to do that.
+
+52
+05:01.190 --> 05:10.520
+So the idea here that I'm trying to get at is that whenever you encounter more complex or really larger
+
+53
+05:10.520 --> 05:19.130
+sites or pages than sell make sure to isolate the page as much as possible really to make it more efficient
+
+54
+05:20.000 --> 05:21.290
+and cleaner also.
+
+55
+05:21.500 --> 05:30.350
+So I thought let's go to inspect and see how exactly we can get our table rose isolated.
+
+56
+05:30.720 --> 05:35.160
+So we have here in class with the sites and then in it.
+
+57
+05:35.190 --> 05:39.950
+But there is as you can see is iterating over them.
+
+58
+05:39.960 --> 05:43.440
+They will select each row which is a good thing.
+
+59
+05:43.440 --> 05:51.690
+And then we have the class and here the first one side side-over, side-fav, and then the second one side side-under.
+
+60
+05:51.780 --> 05:52.670
+...
+
+61
+05:52.680 --> 05:59.940
+So it seems like the only thing that is going to be changed to year for the first one and then every
+
+62
+05:59.940 --> 06:04.410
+other one is going to be this year over again either.
+
+63
+06:04.470 --> 06:06.250
+So we have a solution for that.
+
+64
+06:06.290 --> 06:13.450
+All right sort of more complex selector or selector that will fetch two values as a walk.
+
+65
+06:13.500 --> 06:15.470
+So let me show you how to do that.
+
+66
+06:15.500 --> 06:24.330
+You can go to our text editor to make it more cleaner since here we have Python syntax highlighting and
+
+67
+06:24.340 --> 06:29.270
+let's copy and paste this into our Terminal.
+
+68
+06:29.300 --> 06:31.770
+Of course the selector itself is going to be fairly straightforward.
+
+69
+06:31.770 --> 06:43.950
+So you're right we talk about at first and then we select every class and then we can pretty much just copy and paste this value
+
+70
+06:44.200 --> 06:55.450
+and if we copy this and then paste it into our Terminal, hit Enter, you will see only one selector, which is good indeed.
+
+71
+06:55.870 --> 07:02.410
+Then we if navigate back to the text editor, really the syntax it's going to be just one character
+
+72
+07:02.410 --> 07:09.820
+or writing two or really few or doesn't really expand in this case, the selector and is going to be this
+
+73
+07:09.820 --> 07:10.780
+character.
+
+74
+07:10.780 --> 07:16.890
+So if we copy and paste this here this will work.
+
+75
+07:16.900 --> 07:23.640
+So let me show you how or why it's going to be working.
+
+76
+07:23.760 --> 07:30.740
+It's going to be working because we just put this sort of separator from the first one and then the
+
+77
+07:30.750 --> 07:33.450
+second selector as teacher.
+
+78
+07:33.480 --> 07:38.990
+So it's all going to be selected in the first instance watching and.
+
+79
+07:39.130 --> 07:46.640
+We would like to also grab the other eight points or select first in this case to see where exactly
+
+80
+07:46.690 --> 07:49.500
+when you go into your.
+
+81
+07:49.950 --> 07:57.560
+And so it's going every other day lunch so if we copy and paste it here we can see it tonight and so
+
+82
+07:57.560 --> 08:02.620
+on and all should and then 30 instances we did everything right.
+
+83
+08:03.490 --> 08:15.310
+OK so we need to go and paste this new value to the row itself so you can use navigate back to the terminal
+
+84
+08:15.430 --> 08:16.660
+and paste it in here.
+
+85
+08:16.690 --> 08:19.900
+We should get a bunch of different selectors.
+
+86
+08:20.500 --> 08:22.540
+So everything should be working.
+
+87
+08:22.870 --> 08:26.290
+And let's call this verbal main roles.
+
+88
+08:27.370 --> 08:29.860
+And then just to verify that everything's working.
+
+89
+08:29.900 --> 08:31.980
+Should get in the blanks.
+
+90
+08:32.050 --> 08:35.120
+We should get the mail you turned perfect.
+
+91
+08:35.140 --> 08:37.310
+So also this works.
+
+92
+08:37.330 --> 08:42.940
+So this again is just my way of thinking or really my workflow.
+
+93
+08:42.970 --> 08:50.920
+Then the next step in my thinking is to further isolate neuros just like you for example roll and then
+
+94
+08:51.130 --> 08:52.890
+you go to your office.
+
+95
+08:53.140 --> 08:57.940
+And then just selecting the first instance or not right index.
+
+96
+08:58.060 --> 09:06.870
+And then we call in Roths cracked open close branches and then pretty much we will write to our selectors
+
+97
+09:06.880 --> 09:08.060
+from this role.
+
+98
+09:10.940 --> 09:19.400
+So here we get the output or really ational lot south and you can see the class goals that.
+
+99
+09:19.470 --> 09:27.940
+So if you like to extract the names or the first Calo from the table we need to type in row not that
+
+100
+09:28.360 --> 09:37.140
+we want to use respons that's bad because we are in our custom written or developed really selector
+
+101
+09:38.180 --> 09:39.800
+switch here.
+
+102
+09:39.870 --> 09:47.580
+If we open this and close the parentheses then typing in the Singler about votes.
+
+103
+09:48.010 --> 09:59.460
+If we died or if we exclude the dot and just typing to select every class we see with the team as in
+
+104
+09:59.490 --> 10:02.620
+I will select everything.
+
+105
+10:02.740 --> 10:06.660
+So what would like to do is just select the first one.
+
+106
+10:06.910 --> 10:13.870
+So I believe this was previously discussed but just make sure that it's recent is on the same page.
+
+107
+10:13.870 --> 10:22.460
+You need to also include that always when writing from the Custom Slipper's type.
+
+108
+10:22.710 --> 10:23.680
+Now we do that.
+
+109
+10:23.680 --> 10:27.280
+You can see the Golden State will be selected.
+
+110
+10:27.880 --> 10:30.700
+And of course to select the text itself.
+
+111
+10:30.700 --> 10:37.070
+You just need to type in text and then extracts and you get your data.
+
+112
+10:37.300 --> 10:43.960
+So for selecting every other data point here you can write just another sample.
+
+113
+10:44.040 --> 10:54.100
+First we go to the inspect and then see your class with the line book so you go quizzes and then let's
+
+114
+10:54.100 --> 11:01.450
+go first to the Sublime Text and then type in course response.xpath or sorry row.xpath
+
+115
+11:02.040 --> 11:13.240
+again always include a dot and then we need to select every class with the "line book" in it.
+
+116
+11:13.450 --> 11:20.970
+And you can call this and then go to the Terminal and paste it in here.
+
+117
+11:21.220 --> 11:24.960
+Time for an S Let's see what else we need.
+
+118
+11:25.030 --> 11:31.090
+So we need to further isolate this so we need to go into learning books then.
+
+119
+11:31.200 --> 11:42.150
+And then finally the value itself which is going to be located in spec so this should be fairly straightforward.
+
+120
+11:42.240 --> 11:49.610
+Let's see if you go to atec and then strapper you Tanter and see here our data.
+
+121
+11:49.980 --> 11:54.470
+It seems like the last one is not going to be in slogans.
+
+122
+11:54.720 --> 12:02.860
+So I see that is the case of it so it seems like the last value as you can see is going to be
+
+123
+12:02.870 --> 12:03.350
+-240
+
+124
+12:03.360 --> 12:09.900
+However for me which is what you did here but the last value is going to be included.
+
+125
+12:10.520 --> 12:16.420
+So what we need to do here is first inspect the elements and see what's up.
+
+126
+12:17.300 --> 12:24.410
+And as you can see here in the "line book" we need to go into the a tag and then we get our data here.
+
+127
+12:24.740 --> 12:31.320
+So we can't or we really need to go into just the tags and then span as previously.
+
+128
+12:31.820 --> 12:41.960
+So what we need to do here is simply go into our tax shelter open this value as it is and then type
+
+129
+12:41.960 --> 12:49.130
+in force sort of character for writing two or more different selectors and that basically means year
+
+130
+12:50.090 --> 12:54.940
+and so the go to the terminal.
+
+131
+12:55.280 --> 12:58.300
+We actually need to compare this.
+
+132
+12:58.400 --> 13:07.440
+This is going to be easier to copy and paste.
+Let's go to the text editor where we need to copy this.
+
+133
+13:07.450 --> 13:14.030
+And so this should or is going to be going into a tag and span and then text.
+
+134
+13:14.350 --> 13:22.600
+So if we paste it here right now another time and then exclude the a tag or sorry the span tag by deleting
+
+135
+13:22.600 --> 13:26.590
+span element and finally copy and paste our data...
+
+136
+13:26.620 --> 13:30.630
+we should be good to go and we should also select this value.
+
+137
+13:30.940 --> 13:32.800
+So let's see this is going to work.
+
+138
+13:32.890 --> 13:39.650
+So we can hear the temper and that's what we are missing here.
+
+139
+13:39.670 --> 13:48.420
+Of course the abstract Tanter and truancy are sort of empty value appearing.
+
+140
+13:48.430 --> 13:51.740
+So everything we know we're right to ask and see.
+
+141
+13:52.150 --> 13:54.010
+So that would be a different issue though.
+
+142
+13:54.010 --> 14:00.550
+Again this is just my way on when or how I approach when I encounter scrapin tales.
+
+143
+14:00.550 --> 14:07.150
+And once again though normally really is going to be a bit more secure than stripping other data points
+
+144
+14:08.260 --> 14:09.520
+from the site itself.
+
+145
+14:09.520 --> 14:14.980
+So once again if you encounter any kind issues or if you have any further questions make sure to head
+
+146
+14:14.980 --> 14:19.810
+over to our Q&amp;A section and then get back to you again as soon as I can.
+
+147
+14:19.810 --> 14:23.180
+Thanks for watching this video and I'll see you in the very next video.

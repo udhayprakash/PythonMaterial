@@ -1,0 +1,113 @@
+WEBVTT
+
+00:00.190 --> 00:04.320
+Hi there! So today we are going to learn
+more about Scrapy close function.
+
+00:04.320 --> 00:06.020
+This function is executed
+
+00:06.030 --> 00:12.780
+once the Spider is completed scraping
+so you can use it to analyze data, send the data file via e-mail
+
+00:12.780 --> 00:20.960
+or just receive SMS message as a status
+if it's completed successfully or not
+
+00:21.110 --> 00:21.530
+or something completely else.
+
+00:21.570 --> 00:28.020
+In this video we will concentrate on just renaming the CSV file
+that is getting generated, the code that
+
+00:28.050 --> 00:34.030
+we are going to use or simply put reuse
+is going to be from our last video.
+
+00:34.230 --> 00:36.650
+So we will need to do two things.
+
+00:36.690 --> 00:42.750
+And the first one is that we need to "import os",
+and then "import glob" module.
+
+00:42.840 --> 00:48.390
+And the second thing that we need to do of course
+is define the function which is going to be called
+
+00:48.390 --> 00:52.670
+"close" and the two arguments 
+that we are going to use is "self"
+
+00:52.680 --> 01:02.400
+and then "reason". Then we need to, for example type in "csv_file"
+which is going to be variable name with the
+
+01:02.790 --> 01:05.330
+string as a file name.
+
+01:05.340 --> 01:12.850
+So for example the filename 
+that we are going to use is going to be "-o".
+
+01:12.950 --> 01:23.160
+And then define "items.csv" for example,
+so CSV file in the end will be "items.csv" as a string
+
+01:23.210 --> 01:24.950
+pretty much.
+
+01:24.950 --> 01:32.820
+So to calculate the latest CSV file that
+is getting generated in the root directory.
+
+01:32.840 --> 01:37.380
+What we need to do is type in "max(glob)"
+
+01:37.610 --> 01:41.270
+And then we can use "iglob" from the glob module.
+
+01:41.510 --> 01:47.100
+And here we can then extract
+or get every .csv file in the path.
+
+01:47.150 --> 01:56.990
+And the key is going to be "os.path.getctime"
+which is again pretty much going to get us the
+
+01:56.990 --> 02:01.110
+items.csv as a string in a csv file.
+
+02:01.130 --> 02:11.000
+And then if we just type in "os.rename(csv_file),"
+with something like for example "foobar.csv".
+
+02:11.000 --> 02:15.070
+And then save it, go to the code and simply Run it.
+
+02:15.110 --> 02:23.080
+And as you will see the items.csv
+or the csv feed is stored in the items.csv.
+
+02:23.110 --> 02:30.940
+But if we go to the root directory you will see that
+the file with the foobar in it as a CSV file is getting
+
+02:30.940 --> 02:31.540
+generated.
+
+02:31.540 --> 02:34.210
+So it seems like everything is working correctly.
+
+02:34.540 --> 02:36.250
+And that'll be it for this video.
+
+02:36.250 --> 02:43.990
+Again this is just a short intro on
+how you can use close function
+and I'll see you...
+
+02:43.990 --> 02:44.700
+in the very next video.

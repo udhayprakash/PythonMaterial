@@ -1,7 +1,9 @@
 #!/usr/bin/python
 """
 Type converters:
-    int(), long(), float(), str()
+    int(), long(), float(), 
+    
+    str(), repr()
 
     bin(), hex(), oct()
 """

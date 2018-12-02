@@ -1,0 +1,274 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:05.100
+Hey there! So this is our last video 
+in the LinkedIn automation project.
+
+00:00:05.100 --> 00:00:11.000
+And, in this video, we will just click 
+the Connect button, which is...
+
+00:00:11.000 --> 00:00:16.100
+let's go back to the LinkedIn profile, 
+which is going to be located here.
+
+00:00:16.100 --> 00:00:24.500
+And then we will type in here the Send now button. 
+So, to do that, we can go to our Terminal.
+
+00:00:24.500 --> 00:00:31.700
+Let's close this, and also go back 
+to our Terminal for the development.
+
+00:00:31.700 --> 00:00:40.600
+So, let's go back to our Inspect element, 
+and we can see here that, let's see,
+
+00:00:40.600 --> 00:00:50.500
+&lt;span class="default-text"&gt;Connect&lt;/span 
+Here, pretty much, what we will do is use
+
+00:00:50.500 --> 00:00:56.500
+click open and closed parentheses with
+the Selenium to click here to Connect.
+
+00:00:56.500 --> 00:01:02.200
+So, to do that, we can locate the 
+Connect text first, which is going to be,
+
+00:01:02.200 --> 00:01:06.700
+as you can see, equal to the Connect. 
+So, pretty much, selector is going to be
+
+00:01:06.700 --> 00:01:12.000
+easy as selecting all of these spans, 
+which have the Connect in them,
+
+00:01:12.000 --> 00:01:16.500
+which is going to be just this one element. 
+So we go back to the Terminal,
+
+00:01:16.500 --> 00:01:26.600
+and then type in driver.find_ element_by_xpath() 
+And then find every span.
+
+00:01:26.600 --> 00:01:31.100
+This is... this has to be done with the Selenium.
+
+00:01:31.100 --> 00:01:34.100
+It cannot be done with the Parsel 
+selector or something like that.
+
+00:01:34.100 --> 00:01:39.500
+Clicking of the data, only scraping data,
+we can do this with the other tools.
+
+00:01:39.500 --> 00:01:47.000
+Okay. So let's go back to our selectors. So select 
+every span, and then in the square brackets, text,
+
+00:01:47.000 --> 00:01:53.500
+or that contains text, which is going 
+to be equal to the Connect. Hit Enter.
+
+00:01:53.500 --> 00:01:58.500
+Let's go back to the Terminal. And here, 
+as you can see, it's going to be located.
+
+00:01:58.500 --> 00:02:07.000
+So we can type in here click() 
+And then here we've got our pop-up menu opened.
+
+00:02:07.000 --> 00:02:16.000
+And if you click now here, Send now...  
+and let's see. So it's located in the button,
+
+00:02:16.000 --> 00:02:23.000
+and it contains Send now. So when it 
+comes to this type of data points,
+
+00:02:23.000 --> 00:02:31.000
+it's going to be a bit trickier to locate it first. 
+So it's probably going to be button-primary-large.ml3
+
+00:02:31.000 --> 00:02:35.660
+So if we copy this, and paste 
+this into our Inspection tool,
+
+00:02:35.660 --> 00:02:42.230
+we can see only one instance. So it 
+seems like this is going to be the button,
+
+00:02:42.230 --> 00:02:49.000
+but I'm afraid that in the future, it will change. 
+So if it does change make sure to update it.
+
+00:02:49.000 --> 00:02:56.000
+Let's go back to the Terminal and type in... 
+let's modify this previous statement
+
+00:02:56.000 --> 00:03:06.300
+to select every class with the specific 
+value that we just previously copied. And perfect.
+
+00:03:06.300 --> 00:03:10.000
+So our invitation to Andrea was sent.
+
+00:03:10.000 --> 00:03:19.000
+Let's go back to the Terminal, and we can 
+copy and paste this into our text editor.
+
+00:03:19.000 --> 00:03:26.000
+So we can paste this in. And, let's see, 
+so this is the latest statement. Sorry.
+
+00:03:26.000 --> 00:03:30.800
+We need to also go back to our 
+Terminal and that first Connect.
+
+00:03:30.800 --> 00:03:43.400
+So copy and, let's see, paste this in here. Let's see 
+if there's something else here that we need to add.
+
+00:03:43.400 --> 00:03:48.600
+So the only thing probably is just the
+sleep function. We can type in here
+
+00:03:48.600 --> 00:03:54.500
+sleep function of, really, three seconds. 
+And also here, after our second click,
+
+00:03:54.500 --> 00:03:59.500
+we can sleep for also three seconds. 
+We forgot to add here the click button.
+
+00:03:59.500 --> 00:04:07.300
+So we can copy this from here, and then paste it in,
+and then save it. So this is not a finished script.
+
+00:04:07.300 --> 00:04:13.300
+What we need to do also here is
+try and except. So we can type in here,
+
+00:04:13.300 --> 00:04:24.960
+try, and then except. I can just type in
+here, pass. So let's also cut this,
+
+00:04:24.960 --> 00:04:32.800
+and paste this here, and prettify it or 
+make it more readable, and save it.
+
+00:04:32.800 --> 00:04:41.300
+So why I'm actually using the try and except. The 
+reason why is because if I run right now the script,
+
+00:04:41.300 --> 00:04:48.500
+it will load the specific person, 
+and it will try to click here Connect.
+
+00:04:48.500 --> 00:04:54.000
+But since there is no Connect button, 
+it will give us no such element exception,
+
+00:04:54.000 --> 00:05:00.000
+if you remember from our previous 
+videos in this specific section.
+
+00:05:00.000 --> 00:05:06.800
+So it will give us that specific exception. 
+So we can then go to the except,
+
+00:05:06.800 --> 00:05:10.800
+and then just pass it, because 
+we are already connecting.
+
+00:05:10.800 --> 00:05:17.000
+Let's see if we saved it. We did. And let's 
+go to the Desktop, and finally run it.
+
+00:05:17.000 --> 00:05:26.500
+We don't need to remove or delete our results_file.csv 
+because it's in the write mode, so [wb].
+
+00:05:26.500 --> 00:05:32.500
+Let's see, sublime text, as you can see here,
+it's going to be in the write mode.
+
+00:05:32.500 --> 00:05:39.000
+If it was in append or something like that,
+then it would be appended, really.
+
+00:05:39.000 --> 00:05:43.000
+But since it's going to be in the write mode,
+it's only going to be removed,
+
+00:05:43.000 --> 00:05:49.300
+and then also auto-generated will 
+be the, also, really, the empty file.
+
+00:05:49.300 --> 00:05:59.200
+So we open the Terminal, go to the Desktop, 
+hit Enter, and then type in python script.py
+
+00:05:59.200 --> 00:06:14.000
+Hit Enter, and let's just wait to see if 
+this is... everything is working fine.
+
+00:06:14.000 --> 00:06:19.700
+I wouldn't... again, this was raised
+previously, but I wouldn't go into
+
+00:06:19.700 --> 00:06:29.100
+too much of scraping free on LinkedIn,
+because it's going to be really restrictive
+
+00:06:29.100 --> 00:06:36.400
+when it comes to scraping. So, let's see. 
+So your, also, account can be easily banned,
+
+00:06:36.400 --> 00:06:45.200
+so make sure to not go again, or, 
+really, to not send too much requests.
+
+00:06:45.200 --> 00:06:50.500
+As you can see here, we just scraped the data points. 
+So we didn't click Connect on this person.
+
+00:06:50.500 --> 00:06:56.119
+We will click Connect. And, right
+now, we'll click here this Send now button,
+
+00:06:56.119 --> 00:06:57.919
+so as you can see, 
+everything is working fine.
+
+00:06:57.919 --> 00:07:07.000
+So that will be it for this video. So to,
+really, to make it more easier if you
+
+00:07:07.000 --> 00:07:11.360
+want to scrape any other data points 
+from LinkedIn, or if some data points
+
+00:07:11.360 --> 00:07:18.300
+are not there or are missing, or are 
+in any way or such form modified,
+
+00:07:18.300 --> 00:07:26.000
+and if you don't know the solution, make sure to go 
+over to our Q and A Section and ask questions there.
+
+00:07:26.000 --> 00:07:31.700
+But, once again, I would highly suggest 
+to not scrape LinkedIn too harshly,
+
+00:07:31.700 --> 00:07:39.000
+because you can get banned. And you, also, 
+can really get restricted access to their site.
+
+00:07:39.000 --> 00:07:44.319
+So that will be it for the 
+LinkedIn automation project.
+

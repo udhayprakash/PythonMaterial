@@ -1,0 +1,130 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00.210 --> 00:00.560
+Olá!
+
+00:00.570 --> 00:05.670
+Então hoje nós vamos aprender mais sobre os argumentos do Scrapy,
+o que eles são e como você pode usar eles no seu
+
+00:05.670 --> 00:06.130
+código.
+
+00:06.190 --> 00:10.270
+Neste exemplo específico vamos usar ele
+para isolar diferentes categorias.
+
+00:10.290 --> 00:16.230
+Então por exemplo, se você quer extrair apenas livros relacionados a Filosofia.
+Neste caso vamos reunir
+
+00:16.690 --> 00:21.400
+11 livros e vamos extrair apenas estas URLs.
+
+00:21.420 --> 00:27.810
+E então deles extrair pontos de dados
+do código que construímos da última vez, o qual
+
+00:27.810 --> 00:28.350
+vamos reutilizar.
+
+00:28.350 --> 00:32.700
+Então o código que precisa ser atualizado é pequeno.
+
+00:32.700 --> 00:38.280
+Nós precisamos remover o start_urls e então
+definir nosso construtor, que vai ser, claro,
+
+00:38.280 --> 00:39.020
+"__init__"
+
+00:39.060 --> 00:44.300
+E então definir dois argumentos. O primeiro vai ser,
+obviamente, o "self" e então o segundo
+
+00:44.390 --> 00:45.670
+vai ser "category".
+
+00:45.690 --> 00:49.870
+Isto pode ser basicamente qualquer coisa,
+mas neste caso vamos usar apenas o category.
+
+00:50.040 --> 00:54.640
+E então digitamos
+
+00:54.690 --> 01:01.590
+"self.start_urls = [category]",
+que vai correlatar ou que vai ser
+
+01:01.610 --> 01:02.190
+esta URL, por exemplo.
+
+01:02.190 --> 01:10.950
+Então vamos salvar o código, voltar para o diretório raiz,
+abrir o Terminal e então digitar "scrapy crawl books".
+
+01:10.950 --> 01:12.680
+Então isto obviamente continua o mesmo.
+
+01:12.690 --> 01:16.840
+E então precisamos adicionar "-a"
+que significa argumentos, obviamente.
+
+01:17.070 --> 01:24.150
+E então definir a categoria, que correlata a
+este argumento no nosso construtor e digitamos aqui,
+
+01:24.450 --> 01:25.710
+aspas simples ou duplas,
+
+01:25.710 --> 01:31.680
+neste caso e então copiamos e colamos esta URL, e aqui o item_scraped_count deve ser 11,
+
+01:31.680 --> 01:33.450
+o que é, o que é perfeito.
+
+01:33.450 --> 01:36.980
+Então vamos tentar outra categoria diferente.
+
+01:37.260 --> 01:41.420
+Vamos dizer, por exemplo, que queremos extrair livros relacionados a História aqui.
+
+01:41.460 --> 01:44.640
+Nós devemos ter 18 resultados.
+
+01:44.650 --> 01:45.220
+Ou 18 livros extraídos.
+
+01:45.210 --> 01:47.650
+Vamos ver.
+
+01:47.850 --> 01:48.340
+"-a"
+
+01:48.390 --> 01:56.780
+e então o "category" que vai ser a URL, perfeito.
+
+01:56.830 --> 01:58.810
+Então isso é tudo para este vídeo.
+
+01:58.810 --> 02:05.050
+Mais uma vez, os argumentos ou os argumentos do Scrapy
+podem ser usados para isolar diferentes categorias.
+
+02:05.050 --> 02:11.230
+Por exemplo, se você tem milhares e milhares de
+livros de História ou se você precisa no futuro,
+
+02:11.230 --> 02:18.940
+por exemplo, rodar ele por livros de Ciência ou coisas como essas
+ou você precisa atribuir alguma regra especial
+
+02:18.940 --> 02:24.370
+ou algo como isso para seu scraper então você deveria
+usar argumentos Scrapy e isso deve ser tudo para este vídeo.
+
+02:24.400 --> 02:29.200
+No próximo vamos falar sobre
+uma função Scrapy chamada close. Falamos em breve!

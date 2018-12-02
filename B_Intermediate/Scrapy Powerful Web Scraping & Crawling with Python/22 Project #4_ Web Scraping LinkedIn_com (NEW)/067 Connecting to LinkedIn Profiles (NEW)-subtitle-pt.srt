@@ -1,0 +1,338 @@
+﻿1
+00:00:00,030 --> 00:00:05,100
+Olá! Então este é nosso último vídeo
+no projeto de automação do LinkedIn.
+
+2
+00:00:05,100 --> 00:00:11,000
+E neste vídeo, vamos apenas clicar no
+botão Connect, que está...
+
+3
+00:00:11,000 --> 00:00:16,100
+vamos voltar para o perfil no LinkedIn,
+que vai estar localizado aqui.
+
+4
+00:00:16,100 --> 00:00:24,500
+E então vamos clicar no botão Send now.
+Para fazer isso, podemos ir para nosso Terminal.
+
+5
+00:00:24,500 --> 00:00:31,700
+Vamos fechar isto, e também voltar
+para nosso Terminal para o desenvolvimento.
+
+6
+00:00:31,700 --> 00:00:40,600
+Então vamos voltar para o Inspect, e
+podemos ver aqui esse, vamos ver,
+
+7
+00:00:40,600 --> 00:00:50,500
+&lt;span class="default-text"&gt;Connect&lt;/span&gt;.
+Aqui, o que vamos fazer é usar o
+
+8
+00:00:50,500 --> 00:00:56,500
+click() com o Selenium para clicar
+aqui no Connect.
+
+9
+00:00:56,500 --> 00:01:02,200
+Então para fazer isso, podemos localizar o
+texto Connect primeiro que vai ser,
+
+10
+00:01:02,200 --> 00:01:06,700
+como você pode ver, igual a Connect.
+Então o seletor vai ser
+
+11
+00:01:06,700 --> 00:01:12,000
+fácil como selecionar todos estes spans
+que tem o Connect,
+
+12
+00:01:12,000 --> 00:01:16,500
+que vai ser apenas este elemento.
+Então voltamos para o Terminal,
+
+13
+00:01:16,500 --> 00:01:26,600
+e então digitamos "driver.find_element_by_xpath()"
+e então encontre todo span.
+
+14
+00:01:26,600 --> 00:01:31,100
+Isto é... isto tem que ser feito com o Selenium.
+
+15
+00:01:31,100 --> 00:01:34,100
+Isso não pode ser feito com o Parsel
+Selector ou algo como isso.
+
+16
+00:01:34,100 --> 00:01:39,500
+Clicar nos dados, apenas pegar os dados,
+podemos fazer isso com as outras ferramentas.
+
+17
+00:01:39,500 --> 00:01:47,000
+Ok. Então vamos voltar para nossos seletores. Então selecione
+todo span, e então nos colchetes, text,
+
+18
+00:01:47,000 --> 00:01:53,500
+ou que contém text vai ser igual
+a Connect, pressione Enter.
+
+19
+00:01:53,500 --> 00:01:58,500
+Vamos voltar para o Terminal. E aqui,
+como você pode ver, ele vai ser localizado.
+
+20
+00:01:58,500 --> 00:02:07,000
+Então podemos digitar aqui "click()" e
+então aqui nós temos o menu pop-up aberto.
+
+21
+00:02:07,000 --> 00:02:16,000
+E se você clicar aqui, Send now...
+e vamos ver. Então ele está localizado no botão,
+
+22
+00:02:16,000 --> 00:02:23,000
+e ele contém o Send now. Então quando
+se trata deste tipo de ponto de dados,
+
+23
+00:02:23,000 --> 00:02:31,000
+vai ser um pouco mais complicado de localizar ele.
+Então provavelmente ele vai ser o button-primary-large.ml3.
+
+24
+00:02:31,000 --> 00:02:35,660
+Então se copiarmos isto, e colarmos
+isto no nosso Inspection tool,
+
+25
+00:02:35,660 --> 00:02:42,230
+podemos ver apenas uma instância. Então
+parece que vai ser este o botão,
+
+26
+00:02:42,230 --> 00:02:49,000
+mas estou com medo de que no futuro, isso vai mudar.
+Então se ele mudar, certifique-se de atualizar ele.
+
+27
+00:02:49,000 --> 00:02:56,000
+Vamos voltar para o Terminal e digitar...
+Vamos modificar esta declaração anterior
+
+28
+00:02:56,000 --> 00:03:06,300
+para selecionar toda classe com o valor
+específico que copiamos previamente. E perfeito.
+
+29
+00:03:06,300 --> 00:03:10,000
+Então nosso convite para Andrea foi enviado.
+
+30
+00:03:10,000 --> 00:03:19,000
+Vamos voltar para o Terminal, e podemos
+copiar e colar isto no nosso editor de texto.
+
+31
+00:03:19,000 --> 00:03:26,000
+Então podemos colar isto. E vamos ver,
+então esta é a última declaração. Desculpa.
+
+32
+00:03:26,000 --> 00:03:30,800
+Precisamos voltar para nosso
+Terminal e primeiro esse Connect.
+
+33
+00:03:30,800 --> 00:03:43,400
+Então copie ele e, vamos ver, cole isto aqui. Vamos ver
+se há mais algo que precisamos adicionar.
+
+34
+00:03:43,400 --> 00:03:48,600
+Então a única coisa provavelmente é
+a função sleep. Podemos digitar aqui
+
+35
+00:03:48,600 --> 00:03:54,500
+"sleep(3)". E também aqui,
+depois do nosso segundo clique,
+
+36
+00:03:54,500 --> 00:03:59,500
+podemos usar sleep por três segundos.
+Esquecemos de adicionar aqui o click button.
+
+37
+00:03:59,500 --> 00:04:07,300
+Então podemos copiar isto aqui e então colar isso,
+e então salvar. Então isto não é um script finalizado.
+
+38
+00:04:07,300 --> 00:04:13,300
+O que precisamos fazer aqui também é
+o try e except. Então podemos digitar aqui
+
+39
+00:04:13,300 --> 00:04:24,960
+"try", e então "except". Eu posso apenas digitar
+aqui "pass". Então vamos recortar isto,
+
+40
+00:04:24,960 --> 00:04:32,800
+a colar isto aqui, e deixar mais bonito ou
+deixar mais legível, e salve ele.
+
+41
+00:04:32,800 --> 00:04:41,300
+Então porque estou usando o try e except? O motivo
+é poque se você rodar agora mesmo o script,
+
+42
+00:04:41,300 --> 00:04:48,500
+ele vai carregar a pessoa específica,
+e vai tentar clicar aqui o Connect.
+
+43
+00:04:48,500 --> 00:04:54,000
+Mas como não há um botão Connect,
+ele vai nos dar um NoSuchElementException,
+
+44
+00:04:54,000 --> 00:05:00,000
+se você se lembra dos nossos vídeos
+anteriores, nesta seção específica.
+
+45
+00:05:00,000 --> 00:05:06,800
+Então ele vai nos dar essa exceção específica.
+Então podemos ir para o except,
+
+46
+00:05:06,800 --> 00:05:10,800
+e então apenas usar "pass" porque
+já estamos conectando.
+
+47
+00:05:10,800 --> 00:05:17,000
+Vamos ver se nós salvamos isso. E vamos
+para o Desktop, e finalmente rodar ele.
+
+48
+00:05:17,000 --> 00:05:26,500
+Não precisamo remover ou deletar nosso results_file.csv
+porque ele está write mode, ou modo de escrita, [wb].
+
+49
+00:05:26,500 --> 00:05:32,500
+Vamos ver, Sublime Text, como você pode ver aqui,
+ele vai estar no write mode.
+
+50
+00:05:32,500 --> 00:05:39,000
+Se ele estivesse em append ou algo assim,
+então ele iria anexar, realmente.
+
+51
+00:05:39,000 --> 00:05:43,000
+Mas como ele vai estar no write mode,
+ele vai apenas ser removido,
+
+52
+00:05:43,000 --> 00:05:49,300
+e então gerado automaticamente vai
+ser também, na verdade, um arquivo vazio.
+
+53
+00:05:49,300 --> 00:05:59,200
+Então abrimos o Terminal, vamos para o Desktop,
+pressionamos Enter e então digitamos "python script.py".
+
+54
+00:05:59,200 --> 00:06:14,000
+Pressione Enter, e vamos apenas esperar
+para ver se tudo está funcionando.
+
+55
+00:06:14,000 --> 00:06:19,700
+Ele não está, novamente, isto levantado
+anteriormente, mas não vou entrar
+
+56
+00:06:19,700 --> 00:06:29,100
+muito na extração livre no LinkedIn,
+porque ele vai ser muito restritivo
+
+57
+00:06:29,100 --> 00:06:36,400
+quando se trata de extração. Então, vamos ver.
+Então sua conta pode ser facilmente banida, também,
+
+58
+00:06:36,400 --> 00:06:45,200
+então certifique-se de não ir, novamente,
+ou de não enviar muitas requisições.
+
+59
+00:06:45,200 --> 00:06:50,500
+Como você pode ver aqui, apenas extraímos os pontos de dados.
+Então não clicamos no botão Connect desta pessoa.
+
+60
+00:06:50,500 --> 00:06:56,119
+Vamos clicar Connect. E agora mesmo,
+vamos clicar neste botão Send now.
+
+61
+00:06:56,119 --> 00:06:57,919
+Então como você pode ver,
+tudo está funcionando bem.
+
+62
+00:06:57,919 --> 00:07:07,000
+Então isso é tudo para este vídeo. Então para
+deixar isso mais fácil, se você quer
+
+63
+00:07:07,000 --> 00:07:11,360
+extrair qualquer outro ponto de dado
+do LinkedIn, ou se algum ponto de dado
+
+64
+00:07:11,360 --> 00:07:18,300
+não está aí ou está faltando, ou
+de alguma forma foi modificado,
+
+65
+00:07:18,300 --> 00:07:26,000
+e se você não sabe a solução, certifique-se de ir
+para nossa seção de perguntas e respostas e faça perguntas lá.
+
+66
+00:07:26,000 --> 00:07:31,700
+Mas, novamente, eu sugiro para não
+extrair o LinkedIn tão duramente,
+
+67
+00:07:31,700 --> 00:07:39,000
+porque você pode ser banido. E você, também,
+pode ter acesso restringido para o site deles.
+
+68
+00:07:39,000 --> 00:07:44,319
+Então isso é tudo para o projeto
+de automação do LinkedIn.
+

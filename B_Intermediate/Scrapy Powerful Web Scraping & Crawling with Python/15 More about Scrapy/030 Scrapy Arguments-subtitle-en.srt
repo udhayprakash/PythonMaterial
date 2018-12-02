@@ -1,0 +1,164 @@
+﻿1
+00:00:00,210 --> 00:00:00,560
+Hi there!
+
+2
+00:00:00,570 --> 00:00:05,670
+So today we are going to learn more about Scrapy arguments,
+what they are and how you can use them in your
+
+3
+00:00:05,670 --> 00:00:06,130
+code.
+
+4
+00:00:06,190 --> 00:00:10,270
+In this specific example we will use it
+to isolate different categories.
+
+5
+00:00:10,290 --> 00:00:16,230
+So for example if you want to scrape just Philosophy related books.
+In this case we will gather
+
+6
+00:00:16,690 --> 00:00:21,400
+11 books and will only scrape pretty much this URLs.
+
+7
+00:00:21,420 --> 00:00:27,810
+And then from then on extract data points
+from the code that we built last time which
+
+8
+00:00:27,810 --> 00:00:28,350
+we are going to reuse.
+
+9
+00:00:28,350 --> 00:00:32,700
+So the code that needs to be updated is pretty short.
+
+10
+00:00:32,700 --> 00:00:38,280
+We need to remove the start_urls and then
+define our constructor which of course is going to be
+
+11
+00:00:38,280 --> 00:00:39,020
+"__init__"
+
+12
+00:00:39,060 --> 00:00:44,300
+And then define two arguments, the first one is going to
+be obviously "self" and then the second one
+
+13
+00:00:44,390 --> 00:00:45,670
+will be "category".
+
+14
+00:00:45,690 --> 00:00:49,870
+This can be pretty much anything
+but in this case let's use just category.
+
+15
+00:00:50,040 --> 00:00:54,640
+And then we type in
+
+16
+00:00:54,690 --> 00:01:01,590
+"self.start_urls = [category]",
+which will correlate or which will be
+
+17
+00:01:01,610 --> 00:01:02,190
+this URL for example.
+
+18
+00:01:02,190 --> 00:01:10,950
+So let's save the code, go back to the root directory,
+open Terminal and then type in "scrapy crawl books".
+
+19
+00:01:10,950 --> 00:01:12,680
+So this obviously stays the same.
+
+20
+00:01:12,690 --> 00:01:16,840
+And then we need to append "-a"
+which stands for arguments obviously.
+
+21
+00:01:17,070 --> 00:01:24,150
+And then define the category, which correlates to
+this argument in our constructor and we type in here
+
+22
+00:01:24,450 --> 00:01:25,710
+single or double quotes
+
+23
+00:01:25,710 --> 00:01:31,680
+in this case and then copy and paste this URL, and here the item_scraped_count should be 11,
+
+24
+00:01:31,680 --> 00:01:33,450
+which it is which is perfect.
+
+25
+00:01:33,450 --> 00:01:36,980
+So let's try one another different category.
+
+26
+00:01:37,260 --> 00:01:41,420
+Let's say for example we want to scrape History related books here.
+
+27
+00:01:41,460 --> 00:01:44,640
+We should get 18 results.
+
+28
+00:01:44,650 --> 00:01:45,220
+Or 18 books scraped.
+
+29
+00:01:45,210 --> 00:01:47,650
+So let's see.
+
+30
+00:01:47,850 --> 00:01:48,340
+"-a"
+
+31
+00:01:48,390 --> 00:01:56,780
+And then the "category" which is going to be the URL, perfect.
+
+32
+00:01:56,830 --> 00:01:58,810
+So that'll be it for this video.
+
+33
+00:01:58,810 --> 00:02:05,050
+Once again the arguments or Scrapy arguments
+can be used for isolating different categories.
+
+34
+00:02:05,050 --> 00:02:11,230
+For example if you have thousands and thousands of
+History related books or if you need to in future
+
+35
+00:02:11,230 --> 00:02:18,940
+for example run it for Science books only or stuff like that
+or you need to assign some special rule
+
+36
+00:02:18,940 --> 00:02:24,370
+or something like that for your scraper then you should
+use Scrapy arguments and that would it for this video.
+
+37
+00:02:24,400 --> 00:02:29,200
+In the very next one, we will talk about
+a Scrapy function called close. Talk soon!
+

@@ -1,0 +1,408 @@
+﻿1
+00:00:00,093 --> 00:00:03,476
+Olá! Então este é o vídeo final
+
+2
+00:00:03,476 --> 00:00:05,608
+para um spider mais avançado e
+
+3
+00:00:05,608 --> 00:00:08,169
+neste vídeo nós vamos falar como
+
+4
+00:00:08,169 --> 00:00:11,836
+usar o "yield" para os pontos de dados que extraimos.
+
+5
+00:00:12,681 --> 00:00:15,395
+Então atualmente, nós estamos apenas imprimindo os dados
+
+6
+00:00:15,395 --> 00:00:19,048
+e então entre eles nós apenas usamos
+
+7
+00:00:19,048 --> 00:00:23,215
+o novo espaço para deixar ele mais legível, por assim dizer.
+
+8
+00:00:24,486 --> 00:00:26,382
+Então como usar o "yield" nos dados de verdade,
+
+9
+00:00:26,382 --> 00:00:30,084
+e o motivo pelo qual gostaríamos de fornecer os dados
+
+10
+00:00:30,084 --> 00:00:33,617
+é porque se você fizer isso então você pode ter os dados
+
+11
+00:00:33,617 --> 00:00:36,284
+na saída CSV, XML ou JSON.
+
+12
+00:00:38,033 --> 00:00:42,200
+Então vamos remover as novas linhas porque elas não são necessárias.
+
+13
+00:00:42,588 --> 00:00:46,221
+Podemos usar também, ou remover a declaração print.
+
+14
+00:00:46,221 --> 00:00:50,388
+Então a única coisa que você precisa fazer é usar o "yield".
+
+15
+00:00:50,446 --> 00:00:53,696
+E então, nas chaves fechadas,
+
+16
+00:00:55,184 --> 00:00:58,617
+vamos apenas usar a mesma sintaxe
+
+17
+00:00:58,617 --> 00:01:00,534
+como você usaria
+
+18
+00:01:01,711 --> 00:01:05,878
+quando você fosse definir as chaves e valores do dicionário.
+
+19
+00:01:07,188 --> 00:01:09,804
+Então, isto aqui,
+
+20
+00:01:09,804 --> 00:01:12,147
+vamos copiar e colar estas três instâncias
+
+21
+00:01:12,147 --> 00:01:14,397
+e copiar eles aqui, desculpa.
+
+22
+00:01:16,108 --> 00:01:17,608
+Vamos tentar novamente.
+
+23
+00:01:20,284 --> 00:01:24,117
+Perfeito, e vamos usar as aspas simples aqui.
+
+24
+00:01:28,444 --> 00:01:30,340
+E vai ser basicamente isto.
+
+25
+00:01:30,340 --> 00:01:33,460
+Então só uma declaração "yield" simples, sério,
+
+26
+00:01:33,460 --> 00:01:35,773
+para conseguir o texto, autor e tags.
+
+27
+00:01:35,773 --> 00:01:39,531
+Então para isso um pouco diferente, vamos usar
+
+28
+00:01:39,531 --> 00:01:40,698
+a caixa alta.
+
+29
+00:01:42,452 --> 00:01:45,267
+Você deveria salvar isso agora e então,
+
+30
+00:01:45,267 --> 00:01:48,571
+se você voltar para o Terminal, você verá que
+
+31
+00:01:48,571 --> 00:01:52,738
+os dados vão estar arranjados de forma completamente diferente,
+
+32
+00:01:53,211 --> 00:01:55,483
+como você verá em um momento, que eles vão estar arranjados
+
+33
+00:01:55,483 --> 00:01:59,035
+no dicionário como no curso ou na seção do
+
+34
+00:01:59,035 --> 00:02:01,403
+spider simples que fizemos, então
+
+35
+00:02:01,403 --> 00:02:04,123
+pressionamos Enter para o site inteiro.
+
+36
+00:02:04,123 --> 00:02:06,659
+E vamos ver se ele fez isso...
+
+37
+00:02:06,659 --> 00:02:09,507
+É, eu não usei a vírgula.
+
+38
+00:02:09,507 --> 00:02:11,987
+E vamos rodar isto agora.
+
+39
+00:02:11,987 --> 00:02:14,667
+Então como você pode ver, o dado vai ser
+
+40
+00:02:14,667 --> 00:02:18,834
+retornado no dicionário como ele deveria
+
+41
+00:02:19,208 --> 00:02:21,444
+e está, bem, pelo menos pra mim,
+
+42
+00:02:21,444 --> 00:02:24,008
+está em uma forma mais legível ou
+
+43
+00:02:24,008 --> 00:02:26,425
+mais aconselhável para o layout.
+
+44
+00:02:28,112 --> 00:02:31,499
+Nós ainda temos, por usar a função yield,
+
+45
+00:02:31,499 --> 00:02:35,338
+temos ainda um monte de diferentes
+
+46
+00:02:35,338 --> 00:02:36,945
+lados positivos para isso.
+
+47
+00:02:36,945 --> 00:02:39,936
+Um deles é o "item_scraped_count",
+
+48
+00:02:39,936 --> 00:02:42,107
+que corresponde a 100.
+
+49
+00:02:42,107 --> 00:02:44,361
+Então 100 significa que extraimos
+
+50
+00:02:44,361 --> 00:02:46,624
+100 diferentes pontos de dados.
+
+51
+00:02:46,624 --> 00:02:49,791
+Ou 100 diferentes, em nosso caso, citações.
+
+52
+00:02:50,893 --> 00:02:52,393
+Então uma das também
+
+53
+00:02:53,701 --> 00:02:56,315
+boas coisas quando você usa a função yield
+
+54
+00:02:56,315 --> 00:02:59,019
+é que você pode usar os Scrapy field exports.
+
+55
+00:02:59,019 --> 00:03:02,892
+Os field exports, vamos cobrir três deles.
+
+56
+00:03:02,892 --> 00:03:04,809
+O CSV, JSON e XML.
+
+57
+00:03:06,335 --> 00:03:09,995
+Então se digitarmos "-o" e então, por exemplo,
+
+58
+00:03:09,995 --> 00:03:12,523
+o nome do arquivo "items.csv",
+
+59
+00:03:12,523 --> 00:03:15,819
+pressionar Enter, você verá que recebemos a mensagem
+
+60
+00:03:15,819 --> 00:03:19,986
+"stored CSV feed (100 items) in: items.csv".
+
+61
+00:03:22,155 --> 00:03:24,738
+Então se voltarmos para o Desktop
+
+62
+00:03:25,649 --> 00:03:27,377
+e navegar para o diretório raiz,
+
+63
+00:03:27,377 --> 00:03:30,324
+você verá aqui o arquivo items.csv.
+
+64
+00:03:30,324 --> 00:03:34,230
+Então se você abrir isso com seu leitor Excel,
+
+65
+00:03:34,230 --> 00:03:38,397
+você verá que o arquivo CSV corresponde às
+
+66
+00:03:38,452 --> 00:03:42,308
+100 citações diferentes, como você pode ver,
+
+67
+00:03:42,308 --> 00:03:44,091
+que extraimos do site.
+
+68
+00:03:44,091 --> 00:03:47,711
+Então temos a coluna Text, a coluna Tags,
+
+69
+00:03:47,711 --> 00:03:50,023
+e também a coluna Author.
+
+70
+00:03:50,023 --> 00:03:51,902
+Vamos fechar isto por agora,
+
+71
+00:03:51,902 --> 00:03:54,313
+voltar para nosso Terminal,
+
+72
+00:03:54,313 --> 00:03:56,357
+e um dos outros pontos de dados,
+
+73
+00:03:56,357 --> 00:04:00,524
+ou saída de dados, desculpe, que você pode usar é o JSON.
+
+74
+00:04:00,827 --> 00:04:04,315
+Então você pode vir e digitar,
+
+75
+00:04:04,315 --> 00:04:06,587
+novamente, "-o items" e então
+
+76
+00:04:06,587 --> 00:04:10,420
+em vez de .json, desculpe, .csv, você digita ".json",
+
+77
+00:04:11,292 --> 00:04:12,125
+pressiona Enter,
+
+78
+00:04:13,524 --> 00:04:15,067
+e você verá os dados ou
+
+79
+00:04:15,067 --> 00:04:18,157
+no diretório raiz, você verá o arquivo JSON.
+
+80
+00:04:18,157 --> 00:04:21,490
+Então se você abri-lo no seu editor de texto,
+
+81
+00:04:22,557 --> 00:04:24,733
+você verá os próprios dados,
+
+82
+00:04:24,733 --> 00:04:28,150
+e eu uso Pretty Print [no Sublime Text] para imprimir o JSON
+
+83
+00:04:29,060 --> 00:04:30,837
+em um formato mais legível.
+
+84
+00:04:30,837 --> 00:04:32,813
+E como você pode ver, aqui está nossos dados,
+
+85
+00:04:32,813 --> 00:04:36,396
+então isso é uma coisa ridiculamente legal de ter.
+
+86
+00:04:37,324 --> 00:04:38,241
+E fácil de
+
+87
+00:04:39,731 --> 00:04:41,387
+usar, como você pode ver.
+
+88
+00:04:41,387 --> 00:04:45,554
+O último field exports que vamos usar é o XML.
+
+89
+00:04:47,090 --> 00:04:49,610
+Então só digitamos aqui ".xml" e pressiona Enter.
+
+90
+00:04:49,610 --> 00:04:52,218
+Também, você pode usar qualquer
+
+91
+00:04:52,218 --> 00:04:54,202
+nome de arquivo que você gostaria.
+
+92
+00:04:54,202 --> 00:04:57,761
+Então você pode, de novo, usar qualquer um que você queira,
+
+93
+00:04:57,761 --> 00:05:01,390
+pressionar Enter e então você verá no diretório raiz
+
+94
+00:05:01,390 --> 00:05:04,533
+o arquivo XML que nós nomeamos.
+
+95
+00:05:04,533 --> 00:05:07,517
+Então se abrirmos ele com...
+
+96
+00:05:07,517 --> 00:05:09,454
+ou o seu editor de texto preferido,
+
+97
+00:05:09,454 --> 00:05:11,786
+você verá os próprios dados.
+
+98
+00:05:11,786 --> 00:05:14,234
+Então espero que isso tenha convencido você que
+
+99
+00:05:14,234 --> 00:05:18,401
+você deveria usar o "yield" no seu seu código.
+
+100
+00:05:19,684 --> 00:05:21,097
+E isto é tudo para este
+
+101
+00:05:21,097 --> 00:05:24,557
+vídeo avançado de spider e eu vou vejo
+
+102
+00:05:24,557 --> 00:05:27,188
+você no próximo vídeo. Falamos em breve!
+

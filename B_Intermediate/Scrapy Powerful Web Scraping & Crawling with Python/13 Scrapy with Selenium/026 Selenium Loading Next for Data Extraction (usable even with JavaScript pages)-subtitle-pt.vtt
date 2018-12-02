@@ -1,0 +1,596 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.834 --> 00:00:01.667
+Olá!
+
+2
+00:00:01.667 --> 00:00:03.834
+Então estamos continuando do vídeo anterior
+
+3
+00:00:03.834 --> 00:00:07.898
+onde eu mostrei ou introduzi o Selenium com o Scrapy
+
+4
+00:00:07.898 --> 00:00:09.584
+ou como usar o Selenium com Scrapy.
+
+5
+00:00:09.584 --> 00:00:11.084
+Então vamos continuar.
+
+6
+00:00:12.112 --> 00:00:15.322
+A primeira coisa que vamos fazer é navegar
+
+7
+00:00:15.322 --> 00:00:19.489
+ou descobrir exatamente o que esse nó HTML é
+
+8
+00:00:19.634 --> 00:00:21.751
+e como extrair ele
+
+9
+00:00:21.751 --> 00:00:24.343
+e então finalmente clicar nele com Selenium.
+
+10
+00:00:24.343 --> 00:00:26.578
+Então vamos tentar fazer isso.
+
+11
+00:00:26.578 --> 00:00:28.378
+Vamos para o Inspect,
+
+12
+00:00:28.378 --> 00:00:30.493
+e então ver que este botão next
+
+13
+00:00:30.493 --> 00:00:32.604
+está na primeira lista
+
+14
+00:00:32.604 --> 00:00:34.270
+que tem a classe next nele,
+
+15
+00:00:34.270 --> 00:00:37.321
+e então finalmente ele vai para a tag &lt;a&gt;,
+
+16
+00:00:37.321 --> 00:00:41.488
+e essa tag &lt;a&gt; tem o href e o texto nele.
+
+17
+00:00:42.260 --> 00:00:46.427
+Então nós vamos escrever o XPath
+
+18
+00:00:46.733 --> 00:00:50.605
+no Selenium que vai em todas as tags &lt;a&gt;
+
+19
+00:00:50.605 --> 00:00:54.772
+e então apenas extrair ou pegar os seletores
+
+20
+00:00:54.779 --> 00:00:57.958
+que terão a string "next".
+
+21
+00:00:57.958 --> 00:01:01.963
+Para fazer isso, nós vamos digitar "driver"
+
+22
+00:01:01.963 --> 00:01:03.342
+e então "find_element".
+
+23
+00:01:03.342 --> 00:01:06.554
+Aqui temos que achar o elemento pelo nome da classe,
+
+24
+00:01:06.554 --> 00:01:09.408
+seletor css, id e coisas como essas.
+
+25
+00:01:09.408 --> 00:01:12.767
+Por agora, vamos apenas usar o XPath, o bom e velho XPath,
+
+26
+00:01:12.767 --> 00:01:16.519
+e então a sintaxe para o XPath é a mesma
+
+27
+00:01:16.519 --> 00:01:18.591
+que era no Scrapy.
+
+28
+00:01:18.591 --> 00:01:22.758
+Então vamos coletar todas as tags &lt;a&gt; que tem o texto "next".
+
+29
+00:01:24.002 --> 00:01:25.709
+Vamos ver se isso é encontrado, perfeito,
+
+30
+00:01:25.709 --> 00:01:29.491
+e vamos ver se podemos clicar nele no Selenium.
+
+31
+00:01:29.491 --> 00:01:31.707
+Aqui está a sintaxe
+
+32
+00:01:31.707 --> 00:01:33.457
+de como clicar no elemento
+
+33
+00:01:33.457 --> 00:01:35.255
+e isto deve carregar a sétima página.
+
+34
+00:01:35.255 --> 00:01:37.838
+Então vamos ver se isso funciona.
+
+35
+00:01:38.763 --> 00:01:40.482
+Vamos ver se funciona.
+
+36
+00:01:40.482 --> 00:01:41.315
+Perfeito.
+
+37
+00:01:41.315 --> 00:01:42.516
+Então vamos tentar novamente.
+
+38
+00:01:42.516 --> 00:01:45.183
+Isso deveria ir para a oitava página.
+
+39
+00:01:48.835 --> 00:01:50.844
+E vai para a oitava página, o que é perfeito.
+
+40
+00:01:50.844 --> 00:01:54.844
+Então vamos copiar e colar isso no nosso código Spider,
+
+41
+00:01:57.174 --> 00:01:59.924
+e, primeiro, vamos definir o laço while
+
+42
+00:02:01.288 --> 00:02:05.038
+e vamos tentar e usar a lógica try e except.
+
+43
+00:02:06.134 --> 00:02:07.942
+Por agora, vamos passar isso.
+
+44
+00:02:07.942 --> 00:02:10.692
+E vamos definir o clique no botão next
+
+45
+00:02:15.146 --> 00:02:16.979
+como a variável next_page.
+as just the next_page variable.
+46
+00:02:18.670 --> 00:02:21.696
+E finalmente, nós teremos que usar a função sleep
+
+47
+00:02:21.696 --> 00:02:25.863
+que vai herdar da biblioteca padrão Python
+
+48
+00:02:28.829 --> 00:02:32.996
+chamada time, e vamos manualmente usar o sleep por três segundos
+
+49
+00:02:35.427 --> 00:02:38.703
+para não recebermos nenhum erro ou coisas como essas
+
+50
+00:02:38.703 --> 00:02:41.058
+quando estivermos carregando ainda a próxima página
+
+51
+00:02:41.058 --> 00:02:44.354
+e então o script vai tentar clicar mais uma vez
+
+52
+00:02:44.354 --> 00:02:48.521
+porque o Selenium é extremamente devagar comparado ao Scrapy.
+
+53
+00:02:48.552 --> 00:02:51.802
+Então vamos apenas usar a função sleep.
+
+54
+00:02:53.249 --> 00:02:57.210
+E você terá no Selenium, por exemplo,
+
+55
+00:02:57.210 --> 00:03:00.643
+chamar para esperar por alguma presença
+
+56
+00:03:00.643 --> 00:03:02.791
+do nó HTML, por exemplo,
+
+57
+00:03:02.791 --> 00:03:06.198
+quando a primeira imagem do livro
+
+58
+00:03:06.198 --> 00:03:08.785
+ou, por exemplo, a melhor escolha
+
+59
+00:03:08.785 --> 00:03:12.702
+seria a última imagem do livro que está presente,
+
+60
+00:03:13.588 --> 00:03:15.752
+então o scraper poderia continuar.
+
+61
+00:03:15.752 --> 00:03:19.728
+Isso pode levar algo como um segundo ou um milisegundo,
+
+62
+00:03:19.728 --> 00:03:21.262
+isso depende do site,
+
+63
+00:03:21.262 --> 00:03:24.748
+mas vai ser definitivamente uma melhor escolha que usar isso.
+
+64
+00:03:24.748 --> 00:03:27.531
+Mas como isso é só um exemplo,
+
+65
+00:03:27.531 --> 00:03:31.061
+isso vai ser mais do que suficiente.
+
+66
+00:03:31.061 --> 00:03:35.086
+E vamos chamar a mensagem log.
+
+67
+00:03:35.749 --> 00:03:38.692
+Para fazer isso, vamos apenas digitar isto
+
+68
+00:03:38.692 --> 00:03:42.025
+e digitar "Sleeping for 3 seconds".
+
+69
+00:03:43.974 --> 00:03:45.946
+E vamos ver o que mais precisa ser feito.
+
+70
+00:03:45.946 --> 00:03:47.736
+Nós precisamos clicar nele, claro.
+
+71
+00:03:47.736 --> 00:03:51.753
+Então next_page, nós vamos clicar nisto.
+
+72
+00:03:51.753 --> 00:03:55.920
+E finalmente, vamos reutilizar esta parte do código,
+
+73
+00:03:59.742 --> 00:04:03.159
+já que em um segundo aqui, vamos estar
+
+74
+00:04:06.371 --> 00:04:09.188
+ou extrair a primeira página dos livros
+
+75
+00:04:09.188 --> 00:04:12.321
+e analisar as primeiras 20 URLs dos livros
+
+76
+00:04:12.321 --> 00:04:15.405
+para a função chamada parse_book.
+
+77
+00:04:15.405 --> 00:04:18.309
+E então nesse laço, nós vamos iterar
+
+78
+00:04:18.309 --> 00:04:20.559
+mais de 49 das páginas restantes.
+
+79
+00:04:22.354 --> 00:04:24.609
+E aqui nós vamos tentar a todo momento
+
+80
+00:04:24.609 --> 00:04:28.776
+clicar no botão next_page e adicionar uma exceção.
+
+81
+00:04:28.884 --> 00:04:31.851
+Então vamos adicionar uma exceção
+
+82
+00:04:31.851 --> 00:04:36.018
+que vai ser chamada NoSuchElementException,
+
+83
+00:04:38.515 --> 00:04:40.248
+e isto vai 
+
+84
+00:04:40.248 --> 00:04:43.415
+para o "from selenium.common.exceptions
+
+85
+00:04:46.789 --> 00:04:49.289
+import NoSuchElementException".
+
+86
+00:04:52.717 --> 00:04:56.884
+Então vamos ver se isto está sendo importando certo.
+
+87
+00:04:56.891 --> 00:04:58.975
+Perfeito, isso funciona.
+
+88
+00:04:58.975 --> 00:05:01.121
+Então escrevi tudo certo.
+
+89
+00:05:01.121 --> 00:05:05.288
+E nós não vamos usar pass, vamos usar o comando break.
+
+90
+00:05:06.000 --> 00:05:10.167
+Mas antes este código vai ser executado mais uma vez
+
+91
+00:05:10.758 --> 00:05:12.947
+quando estivermos na última página,
+
+92
+00:05:12.947 --> 00:05:15.992
+e isso é porque o next_page não vai estar presente
+
+93
+00:05:15.992 --> 00:05:17.658
+na última página.
+
+94
+00:05:17.658 --> 00:05:21.325
+Então vamos chamar primeiro nossa mensagem log
+
+95
+00:05:23.193 --> 00:05:24.943
+que vai imprimir,
+
+96
+00:05:27.201 --> 00:05:31.034
+vamos ver, por exemplo "No more pages to load".
+
+97
+00:05:32.510 --> 00:05:36.548
+E então vamos finalmente sair da instância do driver.
+
+98
+00:05:36.548 --> 00:05:38.370
+Para fazer isso só digitamos
+
+99
+00:05:38.387 --> 00:05:42.537
+"driver.quit()"
+
+100
+00:05:43.734 --> 00:05:47.901
+e então vamos usar "break" no nosso laço while aqui.
+
+101
+00:05:48.465 --> 00:05:50.906
+E vamos ver o que mais precisamos.
+
+102
+00:05:50.906 --> 00:05:54.543
+Eu vi também que por algum motivo neste site
+
+103
+00:05:54.543 --> 00:05:58.518
+o catalogue precisa ser adicionado
+
+104
+00:05:58.992 --> 00:06:02.487
+neste tipo de URL e não tenho certeza do porquê.
+
+105
+00:06:02.487 --> 00:06:05.979
+Mas vamos tentar fazer isso sem ele,
+
+106
+00:06:05.979 --> 00:06:09.264
+e eu acho que vamos receber as páginas 404.
+
+107
+00:06:09.264 --> 00:06:10.347
+Vamos ver.
+
+108
+00:06:11.502 --> 00:06:12.977
+Vamos ver, algo não está funcionando,
+
+109
+00:06:12.977 --> 00:06:14.513
+etão driver não está definido.
+
+110
+00:06:14.513 --> 00:06:17.596
+Isso é porque eu usei driver aqui
+
+111
+00:06:18.571 --> 00:06:20.488
+sem o self nele.
+
+112
+00:06:21.870 --> 00:06:24.120
+Então vamos tentar novamente.
+
+113
+00:06:29.814 --> 00:06:33.280
+E, como você pode ver, páginas 404 são reportadas,
+
+114
+00:06:33.280 --> 00:06:36.226
+e isso é porque o /catalogue,
+
+115
+00:06:36.226 --> 00:06:38.976
+e esta parte específica da URL
+
+116
+00:06:39.810 --> 00:06:41.557
+precisa ser integrada.
+
+117
+00:06:41.557 --> 00:06:44.474
+Então vamos apenas usar o, vamos ver.
+
+118
+00:06:46.759 --> 00:06:49.009
+Nós temos o catalogue aqui.
+
+119
+00:06:50.762 --> 00:06:54.262
+Então vou apenas copiar e colar ele e adicionar isso.
+
+120
+00:06:56.108 --> 00:06:59.691
+Vamos fazer apenas algo como isto.
+
+121
+00:07:04.406 --> 00:07:06.153
+Vamos ver se isto vai funcionar.
+
+122
+00:07:06.153 --> 00:07:10.320
+Ele precisa conter, o último caractere precisa ser a barra.
+
+123
+00:07:12.533 --> 00:07:16.200
+Vamos rodar mais uma vez e ver se funciona.
+
+124
+00:07:18.266 --> 00:07:19.941
+Vamos ver, é a primeira mensagem log
+
+125
+00:07:19.941 --> 00:07:22.204
+que está sendo reportada.
+
+126
+00:07:22.204 --> 00:07:24.465
+Parece que está funcionando corretamente.
+
+127
+00:07:24.465 --> 00:07:27.965
+Como você pode ver, nosso "Sleeping for 3 seconds"
+
+128
+00:07:29.139 --> 00:07:31.234
+está sendo reportado,
+
+129
+00:07:31.234 --> 00:07:34.423
+200 é o status de resposta, então parece que está funcionando.
+
+130
+00:07:34.423 --> 00:07:38.231
+Então vamos ver no lado do Selenium se está funcionando corretamente.
+
+131
+00:07:38.231 --> 00:07:41.139
+Está iterando outras páginas, como você pode ver,
+
+132
+00:07:41.139 --> 00:07:44.753
+estamos atualmente na sétima página.
+
+133
+00:07:44.753 --> 00:07:46.982
+Requests estão sendo geradas.
+
+134
+00:07:46.982 --> 00:07:49.732
+E finalmente podemos fechar isto
+
+135
+00:07:51.867 --> 00:07:53.452
+porque significa que vai funcionar,
+
+136
+00:07:53.452 --> 00:07:56.469
+e então você pode "yield title" ou price
+
+137
+00:07:56.469 --> 00:07:59.230
+ou algo como um terceiro ponto de dado.
+
+138
+00:07:59.230 --> 00:08:01.396
+É, isso deve ser tudo para este vídeo.
+
+139
+00:08:01.396 --> 00:08:05.164
+No próximo, vamos realmente iterar sobre páginas,
+
+140
+00:08:05.164 --> 00:08:08.618
+então para fazer exatamente a mesma coisa com Scrapy,
+
+141
+00:08:08.618 --> 00:08:12.762
+não com o Selenium, e você verá a diferença de velocidade,
+
+142
+00:08:12.762 --> 00:08:16.929
+que é muito grande entre as duas ferramentas.
+
+143
+00:08:17.232 --> 00:08:21.399
+Usar Scrapy é definitivamente o jeito de fazer neste tipo de extração.
+
+144
+00:08:22.140 --> 00:08:24.974
+E vamos realmente ir e extrair
+
+145
+00:08:24.974 --> 00:08:29.141
+alguns pontos de dados interessantes, como tíulo, URL de imagem,
+
+146
+00:08:29.684 --> 00:08:33.814
+preço, descrição e todos esses campos de dados diferentes
+
+147
+00:08:33.814 --> 00:08:37.215
+que estão presentes em todas essas URLs de livros.
+
+148
+00:08:37.215 --> 00:08:38.048
+Falamos em breve!
+

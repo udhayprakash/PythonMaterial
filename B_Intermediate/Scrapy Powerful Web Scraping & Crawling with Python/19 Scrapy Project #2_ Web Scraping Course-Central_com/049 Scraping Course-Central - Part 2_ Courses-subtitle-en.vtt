@@ -1,0 +1,1342 @@
+﻿WEBVTT
+
+1
+00:00:00.552 --> 00:00:01.385
+Hi there!
+
+2
+00:00:01.385 --> 00:00:02.984
+So, this is the second part of the
+
+3
+00:00:02.984 --> 00:00:05.094
+Class Central Spider.
+
+4
+00:00:05.094 --> 00:00:07.516
+And, so, let's actually go ahead,
+
+5
+00:00:07.516 --> 00:00:10.221
+and right away go to some subject,
+
+6
+00:00:10.221 --> 00:00:13.439
+such as, for example, Computer Science.
+
+7
+00:00:13.439 --> 00:00:17.584
+So here, we will print out or copy and paste this
+
+8
+00:00:17.584 --> 00:00:19.632
+into our Scrapy Shell.
+
+9
+00:00:19.632 --> 00:00:22.173
+So, we type in scrapy shell, and then,
+
+10
+00:00:22.173 --> 00:00:24.840
+in single or double quotes the URL.
+
+11
+00:00:26.584 --> 00:00:29.912
+The first data point that we will collect from,
+
+12
+00:00:29.912 --> 00:00:31.844
+similar to this page, is going to be
+
+13
+00:00:31.844 --> 00:00:35.347
+Computer Science or really the subject name.
+
+14
+00:00:35.347 --> 00:00:38.595
+So we can either scrape it from here
+
+15
+00:00:38.595 --> 00:00:40.997
+by grabbing this string, or we can get it
+
+16
+00:00:40.997 --> 00:00:41.830
+from title.
+
+17
+00:00:41.830 --> 00:00:43.722
+Title is actually located here,
+
+18
+00:00:43.722 --> 00:00:45.178
+as you will see in a moment.
+
+19
+00:00:45.178 --> 00:00:47.463
+So you can see that Computer Science
+
+20
+00:00:47.463 --> 00:00:49.926
+is going to be located here.
+
+21
+00:00:49.926 --> 00:00:52.468
+To do that, or to select every title,
+
+22
+00:00:52.468 --> 00:00:55.051
+we can type in response.xpath
+
+23
+00:00:56.039 --> 00:01:00.206
+'//title'.
+
+24
+00:01:00.259 --> 00:01:03.198
+Here, we see that there are two titles.
+
+25
+00:01:03.198 --> 00:01:05.102
+We'll select the first one,
+
+26
+00:01:05.102 --> 00:01:07.224
+so extract_first().
+
+27
+00:01:07.224 --> 00:01:11.200
+As you can see, it contains our data, and also,
+
+28
+00:01:11.200 --> 00:01:15.367
+we don't need the &lt;title&gt; node.
+
+29
+00:01:15.391 --> 00:01:17.767
+So we will then type in 
+
+30
+00:01:17.767 --> 00:01:19.593
+text()
+
+31
+00:01:19.593 --> 00:01:22.476
+And here, we get the Unicode string,
+
+32
+00:01:22.476 --> 00:01:25.630
+which contains the data point that we want.
+
+33
+00:01:25.630 --> 00:01:29.105
+So, since this space and also this character
+
+34
+00:01:29.105 --> 00:01:32.457
+and also space is contained in two more places,
+
+35
+00:01:32.457 --> 00:01:34.225
+we can pretty much split it
+
+36
+00:01:34.225 --> 00:01:36.663
+by these three characters and select
+
+37
+00:01:36.663 --> 00:01:39.510
+the first instance from the list
+
+38
+00:01:39.510 --> 00:01:41.070
+that we will get.
+
+39
+00:01:41.070 --> 00:01:42.688
+So to do that, first things first,
+
+40
+00:01:42.688 --> 00:01:45.271
+is to call in split function.
+
+41
+00:01:46.309 --> 00:01:48.307
+So split()
+
+42
+00:01:48.307 --> 00:01:50.557
+and we will split it by the
+
+43
+00:01:51.595 --> 00:01:54.120
+already mentioned three characters,
+
+44
+00:01:54.120 --> 00:01:56.717
+and here you will see that we will have
+
+45
+00:01:56.717 --> 00:01:57.769
+three different items.
+
+46
+00:01:57.769 --> 00:01:59.783
+So, the first one is the one that we need,
+
+47
+00:01:59.783 --> 00:02:01.605
+and these other two, pretty much,
+
+48
+00:02:01.605 --> 00:02:03.404
+we don't care about.
+
+49
+00:02:03.404 --> 00:02:07.038
+So we will just select the first instance.
+
+50
+00:02:07.038 --> 00:02:10.575
+Okay, so, since we've already done this correctly,
+
+51
+00:02:10.575 --> 00:02:13.395
+let's copy and paste it to our code,
+
+52
+00:02:13.395 --> 00:02:17.070
+and we will set the subject_name
+
+53
+00:02:17.167 --> 00:02:19.964
+to be name of our variable.
+
+54
+00:02:19.964 --> 00:02:23.343
+We will first just use the extract_first().
+
+55
+00:02:23.343 --> 00:02:27.298
+And we will then just call the subject_name to be
+
+56
+00:02:27.298 --> 00:02:29.965
+subject_name, and then split it
+
+57
+00:02:31.681 --> 00:02:33.514
+on
+
+58
+00:02:34.140 --> 00:02:35.384
+these three characters,
+
+59
+00:02:35.384 --> 00:02:37.608
+and then we will, again, call subject_name
+
+60
+00:02:37.608 --> 00:02:39.642
+just to prettify it a little bit.
+
+61
+00:02:39.642 --> 00:02:43.809
+And we will use the first instance from our list.
+
+62
+00:02:44.350 --> 00:02:45.433
+The second data point
+
+63
+00:02:45.433 --> 00:02:47.600
+that we are going to collect
+
+64
+00:02:47.600 --> 00:02:49.301
+is actually a selector.
+
+65
+00:02:49.301 --> 00:02:53.204
+That selector is pretty much going to be
+
+66
+00:02:53.204 --> 00:02:56.871
+the subject's container.
+
+67
+00:02:58.156 --> 00:03:01.226
+So, give me a moment so I can locate one
+
+68
+00:03:01.226 --> 00:03:02.976
+that is going to be--
+
+69
+00:03:05.562 --> 00:03:08.939
+For example, this will be a container
+
+70
+00:03:08.939 --> 00:03:12.912
+which will be named courses, or whatever.
+
+71
+00:03:12.912 --> 00:03:15.251
+So, if we go to the Inspect,
+
+72
+00:03:15.251 --> 00:03:18.090
+you will see that, as I'm highlighting right now,
+
+73
+00:03:18.090 --> 00:03:21.090
+this is pretty much the table row.
+
+74
+00:03:22.416 --> 00:03:26.254
+The way that we will actually get this,
+
+75
+00:03:26.254 --> 00:03:30.296
+we will not get to the table data, or row
+
+76
+00:03:30.296 --> 00:03:32.585
+We can get to it, or data points that
+
+77
+00:03:32.585 --> 00:03:35.626
+we would like from the table data,
+
+78
+00:03:35.626 --> 00:03:37.939
+and specifically, class called,
+
+79
+00:03:37.939 --> 00:03:41.856
+course name itself, or course name real column.
+
+80
+00:03:42.733 --> 00:03:44.614
+And then from the table data,
+
+81
+00:03:44.614 --> 00:03:47.102
+what we are going to get is the
+
+82
+00:03:47.102 --> 00:03:48.711
+course name itself, which is going to be,
+
+83
+00:03:48.711 --> 00:03:51.442
+in this case, the System Validation
+
+84
+00:03:51.442 --> 00:03:55.230
+and this substring.
+
+85
+00:03:55.230 --> 00:03:57.286
+And also, the URL is going to be
+
+86
+00:03:57.286 --> 00:03:58.946
+pretty much this href.
+
+87
+00:03:58.946 --> 00:04:02.180
+So to do that, we can go back to our Shell,
+
+88
+00:04:02.180 --> 00:04:05.584
+and then type in response.xpath,
+
+89
+00:04:05.584 --> 00:04:07.704
+and then select--
+
+90
+00:04:07.704 --> 00:04:10.707
+Let's actually define courses right away,
+
+91
+00:04:10.707 --> 00:04:13.263
+so we can copy and paste this later on.
+
+92
+00:04:13.263 --> 00:04:15.929
+So, courses is going to be equal
+
+93
+00:04:15.929 --> 00:04:18.022
+to the response.xpath
+
+94
+00:04:18.022 --> 00:04:22.189
+So, we will select every instance of the class,
+
+95
+00:04:22.203 --> 00:04:24.767
+and that class will have the value.
+
+96
+00:04:24.767 --> 00:04:26.152
+Let's see, once again.
+
+97
+00:04:26.152 --> 00:04:28.022
+So, we can, yeah,
+
+98
+00:04:28.022 --> 00:04:30.475
+actually, we can use the course name itself,
+
+99
+00:04:30.475 --> 00:04:31.946
+so we don't need to actually go
+
+100
+00:04:31.946 --> 00:04:33.886
+and fetch course-name column.
+
+101
+00:04:33.886 --> 00:04:36.714
+We can just go ahead and use course name itself.
+
+102
+00:04:36.714 --> 00:04:40.881
+The reason why is because we will get href itself
+
+103
+00:04:41.027 --> 00:04:44.868
+And also the text can be
+
+104
+00:04:44.868 --> 00:04:48.163
+found in the title itself, as you can see.
+
+105
+00:04:48.163 --> 00:04:50.496
+So, let's actually use that.
+
+106
+00:04:51.574 --> 00:04:52.407
+So...
+
+107
+00:04:53.672 --> 00:04:57.278
+courses is going to be, let's see.
+
+108
+00:04:57.278 --> 00:04:58.827
+Let's go back to our Shell.
+
+109
+00:04:58.827 --> 00:05:01.764
+So, class is going to be, uh, copy and paste it
+
+110
+00:05:01.764 --> 00:05:03.356
+from the course-name.
+
+111
+00:05:03.356 --> 00:05:05.285
+So, copy, paste this,
+
+112
+00:05:05.285 --> 00:05:09.225
+and let's see how many courses are found.
+
+113
+00:05:09.225 --> 00:05:12.597
+So, it seems like every one of them is found,
+
+114
+00:05:12.597 --> 00:05:13.847
+so let's see...
+
+115
+00:05:18.051 --> 00:05:21.968
+courses, and then extract() just to verify that
+
+116
+00:05:24.525 --> 00:05:27.010
+all of them will be fetched to do that,
+
+117
+00:05:27.010 --> 00:05:28.590
+we can call in the extract(),
+
+118
+00:05:28.590 --> 00:05:30.746
+and then, we'll select the first one,
+
+119
+00:05:30.746 --> 00:05:32.357
+which is going to be Coursera
+
+120
+00:05:32.357 --> 00:05:34.154
+Bitcoin and Cryptocurrency.
+
+121
+00:05:34.154 --> 00:05:36.912
+So let's see which is going to be corresponding
+
+122
+00:05:36.912 --> 00:05:38.162
+to the last one
+
+123
+00:05:38.162 --> 00:05:40.118
+or the first one, sorry,
+
+124
+00:05:40.118 --> 00:05:42.272
+and the last one will be
+
+125
+00:05:42.272 --> 00:05:45.180
+Data Processing Using Python, courses
+
+126
+00:05:45.180 --> 00:05:49.347
+So [-1] will be the latest one, and let's see,
+
+127
+00:05:50.172 --> 00:05:52.293
+the HTML node, is corresponding,
+
+128
+00:05:52.293 --> 00:05:55.237
+or the title is Data Processing Using Python,
+
+129
+00:05:55.237 --> 00:05:56.188
+which is perfect.
+
+130
+00:05:56.188 --> 00:05:59.270
+So, every course is going to be fetched.
+
+131
+00:05:59.270 --> 00:06:00.770
+So, copy and paste
+
+132
+00:06:02.109 --> 00:06:04.859
+this to the code we already have.
+
+133
+00:06:05.898 --> 00:06:09.461
+Since we are going to fetch the URL itself,
+
+134
+00:06:09.461 --> 00:06:11.705
+or the href itself,
+
+135
+00:06:11.705 --> 00:06:13.390
+which is going to be this data point,
+
+136
+00:06:13.390 --> 00:06:15.887
+and also the title, which is going to be
+
+137
+00:06:15.887 --> 00:06:17.332
+this data point.
+
+138
+00:06:17.332 --> 00:06:18.437
+We will use selectors,
+
+139
+00:06:18.437 --> 00:06:20.754
+and we will not use the extract().
+
+140
+00:06:20.754 --> 00:06:24.921
+So, courses are going to be set to this,
+
+141
+00:06:25.175 --> 00:06:28.936
+and also we will set the first course to be
+
+142
+00:06:28.936 --> 00:06:32.776
+inherit, really, from the first courses.
+
+143
+00:06:32.776 --> 00:06:36.943
+And then we can, pretty much, use the course.xpath
+
+144
+00:06:38.164 --> 00:06:41.034
+to navigate to the href,
+
+145
+00:06:41.034 --> 00:06:44.554
+which can be found like this, as you can see.
+
+146
+00:06:44.554 --> 00:06:47.554
+So, this is the URL that corresponds
+
+147
+00:06:50.547 --> 00:06:52.047
+to, pretty much...
+
+148
+00:06:55.413 --> 00:06:56.697
+this URL.
+
+149
+00:06:56.697 --> 00:06:57.530
+Inspect.
+
+150
+00:06:57.530 --> 00:07:00.808
+And this the URL that I'm currently highlighting.
+
+151
+00:07:00.808 --> 00:07:04.531
+So this would be the one that is corresponding.
+
+152
+00:07:04.531 --> 00:07:07.777
+So, to elaborate a bit more on this
+
+153
+00:07:07.777 --> 00:07:10.020
+XPath statement.
+
+154
+00:07:10.020 --> 00:07:13.099
+So, we are going to go into course,
+
+155
+00:07:13.099 --> 00:07:17.016
+which is going to be pretty much this selector.
+
+156
+00:07:17.966 --> 00:07:20.175
+So, all this, really.
+
+157
+00:07:20.175 --> 00:07:23.094
+And we will go and type in first ".".
+
+158
+00:07:23.094 --> 00:07:25.144
+The reason why is because we are not using
+
+159
+00:07:25.144 --> 00:07:26.584
+response.xpath.
+
+160
+00:07:26.584 --> 00:07:29.062
+We are using course.xpath.
+
+161
+00:07:29.062 --> 00:07:30.622
+So, that's one thing to note,
+
+162
+00:07:30.622 --> 00:07:32.895
+and we will select every href tag,
+
+163
+00:07:32.895 --> 00:07:35.250
+since there is only one href tag.
+
+164
+00:07:35.250 --> 00:07:37.698
+We will then, going to go,
+
+165
+00:07:37.698 --> 00:07:41.540
+and only get, pretty much this value.
+
+166
+00:07:41.540 --> 00:07:43.266
+So, and we will also use
+
+167
+00:07:43.499 --> 00:07:47.014
+extract_first(),
+
+168
+00:07:47.014 --> 00:07:50.166
+and this is the URL that is corresponding
+
+169
+00:07:50.166 --> 00:07:53.019
+to the course URL.
+
+170
+00:07:53.019 --> 00:07:55.554
+So, we will write
+
+171
+00:07:55.554 --> 00:07:57.344
+just an ordinary for loop,
+
+172
+00:07:57.344 --> 00:08:00.761
+so for course in courses.
+
+173
+00:08:01.852 --> 00:08:04.102
+So this will be, let's see,
+
+174
+00:08:05.014 --> 00:08:07.706
+course_url for example.
+
+175
+00:08:07.706 --> 00:08:11.670
+And the course name will be, for example,
+
+176
+00:08:11.670 --> 00:08:14.285
+the name of the, of course, course name.
+
+177
+00:08:14.285 --> 00:08:16.749
+And, the way that we actually extract
+
+178
+00:08:16.749 --> 00:08:19.192
+the course name is going to be contained
+
+179
+00:08:19.192 --> 00:08:20.025
+in the title.
+
+180
+00:08:20.025 --> 00:08:22.003
+So since there is only one title,
+
+181
+00:08:22.003 --> 00:08:25.670
+we can go ahead and just reuse, pretty much,
+
+182
+00:08:26.815 --> 00:08:30.658
+a majority, really, of our statement for the URL,
+
+183
+00:08:30.658 --> 00:08:33.637
+and just type in, instead of href, title.
+
+184
+00:08:33.637 --> 00:08:37.292
+And you will see that the title that corresponds
+
+185
+00:08:37.292 --> 00:08:39.401
+to, pretty much,
+
+186
+00:08:39.401 --> 00:08:40.484
+this one, or,
+
+187
+00:08:41.500 --> 00:08:42.579
+on the website,
+
+188
+00:08:42.579 --> 00:08:44.474
+you will see that this is the,
+
+189
+00:08:44.474 --> 00:08:45.587
+pretty much, the data point
+
+190
+00:08:45.587 --> 00:08:47.387
+that I'm highlighting right now.
+
+191
+00:08:47.387 --> 00:08:51.342
+So, just copy and paste this statement,
+
+192
+00:08:51.342 --> 00:08:55.289
+to our code, and also,
+
+193
+00:08:55.289 --> 00:08:56.581
+we will actually,
+
+194
+00:08:56.581 --> 00:09:00.441
+since the course_url is not going to be
+
+195
+00:09:00.441 --> 00:09:04.349
+the absolute one, we will just build the
+
+196
+00:09:04.349 --> 00:09:05.908
+absolute one by typing in the
+
+197
+00:09:06.166 --> 00:09:10.333
+absolute_course_url
+
+198
+00:09:11.522 --> 00:09:13.903
+That, of course, will have to use
+
+199
+00:09:13.903 --> 00:09:16.534
+response or, sorry,
+
+200
+00:09:16.534 --> 00:09:20.307
+the response.urljoin.
+
+201
+00:09:20.307 --> 00:09:24.474
+And in the parentheses, we'll use the course_url.
+
+202
+00:09:25.111 --> 00:09:27.248
+And finally, we will yield them.
+
+203
+00:09:27.248 --> 00:09:29.254
+So, to do that, of course,
+
+204
+00:09:29.254 --> 00:09:30.754
+yield, and then,
+
+205
+00:09:31.736 --> 00:09:34.069
+let's see, so course_name.
+
+206
+00:09:36.982 --> 00:09:37.815
+And also,
+
+207
+00:09:40.314 --> 00:09:42.859
+the data point is going to be
+
+208
+00:09:42.859 --> 00:09:44.692
+absolute_course_url
+
+209
+00:09:46.452 --> 00:09:48.555
+And also, we forgot the subject_name,
+
+210
+00:09:48.555 --> 00:09:52.460
+so, let's also use that, subject_name.
+
+211
+00:09:52.460 --> 00:09:54.662
+And, so, if we save this,
+
+212
+00:09:54.662 --> 00:09:58.264
+and then go ahead and run this in our
+
+213
+00:09:58.264 --> 00:10:00.110
+Shell, we will provide,
+
+214
+00:10:00.110 --> 00:10:01.474
+or we'll pretty much scrape
+
+215
+00:10:01.474 --> 00:10:02.784
+the entire site right now.
+
+216
+00:10:02.784 --> 00:10:04.792
+So, let's go ahead.
+
+217
+00:10:04.792 --> 00:10:06.568
+And let's see, there are some errors,
+
+218
+00:10:06.568 --> 00:10:07.985
+so course_name.
+
+219
+00:10:11.374 --> 00:10:13.750
+I forgot the comma sign.
+
+220
+00:10:13.750 --> 00:10:17.215
+So, if we go ahead and hit Enter right now,
+
+221
+00:10:17.215 --> 00:10:19.140
+this should pretty much be it.
+
+222
+00:10:19.140 --> 00:10:22.278
+So, we scraped, in our case,
+
+223
+00:10:22.278 --> 00:10:25.828
+let's say 600 different courses.
+
+224
+00:10:26.365 --> 00:10:29.478
+And, let's see if we got any errors.
+
+225
+00:10:29.478 --> 00:10:31.181
+It seems like we haven't got any errors,
+
+226
+00:10:31.181 --> 00:10:32.759
+which is perfect.
+
+227
+00:10:32.759 --> 00:10:36.926
+So, we scrape, pretty much, from each and every subject.
+
+228
+00:10:38.015 --> 00:10:41.832
+We scraped 50 courses, which amounts
+
+229
+00:10:43.054 --> 00:10:46.085
+12 times 50 is 600, which is perfect.
+
+230
+00:10:46.085 --> 00:10:50.171
+So, since this Spider will also iterate over,
+
+231
+00:10:50.171 --> 00:10:52.079
+for example, in this case,
+
+232
+00:10:52.079 --> 00:10:55.696
+if Programming is going to be selected,
+
+233
+00:10:55.696 --> 00:10:58.279
+it will process the next pages,
+
+234
+00:10:59.197 --> 00:11:03.364
+and it will get 488 courses, not only the 50.
+
+235
+00:11:03.653 --> 00:11:07.403
+So, if we go to the Programming, for example,
+
+236
+00:11:08.641 --> 00:11:10.761
+you will see that there is
+
+237
+00:11:10.761 --> 00:11:13.261
+Load next 50 courses button.
+
+238
+00:11:14.368 --> 00:11:16.809
+To actually get to the next pages,
+
+239
+00:11:16.809 --> 00:11:18.726
+there are multiple ways
+
+240
+00:11:20.002 --> 00:11:21.275
+really, when it comes to scraping,
+
+241
+00:11:21.275 --> 00:11:22.303
+there are multiple ways.
+
+242
+00:11:22.303 --> 00:11:25.237
+Of really doing anything, any task.
+
+243
+00:11:25.237 --> 00:11:28.289
+And to actually get to the next page URL
+
+244
+00:11:28.289 --> 00:11:30.201
+we can type in, pretty much, just next
+
+245
+00:11:30.201 --> 00:11:32.140
+in our Inspection tool.
+
+246
+00:11:32.140 --> 00:11:34.445
+And the first thing that will pop up
+
+247
+00:11:34.445 --> 00:11:37.612
+is the link, and then in the rel value
+
+248
+00:11:37.980 --> 00:11:41.935
+rel HTML node, you will see the next value,
+
+249
+00:11:41.935 --> 00:11:44.852
+which will contain the second page.
+
+250
+00:11:45.763 --> 00:11:48.004
+And, once it goes to the next page,
+
+251
+00:11:48.004 --> 00:11:49.696
+it will contain the third page.
+
+252
+00:11:49.696 --> 00:11:51.500
+So, iterating over pages
+
+253
+00:11:51.500 --> 00:11:53.118
+couldn't be simpler, really.
+
+254
+00:11:53.118 --> 00:11:55.285
+So, to iterate over pages,
+
+255
+00:11:56.374 --> 00:11:58.518
+the way that we will actually do this
+
+256
+00:11:58.518 --> 00:12:00.734
+is just typing in
+
+257
+00:12:00.734 --> 00:12:04.901
+next_page = response.xpath
+
+258
+00:12:05.626 --> 00:12:07.029
+And, also, we will go
+
+259
+00:12:07.029 --> 00:12:11.029
+into each and every rel function,
+
+260
+00:12:12.152 --> 00:12:14.094
+which has the next in it.
+
+261
+00:12:14.094 --> 00:12:15.981
+So, in this case, this will be
+
+262
+00:12:15.981 --> 00:12:18.113
+only one instance.
+
+263
+00:12:18.113 --> 00:12:21.621
+And we will, once we are in this HTML node,
+
+264
+00:12:21.621 --> 00:12:23.873
+we will just grab the href itself.
+
+265
+00:12:23.873 --> 00:12:25.948
+So, to do that, of course we just
+
+266
+00:12:25.948 --> 00:12:28.398
+append the href itself
+
+267
+00:12:28.398 --> 00:12:31.022
+and call in extract_first()
+
+268
+00:12:31.022 --> 00:12:34.022
+And then, since this is going to be,
+
+269
+00:12:35.073 --> 00:12:36.661
+let's actually just copy and paste this
+
+270
+00:12:36.661 --> 00:12:38.804
+into Shell, and verify
+
+271
+00:12:38.804 --> 00:12:39.981
+that everything is working.
+
+272
+00:12:39.981 --> 00:12:42.633
+So, if we copy this, you will see that
+
+273
+00:12:42.633 --> 00:12:45.951
+again response.urljoin will have to be used.
+
+274
+00:12:45.951 --> 00:12:49.154
+So, we type in
+
+275
+00:12:49.154 --> 00:12:52.319
+absolute_next_page
+
+276
+00:12:52.319 --> 00:12:56.319
+It's going to be equal to the response.urljoin.
+
+277
+00:12:57.155 --> 00:13:00.042
+And then, in the parentheses next_page,
+
+278
+00:13:00.042 --> 00:13:04.209
+and then finally, yield Request
+
+279
+00:13:04.879 --> 00:13:07.448
+to the absolute_next_page.
+
+280
+00:13:07.448 --> 00:13:11.615
+And the callback is going to be set to the
+
+281
+00:13:11.849 --> 00:13:15.993
+self.parse_subject, of course.
+
+282
+00:13:15.993 --> 00:13:20.160
+If the iteration over pages is going to be done
+
+283
+00:13:20.691 --> 00:13:22.849
+through parse function,
+
+284
+00:13:22.849 --> 00:13:24.416
+then the callback
+
+285
+00:13:24.416 --> 00:13:27.056
+will not be required, for example.
+
+286
+00:13:27.056 --> 00:13:29.179
+That is the important thing to note.
+
+287
+00:13:29.179 --> 00:13:33.346
+But, since we are not in the Scrapy default calling function
+
+288
+00:13:34.270 --> 00:13:36.656
+such as parse_subject,
+
+289
+00:13:36.656 --> 00:13:39.345
+we will have to assign the callback.
+
+290
+00:13:39.345 --> 00:13:41.362
+So, that's one thing to note
+
+291
+00:13:41.362 --> 00:13:43.269
+that is really important.
+
+292
+00:13:43.269 --> 00:13:46.747
+And, if we save it right now, and go back,
+
+293
+00:13:46.747 --> 00:13:49.897
+and go to the root directory,
+
+294
+00:13:49.897 --> 00:13:51.612
+and let's see,
+
+295
+00:13:51.612 --> 00:13:54.205
+and just scrape the Programming.
+
+296
+00:13:54.205 --> 00:13:56.332
+Or, subject as a Programming.
+
+297
+00:13:56.332 --> 00:13:59.224
+Previously, we had just 50 results.
+
+298
+00:13:59.224 --> 00:14:00.558
+So, from the first page.
+
+299
+00:14:00.558 --> 00:14:02.599
+And, if we hit it right now.
+
+300
+00:14:02.599 --> 00:14:04.526
+Let's see if we saved it.
+
+301
+00:14:04.526 --> 00:14:07.755
+It seems like everything will work correctly.
+
+302
+00:14:07.755 --> 00:14:09.332
+So, as I was saying,
+
+303
+00:14:09.332 --> 00:14:10.653
+if we hit Enter,
+
+304
+00:14:10.653 --> 00:14:11.852
+then we will, pretty much,
+
+305
+00:14:11.852 --> 00:14:13.713
+get all of the courses
+
+306
+00:14:13.713 --> 00:14:15.624
+from the Programming subject.
+
+307
+00:14:15.624 --> 00:14:19.624
+So, let's hit Enter and let's see the results.
+
+308
+00:14:26.451 --> 00:14:30.618
+And, it seems like item_scraped_count is 486,
+
+309
+00:14:30.756 --> 00:14:31.758
+which is perfect.
+
+310
+00:14:31.758 --> 00:14:33.893
+So, pretty much every course
+
+311
+00:14:33.893 --> 00:14:37.135
+from the Programming is going to be scraped
+
+312
+00:14:37.135 --> 00:14:40.860
+Let's double verify this by going in
+
+313
+00:14:40.860 --> 00:14:44.813
+and typing in some other subject, or courses.
+
+314
+00:14:44.813 --> 00:14:46.980
+Let's go to the Science.
+
+315
+00:14:47.894 --> 00:14:51.227
+Copy and paste it in the subject itself.
+
+316
+00:14:55.458 --> 00:14:59.458
+And hit Enter, so let's see if this will work.
+
+317
+00:15:10.050 --> 00:15:11.319
+Okay, so it seems like the
+
+318
+00:15:11.319 --> 00:15:15.475
+item_scraped_count is 717, which is perfect.
+
+319
+00:15:15.475 --> 00:15:16.727
+There are no errors.
+
+320
+00:15:16.727 --> 00:15:18.527
+And, let's, for the end,
+
+321
+00:15:18.527 --> 00:15:22.694
+let's define output as a CSV file
+
+322
+00:15:22.704 --> 00:15:24.442
+or as items.csv.
+
+323
+00:15:24.442 --> 00:15:26.321
+And let's verify that
+
+324
+00:15:26.321 --> 00:15:29.071
+We get no errors when it comes to
+
+325
+00:15:29.989 --> 00:15:34.156
+outputting this data into the CSV file itself.
+
+326
+00:15:34.636 --> 00:15:37.136
+Let's see if this is finished.
+
+327
+00:15:39.532 --> 00:15:41.910
+And let's go to our CSV file,
+
+328
+00:15:41.910 --> 00:15:45.027
+absolute_course_url, course_name,
+
+329
+00:15:45.027 --> 00:15:46.517
+and subject_name, of course,
+
+330
+00:15:46.517 --> 00:15:48.367
+is going to be always.
+
+331
+00:15:48.367 --> 00:15:51.079
+"Computer Science", and yeah,
+
+332
+00:15:51.079 --> 00:15:52.834
+that would be pretty much it
+
+333
+00:15:52.834 --> 00:15:56.397
+for this video, or really the
+
+334
+00:15:56.397 --> 00:15:59.228
+minicourse for the Class Central Spider,
+
+335
+00:15:59.228 --> 00:16:02.561
+and I'll see you in the very next video.
+

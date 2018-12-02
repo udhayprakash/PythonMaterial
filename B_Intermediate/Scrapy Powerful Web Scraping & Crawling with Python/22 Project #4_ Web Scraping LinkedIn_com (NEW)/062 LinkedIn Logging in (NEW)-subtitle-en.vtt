@@ -1,0 +1,385 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:06.200
+Hey there! So in this video, or this section, 
+we'll automate logging in first into LinkedIn,
+
+00:00:06.200 --> 00:00:11.800
+and then going into 10 or so different profiles 
+and scraping some interesting data points.
+
+00:00:11.800 --> 00:00:17.900
+So let's begin right away. 
+First, we need to open the Terminal.
+
+00:00:17.900 --> 00:00:24.560
+Let's maximize it, and let's start 
+to build it. So we'll use ipython.
+
+00:00:24.560 --> 00:00:28.949
+And then the first thing that 
+we will do is import Selenium.
+
+00:00:28.949 --> 00:00:41.000
+So from selenium import webdriver. Then
+we will type in driver = webdriver.Chrome
+
+00:00:41.000 --> 00:00:51.000
+And then we will specify the path to ChromeDriver, 
+which in my case, it's going to be this one.
+
+00:00:51.000 --> 00:00:57.000
+So after we hit Enter, we will, 
+as you can see, have a Chrome window.
+
+00:00:57.000 --> 00:01:01.800
+So then we will go linkedin.com, 
+as you will see in a moment.
+
+00:01:01.800 --> 00:01:09.500
+So driver.get and then in either 
+single or double quotes,
+
+00:01:09.500 --> 00:01:17.000
+you can type in https://www.linkedin.com
+
+00:01:17.000 --> 00:01:22.110
+Hit Enter, and it will run it here, as you 
+will see in a moment. The reason why we are
+
+00:01:22.110 --> 00:01:26.200
+actually using Selenium is because
+LinkedIn is JavaScript heavy,
+
+00:01:26.200 --> 00:01:31.100
+and it's almost impossible 
+to scrape it, really, with Scrapy.
+
+00:01:31.100 --> 00:01:37.800
+And also it changes, really, sometimes on a 
+weekly basis. So it's going to be a bit trickier
+
+00:01:37.800 --> 00:01:43.100
+to do it with Scrapy. So Selenium is 
+10 times better way. So as I saying
+
+00:01:43.100 --> 00:01:47.000
+in the beginning of the video, 
+we will automate logging in first,
+
+00:01:47.000 --> 00:01:51.500
+and we will populate some forms here, 
+such as email and password.
+
+00:01:51.500 --> 00:01:56.300
+To do that, we go to the right
+click, and then Inspect Element.
+
+00:01:56.300 --> 00:02:03.300
+Let's do something like this. And let's 
+maximize this. Let's see, let's close this.
+
+00:02:03.300 --> 00:02:10.500
+And right now, we go to Inspect, 
+and we'll see that we have now here
+
+00:02:10.500 --> 00:02:18.000
+name="session_ key" and then class="login-email" 
+So there are a few different ways of, actually,
+
+00:02:18.000 --> 00:02:24.720
+let's say, selecting the email. 
+We can use either the name,
+
+00:02:24.720 --> 00:02:28.920
+which is going to have this value, 
+or class, which is going to have this value.
+
+00:02:28.920 --> 00:02:34.500
+Let's go with the class. 
+Selenium has their own selector,
+
+00:02:34.500 --> 00:02:42.700
+and it goes by driver.find_element, 
+or elements, as you can see here.
+
+00:02:42.700 --> 00:02:49.000
+So if you need to find multiple elements, you 
+then use find_elements. But if you want to use
+
+00:02:49.000 --> 00:02:55.200
+just a single element, then you use 
+find_element. So we need to now go to the
+
+00:02:55.200 --> 00:03:02.800
+find_element_ by_class_name, as you can see, 
+because it's going to have this value, "login-email"
+
+00:03:02.800 --> 00:03:08.000
+So we go find_element_by_class_name, and then
+
+00:03:08.000 --> 00:03:15.200
+in open and closed parentheses, we type in,
+pretty much, this value. So we can copy this,
+
+00:03:15.200 --> 00:03:21.500
+and paste this in, and then hit Enter. And, 
+as you can see, it will redirect us to the page.
+
+00:03:21.500 --> 00:03:26.900
+This is totally normal. Then we go back 
+to the Terminal, and as you can see, it's found.
+
+00:03:26.900 --> 00:03:32.690
+So then what we need to do 
+is just type in, for example,
+
+00:03:32.690 --> 00:03:40.100
+username is equal to this value, and
+then username.send_keys. So send keys,
+
+00:03:40.100 --> 00:03:47.000
+as you can see in a moment or so, it 
+will populate keys that we input here.
+
+00:03:47.000 --> 00:03:51.900
+So we can type in whatever email 
+that we want. So let's say, for example,
+
+00:03:51.900 --> 00:03:58.200
+foo@gmail.com. Hit Enter. And, as you 
+can see, it's populated here. So it's good to go.
+
+00:03:58.200 --> 00:04:04.300
+Let's go back to your text editor, 
+and let's input some of the lines.
+
+00:04:04.300 --> 00:04:13.500
+So from selenium import webdriver is going to be
+the first one. Select Python as the syntax.
+
+00:04:13.500 --> 00:04:17.139
+Let's go back to the Terminal,
+and let's see. So driver is going to be
+
+00:04:17.139 --> 00:04:29.700
+equal to this value, so we paste it in.
+Then we go to the home page of LinkedIn.
+
+00:04:29.700 --> 00:04:36.150
+We also paste this. We can do
+something like this. And then we find the
+
+00:04:36.150 --> 00:04:43.400
+username or email input, which 
+is going to be this one. And then we type in
+
+00:04:43.400 --> 00:04:51.200
+username.send_keys, for example, 
+this email. The next thing is to locate...
+
+00:04:51.200 --> 00:04:55.400
+let's go back. The next thing,
+really, is to locate the password.
+
+00:04:55.400 --> 00:04:59.000
+So, really, the process is, really, 
+the same, as you will see in a moment.
+
+00:04:59.000 --> 00:05:02.000
+And, most of the time, it's 
+going to be pretty straightforward.
+
+00:05:02.000 --> 00:05:07.300
+So you right-click, go to Inspect. And
+then, as you can see, we have the type,
+
+00:05:07.300 --> 00:05:13.000
+name, class, ID, etc. So let's use, 
+for example, right now, the ID,
+
+00:05:13.000 --> 00:05:19.000
+since the last time we used the class. 
+So we can go back to our Terminal,
+
+00:05:19.000 --> 00:05:30.400
+type in driver.find_element. And then, as you 
+can see... let's see where it is... find_element_by_id
+
+00:05:30.400 --> 00:05:37.900
+So we can, pretty much, do this. And 
+then also in open and closed parentheses,
+
+00:05:37.900 --> 00:05:42.100
+we can copy and paste this value. 
+So id="login-password"
+
+00:05:42.100 --> 00:05:48.800
+We go copy, and go back to the Terminal, 
+and then we can paste this in. Hit Enter.
+
+00:05:48.800 --> 00:05:55.500
+And, as you can see, in a moment, it's going 
+to be found here. And then we can, let's say,
+
+00:05:55.500 --> 00:06:03.500
+assign it to something like password 
+is equal to this value. Let's copy this,
+
+00:06:03.500 --> 00:06:11.900
+and paste it into the Terminal. And then we
+can write here, say, password.send_keys
+
+00:06:11.900 --> 00:06:15.729
+So same thing, really, just like 
+with the username or the email.
+
+00:06:15.729 --> 00:06:24.800
+And then we can type in somepass, for
+example. Copy this. Let's go back to the Terminal.
+
+00:06:24.800 --> 00:06:28.539
+And we can paste this in. After 
+we hit Enter, you will see that
+
+00:06:28.539 --> 00:06:33.300
+it's going to be populated here. The
+password, of course, in asterisks.
+
+00:06:33.300 --> 00:06:38.000
+So, as you can see, it's working perfectly well. 
+This is, by the way, just some dummy account,
+
+00:06:38.000 --> 00:06:44.900
+or dummy, really, information. So after 
+we click here Inspect on the Sign in,
+
+00:06:44.900 --> 00:06:52.600
+because we want to click Sign In button, there's
+multiple ways to be logged in when using Selenium.
+
+00:06:52.600 --> 00:06:57.069
+One thing also to note is that you 
+can also, if the Sign in value changes,
+
+00:06:57.069 --> 00:07:02.600
+that you can enter just Enter as a key.
+So that's also a good thing to know.
+
+00:07:02.600 --> 00:07:08.300
+And also Selenium offers to send 
+keys values. So some of them,
+
+00:07:08.300 --> 00:07:14.400
+such as Return or Enter were just previously 
+discussed. But sometimes, for example, for scrolling in,
+
+00:07:14.400 --> 00:07:21.400
+then you can use Page Down or End, etc. 
+So it's really a great thing to have sometimes.
+
+00:07:21.400 --> 00:07:25.900
+So let's go to Sign in, and let's see 
+what values does it offer.
+
+00:07:25.900 --> 00:07:31.500
+So we have here the ID, as you can see, 
+"login-submit", class, type.
+
+00:07:31.500 --> 00:07:39.969
+Let's use, for example, type. So we go to the... so 
+we need to have type and submit. So let's see if,
+
+00:07:39.969 --> 00:07:50.500
+actually, Selenium offers the type first.
+So we go driver.find_element_by_
+
+00:07:50.500 --> 00:07:56.000
+And, let's see, so does it contain type?
+Nope, it doesn't contain type.
+
+00:07:56.000 --> 00:08:02.439
+But it contains by_xpath. So we can then 
+write our custom XPath. So it's going to be
+
+00:08:02.439 --> 00:08:08.500
+similar as with Scrapy. So we type in
+driver.find_element_by_xpath,
+
+00:08:08.500 --> 00:08:16.000
+and then here we type in our XPath selector,
+which is going to be double slash asterisk,
+
+00:08:16.000 --> 00:08:22.000
+and then in square brackets, type is
+going to be equal... let's go and see...
+
+00:08:22.000 --> 00:08:28.500
+type is going to be equal to submit. So we
+type here submit. And then hit Enter.
+
+00:08:28.500 --> 00:08:35.500
+Let's go back to the Terminal. Perfect. 
+It's found. Also sometimes it's good to know
+
+00:08:35.500 --> 00:08:41.500
+when doing debugging, for example, 
+let's say we type in two times T, and hit Enter.
+
+00:08:41.500 --> 00:08:45.000
+As you can see here, we got the 
+message NoSuchElementException.
+
+00:08:45.000 --> 00:08:51.200
+So this is a good thing to note, that 
+not always, or really, when the value
+
+00:08:51.200 --> 00:08:57.200
+with the Selenium is empty, then you 
+will get the NoSuchElementException.
+
+00:08:57.200 --> 00:09:02.900
+So you will have to figure out the 
+correct selector. So we type in submit.
+
+00:09:02.900 --> 00:09:13.500
+Okay, so it works. And let's type in, for example, 
+sign_in_button is equal to this value,
+
+00:09:13.500 --> 00:09:20.800
+and copy and paste this 
+into our preferred text editor.
+
+00:09:20.800 --> 00:09:27.420
+Paste it in. And then, finally, we will
+click it. So the way that you click it,
+
+00:09:27.420 --> 00:09:35.800
+it's going to be pretty straightforward.
+So we type in sign_in_button.click() and that's it.
+
+00:09:35.800 --> 00:09:40.800
+This really mimics clicking 
+on the button, so let's do that.
+
+00:09:40.800 --> 00:09:45.000
+And, as you can see, it changed. 
+But, of course, since this is going to be
+
+00:09:45.000 --> 00:09:50.800
+a dummy account, as you can see, 
+it needed to reset your password, etc.
+
+00:09:50.800 --> 00:09:56.900
+But if it was a real account, then it 
+would be working perfectly fine.
+
+00:09:56.900 --> 00:10:01.200
+So that will be it for this video. In the
+very next one, we will continue
+
+00:10:01.200 --> 00:10:05.240
+with the automating scraping LinkedIn.
+

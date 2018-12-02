@@ -1,0 +1,266 @@
+﻿WEBVTT
+
+1
+00:00:01.010 --> 00:00:02.842
+- [Instructor] Hey there, so today we are going
+
+2
+00:00:02.842 --> 00:00:05.272
+to cover how to install Scrapy.
+
+3
+00:00:05.272 --> 00:00:07.444
+We will use the process that's used
+
+4
+00:00:07.444 --> 00:00:09.968
+with the Linux Ubuntu Operating System.
+
+5
+00:00:09.968 --> 00:00:13.704
+So if we head over to scrapy.org, load the page,
+
+6
+00:00:13.704 --> 00:00:17.818
+and you will see at the top of the page, Documentation link.
+
+7
+00:00:17.818 --> 00:00:19.978
+So let's click the Documentation,
+
+8
+00:00:19.978 --> 00:00:21.818
+and as you just moments ago saw
+
+9
+00:00:21.818 --> 00:00:24.332
+it will redirect us to the latest
+
+10
+00:00:24.332 --> 00:00:27.083
+official Scrapy Documentation.
+
+11
+00:00:27.083 --> 00:00:29.144
+Since we want to install Scrapy
+
+12
+00:00:29.144 --> 00:00:31.927
+we will go to the Installation Guide,
+
+13
+00:00:31.927 --> 00:00:35.488
+which is located here on the left Navigation Bar.
+
+14
+00:00:35.488 --> 00:00:38.154
+So let's click the Installation Guide,
+
+15
+00:00:38.154 --> 00:00:41.040
+and once the page is loaded
+
+16
+00:00:41.040 --> 00:00:44.212
+we will go to the Platform Specific Installation Notes
+
+17
+00:00:44.212 --> 00:00:45.462
+and click this,
+
+18
+00:00:46.389 --> 00:00:49.225
+and since we would like to install this for Ubuntu
+
+19
+00:00:49.225 --> 00:00:51.874
+we can click this here.
+
+20
+00:00:51.874 --> 00:00:54.979
+And this process pretty much explains here
+
+21
+00:00:54.979 --> 00:00:59.146
+the Installation Guide for Ubuntu 12.04 or above,
+
+22
+00:00:59.367 --> 00:01:02.354
+as you can see, which you are probably using.
+
+23
+00:01:02.354 --> 00:01:04.025
+So, since Scrapy is a framework
+
+24
+00:01:04.025 --> 00:01:06.358
+it has several dependencies.
+
+25
+00:01:07.283 --> 00:01:09.453
+Some dependencies might be already installed,
+
+26
+00:01:09.453 --> 00:01:11.428
+and some might not,
+
+27
+00:01:11.428 --> 00:01:14.668
+and pretty much this command that I'm highlighting right now
+
+28
+00:01:14.668 --> 00:01:17.756
+installs all dependencies that are required
+
+29
+00:01:17.756 --> 00:01:20.426
+on Ubuntu to run properly Scrapy.
+
+30
+00:01:20.426 --> 00:01:23.190
+So since it's already ready for you,
+
+31
+00:01:23.190 --> 00:01:26.397
+let's copy and paste it to the Terminal.
+
+32
+00:01:26.397 --> 00:01:28.506
+So we go here to the Copy,
+
+33
+00:01:28.506 --> 00:01:30.616
+and then open new Terminal,
+
+34
+00:01:30.616 --> 00:01:32.366
+and Paste it here,
+
+35
+00:01:34.696 --> 00:01:36.907
+and then this will require the password,
+
+36
+00:01:36.907 --> 00:01:39.759
+you enter the password, hit Enter,
+
+37
+00:01:39.759 --> 00:01:42.999
+and it should install itself.
+
+38
+00:01:42.999 --> 00:01:46.340
+Then if you would want to go to this command
+
+39
+00:01:46.340 --> 00:01:49.277
+to install Scrapy, pip install scrapy,
+
+40
+00:01:49.277 --> 00:01:52.277
+let's navigate back to the Terminal,
+
+41
+00:01:53.293 --> 00:01:56.293
+and type in: sudo pip install scrapy
+
+42
+00:01:58.356 --> 00:02:01.326
+If you don't type in sudo it will probably
+
+43
+00:02:01.326 --> 00:02:05.493
+require you to type it in to type the password.
+
+44
+00:02:05.748 --> 00:02:08.043
+So hit Enter once again,
+
+45
+00:02:08.043 --> 00:02:12.210
+and once it's installed, we will install the IPython.
+
+46
+00:02:12.768 --> 00:02:16.935
+IPython is used later on for the Scrapy shell.
+
+47
+00:02:17.224 --> 00:02:20.363
+So to do or to install IPython
+
+48
+00:02:20.363 --> 00:02:24.363
+you should just type in sudo pip install IPython
+
+49
+00:02:25.982 --> 00:02:28.767
+and hit Enter, and then once it's installed
+
+50
+00:02:28.767 --> 00:02:30.556
+that's pretty much it.
+
+51
+00:02:30.556 --> 00:02:33.999
+So to figure out if you've installed Scrapy correctly,
+
+52
+00:02:33.999 --> 00:02:36.024
+you should just type in scrapy,
+
+53
+00:02:36.024 --> 00:02:38.200
+in the Terminal, hit Enter,
+
+54
+00:02:38.200 --> 00:02:41.306
+and it will load the Scrapy version,
+
+55
+00:02:41.306 --> 00:02:45.473
+and also if there are any active projects, et cetera.
+
+56
+00:02:46.132 --> 00:02:50.299
+Or the other process is to type in python, hit Enter,
+
+57
+00:02:51.094 --> 00:02:54.402
+and then type in: import scrapy.
+
+58
+00:02:54.402 --> 00:02:56.123
+If it loads without any errors
+
+59
+00:02:56.123 --> 00:02:58.081
+you are pretty much good to go.
+
+60
+00:02:58.081 --> 00:03:00.747
+Then to exit the Python shell,
+
+61
+00:03:00.747 --> 00:03:03.700
+just type in: exit()
+
+62
+00:03:03.700 --> 00:03:06.260
+and hit Enter, that's pretty much it.
+
+63
+00:03:06.260 --> 00:03:09.196
+So if you encounter any kind of issues,
+
+64
+00:03:09.196 --> 00:03:11.879
+make sure to head over to our Q&amp;A section
+
+65
+00:03:11.879 --> 00:03:13.921
+and ask for help.
+
+66
+00:03:13.921 --> 00:03:16.576
+And I'll see you in the very next video.
+

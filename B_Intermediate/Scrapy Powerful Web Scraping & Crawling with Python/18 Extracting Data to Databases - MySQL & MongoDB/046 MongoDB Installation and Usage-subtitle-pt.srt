@@ -1,0 +1,342 @@
+﻿1
+00:00:00,160 --> 00:00:00,570
+Olá!
+
+2
+00:00:00,570 --> 00:00:06,250
+Então neste vídeo vamos cobrir o MongoDB.
+O MongoDB é o tão falado database NoSQL.
+
+3
+00:00:06,360 --> 00:00:13,470
+Então os dados são armazenados como documentos
+e usa uma sintaxe como o JSON, o que faz ele extremamente
+
+4
+00:00:13,730 --> 00:00:14,900
+compreensível.
+
+5
+00:00:15,030 --> 00:00:20,170
+Então em um database relacional como o MySQL,
+você precisa mapear basicamente tudo.
+
+6
+00:00:20,370 --> 00:00:26,650
+Então qual tabela você usa, campos e tipos dos campos, que incluiem:
+inteiros, datas, strings, etc.
+
+7
+00:00:26,670 --> 00:00:32,860
+No MongoDB esse não é o caso.
+Para instalar o MongoDB,
+
+8
+00:00:32,880 --> 00:00:35,250
+o processo é muito simples então vá para
+
+9
+00:00:35,280 --> 00:00:42,230
+a página de documentação e instalação oficial.
+Depois disso, você terá aqui uma descrição detalhada multiplataforma
+
+10
+00:00:42,240 --> 00:00:45,540
+dependendo, claro, do seu sistema operacional.
+
+11
+00:00:45,540 --> 00:00:47,340
+Depois que estiver instalado,
+
+12
+00:00:47,340 --> 00:00:52,630
+podemor ir em frente e brincar com o database no shell.
+Para fazer isso
+
+13
+00:00:52,680 --> 00:01:00,660
+podemos digitar no Terminal "mongo", e isso vai abrir o shell.
+Para listar toda as bases de dados,
+
+14
+00:01:00,660 --> 00:01:08,590
+podemos digitar "show dbs" e, como você pode ver aqui,
+nós temos os dois padrões, admin e local, e para criar bases de dados
+
+15
+00:01:08,610 --> 00:01:16,200
+vamos digitar por exemplo "use school_db"
+que vai ser nosso database school.
+
+16
+00:01:16,440 --> 00:01:22,170
+E se quisermos ver em qual database estamos atualmente,
+podemos digitar "db", mas isto
+
+17
+00:01:22,170 --> 00:01:32,130
+não é necessário porque recebemos a mensagem
+de que mudamos o database que é
+
+18
+00:01:32,130 --> 00:01:39,270
+chamada school_db depois que criamos ele,
+e também para criar um usuário...
+
+19
+00:01:39,270 --> 00:01:43,710
+podemos digitar "db.createUser"
+
+20
+00:01:44,610 --> 00:01:53,160
+e então parênteses e nos parênteses vamos digitar chaves
+e nelas vamos criar um usuário que
+
+21
+00:01:53,160 --> 00:01:58,090
+pode ser "principal" e a senha,
+
+22
+00:01:58,160 --> 00:01:59,010
+então "pwd",
+
+23
+00:01:59,190 --> 00:02:03,090
+vai ser "123", por exemplo.
+
+24
+00:02:03,090 --> 00:02:10,900
+E finalmente "roles" vai ser um tipo de regra que podem ser usadas depois.
+
+25
+00:02:10,900 --> 00:02:14,890
+Então "roles" vai estar nos colchetes e a primeira regra vai ser
+
+26
+00:02:14,920 --> 00:02:16,350
+"readWrite"
+
+27
+00:02:16,460 --> 00:02:22,250
+E a segunda regra vai ser "dbAdmin".
+
+28
+00:02:22,510 --> 00:02:31,120
+E se pressionarmos Enter, ou digitarmos isso e pressionar Enter,
+isto vai ser, como você pode ver, um usuário
+
+29
+00:02:31,660 --> 00:02:32,490
+adicionado com sucesso.
+
+30
+00:02:32,500 --> 00:02:40,910
+Então temos que coletar ou usar coleções.
+Coleções são similares às tabelas no MySQL.
+
+31
+00:02:40,960 --> 00:02:51,370
+Então para pegar ou criar uma coleção, podemos digitar
+"db.createCollection()", o nome da coleção
+
+32
+00:02:51,370 --> 00:03:02,530
+vai ser "student" ou "students"
+e então temos o status OK que é perfeito e para mostrar
+
+33
+00:03:02,560 --> 00:03:05,520
+as coleções vamos digitar apenas "show collections".
+
+34
+00:03:05,560 --> 00:03:14,180
+E isto vai, como você pode ver, como o nome indica mostrar coleções.
+Para inserir algum dado, podemos digitar "db" então
+
+35
+00:03:14,230 --> 00:03:18,130
+o nome da coleção que neste caso é "students".
+
+36
+00:03:18,140 --> 00:03:27,100
+Então "db.students" e então "insert"
+e nesse insert podemos digitar novamente no parênteses e
+
+37
+00:03:27,100 --> 00:03:30,560
+então vamos digitar as chaves.
+
+38
+00:03:30,620 --> 00:03:40,960
+O primeiro ponto de dado, por exemplo,
+pode ser "name:'Mike'", por exemplo, e então "age" pode ser,
+
+39
+00:03:40,960 --> 00:03:48,780
+por exemplo "23" ano
+e o "grade" pode ser "A", por exemplo.
+
+40
+00:03:49,720 --> 00:03:52,470
+E como você pode ver, conseguimos os resultados certos.
+
+41
+00:03:52,480 --> 00:03:56,500
+Esse aqui ou uma linha de dados que foi inserida.
+
+42
+00:03:56,710 --> 00:04:02,960
+Então para mostrar o dado, podemos digitar apenas "db"
+e então o nome da coleção, que é "students"
+
+43
+00:04:03,010 --> 00:04:06,820
+e então "find()", pressionar Enter.
+
+44
+00:04:06,850 --> 00:04:16,060
+E como você pode ver aqui, nós temos as chaves
+ou uma linha de dado com a adição do "_id" que
+
+45
+00:04:16,060 --> 00:04:22,330
+vai sempre ter este único e especial ObjectId.
+
+46
+00:04:22,390 --> 00:04:28,170
+Então ele vai ser dinamicamente atribuído, claro, para duas linhas diferentes.
+
+47
+00:04:28,210 --> 00:04:31,630
+Então ela vai ser, novamente, única, o que é bom.
+
+48
+00:04:31,630 --> 00:04:39,010
+Então em databases MySQL, você tem que fazer isto manualmente
+se você quiser algo
+
+49
+00:04:39,010 --> 00:04:39,820
+similar.
+
+50
+00:04:39,850 --> 00:04:48,880
+Então para inserir algumas linhas de dados diferentes
+de uma vez, você pode digitar entre os parênteses
+
+51
+00:04:48,880 --> 00:04:57,010
+o colchete, o que vamos fazer, mas
+vamos primeiro copiar e colar esta linha
+
+52
+00:04:58,780 --> 00:05:06,120
+porque vai ser um pouco mais simples
+de escrever isso no editor de texto.
+
+53
+00:05:06,430 --> 00:05:16,450
+Então, por exemplo, vamos usar chaves
+e vamos usar a primeira linha de dado. "name" vai ser
+
+54
+00:05:17,450 --> 00:05:18,660
+"Michael".
+
+55
+00:05:19,630 --> 00:05:32,380
+E então o "age" vai ser por exemplo "40" anos
+e "grade" vai ser, digamos, um "B+", então vamos
+
+56
+00:05:33,220 --> 00:05:42,340
+digitar "," e então novamente chaves ou colchetes
+vão ser necessários aqui e então podemos
+
+57
+00:05:42,340 --> 00:05:43,520
+digitar ",".
+
+58
+00:05:43,570 --> 00:05:49,270
+E, finalmente, vamos deixar isso um pouco mais bonito.
+
+59
+00:05:49,330 --> 00:05:56,200
+Então a segunda linha de dados vai ser,
+o "name" vai ser "Josh", por exemplo,
+
+60
+00:05:56,230 --> 00:06:06,320
+"age" vai ser, vamos dizer, "35" anos
+e "grade" vai ser "C-".
+
+61
+00:06:06,640 --> 00:06:19,160
+Então isto é como você consegue duas ou mais linhas de dados diferentes.
+Vamos copiar e colar isto, deletar isto.
+
+62
+00:06:19,300 --> 00:06:28,360
+E se nós encontrarmos isso ou listar
+os resultados aqui, vamos ver três, perfeito.
+
+63
+00:06:28,370 --> 00:06:36,570
+Então nós temos três linhas diferentes de dados,
+tudo com names diferentes e ObjectIds diferentes e ages
+
+64
+00:06:36,570 --> 00:06:38,190
+e grades, claro.
+
+65
+00:06:38,190 --> 00:06:39,090
+Então está perfeito.
+
+66
+00:06:39,090 --> 00:06:48,630
+Então para deixar isso bonito, assim falando, e mostrá-lo
+em um formato mais legível, podemos digitar junto
+
+67
+00:06:48,630 --> 00:06:56,440
+com o abre e fecha parênteses,
+podemos digitar "pretty()", pressionar Enter
+
+68
+00:06:56,440 --> 00:07:03,320
+e, como você pode ver, está mais legível agora.
+Para remover a coleção
+
+69
+00:07:03,370 --> 00:07:13,710
+você pode digitar "db.student.remove({})", o que
+
+70
+00:07:13,710 --> 00:07:22,080
+vai remover toda a coleção, ou linhas de dados
+e aqui se usarmos "pretty()" nos resultados, você verá que
+
+71
+00:07:22,170 --> 00:07:23,760
+não há resultados.
+
+72
+00:07:23,760 --> 00:07:27,710
+Finalmente como derrubar ou remover o database. Para fazer isso
+
+73
+00:07:27,720 --> 00:07:35,400
+podemos digitar "db.dropDatabase()", pressionar Enter.
+
+74
+00:07:35,400 --> 00:07:42,110
+E como você verá o database school foi derrubado,
+e isso é tudo para este vídeo. No próximo,
+
+75
+00:07:42,120 --> 00:07:48,870
+vamos cobrir como inserir os dados
+que foram extraídos no MongoDB. Vejo você!
+

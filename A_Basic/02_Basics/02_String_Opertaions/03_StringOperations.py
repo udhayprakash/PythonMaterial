@@ -75,7 +75,7 @@ print 'language[::3] :', language[::3]
 print
 # If step is -ve, and start_index and final_index were not given,
 # then start_index = last string index and
-# final_index = 0
+# final_index = -1
 print 'language[::-1] :', language[::-1]  # string reversal
 print 'language[::-2] :', language[::-2]  # string reversal
 print 'language[::-5] :', language[::-5]  # string reversal

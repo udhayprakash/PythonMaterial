@@ -1,0 +1,510 @@
+﻿1
+00:00:00,030 --> 00:00:07,259
+Olá! Então esta é a quarta parte desta
+seção, e nela vamos basicamente
+
+2
+00:00:07,259 --> 00:00:13,559
+iterar sobre os detalhes da aplicação.
+Então como esta, por exemplo.
+
+3
+00:00:13,559 --> 00:00:18,840
+E então vamos iterar sobre páginas ou processar,
+na verdade, as próximas páginas até que
+
+4
+00:00:18,840 --> 00:00:27,779
+não haja mais páginas. Então neste caso,
+vamos extrair quatro páginas. Então vamos começar.
+
+5
+00:00:27,779 --> 00:00:33,210
+Ok. Vamos para o shell, e então vamos
+ver se estamos na página certa.
+
+6
+00:00:33,210 --> 00:00:40,680
+Então response.url, e parece que estamos.
+Então vamos primeiro, como eu estava dizendo,
+
+7
+00:00:40,680 --> 00:00:46,860
+isolar este tipo de número de arquivo, ou as URLs
+para páginas específicas ou páginas da aplicação.
+
+8
+00:00:46,860 --> 00:00:53,550
+Então já que este é um site simples,
+não devem haver tantas preocupações.
+
+9
+00:00:53,550 --> 00:00:59,699
+Então vamos para Inspect, e então vamos ver.
+
+10
+00:00:59,699 --> 00:01:06,390
+Então podemos extrair isso usando ou selecionando todo
+dado da tabela, e então indo para cada uma das tags "a",
+
+11
+00:01:06,390 --> 00:01:14,130
+e indo para cada uma das tags href.
+Então vamos tentar fazer isso.
+
+12
+00:01:14,130 --> 00:01:23,159
+Vamos voltar para o Terminal e digitar
+"response.xpath". Selecione todo ID ou dado da tabela.
+
+13
+00:01:23,159 --> 00:01:31,049
+Vamos para a tag "a". Então vamos
+verificar novamente isto. Então todo dado da tabela,
+
+14
+00:01:31,049 --> 00:01:39,720
+vai para a tag "a", e então vai para o href,
+e chamamos extract. Pressione Enter.
+
+15
+00:01:39,720 --> 00:01:49,759
+E aqui nós conseguimos, vamos ver, então esta é
+a primeira. E vamos para o Inspect,
+
+16
+00:01:49,759 --> 00:01:56,970
+vamos voltar para o Terminal, e vamos
+ver. É, este é o último.
+
+17
+00:01:56,970 --> 00:02:01,860
+Então estas são as páginas, como você pode ver, ou as URLS.
+Como você pode ver, este é um prcosse bem direto.
+
+18
+00:02:01,860 --> 00:02:07,650
+Falando de forma geral, quando se
+trata de extrair dados da tabela,
+
+19
+00:02:07,650 --> 00:02:12,750
+certifique-se, uma observação, então se você gostaria
+de extrair, talvez, Decision Due Date
+
+20
+00:02:12,750 --> 00:02:21,090
+ou Decision Date ou Decision Code, etc., minha ideia
+ou minha abordagem geral para extrair tabelas
+
+21
+00:02:21,090 --> 00:02:27,090
+é que você precisa primeiro
+isolar as linhas, ok?
+
+22
+00:02:27,090 --> 00:02:31,739
+E então você precisa isolar o dado da tabela.
+Então este é o primeiro dado da tabela. Este é o segundo,
+
+23
+00:02:31,739 --> 00:02:37,500
+como você pode ver. Este então é o terceiro,
+vê? E este é o quarto.
+
+24
+00:02:37,500 --> 00:02:41,640
+Como você pode ver, está vazio. Este é o quarto,
+e este é o quinto, sexto, etc.
+
+25
+00:02:41,640 --> 00:02:48,060
+Então certifique-se, novamente,
+de isolar as linhas da tabela
+
+26
+00:02:48,060 --> 00:02:55,230
+e então reiterar sobre cada uma das linhas da tabela
+porque dessa forma você pode ter mais noção dos dados.
+
+27
+00:02:55,230 --> 00:03:02,760
+Caso contrário, o que eu fiz, e também do
+meu lado, e também de alguns estudantes,
+
+28
+00:03:02,760 --> 00:03:09,959
+é que quando eles não tiverem os
+dados em células, como estão aqui,
+
+29
+00:03:09,959 --> 00:03:16,980
+então se eles tentarem analisar a tabela como está, como um
+todo, então eles vão ter muitos problemas, porque
+
+30
+00:03:16,980 --> 00:03:21,600
+então eles terão pontos de dados
+misturados e combinados
+
+31
+00:03:21,600 --> 00:03:29,100
+através de todas essas células. Então, ok.
+Vamos voltar para nosso projeto.
+
+32
+00:03:29,100 --> 00:03:35,310
+Vá para o Terminal, e podemos, basicamente,
+copiar e colar isto no nosso editor de texto.
+
+33
+00:03:35,310 --> 00:03:43,860
+Então podemos definir esta application_urls como
+isto, e então podemos apenas iterar sobre as URLs.
+
+34
+00:03:43,860 --> 00:03:54,829
+Então "for url in application_urls",
+então copie e cole isto.
+
+35
+00:03:54,940 --> 00:03:59,720
+Vamos ver se precisamos usar response.urljoin.
+
+36
+00:03:59,720 --> 00:04:06,819
+Ok, precisaremos porque ele não vai ter
+a URL absoluta. Então "url = response.urljoin",
+
+37
+00:04:06,819 --> 00:04:16,459
+e então url. Finalmente, então vamos usar
+"yield Request". Então parse ou, desculpe,
+
+38
+00:04:16,459 --> 00:04:28,460
+"yield Request" e então "url". E vamos definir
+o callback como "self.parse_",
+
+39
+00:04:28,460 --> 00:04:35,510
+vamos dizer, "items", por exemplo. E vamos
+salvar como está. E para propósitos de testes,
+
+40
+00:04:35,510 --> 00:04:42,979
+o que eu fiz anteriormente, e quando
+eu quero extrair apenas algo para um teste,
+
+41
+00:04:42,979 --> 00:04:48,020
+é ir para, por exemplo, a função parse
+ou a primeira, e apenas pegar a primeira instância.
+
+42
+00:04:48,020 --> 00:04:55,370
+Então vamos apenas querer, vamos ver,
+extrair a primeira URL,
+
+43
+00:04:55,370 --> 00:05:00,130
+que provavelmente vai ser esta região.
+Então vamos ver. Então ele vai ser esta URL.
+
+44
+00:05:00,130 --> 00:05:07,660
+Então usamos aqui o list slicing, e para
+fazer isso vamos do 0 até o 1, salvamos isso,
+
+45
+00:05:07,660 --> 00:05:13,880
+e então voltamos para o Terminal e rodamos
+nosso script. Então vamos ver se isto vai funcionar.
+
+46
+00:05:13,880 --> 00:05:18,710
+Não, não vai. O motivo é porque
+o primeiro vai ser filtrado para fora.
+
+47
+00:05:18,710 --> 00:05:25,340
+Então vamos para o segundo.
+Então podemos ir do 0 até o 2, por exemplo.
+
+48
+00:05:25,340 --> 00:05:29,810
+O primeiro, claro, vai ser filtrado e o segundo
+vai ser, espero,
+
+49
+00:05:29,810 --> 00:05:36,020
+o que eu preciso. Ok.
+Então ele é. Então este é filtrado,
+
+50
+00:05:36,020 --> 00:05:45,320
+e o primeiro vai para o POST, e vamos ver.
+Ele deve ser... se voltarmos para cá...
+
+51
+00:05:45,320 --> 00:05:50,840
+Nós não definimos esta função, então
+se definirmos ela, isso deve estar pronto.
+
+52
+00:05:50,840 --> 00:05:56,840
+E por enquanto, vamos apenas passar como está,
+voltar para o Terminal,
+
+53
+00:05:56,840 --> 00:06:05,480
+e executar ele mais uma vez. Ok,
+algo está estranho, então vamos ver o que está acontecendo.
+
+54
+00:06:05,480 --> 00:06:11,400
+Então estamos indo para o
+application_urls. E parece que... é.
+
+55
+00:06:11,400 --> 00:06:18,420
+Eu provavelmente sei qual é o problema. Então vamos tentar fazer isso
+com as cinco regiões ou algo como isso.
+
+56
+00:06:18,420 --> 00:06:22,140
+O problema aqui é que se nós formos
+para o Received Applications,
+
+57
+00:06:22,140 --> 00:06:26,220
+e então "42 Days", clicar em Search,
+ele vai provavelmente estar vazio. Certo.
+
+58
+00:06:26,220 --> 00:06:31,890
+Então vamos voltar para o Sublime Text
+e selecionar até o 10, mais ou menos.
+
+59
+00:06:31,890 --> 00:06:41,580
+Então podemos mais rapidamente ir
+sobre este modelo. E vamos ver.
+
+60
+00:06:41,580 --> 00:06:47,580
+Então agora, ele vai para o GET. E então,
+ok, parece que está funcionando.
+
+61
+00:06:47,580 --> 00:06:55,440
+Então se copiarmos e colarmos isto no nosso
+navegador e, parece que precisamos
+
+62
+00:06:55,440 --> 00:07:00,450
+fazer isso mais uma vez.
+Ok. Então este site é meio estranho.
+
+63
+00:07:00,450 --> 00:07:05,370
+Então você tem que carregar a página duas vezes para chegar na
+URL. Ok, então parece que está funcionando, o que é ótimo.
+
+64
+00:07:05,370 --> 00:07:13,230
+Então vamos voltar para o editor de texto
+e remover nosso list slicing.
+
+65
+00:07:13,230 --> 00:07:19,140
+Então isto é, novamente, o que eu uso
+quando estou produzindo ou, na verdade,
+
+66
+00:07:19,140 --> 00:07:25,230
+desenvolvendo teste rápidos para ver se a nova função
+ou a nova URL ou qualquer outra coisa vai funcionar.
+
+67
+00:07:25,230 --> 00:07:29,610
+Então, neste caso, tudo está
+funcionando bem, o que é ótimo.
+
+68
+00:07:29,610 --> 00:07:36,800
+A última coisa que vamos precisar fazer nesta
+parte do vídeo é... vamos para o Search...
+
+69
+00:07:36,800 --> 00:07:43,500
+é iterar ou rastrear as próximas páginas.
+Então isso vai ser bem direto.
+
+70
+00:07:43,500 --> 00:07:50,790
+Vamos para o Inspect e então,
+vamos ver, então podemos
+
+71
+00:07:50,790 --> 00:07:56,700
+ir para a classe com o valor e então
+ir para o "a" e então extrair a tag href,
+
+72
+00:07:56,700 --> 00:08:03,860
+ou podemos pegar este valor e
+ter o next como valor para ele.
+
+73
+00:08:03,860 --> 00:08:08,139
+Então eu acredito que podemos
+copiar... ok, perfeito.
+
+74
+00:08:08,139 --> 00:08:13,569
+Podemos copiar e colar isto como
+está. Então vamos voltar para 	o shell
+
+75
+00:08:13,569 --> 00:08:20,379
+e verificar que tudo vai funcionar, em
+primeiro lugar. Então response.xpath,
+
+76
+00:08:20,379 --> 00:08:27,009
+e então podemos digitar isto, e
+podemos adicionar para selecionar toda instância.
+
+77
+00:08:27,009 --> 00:08:34,360
+Então a sintaxe é a mesma de que se extraíssemos ou tentássemos
+escrever o seletor XPath para a própria class.
+
+78
+00:08:34,360 --> 00:08:41,159
+Então vamos pressionar Enter. Perfeito.
+Funciona. Então precisamos ir para o href
+
+79
+00:08:41,159 --> 00:08:47,649
+e extrair a primeira instância.
+Ok, feche os parênteses.
+
+80
+00:08:47,649 --> 00:08:54,130
+Ok, ele funciona, mas, claro, precisamos ter a
+URL absoluta. Então vamos usar o response.urljoin.
+
+81
+00:08:54,130 --> 00:09:00,790
+Ok? Então isto também é uma coisa importante
+para se notar porque eu também fiz
+
+82
+00:09:00,790 --> 00:09:06,490
+este erro provavelmente 10 vezes, que eu
+esqueci de adicionar o response.urljoin,
+
+83
+00:09:06,490 --> 00:09:13,449
+ou, essa URL não foi especificada ou, na verdade,
+não como uma bem sucedida. Então se copiarmos isto,
+
+84
+00:09:13,449 --> 00:09:18,240
+colarmos no nosso editor de texto como
+
+85
+00:09:18,899 --> 00:09:30,490
+"next_page_url" é igual a isto. E
+então, vamos dizer, "absolute_next_page_url"
+
+86
+00:09:30,490 --> 00:09:38,250
+vai ser igual ao response.urljoin.
+E então podemos copiar e colar isto.
+
+87
+00:09:38,339 --> 00:09:44,410
+Então, finalmente, vamos usar o "yield Request". Agora
+vamos atribuir o mesmo callback para o "yield Request",
+
+88
+00:09:44,410 --> 00:09:49,120
+que vai ser o parse_pages, porque
+queremos, claro, iterar sobre a primeira página.
+
+89
+00:09:49,120 --> 00:09:54,100
+Então na lógica do Scrapy, ele vai para
+esta página, na primeira página,
+
+90
+00:09:54,100 --> 00:10:00,040
+e então vamos usar "yield" para a próxima página.
+
+91
+00:10:00,040 --> 00:10:05,589
+Então, de certa forma, o Scrapy vai novamente para o parse_pages,
+que é o motivo de estarmos indo
+
+92
+00:10:05,589 --> 00:10:09,610
+definir a função callback como parse_pages,
+e isso vai extrair então a segunda página,
+
+93
+00:10:09,610 --> 00:10:15,160
+então ele vai... o
+"absolute_next_page_url" vai ser a terceira página,
+
+94
+00:10:15,160 --> 00:10:19,870
+porque estamos na segunda página, e
+então ele vai fazer a mesma coisa para a quarta, quinta,
+
+95
+00:10:19,870 --> 00:10:25,180
+ou quantas páginas houver. Então
+"yield Request", então podemos copiar e colar
+
+96
+00:10:25,180 --> 00:10:34,029
+esta URL, vírgula, callback é
+igual a self.parse_pages.
+
+97
+00:10:34,029 --> 00:10:40,899
+Ok, então podemos copiar isto e colar isso.
+Ok, então salve ele, volte para o Terminal,
+
+98
+00:10:40,899 --> 00:10:48,790
+e vamos verificar que tudo está funcionando.
+Ok, então devemos olhar para
+
+99
+00:10:48,790 --> 00:10:54,370
+a segunda página, como você pode
+ver aqui. Nós conseguimos a segunda página,
+
+100
+00:10:54,370 --> 00:10:59,800
+e esta é a terceira página de um dos
+resultados. Então tudo está funcionando bem.
+
+101
+00:10:59,800 --> 00:11:06,759
+Então podemos fechar isso pressionando ctrl + C
+duas vezes. E já que está tudo funcionando,
+
+102
+00:11:06,759 --> 00:11:10,990
+podemos então proceder para
+o próximo vídeo, onde verei você.
+
+103
+00:11:10,990 --> 00:11:13,620
+Falamos em breve!
+

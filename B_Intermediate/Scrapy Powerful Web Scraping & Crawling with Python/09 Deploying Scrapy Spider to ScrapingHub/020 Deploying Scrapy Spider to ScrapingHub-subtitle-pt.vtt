@@ -1,0 +1,512 @@
+﻿WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.718 --> 00:00:02.992
+Olá! Então hoje nós vamos cobrir
+
+2
+00:00:02.992 --> 00:00:06.372
+como implementar o código spider no Scrapinghub.
+
+3
+00:00:06.372 --> 00:00:10.381
+Vamos cobrir apenas o código
+
+4
+00:00:10.390 --> 00:00:13.252
+que já escrevemos há alguns vídeos atrás.
+
+5
+00:00:13.252 --> 00:00:15.973
+E Scrapinghub é basicamente uma ferramenta,
+
+6
+00:00:15.973 --> 00:00:18.373
+ou uma plataforma web crawling baseada em nuvem,
+
+7
+00:00:18.373 --> 00:00:21.681
+melhor dizendo, onde podemos enviar nosso código spider,
+
+8
+00:00:21.681 --> 00:00:25.269
+como faremos em um momento, e rodá-lo de lá
+
+9
+00:00:25.269 --> 00:00:28.852
+O spider que nós vamos, basicamente...
+
+10
+00:00:30.603 --> 00:00:32.272
+que eu vou implementar.
+
+11
+00:00:32.272 --> 00:00:36.439
+Vamos rodar eles mais uma vez localmente para que possamos verificar
+
+12
+00:00:36.765 --> 00:00:38.923
+se tudo é extraído corretamente.
+
+13
+00:00:38.923 --> 00:00:41.140
+Como você pode ver, item_scraped_count: 1,
+
+14
+00:00:41.140 --> 00:00:45.307
+então da página inicial vamos pegar, basicamente,
+
+15
+00:00:45.410 --> 00:00:49.460
+o h1_tag e finalmente os sub-itens do tags,
+
+16
+00:00:52.101 --> 00:00:54.556
+e estamos prontos para continuar.
+
+17
+00:00:54.556 --> 00:00:57.399
+Então voltando para a página do Scrapinghub,
+
+18
+00:00:57.399 --> 00:00:59.245
+quando formos para o login,
+
+19
+00:00:59.245 --> 00:01:01.651
+como já tenho uma conta eu vou digitar
+
+20
+00:01:01.651 --> 00:01:04.060
+meu usuário e senha.
+
+21
+00:01:04.060 --> 00:01:06.990
+Se você não tem uma conta, apenas clique aqui para
+
+22
+00:01:06.990 --> 00:01:10.490
+se registrar ou logar com o Google ou Github.
+
+23
+00:01:13.475 --> 00:01:16.201
+Aqui vamos ser saudados em um momento
+
+24
+00:01:16.201 --> 00:01:18.341
+com a página Overview, como você pode ver,
+
+25
+00:01:18.341 --> 00:01:21.885
+e daqui nós podemos criar nosso projeto.
+
+26
+00:01:21.885 --> 00:01:25.310
+Em Organization, você não precisa mudar isto.
+
+27
+00:01:25.310 --> 00:01:28.304
+"Name" pode ser algo como "quotes",
+
+28
+00:01:28.304 --> 00:01:32.471
+e construimos a ferramenta com Scrapy, então vamos clicar em Create.
+
+29
+00:01:35.061 --> 00:01:39.228
+E finalmente aqui podemos implementar nosso spider,
+
+30
+00:01:39.797 --> 00:01:41.851
+ou, melhor dizendo, aqui são as instruções
+
+31
+00:01:41.851 --> 00:01:44.905
+ou como realmente fazer isso.
+
+32
+00:01:44.905 --> 00:01:47.497
+A ferramenta que vai ser necessária é chamada
+
+33
+00:01:47.497 --> 00:01:49.916
+Scrapinghub command line client, como você pode ver,
+
+34
+00:01:49.916 --> 00:01:54.041
+e ele pode ser instalado com apenas o "pip install shub".
+
+35
+00:01:54.041 --> 00:01:57.454
+Então isso vai ser muito fácil, realmente,
+
+36
+00:01:57.454 --> 00:02:01.275
+isso vai ser extremamente fácil.
+
+37
+00:02:01.275 --> 00:02:04.075
+Então vamos voltar para nosso Terminal.
+
+38
+00:02:04.075 --> 00:02:08.099
+Ok, nós já estamos aqui, e aqui nós já temos
+
+39
+00:02:08.099 --> 00:02:10.443
+as instruções de como implementá-lo,
+
+40
+00:02:10.443 --> 00:02:12.666
+então podemos copiar e colar isto
+
+41
+00:02:12.666 --> 00:02:15.749
+no nosso código spider, então "shub deploy".
+
+42
+00:02:18.740 --> 00:02:21.124
+Vamos precisar colocar nosso ID do projeto.
+
+43
+00:02:21.124 --> 00:02:24.457
+O ID do projeto está localizado aqui, cole ele,
+
+44
+00:02:26.765 --> 00:02:30.932
+e salve como padrão e em, mais ou menos 5 segundos,
+
+45
+00:02:32.444 --> 00:02:34.916
+vamos conseguir o status de que está ok,
+
+46
+00:02:34.916 --> 00:02:37.626
+e então esta página vai mudar.
+
+47
+00:02:37.626 --> 00:02:40.376
+Então vamos esperar um momento.
+
+48
+00:02:42.026 --> 00:02:44.990
+E como você pode ver, já está feito, e o status é OK,
+
+49
+00:02:44.990 --> 00:02:48.570
+e tudo está bem e essa página também mudou,
+
+50
+00:02:48.570 --> 00:02:52.712
+e parece que tudo está funcionando corretamente.
+
+51
+00:02:52.712 --> 00:02:54.894
+Então vamos voltar para nosso Dashboard.
+
+52
+00:02:54.894 --> 00:02:58.639
+Aqui nós temos o botão "Run", vamos clicar nele.
+
+53
+00:02:58.639 --> 00:03:01.854
+Spiders, aqui nós temos o spider quotes que nós já
+
+54
+00:03:01.854 --> 00:03:05.802
+criamos e nós não precisamos mudar ou modificar ele,
+
+55
+00:03:05.802 --> 00:03:08.354
+adicionar, ou coisas como essa, nada.
+
+56
+00:03:08.354 --> 00:03:10.354
+Então vamos clicar no Run.
+
+57
+00:03:11.673 --> 00:03:15.046
+Aqui temos o Running Jobs e depois disso estar completo
+
+58
+00:03:15.046 --> 00:03:16.713
+em mais ou menos 20 segundos,
+
+59
+00:03:19.724 --> 00:03:22.893
+este ID e o quotes vai ser
+
+60
+00:03:22.893 --> 00:03:25.356
+transferido para o Completed Jobs.
+
+61
+00:03:25.356 --> 00:03:29.439
+E depois de um tempo, como há retenção de dados,
+
+62
+00:03:30.818 --> 00:03:34.057
+ele vai estar em Deleted Jobs, ou este spider quotes,
+
+63
+00:03:34.057 --> 00:03:36.807
+vai estar no menu do Deleted Jobs.
+
+64
+00:03:38.496 --> 00:03:40.018
+Vamos ver se ele foi finalizado.
+
+65
+00:03:40.018 --> 00:03:42.123
+Então parece que ainda está rodando.
+
+66
+00:03:42.123 --> 00:03:46.290
+Há um item extraído, e está finalmente completo.
+
+67
+00:03:46.885 --> 00:03:51.052
+Então como estava dizendo, aqui temos um item, um request,
+
+68
+00:03:51.580 --> 00:03:55.080
+zero Errors e também 17 mensagens de Log.
+
+69
+00:03:56.679 --> 00:03:59.268
+Essas mensagens de Log já estão presentes
+
+70
+00:03:59.268 --> 00:04:02.435
+se você rodar ele apenas no seu Terminal.
+
+71
+00:04:03.530 --> 00:04:05.385
+Vamos voltar.
+
+72
+00:04:05.385 --> 00:04:08.263
+E finalmente você tem o Runtime, o Started Time,
+
+73
+00:04:08.263 --> 00:04:12.430
+e o Finished Time, e o Outcome, o que é ótimo.
+
+74
+00:04:13.115 --> 00:04:15.282
+Então vamos para o quotes.
+
+75
+00:04:16.119 --> 00:04:19.119
+Vamos ver se podemos pegar nossos dados.
+
+76
+00:04:21.550 --> 00:04:22.967
+Só um momento.
+
+77
+00:04:24.310 --> 00:04:27.643
+Dashboard... eu acho que em algum lugar aqui.
+
+78
+00:04:30.649 --> 00:04:34.049
+Então para reter o dado que foi extraído,
+
+79
+00:04:35.176 --> 00:04:39.086
+uma vez completo, claro, você pode ir para o Items
+
+80
+00:04:39.086 --> 00:04:43.253
+e finalmente se você tem um spider para extrair
+
+81
+00:04:43.410 --> 00:04:46.865
+milhares e milhares de itens e talvez você apenas precise
+
+82
+00:04:46.865 --> 00:04:49.888
+alguns deles, você pode clicar aqui para baixar
+
+83
+00:04:49.888 --> 00:04:52.358
+algum item específico, como este aqui.
+
+84
+00:04:52.358 --> 00:04:55.313
+Como há apenas um item neste caso já que este é,
+
+85
+00:04:55.313 --> 00:04:59.480
+depois de tudo, só uma demo, podemos ir para o Export
+
+86
+00:05:00.505 --> 00:05:03.104
+e aqui nós temos tanto para pegar o dado
+
+87
+00:05:03.104 --> 00:05:05.021
+em: CSV, JSON ou XML.
+
+88
+00:05:06.234 --> 00:05:07.651
+Vamos selecionar CSV.
+
+89
+00:05:10.183 --> 00:05:13.720
+E então parece que ele foi baixado.
+
+90
+00:05:13.720 --> 00:05:16.637
+E depois que abrirmos, vamos ver que
+
+91
+00:05:18.649 --> 00:05:22.816
+em vez de termos nossas duas colunas ou dois sub-itens,
+
+92
+00:05:23.174 --> 00:05:25.236
+vamos ter uma adicional
+
+93
+00:05:25.236 --> 00:05:27.898
+e ela vai ser o nome dos nossos itens,
+
+94
+00:05:27.898 --> 00:05:30.815
+e o nome da coluna é "type".
+
+95
+00:05:33.384 --> 00:05:36.097
+Então vamos ver sobre o que mais podemos falar.
+
+96
+00:05:36.097 --> 00:05:38.264
+Podemos falar também sobre os
+
+97
+00:05:40.081 --> 00:05:42.015
+trabalhos periódicos que você pode rodar.
+
+98
+00:05:42.015 --> 00:05:45.707
+Então do Dashboard, você pode ir para o Periodic Jobs,
+
+99
+00:05:45.707 --> 00:05:48.874
+e então você pode ir para Add Periodic Jobs.
+
+100
+00:05:50.107 --> 00:05:51.999
+Vamos selecionar o spider quotes.
+
+101
+00:05:51.999 --> 00:05:56.166
+Prioridade e qualquer outra coisa você pode mudar ou modificar.
+
+102
+00:05:56.605 --> 00:06:00.772
+Eu não acho que nós vamos precisar mudar alguma coisa.
+
+103
+00:06:01.539 --> 00:06:04.333
+Então por exemplo, se você quer rodar o código spider
+
+104
+00:06:04.333 --> 00:06:08.114
+todo dia às 12 horas, então você pode apenas selecionar
+
+105
+00:06:08.114 --> 00:06:11.735
+aqui 12 horas e então clicar Save.
+
+106
+00:06:11.735 --> 00:06:13.915
+E aqui nós temos, como você pode ver, está ativado,
+
+107
+00:06:13.915 --> 00:06:16.011
+então praticamente tudo está pronto.
+
+108
+00:06:16.011 --> 00:06:20.171
+E então no Dashboard, você verá o Next Jobs
+
+109
+00:06:20.171 --> 00:06:23.868
+e então às 12 horas, ele vai estar rodando
+
+110
+00:06:23.868 --> 00:06:28.035
+e depois de 30 segundos, como foi neste caso,
+
+111
+00:06:28.220 --> 00:06:31.964
+ele vai para o Completed Jobs, então amanhã vamos ter
+
+112
+00:06:31.964 --> 00:06:35.797
+dois trabalhos completos mais ou menos às 12 horas.
+
+113
+00:06:37.605 --> 00:06:41.309
+Outras ferramentas de ajuda que eles oferecem é esta aqui.
+
+114
+00:06:41.309 --> 00:06:44.460
+Este, eu acho, é o serviço parcialmente gratuito.
+
+115
+00:06:44.460 --> 00:06:47.920
+Então ele é usado para web scraping visual e este aqui
+
+116
+00:06:47.920 --> 00:06:51.482
+é uma boa ferramenta, ou a solução perfeita,
+
+117
+00:06:51.482 --> 00:06:53.947
+quando você está extraindo algum site bem conhecido
+
+118
+00:06:53.947 --> 00:06:55.635
+que coloca captcha.
+
+119
+00:06:55.635 --> 00:06:59.221
+Então esta é uma ferramenta para integrar seu código
+
+120
+00:06:59.221 --> 00:07:03.388
+spider já existente com um conjunto de diferentes IPs
+
+121
+00:07:03.935 --> 00:07:06.396
+e quando esse IP começar a ser banido
+
+122
+00:07:06.396 --> 00:07:10.562
+ou colocar um CAPTCHA, ele vai para a lixeira de reciclagem,
+
+123
+00:07:11.001 --> 00:07:15.168
+assim falando, e então irá para o próximo IP.
+
+124
+00:07:15.561 --> 00:07:17.987
+Então isto é tudo para este vídeo.
+
+125
+00:07:17.987 --> 00:07:21.098
+No próximo, nós vamos vamos cobrir
+
+126
+00:07:21.098 --> 00:07:23.112
+como logar com Scrapy.
+
+127
+00:07:23.112 --> 00:07:23.945
+Falamos em breve!
+

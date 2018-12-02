@@ -1,0 +1,539 @@
+﻿1
+00:00:00,030 --> 00:00:06,750
+Olá! Então continuando do nosso
+último vídeo, e o próximo ponto de dados
+
+2
+00:00:06,750 --> 00:00:13,000
+que vamos extrair vai ser a localização.
+Então a localização pode ser encontrada aqui,
+
+3
+00:00:13,000 --> 00:00:19,200
+como você pode ver, London, United Kingdom.
+Então vamos aqui e Inspect.
+
+4
+00:00:19,200 --> 00:00:24,000
+E é similar ao último,
+então pv-top-card-section__school.
+
+5
+00:00:24,000 --> 00:00:31,900
+Aqui nós temos pv-top-card-section__location.
+Então já que já temos o código,
+
+6
+00:00:31,900 --> 00:00:38,800
+podemos digitar o, vamos ver, por exemplo,
+vamos copiar e colar esta declaração inteira como está,
+
+7
+00:00:38,800 --> 00:00:44,000
+e o nomeie ele como, claro, a variável
+location que é igual a isto.
+
+8
+00:00:44,000 --> 00:00:51,600
+E então apenas coloque location no lugar de school.
+Eu acredito que isto vai funcionar. É, ele devia funcionar.
+
+9
+00:00:51,600 --> 00:00:59,400
+Então vamos ver. Vamos copiar esta declaração,
+colar isto no nosso Terminal, pressionar Enter. Perfeito.
+
+10
+00:00:59,400 --> 00:01:05,300
+Como você pode ver, ele está
+localizando o "London, United Kingdom".
+
+11
+00:01:05,300 --> 00:01:13,979
+Vamos ver, o último ponto de dados que
+podemos extrair vai ser a URL.
+
+12
+00:01:13,979 --> 00:01:23,800
+E se você lembrar corretamente, ele vai ser simples
+como colocar "driver.current_url" e pressionar Enter.
+
+13
+00:01:23,800 --> 00:01:28,100
+E, como você pode ver, ele vai
+corresponder a esta URL.
+
+14
+00:01:28,100 --> 00:01:34,500
+Então podemos copiar isto, e
+colar isto no nosso editor de texto,
+
+15
+00:01:34,500 --> 00:01:41,000
+chamar isto, por exemplo,
+"linkedin_url = driver.current_url"
+
+16
+00:01:41,000 --> 00:01:47,500
+Então, vamos ver, a próxima coisa que podemos fazer é,
+depois de executar isso, então depois do script,
+
+17
+00:01:47,500 --> 00:01:53,500
+vamos carregar cada uma das URLs.
+No nosso caso, vão ser 10 URLs.
+
+18
+00:01:53,500 --> 00:01:59,930
+Podemos imprimir nossos resultados que foram extraídos daqui.
+Então para fazer isso, vamos apenas usar o "print"
+
+19
+00:01:59,930 --> 00:02:11,500
+e podemos... primeiro, vamos digitar aqui
+uma nova linha. Para fazer isso, digitamos "\n"
+
+20
+00:02:11,500 --> 00:02:15,320
+e então está mais legível,
+como você verá em um momento.
+
+21
+00:02:15,320 --> 00:02:22,800
+Então podemos digitar primeiro o name,
+que vai estar localizado aqui.
+
+22
+00:02:22,800 --> 00:02:27,000
+Então podemos copiar isto, colar aqui.
+
+23
+00:02:27,000 --> 00:02:38,050
+Então o segundo ponto de vado vai ser o job_title.
+Então "print 'Job Title: ' + job_title".
+
+24
+00:02:38,050 --> 00:02:49,000
+O terceiro ponto de dados é school,
+então "print 'School:' + school"
+
+25
+00:02:49,000 --> 00:02:57,800
+e então o location e também o linkedin_url,
+então "print 'Location: ' + location".
+
+26
+00:02:57,800 --> 00:03:09,000
+E finalmente a URL. Então podemos digitar apenas a URL.
+E isto é... isto é o ponto de dado.
+
+27
+00:03:09,000 --> 00:03:19,500
+Então, finalmente, vamos carregar nosso arquivo CSV, com o nome,
+que ele vai herdar do arquivo parameters.py.
+
+28
+00:03:19,500 --> 00:03:25,900
+Vamos ver. Vamos fazer isto em algum lugar,
+por exemplo, aqui. Então podemos digitar...
+
+29
+00:03:25,900 --> 00:03:33,400
+Primeiro precisamos, claro, usar o import. Então
+vamos importar o csv como um módulo padrão.
+
+30
+00:03:33,400 --> 00:03:40,700
+E então podemos digitar aqui
+"writer = csv.writer".
+
+31
+00:03:40,700 --> 00:03:45,200
+E então entre parênteses, nós usamos "open".
+
+32
+00:03:45,200 --> 00:03:54,000
+O nome do arquivo vai ser o primeiro parâmetro,
+que vai ser do parameters.file_name.
+
+33
+00:03:54,000 --> 00:04:04,100
+E então digitamos nosso segundo parâmetro,
+que vai ser "wb"
+
+34
+00:04:04,100 --> 00:04:09,100
+Isso corresponde a escrever para o arquivo.
+
+35
+00:04:09,100 --> 00:04:17,300
+E então digitamos primeiro o writerow. E então a
+primeira linha, claro, vai ser nosso cabeçalho.
+
+36
+00:04:17,300 --> 00:04:27,000
+Então digitamos aqui o Name. E o
+segundo é, vamos ver.
+
+37
+00:04:27,000 --> 00:04:31,500
+Podemos, basicamente, fazer isto. Então
+podemos copiar isto, e colar isto aqui,
+
+38
+00:04:31,500 --> 00:04:42,500
+Então Job Title, vírgula. O terceiro vai ser
+School. O quarto vai ser Location.
+
+39
+00:04:42,500 --> 00:04:49,500
+Então copiamos isto, colamos aqui, e
+a última vai ser URL.
+
+40
+00:04:49,500 --> 00:04:55,000
+Então a sintaxe para escrever para o arquivo CSV é
+muito simples, como você pode ver.
+
+41
+00:04:55,000 --> 00:05:00,300
+Novamente, apenas carregamos o writer, e então o writerow,
+e com a lista de items correspondentes
+
+42
+00:05:00,300 --> 00:05:08,100
+que gostaríamos de adicionar. Então isto vai escrever para
+a primeira linha, o que corresponde a nosso cabeçalho.
+
+43
+00:05:08,100 --> 00:05:13,500
+Então estamos nomeando de acordo.
+Então o que precisamos fazer é...
+
+44
+00:05:13,500 --> 00:05:19,400
+Então atualmente estamos no laço for,
+o que vai iterar
+
+45
+00:05:19,400 --> 00:05:26,100
+sobre toda as nossas querys coletadas do
+Google, todos nossas URLs linkadas.
+
+46
+00:05:26,100 --> 00:05:36,300
+Então aqui digitamos "writer" e,
+desculpa, "writer.writerow"
+
+47
+00:05:36,300 --> 00:05:46,800
+E então digitamos aqui o name,
+e então podemos colocar o encode como utf-8,
+
+48
+00:05:46,800 --> 00:05:52,800
+apenas para garantir que vai funcionar.
+Então o segundo ponto de dado é, desculpa.
+
+49
+00:05:52,800 --> 00:06:00,500
+Isto vai estar na lista porque writerow, como você
+viu aqui, vai estar na lista dos itens.
+
+50
+00:06:00,500 --> 00:06:05,900
+Então o segundo ponto de dado... vamos copiar isto, na verdade.
+
+51
+00:06:05,900 --> 00:06:10,200
+Então vamos ver, name, job_title,
+então school, location, linkedin_url.
+
+52
+00:06:10,200 --> 00:06:19,900
+Se copiarmos isto, e então colar isso em algum lugar aqui,
+e então podemos digitar aqui para acelerar um pouco
+
+53
+00:06:19,900 --> 00:06:24,910
+a parte chata. Digitamos aqui também o "utf-8".
+
+54
+00:06:24,910 --> 00:06:31,000
+Nós colocamos o encoding só para garantir
+que todos os caracteres vão ser carregados.
+
+55
+00:06:31,000 --> 00:06:35,800
+Nós colocamos nossa lista de itens em
+colchetes e então writerow
+
+56
+00:06:35,800 --> 00:06:44,000
+em colchetes. E para garantir que
+tudo está funcionando corretamente,
+
+57
+00:06:44,000 --> 00:06:49,200
+vamos ver, vamos salvar o arquivo,
+e vamos executar ele.
+
+58
+00:06:49,200 --> 00:06:55,120
+Isto... Vamos apenas testar isso, também, novamente.
+Eu acredito que tudo vai estar funcionando.
+
+59
+00:06:55,120 --> 00:06:59,170
+Então estamos importando o CSV.
+É, deve estar funcionando.
+
+60
+00:06:59,170 --> 00:07:05,000
+Então vamos voltar para nosso Desktop e,
+finalmente, executar nosso script. Então abra o Terminal,
+
+61
+00:07:05,000 --> 00:07:12,520
+mude o diretório para o Desktop,
+e então digite "python script.py",
+
+62
+00:07:12,520 --> 00:07:18,810
+e então pressione Enter. Como você pode ver,
+o arquivo results_file.csv é gerado automaticamente.
+
+63
+00:07:18,810 --> 00:07:23,500
+Agora, ele não foi populado ainda
+porque não extraímos nada.
+
+64
+00:07:23,500 --> 00:07:31,500
+E podemos carregar também o LinkedIn, apenas
+para ter os perfis prontos para extrair.
+
+65
+00:07:31,500 --> 00:07:37,000
+Estamos colocando esta query, e então
+devemos começar a iterar sobre os perfis,
+
+66
+00:07:37,000 --> 00:07:47,500
+e isto é o primeiro. Então vamos ver se isto
+vai funcionar. Ok, vamos ver.
+
+67
+00:07:47,500 --> 00:07:52,800
+Ele não vai ser encontrado. Então vamos ver,
+"print 'School'", como você pode ver aqui,
+
+68
+00:07:52,800 --> 00:08:01,600
+não conseguimos o school, então o TypeError
+de que ele não consegue listar a string,
+
+69
+00:08:01,600 --> 00:08:11,000
+e também o NoneType objects. Então
+isto não é encontrado, vamos ver, aqui.
+
+70
+00:08:11,000 --> 00:08:19,800
+Então school vai ser vazio. Então o que eu
+faço neste tipo de caso é escrever uma função,
+
+71
+00:08:19,800 --> 00:08:29,000
+que vai ser algo como, vamos nomeá-lo,
+por exemplo, validade_field.
+
+72
+00:08:29,000 --> 00:08:38,500
+E então digite aqui "field" como um parâmetro.
+E aqui podemos digitar "if field",
+
+73
+00:08:38,500 --> 00:08:45,700
+então vamos usar "pass", porque se field está
+presente, então ele não é necessário, certo?
+
+74
+00:08:45,700 --> 00:08:50,400
+E então digitamos aqui "else"
+"field" é igual a uma string vazia,
+
+75
+00:08:50,400 --> 00:08:53,500
+e então, finalmente, "return field".
+
+76
+00:08:53,500 --> 00:08:59,500
+Então vou explicar, novamente, esta função
+ou o que exatamente ela faz, em um momento.
+
+77
+00:08:59,500 --> 00:09:07,400
+Então podemos copiar isto e então, vamos ver,
+podemos em algum lugar aqui, fazer algo como, vamos ver,
+
+78
+00:09:07,400 --> 00:09:13,800
+name, job_title, school, location, e
+linkedin_url. Copie todos esses pontos de dados diferentes,
+
+79
+00:09:13,800 --> 00:09:25,900
+cole ele, indente eles corretamente, e
+então, novamente, faça algo como isto.
+
+80
+00:09:25,900 --> 00:09:28,600
+E então aqui, podemos adicionar nossa função,
+
+81
+00:09:28,600 --> 00:09:35,249
+que vai estar no, vamos ver,
+validade_field, se eu me lembro corretamente.
+
+82
+00:09:35,249 --> 00:09:46,000
+E entre os parênteses, podemos adicionar nosso field.
+Então neste caso... vamos ver,
+
+83
+00:09:46,000 --> 00:09:53,500
+neste caso, neste perfil, não conseguimos
+nenhum school. Então vamos fechar isto.
+
+84
+00:09:53,500 --> 00:09:59,000
+Então vamos... depois disso aqui,
+isso vai validar o campo do school.
+
+85
+00:09:59,000 --> 00:10:03,600
+Então se formos para a função validade_field, "if field"
+
+86
+00:10:03,600 --> 00:10:10,000
+vamos usar "pass". Então neste caso, como o field
+não está definido, ele vai para o else,
+
+87
+00:10:10,000 --> 00:10:15,800
+e definir o field como uma string vazia, que
+é porque não há nenhum field.
+
+88
+00:10:15,800 --> 00:10:23,700
+E então ele vai finalmente "return field".
+Vamos salvar isto. Se formos para o arquivo CSV e abrir ele,
+
+89
+00:10:23,700 --> 00:10:28,400
+você vai ver apenas o cabeçalho. Então
+isto é porque não extraímos
+
+90
+00:10:28,400 --> 00:10:35,700
+ou conseguimos ir para o
+segundo writerow do nosso script.
+
+91
+00:10:35,700 --> 00:10:40,500
+Então o script é salvo. Então podemos
+voltar para nosso Terminal,
+
+92
+00:10:40,500 --> 00:10:52,700
+e rodar novamente nosso script. Vamos preencher isto.
+
+93
+00:10:52,700 --> 00:11:02,000
+Então, agora, ele deve ir para google.com
+e colocar nossa query de busca.
+
+94
+00:11:02,000 --> 00:11:13,700
+E, finalmente, nós devemos ir para a página
+de perfil do Paul no LinkedIn
+
+95
+00:11:13,720 --> 00:11:18,360
+Ok, perfeito. Então funciona. E, como você pode
+ver aqui, school vai estar vazio.
+
+96
+00:11:18,360 --> 00:11:23,500
+Location vai ser populado, e todos os
+outros pontos de dados aqui
+
+97
+00:11:23,500 --> 00:11:29,000
+vão ser populados, já que adicionamos
+novas linhas, como você pode ver.
+
+98
+00:11:29,000 --> 00:11:33,900
+Vamos voltar para nosso Sublime Text.
+Já que adicionamos as novas linhas,
+
+99
+00:11:33,900 --> 00:11:39,810
+o Terminal, na verdade a saída, vai ser
+muito mais legível, como você pode ver.
+
+100
+00:11:39,810 --> 00:11:49,000
+Vamos ver, vamos minimizar isto e, vamos ver,
+então este é o primeiro, segundo, terceiro, quarto, quinto.
+
+101
+00:11:49,000 --> 00:11:56,300
+Então vamos esperar meio minuto quando isso
+tudo estiver acabado. Então, como você pode ver,
+
+102
+00:11:56,300 --> 00:12:03,800
+esta última pessoa também não tem o school.
+Este outro tem todos pontos de dados.
+
+103
+00:12:03,800 --> 00:12:10,500
+Então tudo foi coletado, já que
+vai ser listado na página de perfil.
+
+104
+00:12:10,500 --> 00:12:16,500
+E isso deve estar, por um perfil ou dois,
+isso deve estar completo agora.
+
+105
+00:12:16,500 --> 00:12:23,500
+Então vamos esperar até acabar.
+
+106
+00:12:23,540 --> 00:12:29,000
+Ok, perfeito. Então está pronto.
+Se formos para o results_file.csv,
+
+107
+00:12:29,000 --> 00:12:34,500
+ele vai estar populado com os campos
+de dados, como você pode ver aqui.
+
+108
+00:12:34,500 --> 00:12:40,000
+Então isto é tudo para este vídeo. No próximo,
+vamos iterar, novamente,
+
+109
+00:12:40,000 --> 00:12:46,900
+ou na verdade rodar, o script e clicar no
+botão Connect em cada um dos perfis.
+
+110
+00:12:46,900 --> 00:12:50,560
+Então vejo você no próximo vídeo.
+

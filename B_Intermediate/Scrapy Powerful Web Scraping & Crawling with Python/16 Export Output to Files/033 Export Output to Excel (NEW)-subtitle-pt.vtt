@@ -1,0 +1,113 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00.240 --> 00:04.100
+Olá! Então hoje vamos falar
+sobre os feed exports do Scrapy.
+
+00:04.140 --> 00:10.410
+O motivo de construir spiders é porque queremos
+reunir dados dos sites. Os dados reunidos são então exportados
+
+00:10.410 --> 00:12.450
+para vários formatos de dados.
+
+00:12.450 --> 00:17.960
+Tradicionalmente, se você está construindo um spider do zero,
+você terá que construir a exportação de dados você mesmo.
+
+00:17.970 --> 00:19.130
+Mas o Scrapy
+
+00:19.140 --> 00:28.080
+oferece para salvar dados em CSV, JSON e XML,
+que em um momento vamos rodar, que em outras palavras
+
+00:28.230 --> 00:33.330
+ajuda tremendamente quando se trata de
+acelerar a programação de spiders, então você gasta menos tempo
+
+00:33.330 --> 00:36.370
+se preocupando se seus exports não estão funcionando.
+
+00:36.480 --> 00:38.520
+Então vamos rodar alguns exemplos.
+
+00:39.150 --> 00:45.420
+E o jeito que vamos rodá-los é digitando
+"scrapy crawl books".
+
+00:45.420 --> 00:50.570
+Os feed exports são definidos por
+"-o" que significa output.
+
+00:50.580 --> 00:56.760
+Por exemplo, vamos nomear o output,
+por exemplo, "items",
+
+00:56.770 --> 00:57.860
+não importa.
+
+00:57.860 --> 01:06.260
+O que importa é a extensão, então CSV ou JSON ou XML,
+que são suportados já por padrão.
+
+01:06.260 --> 01:15.590
+Vamos tentar o ".csv" que vai fornecer um monte de nomes de colunas.
+Os nomes das colunas vão ser da
+
+01:15.590 --> 01:20.870
+declaração yield que especificamos aqui
+das chaves do dicionário.
+
+01:21.530 --> 01:23.530
+E aqui estão os resultados neste caso.
+
+01:23.570 --> 01:29.080
+O outro formato de dado que estava falando é o JSON.
+
+01:29.120 --> 01:35.680
+Então apenas rode ele com, ou para salvar o dado
+em JSON, apenas digite ".json".
+
+01:35.870 --> 01:42.470
+Vamos rodar ele e vamos abrir o arquivo que vai ser gerado
+no diretório raiz no editor de texto
+
+01:42.770 --> 01:44.830
+e vamos deixá-lo bonito.
+
+01:45.110 --> 01:51.530
+E como você pode ver nesta chave,
+nós temos uma linha do dado, por exemplo, que vai ser representado
+
+01:51.530 --> 02:01.340
+no arquivo CSV. E a última saída ou feed export
+que o Scrapy oferece é o XML. Vamos rodar ele.
+
+02:04.330 --> 02:15.630
+E se abrirmos o arquivo .xml no Chrome ou no seu editor de texto,
+vamos ver de novo os resultados
+
+02:15.640 --> 02:18.970
+no formato XML.
+
+02:18.970 --> 02:26.740
+Então, novamente, isso ajuda tremendamente quando contruindo spiders
+e salva muito tempo e você pode, claro,
+
+02:26.740 --> 02:34.900
+salvar os dados para TXT ou escrever spiders que salvam dados para TXT
+
+02:34.900 --> 02:35.540
+ou alguma base de dados como MySQL.
+
+02:35.860 --> 02:37.490
+E isso é tudo para este vídeo.
+
+02:37.510 --> 02:38.850
+E obrigado por assistir.
+
+02:39.050 --> 02:39.260
+Tchau!

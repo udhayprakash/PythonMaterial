@@ -1,0 +1,485 @@
+﻿1
+00:00:00,030 --> 00:00:05,500
+Hey there! So in this section we will
+learn how to scrape JSON specific pages.
+
+2
+00:00:05,500 --> 00:00:12,500
+We will use a site called Trump Twitter
+Archive dot com for scraping these type of pages,
+
+3
+00:00:12,500 --> 00:00:17,670
+and here's how this will actually
+work. So after we go to the home page,
+
+4
+00:00:17,670 --> 00:00:23,000
+we will see here Latest Tweets, and
+then see all. So then if we click here,
+
+5
+00:00:23,000 --> 00:00:32,149
+we have or it redirects us to the /archive.
+After that, as you can see, there will be,
+
+6
+00:00:32,149 --> 00:00:39,000
+so to speak, a never [ending] page
+with the data. So, most of the time,
+
+7
+00:00:39,000 --> 00:00:46,160
+what you will then do here is go to
+Inspect, then, finally, to the Network,
+
+8
+00:00:46,160 --> 00:00:52,590
+and then reload the page. So if we do this,
+we will see a bunch of different requests.
+
+9
+00:00:52,590 --> 00:00:59,219
+What we are mainly interested in is going
+to be, after we go to this specific tab,
+
+10
+00:00:59,219 --> 00:01:04,500
+is the JSON files. So whenever you
+see JSON requests, most of the time
+
+11
+00:01:04,500 --> 00:01:12,000
+they will contain data in the JSON files. Okay?
+So as you can see here from the Response tab,
+
+12
+00:01:12,000 --> 00:01:16,000
+after we go to it, 2009, this
+corresponds, pretty much,
+
+13
+00:01:16,000 --> 00:01:27,479
+to all of the tweets archive in from the 2009,
+all the way to the 2017. So if we copy this,
+
+14
+00:01:27,479 --> 00:01:36,000
+so copy link address, and then paste it in,
+you will see that data is right now, sort of,
+
+15
+00:01:36,000 --> 00:01:43,720
+unreadable, right? So... but if we copy
+this, and then open our text editor,
+
+16
+00:01:43,720 --> 00:01:50,500
+paste it in, and then use formatting
+for JSON, you will see now
+
+17
+00:01:50,500 --> 00:01:58,100
+that data is in the JSON format. So it's going to be
+extremely easy to scrape this type of information.
+
+18
+00:01:58,100 --> 00:02:06,900
+Whenever you see that JSON files are available,
+then you can quickly write spider,
+
+19
+00:02:06,900 --> 00:02:10,179
+and don't bother, really,
+with the scraping of the HTML,
+
+20
+00:02:10,179 --> 00:02:14,000
+and figuring out first if you
+will isolate maybe rows,
+
+21
+00:02:14,000 --> 00:02:18,000
+or maybe just scrape all the data at once, etc.
+
+22
+00:02:18,000 --> 00:02:25,300
+This is 10 times easier, really. So
+for now, let's go to the Desktop.
+
+23
+00:02:25,300 --> 00:02:31,900
+And I've created just a sample spider
+with the startproject and genspider.
+
+24
+00:02:31,900 --> 00:02:39,400
+So after you go to the spiders, let's open this.
+As you can see, it's nothing unusual.
+
+25
+00:02:39,400 --> 00:02:55,000
+So if we just do this... and
+the starting URL will be, for example,
+
+26
+00:02:55,000 --> 00:03:01,500
+let's say we want to scrape just the tweets
+from 2017. So we can copy this link address,
+
+27
+00:03:01,500 --> 00:03:12,600
+go back to the sublime text, and paste
+the URL here. Now if we open the Terminal,
+
+28
+00:03:12,600 --> 00:03:22,100
+and open mainly the scrapy shell... okay?
+So we type in scrapy shell,
+
+29
+00:03:22,100 --> 00:03:30,600
+and then paste the URL to the JSON file,
+and then type in response.body.
+
+30
+00:03:30,600 --> 00:03:38,500
+And, as you can see, it's going to be our previously
+opened JSON file. And if we type in view(response),
+
+31
+00:03:38,500 --> 00:03:43,400
+to open this, this will be opened.
+As you can see, via your text editor.
+
+32
+00:03:43,400 --> 00:03:47,000
+That's also how we know that
+this is a different type of page.
+
+33
+00:03:47,000 --> 00:03:52,000
+As you can see, it's going to be
+or have extension dot txt.
+
+34
+00:03:52,000 --> 00:03:59,160
+So let's go back to the Terminal. So the
+way that you parse JSON file is via or, really,
+
+35
+00:03:59,160 --> 00:04:06,000
+built in Python module called JSON.
+So what you need to do is just use
+
+36
+00:04:06,000 --> 00:04:16,100
+command import json. Then we can call in
+jsonresponse variable name is equal to the json.loads.
+
+37
+00:04:16,100 --> 00:04:20,300
+Loads is, pretty much, load
+stands for loading, of course.
+
+38
+00:04:20,300 --> 00:04:29,500
+And then "s" will stand for string. So load
+string, and we will then load response.body, really, or
+
+39
+00:04:29,500 --> 00:04:33,600
+pretty much all of the content
+that I'm highlighting right now.
+
+40
+00:04:33,600 --> 00:04:37,650
+Hit Enter, and then if you type in jsonresponse, hit Enter,
+
+41
+00:04:37,650 --> 00:04:42,800
+you will see that it's going to be,
+sort of, more readable, prettified.
+
+42
+00:04:42,800 --> 00:04:48,810
+So the text that I'm highlighting right now is
+one tweet, and then we can quickly just
+
+43
+00:04:48,810 --> 00:04:53,500
+write a simple for loop, as you will see
+in a moment. And just iterate over each
+
+44
+00:04:53,500 --> 00:04:57,300
+and every tweet, and then from each and
+every tweet, we can grab, pretty much,
+
+45
+00:04:57,300 --> 00:05:04,600
+all of the data points that you can see here
+from this note. So let's go to the text editor.
+
+46
+00:05:04,600 --> 00:05:09,400
+So what we need to do here
+is import the JSON module,
+
+47
+00:05:09,400 --> 00:05:17,000
+and here in the parse function, we call in
+our jsonresponse = json.loads
+
+48
+00:05:17,000 --> 00:05:24,800
+and then in the parentheses (response.body),
+which, of course, will list out or
+
+49
+00:05:24,800 --> 00:05:34,200
+get us the source code or the text. And,
+finally, then we can start to iterate over every tweet.
+
+50
+00:05:34,200 --> 00:05:43,010
+So for tweet in jsonresponse, then we can type in
+
+51
+00:05:43,010 --> 00:05:48,500
+or let's actually just go to the
+Terminal. So we can type in
+
+52
+00:05:48,500 --> 00:05:57,900
+jsonresponse is equal to the, let's say,
+or sorry, tweet = jsonresponse,
+
+53
+00:05:57,900 --> 00:06:02,600
+and then use the first instance. And
+then we can type in tweet, hit Enter.
+
+54
+00:06:02,600 --> 00:06:08,500
+And as you can see, this is our or this will be
+our first tweet. So then we can figure out
+
+55
+00:06:08,500 --> 00:06:13,040
+quickly what exactly data points we can
+grab. We can just grab, maybe, just the
+
+56
+00:06:13,040 --> 00:06:17,600
+text from it or, really, any other data
+point that you see here. And the way that
+
+57
+00:06:17,600 --> 00:06:24,900
+you grab it, it's pretty straightforward.
+So we can just call in yield right away,
+
+58
+00:06:24,900 --> 00:06:34,000
+and then let's first define. So let's call
+all of these different data points one by one.
+
+59
+00:06:34,000 --> 00:06:47,000
+So created_at, favorite_count, then also ID, in_reply,
+
+60
+00:06:47,000 --> 00:06:59,100
+is_retweet... so you just copy and paste
+this... retweet_count, source, and, finally, the text.
+
+61
+00:06:59,100 --> 00:07:13,900
+Okay? So let's indent this properly.
+
+62
+00:07:13,900 --> 00:07:20,100
+Okay, perfect. So let me actually show you
+how to extract from the JSON notes.
+
+63
+00:07:20,100 --> 00:07:25,600
+So after we type in tweets, as you can see
+we have here, all of the dictionary keys
+
+64
+00:07:25,600 --> 00:07:30,800
+and dictionary values. So it's going to
+be, pretty much, the same as we're doing it.
+
+65
+00:07:30,800 --> 00:07:36,600
+I mean, this is actually a dictionary,
+so all we're doing here is going to grab...
+
+66
+00:07:36,600 --> 00:07:39,700
+if we want to grab this value,
+we will type in tweet,
+
+67
+00:07:39,700 --> 00:07:47,500
+and then in the square brackets, we can, pretty much,
+copy and paste this here, the dictionary key,
+
+68
+00:07:47,500 --> 00:07:52,100
+and then hit Enter. And as you can see,
+here is the corresponding value to this one.
+
+69
+00:07:52,100 --> 00:07:57,600
+It's easy as pie, as you can see. If you
+want to extract just the text from it,
+
+70
+00:07:57,600 --> 00:08:04,200
+then you can then type in, in the
+either single or double quotes, text.
+
+71
+00:08:04,200 --> 00:08:10,000
+And as you can see here, we get our value
+returned. So it couldn't really be simpler.
+
+72
+00:08:10,000 --> 00:08:20,500
+So let's go to the sublime text, and
+let's right away select every instance
+
+73
+00:08:20,500 --> 00:08:25,900
+of our data point, and type into
+it. And then in the square brackets,
+
+74
+00:08:25,900 --> 00:08:32,700
+we will leave this open as of right now. And
+let's quickly copy this, all of the data points,
+
+75
+00:08:32,700 --> 00:08:38,700
+and select every instance of the
+square brackets, and paste this in.
+
+76
+00:08:38,700 --> 00:08:44,100
+So if we save this, and then go
+back to the Terminal, and run it,
+
+77
+00:08:44,100 --> 00:08:55,200
+so with scrapy crawl. Let's see how our spider is named.
+So it's named tweets. So scrapy crawl tweets,
+
+78
+00:08:55,200 --> 00:09:01,000
+hit Enter, and let's see,
+in the syntax, let's see what's up. Okay.
+
+79
+00:09:01,000 --> 00:09:11,000
+So I forgot the comma sign, of course. Okay, so if
+we save this right now, go back to the Terminal,
+
+80
+00:09:11,000 --> 00:09:17,010
+and then hit Enter, let's see,
+cannot import name Scrapy.
+
+81
+00:09:17,010 --> 00:09:24,300
+Let's see, from scrapy import... yeah,
+silly mistake. Okay, let's run it right now.
+
+82
+00:09:24,300 --> 00:09:31,290
+And, as you can see, let's see, we scraped
+1500 results. And it's done, as you can see,
+
+83
+00:09:31,290 --> 00:09:37,800
+this was done in a few seconds or, really,
+second or two. That is because every tweet
+
+84
+00:09:37,800 --> 00:09:42,270
+is on the same page. So it's
+extremely efficient, as you can see.
+
+85
+00:09:42,270 --> 00:09:48,800
+So if we wanted to add, maybe, let's see,
+data from 2016, we can copy this link,
+
+86
+00:09:48,800 --> 00:09:55,300
+go back to the sublime text, and
+then input it in the start URLs,
+
+87
+00:09:55,300 --> 00:10:01,100
+save it, go back to the Terminal,
+and then rerun the spider.
+
+88
+00:10:01,100 --> 00:10:04,400
+And let's see how many pages
+there will be scraped now.
+
+89
+00:10:04,400 --> 00:10:15,300
+So 5780 tweets are going to be scraped.
+So if we then, let's say, use the -o items.csv
+
+90
+00:10:15,300 --> 00:10:21,840
+or list data into the CSV file,
+let's go to the files,
+
+91
+00:10:21,840 --> 00:10:28,830
+go back to the root directory, and here
+we have our files. So let's open it,
+
+92
+00:10:28,830 --> 00:10:35,200
+and let's open it once again. As you can see,
+this is our data. So bottom line is that
+
+93
+00:10:35,200 --> 00:10:42,930
+whenever you see JSON pages are
+generated, we add the Network tab.
+
+94
+00:10:42,930 --> 00:10:48,300
+Then you can, pretty much, rest assured
+that scraping will be done more easier,
+
+95
+00:10:48,300 --> 00:10:53,100
+because most of the time they
+will list out their data in a clear format.
+
+96
+00:10:53,100 --> 00:11:02,300
+Then what you need to do is use just the JSON
+module and load the string or the response.body,
+
+97
+00:11:02,300 --> 00:11:07,400
+and then you can quickly figure out
+by using simple for loop how, exactly,
+
+98
+00:11:07,400 --> 00:11:13,430
+you can extract data points
+straight from the JSON file.
+

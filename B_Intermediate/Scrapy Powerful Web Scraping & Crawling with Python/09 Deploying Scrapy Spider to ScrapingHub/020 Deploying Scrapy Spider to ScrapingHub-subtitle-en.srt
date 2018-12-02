@@ -1,0 +1,508 @@
+﻿1
+00:00:00,718 --> 00:00:02,992
+Hey there! So today we are going to cover
+
+2
+00:00:02,992 --> 00:00:06,372
+deploying Spider code to the Scrapinghub.
+
+3
+00:00:06,372 --> 00:00:10,381
+We will cover really just the code
+
+4
+00:00:10,390 --> 00:00:13,252
+that we already wrote a few videos back.
+
+5
+00:00:13,252 --> 00:00:15,973
+And Scrapinghub is pretty much a tool
+
+6
+00:00:15,973 --> 00:00:18,373
+or cloud-based web crawling platform,
+
+7
+00:00:18,373 --> 00:00:21,681
+better said, where we can send our Spider code
+
+8
+00:00:21,681 --> 00:00:25,269
+as we will do in a moment and run it from there.
+
+9
+00:00:25,269 --> 00:00:28,852
+The Spider that we are going to pretty much
+
+10
+00:00:30,603 --> 00:00:32,272
+I'm going to deploy.
+
+11
+00:00:32,272 --> 00:00:36,439
+Let's run them once again just locally so we can verify
+
+12
+00:00:36,765 --> 00:00:38,923
+that everything is scraped correctly.
+
+13
+00:00:38,923 --> 00:00:41,140
+As you can see, item_scraped_count: 1,
+
+14
+00:00:41,140 --> 00:00:45,307
+so pretty much from the home page we will just grab
+
+15
+00:00:45,410 --> 00:00:49,460
+the h1_tag and finally tags sub items,
+
+16
+00:00:52,101 --> 00:00:54,556
+and pretty much we are good to go.
+
+17
+00:00:54,556 --> 00:00:57,399
+So going back to the Scrapinghub page,
+
+18
+00:00:57,399 --> 00:00:59,245
+as we go to the logging in,
+
+19
+00:00:59,245 --> 00:01:01,651
+since I already have the account I will type in
+
+20
+00:01:01,651 --> 00:01:04,060
+my username and password.
+
+21
+00:01:04,060 --> 00:01:06,990
+If you don't have the account, just click here for
+
+22
+00:01:06,990 --> 00:01:10,490
+Register or Sign in with Google or Github.
+
+23
+00:01:13,475 --> 00:01:16,201
+Here we will be greeted in a moment or so
+
+24
+00:01:16,201 --> 00:01:18,341
+with the Overview page, as you can see,
+
+25
+00:01:18,341 --> 00:01:21,885
+and from then on we can create our project.
+
+26
+00:01:21,885 --> 00:01:25,310
+For Organization, you don't have to change this.
+
+27
+00:01:25,310 --> 00:01:28,304
+Name can be something like quotes,
+
+28
+00:01:28,304 --> 00:01:32,471
+and we built the tool with Scrapy, so let's click Create.
+
+29
+00:01:35,061 --> 00:01:39,228
+And finally here we can deploy our spider or here,
+
+30
+00:01:39,797 --> 00:01:41,851
+better said, are the instructions
+
+31
+00:01:41,851 --> 00:01:44,905
+on how to actually do this.
+
+32
+00:01:44,905 --> 00:01:47,497
+The tool that is going to be needed is called
+
+33
+00:01:47,497 --> 00:01:49,916
+Scrapinghub command line client, as you can see,
+
+34
+00:01:49,916 --> 00:01:54,041
+and it can be installed with just pip install shub.
+
+35
+00:01:54,041 --> 00:01:57,454
+So that is going to be a no-brainer really,
+
+36
+00:01:57,454 --> 00:02:01,275
+and it's going to be extremely easy.
+
+37
+00:02:01,275 --> 00:02:04,075
+So let's get back to our Terminal.
+
+38
+00:02:04,075 --> 00:02:08,099
+Okay, we are there already, and here we already have
+
+39
+00:02:08,099 --> 00:02:10,443
+the instructions how to actually deploy it,
+
+40
+00:02:10,443 --> 00:02:12,666
+so we can copy and paste this
+
+41
+00:02:12,666 --> 00:02:15,749
+into our Spider code, so shub deploy.
+
+42
+00:02:18,740 --> 00:02:21,124
+We will need to enter our project ID.
+
+43
+00:02:21,124 --> 00:02:24,457
+Project ID is located here, paste it in,
+
+44
+00:02:26,765 --> 00:02:30,932
+and save it as a default, and in five or so seconds,
+
+45
+00:02:32,444 --> 00:02:34,916
+we will get status that it's ok,
+
+46
+00:02:34,916 --> 00:02:37,626
+and then this page will be changed.
+
+47
+00:02:37,626 --> 00:02:40,376
+So let's just wait a few moments.
+
+48
+00:02:42,026 --> 00:02:44,990
+And as you can see, it's already done, and status is OK,
+
+49
+00:02:44,990 --> 00:02:48,570
+and everything is fine and this also page changed,
+
+50
+00:02:48,570 --> 00:02:52,712
+and it seems like everything is working correctly.
+
+51
+00:02:52,712 --> 00:02:54,894
+Let's go back to our Dashboard.
+
+52
+00:02:54,894 --> 00:02:58,639
+Here we have Run button, so let's click it.
+
+53
+00:02:58,639 --> 00:03:01,854
+Spiders, here we have the quotes Spider that we already
+
+54
+00:03:01,854 --> 00:03:05,802
+created, and pretty much we don't need to change or modify,
+
+55
+00:03:05,802 --> 00:03:08,354
+add, and stuff like that, anything else,
+
+56
+00:03:08,354 --> 00:03:10,354
+so let's just click Run.
+
+57
+00:03:11,673 --> 00:03:15,046
+Here we have the Running Jobs and after it's completed
+
+58
+00:03:15,046 --> 00:03:16,713
+in 20 or so seconds,
+
+59
+00:03:19,724 --> 00:03:22,893
+this ID and the quotes will be
+
+60
+00:03:22,893 --> 00:03:25,356
+pretty much transferred to the Completed Jobs.
+
+61
+00:03:25,356 --> 00:03:29,439
+And after a while, since there is data retention,
+
+62
+00:03:30,818 --> 00:03:34,057
+it will be in Deleted Jobs, or these quotes Spider,
+
+63
+00:03:34,057 --> 00:03:36,807
+will be in the Deleted Jobs menu.
+
+64
+00:03:38,496 --> 00:03:40,018
+So let's see if this is finished.
+
+65
+00:03:40,018 --> 00:03:42,123
+So it seems like it's still running.
+
+66
+00:03:42,123 --> 00:03:46,290
+There is one item scraped, and it's completed finally.
+
+67
+00:03:46,885 --> 00:03:51,052
+So as I was saying, here we have one item, one request,
+
+68
+00:03:51,580 --> 00:03:55,080
+zero Errors, and also the 17 Log messages.
+
+69
+00:03:56,679 --> 00:03:59,268
+These Log messages are present already
+
+70
+00:03:59,268 --> 00:04:02,435
+if you run this just on your Terminal.
+
+71
+00:04:03,530 --> 00:04:05,385
+Let's go back.
+
+72
+00:04:05,385 --> 00:04:08,263
+And finally you have the Runtime, Started Time,
+
+73
+00:04:08,263 --> 00:04:12,430
+and the Finished Time, and the Outcome, which is great.
+
+74
+00:04:13,115 --> 00:04:15,282
+So let's go to the quotes.
+
+75
+00:04:16,119 --> 00:04:19,119
+Let's see if we can get to our data.
+
+76
+00:04:21,550 --> 00:04:22,967
+Give me a moment.
+
+77
+00:04:24,310 --> 00:04:27,643
+Dashboard, I think it's somewhere here.
+
+78
+00:04:30,649 --> 00:04:34,049
+So to retain data, that is scraped.
+
+79
+00:04:35,176 --> 00:04:39,086
+Once it's completed, of course, you can go to the Items
+
+80
+00:04:39,086 --> 00:04:43,253
+and finally then if you had Spider to scrape
+
+81
+00:04:43,410 --> 00:04:46,865
+thousands and thousands of Items and maybe you just need
+
+82
+00:04:46,865 --> 00:04:49,888
+a few of them, you can click here then to Download
+
+83
+00:04:49,888 --> 00:04:52,358
+some specific Item such as these one.
+
+84
+00:04:52,358 --> 00:04:55,313
+Since there is only just one Item in this case,
+
+85
+00:04:55,313 --> 00:04:59,480
+as this after all just a demo, we can go to the Export
+
+86
+00:05:00,505 --> 00:05:03,104
+and here we have to either get the data
+
+87
+00:05:03,104 --> 00:05:05,021
+into: CSV, JSON or XML.
+
+88
+00:05:06,234 --> 00:05:07,651
+Let's select CSV.
+
+89
+00:05:10,183 --> 00:05:13,720
+And so it seems like it's downloaded.
+
+90
+00:05:13,720 --> 00:05:16,637
+And after we open, we will see that
+
+91
+00:05:18,649 --> 00:05:22,816
+other than getting our two columns or two sub items,
+
+92
+00:05:23,174 --> 00:05:25,236
+we will get additional one
+
+93
+00:05:25,236 --> 00:05:27,898
+and this is going to be name of our Items,
+
+94
+00:05:27,898 --> 00:05:30,815
+and the name of the column is type.
+
+95
+00:05:33,384 --> 00:05:36,097
+So let's see what else we can talk about.
+
+96
+00:05:36,097 --> 00:05:38,264
+We can talk about also the
+
+97
+00:05:40,081 --> 00:05:42,015
+periodic jobs that you can run.
+
+98
+00:05:42,015 --> 00:05:45,707
+So from the Dashboard, you can go to the Periodic Jobs,
+
+99
+00:05:45,707 --> 00:05:48,874
+and then we can add the Periodic Jobs.
+
+100
+00:05:50,107 --> 00:05:51,999
+We will select quotes Spider.
+
+101
+00:05:51,999 --> 00:05:56,166
+Priority and everything else you can change or modify that.
+
+102
+00:05:56,605 --> 00:06:00,772
+I don't think we can pretty much or need to change anything.
+
+103
+00:06:01,539 --> 00:06:04,333
+So for example, if you want to run the Spider code
+
+104
+00:06:04,333 --> 00:06:08,114
+each day at around 12 o'clock, so you would just select
+
+105
+00:06:08,114 --> 00:06:11,735
+here 12 o'clock, and then click Save.
+
+106
+00:06:11,735 --> 00:06:13,915
+And here we have, as you can see, it's Enabled
+
+107
+00:06:13,915 --> 00:06:16,011
+so pretty much everything is good to go,
+
+108
+00:06:16,011 --> 00:06:20,171
+and then in the Dashboard, you will see the Next Jobs
+
+109
+00:06:20,171 --> 00:06:23,868
+and then at around 12 or so o'clock, it will be running
+
+110
+00:06:23,868 --> 00:06:28,035
+and after 30 or so seconds, as it was in this case,
+
+111
+00:06:28,220 --> 00:06:31,964
+it will go to the Completed Jobs, so tomorrow we will have
+
+112
+00:06:31,964 --> 00:06:35,797
+two completed jobs at around 12 o'clock or so.
+
+113
+00:06:37,605 --> 00:06:41,309
+Other scraping help tools that they offer is this one.
+
+114
+00:06:41,309 --> 00:06:44,460
+This I think is the partially free service,
+
+115
+00:06:44,460 --> 00:06:47,920
+so it's used for visual web scraping and this one
+
+116
+00:06:47,920 --> 00:06:51,482
+is pretty much a good tool, or perfect solution,
+
+117
+00:06:51,482 --> 00:06:53,947
+when you are scraping some well-known site
+
+118
+00:06:53,947 --> 00:06:55,635
+that throws captcha.
+
+119
+00:06:55,635 --> 00:06:59,221
+So this is a tool pretty much to integrate your already
+
+120
+00:06:59,221 --> 00:07:03,388
+existing Spider code with pool of different IPs
+
+121
+00:07:03,935 --> 00:07:06,396
+and once that IP is getting is getting banned
+
+122
+00:07:06,396 --> 00:07:10,562
+or throwing a CAPTCHA, it will go to the recycle bin,
+
+123
+00:07:11,001 --> 00:07:15,168
+so to speak, and it will move to the next IP.
+
+124
+00:07:15,561 --> 00:07:17,987
+And that would be pretty much for this video.
+
+125
+00:07:17,987 --> 00:07:21,098
+In the very next one, we will going to cover
+
+126
+00:07:21,098 --> 00:07:23,112
+how to login with Scrapy.
+
+127
+00:07:23,112 --> 00:07:23,945
+Talk soon!
+
