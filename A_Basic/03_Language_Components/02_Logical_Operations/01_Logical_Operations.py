@@ -10,8 +10,8 @@ not - negate the existing value
 
 # and,  or,  not  
 
-expr1 = (12 > 34) and (99 >= 9)
-#        False          True
+expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
+#        False          True       False          True
 print expr1
 
 '''

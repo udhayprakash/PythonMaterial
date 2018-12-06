@@ -5,13 +5,13 @@
 #this variable tells the loop whether it should loop or not.
 # 1 means loop. anything else means don't loop.
 
-loop = 1
+# loop = 1
 
 #this variable holds the user's choice in the menu:
 
 choice = 0
 
-while loop == 1:
+while True: #loop == 1:
     #print what options you have
     print "================================"*2
     print "Welcome to calculator.py"
@@ -45,6 +45,6 @@ while loop == 1:
         div2 = input("by this: ")
         print div1, "/", div2, "=", div1 / div2
     elif choice == 5:
-        loop = 0
+        break #loop = 0
 	
 print "Thankyou for using calculator.py!"

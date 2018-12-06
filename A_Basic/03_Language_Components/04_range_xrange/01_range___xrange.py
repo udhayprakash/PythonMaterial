@@ -12,8 +12,6 @@ values = range(9)  # builtin function
 print values
 print 'type(values):', type(values)
 
-# collections - List, tuple, set, dictionary
-
 values1 = range(0, 9)  # builtin function
 print values1
 
@@ -50,7 +48,7 @@ print values3
 values4 = xrange(9, 0, -2)  # builtin function
 print values4
 
-print '-' * 80
+print '-' * 60
 
 for i in range(9):
     print i,  # , acts as a new-line suppressor
@@ -60,9 +58,9 @@ print
 for i in xrange(9):
     print i,  # , acts as a new-line suppressor
 
-print
+# print
 
-for ch in 'Python Programming':
-    print ch,
+# for ch in 'Python Programming':
+#     print ch,
 
-# for loop can be applied on iterable object (string, list, tuple, set, frozenset, dictionary) only
+# # for loop can be applied on iterable object (string, list, tuple, set, frozenset, dictionary) only

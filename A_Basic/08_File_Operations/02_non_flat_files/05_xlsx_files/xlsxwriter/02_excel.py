@@ -11,8 +11,8 @@ expenses = (
     ['Gym',    50],
 )
 
-row, col = 0, 0
-for item, cost in (expenses):
+row, col = 0, 0 # tuple unpacking
+for item, cost in expenses:
     worksheet.write(row, col,     item)
     worksheet.write(row, col + 1, cost)
     row += 1

@@ -37,3 +37,15 @@ print
 # Ascii  : o -> 111
 print "chr(111):", chr(111)
 print "ord('o'):", ord('o')
+
+
+# Assignment 
+# -------------
+# caesar cipher 
+# ------------------  + 3 
+# A B C D E F 
+# 0 1 2 3 4 5
+# D E F
+
+# bindu 
+# elqg

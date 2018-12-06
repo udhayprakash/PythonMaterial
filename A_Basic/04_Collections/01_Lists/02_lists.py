@@ -12,7 +12,6 @@ numbers = [88, 99, 666]
 print 'type(numbers)', type(numbers)
 print 'dir(numbers)=', dir(numbers)
 
-alphabets = ['b', 'c']
 
 print "len(numbers)=", len(numbers)
 print "numbers.__len__()=", numbers.__len__()
@@ -23,7 +22,7 @@ print "type(str(numbers))     =", type(str(numbers))
 print "numbers.__str__()      =", numbers.__str__()
 print "type(numbers.__str__())=", type(numbers.__str__())
 
-print "help(numbers)=", help(numbers)
+# print "help(numbers)=", help(numbers)
 print "numbers.__doc__=", numbers.__doc__
 
 print "numbers * 3         =", numbers * 3  # original object not modified
@@ -38,7 +37,9 @@ print "id(numbers)=", id(numbers)
 
 # list concatenation
 print 'numbers\t\t\t\t=', numbers
+alphabets = ['b', 'c']
 print "numbers + alphabets\t\t=", numbers + alphabets
+print 'numbers\t\t\t\t=', numbers
 
 print "numbers.__add__(alphabets)\t=", numbers.__add__(alphabets)
 print 'numbers\t\t\t\t=', numbers
@@ -48,9 +49,8 @@ print 'numbers\t\t\t\t=', numbers
 print "numbers.__iadd__(alphabets)\t=", numbers.__iadd__(alphabets)
 print 'numbers\t\t\t\t=', numbers  # first object IS changed 
 
-print numbers.__class__()
 print "numbers.__contains__(12) =", numbers.__contains__(12)
 print "12 in numbers =", 12 in numbers
 
-# print numbers.__sizeof__()
-# print help(numbers.__sizeof__())
+print numbers.__sizeof__()
+# # print help(numbers.__sizeof__())

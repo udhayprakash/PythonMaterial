@@ -35,6 +35,9 @@ print '()', bool(())
 print '[]', bool([])
 print '{}', bool({})
 
+# True, False
+print 'bool(True)', bool(True)
+print 'bool(False)', bool(False)
 ##########################
 if 1:
     print "hello"
