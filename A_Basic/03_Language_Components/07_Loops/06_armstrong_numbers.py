@@ -20,14 +20,14 @@ for num in range(lower, upper + 1):
     order = len(str(num))
 
     # initialize sum
-    sum = 0
+    sum1 = 0
 
     # find the sum of the cube of each digit
     temp = num
     while temp > 0:
         digit = temp % 10
-        sum += digit ** order
+        sum1 += digit ** order
         temp //= 10
 
-    if num == sum:
+    if num == sum1:
         print(num)

@@ -14,6 +14,9 @@ Object
     - value(s)
     - type(s)
     - address location where it is stored
+
+
+-5 to 255
 """
 
 print '4 == 4  ', 4 == 4

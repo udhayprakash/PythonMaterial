@@ -43,9 +43,9 @@ while i < 10:
 
 print 'next statement'
 
-# # implementation with for loop
-# for j in range(size):   # range(10) = range(0,10,1)
-#     print '*'*j
+# # # implementation with for loop
+# # for j in range(size):   # range(10) = range(0,10,1)
+# #     print '*'*j
 
-# for j in range(size,0, -1):   # range(10,0,-1)
-#     print '*'*j
+# # for j in range(size,0, -1):   # range(10,0,-1)
+# #     print '*'*j

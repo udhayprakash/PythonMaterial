@@ -7,12 +7,14 @@ import csv
 
 # write stocks data as comma-separated values
 writer = csv.writer(open('stocks.csv', 'wb', buffering=0))
+pdb.set_trace()
+
 writer.writerows([
     ('GOOG', 'Google, Inc.', 505.24, 0.47, 0.09),
     ('YHOO', 'Yahoo! Inc.', 27.38, 0.33, 1.22),
     ('CNET', 'CNET Networks, Inc.', 8.62, -0.13, -1.49)
 ])
-pdb.set_trace()
+
 # read stocks data, print status messages
 stocks = csv.reader(open('stocks.csv', 'rb'))
 status_labels = {-1: 'down', 0: 'unchanged', 1: 'up'}

@@ -18,10 +18,10 @@ while a < MAX:  # condition
         # print a,  '*', b, '=', a*b
         # print "%d * %d = %d" % (a, b, a * b)
         # print "%2d * %2d = %3d" % (a, b, a * b)
-        print "{} * {} = {}".format(a, b, a*b)
+        print "{0:2} * {1:2} = {2:3}".format(a, b, a*b)
     print '-' * 18, a
-    # break
+    break
 else:
-    print 'All iterations in while loop completed'
+    print 'All loops executed'
 
-print 'next statement'
+print 'Next statement'
