@@ -1,8 +1,8 @@
 
 # function definition
 def add(a,b, c):  # arguments - a,b,c
-    print a + b + c
-    return 'C'
+    sum1 = a + b + c
+    return sum1
 
 # function call 
 print add(12, 34, 56)  # parameters - 1,2,3

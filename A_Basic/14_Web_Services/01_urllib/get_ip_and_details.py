@@ -53,3 +53,10 @@ if __name__ == '__main__':
     URL4 = 'https://ipapi.co/yaml'
     print_n_write_response(URL4)
     print
+
+
+    print '-' * 20
+    print 'HTML response'
+    URL4 = 'https://www.google.co.in/search?q=someting&oq=someting&aqs=chrome..69i57.1510j0j1&sourceid=chrome&ie=UTF-8'
+    print_n_write_response(URL4)
+    print

@@ -8,7 +8,7 @@ Purpose: Functions Demo
 # Function Definition
 def hello():
     print "Hello world"
-
+    #return None
 
 # Function Call 
 hello()

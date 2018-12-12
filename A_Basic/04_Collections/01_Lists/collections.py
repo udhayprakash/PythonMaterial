@@ -7,7 +7,7 @@ Purpose: Collections
     - Dictionaries  {}
 """
 
-myEmptyList = []
+myEmptyList = [] # list()
 print 'myEmptyList      :', myEmptyList
 print 'type(myEmptyList):', type(myEmptyList)
 
@@ -80,14 +80,23 @@ print 'randomList:', randomList
 
 print 'randomList.count(12) :', randomList.count(12)
 print 'randomList.count("a") :', randomList.count('a')
+print "randomList.count(['a', 'b', 'c'])", randomList.count(['a', 'b', 'c'])
 
+# sorted() and list.sort() - TIM sort algorithm
+print
 print 'sorted(randomList):', sorted(randomList)
 print 'randomList        :', randomList
 
 print 'randomList.sort()     :', randomList.sort()
 print 'randomList        :', randomList
 
-print randomList.reverse()
+print
+print 'sorted(randomList, reverse=True):', sorted(randomList, reverse=True)
+print 'reversed(randomList)', reversed(randomList)
+print 'randomList        :', randomList
+
+
+print 'randomList.reverse()', randomList.reverse()
 print 'randomList        :', randomList
 
 print 'randomList[4]:', randomList[4]
@@ -96,16 +105,3 @@ randomList[4][0] = 1947
 print 'randomList        :', randomList
 
 print '------------------------------------------------------'
-myTuple = (12, 34, 45, 56)
-print myTuple, type(myTuple)
-
-print 'myTuple[3]:', myTuple[3]
-# myTuple[3] = 876876876 # TypeError: 'tuple' object does not support item assignment
-
-print dir(myTuple)
-
-print 'myTuple.count(34):', myTuple.count(34)
-print 'myTuple.count(888):', myTuple.count(888)
-
-print 'myTuple.index(45):', myTuple.index(45)
-# print 'myTuple.index(888):', myTuple.index(888)  # ValueError:
