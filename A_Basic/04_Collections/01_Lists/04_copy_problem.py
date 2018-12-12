@@ -22,6 +22,7 @@ print 'par_list ', par_list, type(par_list)
 
 # leakage problem
 print 'hard_copy_list', hard_copy_list, type(hard_copy_list)
+
 print
 import copy
 
@@ -32,6 +33,7 @@ print 'soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list
 print 'hard_copy_list[3]', hard_copy_list[3]
 
 hard_copy_list[3] = "FOUR"
+print
 print 'par_list       ', par_list, type(par_list), id(par_list)
 print 'hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list)
 print 'soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list)
@@ -39,6 +41,7 @@ print 'soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list
 print 'soft_copy_list[0]', soft_copy_list[0]
 
 soft_copy_list[0] = 'ZERO'
+print
 print 'par_list       ', par_list, type(par_list), id(par_list)
 print 'hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list)
 print 'soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list)

@@ -30,7 +30,7 @@ for each_number in existing_images_in_cats_site:
             os.mkdir(dirname)
         with open(dirname + os.sep + str(each_number) + '.jpg', 'wb') as g:
             g.write(response.content)
-        g.close()
+            g.close()
 
         # To change the desktop background with that image
         image = str(each_number) + '.jpg'

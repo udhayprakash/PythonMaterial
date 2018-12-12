@@ -18,6 +18,7 @@ API
 import json
 import urllib2
 from pprint import pprint
+
 req = urllib2.Request("http://api.open-notify.org/astros.json")
 response = urllib2.urlopen(req)
 

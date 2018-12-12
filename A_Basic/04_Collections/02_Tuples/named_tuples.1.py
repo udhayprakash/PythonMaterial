@@ -13,6 +13,8 @@ Student = collections.namedtuple('Student', ['name', 'age', 'DOB'])
 # Adding values
 S = Student('Nandini', '19', '2541997')
 
+print 'type(S)', type(S)
+print
 # Access using index
 print "The Student age using index is : "
 print S[1]

@@ -9,11 +9,14 @@ Purpose: Functions Demo
 def hello(*given, **feed_in):
     print "\ntype(given)  ",  type(given)
     print "type(feed_in) ",  type(feed_in)
-    print "inputs are"+ str(feed_in)
 
+    print "given   "+ str(given)
+    print "feed_in "+ str(feed_in)
+    print '-'*20
 
 # Function Call 
 hello()            # 0 inputs
+hello('HARI')      # 1 input
 hello(name='HARI')      # 1 input
 
 hello(language='Python')

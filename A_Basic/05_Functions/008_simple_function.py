@@ -6,7 +6,7 @@ Purpose: Functions Demo
 """
 
 # Function Definition
-def hello(name, age=200):
+def hello(name='BINDU', age=200):
     print "%s's age is %d"%(name, age)
 
 # NOTE: default arguments should be at the end
@@ -18,3 +18,5 @@ hello('Python')
 hello(365)
 
 hello('India', 75)
+
+hello()
