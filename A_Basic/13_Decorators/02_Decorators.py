@@ -16,7 +16,7 @@ def outer(func):
     return inner
 
 
-@outer                    # comment this line and observe difference
+@outer         # comment this line and observe difference
 def div(a, b):
     return a / b
 
