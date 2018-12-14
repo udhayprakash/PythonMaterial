@@ -3,6 +3,7 @@
 Without decorators
 """
 
+
 def div(a, b):
     try:
         a / b
@@ -26,3 +27,6 @@ print div(4, 0)
 
 print add(2, 3)
 print add('a', 3)
+
+
+print 'last  statetment '

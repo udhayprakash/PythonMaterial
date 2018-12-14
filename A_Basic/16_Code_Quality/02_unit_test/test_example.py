@@ -17,8 +17,8 @@ class TestPPMath(unittest.TestCase):
     def testFirstAgain(self):
         self.failUnless(first(list_chars), 'Z')
         
-    def testLastAgain(self):
-        self.failIf(last(list_nums), 9)
+    # def testLastAgain(self):
+    #     self.failIf(last(list_nums), 9)
 
 
 

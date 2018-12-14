@@ -3,21 +3,21 @@
 
 
 def outer(func):
-    def inner(*args, **kwargs):
+    def inner(num1, num2): #*args, **kwargs):
         try:
-            func(*args, **kwargs)
+            func(num1, num2) #*args, **kwargs)
         except Exception as e:
             return e
         else:
-            return func(*args, **kwargs)
-
+            return func(num1, num2) #*args, **kwargs)
+    
     return inner
 
 ############################################
 def div(a, b):
     return a / b
 
-
+# print div(4, 0)
 foo = outer(div)
 print foo(4, 2)
 print foo(4, 0)

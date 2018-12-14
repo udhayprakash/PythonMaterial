@@ -13,8 +13,8 @@ def makebold(fn):
     def wrapped(*args, **kwargs):
         print "makebold - args", args
         print "makebold  - kwargs", kwargs
-
-        return "<b>" + fn() + "</b>"
+        print
+        return "<b>" + fn(*args, **kwargs) + "</b>"
 
     return wrapped
 
@@ -23,16 +23,18 @@ def makeitalic(fn):
     def wrapped(*args, **kwargs):
         print "makeitalic - args", args
         print "makeitalic  - kwargs", kwargs
-
-        return "<i>" + fn() + "</i>"
+        print
+        return "<i>" + fn(*args, **kwargs) + "</i>"
 
     return wrapped
 
 
-@makeitalic
+@makeitalic#(login= '/login.html')
 @makebold
-def hello():
-    return "hello world"
+def hello(name, salary=20000000):
+    return "hello world:{}\t salary:{}".format(name, salary)
 
 
-print hello()  ## returns "<b><i>hello world</i></b>"
+print hello('udhay', 9000000)  ## returns "<b><i>hello world</i></b>"
+print '-'* 20
+print hello('udhay', salary=9000000)  ## returns "<b><i>hello world</i></b>"

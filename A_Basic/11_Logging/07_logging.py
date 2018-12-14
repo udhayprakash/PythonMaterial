@@ -16,10 +16,10 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(messa
 # add formatter to ch
 ch.setFormatter(formatter)
 
-# creating you logger.
+# # creating you logger.
 logger = logging.getLogger('myapp')  # 'logger' object was created
 logger.setLevel(logging.DEBUG)
-
+#
 # add ch to logger
 logger.addHandler(ch)
 
