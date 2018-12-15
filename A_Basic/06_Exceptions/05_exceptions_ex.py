@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# raise NameError('This is my NameError')
+
 try:
     raise ValueError('This is my ValueError')
     raise Exception('This is my error')
