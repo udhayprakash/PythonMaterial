@@ -23,10 +23,15 @@ class Employee:
         print 'Destructor is called'
 
 
+
+print Employee, type(Employee)
+print vars(Employee)
 # "this would create first object of employee class"
 
-
+print
 Emp1 = Employee("Udhay", 2000)  # "this would create second object of employee class"
+print vars(Emp1)
+
 print 'After Emp1 creation, Total employee count:', Employee.empcount
 
 Emp2 = Employee("Prakash", 60000)

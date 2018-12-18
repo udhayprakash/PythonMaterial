@@ -5,15 +5,14 @@ Purpose: classes (OOP) introduction
 
 
 class MyClassName:        # class definition
-    def hello(self):      # class method
+    def hello(self):      # method
         print 'hello world'
 
-
-n = MyClassName()                # Instantiation
+n = MyClassName()         # Instantiation
+print 'n            :', n
 
 print 'MyClassName  :', MyClassName
 print 'MyClassName():', MyClassName()
-print 'n            :', n
 print
 print 'type(MyClassName)  :', type(MyClassName)
 print 'type(MyClassName()):', type(MyClassName())
@@ -24,4 +23,5 @@ print 'isinstance(1, MyClassName) :', isinstance(1, MyClassName)
 print "__name__", __name__
 
 print
-n.hello()
+n.hello()  
+MyClassName.hello(n)

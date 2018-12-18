@@ -12,18 +12,21 @@ class Name:
         """
         print('I am a constructor. ')
         print('I will be called, the moment you create an instance')
+        self.s = ''
 
     def display_names(self): 
         """
         This is an instance method.
         """
         print('Existing names: ramesh, suresh, mahesh, ganesh')
+        self.s = 'Something'
 
 
 n = Name()
 
-print 'n=', n
-print dir(n)
+print 'n=     ', n
+print 'dir(n) ', dir(n)
+print 'vars(n)', vars(n)
 help(n)
 
 # we need to call all other methods, except constructor
