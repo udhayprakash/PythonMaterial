@@ -22,4 +22,10 @@ parser.add_argument('-c',
                     help='Third value',
                     type=int)
 args = parser.parse_args()
+
+print 'type(args.a)', type(args.a)
+print 'type(args.b)', type(args.b)
+print 'type(args.c)', type(args.c)
+
+
 print(main(args.a, args.b, args.c))
