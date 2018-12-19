@@ -33,6 +33,6 @@ print
 
 print 'os.urandom(1024)', os.urandom(1024)
 random.seed(os.urandom(1024))
-print random.random()  # should give 0.679793618408
-print random.random()  # should give 0.912271261187
-print random.random()  # should give 0.129267233016
+print random.random()  # should give 0.7819713562511514
+print random.random()  # should give 0.4669615948613485
+print random.random()  # should give 0.6987920562874854
