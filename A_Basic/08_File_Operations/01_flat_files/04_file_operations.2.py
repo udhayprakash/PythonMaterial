@@ -3,7 +3,7 @@ with open('myfile.txt', 'ab+') as g:
     data = g.readlines()
     print data
     print type(data)
-    # print dir(g)
+    print dir(g)
     print "cursor after reading --- g.tell()", g.tell()
     print '-----read again'
     some_more_data = g.read()
@@ -14,6 +14,8 @@ with open('myfile.txt', 'ab+') as g:
     g.seek(9)
     print 'cursor position after g.seek(9)', g.tell()
     print '-----read again after cursor position change'
+    current_line_content = g.readline()
+    print 'current_line_content', current_line_content
     some_more_data1 = g.read()
     print 'some_more_data1', some_more_data1
     print "cursor after reading --- g.tell()", g.tell()

@@ -3,7 +3,8 @@ import datetime as dt
 import pytz
 
 naive_utc_now = dt.datetime.utcnow()
-print('naive utc now: {}     , tzinfo: {}'.format(naive_utc_now, naive_utc_now.tzinfo))
+print('naive utc now: {}     , tzinfo: {}'.format(
+                            naive_utc_now, naive_utc_now.tzinfo))
 
 # Localizing naive datetimes
 UTC_TZ = pytz.timezone('UTC')

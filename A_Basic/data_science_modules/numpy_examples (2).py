@@ -5,7 +5,8 @@ import numpy as np #aliasing the import
 # from numpy import *   # Another way of importing
 
 '''
-Array is similar to list in python, execept that every element of an array must be of the same type,
+Array is similar to list in python, execept that 
+every element of an array must be of the same type,
 typically a numeric type like FLOAT or INT.
 '''
 

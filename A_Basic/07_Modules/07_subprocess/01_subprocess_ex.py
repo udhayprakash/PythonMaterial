@@ -19,7 +19,7 @@ elif platform == 'win32':
     print os.system('dir /x C:\Python27')
     print call('dir /x C:\Python27', shell=True)
     myprocess = Popen('dir /x C:\Python27', shell=True, 
-            stdin=PIPE ,stdout=PIPE)
+            stderr=PIPE ,stdout=PIPE)
     output, err = myprocess.communicate()
     print 'output==============\n', output
     print 'err=================\n', err
