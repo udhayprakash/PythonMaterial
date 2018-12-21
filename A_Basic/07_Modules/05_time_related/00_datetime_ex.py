@@ -11,7 +11,7 @@ print(dir(datetime))
 print('datetime.MAXYEAR:', datetime.MAXYEAR)
 print('datetime.MINYEAR:', datetime.MINYEAR)
 
-# print('datetime.tzinfo:', datetime.tzinfo
+print('datetime.tzinfo:', datetime.tzinfo)
 """
 datetime  has three different kinds of objects:
     1. date object      :- stores the date 
@@ -88,7 +88,7 @@ another_datetime = my_datetime.replace(year=2019, month=1)
 print('another_datetime         :', another_datetime)
 print('type(another_datetime)   :', type(another_datetime))
 
-
+print()
 # Obtain a datetime object representing the epoch: 1st Jan, 1970
 epoch = datetime.datetime.utcfromtimestamp(0)
 print('epoch                    :', epoch)

@@ -5,7 +5,7 @@ local_now = dt.datetime.now()
 print('local now: {}'.format(local_now))
 
 utc_now = dt.datetime.utcnow()
-print('utc now: {}'.format(utc_now))
+print('utc now  : {}'.format(utc_now))
 
 # You can access any value separately:
 print('{} {} {} {} {} {}'.format(local_now.year, local_now.month,
@@ -20,7 +20,7 @@ print('time: {}'.format(local_now.time()))
 formatted1 = local_now.strftime('%Y/%m/%d-%H:%M:%S')
 print(formatted1)
 
-formatted2 = local_now.strftime('date: %Y-%m-%d time:%H:%M:%S')
+formatted2 = local_now.strftime('date: %d %b,%Y time:%H:%M:%S')
 print(formatted2)
 
 
@@ -36,15 +36,4 @@ print('tomorrow this time: {}'.format(tomorrow))
 delta = tomorrow - local_now
 print('tomorrow - now = {}'.format(delta))
 print('days: {}, seconds: {}'.format(delta.days, delta.seconds))
-print('total seconds: {}'.format(delta.total_seconds()), 'print_function')
-
-
-
-
-
-
-
-
-
-
-
+print('total seconds: {}'.format(delta.total_seconds()))

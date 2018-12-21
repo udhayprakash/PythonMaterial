@@ -4,7 +4,7 @@
 import calendar
 
 yy = 2018
-mm = 8
+mm = 12
 
 # To ask month and year from the user
 # yy = int(input("Enter year: "))
@@ -12,11 +12,11 @@ mm = 8
 
 # display the calendar
 print(calendar.month(yy, mm))
-print(calendar.month(1945, 8))
+print(calendar.month(1947, 8))
 print calendar.isleap(2018)
 
-# current year calendar 
+# # current year calendar 
 print(calendar.calendar(2018, 2, 1, 10))
-# print help(calendar)
-# print dir(calendar)
+print help(calendar)
+# # print dir(calendar)
 

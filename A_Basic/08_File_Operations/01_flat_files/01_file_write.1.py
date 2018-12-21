@@ -6,6 +6,7 @@ from __future__ import print_function
 
 # default mode is 'read'
 my_file_handler = open('myfile.txt')
+# import pdb; pdb.set_trace()
 print(my_file_handler)
 print(dir(my_file_handler))
 
