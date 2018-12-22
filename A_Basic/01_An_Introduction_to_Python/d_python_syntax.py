@@ -18,8 +18,10 @@ name = 123
 print "Name of the student:", name
 # , (comma) logic separator operator
 # print "Name of the student:"+ name # TypeError: cannot concatenate 'str' and 'int' objects
+print "Name of the student:"+ str(name)
+
 # print '12' + 34
-# Question: strictly typed language
+# # Question: strictly typed language
 
 # no difference between single and double quotes
 # for strings

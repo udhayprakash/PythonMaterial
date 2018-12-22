@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-''' 
+""" 
 Purpose: This is a demonstration script
 first line is shebang line
-'''
+"""
 __name__ = 'author name'
 
 # print as a statement- py 2
