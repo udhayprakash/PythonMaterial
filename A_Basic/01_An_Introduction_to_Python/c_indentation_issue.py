@@ -6,7 +6,8 @@ __author__ = "PYthon Tutor"
 
 print "Hello World"
 
-summation = 34 + 99                  
+
+summation = 34 + 99                                   
 # dynamic typed languages 
 
 print summation     

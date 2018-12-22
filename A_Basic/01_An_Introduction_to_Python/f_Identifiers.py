@@ -22,7 +22,7 @@ __babu = 'Nagababu'
 # 2name = 'dfdfsdf'
 
 
-# OOP
+# OOP - name mangling
 # _variable   --> Private variable
 # __variable  --> Protected variable
 
