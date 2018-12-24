@@ -56,7 +56,7 @@ print 'num7      ', num7
 print 'type(num7)', type(num7)
 
 # # string to int
-# num8 = int('Hello') # ValueError: invalid literal for int() with base 10: 'Hello'
+# num8 = int('three') # ValueError: invalid literal for int() with base 10: 'Hello'
 # print 'num8      ', num8
 # print 'type(num8)', type(num8)
 

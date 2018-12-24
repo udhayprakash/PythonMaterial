@@ -1,7 +1,7 @@
 import os 
 
-# data = input()
-data = raw_input('Enter the data:') # renamed as input() in python 3
+data = input('Enter the data:')
+# data = raw_input('Enter the data:') # renamed as input() in python 3
 
 print "entered data is", data
 print type(data)

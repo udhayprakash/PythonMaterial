@@ -14,11 +14,13 @@ print
 print '  python Production  '.strip()
 print '  python Production  '.lstrip()
 print '  python Production  '.rstrip()
+print '  python Production  '.lstrip('p thnoy')
+print '  python Production  '.rstrip('p thnoy')
 
 print ' abcba '.lstrip('a ')
 print ' abcba '.rstrip('a ')
 print
-# HOw to covert a string to a list
+# How to convert a string to a list
 print 'Python Production'.split(' ')
 print 'Python Production'.split('r')
 print 'Python Production'.split('t')
@@ -28,14 +30,18 @@ print 'Python Production'.split('P')
 print 'Python Production'.split('n')
 print 'Python Production'.rsplit('P')
 print 'Python Production'.split('Prod')
+# print 'Python Production'.split('') # ValueError: empty separator
+print ''.split(' ') 
 print
-
+# How to convert a string to a list
 print list('Python Production')
+
 print 
 # HOw to convert list of strings to a single string
 print ''.join(['Python', 'Production', 'language'])
 print '@'.join(['Python', 'Production', 'language'])
 print '___'.join(['Python', 'Production', 'language'])
+
 print
 print '___'.join('Python Production'.split('P'))
 print 'P'.join('Python Production'.split('P'))

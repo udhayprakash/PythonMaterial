@@ -35,7 +35,7 @@ print 'pow(4,2)   =', pow(4, 2)
 print 'pow(64,1/2)=', pow(64, 1 / 2)
 print 'pow(64,0.5)=', pow(64, 0.5)
 print
-print 'pow(4,2,9) =', pow(4, 2, 9) # (4**2)%9
+print 'pow(4,2,9) =', pow(4, 2, 9) # (4 ** 2) % 9
 
 print
 print 'Exponent Notation'
