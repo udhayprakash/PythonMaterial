@@ -48,7 +48,7 @@ print values3
 values4 = xrange(9, 0, -2)  # builtin function
 print values4
 
-print '-' * 60
+print '-' * 40
 
 for i in range(9):
     print i,  # , acts as a new-line suppressor
@@ -58,7 +58,7 @@ print
 for i in xrange(9):
     print i,  # , acts as a new-line suppressor
 
-# print
+print
 
 # for ch in 'Python Programming':
 #     print ch,

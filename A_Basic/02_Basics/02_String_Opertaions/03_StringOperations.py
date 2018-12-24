@@ -71,7 +71,7 @@ print language
 
 print 'language[::] :', language[::]  # default step = +1
 print 'language[::1] :', language[::1]
-print 'language[::3] :', language[::3]
+print 'language[::3] :', language[::3] # equal to language[0:18:+3]
 print
 # If step is -ve, and start_index and final_index were not given,
 # then start_index = last string index and
