@@ -10,7 +10,7 @@ garbage collector -- java, python , ..
 
 '''
 
-with open('sampleCSVFile.csv', 'ab+') as myCsv:
+with open('sampleCSVFile.csv', 'wb') as myCsv:
     # csv header
     myCsv.write("fruits, vegetables, cars\n")
     # csv body 

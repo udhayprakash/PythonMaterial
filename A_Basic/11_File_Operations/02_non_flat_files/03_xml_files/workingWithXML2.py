@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 '''
 XML - looping through nodes
 '''
-input = '''
+input_string = '''
 <stuff>
     <users>
         <user x="2">
@@ -17,11 +17,12 @@ input = '''
     </users>
 </stuff>'''
 
-stuff = ET.fromstring(input)
+stuff = ET.fromstring(input_string)
 lst = stuff.findall('users/user')
 print('User count:', len(lst))
 
 for item in lst:
+    print()
     print('Name', item.find('name').text)
     print('Id', item.find('id').text)
     print('Attribute', item.get("x"))

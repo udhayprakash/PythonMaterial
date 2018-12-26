@@ -11,9 +11,9 @@ with open('mydata.csv', 'rb') as csv_fh:
     for index, eachline in enumerate(data):
         print index, '->', eachline
 
-    for loopnumber, eachline in enumerate(data):
-        if not loopnumber:
-            continue
-        print("eachline[0]", eachline[0])
+    # for loopnumber, eachline in enumerate(data):
+    #     if not loopnumber:
+    #         continue
+    #     print("eachline[0]", eachline[0])
 
     csv_fh.close()

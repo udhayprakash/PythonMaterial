@@ -23,5 +23,4 @@ fh = open('test.json', 'wb')
 json.dump(my_tuple, fh)
 
 gh = open('test.json', 'rb')
-
-json.load()
+print json.load(gh)

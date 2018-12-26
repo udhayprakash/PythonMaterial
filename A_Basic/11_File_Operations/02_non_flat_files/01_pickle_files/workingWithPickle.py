@@ -17,7 +17,6 @@ import pickle
             load  -- from a file 
             loads -- from a python string 
 
-
 '''
 # Serialization
 students = ['Michel', 'John', 'Udhay', 'An', 123]
