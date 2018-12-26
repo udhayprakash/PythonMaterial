@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Import `load_workbook` module from `openpyxl`
 from openpyxl import load_workbook
 
@@ -8,7 +9,7 @@ wb = load_workbook('./test.xlsx')
 print(wb.get_sheet_names())
 
 # Get a sheet by name 
-sheet = wb.get_sheet_by_name('Sheet3')
+sheet = wb.get_sheet_by_name('Sheet1')
 
 # Print the sheet title 
 sheet.title

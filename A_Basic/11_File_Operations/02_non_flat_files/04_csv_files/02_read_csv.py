@@ -1,3 +1,5 @@
+# from __future__ import print_function
+
 with open('mydata.csv', 'rb') as file_handler:
     csv_file_data = file_handler.readlines()
     print 'Content in the csv file:'
@@ -8,7 +10,7 @@ with open('mydata.csv', 'rb') as file_handler:
     for eachLine in csv_file_data[1:]:
         # print eachLine, type(eachLine)
         # print eachLine.split(',')
-        # print eachLine.split(',')[0]
+        print eachLine.split(',')[0]
         employee_names.append(eachLine.split(',')[0])
     
     print 'Employee names:', employee_names

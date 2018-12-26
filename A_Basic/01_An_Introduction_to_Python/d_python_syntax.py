@@ -21,7 +21,7 @@ print "Name of the student:", name
 print "Name of the student:"+ str(name)
 
 # print '12' + 34
-# # Question: strictly typed language
+# Question: strictly typed language
 
 # no difference between single and double quotes
 # for strings

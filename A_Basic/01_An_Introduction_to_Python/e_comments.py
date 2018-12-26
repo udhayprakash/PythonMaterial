@@ -19,7 +19,7 @@ print 'Hello  #World5'
 
 # sldkjlkdj;wl kf'w;  dp'kwf';e kr'!@#$%^&*()
 
-print '''
+'''
 Used to handle multi-line strings
 or 
 in cases where multiple single and double quotes are present in string
