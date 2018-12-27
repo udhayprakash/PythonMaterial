@@ -10,8 +10,9 @@ costOfApple = 12
 costOfMango = 5
 
 quantityOfApples = input('Enter quantity of Apples:')
-quantityOfMangos = input('quantityOfMangos=')
 print "type(quantityOfApples) = ", type(quantityOfApples)
+
+quantityOfMangos = input('quantityOfMangos=')
 
 TotalCost = ((costOfApple * quantityOfApples)
              + (costOfMango * quantityOfMangos))
