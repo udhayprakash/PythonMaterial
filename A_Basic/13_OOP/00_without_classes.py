@@ -24,4 +24,4 @@ withdraw(300)
 print "Madhavi -  balance after movie is {}".format(balance)
 
 # yash
-print "yash -  initial balance {}".format(balance)
+print "\nyash -  initial balance {}".format(balance)
