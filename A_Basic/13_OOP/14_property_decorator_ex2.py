@@ -18,7 +18,7 @@ class Person(object):
         self.first = firstname
         self.last = lastname
         
-    @property    
+    @property#.getter    
     def fullname(self):
         return self.first + ' '+ self.last
     
