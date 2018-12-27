@@ -2,7 +2,8 @@
 """
 Purpose: classes (OOP) introduction
 """
-
+class EmptyClass:
+    pass
 
 class MyClassName:        # class definition
     def hello(self):      # method
@@ -24,4 +25,4 @@ print "__name__", __name__
 
 print
 n.hello()  
-MyClassName.hello(n)
+# MyClassName.hello(n)

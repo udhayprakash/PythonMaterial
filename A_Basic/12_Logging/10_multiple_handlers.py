@@ -8,7 +8,7 @@ stdout = logging.StreamHandler(stream=sys.stdout)
 errfile = logging.FileHandler(
     filename=os.path.splitext(__file__)[0] + '.log'
     )
-
+# import pdb; pdb.set_trace()
 fmt = logging.Formatter('%(levelname)8s %(name)s %(message)s')
 stdout.setFormatter(fmt)
 errfile.setFormatter(fmt)
