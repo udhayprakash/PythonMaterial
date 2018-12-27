@@ -31,6 +31,3 @@ print "total_discount", total_discount
 
 final_price = total_cost - total_discount
 print "final Price", final_price
-
-
-

@@ -49,7 +49,7 @@ print 'myNewNumber =', myNewNumber
 myNewNumber <<= 1  # myNewNumber = myNewNumber << 1
 print 'myNewNumber = ', myNewNumber
 #     8 4 2 1
-# 4   0 1 0 0
+# 4   0 1 0 0  = 0 * 8 + 1 * 4 + 0 * 2 + 0 * 1 = 4
 # <<  1 0 0 0
 
 # 13  1 1 0 1
@@ -67,3 +67,13 @@ print "3 << 2 = ", result
 #        8 4 2 1
 # 3      0 0 1 1
 # <<2    1 1 0 0  =>  12
+
+
+calculated_result = 10 << 4
+print '10 << 4', calculated_result
+#           128    64    32    16    8   4   2   1
+# 10                                 1   0   1   0
+#                                1    0   1   0          1st shift 
+#                          1     0    1   0              2nd shift
+#                    1     0     1    0                  3rd shift
+#            1       0     1     0                       4th shift
