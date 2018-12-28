@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-class Methods 
+Methods 
     1. Instance Methods 
     2. class Methods
     3. static Methods
@@ -18,6 +18,7 @@ class MyClass(object):
     @staticmethod
     def smDisplay(x):
         print "executing static method display(%s)" % x
+        # neither use instance methods, instance variable, class methods nor classs variables
 
 
 a = MyClass()

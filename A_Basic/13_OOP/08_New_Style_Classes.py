@@ -28,4 +28,4 @@ print "type(rectangle) ", type(rectangle)
 print "dir(rectangle) ", dir(rectangle)
 
 print rectangle.perimeter()
-print rectangle.describe("wide rectangle more than twice as wide as tall")
+rectangle.describe("wide rectangle more than twice as wide as tall")

@@ -21,14 +21,14 @@ krish = Account()
 
 print 'dir(sam)', dir(sam)
 
-print 'sam.balance', sam.balance
+print '\nsam.balance', sam.balance
 print 'krish.balance', krish.balance
 
 # Deposit
 sam.deposit(1000)  # deposit(sam, 1000)  -- deposit(self, amount)
 krish.deposit(10000)
 
-print "after deposit"
+print "\nafter deposit"
 print 'sam.balance', sam.balance
 print 'krish.balance', krish.balance
 
@@ -36,6 +36,6 @@ print 'krish.balance', krish.balance
 sam.withdraw(300)
 krish.withdraw(3000)
 
-print "after withdraw"
+print "\nafter withdraw"
 print 'sam.balance', sam.balance
 print 'krish.balance', krish.balance

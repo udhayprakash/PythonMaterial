@@ -17,6 +17,7 @@ class Name:
         print "my instance method"
 
 n = Name()
+print dir(n)
 m = Name()
 p = Name  # class object assignment
 
@@ -27,18 +28,15 @@ print
 print '----------calling contructor'
 n.__init__()
 
-
-
 print '='*10
 print 'n.__dict__', n.__dict__
 print 'vars(n)   ', vars(n) # instance variables, not methods
 
-print dir(n)
+# print dir(n)
 print 'vars()', vars()
-# Note: calling the vars() function without parameters will return a dictionary containing the local symbol table.
+# # Note: calling the vars() function without parameters will return a dictionary containing the local symbol table.
 
 
-print '====='*5
 
 """
 run below in shell
