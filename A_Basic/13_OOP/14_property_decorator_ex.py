@@ -1,5 +1,4 @@
-class Person():
-
+class Person(object):
     def __init__(self, firstname, lastname):
         self.first = firstname
         self.last = lastname
@@ -13,17 +12,17 @@ class Person():
 
 
 person = Person('Udhay', 'Prakash')
-print(person.fullname)  
+print(person.fullname)  #()
 
 person.last = 'chaitanya'
 
 # print(person.fullname()) 
-# Adding property decorator makes to access the method
-# without method call '()'
+# # Adding property decorator makes to access the method
+# # without method call '()'
 print(person.fullname) 
 
 person.fullname = 'raja ram'
-print(person.fullname) 
-print(person.first) 
+print 'person.fullname', person.fullname
+print 'person.first', person.first 
 # But, 'self.first' and 'self.last' are not changed
 

@@ -6,8 +6,8 @@ class EmptyClass:
     pass
 
 class MyClassName:        # class definition
-    def hello(self):      # method
-        print 'hello world'
+    def hello_world(self):      # method
+        return 'hello world'
 
 n = MyClassName()         # Instantiation
 print 'n            :', n
@@ -23,6 +23,5 @@ print 'isinstance(n, MyClassName) :', isinstance(n, MyClassName)
 print 'isinstance(1, MyClassName) :', isinstance(1, MyClassName)
 print "__name__", __name__
 
-print
-n.hello()  
-# MyClassName.hello(n)
+print n.hello_world()
+print MyClassName.hello_world(n)

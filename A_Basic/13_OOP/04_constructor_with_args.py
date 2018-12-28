@@ -12,3 +12,5 @@ print dir(duck)
 
 rhino = Animal('African Rhino')
 rhino.walk()
+
+print vars(rhino)
