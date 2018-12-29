@@ -2,8 +2,8 @@
 """
 initialization
 while loop- condition
-    increment/decrement
     logic
+    increment/decrement
 """
 
 MIN = 0
@@ -15,11 +15,11 @@ while a < MAX:  # condition
     b = MIN
     while b < MAX:
         b += 1
-        # print a,  '*', b, '=', a*b
+        # print a, '*', b, '=', a*b
         # print "%d * %d = %d" % (a, b, a * b)
         # print "%2d * %2d = %3d" % (a, b, a * b)
         print "{0:2} * {1:2} = {2:3}".format(a, b, a*b)
-    print '-' * 18, a
+    print '-' * 18
     break
 else:
     print 'All loops executed'

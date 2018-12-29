@@ -3,8 +3,8 @@
 language = "python programming"
 
 # iterating over a string  
-for ch in language:
-    print ch,          
+for i in language:
+    print i,        
 print
 
 # enumerate - gives the loop index
@@ -22,8 +22,8 @@ for number in numbers:
     print number,
 print
 
-for index, number in enumerate(numbers):
-    print index, '-->', number
+for loop_count, number in enumerate(numbers):
+    print loop_count, '-->', number
 
 print '-'*20
 ######################

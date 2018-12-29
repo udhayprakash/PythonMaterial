@@ -15,7 +15,7 @@ Object
     - type(s)
     - address location where it is stored
 
-
+Dual Memory management Strategy
 -5 to 255
 """
 
