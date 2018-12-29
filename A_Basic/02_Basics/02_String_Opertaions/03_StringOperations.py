@@ -33,6 +33,7 @@ print 'language[-18] :', language[-18]
 
 print '------------------------------'
 print 'String Slicing'
+
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
 # -18                                    -3 -2 -1    - reverse indexing
@@ -59,6 +60,11 @@ print "language[7:18:-1]=", language[7:18:-1]  # 7-1 = 6 ; it is not between 7 a
 
 print 'language[18:7:-1]', language[18:7:-1]  # 18-1 = 17
 print 'language[18:7:-3]', language[18:7:-3]  # 18-3 = 15
+#         18 15 12 9 
+#            i   a o
+#         17 14 11 8
+#         g  m  r  r
+
 print
 # default start_index = 0
 # default final_index = last index of string + 1
