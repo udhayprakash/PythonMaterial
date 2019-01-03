@@ -24,7 +24,7 @@ def foo():
 # call 
 f = foo() 
 print 'f', f 
-# print dir(f)
+print dir(f)
 print f.next()
 print
 print f.next()

@@ -9,10 +9,10 @@ print
 
 # enumerate - gives the loop index
 # iterating over a string
-for index, ch in enumerate(language):
-    # print index, ch
-    # print "character at %d position is %s"%(index, ch)
-    print "character at %2d position is %1s" % (index, ch)
+for loop_count, ch in enumerate(language):
+    # print loop_count, ch
+    # print "character at %d position is %s"%(loop_count, ch)
+    print "character at %2d position is %1s" % (loop_count, ch)
 print
 #
 numbers = [12, 34, 5, 6, 7, 99, 888]

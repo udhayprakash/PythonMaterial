@@ -17,7 +17,7 @@ print("type(vegetables):", type(vegetables))
 print("vegetables[1]", vegetables[1])
 
 vegetables_iter = iter(vegetables)
-print("vegetables_iter      :", vegetables_iter)
+print("\n\nvegetables_iter      :", vegetables_iter)
 print("type(vegetables_iter):", type(vegetables_iter))
 # print("vegetables_iter[1]", vegetables_iter[1])
 print(dir(vegetables_iter))
@@ -27,7 +27,7 @@ print(vegetables_iter.next)
 print(callable(vegetables_iter.next))
 
 print(vegetables_iter.next())
-print(vegetables_iter.next())
+print(next(vegetables_iter))
 print(vegetables_iter.next())
 
 try:
@@ -66,7 +66,7 @@ print(callable(veto_countries_iter.next))
 print(veto_countries_iter.next())
 print(veto_countries_iter.next())
 print(veto_countries_iter.next())
-# print(veto_countries_iter.next()) # StopIteration
+print(veto_countries_iter.next()) # StopIteration
 
 # Iterator objects are disposable objects
 for each_country in veto_countries_iter:
@@ -80,5 +80,5 @@ for each_country in vegetables_iter:
 print('\n')
 
 
-# set - set iterator
-# dictionary - dictionary key iterator
+# # set - set iterator
+# # dictionary - dictionary key iterator
