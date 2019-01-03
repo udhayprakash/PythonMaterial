@@ -1,6 +1,11 @@
 #!/usr/bin/python
 """
 Purpose: linkedList creation
+
+node1 -> node2  -> node3 , ...
+
+each node:
+    |data|address of next node
 """
 __author__ = 'Udhay Prakash'
 

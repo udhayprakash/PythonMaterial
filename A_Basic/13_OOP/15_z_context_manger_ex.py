@@ -14,5 +14,9 @@ class ManagedFile:
             self.file.close()
 
 
+# with open('hello.txt', 'w') as f:
+#     f.write('I am good')
+#     f.close()
+
 with ManagedFile('hello.txt', 'w') as f:
-    f.write('Hello world!')
+    f.write('I am good')

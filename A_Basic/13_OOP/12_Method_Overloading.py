@@ -24,6 +24,9 @@ m.myFunction('udhay')
 class MyOverLoadEx(object):
     """
     This is overloading ex
+
+    Duck typing - the language doesn'it support a feature, 
+                    but we implement by some workaround
     """
 
     def myOverLoadFunction(self, name, age=None):

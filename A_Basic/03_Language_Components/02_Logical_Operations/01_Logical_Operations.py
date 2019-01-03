@@ -56,3 +56,18 @@ print 'expr3=', expr3
 
 expr4 = 3 and 9
 print 'expr4=', expr4
+
+
+"""
+Memory 
+    - RAM ===========
+        - HEap Memory
+            - Application specific private heap
+                - BUiltin 
+                    True, False, ...
+                - user defined 
+                    
+
+    - ROM === BIOS 
+    - HDD/SDD === non-voltile 
+"""

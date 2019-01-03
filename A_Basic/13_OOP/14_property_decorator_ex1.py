@@ -4,7 +4,7 @@ class Person(object):
         self.first = firstname
         self.last = lastname
 
-    @property    
+    @property # getter
     def fullname(self):
         return self.first + ' '+ self.last
 
@@ -25,7 +25,7 @@ print(person.last)  #> Prakash
 # Setting fullname calls the setter method and updates person.first and person.last
 person.fullname = 'Shyam Benegal'
 
-# Print the changed values of `first` and `last`
+# # Print the changed values of `first` and `last`
 print(person.fullname) #> Shyam Benegal
 print(person.first)  #> Benegal
 print(person.last)  #> Benegal

@@ -36,7 +36,7 @@ class RationalNumber:
     __repr__ = __str__
 
     def __del__(self):
-        print(deleting the instance)
+        print('deleting the instance')
 
 
 
