@@ -24,7 +24,7 @@ print
 # sets can't be indexed
 # print myset[0]  # TypeError: 'set' object does not support indexing
 
-filtered_list = sorted(set(running_ports))
+filtered_list = sorted(set(running_ports), reverse=True)
 print 'type(filtered_list)', type(filtered_list)
 print 'len(filtered_list)', len(filtered_list)
 print 'filtered_list:', filtered_list

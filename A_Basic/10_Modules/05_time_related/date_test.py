@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 '''
-Created on Sep 20, 2013
 @summary: some of the methods to handle date calculation
-@author: Jay <smilejay.com>
 '''
 
 import datetime
@@ -23,4 +21,4 @@ def get_a_month_val(year, month, day=1):
     print last_day_this_month_1
 
 if __name__ == '__main__':
-    get_a_month_val(2013, 10, 20)
+    get_a_month_val(2019, 10, 20)

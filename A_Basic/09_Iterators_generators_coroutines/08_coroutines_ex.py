@@ -1,5 +1,16 @@
 from __future__ import print_function
 
+def highlightVowels():
+    while True:
+        myString = yield
+        print ''.join([ch.upper() if ch.lower() in ['a', 'e', 'i', 'o', 'u'] else ch for ch in myString])
+        
+hV = highlightVowels()
+
+next(hV)  # coroutine starts
+print hV.send('Python Programming Language')
+print hV.send('Today is a good day')
+
 def minimize():
     current = yield
     while True:
