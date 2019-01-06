@@ -3,6 +3,8 @@
 '''
 	Purpose: module importing demonstration
 	
+	To create documenation for this script, use 
+		python -m pydoc -w newScript
 '''
 vowels = 'aeiou'
 
