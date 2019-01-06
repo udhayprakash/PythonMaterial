@@ -7,7 +7,7 @@ Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
 
 par_list = [1, 11, 111, 1111]
-print 'par_list ', par_list, type(par_list), id(par_list)
+print 'par_list      ', par_list, type(par_list), id(par_list)
 
 hard_copy_list = par_list
 print 'hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list)
@@ -60,6 +60,7 @@ print 'new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_d
 print 'new_list[2][2][1]', new_list[2][2][1]
 
 new_list[2][2][1] = 'FFO'
+print
 print 'new_list          ', new_list, type(new_list), id(new_list)
 print 'new_softcopy_list ', new_softcopy_list, type(new_softcopy_list), id(new_softcopy_list)
 print 'new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_deepcopy_list)
