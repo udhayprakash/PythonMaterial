@@ -1,10 +1,10 @@
 """
 TO start a local http server,
     # Python 2
-    python -m SimpleHTTPServer
+    python -m SimpleHTTPServer 8080
 
     # Python 3
-    python -m http.server
+    python -m http.server 8080
 
 To pretty print a json from terminal quickly, 
     cat file.json | python -m json.tool

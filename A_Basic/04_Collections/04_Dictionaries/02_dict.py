@@ -1,27 +1,15 @@
 
-
-colors = {
-    1 :'red', 
-    '2' : ['blue', 'bluish green'],
-    (3.887, 2) : 'yellow'
-    }
-
-print colors
-
-print '\ncolors.values()', colors.values()
-
-print '\ncolors.keys()  ', colors.keys()
-print '\ncolors.items() ', colors.items()
-
 data = [(1, 'red'), (2, 'blue'), (3, 'yellow')]
 print dict(data)
 
+data = [('red', 1), ('blue', 2), ('yellow', 3)]
+print dict(data)
 
 cities = ('New York', 'Shangai', 'New Delhi')
 countries = {'US', 'China'}
 
 # list of tuples
-print zip(cities, countries)
+print '\n', zip(cities, countries)
 
 cities_n_countries = dict(    zip(countries, cities)    )
 

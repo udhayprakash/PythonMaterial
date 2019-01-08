@@ -8,10 +8,15 @@ Purpose: Functions Demo
 # Function Definition
 def hello():
     print "Hello world"
-    #return None
+    #return None - default
+
+
+print hello
+print 'callable(hello)', callable(hello)
+fruit = 'apple'
+print 'callable(fruit)', callable(fruit)
+
 
 # Function Call 
 hello()
-
-print hello
 print hello()

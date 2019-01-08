@@ -51,7 +51,7 @@ IDEs to work with Python
 ------------------------
 1. IDLE 
 2. Pycharam 
-3. Python Toold for visual Studio 
+3. Python Tools for visual Studio 
 4. Intellij IDEA with python plugin 
 5. Komodo IDE 
 6. Komodo Edit 

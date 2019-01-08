@@ -3,18 +3,23 @@
 Purpose: dictionary demo
 
 1. keys are unique; 
-2. keys should be immutables only 
+2. keys should be immutables only
+    immutables 
+        string, tuple, int, long, float, bool
+    mutables
+        bytearray string, list, set, dict
 3. indexing based on keys 
 4. They were unordered
 
 """
+empty_dict = {}
+print empty_dict, type(empty_dict)
 
+empty_dict = dict()
+print empty_dict, type(empty_dict)
 
-from pprint import pprint 
-
-mydict = dict() # {}
-
-print type(mydict)
+empty_set = set()
+print empty_set, type(empty_set)
 
 other_set= {12, 34}
 print type(other_set)
@@ -35,7 +40,11 @@ mydict = {
 print mydict
 print type(mydict)
 
-pprint(mydict)
+from pprint import pprint
+# print(dir(pprint))
+# help(pprint)
+
+pprint(mydict, indent=2, width=2)
 
 # ########################################
 print
@@ -44,9 +53,15 @@ print "mydict['name']:", mydict['name']
 
 #  dictionary is a mutable object 
 mydict['name'] = 'shyam'
-print mydict.has_key('name1')
+print "mydict['name']:", mydict['name']
 
-print "mydict.get('name1'):", mydict.get('name1', 'key not present')
+print mydict.has_key('name1')
+# print "mydict['name1']:", mydict['name1']  KeyError: 'name1'
+
+print "mydict.get('name1')                  :", mydict.get('name1')
+print "mydict.get('name1', None)            :", mydict.get('name1', None)
+print "mydict.get('name1', 'key not present'):", mydict.get('name1', 'key not present')
+print
 print mydict
 print mydict.setdefault('name1', 'Key not present')
 print mydict
@@ -56,24 +71,19 @@ print mydict
 mydict['company'] = 'abc infotech'
 print 'mydict', mydict
 
-# #############################
-# pprint(mydict.keys() + mydict.values())
-# print(mydict.keys() + mydict.values())
-
 # # ####################################
 print dir(mydict)
 print '==============='
-print mydict.popitem()
+print mydict.popitem()  # deletes some key:value in random 
 print mydict
 
 print mydict.popitem()
 print mydict
 
-
-print mydict.pop('name')
+print mydict.pop('name')  # deletes specific mentioned key:value
 print mydict
 print
-del mydict['company']
+del mydict['company']   # deletes specific mentioned key:value
 print mydict
 
 
@@ -88,7 +98,7 @@ print 'mydict.iteritems()', mydict.iteritems()
 
 replica_dict = {}
 replica_dict= replica_dict.fromkeys(mydict, '')
-print 'replica_dict', replica_dict
+print '\n\nreplica_dict', replica_dict
 
 
 replica_dict.update({'a':12, 'name1': 'udhay'})
