@@ -17,6 +17,7 @@ http request methods
 from pprint import pprint
 
 import requests
+# pip install -U requests
 
 
 def location_search(query):

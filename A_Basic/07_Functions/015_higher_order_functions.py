@@ -42,13 +42,15 @@ print result
 #### using filter
 print filter(check_positive, xrange(-4, 6))
 
-
 print '----using comprehensions========='
 print [each_num>=0 for each_num in xrange(-4,6)]  # map
 print [each_num for each_num in xrange(-4,6) if each_num>=0]  # filter
 
-print '-----using lambda=================='
-print map(lambda x: 2*x, xrange(-4, 6))
+def double(x):
+        return 2 * x
+
+print '-----using lambda================== anonymous function'
+print map(double, xrange(-4, 6))
 print map(lambda x: 2+x, xrange(-4, 6))
 print map(lambda num: num>=0, xrange(-4, 6))
 print filter(lambda num: num>=0, xrange(-4, 6))
@@ -63,7 +65,7 @@ print filter(lambda x:x%2!=0, xrange(9))
 
 print '\n reduce functionality'
 
-print reduce(lambda p,q: p +q, xrange(6)) 
+print reduce(lambda p,q: p + q, xrange(6)) 
       # xrange(6) - [0, 1, 2, 3, 4, 5]
 print map(lambda p,q: p +q, xrange(6),  xrange(6))
 
@@ -71,7 +73,7 @@ mystrings = ('I', 'am', 'confident', 'about', 'myself')
 
 print ' '.join(mystrings)
 
-print reduce(lambda ch1, ch2: ch1+ ' ' + ch2, mystrings)
+print reduce(lambda ch1, ch2: ch1+ ' '+ ch2, mystrings)
 
 # factorial 9 - 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
 def my_factorial(given_num):

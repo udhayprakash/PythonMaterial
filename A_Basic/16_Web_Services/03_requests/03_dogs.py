@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-https://http.cat/[status_code]
+https://httpstatusdogs.com/[status_code]
 
 Http response status
     2xx     - success

@@ -8,9 +8,11 @@ Purpose: Functions Demo
 # Function Definition
 def hello(name, age):
     print "%s's age is %d"%(name, age)
-    return {}
+    # return 12,
+    return (12,),
+    # return {12:34}
     # default return is None type object
 
 # Function Call 
 result = hello('India', 75)
-print "result =", result
+print "result =", result, type(result)
