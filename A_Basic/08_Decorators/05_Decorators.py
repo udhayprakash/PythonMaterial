@@ -29,8 +29,8 @@ def makeitalic(fn):
     return wrapped
 
 
-@makeitalic#(login= '/login.html')
 @makebold
+@makeitalic
 def hello(name, salary=20000000):
     return "hello world:{}\t salary:{}".format(name, salary)
 

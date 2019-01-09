@@ -18,6 +18,7 @@ def foo():
         yield i
         print "after yield", i
     print "end of function "
+    return
      
 
 

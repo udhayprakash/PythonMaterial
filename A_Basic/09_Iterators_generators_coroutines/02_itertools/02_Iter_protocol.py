@@ -8,6 +8,9 @@ Iterator objects
     - can't be indexed
     - stores the state
     - used for large data handling
+    - values can be retrieved by 
+        - .next()
+        - applying for loop
 """
 from __future__ import print_function
 
