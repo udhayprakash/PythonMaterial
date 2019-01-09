@@ -3,7 +3,6 @@
 Purpose: Inner function example
 """
 
-
 def outer():
     print 'In outer function'
     nnum = 786
