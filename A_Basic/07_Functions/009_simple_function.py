@@ -8,8 +8,8 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(*feed_in):
-    print "\ntype(feed_in)",  type(feed_in)
-    print "inputs are "+ str(feed_in)
+    print("\ntype(feed_in)",  type(feed_in))
+    print("inputs are "+ str(feed_in))
 
 
 # Function Call 

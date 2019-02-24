@@ -1,6 +1,11 @@
 #!/usr/bin/python
 """
 Purpose: Function overwriting Problem
+
+
+a = 10 
+a = 56
+
 """
 def myfunc(num1, num2):
     """
