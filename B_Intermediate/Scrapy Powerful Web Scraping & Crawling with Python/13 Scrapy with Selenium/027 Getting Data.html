@@ -1,0 +1,335 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>027 Getting Data</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>To get data from the previous code, there are two methods:</p>
+
+<p><br></p>
+
+
+
+<h4><strong>First Method</strong></h4>
+
+
+
+<p>Here is the parse function that you can use to get URLs and title for example:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">    def parse_book(self, response):
+        title = response.css('h1::text').extract_first()
+        url = response.request.url
+        yield {'title': title, 'url':url}
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>As you can see, all what you need is to use is <code>response.request.url</code> to get the URL of the current request. Actually, you could even use<code>response.url</code>
+ to get the URL from the response, but the former would be more accuratein 
+the case there are redirections. For this website, both would give the 
+same result.</p>
+
+
+
+
+
+
+
+
+
+
+
+<p>Yes, you should use this code *<strong>without</strong>* defining anything in 
+items.py. Using a dictionary should be the same as using items.</p>
+
+
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4><strong>Second Method</strong></h4>
+
+
+
+
+
+
+
+
+
+
+
+<p>If you rather want to use items, your way should work as well. Add the following to items.py under <code>class BooksCrawlerItem(scrapy.Item)</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">    url = scrapy.Field()
+    title = scrapy.Field()
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Then in the books.py import <code>from books_crawler.items import BooksCrawlerItem</code> changing the names based on your project.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Then add the following parse function:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">    def parse_book(self, response):
+        items = BooksCrawlerItem()
+        title = response.css('h1::text').extract_first()
+        url = response.request.url
+    
+        items['title'] = title
+        items['url'] = url
+        yield items
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The items method should work as well. But do not use parts of one way in the other way to avoid unexpected results.</p>
+
+
+
+<p><br></p>
+
+
+
+<p>If you have questions, please feel free to send them to the <strong>Q&amp;A</strong> section.<br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

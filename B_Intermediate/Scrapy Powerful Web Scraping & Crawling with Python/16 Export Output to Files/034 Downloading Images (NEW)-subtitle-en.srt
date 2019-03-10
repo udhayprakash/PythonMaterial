@@ -1,0 +1,491 @@
+﻿1
+00:00:00,000 --> 00:00:06,500
+Hey there! So today we are going to learn how
+to download images locally to your file system.
+
+2
+00:00:06,500 --> 00:00:11,100
+So the only thing that we need to install,
+of course, if you don't already have it,
+
+3
+00:00:11,100 --> 00:00:15,089
+is a tool called Pillow. So if
+you don't already have it,
+
+4
+00:00:15,089 --> 00:00:26,500
+navigate to your Terminal or Command Prompt,
+and then type in sudo or just pip install Pillow.
+
+5
+00:00:26,500 --> 00:00:30,300
+Hit Enter. And then, of course, if
+prompted for the password,
+
+6
+00:00:30,300 --> 00:00:34,800
+make sure to enter it, and then once again
+hit Enter. And since I already have it,
+
+7
+00:00:34,800 --> 00:00:40,700
+I get the message that requirement is
+already satisfied. We can close the Terminal now,
+
+8
+00:00:40,700 --> 00:00:48,210
+and go to the Course Content page for
+this course, and then go to the section.
+
+9
+00:00:48,210 --> 00:00:55,600
+Let's see, Section 14 called Scrapy
+Spider - Books Store. So if we click it,
+
+10
+00:00:55,600 --> 00:01:00,700
+we are then going to download the
+already written or already developed spider
+
+11
+00:01:00,700 --> 00:01:06,000
+called Advanced_spider_books_2.zip.
+So since I've already done that,
+
+12
+00:01:06,000 --> 00:01:12,500
+I can go to the Desktop, and then
+extract or unzip the source code,
+
+13
+00:01:12,500 --> 00:01:19,400
+and then go to the root directory. And let's
+see what exactly firstly this spider does.
+
+14
+00:01:19,400 --> 00:01:26,200
+Then go to the spiders and, of course, just
+make sure to open it with your preferred text editor.
+
+15
+00:01:26,200 --> 00:01:32,200
+Okay. So let's see. So we are going
+into the books.toscrape.com page.
+
+16
+00:01:32,200 --> 00:01:37,100
+And then we are iterating over the books
+and processing the next pages.
+
+17
+00:01:37,100 --> 00:01:43,000
+So iterating over pages of the results. And then
+we are grabbing from each and every book.
+
+18
+00:01:43,000 --> 00:01:46,000
+We are grabbing a bunch
+of different data points.
+
+19
+00:01:46,000 --> 00:01:51,400
+We can remove most of them. So let's see.
+We can, pretty much, remove all of these
+
+20
+00:01:51,400 --> 00:01:58,300
+different data points, and then just leave
+the title, for example, price, image_url, also.
+
+21
+00:01:58,300 --> 00:02:04,500
+So we can also remove this method,
+since we are not referencing it anywhere.
+
+22
+00:02:04,500 --> 00:02:07,800
+And then let's talk about... so we are talking about
+
+23
+00:02:07,800 --> 00:02:13,000
+just grabbing the title prices, and
+also then just the image_url.
+
+24
+00:02:13,000 --> 00:02:19,200
+So we can save this spider code
+as it is, and then go to the folder,
+
+25
+00:02:19,200 --> 00:02:28,000
+and finally go to the items.py file. So the tool that
+we are going to use in Scrapy is called Images Pipeline.
+
+26
+00:02:28,000 --> 00:02:32,000
+It's part of the media pipeline that Scrapy offers.
+
+27
+00:02:32,000 --> 00:02:37,400
+And after you finish watching this video,
+make sure to just give it a read
+
+28
+00:02:37,400 --> 00:02:45,000
+on the latest Scrapy official documentation.
+It's really exceptionally well written.
+
+29
+00:02:45,000 --> 00:02:50,650
+And so you just need to make sure to really
+know the full extension of this pipeline
+
+30
+00:02:50,650 --> 00:02:54,600
+because it's really powerful. And when it
+comes to dealing with the images,
+
+31
+00:02:54,600 --> 00:03:02,740
+you can make sure to maybe add something
+like making sure that dimensions are, at least,
+
+32
+00:03:02,740 --> 00:03:10,090
+like 100 times 100, or that are... that they
+are, indeed, some specific name form,
+
+33
+00:03:10,090 --> 00:03:15,000
+or a bunch of, really, other stuff that I'm
+not going to get into, but it's really good.
+
+34
+00:03:15,000 --> 00:03:22,300
+So make sure to give it a read. Okay.
+So the thing that we need to add here is...
+
+35
+00:03:22,300 --> 00:03:27,100
+let's go to the spiders folder, and we
+can... let's just copy and paste these two.
+
+36
+00:03:27,100 --> 00:03:33,200
+I'm not going to paste this one as I
+will explain in a moment why I didn't do this.
+
+37
+00:03:33,200 --> 00:03:37,400
+So we can paste this
+in here, so title and price.
+
+38
+00:03:37,400 --> 00:03:44,300
+And then we will add the two default
+variable names that media, or better said,
+
+39
+00:03:44,300 --> 00:03:53,300
+Images Pipeline offers. The first one is called
+image_urls, and it's for the image URLs, obviously.
+
+40
+00:03:53,300 --> 00:03:58,840
+The second one is the images
+field for the... the images field is
+
+41
+00:03:58,840 --> 00:04:02,300
+really for the information about the
+the downloaded images, as you will see
+
+42
+00:04:02,300 --> 00:04:05,900
+after we run the crawl command.
+And then the only thing, of course,
+
+43
+00:04:05,900 --> 00:04:13,300
+that we need to do is call in:  = scrapy.Field()
+
+44
+00:04:13,300 --> 00:04:25,300
+And then we can save this. And, finally, close it.
+So let's go to the folder, and go to the settings.
+
+45
+00:04:25,300 --> 00:04:29,500
+Now settings will also need to be
+modified, and we will add another line,
+
+46
+00:04:29,500 --> 00:04:38,300
+and just modify one line. So ROBOTSTXT_OBEY is
+set to false. And we need to modify ITEM_PIPELINES.
+
+47
+00:04:38,300 --> 00:04:43,840
+So we can uncomment this.
+And then instead of referencing some...
+
+48
+00:04:43,840 --> 00:04:50,300
+as you can see, books_crawler.pipelines,
+so this will actually go to the pipelines.py file.
+
+49
+00:04:50,300 --> 00:04:54,900
+And this is for our... some custom
+pipeline that we are going to write.
+
+50
+00:04:54,900 --> 00:05:02,000
+We are just going to reference
+the Scrapy already enabled or, really,
+
+51
+00:05:02,000 --> 00:05:11,200
+developed pipeline called
+scrapy.pipelines.images.ImagesPipeline.
+
+52
+00:05:11,200 --> 00:05:16,500
+So this is, again, just a pipeline
+that Scrapy by default offers it,
+
+53
+00:05:16,500 --> 00:05:19,500
+and that we will use
+for downloading locally images.
+
+54
+00:05:19,500 --> 00:05:23,290
+We can set it to 1, and
+then we add just the line called
+
+55
+00:05:23,290 --> 00:05:33,600
+IMAGES_STORE is equal to and then some
+paths, for example, that will go to the home,
+
+56
+00:05:33,600 --> 00:05:39,400
+then your username, then, for example,
+Desktop, and then the name of a folder.
+
+57
+00:05:39,400 --> 00:05:43,900
+It can be something like foobar. So this
+will go to the, pretty much, this folder,
+
+58
+00:05:43,900 --> 00:05:52,479
+as I'm going to write it or define it here.
+And then it will download there the images.
+
+59
+00:05:52,479 --> 00:06:00,000
+We can save this, then close it. And then, finally,
+let's see if we need to add anything else here.
+
+60
+00:06:00,200 --> 00:06:02,020
+Pipelines, we don't need
+to change anything.
+
+61
+00:06:02,020 --> 00:06:09,300
+So what's only left to modify is the
+books.py or, really, our spider code.
+
+62
+00:06:09,300 --> 00:06:14,600
+There are going to be two imports.
+The first one is for the item loader.
+
+63
+00:06:14,600 --> 00:06:22,800
+So type in from scrapy.loader import ItemLoader.
+
+64
+00:06:22,800 --> 00:06:35,000
+And the second one is for the locally items.py file.
+So we type in from books_crawler.items import
+
+65
+00:06:35,000 --> 00:06:42,700
+And let's see how the items.py class
+is defined. So let's call in BooksCrawlerItem.
+
+66
+00:06:42,700 --> 00:06:48,300
+So if we copy this and paste it
+in here, we are going to be good to go
+
+67
+00:06:48,300 --> 00:06:51,500
+when it comes to importing. So this
+once again goes to the books_crawler.
+
+68
+00:06:51,500 --> 00:06:57,300
+So, really, this folder that I'm referencing
+right now. And then goes to the .items
+
+69
+00:06:57,300 --> 00:07:01,600
+or items.py, and then it reads from the already
+
+70
+00:07:01,600 --> 00:07:10,050
+or just previously mentioned BooksCrawlerItem.
+Here we only need to add a few more lines.
+
+71
+00:07:10,050 --> 00:07:16,600
+The first one is for the item loader.
+So type in l = ItemLoader.
+
+72
+00:07:16,600 --> 00:07:21,500
+And then in the open and closed
+parentheses, type in the first parameter,
+
+73
+00:07:21,500 --> 00:07:28,900
+which is called item=BooksCrawlerItem,
+so we can do this,
+
+74
+00:07:28,900 --> 00:07:35,100
+and then make sure to call it in like this.
+And then call in the second parameter,
+
+75
+00:07:35,100 --> 00:07:42,000
+which is called response. And then,
+of course, that will be equal to response.
+
+76
+00:07:42,000 --> 00:07:51,800
+Let's see, for example, we can just make
+sure to call this the images or image_urls.
+
+77
+00:07:51,800 --> 00:07:59,000
+So to make sure that we are going to be,
+or that variable name is going to be the same as
+
+78
+00:07:59,000 --> 00:08:04,900
+the Image Pipeline default,
+like this one. And then, let's see,
+
+79
+00:08:04,900 --> 00:08:13,100
+we need just to add a few more
+lines. So we call in l.add_value
+
+80
+00:08:13,100 --> 00:08:19,500
+and then we can write quotes,
+something like this. And then copy this line,
+
+81
+00:08:19,500 --> 00:08:26,600
+and paste it here. Oops, sorry.
+Copy this and then paste it below,
+
+82
+00:08:26,600 --> 00:08:33,300
+and then paste it once again.
+And then, finally, call in the return l.load...
+
+83
+00:08:33,300 --> 00:08:39,700
+Okay, so we have to write it, load_item,
+open and close parentheses here.
+
+84
+00:08:39,700 --> 00:08:44,600
+We are going to copy and paste
+these two. So title and prices.
+
+85
+00:08:44,600 --> 00:08:49,600
+So we can type here, paste it in here,
+and then also paste it here.
+
+86
+00:08:49,600 --> 00:08:54,000
+And then call in the image_urls. So
+we can copy this line, and then,
+
+87
+00:08:54,000 --> 00:08:58,000
+pretty much, paste it also here.
+So pretty straightforward.
+
+88
+00:08:58,000 --> 00:09:03,800
+And if we save this, and then go back to
+the root directory, we are going to be good to go.
+
+89
+00:09:03,800 --> 00:09:07,400
+Let's see how the spider
+is called. It's called books.
+
+90
+00:09:07,400 --> 00:09:13,400
+So if we go to the root directory,
+and then open again your Terminal
+or Command Prompt...
+
+91
+00:09:13,400 --> 00:09:18,800
+it depends really what you use.
+And then we can run it, finally.
+
+92
+00:09:18,800 --> 00:09:26,500
+So we call in scrapy crawl books,
+and then just hit Enter.
+And as you can see here,
+
+93
+00:09:26,500 --> 00:09:33,200
+we are going to scrape a lot of pages,
+so let's just end it. And, as you can see here,
+
+94
+00:09:33,200 --> 00:09:40,000
+we got the image_urls, images. And then,
+as you can see, this is for the information
+
+95
+00:09:40,000 --> 00:09:45,000
+about the downloaded images. And then,
+finally, the price and the titles, of course.
+
+96
+00:09:45,000 --> 00:09:52,700
+Now if we go to the foobar, or our defined
+folder for the images that are downloaded,
+
+97
+00:09:52,700 --> 00:09:58,500
+we will see the new folder called "full."
+Then if we go to it, you will see the images
+
+98
+00:09:58,500 --> 00:10:05,640
+that are generated or downloaded
+locally. So that will be it for this video,
+
+99
+00:10:05,640 --> 00:10:09,740
+and I'll see you in the very next one.
+

@@ -1,0 +1,410 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:07.259
+Hey there! So this is the fourth part of
+this section, and in it we will, pretty much,
+
+00:00:07.259 --> 00:00:13.559
+iterate over the application details. 
+So such as this one, for example.
+
+00:00:13.559 --> 00:00:18.840
+And then we will iterate over pages or
+process, really, next pages until
+
+00:00:18.840 --> 00:00:27.779
+there are no more pages. So, in this case,
+we will scrape four pages. So let's begin.
+
+00:00:27.779 --> 00:00:33.210
+Okay. Let's go to the shell, and then 
+let's see if we are in the right page.
+
+00:00:33.210 --> 00:00:40.680
+So response.url, and it seems like 
+we are. So let's first, as I was saying,
+
+00:00:40.680 --> 00:00:46.860
+isolate this type of file number, really, or the 
+URLs to the specific pages or application pages.
+
+00:00:46.860 --> 00:00:53.550
+So since this is fairly a simple site
+there shouldn't be too much worry.
+
+00:00:53.550 --> 00:00:59.699
+So we go to Inspect, and then let's see.
+
+00:00:59.699 --> 00:01:06.390
+So we can extract it by using or selecting every 
+table data, and then going into each and every "a" tag,
+
+00:01:06.390 --> 00:01:14.130
+and going into each and every 
+href tag. So let's try to do that.
+
+00:01:14.130 --> 00:01:23.159
+Let's go back to the Terminal and type in 
+response.xpath. Select every TD or table data.
+
+00:01:23.159 --> 00:01:31.049
+Let's go down to the "a" tag. So let's 
+double verify this. So every table data,
+
+00:01:31.049 --> 00:01:39.720
+go to the "a" tag, and then get to 
+the href, and call in extract. Hit Enter.
+
+00:01:39.720 --> 00:01:49.759
+And here we got, let's see, so this is 
+the first one. And let's go into Inspect,
+
+00:01:49.759 --> 00:01:56.970
+go back to the Terminal, and 
+let's see. Yeah, this is the last one.
+
+00:01:56.970 --> 00:02:01.860
+So this is the pages, as you can see, or urls. 
+As you can see, this is fairly straightforward.
+
+00:02:01.860 --> 00:02:07.650
+Generally speaking, when
+it comes to scraping table data,
+
+00:02:07.650 --> 00:02:12.750
+just make sure, one note, so if you would
+like to scrape, maybe, Decision Due Date
+
+00:02:12.750 --> 00:02:21.090
+or Decision Date or Decision Code, etc., my 
+idea or my general approach to scraping tables
+
+00:02:21.090 --> 00:02:27.090
+is that you first need to 
+isolate the rows. Okay?
+
+00:02:27.090 --> 00:02:31.739
+And then you need to isolate the table data. 
+So this is the first table data. This is the second one,
+
+00:02:31.739 --> 00:02:37.500
+as you can see. This is then the third 
+one, see? And this is the fourth one.
+
+00:02:37.500 --> 00:02:41.640
+As you can see, it's empty. This is the fourth 
+one, and this is the fifth one, sixth one, etc.
+
+00:02:41.640 --> 00:02:48.060
+So just make sure to,
+again, isolate the table rows,
+
+00:02:48.060 --> 00:02:55.230
+and then iterate over each and every table row
+because that way you can get more sense out of the data.
+
+00:02:55.230 --> 00:03:02.760
+Otherwise, what I did so, and also on 
+my end, and also from some students,
+
+00:03:02.760 --> 00:03:09.959
+is that once they don't have
+data in the cells, such as this here,
+
+00:03:09.959 --> 00:03:16.980
+then if they try to parse the table as it is, like as 
+a whole, then they've got a lot of troubles, really,
+
+00:03:16.980 --> 00:03:21.600
+because then they get mix-and-match,
+really, data points
+
+00:03:21.600 --> 00:03:29.100
+across all of these cells. So, okay. 
+So let's go back to our project.
+
+00:03:29.100 --> 00:03:35.310
+Go to the Terminal, and we can, pretty much, 
+copy and paste this into our text editor.
+
+00:03:35.310 --> 00:03:43.860
+So we can call this application_urls is equal
+to this, and then we can just iterate over the URLs.
+
+00:03:43.860 --> 00:03:54.829
+So for url in application_urls,
+so copy and paste this.
+
+00:03:54.940 --> 00:03:59.720
+Let's see if we need to use response.urljoin.
+
+00:03:59.720 --> 00:04:06.819
+Okay, we have to because it's not going to have 
+the absolute URL. So url = response.urljoin,
+
+00:04:06.819 --> 00:04:16.459
+and then url. Finally, then we are going 
+to yield Request. So parse or, sorry,
+
+00:04:16.459 --> 00:04:28.460
+yield Request, and then the URL. And 
+we will define callback as self.parse.
+
+00:04:28.460 --> 00:04:35.510
+Let's say items, for example. And let's 
+save it as it is. And for testing purposes,
+
+00:04:35.510 --> 00:04:42.979
+what I did previously, and when 
+I want to scrape just something for a test,
+
+00:04:42.979 --> 00:04:48.020
+is to go to the, for example, parse function
+or the first one, and only get the first instance.
+
+00:04:48.020 --> 00:04:55.370
+So we are only going to want to, 
+let's see, scrape the first URL,
+
+00:04:55.370 --> 00:05:00.130
+which is probably going to be this county. 
+So let's see. So it's going to be this URL.
+
+00:05:00.130 --> 00:05:07.660
+So we use here list slicing, and to
+do that we go from 0 to 1, save it,
+
+00:05:07.660 --> 00:05:13.880
+and then go back to the Terminal and run
+our script. So, let's see if this will work.
+
+00:05:13.880 --> 00:05:18.710
+No, this will not work. The reason why 
+is because the first one will be filtered out.
+
+00:05:18.710 --> 00:05:25.340
+So let's go to the second one. 
+So we can go from 0 to 2, for example.
+
+00:05:25.340 --> 00:05:29.810
+The first, of course, will be filtered 
+out. And the second one will be,
+
+00:05:29.810 --> 00:05:36.020
+hopefully, the one that we need. 
+Okay. So it is. So this one is filtered out,
+
+00:05:36.020 --> 00:05:45.320
+and the first one goes to the POST, and 
+let's see. It should be... if we go back to here...
+
+00:05:45.320 --> 00:05:50.840
+we haven't defined this function, so 
+if we define it, it should be good to go.
+
+00:05:50.840 --> 00:05:56.840
+And for now, let's pass it as it is, 
+go back to the Terminal,
+
+00:05:56.840 --> 00:06:05.480
+and run it once again. Okay, 
+something is weird, so let's see what's up.
+
+00:06:05.480 --> 00:06:11.400
+So we are going to go to the 
+application_urls. And it seems like... yeah.
+
+00:06:11.400 --> 00:06:18.420
+I know probably what is the issue. So let's try to do it 
+with the five first counties or something like that.
+
+00:06:18.420 --> 00:06:22.140
+The issue here is that if we go 
+to the Received Applications,
+
+00:06:22.140 --> 00:06:26.220
+and then 42 Days, click Search, 
+it will probably be empty. Right, yeah.
+
+00:06:26.220 --> 00:06:31.890
+So let's go back to Sublime Text
+and select first until 10 or so.
+
+00:06:31.890 --> 00:06:41.580
+So we can more quickly go 
+over this sample. And let's see.
+
+00:06:41.580 --> 00:06:47.580
+So right now, it goes to GET. And then, 
+ okay, so it seems like it's working.
+
+00:06:47.580 --> 00:06:55.440
+So if we copy and paste this to our 
+browser... and, yeah, it seems like we need
+
+00:06:55.440 --> 00:07:00.450
+to do it probably once again. 
+Okay. So this site is sort of weird.
+
+00:07:00.450 --> 00:07:05.370
+So you have to reload the page two times to get to the
+URL. Okay, so it seems like it's working, which is great.
+
+00:07:05.370 --> 00:07:13.230
+So let's go back to the text editor 
+and remove our list slicing.
+
+00:07:13.230 --> 00:07:19.140
+So this is, again, what I use in the, 
+sort of, when producing or, really,
+
+00:07:19.140 --> 00:07:25.230
+developing quick tests to see if the new function
+or new URL or everything else will work fine.
+
+00:07:25.230 --> 00:07:29.610
+So, in this case, everything is
+working fine, which is great.
+
+00:07:29.610 --> 00:07:36.800
+The last thing that we need to do in this 
+part of the video is... let's go to Search...
+
+00:07:36.800 --> 00:07:43.500
+is go and, really, iterate or crawl the next
+pages. So it's going to be fairly straightforward.
+
+00:07:43.500 --> 00:07:50.790
+We go to Inspect, and then, 
+let's see, we can... so we can either
+
+00:07:50.790 --> 00:07:56.700
+go to the class with this value, and then
+go to the /a and then scrape the href tag,
+
+00:07:56.700 --> 00:08:03.860
+or we can, pretty much, get this value 
+and have the next as a value to it.
+
+00:08:03.860 --> 00:08:08.139
+So I believe we can, pretty much, 
+copy... okay, perfect.
+
+00:08:08.139 --> 00:08:13.569
+We can copy and paste this as 
+it is. So let's go back to the shell
+
+00:08:13.569 --> 00:08:20.379
+and verify that it will work, first and 
+ foremost. So response.xpath,
+
+00:08:20.379 --> 00:08:27.009
+and then we can type this, and we 
+can add to select every instance.
+
+00:08:27.009 --> 00:08:34.360
+So the syntax is, really, the same as… if we scraped or tried to 
+write XPath selector to the [class] itself.
+
+00:08:34.360 --> 00:08:41.159
+So let's hit Enter. Perfect. It works. 
+So we need to go to the href
+
+00:08:41.159 --> 00:08:47.649
+and extract the first instance.
+Okay, close parentheses.
+
+00:08:47.649 --> 00:08:54.130
+Okay, it works great, but, of course, we need to have 
+the absolute URL. So we will use the response.urljoin.
+
+00:08:54.130 --> 00:09:00.790
+Okay? So this, also, is one thing
+important to note because I also made
+
+00:09:00.790 --> 00:09:06.490
+this mistake probably 10 times -- that 
+I forgot to add the response.urljoin,
+
+00:09:06.490 --> 00:09:13.449
+or, really, that URL was not as specified or,
+really, not a successful one. So if we copy this,
+
+00:09:13.449 --> 00:09:18.240
+paste this into your text editor as
+
+00:09:18.899 --> 00:09:30.490
+next_page_url is equal to this. And 
+then, let's say, absolute_next_page_url
+
+00:09:30.490 --> 00:09:38.250
+is going to be equal to response.urljoin. 
+And then we can copy and paste this.
+
+00:09:38.339 --> 00:09:44.410
+Then, finally, we will yield Request. Now 
+we'll yield Request to the same callback,
+
+00:09:44.410 --> 00:09:49.120
+which is going to be parse_pages, because
+we want to, of course, iterate over the first page.
+
+00:09:49.120 --> 00:09:54.100
+So in the Scrapy logic, it will go 
+to this page, on the first page,
+
+00:09:54.100 --> 00:10:00.040
+and then it will yield the very next page.
+
+00:10:00.040 --> 00:10:05.589
+Then, sort of, Scrapy will go again to the parse_pages, 
+which is the reason why we are going to
+
+00:10:05.589 --> 00:10:09.610
+define the callback function to the parse_pages, 
+and it will then scrape the second pages,
+
+00:10:09.610 --> 00:10:15.160
+then it will... the 
+absolute_next_page_url will be the third page,
+
+00:10:15.160 --> 00:10:19.870
+because we are on the second page, and
+then it will do the same thing for the fourth, fifth,
+
+00:10:19.870 --> 00:10:25.180
+or however many there are pages. So 
+yield Request, then we can copy and paste
+
+00:10:25.180 --> 00:10:34.029
+this URL, comma, callback is
+equal to the self.parse_pages.
+
+00:10:34.029 --> 00:10:40.899
+Okay, so we can copy this and paste it. 
+Okay, so save it, and go back to the Terminal,
+
+00:10:40.899 --> 00:10:48.790
+and let's verify that everything is working 
+ great. Okay, so we should be looking
+
+00:10:48.790 --> 00:10:54.370
+at the second pages, as you can 
+see here. We got to the second page,
+
+00:10:54.370 --> 00:10:59.800
+and this is the third page of one of 
+the results. So everything is working fine.
+
+00:10:59.800 --> 00:11:06.759
+So we can close this by double pressing ctrl + C
+two times. And since everything is working fine,
+
+00:11:06.759 --> 00:11:10.990
+we can then proceed to the 
+very next video, where I'll see you.
+
+00:11:10.990 --> 00:11:13.620
+Talk soon!

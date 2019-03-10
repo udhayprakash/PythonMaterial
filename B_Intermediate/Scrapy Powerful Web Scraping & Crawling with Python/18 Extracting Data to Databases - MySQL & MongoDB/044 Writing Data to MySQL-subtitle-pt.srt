@@ -1,0 +1,752 @@
+﻿1
+00:00:00,170 --> 00:00:04,790
+Olá! Então neste vídeo vamos escrever dados no database MySQL.
+
+2
+00:00:04,980 --> 00:00:11,850
+O dado que vamos escrever vai estar no arquivo
+CSV, então vamos reutilizar o spider
+
+3
+00:00:11,850 --> 00:00:14,500
+que escrevemos anteriormente.
+
+4
+00:00:15,210 --> 00:00:20,090
+Vamos para o arquivo books.py
+e modificar o código.
+
+5
+00:00:20,220 --> 00:00:29,430
+Então o que precisa ser feito é apenas comentar estas três linhas
+então esta é a lógica para ir para a URL
+
+6
+00:00:29,430 --> 00:00:38,850
+da próxima página e então extrair milhares de URLs de páginas,
+URLs específicas de livros. Então isto,
+
+7
+00:00:39,090 --> 00:00:45,730
+se me lembro corretamente há 50 páginas,
+então isto vai para, vamos ver, o start_urls vai
+
+8
+00:00:45,730 --> 00:00:51,840
+para a página inicial, então books.toscrape.com
+e o spider vai iterar
+
+9
+00:00:51,840 --> 00:00:53,030
+sobre os livros.
+
+10
+00:00:53,040 --> 00:00:55,230
+Deve haver, esta variável
+
+11
+00:00:55,240 --> 00:01:02,160
+books deve conter a lista das 20 URLs de livros
+e vamos "yield request" para o parse_book, que
+
+12
+00:01:02,160 --> 00:01:05,900
+vai usar yield em todos estes
+pontos de dados diferentes.
+
+13
+00:01:05,910 --> 00:01:10,140
+Muito simples. Então deve ser,
+item_scraped_count deve ser vinte.
+
+14
+00:01:10,170 --> 00:01:12,880
+Então vamos verificar isso.
+
+15
+00:01:13,430 --> 00:01:21,040
+Então digitamos "scrapy crawl books",
+e vamos ver, eu acho que não salvamos ele.
+
+16
+00:01:21,410 --> 00:01:25,920
+Está correto e vemos aqui
+
+17
+00:01:25,920 --> 00:01:28,170
+item_scraped_count é vinte, o que é perfeito.
+
+18
+00:01:28,210 --> 00:01:32,490
+Não há nenhum erro, o que é ótimo também.
+
+19
+00:01:32,590 --> 00:01:35,490
+Então tudo está funcionando corretamente e bem.
+
+20
+00:01:35,740 --> 00:01:37,740
+Então vamos voltar para o código.
+
+21
+00:01:37,870 --> 00:01:41,480
+Há algumas outras modificações que precisam ser adicionadas.
+
+22
+00:01:41,680 --> 00:01:46,310
+Então a primeira vai ser que nós
+vamos importar alguns módulos diferentes.
+
+23
+00:01:46,310 --> 00:01:52,750
+O primeiro deles vai ser "os", ou operating system.
+O segundo vai ser, por exemplo, "csv", já
+
+24
+00:01:52,750 --> 00:01:57,490
+que vamos ler os dados do CSV
+para salvar no database MySQL.
+
+25
+00:01:57,730 --> 00:02:08,200
+"import glob", que vai ser reutilizado ou usado
+para localizar o último arquivo CSV definido e finalmente
+
+26
+00:02:08,200 --> 00:02:19,240
+vamos usar "import MySQLdb".
+O jeito que você instala o database MySQL no Python é,
+
+27
+00:02:19,270 --> 00:02:23,190
+você pode digitar "sudo pip install
+
+28
+00:02:23,290 --> 00:02:24,320
+mysql
+
+29
+00:02:24,370 --> 00:02:32,090
+-python", pressionar Enter, vamos colocar a senha
+e isto já está instalado para mim.
+
+30
+00:02:32,110 --> 00:02:33,250
+Então vamos ver.
+
+31
+00:02:36,890 --> 00:02:45,200
+Isto é para usar databases MySQL
+ou conectar ele ao código Python para que ele possa então transferir
+
+32
+00:02:45,410 --> 00:02:46,770
+direto para o database.
+
+33
+00:02:46,790 --> 00:02:50,940
+E aqui está que os requisitos já estão satisfeitos.
+
+34
+00:02:51,020 --> 00:02:52,400
+Perfeito.
+
+35
+00:02:52,400 --> 00:02:57,220
+Vamos ver o que mais, então em vez de pegar, vamos ver
+
+36
+00:02:57,260 --> 00:03:02,170
+quantas, 12 linhas ou 12 itens, vamos apenas adicionar
+
+37
+00:03:02,170 --> 00:03:02,740
+alguns deles.
+
+38
+00:03:02,750 --> 00:03:05,360
+Então vamos adicionar o title.
+
+39
+00:03:05,360 --> 00:03:15,370
+Vamos deixar isso também, vamos deixar o rating
+e vamos ver o que mais podemos usar, upc.
+
+40
+00:03:15,740 --> 00:03:18,170
+E também vamos usar product_type.
+
+41
+00:03:18,470 --> 00:03:26,360
+Podemos deletar todo o resto, vamos apenas deixar mais fácil
+e vamos apenas verificar se tudo está funcionando
+
+42
+00:03:26,360 --> 00:03:28,850
+corretamente.
+
+43
+00:03:28,860 --> 00:03:31,730
+Ok, 20, perfeito. Então tudo está funcionando bem.
+
+44
+00:03:31,770 --> 00:03:41,280
+O que pecisa ser adicionado agora é
+nossa função close então "def close" e então os
+
+45
+00:03:41,460 --> 00:03:43,240
+parâmetros bem conhecidos.
+
+46
+00:03:43,320 --> 00:03:45,110
+O primeiro é, claro, "self".
+
+47
+00:03:45,110 --> 00:03:48,850
+O segundo é "reason", já cobrimos isto.
+
+48
+00:03:48,870 --> 00:03:56,310
+E aqui vamos pegar o arquivo CSV.
+e vamos reutilizar o código que já escrevemos e
+
+49
+00:03:56,410 --> 00:04:00,260
+explicamos no vídeo anterior.
+
+50
+00:04:00,270 --> 00:04:07,640
+Então vamos apenas digitar isto, então "*.csv"
+
+51
+00:04:08,100 --> 00:04:23,070
+e o "key=os.path.getctime",
+e vamos imprimir isto e
+
+52
+00:04:23,150 --> 00:04:27,020
+vamos salvar isto. Vamos ter que definir a saída então "-o"
+
+53
+00:04:27,010 --> 00:04:32,610
+e então por exemplo, "items.csv",
+e vamos ver que não está funcionando.
+
+54
+00:04:32,900 --> 00:04:34,340
+E não está nas strings
+
+55
+00:04:37,500 --> 00:04:38,800
+Ok, então ele imprimiu
+
+56
+00:04:38,820 --> 00:04:39,990
+items.csv, o que
+
+57
+00:04:40,030 --> 00:04:40,720
+é perfeito.
+
+58
+00:04:40,720 --> 00:04:42,740
+Vamos remover isso agora.
+
+59
+00:04:42,940 --> 00:04:43,720
+Vamos ver
+
+60
+00:04:43,760 --> 00:04:45,390
+se está removido, está removido.
+
+61
+00:04:45,910 --> 00:04:54,000
+E o jeito que você remove isso é com o "rm"
+e então você pode definir, ou remover,
+
+62
+00:04:54,040 --> 00:04:54,850
+scrapy.cfg.
+
+63
+00:04:54,870 --> 00:04:56,120
+Não vamos fazer isso.
+
+64
+00:04:56,600 --> 00:04:58,160
+E é.
+
+65
+00:04:58,510 --> 00:05:03,980
+Então vamos continuar
+e definir nossa segunda linha de códido nesta função close.
+
+66
+00:05:04,070 --> 00:05:14,080
+E isso vai ser "mydb",
+e isso vai herdar do "MySQLdb"
+e vamos usar o "connect".
+
+67
+00:05:15,320 --> 00:05:22,750
+Os poucos parâmetros que vamos atribuir são,
+o primeiro vai ser o "host", "host" vai
+
+68
+00:05:22,750 --> 00:05:24,040
+ser chamado "localhost".
+
+69
+00:05:24,070 --> 00:05:35,620
+Então apenas digite "localhost" e então venha aqui,
+então o que precisamos definir é "user" e ele vai ser "root",
+
+70
+00:05:35,680 --> 00:05:40,500
+então o o mesmo "root".
+
+71
+00:05:40,540 --> 00:05:46,170
+Então se formos para o "mysql"
+e então definir "-u root".
+
+72
+00:05:46,300 --> 00:05:47,530
+Este é o mesmo usuário.
+
+73
+00:05:47,710 --> 00:05:52,750
+E então vamos apenas quando estivermos aqui.
+
+74
+00:05:52,850 --> 00:05:58,750
+Apenas vá para a tela de boas-vindas do MySQL
+e vá para a próxima tela.
+
+75
+00:06:02,150 --> 00:06:06,130
+Ok, perfeito, o que mais.
+
+76
+00:06:06,150 --> 00:06:09,090
+Então o que precisa ser adicionado é o "password" também.
+
+77
+00:06:09,120 --> 00:06:18,210
+Então o "pass" vai ser o tipo de argumento, ou o nome,
+desculpe, o "passwd" vai ser
+
+78
+00:06:18,210 --> 00:06:22,070
+o nome do argumento
+e a senha que eu usei é apenas "foo".
+
+79
+00:06:22,410 --> 00:06:24,850
+Isto vai ser diferente para você.
+
+80
+00:06:25,050 --> 00:06:28,510
+E vamos ver o que mais, "db" vai ser chamado.
+
+81
+00:06:28,650 --> 00:06:31,770
+Vamos chamar ele "books_db".
+
+82
+00:06:31,940 --> 00:06:38,090
+Vamos voltar para o MySQL
+e então ver ou mostrar os databases.
+
+83
+00:06:41,570 --> 00:06:42,420
+Ok, perfeito.
+
+84
+00:06:42,420 --> 00:06:44,300
+Parece que não definimos ele ainda.
+
+85
+00:06:44,310 --> 00:06:49,760
+Então vamos criar o database. Então para fazer isso
+
+86
+00:06:49,770 --> 00:06:57,560
+nós digitamos, claro, "CREATE DATABASE books_db".
+
+87
+00:06:58,560 --> 00:07:06,870
+E então vamos usar isso, então "USE books_db",
+"database changed", perfeito.
+
+88
+00:07:07,140 --> 00:07:11,930
+Vamos voltar para nosso código
+e vamos ver, isto está feito.
+
+89
+00:07:11,940 --> 00:07:20,960
+E a última coisa que precisa ser feito aqui é
+a variável "cursor" e isso vai ser "mydb".
+
+90
+00:07:21,060 --> 00:07:27,700
+E então vamos apenas atribuir ou colocar ".cursos" nisso.
+
+91
+00:07:28,410 --> 00:07:38,370
+E "csv_data" vai ser o nome da variável para
+o "csv.reader" que vai ser do arquivo CSV.
+
+92
+00:07:38,370 --> 00:07:43,290
+Então este arquivo,
+e vamos começar a iterar sobre este arquivo.
+
+93
+00:07:43,290 --> 00:07:47,300
+Então uma linha de dado ou cada uma das linhas.
+
+94
+00:07:47,520 --> 00:07:58,350
+Isto é porque vamos estar, vamos ver,
+vamos ter o número do items.csv,
+
+95
+00:07:58,650 --> 00:08:05,690
+e vamos ter estes quatro nomes diferentes de coluna
+e vamos ter que iterar sobre cada linha
+
+96
+00:08:05,760 --> 00:08:11,920
+e pegar cada um
+dos valores
+e colocar no database MySQL.
+
+97
+00:08:12,030 --> 00:08:20,150
+Temos que, claro, criar a tabela com
+estes quatro nomes de colunas e então definir os valores
+
+98
+00:08:20,170 --> 00:08:20,550
+no nosso código Python.
+
+99
+00:08:20,550 --> 00:08:25,720
+Então vamos nas próximas linhas fazer isso.
+
+100
+00:08:26,280 --> 00:08:32,880
+Então a primeira coisa que precisa ser feita é que
+temos que definir "row_count = 0", porque vamos
+
+101
+00:08:33,060 --> 00:08:38,370
+adicionar um contador
+e então vamos colocar o laço for.
+
+102
+00:08:38,760 --> 00:08:43,290
+Então esse laço for vai iterar sobre
+cada linha do dado CSV.
+
+103
+00:08:43,290 --> 00:08:52,770
+Então desta variável, ou do arquivo CSV,
+e "if row_count
+
+104
+00:08:52,770 --> 00:08:54,770
+!=0".
+
+105
+00:08:55,850 --> 00:08:58,060
+Vamos executar.
+
+106
+00:08:58,140 --> 00:09:10,080
+Então vamos passar por isso por enquanto,
+e vamos usar então o "row_count
+
+107
+00:09:10,110 --> 00:09:12,060
++= 1"
+
+108
+00:09:12,660 --> 00:09:16,900
+E finalmente vamos, depois de tudo isto feito,
+
+109
+00:09:16,980 --> 00:09:20,610
+vamos fechar nossa conexão com o database.
+
+110
+00:09:20,820 --> 00:09:30,930
+Para fazer isso digitamos "mydb.commit()"
+e então "cursor.close()".
+
+111
+00:09:31,370 --> 00:09:32,370
+Vamos ver.
+
+112
+00:09:32,610 --> 00:09:35,220
+E finalmente isso vai tudo.
+
+113
+00:09:35,250 --> 00:09:43,320
+Então esta é a linha mais importante que vamos escrever
+e isto vai escrever uma linha de dado
+
+114
+00:09:44,010 --> 00:09:56,730
+de cada vez no nosso database MySQL. Então o cursor vai executar,
+e isto vai ser, este parênteses
+
+115
+00:09:56,760 --> 00:10:08,660
+vai ser basicamente
+a mesma sintaxe que usaríamos no nosso
+
+116
+00:10:08,710 --> 00:10:09,140
+MySQL shell,
+
+117
+00:10:09,150 --> 00:10:10,390
+aqui.
+
+118
+00:10:10,740 --> 00:10:19,020
+Então o que precisamos digitar é "INSERT IGNORE INTO books_table",
+
+119
+00:10:19,020 --> 00:10:29,370
+por exemplo, pode ser o nome da tabela no nosso database books
+então precisamos criar isso também, o jeito que criamos isso é,
+
+120
+00:10:29,370 --> 00:10:32,790
+vamos ver o items.csv.
+
+121
+00:10:33,150 --> 00:10:37,600
+Então os nomes das variáveis vão ser rating,
+product_type, upc e title.
+
+122
+00:10:37,650 --> 00:10:40,130
+Ok, então vamos ver.
+
+123
+00:10:40,470 --> 00:10:49,670
+Então vamos criar a tabela, "CREATE TABLE",
+e então o nome da tabela é,
+
+124
+00:10:49,710 --> 00:10:51,550
+vamos ver, "books_table".
+
+125
+00:10:55,670 --> 00:11:02,570
+Vamos ver se precisamos fazer mais algo.
+Precisamos definir nossos nomes de variável.
+
+126
+00:11:02,570 --> 00:11:05,600
+A primeira delas vai ser, vamos ver, o rating.
+
+127
+00:11:06,110 --> 00:11:09,950
+Então "rating" vai ser
+
+128
+00:11:12,120 --> 00:11:13,830
+"VARCHAR(20)".
+
+129
+00:11:13,900 --> 00:11:19,020
+O MySQL tem também os digits e coisas como essa.
+
+130
+00:11:19,300 --> 00:11:28,660
+Nós não vamos cobrir isso
+porque isso leva muito tempo, mas esses são os mais específicos, ou
+
+131
+00:11:28,660 --> 00:11:36,720
+os mais conhecidos tipos de nome de variável
+que existem no MySQL e eles são flexíveis
+
+132
+00:11:36,720 --> 00:11:39,490
+então é por isso que estamos usando eles.
+
+133
+00:11:39,550 --> 00:11:45,750
+Vamos ver o "product_type" vai ser o mesmo tipo.
+
+134
+00:11:46,420 --> 00:11:49,720
+E finalmente temos upc e title.
+
+135
+00:11:54,250 --> 00:11:55,880
+Então "upc" e "title".
+
+136
+00:12:00,830 --> 00:12:08,840
+E vamos fechar nosso parênteses
+e apenas colocar o ";" e isto deve funcionar. Perfeito.
+
+137
+00:12:08,880 --> 00:12:18,350
+Então vamos "SELECT * FROM books_table",
+apenas para ver se tem o conjunto vazio que deveria ter.
+
+138
+00:12:18,680 --> 00:12:19,950
+Perfeito, conjunto vazio.
+
+139
+00:12:20,030 --> 00:12:22,620
+Então tudo está funcionando corretamente.
+
+140
+00:12:22,640 --> 00:12:24,380
+Vamos deletar o arquivo CSV.
+
+141
+00:12:24,410 --> 00:12:26,840
+E vamos voltar para nosso código.
+
+142
+00:12:27,350 --> 00:12:33,270
+Então "INSERT IGNORE INTO BOOKS TABLE"
+e então o que precisamos adicionar é o parênteses.
+
+143
+00:12:33,290 --> 00:12:37,280
+E então eu adiciono o title.
+
+144
+00:12:37,780 --> 00:12:43,730
+Desculpe, não o title,
+
+145
+00:12:43,880 --> 00:12:46,220
+mas o rating.
+
+146
+00:12:46,500 --> 00:12:58,140
+Então rating, product_type,
+e, vamos ver, upc, title.
+
+147
+00:13:02,700 --> 00:13:06,800
+O que precisa ser adicionado também é "VALUES".
+
+148
+00:13:06,810 --> 00:13:12,690
+Então estes vão ser os valores
+que colocamos todas as vezes.
+
+149
+00:13:12,690 --> 00:13:15,250
+Então eles vão ser todas strings.
+
+150
+00:13:15,270 --> 00:13:17,070
+Então vamos colocar, vamos ver,
+
+151
+00:13:17,070 --> 00:13:20,780
+este é para o valor do rating,
+
+152
+00:13:20,780 --> 00:13:23,250
+este é para o product_type,
+
+153
+00:13:23,550 --> 00:13:25,560
+e aqui temos os outros dois.
+
+154
+00:13:25,590 --> 00:13:30,260
+Isto é para o upc
+e também para o title.
+
+155
+00:13:30,270 --> 00:13:34,950
+Finalmete, vamos apenas verificar que está certo, prooduct_type.
+
+156
+00:13:34,950 --> 00:13:39,030
+E o primeiro é o rating. Então tudo certo.
+
+157
+00:13:39,270 --> 00:13:43,910
+E o que precisa ser adicionado é esta linha.
+
+158
+00:13:43,950 --> 00:13:45,240
+Finalmente as, vamos ver,
+
+159
+00:13:48,270 --> 00:13:49,450
+aspas simples.
+
+160
+00:13:49,450 --> 00:13:53,190
+E quando eu tiver essas aspas simples, não preciso mais dessas.
+And once I have here single quotes I don't need any more.
+
+161
+00:13:53,190 --> 00:14:01,640
+E então apenas escreva o "row",
+porque vamos extrair do arquivo CSV, ou da linha do CSV.
+
+162
+00:14:01,640 --> 00:14:03,150
+E isso deve ser tudo.
+
+163
+00:14:03,150 --> 00:14:06,120
+Então vamos salvar ele
+e ver se está funcionando.
+
+164
+00:14:06,120 --> 00:14:14,160
+Então "scrapy crawl books" e então "-o items.csv",
+e parace que está funcionando.
+
+165
+00:14:14,310 --> 00:14:20,340
+Vamos ver, o arquivo CSV está na ordem correta,
+então: rating, product_type, upc, title.
+
+166
+00:14:20,500 --> 00:14:21,040
+Perfeito.
+
+167
+00:14:21,040 --> 00:14:29,430
+Vamos para nosso MySQL shell e vamos selecionar, novamente.
+Ele deve conter 20 linhas de dados, perfeito.
+
+168
+00:14:29,440 --> 00:14:32,030
+Então temos aqui:
+
+169
+00:14:32,430 --> 00:14:37,810
+rating, product_type, o upc e o title.
+E isso deve ser tudo para este vídeo.
+
+170
+00:14:37,880 --> 00:14:38,640
+Obrigado por assistir!
+

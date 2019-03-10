@@ -1,0 +1,339 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+00:00.540 --> 00:03.770
+Olá!
+Então hoje vamos aprender sobre MySQL.
+
+00:03.930 --> 00:09.090
+Ele é um dos databases mais populares,
+principalmente porque é fácil de usar.
+
+00:09.090 --> 00:13.070
+Ele é open source também
+e ele é escalável e flexível, acima de tudo.
+
+00:13.230 --> 00:16.870
+Então vamos em frente
+e instalar ele no Linux primeiro.
+
+00:16.870 --> 00:21.900
+O processo é bem direto e você precisa apenas
+colocar os seguintes comandos no Terminal, então você
+
+00:21.900 --> 00:28.230
+pode digitar "sudo apt-get install mysql-server",
+pressionar Enter.
+
+00:28.560 --> 00:34.980
+E já que já tenho ele instalado,
+eu não vou instalar ele agora, mas se eu não tivesses ele instalado
+
+00:35.460 --> 00:40.450
+então basicamente o processo seria
+para você apenas colocar a senha.
+
+00:40.530 --> 00:44.960
+Ela vai usada novamente quando
+você acessar o MySQL Shell.
+
+00:45.000 --> 00:48.700
+Então é bem direto e
+deve ser feito em mais ou menos um minuto.
+
+00:48.750 --> 00:51.820
+Agora como acessar o MySQL Shell.
+
+00:52.080 --> 00:56.820
+Bem, quando você tiver o MySQL instalado,
+você pode acessar o shell digitando o seguindo comando
+
+00:56.880 --> 01:00.280
+no Terminal, então você pode digitar
+
+01:00.300 --> 01:01.380
+"mysql -u",
+
+01:01.470 --> 01:03.810
+o que significar usuário.
+
+01:03.810 --> 01:05.830
+E então o usuário vai ser "root".
+
+01:05.850 --> 01:06.880
+E então "-p"
+
+01:06.880 --> 01:08.870
+que significa password, ou senha.
+
+01:09.150 --> 01:17.280
+Depois disso, nós digitamos a senha que
+colocamos a primeira vez que instalamos o MySQL server
+
+01:17.280 --> 01:17.880
+e pressionamos Enter.
+
+01:18.000 --> 01:25.110
+Depois disso, vamos receber a tela de boas-vindas
+e a primeira coisa que deveriamos, por exemplo, querer fazer é
+
+01:25.110 --> 01:28.190
+apenas ver as databases atuais.
+
+01:28.190 --> 01:31.220
+Para fazer isso, podemos digitar "SHOW DATABASES;",
+
+01:33.760 --> 01:34.240
+como isto.
+
+01:34.240 --> 01:40.280
+E a maioria, se não todos, os comandos do MySQL
+vão terminar com um ponto e vírgula.
+
+01:40.270 --> 01:47.950
+Então apenas lembrando isso, e pressione Enter
+e, como você pode ver, nós temos aqui quatro databases diferentes.
+
+01:48.340 --> 01:55.020
+Se você não colocar o ponto e vírgula, você verá que
+você não vai ter ou receber um erro
+
+01:55.160 --> 02:03.550
+ou você vai receber outro erro ou seta, na verdade,
+que vai para a segunda linha.
+
+02:03.550 --> 02:08.380
+Então se você colocar agora o ponto e vírgula, você estará bem.
+
+02:08.980 --> 02:12.580
+Vamos sair disto agora, então para fazer isso
+
+02:12.580 --> 02:19.510
+você pode apenas digitar "quit", desta forma, ou "QUIT",
+e você não precisará, por algum motivo, colocar
+
+02:19.510 --> 02:21.760
+o ponto e vírgula com este comando.
+
+02:22.000 --> 02:29.290
+E vamos logar novamente e
+vamos criar algum database. Então para fazer isso podemos digitar
+
+02:29.470 --> 02:37.600
+"CREATE DATABASE sample_db;".
+
+02:37.600 --> 02:45.820
+Se novamente digitarmos "SHOW DATABASES;",
+vamos ver que agora nós temos cinco databases diferentes
+
+02:45.850 --> 02:51.190
+e o último que nós adicionamos é
+"sample_db", aqui.
+
+02:51.400 --> 02:52.760
+Então isso é bom.
+
+02:53.080 --> 03:02.470
+E para criar a tabela que vai ter seu nome,
+que pode ser, por exemplo, table_example e vamos colocar
+
+03:02.470 --> 03:03.310
+alguns campos nele.
+
+03:03.310 --> 03:12.220
+Então para fazer isso você pode digitar "create TABLE table_example("
+
+03:12.220 --> 03:14.300
+e pressionar Enter.
+
+03:14.350 --> 03:18.820
+E aqui vamos colocar um campo ou um campo de cada vez.
+
+03:18.820 --> 03:27.190
+Então o primeiro campo pode ser já que é apenas um exemplo,
+vamos ter "first_name" e então essa variável
+
+03:27.190 --> 03:37.450
+name vai ser "20" caracteres no máximo,
+e "last_name", por exemplo, pode ter também o mesmo número
+
+03:37.450 --> 03:39.560
+de caracteres.
+
+03:40.320 --> 03:45.640
+O "gender", por exemplo, pode ser apenas CHAR
+e ele vai ser apenas 1, por exemplo.
+
+03:45.640 --> 03:50.750
+Então o valor vai ser "M" ou feminino como
+
+03:50.850 --> 03:52.110
+"F".
+
+03:52.190 --> 04:00.040
+E vamos colocar "," e o último item pode ser
+ou o campo pode ser "birthday", por exemplo.
+
+04:00.280 --> 04:03.790
+Então vamos digitar isso
+e ele vai ser especificamente "DATE".
+
+04:03.820 --> 04:11.720
+Então como você pode ver, o MySQL tem diferentes tipo de
+caracteres e vamos por o ")"
+
+04:11.740 --> 04:14.190
+e finalmente o ";".
+
+04:14.360 --> 04:16.430
+Vamos ver o que temos.
+
+04:16.660 --> 04:19.040
+Temos um ERROR, "No database selected".
+
+04:19.160 --> 04:19.870
+Ok, perfeito.
+
+04:19.870 --> 04:21.280
+Então temos um erro.
+
+04:21.490 --> 04:28.840
+O motivo é porque estamos ainda em um tipo de página inicial,
+então temos que navegar para o
+
+04:28.840 --> 04:34.800
+"sample_db", então para fazer isso podemos digitar "USE sample_db"
+
+04:35.500 --> 04:42.250
+E como você pode ver, recebemos a mensagem que
+o database foi mudado, o que é perfeito.
+
+04:42.340 --> 04:49.660
+Então se digitarmos novamente a criação da tabela
+e então colocar algum nome de variável e
+
+04:49.660 --> 04:56.970
+pressionar Enter, vamos ver que a query está OK
+e que 0 linhas foram afetadas agora, o que é perfeito.
+
+04:57.010 --> 05:04.300
+Então para ver nossa tabela, podemos apenas ir em frente
+e digitar "SELECT *", o que vai selecionar
+
+05:04.450 --> 05:06.320
+tudo,
+
+05:06.600 --> 05:08.840
+"FROM table_example"
+
+05:08.890 --> 05:13.320
+Então isto vai, novamente, mostrar o conteúdo da tabela.
+
+05:13.510 --> 05:16.970
+Vamos ver, é um conjunto vazio, o que é perfeito.
+
+05:17.020 --> 05:23.630
+Então o que precisamos fazer é inserir alguns campos,
+ou valores nos campos. Para fazer isso
+
+05:23.650 --> 05:28.870
+digitamos "INSERT INTO table_example(".
+
+05:28.990 --> 05:36.190
+E então digitamos nos campos que
+gostaríamos que fossem afetados.
+
+05:36.520 --> 05:49.120
+Então os campos são "first_name", "last_name",
+também "gender" e então o "birthday" e ")".
+
+05:49.160 --> 05:57.200
+E também outra string que tem que ser adicionada é VALUES,
+então os valores vão ser "(" e
+
+05:57.200 --> 05:58.560
+então podemos digitar,
+
+05:58.730 --> 06:07.460
+como as strings em Python, então podemos digitar
+"Mark", que vai ser o valor para o first_name, para
+
+06:07.460 --> 06:09.560
+o last_name o valor pode ser,
+
+06:09.560 --> 06:18.170
+por exemplo, "Smith", o gender nesse caso vai ser "M"
+e o birthday vai ser,
+
+06:18.170 --> 06:24.560
+por exemplo, vamos dizer, digite "1990-01-01"
+
+06:27.190 --> 06:31.250
+ou qualquer coisa, não importa realmente. Vamos fechar
+
+06:31.250 --> 06:39.500
+o parênteses e digitar ";",
+e aqui vemos outra mensagem, então "Query OK".
+
+06:39.500 --> 06:42.140
+E uma linha foi afetada.
+
+06:42.200 --> 06:43.200
+Então isso é bom.
+
+06:43.250 --> 06:49.420
+Se você se lembra, tivemos "Query OK"
+e que 0 linhas foram afetadas.
+
+06:49.610 --> 06:58.450
+Então agora, se digitarmos, me dê um momento,
+para vermos a table_example, devemos conseguir uma linha de dados com
+
+06:58.540 --> 06:59.620
+estes valores.
+
+06:59.620 --> 07:02.990
+Então vamos ver isso e ";", claro.
+
+07:03.100 --> 07:03.690
+Perfeito.
+
+07:03.690 --> 07:13.240
+Então temos first_name, last_name, gender e birthday,
+e para deletar a tabela, ou para deletar os valores,
+
+07:13.620 --> 07:21.990
+você pode digitar o comando
+que segue "TRUNCATE TABLE table_example".
+
+07:24.010 --> 07:25.840
+E então colocar o ";".
+
+07:26.200 --> 07:32.710
+E agora, se formos em frente e digitarmos
+o comando anterior, não teremos nenhum resultado.
+
+07:32.740 --> 07:39.690
+E você pode ver que está vazio, o que é perfeito
+e para deletar o database, podemos digitar
+
+07:40.460 --> 07:45.740
+"DROP DATABASE sample_db;".
+
+07:46.150 --> 07:51.140
+E se digitarmos para mostrar o database, não vamos ver mais
+
+07:51.160 --> 07:58.940
+nosso sample_db, então digite "SHOW DATABASES;".
+
+07:58.960 --> 08:03.380
+E como você pode ver, apenas 4 databases são mostrados.
+
+08:03.550 --> 08:09.110
+E isso deve ser tudo para este vídeo.
+No próximo vídeo vamos aprender como escrever dados que
+
+08:09.110 --> 08:13.700
+são extraídos para o MySQL
+e vejo você aí.

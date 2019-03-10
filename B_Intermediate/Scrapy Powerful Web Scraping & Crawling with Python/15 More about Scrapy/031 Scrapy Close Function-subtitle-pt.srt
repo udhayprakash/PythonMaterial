@@ -1,0 +1,143 @@
+﻿1
+00:00:00,190 --> 00:00:04,320
+Olá! Então hoje nós vamos aprender
+mais sobre a função close do Scrapy.
+
+2
+00:00:04,320 --> 00:00:06,020
+Esta função é executada
+
+3
+00:00:06,030 --> 00:00:12,780
+quando o Spider terminar de extrair,
+então você pode usá-lo para analisar dados, enviar arquivos de dados via e-mail
+
+4
+00:00:12,780 --> 00:00:20,960
+ou apenas receber mensagens SMS como um status
+se foi completo com êxito ou não
+
+5
+00:00:21,110 --> 00:00:21,530
+ou qualquer outra coisa.
+
+6
+00:00:21,570 --> 00:00:28,020
+Neste vídeo vamos nos concentrar em apenas renomear o arquivo CSV
+que está sendo gerado, o código que
+
+7
+00:00:28,050 --> 00:00:34,030
+vamos usar ou simplesmente reutilizar
+vai ser o do vídeo anterior.
+
+8
+00:00:34,230 --> 00:00:36,650
+Então vamos precisar fazer duas coisas.
+
+9
+00:00:36,690 --> 00:00:42,750
+E a primeira delas é que precisamos usar "import os",
+e então "import glob".
+
+10
+00:00:42,840 --> 00:00:48,390
+E a segunda coisa que precisamos fazer, claro,
+é definir a função que vai ser chamada
+
+11
+00:00:48,390 --> 00:00:52,670
+"close" e os dois argumentos
+que vamos usar é o "self"
+
+12
+00:00:52,680 --> 00:01:02,400
+e então "reason". Então precisamos, por exemplo, digitar "csv_file"
+que vai ser o nome de variável com o
+
+13
+00:01:02,790 --> 00:01:05,330
+nome do arquivo como uma string.
+
+14
+00:01:05,340 --> 00:01:12,850
+Então, por exemplo, o nome do arquivo
+que vamos usar vai ser o "-o".
+
+15
+00:01:12,950 --> 00:01:23,160
+E então defina "items.csv", por exemplo,
+então o csv_file no final vai ser o "items.csv" como uma string
+
+16
+00:01:23,210 --> 00:01:24,950
+basicamente.
+
+17
+00:01:24,950 --> 00:01:32,820
+Então para calcular o último arquivo CSV que
+está sendo gerado no diretório raiz,
+
+18
+00:01:32,840 --> 00:01:37,380
+o que precisamos fazer é digitar "max(glob)"
+
+19
+00:01:37,610 --> 00:01:41,270
+E então podemos usar "iglob" do módulo glob.
+
+20
+00:01:41,510 --> 00:01:47,100
+E aqui podemos então extrair
+ou pegar todo arquivo .csv no caminho.
+
+21
+00:01:47,150 --> 00:01:56,990
+E a chave vai ser "os.path.getctime"
+que vai, mais uma vez, pegar para nós o
+
+22
+00:01:56,990 --> 00:02:01,110
+items.csv como uma string no arquivo csv.
+
+23
+00:02:01,130 --> 00:02:11,000
+E então se nós digitarmos "os.rename(csv_file)",
+com algo como, por exemplo, "foobar.csv",
+
+24
+00:02:11,000 --> 00:02:15,070
+e então salvarmos ele, irmos para o código e simplesmente rodá-lo.
+
+25
+00:02:15,110 --> 00:02:23,080
+E como você pode ver, o items.csv
+ou o feed csv está armazenado no items.csv.
+
+26
+00:02:23,110 --> 00:02:30,940
+Mas se formos para o diretório raiz, você verá que
+o arquivo com o foobar como um arquivo CSV está sendo
+
+27
+00:02:30,940 --> 00:02:31,540
+gerado.
+
+28
+00:02:31,540 --> 00:02:34,210
+Então parece que tudo está funcionando corretamente.
+
+29
+00:02:34,540 --> 00:02:36,250
+E isso vai ser tudo para este vídeo.
+
+30
+00:02:36,250 --> 00:02:43,990
+Novamente, isto é apenas uma pequena introdução
+em como você pode usar a função close
+e vejo você
+
+31
+00:02:43,990 --> 00:02:44,700
+no próximo vídeo.
+

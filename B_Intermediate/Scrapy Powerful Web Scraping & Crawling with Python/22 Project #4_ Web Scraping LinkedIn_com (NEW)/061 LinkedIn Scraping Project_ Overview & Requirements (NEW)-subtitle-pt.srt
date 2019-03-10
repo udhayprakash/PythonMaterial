@@ -1,0 +1,130 @@
+﻿1
+00:00:00,030 --> 00:00:05,130
+Olá! Então nesta seção, vamos automatizar
+a extração de perfis do LinkedIn.
+
+2
+00:00:05,130 --> 00:00:09,900
+Vamos extrair de cada um dos perfis
+pontos de dados como nome, título de trabalho, escola,
+
+3
+00:00:09,900 --> 00:00:15,929
+localização e também a URL. Finalmente, vamos
+então conectar cada uma pessoa.
+
+4
+00:00:15,929 --> 00:00:22,529
+Vamos iterar sobre os resultados do Google
+de uma dada query. Então a ferramenta
+
+5
+00:00:22,529 --> 00:00:27,060
+que vamos usar é chamada Selenium.
+Então se esta é a primeira vez que
+
+6
+00:00:27,060 --> 00:00:32,669
+você encontra o Selenium, certifique-se
+de vir e então digitar Selenium
+
+7
+00:00:32,669 --> 00:00:38,399
+no Course Content. E primeiro assista
+a Seção 1, onde comparamos o Scrapy
+
+8
+00:00:38,399 --> 00:00:44,399
+com outros frameworks, como o Selenium.
+E então, também, esta seção onde falamos
+
+9
+00:00:44,399 --> 00:00:50,070
+sobre como instalar ou quando e porque
+você deveria usar o Selenium, como
+
+10
+00:00:50,070 --> 00:00:53,730
+instalar o Selenium, e também
+como baixar o ChromeDriver,
+
+11
+00:00:53,730 --> 00:01:00,149
+que vamos usar para este projeto. Então, novamente,
+certifique-se de se familiarizar com o Selenium.
+
+12
+00:01:00,149 --> 00:01:05,489
+Dito isto, a primeira parte deste projeto
+vai lidar com o linkedin.com.
+
+13
+00:01:05,489 --> 00:01:10,350
+Então vamos seguir para a página
+inicial, e então navegar, e então
+
+14
+00:01:10,350 --> 00:01:15,990
+colocar o usuário e a senha.
+E então clicando ou automatizando
+
+15
+00:01:15,990 --> 00:01:21,090
+o clique no botão Sign In. Nós temos
+que estar logados porque, de outra forma,
+
+16
+00:01:21,090 --> 00:01:26,460
+conectar com as pessoas e geralmente
+extrair dados do LinkedIn é, a partir de
+
+17
+00:01:26,460 --> 00:01:32,369
+agora, não é possível na maior parte do tempo
+conseguir os dados de outra forma.
+
+18
+00:01:32,369 --> 00:01:37,710
+Então vamos usar o Google com a query de busca
+pré-definida, como por exemplo, esta aqui.
+
+19
+00:01:37,710 --> 00:01:43,590
+Então vamos automatizar clicar o Enter
+e então vamos basicamente
+
+20
+00:01:43,590 --> 00:01:49,229
+iterar sobre essas URLs verdes. Então vamos
+extrair essas URLs. E então de cada
+
+21
+00:01:49,229 --> 00:01:54,600
+uma das URLs, que vão para a página
+do perfil, vamos extrair novamente
+
+22
+00:01:54,600 --> 00:02:01,049
+nome, título de trabalho, escola, localização e
+a URL. E finalmente vamos nos conectar.
+
+23
+00:02:01,049 --> 00:02:05,360
+Por algum motivo, esta pessoa não tem o
+botão Connect, então vamos ver mais alguns.
+
+24
+00:02:05,360 --> 00:02:10,650
+Alguns deles tem. Perfeito. Então vamos
+clicar no Connect, e então
+
+25
+00:02:10,650 --> 00:02:18,550
+automatizar o clique no botão Send Now. E,
+como você pode ver, seu convite para esta
+
+26
+00:02:18,550 --> 00:02:23,560
+pessoa foi enviado. Então tudo está
+funcionando bem. Então vamos começar agora.
+

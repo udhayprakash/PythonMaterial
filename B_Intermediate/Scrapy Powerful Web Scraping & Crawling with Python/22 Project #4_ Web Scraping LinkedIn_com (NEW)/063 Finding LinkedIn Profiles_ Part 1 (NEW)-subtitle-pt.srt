@@ -1,0 +1,217 @@
+﻿1
+00:00:00,030 --> 00:00:07,180
+Olá! Então esta é nossa segunda parte do
+vídeo, e nesta parte com o spider eplanning,
+
+2
+00:00:07,180 --> 00:00:11,429
+vamos para... depois que formos
+para este tipo de página,
+
+3
+00:00:11,429 --> 00:00:17,000
+o que foi feito ou abordado na parte
+anterior desta seção,
+
+4
+00:00:17,000 --> 00:00:22,710
+vamos então para a listagem Received
+Applications. Então vamos fazer isso.
+
+5
+00:00:22,710 --> 00:00:28,289
+Então para fazer isso precisamos, como sempre,
+inspecionar primeiro como vamos chegar a
+
+6
+00:00:28,289 --> 00:00:35,280
+esta URL. Então vamos ver, aqui nós
+temos o div e também um span, e
+
+7
+00:00:35,280 --> 00:00:44,370
+finalmente o href na tag "a". Então
+parece que podemos encontrar toda tag "a" que
+
+8
+00:00:44,370 --> 00:00:50,640
+tem este texto, ou podemos selecionar esta classe,
+e então usar "following" ou "following-sibling".
+
+9
+00:00:50,640 --> 00:00:56,940
+"following-sibling" vai ser
+provavelmente a melhor ideia.
+
+10
+00:00:56,940 --> 00:01:03,480
+E depois de conseguirmos nosso "following-sibling", podemos então
+selecionar a primeira instância da tag "a" e selecionar o href.
+
+11
+00:01:03,480 --> 00:01:12,510
+Falamos o suficiente. Vamos para nosso Terminal.
+
+12
+00:01:12,510 --> 00:01:17,939
+Vamos copiar este link e copiar ele. Primeiramente,
+vamos buscar ele. Então fetch e então esta URL.
+
+13
+00:01:17,939 --> 00:01:23,040
+Ok, então vamos ver. Então estamos
+tentando pegar a classe com esse valor.
+
+14
+00:01:23,040 --> 00:01:29,549
+Então podemos copiar isto, voltar para o
+Terminal, e então digitar nosso seletor XPath.
+
+15
+00:01:29,549 --> 00:01:38,970
+Então response.xpath, então vamos encontrar
+todas as classes que tem este valor.
+
+16
+00:01:38,970 --> 00:01:44,549
+Pressione Enter e, como você pode ver aqui,
+conseguimos uma instância, o que é ótimo.
+
+17
+00:01:44,549 --> 00:01:52,920
+E depois disso, podemos digitar tanto
+following e então o extract... Bem,
+
+18
+00:01:52,920 --> 00:01:57,780
+isto vai extrair provavelmente mais do que uma
+instância, como você verá. Como você pode ver,
+
+19
+00:01:57,780 --> 00:02:02,310
+há muitos hrefs diferentes,
+então não precisamos fazer isto. Então há duas
+
+20
+00:02:02,310 --> 00:02:08,069
+formas de você conseguir o primeiro href,
+que vai ser este aqui. Então estamos
+
+21
+00:02:08,069 --> 00:02:16,800
+tentando chegar neste aqui. Você pode usar
+extract_first(), que vai selecionar ele,
+
+22
+00:02:16,800 --> 00:02:22,950
+e você pode usar também o list slicing na
+tag "a". Então se você digitar isto, você pode ver
+
+23
+00:02:22,950 --> 00:02:29,790
+que ele vai ser recebido ou
+a URL "SearchListing/RECEIVED".
+
+24
+00:02:29,790 --> 00:02:36,330
+E então a terceira coisa que você pode usar
+é remover isto e usar o following-sibling.
+
+25
+00:02:36,330 --> 00:02:41,310
+E então não precisamos aqui do list slicing
+porque isto vai selecionar apenas a primeira
+
+26
+00:02:41,310 --> 00:02:48,750
+instância, como você pode ver. Então
+precisamos ir no href. Então como estamos
+
+27
+00:02:48,750 --> 00:02:54,150
+atualmente aqui, então precisamos ir
+para o href. E finalmente, chamando o
+
+28
+00:02:54,150 --> 00:03:00,930
+extract_first() no final,
+vamos conseguir nossa URL.
+
+29
+00:03:00,930 --> 00:03:05,160
+Aqui como você pode ver, esta é a parte da URL,
+então vamos ter que usar o response.urljoin,
+
+30
+00:03:05,160 --> 00:03:13,170
+e então colar ou nomear a variável,
+e então colar ele no parênteses.
+
+31
+00:03:13,170 --> 00:03:22,380
+Então vamos para o editor de texto, e vamos nomear isto
+
+32
+00:03:22,380 --> 00:03:28,230
+app_url, que é igual a declaração que
+escrevemos anteriormente. E então precisamos
+
+33
+00:03:28,230 --> 00:03:37,980
+apenas do "yield Request", então "yield Request",
+"response.urljoin" e então nele,
+
+34
+00:03:37,980 --> 00:03:47,280
+podemos copiar e colar esta app_url
+e então definir nosso callback,
+
+35
+00:03:47,280 --> 00:03:55,080
+que vai ser igual parse_form. Nesta função,
+vamos basicamente... vamos digitar isso primeiro.
+
+36
+00:03:55,080 --> 00:04:00,810
+Nesta função, como estava dizendo,
+vamos brincar com o form request
+
+37
+00:04:00,810 --> 00:04:04,650
+do response, como você verá.
+Então isso vai ser bem interessante,
+
+38
+00:04:04,650 --> 00:04:08,910
+como você verá no próximo
+vídeo. Então "self", "response".
+
+39
+00:04:08,910 --> 00:04:13,470
+E por enquando, vamos passar isso.
+Apenas para verificar que tudo está
+
+40
+00:04:13,470 --> 00:04:18,989
+funcionando bem nesta frente. Então
+podemos salvar, voltar para o Terminal,
+
+41
+00:04:18,989 --> 00:04:30,090
+e então chamar nosso comando "scrapy
+crawl", pressionar Enter e vamos ver.
+
+42
+00:04:30,090 --> 00:04:35,009
+Então apenas uma página 404 que é, claro,
+
+43
+00:04:35,009 --> 00:04:39,879
+o mencionado anteriormente, a página
+robot.txt. E vamos ver, as URLs,
+
+44
+00:04:39,879 --> 00:04:45,930
+tudo está funcionando bem. Então
+vejo você no próximo vídeo.
+

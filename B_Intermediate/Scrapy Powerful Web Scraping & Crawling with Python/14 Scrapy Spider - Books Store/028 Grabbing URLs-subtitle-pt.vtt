@@ -1,0 +1,640 @@
+WEBVTT FILE
+Kind: captions
+Language: pt
+
+1
+00:00:00.474 --> 00:00:01.307
+Olá!
+
+2
+00:00:01.307 --> 00:00:04.972
+Hoje nós vamos construir sobre nosso vídeo anterior,
+
+3
+00:00:04.972 --> 00:00:08.977
+e modificar nosso código, ou o código spider, melhor dizendo,
+
+4
+00:00:08.977 --> 00:00:11.814
+e vamos iterar sobre as páginas dos resultados,
+
+5
+00:00:11.814 --> 00:00:13.638
+com o Scrapy, não com Selenium.
+
+6
+00:00:13.638 --> 00:00:16.097
+Então vamos primeiro remover o código desnecessário
+
+7
+00:00:16.097 --> 00:00:17.538
+que temos aqui.
+
+8
+00:00:17.538 --> 00:00:20.237
+Então não vamos usar o import time.
+
+9
+00:00:20.237 --> 00:00:22.710
+Também não vamos usar o Selenium.
+
+10
+00:00:22.710 --> 00:00:25.501
+Seletores Scrapy também, não precisamos disto.
+
+11
+00:00:25.501 --> 00:00:27.128
+Requests, vamos deixar isto,
+
+12
+00:00:27.128 --> 00:00:30.850
+e NoSuchElementException vai ser removido.
+
+13
+00:00:30.850 --> 00:00:34.989
+Vamos ver o que mais precisa ser removido daqui,
+
+14
+00:00:34.989 --> 00:00:37.239
+start_urls precisa ser adicionado,
+
+15
+00:00:39.675 --> 00:00:42.322
+e isso vai ser na forma de uma lista,
+
+16
+00:00:42.322 --> 00:00:45.890
+então a URL inicial vai ser esta aqui,
+
+17
+00:00:45.890 --> 00:00:48.342
+e não precisamos desta função,
+
+18
+00:00:48.342 --> 00:00:51.295
+e while True, e a lógica except,
+
+19
+00:00:51.295 --> 00:00:52.697
+também não precisamos disto,
+
+20
+00:00:52.697 --> 00:00:53.530
+e nós podemos
+
+21
+00:00:54.565 --> 00:00:57.790
+remover ou renomear esta função.
+
+22
+00:00:57.790 --> 00:00:58.962
+Então vamos começar.
+
+23
+00:00:58.962 --> 00:01:00.865
+Então está vai ser a URL inicial.
+
+24
+00:01:00.865 --> 00:01:03.381
+Isso vai ser a página inicial coo está,
+
+25
+00:01:03.381 --> 00:01:05.997
+e isso vai apenas para o parse,
+
+26
+00:01:05.997 --> 00:01:08.303
+e o response vai ser a
+
+27
+00:01:08.303 --> 00:01:10.740
+página HTML dessa URL,
+
+28
+00:01:10.740 --> 00:01:13.307
+e atualmente nós estamos apenas passando ele,
+
+29
+00:01:13.307 --> 00:01:17.474
+Então vamos ver se tudo está funcionando corretamente.
+
+30
+00:01:24.909 --> 00:01:27.306
+Parece que tudo está funcionando bem.
+
+31
+00:01:27.306 --> 00:01:29.314
+E agora, o que precisamos fazer,
+
+32
+00:01:29.314 --> 00:01:31.628
+é voltar para o Chrome,
+
+33
+00:01:31.628 --> 00:01:33.742
+principalmente na ferramenta Inspect,
+
+34
+00:01:33.742 --> 00:01:36.325
+e então navegar e tentar
+
+35
+00:01:36.325 --> 00:01:38.987
+inspecionar as URLs dos livros,
+
+36
+00:01:38.987 --> 00:01:43.154
+que vão estar no &lt;h3&gt; e na tag &lt;a&gt;.
+
+37
+00:01:43.439 --> 00:01:46.706
+Nós já cobrimos isto nos últimos dois vídeos,
+
+38
+00:01:46.706 --> 00:01:50.218
+então vamos apenas digitar no books,
+
+39
+00:01:50.218 --> 00:01:51.718
+aqui no método
+
+40
+00:01:52.749 --> 00:01:54.449
+parse, variável books,
+
+41
+00:01:54.449 --> 00:01:57.032
+então isto vai ser response.xpath
+
+42
+00:01:58.544 --> 00:02:00.491
+E vamos
+
+43
+00:02:00.491 --> 00:02:02.408
+para nosso Scrapy Shell,
+
+44
+00:02:04.634 --> 00:02:08.467
+e ver se esta vai ser as URLs certas.
+
+45
+00:02:11.133 --> 00:02:11.966
+Vamos ver.
+
+46
+00:02:13.594 --> 00:02:16.485
+Então vamos digitar "response.xpath" e então vamos ver.
+
+47
+00:02:16.485 --> 00:02:18.342
+Nós precisamos selecionar toda instância,
+
+48
+00:02:18.342 --> 00:02:21.524
+ou estamos digitando "//".
+
+49
+00:02:21.524 --> 00:02:23.583
+Então toda instância da tag &lt;h3&gt;,
+
+50
+00:02:23.583 --> 00:02:26.059
+e então precisamos ir para a tag &lt;a&gt;,
+
+51
+00:02:26.059 --> 00:02:29.476
+e então extrair o href de todas as tags &lt;a&gt;.
+
+52
+00:02:30.354 --> 00:02:31.934
+Muito simples.
+
+53
+00:02:31.934 --> 00:02:35.412
+Então toda tag &lt;h3&gt; e então precisamos ir para a tag &lt;a&gt;.
+
+54
+00:02:35.412 --> 00:02:37.662
+Finalmente extraímos o href,
+
+55
+00:02:38.686 --> 00:02:41.635
+ou a URL, e então chamamos o "extract()".
+
+56
+00:02:41.635 --> 00:02:42.640
+E vamos ver.
+
+57
+00:02:42.640 --> 00:02:45.307
+Então devem ter 20 URLs aqui.
+
+58
+00:02:46.674 --> 00:02:47.553
+Vamos ver.
+
+59
+00:02:47.553 --> 00:02:49.930
+Perfeito, tem 20 URLs.
+
+60
+00:02:49.930 --> 00:02:54.097
+Claro, estas não são URLs que estão completas.
+
+61
+00:02:55.172 --> 00:02:56.998
+Estas são apenas URLs parciais,
+
+62
+00:02:56.998 --> 00:03:01.165
+e vamos usar o "response.urljoin" para completá-las.
+
+63
+00:03:01.529 --> 00:03:02.948
+Mas vamos nos concentrar agora
+
+64
+00:03:02.948 --> 00:03:06.281
+em copiar e colar isso no nosso código.
+
+65
+00:03:08.354 --> 00:03:11.116
+Então books é o nome da variável,
+
+66
+00:03:11.116 --> 00:03:12.866
+e então agora vamos começar
+
+67
+00:03:12.866 --> 00:03:16.470
+a iterar sobre cada livro ou a URL do livro.
+
+68
+00:03:16.470 --> 00:03:20.053
+E então "for book in books", podemos chamar então
+
+69
+00:03:21.200 --> 00:03:25.225
+"absolute_url = response.uljoin"
+
+70
+00:03:26.843 --> 00:03:30.588
+e então chamar a URL do livro nele,
+
+71
+00:03:30.588 --> 00:03:33.880
+e finalmente vamos apenas "yield Request",
+
+72
+00:03:33.880 --> 00:03:35.970
+e Request vai ser a URL,
+
+73
+00:03:35.970 --> 00:03:38.990
+o Request vai ser a URL absoluta.
+
+74
+00:03:38.990 --> 00:03:42.573
+A função callback vai apenas ser chamada.
+
+75
+00:03:42.573 --> 00:03:46.073
+vamos ver, serlf.parse_book, por exemplo.
+
+76
+00:03:47.576 --> 00:03:51.659
+Vamos definir nossa função, self e então response.
+
+77
+00:03:54.354 --> 00:03:55.653
+E podemos passar isso por agora.
+
+78
+00:03:55.653 --> 00:03:59.774
+Vamos ver se isso tudo está funcionando junto.
+
+79
+00:03:59.774 --> 00:04:03.719
+E parece que está funcionando, perfeito.
+
+80
+00:04:03.719 --> 00:04:05.208
+Vamos voltar para nosso código,
+
+81
+00:04:05.208 --> 00:04:07.060
+e ver o que precisa ser adicionado.
+
+82
+00:04:07.060 --> 00:04:10.477
+Então estamos atualmente somente na página inicial,
+
+83
+00:04:11.586 --> 00:04:15.082
+e estamos extraindo mais ou menos 20 URLs.
+
+84
+00:04:15.082 --> 00:04:18.901
+Vamos ver, mais ou menos 20 URLs para os livros.
+
+85
+00:04:18.901 --> 00:04:23.068
+O que precisamos fazer agora é inspecionar este botão next,
+
+86
+00:04:23.215 --> 00:04:26.585
+e ver se ele contém a URL, e ele contém,
+
+87
+00:04:26.585 --> 00:04:29.577
+então nós vamos...
+
+88
+00:04:29.577 --> 00:04:32.327
+o que vai ser a melhor forma,
+
+89
+00:04:33.704 --> 00:04:36.950
+minha forma de fazer isso é
+
+90
+00:04:36.950 --> 00:04:40.068
+que nós vamos... vamos para nosso Shell.
+
+91
+00:04:40.068 --> 00:04:44.235
+So response.xpath and then we will select every &lt;a&gt; tag.
+
+92
+00:04:44.352 --> 00:04:47.769
+Mais uma vez, este botão está na tag &lt;a&gt;
+
+93
+00:04:48.792 --> 00:04:50.626
+porque ele contém o href,
+
+94
+00:04:50.626 --> 00:04:53.017
+e nós vamos conter, ou coletar
+
+95
+00:04:53.017 --> 00:04:55.653
+toda tag &lt;a&gt; que tem o "next".
+
+96
+00:04:55.653 --> 00:04:58.602
+Então atualmente vai ser apenas, vamos ver,
+
+97
+00:04:58.602 --> 00:05:01.710
+vai ser apenas este, ou apenas um.
+
+98
+00:05:01.710 --> 00:05:04.883
+Às vezes um next aqui, ou aqui,
+
+99
+00:05:04.883 --> 00:05:07.716
+ou a iteração sobre páginas em dois lugares,
+	
+100
+00:05:07.716 --> 00:05:09.899
+mas isso não importa muito, na verdade,
+
+101
+00:05:09.899 --> 00:05:11.594
+porque nós vamos...
+
+102
+00:05:11.594 --> 00:05:13.787
+porque eles são apenas o mesmo.
+
+103
+00:05:13.787 --> 00:05:17.140
+Então nós vamos mais uma vez, pegar toda tag &lt;a&gt;,
+
+104
+00:05:17.140 --> 00:05:19.723
+e então chamá-la para ele para,
+
+105
+00:05:21.311 --> 00:05:24.063
+Bem, ele tem que conter o texto,
+
+106
+00:05:24.063 --> 00:05:25.316
+e esta é a sintaxe,
+
+107
+00:05:25.316 --> 00:05:28.741
+o texto que vamos selecionar vai ser o "next",
+
+108
+00:05:28.741 --> 00:05:31.375
+então atualmente estamos selecionando esta instância,
+
+109
+00:05:31.375 --> 00:05:35.369
+porque ela contém a string next na tag &lt;a&gt;,
+
+110
+00:05:35.369 --> 00:05:36.619
+como você pode ver.
+
+111
+00:05:37.736 --> 00:05:40.236
+Então vamos chamar o "extract_first()",
+
+112
+00:05:41.174 --> 00:05:42.589
+e vamos ver o que ele retorna,
+
+113
+00:05:42.589 --> 00:05:46.323
+e também precisamos selecionar, claro,
+
+114
+00:05:46.323 --> 00:05:48.722
+o href e isto está perfeito.
+
+115
+00:05:48.722 --> 00:05:50.722
+Mais uma vez, isso tem que ser,
+
+116
+00:05:51.938 --> 00:05:54.863
+ou isso tem que conter o URL absoluto,
+
+117
+00:05:54.863 --> 00:05:56.624
+e isto é apenas a URL parcial.
+
+118
+00:05:56.624 --> 00:05:59.510
+Vamos voltar para nosso código.
+
+119
+00:05:59.510 --> 00:06:02.232
+E então apenas escrever o comentário
+
+120
+00:06:02.232 --> 00:06:03.982
+para processar a próxima página.
+
+121
+00:06:05.003 --> 00:06:07.336
+Vamos chamar o next_page_url
+
+122
+00:06:08.676 --> 00:06:11.018
+que vai ser igual a esta declaração,
+
+123
+00:06:11.018 --> 00:06:15.102
+e então vamos chamar absolute_next_page_url
+
+124
+00:06:15.174 --> 00:06:19.341
+vai ser igual a response.urljoin
+
+125
+00:06:20.910 --> 00:06:22.160
+e então vamos
+
+126
+00:06:23.975 --> 00:06:26.085
+colocar o next_page_url nele.
+
+127
+00:06:26.085 --> 00:06:28.061
+E finalmente vamos apenas "yield Request".
+
+128
+00:06:28.061 --> 00:06:29.304
+Muito simples.
+
+129
+00:06:29.304 --> 00:06:32.517
+O callback vai ser esta função.
+
+130
+00:06:32.517 --> 00:06:36.440
+Então o parse, porque ele vai processar
+
+131
+00:06:36.440 --> 00:06:38.991
+toda e cada página.
+
+132
+00:06:38.991 --> 00:06:42.051
+Vamos ver, neste caso, vai ser mais ou menos 50 páginas.
+
+133
+00:06:42.051 --> 00:06:43.745
+Então vamos ver se isso vai funcionar.
+
+134
+00:06:43.745 --> 00:06:46.763
+Então "yield Request" e então a URL vai ser
+
+135
+00:06:46.763 --> 00:06:49.493
+o absolute_next_page_url,
+
+136
+00:06:49.493 --> 00:06:53.660
+e, deixe me lembrar se ele tem que conter o callback,
+
+137
+00:06:54.624 --> 00:06:56.201
+eu não acho que ele tenha,
+
+138
+00:06:56.201 --> 00:06:59.431
+então vamos tentar rodar ele e ver se funciona.
+
+139
+00:06:59.431 --> 00:07:00.580
+Perfeito, então isso funciona.
+
+140
+00:07:00.580 --> 00:07:04.469
+Como você pode ver, os 200 são os status das respostas,
+
+141
+00:07:04.469 --> 00:07:08.382
+e devem ter 1050 URLs processadas.
+
+142
+00:07:08.382 --> 00:07:09.465
+Então vamos ver.
+
+143
+00:07:10.381 --> 00:07:11.630
+Perfeito.
+
+144
+00:07:11.630 --> 00:07:14.453
+Então isso é porque há 1000 livros
+
+145
+00:07:14.453 --> 00:07:16.439
+e porque há 50 páginas,
+
+146
+00:07:16.439 --> 00:07:20.154
+então 1000+50 vai ser 1050, obviamente.
+
+147
+00:07:20.154 --> 00:07:21.742
+Então tudo está funcionando corretamente.
+
+148
+00:07:21.742 --> 00:07:24.380
+Não tivemos nenhum tipo de ERROR,
+
+149
+00:07:24.380 --> 00:07:27.209
+só mensagens DEBUG e INFO,
+
+150
+00:07:27.209 --> 00:07:31.045
+e isso, isso é tudo para este vídeo,
+
+151
+00:07:31.045 --> 00:07:34.666
+e, como você pode ver, é muito mais rápido do que o Selenium,
+
+152
+00:07:34.666 --> 00:07:36.702
+provavelmente 10 vezes mais rápido
+
+153
+00:07:36.702 --> 00:07:39.117
+que usar algo como o Selenium.
+
+154
+00:07:39.117 --> 00:07:40.501
+e no próximo,
+
+155
+00:07:40.501 --> 00:07:43.450
+nós vamos realmente para nossos livros,
+
+156
+00:07:43.450 --> 00:07:46.780
+e então coletar coisas como o título,
+
+157
+00:07:46.780 --> 00:07:50.648
+preço, descrição de produto, e então escrever a função
+
+158
+00:07:50.648 --> 00:07:54.815
+que vai simplificar pegar esses cinco ou seis pontos de dados.
+
+159
+00:07:55.075 --> 00:07:55.908
+Falamos em breve!
+

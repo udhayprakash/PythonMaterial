@@ -1,0 +1,221 @@
+﻿1
+00:00:00,030 --> 00:00:04,500
+Olá! Então esta é a terceira parte do
+nosso projeto de automatização do LinkedIn.
+
+2
+00:00:04,500 --> 00:00:10,000
+E nesta parte específica, vamos falar
+sobre como criar um arquivo Python
+
+3
+00:00:10,000 --> 00:00:14,700
+que vai ser chamado parameters.py,
+que vai ter ter algumas variáveis,
+
+4
+00:00:14,700 --> 00:00:18,800
+como search_term, file_name, e
+linkedin_username e passwords,
+
+5
+00:00:18,800 --> 00:00:26,200
+que vai simplificar nosso arquivo principal script.py.
+Então vamos começar. Vamos criar isso.
+
+6
+00:00:26,200 --> 00:00:33,800
+Botão direito no Desktop, e então
+apenas crie um documento vazio.
+
+7
+00:00:33,800 --> 00:00:43,600
+Vamos ver. Vamos renomear ele para parameters.py.
+Vamos abrir ele com o editor de texto,
+
+8
+00:00:43,600 --> 00:00:48,800
+e então podemos digitar "search_query",
+
+9
+00:00:48,800 --> 00:00:53,500
+que vai ser igual ao, vamos ver,
+que vai ser, basicamente,
+
+10
+00:00:53,500 --> 00:01:02,000
+igual a este aqui. Então podemos copiar isto,
+colar aqui, e vamos digitar também "file_name",
+
+11
+00:01:02,000 --> 00:01:09,510
+que vai ser... vamos colocar nossos
+resultados da extração dos perfis em arquivos CSV.
+
+12
+00:01:09,510 --> 00:01:23,400
+Então podemos digitar "results_file.csv" e
+então podemos colocar nosso "linkedin_username".
+
+13
+00:01:23,400 --> 00:01:28,900
+E também o "linkedin_password" vai
+ser igual a aspas simples ou duplas.
+
+14
+00:01:28,900 --> 00:01:34,000
+Então aqui você vai colocar seu email
+e aqui você vai colocar sua senha.
+
+15
+00:01:34,000 --> 00:01:41,300
+Então se voltarmos para o script, as coisas
+que precisamos importar primeiro são os parâmetros.
+
+16
+00:01:41,300 --> 00:01:45,500
+Então quando se trata do Python,
+
+17
+00:01:45,500 --> 00:01:52,500
+vai ser fácil como "import parameters"
+Isso é tudo, na verdade.
+
+18
+00:01:52,500 --> 00:01:56,900
+Então aqui, podemos, vamos ver,
+no username.send_keys,
+
+19
+00:01:56,900 --> 00:02:04,000
+você pode digitar "parameters." e
+então usar seu "linkedin_username".
+
+20
+00:02:04,000 --> 00:02:09,100
+Copiar e colar isto. E então também
+para o password, a mesma coisa.
+
+21
+00:02:09,100 --> 00:02:18,200
+Então estamos herdando do módulo parameters
+o linkedin_password. Cole isto aqui,
+
+22
+00:02:18,200 --> 00:02:23,720
+e vamos ver se precisamos fazer mais
+alguma coisa. Vamos usar aqui também,
+
+23
+00:02:23,720 --> 00:02:30,600
+vamos ver, funções sleep. Então podemos
+usar o sleep por três segundos.
+
+24
+00:02:30,600 --> 00:02:38,300
+Então depois de colar isto, podemos colocar sleep(0.5).
+Então depois de colocar a query de busca,
+
+25
+00:02:38,300 --> 00:02:44,300
+que vai ser igual ao "parameters."...
+vamos ver, search_query.
+
+26
+00:02:44,300 --> 00:02:52,900
+Então podemos copiar isto, voltar para nosso script,
+colar isto. E então depois de
+
+27
+00:02:52,900 --> 00:02:58,900
+pressionar a tecla Return ou Enter,
+podemos digitar, vamos dizer, por 3 segundos.
+
+28
+00:02:58,900 --> 00:03:05,000
+Aqui podemos colocar "sleep(0.5)",
+mas provavelmente não é necessário.
+
+29
+00:03:05,000 --> 00:03:08,500
+E vamos ver se há mais alguma coisa.
+É, eu acredto que isso é tudo.
+
+30
+00:03:08,500 --> 00:03:16,000
+Então vamos ver se isto vai realmente funcionar. Agora,
+eu vou pausar este vídeo e colocar minhas credenciais aqui
+
+31
+00:03:16,000 --> 00:03:21,000
+nas variáveis linkedin_username e
+linkedin_password.
+
+32
+00:03:21,000 --> 00:03:25,600
+Salvar o arquivo e podemos também
+salvar o script direto,
+
+33
+00:03:25,600 --> 00:03:33,400
+e colocar isto no Terminal. Ok, então username
+e password foram colocados,
+
+34
+00:03:33,400 --> 00:03:41,000
+e eu acredito que podemos iniciar o script.
+Então vamos para o Desktop, abrimos o Terminal,
+
+35
+00:03:41,000 --> 00:03:49,500
+navegamos para o, vamos dar um pouco de zoom nisto,
+vamos para o Desktop, então cd Desktop/
+
+36
+00:03:49,500 --> 00:03:56,600
+e então podemos digitar "python script.py".
+Pressionar Enter e vamos ver se isto vai funcionar.
+
+37
+00:03:56,600 --> 00:03:59,510
+Então ele vai para linkedin.com, como você pode ver,
+
+38
+00:03:59,510 --> 00:04:04,670
+ele coloca nossas credenciais,
+ele carrega a página perfeitamente.
+
+39
+00:04:04,670 --> 00:04:09,500
+E, vamos ver, agora ele deve ir,
+depois de pausar, para o google.com.
+
+40
+00:04:09,500 --> 00:04:16,600
+E então colocar nossa query de pesquisa específica,
+e carregar a página. E ele deve estar
+
+41
+00:04:16,600 --> 00:04:22,500
+praticamente finalizado.
+Perfeito, então ele funciona. E a única coisa,
+
+42
+00:04:22,500 --> 00:04:29,000
+que precisamos adicionar aqui é o
+driver.quit. Então "driver.quit()".
+
+43
+00:04:29,000 --> 00:04:35,000
+E isso é tudo. Então aqui, ou agora,
+vamos voltar para o nosso
+
+44
+00:04:35,000 --> 00:04:41,100
+desenvolvimento da ferramenta de automação. E
+vamos fazer isto no próximo vídeo.
+
+45
+00:04:41,100 --> 00:04:44,380
+Então vejo você.
+

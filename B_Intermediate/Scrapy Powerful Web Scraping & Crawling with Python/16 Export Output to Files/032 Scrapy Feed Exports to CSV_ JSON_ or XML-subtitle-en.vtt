@@ -1,0 +1,111 @@
+WEBVTT
+
+00:00.240 --> 00:04.100
+Hi there, so today we are going to talk
+about Scrapy feed exports.
+
+00:04.140 --> 00:10.410
+The reason why we build Spiders is because we want to
+gather data from the sites; gathered data is then exported
+
+00:10.410 --> 00:12.450
+to the various data formats.
+
+00:12.450 --> 00:17.960
+Traditionally if you're building Spider from the ground up
+you will have to build data experts yourself.
+
+00:17.970 --> 00:19.130
+But Scrapy
+
+00:19.140 --> 00:28.080
+out of the box offers to save data to CSV, JSON and XML,
+which in a moment we will run, which in other words
+
+00:28.230 --> 00:33.330
+helps out really tremendously when it comes to
+speeding up coding spiders so you will spend less time
+
+00:33.330 --> 00:36.370
+worrying if your exports are not working correctly.
+
+00:36.480 --> 00:38.520
+So let's run a few examples.
+
+00:39.150 --> 00:45.420
+And the way that we are going to run is by typing
+scrapy crawl books
+
+00:45.420 --> 00:50.570
+Feed exports are defined by
+"-o" which stands for output.
+
+00:50.580 --> 00:56.760
+For example we will name the output,
+for example "items",
+
+00:56.770 --> 00:57.860
+it doesn't really matter.
+
+00:57.860 --> 01:06.260
+What matters is the extension so CSV or JSON or XML,
+once again is supported out of the box.
+
+01:06.260 --> 01:15.590
+Let's try the ".csv" which is going to yield a bunch of column names.
+The column names are going to be from
+
+01:15.590 --> 01:20.870
+the yield statement that we specified here
+from the dictionary keys.
+
+01:21.530 --> 01:23.530
+And here are pretty much results in this case.
+
+01:23.570 --> 01:29.080
+The other data format as I was saying is JSON.
+
+01:29.120 --> 01:35.680
+So just to run it with or to output the data
+in to JSON just type in ".json".
+
+01:35.870 --> 01:42.470
+Let's run it and let's open the file that is getting generated
+in the root directory in the text editor
+
+01:42.770 --> 01:44.830
+and let's prettify it.
+
+01:45.110 --> 01:51.530
+And as you can see in this curly brackets
+we get the one row of the data for example that will be represented
+
+01:51.530 --> 02:01.340
+in the CSV file and the latest output or feed export
+that Scrapy offers is XML, let's run that.
+
+02:04.330 --> 02:15.630
+And if we open the .xml file, in Chrome or in your text editor,
+we will see again in the results
+
+02:15.640 --> 02:18.970
+pretty much in the XML output.
+
+02:18.970 --> 02:26.740
+So once again this helps out tremendously when building Spiders
+and saves a lot of time and you can of course
+
+02:26.740 --> 02:34.900
+output data to TXT or write Spiders to output data to TXT
+
+02:34.900 --> 02:35.540
+or some database like MySQL.
+
+02:35.860 --> 02:37.490
+And that would be it for this video.
+
+02:37.510 --> 02:38.850
+And thanks for watching.
+
+02:39.050 --> 02:39.260
+Bye!

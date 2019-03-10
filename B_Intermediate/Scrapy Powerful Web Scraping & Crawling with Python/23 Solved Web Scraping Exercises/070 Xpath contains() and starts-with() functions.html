@@ -1,0 +1,221 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>070 Xpath contains() and starts-with() functions</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Sometimes, you do not find an <strong>exact</strong> way to extract an element. In this case, among the helpful functions are: </p>
+
+<p><code>contains()</code></p>
+
+
+
+
+
+
+
+
+
+<p><code>starts-with()</code><br></p>
+
+
+
+
+
+
+
+
+
+<p>Let's imagine you have a button in a form of a link that does not 
+have a class or that its class is changing every time the page is 
+loaded. Let's assume the text of this button is "Load more". So we can 
+use this text to find the button.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>xpath('//a[contains(text(), "Load more")]') </code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>If you want to extract the link, it will be something like:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>response.xpath('//a[contains(text(), "Load more")]/@href').extract_first()</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+<p>You can also extract using an attribute, and you can use <code>contains()</code> or <code>starts-with()</code> when for example the class used in links is not the same but similar. See for example the menu links:</p>
+
+
+
+<pre class="prettyprint linenums">&lt;ul&gt;
+    &lt;li class="menu-agriculture topic-food"&gt;&lt;a href="https://www.xxxx.com/food/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Agriculture&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-climate topic-climate"&gt;&lt;a href="https://www.xxxx.com/climate/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Climate&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-consumer topic-consumer"&gt;&lt;a href="https://www.xxxx.com/consumer/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Consumer&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-ecosystems topic-ecosystems"&gt;&lt;a href="https://www.xxxx.com/ecosystems/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Ecosystems&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-education topic-education"&gt;&lt;a href="https://www.xxxx.com/education/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Education&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-energy topic-energy"&gt;&lt;a href="https://www.xxxx.gov/energy/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Energy&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-finance topic-finance"&gt;&lt;a href="https://www.xxxx.com/finance/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Finance&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-health topic-health"&gt;&lt;a href="https://www.xxxx.com/health/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Health&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-local-government topic-local"&gt;&lt;a href="https://www.xxxx.com/local/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Local Government&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-manufacturing topic-manufacturing"&gt;&lt;a href="https://www.xxxx.gov/manufacturing/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Manufacturing&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-maritime topic-maritime"&gt;&lt;a href="https://www.xxxx.com/maritime/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Maritime&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-ocean topic-ocean"&gt;&lt;a href="https://www.xxxx.com/ocean/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Ocean&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-public-safety topic-safety"&gt;&lt;a href="https://www.xxxx.com/safety/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Public Safety&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menu-science-research topic-research"&gt;&lt;a href="https://www.xxxx.com/research/"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;Science &amp; Research&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>response.xpath('//li[contains(@class, "menu")]/a/@href').extract()</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>OR</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>response.xpath('//li[starts-with(@class, "menu")]/a/@href').extract()</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+<p>Of course, if there was any class in the &lt;ul&gt; or the previous level of the tree, you could use it, but this example is just offered for the purpose of explaining the two functions <code>contains()</code> and <code>starts-with()&lt;br&gt;</code></p>
+
+<p><br></p>
+
+<p>If you have anyquestions, please send them to the Q&amp;A section.</p>
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

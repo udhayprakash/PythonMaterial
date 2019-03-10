@@ -1,0 +1,692 @@
+﻿1
+00:00:00,589 --> 00:00:01,998
+Hey there! So in this video
+
+2
+00:00:01,998 --> 00:00:03,292
+we will talk about XPath
+
+3
+00:00:03,292 --> 00:00:05,071
+and show some examples.
+
+4
+00:00:05,071 --> 00:00:07,899
+XPath is language for selecting nodes
+
+5
+00:00:07,899 --> 00:00:09,250
+from an XML document.
+
+6
+00:00:09,250 --> 00:00:12,440
+Today we will extract data from HTML file.
+
+7
+00:00:12,440 --> 00:00:14,931
+The file or the page looks like this
+
+8
+00:00:14,931 --> 00:00:18,062
+and the source code is simple as this.
+
+9
+00:00:18,062 --> 00:00:22,229
+So XPath handles any XML or HTML document as a tree
+
+10
+00:00:22,970 --> 00:00:25,580
+and XPath expressions can also be used
+
+11
+00:00:25,580 --> 00:00:29,747
+in JavaScript, Java, XML, PHP, C, C++
+
+12
+00:00:30,221 --> 00:00:33,312
+and of course Python and many other languages.
+
+13
+00:00:33,312 --> 00:00:37,332
+XPath includes over a hundred or so built-in functions.
+
+14
+00:00:37,332 --> 00:00:39,863
+We will use Scrapy shell
+
+15
+00:00:39,863 --> 00:00:41,740
+and import selector.
+
+16
+00:00:41,740 --> 00:00:44,220
+So type in scrapy shell
+
+17
+00:00:44,220 --> 00:00:45,522
+and then we will type in
+
+18
+00:00:45,522 --> 00:00:48,605
+from scrapy.selector import Selector
+
+19
+00:00:52,330 --> 00:00:53,243
+And pretty much
+
+20
+00:00:53,243 --> 00:00:56,500
+selector, it's called because it selects
+
+21
+00:00:56,500 --> 00:00:58,537
+certain parts of the HTML document,
+
+22
+00:00:58,537 --> 00:01:02,704
+specified either by XPath or CSS expressions.
+
+23
+00:01:02,839 --> 00:01:06,006
+And to actually run it or get the data
+
+24
+00:01:08,919 --> 00:01:11,919
+we will type in html_doc=
+
+25
+00:01:17,218 --> 00:01:18,689
+pretty much this string
+
+26
+00:01:18,689 --> 00:01:21,090
+and we will, let's see paste it in
+
+27
+00:01:21,090 --> 00:01:24,757
+and finally we will assign sel as a Selector
+
+28
+00:01:26,439 --> 00:01:29,309
+and we will in the text parameter of course
+
+29
+00:01:29,309 --> 00:01:30,976
+parse HTML document
+
+30
+00:01:32,970 --> 00:01:35,634
+and just to verify that everything is working correctly
+
+31
+00:01:35,759 --> 00:01:37,878
+let's see the HTML file
+
+32
+00:01:37,878 --> 00:01:39,908
+and HTML file is
+
+33
+00:01:39,908 --> 00:01:40,859
+as you can see
+
+34
+00:01:40,859 --> 00:01:43,425
+separated by the new lines.
+
+35
+00:01:43,425 --> 00:01:45,839
+So it's good to go, pretty much.
+
+36
+00:01:45,839 --> 00:01:47,880
+The first example that I'm going to show
+
+37
+00:01:47,880 --> 00:01:50,130
+is going to go to the XPath
+
+38
+00:01:51,180 --> 00:01:53,767
+or the XPath expression is going to be
+
+39
+00:01:53,767 --> 00:01:56,600
+/html/head/title
+
+40
+00:01:57,928 --> 00:01:59,109
+This pretty much is going to
+
+41
+00:01:59,109 --> 00:02:00,157
+as you will see in a moment
+
+42
+00:02:00,157 --> 00:02:03,869
+select a selector with the title in it.
+
+43
+00:02:03,869 --> 00:02:05,448
+As you can see in the data
+
+44
+00:02:05,448 --> 00:02:07,039
+we have the Unicode
+
+45
+00:02:07,039 --> 00:02:09,706
+and then HTML nodes or the title
+
+46
+00:02:10,919 --> 00:02:12,397
+and then in it we have
+
+47
+00:02:12,397 --> 00:02:13,549
+the value or the text
+
+48
+00:02:13,549 --> 00:02:15,259
+of the title.
+
+49
+00:02:15,259 --> 00:02:17,299
+We will also use extract()
+
+50
+00:02:17,299 --> 00:02:20,698
+which will extract just the HTML node
+
+51
+00:02:20,698 --> 00:02:22,606
+in a form of a list.
+
+52
+00:02:22,606 --> 00:02:25,998
+And if we go back to our source code
+
+53
+00:02:25,998 --> 00:02:28,349
+pretty much what it goes
+
+54
+00:02:28,349 --> 00:02:30,682
+or really to explain further
+
+55
+00:02:31,739 --> 00:02:34,848
+this is called location path
+
+56
+00:02:34,848 --> 00:02:36,618
+and so as you can see here
+
+57
+00:02:36,618 --> 00:02:39,820
+we have steps separated by slashes.
+
+58
+00:02:39,820 --> 00:02:41,799
+So we go first to the &lt;html&gt;
+
+59
+00:02:41,799 --> 00:02:43,204
+which goes here.
+
+60
+00:02:43,204 --> 00:02:45,169
+Then we go to the &lt;head&gt;
+
+61
+00:02:45,169 --> 00:02:46,887
+which goes pretty much here.
+
+62
+00:02:46,887 --> 00:02:49,410
+And then finally we go to the &lt;title&gt;
+
+63
+00:02:49,410 --> 00:02:52,993
+which goes to this, pretty much, HTML node.
+
+64
+00:02:55,540 --> 00:02:59,568
+The second example that we are going to show is
+
+65
+00:02:59,568 --> 00:03:01,658
+for selecting all of the titles
+
+66
+00:03:01,658 --> 00:03:03,559
+in different manner.
+
+67
+00:03:03,559 --> 00:03:06,140
+So pretty much to select all of the &lt;title&gt; nodes
+
+68
+00:03:06,140 --> 00:03:07,788
+from the HTML tree
+
+69
+00:03:07,788 --> 00:03:09,738
+we can type in
+
+70
+00:03:09,738 --> 00:03:11,456
+//title
+
+71
+00:03:11,456 --> 00:03:13,636
+which will of course select only one &lt;title&gt;
+
+72
+00:03:13,636 --> 00:03:15,868
+because there's only one &lt;title&gt;
+
+73
+00:03:15,868 --> 00:03:17,368
+in this HTML file.
+
+74
+00:03:18,526 --> 00:03:19,757
+If we want to, for example
+
+75
+00:03:19,757 --> 00:03:21,674
+extract all of the text
+
+76
+00:03:22,677 --> 00:03:23,510
+from the file
+
+77
+00:03:23,510 --> 00:03:24,587
+we will type in
+
+78
+00:03:24,587 --> 00:03:25,646
+//text()
+
+79
+00:03:25,646 --> 00:03:28,197
+and then open and close parentheses
+
+80
+00:03:28,197 --> 00:03:29,187
+and of course once again
+
+81
+00:03:29,187 --> 00:03:30,020
+this will select
+
+82
+00:03:30,020 --> 00:03:30,946
+all of the text nodes
+
+83
+00:03:30,946 --> 00:03:32,529
+from the HTML tree.
+
+84
+00:03:34,658 --> 00:03:35,837
+Let's run it
+
+85
+00:03:35,837 --> 00:03:39,855
+or show example for selecting paragraphs.
+
+86
+00:03:39,855 --> 00:03:42,297
+The first example is going to go to the
+
+87
+00:03:43,038 --> 00:03:47,162
+/html/body/p
+
+88
+00:03:48,065 --> 00:03:50,726
+which will select two selectors.
+
+89
+00:03:50,726 --> 00:03:53,008
+If we call in extract()
+
+90
+00:03:53,008 --> 00:03:54,886
+we will get the first paragraph
+
+91
+00:03:54,886 --> 00:03:57,077
+and then the second paragraph
+
+92
+00:03:57,077 --> 00:03:59,744
+as you can see pretty much here.
+
+93
+00:04:01,637 --> 00:04:02,516
+If we want to
+
+94
+00:04:02,516 --> 00:04:04,599
+we can also use or select
+
+95
+00:04:06,096 --> 00:04:07,263
+all of the p's
+
+96
+00:04:08,229 --> 00:04:10,217
+such as or as we did here
+
+97
+00:04:10,217 --> 00:04:11,316
+with the text.
+
+98
+00:04:11,316 --> 00:04:14,428
+So if we pretty much select this location path
+
+99
+00:04:14,428 --> 00:04:17,697
+this will also select all of the paragraphs.
+
+100
+00:04:17,697 --> 00:04:20,866
+If we want to isolate some paragraph,
+
+101
+00:04:20,866 --> 00:04:21,997
+in this case for example
+
+102
+00:04:21,997 --> 00:04:24,137
+let's say we want to select the first one
+
+103
+00:04:24,137 --> 00:04:26,796
+we will type in here [1]
+
+104
+00:04:26,796 --> 00:04:28,627
+or if we want to select the second
+
+105
+00:04:28,627 --> 00:04:32,218
+we will just type in second or [2].
+
+106
+00:04:32,218 --> 00:04:34,697
+However this can be also done with
+
+107
+00:04:34,697 --> 00:04:37,326
+the list slicing with the Python.
+
+108
+00:04:37,326 --> 00:04:39,609
+So if we type [0]
+
+109
+00:04:39,953 --> 00:04:42,625
+of course since Python is going to count from 0
+
+110
+00:04:42,625 --> 00:04:44,478
+we will select the first paragraph
+
+111
+00:04:44,478 --> 00:04:46,534
+and then if we type [1]
+
+112
+00:04:46,534 --> 00:04:48,615
+we will select the second paragraph.
+
+113
+00:04:48,615 --> 00:04:50,338
+So just bear in mind that
+
+114
+00:04:50,338 --> 00:04:52,158
+there aren't any confusions
+
+115
+00:04:52,158 --> 00:04:54,756
+because XPath counts from 1
+
+116
+00:04:54,756 --> 00:04:55,763
+as seen here
+
+117
+00:04:55,763 --> 00:04:57,487
+as it selects the first paragraph
+
+118
+00:04:57,487 --> 00:05:00,645
+and the Python selects from the 0
+
+119
+00:05:01,556 --> 00:05:02,786
+or counts from the 0
+
+120
+00:05:02,786 --> 00:05:03,658
+which will select
+
+121
+00:05:03,658 --> 00:05:07,158
+in our case once again, first paragraph.
+
+122
+00:05:07,158 --> 00:05:09,227
+Now all of these examples are
+
+123
+00:05:09,227 --> 00:05:11,216
+with the HTML tags surrounding
+
+124
+00:05:11,216 --> 00:05:13,747
+the text that we would like to scrape.
+
+125
+00:05:13,747 --> 00:05:16,016
+If we want to extract only text
+
+126
+00:05:16,016 --> 00:05:19,746
+we can type in /text()
+
+127
+00:05:19,746 --> 00:05:21,505
+as we did somewhere here
+
+128
+00:05:21,505 --> 00:05:22,985
+so let's see
+
+129
+00:05:22,985 --> 00:05:26,387
+when we selected all of the text
+
+130
+00:05:26,387 --> 00:05:28,628
+and pretty much to run it, for example
+
+131
+00:05:28,628 --> 00:05:31,368
+or to select first paragraph
+
+132
+00:05:31,368 --> 00:05:34,575
+and select or extract only text
+
+133
+00:05:34,575 --> 00:05:37,417
+so pretty much this data point
+
+134
+00:05:37,417 --> 00:05:39,666
+we will type in /text()
+
+135
+00:05:39,666 --> 00:05:41,727
+and here we get the results
+
+136
+00:05:41,727 --> 00:05:42,977
+in the Unicode.
+
+137
+00:05:44,757 --> 00:05:48,644
+extract_first() can be used, for example
+
+138
+00:05:48,644 --> 00:05:51,066
+if we want to select only the
+
+139
+00:05:51,066 --> 00:05:53,276
+either first instance of the tag
+
+140
+00:05:53,276 --> 00:05:55,456
+or when we want to simply select
+
+141
+00:05:55,456 --> 00:05:57,656
+first data point from list.
+
+142
+00:05:57,656 --> 00:05:59,573
+And here's one example.
+
+143
+00:06:00,607 --> 00:06:02,747
+Also for example if we want to select
+
+144
+00:06:02,747 --> 00:06:04,247
+all of the &lt;h2&gt; tags
+
+145
+00:06:05,466 --> 00:06:08,897
+here we will type in
+
+146
+00:06:08,897 --> 00:06:13,059
+sel.xpath('//h2')
+
+147
+00:06:13,309 --> 00:06:15,642
+and here we see one selector
+
+148
+00:06:15,666 --> 00:06:18,585
+because there is really just only one selector
+
+149
+00:06:18,585 --> 00:06:20,133
+and currently it's selecting
+
+150
+00:06:20,133 --> 00:06:22,383
+pretty much this HTML node.
+
+151
+00:06:24,187 --> 00:06:26,365
+If we want to select "a" tag from it
+
+152
+00:06:26,365 --> 00:06:28,198
+we can type in /a
+
+153
+00:06:29,386 --> 00:06:30,297
+as you can see.
+
+154
+00:06:30,297 --> 00:06:32,344
+So it's currently here
+
+155
+00:06:32,344 --> 00:06:34,337
+and if we want to select the href
+
+156
+00:06:34,337 --> 00:06:36,837
+we will type
+
+157
+00:06:38,137 --> 00:06:39,733
+/@href
+
+158
+00:06:39,733 --> 00:06:41,372
+which will select the "#" sign
+
+159
+00:06:41,372 --> 00:06:43,122
+as a URL so to speak.
+
+160
+00:06:44,415 --> 00:06:45,713
+We can also use,
+
+161
+00:06:45,713 --> 00:06:46,873
+instead of the XPath
+
+162
+00:06:46,873 --> 00:06:49,776
+you can use in Scrapy of course
+
+163
+00:06:49,776 --> 00:06:50,995
+also CSS selector.
+
+164
+00:06:50,995 --> 00:06:52,322
+So if you want to select
+
+165
+00:06:52,322 --> 00:06:54,321
+h2&gt; tag with the selector
+
+166
+00:06:54,321 --> 00:06:55,154
+we will type in
+
+167
+00:06:55,154 --> 00:06:57,232
+pretty much this location path
+
+168
+00:06:57,232 --> 00:06:58,065
+and this will select
+
+169
+00:06:58,065 --> 00:06:59,183
+as you can see
+
+170
+00:06:59,183 --> 00:07:02,488
+the CSS or CSS really selector.
+
+171
+00:07:02,488 --> 00:07:05,137
+And that will be it for this introduction video.
+
+172
+00:07:05,137 --> 00:07:06,238
+Thanks for watching
+
+173
+00:07:06,238 --> 00:07:08,821
+and I'll talk to you soon. Bye!
+

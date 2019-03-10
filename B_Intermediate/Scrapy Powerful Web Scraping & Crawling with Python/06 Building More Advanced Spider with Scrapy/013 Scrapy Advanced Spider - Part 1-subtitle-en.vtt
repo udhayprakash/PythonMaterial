@@ -1,0 +1,322 @@
+﻿WEBVTT
+
+1
+00:00:00.483 --> 00:00:02.686
+Hey there! So in this section of the video,
+
+2
+00:00:02.686 --> 00:00:05.677
+we will write a more advanced spider.
+
+3
+00:00:05.677 --> 00:00:09.052
+So we will re-use our previous code that we wrote
+
+4
+00:00:09.052 --> 00:00:10.684
+from the previous section.
+
+5
+00:00:10.684 --> 00:00:14.851
+And the new spider will iterate over the container
+
+6
+00:00:16.093 --> 00:00:19.221
+or quote containers and iterate over pages.
+
+7
+00:00:19.221 --> 00:00:23.388
+So there are currently ten or so different quotes
+
+8
+00:00:23.429 --> 00:00:25.675
+per page and around ten or so pages.
+
+9
+00:00:25.675 --> 00:00:29.111
+So hopefully we will, at the end of this spider
+
+10
+00:00:29.111 --> 00:00:31.537
+or this section we will have around
+
+11
+00:00:31.537 --> 00:00:34.433
+100 or so different quotes scraped.
+
+12
+00:00:34.433 --> 00:00:37.843
+From each and every quote we will scrape the text from it
+
+13
+00:00:37.843 --> 00:00:40.436
+the author and finally the tags.
+
+14
+00:00:40.436 --> 00:00:42.066
+So let's begin right away.
+
+15
+00:00:42.066 --> 00:00:44.316
+So if we go to the Terminal
+
+16
+00:00:45.179 --> 00:00:48.096
+and go to our, let's maximize this.
+
+17
+00:00:49.178 --> 00:00:51.678
+Go and copy and paste the URL.
+
+18
+00:00:53.398 --> 00:00:56.255
+So type in scrapy shell and then in single
+
+19
+00:00:56.255 --> 00:00:58.838
+or double quotes paste the URL.
+
+20
+00:01:00.632 --> 00:01:01.465
+We get...
+
+21
+00:01:02.455 --> 00:01:04.826
+Response status 200 which is successful
+
+22
+00:01:04.826 --> 00:01:08.993
+and we can pretty much start to write our selectors.
+
+23
+00:01:09.430 --> 00:01:13.597
+So we can remove the selectors previously that we wrote,
+
+24
+00:01:13.989 --> 00:01:16.005
+which is h1_tag and tags.
+
+25
+00:01:16.005 --> 00:01:18.997
+So we can comment this out for a moment,
+
+26
+00:01:18.997 --> 00:01:20.997
+so it doesn't interfere.
+
+27
+00:01:21.901 --> 00:01:23.223
+And let's begin straight away.
+
+28
+00:01:23.223 --> 00:01:27.171
+So the first thing that I would do in this type of case
+
+29
+00:01:27.171 --> 00:01:30.019
+is isolate quote containers.
+
+30
+00:01:30.019 --> 00:01:33.719
+Quote container is going to represent pretty much,
+
+31
+00:01:33.719 --> 00:01:37.886
+this will be first container, this will be the second one.
+
+32
+00:01:38.010 --> 00:01:40.585
+And this will for example, third one, et cetera.
+
+33
+00:01:40.585 --> 00:01:43.256
+So there are currently on the home page,
+
+34
+00:01:43.256 --> 00:01:45.705
+ten different quotes containers.
+
+35
+00:01:45.705 --> 00:01:49.733
+So to do that, like anything with the scraping of the data,
+
+36
+00:01:49.733 --> 00:01:52.885
+you should right-click, go to the Inspect,
+
+37
+00:01:52.885 --> 00:01:54.989
+and then as you can see pretty much
+
+38
+00:01:54.989 --> 00:01:58.021
+each and every &lt;div&gt; with the class of the value,
+
+39
+00:01:58.021 --> 00:01:59.909
+quote, is the container.
+
+40
+00:01:59.909 --> 00:02:03.766
+So as you can see, so here we have our ten containers,
+
+41
+00:02:03.766 --> 00:02:05.666
+so we will iterate over them.
+
+42
+00:02:05.666 --> 00:02:07.299
+Now how do we iterate over them?
+
+43
+00:02:07.299 --> 00:02:11.466
+Well we'll just use a simple for loop in our spider code.
+
+44
+00:02:12.248 --> 00:02:15.520
+And the XPath selection to get to the
+
+45
+00:02:15.520 --> 00:02:18.738
+first container is pretty simple.
+
+46
+00:02:18.738 --> 00:02:22.905
+So what we need to do is pretty much write the selector
+
+47
+00:02:23.068 --> 00:02:26.038
+or the similar selector that we wrote previously,
+
+48
+00:02:26.038 --> 00:02:30.205
+so we type in response.xpath, and then in parentheses,
+
+49
+00:02:32.042 --> 00:02:35.468
+and in either single or double quotes we will find
+
+50
+00:02:35.468 --> 00:02:39.635
+every class instance that has the value of the quote
+
+51
+00:02:39.841 --> 00:02:41.153
+as you can see.
+
+52
+00:02:41.153 --> 00:02:44.546
+So if we just type this in we will get
+
+53
+00:02:44.546 --> 00:02:47.027
+ten different selectors as you can see.
+
+54
+00:02:47.027 --> 00:02:51.194
+So this pretty much, selector corresponds to this one.
+
+55
+00:02:51.724 --> 00:02:55.109
+So the first container or in the site,
+
+56
+00:02:55.109 --> 00:02:56.942
+this pretty much HTML node.
+
+57
+00:02:57.807 --> 00:03:00.557
+So we are going to assign quotes.
+
+58
+00:03:02.266 --> 00:03:05.433
+To be equal to our previous statement.
+
+59
+00:03:07.054 --> 00:03:09.774
+Let's copy this to our code right away.
+
+60
+00:03:09.774 --> 00:03:13.524
+So copy and then paste it into your Text Editor.
+
+61
+00:03:14.954 --> 00:03:19.121
+So quotes, and we will iterate it pretty much for quote,
+
+62
+00:03:20.097 --> 00:03:23.847
+in quotes and then we will pass this for now.
+
+63
+00:03:25.216 --> 00:03:28.274
+Going back to our Terminal,
+
+64
+00:03:28.274 --> 00:03:30.482
+we will type in, let's type in quote
+
+65
+00:03:32.057 --> 00:03:34.890
+And the first quote is going to be
+
+66
+00:03:35.813 --> 00:03:37.456
+quotes or from the quotes
+
+67
+00:03:37.456 --> 00:03:40.278
+and the first instance will be of course zero.
+
+68
+00:03:40.278 --> 00:03:44.445
+So quote is going to be pretty much this first container
+
+69
+00:03:45.437 --> 00:03:49.520
+from the site and if we're call in
+
+70
+00:03:49.555 --> 00:03:52.791
+quote.extract() and hit enter
+
+71
+00:03:52.791 --> 00:03:55.041
+you will see that this HTML
+
+72
+00:03:57.013 --> 00:03:59.638
+corresponds pretty much to this one.
+
+73
+00:03:59.638 --> 00:04:02.739
+So this is in the tree structure so more readable
+
+74
+00:04:02.739 --> 00:04:05.906
+but that's pretty much the same really
+
+75
+00:04:07.277 --> 00:04:11.039
+value really or the content of the page.
+
+76
+00:04:11.039 --> 00:04:13.287
+So that's going to be pretty much it for this video
+
+77
+00:04:13.287 --> 00:04:16.079
+in the very next one we will finally write
+
+78
+00:04:16.079 --> 00:04:19.654
+our three selectors so we will select the text, the author
+
+79
+00:04:19.654 --> 00:04:21.023
+and finally the tags.
+
+80
+00:04:21.023 --> 00:04:22.335
+So see you there.
+

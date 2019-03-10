@@ -1,0 +1,290 @@
+﻿1
+00:00:00,030 --> 00:00:05,250
+Okay. So first things first. We need
+to create a Scrapy project.
+
+2
+00:00:05,250 --> 00:00:14,730
+To do that, let's open the Terminal and
+navigate first to the Desktop.
+
+3
+00:00:14,730 --> 00:00:21,960
+After that, we use our good old Scrapy startproject,
+and the name of our spider will be pretty much this.
+
+4
+00:00:21,960 --> 00:00:33,870
+So we can copy this, and then paste it in.
+And then _spider. Hit Enter.
+
+5
+00:00:33,870 --> 00:00:40,829
+And then we can change the directory
+to eplanning_spider/
+
+6
+00:00:40,829 --> 00:00:46,890
+And then we can generate our spider.
+So we will generate it by using scrapy genspider.
+
+7
+00:00:46,890 --> 00:00:54,840
+Then we can paste, again, eplanning as the name
+of the spider. And then the domain will
+
+8
+00:00:54,840 --> 00:01:02,940
+be eplanning.ie, and hit Enter.
+Okay? Let's go to the Desktop,
+
+9
+00:01:02,940 --> 00:01:10,140
+open the root directory of the spider, and let's
+see if the spider is generated. We can open it
+
+10
+00:01:10,140 --> 00:01:15,659
+with the text editor, and let's
+prettify it first and foremost.
+
+11
+00:01:15,659 --> 00:01:27,689
+So from scrapy import Spider. We can do scrapy
+lowercase, and let's use always single quotes.
+
+12
+00:01:27,689 --> 00:01:33,810
+And let's save it. After that,
+let's go to the Terminal and run it quickly,
+
+13
+00:01:33,810 --> 00:01:39,939
+just to verify that everything is working
+correctly. So scrapy crawl eplanning
+
+14
+00:01:41,939 --> 00:01:45,520
+Let's see, robots.txt file or page is not found. 404.
+
+15
+00:01:46,320 --> 00:01:51,390
+So this is totally fine. And then we get 200 request
+
+16
+00:01:51,390 --> 00:01:56,799
+to the home page, which is great.
+Let's see, no errors. Everything is working fine.
+
+17
+00:01:57,100 --> 00:02:00,299
+So the next thing, or the
+first thing really, first step that this
+
+18
+00:02:00,299 --> 00:02:06,689
+spider will take is it will pretty much
+isolate or really we can get, since this
+
+19
+00:02:06,689 --> 00:02:10,790
+is a pretty simple page,
+we can just find all "a" tags with the
+
+20
+00:02:10,790 --> 00:02:19,490
+href in them. So if we go into, really, any
+county, really, from this list, we will see
+
+21
+00:02:19,490 --> 00:02:25,340
+that it's in the "a" tag. And then it
+contains source (src) and also href,
+
+22
+00:02:25,340 --> 00:02:30,440
+so it seems like it's going to be, yeah,
+it's actually going to be href.
+
+23
+00:02:30,440 --> 00:02:36,080
+So let's copy and paste this one. Okay, so this is
+working. So we will go to the "a" tag and
+
+24
+00:02:36,080 --> 00:02:47,209
+then scrape the href. Let's open this in
+the separate tab, and let's see.
+
+25
+00:02:47,209 --> 00:02:56,360
+So, again, all "a" tags with the href. So, of
+course, we need to open the new tab and
+
+26
+00:02:56,360 --> 00:03:00,890
+then type in or just change the
+directory first to the home one,  for example,
+
+27
+00:03:00,890 --> 00:03:07,490
+and then type in scrapy shell.
+The name of the URL will be this one.
+
+28
+00:03:07,490 --> 00:03:14,180
+Hit Enter, and then let's say
+response.xpath. So this is fairly straightforward.
+
+29
+00:03:14,180 --> 00:03:19,040
+So we'll find all "a" tags with the href in them,
+
+30
+00:03:19,040 --> 00:03:26,810
+and then just go and extract it.
+And let's see. So all the domains that
+
+31
+00:03:26,810 --> 00:03:33,260
+don't follow eplanning.ie will be
+filtered out, so such as this one.
+
+32
+00:03:33,260 --> 00:03:39,230
+And it seems like there are some pages that
+have pound (#) in them, so this will actually
+
+33
+00:03:39,230 --> 00:03:46,010
+produce an error, so we will remove it. Let's
+go to the text editor, and in our parse function,
+
+34
+00:03:46,010 --> 00:03:52,550
+we can define urls as a variable
+name, then response.xpath.
+
+35
+00:03:52,550 --> 00:04:00,019
+So we will find all "a" tags with href
+in them. Finally, we will extract the selectors,
+
+36
+00:04:00,019 --> 00:04:08,330
+and then we will iterate over
+the URLs. So, for url in urls:
+
+37
+00:04:08,330 --> 00:04:17,510
+And then if... let's just double verify that pounds
+are only found in this type of case.
+
+38
+00:04:17,510 --> 00:04:22,700
+Okay. So this will be fairly straightforward.
+So if pound in URL, or let's just say,
+
+39
+00:04:22,700 --> 00:04:30,650
+for example, if pound is equal to the URL,
+which is going to be the case in three times.
+
+40
+00:04:30,650 --> 00:04:35,060
+So if pound is equal to the URL, then we will pass it.
+
+41
+00:04:35,060 --> 00:04:41,570
+Else we will yield the request, really,
+to the second page, such as,
+
+42
+00:04:41,570 --> 00:04:50,930
+for example, this one. So to do that, we
+go to the else:, and then yield Request,
+
+43
+00:04:50,930 --> 00:04:57,410
+so it's pretty straightforward. We will yield URL. We
+don't need to use response.urljoin(url)
+
+44
+00:04:57,410 --> 00:05:02,390
+because these are absolute URLs. Most of the
+time they are not, but in this type of
+
+45
+00:05:02,390 --> 00:05:10,940
+site, they are. URL and then we can type
+in callback, and we will define parse, for example,
+
+46
+00:05:10,940 --> 00:05:20,870
+application as our function name.
+So we can copy this. So function parse_application.
+
+47
+00:05:20,870 --> 00:05:26,540
+Of course, it always will
+contain self, and then response, and for
+
+48
+00:05:26,540 --> 00:05:31,669
+now we will pass it. Let's see if there's
+something else here. I believe that would
+
+49
+00:05:31,669 --> 00:05:36,470
+be pretty much it. So let's save it. Go
+back to our Terminal, and let's see if
+
+50
+00:05:36,470 --> 00:05:41,210
+everything is working fine.
+So we will run it once again
+
+51
+00:05:41,210 --> 00:05:44,380
+with the scrapy crawl eplanning command.
+
+52
+00:05:45,479 --> 00:05:50,039
+Okay. There seems to be some issue. Of
+course, the global name request is not
+
+53
+00:05:50,039 --> 00:05:56,779
+defined, so we need to import it here. So
+from scrapy.http import Request.
+
+54
+00:05:56,779 --> 00:06:01,020
+Save it. Then go back to the
+Terminal. Run it once again.
+
+55
+00:06:01,020 --> 00:06:09,330
+Okay, so it seems like it . . . let's
+maximize it so it's more readable.
+
+56
+00:06:09,330 --> 00:06:15,599
+So it seems like this type of pages are
+redirection and then we get the crawled or
+
+57
+00:06:15,599 --> 00:06:22,499
+200 request status to the following counties,
+which is great. So everything is working fine,
+
+58
+00:06:22,499 --> 00:06:30,210
+and only one 404 page, which was
+previously discussed, robots.txt page or URL.
+
+59
+00:06:30,210 --> 00:06:35,600
+So that will be it for this first part,
+and I'll see you in the very next video.
+

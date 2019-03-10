@@ -1,0 +1,457 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>035 Creating Scrapy Craigslist Spider</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <h4>Creating a Scrapy Project</h4>
+
+<p>Now, you need to create a Scrapy project. In your Terminal/CMD navigate to the folder in which you want to save your project and then run the following command:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>scrapy startproject craigslist</code> <br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Note that for all Scrapy commands, we start with scrapy followed by the command which is here startproject for creating a new Scrapy project and here it should be followed by the project name which can be anything; we called it craigslist just for example.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>So typically any Scrapy command will look like this:<br><em><strong>scrapy &lt;command&gt; [options] [args]</strong></em><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4></h4><h4>Creating a Scrapy Spider</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>In your Terminal, navigate to the folder of the Scrapy project we have created in the previous step. As we called it craigslist, the folder would be with the same name and the command should simply be:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>cd craigslist</code><br><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>After that, create the spider using the genspider command and give it any name you like; here we will call it jobs. Then, it should be followed by the URL.<br></p>
+
+
+
+<p><code>scrapy genspider jobs https://newyork.craigslist.org/search/egr</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4></h4><h4>Editing the Scrapy Spider
+
+
+
+
+
+
+
+</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Now, manually navigate to the craigslist folder, i.e. the scrapy project. You can see that it is structured as in this screenshot.</p><figure><img src="https://udemy-images.s3.amazonaws.com:443/redactor/2017-05-18_08-41-08-30ff1d206af10542303ea3565bbddaf6/CraigslistScrapyProject.png"></figure><p><br></p><p>For now, we will be concentrating on the spider file, which is here called jobs.py  open it in any text editor and you will have the following:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums"># -*- coding: utf-8 -*-
+import scrapy
+
+class JobsSpider(scrapy.Spider):
+    name = "jobs"
+    allowed_domains = ["craigslist.org"]
+    start_urls = ['https://newyork.craigslist.org/search/egr']
+    def parse(self, response):
+        pass</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4><br><br>Understanding the Scrapy Spider File</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Lets check the parts of the main class of the file automatically generated for our jobs Scrapy spider:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>1- <code>name</code> of the spider.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>2- <code>allowed_domains</code> the list of the domains that the spider is allowed scrape.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>3- <code>start_urls</code> the list of one or more URL(s) with which the spider starts crawling.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>4- <code>parse</code> the main function of the spider. Do NOT change its name; however, you may add extra functions if needed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><strong><br></strong></p>
+
+
+
+<p><strong>Warning</strong>: Scrapy adds extra <strong>http://</strong> at the beginning of the URL in <code>start_urls</code>and it also adds a trailing slash. As we here already added <strong>https://</strong> while creating the spider, we must delete the extra <strong>http://</strong>. So double-check that the URL(s) in <code>start_urls</code> are correct or the spider will not work.</p>
+
+
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

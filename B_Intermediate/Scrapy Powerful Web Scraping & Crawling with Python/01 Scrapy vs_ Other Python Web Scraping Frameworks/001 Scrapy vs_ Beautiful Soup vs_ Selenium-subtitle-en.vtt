@@ -1,0 +1,390 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.323
+Hey there! So today, we are
+going to learn about Scrapy.
+
+00:00:03.722 --> 00:00:05.246
+What Scrapy is overall.
+
+00:00:05.583 --> 00:00:08.339
+Scrapy versus other
+Python-based scraping tools.
+
+00:00:08.381 --> 00:00:12.187
+Why you should use it and when it
+makes sense to use some other tools.
+
+00:00:12.270 --> 00:00:14.815
+Pros and cons of Scrapy
+and that would be it.
+
+00:00:15.023 --> 00:00:16.468
+So let's begin!
+
+00:00:16.751 --> 00:00:20.880
+Scrapy, overall, is a web crawling
+framework written in Python.
+
+00:00:20.976 --> 00:00:27.057
+One of its main advantages is that it's built on top
+of Twisted, an asynchronous networking framework,
+
+00:00:27.424 --> 00:00:34.447
+which in other words means that it's: a) really
+efficient, and b) Scrapy is an asynchronous framework.
+
+00:00:35.231 --> 00:00:38.317
+So, to illustrate why
+this is a great feature...
+
+00:00:38.818 --> 00:00:45.427
+I'll use, for those of you that don't know what
+an asynchronous scraping framework means...
+
+00:00:45.427 --> 00:00:47.694
+...I'll use some enlightening example.
+
+00:00:47.734 --> 00:00:51.483
+So, imagine you have to call hundred
+different people by phone numbers.
+
+00:00:51.952 --> 00:00:56.033
+Well, normally you'd do it by sitting down
+and then dialing the first number...
+
+00:00:56.033 --> 00:00:59.360
+...and then patiently waiting for
+the response on the other end.
+
+00:01:00.581 --> 00:01:06.563
+In an asynchronous world, you can pretty much
+dial in first 20 or 50 phone numbers...
+
+00:01:06.563 --> 00:01:12.249
+...and then only process those calls once the
+other person on the other end picks up the phone.
+
+00:01:12.792 --> 00:01:15.304
+Hopefully, now it makes sense.
+
+00:01:15.762 --> 00:01:22.547
+Scrapy is supported under or uses
+Python 2.7 and Python 3.3.
+
+00:01:22.571 --> 00:01:31.158
+So you can pretty much, depending on your version
+of Python, you are pretty much good to go.
+
+00:01:31.241 --> 00:01:38.788
+So Python 2.6, important thing to note,
+support was dropped starting at Scrapy 0.20.
+
+00:01:38.788 --> 00:01:44.882
+So just bear that in mind, and Python 3
+support was added in Scrapy 1.1
+
+00:01:45.678 --> 00:01:49.247
+Scrapy, in some ways, it's similar to Django.
+
+00:01:49.247 --> 00:01:54.775
+So those of you that use or have used,
+previously, Django will definitely benefit.
+
+00:01:55.320 --> 00:01:59.796
+Now let's talk more about other
+Python-based scraping tools.
+
+00:02:00.660 --> 00:02:05.582
+And these, bear in mind that these,
+are old-specialized libraries...
+
+00:02:05.934 --> 00:02:16.996
+...with very focused functionality and they don't claim or they
+are not really a complete web scraping solution like Scrapy is.
+
+00:02:17.658 --> 00:02:29.118
+The first two, urllib2 and then Requests are
+modules for reading or opening web pages, so HTTP modules.
+
+00:02:30.202 --> 00:02:33.844
+The other two are Beautiful Soup
+and then lxml.
+
+00:02:34.105 --> 00:02:39.415
+These are for, aka, the fun
+part of the scraping jobs.
+
+00:02:39.415 --> 00:02:47.395
+Or really for extracting data points from those
+pages that are loaded with urllib2 and then Requests.
+
+00:02:47.395 --> 00:02:56.958
+Let's get back to urllib2 and urllib2's biggest
+advantage is that it's included in the Python standard library...
+
+00:02:56.958 --> 00:03:03.346
+...so it's batteries-included and as long as you
+have Python installed, you are good to go.
+
+00:03:03.849 --> 00:03:09.748
+In the past, it was more popular but
+since then another tool replaced it.
+
+00:03:10.243 --> 00:03:13.437
+And that tool, believe it
+or not, is called Requests.
+
+00:03:13.717 --> 00:03:20.464
+The docs or documentations
+are superb for Requests.
+
+00:03:20.714 --> 00:03:25.732
+I think it's even the most popular
+module for Python, period.
+
+00:03:26.227 --> 00:03:34.518
+And if you haven't already... once again the docs are just amazing,
+so if you haven't already, just give it a read.
+
+00:03:35.219 --> 00:03:42.299
+And Requests, unfortunately, doesn't come pre-installed
+with Python, so you'll have to install it.
+
+00:03:42.633 --> 00:03:46.392
+I personally use it for quick and dirty
+scraping jobs...
+
+00:03:46.392 --> 00:03:52.863
+...and both urllib2 and Requests are supported
+with Python 2 and Python 3.
+
+00:03:52.863 --> 00:03:57.836
+The next tool is called Beautiful Soup
+and once again...
+
+00:03:57.836 --> 00:04:03.363
+...it's used for extracting data points
+from the pages that are loaded, okay?
+
+00:04:03.730 --> 00:04:11.878
+And it's... Beautiful Soup is quite robust
+and it handles nicely malformed markup.
+
+00:04:12.015 --> 00:04:19.395
+So, in other words, if you have a page that is
+not getting validated as a proper HTML...
+
+00:04:19.765 --> 00:04:28.549
+...but you know for a fact that it's a page and that it's
+an HTML specifically page, then you should give it a try...
+
+00:04:29.147 --> 00:04:36.782
+...scraping data from it with Beautiful Soup.
+So actually the name came from the expression 'tag soup'...
+
+00:04:36.866 --> 00:04:40.144
+...which is used to describe a really invalid markup.
+
+00:04:40.345 --> 00:04:47.035
+Beautiful Soup creates a parse tree
+that can be used to extract data from HTML.
+
+00:04:47.374 --> 00:04:53.564
+The official docs are comprehensive,
+easy to read and with lots of examples.
+
+00:04:53.564 --> 00:04:59.064
+So they are really, just like with Requests,
+they are really, beginner-friendly.
+
+00:04:59.725 --> 00:05:07.168
+And just like the other tools for scraping, Beautiful Soup
+also comes with Python 2 and Python 3.
+
+00:05:08.183 --> 00:05:13.243
+And now let's talk about...
+let's see... about lxml
+
+00:05:13.346 --> 00:05:16.896
+Now what lxml is... it's just
+similar to Beautiful Soup
+
+00:05:16.896 --> 00:05:24.742
+so once again, it handles or
+it's used for scraping data.
+
+00:05:25.218 --> 00:05:28.217
+It's the most feature-rich Python library...
+
+00:05:28.578 --> 00:05:31.567
+...for processing both XML and HTML.
+
+00:05:32.043 --> 00:05:34.504
+It's also really fast and memory efficient.
+
+00:05:35.251 --> 00:05:45.083
+A fun fact is that Scrapy selectors are built over lxml and
+for example, Beautiful Soup also supports it as a parser.
+
+00:05:45.922 --> 00:05:51.413
+Just like with Requests,
+I personally use lxml in pair with Requests...
+
+00:05:51.413 --> 00:05:54.616
+...of course, for again as previously
+mentioned, quick and dirty jobs.
+
+00:05:55.201 --> 00:06:00.778
+Bear in mind that the official documentation
+is not that beginner-friendly to be honest.
+
+00:06:01.182 --> 00:06:07.704
+And so if you haven't already used a similar tool in
+the past, use examples from blogs or other sites.
+
+00:06:08.091 --> 00:06:13.594
+It'll probably make a bit more sense
+than the official way of reading.
+
+00:06:13.911 --> 00:06:18.941
+The last tool for scraping
+is called Selenium.
+
+00:06:19.133 --> 00:06:27.064
+So to paraphrase this, Selenium is first of all
+a tool writing automated tests for web applications.
+
+00:06:27.386 --> 00:06:32.558
+It's used for web scraping mainly
+because it's beginner-friendly...
+
+00:06:32.877 --> 00:06:39.140
+...and if a site uses JavaScript...
+so if a site is heavy on JavaScript...
+
+00:06:39.301 --> 00:06:41.503
+which more and more sites are...
+
+00:06:41.782 --> 00:06:45.967
+Selenium is a good option because,
+once again, it's easy to extract the data...
+
+00:06:46.094 --> 00:06:51.420
+...if you are a beginner or if JavaScript
+interactions are very complex...
+
+00:06:51.728 --> 00:06:55.439
+...if we have a bunch of
+get and post requests.
+
+00:06:55.895 --> 00:07:01.417
+I use it sometimes solely
+or in pair with Scrapy.
+
+00:07:01.821 --> 00:07:07.198
+And most of the time when I'm using it
+with Scrapy I, kind of, try to iterate over...
+
+00:07:07.781 --> 00:07:15.149
+...once again JavaScript heavy pages and then use
+Scrapy Selectors to grab the HTML that Selenium produces.
+
+00:07:16.137 --> 00:07:25.716
+Currently, supported Python versions for
+Selenium are 2.7 and 3.5+
+
+00:07:25.800 --> 00:07:30.207
+Overall, Selenium support
+is really extensive.
+
+00:07:30.416 --> 00:07:38.782
+And it provides bindings for languages such as Java,
+C#, Ruby, Python of course, and then JavaScript.
+
+00:07:39.294 --> 00:07:43.554
+Selenium official docs are, once
+again, great and easy to grasp.
+
+00:07:43.672 --> 00:07:47.385
+And you can probably give it a read
+even if you are a complete beginner.
+
+00:07:48.433 --> 00:07:53.735
+And in two hours you will,
+pretty much, figure all out.
+
+00:07:53.776 --> 00:07:59.911
+Bear in mind that, from my testing, for example,
+Scraping thousand pages from Wikipedia...
+
+00:08:00.036 --> 00:08:04.521
+...was 20 times faster, believe it
+or not, in Scrapy than in Selenium.
+
+00:08:05.020 --> 00:08:12.265
+Also, on top of that, it [i.e. Scrapy] consumed a lot
+less memory and CPU usage was a lot lower...
+
+00:08:13.984 --> 00:08:16.370
+...with Scrapy than with Selenium.
+
+00:08:16.646 --> 00:08:24.250
+So back to the Scrapy main pros, and when using Scrapy,
+of course, first and foremost it's asynchronous...
+
+00:08:24.274 --> 00:08:30.486
+...but if you are building something robust
+and want to make it as efficient as possible...
+
+00:08:30.743 --> 00:08:35.415
+...with lots of flexibility and a bunch of functions,
+then you should definitely use it.
+
+00:08:35.906 --> 00:08:43.447
+One case example when using some other tools,
+like the previously mentioned tools, kind of makes sense...
+
+00:08:43.543 --> 00:08:47.216
+...is if you had a project where you
+need to load the Home Page or...
+
+00:08:47.216 --> 00:08:55.016
+...something like that or your favorite, let's say, restaurant
+and check if they are having your favorite dish on the menu.
+
+00:08:55.682 --> 00:09:01.687
+And then for this type of cases, you should not use
+Scrapy because, to be honest, it would be overkill.
+
+00:09:02.230 --> 00:09:11.328
+Some of the drawbacks of Scrapy is that, since it's really
+a full-fledged framework, it's not that beginner-friendly...
+
+00:09:11.453 --> 00:09:15.722
+...and the learning curve is a little
+steeper than some other tools.
+
+00:09:16.001 --> 00:09:20.777
+Also, installing Scrapy is a tricky
+process, especially with Windows.
+
+00:09:20.863 --> 00:09:24.671
+But bear in mind that you have a lot
+of resources online for this...
+
+00:09:24.671 --> 00:09:31.980
+...and this pretty much means that you have, I'm not
+even kidding, probably thousand blog posts about...
+
+00:09:31.981 --> 00:09:36.495
+...installing Scrapy on your
+specific operating system.
+
+00:09:36.830 --> 00:09:41.598
+And that's it for this video... So thanks for watching,
+and I'll see you in the very next video...
+
+00:09:41.598 --> 00:09:45.299
+...where I will discuss installing Scrapy. Bye!
+

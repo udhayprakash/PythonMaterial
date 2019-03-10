@@ -1,0 +1,475 @@
+﻿1
+00:00:00,030 --> 00:00:05,730
+Olá! Então hoje vamos aprender como
+povoar formulários como este
+
+2
+00:00:05,730 --> 00:00:11,100
+e extrair ele nesta página específica
+usando o Scrapy FormRequest.
+
+3
+00:00:11,100 --> 00:00:21,800
+O FormRequest são similares ao Requet que usamos
+anteriormente. Então se abrirmos um novo Terminal,
+
+4
+00:00:21,800 --> 00:00:27,420
+então vamos digitar "scrapy shell".
+Podemos então importar o FormRequest
+
+5
+00:00:27,420 --> 00:00:37,000
+simplesmente colocando
+"from scrapy.http import FormRequest". Pressionando Enter.
+
+6
+00:00:37,000 --> 00:00:43,200
+e o FormRequest, como o próprio
+nome indica, é para
+
+7
+00:00:43,200 --> 00:00:52,200
+povoar formulários HTML como este aqui. Então se clicarmos...
+precisamos antes ter o Stock Code.
+
+8
+00:00:52,200 --> 00:00:57,600
+Então vamos usar este aqui, e então clicar Search.
+Você verá que essa URL não vai mudar
+
+9
+00:00:57,600 --> 00:01:03,500
+apesar dos resultados ou, na verdade,
+da página mudar nesse período
+
+10
+00:01:03,500 --> 00:01:07,200
+Isso significa que temos
+o POST request e, principalmente,
+
+11
+00:01:07,200 --> 00:01:13,320
+como você pode ver da primeira página, temos
+aqui o formulário. Então podemos então descobrir
+
+12
+00:01:13,320 --> 00:01:21,100
+qual URL exatamente estamos procurando
+indo para Inspect e então para a aba Network,
+
+13
+00:01:21,100 --> 00:01:27,900
+e finalmente, para o All. Agora, se clicarmos
+no Search e esperarmos as requests
+
+14
+00:01:27,900 --> 00:01:31,850
+ou, de forma geral, a página ser carregada, você
+verá um monte de requests diferentes,
+
+15
+00:01:31,850 --> 00:01:37,500
+a maioria deles são imagens, como você pode ver.
+Alguns são páginas Javascript,
+
+16
+00:01:37,500 --> 00:01:43,600
+e aqui temos a página aspx.
+E como você pode ver aqui,
+
+17
+00:01:43,600 --> 00:01:49,900
+isto corresponde à página que gostaríamos
+de pegar. Então se clicarmos aqui,
+
+18
+00:01:49,900 --> 00:01:54,500
+e ir para a aba Headers, você pode ver
+que em General, a Request URL vai ser
+
+19
+00:01:54,500 --> 00:02:01,000
+a mesma que esta aqui. Então temos aqui
+que o Request Method é igual ao POST.
+
+20
+00:02:01,000 --> 00:02:05,500
+Então métodos de requisição podem ser
+GET ou POST. Se ele for GET,
+
+21
+00:02:05,500 --> 00:02:13,500
+então provavelmente temos algo
+como isto. Então id=00001 se ele era um GET.
+
+22
+00:02:13,500 --> 00:02:18,500
+Mas como era um POST, então
+a URL não mudou, na verdade,
+
+23
+00:02:18,500 --> 00:02:26,200
+e os parêmetros localizados abaixo, aqui
+no Form Data, que vamos falar em um momento.
+
+24
+00:02:26,200 --> 00:02:31,800
+Então o Request Method é, novamente,
+POST. O Status Code é 200,
+
+25
+00:02:31,800 --> 00:02:36,200
+então tudo está funcionando.
+E então vamos para o Form Data.
+
+26
+00:02:36,200 --> 00:02:44,800
+Então isto é, sobretudo, a aba mais importante
+daqui no Headers. Então
+
+27
+00:02:44,800 --> 00:02:53,000
+vamos copiar e colar isto no nosso editor de
+texto para que fique mais visível.
+
+28
+00:02:53,000 --> 00:02:59,600
+Então podemos colar isto aqui, e então
+"Set Syntax to Python". E só para ter certeza
+
+29
+00:02:59,600 --> 00:03:06,200
+de que estamos na URL certa, você deveria
+checar sempre a aba Response e ver se o dado
+
+30
+00:03:06,200 --> 00:03:12,290
+que você gostaria de pegar está realmente ali.
+Ok? ENtão vamos voltar para o editor de texto,
+
+31
+00:03:12,290 --> 00:03:17,590
+e vamos ver. Então aqui temos um monte
+de chaves e valores diferentes,
+
+32
+00:03:17,590 --> 00:03:25,100
+incluindo a data, o dia, mês, ano. Como você
+pode ver, txtStockCode corresponde...
+
+33
+00:03:25,100 --> 00:03:30,100
+Então se formos para a primeira página,
+corresponde a este Stock Code.
+
+34
+00:03:30,100 --> 00:03:35,100
+E então o Enter ou o valor que nós
+colocamos aqui vai ser
+
+35
+00:03:35,100 --> 00:03:40,300
+colocado neste dado do formulário
+específico quando formos povoar ele.
+
+36
+00:03:40,300 --> 00:03:45,300
+Então se mudarmos ele para 2, ele vai para
+o segundo símbolo. E se mudarmos,
+
+37
+00:03:45,300 --> 00:03:51,400
+claro, a data, ou o ano, mês, dia, ele vai
+mudar também.
+
+38
+00:03:51,400 --> 00:03:58,200
+Nós temos então o primeiro botão, que corresponde
+ao Search, e então o segundo
+
+39
+00:03:58,200 --> 00:04:06,100
+vai ser o botão Clear. Então a coisa que precisamos
+fazer aqui é fazer o dicionário.
+
+40
+00:04:06,100 --> 00:04:11,510
+Então precisamos, vamo ver como
+podemos fazer isso da forma mais rápida.
+
+41
+00:04:11,510 --> 00:04:19,600
+E vamos tentar automatizar adicionando
+as chaves e valores do dicionário,
+
+42
+00:04:19,600 --> 00:04:26,200
+vamos ver, para tudo aqui. Então vamos
+coletar, é, isto vai ser
+
+43
+00:04:26,200 --> 00:04:36,400
+demorado e chato, também. Então vamos ver
+se podemos fazer isso mais rápido.
+
+44
+00:04:36,400 --> 00:04:43,900
+E vamos ver, o primeiro problema é que
+precisamos copiar e colar estes dois aqui.
+
+45
+00:04:43,900 --> 00:04:52,400
+E, vamos ver, então se selecionarmos toda instância
+aqui, colocar o espaço... não, não vai funcionar
+
+46
+00:04:52,400 --> 00:04:58,000
+porque temos que fazer isso manualmente
+porque alguns valores estão vazios.
+
+47
+00:04:58,000 --> 00:05:07,500
+Ok? E vamos colocar chaves aqui.
+E então para estes três... estes três são,
+
+48
+00:05:07,500 --> 00:05:12,700
+a propósito, vamos ver se selecionamos
+todos eles com isso. Ok.
+
+49
+00:05:12,700 --> 00:05:19,200
+Então estes três são VIEWSTATE,
+VIEWSTATEGENERATOR, e EVENTVALIDATION.
+
+50
+00:05:19,200 --> 00:05:24,500
+Na maioria dos sites, eles vão estar listados como um token.
+Então esses são valores que mudam dinâmicamente.
+
+51
+00:05:24,500 --> 00:05:29,700
+E se eles fazem isso, então você pode escrever
+seletores para eles. Então se copiarmos e colarmos
+
+52
+00:05:29,700 --> 00:05:36,600
+este VIEWSTATE. Então Inspect,
+e então cole ele aqui, então você pode
+
+53
+00:05:36,600 --> 00:05:40,700
+extrair ele indo e selecionando todos
+os nomes com o VIEWSTATE,
+
+54
+00:05:40,700 --> 00:05:46,900
+ou todos os IDs com VIEWSTATE. Então
+o seletor XPath vai ser extremamente fácil.
+
+55
+00:05:46,900 --> 00:05:52,400
+E então você pode digitar
+"/@value" e então extrair o primeiro
+
+56
+00:05:52,400 --> 00:05:57,300
+valor, que vai ser correspondente
+a este valor específico
+
+57
+00:05:57,300 --> 00:06:02,500
+que estou destacando agora. Então vai
+ser extremamente fácil. Às vezes, alguns sites
+
+58
+00:06:02,500 --> 00:06:08,500
+mudam seus tokens e os valores
+que você colocar agora não vão funcionar amanhã,
+
+59
+00:06:08,500 --> 00:06:13,800
+mas alguns não fazem isso.
+Ok, então vamos fazer isto.
+
+60
+00:06:13,800 --> 00:06:20,800
+E para o primeiro valor, vamos terminar ele.
+E então o único valor que ficamos
+
+61
+00:06:20,800 --> 00:06:28,800
+vai ser o terceiro. Ok, então devemos
+estar bem para continuar. Começamos com um colchete,
+
+62
+00:06:28,800 --> 00:06:33,700
+e então digita, por exemplo,
+"data" é igual ao valor específico.
+
+63
+00:06:33,700 --> 00:06:41,000
+Então podemos copiar isto, e ir
+para o Terminal, e então colar isso aqui,
+
+64
+00:06:41,000 --> 00:06:47,000
+e tudo está funcionando bem.
+E então, finalmente, vamos ter
+
+65
+00:06:47,000 --> 00:06:53,600
+a variável page é igual ao FormRequest.
+E similar ao Request, você pode colocar
+
+66
+00:06:53,600 --> 00:07:00,840
+seu primeiro parâmetro para ser a URL. E a URL,
+você pode checar a URL para ser... você vai para a
+
+67
+00:07:00,840 --> 00:07:06,200
+aba Network, e então você clica no
+Search, vai para a URL específica.
+
+68
+00:07:06,200 --> 00:07:12,600
+Então neste caso, esta nossa URL, e você vai pegar
+da Request URL. Então você copia isso,
+
+69
+00:07:12,600 --> 00:07:20,300
+cola isso aqui. E então, finalmente, o outro
+único ou o segundo parâmetro que
+
+70
+00:07:20,300 --> 00:07:25,900
+você precisa usar é chamado formdata.
+E isso vai ser igual ao dado que
+
+71
+00:07:25,900 --> 00:07:31,000
+temos aqui com as chaves e valores do
+dicionário. Então, novamente, você pode modificar ele,
+
+72
+00:07:31,000 --> 00:07:36,100
+ou até mesmo remover esses valores
+vazios. Se você quer modificar, por exemplo,
+
+73
+00:07:36,100 --> 00:07:44,100
+vamos usar o primeiro StockCode aqui. E então
+formdata=data. Então precisamos também
+
+74
+00:07:44,100 --> 00:07:53,700
+copiar e colar esta variável "data"
+atualizada para ter o primeiro StockCode,
+
+75
+00:07:53,700 --> 00:08:02,000
+então podemos ter alguns resultados. E então
+se nós copiarmos e colarmos esta variável,
+
+76
+00:08:02,050 --> 00:08:08,000
+pressionar Enter, e então a última coisa que
+precisamos fazer aqui é buscar a página.
+
+77
+00:08:08,000 --> 00:08:13,200
+Então para fazer isso, claro vamos para o fetch,
+e então digitamos aqui, pressionamos Enter.
+
+78
+00:08:13,200 --> 00:08:18,080
+E isso deve ser carregado em cerca de cinco
+ou dez segundos. Isso, obviamente, depende,
+
+79
+00:08:18,080 --> 00:08:24,800
+de página para página.
+E agora, nós, vamos ver,
+
+80
+00:08:24,800 --> 00:08:31,000
+nós rastreamos posts 200, como você pode ver, não são GET.
+E a URL corresponde a esta daqui.
+
+81
+00:08:31,000 --> 00:08:35,750
+Então parece que tudo está
+funcionando. Então se tentarmos verificar isso,
+
+82
+00:08:35,750 --> 00:08:42,200
+vamos para o "view(response)", pressiona Enter.
+E isto, claro, vai carregar a página que
+
+83
+00:08:42,200 --> 00:08:47,720
+é retornado do Scrapy no "tmp" ou
+no arquivo local. E vemos que
+
+84
+00:08:47,720 --> 00:08:52,900
+o Scrapy vê a página resultante, que
+corresponde basicamente à página online,
+
+85
+00:08:52,900 --> 00:08:58,010
+ou a página real. Então nós
+fizemos o FormRequest com êxito.
+
+86
+00:08:58,010 --> 00:09:03,410
+FormRequests são, geralmente, um pouco...
+eu não vou dizer difícil, mas na realidade
+
+87
+00:09:03,410 --> 00:09:10,100
+demorado para fazer isso certo.
+Se você mudar, mesmo que levemente,
+
+88
+00:09:10,100 --> 00:09:14,100
+algo como isto, certo?
+Você pode nem notar isso,
+
+89
+00:09:14,100 --> 00:09:19,400
+mas você pode não conseguir os resultados reais.
+Então é realmente demorado,
+
+90
+00:09:19,400 --> 00:09:27,700
+então tenha certeza de abordar isso com,
+pelo menos, meia hora ou uma hora.
+
+91
+00:09:27,700 --> 00:09:34,000
+Se você está abordando pela primeira vez. A
+razão que eu uso este site específico é porque
+
+92
+00:09:34,000 --> 00:09:40,100
+ele é um bem básico, e com uma pequena
+modificação no formulário ou
+
+93
+00:09:40,100 --> 00:09:46,579
+para a variável de dado e a URL aqui. Então
+isso deve funcionar em qualquer outro
+
+94
+00:09:46,579 --> 00:09:52,500
+site que usa o FormRequest ou
+requests POST no site.
+
+95
+00:09:52,500 --> 00:09:58,209
+Então isso é tudo para este vídeo,
+vejo você no próximo.
+

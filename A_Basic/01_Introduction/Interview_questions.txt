@@ -1,0 +1,6 @@
+1. .msi vs .exe
+2. longest and Smallest numbers that can be computed with Python
+3. variable, Identifier  and keyword
+4. scripting vs programming language
+5. Python is a strictly typed language
+        1 + '2'

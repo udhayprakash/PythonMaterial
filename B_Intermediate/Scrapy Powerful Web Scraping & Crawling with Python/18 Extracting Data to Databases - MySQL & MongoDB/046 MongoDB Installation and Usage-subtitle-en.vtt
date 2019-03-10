@@ -1,0 +1,268 @@
+WEBVTT
+
+00:00.160 --> 00:00.570
+Hey there!
+
+00:00.570 --> 00:06.250
+So in this video we will cover MongoDB.
+MongoDB is so-called NoSQL database.
+
+00:06.360 --> 00:13.470
+So in this case data is stored as documents
+and also it uses JSON like syntax which makes it extremely
+
+00:13.730 --> 00:14.900
+comprehendable.
+
+00:15.030 --> 00:20.170
+So in relational database such as MySQL
+you have to map out pretty much everything.
+
+00:20.370 --> 00:26.650
+So what table you use, fields and types of fields which include:
+integers, dates, strings, etc...
+
+00:26.670 --> 00:32.860
+In MongoDB that is not the case.
+To install MongoDB,
+
+00:32.880 --> 00:35.250
+the process is really simple so just head over
+
+00:35.280 --> 00:42.230
+to their official docs and installation page
+After that, you have here a detailed description crossplatform
+
+00:42.240 --> 00:45.540
+depending on your of course operating system.
+
+00:45.540 --> 00:47.340
+After that is installed.
+
+00:47.340 --> 00:52.630
+We can go ahead and play around with the database in shell.
+So to do that...
+
+00:52.680 --> 01:00.660
+we can type in Terminal "mongo", and this will open their shell.
+To list out all of the databases we
+
+01:00.660 --> 01:08.590
+can type in so "show dbs" and as you can see here
+we have the default two, admin and local, and to create database
+
+01:08.610 --> 01:16.200
+we will type in for example "use school_db"
+which will be school database.
+
+01:16.440 --> 01:22.170
+And if we want to see in which database we are currently in,
+we can simply enter "db", but this is
+
+01:22.170 --> 01:32.130
+not needed because we are going to get straight away a message
+that we switched to the database that is
+
+01:32.130 --> 01:39.270
+named school_db after we created it, 
+and also to create a user...
+
+01:39.270 --> 01:43.710
+we can type in "db.createUser"
+
+01:44.610 --> 01:53.160
+And then parenthesis and in parentheses will type in curly brackets
+and in it we will creates "user" which
+
+01:53.160 --> 01:58.090
+can be "principal" and the password.
+
+01:58.160 --> 01:59.010
+So "pwd"
+
+01:59.190 --> 02:03.090
+It's going to be "123" for example.
+
+02:03.090 --> 02:10.900
+And finally "roles" will be sort of rules which can be used later on.
+
+02:10.900 --> 02:14.890
+So rules will be in square brackets and the first rule will be 
+
+02:14.920 --> 02:16.350
+"readWrite"
+
+02:16.460 --> 02:22.250
+And the second rule will be "dbAdmin" to set rule.
+
+02:22.510 --> 02:31.120
+And if we hit Enter, or type this in and hit Enter,
+this will be as you can see successfully
+
+02:31.660 --> 02:32.490
+added user.
+
+02:32.500 --> 02:40.910
+So we have to next collect or use collections
+Collections are similar to tables in MySQL.
+
+02:40.960 --> 02:51.370
+So to get or create a collection, we can type in
+"db.createCollection()", the collection name
+
+02:51.370 --> 03:02.530
+is going to be "student" or "students"
+and then we have the OK status which is perfect and to show
+
+03:02.560 --> 03:05.520
+collections we can type in just "show collections".
+
+03:05.560 --> 03:14.180
+And this will as you can see as name indicates show collections.
+To insert some data we can type in "db" then
+
+03:14.230 --> 03:18.130
+name of the collection which in this case is students.
+
+03:18.140 --> 03:27.100
+So "db.students" and then "insert"
+and in that insert we can type and again in parentheses and
+
+03:27.100 --> 03:30.560
+then we type in in curly brackets.
+
+03:30.620 --> 03:40.960
+The for example the first datapoint,
+it can be "name: "Mike"" for example and then "age" can be
+
+03:40.960 --> 03:48.780
+for example "23" years old
+and the "grade" can be "A" for example.
+
+03:49.720 --> 03:52.470
+And as you can see we get the right results.
+
+03:52.480 --> 03:56.500
+That is one or one row of data is inserted.
+
+03:56.710 --> 04:02.960
+So to show the data we can type in just simply "db",
+then the name of the collection which is "students"
+
+04:03.010 --> 04:06.820
+and then "find()", hit Enter.
+
+04:06.850 --> 04:16.060
+And as you can see here we have the curly brackets
+or one row of data with the addition of the "_id" which
+
+04:16.060 --> 04:22.330
+is going to always have this unique and special ObjectId.
+
+04:22.390 --> 04:28.170
+So it's going to be dynamically of course assigned to different kinds of rows.
+
+04:28.210 --> 04:31.630
+So it's going to be once again unique which is great.
+
+04:31.630 --> 04:39.010
+So in MySQL database, you have to actually do this manually
+if you wanted to have something
+
+04:39.010 --> 04:39.820
+similar.
+
+04:39.850 --> 04:48.880
+So to actually insert few of different rows of data
+all at once you can type in between the parentheses
+
+04:48.880 --> 04:57.010
+the square brackets which we will do
+but let's first just copy and paste this line
+
+04:58.780 --> 05:06.120
+because it's going to be a little simpler
+to actually write it into the text editor.
+
+05:06.430 --> 05:16.450
+So for example, let's use curly brackets
+and we will use first name or first row of data, "name" will be
+
+05:17.450 --> 05:18.660
+"Michael".
+
+05:19.630 --> 05:32.380
+And then the "age" will be for example "40" years old
+and "grade" will be let's say a "B+", then we will
+
+05:33.220 --> 05:42.340
+type in ",", and then again curly brackets or brackets
+are going to be needed here and then we can
+
+05:42.340 --> 05:43.520
+type in ",".
+
+05:43.570 --> 05:49.270
+And finally let's prettify it a little bit more.
+
+05:49.330 --> 05:56.200
+So second name will be or second row of data,
+the "name" will be "Josh" for example.
+
+05:56.230 --> 06:06.320
+"age" will be let's say "35" years old
+and "grade" will be "C-".
+
+06:06.640 --> 06:19.160
+So this is how you actually get two or more different rows of data.
+Let's copy and paste this, delete this.
+
+06:19.300 --> 06:28.360
+And if we once again find it or list out
+the results here, we will see three, perfect.
+
+06:28.370 --> 06:36.570
+So we have three different rows of data,
+all with different names and different ObjectIds and ages
+
+06:36.570 --> 06:38.190
+and grades of course.
+
+06:38.190 --> 06:39.090
+So that's perfect.
+
+06:39.090 --> 06:48.630
+So to actually prettify it sort of speak and display it
+in a more readable format, we can type in alongside
+
+06:48.630 --> 06:56.440
+with defined open and close parentheses,
+we can type in "pretty()", hit Enter.
+
+06:56.440 --> 07:03.320
+And as you can see it's a lot more readable right now.
+To remove the collection...
+
+07:03.370 --> 07:13.710
+you can type in "db.student.remove({})", which
+
+07:13.710 --> 07:22.080
+will remove all of the collection, or rows of data
+and here if we prettify the results you'll see that there
+
+07:22.170 --> 07:23.760
+isn't any results.
+
+07:23.760 --> 07:27.710
+Finally how to actually drop or remove the database, to do that
+
+07:27.720 --> 07:35.400
+we can type in "db.dropDatabase()", hit Enter.
+
+07:35.400 --> 07:42.110
+And as you can see the school database is dropped,
+and that'll be it for this video, in the very next one
+
+07:42.120 --> 07:48.870
+we will cover how to insert the data
+that is scraped into the the MongoDB. See you there.

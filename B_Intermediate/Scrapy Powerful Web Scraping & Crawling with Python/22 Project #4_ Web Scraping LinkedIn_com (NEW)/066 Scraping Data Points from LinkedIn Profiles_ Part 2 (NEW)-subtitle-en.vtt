@@ -1,0 +1,433 @@
+WEBVTT FILE
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:06.750
+Hey there! So we are continuing from our
+latest video, and the next data point
+
+00:00:06.750 --> 00:00:13.000
+that we will scrape is going to be location. 
+So location is going to be found from here,
+
+00:00:13.000 --> 00:00:19.200
+as you can see, London, United Kingdom. 
+So we go in and Inspect it.
+
+00:00:19.200 --> 00:00:24.000
+And it's similar to the last one, 
+so pv-top-card-section__school
+
+00:00:24.000 --> 00:00:31.900
+Here we have pv-top-card-section__location 
+So since we already have the code,
+
+00:00:31.900 --> 00:00:38.800
+we can type in the... let's see, for example, 
+let's copy and paste this whole statement as it is,
+
+00:00:38.800 --> 00:00:44.000
+and name it, of course, location 
+variable name is equal to the, this one.
+
+00:00:44.000 --> 00:00:51.600
+And then just enter the location instead of school. 
+I believe this will work. Yeah, it should be working.
+
+00:00:51.600 --> 00:00:59.400
+So, let's see. Let's copy the statement, 
+paste this into our Terminal, hit Enter. Perfect.
+
+00:00:59.400 --> 00:01:05.300
+As you can see, it's going to be 
+locating the London, United Kingdom.
+
+00:01:05.300 --> 00:01:13.979
+Let's see, the latest data point that
+we can scrape is going to be the URL.
+
+00:01:13.979 --> 00:01:23.800
+And if you remember correctly, it's going to be 
+simple as entering driver.current_url. Hit Enter.
+
+00:01:23.800 --> 00:01:28.100
+And, as you can see, it's going 
+to be corresponding to this URL.
+
+00:01:28.100 --> 00:01:34.500
+So we can copy this, and 
+paste this into our text editor,
+
+00:01:34.500 --> 00:01:41.000
+call this, for example, 
+linkedin_url = driver.current_url
+
+00:01:41.000 --> 00:01:47.500
+So the, let's see, next thing that we can do is, 
+after we run this, so after the script,
+
+00:01:47.500 --> 00:01:53.500
+we'll load each and every URL. 
+In our case, it's going to be 10 URLs.
+
+00:01:53.500 --> 00:01:59.930
+We can print our results that are scraped from here. 
+So to do that we will just use the print statement,
+
+00:01:59.930 --> 00:02:11.500
+and we can... first, let's type in here the
+new lines. So to do that, we type in '\n'
+
+00:02:11.500 --> 00:02:15.320
+and then... in between it, so it's more
+readable, as you will see in a moment.
+
+00:02:15.320 --> 00:02:22.800
+So... and then we can type in first the
+name, which is going to be located here.
+
+00:02:22.800 --> 00:02:27.000
+So we can copy this, and paste this into here.
+
+00:02:27.000 --> 00:02:38.050
+Then the second data point is going to be job_title. 
+So we type in 'Job Title: ' + job_title
+
+00:02:38.050 --> 00:02:49.000
+The third data point is school, 
+so print 'School:  ' + school
+
+00:02:49.000 --> 00:02:57.800
+and then location, and also LinkedIn URL, 
+so print 'Location: ' + location
+
+00:02:57.800 --> 00:03:09.000
+And, finally, the URL. So we can type in just the URL. 
+And this is the, yeah, this is the data point.
+
+00:03:09.000 --> 00:03:19.500
+So, finally, we will load our CSV file, which the name, 
+it's going to inherit from the  parameters.py file.
+
+00:03:19.500 --> 00:03:25.900
+Let's see. Let's do this somewhere, 
+for example, here. So we can type in...
+
+00:03:25.900 --> 00:03:33.400
+first, of course, we need to import. So 
+we import CSV as a standard module.
+
+00:03:33.400 --> 00:03:40.700
+And then we can type in here:
+writer = csv.writer
+
+00:03:40.700 --> 00:03:45.200
+And then in open and closed parentheses, we open.
+
+00:03:45.200 --> 00:03:54.000
+The file name is going to be the first parameter, 
+which is going to be from the parameters.file_name.
+
+00:03:54.000 --> 00:04:04.100
+And then we type in our second parameters, 
+second, sorry, parameter, which is going to be 'wb'
+
+00:04:04.100 --> 00:04:09.100
+This, pretty much, corresponds to writing to the file.
+
+00:04:09.100 --> 00:04:17.300
+And then we type in first the writerow. And then the 
+first row, of course, is going to be our header row.
+
+00:04:17.300 --> 00:04:27.000
+So we type in here the Name. The
+second one is the... let's see.
+
+00:04:27.000 --> 00:04:31.500
+We can, pretty much, just do this. So 
+we can copy this, and paste this here,
+
+00:04:31.500 --> 00:04:42.500
+so Job Title, comma. The third one is going to be 
+School. The fourth one is going to be Location.
+
+00:04:42.500 --> 00:04:49.500
+So we copy this, paste this in, and 
+the latest one is going to be URL.
+
+00:04:49.500 --> 00:04:55.000
+So the syntax, really, for writing to the CSV file, 
+it's pretty simple, as you can see.
+
+00:04:55.000 --> 00:05:00.300
+We, again, just load the writer, and then writerow, 
+and with the corresponding list of items
+
+00:05:00.300 --> 00:05:08.100
+that we would like to add. So this will write to
+the first row, which is corresponding to our header.
+
+00:05:08.100 --> 00:05:13.500
+So we are naming it accordingly. 
+Then what we'll need to do...
+
+00:05:13.500 --> 00:05:19.400
+so, currently, we are into, or in the for loop,
+which is going to be iterated
+
+00:05:19.400 --> 00:05:26.100
+over all of our collected from the Google 
+search query, all of our linked in URLs.
+
+00:05:26.100 --> 00:05:36.300
+So we here type in writer, and 
+then also... sorry, writer.writerow
+
+00:05:36.300 --> 00:05:46.800
+And then we type in here the name, 
+and then we can encode it with the utf-8,
+
+00:05:46.800 --> 00:05:52.800
+just to make sure that it will work. 
+Then the second data point is... sorry.
+
+00:05:52.800 --> 00:06:00.500
+This will be in the list because writerow, as you 
+saw here, is going to be in the list of the items.
+
+00:06:00.500 --> 00:06:05.900
+So the second data point... let's actually copy this.
+
+00:06:05.900 --> 00:06:10.200
+So, let's see, name, job_title, 
+so school, location, linkedin_url
+
+00:06:10.200 --> 00:06:19.900
+If we copy this, and then paste it somewhere here, 
+and then we can type in here to speed it up a little bit --
+
+00:06:19.900 --> 00:06:24.910
+this boring part. We type in also here utf-8.
+
+00:06:24.910 --> 00:06:31.000
+We do encoding just to make sure that
+all the characters are going to get loaded.
+
+00:06:31.000 --> 00:06:35.800
+We wrap our list of items in
+square brackets, and then writerow
+
+00:06:35.800 --> 00:06:44.000
+in ordinary brackets. And to make
+sure that everything is working correctly,
+
+00:06:44.000 --> 00:06:49.200
+let's see, let's save the file,
+and let's run it.
+
+00:06:49.200 --> 00:06:55.120
+This... let's actually just test it out, also, 
+once again. I believe everything will be working fine.
+
+00:06:55.120 --> 00:06:59.170
+So we're importing CSV. 
+Yeah, it should be working.
+
+00:06:59.170 --> 00:07:05.000
+So let's go back to our Desktop, and
+finally run our script. So open the Terminal,
+
+00:07:05.000 --> 00:07:12.520
+change the directory to the Desktop, 
+and then type in python script.py,
+
+00:07:12.520 --> 00:07:18.810
+and then hit Enter. As you can see, 
+results_file.csv file is auto-generated.
+
+00:07:18.810 --> 00:07:23.500
+Right now, it's not populated yet 
+because we haven't scraped anything.
+
+00:07:23.500 --> 00:07:31.500
+And we also load LinkedIn, just 
+to have the profiles ready to scrape.
+
+00:07:31.500 --> 00:07:37.000
+We're entering this search query, and then 
+we should start to iterate over profiles,
+
+00:07:37.000 --> 00:07:47.500
+and this is the first one. So, let's see if this  
+is going to be working. Okay, let's see.
+
+00:07:47.500 --> 00:07:52.800
+It's not going to be found. So, let's see, 
+print 'School, as you can see here,
+
+00:07:52.800 --> 00:08:01.600
+we don't get the school name, so then we get 
+the TypeError cannot, really, list out the string,
+
+00:08:01.600 --> 00:08:11.000
+and also the NoneType objects. So 
+this is found, let's see, from here.
+
+00:08:11.000 --> 00:08:19.800
+So school is going to be empty. So what I 
+do in this type of case is, really, write function,
+
+00:08:19.800 --> 00:08:29.000
+which is going to be going something
+like, let's name it, for example, validate_field
+
+00:08:29.000 --> 00:08:38.500
+And then type in here (field) as a 
+parameter. And here we can type in if field:
+
+00:08:38.500 --> 00:08:45.700
+then we will pass it. Because if field is 
+present, then it's not really needed, right?
+
+00:08:45.700 --> 00:08:50.400
+And then we type in here else:
+field is equal to empty string,
+
+00:08:50.400 --> 00:08:53.500
+and then, finally, we return field.
+
+00:08:53.500 --> 00:08:59.500
+So I'll explain, also, once again, this function 
+or what exactly it does, in a moment.
+
+00:08:59.500 --> 00:09:07.400
+So we can copy this. And then, let's see, 
+we can somewhere here, do something like, let's see,
+
+00:09:07.400 --> 00:09:13.800
+name, job_title, school, location, and 
+linkedin_url. Copy all of these different data points,
+
+00:09:13.800 --> 00:09:25.900
+paste them in, indent them correctly, and 
+then, once again, do something like this.
+
+00:09:25.900 --> 00:09:28.600
+And then here we can add our function,
+
+00:09:28.600 --> 00:09:35.249
+which is going to be going into, let's see,
+validate_field, if I remember correctly. Yeah.
+
+00:09:35.249 --> 00:09:46.000
+And in the open and closed parentheses, we
+can add our field. So, in this case... let's see,
+
+00:09:46.000 --> 00:09:53.500
+in this case, on this profile, we haven't 
+gotten any school. So let's close this.
+
+00:09:53.500 --> 00:09:59.000
+So we will... after it goes here, 
+it will validate our school field.
+
+00:09:59.000 --> 00:10:03.600
+So if we go to the validate_field function, if field:
+
+00:10:03.600 --> 00:10:10.000
+it will pass it. So, in this case, since field 
+is not defined or none, it will go to the else,
+
+00:10:10.000 --> 00:10:15.800
+and set the field as an empty string, which 
+it also is, really, because there isn't, really, any field.
+
+00:10:15.800 --> 00:10:23.700
+And then it will finally return field. If we... 
+let's save this. If we go to the CSV file and open it,
+
+00:10:23.700 --> 00:10:28.400
+you will see only header. So 
+this is because we haven't actually
+
+00:10:28.400 --> 00:10:35.700
+scraped or actually gotten to the
+second writerow statement in our script.
+
+00:10:35.700 --> 00:10:40.500
+So script is saved. So we can 
+go back to our Terminal,
+
+00:10:40.500 --> 00:10:52.700
+and run once again our script. Let's fill this in.
+
+00:10:52.700 --> 00:11:02.000
+So, right now, it should go to google.com
+and enter our search query.
+
+00:11:02.000 --> 00:11:13.700
+And, finally, we should go to the Paul's,
+or first, really, LinkedIn profile page.
+
+00:11:13.720 --> 00:11:18.360
+Okay, perfect. So it works. And, as you 
+can see here, school is going to be empty.
+
+00:11:18.360 --> 00:11:23.500
+Location is going to be populated, 
+and every, really, other data point here
+
+00:11:23.500 --> 00:11:29.000
+is going to be populated, since we 
+added new lines, as you can see from...
+
+00:11:29.000 --> 00:11:33.900
+let's go back to our sublime text. 
+Since we added the new lines,
+
+00:11:33.900 --> 00:11:39.810
+the Terminal, really, output is going
+to be a lot more readable, as you can see.
+
+00:11:39.810 --> 00:11:49.000
+Let's see, let's minimize this. And, let's see, 
+so this is the first, second, third, fourth, fifth.
+
+00:11:49.000 --> 00:11:56.300
+So let's wait a half a minute or so after
+this is all finished. So, as you can see,
+
+00:11:56.300 --> 00:12:03.800
+this also last person didn't have the school. 
+This one has all of the other data points.
+
+00:12:03.800 --> 00:12:10.500
+So everything is collected, since it's 
+going to be listed on the profile page.
+
+00:12:10.500 --> 00:12:16.500
+And it should be, for a profile or two, 
+it should be now completed.
+
+00:12:16.500 --> 00:12:23.500
+So let's wait until it's done.
+
+00:12:23.540 --> 00:12:29.000
+Okay, perfect. So it's done. 
+If we go to the results_file.csv,
+
+00:12:29.000 --> 00:12:34.500
+it's going to be populated with the 
+data fields, as you can see from here.
+
+00:12:34.500 --> 00:12:40.000
+So this will be it for this video. In the 
+very next one, we will iterate, once again,
+
+00:12:40.000 --> 00:12:46.900
+or, really, run the script, once again, and click on 
+the Connect button on each and every profile.
+
+00:12:46.900 --> 00:12:50.560
+So I'll see you in the very next video.
+

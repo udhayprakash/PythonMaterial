@@ -1,0 +1,534 @@
+﻿WEBVTT
+
+1
+00:00:00.308 --> 00:00:04.015
+Hey there! So in this video we are going to
+
+2
+00:00:04.015 --> 00:00:07.112
+scrape the three data points that were previously
+
+3
+00:00:07.112 --> 00:00:09.623
+talked about in the video. So, text, author, and then
+
+4
+00:00:09.623 --> 00:00:12.557
+finally the tags. So, let's begin right away.
+
+5
+00:00:12.557 --> 00:00:16.724
+Let's go back to our Terminal, and put it aside for now,
+
+6
+00:00:17.018 --> 00:00:21.185
+so the text will be, or this data point will be the
+
+7
+00:00:21.697 --> 00:00:24.738
+first data point that we will collect.
+
+8
+00:00:24.738 --> 00:00:28.831
+So to do that, we will type in quote.xpath.
+
+9
+00:00:28.831 --> 00:00:32.997
+So, this is called dynamic or custom selector,
+
+10
+00:00:34.744 --> 00:00:37.446
+so we will not type in response.xpath we will
+
+11
+00:00:37.446 --> 00:00:39.762
+type in quote.xpath.
+
+12
+00:00:39.762 --> 00:00:43.929
+quote.xpath will pretty much search this entire
+
+13
+00:00:44.352 --> 00:00:48.519
+HTML. So if we type in response.xpath, this will
+
+14
+00:00:49.303 --> 00:00:53.470
+pretty much search the entire page or entire output or the
+
+15
+00:00:54.887 --> 00:00:56.326
+entire page really.
+
+16
+00:00:56.326 --> 00:01:00.159
+So if we type here, '//a', with the
+
+17
+00:01:01.763 --> 00:01:04.117
+response.xpath, hit enter you will see that
+
+18
+00:01:04.117 --> 00:01:05.867
+a lot of data is going to get returned.
+
+19
+00:01:05.867 --> 00:01:08.486
+If we did the same thing with the quote or any other
+
+20
+00:01:08.486 --> 00:01:12.177
+custom selector that we write we will have to use
+
+21
+00:01:12.177 --> 00:01:16.094
+the dot to ensure that we get only
+
+22
+00:01:19.354 --> 00:01:23.029
+content from the selector itself, so in this case
+
+23
+00:01:23.088 --> 00:01:27.255
+this HTML. So we will hit Enter and as you can see
+
+24
+00:01:27.535 --> 00:01:31.035
+a lot less &lt;a&gt; tags or &lt;a&gt; HTML nodes are found.
+
+25
+00:01:32.583 --> 00:01:36.531
+So we will type in quote.xpath, for now we will
+
+26
+00:01:36.531 --> 00:01:40.377
+just leave it as it is so we will type in "." just
+
+27
+00:01:40.377 --> 00:01:44.544
+not to forget. And so we go to the text, go to Inspect
+
+28
+00:01:46.411 --> 00:01:50.578
+and here we have &lt;span&gt; class and then value of the text,
+
+29
+00:01:50.625 --> 00:01:54.648
+and also itemprop which equals to the text. And then in it
+
+30
+00:01:54.648 --> 00:01:58.815
+we have our text in double double quotes, so to speak.
+
+31
+00:02:00.619 --> 00:02:04.786
+So there are multiple ways of getting to the data.
+
+32
+00:02:04.920 --> 00:02:08.525
+I will share two different ways, the first one will be
+
+33
+00:02:08.525 --> 00:02:11.428
+with the class, and then the second one will be with the
+
+34
+00:02:11.428 --> 00:02:12.609
+itemprop.
+
+35
+00:02:12.609 --> 00:02:16.776
+So with the class, we go to the Terminal and type in class
+
+36
+00:02:17.381 --> 00:02:20.909
+so find every instance of the class. So this is pretty much
+
+37
+00:02:20.909 --> 00:02:24.576
+the same XPath, the same XPath syntax as previously.
+
+38
+00:02:25.508 --> 00:02:29.513
+So we will type in here class text, so the text will be
+
+39
+00:02:29.513 --> 00:02:33.680
+the value, hit Enter, and let's see something is wrong.
+
+40
+00:02:34.468 --> 00:02:38.635
+Sorry I forgot the asterisk and hit enter right now.
+
+41
+00:02:38.696 --> 00:02:42.333
+And we will see that &lt;span&gt; class text, itemprop text,
+
+42
+00:02:42.333 --> 00:02:45.067
+is equal and then this is the double quote.
+
+43
+00:02:45.067 --> 00:02:49.234
+So if we type in .extract(), you will see that we get
+
+44
+00:02:49.720 --> 00:02:52.053
+our data in the list itself.
+
+45
+00:02:53.276 --> 00:02:56.393
+So to prettify it, or make it more readable,
+
+46
+00:02:56.393 --> 00:03:00.123
+we should go into the text or extract text and call
+
+47
+00:03:00.123 --> 00:03:01.290
+extract_first()
+
+48
+00:03:02.236 --> 00:03:06.308
+Hit Enter and as you can see here's our data,
+
+49
+00:03:06.308 --> 00:03:10.308
+I believe if we just print out quote we will get
+
+50
+00:03:11.744 --> 00:03:15.911
+even more readable, as you can see this pretty much
+
+51
+00:03:16.060 --> 00:03:20.227
+corresponds to the double quotes that are read from here.
+
+52
+00:03:20.530 --> 00:03:24.697
+So if you type in print before the statement you will get
+
+53
+00:03:24.796 --> 00:03:28.387
+sort of prettified output let's call it that way.
+
+54
+00:03:28.423 --> 00:03:32.590
+So this will be the text variable, so we hit Enter
+
+55
+00:03:33.751 --> 00:03:36.758
+and we copy and paste it into our Text Editor.
+
+56
+00:03:36.758 --> 00:03:40.758
+So copy, and paste it, so we will input it here.
+
+57
+00:03:41.735 --> 00:03:45.902
+The next data point that we want to collect is the author.
+
+58
+00:03:47.725 --> 00:03:51.231
+So we click here inspect also, and here, oh sorry,
+
+59
+00:03:51.231 --> 00:03:54.553
+forgot to mention the second way of actually getting
+
+60
+00:03:54.553 --> 00:03:58.271
+to the data, you can also use itemprop and then the text.
+
+61
+00:03:58.271 --> 00:04:02.438
+So, believe it or not it's pretty simple. You only need
+
+62
+00:04:03.951 --> 00:04:08.118
+to change the class and make it itemprop, and that will be
+
+63
+00:04:10.299 --> 00:04:11.469
+pretty much it.
+
+64
+00:04:11.469 --> 00:04:14.382
+So the text value is going to be the same as in the class
+
+65
+00:04:14.382 --> 00:04:17.634
+as you can see so if we hit Enter you will see the same
+
+66
+00:04:17.634 --> 00:04:20.641
+data displayed, so if we type in here now text you will
+
+67
+00:04:20.641 --> 00:04:23.743
+see the same quote is going to be selected.
+
+68
+00:04:23.743 --> 00:04:27.910
+Now, if we didn't use the, let's remove the variable,
+
+69
+00:04:29.713 --> 00:04:33.202
+if we didn't use the dot as you will see in a moment
+
+70
+00:04:33.202 --> 00:04:36.962
+if we hit Enter the same data point will be collected
+
+71
+00:04:36.962 --> 00:04:40.306
+but if we type in extract() you will see that pretty much
+
+72
+00:04:40.306 --> 00:04:43.455
+ten quotes will be selected, and that is the reason why
+
+73
+00:04:43.455 --> 00:04:46.645
+you have to use dot when you are pretty much getting
+
+74
+00:04:46.645 --> 00:04:50.006
+data from the custom selector as we did here from the
+
+75
+00:04:50.006 --> 00:04:54.173
+first quote, so pretty much this statement is as same
+
+76
+00:04:54.638 --> 00:04:58.367
+one as reading out response.xpath, and then
+
+77
+00:04:58.367 --> 00:04:59.364
+this statement.
+
+78
+00:04:59.364 --> 00:05:03.531
+So, you should really pay attention to not messing this up,
+
+79
+00:05:04.878 --> 00:05:09.045
+because it's a bit trickier to the beginners.
+
+80
+00:05:09.356 --> 00:05:11.840
+Okay, so let's begin with the authors.
+
+81
+00:05:11.840 --> 00:05:15.424
+Let's go to the Inspect and here we have the class author
+
+82
+00:05:15.424 --> 00:05:19.073
+and itemprop author, so let's use for example itemprop
+
+83
+00:05:19.073 --> 00:05:20.707
+author.
+
+84
+00:05:20.707 --> 00:05:24.863
+Pretty much the statement is going to be the same so
+
+85
+00:05:24.863 --> 00:05:28.175
+itemprop text, so instead of text the value is just
+
+86
+00:05:28.175 --> 00:05:30.834
+going to be author so this is really simple.
+
+87
+00:05:30.834 --> 00:05:35.001
+So, you just type in here author the itemprop, so this
+
+88
+00:05:35.684 --> 00:05:39.411
+statement reads out once again find every itemprop with
+
+89
+00:05:39.411 --> 00:05:42.226
+the value of author select the text and select the
+
+90
+00:05:42.226 --> 00:05:43.901
+first instance.
+
+91
+00:05:43.901 --> 00:05:48.068
+Hit Enter, and let's not forget our "." here, and hit Enter
+
+92
+00:05:50.240 --> 00:05:54.407
+and that will be pretty much our data that we are after
+
+93
+00:05:55.050 --> 00:05:57.070
+as you can see.
+
+94
+00:05:57.070 --> 00:06:01.237
+So copy and paste this into our Text Editor, so
+
+95
+00:06:01.418 --> 00:06:05.585
+this will be the author is equal to this statement
+
+96
+00:06:06.070 --> 00:06:08.237
+and the final one is tags.
+
+97
+00:06:09.089 --> 00:06:13.256
+This will be equal to the, pretty much, so if we go
+
+98
+00:06:13.353 --> 00:06:17.520
+into Inspect, this will be from the class, so we have here
+
+99
+00:06:18.319 --> 00:06:22.486
+four different tags as you can see and each one is in the
+
+100
+00:06:22.528 --> 00:06:26.695
+&lt;a&gt; HTML node and it has class and the value is tag.
+
+101
+00:06:26.957 --> 00:06:31.124
+And also we can go in and scrape it from the meta class.
+
+102
+00:06:32.300 --> 00:06:36.467
+So, let's do this for example, so we can go to the itemprop
+
+103
+00:06:36.843 --> 00:06:41.010
+then type in keywords, and then we can extract not the
+
+104
+00:06:41.098 --> 00:06:43.100
+text but from the content.
+
+105
+00:06:43.100 --> 00:06:46.033
+As you can see it contains our data in a more readable
+
+106
+00:06:46.033 --> 00:06:47.814
+format, or it's a bit easier.
+
+107
+00:06:48.123 --> 00:06:52.290
+So itemprop, so let's go to the Terminal, so we go and
+
+108
+00:06:54.615 --> 00:06:57.807
+and, go to the itemprop and then value is going to be
+
+109
+00:06:57.982 --> 00:07:02.149
+keyword so we can copy and paste it pretty much.
+
+110
+00:07:02.626 --> 00:07:06.793
+Paste it here, and then hit Enter and as you will see in
+
+111
+00:07:08.283 --> 00:07:11.931
+a moment nothing will happen and the reason why is because
+
+112
+00:07:11.931 --> 00:07:15.251
+we are selecting the text but what we want to do is select
+
+113
+00:07:15.251 --> 00:07:18.644
+the content as you can see from here.
+
+114
+00:07:18.644 --> 00:07:22.139
+So we type in, the syntax is a bit different, so you type in
+
+115
+00:07:22.472 --> 00:07:26.542
+"@" at this point and then content, hit Enter and as you
+
+116
+00:07:26.592 --> 00:07:28.817
+as you can see here is our data.
+
+117
+00:07:29.575 --> 00:07:33.742
+You can also write the class and then tag, so to do that
+
+118
+00:07:34.929 --> 00:07:39.012
+we will use the extract(), we will select the text(),
+
+119
+00:07:42.518 --> 00:07:46.500
+because we are going to select the, this pretty much
+
+120
+00:07:46.500 --> 00:07:49.316
+data points that I'm highlighting right now.
+
+121
+00:07:49.316 --> 00:07:53.483
+And here we will use the tag, and finally it will not be
+
+122
+00:07:53.945 --> 00:07:55.695
+itemprop it will be class.
+
+123
+00:07:55.695 --> 00:07:58.824
+So as you can see it's fairly simple and straightforward,
+
+124
+00:07:58.824 --> 00:08:02.991
+and in this case we have just a list of the tags and here
+
+125
+00:08:03.578 --> 00:08:07.745
+we have the string or unicode of the tag so either one
+
+126
+00:08:07.886 --> 00:08:09.219
+will do the job.
+
+127
+00:08:10.629 --> 00:08:14.796
+Copy and paste the output or the statement from the
+
+128
+00:08:15.444 --> 00:08:19.611
+Terminal, paste it in and that will be pretty much it
+
+129
+00:08:20.573 --> 00:08:22.523
+for this video.
+
+130
+00:08:22.523 --> 00:08:25.846
+So in the very next one we will print out our data to the
+
+131
+00:08:25.846 --> 00:08:30.013
+Scrapy shell and we will start to iterate over the pages of
+
+132
+00:08:30.702 --> 00:08:33.740
+the results and grab a hundred or so different quotes.
+
+133
+00:08:33.740 --> 00:08:34.573
+See you there!
+

@@ -1,0 +1,332 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>038 Craigslist Scrapy Spider #3 8O Multiple Pages</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>To do the same for all the result pages of Craigslists Architecture &amp; Engineering jobs, you need to extract the next URLs and then apply the same <code>parse()</code> function on them.</p>
+
+<h4><br>Extracting Next URLs</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>To extract the next URLs, right-click the one in the first page, and Inspect it. Here is how the HTML code looks like:</p>
+
+
+
+
+
+
+
+
+
+<p><code>&lt;a href="/search/egr?s=120" class="button next" title="next page"&gt;next &gt; &lt;/a&gt;</code><br><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>So here is the code you need. <em>Be careful!</em> You should now get out of the for loop.<br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">relative_next_url = response.xpath('//a[@class="button next"]/@href').extract_first()
+absolute_next_url = response.urljoin(relative_next_url)
+
+yield Request(absolute_next_url, callback=self.parse)</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Note that the next URL is in an &lt;a&gt; tag whose class name is button next. You need to extract the value of the attribute href so that is why you should use <code>@href</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Just as you did in the previous part of this Scrapy tutorial, you need to extract the absolute next url using the <code>urljoin() </code>method.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Finally, yield the <code>Request()</code> method with the <code>absolute_next_url</code> and this requires a callback function, which means a function to apply on this URL; in this case, it is the same <code>parse()</code> function which extracts the titles, addresses and URLs of jobs from each page. Note that in the case the <code>parse()</code> function is the callback, you can delete this <code>callback=self.parse</code> because the <code>parse()</code> function is a callback by default, even if you do not explicitly state that.</p><p>Of course, you must import the Request method before using it:</p>
+
+
+
+
+
+
+
+
+
+<p><code>from scrapy import Request</code> <br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4>Running the Spider and Storing Data</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Again, just as we did in the first and second parts of this Scrapy tutorial, you can run your spider and save the scraped data to a CSV file using this command:</p>
+
+
+
+
+
+
+
+
+
+<p><code>scrapy crawl jobs -o result-jobs-multi-pages.csv</code></p>
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

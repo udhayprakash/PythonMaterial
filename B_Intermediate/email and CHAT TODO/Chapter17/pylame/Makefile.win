@@ -1,0 +1,36 @@
+all: clame.exe pylame1.dll pylame2.dll pylame3.dll
+
+clame.exe: clame.c
+	cl /IC:\lame-3.96.1\include clame.c \
+		C:\lame-3.96.1\libmp3lame\Release\libmp3lame.lib \
+		C:\lame-3.96.1\mpglib\Release\mpglib.lib
+
+pylame1.dll: pylame1.c clame.c
+	cl /LD /IC:\Python24\include \
+		/IC:\lame-3.96.1\include \
+		pylame1.c \
+		clame.c \
+		C:\Python24\libs\python24.lib \
+		C:\lame-3.96.1\libmp3lame\Release\libmp3lame.lib \
+		C:\lame-3.96.1\mpglib\Release\mpglib.lib
+
+pylame2.dll: pylame2.c
+	cl /LD /IC:\Python24\include \
+		/IC:\lame-3.96.1\include pylame2.c \
+		C:\Python24\libs\python24.lib \
+		C:\lame-3.96.1\libmp3lame\Release\libmp3lame.lib \
+		C:\lame-3.96.1\mpglib\Release\mpglib.lib
+
+pylame3.dll: pylame3.c
+	cl /LD /IC:\Python24\include \
+		/IC:\lame-3.96.1\include pylame3.c \
+		C:\Python24\libs\python24.lib \
+		C:\lame-3.96.1\libmp3lame\Release\libmp3lame.lib \
+		C:\lame-3.96.1\mpglib\Release\mpglib.lib
+
+clean:
+	if exist clame.exe del /f clame.exe
+	if exist pylame1.dll del /f pylame1.dll
+	if exist pylame2.dll del /f pylame2.dll
+	if exist pylame3.dll del /f pylame3.dll
+

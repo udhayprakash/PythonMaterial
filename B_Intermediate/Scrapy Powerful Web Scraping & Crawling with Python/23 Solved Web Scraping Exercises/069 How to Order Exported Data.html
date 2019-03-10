@@ -1,0 +1,110 @@
+<html>
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <title>069 How to Order Exported Data</title>
+                        </head>
+                        <body>
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <p class="lead"><div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Imagine in your code you have the following:</p>
+
+<pre class="prettyprint linenums">yield{
+    'Article Title':title,
+    'Date':date,
+    'Author':author,
+    'Text':text
+    }</pre>
+
+
+
+
+
+
+
+
+
+<p><br></p>
+
+
+
+<p>However, in your output CSV, you have this order:</p>
+
+
+
+
+
+
+
+<p>Date | Text | Article Title | Author</p>
+
+
+
+<p><br></p>
+
+
+
+
+
+<blockquote>Question:</blockquote>
+
+
+
+
+
+<p>What to do to get the exported items in the preferred order?</p>
+
+
+
+
+
+<p><br></p>
+
+
+
+
+
+<blockquote>Answer:</blockquote>
+
+
+
+
+
+<p>Open the file settings.py found in the Scrapy project and add this line:</p>
+
+
+
+
+
+<p><code>FEED_EXPORT_FIELDS = ['Article Title', 'Date', 'Author', 'Text']</code></p>
+
+
+
+
+
+<p>This will give you the order you need.</p>
+
+
+
+
+
+<p><br></p>
+
+
+
+
+
+<p>Try this in your code, and if you have questions, please feel free to send them to the Q&amp;A section of this course.<br></p>
+        </div>
+    </div>
+</div>
+</p>
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                        </body>
+                        </html>

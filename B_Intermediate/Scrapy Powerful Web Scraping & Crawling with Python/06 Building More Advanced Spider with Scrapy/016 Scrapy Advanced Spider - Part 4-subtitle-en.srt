@@ -1,0 +1,408 @@
+﻿1
+00:00:00,093 --> 00:00:03,476
+Hey there! So this is the final video
+
+2
+00:00:03,476 --> 00:00:05,608
+for the more advanced spider and
+
+3
+00:00:05,608 --> 00:00:08,169
+in this video we will talk about how to
+
+4
+00:00:08,169 --> 00:00:11,836
+first yield the data points that we scraped.
+
+5
+00:00:12,681 --> 00:00:15,395
+So currently, we are just printing out the data
+
+6
+00:00:15,395 --> 00:00:19,048
+and then in between them we just pretty much use
+
+7
+00:00:19,048 --> 00:00:23,215
+the new space really to make it more readable so to speak.
+
+8
+00:00:24,486 --> 00:00:26,382
+So how to actually yield the data,
+
+9
+00:00:26,382 --> 00:00:30,084
+and reason why we would want to yield the data
+
+10
+00:00:30,084 --> 00:00:33,617
+is because if you do that then you can get data
+
+11
+00:00:33,617 --> 00:00:36,284
+to the CSV, XML, or JSON output.
+
+12
+00:00:38,033 --> 00:00:42,200
+So let's remove the new lines because they are not needed.
+
+13
+00:00:42,588 --> 00:00:46,221
+And also we can use, or remove the print statement.
+
+14
+00:00:46,221 --> 00:00:50,388
+So only thing that you need to do is use yield statement.
+
+15
+00:00:50,446 --> 00:00:53,696
+And then, in the closed curly brackets,
+
+16
+00:00:55,184 --> 00:00:58,617
+just use the pretty much same syntax
+
+17
+00:00:58,617 --> 00:01:00,534
+as you would use in the
+
+18
+00:01:01,711 --> 00:01:05,878
+when you would define the dictionary keys and values.
+
+19
+00:01:07,188 --> 00:01:09,804
+So, pretty much this one,
+
+20
+00:01:09,804 --> 00:01:12,147
+let's copy and paste these three instances
+
+21
+00:01:12,147 --> 00:01:14,397
+and paste them here, sorry.
+
+22
+00:01:16,108 --> 00:01:17,608
+Let's try it once again.
+
+23
+00:01:20,284 --> 00:01:24,117
+Perfect, and let's use the single quotes here.
+
+24
+00:01:28,444 --> 00:01:30,340
+And that will be pretty much it.
+
+25
+00:01:30,340 --> 00:01:33,460
+So, just a simple yield statement, really,
+
+26
+00:01:33,460 --> 00:01:35,773
+to get the text, author and tags.
+
+27
+00:01:35,773 --> 00:01:39,531
+So to make it a bit different we will use
+
+28
+00:01:39,531 --> 00:01:40,698
+the uppercase.
+
+29
+00:01:42,452 --> 00:01:45,267
+You would save this right now and then
+
+30
+00:01:45,267 --> 00:01:48,571
+if you go back to our Terminal you will see
+
+31
+00:01:48,571 --> 00:01:52,738
+the data will be completely differently laid out
+
+32
+00:01:53,211 --> 00:01:55,483
+as you will see in a moment they will be laid out
+
+33
+00:01:55,483 --> 00:01:59,035
+in the dictionary like in the simple Spider
+
+34
+00:01:59,035 --> 00:02:01,403
+course or section that we did so
+
+35
+00:02:01,403 --> 00:02:04,123
+we hit enter for all the entire site.
+
+36
+00:02:04,123 --> 00:02:06,659
+And let's see if it did,
+
+37
+00:02:06,659 --> 00:02:09,507
+yeah I didn't use the comma.
+
+38
+00:02:09,507 --> 00:02:11,987
+And let's run it right now.
+
+39
+00:02:11,987 --> 00:02:14,667
+So as you can see, data is going to be
+
+40
+00:02:14,667 --> 00:02:18,834
+returned in the dictionaries like it should have
+
+41
+00:02:19,208 --> 00:02:21,444
+and it's, well, to me at least
+
+42
+00:02:21,444 --> 00:02:24,008
+it's in a more readable or more
+
+43
+00:02:24,008 --> 00:02:26,425
+counseled way for the layout.
+
+44
+00:02:28,112 --> 00:02:31,499
+We also have by using yield function
+
+45
+00:02:31,499 --> 00:02:35,338
+we also have a bunch of different really
+
+46
+00:02:35,338 --> 00:02:36,945
+plus sides to that.
+
+47
+00:02:36,945 --> 00:02:39,936
+One of them is item scraped count
+
+48
+00:02:39,936 --> 00:02:42,107
+and which corresponds to 100.
+
+49
+00:02:42,107 --> 00:02:44,361
+So 100 means that we scraped pretty much
+
+50
+00:02:44,361 --> 00:02:46,624
+100 different data points.
+
+51
+00:02:46,624 --> 00:02:49,791
+Or, 100 different in our case, quotes.
+
+52
+00:02:50,893 --> 00:02:52,393
+So one of the also
+
+53
+00:02:53,701 --> 00:02:56,315
+good things when you use the yield function
+
+54
+00:02:56,315 --> 00:02:59,019
+is that you can use Scrapy field exports.
+
+55
+00:02:59,019 --> 00:03:02,892
+Field exports, we will cover three of them.
+
+56
+00:03:02,892 --> 00:03:04,809
+The CSV, JSON, and XML.
+
+57
+00:03:06,335 --> 00:03:09,995
+So if we type in -o and then for example
+
+58
+00:03:09,995 --> 00:03:12,523
+the name of the file items.csv
+
+59
+00:03:12,523 --> 00:03:15,819
+Hit Enter, you will see that we get the message
+
+60
+00:03:15,819 --> 00:03:19,986
+that stored CSV feed (100 items) in: items.csv.
+
+61
+00:03:22,155 --> 00:03:24,738
+So if we go back to the Desktop
+
+62
+00:03:25,649 --> 00:03:27,377
+and navigate to the root directory
+
+63
+00:03:27,377 --> 00:03:30,324
+you will see here the items.csv file.
+
+64
+00:03:30,324 --> 00:03:34,230
+So if you open this with your Excel reader,
+
+65
+00:03:34,230 --> 00:03:38,397
+you will see that the CSV file corresponds to
+
+66
+00:03:38,452 --> 00:03:42,308
+the 100 different quotes as you can see
+
+67
+00:03:42,308 --> 00:03:44,091
+that we scraped from the site.
+
+68
+00:03:44,091 --> 00:03:47,711
+So we have the Text column, Tags column,
+
+69
+00:03:47,711 --> 00:03:50,023
+and also Author column.
+
+70
+00:03:50,023 --> 00:03:51,902
+Let's close this for now.
+
+71
+00:03:51,902 --> 00:03:54,313
+Go back to our Terminal,
+
+72
+00:03:54,313 --> 00:03:56,357
+and one of the other data points
+
+73
+00:03:56,357 --> 00:04:00,524
+or data outputs, sorry, that you can use is JSON.
+
+74
+00:04:00,827 --> 00:04:04,315
+So you can go in and pretty much type in
+
+75
+00:04:04,315 --> 00:04:06,587
+once again, dash -o items, and then
+
+76
+00:04:06,587 --> 00:04:10,420
+instead of .json, sorry .csv, you type in .json
+
+77
+00:04:11,292 --> 00:04:12,125
+Hit Enter.
+
+78
+00:04:13,524 --> 00:04:15,067
+And you will see the data or
+
+79
+00:04:15,067 --> 00:04:18,157
+in the root directory you will see the JSON file.
+
+80
+00:04:18,157 --> 00:04:21,490
+So if you open it with your text editor,
+
+81
+00:04:22,557 --> 00:04:24,733
+you will see the data itself
+
+82
+00:04:24,733 --> 00:04:28,150
+and I use Pretty Print [in Sublime Text] to print out JSON
+
+83
+00:04:29,060 --> 00:04:30,837
+in a more readable format.
+
+84
+00:04:30,837 --> 00:04:32,813
+And as you can see, here's our data,
+
+85
+00:04:32,813 --> 00:04:36,396
+so this is ridiculously cool thing to have.
+
+86
+00:04:37,324 --> 00:04:38,241
+And easy to
+
+87
+00:04:39,731 --> 00:04:41,387
+use as you can see.
+
+88
+00:04:41,387 --> 00:04:45,554
+The last one of field exports that we will use is XML.
+
+89
+00:04:47,090 --> 00:04:49,610
+So we'd just type in here .xml and hit Enter.
+
+90
+00:04:49,610 --> 00:04:52,218
+Also, you can use whatever really
+
+91
+00:04:52,218 --> 00:04:54,202
+file name you would like to.
+
+92
+00:04:54,202 --> 00:04:57,761
+So you can, again, just use whatever you would like.
+
+93
+00:04:57,761 --> 00:05:01,390
+Hit Enter and you will see in the root directory
+
+94
+00:05:01,390 --> 00:05:04,533
+it's the XML file that we named.
+
+95
+00:05:04,533 --> 00:05:07,517
+So if we open it also with the,
+
+96
+00:05:07,517 --> 00:05:09,454
+or your preferred text editor,
+
+97
+00:05:09,454 --> 00:05:11,786
+you will see the data itself.
+
+98
+00:05:11,786 --> 00:05:14,234
+So this hopefully convinced you that
+
+99
+00:05:14,234 --> 00:05:18,401
+you should always use the yield statement from the code.
+
+100
+00:05:19,684 --> 00:05:21,097
+And that will be pretty much it for this
+
+101
+00:05:21,097 --> 00:05:24,557
+advanced spider video and I will catch
+
+102
+00:05:24,557 --> 00:05:27,188
+you in the very next video. Talk soon!
+

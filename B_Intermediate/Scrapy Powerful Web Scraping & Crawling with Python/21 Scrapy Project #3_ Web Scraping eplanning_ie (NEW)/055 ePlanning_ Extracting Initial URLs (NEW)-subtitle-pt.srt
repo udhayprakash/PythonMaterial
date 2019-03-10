@@ -1,0 +1,290 @@
+﻿1
+00:00:00,030 --> 00:00:05,250
+Ok. Então as primeiras coisas primeiro.
+Temos que criar um projeto Scrapy.
+
+2
+00:00:05,250 --> 00:00:14,730
+Para fazer isso, vamos abrir o Terminal e
+navergar para o Desktop.
+
+3
+00:00:14,730 --> 00:00:21,960
+Depois disso, usamos nosso bom e velho "scrapy startproject",
+e o nome do nosso spider vai ser este.
+
+4
+00:00:21,960 --> 00:00:33,870
+Então podemos copiar isto, e então colar aqui.
+E então "_spider", pressione Enter,
+
+5
+00:00:33,870 --> 00:00:40,829
+e então podemos mudar o diretório
+para eplanning_spider/
+
+6
+00:00:40,829 --> 00:00:46,890
+E então podemos gerar nosso spider.
+Então vamos gerar ele usando o "scrapy genspider".
+
+7
+00:00:46,890 --> 00:00:54,840
+Então colamos, novamente, eplanning como o nome
+do spider. E então o domínio vai
+
+8
+00:00:54,840 --> 00:01:02,940
+ser eplanning.ie, e pressione Enter.
+Ok? Vamos para o Desktop,
+
+9
+00:01:02,940 --> 00:01:10,140
+abrir o diretório raiz do spider, e vamos
+ver se o spider é gerado. Podemo abrir ele
+
+10
+00:01:10,140 --> 00:01:15,659
+com o editor de texto, e vamos
+deixar ele bonito primeiro.
+
+11
+00:01:15,659 --> 00:01:27,689
+Então "from scrapy import Spider". Podemos deixar
+o Scrapy em letra minúscula, e vamos usar sempre aspas simples.
+
+12
+00:01:27,689 --> 00:01:33,810
+E vamos salvar ele. Depois disso,
+vamos para o Terminal e rodar ele rapidamente,
+
+13
+00:01:33,810 --> 00:01:39,939
+apenar para verificar que tudo está funcionando
+corretamente. Então "scrapy crawl eplanning"
+
+14
+00:01:41,939 --> 00:01:45,520
+Vamos ver, arquivo ou página robots.txt não encontrada. 404.
+
+15
+00:01:46,320 --> 00:01:51,390
+Então está totalmente bem. E então temos request 200
+
+16
+00:01:51,390 --> 00:01:56,799
+para a página inicial, o que é ótimo.
+Vamos ver, sem erros. Tudo está funcionando bem.
+
+17
+00:01:57,100 --> 00:02:00,299
+Então a próxima coisa, ou
+a primeira na verdade, o primeiro passo que
+
+18
+00:02:00,299 --> 00:02:06,689
+este spider vai tomar é que ele
+vai isolar ou podemos pegar, já que isto
+
+19
+00:02:06,689 --> 00:02:10,790
+é apenas uma página simples,
+podemos apenas encontrar todas as tags "a" com o
+
+20
+00:02:10,790 --> 00:02:19,490
+href. Então se formos para qualquer
+região desta lista, vamos ver
+
+21
+00:02:19,490 --> 00:02:25,340
+que ele está na tag "a". E então ele
+contém o source (src) e também o href,
+
+22
+00:02:25,340 --> 00:02:30,440
+então que parece isso vai ser, é,
+na verdade, vai ser o href.
+
+23
+00:02:30,440 --> 00:02:36,080
+Então vamos copiar e colar este aqui. Ok, então isto
+está funcionando. Então vamos para a tag "a" e
+
+24
+00:02:36,080 --> 00:02:47,209
+então extrair o href. Vamos abrir isto em
+uma aba separada, e vamos ver.
+
+25
+00:02:47,209 --> 00:02:56,360
+Então, novamente, todas as tags "a" com o href. Então,
+claro, precisamos abrir uma nova aba e
+
+26
+00:02:56,360 --> 00:03:00,890
+então digitar ou apenas mudar o
+diretório para o inicial, por exemplo,
+
+27
+00:03:00,890 --> 00:03:07,490
+e então digitar "scrapy shell".
+O nome da URL vai ser esta aqui.
+
+28
+00:03:07,490 --> 00:03:14,180
+Pressione Enter, e então
+"response.xpath". Então isto é bem direto.
+
+29
+00:03:14,180 --> 00:03:19,040
+Então vamos encontrar todas as tags "a" com o href,
+
+30
+00:03:19,040 --> 00:03:26,810
+e então vá e extraia ele.
+E vamos ver. Então todos os domínios que
+
+31
+00:03:26,810 --> 00:03:33,260
+não não seguem eplanning.ie vão ser
+filtrados, como este aqui.
+
+32
+00:03:33,260 --> 00:03:39,230
+E parece que há algumas páginas que
+tem um #, então isto vai
+
+33
+00:03:39,230 --> 00:03:46,010
+produzir um erro, então vamos removê-lo. Vamos
+para o editor de texto, e na nossa função parse,
+
+34
+00:03:46,010 --> 00:03:52,550
+podemos definir urls como uma variável,
+então response.xpath.
+
+35
+00:03:52,550 --> 00:04:00,019
+Então vamos encontrar todas as tags "a" com href.
+Finalmente, vamos extrair os seletores,
+
+36
+00:04:00,019 --> 00:04:08,330
+e então vamos iterar sobre
+as URLs. Então "for url in urls"
+
+37
+00:04:08,330 --> 00:04:17,510
+E então se... vamos apenas verificar novamente que o #
+é apenas encontrado neste tipo de caso.
+
+38
+00:04:17,510 --> 00:04:22,700
+Ok, então isto vai ser bem direto.
+Então "if '#'' in url", ou vamos apenas dizer,
+
+39
+00:04:22,700 --> 00:04:30,650
+por exemplo, "if '#' == url", o que vai ser
+o caso três vezes.
+
+40
+00:04:30,650 --> 00:04:35,060
+Então "if '#' ==  url" então vamos usar "pass".
+
+41
+00:04:35,060 --> 00:04:41,570
+Senão vamos usar "yield Request"
+para a segunda página, como
+
+42
+00:04:41,570 --> 00:04:50,930
+por exemplo, esta aqui. Então para fazer isso,
+vamos para o else, e então "yield Request".
+
+43
+00:04:50,930 --> 00:04:57,410
+Então isso é bem direto. Vamos fornecer a URL. Não
+precisamos usar "response.urljoin(url)"
+
+44
+00:04:57,410 --> 00:05:02,390
+porque estas são URLs absolutas. Na maioria do
+tempo, elas não são, mas neste tipo de
+
+45
+00:05:02,390 --> 00:05:10,940
+site, elas são. "url" e então podemos digitar
+no callback, e vamos definir o parse, por exemplo,
+
+46
+00:05:10,940 --> 00:05:20,870
+application como nosso nome de função.
+Então podemos copiar isto. Então pase_application,
+
+47
+00:05:20,870 --> 00:05:26,540
+claro, ela vai sempre
+conter self e então response, e por
+
+48
+00:05:26,540 --> 00:05:31,669
+enquanto, vamos passar ele. Vamos ver se há
+mais algo. Eu acredito que deve ser
+
+49
+00:05:31,669 --> 00:05:36,470
+isso. Então vamos salvar isso. Voltar
+para o nosso Terminal, e vamos ver se
+
+50
+00:05:36,470 --> 00:05:41,210
+tudo está funcinando bem.
+Então vamos rodar novamente
+
+51
+00:05:41,210 --> 00:05:44,380
+com o comando "scrapy crawl eplanning".
+
+52
+00:05:45,479 --> 00:05:50,039
+Ok, parece que temos um problema. Claro,
+o nome global Request não está
+
+53
+00:05:50,039 --> 00:05:56,779
+definido, então precisamos importar ele aqui. Então
+"from scrapy.http import Request".
+
+54
+00:05:56,779 --> 00:06:01,020
+Salve ele, então volte para o
+Terminal, rode ele novamente.
+
+55
+00:06:01,020 --> 00:06:09,330
+Ok, então parece que... vamos
+maximizar isso para que seja mais legível.
+
+56
+00:06:09,330 --> 00:06:15,599
+Então parece que este tipo de páginas são
+redirecionamentos e então conseguimos o
+
+57
+00:06:15,599 --> 00:06:22,499
+request status 200 para as seguintes regiões,
+o que é ótimo. Então tudo está funcionando bem,
+
+58
+00:06:22,499 --> 00:06:30,210
+e apenas uma página 404, que foi
+discutido anteriormente, a página robots.txt.
+
+59
+00:06:30,210 --> 00:06:35,600
+Então isso é tudo para esta primeira parte,
+e vejo você no próximo vídeo.
+
