@@ -1,0 +1,10 @@
+(lp0
+S'Linux'
+p1
+aS'Python'
+p2
+aS'Perl'
+p3
+aS'shell'
+p4
+a.
