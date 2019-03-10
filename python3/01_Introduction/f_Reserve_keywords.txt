@@ -1,0 +1,33 @@
+Reserved Keywords (33 in python 3.x)
+-------------------------------------
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+
+
+Reserved Keywords  (27 in python 2.x)
+--------------------------------------
+and        assert         break          class         continue           def         del
+elif       else           except         exec          finally            for         from
+global     if             import         in            is                 lambda      not
+or         pass           print          raise         return             try         while
+yield
+
+
+
+NOTE: These reserved keywords should not be used for the names of user-defined identifiers.
+
+======================
+
+variable
+    keyword  -- variables defined by the language 
+    identifier  --- variables defined by user
+
+
+object

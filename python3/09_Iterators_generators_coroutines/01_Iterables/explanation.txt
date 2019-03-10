@@ -1,0 +1,16 @@
+int, float, None, True, False ...
+
+collections - iter() 
+
+list - iter() -> list iterator 
+tuple - iter() -> tuple iterator 
+set - iter() -> set iterator 
+dict - iter() -> dict key iterator 
+
+
+user-defined function -- > generators
+
+============================================================
+# basic types - int, long, float, str, ...
+# collections - list, tuple, set, dict    - iter() - iterators
+# fuctions    - generators

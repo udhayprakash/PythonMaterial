@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "sys_module.py", line 40, in <module>
+    print >> sys.stderr, "printing to error.txt"
+TypeError: unsupported operand type(s) for >>: 'builtin_function_or_method' and '_io.TextIOWrapper'. Did you mean "print(<message>, file=<output_stream>)"?

@@ -1,0 +1,11 @@
+REST API todo 
+    - https://www.deepl.com/en/api.html
+    - https://fixer.io/signup/free
+    - https://currencylayer.com/signup/free
+
+====================
+https://currencylayer.com/
+--------------------------------------
+API Access Key - 96b5ca6a3116caa7a9b8985fd294243e
+
+http://www.apilayer.net/api/live?access_key=96b5ca6a3116caa7a9b8985fd294243e

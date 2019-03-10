@@ -1,0 +1,3 @@
+
+something This is first line 
+Added in append mode

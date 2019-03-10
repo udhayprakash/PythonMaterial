@@ -1,0 +1,4 @@
+https://trends.google.com/trends/explore?q=python
+https://www.indeed.com/jobtrends/q-python.html
+https://insights.stackoverflow.com/trends?tags=python
+https://stackoverflow.blog/2017/09/14/python-growing-quickly/
