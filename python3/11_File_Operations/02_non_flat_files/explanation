@@ -1,0 +1,15 @@
+Serialization
+================
+marshelling
+flattenning
+
+
+pickle
+shelve
+
+=====
+csv
+xml ------- database -
+json
+yaml
+

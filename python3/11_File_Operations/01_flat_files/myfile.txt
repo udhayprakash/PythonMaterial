@@ -1,0 +1,15 @@
+January 
+February
+March 
+April
+
+read - to get complete file content as a single string 
+readline - to get the current line only as a string 
+readlines - to get all the lines as a list of strings
+
+.tell ---- to get the cursor position
+.seek(34) -- to move the cursor to that position
+	line 444444444444
+	line 444444444444
+	line 444444444444
+	line 444444444444
