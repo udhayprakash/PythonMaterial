@@ -1,6 +1,5 @@
 from functools import wraps
 
-
 def beg(target_function):
     @wraps(target_function)
     def wrapper(*args, **kwargs):
@@ -18,5 +17,5 @@ def say(say_please=False):
     return msg, say_please
 
 
-print say()  # How about party today?
-print say(say_please=True)  # How about party today? Please! I am poor :(
+print(say())  # How about party today?
+print(say(say_please=True))  # How about party today? Please! I am poor :(
