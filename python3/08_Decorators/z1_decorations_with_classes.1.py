@@ -15,4 +15,4 @@ class ita(object):
 def sayhi():
   return 'hi'
 
-print sayhi()
+print(sayhi())
