@@ -10,18 +10,18 @@ def closure1():
         flist.append(func)
 
     for f in flist:
-        print f(2)
+        print(f(2))
 
 
 def closure2(msg):
     def printer():
-        print msg
+        print(msg)
     return printer
 
 
 def not_closure2(msg):
     def printer(msg=msg):
-        print msg
+        print(msg)
     return printer
 
 

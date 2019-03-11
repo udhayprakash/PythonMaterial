@@ -19,21 +19,14 @@ for row in transposed_matrix:
 """
 >>> zip([1], [3])
 [(1, 3)]
->>> zip('aaa', 'bcd'
-... )
+>>> zip('aaa', 'bcd')
 [('a', 'b'), ('a', 'c'), ('a', 'd')]
 >>>
 >>>
 >>>
->>> zip('aaa', 'bc'
-... )
+>>> zip('aaa', 'bc')
 [('a', 'b'), ('a', 'c')]
 >>>
->>> map(None, 'aaa', 'bcd')'
-  File "<stdin>", line 1
-    map(None, 'aaa', 'bcd')'
-                           ^
-SyntaxError: EOL while scanning string literal
 >>> map(None, 'aaa', 'bcd')
 [('a', 'b'), ('a', 'c'), ('a', 'd')]
 >>> map(None, 'aa', 'bcd')

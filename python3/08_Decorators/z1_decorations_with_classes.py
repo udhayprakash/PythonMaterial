@@ -11,4 +11,4 @@ class sty(object):
 def sayhi():
   return 'hi'
 
-print sayhi()
+print(sayhi())

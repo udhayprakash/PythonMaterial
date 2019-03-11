@@ -29,7 +29,7 @@ def stringreverse(string):
 
     ""+"6"+ "5" + "4"+ "3"+ "2"+ "1"
 '''
-print stringreverse('123456')
+print(stringreverse('123456'))
 
 """
 Recursion:
