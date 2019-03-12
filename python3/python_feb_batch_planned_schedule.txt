@@ -1,4 +1,3 @@
-12th march  decorators, iterables, iterators
 13th march  generators, coroutines, os, sys, math, random
 14th march  datetime, getpass, subprocess, userdefined module 
 15th march  flat files, csv, xml remaing file operations
