@@ -74,3 +74,6 @@ for each_chr in enumerate('Python Programming'):
 
 for loop_index, each_chr in enumerate('Python Programming'):
     print(f'In loop {loop_index}, value is {each_chr}')
+
+
+print(list('Python Programming'))
