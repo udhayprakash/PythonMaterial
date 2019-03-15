@@ -9,6 +9,8 @@ print(os.path.splitext("temp.log"))             # ('temp', '.log')
 print(os.path.splitdrive("/home/user/temp.txt"))  # ('', '/home/user/temp.txt')
 print(os.path.extsep)                            # .
 print(os.sep)                                    # / 
+   # c:\program\
+   # /var/temp/sql
 print()   
 
 print(os.getcwd())
