@@ -23,8 +23,9 @@ for i in range(2,9):
         new_list.append('even')
 print(new_list)
 
+print('odd' if True else 'even')
 print(['odd' if i%2 != 0 else 'even' for i in range(2,9)])
-# #########################################
+#########################################
 
 my_variable = [ch for ch in 'Mangalyan']
 print(type(my_variable), my_variable)

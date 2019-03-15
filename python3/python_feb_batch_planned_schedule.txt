@@ -1,7 +1,6 @@
-13th march  generators, coroutines, os, sys, math, random
-14th march  datetime, getpass, subprocess, userdefined module 
-15th march  flat files, csv, xml remaing file operations
-18th march  logging, OOP 
-19th march  OOP , code quality
-18th march  regular expressions
-20th march  web services, data science modules 
+18th march  datetime, math, subprocess, userdefined module 
+19th march  flat files, csv, xml remaing file operations
+20th march  logging, OOP 
+21th march  OOP , code quality
+22th march  regular expressions
+25th march  web services, data science modules 
