@@ -1,6 +1,6 @@
-18th march  datetime, math, subprocess, userdefined module 
-19th march  flat files, csv, xml remaing file operations
-20th march  logging, OOP 
-21th march  OOP , code quality
-22th march  regular expressions
-25th march  web services, data science modules 
+19th march  math, userdefined module , logging,
+20th march  flat files, csv, xml remaing file operations
+21th march   OOP 
+22th march  OOP , code quality
+25th march  regular expressions
+26th march  web services, data science modules 
