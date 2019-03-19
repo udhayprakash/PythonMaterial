@@ -1,5 +1,4 @@
-19th march  math, userdefined module , logging,
-20th march  flat files, csv, xml remaing file operations
+20th march  logging, flat files, csv, xml remaing file operations
 21th march   OOP 
 22th march  OOP , code quality
 25th march  regular expressions
