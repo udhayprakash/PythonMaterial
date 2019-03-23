@@ -1,4 +1,4 @@
-22th march  flat files, csv, xml remaing file operations 
-25th march  OOP, code quality
-26th march  regular expressions
-27th march  web services, data science modules 
+25th march  xml, Excel,config file operations 
+26th march  OOP, code quality
+27th march  regular expressions
+28th march  web services, data science modules 
