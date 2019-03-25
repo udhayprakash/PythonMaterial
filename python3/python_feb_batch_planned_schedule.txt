@@ -1,4 +1,0 @@
-25th march  xml, Excel,config file operations 
-26th march  OOP, code quality
-27th march  regular expressions
-28th march  web services, data science modules 
