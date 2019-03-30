@@ -1,4 +1,4 @@
 feb
-27th march  regular expressions, xml, Excel,config file operations 
-28th march  OOP, code quality
-29th march  web services, data science modules 
+1st april  web services, xml, Excel,config file operations 
+2nd april  OOP, code quality
+3rd april  data science modules 
