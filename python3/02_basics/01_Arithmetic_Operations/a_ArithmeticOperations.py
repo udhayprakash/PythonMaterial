@@ -43,14 +43,14 @@ print('num1 / num2 = ', num1 / num2)
 # print('type(num1)= ', type(num1))
 # print('type(num2)= ', type(num2))
 
-# # int + int  = int
-# # int / int  = int
+# int + int  = int
+# int / int  = int
 
-# # int < long < float
+# int < long < float
 
-# # int + long = long
-# # int + float = float
-# # long + float = float
+# int + long = long
+# int + float = float
+# long + float = float
 
 
 num3 = 3445678909876545678909876556789098765
@@ -70,7 +70,7 @@ print('num4', num4)  # float
 result = num1 + num4 # int + float = float
 print('result', result, type(result))
 
-# # going back to division
+# going back to division
 
 # print('10/2= ', 10 / 2)  # int/int = int
 # print('10/5= ', 10 / 5)  # int/int = int

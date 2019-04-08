@@ -1,4 +1,2 @@
-feb
-1st april  web services, xml, Excel,config file operations 
-2nd april  OOP, code quality
-3rd april  data science modules 
+March Batch 
+------------

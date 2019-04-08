@@ -59,4 +59,4 @@ print('language.rindex("Prog")   :', language.rindex('Prog'))
 
 #string attributes - index vs find
 print('language.find("Q")   :', language.find('Q'))     # -1
-# print 'language.index("Q")   :', language.index('Q')  # ValueError
+# print('language.index("Q")   :', language.index('Q'))  # ValueError
