@@ -54,7 +54,7 @@ if num1:
     print("a=", num1)
 
 
-if num1>=9:
+if num1 >= 9:
     print("a=", num1)
 
 

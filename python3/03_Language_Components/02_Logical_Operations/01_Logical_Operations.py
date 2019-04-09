@@ -11,7 +11,7 @@ not - negate the existing value
 # and,  or,  not  
 
 expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
-#        False          True       False          True
+#        False    and   True    or  ( False    and      True)
 print(expr1)
 
 '''
@@ -21,7 +21,7 @@ True and True = True
 
 '''
 print('and operation ')
-print("True and True  ", True and True)
+print("True and True  ", True and True)       # True
 print("True and False ", True and False)
 print("False and True  ", False and True)
 print("False and False ", False and False)

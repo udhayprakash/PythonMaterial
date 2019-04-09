@@ -42,9 +42,10 @@ print("ord('o'):", ord('o'))
 # -------------
 # caesar cipher 
 # ------------------  + 3 
-# A B C D E F 
+# A B C D E F G H I J
 # 0 1 2 3 4 5
 # D E F
 
+# Ex: egg => hjj
 # bindu Yash
 # elqg
