@@ -1,2 +1,22 @@
 March Batch 
 ------------
+ 9th April string operations(remaining),  help usage, relational, logical, boolean operations
+10th April bitwise, range, identity, conditional operations, loops
+11th April Exceptions, debugging
+12th April collections -list, tuple
+15th April collectons - set, dictionary
+16th April functions
+17th April functions
+18th April decorators, iterables, iterators
+19th April generators
+22nd April Modules - sys, os, shutil, random, getpass
+23rd April Modules - argparse, time_related, subprocess, math , turtle
+24th April Modules - User-defined, file operations- flat files
+25th April non-flat files, image files, zipping, config files, pyw files
+26th April db files, logging
+29th April OOP
+29th April OOP, code quality
+30th April regular Expressions
+ 1st May regular Expressions, web services 
+ 2nd May web services , Data science modules - numpy, pandas,matplotlib
+
