@@ -31,5 +31,6 @@ print(str(True))
     '0'
     >>> str(False)
     'False'
-    >>>
+    >>> str(True * 1)
+	'1'
 '''

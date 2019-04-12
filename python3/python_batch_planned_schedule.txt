@@ -1,9 +1,6 @@
 March Batch 
 ------------
- 9th April string operations(remaining),  help usage, relational, logical, boolean operations
-10th April bitwise, range, identity, conditional operations, loops
-11th April Exceptions, debugging
-12th April collections -list, tuple
+12th April loops,Exceptions, debugging, collections -list, tuple
 15th April collectons - set, dictionary
 16th April functions
 17th April functions

@@ -6,27 +6,15 @@ while loop- condition
     increment/decrement
 """
 # NOTE: i++, i--, --i, ++i (unary operations) are supported in python
-num1 = 0 
-while num1 < 10:
-    num1 += 1
-    # if num1 == 3:
-    #     break
-    num2 = 0
-    while num2 < 10:
-        num2 += 1
-        # print(num1, '*', num2, '=', num1 * num2)
-        # print('%2d * %2d = %2d'%(num1, num2, num1 * num2))
-        # print('{0:2d} * {1:2d} = {2:2d}'.format(num1, num2, num1 * num2))
+
+num1 = 1
+while num1 <= 10: 
+    num2 = 1
+    while num2 <= 10: 
         print(f'{num1} * {num2} = {num1 * num2}')
-    print('-'*10) # string repetition operation
-else:
-    print('All loops executed')
-
-print('Next statement')
-
-
-
-
+        num2 = num2 + 1
+    print('-'* 25)
+    num1 = num1 + 1
 
 
 
