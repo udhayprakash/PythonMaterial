@@ -7,32 +7,35 @@ name = "Almighty"
 
 print(name)
 
-print("Name of the student:", name)
-# , (comma) logic separator operator
+# print('name of the student')
+# print(name)
 
-# Python is a strictly typed language
-# content of either side of + should be of 
-# same data type
-print("Name of the student:" + name)
+print('name of the student:', name)
+print('name of the student:', 'name')
+
+print(type(name))
+print('name of the student:'+ name)
 
 name = 123
-print("Name of the student:", name)
-# , (comma) logic separator operator
-# print("Name of the student:"+ name) # TypeError: cannot concatenate 'str' and 'int' objects
-print("Name of the student:"+ str(name))
+print(type(name), name)
+print('name of the student:', name)
 
-# print '12' + 34
-# Question: strictly typed language
+# Python is a Strictly typed language
+# print('name of the student:'+ name)
+# TypeError: can only concatenate str (not "int") to str
 
-# no difference between single and double quotes
-# for strings
+print('name of the student:'+ str(name))
 
-print('Hello')
-print('world')
+# print('12' + 13)
 
-# print 'hello', 
-print('Hello', end=' ')
-print('world')
+print('hello')
+print("world")
 
-print('Hello !!!', 'udhay', end=' ') 
-print('world')
+print('hello', end='\n')
+print("world")
+
+print('hello', end=' ')
+print("world")
+
+print('Hello', 'udhay', end='_')
+print("world")
