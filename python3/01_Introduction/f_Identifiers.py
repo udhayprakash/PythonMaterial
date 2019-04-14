@@ -23,8 +23,8 @@ _job = 'farming'
 __babu = 'Nagababu'
 
 # OOP - name mangling
-# _variable   --> Private variable
-# __variable  --> Protected variable
+# _variable   --> Protected variable
+# __variable  --> Private variable
 
 # __variable__  --> Builtin functions
 

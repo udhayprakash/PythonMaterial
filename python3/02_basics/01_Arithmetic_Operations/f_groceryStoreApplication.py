@@ -13,52 +13,54 @@ python 3
     input()  --- raw_input() in python 2 is renamed as input() here
 """
 
-costOfApple = 12
-costOfMango = 5
+cost_of_apple = 12
+cost_of_mango = 5
 
 # int(), float()
 
-quantityOfApples = float(input('Enter quantity of Apples:'))
-print("type(quantityOfApples) = ", type(quantityOfApples))
+quantity_of_apples = int(input('Enter quantity of Apples:'))
+print("type(quantity_of_apples) = ", type(quantity_of_apples))
 
-quantityOfMangos = float(input('quantityOfMangos='))
-print("type(quantityOfMangos) = ", type(quantityOfMangos))
+quantity_of_mangos = float(input('quantity_of_mangos='))
+print("type(quantity_of_mangos) = ", type(quantity_of_mangos))
 
-TotalCost = ((costOfApple * quantityOfApples)
-             + (costOfMango * quantityOfMangos))
-print("Total Cost = ", TotalCost)
+total_cost = ((cost_of_apple * quantity_of_apples)
+             + (cost_of_mango * quantity_of_mangos))
+print("Total Cost = ", total_cost)
+
+
 
 """
 Python 2 - input()
 # NOTE: Due to security issues, input() is discarded
 
     #python 04_groceryStoreApplication.1.py
-    quantityOfApples=2
-    quantityOfMangos=4
-    type(quantityOfApples) =  <type 'int'>
+    quantity_of_apples=2
+    quantity_of_mangos=4
+    type(quantity_of_apples) =  <type 'int'>
     Total Cost =  44
 
     #python 04_groceryStoreApplication.1.py
-    quantityOfApples=2.5
-    quantityOfMangos=4.66666
-    type(quantityOfApples) =  <type 'float'>
+    quantity_of_apples=2.5
+    quantity_of_mangos=4.66666
+    type(quantity_of_apples) =  <type 'float'>
     Total Cost =  53.3333
 
     #python 04_groceryStoreApplication.1.py
-    quantityOfApples='2'
-    quantityOfMangos='4'
-    type(quantityOfApples) =  <type 'str'>
+    quantity_of_apples='2'
+    quantity_of_mangos='4'
+    type(quantity_of_apples) =  <type 'str'>
     Total Cost =  22222222222244444
 
     #python 04_groceryStoreApplication.1.py
-    quantityOfApples="2"
-    quantityOfMangos="4"
-    type(quantityOfApples) =  <type 'str'>
+    quantity_of_apples="2"
+    quantity_of_mangos="4"
+    type(quantity_of_apples) =  <type 'str'>
     Total Cost =  22222222222244444
 
     #python 04_groceryStoreApplication.1.py
-    quantityOfApples=True
-    quantityOfMangos=False
-    type(quantityOfApples) =  <type 'bool'>
+    quantity_of_apples=True
+    quantity_of_mangos=False
+    type(quantity_of_apples) =  <type 'bool'>
     Total Cost =  12
 """

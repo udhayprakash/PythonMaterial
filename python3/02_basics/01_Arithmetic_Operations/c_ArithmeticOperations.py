@@ -72,9 +72,9 @@ print("3 << 2 = ", result)
 
 calculated_result = 10 << 4
 print('10 << 4', calculated_result)
-#           128    64    32    16    8   4   2   1
-# 10                                 1   0   1   0
-#                                1    0   1   0          1st shift 
-#                          1     0    1   0              2nd shift
-#                    1     0     1    0                  3rd shift
-#            1       0     1     0                       4th shift
+#            128    64    32    16    8   4   2   1
+# 10                                  1   0   1   0
+# 20                             1    0   1   0          1st shift 
+# 40                       1     0    1   0              2nd shift
+# 80                 1     0     1    0                  3rd shift
+# 160        1       0     1     0                       4th shift

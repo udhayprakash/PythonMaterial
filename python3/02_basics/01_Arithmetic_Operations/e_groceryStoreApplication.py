@@ -15,7 +15,6 @@ quantityInDozensOfApples = 3
 quantityInDozensOfMangos = 7
 # PEMDAS rule
 TotalCost = costOfApples * (quantityInDozensOfApples * DOZEN) + \
-            costOfMangos * quantityInDozensOfMangos * DOZEN  # left to right and top to bottom
+            costOfMangos * quantityInDozensOfMangos * DOZEN  # top to bottom and left to right 
 print("Total Cost = ", TotalCost )
-
 

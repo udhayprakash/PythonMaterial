@@ -36,6 +36,7 @@ print('Multiplication')
 print('num1 * num2 = ', num1 * num2)
 print()
 print('Division')
+# In python 3, divison will result in float value
 print('num1 / num2 = ', num1 / num2)
 
 # print()

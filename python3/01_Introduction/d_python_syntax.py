@@ -28,6 +28,8 @@ print('name of the student:'+ str(name))
 
 # print('12' + 13)
 
+# no difference between single and double quotes
+# for strings
 print('hello')
 print("world")
 

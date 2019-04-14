@@ -70,12 +70,10 @@ int(bin(9), base=0)
 # decimal to hex 
 hex(9)
 # hex to decimal 
-int(hex(9), base=16)
+int(hex(9), base=16) 
 
 
 # decimal to oct 
 oct(9)
 # oct to decimal 
 int(oct(9), base=8)
-
-
