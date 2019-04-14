@@ -5,7 +5,7 @@ Purpose: bitwise operations
 &   binary AND
 |   binary OR
 ^   binary XOR
-~   binary 1'snum3 omplement
+~   binary 1's complement
 <<  binary Left Shift 
 >>  binary right shift 
 """
@@ -13,7 +13,10 @@ Purpose: bitwise operations
 #                           128  64  32 16 8 4 2 1
 num1 = 60            # 60 = 0     0   1  1 1 1 0 0 
 num2 = 13            # 13 = 0     0   0  0 1 1 0 1 
-num3 = 0
+                    # ----------------------------
+                    #     & 0     0   0  0 1 1 0 0
+                    #     | 0     0   1  1 1 1 0 1
+                    #     ^ 0     0   1  1 0 0 0 1
 
 num3 = num1 & num2        # 12 = 0000 1100
 print("Line 1 - Value of num3 is ",num3) 

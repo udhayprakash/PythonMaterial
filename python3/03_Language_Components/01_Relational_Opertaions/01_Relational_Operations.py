@@ -1,4 +1,15 @@
 #!/usr/bin/python
+"""
+Purpose: Relational Operations
+
+ <  lesser
+ >  greater
+ == equal to
+ <= less than or equal to
+ >= greater than or equal to
+ != not equal to
+ <> not equal to  ( in python 2 only)
+"""
 usd = 73
 cand = 50
 
@@ -11,23 +22,6 @@ print("89 <= 49", 89 <= 49)
 
 print("89 == 89", 89 == 89)  # dont confuse with = (assignment Operator)
 # print "89 = 89", 89 = 89   Syntax Error
-"""
-Purpose: Relational Operations
-"""
-'''
- <  lesser
- >  greater
- == equal to
- <= less than or equal to
- >= greater than or equal to
- != not equal to
- <> not equal to  ( in python 2 only)
-'''
-
-
 
 print("12 != 12.0  ", 12 != 12.0)
 # print("12 <> 12.1  ", 12 <> 12.1)   # SyntaxError: invalid syntax
-
-
-

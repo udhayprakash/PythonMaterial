@@ -12,6 +12,7 @@ not - negate the existing value
 
 expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
 #        False    and   True    or  ( False    and      True)
+#                False          or            False
 print(expr1)
 
 '''
@@ -47,24 +48,26 @@ print("not False ", not False)
 print('=============================')
 
 expr2 = (45 <= 45) or (3 > 333)
-#       True          False
+#       True       or   False  = True
 print(expr2)
 
 expr2 = (45 <= 45) or (3 > 333) and (9 == 9)
-#       True          False         True
+#       True       or   False   and    True
+#       True       or           False  = True
 print(expr2)
 
 # left to right and top to bottom
 
-print('23 <73 <45', 23 <73 <45)
+print('23 <73 <45', 23 <73 <45)# 23 <73 and 73 <45
 print('89 <73 <99', 89 <73 <99)
 
 print('0 <73 <99', 0 <73 <99)
 
 
 print('89 <73 <99< 999< 0', 89 <73 <99< 999< 0)
+# 89 <73 and 73 <99 and 99< 999 and  999< 0
 
-
+# Assignment
 expr3 = 0 and 1
 print('expr3=', expr3)
 
