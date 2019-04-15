@@ -22,8 +22,8 @@ elif day_of_the_week == 'saturday':
     print("Office Timings: 9 am to 1 pm")
 elif day_of_the_week == 'sunday':
     print("SUNDAY is HOLIDAY!!!!!!")
-# else:
-#     print("Please enter the correct weekname!")
+else:
+    print("Please enter the correct weekname!")
 
 # in operator - membership check operator
 
