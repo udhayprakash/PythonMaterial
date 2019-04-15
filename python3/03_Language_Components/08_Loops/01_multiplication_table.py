@@ -5,30 +5,17 @@ while loop- condition
     logic
     increment/decrement
 """
-# NOTE: i++, i--, --i, ++i (unary operations) are supported in python
+# NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 
 num1 = 1
-while num1 <= 10: 
+while num1 <= 10:
     num2 = 1
-    while num2 <= 10: 
+    while num2 <= 10:
+        # print(num1, '*', num2, '=', num1 * num2)
         print(f'{num1} * {num2} = {num1 * num2}')
         num2 = num2 + 1
-    print('-'* 25)
+    print('-' * 15)
     num1 = num1 + 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
