@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # SyntaxError cant be handled 
-bat = 0
+# bat = 0
 try:
-    result =bat + 1 / '0'
+    # result = None/100
+    result = 1 / '0' + bat
 except ZeroDivisionError as ex:
     print('ZeroDivisionError error is ', ex)
     print('error is ', str(ex))

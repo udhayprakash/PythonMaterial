@@ -3,17 +3,39 @@
 when no error - try - else  - finally
 when error    - try - except - finally
 """
-# result = 1 /0
+
+# result = 1 // 0 
+# result = 1 / 0 
+# result = 1 % 0 
+
+# try:
+#     result = 1 % 0 
+# except:
+#     print('Excepted')
+
+# try:
+#     result = 1 % 0 
+# except Exception:
+#     print('Excepted')
+
+# try:
+#     result = 1 % 0 
+# except Exception as ex:
+#     print('error is ', ex)
+#     print('error is ', str(ex))
+#     print('error is ', repr(ex))
+
+# NOTE: else and finally blocks are optional
 try:
-    result = 1 / 0
+    result = 1 % 0 
 except Exception as ex:
     print('error is ', ex)
     print('error is ', str(ex))
     print('error is ', repr(ex))
-else:                               # optional block
-    print('result=', result)
-finally:                            # optional block
-    print("finally")
+else: 
+    print('try block has no error')
+finally:
+    print('Finally statement')
 
-print("next statement")
+print('statement outside these blocks')
 
