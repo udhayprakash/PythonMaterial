@@ -1,6 +1,6 @@
 March Batch 
 ------------
-12th April loops,Exceptions, debugging, collections -list, tuple
+12th April loops- continue break, pass,debugging, collections -list, tuple
 15th April collectons - set, dictionary
 16th April functions
 17th April functions
