@@ -27,6 +27,8 @@ print("numbers.__doc__=", numbers.__doc__)
 
 print("numbers * 3         =", numbers * 3)  # original object not modified
 print('numbers             =', numbers)
+print("numbers.__mul__(3)  =", numbers.__mul__(3))  # original object not modified
+print('numbers             =', numbers)
 print("numbers.__imul__(3) =", numbers.__imul__(3))  # original object IS modified
 print('numbers             =', numbers)
 
