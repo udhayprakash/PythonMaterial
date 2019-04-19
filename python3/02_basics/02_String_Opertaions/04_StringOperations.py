@@ -9,7 +9,6 @@ print('type(language) = ', type(language))
 print('id(language)   = ', id(language))
 print('===========================================')
 print('String Attributes')
-print('len(language):', len(language))
 print('dir(language) :', dir(language))
 
 # string concatenation
@@ -21,6 +20,10 @@ print('result=', result)
 
 result = mystr1.__add__(mystr2)
 print('result=', result)
+print()
+
+print('len(language):', len(language))
+print('language.__len__():', language.__len__())
 print()
 
 print(language)

@@ -76,7 +76,7 @@ print('language[:]  :', language[:])  # equal to language[0:18:+1]
 print(language)
 
 print('language[::] :', language[::])  # default step = +1
-print('language[::1] :', language[::1])
+print('language[::1] :', language[::1]) # equal to language[0:18:+1]
 print('language[::3] :', language[::3]) # equal to language[0:18:+3]
 print()
 
@@ -84,5 +84,5 @@ print()
 # then start_index = last string index and
 # final_index = -1
 print('language[::-1] :', language[::-1])  # string reversal
-print('language[::-2] :', language[::-2])  # string reversal  language[18:0:-2]
-print('language[::-5] :', language[::-5])  # string reversal  language[18:0:-5]
+print('language[::-2] :', language[::-2])  # string reversal  language[18:-1:-2]
+print('language[::-5] :', language[::-5])  # string reversal  language[18:-1:-5]
