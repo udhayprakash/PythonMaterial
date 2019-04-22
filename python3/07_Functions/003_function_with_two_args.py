@@ -17,3 +17,5 @@ def hello(name, age):
 # hello('Python')  # TypeError: hello() takes exactly 2 arguments (1 given)
 
 hello('India', 75)
+hello(name='India', age=75)
+hello( age=75, name='India')
