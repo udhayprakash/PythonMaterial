@@ -7,8 +7,10 @@ Purpose: Functions Demo
 """
 # built-in
 # print is the simplest example of variadic function
+print()
 print(12)
 print(12, '34', 'three')
+print(12, '34', 'three', 'India', 75, 34, 'sdas', 342432, 212.34)
 
 # Function Definition
 def hello(*feed_in):
@@ -17,12 +19,8 @@ def hello(*feed_in):
 
 
 # Function Call 
-hello()            # 0 inputs
-hello('HARI')      # 1 input
-
-hello('Python')
-hello(365)
-
-hello('India', 75)
+hello()                       # 0 inputs
+hello('HARI')                   # 1 input
+hello('HARI', 'chaitra')        # 2 inputs
 
 hello('India', 75, 34, 'sdas', 342432, 212.34)
