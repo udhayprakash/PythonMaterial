@@ -17,12 +17,15 @@ def outer(func):
 
 
 def div(a, b):
-    result = a / b
+    return a / b
 
 
 print(div(10,3))
 print(div(10,2.5))
 # print div(10,0)
+
+foo = outer(div)
+foo(10,3)
 
 print(outer(div(10,2.5)))
 

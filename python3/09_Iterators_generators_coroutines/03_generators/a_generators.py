@@ -14,24 +14,24 @@ def foo():
     print("Start the function!")
     for i in range(3):
         print("before yield", i)
-        # return i
         yield i
+        # return i
         print("after yield", i)
     print("end of function ")
-    # return
+    # return None
      
 
 # call 
 f = foo() 
 print('f', f) 
-print(dir(f))
 print(next(f))
+# print(dir(f))
 print()
 print(f.__next__())
 print()
 print(next(f))
 print()
-# print(f.__next__())  # StopIteration
+print(f.__next__())  # StopIteration
 
 try:
     print(next(f))

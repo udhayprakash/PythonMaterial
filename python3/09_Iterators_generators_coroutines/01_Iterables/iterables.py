@@ -22,7 +22,7 @@ Collections
 
 # int
 # for i in 2:
-#     print i  # TypeError: 'int' object is not iterable
+#     print(i)  # TypeError: 'int' object is not iterable
 
 # string   -- iterable
 for ch in 'python programming':

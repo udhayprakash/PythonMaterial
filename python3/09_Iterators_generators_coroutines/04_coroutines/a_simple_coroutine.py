@@ -11,7 +11,7 @@ from __future__ import print_function
 
 def coro():
     hello = yield "Hello"
-    yield hello                   # resulted with c.send("World")
+    yield hello      # resulted with c.send("World")
  
  
 c = coro()
@@ -30,4 +30,4 @@ except RuntimeError as ex:
 c.close()
 # garbage collection too calls .close() 
 
-# close() can be catched by GeneratorExit Exception
+# # close() can be catched by GeneratorExit Exception

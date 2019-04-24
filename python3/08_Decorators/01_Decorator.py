@@ -2,7 +2,7 @@
 # http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
 
 
-def outer(func):
+def outer(func):  
     def inner(num1, num2): #*args, **kwargs):
         try:
             func(num1, num2) #*args, **kwargs)
@@ -17,7 +17,9 @@ def outer(func):
 def div(a, b):
     return a / b
 
-# print div(4, 0)
+# print(div(4, 2))
+# print(div(4, 0))
+
 foo = outer(div)
 print(foo(4, 2))
 print(foo(4, 0))

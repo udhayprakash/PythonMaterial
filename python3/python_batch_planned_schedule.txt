@@ -1,8 +1,6 @@
 March Batch 
 ------------
-23rd April decorators, iterables, iterators
-24th April generators, debugging
-25th April Modules - sys, os, shutil, random, getpass
+25th April debugging, Modules - sys, os, shutil, random, getpass
 26th April Modules - argparse, time_related, subprocess, math , turtle
 29th April Modules - User-defined, file operations- flat files
 30th April non-flat files, image files, zipping, config files, pyw files

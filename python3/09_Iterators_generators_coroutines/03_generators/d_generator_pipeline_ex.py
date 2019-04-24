@@ -1,11 +1,11 @@
 def even_filter(nums):
     for num in nums:
         if num % 2 == 0:
-            yield num
+            yield num     # 2, 4, 6, 8, 10
 
 def multiply_by_three(nums):
     for num in nums:
-        yield num * 3
+        yield num * 3     # 6, 12, 18, 24, 30
         
 def convert_to_string(nums):
     for num in nums:
@@ -17,3 +17,6 @@ pipeline = convert_to_string(multiply_by_three(even_filter(nums)))
 #     print(num)
 
 print(next(pipeline))
+
+for each in pipeline:
+        print(each)
