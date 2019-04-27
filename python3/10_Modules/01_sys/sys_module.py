@@ -25,9 +25,9 @@ print('sys.path', type(sys.path))
 for each_path in sys.path:
     print(each_path)
 
-# import udhay
-user_input = sys.stdin.readline()
-print("Input : " + user_input)
+# # import udhay
+# user_input = sys.stdin.readline('Enter something:')
+# print("Input : " + user_input)
 
 
 print('sys.copyright', sys.copyright)
@@ -39,4 +39,6 @@ name = 'Udhay'
 print('sys.getrefcount(name)', sys.getrefcount(name))
 print('sys.getrefcount(None)', sys.getrefcount(None))
 
+
+help(sys)
 

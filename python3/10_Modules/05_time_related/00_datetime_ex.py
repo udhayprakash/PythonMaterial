@@ -30,8 +30,8 @@ print('moment                   :', moment)
 print('type(moment)             :', type(moment))
 
 now_using_combine = datetime.datetime.combine(today, moment)
-print('now_using_combine        :', moment)
-print('type(now_using_combine)  :', type(moment))
+print('now_using_combine        :', now_using_combine)
+print('type(now_using_combine)  :', type(now_using_combine))
 
 print()
 yesterday = today - datetime.timedelta(1)
