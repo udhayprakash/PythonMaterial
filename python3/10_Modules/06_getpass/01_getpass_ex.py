@@ -1,4 +1,4 @@
-from getpass import getpass
+from getpass import getpass, getuser
 
 user_name = input('User Name:')
 pass_word = getpass('Password:')

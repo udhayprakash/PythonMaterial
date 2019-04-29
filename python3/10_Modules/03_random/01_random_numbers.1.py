@@ -31,7 +31,7 @@ s = [random.random() for i in range(3)]
 print(s)  # should give [0.7725766895236029, 0.850635131875668, 0.11481894112205038]
 print()
 
-print(('os.urandom(1024)', os.urandom(1024)))
+print('os.urandom(1024)', os.urandom(1024))
 random.seed(os.urandom(1024))
 print((random.random()))  # should give 0.7819713562511514
 print((random.random()))  # should give 0.4669615948613485
