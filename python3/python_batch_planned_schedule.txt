@@ -1,12 +1,10 @@
 March Batch 
 ------------
-25th April debugging, Modules - sys, os, shutil, random, getpass
-26th April Modules - argparse, time_related, subprocess, math , turtle
-29th April Modules - User-defined, file operations- flat files
-30th April non-flat files, image files, zipping, config files, pyw files
- 1st May db files, logging
- 2nd May OOP
- 3th May OOP, code quality
- 4th May regular Expressions
- 5st May regular Expressions, web services 
- 6th May web services , Data science modules - numpy, pandas,matplotlib
+30th April  Modules - argparse, User-defined, file operations- flat files
+ 1st May    non-flat files, image files, zipping, config files, pyw files
+ 2nd May    db files, logging
+ 3th May OOP
+ 6th May OOP, code quality
+ 7th May regular Expressions
+ 8th May regular Expressions, web services
+ 9th May web services , Data science modules - numpy, pandas,matplotlib
