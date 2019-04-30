@@ -1,3 +1,7 @@
+#!/usr/bin/python 
+"""
+Purpose: importance and usage of argparse
+"""
 import argparse
 
 def main(m, n, p):
