@@ -9,9 +9,3 @@ logging.critical("This is an critical")
 
 
 # dev --> staging/UAT ---> production
-
-
-def hello(name):
-    logging.debug('entered teh function')
-
-    

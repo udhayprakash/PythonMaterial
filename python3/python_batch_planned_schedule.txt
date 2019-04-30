@@ -1,8 +1,7 @@
 March Batch 
 ------------
-30th April  Modules - argparse, User-defined, file operations- flat files
- 1st May    non-flat files, image files, zipping, config files, pyw files
- 2nd May    db files, logging
+ 1st May    file operations- flat files,non-flat files, image files, 
+ 2nd May    db files,zipping, config files, pyw files
  3th May OOP
  6th May OOP, code quality
  7th May regular Expressions

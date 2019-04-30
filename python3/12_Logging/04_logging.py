@@ -2,7 +2,7 @@
 # first.py
 import logging
 
-# Time in log
+# # Time in log
 # logging.basicConfig(format='%(asctime)s %(message)s')
 # logging.info('Logging app started')
 # logging.warning('An example logging message.')

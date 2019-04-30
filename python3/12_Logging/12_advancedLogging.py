@@ -27,7 +27,7 @@ try:
     logger.debug('my log folder is %s', myLogFolder)
 
     # formatting the log
-    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 30-Jun-2018
+    currentTimeInfo = datetime.now().strftime("%d-%b-%Y")  # ex: 30-Jun-2019
     print('currentTimeInfo', currentTimeInfo)
 
     if not os.path.exists(myLogFolder):

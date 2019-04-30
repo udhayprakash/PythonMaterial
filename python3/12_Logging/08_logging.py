@@ -19,3 +19,4 @@ logger.addHandler(han)
 # setting the level for logs.
 logmessage = "testing the log messages"
 logger.error(logmessage)
+l.error(logmessage)
