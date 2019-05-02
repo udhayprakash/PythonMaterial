@@ -1,6 +1,6 @@
 March Batch 
 ------------
- 1st May    file operations- flat files,non-flat files, image files, 
+ 1st May    file operations- non-flat files, image files, 
  2nd May    db files,zipping, config files, pyw files
  3th May OOP
  6th May OOP, code quality

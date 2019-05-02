@@ -1,3 +1,2 @@
-
-something This is first line 
+somethingng This is first line 
 Added in append mode

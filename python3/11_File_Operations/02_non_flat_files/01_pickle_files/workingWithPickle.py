@@ -28,7 +28,7 @@ f.flush()
 f.close()
 
 # Deserialization
-g = open('BelgiumStudents.pkl', 'rb')
+g = open('BelgiumStudents.pkl', 'r')
 myStudents = pickle.load(g)
 print("myStudents are ", myStudents)
 g.close()

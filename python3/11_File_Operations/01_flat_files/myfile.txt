@@ -1,15 +1,14 @@
-January 
-February
-March 
-April
+This is first line
+THiss is second line 
+It iss third line 
+now, we are in 4th file 
+5th line is the last
 
-read - to get complete file content as a single string 
-readline - to get the current line only as a string 
-readlines - to get all the lines as a list of strings
+read() 
+readline() 
+readlines()
 
-.tell ---- to get the cursor position
-.seek(34) -- to move the cursor to that position
-	line 444444444444
-	line 444444444444
-	line 444444444444
-	line 444444444444
+
+write()
+writeline()
+writelines()

@@ -23,7 +23,7 @@ print("Closed or not : ", fo.closed)
 
 g = open('foo.txt', 'r')
 # g.write('something') #io.UnsupportedOperation: not writable
-print(dir(g))
+# print(dir(g))
 
 data  = g.read()
 print('data:', data)

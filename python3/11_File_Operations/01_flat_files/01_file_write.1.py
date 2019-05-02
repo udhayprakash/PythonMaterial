@@ -1,4 +1,3 @@
-from __future__ import print_function
 # files -- read , write , append
        #   r       w      a
        #   rb      wb     ab
@@ -20,32 +19,32 @@ print("my_file_handler.closed", my_file_handler.closed)
 # print("my_file_handler.read()", my_file_handler.read())#ValueError: I/O operation on closed file
 
 
-with open('myfile.txt') as g: #, 'rb'
-    data = g.read()
-    g.close()
+# with open('myfile.txt') as g: #, 'rb'
+#     data = g.read()
+#     g.close()
 
-print('data\n', data)
+# print('data\n', data)
 
-with open('myfile.txt', 'w') as f:
-    f.write('date is 14th August 2018')
-    f.close()
-
-
-
-# f.read --- str ing 
-# f.readline --- string
-# f.readlines() -- list of strings
+# with open('myfile.txt', 'w') as f:
+#     f.write('date is 14th August 2018')
+#     f.close()
 
 
 
-##############
-
-with open('myfile.txt', 'a') as f:
-    f.write('\ndate is 14th August 2018')
-    f.close()
+# # f.read --- str ing 
+# # f.readline --- string
+# # f.readlines() -- list of strings
 
 
-with open('myfile.txt', 'r') as g:
-    data = g.read()
-    print('data\n', data)
-    g.close()
+
+# ##############
+
+# with open('myfile.txt', 'a') as f:
+#     f.write('\ndate is 14th August 2018')
+#     f.close()
+
+
+# with open('myfile.txt', 'r') as g:
+#     data = g.read()
+#     print('data\n', data)
+#     g.close()
