@@ -17,5 +17,6 @@ print('ans * 2', ans * 2)
 # Built-in function 
 # sum()
 
-# print(sum(1)) # TypeError: 'int' object is not iterable
+# print(sum(12, 34, 56))
 print(sum((12, 34, 56)))
+# print(sum(1)) # TypeError: 'int' object is not iterable

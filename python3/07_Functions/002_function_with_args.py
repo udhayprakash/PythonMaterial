@@ -13,5 +13,5 @@ def hello(name):
 # Function Call 
 # hello() # TypeError: hello() takes exactly 1 argument (0 given)
 hello('Python')
-hello(5)
+print(hello(5))
 # hello('Python', 'programming')# TypeError: hello() takes exactly 1 argument (2 given)

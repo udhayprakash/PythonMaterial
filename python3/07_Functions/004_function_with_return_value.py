@@ -13,7 +13,7 @@ def hello(name, age):
     # return 12
     # return 12.0
     # return 12.0,
-    # return (12,),
+    # return (12,), #12,, 
     # return {12:34}
     return "%s's age is %d"%(name, age)
 

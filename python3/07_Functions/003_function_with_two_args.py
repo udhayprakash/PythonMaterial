@@ -19,3 +19,4 @@ def hello(name, age):
 hello('India', 75)
 hello(name='India', age=75)
 hello( age=75, name='India')
+hello(75, 'India')

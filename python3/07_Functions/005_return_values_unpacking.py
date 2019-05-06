@@ -15,13 +15,21 @@ print("type(result)=", type(result))
 print("result      =", result)
 
 # tuple unpacking 
-result1, result2 = hello()
+result1, result2 = hello() #123, 45 #
 print("result1      =", result1)
 print("result2      =", result2)
 
+#####################
+def hello():
+    return [11, 22, 33]
+
+
 # list unpacking 
-r1, r2, r3 = [11, 22, 33]
-print(r1,r2, r3)
+res1, res2, res3 = hello()
+print("res1      =", res1)
+print("res2      =", res2)
+print("res3      =", res3)
+
 
 # m1, m2 = [11, 22, 33]  #ValueError: too many values to unpack (expected 2)
 # print(m1,m2)

@@ -39,9 +39,9 @@ pi = 3.141  # immutable - call by value
 
 # simple_function(pi)
 # print('outside function pi = {}'.format(pi))
-# # changes with in function are not reflected outside it
+# changes with in function are not reflected outside it
 
-# # case 3=====   call by reference
+# case 3=====   call by reference
 # def simple_function(pi):
 #     global pi
 #     print('before change pi = {}'.format(pi))

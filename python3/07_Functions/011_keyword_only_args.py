@@ -11,7 +11,7 @@ Purpose: Functions Demo
 """
 
 # Function Definition
-def recv(maxsize, *, block=True):
+def recv(maxsize,  *, block=True):
     print("\ntype(maxsize)  ",  type(maxsize))
     print("type(block) ",  type(block))
 
@@ -21,5 +21,6 @@ def recv(maxsize, *, block=True):
 
 # Function Call 
 recv(8192, block=False)
-# recv(8192, False) 
+recv(8192, block=True) 
+recv(8192, False) 
 # TypeError: recv() takes 1 positional argument but 2 were given

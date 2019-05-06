@@ -9,6 +9,7 @@ Purpose: Functions Demo
 
     Function with no arguments and no return value
 """
+# hello()
 
 # Function Definition
 def hello():
@@ -20,7 +21,6 @@ print(hello)
 print('callable(hello)', callable(hello))
 fruit = 'apple'
 print('callable(fruit)', callable(fruit))
-
 
 # Function Call 
 hello()
