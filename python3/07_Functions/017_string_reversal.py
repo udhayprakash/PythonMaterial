@@ -4,12 +4,12 @@ __author__ = 'udhay Prakash'
 
 # 1, 2, 3, 4, 5
 def stringreverse(string):
-    #print string
+    print(string)
     if string == '':
         return ''
     else:
         #print(string[1:])
-        print(string[0])
+        # print(string[0])
         return stringreverse(string[1:]) + string[0]
 
 '''

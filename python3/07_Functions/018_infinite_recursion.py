@@ -8,10 +8,10 @@ import sys
 # display('Udhay')
 
 
-# To get the stack depth - platform dependent
-print(sys.getrecursionlimit())
-sys.setrecursionlimit(2000)
-print(sys.getrecursionlimit())
+# # To get the stack depth - platform dependent
+# print(sys.getrecursionlimit())
+# sys.setrecursionlimit(2000)
+# print(sys.getrecursionlimit())
 
 
 # global noOfRecursions
