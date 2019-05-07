@@ -11,7 +11,7 @@ Http response status
 import requests
 import ctypes
 import os
-
+from pprint import pprint
 # existing_images_in_cats_site  = xrange(100, 600)
 existing_images_in_cats_site = (
     100, 101, 200, 201, 202, 204, 206, 207, 300, 301, 302, 303, 304, 305, 307, 400, 401, 402, 403, 404, 405, 406, 408,
