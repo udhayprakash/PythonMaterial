@@ -13,8 +13,9 @@ def outer():
 
     def inner():
         print('In Inner function', nnum)
+        # default is None
 
-    return inner#()
+    return inner#() # function
 
 
 result = outer()
