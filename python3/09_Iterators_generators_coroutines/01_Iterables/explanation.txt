@@ -1,7 +1,12 @@
 non-iterable objects ====> int, float, None, True, False ..
 Iterable objects     ====> str, list, tuple, dict, set, itertor, generator, range()
 
-
+range(9)
+    - range(0, 9,1)  => 0
+    - range(1,9, 1)  => 1
+    - range(2,9, 1)  => 2
+    - range(3,9, 1)  => 3
+    ....
 
 collections - iter() 
 
