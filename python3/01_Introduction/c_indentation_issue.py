@@ -2,15 +2,18 @@
 
 
 print("hello world")   
-print('hello world')  # IndentationError: unexpected indent
-
-
+print('hello world')  
+# IndentationError: unexpected indent
 
 # block code - if, elif , for,  while, class,  functions
 
 
+# if 2 < 3:
+# print('2 < 3') 
+# IndentationError: expected an indented block
+
 if 2 < 3:
-    print('2 < 3') # IndentationError: expected an indented block
+   print('2 < 3') 
 
 if 12> 23:
     print('12> 23')
