@@ -20,6 +20,7 @@ if response.status_code != 200:
 
 
 response_data = response.json()
+import pdb; pdb.set_trace();
 
 if response_data.get('message') != 'success':
     print(response_data.get('reason'))

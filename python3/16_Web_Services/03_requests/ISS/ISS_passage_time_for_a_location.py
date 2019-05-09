@@ -27,6 +27,10 @@ if response_data.get('message') != 'success':
     print(response_data.get('reason'))
     sys.exit(1)
 
+from pprint import pprint 
+pprint(response_data)
+
+
 for each in response_data.get('response'):
     duration = each.get('duration')
     timestamp_raw = each.get('risetime')

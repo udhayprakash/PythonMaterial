@@ -8,7 +8,7 @@ class Animal:
 
 duck = Animal('Duck')  # Animal.__init__(duck, 'Duck')
 duck.walk()  # Animal.walk(duck)
-print(dir(duck))
+# print(dir(duck))
 
 rhino = Animal('African Rhino')
 rhino.walk()

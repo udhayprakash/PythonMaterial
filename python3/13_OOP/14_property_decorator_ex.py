@@ -17,12 +17,13 @@ class Person(object):
 
 person = Person('Udhay', 'Prakash')
 print(person.email())
+print('person.first', person.first)
 
-print(person.fullname)  #()
+print(person.fullname)  #
 
-person.last = 'chaitanya'
+# person.last = 'chaitanya'
 
-print(person.fullname) 
+# print(person.fullname) 
 
 # # # person.fullname = 'raja ram'
 # # # print 'person.fullname', person.fullname

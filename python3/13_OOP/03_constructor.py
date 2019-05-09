@@ -19,14 +19,14 @@ class Name:
 
 # instantiation
 n = Name()    # Name.__init__(n)
-print(dir(n))
-m = Name()
-p = Name  # class object assignment
+# # print(dir(n))
+# m = Name()
+# p = Name  # class object assignment
 
-p()
+# p()
 
 
-print()
+# print()
 print('----------calling contructor')
 n.__init__()
 
@@ -34,11 +34,11 @@ print('='*10)
 print('n.__dict__', n.__dict__)
 print('vars(n)   ', vars(n)) # instance variables, not methods
 
-print('Name.__dict__', Name.__dict__)
+# print('Name.__dict__', Name.__dict__)
 print('vars(Name)   ', vars(Name)) # class variables, not methods
 
-print('vars()', vars())
-# Note: calling the vars() function without parameters will return a dictionary containing the local symbol table.
+print('\n\nvars()', vars())
+# # Note: calling the vars() function without parameters will return a dictionary containing the local symbol table.
 
 
 

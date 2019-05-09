@@ -14,6 +14,12 @@ print(random.randint(1, 100))
 # random.uniform(a,b) => a <= N <= b
 print(random.uniform(1, 10))
 
+# Generate a randomly selected element from range(start, stop, step)
+# random.randrange(start, stop[, step])
+for i in range(3):
+    print(random.randrange(0, 101, 5))
+
+
 # To shuffle a list of elements
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 random.shuffle(numbers)
@@ -39,7 +45,6 @@ print(x[0])
 y = random.sample(mountains, 3)
 print(y)
 
-# Generate a randomly selected element from range(start, stop, step)
-# random.randrange(start, stop[, step])
-for i in range(3):
-    print(random.randrange(0, 101, 5))
+# Pick a random item from the list
+x = random.choice(mountains)
+print(x)
