@@ -8,9 +8,9 @@ import logging
 from os import system
 try:
 	from colorlog import ColoredFormatter
-except ImportError,ex:
-	print ex
-	print "Installing that module"
+except ImportError as ex:
+	print(ex)
+	print("Installing that module")
 	system('pip install colorlog')
 	from colorlog import ColoredFormatter
 
