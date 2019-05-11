@@ -1,4 +1,4 @@
-March Batch 
+May Batch 
 ------------
  1st May    file operations- non-flat files, image files, 
  2nd May    zipping, config files, pyw files
