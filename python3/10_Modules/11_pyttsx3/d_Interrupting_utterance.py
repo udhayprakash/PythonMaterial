@@ -1,7 +1,7 @@
 import pyttsx3
 
 def onWord(name, location, length):
-   print 'word', name, location, length
+   print('word', name, location, length)
    if location > 10:
       engine.stop()
       

@@ -8,4 +8,4 @@ with open(r'C:\Python27\LICENSE.txt', 'rt') as f:
 
 print 'Most common:'
 for letter, count in c.most_common(5):
-    print '%s: %7d' % (letter, count)
+    print('%s: %7d' % (letter, count))
