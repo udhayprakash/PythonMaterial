@@ -20,7 +20,7 @@ def test():
   print('===========================================')
   cons.set_text_attr(cons.FOREGROUND_BLUE | cons.BACKGROUND_GREY |
                 cons.FOREGROUND_INTENSITY | cons.BACKGROUND_INTENSITY)
-  print 'And Now for Something',
+  print('And Now for Something', end=' ')
   sys.stdout.flush() # Force writing first part of the line in blue
   cons.set_text_attr(cons.FOREGROUND_RED | cons.BACKGROUND_GREY |
                 cons.FOREGROUND_INTENSITY | cons.BACKGROUND_INTENSITY)
