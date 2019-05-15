@@ -16,17 +16,32 @@ python 3
 cost_of_apple = 12
 cost_of_mango = 5
 
-# int(), float()
 
-quantity_of_apples = int(input('Enter quantity of Apples:'))
-print("type(quantity_of_apples) = ", type(quantity_of_apples))
+qty_of_apples = float(input('HOw many apples you need(in numbers):'))
+print('qty_of_apples = ', qty_of_apples, type(qty_of_apples))
 
-quantity_of_mangos = float(input('quantity_of_mangos='))
-print("type(quantity_of_mangos) = ", type(quantity_of_mangos))
+# type convertors int(), float()
 
-total_cost = ((cost_of_apple * quantity_of_apples)
-             + (cost_of_mango * quantity_of_mangos))
-print("Total Cost = ", total_cost)
+qty_of_mangos = int(input('HOw many mangos you need(in numbers):'))
+print('qty_of_mangos = ', qty_of_mangos)
+
+total_cost = cost_of_apple * qty_of_apples + \
+                cost_of_mango * qty_of_mangos
+
+print('total_cost = ', total_cost)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
