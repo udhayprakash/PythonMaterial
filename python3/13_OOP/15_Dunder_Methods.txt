@@ -1,0 +1,15 @@
+OPerator Overloading
+----------------------
+a + b           a.__add__(b)        b.__radd__(a)
+a - b           a.__sub__(b)        b.__rsub__(a)
+a * b           a.__mul__(b)        b.__rmul__(a)
+a / b           a.__truediv__(b)    b.__rtruediv__(a)
+a // b          a.__floordiv__(b)   b.__rfloordiv__(a)
+a % b           a.__mod__(b)        b.__rmod__(a)
+a ** b          a.__pow__(b)        b.__rpow__(a)
+a << b          a.__lshift__(b)     b.__rlshift__(a)
+a >> b          a.__rshift__(b)     b.__rrshift__(a)
+a & b           a.__and__(b)        b.__rand__(a)
+a ^ b           a.__xor__(b)        b.__rxor__(a)
+a | b           a.__or__(b)        b.__ror__(a)
+            
