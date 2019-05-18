@@ -1,0 +1,24 @@
+Your task is to write a regular expression that matches only and exactly strings of form: 
+, where each variable  can be any single character except the newline.
+
+postiev 
+    123.456.abc.def
+    asd.asd.asd.asd
+    `!@.#$%.^&*.()_
+negatve
+    1123.456.abc.def
+    123.123.123.132.123.123
+
+Your task is to match the pattern  xxXxxXxxxx
+Here x denotes a digit character, and X denotes a non-digit character.
+positive 
+    06-11-2015
+    10a10.2015452254
+
+Write a regex which can match all the occurences of digit which are immediately preceded by odd digit.
+positive
+    123Go!
+
+
+Look forward regex (?<=)
+Look behind regex   (?<!)
