@@ -1,0 +1,18 @@
+asn: AS55836
+city: Nallakunta
+continent_code: AS
+country: IN
+country_calling_code: '+91'
+country_name: India
+currency: INR
+in_eu: false
+ip: 2405:204:6308:b8c5:4db2:a019:5cc7:c30b
+languages: en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc
+latitude: '17.284100'
+longitude: '81.021200'
+org: Reliance Jio Infocomm Limited
+postal: '507306'
+region: Telangana
+region_code: TG
+timezone: Asia/Kolkata
+utc_offset: '+0530'
