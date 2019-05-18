@@ -1,6 +1,6 @@
 import os
-from urllib2 import urlopen
-from HTMLParser import HTMLParser
+from urllib.request import urlopen
+from html.parser import HTMLParser
 
 
 # Parse xkcd page
@@ -25,7 +25,7 @@ class Parser(HTMLParser):
 def get_xkcd(n=''):
     # Download comic page
     url = 'https://xkcd.com/{}'.format(n)
-    print '---', url
+    print('---', url)
     page = urlopen(url).read().decode('utf-8')
 
     # Get image url from parser
@@ -43,10 +43,10 @@ def get_xkcd(n=''):
     path = os.path.join(folder, image_name)
 
     with open(path, 'wb') as f:
-        print '======', 'https:' +parser.url
+        print('======', 'https:' +parser.url)
         f.write(urlopen('https:'+ parser.url).read())
 
 # Get a bunch of comics
 for i in range(1200, 1212):
     get_xkcd(i)
-    print('Downloaded xkcd #{}'.format(i))
+    print(('Downloaded xkcd #{}'.format(i)))
