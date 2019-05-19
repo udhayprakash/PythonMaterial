@@ -8,7 +8,7 @@ url = "http://checkip.dyndns.org"
 
 print(url)
 
-response = urllib.request.urlopen(url).read()
+response = urllib.request.urlopen(url).read().decode('utf-8')
 print("response", response)
 
 document_root = html.fromstring(response)

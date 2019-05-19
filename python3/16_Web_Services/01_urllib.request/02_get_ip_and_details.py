@@ -11,7 +11,7 @@ def print_n_write_response(url):
     connection = urllib.request.urlopen(url)
     data = connection.read()
     write_response_to_file(data, url.split('/')[-1])
-    print(data)
+    print(data.decode('utf-8'))
 
 
 def write_response_to_file(data, extension_name):

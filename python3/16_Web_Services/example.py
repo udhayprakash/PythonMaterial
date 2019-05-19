@@ -9,6 +9,7 @@ from datetime import datetime
 
 ACCESS_KEY = '96b5ca6a3116caa7a9b8985fd294243e'
 API_URL = 'http://www.apilayer.net/api/'
+
 def get_live_currency_quote():
     URL = API_URL +'live?access_key='+ ACCESS_KEY
     response = requests.get(URL)
