@@ -9,7 +9,7 @@ class TestAnagram(unittest.TestCase):
  
     def test_multiword_anagram(self):
         self.assertTrue( is_anagram("ana gram", "naga ram") )
-        self.assertTrue( is_anagram("anagram", "nag a ram") )
+        self.assertFalse( is_anagram("anagram", "nag a ram") )
  
 if __name__ == '__main__':
     unittest.main()

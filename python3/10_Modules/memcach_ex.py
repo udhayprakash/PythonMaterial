@@ -4,7 +4,9 @@
 
 import memcache, random, time, timeit
 
+# starting the memcache client
 mc = memcache.Client(['127.0.0.1:11211'])
+
 def compute_square(n):
     value = mc.get('sq:%d' % n)
     if value is None:
