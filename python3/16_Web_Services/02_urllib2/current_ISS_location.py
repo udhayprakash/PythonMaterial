@@ -22,27 +22,27 @@ http response codes
 5XX - server side issues
 """
 import json
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 from pprint import pprint
 from datetime import datetime
 
-req = urllib2.Request("http://api.open-notify.org/iss-now.json")
-response = urllib2.urlopen(req)
+req = urllib.request.Request("http://api.open-notify.org/iss-now.json")
+response = urllib.request.urlopen(req)
 
 obj = json.loads(response.read())
 
 # print 'obj', obj
 pprint(obj, indent=2, depth=4)
 # # print help(pprint)
-print obj['timestamp'], 'is equal to ', datetime.fromtimestamp(obj['timestamp'])
+print(obj['timestamp'], 'is equal to ', datetime.fromtimestamp(obj['timestamp']))
 
-print obj['iss_position']['latitude'], obj['iss_position']['longitude']
+print(obj['iss_position']['latitude'], obj['iss_position']['longitude'])
 
-print 'At {TIME}, ISS is at lat:{LAT}, long:{LONG}'.format(
+print('At {TIME}, ISS is at lat:{LAT}, long:{LONG}'.format(
                             TIME=datetime.fromtimestamp(obj['timestamp']),
                             LAT=obj['iss_position']['latitude'],
                             LONG=obj['iss_position']['longitude']
-                        )
+                        ))
 # Example prints:
 #   1364795862
 #   -47.36999493 151.738540034
@@ -71,10 +71,10 @@ def get_address_for_given_coordinates(latitude, longitude):
     response = requests.get(REVERSE_SEARCH_URL, params=payload).json()
     # pprint(response)
     if response.get('error'):
-        print(response.get('error'))
+        print((response.get('error')))
         return
 
-    result_string = u'''
+    result_string = '''
             ====Corresponding Address=====
             VILLAGE: {village}
             STATE DISTRICT: {state_district}

@@ -5,13 +5,13 @@
 import json
 import re
 # from BeautifulSoup import BeautifulSoup
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 
 # Ask for movie title
-title = raw_input("Please enter a movie title: ")
+title = input("Please enter a movie title: ")
 
 # Ask for which year
-year = raw_input("which year? ")
+year = input("which year? ")
 
 # Search for spaces in the title string
 raw_string = re.compile(r' ')
@@ -20,13 +20,13 @@ raw_string = re.compile(r' ')
 searchstring = raw_string.sub('+', title)
 
 # Prints the search string
-print searchstring
+print(searchstring)
 
 # The actual query
 url = "http://www.imdbapi.com/?t=" + searchstring + "&y=" + year
 
-request = urllib2.Request(url)
+request = urllib.request.Request(url)
 
-response = json.load(urllib2.urlopen(request))
+response = json.load(urllib.request.urlopen(request))
 
-print json.dumps(response, indent=2)
+print(json.dumps(response, indent=2))

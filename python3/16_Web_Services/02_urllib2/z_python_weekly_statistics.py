@@ -1,11 +1,11 @@
-from __future__ import print_function
+#!/usr/bin/python
 
 import os
 import pickle
 import re
 import sys
-import urllib2
-from HTMLParser import HTMLParser
+import urllib.request, urllib.error, urllib.parse
+from html.parser import HTMLParser
 
 
 class ArchiveHTMLParser(HTMLParser):
@@ -42,10 +42,10 @@ class Collector(object):
             self.data['issue'] += 1
             url = base_url + str(self.data['issue']) + '.html'
             try:
-                f = urllib2.urlopen(url)
+                f = urllib.request.urlopen(url)
                 html = f.read()
                 f.close()
-            except urllib2.HTTPError as e:
+            except urllib.error.HTTPError as e:
                 print(e, 'while fetching', url)
                 break
 
@@ -68,7 +68,7 @@ class Collector(object):
 
     def report(self):
         hosts, total = 0, 0
-        for k in sorted(self.data['hosts'].keys(), key=lambda x: self.data['hosts'][x], reverse=True):
+        for k in sorted(list(self.data['hosts'].keys()), key=lambda x: self.data['hosts'][x], reverse=True):
             hosts += 1
             total += int(self.data['hosts'][k])
             # print(k, self.data['hosts'][k])
