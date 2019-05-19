@@ -21,4 +21,7 @@ if __name__ == "__main__":
     responses = [download(url) for url in urls]
     html = [response.text for response in responses]
     end = time.time()
-    print "Time: %f seconds" % (end - start)
+    print("Time: %f seconds" % (end - start))
+
+# solution for problem in python 3.7 
+# https://stackoverflow.com/questions/43948454/python-invalid-syntax-with-async-def

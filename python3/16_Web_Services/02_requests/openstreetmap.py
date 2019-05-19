@@ -26,5 +26,5 @@ def get_location_coordinates(search_string):
 
 
 if __name__ == '__main__':
-    searching_string = raw_input('Enter an address:')
+    searching_string = input('Enter an address:')
     get_location_coordinates(searching_string)

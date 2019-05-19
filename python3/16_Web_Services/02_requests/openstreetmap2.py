@@ -3,7 +3,7 @@
 Purpose: open street map API usage
 https://wiki.openstreetmap.org/wiki/Nominatim#Example
 """
-from __future__ import print_function
+
 import requests
 from pprint import pprint
 
@@ -22,7 +22,7 @@ def get_address_for_given_coordinates(latitude, longitude):
         print(response.get('error'))
         return
 
-    result_string = u'''
+    result_string = '''
     ====Corresponding Address=====
     VILLAGE: {village}
     STATE DISTRICT: {state_district}
@@ -44,5 +44,5 @@ def get_address_for_given_coordinates(latitude, longitude):
 
 
 if __name__ == '__main__':
-    search_latitude, search_longitude = raw_input('Enter GPS coorinate (latitude, longitude):').replace(' ', '').split(',')
+    search_latitude, search_longitude = input('Enter GPS coorinate (latitude, longitude):').replace(' ', '').split(',')
     get_address_for_given_coordinates(search_latitude, search_longitude)
