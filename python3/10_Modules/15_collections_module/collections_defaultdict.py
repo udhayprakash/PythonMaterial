@@ -1,4 +1,5 @@
 from collections import defaultdict
+from pprint import pprint
 
 colours = (
     ('Yasoob', 'Yellow'),
@@ -14,4 +15,4 @@ favourite_colours = defaultdict(list)
 for name, colour in colours:
     favourite_colours[name].append(colour)
 
-print(favourite_colours)
+pprint(favourite_colours)

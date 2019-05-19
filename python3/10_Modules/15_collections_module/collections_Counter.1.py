@@ -1,5 +1,8 @@
 from collections import Counter
 
+print(Counter(['a', 'b', 'c', 'a', 'b', 'b']))
+print() 
+
 colours = (
     ('Yasoob', 'Yellow'),
     ('Ali', 'Blue'),
@@ -12,8 +15,6 @@ colours = (
 favs = Counter(name for name, colour in colours)
 print(favs)
 
-print() 
-print(Counter(['a', 'b', 'c', 'a', 'b', 'b']))
 
 print()
 print(Counter({'a':2, 'b':3, 'c':1}))
