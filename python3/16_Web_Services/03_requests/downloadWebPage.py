@@ -10,7 +10,7 @@ def download(url):
     req = requests.get(url)
     # First let us check non existing files.
     if req.status_code == 404:
-        print('No such file found at %s' % url)
+        print(('No such file found at %s' % url))
         return
     filename = url.split('/')[-1]
     with open('downloadedWebPage.html', 'a+b') as fobj:
@@ -18,7 +18,7 @@ def download(url):
     print("Download over.")
 
 if __name__ == '__main__':
-    url = raw_input('Enter a URL:')
+    url = input('Enter a URL:')
     download(url)
 
 
