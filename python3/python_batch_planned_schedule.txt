@@ -1,9 +1,22 @@
 May Batch 
 ------------
- 1st May    file operations- non-flat files, image files, 
- 2nd May    zipping, config files, pyw files
- 3th May OOP
- 6th May OOP, code quality
- 7th May regular Expressions
- 8th May regular Expressions, web services
- 9th May web services , Data science modules - numpy, pandas,matplotlib
+20th May    String operations, help usage 
+21st May    Relational, Logical, Boolean, Bitwise, range, identify, conditional ops 
+22nd May    Loops, Exceptions, Debugging 
+23rd May    Debugging, collections: List 
+24th May    collections: tuple, set, 
+27th May    collections: dict, functions
+28th May    functions
+29th May    Decorators 
+30th May    Iterators, Generators, coroutines
+31st May    Modules: math, sys, argarse, os, shutil
+ 3rd Jun    Modules: subprocess, getpass, time_related, random
+ 4th Jun    Modules: pyttsx3, qr coe, console coloring, turtle, collections, user defined 
+ 5th Jun    File operations - flat files
+ 6th Jun    non-flat files, image, zip, config, pyw files 
+ 7th Jun    DB files, Logging 
+10th Jun    OOP 
+11th Jun    OOP, code quality 
+12th Jun    regular expressions 
+13th Jun    web services 
+14th Jun    Data science related: numpy, pandas, matplotlib 
