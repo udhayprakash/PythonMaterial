@@ -1,11 +1,11 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
-urls = ["http://google.com", "http://nytimes", "http://CNN.com"]
+urls = ["http://google.com", "http://nytimes.com", "http://CNN.com"]
 
 i=0
 
 while i<len(urls):
-	htmlfile = urllib.urlopen(urls[i])
+	htmlfile = urllib.request.urlopen(urls[i])
 	htmltext = htmlfile.read()
-	print htmltext[0:100]
+	print(htmltext[0:100])
 	i+=1

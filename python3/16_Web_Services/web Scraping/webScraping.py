@@ -1,7 +1,7 @@
-import urllib
+import urllib.request
 
-htmlfile = urllib.urlopen("http://google.com")
+htmlfile = urllib.request.urlopen("http://google.com")
 
 htmltext = htmlfile.read()
 
-print htmltext
+print(htmltext)
