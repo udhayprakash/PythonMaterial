@@ -1,0 +1,100 @@
+'''
+Hi %s! 
+Thank yu for shopping at XYZ mall. 
+Rupees %f was debited from your credit card ending with xxx%d.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+''' %('Hitesh', 1000.34, 345)
+
+case 2:
+-------
+'''
+Hi %s! 
+Thank yu for shopping at XYZ mall. 
+Rupees %f was debited from your credit card ending with xxx%d.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+''' %('Hitesh', 1000.34, '345')
+
+case 3:
+'''
+Hi %s! 
+Thank yu for shopping at XYZ mall. 
+Rupees %f was debited from your credit card ending with xxx%r.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+''' %('Hitesh', 1000.34, '345')
+
+
+case 4:
+-------
+'''
+Hi {}! 
+Thank yu for shopping at XYZ mall. 
+Rupees {} was debited from your credit card ending with xxx{}.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+Thank you {}
+'''.format('Hitesh', 1000.34, '345', 'Hitesh')
+
+case 5:
+-------
+'''
+Hi {0}! 
+Thank yu for shopping at XYZ mall. 
+Rupees {1} was debited from your credit card ending with xxx{2}.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+Thank you {0}
+'''.format('Hitesh', 1000.34, '345')
+
+
+case6:
+------
+'''
+Hi {NAME}! 
+Thank yu for shopping at XYZ mall. 
+Rupees {AMOUNT} was debited from your credit card ending with xxx{CARD_NO}.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+Thank you {NAME}
+'''.format(NAME='Hitesh', AMOUNT=1000.34, CARD_NO='345')
+
+
+case 7:
+-------
+NAME='Hitesh'
+AMOUNT=1000.34
+
+CARD_NO='345'
+f'''
+Hi {NAME}! 
+Thank yu for shopping at XYZ mall. 
+Rupees {AMOUNT} was debited from your credit card ending with xxx{CARD_NO}.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+Thank you {NAME}
+'''
+
+case 8: 
+-------
+NAME='Hitesh'
+AMOUNT=1000.34
+
+CARD_NO='345'
+f'''
+Hi {NAME.upper()}! 
+Thank yu for shopping at XYZ mall. 
+Rupees {AMOUNT} was debited from your credit card ending with xxx{CARD_NO}.
+
+Shop again. 
+If you didn't do transcation reach out at contact@somebanck.com
+Thank you {NAME.title()}
+'''
