@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 
-print("hello world")   
+
+
+print("hello world")            
 print('hello world')  
 # IndentationError: unexpected indent
 
@@ -12,7 +14,7 @@ print('hello world')
 # print('2 < 3') 
 # IndentationError: expected an indented block
 
-if 2 < 3:
+if 2 < 3: 
    print('2 < 3') 
 
 if 12> 23:

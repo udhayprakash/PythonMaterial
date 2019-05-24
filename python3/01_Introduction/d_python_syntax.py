@@ -8,7 +8,7 @@ name = "Almighty"
 print(name)
 print('name')
 
-print('\nname =', name)
+print('\n\tname =', name)
 print(type(name), name)
 
 print('name of student: name')
