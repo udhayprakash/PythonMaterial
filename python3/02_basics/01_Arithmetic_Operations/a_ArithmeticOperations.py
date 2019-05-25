@@ -42,10 +42,10 @@ print('10/2        = ', 10/2)
 print('10/5        = ', 10/5)
 print('10/3        = ', 10/3)
 
-# # print()
-# # # integers - int, long, float
-# # print('type(num1)= ', type(num1))
-# # print('type(num2)= ', type(num2))
+# print()
+# # integers - int, long, float
+# print('type(num1)= ', type(num1))
+# print('type(num2)= ', type(num2))
 
 # # int + int  = int
 # # int / int  = int

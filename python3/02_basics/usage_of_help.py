@@ -17,4 +17,4 @@ print(dir(mountain))
 help(mountain.isalpha)
 
 
-# NOTE: help() uasage differs only for string objects
+# NOTE: help() usage differs only for string objects

@@ -6,7 +6,7 @@ Purpose: Boolean Operations
 """
 
 
-choice = True
+choice = False
 print('choice = ', choice)
 
 true = 'Udhay Prakash'  # NOT RECOMMENDED to use 'true' for variable name
