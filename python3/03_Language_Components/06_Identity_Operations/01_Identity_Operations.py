@@ -16,7 +16,7 @@ Object
     - address location where it is stored
 
 Dual Memory management Strategy
--5 to 255
+-5 to 256
 """
 
 print('4 == 4  ', 4 == 4)

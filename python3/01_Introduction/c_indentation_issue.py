@@ -1,10 +1,8 @@
 #!/usr/bin/python
 
 
-
-
-print("hello world")            
-print('hello world')  
+print("hello world")                   
+print('hello world')       
 # IndentationError: unexpected indent
 
 # block code - if, elif , for,  while, class,  functions

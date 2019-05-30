@@ -8,10 +8,8 @@ __author__ = 'Python Tutor'
 
 luck_number = 67
 
-guessed_number = int(input('Guess no. between 1 & 99:'))
-print(f'You Guessed {guessed_number} of datatye {type(guessed_number)}')
 
-# int(), str(), float()
+guessed_number = int(input('guessed number='))
 
 # if guessed_number == luck_number:
 #     print('YOu guessed correctly!!!!!!')
@@ -20,9 +18,12 @@ print(f'You Guessed {guessed_number} of datatye {type(guessed_number)}')
 # else: 
 #     print('Else condition meet')
 
+
 if guessed_number == luck_number:
-    print('You guessed correctly!!!!')
+    print('YOu guessed correctly!!!!!!')
 elif guessed_number > luck_number:
-    print('please guess further lower number')
-else: # guessed_number > luck_number
-    print('please guess further greater number')
+    print('guessed_number > luck_number')
+elif guessed_number < luck_number:
+    print('guessed_number < luck_number')
+
+#NOTE: else is optional in python 

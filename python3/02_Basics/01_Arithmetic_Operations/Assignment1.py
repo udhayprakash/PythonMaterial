@@ -1,10 +1,15 @@
 #!/usr/bin/python
 """
 Purpose: 
-hair oil  67/1 ltr  ==> qty: 3 ltr 
-apples    12.3/1 dozen  ==> 8 dozen
-mangos    15 /1 piece   ==> 32 pieces
-dozen = 12
+    Assignment 1:  
+    Create a grocery store application where following commodities are sold.
+        item        cost            quantity
+        ---------------------------------------
+        hair oil  67/1 ltr      ==> 3 ltrs 
+        apples    12.3/1 dozen  ==> 8 dozen
+        mangos    15 /1 piece   ==> 32 pieces
+    HINT: dozen = 12
+
 """
 # cost
 cost_of_hair_oil =  67 #  ltr 
