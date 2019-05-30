@@ -68,3 +68,6 @@ print(red._fields)
 
 # namedtuples are immtuable, but to change a value in it 
 print(red._replace(g=3))
+
+# original object remains intact
+print(red)
