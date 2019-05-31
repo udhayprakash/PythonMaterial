@@ -7,31 +7,25 @@ while loop- condition
 """
 # NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 
-num1 = 1
-while num1 <= 10:
-    num2 = 1
-    while num2 <= 10:
-        # print(num1, '*', num2, '=', num1 * num2)
-        print(f'{num1} * {num2} = {num1 * num2}')
-        num2 = num2 + 1
-    print('-' * 15)
-    num1 = num1 + 1
+MIN = 1
+MAX= 10
+
+num1 = MIN
+while num1 <= MAX:
+    num2 = MIN
+    while num2 <= MAX:
+        # print(num1, '*',  num2, '=', num1 * num2)
+        # print('%d * %d = %d'%(num1, num2, num1 * num2))
+        # print('%2d * %2d = %3d'%(num1, num2, num1 * num2))
+        # print('{:2} * {:2} = {:3}'.format(num1, num2, num1 * num2))
+        print(f'{num1:2} * {num2:2} = {num1 * num2:3}')
+        # num2 = num2 + 1
+        num2 += 1
+
+    print('-'* 15)
+    # print(num1)
+    # num1 = num1 + 1
+    num1 += 1
 
 
-
-# MIN = 0
-# MAX = 12
-
-# a = MIN  # initialization
-# while a < MAX:  # condition
-#     a += 1  # increment
-#     b = MIN
-#     while b < MAX:
-#         b += 1
-#         # print a, '*', b, '=', a*b
-#         # print "%d * %d = %d" % (a, b, a * b)
-#         # print "%2d * %2d = %3d" % (a, b, a * b)
-#         print("{0:2} * {1:2} = {2:3}".format(a, b, a*b))
-#     print('-' * 18, a)
-#     # break
-
+# Assignment : display table hoizontally 

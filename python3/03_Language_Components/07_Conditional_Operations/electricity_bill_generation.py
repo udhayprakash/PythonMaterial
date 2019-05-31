@@ -15,7 +15,7 @@ GST              : 7%
 discount         : -1.11%
 
 units consumed : 357
-
+                    60 + 40 + 
 """
 __author__ = 'Python Tutor'
 

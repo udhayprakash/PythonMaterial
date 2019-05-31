@@ -1,8 +1,6 @@
 May Batch 
 ------------
-20th May    String operations, help usage 
-21st May    Relational, Logical, Boolean, Bitwise, range, identify, conditional ops 
-22nd May    Loops, Exceptions, Debugging 
+22nd May    Exceptions, Debugging 
 23rd May    Debugging, collections: List 
 24th May    collections: tuple, set, 
 27th May    collections: dict, functions
