@@ -25,7 +25,7 @@ print(str(True))
 '''
     >>> str(1)
     '1'
-    >>> str('True')
+    >>> str(True)
     'True'
     >>> str(0)
     '0'
