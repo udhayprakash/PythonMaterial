@@ -1,0 +1,11 @@
+Using the syslog module
+-------------------------
+
+In [6]: import syslog                                           
+
+In [7]: syslog.syslog("This is a test message")
+
+Message in /var/log/syslog file
+----------------------------------
+Feb 23 22:57:36 tuxfux-PI945GCM ipython: This is a test message
+

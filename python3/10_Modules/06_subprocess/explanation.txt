@@ -1,0 +1,96 @@
+
+# Import the subprocess
+
+In [3]: import subprocess as s
+
+# How to run the ifconfig command using Popen in subprocess
+
+In [12]: s.Popen('ifconfig',shell=True)
+Out[12]: <subprocess.Popen at 0xb605b08c>
+
+In [13]: eth0      Link encap:Ethernet  HWaddr 00:1e:90:7a:86:3c  
+          inet addr:192.168.1.4  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::21e:90ff:fe7a:863c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:19076 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12065 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:21519061 (21.5 MB)  TX bytes:1513779 (1.5 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:806 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:806 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:69588 (69.5 KB)  TX bytes:69588 (69.5 KB)
+
+
+# How to run the ifconfig using the call in subprocess
+
+In [13]: subprocess.call(['ifconfig'])
+eth0      Link encap:Ethernet  HWaddr 00:1e:90:7a:86:3c  
+          inet addr:192.168.1.4  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::21e:90ff:fe7a:863c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:19098 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12080 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:21521110 (21.5 MB)  TX bytes:1515196 (1.5 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:806 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:806 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:69588 (69.5 KB)  TX bytes:69588 (69.5 KB)
+
+Out[13]: 0
+
+# How to get the exit code for a command using the Popen in the subprocess
+
+In [21]: output = s.Popen('ifconfig')
+
+eth0      Link encap:Ethernet  HWaddr 00:1e:90:7a:86:3c  
+          inet addr:192.168.1.4  Bcast:192.168.1.255  Mask:255.255.255.0
+In [22]:           inet6 addr: fe80::21e:90ff:fe7a:863c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:20537 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13447 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:22466659 (22.4 MB)  TX bytes:1687620 (1.6 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:882 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:882 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:76530 (76.5 KB)  TX bytes:76530 (76.5 KB)
+
+
+In [23]: output.wait()
+Out[23]: 0
+
+In [24]: output.returncode
+Out[24]: 0
+
+# How to use the Pid of the previous command
+
+In [26]: output.pid
+Out[26]: 4789
+
+# How to run the ifconfig command and get the ip
+
+In [3]: !ifconfig|grep -i Bcast|awk -F':' '{print $2}'|awk '{print $1}'
+192.168.1.4
+
+In [18]: ip = s.Popen(['ifconfig'],stdout=s.PIPE)
+In [20]: bcast = s.Popen(['grep','Bcast'],stdin=ip.stdout,stdout=s.PIPE)
+In [24]: inet = s.Popen(['awk','-F',':','{print $2}'],stdin=bcast.stdout,stdout=s.PIPE)
+In [26]: value = s.Popen(['awk','{print $1}'],stdin=inet.stdout,stdout=s.PIPE)
+In[27]  :value.communicate()[0]
