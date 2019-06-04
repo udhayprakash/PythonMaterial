@@ -7,6 +7,7 @@ Purpose:
 """
 __author__ = 'Python Tutor'
 
+
 day_of_the_week = input('Enter the day of the week:').lower().strip()
 print("day_of_the_week:", day_of_the_week, type(day_of_the_week))
 
@@ -43,6 +44,8 @@ print("day_of_the_week:", day_of_the_week, type(day_of_the_week))
 
 
 
+
+# in - membership check operator 
 if day_of_the_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
     print('TIMING: 9 am to 6 pm')
 elif day_of_the_week == 'saturday':

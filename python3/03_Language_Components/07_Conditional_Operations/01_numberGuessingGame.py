@@ -8,22 +8,18 @@ __author__ = 'Python Tutor'
 
 luck_number = 67
 
+# guessing_number = 89 
+guessing_number = int(input('Guess a number (0-100):'))
 
-guessed_number = int(input('guessed number='))
-
-# if guessed_number == luck_number:
-#     print('YOu guessed correctly!!!!!!')
-# elif guessed_number != luck_number:
-#     print('Please guess again!!!!!!')
-# else: 
-#     print('Else condition meet')
+# if luck_number == guessing_number:
+#     print('YOu guessed correct!!!')
+# else:
+#     print('PLease try again!!!!') 
 
 
-if guessed_number == luck_number:
-    print('YOu guessed correctly!!!!!!')
-elif guessed_number > luck_number:
-    print('guessed_number > luck_number')
-elif guessed_number < luck_number:
-    print('guessed_number < luck_number')
-
-#NOTE: else is optional in python 
+if guessing_number > luck_number:
+    print('You guessd a greater number ')
+elif guessing_number < luck_number:
+    print('You guessed lesser number')
+else:
+    print('YOu guessed correctly !!!!')

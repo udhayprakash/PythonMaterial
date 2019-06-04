@@ -11,13 +11,12 @@ for i in language:
     print(i, end=' ')        
 print()
 
-# enumerate - gives the loop index
-# iterating over a string
-for loop_count, ch in enumerate(language):
-    # print(loop_count, ch)
-    # print("character at %d position is %s"%(loop_count, ch))
-    print("character at %2d position is %1s" % (loop_count, ch))
-# print()
+
+for index, ch in enumerate(language):
+    # print(index, ch)
+    print('In loop {:2}, we got {}'.format(index, ch))
+
+
 
 numbers = [12, 34, 5, 6, 7, 99, 888]
 
@@ -31,8 +30,20 @@ for loop_count, number in enumerate(numbers):
 
 print('-'*20)
 ######################
+print('udhay\tprakash')
+print('udhay\nprakash')
+print()
+print('udhay\rprakash')
+print('prakash\rudhay')
+
+print('1234567890\rDOG')
+
 data = list(range(-100,1000000, 3)) 
 data_length = len(data)
+
 for index, number in enumerate(data): 
-    # print( '\r{} of {} completed'.format(index,data_length), end = '')
-    print( '\r{0:.2f} completed'.format((100 *index)/data_length), end = '')
+    print('\r{:2}'.format(index/data_length), end='')
+
+
+# Assignment 
+# Progress bar implementation

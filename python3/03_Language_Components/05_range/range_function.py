@@ -17,6 +17,7 @@ print(values1)
 
 values2 = range(0, 9, 1)  # range(initialValue, finalValue, step)
 print(values2)
+
 # 0 1 2 3 4 5 6 7 8
 print(list(values2))
 print(tuple(values2))
