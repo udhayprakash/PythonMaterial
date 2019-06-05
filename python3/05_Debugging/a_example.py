@@ -1,33 +1,27 @@
-# import pdb
 
-my_sentence = 'Today is an interesting day for learning python'
-print(my_sentence)
+numbers = range(99)
 
-# pdb.set_trace()
-# breakpoint()
-
-for each_char in my_sentence:
-    print(each_char)
-
-
-# pydevd
+# import pdb; pdb.set_trace()
+for each_num in numbers:
+    if each_num % 2 == 0:
+        print(each_num)
 
 
 
-usd = 73
-cand = 50
-
-print("usd < cand ", usd  < cand)
-print("70 < 49", 70 < 49)
-print("70 > 49", 70 > 49)
-
-print("89 >= 49", 89 >= 49)
-print("89 <= 49", 89 <= 49)
-
-print("89 == 89", 89 == 89)  # dont confuse with = (assignment Operator)
-# print "89 = 89", 89 = 89   Syntax Error
 
 
 
-for each_char in my_sentence:
-    print(each_char)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

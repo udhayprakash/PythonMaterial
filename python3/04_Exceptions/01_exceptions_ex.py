@@ -11,12 +11,12 @@ when error    - try - except - finally
 # try:
 #     result = 1 % 0 
 # except:
-#     print('Excepted')
+#     print('Please dont divide by zero')
 
 # try:
 #     result = 1 % 0 
 # except Exception:
-#     print('Excepted')
+#     print('Please dont divide by zero')
 
 # try:
 #     result = 1 % 0 

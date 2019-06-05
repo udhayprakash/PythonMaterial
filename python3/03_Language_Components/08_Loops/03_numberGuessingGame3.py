@@ -21,46 +21,54 @@ example:
 """
 __author__ = 'Python Tutor'
 
-# guessingNumber = int(raw_input('Enter a number:'))
-# print 'type(guessingNumber)', type(guessingNumber)
-# print 'You entered ', guessingNumber
+# Q) The user can retry any number of number 
 
-luck_number = 67
-chances = 0
+lucky_number = 67
 
-while 1:
-    if chances == 5:
-        print('You exceeded the chances limit.!!!')
-        break
-    guessed_number = int(input('Guess no. between 1 & 99:'))
-    print(f'\nYou Guessed {guessed_number} of datatye {type(guessed_number)}')
+# while 1:
+#     guessed_number = int(input('Enter guessed number(0-99):'))
 
-    if guessed_number == luck_number:
-        print('You guessed correctly!!!!')
-        break
-    elif guessed_number > luck_number:
-        print('please guess further lower number')
-    else: # guessed_number > luck_number
-        print('please guess further greater number')
-    chances = chances + 1
-
-
-
-# choice = 'y'
-
-# while (choice.lower() != 'n'):
-#     print(choice.lower() != 'n')
-#     guessingNumber = int(input('Enter a number:'))
-#     if (luckyNumber == guessingNumber):
-#         print('You Guessed the Correct Number!')
-#         break;  # to exit a loop
-#     elif (luckyNumber > guessingNumber):
-#         print('You Guessed lesser number!')
+#     if guessed_number == lucky_number:
+#         print('YOu guessed correctly')
+#         break
+#     elif guessed_number > lucky_number:
+#         print('Lower your guess')
 #     else:
-#         print('You Guessed greater number!')
+#         print('Increase your guess')
 
-#     choice = input('Enter N or n to exit:')  # Y
-# else:
-#     print('Try Again!')
+# choice = 'Y'
+# while choice.upper() == 'Y':
+#     guessed_number = int(input('Enter guessed number(0-99):'))
 
-# print('next statement')
+#     if guessed_number == lucky_number:
+#         print('YOu guessed correctly')
+#         break
+#     elif guessed_number > lucky_number:
+#         print('Lower your guess')
+#     else:
+#         print('Increase your guess')
+
+#     choice = input('Do you want to try again : Y/N:')
+
+
+
+
+
+# Q)  Restructing to a particular number of retries 
+
+
+attempt = 1
+while attempt <= 5:
+    guessed_number = int(input('Enter guessed number(0-99):'))
+
+    if guessed_number == lucky_number:
+        print('YOu guessed correctly')
+        break
+    elif guessed_number > lucky_number:
+        print('Lower your guess')
+    else:
+        print('Increase your guess')
+
+    attempt += 1
+else:
+    print('Your 5 retries were completed!!!')
