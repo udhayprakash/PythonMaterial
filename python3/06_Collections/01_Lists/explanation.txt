@@ -1,0 +1,41 @@
+basic types 
+----------
+int     -
+float  -
+None   
+Str   ====
+True/False 
+
+
+Data structures 
+---------------
+collections
+    Lists 
+        [1, 2, 3, 4, 5]
+
+    tuple
+        (1, 2, 3, 4, 5)
+
+    Sets 
+        {1, 2, 3, 4, 5}
+
+    Dictionaries 
+        {'a':1, 'b':2, 'c:3}
+
+Iterables 
+---------
+
+Assignmnet 1:
+--------------
+Implement a stack mechanism 
+FIFO 
+
+Assignmnet 1:
+--------------
+Implement queue mechanism 
+LIFO 
+
+
+-----------------------
+- - - - - - - - -- - - 
+----------------------
