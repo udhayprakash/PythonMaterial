@@ -10,8 +10,8 @@ values = {
     2: '-',
     3: '\\'
 }
-# for index, _ in enumerate(data):
-#     print('\r',values.get(index%4), end=' ')
-
 for index, _ in enumerate(data):
-    print('\r', '#' * int(10*index/data_length), end = ' ')
+    print('\r',values.get(index%4), end=' ')
+
+# for index, _ in enumerate(data):
+#     print('\r', '#' * int(10*index/data_length), end = ' ')
