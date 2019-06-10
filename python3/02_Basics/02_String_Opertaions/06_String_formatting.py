@@ -29,3 +29,9 @@ print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
 print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', 78, 15.5))
 # print 'My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 )
 #TypeError: not enough arguments for format string
+
+
+print('%20d' % (12))  # center 
+print('%-20d' % (12)) # left justified 
+print('%+20d' % (12)) # right justified 
+print('%020d' % (12)) # filling with leading zeros

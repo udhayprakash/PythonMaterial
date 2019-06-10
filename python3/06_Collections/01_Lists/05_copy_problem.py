@@ -64,3 +64,13 @@ print()
 print('new_list          ', new_list, type(new_list), id(new_list))
 print('new_softcopy_list ', new_softcopy_list, type(new_softcopy_list), id(new_softcopy_list))
 print('new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_deepcopy_list))
+
+'''
+In [1]: l1 = [12,34]
+
+In [2]: l2 = l1[::]
+
+In [3]: id(l1), id(l2)
+Out[3]: (95491656, 95452232)
+
+'''

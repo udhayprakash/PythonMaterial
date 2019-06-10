@@ -40,4 +40,11 @@ print("world")
 print('Hello', 'udhay', end='_')
 print("world")
 
+print('Hello', 'udhay', sep='|',end='_')
+print("world")
+
+print("Hello","World", sep="***")        # Hello***World
+print("Hello","World", end="***")        # Hello World***
+print("Hello", end="***"); print("World")# Hello***World
+
 print('one\ttwo\nthree\tfour')
