@@ -12,6 +12,11 @@ call by reference
 
 immutable objects - int, float, None, bool, tuple, string
 mutable objects - list, set, dict, bytearray string
+
+NOTE:
+-----
+mutable object can be edited within function without passing as args
+immutable object CANT be edited within function without passing as args
 """
 pi = 3.141  # immutable - call by value
 
@@ -39,9 +44,9 @@ pi = 3.141  # immutable - call by value
 
 # simple_function(pi)
 # print('outside function pi = {}'.format(pi))
-# changes with in function are not reflected outside it
+# # changes with in function are not reflected outside it
 
-# case 3=====   call by reference
+# # case 3=====   call by reference
 # def simple_function(pi):
 #     global pi
 #     print('before change pi = {}'.format(pi))
@@ -72,29 +77,3 @@ def simple_function():
 
 simple_function() 
 print('outside function ver = {}'.format(details['ver']))
-
-
-
-
-
-
-
-
-# # print('id(pi)', id(pi))
-
-# def simple_function():
-#     """
-#     mutable object can be edited within function without passing as args
-#     immutable object CANT be edited within function without passing as args
-#     """
-#     # print('Inside func. call, pi', pi)
-#     pi = 78 # UnboundLocalError: local variable 'pi' referenced before assignment
-#     details['ver'] = '3.8.1'
-#     print("Inside func. call, pi", pi, "details", details)
-#     # print('id(pi)', id(pi))
-
-
-# print("before func. call, pi", pi, "details", details)
-# simple_function()
-# print("after func. call, pi", pi, "details", details)
-
