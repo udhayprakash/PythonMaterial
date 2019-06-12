@@ -25,7 +25,7 @@ def foo():
 # call 
 f = foo() 
 print('f', f) 
-print(dir(f))
+# print(dir(f))
 
 print(next(f))
 print()
@@ -33,7 +33,7 @@ print(f.__next__())
 print()
 print(next(f))
 print()
-# print(f.__next__())  # StopIteration
+print(f.__next__())  # StopIteration
 
 try:
     print(next(f))
