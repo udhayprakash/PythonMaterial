@@ -36,5 +36,5 @@ def hello(name, salary=20000000):
 
 
 print(hello('udhay', 9000000))  ## returns "<b><i>hello world</i></b>"
-print('-'* 20)
-print(hello('udhay', salary=9000000))  ## returns "<b><i>hello world</i></b>"
+# print('-'* 20)
+# print(hello('udhay', salary=9000000))  ## returns "<b><i>hello world</i></b>"

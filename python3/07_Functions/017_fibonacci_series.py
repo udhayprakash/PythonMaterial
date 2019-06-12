@@ -44,16 +44,16 @@ print('='*80)
 
 
 
-# # Infinite loop between these functions  --- Mutual recursion
-# def func1():
-#     print 'I am in function 1 .'
-#     return func2()
+# Infinite loop between these functions  --- Mutual recursion
+def func1():
+    print('I am in function 1 .')
+    return func2()
 
-# def func2():
-#     print 'I am in function 2 .'
-#     return func1()
+def func2():
+    print('I am in function 2 .')
+    return func1()
 
-# func1()
+func1()
 
 # '''
 # **NOTE :**

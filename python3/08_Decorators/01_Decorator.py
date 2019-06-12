@@ -17,13 +17,13 @@ def outer(func):  # func-addition
 def div(a, b):
     return a / b
 
-# # print(div(4, 2))
-# # print(div(4, 0))
+# print(div(4, 2))
+# print(div(4, 0))
 
-# foo = outer(div)# foo-inner
-# print('foo', foo)
-# print(foo(4, 2))
-# print(foo(4, 0))
+foo = outer(div)# foo-inner
+print('foo', foo)
+print(foo(4, 2))
+print(foo(4, 0))
 
 # ###############################################
 

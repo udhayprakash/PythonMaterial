@@ -2,11 +2,11 @@
 # function which were designed to work on another functions 
 # are called higher-order functions 
 
-# group1 = ('1', '2', '3')
-# group2 = ('a', 'b', 'c', 'd')
+group1 = ('1', '2', '3')
+group2 = ('a', 'b', 'c', 'd')
 
-# print(zip(group2, group1))
-# print(list(zip(group2, group1)))
+print(zip(group2, group1))
+print(list(zip(group2, group1)))
 # print(list(zip(group1, group2)))
 # print(dict(zip(group1, group2)))
 

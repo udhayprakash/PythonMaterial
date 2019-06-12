@@ -19,7 +19,7 @@ noOfRecursions = 0
 
 # Infinite loop
 def loop(noOfRecursions):             
-    print('Hi! I am in Loop ')
+    # print('Hi! I am in Loop ')
     # to get the count of number of recursions occurred
     noOfRecursions+=1              
     print('This is Loop %d'%noOfRecursions)

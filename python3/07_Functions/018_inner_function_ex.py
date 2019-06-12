@@ -16,5 +16,5 @@ def outer():
 outer()
 
 # inner()  # NameError: name 'inner' is not defined
-#
+
 # print(nnum)  # NameError: name 'nnum' is not defined

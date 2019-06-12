@@ -15,13 +15,13 @@ def outer():
         print('In Inner function', nnum)
         # default is None
 
-    return inner#() # function
+    return inner() # function
 
 
 result = outer()
 print('result', type(result), result)
-print('result()', result())
-print(dir(result))
+# print('result()', result())
+# print(dir(result))
 # inner()  # NameError: name 'inner' is not defined
 
 # print nnum  # NameError: name 'nnum' is not defined

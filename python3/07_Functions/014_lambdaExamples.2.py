@@ -41,8 +41,8 @@ print(reduce( (lambda a, b: a ** b), [2, 3, 4] ))    # results in 2**3**4
 
 
 
-string = 'I am confident about my Success'
-list_of_content = string.split(' ')
+string1 = 'I am confident about my Success'
+list_of_content = string1.split(' ')
 print(list_of_content)
 
 print(' '.join(list_of_content))
