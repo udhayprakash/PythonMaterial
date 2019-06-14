@@ -6,7 +6,7 @@ def highlightVowels():
         
 hV = highlightVowels()
 
-next(hV)  # coroutine starts
+print(next(hV))  # coroutine starts
 print(hV.send('Python Programming Language'))
 print(hV.send('Today is a good day')) #TODO
 

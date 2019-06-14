@@ -14,7 +14,6 @@ print('math.sin(radians)', math.sin(radians))
 
 print('math.factorial(9)', math.factorial(9))
 
-print(dir(math))
 print(math.ceil(9.7))
 print(math.ceil(9.5))
 print(math.ceil(9.1))
@@ -30,3 +29,5 @@ print(abs(-9))
 print()
 print(math.fabs(9))
 print(math.fabs(-9))
+
+print(dir(math))

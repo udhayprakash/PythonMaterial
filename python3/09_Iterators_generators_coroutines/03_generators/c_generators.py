@@ -6,8 +6,8 @@ def simple_gen():
  
  
 gen = simple_gen()
-print((next(gen)))
-print((next(gen)))
+print(next(gen))
+print(next(gen))
 
 
 def count(n):

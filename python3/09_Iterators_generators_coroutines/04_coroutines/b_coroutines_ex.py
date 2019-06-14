@@ -7,6 +7,7 @@ def repeater():
 rp = repeater()
 
 print(next(rp)) # Start the coroutine
+
 rp.send('Aruna')
 rp.send('Akram')
 rp.send('Jaya')

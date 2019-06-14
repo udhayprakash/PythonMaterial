@@ -6,7 +6,7 @@ myWin = turtle.Screen()
 
 def drawSpiral(myTurtle, lineLen):
     if lineLen > 0:
-        myTurt le.forward(lineLen)
+        myTurtle.forward(lineLen)
         myTurtle.right(90)
         drawSpiral(myTurtle,lineLen - 5)
 
