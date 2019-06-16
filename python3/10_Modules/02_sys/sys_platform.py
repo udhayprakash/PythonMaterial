@@ -1,15 +1,15 @@
 #!/usr/bin/python
 """
-purpose: sys.plaform
+purpose: sys.platform
 """
+import sys 
+print('sys.platform', sys.platform)
 
-print('sys.plaform', sys.plaform)
-
-if sys.plaform == 'win32':
+if sys.platform == 'win32':
     print('you are in windows OS')
-elif sys.plaform == 'linux':
+elif sys.platform == 'linux':
     print('you are in debian/ubuntu like OS')
-elif sys.plaform == 'linux2':
+elif sys.platform == 'linux2':
     print('you are in centos/redhat/fedora like OS')
-elif sys.plaform == 'darwin':
+elif sys.platform == 'darwin':
     print('you are in MAC like OS')

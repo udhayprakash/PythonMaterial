@@ -29,6 +29,7 @@ import argparse
 
 parser = argparse.ArgumentParser(
     description="Details to login to server")
+
 parser.add_argument('-u', '--username',
                     help='login user name',
                     type=str, 
