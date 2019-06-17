@@ -6,3 +6,9 @@ Errors:
 
 
 
+Errors
+    a. Syntax Errors 
+    b. Exception Errors 
+    c. Logical Errors 
+        # when you need to add two values
+        result = 12 * 34 

@@ -13,3 +13,5 @@ elif sys.platform == 'linux2':
     print('you are in centos/redhat/fedora like OS')
 elif sys.platform == 'darwin':
     print('you are in MAC like OS')
+elif sys.platform == 'cygwin':
+    print('you are in Windows/Cygwin OS')

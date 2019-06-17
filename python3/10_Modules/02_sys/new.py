@@ -9,7 +9,6 @@ print('sys.byteorder             =', sys.byteorder)
 # big    - big-endian    (most significant byte first) platforms
 # little - little-endian (least significant byte first) platforms
 
-print('sys.builtin_module_names  =', sys.builtin_module_names)
 print('sys.copyright        =', sys.copyright)
 # print('sys._debugmallocstats() =', sys._debugmallocstats())
 
@@ -61,4 +60,19 @@ print(hex(13))
 print('sys.implementation         =', sys.implementation)
 print('sys.int_info               =', sys.int_info)
 print('sys.__interactivehook__()  =', sys.__interactivehook__())
+
+print('sys.maxsize                =', sys.maxsize)
+print('sys.maxunicode             =', sys.maxunicode)
+
+print('sys.builtin_module_names   =', sys.builtin_module_names)
+print('sys.modules                =')
+
+from pprint import pprint 
+pprint(sys.modules)
+
+
+print('sys.version                =', sys.version)
+print('sys.api_version            =', sys.api_version) # C API version for this interpreter
+print('sys.version_info           =', sys.version_info)
+print('sys.winver                 =', sys.winver) # version number used to form registry keys on Windows platforms
 

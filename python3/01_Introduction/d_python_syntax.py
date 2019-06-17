@@ -48,3 +48,10 @@ print("Hello","World", end="***")        # Hello World***
 print("Hello", end="***"); print("World")# Hello***World
 
 print('one\ttwo\nthree\tfour')
+
+print('He\bi')
+print('\u20B9')
+print('\046')
+print('\x24')
+print('\xf1')
+print('\u018e')
