@@ -20,15 +20,15 @@ datetime  has three different kinds of objects:
 now = datetime.datetime.now()
 print('now                      :', now)
 print('type(now)                :', type(now))
-
+print()
 today = now.date()
 print('today                    :', today)
 print('type(today)              :', type(today))
-
+print()
 moment = now.time()
 print('moment                   :', moment)
 print('type(moment)             :', type(moment))
-
+print()
 now_using_combine = datetime.datetime.combine(today, moment)
 print('now_using_combine        :', now_using_combine)
 print('type(now_using_combine)  :', type(now_using_combine))
