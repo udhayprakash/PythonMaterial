@@ -14,6 +14,8 @@ colours = (
 
 favs = Counter(name for name, colour in colours)
 print(favs)
+favs = Counter(colour for name, colour in colours)
+print(favs)
 
 
 print()

@@ -3,6 +3,7 @@ import collections
 c = collections.Counter()
 
 with open(r'C:\Python27\LICENSE.txt', 'rt') as f:
+    # print(f.read())
     for line in f:
         c.update(line.rstrip().lower())
 

@@ -16,3 +16,10 @@ for name, colour in colours:
     favourite_colours[name].append(colour)
 
 pprint(favourite_colours)
+
+favourite_colours = defaultdict(set)
+
+for name, colour in colours:
+    favourite_colours[name].add(colour)
+
+pprint(favourite_colours)

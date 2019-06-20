@@ -23,6 +23,13 @@ NOTE:
 abs(-num) = num
 abs(+num) = num
 '''
+try:
+    import pyttsx3
+except ImportError:
+    import os 
+    os.system('pip install pyttsx3')
+    import pyttsx3
+
 
 # recursive function implementation
 def digit_to_number(num1):
@@ -37,12 +44,6 @@ def digit_to_number(num1):
     print(num, number_to_alphabets.get(num))
     text_to_speech(number_to_alphabets.get(num))
 
-try:
-    import pyttsx3
-except ImportError:
-    import os 
-    os.system('pip install pyttsx3')
-    import pyttsx3
 
 def text_to_speech(text):
     engine = pyttsx3.init()
