@@ -10,39 +10,39 @@ file operations
 '''
 fh = open('newfile.tsf', 'r')
 
-file_cntent = fh.read()
-print(type(file_cntent))
-print(file_cntent)
+data = fh.read()
+print(type(data))
+print(data)
 
 print('fh.tell()', fh.tell())
 fh.seek(0)
 
-file_cntent = fh.read()
-print(type(file_cntent))
-print(file_cntent)
+data = fh.read()
+print(type(data))
+print(data)
 
 print('fh.tell()', fh.tell())
 fh.seek(25)
 
-file_cntent = fh.read()
-print(type(file_cntent))
-print(file_cntent)
+data = fh.read()
+print(type(data))
+print(data)
 
 print('fh.tell()', fh.tell())
 fh.seek(26)
 
-file_cntent = fh.read(5)
-print(type(file_cntent))
-print(file_cntent)
+data = fh.read(5)
+print(type(data), data)
 
-file_cntent = fh.readline()
-print(type(file_cntent),file_cntent)
+data = fh.readline()
+print(type(data),data)
 
-file_cntent = fh.readline()
-print(type(file_cntent),file_cntent)
+data = fh.readline()
+print(type(data),data)
 
 print('fh.tell()', fh.tell())
 fh.seek(0)
-file_cntent = fh.readlines()
-print(type(file_cntent),file_cntent)
+data = fh.readlines()
+print(type(data),data)
+
 fh.close()
