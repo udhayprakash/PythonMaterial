@@ -1,7 +1,7 @@
 from math import sqrt
 print(list(map(sqrt, (4, 16, 25))))
 print(list(map(sqrt, [4])))
-# print map(sqrt, 4)TypeError: argument 2 to map() must support iteration
+# print(map(sqrt, 4))TypeError: argument 2 to map() must support iteration
 
 
 # Improving the above with decorators

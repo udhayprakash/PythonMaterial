@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Decaorator to calculate  the time taken by a function
+Purpose: Decorator to calculate  the time taken by a function
 """
 
 def decortor_func1(func):

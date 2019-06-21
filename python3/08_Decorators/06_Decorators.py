@@ -18,10 +18,10 @@ def multiplication(num1, num2):
     return result
 
 
-print addition(12, 34)
-print multiplication(12, 34)
+print(addition(12, 34))
+print(multiplication(12, 34))
 
-print '\n===USING DECORATORS'
+print('\n===USING DECORATORS')
 def print_statements(func):
     def inner(*args, **kwargs):
         print('function -start ')
@@ -45,5 +45,5 @@ def multiplication1111(num1, num2):
     return result
 
 
-print multiplication1111(12, 3)
-print addition11111(12, 34)
+print(multiplication1111(12, 3))
+print(addition11111(12, 34))

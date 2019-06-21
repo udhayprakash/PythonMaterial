@@ -4,9 +4,9 @@ Purpose:  decorators example
 """
 def bread(func):
     def wrapper():
-        print("</''''''\>")
+        print(r"</''''''\>")
         func()
-        print("<\______/>")
+        print(r"<\______/>")
     return wrapper
 
 def ingredients(func):

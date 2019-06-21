@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Decaorator to calculate  the time taken by a function
+Purpose: Decorator to calculate  the time taken by a function
 """
 import time 
 
@@ -9,9 +9,6 @@ def myfuntion():
     for each in range(9999):
         total += each 
     return total 
-
-
-
 
 def time_taken(func):
     def inner(*args, **kwarrgs):

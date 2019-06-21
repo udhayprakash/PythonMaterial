@@ -1,11 +1,10 @@
 # consumer.py
-#
 # consumer decorator and co-routine example
 
 def consumer(func):
     def start(*args,**kwargs):
         c = func(*args,**kwargs)
-        c.next()
+        next(c)
         return c
     return start
 
@@ -17,9 +16,9 @@ if __name__ == '__main__':
         try:
             while True:
                 n = (yield)
-                print "T-minus", n
+                print("T-minus", n)
         except GeneratorExit:
-            print "Kaboom!"
+            print("Kaboom!")
 
     r = recv_count()
     for i in range(5,0,-1):
