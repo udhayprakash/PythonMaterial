@@ -2,7 +2,7 @@
 
 import pickle
 '''
-    Purpose: Working with Pickle strings
+Purpose: Working with Pickle strings
     pickling
 
 files - dump & load
