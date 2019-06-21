@@ -19,9 +19,9 @@ def foo():
     Part 2
     >>>
     """
-    print "Part 1"
+    print("Part 1")
     yield
-    print "Part 2"
+    print("Part 2")
     yield
 
 

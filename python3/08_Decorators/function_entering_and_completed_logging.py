@@ -1,11 +1,11 @@
 def function_logger(actual_function):
     def wrapper(*args, **kwargs):
         function_name = actual_function.func_code.co_name
-        print "Entering {} with arguments {} and {}" \
-            .format(function_name, args, kwargs)
+        print("Entering {} with arguments {} and {}" \
+            .format(function_name, args, kwargs))
         temp = actual_function(*args, **kwargs)
-        print "Leaving  {} with {}, when arguments were {} and {}" \
-            .format(function_name, temp, args, kwargs)
+        print("Leaving  {} with {}, when arguments were {} and {}" \
+            .format(function_name, temp, args, kwargs))
         return temp
     return wrapper
 

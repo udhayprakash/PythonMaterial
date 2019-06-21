@@ -9,7 +9,7 @@ def person_lister(f):
     def inner(people):
         #print people
         for p in sorted(people, key= lambda x:x[2]):
-            print (" ".join(['Mr.' if p[-1] == 'M' else 'Ms.',p[0], p[1]]))
+            print(" ".join(['Mr.' if p[-1] == 'M' else 'Ms.',p[0], p[1]]))
     return inner
 
 @person_lister

@@ -26,4 +26,4 @@ class Person(object):
 
 my_person = Person()
 
-print my_person.get_fullname()
+print(my_person.get_fullname())

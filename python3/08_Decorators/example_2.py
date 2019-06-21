@@ -4,8 +4,6 @@ Purpose: Decaorator to calculate  the time taken by a function
 """
 import time 
 
-
-
 def display_exec_func_name(func):
     def wrapper(*args, **kwargs):
         print(f'Executing the function {func.__name__}')
