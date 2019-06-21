@@ -3,7 +3,6 @@
 Without decorators
 """
 
-
 def div(a, b): 
     try:
         a / b

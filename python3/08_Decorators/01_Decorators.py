@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
 
+def div(a, b):
+    return a / b
+
+# print(div(4, 2))
+# print(div(4, 0))
 
 def outer(func):  # func-addition
     def inner(num1, num2): #*args, **kwargs):
@@ -14,18 +19,14 @@ def outer(func):  # func-addition
     return inner
 
 ############################################
-def div(a, b):
-    return a / b
 
-# print(div(4, 2))
-# print(div(4, 0))
 
 foo = outer(div)# foo-inner
 print('foo', foo)
 print(foo(4, 2))
 print(foo(4, 0))
 
-# ###############################################
+###############################################
 
 def addition(m,n):
     return m + n
