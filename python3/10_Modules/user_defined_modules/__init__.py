@@ -1,2 +1,2 @@
-import fibScript
-import newScript
+from . import fibScript
+from . import newScript

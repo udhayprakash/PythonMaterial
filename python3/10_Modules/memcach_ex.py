@@ -22,4 +22,5 @@ print('Ten successive runs:')
 for i in range(1, 11):
     print('%.2fs' % timeit.timeit(make_request, number=2000))
 
+breakpoint()
 print()

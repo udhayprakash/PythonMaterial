@@ -56,12 +56,12 @@ def division(m, n):
     return m / float(n)
 
 
-print '__name__=', __name__
+print('__name__=', __name__)
 
 if __name__ == '__main__':
     # function calls
     addResult = addition(NUM1, NUM2)
-    print 'addResult=', addResult
-    print subtraction(NUM1, NUM2)
-    print multiplication(NUM1, NUM2)
-    print division(NUM1, NUM2)
+    print('addResult=', addResult)
+    print(subtraction(NUM1, NUM2))
+    print(multiplication(NUM1, NUM2))
+    print(division(NUM1, NUM2))

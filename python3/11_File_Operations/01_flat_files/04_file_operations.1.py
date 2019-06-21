@@ -13,10 +13,14 @@ with open('myfile.txt', 'a+') as g:
 
     # to change the position of the cursor
     g.seek(60)
-    print(('after g.seek(60)-------- g.tell()', g.tell()))
+    print('after g.seek(60)-------- g.tell()', g.tell())
     data = g.read()
-    print(("data", data))
+    print("data", data)
+
+    g.seek(-3, 2)  # Go to the 3rd byte before the end
+
     print('before closing ---g.closed', g.closed)
     g.close()
     print('after closing  ---g.closed', g.closed)
+    
     

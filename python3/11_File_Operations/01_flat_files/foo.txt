@@ -1,2 +1,2 @@
-somethingng This is first line 
-Added in append mode
+somethingecond line
+This is third line
