@@ -28,6 +28,6 @@ def is_leap(year):
 
 
 if __name__ == '__main__':
-    years = range(1900, 2000)
+    years = list(range(1900, 2000))
     for y in years:
-        print(y, is_leap(y))
+        print((y, is_leap(y)))

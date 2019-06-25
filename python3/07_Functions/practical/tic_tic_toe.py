@@ -1,7 +1,7 @@
 # Tic Tac Toe game
 # Author: Dhritiman Roy
 
-print "TIC TAC TOE GAME"
+print("TIC TAC TOE GAME")
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
@@ -10,8 +10,8 @@ board_print = " " + board[6] + " | " + board[7] + " | " + board[8] + "\n" + "---
               board[2]
 board_print_default = " " + "7" + " | " + "8" + " | " + "9" + "\n" + "-----------" + "\n" + " " + "4" + " | " + "5" + " | " + "6" + "\n" + "-----------" + "\n" + " " + "1" + " | " + "2" + " | " + "3"
 
-print ""
-print board_print_default
+print("")
+print(board_print_default)
 
 
 def p1_input():
@@ -21,7 +21,7 @@ def p1_input():
             board_print = " " + board[6] + " | " + board[7] + " | " + board[8] + "\n" + "-----------" + "\n" + " " + \
                           board[3] + " | " + board[4] + " | " + board[5] + "\n" + "-----------" + "\n" + " " + board[
                               0] + " | " + board[1] + " | " + board[2]
-            print board_print
+            print(board_print)
 
 
 def p2_input():
@@ -31,7 +31,7 @@ def p2_input():
             board_print = " " + board[6] + " | " + board[7] + " | " + board[8] + "\n" + "-----------" + "\n" + " " + \
                           board[3] + " | " + board[4] + " | " + board[5] + "\n" + "-----------" + "\n" + " " + board[
                               0] + " | " + board[1] + " | " + board[2]
-            print board_print
+            print(board_print)
 
 
 def win_check_p1():
@@ -104,23 +104,23 @@ t = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # A variable to check if the 
 i = 0
 draw_var = 0  # This is the var that is used to check if the match is draw or not.
 while s != 9:
-    print ""
+    print("")
 
     t[i] = p_in
-    p_in = int(raw_input("> "))
+    p_in = int(input("> "))
 
     if (p_in == t[0] or p_in == t[1] or p_in == t[2] or p_in == t[3] or p_in == t[4] or p_in == t[5] or p_in == t[
         6] or p_in == t[7] or p_in == t[8] or p_in == t[9] or p_in == t[10] or p_in == t[11] or p_in == t[12] or p_in ==
         t[13]) or p_in < 1 or p_in > 9:
-        print "Input not accepted. Try again.\n"
+        print("Input not accepted. Try again.\n")
     else:
         if s % 2 == 0:
             p1_input()
             win_check_p1()
 
             if win_check_p1():
-                print ""
-                print "Player 1 has won."
+                print("")
+                print("Player 1 has won.")
                 draw_var = 1
                 break
         elif s % 2 != 0:
@@ -128,17 +128,17 @@ while s != 9:
             win_check_p2()
 
             if win_check_p2():
-                print ""
-                print "Player 2 has won."
+                print("")
+                print("Player 2 has won.")
                 draw_var = 1
                 break
 
         s += 1
     i += 1
     if i == 14:
-        print "Multiple invalid inputs. Please re-start the game."
+        print("Multiple invalid inputs. Please re-start the game.")
         break
 
 if draw_var == 0:
-    print ""
-    print "Draw."
+    print("")
+    print("Draw.")
