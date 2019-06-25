@@ -11,8 +11,8 @@ import shelve
 s = shelve.open('michelShelve.db')
 try:
     s['key1'] = { 'int': 10, 'float':9.5, 'string':'Sample data' }
-except Exception, ex:
-    print ex
+except Exception as  ex:
+    print(ex)
 finally:
     s.close()
 
@@ -20,12 +20,12 @@ finally:
 s = shelve.open('michelShelve.db')
 try:
     existing = s['key1']
-except Exception, ex:
-    print ex
+except Exception as ex:
+    print(ex)
 finally:
     s.close()
 
-print existing
+print(existing)
 
 # shelve doesn't allow multiple applications writing to the same database at the same time.
 # So, it is best practice to open the database in read-only mode, in general.
@@ -36,36 +36,36 @@ try:
 finally:
     s.close()
 
-print existing
+print(existing)
 
 
 # By defaults, shelve do not track modifications to volatile objects.
 
 s = shelve.open('michelShelve.db')
 try:
-    print s['key1']
+    print(s['key1'])
     s['key1']['new_value'] = 'this was not here before'
 finally:
     s.close()
 
 s = shelve.open('michelShelve.db', writeback=True)
 try:
-    print s['key1']   # modifications are not reflected
+    print(s['key1'])   # modifications are not reflected
 finally:
     s.close()
 
 # To automatically catch the changes, open the shelve with writeback enabled
 s = shelve.open('michelShelve.db', writeback=True)
 try:
-    print s['key1']
+    print(s['key1'])
     s['key1']['new_value'] = 'this was not here before'
-    print s['key1']
+    print(s['key1'])
 finally:
     s.close()
 
 s = shelve.open('michelShelve.db', writeback=True)
 try:
-    print s['key1']
+    print(s['key1'])
 finally:
     s.close()
 

@@ -7,3 +7,4 @@ import requests
 
 page = requests.get('https://www.bseindia.com/markets/Equity/newsensexstream.aspx')
 tree = html.fromstring(page.content)
+breakpoint()

@@ -1,3 +1,8 @@
+1) Get substring count in a given string 
+    Input: 
+        string      : ABCDCDC
+        substring   : CDC
+2)
       *
     * * *
   * * * *  *
@@ -6,7 +11,7 @@
     * * *
       *
   
-
+3)
 alphabets 
     hen 
 

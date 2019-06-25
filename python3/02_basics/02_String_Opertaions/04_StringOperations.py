@@ -33,13 +33,23 @@ print('language.upper()     :', language.upper())
 print('language.lower()     :', language.lower())
 print('language.swapcase()  :', language.swapcase())
 print()
-print('language.isupper()   :', language.isupper())
-print('language.islower()   :', language.islower())
+
 print('language.istitle()   :', language.istitle())
-print('language.isdigit()   :', language.isdigit())
-print('language.isalpha()   :', language.isalpha())
-print('language.isalnum()   :', language.isalnum())
-print('language.isspace()   :', language.isspace())
+
+print('"ABCD123#".isupper() :', "ABCD123#".isupper())
+print('"Abcd123#".islower() :', "Abcd123#".islower())
+
+print('"1234".isdigit()     :', "1234".isdigit())
+print('"123edsd".isdigit()  :', "123edsd".isdigit())
+
+print('"abcD".isalpha()     :', "abcD".isalpha())
+print('"abcd1".isalpha()    :', "abcd1".isalpha())
+
+print('"ab123".isalnum()    :', "ab123".isalnum())
+print('"ab123#".isalnum()   :', "ab123#".isalnum())
+
+print('" ".isspace()        :', " ".isspace())
+print('"".isspace()         :', "".isspace())
 print()
 
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g

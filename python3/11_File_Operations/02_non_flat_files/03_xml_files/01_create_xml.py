@@ -14,4 +14,4 @@ child1.append(child2)
 
 # pretty string
 s = etree.tostring(root, pretty_print=True)
-print(s)
+print(s.decode('utf-8'))

@@ -12,3 +12,7 @@ with open('chinese_data.csv','w') as f:
         each_row_data = [item.encode('utf-8') for item in row]
         print(each_row_data)
         w.writerow(each_row_data)
+
+
+# chr(99)
+#  chr(4000)
