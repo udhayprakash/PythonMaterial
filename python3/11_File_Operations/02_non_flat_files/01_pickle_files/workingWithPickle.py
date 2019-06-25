@@ -21,14 +21,14 @@ Purpose: Working with Pickle files
 # Serialization
 students = ['Michel', 'John', 'Udhay', 'Ana', 123]
 
-f = open('BelgiumStudents.pkl', 'a+')
-pickle.dump(students, f)
+f = open('BelgiumStudents.pkl', 'wb') # 'wb' instead 'w' for binary file
+pickle.dump(students, f, -1) # -1 specifies highest binary protocol
 f.flush()
 
 f.close()
 
 # Deserialization
-g = open('BelgiumStudents.pkl', 'r')
+g = open('BelgiumStudents.pkl', 'rb')
 myStudents = pickle.load(g)
 print("myStudents are ", myStudents)
 g.close()
