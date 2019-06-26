@@ -22,4 +22,4 @@ for i in range(0,height):
 	image_array.append(x_array)
 # print image_array
 a = np.array(image_array)
-print a
+print(a)

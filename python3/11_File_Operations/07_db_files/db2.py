@@ -9,7 +9,7 @@ cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',
     ( 'My Way', 15 ) )
 conn.commit()
 
-print 'Tracks:'
+print('Tracks:')
 cur.execute('SELECT title, plays FROM Tracks')
 for row in cur :
      print row

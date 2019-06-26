@@ -8,7 +8,6 @@ def zipdir(path, zip):
         for file in files:
             zip.write(os.path.join(root, file))
 
-print('__name__', __name__)
 if __name__ == '__main__':
     # set file name and time of creation
     breakpoint()

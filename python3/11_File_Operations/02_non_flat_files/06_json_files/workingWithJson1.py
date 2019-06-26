@@ -12,37 +12,32 @@
 import json
 
 student = {"101": {"result": True, "class": 'V', "Name": 'Rohit', "Roll_no": 7},
-           "102": {"result": True, "class": 'V', "Name": 'David', "Roll_no": 8},
-           "103": {"result": False, "class": 'V', "Name": 'Samiya', "Roll_no": 12}}
+           "103": {"result": False, "class": 'V', "Name": 'Samiya', "Roll_no": 12,
+           "102": {"result": True, "class": 'V', "Name": 'David', "Roll_no": 8}}}
 print(json.dumps(student))
 
 print('-' * 100)
 # Python Dictionaries to JSON strings (sorted by key)
-import json
 
-student = {"101": {"class": 'V', "Name": 'Rohit', "Roll_no": 7},
-           "102": {"class": 'V', "Name": 'David', "Roll_no": 8},
-           "103": {"class": 'V', "Name": 'Samiya', "Roll_no": 12}}
 print(json.dumps(student, sort_keys=True))
 
 # Json stores the data in the order inputted.
 print('-' * 100)
 # Python tuple to JSON array
-import json
+
 
 tup1 = 'Red', 'Black', 'White'
-print((json.dumps(tup1)));
+print(json.dumps(tup1))
 
 print('-' * 100)
 # Python string to JSON string
 import json
 
-string1 = 'Python and JSON';
-print((json.dumps(string1)));
+string1 = 'Python and JSON'
+print(json.dumps(string1))
 
 print('-' * 100)
 # Python Boolean values to JSON Boolean values
-import json
 
 x = True;
 print((json.dumps(x)));
@@ -61,17 +56,17 @@ print('-' * 100)
 print('DECODING THE JSON')
 print('-' * 100)
 '''
-json to python object conversion pairs:
-JSON	        Python
-----------------------
-object	        dict
-array	        list
-string	        str
-number(int)	    int
-number(real)	float
-true	        True
-false	        False
-null	        None
+# json to python object conversion pairs:
+# JSON	        Python
+# ----------------------
+# object	    dict
+# array	        list
+# string	    str
+# number(int)	int
+# number(real)	float
+# true	        True
+# false	        False
+# null	        None
 
 '''
 

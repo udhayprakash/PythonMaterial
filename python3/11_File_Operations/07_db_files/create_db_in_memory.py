@@ -5,7 +5,7 @@ database
         - File based 
             - sqlite3
         - port based 
-            - mysql 
+            - mysql / maria db
             - ms sql 
             - oracle 
     - no sql db 
