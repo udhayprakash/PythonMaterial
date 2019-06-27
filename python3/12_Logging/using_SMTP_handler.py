@@ -24,13 +24,3 @@ try:
             ''.join(traceback.format_stack()))
 except socket.error as error:
     logging.critical('Could not send email via SMTPHandler: %r', error)
-
-
-
-
-
-
-
-
-
-
