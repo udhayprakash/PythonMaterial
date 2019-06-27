@@ -20,7 +20,7 @@ try:
     elif sys.platform == "darwin": # MAC
         myLogFolder = "/usr/mylogs"
     else:
-        print(('Unhandled platform', sys.platform))
+        print('Unhandled platform', sys.platform)
         sys.exit(1)
         
     logger = logging.getLogger(fileName)

@@ -11,7 +11,7 @@ import logging
 
 # basicConfig - to set the format of log test
 logging.basicConfig(filename="04_logging.log",
-                    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
+                    format='%(asctime)s - %(levelname)8s - %(name)s - %(message)s',
                     level=logging.DEBUG,
                     datefmt='%d-%b-%Y %I:%M:%S %p')
 # based on the logging level placed, the logs will be placed.

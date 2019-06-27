@@ -10,8 +10,8 @@ import urllib.request, urllib.parse, urllib.error
 def print_n_write_response(url):
     connection = urllib.request.urlopen(url)
     data = connection.read()
-    write_response_to_file(data, url.split('/')[-1])
     print(data.decode('utf-8'))
+    write_response_to_file(data, url.split('/')[-1])
 
 
 def write_response_to_file(data, extension_name):
@@ -55,8 +55,8 @@ if __name__ == '__main__':
     print()
 
 
-    # print('-' * 20)
-    # print('HTML response')
-    # URL4 = 'https://www.google.co.in/search?q=someting&oq=someting&aqs=chrome..69i57.1510j0j1&sourceid=chrome&ie=UTF-8'
-    # print_n_write_response(URL4)
-    # print()
+    # # print('-' * 20)
+    # # print('HTML response')
+    # # URL4 = 'https://www.google.co.in/search?q=someting&oq=someting&aqs=chrome..69i57.1510j0j1&sourceid=chrome&ie=UTF-8'
+    # # print_n_write_response(URL4)
+    # # print()

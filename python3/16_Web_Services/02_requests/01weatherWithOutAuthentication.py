@@ -11,6 +11,7 @@ http request methods
     PUT
     UPDATE
     DELETE
+    CREATE
 
 """
 

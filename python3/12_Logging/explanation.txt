@@ -9,9 +9,9 @@
 20-July,2015 7.43am     [critical]  [ main        ]	ABORTED installing the product
 
 print ---
-
-debug
-info
-warning
-error
-critical
+        SDLC
+debug      developemnt
+info       dev/testing
+warning    dev/testing
+error      dev/testing/prod
+critical   dev/testing/prod
