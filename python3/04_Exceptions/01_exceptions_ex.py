@@ -7,11 +7,10 @@ when error    - try - except - finally
 # result = 1 // 0 
 # result = 1 / 0 
 # result = 1 % 0 
-
-# try:
-#     result = 1 % 0 
-# except:
-#     print('Please dont divide by zero')
+try:
+    result = 1 % 0 
+except:
+    print('Please dont divide by zero')
 
 # try:
 #     result = 1 % 0 
@@ -25,17 +24,17 @@ when error    - try - except - finally
 #     print('error is ', str(ex))
 #     print('error is ', repr(ex))
 
-# NOTE: else and finally blocks are optional
-try:
-    result = 1 % 0 
-except Exception as ex:
-    print('error is ', ex)
-    print('error is ', str(ex))
-    print('error is ', repr(ex))
-else: 
-    print('try block has no error')
-finally:
-    print('Finally statement')
+# # NOTE: else and finally blocks are optional
+# try:
+#     result = 1 % 0 
+# except Exception as ex:
+#     print('error is ', ex)
+#     print('error is ', str(ex))
+#     print('error is ', repr(ex))
+# else: 
+#     print('try block has no error')
+# finally:
+#     print('Finally statement')
 
-print('statement outside these blocks')
+# print('statement outside these blocks')
 
