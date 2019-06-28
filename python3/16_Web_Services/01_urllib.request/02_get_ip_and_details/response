@@ -1,0 +1,1504 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="wot-verification" content="79b9f04f8df1939e191a"/>
+
+        <link rel="shortcut icon" href="/static/images/favicon.b64f1de785e1.ico">
+        <link rel="icon" type="image/png" href="/static/images/favicon.34f0ec468301.png">
+
+        <title>ipapi - IP Address Location API</title>
+
+        
+  <link href="/static/css/ip_1e.c730ae26872a.css" rel="stylesheet" type="text/css" />
+  <link href="/static/css/ip_3i.aa18e2c7d3cf.css" rel="stylesheet" type="text/css" />  
+
+
+        
+  
+    <meta name="description" content="IP address location API and geolocation service. Find city, region, country, continent, latitude, longitude, timezone, UTC offset, currency, language, asn, organization, country calling code, european union (EU) member from an IP address. Secure, fast, free and accurate IP lookup supports JSON, CSV, XML and YAML.">
+    <meta name="twitter:description" content="IP address location API and geolocation service. Find city, region, country, continent, latitude, longitude, timezone, UTC offset, currency, language, asn, organization, country calling code, european union (EU) member from an IP address. Secure, fast, free and accurate IP lookup supports JSON, CSV, XML and YAML."/>
+    
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ipapi_co" />
+  <meta name="twitter:title" content="IP Location API" />
+
+    </head> 
+
+    
+
+    <body>
+    
+      
+        <div id="ip-alert-wrap">
+          <div id="srv-alert-wrap" class="hidden-helper">
+            
+          </div>
+        </div>
+      
+
+      
+        <div id="client-loc" class="hidden-helper"></div>
+      
+
+      <div id="page-content">
+        
+
+  <div class="modal fade" id="err-modal" tabindex="-1" role="dialog" aria-labelledby="pModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center" id="pModalLabel"><span class="pm-title"></span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ip-modal" class="hidden-helper"></div>
+
+  
+
+<div class="navbar navbar-static-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img class="brand-img" src="/static/images/icon/icon-64.a33f449690cd.png">
+        <div class="brand-name">ipapi</div>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="nav-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="#api">API</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="/developers/">Developers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        
+        <form class="navbar-form navbar-left" role="search" method="GET" action=/>
+          <div class="input-group">
+            <input type="text" class="form-control" name="q" placeholder="Search IP Address">
+            <span class="input-group-btn"><button type="submit" class="btn btn-primary">Locate</button></span>
+          </div>
+        </form>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="bg-wrap">
+    <div class="bg-colorgrad1"></div>
+
+    <div class="bg-img"></div>
+
+    <div class="text-center jumbo-ip">
+      <h1>2405:204:6308:ee1d:c9df:a14a:1968:8f52</h1>
+    </div>      
+
+    <div class="info-wrap container">
+      
+      <div class="row">
+        
+        <div class="hidden-xs hidden-sm col-md-10">
+          <div class="jumbo-desc">
+            <span class="line0">an&nbsp;</span>
+            <span class="line1">API</span>
+            <span class="line2">&nbsp;to find</span>
+            <div class="line3">
+              <div class="jd-anim jd-anim1">
+                <span>your</span>
+                <span>location</span>
+                <span>timezone</span>
+                <span>city</span>
+                <span>country</span>
+                <span>postal code</span>
+                <span>latitude / longitude</span>
+              </div>
+              <br>
+            </div>
+            <div class="line4">
+              <div class="jd-anim jd-anim2">
+                <span>external IP address</span>
+              </div>
+              <div class="jd-anim jd-anim3">
+                <span>of an IP address</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-24 col-md-12">
+          <div class="info-card md1-shadow">          
+            <div class="details-wrap">
+              <table class="table">       
+
+                
+
+                
+
+                
+                
+                <tr class="ip-striped"><td class="key">IP Address</td><td class="ipval" data-clipboard-text="2405:204:6308:ee1d:c9df:a14a:1968:8f52">2405:204:6308:ee1d:c9df:a14a:1968:8f52</td></tr>
+                <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                  <tr class="ip-striped"><td class="key">City</td><td class="ipval" data-clipboard-text="Himmatnagar">Himmatnagar</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped">
+                    <td class="key">Region</td>
+                    <td class="ipval" data-clipboard-text="Telangana">Telangana</td>
+                  </tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+
+                
+                  <tr class="ip-striped">
+                    <td class="key">Country</td>
+                    
+                      <td class="ipval" data-clipboard-text="IN">
+                        <div>
+                          <img class="c-flag" src="/static/images/flags/24/in.ccaf96cfc341.png">
+                          <span>IN / India</span>
+                        </div>
+                      </td>
+                    
+                  </tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+
+                
+                  <tr class="ip-striped"><td class="key">Postal Code</td><td class="ipval" data-clipboard-text="505451">505451</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">European Union</td><td class="ipval" data-clipboard-text="False">False</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">Latitude / Longitude</td><td class="ipval" data-clipboard-text="18.512700, 79.024200">18.512700, 79.024200</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+
+                
+                  <tr class="ip-striped">
+                    <td class="key">Time Zone</td><td class="ipval" data-clipboard-text="Asia/Kolkata">
+                      Asia/Kolkata (+0530)
+                    </td>
+                  </tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+
+                
+                  <tr class="ip-striped"><td class="key">Calling Code</td><td class="ipval" data-clipboard-text="+91">+91</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">Currency</td><td class="ipval" data-clipboard-text="INR">INR</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">Languages</td><td class="ipval" data-clipboard-text="en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc">en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">ASN</td><td class="ipval" data-clipboard-text="AS55836">AS55836</td></tr>
+                  <tr class="ip-striped tr-sep"><td></td><td></td></tr>
+                
+                
+                
+                  <tr class="ip-striped"><td class="key">Org</td><td class="ipval" data-clipboard-text="Reliance Jio Infocomm Limited">Reliance Jio Infocomm Limited</td></tr>
+                  <!-- <tr class="ip-striped tr-sep"><td></td><td></td></tr> -->
+                
+                
+                <!-- <tr class="ip-striped"><td class="key">Hostname</td><td class="ipval" data-clipboard-text=""></td></tr> -->
+              </table>
+            </div>
+
+            <div class="info-sep"></div>
+
+                          
+              <!-- Static map via JS -->
+              <div id="js-map" data-imgsrc="https://maps.googleapis.com/maps/api/staticmap?center=18.512700,79.024200&size=464x250&zoom=9&scale=1&key=AIzaSyArBa8vyHFIwlMzpkJVAtot_Z0bn1Oidy8"></div>                  
+            
+
+          </div>     
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <section id="api">
+    <div class="transparent-anchor-offset"></div>
+    <div class="container md-shadow">
+      <h1 class="text-center api-hdr">API : Quick Start<span style="font-size:0.5em; color:#777"><br>Simple &amp; fast programmatic IP address lookup for your website &amp; mobile app</span></h1>
+      <!-- <div class="text-center">Convenient API for IP address location</div> -->
+
+      <div class="row text-center">
+        <div class="col-xs-24 col-md-offset-6 col-md-12">
+          <div class="text-center api-code-title">Complete location in JSON format for an IP address (8.8.8.8)</div>
+          <div class="api-code-wrap md1-shadow">
+            <button class="btn btn-sm btn-default pull-right copy-btn" title="Copy curl command" data-clipboard-target="#curl-cmd1">
+              <span class="ip-icon icon-copy"></span>
+            </button>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span id="curl-cmd1"><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/json/</span></span>
+              <br><br>
+              {<br>
+                <span class="ac-key">"ip"</span> : <span class="ac-val live ip">"8.8.8.8"</span><br>
+                <span class="ac-key">"city"</span> : <span class="ac-val">"Mountain View"</span><br>
+                <span class="ac-key">"region"</span> : <span class="ac-val">"California"</span><br>
+                <span class="ac-key">"region_code"</span> : <span class="ac-val">"CA"</span><br>
+                <span class="ac-key">"country"</span> : <span class="ac-val">"US"</span><br>
+                <span class="ac-key">"country_name"</span> : <span class="ac-val">"United States"</span><br>
+                <span class="ac-key">"continent_code"</span> : <span class="ac-val">"NA"</span><br>
+                <span class="ac-key">"in_eu"</span> : <span class="ac-val">false</span><br>
+                <span class="ac-key">"postal"</span> : <span class="ac-val">"94035"</span><br>
+                <span class="ac-key">"latitude"</span> : <span class="ac-val">37.386</span><br>
+                <span class="ac-key">"longitude"</span> : <span class="ac-val">-122.0838</span><br>
+                <span class="ac-key">"timezone"</span> : <span class="ac-val">"America/Los_Angeles"</span><br>
+                <span class="ac-key">"utc_offset"</span> : <span class="ac-val live utc-offset">"-0700"</span><br>
+                <span class="ac-key">"country_calling_code"</span> : <span class="ac-val">"+1"</span><br>
+                <span class="ac-key">"currency"</span> : <span class="ac-val">"USD"</span><br>
+                <span class="ac-key">"languages"</span> : <span class="ac-val">"en-US,es-US,haw"</span><br>
+                <span class="ac-key">"asn"</span> : <span class="ac-val">AS15169</span><br>
+                <span class="ac-key">"org"</span> : <span class="ac-val">"Google LLC"</span><br>
+                <!-- <span class="ac-key">"hostname"</span> : <span class="ac-val">"google-public-dns-a.google.com"</span><br> -->
+              }</div>
+            </code>
+          </div>
+
+          <div class="text-center api-code-title">
+            Specific field for an IP address (8.8.8.8)<br>
+          </div>
+          <div class="api-code-wrap md1-shadow">
+            <button class="btn btn-sm btn-default pull-right copy-btn" title="Copy curl command" data-clipboard-target="#curl-cmd2">
+              <span class="ip-icon icon-copy"></span>
+            </button>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span id="curl-cmd2"><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/country/</span></span>
+                <br>
+                <span class="ac-val">US</span><br>
+              </div>
+            </code>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/city/</span></span>
+                <br>
+                <span class="ac-val">Mountain View</span><br>
+              </div>
+            </code>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/latitude/</span></span>
+                <br>
+                <span class="ac-val">37.3845</span><br>
+              </div>
+            </code>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/latlong/</span></span>
+                <br>
+                <span class="ac-val">37.384500,-122.088100</span><br>
+              </div>
+            </code>
+            <code class="api-code">
+              <div style="text-align: left;">
+                <span><span>curl</span> <span class="ac-val1">https://ipapi.co/8.8.8.8/org/</span></span>
+                <br>
+                <span class="ac-val">Google Inc.</span><br>
+              </div>
+            </code>
+          </div>          
+          <div style="color: #999; margin-top:6px; font-size:0.9em;">(field : ip, city, region, country, postal, latitude, longitude, timezone, latlong, asn, org, etc.)</div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a class="api-link" target="_blank" href="/api/">
+          <div class="intro-btn1 md-shadow">API Documentation</div>
+        </a>
+        <a class="api-link" target="_blank" href="/developers/">
+          <div class="intro-btn2 md-shadow">Developer Resources</div>
+        </a>
+      </div>
+
+
+      <!-- <hr> -->
+
+<!--       <div class="text-center">
+        <div class="sample-json-title">Sample API Requests</div>
+        <div class="sample-json-body">
+          <a class="sample-req md-shadow" style="width:100px;" target="_blank" href="https://ipapi.co/json/">My location</a>      
+          <a class="sample-req md-shadow" style="width:100px;" target="_blank" href="https://ipapi.co/ip/">My IP</a>      
+          <a class="sample-req md-shadow" style="width:100px;" target="_blank" href="https://ipapi.co/city/">My City</a>      
+          <a class="sample-req md-shadow" style="width:100px;" target="_blank" href="https://ipapi.co/country/">My Country</a>      
+          <a class="sample-req md-shadow" style="width:100px;" target="_blank" href="https://ipapi.co/timezone/">My Timezone</a>  
+          <br>    
+          <a class="sample-req md-shadow" style="width:140px;" target="_blank" href="https://ipapi.co/8.8.8.8/json/">Location for 8.8.8.8</a>      
+          <a class="sample-req md-shadow" style="width:140px;" target="_blank" href="https://ipapi.co/8.8.8.8/city/">City for 8.8.8.8</a>      
+          <a class="sample-req md-shadow" style="width:140px;" target="_blank" href="https://ipapi.co/8.8.8.8/country/">Country for 8.8.8.8</a>      
+          <a class="sample-req md-shadow" style="width:140px;" target="_blank" href="https://ipapi.co/8.8.8.8/timezone/">Timezone for 8.8.8.8</a>      
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+
+  
+
+
+
+  <section id="pricing">
+
+    <div class="modal fade" id="stripe-modal" tabindex="-1" role="dialog" aria-labelledby="pModalLabel2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" tabindex="-1" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="form-logo-wrap">
+              <div class="form-logo-border">
+                <img class="form-logo" src="/static/images/icon/icon-40.dad4dcd63bc0.png" alt="ipapi">
+              </div>
+            </div>
+
+            <div class="plan-summary text-center">
+              <div class="plan-brand">ipapi.co</div>
+              <div class="plan-cost"></div>
+            </div>
+          </div>
+
+          <div class="modal-body">
+
+            <form id="stripe-form" action="/charge/" method="POST">
+              <input type='hidden' name='csrfmiddlewaretoken' value='mwRFVgTDtpNBbNDuYFg8j0nIp9lXFy1aZgSVtJCqmkOniGJHeOiMeI44OK3Ncn8n' />
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" class="field" placeholder="Jane Doe" required />
+              </label>
+<!--               <label>
+                <span>Address</span>
+                <input type="text" name="address" class="field" placeholder="123 Main Street, Anytown, USA" />
+              </label> -->
+              <label> 
+                <span>E-Mail</span>
+                <input type="email" name="email" class="field" placeholder="jane@example.com" required />
+              </label>
+              <label>
+                <span>Card</span>
+                <div id="card-element" class="field"></div>
+              </label>
+              <button type="submit">Sign Up</button>
+              <div class="outcome">
+                <div class="error" role="alert"></div>
+              </div>
+            </form>
+
+            <div class="about-stripe">
+              Secure payments powered by Stripe
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="free-modal" tabindex="-1" role="dialog" aria-labelledby="pModalLabel3">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="color: #666;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="pModalLabel3">Using the Free Plan</h4>
+          </div>
+          <div class="modal-body" style="color: #777;">
+            <ul>
+              <li>No signup is required</li>
+              <li>Check the <a target="_blank" href="/api/">API docs</a> for examples</li>
+              <li>Please respect the plan limits</li>
+              <li>If you need a trial plan with a higher limit, please contact us</li>
+              <!-- <li>If you get an error / rate-limited message, please contact us</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="consent-modal" tabindex="-1" role="dialog" aria-labelledby="pModalLabel4">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="color: #666;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="pModalLabel4">Please check the box below &amp; proceed</h4>
+          </div>
+          <div class="modal-body" style="color: #777;">
+            <div class="checkbox text-center consent-box consent-box-modal">
+              <label><input type="checkbox" id="user-consent-modal" checked>
+                I agree to the 
+                <a target="_blank" href="/terms/">Terms</a> &amp; 
+                <a target="_blank" href="/privacy/">Privacy</a> Policy.
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="bg-colorgrad2"></div>
+    <div class="transparent-anchor-offset"></div>
+    <div class="hidden-helper">
+      <div id="stripe" data-key="pk_live_OZjRn9EjfgsgNzaZy9RVnXIl" data-icon="/static/images/icon/icon-64.a33f449690cd.png"></div>
+    </div>
+
+    <div class="container">
+
+      <h2 class="text-center pricing-hdr">
+        Pricing Plans
+        <span class="pricing-subhdr"><br>&sstarf; Instant setup &nbsp; &sstarf; Transparent pricing &nbsp; &sstarf; Secure payment</span>
+      </h2>
+
+      <div class="text-center bc-wrap">
+        <div class="period-text" id="bill-cycle-12">Annual</div>
+        <label class="period-switch">
+          <input type="checkbox">
+          <div class="period-slider round"></div>
+        </label>
+        <div class="period-text" id="bill-cycle-1">Monthly</div>          
+      </div>
+
+      <div class="row">
+        <div class="col-xs-24 col-md-offset-3 col-md-18">
+
+          <div class="pc-wrap">
+            <div class="row pch-row">
+              <div class="col-xs-8 pc-header">Price / month</div>
+              <div class="col-xs-8 pc-header">Requests / month</div>
+              <div class="col-xs-8 pc-header"></div>
+            </div>
+
+            <div class="row text-center pch-js-warn-row">
+              Warning ! Please enable Javascript to process payment
+            </div>
+            
+            <div class="row pc-row free-plan">
+              <div class="col-xs-8 pcol">
+                <div class="hover-style">
+                  <span class="symbol"></span><span class="amount">Free</span><br>
+                  <span class="period">No SignUp Required</span>
+                </div>
+              </div>            
+              <div class="col-xs-8 pcol">
+                <div class="hover-style">
+                  <span class="pval">30 000</span><span class="cp-symbol">*</span><br>
+                  <span class="period">* <span class="hidden-xs">Up-to </span>1000 / day</span>
+                </div>
+              </div>
+              <div class="col-xs-8 pcol free pc-action">
+                <a href="#paid-vs-free">
+                  <button type="button" class="btn btn-success free-btn">Compare</button>
+                </a>
+              </div>
+            </div>
+            
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">15</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">60 000</span><br>
+                          <span class="period"> 60 K / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-001" class="btn btn-success pay-btn" data-usd="15" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="528320" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">25</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">150 000</span><br>
+                          <span class="period">150 K / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-002" class="btn btn-success pay-btn" data-usd="25" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="528411" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">49</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">500 000</span><br>
+                          <span class="period">500 K / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-008" class="btn btn-success pay-btn" data-usd="49" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="541768" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">99</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">2 000 000</span><br>
+                          <span class="period">  2 M / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-009" class="btn btn-success pay-btn" data-usd="99" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="541783" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">199</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">6 000 000</span><br>
+                          <span class="period">  6 M / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-010" class="btn btn-success pay-btn" data-usd="199" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="541784" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+                
+                    <div class="row pc-row paid-plan bc-toggle bc-1">
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">
+                          <span class="symbol">$</span><span class="amount">399</span><br>
+                          <span class="period">billed monthly</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol">
+                        <div class="hover-style">                  
+                          <span class="pval">15 000 000</span><br>
+                          <span class="period"> 15 M / month</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-8 pcol pc-action">
+                        
+                          <button type="button" id="ip-011" class="btn btn-success pay-btn" data-usd="399" data-billcycle="1" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Monthly" data-product="541785" data-success="/charge/done/">Sign Up</button>
+                        
+                      </div>
+                    </div>
+                
+              
+            
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">12</span><br>
+                        <span class="period">billed $144 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">60 000</span><br>
+                        <span class="period"> 60 K / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1001" class="btn btn-success pay-btn" data-usd="144" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="528321" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">20</span><br>
+                        <span class="period">billed $240 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">150 000</span><br>
+                        <span class="period">150 K / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1002" class="btn btn-success pay-btn" data-usd="240" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="528412" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">39</span><br>
+                        <span class="period">billed $468 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">500 000</span><br>
+                        <span class="period">500 K / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1003" class="btn btn-success pay-btn" data-usd="468" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="541787" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">79</span><br>
+                        <span class="period">billed $948 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">2 000 000</span><br>
+                        <span class="period">  2 M / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1004" class="btn btn-success pay-btn" data-usd="948" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="541788" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">159</span><br>
+                        <span class="period">billed $1908 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">6 000 000</span><br>
+                        <span class="period">  6 M / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1005" class="btn btn-success pay-btn" data-usd="1908" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="541789" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+                
+                  <div class="row pc-row paid-plan bc-toggle bc-12">
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">
+                        <span class="symbol">$</span><span class="amount">319</span><br>
+                        <span class="period">billed $3828 / year&nbsp;&nbsp;</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol">
+                      <div class="hover-style">                  
+                        <span class="pval">15 000 000</span><br>
+                        <span class="period"> 15 M / month</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-8 pcol pc-action">
+                      
+                        <button type="button" id="ip-1006" class="btn btn-success pay-btn" data-usd="3828" data-billcycle="12" data-theme="none" data-title="IPAPI Subscription" data-message="Billed Annually" data-product="541790" data-success="/charge/done/">Sign Up</button>
+                      
+                    </div>
+                  </div>
+                
+              
+            
+              
+            
+
+            <div class="row pc-row custom-plan">
+              <div class="col-xs-8 pcol">
+                <a href="/contact/">
+                  <div class="hover-style">                  
+                    <span class="pval">Custom</span><br>
+                    <span class="period">click to contact</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-8 pcol">
+                <a href="/contact/">
+                  <div class="hover-style">                  
+                    <div class="cp-val">
+                      <span class="pval">15 000 000</span><span class="cp-symbol">+</span><br>
+                      <span class="period"> 15 M+ / month</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-8 pcol pc-action">            
+                <a type="button" class="btn btn-success custom-btn" href="/contact/">Contact</a>
+              </div>
+            </div>
+
+          </div>
+    
+          <div class="checkbox text-center consent-box consent-box-page">
+            <label><input type="checkbox" id="user-consent-page" checked>
+              I agree to the 
+              <a target="_blank" href="/terms/">Terms</a> &amp; 
+              <a target="_blank" href="/privacy/">Privacy</a> Policy.
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+
+
+      <div id="paid-vs-free" class="pricing-explain">
+        <div class="row">
+                  
+          <div class="col-xs-24 col-md-offset-3 col-md-9 pe-paid">
+            <div class="pe-card">
+              <div class="pe-header">
+                <a href="#pricing">
+                  <div class="corner-ribbon top-left">Sign Up</div>
+                </a>
+                <h3>Paid Plan</h3>
+                <h5>Premium Features</h5>
+              </div>
+              <div class="pe-body">
+                <table>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-lock"></span></td>
+                    <td class="pe-text">
+                      HTTPS / SSL
+                      <div class="pe-help">Secure API for IP address lookup</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-rocket"></span></td>
+                    <td class="pe-text">
+                      Production ready &amp; scalable
+                      <div class="pe-help">Seamless upgrades as traffic grows. No code changes</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-lifebuoy"></span></td>
+                    <td class="pe-text">
+                      E-Mail support
+                      <div class="pe-help">Expert help with API usage, integration / issues</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-bell"></span></td>
+                    <td class="pe-text">
+                      Usage alerts
+                      <div class="pe-help">E-Mail alerts warn you before you run out of quota</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-display"></span></td>
+                    <td class="pe-text">
+                      API to monitor usage
+                      <div class="pe-help">Transparently track your usage &amp; control costs</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-stack"></span></td>
+                    <td class="pe-text">
+                      <a style="text-decoration: none;" target="_blank" href="/bulk/">Bulk IP lookup</a>
+                      <div class="pe-help">Get location of multiple IP addresses with a GUI</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="center" style="height:56px;">
+                      <a href="#pricing" class="btn btn-default">Select</a>                      
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>            
+          </div>
+
+          <div class="col-xs-24 col-md-9 pe-free">
+            <div class="pe-card">
+              <div class="pe-header">
+                <h3>Free Plan</h3>
+                <h5>&nbsp;</h5>
+              </div>
+              <div class="pe-body">
+                <table>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-green icon-lock"></span></td>
+                    <td class="pe-text">
+                      HTTPS / SSL
+                      <div class="pe-help">Secure API for IP address lookup</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-yellow icon-rocket"></span></td>
+                    <td class="pe-text">
+                      Suitable for testing / development
+                      <div class="pe-help">Not recommended for production</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-red icon-lifebuoy"></span></td>
+                    <td class="pe-text">
+                      No support
+                      <div class="pe-help"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-red icon-bell"></span></td>
+                    <td class="pe-text">No usage alerts</td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-red icon-display"></span></td>
+                    <td class="pe-text">No usage monitoring</td>
+                  </tr>
+                  <tr>
+                    <td class="pe-icon"><span class="ip-icon icon-red icon-stack"></span></td>
+                    <td class="pe-text">
+                      Limited Bulk IP lookup
+                      <div class="pe-help"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="center" style="height:56px;">
+                      <a href="" class="btn btn-default free-select" data-toggle="modal" data-target="#free-modal">Select</a>                      
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>  
+          </div>          
+        
+        </div>
+      </div>
+
+
+
+      <div id="pricing-faq" class="pc-faq">
+
+        <div class="text-center pc-faq-heading"><h3 id="general">FAQ</h3></div>
+        <br>
+
+        <div class="row">
+
+          <div class="col-xs-24 col-md-offset-3 col-md-18">
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading4">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                      &bull; What types of IP address geolocation plans do you offer ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                  <div class="panel-body">
+                      We offer subscription plans with monthly &amp; annual billing options. You can choose a plan based on your expected 
+                      monthly request limit. The request limit can be changed by upgrading or downgrading your plan. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      &bull; Can I change my plan any time ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                  <div class="panel-body">
+                    Plan upgrades are applied instantly with pro-rated charges. Downgrades take effect from next billing cycle.
+                    On sign-up, you will receive instructions on how to change your plan. 
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                      &bull; How do I cancel my subscription ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                  <div class="panel-body">
+                    We have a hassle free cancellation policy. Just drop us an e-mail or contact us <a href="/contact/">here</a>.
+                    (You'll these receive details on sign-up).
+                    Once your plan is cancelled, you won't be billed anymore but your plan will work till the end of your billing cycle.  
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                      &bull; Do you offer a trial plan ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                  <div class="panel-body">
+                      We offer a free plan for trial &amp; testing with no time limit. No signup or credit card 
+                      is required to use it. If you require a higher limit trial plan, 
+                      please <a href="/contact/">contact us</a>. We would be happy to help you out. 
+                      <br><br>                     
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading8">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                      &bull; Are there any limits on using the free IP location API ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                  <div class="panel-body">
+                    Under the free tier, you get up-to 1000 requests in a day (approximately 30K/month).
+                    The plan is suitable for development purposes but not recommended for production. The 
+                    system may use heuristics to further restrict free tier API calls under certain conditions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading7">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                      &bull; Is my payment information secure ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                  <div class="panel-body">
+                    We use a secure, PCI compliant payment provider to handle credit & debit card transactions. 
+                    We never view or store any customer’s full credit or debit card details on our platform. 
+                    Our primary payment processor is Stripe. It has been audited by an independent PCI QSA and 
+                    is certified as a PCI Level 1 Service Provider. This is the most stringent level of 
+                    certification available in the payments industry.
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading9">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                      &bull; How do I change my payment information ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                  <div class="panel-body">
+                    Please <a href="/contact/">contact us</a> for any changes to your plan or payment method.
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading5">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                      &bull; What can I do with the API and what are the terms of service ? 
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                  <div class="panel-body">
+                    The API is suitable for a website, mobile or desktop app to automatically
+                    determine the location and related information of the user. If you need to perform bulk lookup, we offer
+                    a separate GUI tool covered under the same subscription plan. If you expect an uncommon usage
+                    or traffic pattern, please contact us to ensure that the API will be suitable for you. 
+                    For further details, please see our <a href="/terms/">terms of service</a>
+                     &amp; <a href="/privacy/">privacy policy</a>            
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading6">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                      &bull; Still got queries ?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                  <div class="panel-body">
+                    See our general  <a target="_blank" href="/faq/">FAQ</a> or send us a message <a target="_blank" href="/contact/">here</a>. 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br><br><br><br>
+
+
+<!--       <div id="ext-free" class="ext-free">
+        <div class="row">
+                  
+          <div class="col-xs-24 col-md-offset-7 col-md-10 pe-free">
+            <div class="pe-card">
+
+              <div class="pe-header">
+                <h4>Higher Limit Free Plan</h4>
+              </div>
+
+              <div class="pe-body">
+                <table>
+                  <tr>
+                    <td class="pe-text" style="padding-top:10px; padding-bottom:10px;">
+                      Open Source / Education / Non-Profit
+                      <div class="pe-help">                        
+                        We would <span style="font-size:1.1em;">&hearts;</span> to support you. 
+                        <a style="color:#666;" href="/contact/?subject=extfree">Contact Us</a>
+                        with project details.
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pe-text" style="padding-top:10px; padding-bottom:10px;">
+                      Technology evangelist
+                      <div class="pe-help">
+                        Contribute examples, libraries, articles. Help us grow. 
+                        <a style="color:#666;" href="/contact/?subject=extfree">Get in touch.</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>            
+          </div>          
+        
+        </div>
+      </div>
+ -->
+    </div>
+  </section>
+
+
+
+  <section id="features">
+    <div class="transparent-anchor-offset"></div>
+    <div class="container md-shadow">
+      <h2 class="text-center features-hdr">Why choose us ?</h2>
+      <div class="features-body">
+        
+        <div class="row">
+          <div class="col-xs-24">
+            <div class="text-center">
+              <div style="color:#666; font-size:1.1em;">We strive to offer the best IP address location API</div>
+              <!-- <div>Here are a few of the reasons we are amongst the top providers.</div> -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-24 col-md-offset-2 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-rocket"></div>
+              <div class="f-text">
+                <span class="ft-heading">Speed</span>
+                <div class="ft-body">A blazing fast API with infrastructure that scales automatically with load.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-md-offset-1 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-security"></div>
+              <div class="f-text">
+                <span class="ft-heading">Security</span>
+                <div class="ft-body">All calls over HTTPS. Encrypted payment handling.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-md-offset-1 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-server"></div>
+              <div class="f-text">
+                <span class="ft-heading">Reliability</span>
+                <div class="ft-body">
+                  Over 99.99% uptime with best in class compute infrastructure. View <a href="/status/">API status</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-24 col-md-offset-2 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-earth"></div>
+              <div class="f-text">
+                <span class="ft-heading">Global</span>
+                <div class="ft-body">Diverse client base includes firms in e-commerce, 
+                logistics, automotive, gaming, SaaS etc. located all over the globe.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-md-offset-1 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-price-tags"></div>
+              <div class="f-text">
+                <span class="ft-heading">Economical</span>
+                <div class="ft-body">
+                  Competitive &amp; transparent pricing. Flexible Plans.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-24 col-md-offset-1 col-md-6">
+            <div class="feature">
+              <div class="ip-icon icon-scope"></div>
+              <div class="f-text">
+                <span class="ft-heading">Accuracy</span>
+                <div class="ft-body">
+                  IPv4 &amp; IPv6 support. Database updated regularly. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="usage">
+    <div class="transparent-anchor-offset"></div>
+    <div class="container md-shadow">
+      <h2 class="text-center usage-hdr">Why do I need an IP lookup ?</h2>
+
+<!--       <div class="row">
+        <div class="col-xs-24">
+          <div class="text-center">
+            <div style="color:#666; font-size:1.1em;">
+              I              
+            </div>
+          </div>
+        </div>
+      </div>
+ -->
+      <div class="row">
+        <div class="col-xs-24 col-md-offset-4 col-md-16">
+          <div class="usage">            
+            <ul class="list-group">
+              <li class="list-group-item">
+                Automatically detect &amp; display a user's city / country / timezone / offset from your website or mobile app.<br>
+                <span style="color:#999;">(even if location tracking is turned off)</span>
+              </li>
+              <li class="list-group-item">
+                Customize the content of your website / mobile app for a user's geographical location.<br>
+                <span style="color:#999;">(e.g. news, weather, store locations, currency, flag etc.)</span>
+              </li>
+              <li class="list-group-item">
+                Automatically redirect users to country specific websites.<br>
+              </li>
+              <li class="list-group-item">
+                Find your external IP address with an API.
+              </li>
+              <li class="list-group-item">
+                Display a user's location on a map.<br>
+                <span style="color:#999;">(accuracy ranges from city to postal code level)</span>
+              </li>
+              <li class="list-group-item">
+                <a href="/bulk/">Bulk IP lookup</a> - a tool for batch lookup of IP addresses.<br>                
+                <span style="color:#999;">(e.g. for user analytics, log files etc.)</span>
+              </li>
+              <li class="list-group-item">
+                Filter out bad bots &amp; crawlers based on region / country.<br>                
+              </li>
+              <li class="list-group-item">
+                A format that fits your stack : JSON, JSONP, XML, CSV &amp; YAML.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<!--   <section id="contact">
+    <div class="bg-colorgrad3"></div>
+    <div class="transparent-anchor-offset"></div>
+    <div class="container md-shadow">
+      <h2 class="text-center contact-hdr">Contact</h2>
+      <div class="row">
+        <div class="col-xs-24 col-md-offset-6 col-md-12">
+            <div class="ct-form-wrap">
+              <form method="POST" action="/contact/" class="form" role="form">
+                <input type='hidden' name='csrfmiddlewaretoken' value='mwRFVgTDtpNBbNDuYFg8j0nIp9lXFy1aZgSVtJCqmkOniGJHeOiMeI44OK3Ncn8n' />
+                <div class="form-group">
+                  <textarea class="form-control ct-message" name="message" required placeholder="Message" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                  <input class="form-control ct-email" name="email" placeholder="Your E-Mail" type="email" />
+                </div>
+                <button class="btn btn-info btn-block feedback-send ct-send-hdlr" type="submit">
+                  Send
+                  <span class="cl-icon cli-ct-send icon-paper-plane ct-send-hdlr"></span>
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <br><br><br><br><br><br><br><br><br>
+
+      </div>
+
+      
+        <div class="footer">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-xs-offset-2 col-xs-20">
+                <a class="btn" href="/about/">About</a>
+                <a class="btn" href="/contact/">Contact</a>
+                <a class="btn" href="/terms/">Terms</a>
+                <a class="btn" href="/privacy/">Privacy</a>
+                <a class="btn" href="/careers/">Careers</a>
+                <a class="btn" target="_blank" href="https://twitter.com/ipapi_co">
+                  <span class="ip-social-icon icon-twitter"></span>
+                </a>
+                <a class="btn" target="_blank" href="https://github.com/ipapi-co/">
+                  <span class="ip-social-icon icon-github"></span>
+                </a>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-xs-24 text-center">
+                <div class="about">
+                  ipapi is a geolocation service provided via this <a href="https://ipapi.co">website</a> 
+                  and a secure &amp; fast <a href="/api/">API</a><br>
+                  The data is aggregated from multiple sources regularly for an accurate &amp; reliable IP address location mapping.<br> 
+                  However accuracy of location obtained from an IP address has its limitations and may not always be current.<br>
+                </div>
+                <div class="copyright">&copy; 2019 Kloudend, Inc. </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      
+  <!-- Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Service",
+    "name": "IP address location API",
+    "image": "https://ipapi.co/static/images/icon/icon-256.png",
+    "description": "IP address location API and geolocation service. Find city, region, country, continent, latitude, longitude, timezone, UTC offset, currency, language, asn, organization, country calling code, european union (EU) member from an IP address. Secure, fast, free and accurate IP lookup supports JSON, CSV, XML and YAML.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "0",
+      "seller": {
+        "@type": "Organization",
+        "name": "ipapi.co"
+      }
+    }
+  }
+  </script>
+
+  <!-- Logo  : https://developers.google.com/search/docs/data-types/logo -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://ipapi.co/",
+    "logo": "https://ipapi.co/static/images/icon/icon-72.png"
+  }
+  </script>
+
+  <!-- Sitelinks Searchbox : https://developers.google.com/search/docs/data-types/sitelinks-searchbox -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://ipapi.co/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ipapi.co/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Social profile link -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "ipapi",
+    "url": "https://ipapi.co/",
+    "sameAs": [
+      "https://twitter.com/ipapi_co",
+      "https://www.instagram.com/ipapi.co/",
+      "https://pinterest.com/ipapico/"
+    ]
+  }
+  </script>
+
+  <script type="text/javascript" src="/static/js/ip_1e.4219dedba2f1.js" charset="utf-8"></script>
+  
+  <!-- Payments -->
+  
+    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+    <script type="text/javascript">
+      Paddle.Setup({ vendor: 31193 });
+    </script>
+  
+    
+  <script type="text/javascript" src="/static/js/ip_3i.d462358fcda1.js" charset="utf-8"></script>
+
+  
+  
+
+
+      
+    </body>
+
+    
+</html>
