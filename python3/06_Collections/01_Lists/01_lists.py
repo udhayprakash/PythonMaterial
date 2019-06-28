@@ -19,13 +19,14 @@ print('numbers=     ', numbers)
 print('type(numbers)', type(numbers))
 
 # multi-dimensional lists
-ml = [1, 2, 3, 4, 5, [6, 7, 8, (9, 10)]]
+ml = [1, 2, 3, 4.3, 5, [6, 7, 8, (9, 10)]]
 print('ml      ', ml)
 print('type(ml)', type(ml))
 
 print('len(ml)=', len(ml))
 
 print('ml[3]   ', ml[3])
+print('type(ml[3])', type(ml[3]))
 # print( ml[6])  # Index Error
 
 print('ml[5]   ', ml[5])
@@ -44,7 +45,7 @@ print(name)
 print(name[0:3])
 # name[0:3] = 'Tej'    # editing not possible
 
-# print('id(name)', id(name))
-# name = 'Tej Sekhar'    # overwriting the object 
-# print('id(name)', id(name))
-# print(name)
+print('id(name)', id(name))
+name = 'Tej Sekhar'    # overwriting the object 
+print('id(name)', id(name))
+print(name)
