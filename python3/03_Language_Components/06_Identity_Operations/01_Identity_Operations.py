@@ -30,12 +30,12 @@ print('a=', a, 'b=', b)
 
 print('a == b ', a == b)
 print('a is b ', a is b)
-print('id(a)=', id(a), 'id(b)', id(b))  # id(a)= 4368732 id(b) 4368732
+print('id(a)= ', id(a), 'id(b)', id(b))  # id(a)= 4368732 id(b) 4368732
 print()
 
 a = 200
-print('a=', a, 'b=', b)
-print('id(a)=', id(a), 'id(b)', id(b))  # id(a)= 4368732 id(b) 4368732
+print('a=     ', a, 'b=', b)
+print('id(a)= ', id(a), 'id(b)', id(b))  # id(a)= 4368732 id(b) 4368732
 print('a == b ', a == b)
 print('a is b ', a is b)
 print()
@@ -43,7 +43,7 @@ print()
 m = 300
 n = 300
 print('m=', m, 'n=', n)
-print('id(m)=', id(m), 'id(n)', id(n))  # id(m)= 36645972 id(n) 36645972
+print('id(m)= ', id(m), 'id(n)', id(n))  # id(m)= 36645972 id(n) 36645972
 print('m == n ', m == n)
 print('m is n ', m is n)
 print()
