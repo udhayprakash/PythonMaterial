@@ -7,7 +7,7 @@ version = '3.0'
 
 def hello():
     ''' this is just for printing hello '''
-    print "hello today is modules class"
+    print("hello today is modules class")
 
 
 def add(a=1, b=2):
@@ -19,10 +19,8 @@ def add(a=1, b=2):
 pdb.set_trace()
 if __name__ == '__main__':
     hello()
-    sum = add()
     sum1 = add(5, 6)
-    print sum1
-    print sum
-    print version
+    print(sum1)
+    print(version)
 else:
     print "Hello this has to be part of my modules"

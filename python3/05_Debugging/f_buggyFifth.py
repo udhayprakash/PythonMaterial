@@ -8,6 +8,6 @@ def eo(num):
     return 'odd' 
 
 import pdb;pdb.set_trace()
-print eo(2)
-print eo(3)
-print eo.func_doc
+print(eo(2))
+print(eo(3))
+print(eo.func_doc)

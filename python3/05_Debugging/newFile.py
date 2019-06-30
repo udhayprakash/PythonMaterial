@@ -10,4 +10,4 @@ def grocerryShop(quantity):
     TotalCost = quantity*(costOfApples + costOfMangos)
     return TotalCost
 
-print grocerryShop(12)
+print(grocerryShop(12))
