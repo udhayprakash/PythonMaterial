@@ -9,15 +9,15 @@ June Batch Course completion schedule
 --------------------------------------
 01 Jul  Collections: Lists(remaining), tuple, set
 02 Jul  Collections: dict, Functions 
-03 Jul  Functions, Decorators
-04 Jul  Iterators, Generators, Coroutines 
-05 Jul  Modules: math, sys, argparse, turtle
-06 Jul  Modules: OS, shutil, subprocess, getpass, console-coloring
-07 Jul  Modules: time-related, random, Collections-module, user-defined module 
-08 Jul  File Operations: flat files, non-flat files- csv 
-09 Jul  File Operations: serialization - picke, shelve, json, xlsx; zip, pyw, config files 
-10 Jul  Logging 
-11 Jul  OOP 
-12 Jul  OOP & code quality
-13 Jul  Regular Expressions 
-14 Jul  Data science related: numpy, pandas, matplotlib
+04 Jul  Functions, Decorators
+05 Jul  Iterators, Generators, Coroutines 
+06 Jul  Modules: math, sys, argparse, turtle
+07 Jul  Modules: OS, shutil, subprocess, getpass, console-coloring
+08 Jul  Modules: time-related, random, Collections-module, user-defined module 
+09 Jul  File Operations: flat files, non-flat files- csv 
+10 Jul  File Operations: serialization - picke, shelve, json, xlsx; zip, pyw, config files 
+11 Jul  Logging 
+12 Jul  OOP 
+13 Jul  OOP & code quality
+14 Jul  Regular Expressions 
+15 Jul  Data science related: numpy, pandas, matplotlib
