@@ -22,8 +22,8 @@ print("type(str(numbers))     =", type(str(numbers)))
 print("numbers.__str__()      =", numbers.__str__())
 print("type(numbers.__str__())=", type(numbers.__str__()))
 
-# print "help(numbers)=", help(numbers)
-print("numbers.__doc__=", numbers.__doc__)
+# # print "help(numbers)=", help(numbers)
+# print("numbers.__doc__=", numbers.__doc__)
 
 print("numbers * 3         =", numbers * 3)  # original object not modified
 print('numbers             =', numbers)
@@ -32,10 +32,10 @@ print('numbers             =', numbers)
 print("numbers.__imul__(3) =", numbers.__imul__(3))  # original object IS modified
 print('numbers             =', numbers)
 
-print("id(numbers)=", id(numbers))
-# object overwriting 
-numbers = [88, 99, 666]
-print("id(numbers)=", id(numbers))
+# print("id(numbers)=", id(numbers))
+# # object overwriting 
+# numbers = [88, 99, 666]
+# print("id(numbers)=", id(numbers))
 
 # list concatenation
 print('numbers\t\t\t\t=', numbers)
@@ -55,4 +55,5 @@ print("numbers.__contains__(12) =", numbers.__contains__(12))
 print("12 in numbers =", 12 in numbers)
 
 print(numbers.__sizeof__())
-# # print help(numbers.__sizeof__())
+import sys 
+print(sys.getsizeof(numbers))
