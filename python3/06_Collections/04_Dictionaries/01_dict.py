@@ -24,7 +24,7 @@ print(empty_set, type(empty_set))
 other_set= {12, 34}
 print(type(other_set))
 
-other_dict = {12:34}
+other_dict = {12:34, 34:56}
 print(type(other_dict))
 
 # in python2, dicts doesn't retain the assigned order. 
@@ -42,8 +42,7 @@ print(mydict)
 print(type(mydict))
 
 from pprint import pprint
-# print(dir(pprint))
-# help(pprint)
+pprint(mydict)
 
 pprint(mydict, indent=2, width=2)
 
@@ -75,41 +74,41 @@ print('mydict', mydict)
 ####################################
 print(dir(mydict))
 print('===============')
-print(mydict.popitem())  # deletes some key:value in random 
-print(mydict)
+# print(mydict.popitem())  # deletes some key:value in random 
+# print(mydict)
 
-print(mydict.popitem())
-print(mydict)
+# print(mydict.popitem())
+# print(mydict)
 
-print(mydict.pop('name'))  # deletes specific mentioned key:value
-print(mydict)
-print()
-del mydict[('Dr', 'Mr')]   # deletes specific mentioned key:value
-print(mydict)
+# print(mydict.pop('name'))  # deletes specific mentioned key:value
+# print(mydict)
+# print()
+# del mydict[('Dr', 'Mr')]   # deletes specific mentioned key:value
+# print(mydict)
 
 
-print('-'*50)
-print('mydict.keys()', mydict.keys())
-print('mydict.values()', list(mydict.values()))
-print('mydict.items()', list(mydict.items()))
-print('-'*50)
-# print('mydict.iterkeys()', mydict.keys())
-# print('mydict.itervalues()', mydict.values())
-# print('mydict.iteritems()', mydict.items())
+# print('-'*50)
+# print('mydict.keys()', mydict.keys())
+# print('mydict.values()', list(mydict.values()))
+# print('mydict.items()', list(mydict.items()))
+# print('-'*50)
+# # print('mydict.iterkeys()', mydict.keys())
+# # print('mydict.itervalues()', mydict.values())
+# # print('mydict.iteritems()', mydict.items())
 
-replica_dict = {}
-replica_dict= replica_dict.fromkeys(mydict, '')
-print('\n\nreplica_dict', replica_dict)
+# replica_dict = {}
+# replica_dict= replica_dict.fromkeys(mydict, '')
+# print('\n\nreplica_dict', replica_dict)
 
-replica_dict['b'] = 'bbb'
+# replica_dict['b'] = 'bbb'
 
-# print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+# # print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 
-replica_dict.update({'a':12, 'blog': 'udhay'})
-print('replica_dict', replica_dict)
+# replica_dict.update({'a':12, 'blog': 'udhay'})
+# print('replica_dict', replica_dict)
 
-mydict.clear()
-print(mydict)
+# mydict.clear()
+# print(mydict)
 
-del mydict
-# print(mydict) #NameError: name 'mydict' is not defined
+# del mydict
+# # print(mydict) #NameError: name 'mydict' is not defined

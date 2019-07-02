@@ -1,5 +1,6 @@
 
-sentence = '''Python is a wonderful language. we can solve any 
+sentence = '''Python is a wonderful language. 
+we can solve any 
 computational problem with this'''
 
 '''
