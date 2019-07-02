@@ -9,7 +9,7 @@ Purpose:
 import requests
 import sys
 from datetime import datetime 
-
+from pprint import pprint
 URL = 'http://api.open-notify.org/astros.json'
 
 response = requests.get(URL)
@@ -20,14 +20,11 @@ if response.status_code != 200:
 
 
 response_data = response.json()
+pprint(response_data)
 
 if response_data.get('message') != 'success':
     print(response_data.get('reason'))
     sys.exit(1)
-
-
-from pprint import pprint 
-pprint(response_data)
 
 number = response_data.get('number')   
 craft = response_data.get('people')[0].get('craft')

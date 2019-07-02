@@ -11,7 +11,7 @@ import duckduckgo
 import sys
 
 
-# print dir(duckduckgo)
+# print(dir(duckduckgo))
 
 try:
     query_string = input('Enter the query:')
@@ -20,8 +20,7 @@ except Exception as ex:
     print("request failed with error:", repr(ex)) 
     sys.exit(1)
 
-# print dir(response)
-
+# print(dir(response))
 print('API version     :', response.api_version)
 print('response.type   :', response.type)
 print()
@@ -35,9 +34,9 @@ if response.type == 'answer':           # DuckDuckGo
     for each_result in response.results:
         print('each_result.url :', each_result.url)
         print('each_result.text:', each_result.text)
-        # print 'each_result.html:', each_result.html
-        # print 'each_result.icon:', each_result.icon
-        # print dir(each_result)
+        # print('each_result.html:', each_result.html)
+        # print('each_result.icon:', each_result.icon)
+        # print(dir(each_result))
         print('-' * 30)
 elif response.type == 'disambiguation': # Python
     print('No. of related  :', len(response.related))
@@ -48,10 +47,10 @@ elif response.type == 'disambiguation': # Python
         print(each_result.text)
         if hasattr(each_result, 'topic'):
             print('each_result.topic', each_result.topic)
-        # print 'each_result.html:', each_result.html
-        # print 'each_result.icon:', each_result.icon
+        # print('each_result.html:', each_result.html)
+        # print('each_result.icon:', each_result.icon)
         print('-' * 30)
-    # print dir(each_result)
+    # print(dir(each_result))
 elif response.type == 'exclusive':      # 1+ 1
     print('response.answer.text:', response.answer.text)
     print('response.answer.type:', response.answer.type)
@@ -64,8 +63,8 @@ elif response.type == 'exclusive':      # 1+ 1
         
         if hasattr(each_result, 'topic'):
             print('each_result.topic', each_result.topic)
-        # print 'each_result.html:', each_result.html
-        # print 'each_result.icon:', each_result.icon
+        # print('each_result.html:', each_result.html)
+        # print('each_result.icon:', each_result.icon)
         print('-' * 30)
 elif response.type == 'nothing':        # 45654
     print(response.answer)

@@ -13,13 +13,13 @@ import urllib.request
 
 URL = 'https://http.cat/200'
 req = urllib.request.Request(URL)
-# print dir(req)
+# print(dir(req))
 
 print('req.get_header', req.get_header)
 
 response = urllib.request.urlopen(req)
 print()
 print('response.getcode()', response.getcode())
-# print response.readline()  # image 
-# print dir(response)
+# print(response.readline())  # image 
+# print(dir(response))
 print(response.headers)

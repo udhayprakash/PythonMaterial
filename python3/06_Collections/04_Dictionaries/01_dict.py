@@ -47,7 +47,7 @@ from pprint import pprint
 
 pprint(mydict, indent=2, width=2)
 
-# ########################################
+########################################
 print()
 print('name' in mydict)
 print("mydict['name']:", mydict['name'])

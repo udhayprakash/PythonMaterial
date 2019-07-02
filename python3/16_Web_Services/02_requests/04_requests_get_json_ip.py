@@ -8,4 +8,4 @@ if r.status_code == 200:
     print(data)
     print(data['origin'])
 else:
-    print r.status_code
+    print(r.status_code)

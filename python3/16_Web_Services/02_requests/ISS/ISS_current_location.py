@@ -14,14 +14,14 @@ from pprint import pprint
 URL = 'http://api.open-notify.org/iss-now.json'
 
 response = requests.get(URL)
-# print(response.status_code)
-# print(response.ok)
-# print(response.reason)
-# print(response.url)
+print(response.status_code)
+print(response.ok)
+print(response.reason)
+print(response.url)
 # print(response.text)
 # import json
 # print(json.loads(response.text))
-# print(response.json())
+print(response.json())
 
 if response.status_code != 200:
     print(response.text)

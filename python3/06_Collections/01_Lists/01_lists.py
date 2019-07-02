@@ -1,6 +1,21 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
+datatypes
+===========
+    int()
+    float()
+    str()
+
+data Structures
+===============
+    list()
+    tuple()
+    set()
+    dict()
+
+    iter()
+    
 List can be classified as single-­dimensional and multi­-dimensional.
 List is representing using [].
 List is a mutable object, which means elements in list can be changed.

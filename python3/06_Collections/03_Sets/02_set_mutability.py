@@ -38,9 +38,9 @@ print('type(veto_countries)', type(veto_countries))
 print(veto_countries)
 
 print(dir(veto_countries))
-# # veto_countries.add('China')
-# # AttributeError: 'frozenset' object has no attribute 'add'
+# veto_countries.add('China')
+# AttributeError: 'frozenset' object has no attribute 'add'
 # hybrid_set = {12, 23.5, 'tomoto', (12,), frozenset(small_set)}
-#                     # , small_set --- TypeError: unhashable type: 'set'
+#                     , small_set --- TypeError: unhashable type: 'set'
 # print('type(hybrid_set)', type(hybrid_set))
 # print(hybrid_set)

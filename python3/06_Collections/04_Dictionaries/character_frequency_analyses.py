@@ -12,20 +12,20 @@ for character in sentence:
     count[character] = count.get(character,0) + 1
 
 print()
-#print count.items()
-#print sorted(count.items())
-#print sorted(count.items(), reverse= False)
-#print sorted(count.items(), reverse= True)
+#print(count.items())
+#print(sorted(count.items()))
+#print(sorted(count.items(), reverse= False))
+#print(sorted(count.items(), reverse= True))
 
-#print sorted(count.items(), key = lambda i:i[0])  # sorting by key
-#print sorted(count.items(), key = lambda i:i[1])  # sorting by value
+#print(sorted(count.items(), key = lambda i:i[0]))  # sorting by key
+#print(sorted(count.items(), key = lambda i:i[1]))  # sorting by value
 
 
-#print sorted(count.items(), key = lambda i:i[1], reverse= True)
+#print(sorted(count.items(), key = lambda i:i[1], reverse= True))
 
 #highestOccurenceOrder = sorted(count.items(), key = lambda i:i[1], reverse= True)
 
-#print highestOccurenceOrder
+#print(highestOccurenceOrder)
 
 
 '''

@@ -46,7 +46,7 @@ get_data_n_write_to_file(URL)
 #         if response.status_code == 200:
 #             pprint(response.json())
 #             for res in response.json():
-#                 print res['title'] + ' is a ' + res['location_type'] + ' located at ' + res['latt_long']
+#                 print(res['title'] + ' is a ' + res['location_type'] + ' located at ' + res['latt_long'])
 #         else:
 #             print 'Unsuccessful call. Response code is ', response.status_code
 #         print

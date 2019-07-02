@@ -16,11 +16,11 @@ def get_live_currency_quote():
     # pprint(response.json()) 
     quotes = response.json().get('quotes')
     USDINR_quote = quotes.get('USDINR')
-    # print USDINR_quote
+    # print(USDINR_quote)
 
     _timestamp = response.json().get('timestamp')
     timestamp = datetime.fromtimestamp(_timestamp)
-    # print timestamp
+    # print(timestamp)
 
     return """At {TIMESTAMP}, {QUOTE} is {QUOTE_VALUE}""".format(
     TIMESTAMP= timestamp,
@@ -44,11 +44,11 @@ def get_live_currency_quote2(requesting_data = 'live'):
     # pprint(response) 
     quotes = response.get('quotes')
     USDINR_quote = quotes.get('USDINR')
-    # print USDINR_quote
+    # print(USDINR_quote)
 
     _timestamp = response.get('timestamp')
     timestamp = datetime.fromtimestamp(_timestamp)
-    # print timestamp
+    # print(timestamp)
 
     return """At {TIMESTAMP}, {QUOTE} is {QUOTE_VALUE}""".format(
     TIMESTAMP= timestamp,
@@ -56,7 +56,7 @@ def get_live_currency_quote2(requesting_data = 'live'):
     QUOTE_VALUE = USDINR_quote
     )
 
-print get_live_currency_quote()
+print(get_live_currency_quote())
 
-print get_live_currency_quote2()
-# print get_live_currency_quote2('historical')
+print(get_live_currency_quote2())
+# print(get_live_currency_quote2('historical'))

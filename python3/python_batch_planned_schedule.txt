@@ -1,16 +1,14 @@
 May Batch 
 ------------
-01 Jul    web services , OOP 
-02 Jul    OOP, code quality 
-03 Jul    regular expressions 
-04 Jul    Data science related: numpy, pandas, matplotlib 
+03 Jul    OOP, code quality 
+04 Jul    regular expressions 
+05 Jul    Data science related: numpy, pandas, matplotlib 
 
 June Batch Course completion schedule
 --------------------------------------
-01 Jul  Collections: Lists(remaining), tuple, set
 02 Jul  Collections: dict, Functions 
 04 Jul  Functions, Decorators
-05 Jul  Iterators, Generators, Coroutines 
+05 Jul  Iterables, Iterators, Generators, Coroutines 
 06 Jul  Modules: math, sys, argparse, turtle
 07 Jul  Modules: OS, shutil, subprocess, getpass, console-coloring
 08 Jul  Modules: time-related, random, Collections-module, user-defined module 

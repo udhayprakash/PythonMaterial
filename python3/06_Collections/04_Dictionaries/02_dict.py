@@ -37,12 +37,12 @@ print('\ncities_n_countries\n', cities_n_countries)
 print(type(cities_n_countries))
 
 # print('-'* 15)
-# # list of tuples
-# # print(list(map(None, cities, countries)))
+# list of tuples
+# print(list(map(None, cities, countries)))
 
-# # cities_n_countries = dict(    map(None,countries, cities)    )
+# cities_n_countries = dict(    map(None,countries, cities)    )
 
-# # print('\ncities_n_countries\n', cities_n_countries)
-# # print(type(cities_n_countries))
-# # print {'a':2} + {1:'e'}
-# # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+# print('\ncities_n_countries\n', cities_n_countries)
+# print(type(cities_n_countries))
+# print {'a':2} + {1:'e'}
+# TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
