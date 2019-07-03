@@ -11,6 +11,7 @@ def hello(name):
 
 
 # Function Call 
-# hello() # TypeError: hello() missing 1 required positional argument: 'name'
+# hello()
 hello('raghu')
-# hello('raghu', 12) # TypeError: hello() takes 1 positional argument but 2 were given
+
+# hello('raghu', 'spoorthi')

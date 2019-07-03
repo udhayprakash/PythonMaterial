@@ -34,7 +34,7 @@ pi = 3.141  # immutable - call by value
 #     print('after  change pi = {}'.format(pi))
 
 # simple_function()
-# # UnboundLocalError: local variable 'pi' referenced before assignment
+# UnboundLocalError: local variable 'pi' referenced before assignment
 
 # # case 3=====   call by value
 # def simple_function(pi):
@@ -44,7 +44,7 @@ pi = 3.141  # immutable - call by value
 
 # simple_function(pi)
 # print('outside function pi = {}'.format(pi))
-# # changes with in function are not reflected outside it
+# changes with in function are not reflected outside it
 
 # # case 3=====   call by reference
 # def simple_function(pi):

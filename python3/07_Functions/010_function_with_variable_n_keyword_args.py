@@ -20,12 +20,12 @@ hello()                         # 0 inputs
 hello('HARI')                   # 1 input
 
 hello('HARI', 'chaitra')        # 2 inputs
+hello('India', 75, 34, 'sdas', 342432, 212.34)
 
 hello(std1='HARI')              # 1 input
 hello(std1='HARI', std2='chaitra')# 2 inputs
 
 hello('HARI', 'chaitra', num1=100,n2=999) 
-# # hello('India', 75, 34, 'sdas', 342432, 212.34)
 
 
 # # hello(language='Python')

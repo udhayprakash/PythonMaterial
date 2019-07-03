@@ -2,7 +2,7 @@
     Input: 
         string      : ABCDCDC
         substring   : CDC
-2)
+2) 5
       *
     * * *
   * * * *  *
