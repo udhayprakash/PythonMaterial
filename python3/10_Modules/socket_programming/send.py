@@ -6,10 +6,10 @@ import socket,sys
 try:
   s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 except socket.error,error:
-  print 'Failed to create a socket. Error Code: ' + str(error[0]) + ' , Error message :' + str(error[1])
+  print('Failed to create a socket. Error Code: ' + str(error[0]) + ' , Error message :' + str(error[1]))
   sys.exit()
 
-print 'socket created'
+print('socket created')
 
 host = 'www.google.com'
 port = 80
@@ -17,12 +17,12 @@ port = 80
 try:
   remote_ip = socket.gethostbyname( host )
 except:
-  print 'Hostname could not be resolved.exiting'
+  print('Hostname could not be resolved.exiting')
   sys.exit()
 
-print 'Ip address of ' + host + ' is ' + remote_ip
+print('Ip address of ' + host + ' is ' + remote_ip)
 
-print "connecting to the server \n"
+print("connecting to the server \n")
 
 s.connect((remote_ip,port))
 
