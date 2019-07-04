@@ -38,4 +38,3 @@ print(reduce(operator.add,mystrings))
 import itertools
 # to get the intermediate values, using reduce operation
 print (list(itertools.accumulate([ 1 , 3, 5, 6, 2],lambda x,y : x+y))) 
-

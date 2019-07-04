@@ -3,7 +3,6 @@
 Purpose:
 """
 
-
 def person_lister(f):
     def inner(people):
         #print people

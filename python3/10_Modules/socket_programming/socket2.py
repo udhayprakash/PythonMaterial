@@ -1,11 +1,18 @@
 import socket
 
-def getRemoteMachineInfo():
-    remoteHost = 'www.python.org'
-    try:
-        print "IP address: %s"%socket.gethostbyname(remoteHost)
-    except socket.error, errMsg:
-        print "%s: %s"%(remoteHost, errMsg)
+url = raw_input('Enter: ')
+words = url.split('/')
+host = words[2]
 
-if __name__ == '__main__':
-    getRemoteMachineInfo()
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect((host, 80))
+mysock.send('GET '+url+' HTTP/1.0\n\n')
+
+while True:
+    data = mysock.recv(512)
+    if ( len(data) < 1 ) :
+        break
+    print data,
+
+mysock.close()
+
