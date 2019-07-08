@@ -5,15 +5,15 @@ Purpose: Inner function example
 
 def outer():
     print('In outer function')
-    nnum = 786
-    mytuple = (12, 2, 23)
-    mylist = [23, 23, 234]
-    mydict = {1:3, 23:3}
+    nnum = 345
+    mytuple = (1, 2, 3)
+    mylist = [1, 2, 3]
+    mydict = {'1': 1}
+
     def inner():
-        print('In Inner function', nnum)
+        print('In inner function', nnum)
 
     inner()
-
 
 outer()
 

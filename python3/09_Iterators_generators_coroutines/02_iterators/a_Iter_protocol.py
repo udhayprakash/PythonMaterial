@@ -67,8 +67,8 @@ print("type(veto_countries_iter):", type(veto_countries_iter))
 
 # print(dir(veto_countries_iter))
 
-# # print(veto_countries_iter.next)
-# # print(callable(veto_countries_iter.next))
+# print(veto_countries_iter.next)
+# print(callable(veto_countries_iter.next))
 
 print(next(veto_countries_iter))
 print(next(veto_countries_iter))
@@ -77,17 +77,17 @@ print(next(veto_countries_iter))
 print(next(veto_countries_iter))
 print(next(veto_countries_iter)) # StopIteration
 
-# # # Iterator objects are disposable objects
-# # for each_country in veto_countries_iter:
-# #     print("each_country", each_country)
+# Iterator objects are disposable objects
+# for each_country in veto_countries_iter:
+#     print("each_country", each_country)
 
-# # # reassign
-# # veto_countries_iter = iter(veto_countries)
-# # for each_country in vegetables_iter:
-# #     print("each_country", each_country)
+# reassign
+# veto_countries_iter = iter(veto_countries)
+# for each_country in vegetables_iter:
+#     print("each_country", each_country)
 
-# # print('\n')
+# print('\n')
 
 
-# # # set - set iterator
-# # # dictionary - dictionary key iterator
+# # set - set iterator
+# # dictionary - dictionary key iterator

@@ -1,65 +1,26 @@
 #!/usr/bin/python
 """
-Purpose:  decorators example
+Purpose: decorator example
 """
-def bread(func):
-    def wrapper():
-        print(r"</''''''\>")
-        func()
-        print(r"<\______/>")
+import time 
+
+def time_taken(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        func(*args, **kwargs)
+        total = time.time() - start_time
+        print(f'Function {func.__name__} took {total} seconds')
+    
     return wrapper
 
-def ingredients(func):
-    def wrapper():
-        print("#tomatoes#")
-        func()
-        print("~salad~")
-    return wrapper
 
-def sandwich(food="--ham--"):
-    print(food)
-
-sandwich()
-#outputs: --ham--
-sandwich = bread(ingredients(sandwich))
-sandwich()
-#outputs:
-#</''''''\>
-# #tomatoes#
-# --ham--
-# ~salad~
-#<\______/>
+@time_taken
+def myfunc(num):
+    for i in range(num):
+        pass 
 
 
-print('-'*80)
-print('============Using decorators===')
 
-@bread
-@ingredients
-def sandwich(food="--ham--"):
-    print(food)
-
-sandwich()
-#outputs:
-#</''''''\>
-# #tomatoes#
-# --ham--
-# ~salad~
-#<\______/>
-
-#
-# print('-'*80)
-# print('============order of declaration of decorators matters===')
-#
-# @ingredients
-# @bread
-# def strange_sandwich(food="--ham--"):
-#     print(food)
-#
-# strange_sandwich()
-#outputs:
-##tomatoes#
-#</''''''\>
-# --ham--
-#<\______/>
-# ~salad~
+myfunc(10000)
+myfunc(100000)
+myfunc(1000000000)

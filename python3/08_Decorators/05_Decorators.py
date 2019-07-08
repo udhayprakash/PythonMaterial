@@ -1,8 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: Decorator to calculate  the time taken by a function
+Purpose: decorator example
 """
-
 def decortor_func1(func):
     def wrapper(*args, **kwargs):
         print(' I am  in decorator 1')

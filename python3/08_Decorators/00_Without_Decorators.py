@@ -11,6 +11,8 @@ def div(a, b):
     else:
         return a / b
 
+print('div(4, 2)', div(4, 2))
+print('div(4, 0)', div(4, 0))
 
 def add(a, b):
     try:
@@ -19,10 +21,6 @@ def add(a, b):
         return repr(e)
     else:
         return a + b
-
-
-print('div(4, 2)', div(4, 2))
-print('div(4, 0)', div(4, 0))
 
 print('add(2, 3)', add(2, 3))
 print("add('a', 3)", add('a', 3))

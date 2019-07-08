@@ -12,8 +12,8 @@ def function_logger(func):
 
 @function_logger
 def function(*args, **kwargs):
-    for i in xrange(int(args[0])):
-        for j in xrange(int(args[0])):
+    for i in range(int(args[0])):
+        for j in range(int(args[0])):
             pass
 
             

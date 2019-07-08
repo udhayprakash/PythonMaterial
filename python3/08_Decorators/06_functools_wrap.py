@@ -13,9 +13,9 @@ def beg(target_function):
 
 @beg
 def say(say_please=False):
-    msg = "How about party today?"
+    msg = "Can you buy me a book?"
     return msg, say_please
 
 
-print(say())  # How about party today?
-print(say(say_please=True))  # How about party today? Please! I am poor :(
+print(say()) # Can you buy me a book?
+print(say(say_please=True))  # Can you buy me a book? Please! I am poor :(
