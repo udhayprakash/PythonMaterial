@@ -1,4 +1,7 @@
-
+#!/usr/bin/python
+"""
+Purpose: Generators
+"""
 
 
 def my_generator():
@@ -7,7 +10,6 @@ def my_generator():
     yield 2
     yield 3
     yield 4
-    yield 5
     
 
 m = my_generator()
@@ -18,4 +20,7 @@ print(next(m))
 print(next(m))
 print(next(m))
 
-print(next(m))
+try:
+    print(next(m))
+except StopIteration as ex:
+    print(repr(ex))
