@@ -1,24 +1,20 @@
-
-def highlightVowels():
-    while True:
-        myString = yield
-        yield ''.join([ch.upper() if ch.lower() in ['a', 'e', 'i', 'o', 'u'] else ch for ch in myString])
-        
-hV = highlightVowels()
-
-print(next(hV))  # coroutine starts
-print(hV.send('Python Programming Language'))
-print(hV.send('Today is a good day')) #TODO
-
 def minimize():
     current = yield
     while True:
         value = yield current
         current = min(value, current)
 
+# Creating generator/co-routine 
 it = minimize()
-next(it) # Start the generator
+
+# Start the generator/co-routine
+next(it) 
+
+# Passing values
 print(it.send(10))
 print(it.send(4))
 print(it.send(22))
 print(it.send(-1))
+
+# closing co-routine
+it.close()

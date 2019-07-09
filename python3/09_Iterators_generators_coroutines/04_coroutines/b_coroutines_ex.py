@@ -1,7 +1,7 @@
 
 def repeater():
     while True:
-        received = yield 'Uhdya'
+        received = yield 'ram'
         print('Echo:', received)
 
 rp = repeater()

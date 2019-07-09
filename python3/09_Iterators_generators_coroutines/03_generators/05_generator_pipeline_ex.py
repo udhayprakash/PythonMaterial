@@ -17,6 +17,7 @@ pipeline = convert_to_string(multiply_by_three(even_filter(nums)))
 #     print(num)
 
 print(next(pipeline))
+print(next(pipeline))
 
 for each in pipeline:
     print(each)

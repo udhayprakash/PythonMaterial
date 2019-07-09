@@ -14,4 +14,10 @@ To profile a python script,
 
 To convert csv to json quickly,
     python -c "import csv,json;print json.dumps(list(csv.reader(open('csv_file.csv'))))"
+
+
+One-line constructor - to avoid boiler plate code ==> now dataclasses
+    class A(object):
+        def __init__(self, a, b, c, d, e, f):
+            self.__dict__.update({k: v for k, v in locals().items() if k != 'self'})
 """

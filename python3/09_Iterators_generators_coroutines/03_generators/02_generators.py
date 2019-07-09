@@ -33,7 +33,7 @@ print(f.__next__())
 print()
 print(next(f))
 print()
-print(f.__next__())  # StopIteration
+# print(f.__next__())  # StopIteration
 
 try:
     print(next(f))
@@ -43,7 +43,6 @@ except StopIteration as ex:
 print('using loop to get remaining elements')
 for i in f:
     print(i)
-
 
 print("====reinitialize call ")
 f = foo()
