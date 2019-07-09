@@ -5,8 +5,7 @@ May Batch
 
 June Batch Course completion schedule
 --------------------------------------
-09 Jul  Iterators, Generators, Coroutines 
-10 Jul  Modules: math, sys, argparse, turtle
+10 Jul  Coroutines, Modules: math, sys, argparse, turtle
 11 Jul  Modules: OS, shutil, subprocess, getpass, console-coloring
 12 Jul  Modules: time-related, random, Collections-module, user-defined module 
 13 Jul  File Operations: flat files, non-flat files- csv 

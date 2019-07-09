@@ -21,7 +21,7 @@ def pattern_filter(pattern="ing", next_coroutine=None):
             if pattern in token: 
                 next_coroutine.send(token) 
     except GeneratorExit: 
-        print("Done with filtering!!") 
+        print('Done with filtering!!!') 
   
 def print_token(): 
     ''' 
@@ -34,12 +34,12 @@ def print_token():
             token = (yield) 
             print(token) 
     except GeneratorExit: 
-        print("Done with printing!") 
+        print('Done with printing!') 
   
 pt = print_token() 
 next(pt) 
 pf = pattern_filter(next_coroutine = pt) 
 next(pf) 
   
-sentence = "Bob is running behind a fast moving car"
+sentence = 'Bob is running behind a fast moving car'
 producer(sentence, pf) 
