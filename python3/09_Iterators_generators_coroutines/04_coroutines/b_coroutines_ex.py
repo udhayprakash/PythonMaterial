@@ -1,17 +1,17 @@
 
-def repeater():
+def my_coroutine():
     while True:
-        received = yield 'ram'
-        print('Echo:', received)
+        received = yield 
+        print('Received:', received)
 
-rp = repeater()
+it = my_coroutine()
+print(next(it))             # Prime the coroutine
 
-print(next(rp)) # Start the coroutine
+it.send('First')
+it.send('Second')
+it.send('third')
 
-rp.send('Aruna')
-rp.send('Akram')
-rp.send('Jaya')
-rp.send('World')
-rp.close()
+for i in range(9):
+    it.send(i)
 
-rp.send('Hello')
+it.close()

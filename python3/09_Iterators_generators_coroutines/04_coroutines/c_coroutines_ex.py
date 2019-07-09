@@ -1,17 +1,20 @@
-
-def my_coroutine():
+def minimize():
+    current = yield
     while True:
-        received = yield 
-        print('Received:', received)
+        value = yield current
+        current = min(value, current)
 
-it = my_coroutine()
-print(next(it))             # Prime the coroutine
+# Creating generator/co-routine 
+it = minimize()
 
-it.send('First')
-it.send('Second')
-it.send('third')
+# Start the generator/co-routine
+next(it) 
 
-for i in range(9):
-        it.send(i)
+# Passing values
+print(it.send(10))
+print(it.send(4))
+print(it.send(22))
+print(it.send(-1))
 
+# closing co-routine
 it.close()

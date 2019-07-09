@@ -1,20 +1,18 @@
-def minimize():
-    current = yield
+
+def repeater():
     while True:
-        value = yield current
-        current = min(value, current)
+        received = yield 'ram'
+        print('Echo:', received)
 
-# Creating generator/co-routine 
-it = minimize()
+rp = repeater()
 
-# Start the generator/co-routine
-next(it) 
+print(next(rp)) # Start the coroutine
 
-# Passing values
-print(it.send(10))
-print(it.send(4))
-print(it.send(22))
-print(it.send(-1))
+rp.send('Aruna')
+rp.send('Akram')
+rp.send('Jaya')
+rp.send('World')
 
-# closing co-routine
-it.close()
+rp.close()
+
+rp.send('Hello')

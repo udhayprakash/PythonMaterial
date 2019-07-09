@@ -37,7 +37,7 @@ def print_token():
         print("Done with printing!") 
   
 pt = print_token() 
-pt.next() 
+next(pt) 
 pf = pattern_filter(next_coroutine = pt) 
 next(pf) 
   
