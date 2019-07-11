@@ -20,9 +20,12 @@ Purpose: importance and usage of argparse
 # import sys
 # print('sys.argv = ', sys.argv)
 
-# user_name = sys.argv[1]
-# password = sys.argv[2]
-# server_name = sys.argv[3]
+# # user_name = sys.argv[1]
+# # password = sys.argv[2]
+# # server_name = sys.argv[3]
+
+# # unpacking 
+# user_name, password, server_name = sys.argv[1:]
 
 # Method 4: argparse
 import argparse
@@ -51,10 +54,10 @@ password = args.password
 server_name = args.servername
 
 
-
 print(f'''
 The server login details are:
     USER NAME   : {user_name}
     PASSWORD    : {password}
     SERVER NAME : {server_name}
 ''')
+

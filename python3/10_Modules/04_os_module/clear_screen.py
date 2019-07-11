@@ -9,3 +9,6 @@ def clear_screen():
     print('output', output)
     
 clear_screen()
+
+os.system('ping google.com')
+os.system('dir')
