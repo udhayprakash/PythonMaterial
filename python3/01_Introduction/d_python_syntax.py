@@ -7,6 +7,7 @@ name = "Almighty"
 
 print(name)
 print('name')
+# print(name1) # NameError: name 'name1' is not defined
 
 print('\n\tname =', name)
 print(type(name), name)
@@ -19,10 +20,10 @@ name = 123
 print('\n', type(name), name)
 print('name of student:', name)
 # print('name of student:' +  name)
-# TypeError: can only concatenate str (not "int") to str
+# # TypeError: can only concatenate str (not "int") to str
 
 # Python is strictly typed language 
-# print('1' + 1)
+# print('1' + 1)  
 # TypeError: can only concatenate str (not "int") to str
 
 # no difference between single and double quotes
@@ -40,7 +41,7 @@ print("world")
 print('Hello', 'udhay', end='_')
 print("world")
 
-print('Hello', 'udhay', sep='|',end='_')
+print('Hello', 'udhay', 'third', sep='|',end='_')
 print("world")
 
 print("Hello","World", sep="***")        # Hello***World
@@ -55,3 +56,5 @@ print('\046')
 print('\x24')
 print('\xf1')
 print('\u018e')
+
+print('#$%*&^(*')

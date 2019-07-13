@@ -39,9 +39,11 @@ def multiplication(a,b):
 	return a*b
 	
 	
-print('__file__', __file__)
+# print('__file__', __file__)
+
 print('__name__', __name__)
 if __name__ == '__main__':
 	print('This script is executed directly')
 else:
     print('This script is indirectly called ')
+

@@ -1,13 +1,14 @@
 from collections import Counter
 
 print(Counter(['a', 'b', 'c', 'a', 'b', 'b']))
+print(Counter('python prgramming'))
 print() 
 
 colours = (
     ('Yasoob', 'Yellow'),
     ('Ali', 'Blue'),
     ('Arham', 'Green'),
-    ('Ali', 'Black'),
+    ('Ali', 'Yellow'),
     ('Yasoob', 'Red'),
     ('Ahmed', 'Silver'),
 )

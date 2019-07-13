@@ -22,7 +22,7 @@ print(type(data))
 print(data)
 
 print('fh.tell()', fh.tell())
-fh.seek(25)
+fh.seek(23)
 
 data = fh.read()
 print(type(data))

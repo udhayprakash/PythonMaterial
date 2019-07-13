@@ -8,25 +8,28 @@ file operations
 
     default is read mode
 '''
-# # Open a file
-fo = open("foo.txt", 'w')
-print("Name of the file: ", fo.name)
-print("Opening mode : ", fo.mode)
+fh = open('foo.txt', 'w')
+fh.write('namaste world 1 !\n')
+fh.write('fh world 2 !\n')
 
-fo.write('This is first line')
-fo.flush()
-print("Closed or not : ", fo.closed)
-fo.close()
-print("Closed or not : ", fo.closed)
+print("Name of the file: ", fh.name)
+print("Opening mode    : ", fh.mode)
 
+fh.flush()
+print("Closed or not : ", fh.closed)
+fh.close()
+print("Closed or not : ", fh.closed)
 
-# fo.write('This is first line') # ValueError: I/O operation on closed file.
+# fh.write('fh world 3 !\n')
+# ValueError: I/O operation on closed file.
+
 
 g = open("foo.txt", 'w')
 g.write('This is second line\n')
 
 g.flush()
 g.close()
+
 
 fh = open("foo.txt", 'a')
 print('fh.writable()', fh.writable())
@@ -41,7 +44,6 @@ print('f_h.writable()', f_h.writable())
 print('f_h.readable()', f_h.readable())
 file_content = f_h.read()
 print('file content \n', file_content)
-f_h.flush()
 f_h.close()
 
 
