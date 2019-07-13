@@ -1,9 +1,7 @@
 
 June Batch Course completion schedule
 --------------------------------------
-12 Jul  Modules: console-coloring, time-related, random, Collections-module, user-defined module 
-14 Jul  File Operations: flat files, non-flat files- csv 
-15 Jul  File Operations: serialization - picke, shelve, json, xlsx; zip, pyw, config files 
+15 Jul  File Operations: csv , json, xlsx; zip, pyw, config files 
 16 Jul  Logging 
 17 Jul  OOP 
 18 Jul  OOP & code quality
