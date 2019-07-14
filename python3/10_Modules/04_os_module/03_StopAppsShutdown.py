@@ -20,4 +20,5 @@ os.system("taskkill /f /im wordpad.exe")
 # use the template below to add more applications
 # os.system("taskkill /f /im [executable name].exe")
 # shutdown the computer in 1 second
-os.system("shutdown /s /t 1")
+
+# os.system("shutdown /s /t 1")

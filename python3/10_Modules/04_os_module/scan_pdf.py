@@ -9,7 +9,7 @@ def print_pdf(arg, dir, files):
         path = os.path.join(dir, file)
         path = os.path.normcase(path)
         if re.search(r".*\.pdf", path):
-            print path
+            print(path)
 
 
 # This is the second implementation, which skips
@@ -21,7 +21,7 @@ def print_pdf(arg, dir, files):
         if not re.search(r".*\.pdf", path): continue
         if re.search(r" ", path): continue
 
-        print path
+        print(path)
 
 
 # This is the third implementation, which

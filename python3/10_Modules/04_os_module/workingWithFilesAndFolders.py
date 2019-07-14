@@ -19,7 +19,7 @@ dirToCheck = input('Enter the directory path to check(dont enclose path with quo
 print('dirToCheck', dirToCheck)
 print('dirToCheck[0]', dirToCheck[0])
 
-for (dirpath, dirnames, filenames) in os.walk(dirToCheck):
+for dirpath, dirnames, filenames in os.walk(dirToCheck):
     print('Current Path:', dirpath)
     print('Directories:', dirnames)
     print('Files:', filenames)
