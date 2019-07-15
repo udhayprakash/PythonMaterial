@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Grocery Store Demonstration
+Purpose: Fruits Store Demonstration
 
 Products: Apples and Mangos
 quantity in dozens

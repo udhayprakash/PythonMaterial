@@ -17,3 +17,7 @@ print()
 
 
 print(divmod(45676,10))
+print(divmod(4567,10))
+print(divmod(456,10))
+print(divmod(45,10))
+print(divmod(4,10))

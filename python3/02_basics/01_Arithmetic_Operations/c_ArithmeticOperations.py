@@ -33,6 +33,8 @@ print('myNumber = ', myNumber)
 myNumber %= 10  # myNumber = myNumber % 10
 print('myNumber = ', myNumber)
 
+myNumber **= 10  # myNumber = myNumber ** 10
+print('myNumber = ', myNumber)
 
 # python doesn't support unary operations ; ++i, i++, --i, i--
 # it should used as i += 1, i -=1

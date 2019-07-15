@@ -20,7 +20,7 @@ selling_price_wheat = cost_of_wheat * qty_of_wheat
 
 tota_cost = selling_price_rice + selling_price_rice
 
-print('tota_cost', tota_cost)
+print('total cost', tota_cost)
 
 
 

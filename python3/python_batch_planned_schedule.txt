@@ -1,4 +1,3 @@
-
 June Batch Course completion schedule
 --------------------------------------
 15 Jul  File Operations: csv , json, xlsx; zip, pyw, config files 
@@ -7,16 +6,3 @@ June Batch Course completion schedule
 18 Jul  OOP & code quality
 19 Jul  Regular Expressions 
 20 Jul  Data science related: numpy, pandas, matplotlib
-
-
-
-OOPs, code quaility, 
-class recording: https://global.gotomeeting.com/play/recording/558f6658b1e552f2890789207e035879dcca7dc8c67aa898b6bc7f023c6c6785
-class recording: https://global.gotomeeting.com/play/recording/3aba1fd6bc5afe62b0bafbfeffd8c95cddc112719432e3bf8cd6e2597c24e9d3
-
-numpy, pandas, matplotlib
-class recording: https://global.gotomeeting.com/play/recording/a5d51d5b18c0217b963c4c650bfc26010ec9e9385076753af6d23e9ae355d9ad
-
-leave your review at https://www.linkedin.com/in/udhayprakashpethakamsetty/
-post your doubts or any questions either in this group, or directly to me
-all the best

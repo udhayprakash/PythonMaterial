@@ -17,19 +17,23 @@ cost_of_apple = 12
 cost_of_mango = 5
 
 
-qty_of_apples = float(input('HOw many apples you need(in numbers):'))
-print('qty_of_apples = ', qty_of_apples, type(qty_of_apples))
+qty_of_mangos = int(input('Enter qty. of mangos:'))
+print(qty_of_mangos, type(qty_of_mangos))
 
-# type convertors int(), float()
 
-qty_of_mangos = int(input('HOw many mangos you need(in numbers):'))
-print('qty_of_mangos = ', qty_of_mangos)
+qty_of_apples = float(input('Enter qty. of apples:'))
+print(qty_of_apples, type(qty_of_apples))
 
-total_cost = cost_of_apple * qty_of_apples + \
-                cost_of_mango * qty_of_mangos
 
-print('total_cost = ', total_cost)
+total_cost = (cost_of_apple * qty_of_apples) \
+       + (cost_of_mango * qty_of_mangos)
 
+print('total_cost :', total_cost)
+
+
+# discount of 10 % 
+
+# GST of 7.5 % 
 
 
 
