@@ -2,7 +2,7 @@
 import logging as lg
 
 lg.basicConfig(filename="05_logging.log", 
-                filemode='w', # 'a'
+                filemode= 'a', # 'w',
                 datefmt='%m/%d/%Y %I:%M:%S %p',
                format='%(asctime)s - %(levelname)s - %(name)s - %(message)s', 
                level=lg.INFO)
