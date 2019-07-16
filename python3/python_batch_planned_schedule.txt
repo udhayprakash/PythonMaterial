@@ -1,7 +1,6 @@
 June Batch Course completion schedule
 --------------------------------------
-15 Jul  File Operations: csv , json, xlsx; zip, pyw, config files 
-16 Jul  Logging 
+16 Jul  db , pyw, Logging 
 17 Jul  OOP 
 18 Jul  OOP & code quality
 19 Jul  Regular Expressions 

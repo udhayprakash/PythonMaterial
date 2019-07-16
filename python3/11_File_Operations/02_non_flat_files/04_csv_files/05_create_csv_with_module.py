@@ -1,6 +1,6 @@
 import csv
 
-with open('names.csv', 'wt') as csvfile:
+with open('names.csv', 'wt', newline='') as csvfile:
     # csv header
     header_names = ['first_name', 'last_name']
     writer = csv.DictWriter(csvfile, 

@@ -10,11 +10,8 @@ garbage collector -- java, python , ..
 
 '''
 
-with open('sampleCSVFile.csv', 'w') as myCsv:
-    # csv header
-    myCsv.write("fruits, vegetables, cars\n")
-    # csv body 
-    myCsv.write("Apple, Cabbagge, Benz\n")
-    myCsv.write("Mango, Cucumber, Volvo\n")
-    myCsv.write("Banana, Raddish, Maruthi suzuki\n")
-    myCsv.close()
+with open('sample.csv', 'w') as fh:
+    fh.write('s_no,name,age,designation\n')
+    fh.write('1,raghu,12,student\n')
+    fh.write('2,praksh,87,retired professor\n')
+    fh.close()

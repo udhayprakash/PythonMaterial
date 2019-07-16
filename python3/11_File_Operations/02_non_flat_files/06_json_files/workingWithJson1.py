@@ -16,33 +16,36 @@ student = {"101": {"result": True, "class": 'V', "Name": 'Rohit', "Roll_no": 7},
            "102": {"result": True, "class": 'V', "Name": 'David', "Roll_no": 8}}}
 print(json.dumps(student))
 
-print('-' * 100)
+print('-' * 70)
 # Python Dictionaries to JSON strings (sorted by key)
 
 print(json.dumps(student, sort_keys=True))
 
 # Json stores the data in the order inputted.
-print('-' * 100)
+print('-' * 70)
 # Python tuple to JSON array
 
 
 tup1 = 'Red', 'Black', 'White'
 print(json.dumps(tup1))
 
-print('-' * 100)
+print('-' * 70)
 # Python string to JSON string
 import json
 
 string1 = 'Python and JSON'
 print(json.dumps(string1))
 
-print('-' * 100)
+print('-' * 70)
 # Python Boolean values to JSON Boolean values
 
-x = True;
-print((json.dumps(x)));
+x = True
+print((json.dumps(x)))
 
-print('-' * 100)
+x = False
+print((json.dumps(x)))
+
+print('-' * 70)
 
 # Python int, float, int- & float-derived Enums to JSON number
 x = -456;
@@ -52,22 +55,22 @@ print((json.dumps(x)));
 print((json.dumps(y)));
 print((json.dumps(z)));
 
-print('-' * 100)
+print('-' * 70)
 print('DECODING THE JSON')
-print('-' * 100)
+print('-' * 70)
 '''
 # json to python object conversion pairs:
 # JSON	        Python
 # ----------------------
 # object	    dict
 # array	        list
+# array	        tuple
 # string	    str
 # number(int)	int
 # number(real)	float
 # true	        True
 # false	        False
 # null	        None
-
 '''
 
 # JSON strings to Python Dictionaries
@@ -76,7 +79,7 @@ import json
 json_data = '{"103": {"class": "V", "Name": "Samiya", "Roll_n": 12}, "102": {"class": "V", "Name": "David", "Roll_no": 8}, "101": {"class": "V", "Name": "Rohit", "Roll_no": 7}}';
 print((json.loads(json_data)));
 
-print('-' * 100)
+print('-' * 70)
 
 # JSON array Python tuple
 Json_array = ["Red", "Black", "White"]
@@ -90,8 +93,8 @@ print((json.dumps(list1)));
 Json_string = "Python and JSON"
 print((json.dumps(Json_string)));
 
-print('+' * 100)
-print('+' * 100)
+print('+' * 70)
+print('+' * 70)
 
 import json
 
@@ -109,5 +112,7 @@ data = json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))
 print(data)
 
 # pretty printing
-print(json.dumps({'4': 5, '6': 7}, sort_keys=True,
-                 indent=4, separators=(',', ': ')))
+print(json.dumps({'4': 5, '6': 7}, 
+            sort_keys=True,
+            indent=4, 
+            separators=(',', ': ')))

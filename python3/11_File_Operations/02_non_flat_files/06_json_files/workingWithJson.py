@@ -1,13 +1,6 @@
 #!/usr/bin/python
-
-# import simplejson
-
-try:
-    import simplejson as json
-except ImportError as ex:
-    print("The error  is \t", ex)
-    print('importing json module')
-    import json
+import json
+from pprint import pprint 
 
 book = {}
 book['title'] = 'Python Programming Essentials'
@@ -19,9 +12,12 @@ book['id'] = 786
 
 print('\nbook details :\n', book)
 print("type(book) is ", type(book))
+pprint(book)
+
 # Serilazation
 with open('ebook.json', 'w') as f:
     json.dump(book, f)
+    f.close()
 
 # De-serialization
 print('\ndeserializing the json data \n')
@@ -31,17 +27,10 @@ with open('ebook.json', 'rb') as g:
 
 print("data = ", data)
 
-# print('\nprinting using pretty print')
-# import pprint
+print('\nprinting using pretty print')
+import pprint
 
-# pprint.pprint(data)
-# pprint.pprint(data, indent=4)
-# import os
-# import sys
+pprint.pprint(data)
+pprint.pprint(data, indent=4)
 
-# if sys.platform == 'win32':
-#     os.system('type ebook.json')  # linux - cat ; windows - type
-# else:
-#     os.system("cat ebook.json")
-
-# # Assignemnt ; try to work with json.load and json.dumps- json.loads
+# Assignemnt ; try to work with json.load and json.dumps- json.loads
