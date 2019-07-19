@@ -7,50 +7,48 @@ Purpose:
 """
 __author__ = 'Python Tutor'
 
+day_of_week = input('Enter day of week:').lower().strip()
+print(f'you entered {day_of_week}')
 
-day_of_the_week = input('Enter the day of the week:').lower().strip()
-print("day_of_the_week:", day_of_the_week, type(day_of_the_week))
-
-# if day_of_the_week == 'monday':
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'tuesday':
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'wednesday':
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'thursday':
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'friday':
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'saturday':
-#     print('TIMING: 9 am to 1 pm')
-# elif day_of_the_week == 'sunday':
-#     print('Holiday')
-# else:
-#     print('Invalid entry')
-
-
-# if (day_of_the_week == 'monday' or 
-#     day_of_the_week == 'tuesday' or 
-#     day_of_the_week == 'wednesday' or 
-#     day_of_the_week == 'thursday' or 
-#     day_of_the_week == 'friday'):
-#     print('TIMING: 9 am to 6 pm')
-# elif day_of_the_week == 'saturday':
-#     print('TIMING: 9 am to 1 pm')
-# elif day_of_the_week == 'sunday':
-#     print('Holiday')
-# else:
-#     print('Invalid entry')
+if day_of_week == 'monday':
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'tuesday':
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'wednesday':
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'thursday':
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'friday':
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'saturday':
+    print('Timings: 9 am to 1 pm')
+elif day_of_week == 'sunday':
+    print('TODAY IS HOLIDAY')
+else:
+    print('Invalid entry')
 
 
+if (
+    (day_of_week == 'monday') or 
+    (day_of_week == 'tuesday') or 
+    (day_of_week == 'wednesday') or
+    (day_of_week == 'thursday')  or 
+    (day_of_week == 'friday')
+    ):
+    print('Timings: 9 am to 6 pm')
+elif day_of_week == 'saturday':
+    print('Timings: 9 am to 1 pm')
+elif day_of_week == 'sunday':
+    print('TODAY IS HOLIDAY')
+else:
+    print('Invalid entry')
 
 
-# in - membership check operator 
-if day_of_the_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
-    print('TIMING: 9 am to 6 pm')
-elif day_of_the_week == 'saturday':
-    print('TIMING: 9 am to 1 pm')
-elif day_of_the_week == 'sunday':
-    print('Holiday')
+if day_of_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
+    print('Timings: 9 am to 1 pm')
+elif day_of_week == 'saturday':
+    print('Timings: 9 am to 1 pm')
+elif day_of_week == 'sunday':
+    print('TODAY IS HOLIDAY')
 else:
     print('Invalid entry')

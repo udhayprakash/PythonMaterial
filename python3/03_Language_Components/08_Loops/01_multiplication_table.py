@@ -7,20 +7,18 @@ while loop- condition
 """
 # NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 
-num1 = 1
-while num1 <= 10:
-    num2 = 1 
-    while num2 <= 10:
-        # print(num1, '*', num2, '=', num1 * num2)
-        # print(str(num1).zfill(2), '*', str(num2).zfill(2), '=',  str(num1 * num2).zfill(3))       
-        # print('{:2} * {:2} = {:3}'.format(num1, num2, num1 * num2))
-        print(f'{num1:2} * {num2:2} = {num1 * num2:3}')
-        num2 += 1
-
-    # num1 = num1 + 1
-    num1 += 1
-    print('-'* 15)
-
+i = 0
+while i < 10:
+    i += 1
+    j = 0
+    while j <10:
+        j+=1
+        # print(i, '*', j, '=', i *j )
+        # print('%2d * %2d = %3d'%(i, j, i*j))
+        # print('{:2} * {:2} = {:3}'.format(i, j, i *j))
+        # print(f'{i:2} * {j:2} = {i*j:3}')
+        print(f'{str(i).zfill(2)} * {str(j).zfill(2)} = {str(i*j).zfill(3)}')
+    print('-'* 10)
 
 #  Assignment 
 #  Display the multiplication table horizontally 

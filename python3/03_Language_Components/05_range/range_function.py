@@ -30,7 +30,7 @@ values4 = list(range(9, 0, -1))  # builtin function
 print(list(values4))  # 9 8 7 6 5 4 3 2 1
 
 values4 = list(range(9, 0, -2))  # builtin function
-print(list(values4))
+print(list(values4)) # 9 7 5 3 1
 
 values6 = range(0, 9, -1)  # range(initialValue, finalValue, step)
 print(values6)
@@ -40,7 +40,10 @@ print(list(values6))
 # values7 = range(0.5, 9.5, 1)  # range(initialValue, finalValue, step)
 
 
-for i in range(9):
+for i in range(0,9, 1):
     # print(i, end='\n') # default 
     print(i, end=' ')
 
+
+val = range(9)
+val[0]

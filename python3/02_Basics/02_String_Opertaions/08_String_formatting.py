@@ -8,8 +8,9 @@ print('f-strings', '='* 20)
 
 name = 'World'
 print(f"Hello {name}")
-# python operations on data within the f-string 
+# # python operations on data within the f-string 
 print(f"Hello {name.upper()}")
+print(f"Hello {name.title()}")
 
 value = 123123
 print(f'The value is {float(value)}')

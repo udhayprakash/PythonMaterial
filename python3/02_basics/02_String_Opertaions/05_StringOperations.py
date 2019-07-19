@@ -49,3 +49,5 @@ print('R'.join('Python Production'.split('P')))
 print(' '.join('Python Production'.split(' ')))
 
 print('Python Production'.replace('P', 'R'))
+print('Python Production'.replace('Prod', 'cat'))
+print('Python Production'.replace('Prod1', 'cat'))

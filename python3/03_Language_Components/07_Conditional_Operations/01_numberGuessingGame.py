@@ -8,18 +8,18 @@ __author__ = 'Python Tutor'
 
 luck_number = 67
 
-# guessing_number = 89 
-guessing_number = int(input('Guess a number (0-100):'))
+guessing_no = int(input('Enter guessing number:'))
 
-# if luck_number == guessing_number:
-#     print('YOu guessed correct!!!')
+# print(guessing_no, type(guessing_no))
+
+# if guessing_no == luck_number:
+#     print('YOU WON THE GAME')
 # else:
-#     print('PLease try again!!!!') 
+#     print('Please try again !!!!')
 
-
-if guessing_number > luck_number:
-    print('You guessd a greater number ')
-elif guessing_number < luck_number:
-    print('You guessed lesser number')
+if guessing_no == luck_number:
+    print('You WON THE GAME')
+elif guessing_no > luck_number:
+    print('reduce your guessing number')
 else:
-    print('YOu guessed correctly !!!!')
+    print('increase your guessing number')

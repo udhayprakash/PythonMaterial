@@ -14,7 +14,9 @@ print()
 
 for index, ch in enumerate(language):
     # print(index, ch)
-    print('In loop {:2}, we got {}'.format(index, ch))
+    # print('In loop {:2}, we got {}'.format(index, ch))
+    # print(f'In loop {index:2}, we got {ch}')
+    print('In loop %2d, we got %s'%(index, ch))
 
 
 
@@ -42,7 +44,8 @@ data = list(range(-100,1000000, 3))
 data_length = len(data)
 
 for index, number in enumerate(data): 
-    print('\r{:2}'.format(index/data_length), end='')
+    val = round((index/data_length) *100, 2)
+    print(f'\r {val} % completed', end='')
 
 
 # Assignment 

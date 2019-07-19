@@ -10,30 +10,34 @@ electricity bill
 	250 +        ===> 10
 
 electricity cess : 2%
-GST              : 7%
-
 discount         : -1.11%
 
+GST              : 7%
+
+
 units consumed : 357
-                    60 + 40 + 
+         60 + 40 + 50 + 100 + 157
+                    
 """
 __author__ = 'Python Tutor'
 
-name = str(input("Please enter your name: "))
-number = int(input("Please enter service number?: "))
-units = int(input("How many units consumed?: "))
+units_consumed = float(input('Enter the units consumed:'))
 
-if units < 60:
-    amt = 3 * units
-elif units > 60 and units < 100:
-    amt = ((5 * (units - 50)) + 150)
-elif units > 100 and units < 150:
-    amt = ((7 * (units - 100)) + 400)
-elif units > 150:
-    amt = ((10 * (units - 150)) + 750)
-else:
-    amt = 'undefined'
+print(f'You consumed {units_consumed} units electricity')
 
-print((("Total taxable amount Rs: %d/-") % (amt)))
-print("Service tax is 14.5%")
-print((("Customer %s with service number %d has to pay Rs. %d /-") % (name, number, (amt + amt * 14.5 / 100.00))))
+
+if units_consumed > 250:
+    amount = (60 *1.25) + (40 *2.0)  + (50 * 4.0) + (100 * 7.0) + ((units_consumed-250) * 10)
+elif 150 < units_consumed <=250:
+    amount = (60 *1.25) + (40 *2.0)  + (50 * 4.0) + ((units_consumed-150) * 7.0)
+elif 100 < units_consumed <=150:
+    amount = (60 *1.25) + (40 *2.0)  + ((units_consumed-100) * 4.0) 
+elif 60 < units_consumed <=100:
+    amount = (60 *1.25) + ((units_consumed-60) *2.0)  
+else: # < 60
+    amount = (units_consumed *1.25)
+
+
+print(f'amount:{amount}')
+
+

@@ -47,5 +47,5 @@ print("ord('o'):", ord('o'))
 # D E F
 
 # Ex: egg => hjj
-# bindu Yash
-# elqg
+#    bindu => elqg
+#    Yash  =>
