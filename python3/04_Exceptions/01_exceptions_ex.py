@@ -1,12 +1,13 @@
 #!/usr/bin/python
 """
-when no error - try - else  -  finally
+when no error - try - else   - finally
 when error    - try - except - finally
 """
 
 # result = 1 // 0 
 # result = 1 / 0 
 # result = 1 % 0 
+
 try:
     result = 1 % 0 
 except:
@@ -26,7 +27,7 @@ except Exception as ex:
 
 # NOTE: else and finally blocks are optional
 try:
-    result = 1 % 0 
+    result = 1 % 10 
 except Exception as ex:
     print('error is ', ex)
     print('error is ', str(ex))
