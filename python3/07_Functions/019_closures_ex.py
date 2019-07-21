@@ -5,6 +5,7 @@ Purpose: closure example demo
 Closures can avoid the use of global values and provides some form 
 of data hiding. 
 It can also provide an object oriented solution to the problem.
+A closure is a way of keeping alive a variable even when the function has returned. So, in a closure, a function is defined along with the environment. In Python, this is done by nesting a function inside the encapsulating function and then returning the underlying function.
 """
 
 def outer():

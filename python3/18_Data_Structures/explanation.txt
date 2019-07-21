@@ -106,3 +106,26 @@ Algorithm Design Techniques
 5. Recursive Algorithms
 6. Divide-and-Conquer Algorithms
 7. Randomized Algorithms
+
+
+
+Design Patterns 
+===============
+1. Structural 
+    A closure is a way of keeping alive a variable even when the function has returned. So, in a closure, a function is defined along with the environment. In Python, this is done by nesting a function inside the encapsulating function and then returning the underlying function.
+        1.Adapter
+
+        2.Bridge
+
+        3.Composite
+
+        4.Decorator
+
+        5.Facade
+
+        6.Flyweight
+
+        7.Proxy
+
+2. Creational 
+3. Behavioral
