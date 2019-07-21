@@ -1,36 +1,38 @@
-# Python program to check if the input year is a leap year or not
+#!/usr/bin/python
+"""
+Purpose: 
+if (year is not divisible by 4) then (it is a common year)
+else if (year is not divisible by 100) then (it is a leap year)
+else if (year is not divisible by 400) then (it is a common year)
+else (it is a leap year)
+"""
+import calendar
 
-# year = 2018
+for year in range(1000, 2100):
 
-# To get year (integer input) from the user
-year = int(input('year=')
-
-if (year % 4) == 0:
-    if (year % 100) == 0:
-        if (year % 400) == 0:
-            print("{0} is a leap year".format(year))
-        else:
-            print("{0} is not a leap year".format(year))
+    if year % 4:
+        print(f'year {year} is a common year')
+    elif year % 100:
+        print(f'year {year} is a LEAP year')
+    elif year % 400:
+        print(f'year {year} is a common year')
     else:
-        print("{0} is not a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
+        print(f'year {year} is a LEAP year')
 
-##################################################
-if (year % 4) == 0) and (year % 100) == 0) and (year % 400) == 0):
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
+    if (year % 4) == 0:
+        if (year % 100) == 0:
+            if (year % 400) == 0:
+                print(f'year {year} is a LEAP year')
+            else:
+                print(f'year {year} is a common year')
+        else:
+            print(f'year {year} is a LEAP year')
+    else:
+        print(f'year {year} is a common year')
 
-##################################################
-if (not year % 4) and (not year % 100) and (not year % 400):
-    # 0               0                  0
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
 
-##################################################
-if not( year % 4 or  year % 100 or  year % 400):
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
+    if calendar.isleap(year):
+        print(f'year {year} is a LEAP year')
+    else:
+        print(f'year {year} is a common year')
+    print()

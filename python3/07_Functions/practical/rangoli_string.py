@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def print_rangoli(size):
     alphabets = [chr(i) for i in range(97, 97+size)]
     rangoli_str_lst = []
@@ -6,14 +8,10 @@ def print_rangoli(size):
         _chars = alphabets[-i:]
         rangoli_str_lst.append('-'.join(_chars[::-1] + _chars[1:]))
         i += 1
+    
     window_size = len(rangoli_str_lst[-1])
-    i -=2
-    while i>0:
-        _chars = alphabets[-i:]
-        rangoli_str_lst.append('-'.join(_chars[::-1] + _chars[1:]))
-
-        i -= 1
-
+    rangoli_str_lst = rangoli_str_lst[:-1] + rangoli_str_lst[::-1]
+    
     for each in rangoli_str_lst:
         print(each.center(window_size, '-'))
 

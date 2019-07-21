@@ -26,12 +26,14 @@ def crazy_num(n):
         b = int(b / 10)
 
     if s == n:
-        print ("Crazy number.")
-    else:
-        print ("Not crazy number.")
+        print (f'{n:6} is Crazy number.')
+    # else:
+    #     print (f'{n:6} is Not crazy number.')
 
     return None
 
 
-n = int(input("Enter number: "))
-crazy_num(n)
+num = 10_00_000 #int(input("Enter number: "))
+
+for n in range(num):
+    crazy_num(n)
