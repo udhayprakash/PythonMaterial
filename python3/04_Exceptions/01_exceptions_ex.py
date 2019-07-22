@@ -8,6 +8,9 @@ when error    - try - except - finally
 # result = 1 / 0 
 # result = 1 % 0 
 
+# if 2 < 3:
+# print('less')
+
 try:
     result = 1 % 0 
 except:
