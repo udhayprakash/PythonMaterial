@@ -53,9 +53,7 @@ costOfMangos = 34
 costOfApples = 12
 outputOfSensor = 'asdd'
 
-# pascal casing
-SalaryOfWorkers = 3000
-NoOfProcessesRunning = 123
+# https://ieeexplore.ieee.org/document/5521745?tp=&arnumber=5521745
 
 '''
 PEP (python Enhancement Proposal) 8 - coding style guide 
