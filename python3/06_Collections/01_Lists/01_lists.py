@@ -52,7 +52,10 @@ print('ml[5][3][0]', ml[5][3][0])
 
 # List is a mutable object 
 print('id(ml)      ', id(ml))
-ml[3]
+ml[3] = 3.4
+print('ml[3]   ', ml[3])
+print('id(ml)      ', id(ml))
+
 
 # String is a immutable object 
 name = 'Raj Sekhar'
