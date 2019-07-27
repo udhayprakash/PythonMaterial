@@ -27,19 +27,27 @@ def series(count):
 
 if __name__ == '__main__':
     upSeries, downSeries = 9,8
-    maxValue = max(upSeries, downSeries)
-    count = getCount(maxValue)
-    numbersList = series(count)
+    maxValue = max(upSeries, downSeries) # 9
+    count = getCount(maxValue) # 9 + 8 +.. + 1 = 45
+    numbersList = series(count)# 45 odd numbers
     numberSeries = []
     for i in range(1, maxValue + 1):
         numberSeries.append(numbersList[:i])
         del numbersList[:i]
 
     print("FINAL OUTPUT")
-    maxLen = len(numberSeries[::-1][:upSeries][0])
-    for indx, num in enumerate(numberSeries[::-1][:upSeries]):
+    maxLen = upSeries  #len(numberSeries[::-1][:upSeries][0])
+    for indx, num in enumerate(numberSeries[::-1]):  # numberSeries[::-1][:upSeries])
         print('  ' * indx, '  '.join([str(i).zfill(2) for i in num]))
 
     for num in numberSeries[:downSeries+1]:
         print('  ' * indx, '  '.join([str(i).zfill(2) for i in num]))
         indx -= 1
+
+
+# hackerrank 
+# hackerearth 
+# interviewstreet 
+# careercup 
+# kaggle 
+# leetcode 
