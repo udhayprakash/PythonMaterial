@@ -5,7 +5,7 @@ Properties of sets '
     - sets are unordered
     - can't be indexed
     - can't store duplicates
-    - stores only immutable object
+    - stores only immutable object - basic types, tuple, string
     - sets are mutable objects
 """
 running_ports = [11, 22, 11, 44, 22, 11]
@@ -13,6 +13,11 @@ print('type(running_ports)', type(running_ports))
 print('len(running_ports)', len(running_ports))
 print('running_ports', running_ports)
 print()
+filtered_list = sorted(set(running_ports), reverse=True)
+print('type(filtered_list)', type(filtered_list))
+print('len(filtered_list)', len(filtered_list))
+print('filtered_list:', filtered_list)
+print() 
 
 myset = {11, 22, 11, 44, 22, 11}
 print('type(myset)', type(myset))
@@ -23,12 +28,6 @@ print()
 
 # # sets can't be indexed
 # print(myset[0])  # TypeError: 'set' object does not support indexing
-
-filtered_list = sorted(set(running_ports), reverse=False)
-print('type(filtered_list)', type(filtered_list))
-print('len(filtered_list)', len(filtered_list))
-print('filtered_list:', filtered_list)
-print() 
 
 print('before addition - myset', myset)
 myset.add(12)
@@ -65,6 +64,10 @@ print(myset)
 
 print()
 myset.add(('tomato', 'ASa'))
+print(myset)
+
+print()
+myset.add(('ASa', 'tomato'))
 print(myset)
 
 # myset.add(['1', '2'])TypeError: unhashable type: 'list'

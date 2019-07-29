@@ -1,0 +1,2 @@
+# full triangle
+# diamond 

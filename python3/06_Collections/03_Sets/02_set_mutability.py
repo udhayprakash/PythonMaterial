@@ -25,10 +25,13 @@ set_with_one_ele.discard(12)
 print('set_with_one_ele', set_with_one_ele)
 print()
 
-print('set_with_one_ele', set_with_one_ele)
 set_with_one_ele.discard(12)
 print('set_with_one_ele', set_with_one_ele)
+print()
 
+# set_with_one_ele.remove(12)  # KeyError:
+# print('set_with_one_ele', set_with_one_ele)
+# print()
 
 #############
 # frozenset ---- immutable object
@@ -40,7 +43,7 @@ print(veto_countries)
 print(dir(veto_countries))
 # veto_countries.add('China')
 # AttributeError: 'frozenset' object has no attribute 'add'
-# hybrid_set = {12, 23.5, 'tomoto', (12,), frozenset(small_set)}
-#                     , small_set --- TypeError: unhashable type: 'set'
-# print('type(hybrid_set)', type(hybrid_set))
-# print(hybrid_set)
+
+hybrid_set = {12, 23.5, 'tomoto', (12,), frozenset(small_set)}
+print('type(hybrid_set)', type(hybrid_set))
+print(hybrid_set)
