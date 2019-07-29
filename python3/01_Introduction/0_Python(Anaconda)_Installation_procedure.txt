@@ -10,3 +10,6 @@ Step 3: Open windows start menu and type "environment variables". In it open PAT
             C:\ProgramData\Anaconda3\Library\mingw-w64\bin;
             C:\ProgramData\Anaconda3\Library\usr\bin;
             C:\ProgramData\Anaconda3\Library\bin
+
+
+python.org

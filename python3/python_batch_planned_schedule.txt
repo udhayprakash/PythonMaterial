@@ -1,7 +1,0 @@
-June Batch Course completion schedule
---------------------------------------
-16 Jul  db , pyw, Logging 
-17 Jul  OOP 
-18 Jul  OOP & code quality
-19 Jul  Regular Expressions 
-20 Jul  Data science related: numpy, pandas, matplotlib
