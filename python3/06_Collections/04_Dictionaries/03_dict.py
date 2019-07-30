@@ -14,6 +14,8 @@ word frequency analyses   - case insensitive
 {
     'P': 1,
     'y': 2,
+    't : 5
     
 }
+HINT: setdefault
 '''

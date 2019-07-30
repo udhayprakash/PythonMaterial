@@ -5,7 +5,7 @@ Purpose: dictionary demo
 1. keys are unique; 
 2. keys should be immutables only
     immutables 
-        string, tuple, int, long, float, bool
+        string, tuple, int, long, float, bool, frozenset
     mutables
         bytearray string, list, set, dict
 3. indexing based on keys 
@@ -35,7 +35,8 @@ mydict = {
     0.000001 : other_dict,
      99 : ('age', 'price'),
     ('Dr', 'Mr'): 'titles',
-    'name': 'somebody'
+    'name': 'somebody', 
+    (1 ,23): {1:23}
 }
 
 print(mydict)
@@ -74,41 +75,41 @@ print('mydict', mydict)
 ####################################
 print(dir(mydict))
 print('===============')
-# print(mydict.popitem())  # deletes some key:value in random 
-# print(mydict)
+print(mydict.popitem())  # deletes some key:value in random 
+print(mydict)
 
-# print(mydict.popitem())
-# print(mydict)
+print(mydict.popitem())
+print(mydict)
 
-# print(mydict.pop('name'))  # deletes specific mentioned key:value
-# print(mydict)
-# print()
-# del mydict[('Dr', 'Mr')]   # deletes specific mentioned key:value
-# print(mydict)
+print(mydict.pop('blog', 'no such key'))  # deletes specific mentioned key:value
+print(mydict)
+print()
+del mydict[('Dr', 'Mr')]   # deletes specific mentioned key:value
+print(mydict)
 
 
-# print('-'*50)
-# print('mydict.keys()', mydict.keys())
-# print('mydict.values()', list(mydict.values()))
-# print('mydict.items()', list(mydict.items()))
-# print('-'*50)
-# # print('mydict.iterkeys()', mydict.keys())
-# # print('mydict.itervalues()', mydict.values())
-# # print('mydict.iteritems()', mydict.items())
+print('-'*50)
+print('mydict.keys()', mydict.keys())
+print('mydict.values()', list(mydict.values()))
+print('mydict.items()', list(mydict.items()))
+print('-'*50)
+# print('mydict.iterkeys()', mydict.keys())
+# print('mydict.itervalues()', mydict.values())
+# print('mydict.iteritems()', mydict.items())
 
-# replica_dict = {}
-# replica_dict= replica_dict.fromkeys(mydict, '')
-# print('\n\nreplica_dict', replica_dict)
+replica_dict = {}
+replica_dict= replica_dict.fromkeys(mydict, '')
+print('\n\nreplica_dict', replica_dict)
 
-# replica_dict['b'] = 'bbb'
+replica_dict['b'] = 'bbb'
 
-# # print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+# print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 
-# replica_dict.update({'a':12, 'blog': 'udhay'})
-# print('replica_dict', replica_dict)
+replica_dict.update({'name':'alpha', 'blog': 'udhay'})
+print('replica_dict', replica_dict)
 
-# mydict.clear()
-# print(mydict)
+mydict.clear()
+print(mydict)
 
-# del mydict
-# # print(mydict) #NameError: name 'mydict' is not defined
+del mydict
+# print(mydict) #NameError: name 'mydict' is not defined

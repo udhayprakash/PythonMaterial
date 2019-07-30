@@ -36,6 +36,6 @@ print(type(my_variable), my_variable)
 my_variable = {ch for ch in 'Mangalyan'}
 print(type(my_variable), my_variable)
 
-my_variable = {ch:ord(ch)+1 for ch in 'Mangalyan'}
+my_variable = {ch:ord(ch) for ch in 'Mangalyan'}
 print("type(my_variable)", type(my_variable))
 print(type(my_variable), my_variable)
