@@ -8,47 +8,48 @@ name = "Almighty"
 print(name)
 print('name')
 # print(name1) # NameError: name 'name1' is not defined
+# print(name1) # NameError: name 'name1' is not defined
+print('name1')
 
 print('\n\tname =', name)
-print(type(name), name)
 
-print('name of student: name')
-print('name of student:', name)
-print('name of student:' +  name)
+# escape sequences \t \n
+print('type(name) =', type(name))
+
+print('Name of the student:', name)
+print('Name of the student:' + name)
 
 name = 123
-print('\n', type(name), name)
-print('name of student:', name)
-# print('name of student:' +  name)
-# # TypeError: can only concatenate str (not "int") to str
+print('type(name) =', type(name))
+print('Name of the student:', name)
+# print('Name of the student:' + name)
+# Python is a strictly typed language
 
-# Python is strictly typed language 
-# print('1' + 1)  
-# TypeError: can only concatenate str (not "int") to str
+# print(1 + '1')
+print(str(1) + '1')
+print(1 + int('1'))
 
-# no difference between single and double quotes
-# for strings
+
+# NO difference between single and double quotes in python
 print('hello')
 print("world")
 
 print('hello', end='\n')
 print("world")
 
-print('hello', end=' ')
+print('hello', end='___')
 print("world")
 
+print('hello', 'python', sep=' ')
+print('hello', 'python', sep='\t')
 
-print('Hello', 'udhay', end='_')
-print("world")
 
-print('Hello', 'udhay', 'third', sep='|',end='_')
-print("world")
+print('hello', 'python', sep='\t', end='..')
+print('world!')
 
-print("Hello","World", sep="***")        # Hello***World
-print("Hello","World", end="***")        # Hello World***
-print("Hello", end="***"); print("World")# Hello***World
 
 print('one\ttwo\nthree\tfour')
+
 
 print('He\bi')
 print('\u20B9')

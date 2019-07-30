@@ -52,7 +52,7 @@ No_of_processes_running = 123
 costOfMangos = 34
 costOfApples = 12
 outputOfSensor = 'asdd'
-
+NoOfProcesesRunning = 123
 # https://ieeexplore.ieee.org/document/5521745?tp=&arnumber=5521745
 
 '''

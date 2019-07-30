@@ -16,116 +16,64 @@ Integer family
 # + - * / // %
 # NOTE: PEP 8 recommends to place one space around the operator
 
-num1 = 10  # int
-num2 = 200  # int
+num1 = 123 # int
+num2 = 100 # int 
 
-print("num1=", num1)
+print('num1=', num1)
 print('num2=', num2)
 
-print('-----------------------------')
-print("Arithmetic Operations")
-print('-----------------------------')
+num3 = num1 + num2 # int + int = int 
+print('num3=', num3, type(num3))
 
-print('Addition')
-print('num1 + num2 = ', num1 + num2)
+num4 = -1.2342342342
+print('num4=', num4, type(num4))
+
+# what is the largest number that can be processed in python
+num5 = 123123213123123231232312312312313453454534
+print('num5=', num5, type(num5))
+
+num5 = 123123213123123231232312312312313453454534.0
+print('num5=', num5, type(num5))
+
+####### 
+# Arithemtic Operations
+print("123 + 100 = ", 123 + 100)
+print("123 - 100 = ", 123 - 100)
+print("123 * 100 = ", 123 * 100)
+print("123 / 100 = ", 123 / 100)
+
+
+print('10/2 = ', 10/2)
+print('10/5 = ', 10/5)
+print('10/3 = ', 10/3)
+# NOTE: division result will be floating point everytime
+
+print('10 // 3 = ', 10 // 3)# quotient - floor division
+print('10 % 3 = ', 10 % 3)  # remainder
+
+print('divmod(10, 3)=', divmod(10, 3))# //, %
+# 3 ) 10 ( 3 -- QUotient
+#      9
+# 	--
+# 	 1 --- remainder
+
+print('divmod(10, 2)=', divmod(10, 2))# //, %
+
+# IMPORTANCE OF SIGNS
 print()
-print('Subtraction')
-print('num1 - num2 = ', num1 - num2)
+print('10 / 3   = ', 10 / 3)     #  3.3333333333333335
+print('-10 / 3  = ', -10 / 3)    # -3.3333333333333335
+print('10 / -3  = ', 10 / -3)    # -3.3333333333333335
+print('-10 / -3 = ', -10 / -3)   #  3.3333333333333335
+
 print()
-print('Multiplication')
-print('num1 * num2 = ', num1 * num2)
+print('10 // 3   = ', 10 // 3)    #  3     3 <  3.333 < 4
+print('-10 // 3  = ', -10 // 3)   # -4    -4 < -3.333 < 3
+print('10 // -3  = ', 10 // -3)   # -4    -4 < -3.333 < 3
+print('-10 // -3 = ', -10 // -3)  #  3     3 <  3.333 < 4
+
 print()
-print('Division')
-# In python 3, divison will result in float value
-print('num1 / num2 = ', num1 / num2)
-print('10/2        = ', 10/2)
-print('10/5        = ', 10/5)
-print('10/3        = ', 10/3)
-
-# print()
-# # integers - int, long, float
-# print('type(num1)= ', type(num1))
-# print('type(num2)= ', type(num2))
-
-# # int + int  = int
-# # int / int  = int
-
-
-# # int + float = float
-# # long + float = float
-
-
-# the max. integer that can be computed depends on the capability of the machine
-num3 = 3445678909876545678909876556789098765
-
-print('num3 = ', num3)
-print('type(num3)= ', type(num3))
-
-# print('num1 + num3= ', num1 + num3)  # int + long = long
-
-
-
-# print('num1', num1)  # int
-# num4 = 3.15
-# print('num4', num4)  # float
-
-# result = num1 + num4 # int + float = float
-# print('result', result, type(result))
-
-# # going back to division
-
-# # print('10/2= ', 10 / 2)  # int/int = int
-# # print('10/5= ', 10 / 5)  # int/int = int
-
-# # print('10/3= ', 10 / 3)  # int/int = int         # 3
-# # print('10/3.0= ', 10 / 3.0)  # int/float = float     # 3.333333
-
-# # print()
-# # # type conversions
-# # # int()
-# # # float()
-# # # long()
-
-# # print('int(3.333333)=', int(3.333333))
-# # print('float(3) = ', float(3))
-# # print('float(3.333) = ', float(3.333))
-
-# # print()
-# # print('10/3= ', 10 / 3)
-# # print('10/float(3)= ', 10 / float(3))
-
-# # print()
-# # print(num1/num2/10)
-# # print('num1 / num2 = ', num1 / num2)  # int/int
-# # print('float(num1) / num2 = ', float(num1) / num2)
-# # print('float(num1 / num2) = ', float(num1 / num2))  # wrong
-
-# print()
-print('floor division  //')  # quotient
-print('10//2', 10 // 2)
-print('10//5', 10 // 5)
-
-print('10/3 = ', 10 / 3)
-print('10//3 = ', 10 // 3)  # 3 < 3.3333 < 4
-print()
-print('10/3.0 = ', 10 / 3.0)
-print('10//3.0 = ', 10 // 3.0)  # 3 < 3.3333 < 4
-print('-10//3.0 = ', -10 // 3.0)  # -4 < -3.3333 <  -3
-.0
-
-# # print('10/2.5 = ', 10 / 2.5)
-# # print('10//2.5 = ', 10 // 2.5)  # 4.0
-
-'''
->>> 13/2
-6
->>> 13/2.0
-6.5
->>> 13//2.0  # 6 < 6.5 < 7
-6.0
->>> - 13//2.0 # -7 < -6.5 < -6
--7.0
->>> - 13/2.0  # true result
--6.5
->>> # -7 < -6.5 < -6
-'''
+print('10 % 3   = ', 10 % 3)      #  1     
+print('-10 % 3  = ', -10 % 3)     #  2
+print('10 % -3  = ', 10 % -3)     # -2
+print('-10 % -3 = ', -10 % -3)    # -1

@@ -12,6 +12,7 @@ print('myNumber = ', myNumber)
 myNumber = myNumber + 1
 print('myNumber = ', myNumber)
 
+
 # In cases, where the same variable is present both the sides, then compound operations are valid
 
 myNumber += 1  # myNumber = myNumber + 1
