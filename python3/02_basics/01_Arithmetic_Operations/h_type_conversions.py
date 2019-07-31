@@ -60,6 +60,10 @@ print('type(num7)', type(num7))
 # print 'num8      ', num8
 # print 'type(num8)', type(num8)
 
+# ----------------
+#     128 64 32 16 8 4 2 1
+# 9 -> 0   0  0  0 1 0 0 1
+# 23 >           1 0 1 1 1
 
 # decimal to binary 
 bin(9)
@@ -67,13 +71,13 @@ bin(9)
 # binary to decimal 
 int(bin(9), base=0)
 
-# decimal to hex 
+# decimal to hex : 0-9 A-F
 hex(9)
 # hex to decimal 
 int(hex(9), base=16) 
 
 
-# decimal to oct 
+# decimal to oct :0-7
 oct(9)
 # oct to decimal 
 int(oct(9), base=8)

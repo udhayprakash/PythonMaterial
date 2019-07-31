@@ -8,15 +8,17 @@ quantity in dozens
 """
 DOZEN = 12
 
-# cost is per piece 
-costOfApple = 12
-costOfMangos = 5
+# Per piece cost
+cost_of_mango = 21
+cost_of_apple = 32
 
-quantityInDozensOfApples = 3
-quantityInDozensOfMangos = 7
+quantity_of_mangos_in_dozens = 4
+quantity_of_apples_in_dozens = 7
 
-# PEMDAS rule
-TotalCost = costOfApple * (quantityInDozensOfApples * DOZEN) + \
-                costOfMangos * quantityInDozensOfMangos * DOZEN  # top to bottom and left to right 
-print("Total Cost = ", TotalCost )
+total_cost = (quantity_of_apples_in_dozens * DOZEN) * cost_of_apple \
+                + (quantity_of_mangos_in_dozens * DOZEN * cost_of_mango)
 
+print('Total Cost = ', total_cost)
+
+# PEMDAS
+# Python Execution flow - top-botton & left to right 

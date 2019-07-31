@@ -6,21 +6,25 @@ Store items:
     Rice
     wheat
 """
+BAG = 50 # kgs
 
-cost_of_rice = 52
-cost_of_wheat = 40
+cost_of_rice = 10 # kg 
+cost_of_wheat = 23 # kg
+
+# qty_of_rice = 20 # kgs 
+# qty_of_wheat = 45 #kgs 
+
+qty_of_rice = 23 * BAG  # 23 bags
+qty_of_wheat = 12 * BAG  # 12 bags
+
+sp_rice = cost_of_rice * qty_of_rice
+sp_wheat = cost_of_wheat * qty_of_wheat
+
+total_sp = sp_rice + sp_wheat
+
+print('Total cost =',total_sp)
 
 
-qty_of_rice = 10
-qty_of_wheat = 5
-
-selling_price_rice = cost_of_rice * qty_of_rice
-selling_price_wheat = cost_of_wheat * qty_of_wheat
-
-
-tota_cost = selling_price_rice + selling_price_rice
-
-print('total cost', tota_cost)
 
 
 
