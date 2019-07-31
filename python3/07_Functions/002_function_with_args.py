@@ -11,7 +11,11 @@ def hello(name):
 
 
 # Function Call 
-# hello()
-hello('raghu')
+# hello() # TypeError: hello() missing 1 required positional argument: 'name'#
+hello('python')
+hello(123)
 
-# hello('raghu', 'spoorthi')
+# hello('python', 123) TypeError: hello() takes 1 positional argument but 2 were given
+
+hello(name=123)
+# hello(name1=123) # TypeError: hello() got an unexpected keyword argument 'name1'

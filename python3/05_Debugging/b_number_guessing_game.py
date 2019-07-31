@@ -13,5 +13,3 @@ elif guessed_number > lucky_number:
     print('you guessed greater number')
 else:
     print('You guessed lower number')
-
-

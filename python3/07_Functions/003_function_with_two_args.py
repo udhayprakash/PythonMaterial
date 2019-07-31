@@ -12,12 +12,14 @@ def hello(name, age):
 
 
 # Function Call 
-# hello() # TypeError: hello() takes exactly 1 argument (0 given)
+# hello()
+# hello('Python')
+hello('Python', 28) 
+hello(['Python'], 28) 
+# hello('Python', 28, 12) 
 
-# hello('Python')  # TypeError: hello() missing 1 required positional argument: 'age'
+hello(28, 'Python') 
 
-hello('India', 75)
-hello(75, 'India')
 
-hello(name='India', age=75)
-hello( age=75, name='India')
+hello(name='Python', age=28)
+hello( age=28, name='Python')

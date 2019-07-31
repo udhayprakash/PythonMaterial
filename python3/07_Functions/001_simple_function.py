@@ -17,11 +17,13 @@ def hello():
     #return None - default
 
 
-print(hello)
-print('callable(hello)', callable(hello))
-fruit = 'apple'
-print('callable(fruit)', callable(fruit))
+# print(hello)
+# print('callable(hello)', callable(hello))
+# fruit = 'apple'
+# print('callable(fruit)', callable(fruit))
 
 # Function Call 
 hello()
+
+print()
 print(hello())

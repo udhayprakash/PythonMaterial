@@ -23,4 +23,4 @@ if __name__ == '__main__':
     print(sum1)
     print(version)
 else:
-    print "Hello this has to be part of my modules"
+    print("Hello this has to be part of my modules")

@@ -7,25 +7,30 @@ sentence = "It is always seen imposible, until we attempt!"
 count = {}
 
 for character in sentence:
-    #print character,
-    print(count.get(character, 0), end=' ')
     count[character] = count.get(character,0) + 1
 
-print()
-#print(count.items())
-#print(sorted(count.items()))
-#print(sorted(count.items(), reverse= False))
-#print(sorted(count.items(), reverse= True))
+print(count)
+# print(sorted(count))
+# for i in count.items():
+#     print(i)
 
-#print(sorted(count.items(), key = lambda i:i[0]))  # sorting by key
-#print(sorted(count.items(), key = lambda i:i[1]))  # sorting by value
+# print(count.items())
+# print(sorted(count.items()))
+# print(sorted(count.items(), reverse= False))
+# print(sorted(count.items(), reverse= True))
+
+# print(sorted(count.items(), key = lambda i:i[0]))  # sorting by key
+# print(sorted(count.items(), key = lambda i:i[1]))  # sorting by value
 
 
-#print(sorted(count.items(), key = lambda i:i[1], reverse= True))
+# print(sorted(count.items(), key = lambda i:i[1], reverse= True))
 
-#highestOccurenceOrder = sorted(count.items(), key = lambda i:i[1], reverse= True)
+top_three_chars = sorted(count.items(), key = lambda i:i[1], reverse= True)[:3]
 
-#print(highestOccurenceOrder)
+print(dict(top_three_chars))
+
+# disply in ascending order of alphabbets 
+# assignment
 
 
 '''
