@@ -67,9 +67,9 @@ print()
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
 
 
-print('language.find("t")    :', language.find('t'))
-print('language.find("n")    :', language.find('n'))
-print('language.rfind("n")   :', language.rfind('n'))
+print('language.find("t")    :', language.find('t'))   # 2
+print('language.find("n")    :', language.find('n'))   # 5
+print('language.rfind("n")   :', language.rfind('n'))  #16
 print()
 print('language.find("Prog")   :', language.find('Prog'))   # 7
 print('language.rfind("Prog")  :', language.rfind('Prog'))  # 7

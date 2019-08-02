@@ -10,7 +10,7 @@ call by value
 call by reference 
     - changes within the function will reflect at the global level 
 
-immutable objects - int, float, None, bool, tuple, string
+immutable objects - int, float, None, bool, tuple, string, None, frozenset
 mutable objects - list, set, dict, bytearray string
 
 NOTE:
@@ -34,16 +34,16 @@ pi = 3.141  # immutable - call by value
 #     print('after  change pi = {}'.format(pi))
 
 # simple_function()
-# UnboundLocalError: local variable 'pi' referenced before assignment
+# # UnboundLocalError: local variable 'pi' referenced before assignment
 
-# # case 3=====   call by value
-# def simple_function(pi):
-#     print('before change pi = {}'.format(pi))
-#     pi = 3333333
-#     print('after  change pi = {}'.format(pi))
+# case 3=====   call by value
+def simple_function(pi):
+    print('before change pi = {}'.format(pi))
+    pi = 3333333
+    print('after  change pi = {}'.format(pi))
 
-# simple_function(pi)
-# print('outside function pi = {}'.format(pi))
+simple_function(pi)
+print('outside function pi = {}'.format(pi))
 # changes with in function are not reflected outside it
 
 # # case 3=====   call by reference
@@ -56,14 +56,14 @@ pi = 3.141  # immutable - call by value
 # simple_function(pi) # SyntaxError: name 'pi' is parameter and global
 # print('outside function pi = {}'.format(pi))
 
-# def simple_function():
-#     global pi
-#     print('before change pi = {}'.format(pi))
-#     pi = 3333333
-#     print('after  change pi = {}'.format(pi))
+def simple_function():
+    global pi
+    print('\nbefore change pi = {}'.format(pi))
+    pi = 3333333
+    print('after  change pi = {}'.format(pi))
 
-# simple_function() 
-# print('outside function pi = {}'.format(pi))
+simple_function() 
+print('outside function pi = {}'.format(pi))
 
 
 details = {  # mutable - call by reference
@@ -71,7 +71,7 @@ details = {  # mutable - call by reference
 }
 
 def simple_function():
-    print('before change ver = {}'.format(details['ver']))
+    print('\nbefore change ver = {}'.format(details['ver']))
     details['ver'] = '3.8'
     print('after  change ver = {}'.format(details['ver']))
 

@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# first.py
 import pdb
 
 version = '3.0'

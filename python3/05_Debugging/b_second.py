@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# second.py
 import pdb
 pdb.set_trace()
 

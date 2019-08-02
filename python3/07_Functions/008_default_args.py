@@ -41,45 +41,52 @@ def hello_world(name= 'world'):
 
 hello_world()
 hello_world('chaitra')
+hello_world(name='chaitra')
 
 
-
+############################################
 def person_details(name='alpha', age=99):
     print('{} with age {}'.format(name, age))
 
 person_details()
+# person_details(input())
 person_details('chaitra')
+person_details(20)
 person_details('chaitra', 20)
+print()
+person_details(name='chaitra')
+person_details(age=20)
 
 # NOTE: default arguments should be at the end
 
 def person_details_2(designation, name='alpha', age=99):
-    print(designation + ' {} with age {}'.format(name, age))
+    # print(designation + ' {} with age {}'.format(name, age))
+    print(f'{name} with age {age}')
 
 # person_details_2() # TypeError: person_details_2() missing 1 required positional argument: 'designation'
 person_details_2('developer')
 person_details_2('tester', 'chaitra')
 person_details_2('tester', 'chaitra', 45)
 
-
+# person_details_2(name='developer')
 person_details_2(designation='tester', name='chaitra', age=5)
 
 
-# Function Definition
-def hello(height, name='BINDU',age=200):
-    # print "%s's age is %d with height %d"%(name, age, height)
-    print("{0}'s age is {1} with height {2}".format(name, age, height))
+# # Function Definition
+# def hello(height, name='BINDU',age=200):
+#     # print "%s's age is %d with height %d"%(name, age, height)
+#     print("{0}'s age is {1} with height {2}".format(name, age, height))
 
-# NOTE: default arguments should be at the end
+# # NOTE: default arguments should be at the end
 
-# Function Call 
-# hello()
-hello(1)  # mandatory args shoud be given
+# # Function Call 
+# # hello()
+# hello(1)  # mandatory args shoud be given
 
-# hello('HARI')
-# hello(1, 'HARI')
+# # hello('HARI')
+# # hello(1, 'HARI')
 
-# hello('Python')
-# hello(1,365)
+# # hello('Python')
+# # hello(1,365)
 
-# hello(1,'India', 75)
+# # hello(1,'India', 75)

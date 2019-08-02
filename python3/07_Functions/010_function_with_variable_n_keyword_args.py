@@ -28,12 +28,12 @@ hello(std1='HARI', std2='chaitra')# 2 inputs
 hello('HARI', 'chaitra', num1=100,n2=999) 
 
 
-# # hello(language='Python')
-# # hello(years=365)
+# # # hello(language='Python')
+# # # hello(years=365)
 
-# # hello(country='India', age=75)
+# # # hello(country='India', age=75)
 
-# # hello(212.34, 'India', 75, 
-# #         number=34, 
-# #         mystring='sdas', 
-# #         larger_number=342432)
+# # # hello(212.34, 'India', 75, 
+# # #         number=34, 
+# # #         mystring='sdas', 
+# # #         larger_number=342432)

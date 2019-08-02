@@ -15,7 +15,7 @@ print(12, '34', 'three', 'India', 75, 34, 'sdas', 342432, 212.34)
 # Function Definition
 def hello(*feed_in):
     print("\ntype(feed_in)",  type(feed_in))
-    print("inputs are "+ str(feed_in))
+    print("inputs are ", feed_in)
 
 
 # Function Call 

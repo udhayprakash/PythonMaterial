@@ -10,5 +10,17 @@ print(add(12, 34, 56))  # parameters - 1,2,3
 # Built-in function 
 # sum()
 
-# print(sum(12, 34, 56))
+# print( sum(12, 34, 56) )
+
 print(sum((12, 34, 56)))
+print(sum([12, 34, 56]))
+print(sum({12, 34, 56}))
+
+print(sum([[1, 2], [3, 4], [5, 6, 7]], []))
+print(sum(([1, 2], [3, 4], [5, 6, 7]), []))
+# print(sum(((1, 2), [3, 4], [5, 6, 7]), []))
+# print(sum(((1, 2), (3, 4), (5, 6, 7)), []))
+print(sum(((1, 2), (3, 4), (5, 6, 7)), ()))
+
+# print(sum((1, 2, 3, 4, (5, 6, 7)), ()))
+# Assignment 
