@@ -1,0 +1,90 @@
+Basic Python programs
+    program to print "Hello Python"
+    program to do arithmetical operations
+    program to find the area of a triangle
+    program to solve quadratic equation
+    program to swap two variables
+    program to generate a random number
+    program to convert kilometers to miles
+    program to convert Celsius to Fahrenheit
+    program to display calendar
+programs with conditions and loops
+    Program to Check if a Number is Positive, Negative or Zero
+    Program to Check if a Number is Odd or Even
+    Program to Check Leap Year
+    Program to Check Prime Number
+    Program to Print all Prime Numbers in an Interval
+    Program to Find the Factorial of a Number
+    Program to Display the multiplication Table
+    Program to Print the Fibonacci sequence
+    Program to Check Armstrong Number
+    Program to Find Armstrong Number in an Interval
+    Program to Find the Sum of Natural Numbers
+Function Programs
+    Program to Find LCM
+    Program to Find HCF
+    Program to Convert Decimal to Binary, Octal and Hexadecimal
+    Program To Find ASCII value of a character
+    Program to Make a Simple Calculator
+    Program to Display Calendar
+    Program to Display Fibonacci Sequence Using Recursion
+    Program to Find Factorial of Number Using Recursion
+Native Data Type Programs
+    Program to Add Two Matrices
+    Program to Multiply Two Matrices
+    Program to Transpose a Matrix
+    Program to Sort Words in Alphabetic Order
+    Program to Remove Punctuation From a String
+Python Array Programs
+    program to copy all elements of one array into another array
+    program to find the frequency of each element in the array
+    program to left rotate the elements of an array
+    program to print the duplicate elements of an array
+    program to print the elements of an array
+    program to print the elements of an array in reverse order
+    program to print the elements of an array present on even position
+    program to print the elements of an array present on odd position
+    program to print the largest element in an array
+    program to print the smallest element in an array
+    program to print the number of elements present in an array
+    program to print the sum of all elements in an array
+    program to right rotate the elements of an array
+    program to sort the elements of an array in ascending order
+    program to sort the elements of an array in descending order
+Number Programs
+    program to check if the given number is a Disarium Number
+    program to print all disarium numbers between 1 to 100
+    program to check if the given number is Happy Number
+    program to print all happy numbers between 1 and 100
+    program to determine whether the given number is a Harshad Number
+    program to print all pronic numbers between 1 and 100
+Circular Linked List Programs
+    program to create a Circular Linked List of N nodes and count the number of nodes
+    program to create a Circular Linked List of n nodes and display it in reverse order
+    program to create and display a Circular Linked List
+    program to delete a node from the beginning of the Circular Linked List
+    program to delete a node from the end of the Circular Linked List
+    program to delete a node from the middle of the Circular Linked List
+    program to find the maximum and minimum value node from a circular linked list
+    program to insert a new node at the beginning of the Circular Linked List
+    program to insert a new node at the end of the Circular Linked List
+    program to insert a new node at the middle of the Circular Linked List
+    program to remove duplicate elements from a Circular Linked List
+    program to search an element in a Circular Linked List
+    program to sort the elements of the Circular Linked List
+Python Doubly Linked List Programs
+    program to convert a given binary tree to doubly linked list
+    program to create a doubly linked list from a ternary tree
+    program to create a doubly linked list of n nodes and count the number of nodes
+    program to create a doubly linked list of n nodes and display it in reverse order
+    program to create and display a doubly linked list
+    program to delete a new node from the beginning of the doubly linked list
+    program to delete a new node from the end of the doubly linked list
+    program to delete a new node from the middle of the doubly linked list
+    program to find the maximum and minimum value node from a doubly linked list
+    program to insert a new node at the beginning of the Doubly Linked list
+    program to insert a new node at the end of the Doubly Linked List
+    program to insert a new node at the middle of the Doubly Linked List
+    program to remove duplicate elements from a Doubly Linked List
+    program to rotate doubly linked list by N nodes
+    program to search an element in a doubly linked list

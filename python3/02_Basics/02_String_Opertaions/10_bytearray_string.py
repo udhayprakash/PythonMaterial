@@ -1,38 +1,51 @@
 #!/usr/bin/python
 """
 Purpose: demo of bytearray strings
-
-bytearray objects are a mutable strings
 """
-# Creating an empty instance: 
-print('bytearray()', bytearray())
 
-# Creating a zero-filled instance with a given length: 
-print('bytearray(10)', bytearray(10))
+ordinary_string = "Tomarrow will be ours!!!"
+print("ordinary_string      :", ordinary_string)
+print("type(ordinary_string):", type(ordinary_string))
 
-# From an iterable of integers: 
-print('bytearray(range(20))', bytearray(range(20)))
+print(ordinary_string.find('will be'))
+print('ordinary_string[9:17]', ordinary_string[9:17])
 
+# ordinary_string[9:17] = 'is'
+# TypeError: 'str' object does not support item assignment
 
-# Copying existing binary data via the buffer protocol: 
-print("bytearray(b'Hi!')", bytearray(b'Hi!'))
+# Ordinary string are immutable 
+# bytearray strings are mutable 
 
+b_string = bytearray("Tomarrow will be ours!!!", 'ascii')
+print("b_string      :", b_string)
+print("type(b_string):", type(b_string))
 
-##########################################
-# hex to bytearray 
-print(" bytearray.fromhex('2Ef0 F1f2  ')",  bytearray.fromhex('2Ef0 F1f2  '))
+print(b_string.find(b'will be'))
+print('b_string[9:17]', b_string[9:17])
 
+b_string[9:17] = b'is '
+print("b_string", b_string)
 
-# bytearray to hex 
-print("bytearray(b'\xf0\xf1\xf2').hex()", bytearray(b'\xf0\xf1\xf2').hex())
+# #############################
+print()
+# indexing a bytearray string
+print("ordinary_string[6]", ordinary_string[6])
+print("b_string[6]       ", b_string[6])
 
+print()
+# ord() and chr()
+# Ascii  : o -> 111
+print("chr(111):", chr(111))
+print("ord('o'):", ord('o'))
 
-############################################
-# b = bytearray('python') # TypeError: string argument without an encoding
-b = bytearray('python', 'utf-8') 
-b = bytearray(b'python') 
-print(b, type(b))
-# b[0] will be an integer, 
-print(b[0], type(b[0]))
-# while b[0:1] will be a bytearray object of length 1
-print(b[0:1], type(b[0:1]))
+# Assignment 
+# -------------
+# caesar cipher 
+# ------------------  + 3 
+# A B C D E F G H I J
+# 0 1 2 3 4 5
+# D E F
+
+# Ex: egg => hjj
+#    bindu => elqg
+#    Yash  =>

@@ -35,3 +35,8 @@ print("Line 5 - Value of num3 is ",num3)
 
 num3 = num1 >> 2       # 15 = 0000 1111
 print("Line 6 - Value of num3 is ",num3) 
+
+
+# NOTE:
+# A left shift by n bits is equivalent to multiplication by pow(2, n) without overflow check.
+# A right shift by n bits is equivalent to division by pow(2, n) without overflow check.

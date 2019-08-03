@@ -36,6 +36,18 @@ print()
 # How to convert a string to a list
 print(list('Python Production'))
 
+
+'1,2,3'.split(',')              # ['1', '2', '3']
+'1,2,3'.split(',', maxsplit=1)  # ['1', '2,3']
+'1,2,,3,'.split(',')            # ['1', '2', '', '3', '']
+
+# default is with white space
+'1 2 3'.split()                 # ['1', '2', '3']
+'1 2 3'.split(maxsplit=1)       # ['1', '2 3']
+'   1   2   3   '.split()       # ['1', '2', '3']
+
+''.split()                      # ['']
+
 print() 
 # HOw to convert list of strings to a single string
 print(''.join(['Python', 'Production', 'language']))
@@ -48,6 +60,8 @@ print('P'.join('Python Production'.split('P')))
 print('R'.join('Python Production'.split('P')))
 print(' '.join('Python Production'.split(' ')))
 
+
 print('Python Production'.replace('P', 'R'))
 print('Python Production'.replace('Prod', 'cat'))
 print('Python Production'.replace('Prod1', 'cat'))
+

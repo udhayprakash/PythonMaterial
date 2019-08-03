@@ -4,6 +4,15 @@
 # 1. keyword
 # 2. identifier
 
+import keyword 
+print(keyword.kwlist)
+
+keyword.iskeyword('True')  # True
+keyword.iskeyword('true')  # False
+keyword.iskeyword('while') # True
+
+
+
 # Identifier naming conventions
 ################################
 # first character     :  a-z, A-Z, _ 

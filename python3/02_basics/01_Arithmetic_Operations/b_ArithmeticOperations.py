@@ -37,6 +37,8 @@ print('pow(64,0.5)=', pow(64, 0.5))
 print()
 print('pow(4,2,9) =', pow(4, 2, 9)) # (4 ** 2) % 9
 print('(4**2) % 9 =', (4**2) % 9)
+print(pow(0, 0) == 0 ** 0 == 1)
+
 print()
 print('Exponent Notation')
 print('1e1 = ', 1e1)

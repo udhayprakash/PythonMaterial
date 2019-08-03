@@ -26,7 +26,7 @@ print(f'id(list3):{id(list3)}')
 
 print('\n\nSolution when you need default list ==========')
 def extend_list(val, my_list=None):
-    if my_list == None:
+    if not my_list: # my_list == None
         my_list = []
     my_list.append(val)
     return my_list

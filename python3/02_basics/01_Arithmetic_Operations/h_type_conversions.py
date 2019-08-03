@@ -69,7 +69,11 @@ print('type(num7)', type(num7))
 bin(9)
 
 # binary to decimal 
-int(bin(9), base=0)
+print(int(bin(9), base=0))  # '0b1001'
+print((9).bit_length())     #   4
+
+print(int(bin(-9), base=0)) # '-0b1001'
+print((-9).bit_length())    #   4
 
 # decimal to hex : 0-9 A-F
 hex(9)
@@ -81,3 +85,10 @@ int(hex(9), base=16)
 oct(9)
 # oct to decimal 
 int(oct(9), base=8)
+
+
+
+
+#### Checks ##################
+(-2.0).is_integer() # True 
+(3.2).is_integer()  # False
