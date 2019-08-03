@@ -12,6 +12,7 @@ Three Laws of Recursion:
 pseudo-code:
 -------------
 def funcName(<input paramaters>):
+    <some condition check for termination>
     <some logic>
     return funcName(<input parameters>)
 
@@ -40,7 +41,6 @@ def sumOfListRec(num_list):  # implementation using recursions
     else:
         return num_list[0] + sumOfListRec(num_list[1:])
 
-
 print(sumOfListRec([12, 23, 34, 546, 1]))
 
 """
@@ -49,5 +49,10 @@ exercises on recursions:
 1. Write a recursive function to compute the factorial of a number
         factorial(10) = 10 * 9 * 8 * 7 * 6 * 5, ..... 1
 2. Write a recursive function to reverse a list
+        input:  [1, 2, 3, 3, 4, 5]
+        output: [5, 4, 3, 3, 2, 1]
 3. Write a recursive function to compute the fibonacci series
+        0,1, 1,2, 3 , 5, 8, ....
+        HINT: unpacking
+
 """

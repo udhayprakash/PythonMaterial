@@ -15,22 +15,25 @@ def outer(func):
 
     return inner
 
+# #############################
+# def div(a, b):
+#     return a / b
 
-def div(a, b):
-    return a / b
+# print(div(10,3))
+# print(div(10,2.5))
+# # print(div(10,0))
+
+# print(outer(div(10,2.5)))
+
+# breakpoint()
+# ################################
+# foo = outer(div)
+# print(foo(10,3))
+# ################################
+# outer(div)(1,2)
 
 
-print(div(10,3))
-print(div(10,2.5))
-# print div(10,0)
-
-foo = outer(div)
-foo(10,3)
-
-print(outer(div(10,2.5)))
-
-
-
+##############################################
 @outer         # comment this line and observe difference
 def div(a, b):
     return a / b
@@ -43,8 +46,6 @@ print(div(4, 0))
 @outer
 def add(a, b):
     return a + b
-
-
 
 print(add(2, 3))
 print(add('a', 3))

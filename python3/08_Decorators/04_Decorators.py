@@ -16,9 +16,8 @@ def time_taken(func):
 
 @time_taken
 def myfunc(num):
-    for i in range(num):
+    for _ in range(num):
         pass 
-
 
 
 myfunc(10000)

@@ -19,8 +19,6 @@ def outer(func):  # func-addition
     return inner
 
 ############################################
-
-
 foo = outer(div)# foo-inner
 print('foo', foo)
 print(foo(4, 2))

@@ -12,14 +12,16 @@ def outer():
 
     def inner():
         print('In inner function', nnum)
+        print('In inner function', mytuple)
+        print('In inner function', mylist)
+        print('In inner function', mydict)
 
     inner()
 
 outer()
 
-# inner()  # NameError: name 'inner' is not defined
-
-# print(nnum)  # NameError: name 'nnum' is not defined
-# print(mytuple) # NameError: name 'mytuple' is not defined
+# inner()
+# print(nnum)
+# print(mytuple)
 # print(mylist)
 # print(mydict)

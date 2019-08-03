@@ -10,7 +10,6 @@ def consumer(func):
 
 # Example
 if __name__ == '__main__':
-
     @consumer
     def recv_count():
         try:

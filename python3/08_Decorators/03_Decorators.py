@@ -25,7 +25,7 @@ print('\n===USING DECORATORS')
 def print_statements(func):
     def inner(*args, **kwargs):
         print('function -start ')
-        # print 'In print_statemenst decorator', func
+        # print('In print_statemenst decorator', func)
         myresult = func(*args, **kwargs)
         print('function - before end')
         return myresult

@@ -23,7 +23,7 @@ outer_result = outer(10)
 print('outer_result', outer_result)
 print('outer_result()', outer_result(20))
 
-# # print num3
+# print(num3)
 
-print(dir(outer))
-print('outer.func_closure', outer.__closure__)
+# print(dir(outer))
+print('outer.__closure__', outer.__closure__)
