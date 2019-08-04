@@ -26,11 +26,10 @@ n = Name()    # Name.__init__(n)
 # p()
 
 
-# print()
-print('----------calling contructor')
+print('\n----------calling contructor')
 n.__init__()
 
-print('='*10)
+print('=' * 40)
 print('n.__dict__', n.__dict__)
 print('vars(n)   ', vars(n)) # instance variables, not methods
 
@@ -38,9 +37,8 @@ print('vars(n)   ', vars(n)) # instance variables, not methods
 print('vars(Name)   ', vars(Name)) # class variables, not methods
 
 print('\n\nvars()', vars())
-# # Note: calling the vars() function without parameters will return a dictionary containing the local symbol table.
-
-
+# Note: calling the vars() function without parameters will 
+# return a dictionary containing the local symbol table.
 
 """
 run below in shell
