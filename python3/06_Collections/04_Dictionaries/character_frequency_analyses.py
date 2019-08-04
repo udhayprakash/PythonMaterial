@@ -1,29 +1,27 @@
 #!/usr/bin/python
-
 __author__ = 'udhay'
 
+from pprint import pprint
 sentence = "It is always seen imposible, until we attempt!"
 
 count = {}
-
 for character in sentence:
     count[character] = count.get(character,0) + 1
 
-print(count)
-# print(sorted(count))
-# for i in count.items():
-#     print(i)
+pprint(count)
 
-# print(count.items())
-# print(sorted(count.items()))
-# print(sorted(count.items(), reverse= False))
-# print(sorted(count.items(), reverse= True))
+print(sorted(count))
 
-# print(sorted(count.items(), key = lambda i:i[0]))  # sorting by key
-# print(sorted(count.items(), key = lambda i:i[1]))  # sorting by value
+print(count.items())
+print(sorted(count.items()))
+print(sorted(count.items(), reverse= False))
+print(sorted(count.items(), reverse= True))
+
+print(sorted(count.items(), key = lambda i:i[0]))  # sorting by key
+print(sorted(count.items(), key = lambda i:i[1]))  # sorting by value
 
 
-# print(sorted(count.items(), key = lambda i:i[1], reverse= True))
+print(sorted(count.items(), key = lambda i:i[1], reverse= True))
 
 top_three_chars = sorted(count.items(), key = lambda i:i[1], reverse= True)[:3]
 

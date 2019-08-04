@@ -37,12 +37,10 @@ print('\ncities_n_countries\n', cities_n_countries)
 print(type(cities_n_countries))
 
 print('-'* 15)
-# # list of tuples
-# print(list(map(None, cities, countries)))
+# interchange keys and values
+res = dict((v,k) for k,v in cities_n_countries.items())
+print(res)  # NOTE: works only if it follow dit key rules
 
-# cities_n_countries = dict(    map(None,countries, cities)    )
 
-# print('\ncities_n_countries\n', cities_n_countries)
-# print(type(cities_n_countries))
 # # print {'a':2} + {1:'e'}
 # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'

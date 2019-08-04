@@ -68,16 +68,6 @@ for each_key, each_val in names.items():
     print(f'each_key:{each_key} each_val:{each_val}')
 
 
-for each_chr in enumerate('Python Programming'):
-    print(each_chr)
-
-
-for loop_index, each_chr in enumerate('Python Programming'):
-    print(f'In loop {loop_index}, value is {each_chr}')
-
-for each_key, each_val in enumerate(names.items()):
-    print(f'each_key:{each_key} each_val:{each_val}')
-
-# print(list('Python Programming'))
-# print(tuple('Python Programming'))
+print(list('Python Programming'))
+print(tuple('Python Programming'))
 print(set('Python Programming'))

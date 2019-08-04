@@ -29,3 +29,34 @@ print()
 print('Python'.rjust(25))
 print('Python'.rjust(25, '-'))
 print('Python'.rjust(25, '.'))
+
+
+
+
+
+'''
+>>>
+>>> 'name'.isidentifier()
+True
+>>> 'name123'.isidentifier()
+True
+>>> 'name_some'.isidentifier()
+True
+>>> 'name123_TWO'.isidentifier()
+True
+>>> 'PI'.isidentifier()
+True
+>>> '2name'.isidentifier()
+False
+>>> 'name 1'.isidentifier()
+False
+>>> 'name_1'.isidentifier()
+True
+>>> '_job'.isidentifier()
+True
+>>> '_val'.isidentifier()
+True
+>>> '__name__'.isidentifier()
+True
+>>>
+'''

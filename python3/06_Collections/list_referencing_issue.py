@@ -23,3 +23,22 @@
 >>> lists
 [[3], [5], [7]]
 '''
+
+'''
+>>> new_list = [[None] * 2] * 3
+>>> new_list
+[[None, None], [None, None], [None, None]]
+>>> new_list[0][0] = 5
+>>> new_list
+[[5, None], [5, None], [5, None]]
+>>>
+>>>
+>>> new_list =[[None] * 2 for i in range(3)]
+>>>
+>>> new_list
+[[None, None], [None, None], [None, None]]
+>>> new_list[0][0] = 5
+>>> new_list
+[[5, None], [None, None], [None, None]]
+>>>
+'''

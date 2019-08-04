@@ -36,6 +36,8 @@ print('()               ', bool(()))
 print('[]               ', bool([]))
 print('{}               ', bool({}))
 
+
+print('bool(None)       ', bool(None))
 # True, False
 print('bool(True)       ', bool(True))
 print('bool(False)      ', bool(False))
