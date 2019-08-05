@@ -60,3 +60,7 @@ print(tuple(f))
 print("====reinitialize call ")
 f = foo()
 print(set(f))
+
+print("====reinitialize call ")
+f = foo()
+print([i for i in f])

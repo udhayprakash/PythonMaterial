@@ -6,25 +6,25 @@ Purpose: Generators
 
 def my_generator():
     print(' I am in the function')
-    # return 1
-    print('yielding 1')
-    yield 1
-    print('yielding 2')
-    yield 2
-    print('yielding 3')
-    yield 3
-    print('yielding 4')
-    yield 4
-    
+    # return 111
+    print('yielding 222')
+    yield 222
+    print('yielding 333')
+    yield 333
+    print('yielding 444')
+    yield 444
+    print('yielding 555')
+    yield 555
+
 
 m = my_generator()
 print(m)
 
-print(next(m))
+print(next(m))     # 222
 print('outside')
-print(next(m))
+print(next(m))     # 333
 print('outside')
-print(next(m))
+print(next(m))     # 444
 print('outside')
 print(next(m))
 print('outside')

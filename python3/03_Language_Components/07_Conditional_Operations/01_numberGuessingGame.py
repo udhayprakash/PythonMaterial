@@ -2,24 +2,26 @@
 """
 Purpose: Number Guessing Game
 
-luckyNumber = 67
 """
 __author__ = 'Python Tutor'
 
-luck_number = 67
+lucky_number  = 78
 
-guessing_no = int(input('Enter guessing number:'))
+guessed_number = int(input('Enter no. btwn 0 & 100:'))
 
-# print(guessing_no, type(guessing_no))
+# print(guessed_number, type(guessed_number))
+# print(lucky_number == guessed_number)
 
-# if guessing_no == luck_number:
-#     print('YOU WON THE GAME')
+# if lucky_number == guessed_number:
+#     print('YOu guessed correctly!'.upper())
 # else:
-#     print('Please try again !!!!')
+#     print('Please try again!!!'.title())
 
-if guessing_no == luck_number:
-    print('You WON THE GAME')
-elif guessing_no > luck_number:
-    print('reduce your guessing number')
+
+if guessed_number < lucky_number:
+    print('Increase your guessing number!')
+elif guessed_number > lucky_number:
+    print('Decrese your guessing number!!')
 else:
-    print('increase your guessing number')
+    print('CONGRATULATION ON GUESSING CORRECTLY')
+

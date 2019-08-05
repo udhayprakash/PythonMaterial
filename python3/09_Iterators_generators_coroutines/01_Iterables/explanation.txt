@@ -13,7 +13,10 @@ collections - iter()
 list - iter() -> list iterator 
 tuple - iter() -> tuple iterator 
 set - iter() -> set iterator 
-dict - iter() -> dict key iterator 
+dict - iter() 
+            -> dict key iterator 
+            -> dict value iterator 
+            -> dict item iterator 
 
 
 user-defined function -- > generators
