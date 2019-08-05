@@ -3,6 +3,7 @@
 lucky_number = 88
 
 guessed_number = int(input('Enter guessed number (0-99):'))
+print(guessed_number)
 
 # import pdb; pdb.set_trace()
 breakpoint()

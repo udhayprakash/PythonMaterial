@@ -1,39 +1,36 @@
 #!/usr/bin/python
-"""
-when no error - try - else   - finally
-when error    - try - except - finally
-"""
+
+# if 1:
+# print('hello')
+
 
 # result = 1 // 0 
 # result = 1 / 0 
 # result = 1 % 0 
 
-# if 2 < 3:
-# print('less')
+# try:
+#     result = 1 % 0 
+# except:
+#     print('Please dont divide by zero')
 
-try:
-    result = 1 % 0 
-except:
-    print('Please dont divide by zero')
+# try:
+#     result = 1 % 0 
+# except Exception:
+#     print('Please dont divide by zero')
 
-try:
-    result = 1 % 0 
-except Exception:
-    print('Please dont divide by zero')
-
-try:
-    result = 1 % 0 
-except Exception as ex:
-    print('error is ', ex)
-    print('error is ', str(ex))
-    print('error is ', repr(ex))
+# try:
+#     result = 1 % 0 
+# except Exception as ex:
+#     print('error is ', ex)
+#     print('error is ', str(ex))
+#     print('error is ', repr(ex))
 
 # NOTE: else and finally blocks are optional
 try:
-    result = 1 % 10 
+    result = 1 % 0 
 except Exception as ex:
-    print('error is ', ex)
-    print('error is ', str(ex))
+    # print('error is ', ex)
+    # print('error is ', str(ex))
     print('error is ', repr(ex))
 else: 
     print('try block has no error')
@@ -41,3 +38,7 @@ finally:
     print('Finally statement')
 
 print('statement outside these blocks')
+"""
+when no error - try - else   - finally
+when error    - try - except - finally
+"""

@@ -14,5 +14,5 @@ while True:
   except ValueError:
     continue
   else:
-    print a,b
+    print(a,b)
     break

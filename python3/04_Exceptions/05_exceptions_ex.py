@@ -1,16 +1,14 @@
 #!/usr/bin/python
 
-# raise NameError('This is my NameError')
+# raise ValueError('This is my ValueError')
 
 try:
     raise ValueError('This is my ValueError')
     # raise Exception('This is my error')
 except ValueError as ex2:
-    print('ValueError error is ', ex2)
-    print('error is ', repr(ex2))
+    print('ValueError error is ', repr(ex2))
 except Exception as ex2:
-    print('Exception error is ', ex2)
-    print('error is ', repr(ex2))
+    print('Exception error is ', repr(ex2))
 else:
     print('no exceptions')
 finally:

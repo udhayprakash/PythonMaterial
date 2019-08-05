@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # SyntaxError cant be handled 
-# bat = 0
+bat = 0
 try:
     # result = None/100
     result = bat + 1 / 0 
@@ -8,7 +8,6 @@ except ZeroDivisionError as ex:
     print('ZeroDivisionError error is ', repr(ex))
 except NameError as ex1:
     print('NameError error is ', repr(ex1))
-    print('error is ', repr(ex1))
 except TypeError as ex1:
     print('TypeError error is ', repr(ex1))
 except Exception as ex2:

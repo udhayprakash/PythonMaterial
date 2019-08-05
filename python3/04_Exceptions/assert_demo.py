@@ -26,7 +26,7 @@ def second_assert_demo():
         assert type(broken_int) == type(4), "broken_int is broken"
     except AssertionError as message:
         # print "Handle the error here.  The message is: %s" % message
-        print "Handle the error here.  The message is: {}".format(message)
+        print("Handle the error here.  The message is: {}".format(message))
 
 print 'From the interpreter call first_assert_demo() and second_assert_demo()'
 
