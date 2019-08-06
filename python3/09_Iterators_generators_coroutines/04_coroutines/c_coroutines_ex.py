@@ -1,5 +1,5 @@
 def minimize():
-    current = yield
+    current = yield #999999999999999999
     while True:
         value = yield current
         current = min(value, current)
@@ -8,7 +8,7 @@ def minimize():
 it = minimize()
 
 # Start the generator/co-routine
-next(it) 
+print(next(it)) 
 
 # Passing values
 print(it.send(10))

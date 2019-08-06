@@ -18,6 +18,7 @@ print('c', c)
 
 # All coroutines must be "primed" by first calling .next() (or send(None))
 print(next(c))
+
 print(c.send("World"))
 
 try:
@@ -29,4 +30,4 @@ except RuntimeError as ex:
 c.close()
 # garbage collection too calls .close() 
 
-# # close() can be catched by GeneratorExit Exception
+# close() can be catched by GeneratorExit Exception

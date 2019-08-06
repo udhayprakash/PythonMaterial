@@ -7,7 +7,7 @@ def my_coroutine():
 # creating the generator
 it = my_coroutine()
 
-print(next(it))             # Prime the coroutine
+print(next(it))  # Prime the coroutine
 
 it.send('First')
 it.send('Second')
@@ -18,4 +18,4 @@ for i in range(9):
 
 it.close()
 
-it.send('fouth')
+# it.send('fouth')  # StopIteration
