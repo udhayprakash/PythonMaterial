@@ -6,48 +6,46 @@ Purpose: COPY PROBLEM
 Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
 
-par_list = [11, 111, 1111]
-print('par_list      ', par_list, type(par_list), id(par_list))
+# par_list = [11, 111, 1111]
+# print('par_list      ', par_list, type(par_list), id(par_list))
 
-hard_copy_list = par_list
-print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
+# hard_copy_list = par_list
+# print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
 
+# print('par_list[2]   ', par_list[2])
 
-print('par_list[2]   ', par_list[2])
+# par_list[2] = 3333
+# print('par_list[2]   ', par_list[2])
+# print('par_list      ', par_list, type(par_list))
 
-par_list[2] = 3333
-print('par_list[2]   ', par_list[2])
-print('par_list      ', par_list, type(par_list))
+# # leakage problem
+# print('hard_copy_list', hard_copy_list, type(hard_copy_list))
 
-
-# leakage problem
-print('hard_copy_list', hard_copy_list, type(hard_copy_list))
-
-print()
+# print()
 import copy
-# shallow copy
-soft_copy_list = copy.copy(par_list)
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+# # shallow copy
+# soft_copy_list = copy.copy(par_list)
+# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
 
-print('hard_copy_list[2]', hard_copy_list[2])
+# print('hard_copy_list[2]', hard_copy_list[2])
 
-hard_copy_list[2] = "FOUR"
-print()
-print('par_list       ', par_list, type(par_list), id(par_list))
-print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+# hard_copy_list[2] = "FOUR"
+# print()
+# print('par_list       ', par_list, type(par_list), id(par_list))
+# print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
-print('soft_copy_list[0]', soft_copy_list[0])
+# print('soft_copy_list[0]', soft_copy_list[0])
 
-soft_copy_list[0] = 'ZERO'
-print()
-print('par_list       ', par_list, type(par_list), id(par_list))
-print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+# soft_copy_list[0] = 'ZERO'
+# print()
+# print('par_list       ', par_list, type(par_list), id(par_list))
+# print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
 
-print('='* 60)
+# print('='* 60)
 
 new_list = [90, 89, [78, 89, [4, 441, 6]]]
 new_softcopy_list = copy.copy(new_list)

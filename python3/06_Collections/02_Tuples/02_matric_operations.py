@@ -1,4 +1,3 @@
-from __future__ import print_function
 
 matrix = [
     (1, 2, 3),
@@ -13,22 +12,22 @@ for row in matrix:
 
 print('\n==============')
 
-first_row = []
-second_row = []
-third_row = []
+first_column = []
+second_column = []
+third_column = []
 for row in matrix:
-    first_row.append(row[0])
-    second_row.append(row[1])
-    third_row.append(row[2])
+    first_column.append(row[0])
+    second_column.append(row[1])
+    third_column.append(row[2])
 
-print(first_row)
-print(second_row)
-print(third_row)
+print('first_column ', first_column)
+print('second_column', second_column)
+print('third_column ', third_column)
 
 transposed_matrix = [
-    first_row,
-    second_row,
-    third_row
+    first_column,
+    second_column,
+    third_column
     ]
 print('transposed_matrix:{}'.format(transposed_matrix))
 

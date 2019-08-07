@@ -6,11 +6,11 @@
 empty_set =  set()
 print(type(empty_set))
 
-small_set = set([12, 3242, 45])
+small_set = {12, 3242, 45}
 print(type(small_set))
 print(small_set)
 
-small_set = {12, 3242, 45}
+small_set = set([12, 3242, 45])
 print(type(small_set))
 print(small_set)
 
@@ -18,7 +18,7 @@ print('small_set.pop()', small_set.pop())
 print('small_set', small_set)
 
 set_with_one_ele = {12}
-print(type(set_with_one_ele))
+print(set_with_one_ele, type(set_with_one_ele))
 print()
 print('set_with_one_ele', set_with_one_ele)
 set_with_one_ele.discard(12)

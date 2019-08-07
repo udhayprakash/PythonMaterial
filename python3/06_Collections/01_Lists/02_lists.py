@@ -13,22 +13,24 @@ print('type(numbers)', type(numbers))
 print('dir(numbers)=', dir(numbers))
 
 
-print("len(numbers)=", len(numbers))
+print("len(numbers)     =", len(numbers))
 print("numbers.__len__()=", numbers.__len__())
-print(len(numbers) == numbers.__len__())  # True
+assert len(numbers) == numbers.__len__()
 
 print("str(numbers)           =", str(numbers))
 print("type(str(numbers))     =", type(str(numbers)))
 print("numbers.__str__()      =", numbers.__str__())
 print("type(numbers.__str__())=", type(numbers.__str__()))
+assert str(numbers) == numbers.__str__()
 
-# print "help(numbers)=", help(numbers)
+# print("help(numbers)    =", help(numbers))
 # print("numbers.__doc__=", numbers.__doc__)
 
 print("numbers * 3         =", numbers * 3)  # original object not modified
 print('numbers             =', numbers)
 print("numbers.__mul__(3)  =", numbers.__mul__(3))  # original object not modified
 print('numbers             =', numbers)
+
 print("numbers.__imul__(3) =", numbers.__imul__(3))  # original object IS modified
 print('numbers             =', numbers)
 
@@ -47,6 +49,7 @@ print('numbers\t\t\t\t=', numbers)
 
 print("numbers.__add__(alphabets)\t=", numbers.__add__(alphabets))
 print('numbers\t\t\t\t=', numbers)
+
 # list concatenation will create new obect; 
 # orginal objects are not changed
 

@@ -40,6 +40,7 @@ print('type(ml)', type(ml))
 
 print('len(ml)=', len(ml))
 
+# Indexing
 print('ml[3]   ', ml[3])
 print('type(ml[3])', type(ml[3]))
 # print( ml[6])  # Index Error
@@ -50,14 +51,25 @@ print('ml[5][1]', ml[5][1])
 print('ml[5][3]', ml[5][3])
 print('ml[5][3][0]', ml[5][3][0])
 
-# List is a mutable object 
+# [1, 2, 3, 4.3, 5, [6, 7, 8, (9, 10)]]
+#  0  1  2   3   4           5           - forward indexing
+# -6 -5  -4  -3  -2          -1          - reverse indexing
+print('ml[-5]   ', ml[-5])
+
+print(ml[-5] == ml[1])
+assert ml[-5] == ml[1]
+
+print(ml[1:4])
+print(ml[1:4:2])
+
+print('List is a mutable object =======') 
 print('id(ml)      ', id(ml))
 ml[3] = 3.4
 print('ml[3]   ', ml[3])
 print('id(ml)      ', id(ml))
 
 
-# String is a immutable object 
+print('\nString is a immutable object ===')
 name = 'Raj Sekhar'
 print(name) 
 print(name[0:3])
