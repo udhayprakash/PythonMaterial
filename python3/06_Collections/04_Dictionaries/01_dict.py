@@ -12,20 +12,20 @@ Purpose: dictionary demo
 4. They were unordered
 
 """
-empty_dict = {}
-print(empty_dict, type(empty_dict))
+# empty_dict = {}
+# print(empty_dict, type(empty_dict))
 
-empty_dict = dict()
-print(empty_dict, type(empty_dict))
+# empty_dict = dict()
+# print(empty_dict, type(empty_dict))
 
-empty_set = set()
-print(empty_set, type(empty_set))
+# empty_set = set()
+# print(empty_set, type(empty_set))
 
-other_set= {12, 34}
-print(type(other_set))
+# other_set= {12, 34}
+# print(type(other_set))
 
 other_dict = {12:34, 34:56}
-print(type(other_dict))
+# print(other_dict, type(other_dict))
 
 # in python2, dicts doesn't retain the assigned order. 
 # whereas in python3, they wil
@@ -39,11 +39,11 @@ mydict = {
     (1 ,23): {1:23}
 }
 
-print(mydict)
-print(type(mydict))
+# print(mydict)
+# # print(type(mydict))
 
 from pprint import pprint
-pprint(mydict)
+# pprint(mydict)
 
 pprint(mydict, indent=2, width=2)
 
@@ -77,7 +77,7 @@ print(dir(mydict))
 print('===============')
 print(mydict.popitem())  # deletes some key:value in random 
 print(mydict)
-
+print()
 print(mydict.popitem())
 print(mydict)
 
@@ -93,15 +93,10 @@ print('mydict.keys()', mydict.keys())
 print('mydict.values()', list(mydict.values()))
 print('mydict.items()', list(mydict.items()))
 print('-'*50)
-# print('mydict.iterkeys()', mydict.keys())
-# print('mydict.itervalues()', mydict.values())
-# print('mydict.iteritems()', mydict.items())
 
 replica_dict = {}
 replica_dict= replica_dict.fromkeys(mydict, '')
 print('\n\nreplica_dict', replica_dict)
-
-replica_dict['b'] = 'bbb'
 
 # print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 

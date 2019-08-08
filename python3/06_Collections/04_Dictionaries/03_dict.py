@@ -1,21 +1,30 @@
 
 sentence = '''Python is a wonderful language. 
 we can solve any 
-computational problem with this'''
+computational problem with this language'''
 
 '''
-P -23
-a - 34
- - 10 
 
-character frequency analyses  - case sensitive
-word frequency analyses   - case insensitive
 
-{
-    'P': 1,
-    'y': 2,
-    't : 5
-    
-}
+character frequency analyses  
+    - case sensitive
+        {
+            'P': 1,
+            'y': 2,
+            't : 5
+            ....
+        }
+    - case insensitive
+        {
+            'p': 2,
+            'y': 2,
+            't : 5
+            .....
+        }
+word frequency analyses  
+
+
 HINT: setdefault
+
+
 '''
