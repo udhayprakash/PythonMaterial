@@ -8,7 +8,6 @@ name = "Almighty"
 print(name)
 print('name')
 # print(name1) # NameError: name 'name1' is not defined
-# print(name1) # NameError: name 'name1' is not defined
 print('name1')
 
 print('\n\tname =', name)

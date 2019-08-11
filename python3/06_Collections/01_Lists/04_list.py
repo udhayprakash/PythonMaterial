@@ -11,20 +11,22 @@ print('mylist2       = ', mylist2)
 print('type(mylist2) = ', type(mylist2))
 print()
 
-# # list concatenation 
-# newlist = mylist1 + mylist2
-# print('newlist       = ', newlist)
-# print('type(newlist) = ', type(newlist))
-# print()
+# list concatenation 
+newlist = mylist1 + mylist2
+print('newlist       = ', newlist)
+print('type(newlist) = ', type(newlist))
+print()
 
-# print('commutative prop', mylist1 + mylist2 == mylist2 + mylist1)
-# print('mylist1 + mylist2', mylist1 + mylist2)
-# print('mylist2 + mylist1', mylist2 + mylist1)
+print('commutative prop', mylist1 + mylist2 == mylist2 + mylist1)
+print('mylist1 + mylist2', mylist1 + mylist2)
+print('mylist2 + mylist1', mylist2 + mylist1)
 
-# print('mylist1.count(11)  :', mylist1.count(11))
-# print('mylist1.count([11]):', mylist1.count([11]))
+print('mylist1.count(11)     :', mylist1.count(11))
+print('mylist1.count([11])   :', mylist1.count([11]))
+print('mylist1[3].count([11]):', mylist1[3].count([11]))    # 0
+print('mylist1[3].count(11):', mylist1[3].count(11))        # 1
 
-# print('mylist1.count(2)   :', mylist1.count(2))
+print('mylist1.count(2)   :', mylist1.count(2))
 
 # difference between list attributes: append and extend
 print('=====mylist1.extend(mylist2)=====')

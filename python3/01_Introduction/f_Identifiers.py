@@ -18,6 +18,9 @@ keyword.iskeyword('while') # True
 # first character     :  a-z, A-Z, _ 
 # remaining characters:  a-z, A-Z, 0-9, _
 
+# True = 123
+# true = 123
+
 name = 'python'
 name123 = 'something'
 name_soe = 'asdadDF'
@@ -36,7 +39,7 @@ __babu = 'Nagababu'
 # __variable  --> Private variable
 
 # __variable__  --> Builtin functions
-
+#   Ex: __main__, __init__, __file__
 
 # PYTHON IS CASE-SENSITIVE
 ###########################

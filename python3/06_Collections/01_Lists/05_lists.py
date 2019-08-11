@@ -61,5 +61,3 @@ print('mylist1       = ', mylist1)
 
 del mylist1
 print('mylist1       = ', mylist1)
-
-

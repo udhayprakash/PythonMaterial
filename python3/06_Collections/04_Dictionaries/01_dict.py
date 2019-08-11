@@ -12,22 +12,22 @@ Purpose: dictionary demo
 4. They were unordered
 
 """
-# empty_dict = {}
-# print(empty_dict, type(empty_dict))
+empty_dict = {}
+print(empty_dict, type(empty_dict))
 
-# empty_dict = dict()
-# print(empty_dict, type(empty_dict))
+empty_dict = dict()
+print(empty_dict, type(empty_dict))
 
-# empty_set = set()
-# print(empty_set, type(empty_set))
+empty_set = set()
+print(empty_set, type(empty_set))
 
-# other_set= {12, 34}
-# print(type(other_set))
+other_set= {12, 34}
+print(type(other_set))
 
 other_dict = {12:34, 34:56}
 # print(other_dict, type(other_dict))
 
-# in python2, dicts doesn't retain the assigned order. 
+# In python2, dicts doesn't retain the assigned order. 
 # whereas in python3, they wil
 mydict = {
     'name': ['udhay', 'prakash'],

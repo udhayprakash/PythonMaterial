@@ -9,21 +9,31 @@ Purpose: Functions Demo
 
     Function with no arguments and no return value
 """
-# hello()
+# hello() # NameError: name 'hello' is not defined
 
 # Function Definition
 def hello():
     print("Hello world")
     #return None - default
 
+# print(hello())
 
-# print(hello)
-# print('callable(hello)', callable(hello))
-# fruit = 'apple'
-# print('callable(fruit)', callable(fruit))
+# callable()
+print(f'callable(hello)   ={callable(hello)}')
 
-# Function Call 
-hello()
+language = 'python'
+print(f'callable(language)={callable(language)}')
+# language()  # TypeError: 'str' object is not callable
 
-print()
-print(hello())
+# result = hello()
+# print(f'result={result}')
+
+# First class objects 
+# num1 = 123
+# print(f'type(num1)       ={type(num1)}')
+# print(dir(num1))
+# help(num1)
+
+print(f'hello              ={hello}')
+print(f'type(hello)        ={type(hello)}')
+print(f'dir(hello)         ={dir(hello)}')

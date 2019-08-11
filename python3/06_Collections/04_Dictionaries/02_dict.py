@@ -1,28 +1,28 @@
 
-# # ways of creating dictionary 
-# a = {'one': 1, 'two': 2, 'three': 3}
+# ways of creating dictionary 
+a = {'one': 1, 'two': 2, 'three': 3}
 
-# b = dict(one=1, two=2, three=3)
+b = dict(one=1, two=2, three=3)
 
-# c = dict([('two', 2), ('one', 1), ('three', 3)])
+c = dict([('two', 2), ('one', 1), ('three', 3)])
 
-# d = dict(
-#     zip(['one', 'two', 'three'], [1, 2, 3])
-#     )
+d = dict(
+    zip(['one', 'two', 'three'], [1, 2, 3])
+    )
 
-# e = dict({'three': 3, 'one': 1, 'two': 2})
+e = dict({'three': 3, 'one': 1, 'two': 2})
 
-# assert a == b == c == d == e
+assert a == b == c == d == e
 
-# # ############
-# data = [(1, 'red'), (2, 'blue'), (3, 'yellow')]
-# print(dict(data))
+# ############
+data = [(1, 'red'), (2, 'blue'), (3, 'yellow')]
+print(dict(data))
 
-# data = [('red', 1), ('blue', 2), ('yellow', 3)]
-# print(dict(data))
+data = [('red', 1), ('blue', 2), ('yellow', 3)]
+print(dict(data))
 
-# data = (('red', 1), ('blue', 2), ('yellow', 3))
-# print(dict(data))
+data = (('red', 1), ('blue', 2), ('yellow', 3))
+print(dict(data))
 
 # data = (['red', 1], ['blue', 2], ('yellow', 3))
 # print(dict(data))

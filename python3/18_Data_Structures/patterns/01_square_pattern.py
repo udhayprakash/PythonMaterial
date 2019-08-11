@@ -131,6 +131,15 @@ def square_alphabets_descending_2(n):
             print(chr(i + 65), end= ' ')
         print()
 
+def custom_pattern_1(n):
+     """
+        0 0 0 0 0 0 0
+        0 1 1 1 1 1 0
+        0 1 1 1 1 1 0
+        0 0 0 0 0 0 0
+     """
+     pass
+
 if __name__ == '__main__':
     print('-' * 10)
     square_pattern(5)

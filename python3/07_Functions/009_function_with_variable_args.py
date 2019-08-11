@@ -11,6 +11,7 @@ print()
 print(12)
 print(12, '34', 'three')
 print(12, '34', 'three', 'India', 75, 34, 'sdas', 342432, 212.34)
+print()
 
 # Function Definition
 def hello(*feed_in):

@@ -8,18 +8,21 @@ Purpose: Functions Demo
 # Function Definition
 def hello(name, age):
     print("%s's age is %d"%(name, age))
-    # default return is None type object
+    # return 
     # return None
-    # return 12
-    # return 12.0
-    # return 12.0,
-    # return 12,,    # SyntaxError
-    # return (12,),
-    # return {12:34}
-    return "%s's age is %d"%(name, age)
+    # return 3212321
+    # return 3212321.23321
+    # return 3212321.23321,
+    # return 3212321.23321,123
+    # return 2,,  #SyntaxError: invalid syntax
+    # return (2,),
+    # return 'asdas'
+    return 12 + 1231/3%23 - 234
+    
+# NOTE: return will be last executing statement in functions
 
 # Function Call 
 # print(hello('India', 75))
 
 result = hello('India', 75)
-print("result =", result, type(result))
+print(f'result = {result} {type(result)}')

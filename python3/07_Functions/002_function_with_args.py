@@ -9,13 +9,12 @@ Purpose: Functions Demo
 def hello(name):
     print("Hello " + str(name))
 
+# hello() # TypeError: hello() missing 1 required positional argument: 'name'
+hello('Python')
 
-# Function Call 
-# hello() # TypeError: hello() missing 1 required positional argument: 'name'#
-hello('python')
-hello(123)
+# hello('Python', "programming")
+# TypeError: hello() takes 1 positional argument but 2 were given
 
-# hello('python', 123) TypeError: hello() takes 1 positional argument but 2 were given
-
-hello(name=123)
-# hello(name1=123) # TypeError: hello() got an unexpected keyword argument 'name1'
+hello(name='Python')
+# hello(name1='Python')
+# TypeError: hello() got an unexpected keyword argument 'name1'

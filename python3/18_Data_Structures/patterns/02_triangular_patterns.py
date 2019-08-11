@@ -59,7 +59,15 @@ def half_triangle_alphabets_2(n):
             print(chr(j), end= ' ')
         print()
 
-
+"""
+        1
+     1  1  1
+  1  1  1  1  1
+1 1  1  1  1  1  1
+  1  1  1  1  1  
+     1  1  1 
+        1
+"""
 if __name__ == '__main__':
     half_triangle_pattern(5)
     print('-' * 10)
