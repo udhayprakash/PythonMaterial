@@ -16,7 +16,10 @@ def outer():
         print('In Inner function', nnum)
         # default is None
 
-    return inner     #() # function
+    return inner #()
+
+# outer()
+
 
 # inner()  # NameError: name 'inner' is not defined
 # print(nnum)  # NameError: name 'nnum' is not defined
@@ -36,14 +39,14 @@ def make_multiplier_of(n):
 times3 = make_multiplier_of(3)
 
 # Output: 27
-print(times3(9)) # 3 * 9 = 27
+print(times3(9))  # 3 * 9 = 27
 print(times3(10)) # 3 * 10 = 30
 
 # Multiplier of 5
 times5 = make_multiplier_of(5)
 
 # Output: 15
-# print(times5(3))
+print(times5(3))  # 5 * 3 = 15
 
-# # Output: 30
-# print(times5(times3(2)))
+# Output: 30
+print(times5(times3(2)))

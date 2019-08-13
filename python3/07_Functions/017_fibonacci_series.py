@@ -1,7 +1,9 @@
 #!/usr/bin/python
 __author__ = 'udhay prakash'
 """
-Problem 1: Return the fibonacci series (0, 1, 1, 2, 3, 5, 8) 
+Problem 1: Return the fibonacci series
+ (0, 1, 1, 2, 3, 5, 8, 13....) 
+  0  1  2  3  4  5
            using recursions
 """
 def fib(n):
@@ -19,44 +21,47 @@ def fib(n):
                  #             fib ...
 print(fib(5))
 
-# print '='*80
-# factorial(5) = 5*4*3*2*1 =
+for loop_index, num in enumerate(range(50)):
+    print(loop_index, fib(num))
+
+# # print '='*80
+# # factorial(5) = 5*4*3*2*1 =
 
 
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return abs(n) * factorial(abs(n)-1)
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return abs(n) * factorial(abs(n)-1)
 
-print(factorial(0))
-print(factorial(1))
-print(factorial(3))
-print(factorial(5))
+# print(factorial(0))
+# print(factorial(1))
+# print(factorial(3))
+# print(factorial(5))
 
-print(factorial(-5))
-
-
-
-print('='*80)
-
-
+# print(factorial(-5))
 
 
 
-# Infinite loop between these functions  --- Mutual recursion
-def func1():
-    print('I am in function 1 .')
-    return func2()
+# print('='*80)
 
-def func2():
-    print('I am in function 2 .')
-    return func1()
 
-func1()
 
-# '''
-# **NOTE :**
-# - Python doesnot have Tail Call optimization(TCO), to handle the recursive functions.
-# - It is very difficult to add TCO to python, as it is a dynamic language.
-# '''
+
+
+# # Infinite loop between these functions  --- Mutual recursion
+# def func1():
+#     print('I am in function 1 .')
+#     return func2()
+
+# def func2():
+#     print('I am in function 2 .')
+#     return func1()
+
+# func1()
+
+'''
+**NOTE :**
+- Python doesnot have Tail Call optimization(TCO), to handle the recursive functions.
+- It is very difficult to add TCO to python, as it is a dynamic language.
+'''

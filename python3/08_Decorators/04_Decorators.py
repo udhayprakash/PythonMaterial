@@ -10,16 +10,15 @@ def time_taken(func):
         func(*args, **kwargs)
         total = time.time() - start_time
         print(f'Function {func.__name__} took {total} seconds')
-    
     return wrapper
 
 
 @time_taken
 def myfunc(num):
     for _ in range(num):
-        pass 
+        pass
 
 
+myfunc(1000)
 myfunc(10000)
 myfunc(100000)
-myfunc(1000000000)

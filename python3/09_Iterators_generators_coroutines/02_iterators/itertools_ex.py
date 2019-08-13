@@ -1,6 +1,6 @@
 import itertools
 
-for i in itertools.count(7):
+for i in itertools.count(9):
     if i>14:
         break
     print(i)
@@ -35,7 +35,7 @@ for i in itertools.repeat([1,2,3]):
 
 # We can also specify the number of times we want 
 # it to repeat, as a second argument.
-
+print()
 for i in itertools.repeat([1,2,3],4):
-                print(i)
+    print(i)
 

@@ -1,6 +1,8 @@
 """
 Iterable: any object which supports for loop over it.
-    Ex:  string, list, tuple, dictionary, set, frozenset, xrange
+    Ex:  string, list, tuple, dictionary, set, frozenset, range
+
+NON_Iterable: 
 Integer family
     - int
     - float
@@ -8,28 +10,21 @@ Integer family
     - complex
     - boolean
 
-Strings
-
 None
-
-Collections
-    - Lists
-    - Tuples
-    - Sets
-    - Dictionaries
-
+bool
 """
 
 # int
 # for i in 2:
 #     print(i)  # TypeError: 'int' object is not iterable
 
-# string   -- iterable
-for ch in 'python programming':
-    print(ch, end=',')
-
 # for i in None:
 #     print i # TypeError: 'NoneType' object is not iterable
+
+# string   -- iterable
+for ch in 'python programming':
+    print(ch, end=' ')
+print()
 
 # Collections - Lists  - iterable
 names = ['udhay', 'prakash', 'someone']
@@ -65,7 +60,7 @@ for each_name in names.items():
 
 for each_key, each_val in names.items():
     # print('each_key',each_key, 'each_val', each_val)
-    print(f'each_key:{each_key} each_val:{each_val}')
+    print(f'each_key:{each_key}\t\teach_val:{each_val}')
 
 
 print(list('Python Programming'))

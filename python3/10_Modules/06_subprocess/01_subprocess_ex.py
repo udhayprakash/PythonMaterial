@@ -19,7 +19,7 @@ elif platform == 'win32':
     # print(os.system('dir /x C:\Python27'))
     # print(call('dir /x C:\Python27', shell=True))
 
-    myprocess = Popen('diras /x C:\Python27', shell=True, 
+    myprocess = Popen(r'diras /x C:\Python27', shell=True, 
             stderr=PIPE ,stdout=PIPE)
     output, err = myprocess.communicate()
     print('output==============\n', output.decode('utf-8'))

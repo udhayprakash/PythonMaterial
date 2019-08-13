@@ -15,20 +15,17 @@ def outer(func):
 
     return inner
 
-# #############################
+#############################
 # def div(a, b):
 #     return a / b
 
 # print(div(10,3))
-# print(div(10,2.5))
 # # print(div(10,0))
+# print(outer(div)(10,0))
 
-# print(outer(div(10,2.5)))
-
-# breakpoint()
 # ################################
 # foo = outer(div)
-# print(foo(10,3))
+# print(foo(10,0))
 # ################################
 # outer(div)(1,2)
 
