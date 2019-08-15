@@ -5,11 +5,13 @@ import socket
 def convertInteger():
     data = 1234
     # 32-bit
-    print("Original: %s => Long host byte order:%s, Network byte order: %s"\
-    %(data, socket.ntohl(data), socket.htonl(data)))
+    print(f'''Original: {data} 
+            => Long host byte order:{socket.ntohl(data)}, 
+            Network byte order     : {socket.htonl(data)}''')
     # 64-bit
-    print("Original: %s => short host byte order:%s, Network byte order: %s"\
-    %(data, socket.ntohs(data), socket.htons(data)))
+    print(f'''Original: {data} 
+            => short host byte order:{socket.ntohs(data)}, 
+            Network byte order      : {socket.htons(data)}''')
 
 if __name__ == '__main__':
     convertInteger()

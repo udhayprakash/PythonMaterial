@@ -1,5 +1,6 @@
 #!/usr/bin/python
-import socket,sys
+import socket
+import sys
 
 # taking port from first argument
 
@@ -12,13 +13,10 @@ else:
   host = str(sys.argv[1])
   port = int(sys.argv[2])
 
-
-
 # creating a socket
-
 try:
   s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-except socket.error,error:
+except socket.error as error:
   print('Failed to create a socket. Error Code: ' + str(error[0]) + ' , Error message :' + str(error[1]))
   sys.exit()
 

@@ -1,6 +1,6 @@
 import socket
 
-url = raw_input('Enter: ')
+url = input('Enter: ')
 words = url.split('/')
 host = words[2]
 

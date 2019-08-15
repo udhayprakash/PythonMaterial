@@ -16,5 +16,5 @@ class ExampleClass(object):
 
 if __name__ == '__main__':
     example = ExampleClass("Carla", 456)
-    print dir(example)
+    print(dir(example))
     example.example_entry()

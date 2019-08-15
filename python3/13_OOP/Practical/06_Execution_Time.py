@@ -28,9 +28,9 @@ class ExecutionTime:
 
 
 timer = ExecutionTime()
-print dir(timer)
-print callable(timer.start_time)
-print timer.start_time
+print(dir(timer))
+print(callable(timer.start_time))
+print(timer.start_time)
 
 sample_list = list()  # []
 my_list = [random.randint(1, 888898) for num in
