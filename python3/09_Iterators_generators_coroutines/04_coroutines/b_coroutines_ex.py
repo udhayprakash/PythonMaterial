@@ -9,6 +9,7 @@ it = my_coroutine()
 
 print(next(it))  # Prime the coroutine
 
+
 it.send('First')
 it.send('Second')
 it.send('third')

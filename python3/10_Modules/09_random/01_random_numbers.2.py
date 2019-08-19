@@ -7,7 +7,7 @@ Purpose: demonstration of random module
     called the Mersenne Twister. 
 """
 # Pick a random number between 1 and 100.
-print(random.randint(1, 100))  
+print(random.randint(1, 100))                 # 75
 # randint also includes the upper bound value
 
 # Pick a random floating point number between 1 and 10 
@@ -23,7 +23,7 @@ for i in range(3):
 # To shuffle a list of elements
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 random.shuffle(numbers)
-print(numbers)
+print('after shuffle', numbers)
 
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 

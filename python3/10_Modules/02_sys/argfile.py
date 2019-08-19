@@ -4,25 +4,25 @@ Purpose: Importance of sys.argv
 """
 import sys
 print('__file__', __file__)
-print('len(sys.argv)', len(sys.argv))
-print('sys.argv', sys.argv)
+# print('len(sys.argv)', len(sys.argv))
+# print('sys.argv', sys.argv)
 
-if len(sys.argv) != 2:
-    print('PLease provide your lottery ticket no')
-    print('USAGE:')
-    print('      python argfile.py 231asdas')
-    print('      python', __file__, '231sads')
-    sys.exit(0)
+# if len(sys.argv) != 2:
+#     print('PLease provide your lottery ticket no')
+#     print('USAGE:')
+#     print('      python argfile.py 231asdas')
+#     print('      python', __file__, '231sads')
+#     sys.exit(0)
 
 
-print(sys.argv[1])
-winning_ticket = '2312hj124'
-user_ticket = sys.argv[1] #input('Enter ticket no:')  # '1231kjkjb'
+# print(sys.argv[1])
+# winning_ticket = '2312hj124'
+# user_ticket = sys.argv[1] #input('Enter ticket no:')  # '1231kjkjb'
 
-if winning_ticket == user_ticket:
-    print('You won the lottery')
-else:
-    print('Please try again!!!')
+# if winning_ticket == user_ticket:
+#     print('You won the lottery')
+# else:
+#     print('Please try again!!!')
 
 
 ###########################
