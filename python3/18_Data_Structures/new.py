@@ -6,6 +6,7 @@ positive integer (greater than 0) that does not occur
 in A.
 """
 
+
 def solution(A):
     result = sorted(set(filter(lambda x: x>0, A)))
     if (not result) or (result[0] != 1):

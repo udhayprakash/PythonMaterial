@@ -1,9 +1,9 @@
-import datetime as dt
+import datetime as dtm
 
-local_now = dt.datetime.now()
+local_now = dtm.datetime.now()
 print('local now: {}'.format(local_now))
 
-utc_now = dt.datetime.utcnow()
+utc_now = dtm.datetime.utcnow()
 print('utc now  : {}'.format(utc_now))
 
 # You can access any value separately:
@@ -24,12 +24,12 @@ print('formatted2', formatted2)
 
 
 # datetime.strptime() - For converting a datetime string into a datetime object
-my_dt = dt.datetime.strptime('2000-01-01 10:00:00', '%Y-%m-%d %H:%M:%S')
+my_dt = dtm.datetime.strptime('2000-01-01 10:00:00', '%Y-%m-%d %H:%M:%S')
 print('my_dt: {}'.format(my_dt))
 
 
 # datetime.timedelta - For working with time difference.
-tomorrow = local_now + dt.timedelta(days=1)
+tomorrow = local_now + dtm.timedelta(days=1)
 print('tomorrow this time: {}'.format(tomorrow))
 
 delta = tomorrow - local_now
