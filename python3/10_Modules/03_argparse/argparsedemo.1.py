@@ -9,11 +9,11 @@ Purpose: importance and usage of argparse
 # password = 'udhay@123'
 # server_name = 'issadsad.mydomain.in'
 
-
 # # Method 2: input() - run time 
 # user_name = input('Enter username:')
 # password = input('Enter password:')
-# server_name = input('Enter server_name:')
+# server_name = input('Enter server name:')
+
 
 # # Method 3: sys.argv
 # import sys
@@ -25,7 +25,6 @@ Purpose: importance and usage of argparse
 # # server_name = sys.argv[3]
 
 # user_name, password, server_name = sys.argv[1:]
-
 
 # # unpacking 
 # user_name, password, server_name = sys.argv[1:]
@@ -56,10 +55,11 @@ user_name = args.username
 password = args.password
 server_name = args.servername
 
-
 print(f'''
 The server login details are:
     USER NAME   : {user_name}
     PASSWORD    : {password}
     SERVER NAME : {server_name}
 ''')
+
+
