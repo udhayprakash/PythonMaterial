@@ -9,7 +9,7 @@ import socket
 from binascii import hexlify
 
 # convertIp4Address
-for ipAddr in ('127.0.0.1', '192.168.0.1'):
+for ipAddr in ('127.0.0.1', '192.168.47.1'):
    packedIpAddress  = socket.inet_aton(ipAddr)
    unpackedIpAddress = socket.inet_ntoa(packedIpAddress)
    print(f''' 

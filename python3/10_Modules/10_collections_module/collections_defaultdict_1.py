@@ -10,6 +10,10 @@ colours = (
     ('Ahmed', 'Silver'),
 )
 
+# favourite_colours = {}
+# for name, colour in colours:
+#     favourite_colours[name] = favourite_colours.get(name, []) + [colour]
+
 favourite_colours = defaultdict(list)
 for name, colour in colours:
     favourite_colours[name].append(colour)
@@ -17,7 +21,6 @@ for name, colour in colours:
 pprint(favourite_colours)
 
 favourite_colours = defaultdict(set)
-
 for name, colour in colours:
     favourite_colours[name].add(colour)
 

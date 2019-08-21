@@ -18,7 +18,6 @@ print(favs)
 favs = Counter(colour for name, colour in colours)
 print(favs)
 
-
 print()
 print(Counter({'a':2, 'b':3, 'c':1}))
 
@@ -27,7 +26,6 @@ print(Counter(a=2, b=3, c=1))
 
 
 print('-' * 30)
-
 c = Counter()
 print('Initial :', c)
 

@@ -1,5 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: Base 64 encoding
+"""
 import base64
-
 
 # takes byte-string only
 encoded = base64.b64encode(b'data to be encoded')

@@ -19,6 +19,7 @@ bob = Person(name='Bob', age=30, gender='male')
 print('\nRepresentation:', bob)
 
 jane = Person(name='Jane', age=29, gender='female')
+print('\nField by index:', jane[0])
 print('\nField by name:', jane.name)
 
 print('\nFields by index:')
