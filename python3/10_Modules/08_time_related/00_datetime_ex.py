@@ -34,7 +34,7 @@ print('now_using_combine        :', now_using_combine)
 print('type(now_using_combine)  :', type(now_using_combine))
 
 print()
-yesterday = today - datetime.timedelta(1)
+yesterday = today - datetime.timedelta(days=1)
 print('yesterday                :', yesterday)
 print('type(yesterday)          :', type(yesterday))
 

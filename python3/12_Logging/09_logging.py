@@ -6,17 +6,18 @@ import logging
 	Purpose: Demonstartion of logging
 '''
 
-# set my logger
-logger = logging.getLogger('newApp')
-
 # defining the handler
 han = logging.FileHandler('09_logging.log')
 
 # Formatter
-formate = logging.Formatter('%(asctime)s - %(levelname)s - %(name)s - %(message)s')
+formate = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
 
 # creating the formatter for our handle
 han.setFormatter(formate)
+
+
+# set my logger
+logger = logging.getLogger('newApp')
 
 # Adding the handler to the logger. 
 logger.addHandler(han)

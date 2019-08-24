@@ -12,7 +12,7 @@ logging.basicConfig(
 # diskspace=90
 choice = 'Y'
 while choice.upper() == 'Y':
-    diskspace = int(input('Enter the diskspace, in integers : '))
+    diskspace = int(eval(input('Enter the diskspace, in integers : ')))
     if diskspace == 0:
         logging.debug("You have hit the warning message - disspace %d", diskspace)
     elif diskspace > 20 and diskspace < 50:
@@ -24,4 +24,4 @@ while choice.upper() == 'Y':
     else:
         logging.critical("You have hit the warning message - disspace %d", diskspace)
 
-    choice = raw_input("Do you want to retry: Y or N: ")
+    choice = input("Do you want to retry: Y or N: ")

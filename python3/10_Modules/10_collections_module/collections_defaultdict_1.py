@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: 
+    Factory Design Pattern
+"""
 from collections import defaultdict
 from pprint import pprint
 
@@ -10,18 +15,37 @@ colours = (
     ('Ahmed', 'Silver'),
 )
 
-# favourite_colours = {}
-# for name, colour in colours:
-#     favourite_colours[name] = favourite_colours.get(name, []) + [colour]
+favourite_colours = {}
+for name, colour in colours:
+    favourite_colours[name] = favourite_colours.get(name, []) + [colour]
+pprint(favourite_colours)
 
+#################################################################
 favourite_colours = defaultdict(list)
 for name, colour in colours:
     favourite_colours[name].append(colour)
 
 pprint(favourite_colours)
 
+#################################################################
 favourite_colours = defaultdict(set)
 for name, colour in colours:
     favourite_colours[name].add(colour)
 
 pprint(favourite_colours)
+
+#################################################################
+words = ['apple', 'ball', 'cat', 'dog', 'cat']
+wdict = defaultdict(int)
+for word in words:
+    wdict[word] += 1
+
+pprint(wdict)
+
+#################################################################
+name='Bubbles'
+mydict = defaultdict(int)
+for i in name:
+    mydict[i] += 1
+
+pprint(mydict)

@@ -24,7 +24,7 @@ def create_timed_rotating_log(path):
     handler.setFormatter(formatter)
     logger.addHandler(handler)
  
-    for i in range(100000000):
+    for _ in range(100000000):
         logger.info("This is a test!")
         time.sleep(10)
  

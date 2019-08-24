@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# fourth.py
+
 import logging as l  # alias import
 
 # creating a handler

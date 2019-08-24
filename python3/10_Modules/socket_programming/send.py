@@ -6,7 +6,7 @@ import socket,sys
 try:
   s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 except socket.error,error:
-  print('Failed to create a socket. Error Code: ' + str(error[0]) + ' , Error message :' + str(error[1]))
+  print(f'Failed to create a socket. {repr(error)}')
   sys.exit()
 
 print('socket created')

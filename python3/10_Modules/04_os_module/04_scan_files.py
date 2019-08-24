@@ -6,15 +6,20 @@ import os
 
 path = r'C:\Python27'
 # print(os.getcwd())
+# print(os.listdir())
 
 # print(os.listdir(path))
 # print(os.walk(path))
 
-py_files = []
-for each_dir, dirs, files in os.walk(path):
-    for each_file in files:
-        file_etxn = os.path.splitext(each_file)[1]
-        if file_etxn == '.py':
-            py_files.append(each_file)
+def scan_files_by_extn(given_file_etxn, _path):
+    files_with_given_extn = []
+    for ech_dir, list_of_dirs, list_of_file in os.walk(_path):
+        for ech_file in list_of_file:
+            file_etxn = os.path.splitext(ech_file)[1]
+            if file_etxn == given_file_etxn:
+                files_with_given_extn.append(ech_file)
 
-print(f'There are {len(py_files)} py files under {path}')
+    print(f'There are {len(files_with_given_extn)} py files under {path}')
+
+scan_files_by_extn('.py', path)
+

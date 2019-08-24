@@ -18,6 +18,7 @@ print('random.random()', random.random())
 
 # Generate a large pseudo-random number
 print('random.random() * 100', random.random() * 100)
+print('random.random() * 100', random.random() * 100)
 
 # if we set the seed, we guarantee that we will
 # get the same answer

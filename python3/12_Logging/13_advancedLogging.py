@@ -55,7 +55,6 @@ try:
     fileHandler.setFormatter(LogfileFormatter)
     logger.addHandler(fileHandler)
 
-
 except Exception as ex:
     print("Exception occurred.Unable to perform logging.")
     print(ex)

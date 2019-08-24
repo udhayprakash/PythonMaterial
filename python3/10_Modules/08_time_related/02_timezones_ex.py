@@ -18,3 +18,8 @@ print('Paris        : {}, tzinfo: {}'.format(paris_now, paris_now.tzinfo))
 NEW_YORK_TZ = pytz.timezone('America/New_York')
 ny_now = NEW_YORK_TZ.normalize(utc_now)
 print('New York     : {}, tzinfo: {}'.format(ny_now, ny_now.tzinfo))
+
+
+IST_TZ = pytz.timezone('India/Kolkatta')
+ist_now = IST_TZ.normalize(utc_now)
+print('New York     : {}, tzinfo: {}'.format(ist_now, ist_now.tzinfo))

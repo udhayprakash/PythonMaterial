@@ -1,22 +1,19 @@
+import os 
 import subprocess
 
-command_to_execute = 'dir /x'.split(' ')
-# print("subprocess.call==========")
-# print(subprocess.call(command_to_execute))
+command_to_execute = 'ping -n 4 www.google.com'
+command_to_execute = 'dir /x'
+
+# result = os.system(command_to_execute)
+# print(f'result:{result}')
 
 
-# print("subprocess.Popen==========")
-# p = subprocess.Popen(command_to_execute)
-# print(p.communicate())
-
-# p = subprocess.Popen(command_to_execute, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-# print(p.communicate())
-
-args = 'ping -c 4 www.google.com'.split(' ')
-p = subprocess.Popen(args, 
+p = subprocess.Popen(command_to_execute, 
             stdout=subprocess.PIPE, 
             stderr=subprocess.PIPE)
 output, err = p.communicate()
 
+
+breakpoint()
 print(output.decode('utf-8'))
 print(err.decode('utf-8'))

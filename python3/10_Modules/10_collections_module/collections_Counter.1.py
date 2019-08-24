@@ -1,9 +1,15 @@
 from collections import Counter
 
 print(Counter(['a', 'b', 'c', 'a', 'b', 'b']))
-print(Counter('python prgramming'))
+print(Counter('python programming'))
 print() 
 
+print(Counter({'a':2, 'b':3, 'c':1}))
+
+print() 
+print(Counter(a=2, b=3, c=1))
+
+print() 
 colours = (
     ('Yasoob', 'Yellow'),
     ('Ali', 'Blue'),
@@ -13,17 +19,11 @@ colours = (
     ('Ahmed', 'Silver'),
 )
 
+print([name for name, colour in colours])
 favs = Counter(name for name, colour in colours)
 print(favs)
 favs = Counter(colour for name, colour in colours)
 print(favs)
-
-print()
-print(Counter({'a':2, 'b':3, 'c':1}))
-
-print() 
-print(Counter(a=2, b=3, c=1))
-
 
 print('-' * 30)
 c = Counter()
