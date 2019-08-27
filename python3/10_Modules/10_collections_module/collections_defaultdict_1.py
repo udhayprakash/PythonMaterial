@@ -17,7 +17,8 @@ colours = (
 
 favourite_colours = {}
 for name, colour in colours:
-    favourite_colours[name] = favourite_colours.get(name, []) + [colour]
+    # favourite_colours[name] = favourite_colours.get(name, []) + [colour]
+    favourite_colours.setdefault(name, []).append(colour)
 pprint(favourite_colours)
 
 #################################################################

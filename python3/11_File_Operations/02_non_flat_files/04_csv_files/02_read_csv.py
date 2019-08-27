@@ -9,6 +9,7 @@ with open('sample.csv', 'r') as gh:
 
     names = []
     for each_line in data[1:]:
+        each_line = each_line.strip()
         names.append(each_line.split(',')[1])
 
     print(names)

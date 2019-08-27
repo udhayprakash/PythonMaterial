@@ -77,7 +77,7 @@ print('-' * 70)
 import json
 
 json_data = '{"103": {"class": "V", "Name": "Samiya", "Roll_n": 12}, "102": {"class": "V", "Name": "David", "Roll_no": 8}, "101": {"class": "V", "Name": "Rohit", "Roll_no": 7}}';
-print((json.loads(json_data)));
+print(json.loads(json_data));
 
 print('-' * 70)
 
@@ -112,7 +112,7 @@ data = json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))
 print(data)
 
 # pretty printing
-print(json.dumps({'4': 5, '6': 7}, 
+print(json.dumps({44: 5, 6: 7}, 
             sort_keys=True,
             indent=4, 
             separators=(',', ': ')))

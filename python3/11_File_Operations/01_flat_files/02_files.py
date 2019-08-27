@@ -14,8 +14,9 @@ data = fh.read()
 print(type(data))
 print(data)
 
-print('fh.tell()', fh.tell())
+print('before fh.tell()', fh.tell())
 fh.seek(0)
+print('before fh.tell()', fh.tell())
 
 data = fh.read()
 print(type(data))
@@ -29,7 +30,7 @@ print(type(data))
 print(data)
 
 print('fh.tell()', fh.tell())
-fh.seek(26)
+fh.seek(23)
 
 data = fh.read(5)
 print(type(data), data)
@@ -45,4 +46,5 @@ fh.seek(0)
 data = fh.readlines()
 print(type(data),data)
 
+fh.flush()
 fh.close()

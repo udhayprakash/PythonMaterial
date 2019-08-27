@@ -14,5 +14,9 @@ with open('chinese_data.csv','w') as f:
         w.writerow(each_row_data)
 
 
-# chr(99)
+
+# ASCII code 0 to 127
+#  a - 97
+
+# chr(97) -- ord(a)
 #  chr(4000)

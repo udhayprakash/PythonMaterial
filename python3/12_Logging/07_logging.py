@@ -3,6 +3,11 @@ import logging
 
 '''
 	Purpose: To display the logs in console only
+
+	step 1: create handler object and its config 
+	step 2: create logger objects and its config
+	step 3: add the handler to logger object
+	step 4: use the logger object for logging
 '''
 
 # create console handler and set level to debug
@@ -28,3 +33,5 @@ logger.info('info message')
 logger.warning('warning message')
 logger.error('error message')
 logger.critical('critical message')
+
+logging.critical('critical message')

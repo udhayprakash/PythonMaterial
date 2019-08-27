@@ -8,7 +8,7 @@ import csv
 # with is called as a context manager
 with open('sampleCSVFile.csv') as csvFile:
     data = csv.reader(csvFile, delimiter = ',')
-    print data  # it is an iterator object
+    print(data)  # it is an iterator object
     for row in data:
         #print row
         print row[0]

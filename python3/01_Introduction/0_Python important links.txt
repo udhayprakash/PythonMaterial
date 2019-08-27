@@ -96,3 +96,24 @@ websites to practice Python online
 ==================================
 1. https://repl.it/languages/python3
 2. https://glot.io/new/python
+
+
+
+Python Installation binaries
+----------------------------
+	python.org/downloads  -100
+	https://www.anaconda.com/distribution/
+		community version - 130
+		enterprise version - 250
+	python(x,y)
+	active python 
+		community edition 
+		enterprise edition 
+
+
+Python Versions
+----------------
+	Python 2.x 
+		- https://pythonclock.org/
+	Python 3.x 
+		- 

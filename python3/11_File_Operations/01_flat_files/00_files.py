@@ -9,16 +9,17 @@ file operations
     default is read mode
 '''
 fh = open('foo.txt', 'w')
-fh.write('namaste world 1 !\n')
-fh.write('fh world 2 !\n')
+fh.write('This is first line')
 
 print("Name of the file: ", fh.name)
 print("Opening mode    : ", fh.mode)
 
+
 fh.flush()
 print("Closed or not : ", fh.closed)
-fh.close()
+fh.close() # garbage collector
 print("Closed or not : ", fh.closed)
+
 
 # fh.write('fh world 3 !\n')
 # ValueError: I/O operation on closed file.

@@ -23,14 +23,14 @@ pprint(count)
 
 # print(sorted(count.items(), key = lambda i:i[1], reverse= True))
 
-top_three_chars = sorted(count.items(), key = lambda i:i[1], reverse= True)[:3]
-print(top_three_chars)  # [(' ', 7), ('t', 5), ('e', 5)]
+# top_three_chars = sorted(count.items(), key = lambda i:i[1], reverse= True)[:3]
+# print(top_three_chars)  # [(' ', 7), ('t', 5), ('e', 5)]
 
-top_three_chars = sorted(count.items(), key = lambda x:(-x[1], x[0]))[:3]
-                                                       #DESC    ASC
-print(top_three_chars)  # [(' ', 7), ('e', 5), ('t', 5)]
+# top_three_chars = sorted(count.items(), key = lambda x:(-x[1], x[0]))[:3]
+#                                                        #DESC    ASC
+# print(top_three_chars)  # [(' ', 7), ('e', 5), ('t', 5)]
 
-print(dict(top_three_chars))
+# print(dict(top_three_chars))
 
 
 '''

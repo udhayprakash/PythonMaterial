@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: 
+pip install lxml
+"""
 from lxml import etree
 
 # create XML
@@ -10,7 +15,6 @@ child2 = etree.Element('child2')
 child2.text = 'some text'
 root.append(child2)
 child1.append(child2)
-
 
 # pretty string
 s = etree.tostring(root, pretty_print=True)

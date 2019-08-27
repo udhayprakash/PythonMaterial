@@ -1,0 +1,57 @@
+OS - MAC /unix/linux
+     - python 2
+     - python 3 
+
+windows
+    - python2 or 3 
+
+
+
+Windows 
+
+
+
+platform independent language 
+
+
+
+
+c & c++ - fastestly language 
+    - win32 
+    - win64 
+
+java - platform independent
+    - .jar 
+
+
+python - platform independent
+    - priise code 
+    - readd
+
+
+compiler based language 
+    - c, c++, java 
+
+    code - > linkage - > assembly _> machine level 
+
+interpreter based languages 
+    - python 
+
+    code -> each line -> interpreter -> byte code -> assembly _> machine level 
+    python is slow 
+
+    project takes - 100 days 
+                -  40 days 
+
+
+android - kivy 
+
+
+
+
+aspect oriented programming 
+    - bash, shell, 
+functional oriented programming 
+    - c, 
+object oriented programming 
+    - java, c++

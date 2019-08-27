@@ -17,3 +17,6 @@ strings = ['first\n', 'second\n', 'third\n', 'fourth\n']
 fh.writelines(strings)
 fh.flush()
 fh.close()
+
+# assignment
+# .writeline
