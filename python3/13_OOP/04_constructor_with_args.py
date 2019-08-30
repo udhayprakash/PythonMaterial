@@ -5,12 +5,12 @@ class Animal:
     def walk(self):
         print(self.name + ' walks.')
 
+duck = Animal('Duck') 
+# Animal.__init__(duck, 'Duck')
+print(vars(duck))
+print(f'duck.name:{duck.name}')
+duck.walk()
 
-duck = Animal('Duck')  # Animal.__init__(duck, 'Duck')
-duck.walk()  # Animal.walk(duck)
-# print(dir(duck))
 
 rhino = Animal('African Rhino')
 rhino.walk()
-
-print(vars(rhino))

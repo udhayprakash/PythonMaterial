@@ -25,7 +25,7 @@ class Name:
 n = Name() # Name.__init__(n)
 Name()
 
-print(('n=     ', n))
+print('n=     ', n)
 print(('dir(n) ', dir(n)))
 print(('vars(n)', vars(n)))
 help(n)

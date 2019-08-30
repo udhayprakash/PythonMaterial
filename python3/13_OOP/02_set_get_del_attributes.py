@@ -9,10 +9,19 @@ m = MyClass()
 print(m)
 print(dir(m))
 
+# Using bult-in functions
 setattr(m, 'value', 100.23)
-
 print(getattr(m, 'value'))
-print(m.value)
 
 delattr(m, 'value')
-# print(m.value)AttributeError: 'MyClass' object has no attribute 'value'
+# print(getattr(m, 'value'))  # AttributeError: 'MyClass' object has no attribute 'value'
+
+
+# Directly accessing based
+m.value1 = 123
+print(m.value1)
+
+del m.value1
+# print(m.value1)  # AttributeError: 'MyClass' object has no attribute 'value1'
+
+

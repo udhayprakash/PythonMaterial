@@ -6,33 +6,41 @@ Purpose: classes (OOP) introduction
         1. old style classes - python 2 
             class - type - class object 
         2. new style classes - python 2 & 3
-            
+
+PEP 8 -> class names should be in camelCasing    
 """
+# class definition
 class EmptyClass:
     pass
 
-class MyClassName:        # class definition
-    number = 786                # class variable
-    def hello_world(self):      # method
-        return 'hello world'
 
-n = MyClassName()         # Instantiation
-print('n            :', n)
+# Instantiation
+e1 = EmptyClass()
+print(f'e1:{e1} {type(e1)}')
 
-print('MyClassName  :', MyClassName)
-print('MyClassName():', MyClassName())
-print()
-print('type(MyClassName)  :', type(MyClassName))
-print('type(MyClassName()):', type(MyClassName()))
-print('type(n)            :', type(n))
-print()
-print('isinstance(n, MyClassName) :', isinstance(n, MyClassName))
-print('isinstance(1, MyClassName) :', isinstance(1, MyClassName))
-print("__name__", __name__)
 
-print('dir(n)', dir(n))
+# class definition
+class MyClassName:
+    number = 786                # class variables
 
-print('\n', n.hello_world())
-print(MyClassName.hello_world(n))
+    def hello_world(self):      # Methods
+        return "Hello world"
 
-print('n.number', n.number)
+
+c1 = MyClassName
+print(c1, type(c1))
+
+c1 = MyClassName()
+print(c1, type(c1))
+
+print(f'isinstance(c1, MyClassName):{isinstance(c1, MyClassName)}')
+print(f'isinstance(e1, MyClassName):{isinstance(e1, MyClassName)}')
+print(f'isinstance(e1, EmptyClass) :{isinstance(e1, EmptyClass)}')
+
+print(dir(c1))
+
+print(f'c1.number     :{c1.number}')
+print(f'c1.hello_world:{c1.hello_world}')
+
+print(MyClassName.hello_world(c1))
+print(c1.hello_world())

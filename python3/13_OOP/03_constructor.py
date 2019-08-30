@@ -4,39 +4,38 @@ Purpose: OOP demos
 """
 __author__ = 'Developer Name'
 
-# __new__
-class Name:
-    my_class_variable = 'something'         # class variable
-    def __init__(self):                     # constructor
-        print('I am a constructor. ')
-        print('I will be called, the moment you create an instance')
-        myname = 'smething'                 # ordinary variable
-        self.a = 'apple'                    # instance variable
-        # return should not be present for constructor
+class Person:
+    my_class_variable = 'SOmeThing'  # class variables
+
+    def __init__(self):
+        print('COnstructor method called')
+        self.first_name = 'Human'
+        self.last_name = 'Being'
+
+    #NOTE: contructor method shuld have NOne as return 
 
     def my_instance_method(self):
-        print("my instance method")
+        print('INstanace method called')
 
-# instantiation
-n = Name()    # Name.__init__(n)
-# # print(dir(n))
-# m = Name()
-# p = Name  # class object assignment
+p1 = Person()
+print(p1)
 
-# p()
+# Instance methods need to be called, to get executed
+p1.my_instance_method()
 
+# p1.__init__()  # But NOT RECOMMENED, as code deplicate execution
+print(dir(p1))
 
-print('\n----------calling contructor')
-n.__init__()
+print(f'p1.first_name:{p1.first_name}')
+print(f'p1.first_name:{p1.first_name}')
 
-print('=' * 40)
-print('n.__dict__', n.__dict__)
-print('vars(n)   ', vars(n)) # instance variables, not methods
+print(vars(p1))
+assert vars(p1) == p1.__dict__
 
-# print('Name.__dict__', Name.__dict__)
-print('vars(Name)   ', vars(Name)) # class variables, not methods
+########################
+from pprint import pprint
+pprint(vars())
 
-print('\n\nvars()', vars())
 # Note: calling the vars() function without parameters will 
 # return a dictionary containing the local symbol table.
 

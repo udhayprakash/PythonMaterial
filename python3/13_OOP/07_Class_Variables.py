@@ -17,7 +17,7 @@ class Employee:
 
     def __del__(self):
         """
-        destructor
+        default destructor
         :return:
         """
         Employee.empcount -= 1

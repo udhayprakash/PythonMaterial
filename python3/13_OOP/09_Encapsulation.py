@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 
 class Car:
-    a = 1   # public class variable
-    _a = 2  # protected class variable
+    a = 1    # public class variable
+    _a = 2   # protected class variable
     __a = 3  # private class variable
 
     def __init__(self): 
+        self.n = 100
+        self._n = 200
+        self.__n = 300
+        print(f'self.__n:{self.__n}')
         self.__updateSoftware()
 
     def drive(self):     # public instance method
@@ -20,6 +24,9 @@ class Car:
 
 redcar = Car()
 
+print(vars(redcar))
+
+
 # Accessing public method
 redcar.drive()
 
@@ -31,8 +38,8 @@ redcar._cleaning()
 redcar._Car__updateSoftware()
 
 
-print(dir(Car))
+# print(dir(Car))
 
-print('----------------')
-redcar._Car__updateSoftware()
-print(redcar._Car__a)
+# print('----------------')
+# redcar._Car__updateSoftware()
+# print(redcar._Car__a)
