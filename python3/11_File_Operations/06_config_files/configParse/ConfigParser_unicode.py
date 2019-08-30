@@ -1,4 +1,4 @@
-from ConfigParser import SafeConfigParser
+from configparser import SafeConfigParser
 import codecs
 
 parser = SafeConfigParser()
@@ -9,6 +9,6 @@ with codecs.open('unicode.ini', 'r', encoding='utf-8') as f:
 
 password = parser.get('bug_tracker', 'password')
 
-print 'Password:', password.encode('utf-8')
-print 'Type    :', type(password)
-print 'repr()  :', repr(password)
+print('Password:', password.encode('utf-8'))
+print('Type    :', type(password))
+print('repr()  :', repr(password))
