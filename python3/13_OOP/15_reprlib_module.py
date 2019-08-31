@@ -13,7 +13,7 @@ class TheProblem:
         return f'{items}'
 
 p1 = TheProblem(range(50))
-print(p1)
+print(p1) # __repr__
 
 import reprlib
 

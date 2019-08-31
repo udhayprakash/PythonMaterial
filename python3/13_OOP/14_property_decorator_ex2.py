@@ -38,11 +38,12 @@ class Person(object):
     
 # Init a Person 
 person = Person('Udhay', 'Prakash')
-print((person.fullname))  #> Udhay Prakash
+print(person.fullname)  #> Udhay Prakash
 
 # Deleting fullname calls the deleter method, which erases self.first and self.last
 del person.fullname 
+# delattr(person, fullname)
 
 # Print the changed values of `first` and `last`
-print((person.first))  #> None
-print((person.last))  #> None
+print(person.first)  #> None
+print(person.last)  #> None

@@ -39,7 +39,6 @@ class RationalNumber:
         print('deleting the instance')
 
 
-
 # Main
 a = RationalNumber(1, 2)  # a.n = 1,a.d=2
 b = RationalNumber(2)

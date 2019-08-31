@@ -38,9 +38,9 @@ mb = MinBalanceAccount()
 
 print(dir(mb))
 
-print('mb.balance', mb.balance)
-print('mb.deposit(10)', mb.deposit(10))
-print('mb.balance', mb.balance)
+print('mb.balance      ', mb.balance)
+print('mb.deposit(10)  ', mb.deposit(10))
+print('mb.balance      ', mb.balance)
 print('mb.withdraw(100)', mb.withdraw(100))
 
 print('=================================')

@@ -10,4 +10,5 @@ class Person:
 # Instantiation
 p = Person()
 
-# NOTE: When __new__() is defined, __init__() will not be called automatically 
+# NOTE: When __new__() is defined, 
+# __init__() will not be called automatically 

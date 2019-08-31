@@ -4,7 +4,7 @@ Purpose: Multiple Inheritance
 """
 
 
-class MyParent1:  # (object):
+class MyParent1:   #(object):
     p1_cv = 1
 
     def __init__(self):
@@ -32,22 +32,20 @@ class MyParent2:  # (object):
     def subtraction(self, num1, num2):
         self.num1 = num1
         self.num2 = num2
-
         self.result = self.num1 - self.num2
 
 
-class MyChild(MyParent2, MyParent1):
+class MyChild(MyParent1, MyParent2):
     def __init__(self):
         MyParent1.__init__(self)
         MyParent2.__init__(self)
         # super.__init__(self)
 
+    def _hello(self):  # Protected instance method
+        return 'Hello MyChild'
 
 # Instantiation
 ch = MyChild()
 
-# print(dir(ch))
+print(dir(ch))
 print(ch.hello())
-
-# print(dir(MyChild))
-

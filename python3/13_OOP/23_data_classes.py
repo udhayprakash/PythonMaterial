@@ -17,4 +17,5 @@ class Book(object):
 b = Book('Python', 'Mark Lutz')
 print(vars(b))
 print(asdict(b))
+
 print(astuple(b))

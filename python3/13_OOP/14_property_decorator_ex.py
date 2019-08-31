@@ -18,15 +18,15 @@ class Person(object):
 person = Person('Udhay', 'Prakash')
 print(person.email())
 print('person.first', person.first)
+print('person.last ', person.last)
 
-print(person.fullname)  #
+# print(person.fullname())
 
-# person.last = 'chaitanya'
+# After placing property decorator, method
+# can be accessed like a variable
 
-# print(person.fullname) 
+print(person.fullname)
 
-# # # person.fullname = 'raja ram'
-# # # print 'person.fullname', person.fullname
-# # # print 'person.first', person.first 
-# # # # But, 'self.first' and 'self.last' are not changed
+person.last = 'chaitanya'
 
+print(person.fullname)

@@ -26,4 +26,6 @@ class MarsRoverComp():
 
 if __name__ == "__main__":
     z = MarsRoverComp("mars_rover2", "till Mars", "ISRO")
+    print(dir(z))
+    print(dir(z.rocket))
     print(z.rocket.launch())

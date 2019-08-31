@@ -15,6 +15,7 @@ class Foo(object):
 f = Foo(12)
 print(f.x)
 f.x = 1
+f.y = 12
 
 # print(hash(f)) # TypeError: unhashable type: 'Foo'
 

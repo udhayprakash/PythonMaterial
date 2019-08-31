@@ -46,8 +46,8 @@ class Robot:
 
 
 droid1 = Robot("R2-D2")
-droid1.say_hi()
-Robot.how_many()
+droid1.say_hi()   # Instance methods
+Robot.how_many()  # class method
 
 droid2 = Robot("C-3PO")
 droid2.say_hi()

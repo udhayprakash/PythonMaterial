@@ -3,6 +3,7 @@ class Employee:
     name = ""
 
     def __init__(self, i, n):
+        print('constructor executed')
         self.id = i
         self.name = n
 
@@ -20,3 +21,5 @@ e = Employee(10, 'Pankaj')  # creating object
 print(e)  # printing object
 
 print(callable(e))
+
+e()  # __call__
