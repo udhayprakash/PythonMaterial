@@ -1,30 +1,28 @@
-print('Hello world')
+print('hello world')
 
-# aspect oriented programming
+# aspect oriented programming 
 num1 = 123
 num2 = 345
 
-result = num1 + num2 
-print(result)
+num3 = num1 + num2 
+print(num3)
 
 
-# functional oriented programming
+# functional oriented programming 
 def addition(n1, n2):
-    return n1 + n2
+    result = n1 + n2 
+    return result
 
-r1 = addition(num1, num2)
-print(r1)
+print(addition(num1, num2))
 
-
-# Object Oriented 
-
-class AdditionClass:
-    def __init__(self, _n1, _n2):
-        self.n1 = _n1 
-        self.n2 = _n2 
+# Object oriented programming 
+class Addition:
+    def __init__(self, nm1, nm2):
+        self.n1 = nm1 
+        self.n2 = nm2 
 
     def add(self):
         return self.n1 + self.n2 
 
-r2 = AdditionClass(num1, num2)
+r2 = Addition(num1, num2)
 print(r2.add())
