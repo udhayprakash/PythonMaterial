@@ -12,8 +12,8 @@ class Person:
         self.first_name = 'Human'
         self.last_name = 'Being'
 
-    #NOTE: contructor method shuld have NOne as return 
-
+    #NOTE: contructor method should have NOne as return 
+    
     def my_instance_method(self):
         print('INstanace method called')
 
@@ -24,12 +24,14 @@ print(p1)
 p1.my_instance_method()
 
 # p1.__init__()  # But NOT RECOMMENED, as code deplicate execution
-print(dir(p1))
 
+print(dir(p1))
 print(f'p1.first_name:{p1.first_name}')
 print(f'p1.first_name:{p1.first_name}')
 
 print(vars(p1))
+print(p1.__dict__)
+
 assert vars(p1) == p1.__dict__
 
 ########################
@@ -45,3 +47,5 @@ vars(list)
 vars(str)
 vars(dict)
 """
+
+
