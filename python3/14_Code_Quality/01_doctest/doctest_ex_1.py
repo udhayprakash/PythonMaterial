@@ -3,11 +3,12 @@ import doctest
 
 def square(x):
     """Return the square of x.
-
-    >>> square(2)
-    4
-    >>> square(-2)
-    4
+    >>> square(4)
+    16
+    >>> square(-4)
+    16
+    >>> square(0.2)
+    0.04000000000000001
     """
 
     return x * x

@@ -14,6 +14,7 @@ mountain = "Himalayas"  # string
 print(type(mountain))
 print(dir(mountain))
 # help(mountain)
+help(str)
 help(mountain.isalpha)
 
 

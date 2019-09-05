@@ -1,5 +1,6 @@
 class Person:
-    name = []
+    def __init__(self):
+        self.name = []
 
     def set_name(self, user_name):
         self.name.append(user_name)

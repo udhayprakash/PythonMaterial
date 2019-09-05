@@ -1,3 +1,4 @@
+#!/usr/bin/python
 
 
 def fun(x):
@@ -5,3 +6,4 @@ def fun(x):
 
 if __name__ == '__main__':
     print(fun(33))
+    print(fun(-0.2))

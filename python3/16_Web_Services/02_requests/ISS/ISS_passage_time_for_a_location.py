@@ -35,4 +35,4 @@ for each in response_data.get('response'):
     duration = each.get('duration')
     timestamp_raw = each.get('risetime')
     timestamp = datetime.fromtimestamp(timestamp_raw)
-    print(f'The ISS will be overhead {choosen_lat, choosen_long} at {timestamp} for {duration}')
+    print(f'The ISS was overhead {choosen_lat, choosen_long} at {timestamp} for {duration}')

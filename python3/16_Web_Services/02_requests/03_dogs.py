@@ -3,6 +3,7 @@
 https://httpstatusdogs.com/[status_code]
 
 Http response status
+    1xx     - Information
     2xx     - success
     3xx     - redirect
     4xx     - client side

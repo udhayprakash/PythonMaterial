@@ -7,9 +7,9 @@
 import keyword 
 print(keyword.kwlist)
 
-keyword.iskeyword('True')  # True
-keyword.iskeyword('true')  # False
-keyword.iskeyword('while') # True
+print(keyword.iskeyword('True'))  # True
+print(keyword.iskeyword('true'))  # False
+print(keyword.iskeyword('while')) # True
 
 
 
@@ -48,7 +48,6 @@ animal = 'cow'
 Animal = 'Dog'
 
 # print(ANIMAL) #NameError: name 'ANIMAL' is not defined
-
 
 # variable casing
 #################
