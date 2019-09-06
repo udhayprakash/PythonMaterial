@@ -12,36 +12,23 @@ Python 2
 python 3 
     input()  --- raw_input() in python 2 is renamed as input() here
 """
-cost_of_mangos = 12 
-cost_of_apples = 34
+cost_of_apple = 23
+cost_of_mango = 56
 
-customer_name = input('Enter customer name:')
-print(customer_name, type(customer_name))
+qty_of_apples = int(input('Enter qty. of apples(in num):'))
+print('qty_of_apples', qty_of_apples, type(qty_of_apples))
 
+qty_of_mangos = float(input('Enter qty. of mangos(in num):'))
 
-qty_of_mangos =  int(input('Enter qty. of mangos:')) 
-print(qty_of_mangos, type(qty_of_mangos))
+# int(), float(), str()
 
-qty_of_apples = float(input('Enter qty. of apples:'))
-print(qty_of_apples, type(qty_of_apples))
-
-total_cost = cost_of_apples * qty_of_apples + cost_of_mangos * qty_of_mangos # PEMDAS
-
-print('Total Cost =', total_cost)
-
+sp_of_apples = cost_of_apple * qty_of_apples
+print('sp_of_apples:', sp_of_apples)
 
 # Assignment                100
     # discount of 10 %       90
 
-    # GST of 7.5 %           
-
-
-
-
-
-
-
-
+    # GST of 7.5 %  
 
 
 

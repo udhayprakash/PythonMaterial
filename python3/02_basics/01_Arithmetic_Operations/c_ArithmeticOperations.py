@@ -37,10 +37,9 @@ print('myNumber = ', myNumber)
 myNumber **= 10  # myNumber = myNumber ** 10
 print('myNumber = ', myNumber)
 
-# python doesn't support unary operations ; ++i, i++, --i, i--
+# python doesn't support unary operations ; 
+# ++i, i++, --i, i--
 # it should used as i += 1, i -=1
-
-
 
 
 print('-----------------------------------------------')
@@ -52,7 +51,7 @@ print('myNewNumber =', myNewNumber)
 myNewNumber <<= 1  # myNewNumber = myNewNumber << 1
 print('myNewNumber = ', myNewNumber)
 #     8 4 2 1
-# 4   0 1 0 0  = 0 * 8 + 1 * 4 + 0 * 2 + 0 * 1 = 4
+# 4   0 1 0 0  = 0 * 8 + 1 * 4 + 0 * 2 + 0 * 1  = 4
 # <<  1 0 0 0  = 1 * 8 + 0 * 4 + 0 * 2 + 0 * 1  = 8
 
 # 13  1 1 0 1

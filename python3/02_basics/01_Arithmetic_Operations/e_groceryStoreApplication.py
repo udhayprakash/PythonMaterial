@@ -8,17 +8,20 @@ quantity in dozens
 """
 DOZEN = 12
 
-# Per piece cost
-cost_of_mango = 21
-cost_of_apple = 32
+cost_of_apples = 5
+cost_of_mangos = 54
 
-quantity_of_mangos_in_dozens = 4
-quantity_of_apples_in_dozens = 7
+qty_of_apples = 20  # dozens 
+qty_of_mangos = 19 # dozens 
 
-total_cost = (quantity_of_apples_in_dozens * DOZEN) * cost_of_apple \
-                + (quantity_of_mangos_in_dozens * DOZEN * cost_of_mango)
+total_sp = qty_of_apples * DOZEN * cost_of_apples \
+              + qty_of_mangos * DOZEN  * cost_of_mangos
+print('total_sp:', total_sp)
 
-print('Total Cost = ', total_cost)
 
 # PEMDAS
 # Python Execution flow - top-botton & left to right 
+
+# Assignment 
+# Discount : 20%
+# GST      : 12.5 %
