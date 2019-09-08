@@ -7,7 +7,7 @@ class Person(object):
         self.first = firstname
         self.last = lastname
 
-    @property    
+    @property
     def fullname(self):
         return self.first + ' '+ self.last
 
@@ -23,7 +23,7 @@ print('person.last ', person.last)
 # print(person.fullname())
 
 # After placing property decorator, method
-# can be accessed like a variable
+# should be accessed like a variable
 
 print(person.fullname)
 

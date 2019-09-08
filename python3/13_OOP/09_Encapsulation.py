@@ -1,45 +1,50 @@
 #!/usr/bin/env python
+"""
+Purpose: Encapsulation
+Name mangling
+"""
+from pprint import pprint
 
 class Car:
-    a = 1    # public class variable
-    _a = 2   # protected class variable
-    __a = 3  # private class variable
+    a = 'public class variable'
+    _a = 'protected class variable'
+    __a = 'private class variable'
 
-    def __init__(self): 
-        self.n = 100
-        self._n = 200
-        self.__n = 300
-        print(f'self.__n:{self.__n}')
-        self.__updateSoftware()
+    def __init__(self):
+        self.b = 'Public Instance Variable'
+        self._b = 'Protected Instance Variable'
+        self.__b = 'Private Instance Variable'
 
-    def drive(self):     # public instance method
-        print('driving')
+    def instance_method(self):
+        print('Public Instance method')
 
-    def _cleaning(self):  # protected instance method
-        print('cleaning')
+    def _instance_method(self):
+        print('Protected Instance method')
 
-    def __updateSoftware(self): # private instance method
-        print('updating software')
+    def __instance_method(self):
+        print('Private Instance method')
+
+    def new_method(self):
+        print(f'self.__b                : {self.__b}')
+        print(f'self.__instance_method(): {self.__instance_method()}')
+        print(f'Car.__a                 : {Car.__a}')
+
+c = Car()
+pprint(vars(Car))
+
+print('Car.a', Car.a)   # accessing pubic variable
+print('Car._a', Car._a) # accessing protected variable
+
+# print('Car.__a', Car.__a) # accessing private variable
+print('Car._Car__a', Car._Car__a) # accessing private variable
+
+print()
+pprint(vars(c))
 
 
-redcar = Car()
+c.instance_method()
+c._instance_method()
+c._Car__instance_method()
 
-print(vars(redcar))
-
-
-# Accessing public method
-redcar.drive()
-
-# Accessing protected method
-redcar._cleaning()
-
-# Accessing private method
-# redcar.__updateSoftware()  #not accesible from object.
-redcar._Car__updateSoftware()
-
-
-# print(dir(Car))
-
-# print('----------------')
-# redcar._Car__updateSoftware()
-# print(redcar._Car__a)
+print()
+c.new_method()

@@ -9,7 +9,19 @@ types of methods:
 3. class methods
 
 
-Inheritance
-1. single Inheritance
-2. Multiple Inheritance
-	(i) Diamond Inheritance
+
+
+
+OOP
+    - Data binding ( variables and methods)
+    - encapsulation - data  hiding 
+        - public/protected/private 
+    - Inheritance 
+		Inheritance
+			1. single Inheritance
+			2. Multiple Inheritance
+				(i) Diamond Inheritance
+    - Polymorphism - overloading 
+            1 + 2         addition 
+            '1' + '2'     string concatenation 
+            [1, 2] + [2]  list concatenation

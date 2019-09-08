@@ -20,8 +20,10 @@ class Person:  # (object)
 person = Person('Udhay', 'Prakash')
 print(person.first)     #> Udhay
 print(person.last)      #> Prakash
-
 print(person.fullname)  #> Udhay Prakash
+
+person.last = 'Chaitanya'
+print(person.fullname)  #> Udhay Chaitanya
 
 # Setting fullname calls the setter method and updates person.first and person.last
 person.fullname = 'Shyam Benegal'
