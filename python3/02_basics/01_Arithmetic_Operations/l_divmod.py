@@ -3,8 +3,8 @@
 divmod(x,y) returns x//y, x%y 
 """
 
-print("10 // 2        =", 10 // 2)
-print("10 % 2         =", 10 % 2)
+print("10 // 2        =", 10 // 2) # divisor
+print("10 % 2         =", 10 % 2)  # remainder
 print("divmod(10,2)   =", divmod(10, 2))
 
 print()

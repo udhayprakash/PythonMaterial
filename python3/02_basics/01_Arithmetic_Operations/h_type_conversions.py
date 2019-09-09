@@ -68,6 +68,8 @@ print('type(num7)', type(num7))
 # decimal to binary 
 bin(9)
 
+# 8 4 2 1
+# 1 0 0 1
 # binary to decimal 
 print(int(bin(9), base=0))  # '0b1001'
 print((9).bit_length())     #   4

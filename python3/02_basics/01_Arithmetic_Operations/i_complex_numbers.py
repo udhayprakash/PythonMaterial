@@ -41,7 +41,7 @@ print(4j)
 # In these cases, interpreter treats 'j' as a variable.
 
 print("num1.real + num2.imag =", num1.real + num2.imag)
-# print "num1.real + num2.imag * j =", num1.real + num2.imag * j
+print("num1.real + num2.imag * j =", num1.real + num2.imag * j)
 # NameError: name 'j' is not defined
 print("num1.real + num2.imag * 1j = ", num1.real + num2.imag * 1j)
 
