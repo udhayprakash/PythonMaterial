@@ -6,8 +6,9 @@ Purpose: To create a class with singleton design pattern
 
 	Or NOT allowing new instance creation
 """
+from pprint import pprint 
 
-class Singleton:
+class Singleton(Exception):
 	__single = None
 
 	def __init__(self):
@@ -16,9 +17,7 @@ class Singleton:
 		Singleton.__single = self
 
 s = Singleton()
-print(s)
-# print(dir(s))
+pprint(vars(Singleton))
 
+# Doesnt allow to create second instance
 d = Singleton()
-print(d)
-#print dir(d)
