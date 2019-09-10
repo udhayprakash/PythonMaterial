@@ -9,6 +9,7 @@ o = OrdinaryCClass()
 print(dir(o)), 
 print('o.foo', o.foo)
 
+# Dynamically creating attributes
 o.xxx = 12312          # adhoc attribites can be added to instance
 setattr(o, 'yy', 999)
 
@@ -16,6 +17,10 @@ print(vars(o))
 print()
 
 class SlottedClass:
+    """
+    when __slots__ is present, it wont alllow 
+    to create dynamic attributes
+    """
     __slots__ = ('foo', 'bar')
 
     def __init__(self):
