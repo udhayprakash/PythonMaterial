@@ -6,8 +6,7 @@ class OrdinaryCClass:
         self.bar = None 
         
 o = OrdinaryCClass()
-print(dir(o)), 
-print('o.foo', o.foo)
+# print('o.foo', o.foo)
 
 # Dynamically creating attributes
 o.xxx = 12312          # adhoc attribites can be added to instance
@@ -18,7 +17,7 @@ print()
 
 class SlottedClass:
     """
-    when __slots__ is present, it wont alllow 
+    when __slots__ is present, it wont allow 
     to create dynamic attributes
     """
     __slots__ = ('foo', 'bar')
@@ -28,10 +27,10 @@ class SlottedClass:
         self.bar = None 
 
 c = SlottedClass()
-
-print(dir(c))
-print('c.foo', c.foo)
-
+# print(dir(c))
+print(f'c.foo={c.foo}')
+c.foo = 123
+print(f'c.foo={c.foo}')
 
 # can't create new attribute 
 try:
@@ -39,10 +38,5 @@ try:
     setattr(c, 'yy', 999)
 except AttributeError as ex1:
     print(repr(ex1))
-
-
-
-# c.foo = 32
-# print('c.foo', c.foo)
 
 # c.xxx = 123          # adhoc attribites CANT be added to instance

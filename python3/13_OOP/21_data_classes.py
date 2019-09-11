@@ -39,3 +39,26 @@ print(b)
 # print(dir(b))
 
 print(a == b)
+
+##################################
+@dataclass
+class ArithmeticOperations:
+    num1: int 
+    num2: int 
+
+    def addition(self):
+        return self.num1 + self.num2
+
+a = ArithmeticOperations(123, 345)
+# print(dir(a))
+print(f'a.addition():{a.addition()}')
+
+##################################
+@dataclass
+class ArithmeticOperations:
+
+    def addition(self, num1, num2):
+        return num1 + num2
+
+a = ArithmeticOperations()
+print(f'a.addition(123, 345):{a.addition(123, 345)}')

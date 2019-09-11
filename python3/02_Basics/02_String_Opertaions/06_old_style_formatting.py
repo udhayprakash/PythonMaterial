@@ -17,15 +17,15 @@ Purpose: String formatting
 """
 
 print('' % ())
-print('%d' % (12))
-print('%i' % (12))
-# print('%d'%('12'))  # TypeError: %d format: a number is required, not str
+print('NUmber is %d' % (12))
+print('NUmber is %i' % (12))
+# print('NUmber is %d'%('12'))  # TypeError: %d format: a number is required, not str
 
 print()
-print('%s' % ('12'))
-print('%f' % (12.34))
-print('%f' % (12))
-print('%s' % (True))
+print('NUmber is %s' % ('12'))
+print('NUmber is %f' % (12.34))
+print('NUmber is %f' % (12))
+print('NUmber is %s' % (True))
 
 print()
 #%o - octal 
@@ -52,7 +52,7 @@ print('%E' % (12.34)) # 12.34
 
 print()
 import math 
-print('pi', math.pi)     # 3.141592653589793
+print( math.pi)          # 3.141592653589793
 print('%d'% math.pi)     # 3
 print('%f'% math.pi)     # 3.141593
 print('%9f'% math.pi)    #  3.141593
@@ -67,6 +67,8 @@ print('my name is %s - %s.' % ('Udhay', 'Prakash'))
 print()
 print('My name is %s. I am %d old paying a tax of %f')
 print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
+
+# print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
 print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', 78, 15.5))
 # print('My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ))
 #TypeError: not enough arguments for format string
