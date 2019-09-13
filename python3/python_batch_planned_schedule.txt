@@ -1,0 +1,176 @@
+July Batch Course Plan schedule
+--------------------------------------
+29 Jul Python set-up, Introduction
+30 Jul Python Syntax, Arithmetic operations
+31 Jul Arithmetic operations(remaining), input(), String operations
+01 Aug String operations(remaining) 
+02 Aug String formatting, bytearray, ord(), chr(), help usage, pydoc usage, Language components (relational, logical), 
+03 Aug boolean, bitwise, range
+04 Aug identity & conditional operations, loops
+05 Aug loops, Exceptions, Debugging
+06 Aug collections - Lists
+07 Aug collections - Lists(remaining), tuples, sets
+08 Aug dictionaries, comprehensions
+09 Aug Functions
+12 Aug Functions(remaining)
+13 Aug decorators, Iterables,enumerate,all(), any(), Iterators, 
+15 Aug Generators,coroutines, Modules - math
+19 Aug sys, getpass, argparse, random, 
+20 Aug Modules - os, shutil, subprocess, time related - time, datetime, timeit, tqdm, turtle,
+21 Aug Modules - collections,  socket, itertools
+24 Aug user defined modules,Logging
+26 Aug File operations - flat files
+27 Aug File operations - non- flat(pickle, shelve, xml, csv, dat, xls, json, yaml)
+29 Aug File operations - image, zip, config, pyw, db (sqlite3) files
+30 Aug OOPs
+31 Aug OOPs (continuation), 
+04 Sep Code Quality - unit test, doctest, web services (consuming REST API) - urllib, requests
+06 Sep Regular Expressions
+09 Sep Data Science modules - numpy, 
+11 Sep Data Science modules - matplotlib
+09 Sep Data Science modules - pandas, matplotlib
+
+
+July Batch Course Completion audit
+--------------------------------------
+class 1: Python set-up, Introduction
+    https://global.gotomeeting.com/play/recording/525b63bf8c26084228ee4adc67b382244cbae6b857ebf1d0130b609e6f0647d0
+class 2: Python Syntax, Arithmetic operations
+    https://global.gotomeeting.com/play/recording/658f0f9398a5f001ece7a82583bf99b02e373ac57e70b3a496f6d7c2b24dfd60
+class 3: Arithmetic operations(remaining), input(), String operations
+    https://global.gotomeeting.com/play/recording/868273d32532f276f6e91604b8d8f91e89e8c396c04cd2c6fa7e7ad5a9573142
+class 4: String operations
+    https://global.gotomeeting.com/play/recording/a7c9f81d40dfe36bc85f4f74e4daff715bd4aee2a6a0d3ed690465c796fa3c2e
+class 5: String formatting, bytearray, ord(), chr(), help usage, pydoc usage, Language components (relational, logical)
+    https://global.gotomeeting.com/play/recording/1b7e7d36d0faa8e63cacb2161e4b72c3080ae0588f33bc5e49181633faddafa7
+class 6: boolean, bitwise, range
+    https://global.gotomeeting.com/play/recording/78ef5b9b7c8006b07a1e911e7491e5a08402d8f67745ee61876a90a6b493893b
+    https://global.gotomeeting.com/play/recording/56206d3ed4d46316e48bc10ae3e16415df225ac90c758bcddb734f094d76ac79
+class 7: identity & conditional operations, loops
+    https://global.gotomeeting.com/play/recording/d7cd21652aacdec85bf759d3e3c49842b56a41959a2cd926a676c9276793b30a
+class 8: loops, Exceptions, Debugging
+    https://global.gotomeeting.com/play/recording/400da21c0cdccec7ed6a07ec47c92c29c6c557791dd77775950895f294d8f8d9
+class 9: collections - Lists
+    https://global.gotomeeting.com/play/recording/69d4eeb22a79587db7d8ba8777e62fc5be29e958e45fa6a50a4f8736f25e1655
+class 10: collections - Lists(remaining), Tuples & NamedTuples, sets 
+    https://global.gotomeeting.com/play/recording/dd0a287ec5b6ce16c96e82b6a00563a4a0e002a328f13424e9c7049cfe983af1
+class 11: collections - Dictionaries, comprehensions-list, set, dict
+    https://global.gotomeeting.com/play/recording/02e112368c03acb7fbec7a1858418373317c4ac83b0ab3a7c6ddc4ee1edf654b
+class 12: Functions
+    https://global.gotomeeting.com/play/recording/6c093b10a288b9cc92caff3728293771b98170ac7a69c858e7929a650aad6b61
+class 13: Functions
+    https://global.gotomeeting.com/play/recording/14621ec948fa2832a1f9bdddd2c1f56332d3e4178dcf9ce629830d655aa314df
+class 14:
+    https://global.gotomeeting.com/play/recording/c753b4a6f7e681c1f3f21d1643ffad7c21185c90c8eafa2a8a671e732c7308ec
+class 15:
+    https://global.gotomeeting.com/play/recording/d4c68b5dabba09a1d8b965d58600c5bb5efb779922e4d2b175f9bff4caf78bb0
+class 16: 
+    https://global.gotomeeting.com/play/recording/5b86848ef5669d1d63c818a14d11baeff410e1a49604a8545376bd3fe9d85ada
+class 17:
+    https://global.gotomeeting.com/play/recording/033ac008ce0f9c55af5d06fe6f68d7dcfd0b2da1c8ec37b7de2d6b2228e148a7
+class 18:
+    https://global.gotomeeting.com/play/recording/36dc6480af048ff15e7409c31a4c05ea3df8f28b4fef5a6018403d6412f1ad49    
+class 19:
+    https://global.gotomeeting.com/play/recording/980709159d3e2f6d752cf1033be6c2c97f7f60e31bc675798625f4b3733c96e2
+class 20:
+    https://global.gotomeeting.com/play/recording/72960a17e960f58a244f5af6a857907dcefca23c9e8ca57e0dbe143900275966
+class 21:
+    https://global.gotomeeting.com/play/recording/d0406e0706f4123657db580927461f20f6138ea99d8c9034c0a2b86d8087d9a1
+class 22:
+    https://global.gotomeeting.com/play/recording/857fddae4f0405503cc8aad4bbdcf515c5df35e8d49336965581f209514c6a98
+class 23: File Operations(remaining)
+    https://global.gotomeeting.com/play/recording/857fddae4f0405503cc8aad4bbdcf515c5df35e8d49336965581f209514c6a98
+Class 24: OOPs
+    https://global.gotomeeting.com/play/recording/12684e79de605cd8e1519ec20e9875e0de72d268cf679b068bfd17eadd91dd48
+class 25: OOPs(remaining)
+    https://global.gotomeeting.com/play/recording/171f6ec7a736a90e2cba6e452bfb9d7b8a1df5582d0e43837a41b4962a9833a2
+class 26: Code Quality - unit test, doctest, web services (consuming REST API) - urllib, requests
+    https://global.gotomeeting.com/play/recording/5f9e4338c61cbaa5026938e4fa0573865c9fd9889ba89b9d7a2fd00b03c2c379
+class 27: Regular Expressions
+     https://global.gotomeeting.com/public/recording-player.html?s=8c1a0d8a961aa849544d6627cc0cfa4ea092e213ed843af7cfc5da3be7dec321
+class 28:
+     https://global.gotomeeting.com/public/recording-player.html?s=edc9370f74d3b01a6dee6cbd219098fbad2bcede72f372c3e00828200464e364 
+class 29: numpy 
+    https://global.gotomeeting.com/play/recording/4032dcada0f3c22e7523fb5d8e9d2f1c9d8ec3ecf5a7d362479fb01f2fa143d2
+class 30: matplotlib, doubts for previous classes
+    https://global.gotomeeting.com/play/recording/27cbc007713e9036cd4888be0c1c670bbdb81bba76eb60b30cb6090321667389
+
+---------------------------------------------------------------------------
+Morning Batch 
+=============
+
+16 Aug OOPs, Code Quality - unit test, doctest
+18 Aug Regular Expressions
+19 Aug Regular Expressions(remaining)
+20 Aug web services (consuming REST API) - urllib, requests
+21 Aug Data Science modules - numpy, pandas, matplotlib
+
+
+
+
+
+
+
+
+
+
+
+----------
+Morning NEW - batch 141
+--------------
+class 1: 27-Aug-19 Introduction, setup and importance of python
+    https://global.gotomeeting.com/play/recording/d9d687bc23bb44f3d6a70d5f5ec46eb4d2c7df74085dafc46effae947f1197e7
+
+class 2:  Introduction - Python syntax, Indentation Issue, Print(), type() functions
+    https://global.gotomeeting.com/play/recording/8fb9219ae54f199e7b1876a1d803afaa250d825cd3947ae0e3136ecabaacb8ff
+
+class 3: comments, pydoc, help, statement separator, keywords and identifiers
+    https://global.gotomeeting.com/play/recording/1a60603880c1ffcb232150c7df106bd5ace6daae2ff15bc637e89d24487b764c
+    Assignments:
+        1. compute and get the largest number that can be computed in python
+
+class 4: Arithmetic operations, input() function
+    https://global.gotomeeting.com/play/recording/b1abb06685ec88f80d6d19330a7e3f3e9edf8a029659422aafe9c5de9daba586
+
+class 5: Arithmetic Operations(complex numbers, abs()), string operations(quotes, indexing)
+    https://global.gotomeeting.com/play/recording/565da846f61b43df185ad6333553e45a38f77d7b99769f98e0d2a9583c0dfb69
+
+class 6: String Operations (indexing, slicing, attributes)
+    https://global.gotomeeting.com/play/recording/bf799fd16b437c0899c6fcb7011cadc1363bead45f64f31d9bed53e467481fb0
+
+    Assignments
+    ------------
+        1. In a grocery store, the following items are for sale
+
+            item            selling price 
+            -----------------------------
+            rice            55/- per kg 
+            cooking oil     78.34/- per litre
+            salt            25/- per 1 kg packet 
+
+            If a typical family of 4 members consume 2 kg rice, 10g of salt and 200 ml of cooking oil per day, 
+            calculate the amount, a house holder per to pay, such that there is food for all the days of the month.
+
+        2. Based on the previous purchase records, the shop owner decided to make the customers in to three categories:
+            category 1: No discount of any item 
+            category 2: rice 10%, cooking oil 23% and salt- 24.5% discount
+            category 3: flat 15 % of all the items 
+
+            GST : 12.5 % 
+
+            Please calculate the total amount need to be paid.
+
+        3. get the string in runtime and validate HINT: input()
+        4. Display all palindrome numbers btwn 0 and 2000. HINT: str()
+            ex:     1, 222, 333
+    class 7:[11th sept, 2019] String Operations(attributes, formatting)
+        https://global.gotomeeting.com/play/recording/d01cdb33a1f39ec7c7a20fdc75a0eab6fb85a116a87ebc442b12409d9045a656
+--------------------
+sept batch (evening)
+--------------------
+class 0 (5th sept, 2019) : demo
+    https://global.gotomeeting.com/play/recording/6395cdd84d124286c3239a0dac431563de4e8c1beb7ecbed41f5ced8eb52fb4d
+class 1 (9th sept, 2019) : python development setup 
+    https://global.gotomeeting.com/play/recording/77015f35e416366eab9aabc8865b9bf23c3f887f11821af2dd31706bfdd3854a
+class 2 (11th Sept, 2019) : Introduction, Python syntax, Indentation Issue 
+    https://global.gotomeeting.com/play/recording/395695c0348b5456f610024b053dda1a276afc577976ccacb14044b4a6537cff
