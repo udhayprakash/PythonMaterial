@@ -1,3 +1,9 @@
+List of Public APIs : 
+    https://github.com/public-apis/public-apis
+
+Mail-Gun 
+    https://www.mailgun.com/
+    
 http://whc.unesco.org/document/108327
 http://whc.unesco.org/en/documents/108327
 
