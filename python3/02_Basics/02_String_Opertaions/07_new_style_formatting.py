@@ -13,8 +13,9 @@ print('''Name  :{}
          Age   :{} 
          Salary:{}'''.format('udhay', 99, 9999.9999))
 
-print('My Name: {0}. My Name: {0}. My Name: {0}. My Name: {0}. '.format('udhay', 23, 34234))
-
+print('''My Name: {0}. My Name: {0}.
+       My Name: {0}. My Name: {0}. '''.format('udhay', 23, 34234))
+#                                                0      1    2
 print('''
         Name  :{2} 
         Age   :{0} 
@@ -38,9 +39,6 @@ print('''
                  transaction_amount = '20.5 crores',
                  transaction_time = '12th June 1947 12:34:45'
          ))
-
-print("{:,}".format(1234567890.88))
-print("{:_}".format(1234567890.88))
 
 
 result = {
@@ -69,3 +67,7 @@ print('''
          '''.format_map(
                  result
          ))
+
+print("{}".format(1234567890.88))
+print("{:,}".format(1234567890.88))
+print("{:_}".format(1234567890.88))

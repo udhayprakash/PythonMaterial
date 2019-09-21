@@ -25,7 +25,12 @@ print()
 print('NUmber is %s' % ('12'))
 print('NUmber is %f' % (12.34))
 print('NUmber is %f' % (12))
+
+print()  # str()
 print('NUmber is %s' % (True))
+print('NUmber is %s' % (1))
+print('NUmber is %s' % (13.4))
+print('NUmber is %s' % (133224234))
 
 print()
 #%o - octal 
@@ -69,8 +74,9 @@ print('My name is %s. I am %d old paying a tax of %f')
 print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
 
 # print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
-print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', 78, 15.5))
+print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', '78', 15.5))
+
 # print('My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ))
-#TypeError: not enough arguments for format string
+# TypeError: not enough arguments for format string
 
 print('%(language)s has %(number)03d quote types.' % {'language': "Python", "number": 2})

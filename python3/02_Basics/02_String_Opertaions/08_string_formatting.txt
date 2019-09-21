@@ -1,3 +1,5 @@
+case 1:
+-------
 '''
 Hi %s! 
 Thank yu for shopping at XYZ mall. 
@@ -19,6 +21,7 @@ If you didn't do transcation reach out at contact@somebanck.com
 ''' %('Hitesh', 1000.34, '345')
 
 case 3:
+--------
 '''
 Hi %s! 
 Thank yu for shopping at XYZ mall. 

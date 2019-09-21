@@ -7,13 +7,15 @@ Purpose: String formatting
 print('f-strings', '='* 20)
 
 name = 'World'
+print("Hello {name}")
 print(f"Hello {name}")
-# # python operations on data within the f-string 
+# print(f"Hello {name1}")
+# python operations on data within the f-string 
 print(f"Hello {name.upper()}")
 print(f"Hello {name.title()}")
 
 value = 123123
-print(f'The value is {float(value)}')
+print(f'The value is {float(value) + 3}')
 
 NAME='udhay'
 AGE=99
@@ -42,6 +44,7 @@ import decimal
 width = 10
 precision = 4
 value = decimal.Decimal('12.34567')
+print(f'result: {value}')
 print(f'result: {value:{width}.{precision}}')
 
 
