@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Find the longest substring in the given string 
+Purpose: Find the longest palindrome substring in the given string 
 
 """
 
