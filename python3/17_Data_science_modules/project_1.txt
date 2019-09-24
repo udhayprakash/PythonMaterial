@@ -1,0 +1,15 @@
+________________________________________________________________________________
+Project: Sentiment Analyses on twitter tweets using Natural Language Processing 
+________________________________________________________________________________
+Step 1: Create an app in https://developer.twitter.com and get 
+           API Key 
+           API Secret 
+
+           Access Token 
+           Access Token Secret 
+
+Step 2 :
+
+Step 3 : create a scatterplot of the tweeted time of each tweet of that particular handle
+
+NOTE: tweepy python module - http://docs.tweepy.org/en/v3.5.0/api.html
