@@ -12,7 +12,7 @@ list(range(1, 0))                  # []
 
 r = range(0, 20, 2)
 print(r)                           # range(0, 20, 2) # 0, 2, 4, 6, 8, 10, 12, 14 , 16, 18
-
+                                   #                   0  1  2  3  4  5
 r.start                            # 0
 r.stop                             # 20
 r.step                             # 2

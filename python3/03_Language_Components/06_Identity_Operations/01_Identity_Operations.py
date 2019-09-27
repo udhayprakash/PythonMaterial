@@ -13,14 +13,14 @@ is - object level equivalence (address location, value and type) check
 Object
     - value(s)
     - type(s)
-    - address location where it is stored
+    - address location where it is stored - id()
 
 Dual Memory management Strategy
 -5 to 256
 """
 
-print('4 == 4  ', 4 == 4)
-print('4 == "4"', 4 == "4")
+print('4 == 4  ', 4 == 4)     # True
+print('4 == "4"', 4 == "4")   # False
 print('4 is 4  ', 4 is 4)
 print()
 
@@ -96,3 +96,20 @@ print()
 # # print p not is q  # SyntaxError: invalid syntax
 # print(p is not q)
 # print(p != q)
+
+
+
+'''
+>>> v1 = 'udhay'
+>>> v2 = 'udhay'
+>>>
+>>> id(v1)
+35989168
+>>> id(v2)
+35989168
+>>> v2 = 'udhaykjkjkasdkasjdkjasdhkjsahkdjhksjdksajdkdskjashkjdkjashkdjaskjdhkjassssskkjhkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'
+>>> v1 = 'udhaykjkjkasdkasjdkjasdhkjsahkdjhksjdksajdkdskjashkjdkjashkdjaskjdhkjassssskkjhkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'
+>>>
+>>> v1 is v2
+True
+'''

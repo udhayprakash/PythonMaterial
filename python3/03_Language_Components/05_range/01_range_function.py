@@ -22,8 +22,8 @@ print(values2)
 print(list(values2))
 print(tuple(values2))
 
-values3 = range(0, 9, 3)  # range(initialValue, finalValue, step)
-print(values3)  # 0 3 6 
+values3 = range(0, 9, 2)  # range(initialValue, finalValue, step)
+print(values3)  # 0 2 4 6 8
 print(list(values3))
 
 values4 = list(range(9, 0, -1))  # builtin function
@@ -40,10 +40,9 @@ print(list(values6))
 # values7 = range(0.5, 9.5, 1)  # range(initialValue, finalValue, step)
 
 
-for i in range(0,9, 1):
-    # print(i, end='\n') # default 
-    print(i, end=' ')
+for i in range(0, 9, 1):
+    print(i)
 
 
 val = range(9)
-val[0]
+print(val[0])
