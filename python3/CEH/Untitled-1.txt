@@ -1,0 +1,13 @@
+https://github.com/deralexxx/security-apis
+
+https://www.stopforumspam.com/downloads
+
+
+
+To Get the list of Phishing websites (Data Refresh - every 1 hour)
+    http://data.phishtank.com/data/online-valid.csv
+    https://openphish.com/feed.txt
+
+
+To scan and the get the stats of a file (directly or with URL)
+    https://developers.virustotal.com/reference#getting-started
