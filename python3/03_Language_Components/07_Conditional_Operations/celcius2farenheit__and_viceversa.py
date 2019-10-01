@@ -3,14 +3,24 @@
 Purpose: changing weather from C to F OR F to C
 """
 
-mode = str(input(("enter unit in Celsius(c) or Fahrenheit(f): ")))
-temp = int(input(("please enter the temp: ")))
+temp = input("please enter the temp, in c or F(default is c): ").lower().strip()
 
-if mode == 'c':
-    Fahrenheit = round((1.8 * temp) + 32)
-    # print "Temp in *C:", temp, " = ", "Temp in *F:", Fahrenheit    # python 2
-    print(("Temp in *C:" + str(temp) + " = Temp in *F:" + str(Fahrenheit)))  # python 2 & 3
+if 'f' in temp:
+    mode = 'fahrenheit'
+elif 'c' in temp:
+    mode = 'celcius'
 else:
-    Celsius = round((temp - 32) * 5.0 / 9.0)
-    # Celsius = (temp - 32) * 5.0/9.0
-    print(("Temp in *F:" + str(temp) + " = Temp in C:" + str(Celsius)))  # python 2 & 3
+    mode = 'celcius'
+
+
+if mode == 'celcius':
+    celcius = int(temp.strip('c'))
+    Fahrenheit = round((1.8 * celcius) + 32)
+else:# farenheit
+    Fahrenheit = int(temp.strip('f'))
+    celcius = round((Fahrenheit - 32) * 5.0 / 9.0)
+
+print(f'''
+        celcius     : {celcius}
+        farenheit   : {Fahrenheit}
+''')
