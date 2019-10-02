@@ -15,8 +15,9 @@ c.prmonth(2019, 4)
 # In Local language
 # https://docs.microsoft.com/en-us/cpp/c-runtime-library/language-strings?view=vs-2017
 import locale
+
 for x in locale.windows_locale.values():
-    print(x.replace('_','-'))
+    print(x.replace('_', '-'))
 
 c = calendar.LocaleTextCalendar(locale='en-US')
 c.prmonth(2019, 4)
@@ -30,4 +31,3 @@ c.prmonth(2019, 4)
 
 c = calendar.LocaleTextCalendar(locale='sah-RU')
 c.prmonth(2019, 4)
-

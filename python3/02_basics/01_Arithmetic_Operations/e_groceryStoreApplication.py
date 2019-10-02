@@ -12,12 +12,11 @@ cost_of_apples = 5
 cost_of_mangos = 54
 
 qty_of_apples = 20  # dozens 
-qty_of_mangos = 19 # dozens 
+qty_of_mangos = 19  # dozens 
 
 total_sp = qty_of_apples * DOZEN * cost_of_apples \
-              + qty_of_mangos * DOZEN  * cost_of_mangos
+           + qty_of_mangos * DOZEN * cost_of_mangos
 print('total_sp:', total_sp)
-
 
 # PEMDAS
 # Python Execution flow - top-botton & left to right 

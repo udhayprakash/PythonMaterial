@@ -13,6 +13,6 @@ print('password1             :', password1)
 password2 = "".join(choice(characters) for x in range(randrange(8, 16)))
 print('password2             :', password2)
 
-print(''.join(sample(string.ascii_letters, 4))\
-    +''.join(sample(string.digits, 4))\
-    +''.join(sample(string.punctuation, 4)))
+print(''.join(sample(string.ascii_letters, 4)) \
+      + ''.join(sample(string.digits, 4)) \
+      + ''.join(sample(string.punctuation, 4)))

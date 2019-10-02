@@ -33,35 +33,36 @@ print('NUmber is %s' % (13.4))
 print('NUmber is %s' % (133224234))
 
 print()
-#%o - octal 
+# %o - octal 
 print('%o' % (12), oct(12))
-#%x - hexadecimal lowercase 
+# %x - hexadecimal lowercase 
 print('%x' % (12), hex(12))
-#%X - hexadecimal uppercase 
+# %X - hexadecimal uppercase 
 print('%X' % (12), hex(12))
 
 print('%s' % ('12'))
 print('%c' % ('1'))
 
 print()
-print('%f' % (12.34)) # 12.340000
-print('%F' % (12.34)) # 12.340000
+print('%f' % (12.34))  # 12.340000
+print('%F' % (12.34))  # 12.340000
 
 print()
-print('%g' % (12.34)) # 12.34
-print('%G' % (12.34)) # 12.34
+print('%g' % (12.34))  # 12.34
+print('%G' % (12.34))  # 12.34
 
 print()
-print('%e' % (12.34)) # 12.34
-print('%E' % (12.34)) # 12.34
+print('%e' % (12.34))  # 12.34
+print('%E' % (12.34))  # 12.34
 
 print()
-import math 
-print( math.pi)          # 3.141592653589793
-print('%d'% math.pi)     # 3
-print('%f'% math.pi)     # 3.141593
-print('%9f'% math.pi)    #  3.141593
-print('%9.3f'% math.pi)  #     3.142
+import math
+
+print(math.pi)  # 3.141592653589793
+print('%d' % math.pi)  # 3
+print('%f' % math.pi)  # 3.141593
+print('%9f' % math.pi)  # 3.141593
+print('%9.3f' % math.pi)  # 3.142
 ###########################################################
 print()
 print('lucky number is %d only.' % (786))

@@ -9,13 +9,12 @@ print(type(dozen))
 print(dir(dozen))
 help(dozen)
 
-print('='*40)
+print('=' * 40)
 mountain = "Himalayas"  # string
 print(type(mountain))
 print(dir(mountain))
 # help(mountain)
 help(str)
 help(mountain.isalpha)
-
 
 # NOTE: help() usage differs only for string objects

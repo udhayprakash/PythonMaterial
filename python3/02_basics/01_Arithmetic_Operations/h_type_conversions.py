@@ -27,7 +27,6 @@ num4 = int(num3)
 print('num3      ', num3)
 print('type(num3)', type(num3))
 
-
 #####################################
 num3 = 1233222222222222222999999993333333
 print('num3      ', num3)
@@ -38,7 +37,6 @@ num4 = int(num3)
 print('num4      ', num4)
 print('type(num4)', type(num4))
 
-
 #####################################
 num5 = 3.14161718
 print('num5      ', num5)
@@ -48,7 +46,6 @@ print('type(num5)', type(num5))
 num6 = int(num5)
 print('num6      ', num6)
 print('type(num6)', type(num6))
-
 
 # number as string to int
 num7 = int('356')
@@ -72,25 +69,21 @@ bin(9)
 # 1 0 0 1
 # binary to decimal 
 print(int(bin(9), base=0))  # '0b1001'
-print((9).bit_length())     #   4
+print((9).bit_length())  # 4
 
-print(int(bin(-9), base=0)) # '-0b1001'
-print((-9).bit_length())    #   4
+print(int(bin(-9), base=0))  # '-0b1001'
+print((-9).bit_length())  # 4
 
 # decimal to hex : 0-9 A-F
 hex(9)
 # hex to decimal 
-int(hex(9), base=16) 
-
+int(hex(9), base=16)
 
 # decimal to oct :0-7
 oct(9)
 # oct to decimal 
 int(oct(9), base=8)
 
-
-
-
 #### Checks ##################
-(-2.0).is_integer() # True 
+(-2.0).is_integer()  # True 
 (3.2).is_integer()  # False

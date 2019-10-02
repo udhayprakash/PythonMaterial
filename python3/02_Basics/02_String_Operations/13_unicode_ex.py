@@ -40,42 +40,41 @@ Different encoding can be specified by placing the below line in the first line 
 # -*- coding: <encoding name> -*-
 
 '''
-print("\N{GREEK CAPITAL LETTER DELTA}")     # '\u0394' - Using the character name
-print("\u0394")                             # '\u0394' - Using a 16-bit hex value
-print("\U00000394")                         # '\u0394' - Using a 32-bit hex value
+print("\N{GREEK CAPITAL LETTER DELTA}")  # '\u0394' - Using the character name
+print("\u0394")  # '\u0394' - Using a 16-bit hex value
+print("\U00000394")  # '\u0394' - Using a 32-bit hex value
 
 # b'\x80abc'.decode("utf-8", "strict") 
 #  UnicodeDecodeError: 'utf-8' codec can't decode 
 #      byte 0x80 in position 0: invalid start byte
 
-print(b'\x80abc'.decode("utf-8", "replace"))            # '\ufffdabc'
-print(b'\x80abc'.decode("utf-8", "backslashreplace"))   # '\\x80abc'
-print(b'\x80abc'.decode("utf-8", "ignore"))             # 'abc'
+print(b'\x80abc'.decode("utf-8", "replace"))  # '\ufffdabc'
+print(b'\x80abc'.decode("utf-8", "backslashreplace"))  # '\\x80abc'
+print(b'\x80abc'.decode("utf-8", "ignore"))  # 'abc'
 
 # list of encoding standards supported in python 
 # https://docs.python.org/3/library/codecs.html#standard-encodings
 
 # One-character Unicode strings can also be created with the chr() built-in function
-print(chr(57344))   # '\ue000'
-print(ord('\ue000'))# 57344
+print(chr(57344))  # '\ue000'
+print(ord('\ue000'))  # 57344
 
 # unicode to bytes 
 u = chr(40960) + 'abcd' + chr(1972)
 print(u, type(u))
 
-print(u.encode('utf-8'))   # b'\xea\x80\x80abcd\xde\xb4'
+print(u.encode('utf-8'))  # b'\xea\x80\x80abcd\xde\xb4'
 # >>> u.encode('ascii')  
 # Traceback (most recent call last):
 #     ...
 # UnicodeEncodeError: 'ascii' codec can't encode character '\ua000' in
 #   position 0: ordinal not in range(128)
 
-print(u.encode('ascii', 'ignore'))  #  b'abcd'
-print(u.encode('ascii', 'replace')) #  b'?abcd?'
-print(u.encode('ascii', 'xmlcharrefreplace'))  #  b'&#40960;abcd&#1972;'
-print(u.encode('ascii', 'backslashreplace'))  #  b'\\ua000abcd\\u07b4' (inserts a \uNNNN escape sequence)
-print(u.encode('ascii', 'namereplace'))  #  b'\\N{YI SYLLABLE IT}abcd\\u07b4'
-
+print(u.encode('ascii', 'ignore'))  # b'abcd'
+print(u.encode('ascii', 'replace'))  # b'?abcd?'
+print(u.encode('ascii', 'xmlcharrefreplace'))  # b'&#40960;abcd&#1972;'
+print(u.encode('ascii', 'backslashreplace'))  # b'\\ua000abcd\\u07b4' (inserts a \uNNNN escape sequence)
+print(u.encode('ascii', 'namereplace'))  # b'\\N{YI SYLLABLE IT}abcd\\u07b4'
 
 import unicodedata
 

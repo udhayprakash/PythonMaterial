@@ -15,7 +15,7 @@ b_string = bytes(my_string, 'utf-8')
 print(b_string, type(b_string))
 
 # Create a byte of given integer size
-size = 5 
+size = 5
 arr = bytes(size)
 print(arr, type(arr))
 

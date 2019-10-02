@@ -3,7 +3,7 @@
 Purpose: Demonstration of Palindrome check 
 """
 
-my_string1 = 'dad' #'manam' #'adda' # 'mom', 
+my_string1 = 'dad'  # 'manam' #'adda' # 'mom', 
 
 my_string2 = my_string1[::-1]
 

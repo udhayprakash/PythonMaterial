@@ -5,11 +5,13 @@ Purpose:
 """
 from contextlib import contextmanager
 
+
 @contextmanager
 def ctx():
     print('start')
     yield
     print('end')
+
 
 # c = ctx()
 

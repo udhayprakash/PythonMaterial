@@ -34,10 +34,10 @@ def get_elapsed_time(pid):
                 # stop after the first one we find
                 break
         except IndexError:
-            pass    # ignore it
+            pass  # ignore it
     else:
         # didn't find one
-        print "Process PID %s doesn't seem to exist!" % pid
+        print("Process PID %s doesn't seem to exist!" % pid)
         return 0
     pidInfo = [result.split()[1] for result in results
                if result.split()[0] == str(pid)][0]
@@ -65,7 +65,7 @@ def get_elapsed_time(pid):
             minutes = 0
             seconds = int(rest[0])
 
-    elapsed_time = days*24*3600 + hours*3600 + minutes*60 + seconds
+    elapsed_time = days * 24 * 3600 + hours * 3600 + minutes * 60 + seconds
     return elapsed_time
 
 
@@ -78,12 +78,12 @@ def remove_pid(pidfiles):
             with open(filepath) as f:
                 pid = f.read()
                 if not check_pid(int(pid)):
-                    print 'pid file: %s' % i
-                    print 'process does not exist with pid %s' % pid
+                    print('pid file: %s' % i)
+                    print('process does not exist with pid %s' % pid)
                     del_flag = 1
                 elif get_elapsed_time(pid) > max_seconds:
-                    print 'elapsed_time is greater than max_seconds'
-                    print 'tring to kill pid %s' % pid
+                    print('elapsed_time is greater than max_seconds')
+                    print('tring to kill pid %s' % pid)
                     os.kill(int(pid), 9)
                     del_flag = 1
             if del_flag:

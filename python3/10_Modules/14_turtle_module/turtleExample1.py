@@ -12,5 +12,3 @@ bob.forward(50)
 
 # Step 4: We're done!
 turtle.done()
-
-

@@ -19,5 +19,5 @@ utc_dt = datetime.datetime(2014, 11, 2, 15, 25, 0, tzinfo=pytz.utc)
 dt = utc_dt.astimezone(kiev_tz)
 dt.strftime(fmt)
 
-now = datetime.datetime.utcnow().replace(tzinfo = pytz.utc)
+now = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)
 now.astimezone(kiev_tz)

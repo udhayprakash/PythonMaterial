@@ -8,6 +8,7 @@ def generate_qr():
     print("Printing QR code")
     print(url.terminal())
 
+
 generate_qr()
 
 # future Ref: https://pythonhosted.org/PyQRCode/index.html

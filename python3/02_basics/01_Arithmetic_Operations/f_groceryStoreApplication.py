@@ -26,14 +26,9 @@ sp_of_apples = cost_of_apple * qty_of_apples
 print('sp_of_apples:', sp_of_apples)
 
 # Assignment                100
-    # discount of 10 %       90
+# discount of 10 %       90
 
-    # GST of 7.5 %  
-
-
-
-
-
+# GST of 7.5 %  
 
 
 """

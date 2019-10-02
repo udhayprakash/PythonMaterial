@@ -1,4 +1,5 @@
-import secrets 
+import secrets
+
 print(dir(secrets))
 
 print(secrets.choice([1, 2, 3, 4]))
@@ -23,9 +24,9 @@ print(secrets.token_urlsafe(nbytes=10))
 
 ##################################
 sec_gen = secrets.SystemRandom()
-print(dir(sec_gen)) 
+print(dir(sec_gen))
 
-print(sec_gen.randint(0,50))
+print(sec_gen.randint(0, 50))
 # random integer number uisng secrets
 
 print(sec_gen.randrange(4, 40, 4))
@@ -43,6 +44,3 @@ print(sec_gen.choice(number_list))
 
 sec_gen.shuffle(number_list)
 print(number_list)
-
-
-

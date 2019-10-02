@@ -2,7 +2,8 @@
 """
 purpose: sys.platform
 """
-import sys 
+import sys
+
 print('sys.platform', sys.platform)
 
 if sys.platform == 'win32':

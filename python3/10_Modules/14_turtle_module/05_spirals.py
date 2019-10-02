@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-from turtle import * 
-from random import randint 
+from turtle import *
+from random import randint
 
 bgcolor('black')
 x = 1
@@ -13,7 +13,7 @@ while x < 400:
     b = randint(0, 255)
 
     colormode(255)
-    pencolor(r,g,b)
+    pencolor(r, g, b)
     fd(50 + x)
     rt(90.991)
     x = x + 1

@@ -4,7 +4,7 @@ Purpose:
     pip install parse
 """
 
-import parse 
+import parse
 
 result = parse.parse(
     '{greeting}, the time is {now:tt}',

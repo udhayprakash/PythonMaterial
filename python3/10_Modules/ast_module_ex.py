@@ -21,12 +21,10 @@ code = ast.parse('5 * 34 - 2342/2 %23 //3', mode='eval')
 print(type(code), code)
 print(eval(compile(code, '', mode='eval')))
 
-
 code = ast.parse("print('Hello world!')")
 print(type(code), code)
 exec(compile(code, filename="", mode="exec"))
 print(ast.dump(code))
-
 
 # Multi-line ast 
 print()
@@ -42,4 +40,3 @@ print(ast.dump(tree))
 exec(compile(tree, filename="", mode="exec"))
 
 # NOTE: Tools like Pylint uses ASTs to perform static code analysis
-

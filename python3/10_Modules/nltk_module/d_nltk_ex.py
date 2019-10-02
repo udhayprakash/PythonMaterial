@@ -13,8 +13,8 @@ from nltk.stem import WordNetLemmatizer
 ps = PorterStemmer()
 lz = WordNetLemmatizer()
 
-words = ['child','children','childhood','childs', 
-        'indetify']
+words = ['child', 'children', 'childhood', 'childs',
+         'indetify']
 
 for word in words:
     print(f"{word:12}: {ps.stem(word)}")

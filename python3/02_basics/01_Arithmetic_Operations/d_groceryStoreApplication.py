@@ -6,23 +6,17 @@ Store items:
     Rice
     wheat
 """
-cost_of_rice = 10 # kg 
-cost_of_wheat = 23 # kg 
+cost_of_rice = 10  # kg 
+cost_of_wheat = 23  # kg 
 
-qty_of_rice = 23 # kgs 
-qty_of_wheat = 34 # kgs 
-
+qty_of_rice = 23  # kgs 
+qty_of_wheat = 34  # kgs 
 
 sp_of_rice = cost_of_rice * qty_of_rice
 sp_of_wheat = cost_of_wheat * qty_of_wheat
 
 total_sp = sp_of_rice + sp_of_wheat
 print('total_sp:', total_sp)
-
-
-
-
-
 
 # # selling price
 # rice_selling_price = 52  # per kg

@@ -26,11 +26,9 @@ print('%y %m %d-%I:%M:%S %p', local_now.strftime('%y %m %d-%I:%M:%S %p'))
 formatted2 = local_now.strftime('date: %d %b,%Y time:%H:%M:%S')
 print('formatted2', formatted2)
 
-
 # datetime.strptime() - For converting a datetime string into a datetime object
 my_dt = dtm.datetime.strptime('2000-01-01 10:00:00', '%Y-%m-%d %H:%M:%S')
 print(f'my_dt:{my_dt} type(my_dt):{type(my_dt)}')
-
 
 # datetime.timedelta - For working with time difference.
 tomorrow = local_now + dtm.timedelta(days=1)

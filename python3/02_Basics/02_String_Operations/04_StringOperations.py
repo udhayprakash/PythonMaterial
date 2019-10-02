@@ -72,16 +72,16 @@ print()
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
 
 
-print('language.find("t")        :', language.find('t'))   # 2
-print('language.find("n")        :', language.find('n'))   # 5
+print('language.find("t")        :', language.find('t'))  # 2
+print('language.find("n")        :', language.find('n'))  # 5
 
-print('language.rfind("n")       :', language.rfind('n'))  #16
+print('language.rfind("n")       :', language.rfind('n'))  # 16
 print()
-print('language.find("n", 6)     :', language.find('n', 6))#16
-print('language.rfind("n", 15)   :', language.rfind('n', 15))#5
-print('language.find("n", 6, 17) :', language.find('n', 6, 17))#16
+print('language.find("n", 6)     :', language.find('n', 6))  # 16
+print('language.rfind("n", 15)   :', language.rfind('n', 15))  # 5
+print('language.find("n", 6, 17) :', language.find('n', 6, 17))  # 16
 print()
-print('language.find("Prog")     :', language.find('Prog'))   # 7
+print('language.find("Prog")     :', language.find('Prog'))  # 7
 print('language.rfind("Prog")    :', language.rfind('Prog'))  # 7
 print()
 print('language.index("t")       :', language.index('t'))
@@ -91,6 +91,6 @@ print()
 print('language.index("Prog")    :', language.index('Prog'))
 print('language.rindex("Prog")   :', language.rindex('Prog'))
 
-#string attributes - index vs find
-print('language.find("Q")   :', language.find('Q'))     # -1
+# string attributes - index vs find
+print('language.find("Q")   :', language.find('Q'))  # -1
 # print('language.index("Q")   :', language.index('Q'))  # ValueError

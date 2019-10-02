@@ -6,13 +6,11 @@ if sys.platform == 'win32':
 else:
     subprocess.call(['ls', '-1'], shell=True)
 
-
 # Command with shell expansion
 if sys.platform == 'win32':
     subprocess.call('echo %USERNAME%', shell=True)
 else:
     subprocess.call('echo $HOME', shell=True)
-
 
 # p = subprocess.Popen(["echo", "hello world"], stdout=subprocess.PIPE)
 

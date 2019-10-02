@@ -14,7 +14,7 @@ from nltk.tokenize import word_tokenize
 nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 
-words = ['dog','dogs','geese','cacti','erasers','writers',
+words = ['dog', 'dogs', 'geese', 'cacti', 'erasers', 'writers',
          'children', 'childhood', 'feet']
 for word in words:
     print(f"{word:12}: {lemmatizer.lemmatize(word)}")

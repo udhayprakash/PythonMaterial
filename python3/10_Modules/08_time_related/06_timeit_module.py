@@ -38,6 +38,7 @@ sec, 0.000335 sec, 0.000654 sec, 0.000178 sec, 0.000176 sec, 0.000177 sec,
 20 loops, best of 15: 8.75e-06 sec per loop
 """
 import timeit
+
 print(timeit.timeit('"-".join(str(n) for n in range(10))', number=10000))
 print(timeit.timeit('"-".join([str(n) for n in range(10)])', number=10000))
 print(timeit.timeit('"-".join(map(str, range(10)))', number=10000))
@@ -47,7 +48,6 @@ print(timeit.timeit(lambda: "-".join(map(str, range(10))), number=10000))
 # By default, timeit() temporarily turns off garbage 
 # collection during the timing.
 print(timeit.Timer('for i in range(10): oct(i)', 'gc.enable()').timeit())
-
 
 print('\n-----with setup')
 """
@@ -69,7 +69,6 @@ print('\n-----with setup, alternatively')
 t = timeit.Timer("char in lang", setup="lang = 'Python'; char = 't'")
 print(t.timeit())
 print(t.repeat())
-
 
 print('\n----when test code has multiple lines')
 """
@@ -97,7 +96,6 @@ print(timeit.timeit(stmt=s, number=100000))
 s = "if hasattr(str, '__bool__'): pass"
 print(timeit.timeit(stmt=s, number=100000))
 
-
 # attribute is present
 s = """\
 try:
@@ -110,19 +108,24 @@ print(timeit.timeit(stmt=s, number=100000))
 s = "if hasattr(int, '__bool__'): pass"
 print(timeit.timeit(stmt=s, number=100000))
 
-
 print('\n-----passing globals to use global variables')
+
+
 def f(x):
-    return x**2
+    return x ** 2
+
+
 def g(x):
-    return x**4
+    return x ** 4
+
+
 def h(x):
-    return x**8
+    return x ** 8
+
 
 # print(timeit.timeit('[func(42) for func in (f,g,h)]'))
 # NameError: name 'f' is not defined
 print(timeit.timeit('[func(42) for func in (f,g,h)]', globals=globals()))
-
 
 # from timeit import timeit
 

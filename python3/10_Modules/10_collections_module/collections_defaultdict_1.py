@@ -44,7 +44,7 @@ for word in words:
 pprint(wdict)
 
 #################################################################
-name='Bubbles'
+name = 'Bubbles'
 mydict = defaultdict(int)
 for i in name:
     mydict[i] += 1

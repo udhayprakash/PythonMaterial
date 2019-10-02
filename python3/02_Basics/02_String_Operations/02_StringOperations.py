@@ -18,7 +18,6 @@ junkData = "$%^%'^&^* &^'*&^' * uhk"  # single quote enclosed in double quotes
 print('junkData       = ', junkData)
 print('type(junkData) = ', type(junkData))
 
-
 print("'")
 print('"')
 print('\'')
@@ -30,7 +29,6 @@ print("''")
 
 print(''' """ """ ''')
 print(""" ''' ''' """)
-
 
 # multi-line string 
 print('TOday is an awesome day\
@@ -44,7 +42,6 @@ print('''TOday is an awesome day\
             to work ''')
 print("""TOday is an awesome day\
             to work """)
-
 
 print('''TOday is an awesome day
             to work ''')

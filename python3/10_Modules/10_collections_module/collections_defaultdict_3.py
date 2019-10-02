@@ -3,13 +3,15 @@
 Purpose: Inverting a dictionary 
 """
 from collections import defaultdict
-import json 
+import json
+
 
 def tree():
     """
     factory that creates  a defaultdict that also uses this factory 
     """
     return defaultdict(tree)
+
 
 root = tree()
 

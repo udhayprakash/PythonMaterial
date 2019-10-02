@@ -1,9 +1,10 @@
 import turtle
 
+
 def draw_square():
     window = turtle.Screen()
     window.bgcolor("red")
-    
+
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("yellow")
@@ -21,6 +22,7 @@ def draw_square():
         counter += 1
 
     window.exitonclick()
+
 
 if __name__ == "__main__":
     draw_square()

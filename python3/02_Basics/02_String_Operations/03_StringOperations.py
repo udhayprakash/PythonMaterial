@@ -12,7 +12,6 @@ print('STRING OPERATIONS')
 print('--------------------------------------')
 print('string Indexing')
 
-
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   -  forward indexing
 # -18                                  -4 -3 -2 -1    - reverse indexing
@@ -71,7 +70,7 @@ print('language[18:7:-3]', language[18:7:-3])  # 18-3 = 15
 #            i   a o
 #         17 14 11 8
 #         g  m  r  r
-print('language[23:7:-3]', language[23:7:-3]) 
+print('language[23:7:-3]', language[23:7:-3])
 # [23:7:-3] => 23 20 17 14 11 8 
 # [17:7:-3] => 17 14 11 8 
 
@@ -87,8 +86,8 @@ print('language[:]  :', language[:])  # equal to language[0:18:+1]
 print(language)
 
 print('language[::] :', language[::])  # default step = +1=> language[0:18:+1]
-print('language[::1] :', language[::1]) # equal to language[0:18:+1]
-print('language[::3] :', language[::3]) # equal to language[0:18:+3]
+print('language[::1] :', language[::1])  # equal to language[0:18:+1]
+print('language[::3] :', language[::3])  # equal to language[0:18:+3]
 print()
 
 # If step is -ve, and start_index and final_index were not given,
@@ -97,7 +96,6 @@ print()
 print('language[::-1] :', language[::-1])  # string reversal  language[17:-1:-1]=> 17,16,15, .... 3, 2, 1, 0
 print('language[::-2] :', language[::-2])  # string reversal  language[17:-1:-2]
 print('language[::-5] :', language[::-5])  # string reversal  language[17:-1:-5]
-
 
 name = 'manideep'
 print(name[-3:])

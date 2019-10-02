@@ -9,17 +9,16 @@ from nltk.stem import PorterStemmer
 ps = PorterStemmer()
 
 # Stemming individual words
-words = ['write','writer','writing','writers']
+words = ['write', 'writer', 'writing', 'writers']
 for word in words:
     print(f"{word:12}: {ps.stem(word)}")
 print()
 
-words = ['game','gaming','gamed','games']
+words = ['game', 'gaming', 'gamed', 'games']
 for word in words:
     print(f"{word:12}: {ps.stem(word)}")
 print()
 
-
-words = ['child','children','childhood','childs']
+words = ['child', 'children', 'childhood', 'childs']
 for word in words:
     print(f"{word:12}: {ps.stem(word)}")

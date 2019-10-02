@@ -4,7 +4,7 @@ Purpose: String formatting
         F-strings string formatting
 """
 
-print('f-strings', '='* 20)
+print('f-strings', '=' * 20)
 
 name = 'World'
 print("Hello {name}")
@@ -17,9 +17,9 @@ print(f"Hello {name.title()}")
 value = 123123
 print(f'The value is {float(value) + 3}')
 
-NAME='udhay'
-AGE=99
-SALARY=9999.9999
+NAME = 'udhay'
+AGE = 99
+SALARY = 9999.9999
 print(f'''
         Name  :{NAME} , Name  :{NAME}
         Age   :{AGE} 
@@ -30,23 +30,22 @@ print(f'''
 print(f'{"quoted string"}')
 
 # To get braces in string 
-print(f'{4*10}')
+print(f'{4 * 10}')
 print(f'{{4*10}}')
-print(f'{{{4*10}}}')
+print(f'{{{4 * 10}}}')
 
 # PRocessing escape sequences 
-print(f'x={4*10}\n')
-print(fr'x={4*10}\n')
-
+print(f'x={4 * 10}\n')
+print(fr'x={4 * 10}\n')
 
 # format specifier 
 import decimal
+
 width = 10
 precision = 4
 value = decimal.Decimal('12.34567')
 print(f'result: {value}')
 print(f'result: {value:{width}.{precision}}')
-
 
 # String concatenation
 x = 10
@@ -63,7 +62,6 @@ print(f'{name!r}')
 # !a - ascii()
 print(f'{name!a}')
 
-
 #######################
 # f-string vs str.format 
 d = {'a': 10, 'b': 20}
@@ -73,5 +71,4 @@ print(f'a={d["a"]}')
 a = 'b'
 print(f'a={d[a]}')
 
-
-print('{i[";]}'.format(i={'";':4}))
+print('{i[";]}'.format(i={'";': 4}))

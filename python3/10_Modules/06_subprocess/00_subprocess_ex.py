@@ -1,4 +1,4 @@
-import os 
+import os
 import subprocess
 
 # command_to_execute = 'ping -n 4 www.google.com'
@@ -9,10 +9,9 @@ command_to_execute = 'dir /x'
 
 
 p = subprocess.Popen(command_to_execute, shell=True,
-            stdout=subprocess.PIPE, 
-            stderr=subprocess.PIPE)
+                     stdout=subprocess.PIPE,
+                     stderr=subprocess.PIPE)
 output, err = p.communicate()
-
 
 breakpoint()
 print(f'output:{output.decode("utf-8")}')

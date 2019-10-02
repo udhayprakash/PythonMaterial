@@ -2,6 +2,7 @@
 
 import socket
 
+
 def convertInteger():
     data = 1234
     # 32-bit
@@ -12,6 +13,7 @@ def convertInteger():
     print(f'''Original: {data} 
             => short host byte order:{socket.ntohs(data)}, 
             Network byte order      : {socket.htons(data)}''')
+
 
 if __name__ == '__main__':
     convertInteger()

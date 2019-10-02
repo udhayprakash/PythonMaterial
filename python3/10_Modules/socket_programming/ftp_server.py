@@ -12,7 +12,6 @@ handler.authorizer = authorizer
 server = FTPServer(("0.0.0.0", 21), handler)
 server.serve_forever()
 
-
 180000 + 180000 * 0.15 = 207000
 207000 + 207000 * 0.40 = 289800
 
