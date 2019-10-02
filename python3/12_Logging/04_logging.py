@@ -20,6 +20,7 @@ def addition(n1, n2):
     logging.debug('Entered addition func')
     return n1 + n2
 
+
 addition(1, 2)
 addition(1, 2)
 addition(1, 2)

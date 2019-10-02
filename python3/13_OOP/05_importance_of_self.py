@@ -14,7 +14,7 @@ class Name:
         print('I will be called, the moment you create an instance')
         self.s = ''
 
-    def display_names(self): 
+    def display_names(self):
         """
         This is an instance method.
         """
@@ -22,7 +22,7 @@ class Name:
         self.s = 'Something'
 
 
-n = Name() # Name.__init__(n)
+n = Name()  # Name.__init__(n)
 Name()
 
 print('n=     ', n)

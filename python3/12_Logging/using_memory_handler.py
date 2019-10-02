@@ -8,7 +8,7 @@ streamhandler = logging.StreamHandler(sys.stderr)
 streamhandler.setLevel(logLevel)
 streamhandler.setFormatter(formatter)
 memoryhandler = logging.handlers.MemoryHandler(
-    capacity=1024*100,
+    capacity=1024 * 100,
     flushLevel=logging.ERROR,
     target=streamhandler
 )
@@ -20,8 +20,12 @@ logger = logging.getLogger()
 logger.setLevel(logLevel)
 logger.addHandler(memoryhandler)
 logger.addHandler(filehandler)
+
+
 def flush():
     memoryhandler.flush()
+
+
 atexit.register(flush)
 logging.debug("Logger has Initialized")
 sys.stderr.write("I'd like this printed on the console first\n")

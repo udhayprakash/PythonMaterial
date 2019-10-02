@@ -17,12 +17,12 @@ try:
         myLogFolder = "/usr/mylogs"
     elif sys.platform == "win32":  # windows
         myLogFolder = "C:/mylogs"
-    elif sys.platform == "darwin": # MAC
+    elif sys.platform == "darwin":  # MAC
         myLogFolder = "/usr/mylogs"
     else:
         print('Unhandled platform', sys.platform)
         sys.exit(1)
-        
+
     logger = logging.getLogger(fileName)
     logger.debug('my log folder is %s', myLogFolder)
 

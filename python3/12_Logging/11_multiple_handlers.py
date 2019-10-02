@@ -4,10 +4,9 @@ Purpose; multiple loggers
         - FileHandler 
         - StreamHandler
 """
-import logging 
+import logging
 import sys
 import os
-
 
 fmt = logging.Formatter('%(asctime)s %(levelname)8s %(name)s %(message)s')
 
@@ -16,10 +15,9 @@ stdout.setFormatter(fmt)
 
 errfile = logging.FileHandler(
     filename=os.path.splitext(__file__)[0] + '.log'
-    )
+)
 errfile.setFormatter(fmt)
 errfile.setLevel('ERROR')
-
 
 logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')

@@ -11,5 +11,5 @@ found = parser.read(candidates)
 
 missing = set(candidates) - set(found)
 
-print 'Found config files:', sorted(found)
-print 'Missing files     :', sorted(missing)
+print('Found config files:', sorted(found))
+print('Missing files     :', sorted(missing))

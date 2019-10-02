@@ -45,7 +45,8 @@ class MyClass(Loggable):
         # super(MyClass, self).__init__(logFileName="log2.txt")
 
     def doSomeThing(self):
-        print "Doing Something!!!"
+        print
+        "Doing Something!!!"
         self.log("I did something!")
         self.log("Some debugging info", logging.DEBUG)
         self.warn("Something bad happened!")

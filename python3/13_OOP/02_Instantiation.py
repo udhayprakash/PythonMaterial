@@ -9,27 +9,31 @@ Purpose: classes (OOP) introduction
 
 PEP 8 -> class names should be in camelCasing    
 """
+
+
 # class definition
 class EmptyClass:
     pass
+
 
 # Instantiation
 e1 = EmptyClass()
 print(f'e1:{e1} {type(e1)}')
 
+
 ########################################
 # class definition
 class MyClassName:
-    number = 786                # class variables
+    number = 786  # class variables
 
-    def hello_world(self):      # Methods
+    def hello_world(self):  # Methods
         return "Hello world"
 
 
-c1 = MyClassName       # class
+c1 = MyClassName  # class
 print(c1, type(c1))
 
-c1 = MyClassName()     # instance
+c1 = MyClassName()  # instance
 print(c1, type(c1))
 
 print(f'isinstance(c1, MyClassName):{isinstance(c1, MyClassName)}')
@@ -45,7 +49,7 @@ print(f'c1.hello_world():{c1.hello_world()}')
 print(MyClassName.hello_world(c1))
 
 # ----------------------------------------------
-c2 = MyClassName()     # instance
+c2 = MyClassName()  # instance
 print(c2, type(c2))
 print(f'c2.hello_world():{c2.hello_world()}')
 print(MyClassName.hello_world(c2))

@@ -70,6 +70,7 @@ def insert_values_in_db(db_file):
     connection.commit()
     cursor.close()
 
+
 def retrive_values_from_db(db_file):
     connection = sqlite3.connect(db_file)
     cursor = connection.cursor()

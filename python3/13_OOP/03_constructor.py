@@ -4,6 +4,7 @@ Purpose: OOP demos
 """
 __author__ = 'Developer Name'
 
+
 class Person:
     my_class_variable = 'SOmeThing'  # class variables
 
@@ -12,10 +13,11 @@ class Person:
         self.first_name = 'Human'
         self.last_name = 'Being'
 
-    #NOTE: contructor method should have NOne as return 
-    
+    # NOTE: contructor method should have NOne as return 
+
     def my_instance_method(self):
         print('INstanace method called')
+
 
 p1 = Person()
 print(p1)
@@ -36,6 +38,7 @@ assert vars(p1) == p1.__dict__
 
 ########################
 from pprint import pprint
+
 pprint(vars())
 
 # Note: calling the vars() function without parameters will 
@@ -47,5 +50,3 @@ vars(list)
 vars(str)
 vars(dict)
 """
-
-
