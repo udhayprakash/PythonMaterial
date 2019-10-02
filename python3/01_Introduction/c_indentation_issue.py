@@ -3,7 +3,6 @@
 Purpose: Importance of Indentation 
 """
 
-
 print('Hello world')
 #  print('Hello world')       
 # IndentationError: unexpected indent
@@ -18,7 +17,7 @@ if 12 < 34:
 
 if 12 > 34:
     print('greater')
-else: 
+else:
     print('It is lesser')
 
 for i in range(9):
@@ -26,7 +25,7 @@ for i in range(9):
 
 if 1 < 2:
     if 2 < 3:
-        if 3< 4:
+        if 3 < 4:
             if 4 < 5:
                 print('LESSER')
         else:
@@ -34,30 +33,26 @@ if 1 < 2:
     else:
         print('something')
 
-
-if  1< 2:
+if 1 < 2:
     print('case 1')
-elif  2> 1:
+elif 2 > 1:
     print('case 2')
-else: 
+else:
     print('case 3')
 
-
-i = 0 
+i = 0
 while i < 10:
     print(i)
     i += 1
 
-
-i = 0 
+i = 0
 while i < 10:
-    j=0
+    j = 0
     while j < 10:
-        print(i ,'*', j, '=', i * j)
+        print(i, '*', j, '=', i * j)
         j += 1
     print()
     i += 1
-
 
 # tabs vs white-space
 # PEP 8 (Python Enhancement Proposal) - code style guide

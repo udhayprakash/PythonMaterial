@@ -36,7 +36,6 @@ print('()               ', bool(()))
 print('[]               ', bool([]))
 print('{}               ', bool({}))
 
-
 print('bool(None)       ', bool(None))
 # True, False
 print('bool(True)       ', bool(True))
@@ -44,4 +43,4 @@ print('bool(False)      ', bool(False))
 print()
 ##########################
 
-print('bool(9>34)', bool(9>34))  # bool(False) => False
+print('bool(9>34)', bool(9 > 34))  # bool(False) => False

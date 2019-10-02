@@ -1,19 +1,19 @@
 #!usr/bin/env python
 
-#calculator program
+# calculator program
 
-#this variable tells the loop whether it should loop or not.
+# this variable tells the loop whether it should loop or not.
 # 1 means loop. anything else means don't loop.
 
 # loop = 1
 
-#this variable holds the user's choice in the menu:
+# this variable holds the user's choice in the menu:
 
 choice = 0
 
-while True: #loop == 1:
-    #print what options you have
-    print("================================"*2)
+while True:  # loop == 1:
+    # print what options you have
+    print("================================" * 2)
     print("Welcome to calculator.py")
 
     print("your options are:")
@@ -45,6 +45,6 @@ while True: #loop == 1:
         div2 = eval(input("by this: "))
         print(div1, "/", div2, "=", div1 / div2)
     elif choice == 5:
-        break #loop = 0
-	
+        break  # loop = 0
+
 print("Thankyou for using calculator.py!")

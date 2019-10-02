@@ -17,11 +17,11 @@ while i <= 10:
         # print('{:2} * {:2} = {:3}'.format(i, j, i * j))
         # print(f'{i:2} * {j:2} = {i *j : 3}')
         # print(i, str(i).zfill(2))
-        print(f'{str(i).zfill(2)} * {str(j).zfill(2)} = {str(i*j).zfill(3)}')
+        print(f'{str(i).zfill(2)} * {str(j).zfill(2)} = {str(i * j).zfill(3)}')
         j += 1
 
     # print(i)
-    i += 1 #    i = i + 1
+    i += 1  # i = i + 1
     print('-' * 20)
 
 # p = 10

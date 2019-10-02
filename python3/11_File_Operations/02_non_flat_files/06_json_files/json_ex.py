@@ -9,13 +9,13 @@ strings
     dumps  --- python object to string 
 
 """
-import json 
+import json
 
-my_dict = {'a':1, "b":2}
+my_dict = {'a': 1, "b": 2}
 
 print(json.dumps(my_dict))
 
-my_tuple = (None, True, 0, -0.004, [1,2],  (4,), "tom", 'cruise')
+my_tuple = (None, True, 0, -0.004, [1, 2], (4,), "tom", 'cruise')
 
 print(json.dumps(my_tuple))
 
@@ -30,6 +30,7 @@ data = gh.read()
 # Default encoding scheme 
 #     python 2 - ASCII
 #     python 3 - UTF-8
-    
-import ast 
+
+import ast
+
 print((ast.literal_eval(data)))

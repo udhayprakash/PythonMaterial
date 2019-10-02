@@ -30,7 +30,6 @@ for year in range(1000, 2100):
     else:
         print(f'year {year} is a common year')
 
-
     if calendar.isleap(year):
         print(f'year {year} is a LEAP year')
     else:

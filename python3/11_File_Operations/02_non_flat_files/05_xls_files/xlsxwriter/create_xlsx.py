@@ -4,7 +4,7 @@ import xlsxwriter
 
 file_path = str(os.path.abspath(os.path.join(os.path.expanduser('~'), 'Desktop')))
 excel_path = file_path + os.sep + 'my_excel_file.xlsx'
-print "excel path", excel_path
+print("excel path", excel_path)
 
 workbook = xlsxwriter.Workbook(excel_path)
 worksheet1 = workbook.add_worksheet('Report')

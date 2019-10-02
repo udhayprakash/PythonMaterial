@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import json
-from pprint import pprint 
+from pprint import pprint
 
 book = {}
 book['title'] = 'Python Programming Essentials'

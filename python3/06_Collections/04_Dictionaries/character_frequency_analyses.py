@@ -2,11 +2,12 @@
 __author__ = 'udhay'
 
 from pprint import pprint
+
 sentence = "It is always seen imposible, until we attempt!"
 
 count = {}
 for character in sentence:
-    count[character] = count.get(character,0) + 1
+    count[character] = count.get(character, 0) + 1
 
 pprint(count)
 

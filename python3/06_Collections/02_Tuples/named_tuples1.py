@@ -5,8 +5,7 @@ named tuples provide
 2. access by keyname - like dictionaries
 3. using getattr()
 """
-student_details  = ('Nandini', '19', '2541997')
-
+student_details = ('Nandini', '19', '2541997')
 
 import collections
 
@@ -24,7 +23,7 @@ print("The Student age using index is : ", S[1])
 # Access using name 
 print("The Student name using keyname is : ")
 print('S.name', S.name)
-print('S.age',  S.age)
+print('S.age', S.age)
 print('S.DOB ', S.DOB)
 
 print("hasattr(S, 'DOB')", hasattr(S, 'DOB'))

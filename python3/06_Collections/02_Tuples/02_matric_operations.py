@@ -1,4 +1,3 @@
-
 matrix = [
     (1, 2, 3),
     [4, 5, 6],
@@ -8,7 +7,6 @@ matrix = [
 print('ORIGINAL matrix:', matrix)
 for row in matrix:
     print(row)
-
 
 print('\n==============')
 
@@ -28,6 +26,5 @@ transposed_matrix = [
     first_column,
     second_column,
     third_column
-    ]
+]
 print('transposed_matrix:{}'.format(transposed_matrix))
-

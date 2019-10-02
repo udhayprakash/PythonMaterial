@@ -27,4 +27,4 @@ elif customer == 'nocredit':
     amt = (a_qty * apple + m_qty * mango + s_qty * sugar + o_qty * oil)
     print((("Hi %s, the total amt you have to pay is$%d") % (name, amt)))
 else:
-    print ("please enter correct type of customer")
+    print("please enter correct type of customer")

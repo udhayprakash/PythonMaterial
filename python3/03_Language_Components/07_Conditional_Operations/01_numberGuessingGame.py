@@ -5,7 +5,7 @@ Purpose: Number Guessing Game
 """
 __author__ = 'Python Tutor'
 
-lucky_number  = 78
+lucky_number = 78
 
 guessed_number = int(input('Enter no. btwn 0 & 100:'))
 
@@ -24,4 +24,3 @@ elif guessed_number > lucky_number:
     print('Decrese your guessing number!!')
 else:
     print('CONGRATULATION ON GUESSING CORRECTLY')
-

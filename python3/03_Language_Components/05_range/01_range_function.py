@@ -8,11 +8,11 @@ default initialValue = 0
 default step = +1
 """
 
-values = range(9) # range(finalValue)
+values = range(9)  # range(finalValue)
 print(values)
 print('type(values):', type(values))
 
-values1 = range(0, 9) # range(initialValue, finalValue)
+values1 = range(0, 9)  # range(initialValue, finalValue)
 print(values1)
 
 values2 = range(0, 9, 1)  # range(initialValue, finalValue, step)
@@ -30,7 +30,7 @@ values4 = list(range(9, 0, -1))  # builtin function
 print(list(values4))  # 9 8 7 6 5 4 3 2 1
 
 values4 = list(range(9, 0, -2))  # builtin function
-print(list(values4)) # 9 7 5 3 1
+print(list(values4))  # 9 7 5 3 1
 
 values6 = range(0, 9, -1)  # range(initialValue, finalValue, step)
 print(values6)
@@ -42,7 +42,6 @@ print(list(values6))
 
 for i in range(0, 9, 1):
     print(i)
-
 
 val = range(9)
 print(val[0])

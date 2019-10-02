@@ -23,21 +23,21 @@ print('mylist2 + mylist1', mylist2 + mylist1)
 
 print('mylist1.count(11)     :', mylist1.count(11))
 print('mylist1.count([11])   :', mylist1.count([11]))
-print('mylist1[3].count([11]):', mylist1[3].count([11]))    # 0
-print('mylist1[3].count(11):', mylist1[3].count(11))        # 1
+print('mylist1[3].count([11]):', mylist1[3].count([11]))  # 0
+print('mylist1[3].count(11):', mylist1[3].count(11))  # 1
 
 print('mylist1.count(2)   :', mylist1.count(2))
 
 # difference between list attributes: append and extend
 print('=====mylist1.extend(mylist2)=====')
-mylist1.extend(mylist2) # .__iadd__ - into same dimension
+mylist1.extend(mylist2)  # .__iadd__ - into same dimension
 print('mylist1       = ', mylist1)
 
 print('=== reinitializing the list ===')
 mylist1 = [1, 11, 111, [11]]
 
 print('=====mylist1.append(mylist2)=====')
-mylist1.append(mylist2)  #- into separate dimension
+mylist1.append(mylist2)  # - into separate dimension
 print('mylist1       = ', mylist1)
 
 print('--- mylist1.append(9999)')

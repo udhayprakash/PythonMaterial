@@ -7,7 +7,7 @@ Purpose: Collections
     - Dictionaries  {}
 """
 
-myEmptyList = [] # list()
+myEmptyList = []  # list()
 print('myEmptyList      :', myEmptyList)
 print('type(myEmptyList):', type(myEmptyList))
 
@@ -39,8 +39,8 @@ print('randomList[3:58]:', randomList[3:58])
 print('randomList[6:57]:', randomList[6:57])
 
 multiDimensionList = [1, 2, [3, 4, 5], [6, 7, 8]]
-                     #0  1      2          3
-                     #       0  1  2    0  1  2
+# 0  1      2          3
+#       0  1  2    0  1  2
 print('multiDimensionList:', multiDimensionList)
 
 print('multiDimensionList[2]:', multiDimensionList[2])
@@ -94,7 +94,6 @@ print()
 print('sorted(randomList, reverse=True):', sorted(randomList, reverse=True))
 print('reversed(randomList)', reversed(randomList))
 print('randomList        :', randomList)
-
 
 print('randomList.reverse()', randomList.reverse())
 print('randomList        :', randomList)

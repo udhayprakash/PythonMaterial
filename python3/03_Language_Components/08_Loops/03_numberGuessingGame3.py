@@ -9,7 +9,7 @@ lucky_number = 67
 # attempt = 1
 # while attempt <= 5:
 #     print(f'\nThis is attempt: {attempt}')
-    
+
 #     guessed_number = int(input('Enter a number btwn 0 & 100:'))
 #     # print(guessed_number, type(guessed_number))
 

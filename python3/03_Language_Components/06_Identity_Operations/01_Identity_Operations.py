@@ -19,8 +19,8 @@ Dual Memory management Strategy
 -5 to 256
 """
 
-print('4 == 4  ', 4 == 4)     # True
-print('4 == "4"', 4 == "4")   # False
+print('4 == 4  ', 4 == 4)  # True
+print('4 == "4"', 4 == "4")  # False
 print('4 is 4  ', 4 is 4)
 print()
 
@@ -96,7 +96,6 @@ print()
 # # print p not is q  # SyntaxError: invalid syntax
 # print(p is not q)
 # print(p != q)
-
 
 
 '''

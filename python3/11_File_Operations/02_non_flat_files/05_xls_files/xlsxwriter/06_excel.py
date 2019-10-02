@@ -20,7 +20,7 @@ import xlsxwriter
 with xlsxwriter.Workbook('mybook.xlsx') as wb:
     ws = wb.add_worksheet()
 
-    for row in range(0,5):
+    for row in range(0, 5):
         ws.write(row, 0, 'Hello')
 
     ws.write('D1', 200)
@@ -28,7 +28,7 @@ with xlsxwriter.Workbook('mybook.xlsx') as wb:
 
     data = {
         'first_name': 'Bharath',
-        'last_name': 'India', 
+        'last_name': 'India',
         'age': 70,
         'currency': 'INR',
         'capital': 'New Delhi'
@@ -37,7 +37,7 @@ with xlsxwriter.Workbook('mybook.xlsx') as wb:
     ws2 = wb.add_worksheet('Countries')
     # row = 0
     col = 0
-    ws2.write_row(row, col,  tuple(data.keys()))
+    ws2.write_row(row, col, tuple(data.keys()))
     row += 1
     ws2.write_row(row, col, tuple(data.values()))
 

@@ -8,7 +8,6 @@ Purpose:
 """
 students = ['akram', 'trusha', 'bhavana', 'jaya', 'chaitra']
 
-
 print('break importance ==========')
 for each_student in students:
     if each_student == 'bhavana':
@@ -28,6 +27,7 @@ for each_student in students:
     print(each_student)
 
 import sys
+
 print('sys.exit importance ==========')
 for each_student in students:
     if each_student == 'bhavana':

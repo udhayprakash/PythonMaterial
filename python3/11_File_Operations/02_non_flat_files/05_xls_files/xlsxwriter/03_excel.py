@@ -17,7 +17,6 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
     workbook.add_worksheet('mysheet')
     worksheet = workbook.add_worksheet()
 
-
     text = 'Formatted textbox'
 
     options = {
@@ -27,10 +26,10 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
         'y_offset': 10,
 
         'font': {'color': 'red',
-                'size': 14},
+                 'size': 14},
         'align': {'vertical': 'middle',
-                'horizontal': 'center'
-                },
+                  'horizontal': 'center'
+                  },
         'gradient': {'colors': ['#DDEBCF',
                                 '#9CB86E',
                                 '#156B13']},
@@ -43,28 +42,27 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
     worksheet.insert_textbox('B12', 'Some text', {'width': 256, 'height': 100})
 
     worksheet.insert_textbox('B14', 'Size adjusted textbox',
-                         {'width': 288, 'height': 30})
+                             {'width': 288, 'height': 30})
     # or
     worksheet.insert_textbox('B18', 'Size adjusted textbox',
-                            {'x_scale': 1.5, 'y_scale': 0.25})
+                             {'x_scale': 1.5, 'y_scale': 0.25})
 
-
-    # nesting format properties 
+    # nesting format properties
     worksheet.insert_textbox('B19', 'Some text in a textbox with formatting',
-                         {'font': {'color': 'white'},
-                          'align': {'vertical': 'middle',
-                                    'horizontal': 'center'
-                                    },
-                          'gradient': {'colors': ['green', 'white']}})
-    
+                             {'font': {'color': 'white'},
+                              'align': {'vertical': 'middle',
+                                        'horizontal': 'center'
+                                        },
+                              'gradient': {'colors': ['green', 'white']}})
+
     # borders to text box 
     worksheet.insert_textbox('B21', 'A textbox with a color border',
-                         {'line': {'color': '#FF9900'}})
+                             {'line': {'color': '#FF9900'}})
 
     worksheet.insert_textbox('B23', 'A textbox with larger border',
-                         {'line': {'width': 3.25}})
+                             {'line': {'width': 3.25}})
 
     worksheet.insert_textbox('B27', 'A textbox a dash border',
-                         {'line': {'dash_type': 'dash_dot'}})
-    
-    #workbook.close()
+                             {'line': {'dash_type': 'dash_dot'}})
+
+    # workbook.close()

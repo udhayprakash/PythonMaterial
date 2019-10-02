@@ -62,20 +62,19 @@ assert ml[-5] == ml[1]
 print(ml[1:4])
 print(ml[1:4:2])
 
-print('List is a mutable object =======') 
+print('List is a mutable object =======')
 print('id(ml)      ', id(ml))
 ml[3] = 3.4
 print('ml[3]   ', ml[3])
 print('id(ml)      ', id(ml))
 
-
 print('\nString is a immutable object ===')
 name = 'Raj Sekhar'
-print(name) 
+print(name)
 print(name[0:3])
 # name[0:3] = 'Tej'    # editing not possible
 
 print('id(name)', id(name))
-name = 'Tej Sekhar'    # overwriting the object 
+name = 'Tej Sekhar'  # overwriting the object 
 print('id(name)', id(name))
 print(name)

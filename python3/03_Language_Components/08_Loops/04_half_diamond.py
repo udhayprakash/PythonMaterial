@@ -25,21 +25,20 @@ Purpose: To display the astrickes in a half-diamond pattern
 print('-' * 20)
 
 for i in range(10):
-    print( ' ' * (10-i) + '*' * i)
+    print(' ' * (10 - i) + '*' * i)
 
 for i in range(10, 0, -1):
-    print( ' ' * (10-i) + '*' * i)
+    print(' ' * (10 - i) + '*' * i)
 
 print('-' * 20)
 
-
 i = 0
 while i < 10:
-    print( ' ' * (10-i) + '*' * i)
+    print(' ' * (10 - i) + '*' * i)
     i += 1
 
 while i > 0:
-    print( ' ' * (10-i) + '*' * i)
+    print(' ' * (10 - i) + '*' * i)
     i -= 1
 
 # assignent:full diamond problem

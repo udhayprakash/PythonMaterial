@@ -1,8 +1,6 @@
-
 sentence = '''Python is a wonderful language. 
 we can solve any 
 computational problem with this language'''
-
 
 frequency = {}
 for ech_ch in sentence:
@@ -20,19 +18,11 @@ print(frequency)
 # print('\n', sorted(frequency.items(), key=lambda x:x[1]))
 # print('\n', sorted(frequency.items(), key=lambda x:x[1], reverse=True))
 
-top_three_chars = sorted(frequency.items(), key=lambda x:x[1], reverse=True)[:6]
+top_three_chars = sorted(frequency.items(), key=lambda x: x[1], reverse=True)[:6]
 print(top_three_chars)
 
-
-top_chars_in_asc = sorted(frequency.items(), key=lambda x:[-x[1], x[0]], reverse=True)[:6]
+top_chars_in_asc = sorted(frequency.items(), key=lambda x: [-x[1], x[0]], reverse=True)[:6]
 print(top_chars_in_asc)
-
-
-
-
-
-
-
 
 '''
 

@@ -12,7 +12,6 @@ numbers = [88, 99, 666]
 print('type(numbers)', type(numbers))
 print('dir(numbers)=', dir(numbers))
 
-
 print("len(numbers)     =", len(numbers))
 print("numbers.__len__()=", numbers.__len__())
 assert len(numbers) == numbers.__len__()
@@ -60,5 +59,6 @@ print("numbers.__contains__(12) =", numbers.__contains__(12))
 print("12 in numbers =", 12 in numbers)
 
 print(numbers.__sizeof__())
-import sys 
+import sys
+
 print(sys.getsizeof(numbers))

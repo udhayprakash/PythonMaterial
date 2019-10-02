@@ -7,12 +7,12 @@ writer = pd.ExcelWriter('pandas_example.xlsx',
                         date_format='mmmm dd yyyy')
 
 df = pd.DataFrame({'Data': [10, 20, 30, 20, 15, 30, 45]})
-df.to_excel(writer, sheet_name='Sheet1', 
-        startrow=1, header=False
-        )
+df.to_excel(writer, sheet_name='Sheet1',
+            startrow=1, header=False
+            )
 
 # Get the xlsxwriter objects from the dataframe writer object.
-workbook  = writer.book
+workbook = writer.book
 worksheet = writer.sheets['Sheet1']
 
 # Create a chart object.
@@ -27,7 +27,6 @@ worksheet.insert_chart('D2', chart)
 # Apply a conditional format to the cell range.
 worksheet.conditional_format('B2:B8', {'type': '3_color_scale'})
 
-
 # Add some cell formats.
 format1 = workbook.add_format({'num_format': '#,##0.00'})
 format2 = workbook.add_format({'num_format': '0%'})
@@ -38,8 +37,5 @@ worksheet.set_column('B:B', 18, format1)
 # Set the format but not the column width.
 worksheet.set_column('C:C', None, format2)
 
-
 writer.save()
 writer.close()
-
-

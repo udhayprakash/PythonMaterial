@@ -3,7 +3,7 @@
 # immutables only 
 
 
-empty_set =  set()
+empty_set = set()
 print(type(empty_set))
 
 small_set = {12, 3242, 45}

@@ -9,9 +9,9 @@ python  is interpreter based language
 
 """
 
-print('Hello World1')#hjh
-    
-print('Hello ' 'World2')#,
+print('Hello World1')  # hjh
+
+print('Hello ' 'World2')  # ,
 
 print('Hello ')  # 'World3'#
 

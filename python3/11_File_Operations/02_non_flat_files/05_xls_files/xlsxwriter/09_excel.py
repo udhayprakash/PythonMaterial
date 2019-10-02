@@ -41,10 +41,9 @@ row = 1
 
 # Write the same date and time using each of the above formats.
 for date_format_str in date_formats:
-
     # Create a format for the date or time.
     date_format = workbook.add_format({'num_format': date_format_str,
-                                      'align': 'left'})
+                                       'align': 'left'})
 
     # Write the same date using different formats.
     worksheet.write_datetime(row, 0, date_time, date_format)

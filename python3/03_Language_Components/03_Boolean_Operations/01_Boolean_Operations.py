@@ -5,7 +5,6 @@ Purpose: Boolean Operations
     True, False
 """
 
-
 choice = True
 print('choice = ', choice, type(choice))
 

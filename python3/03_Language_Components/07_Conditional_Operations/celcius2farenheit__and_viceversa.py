@@ -12,11 +12,10 @@ elif 'c' in temp:
 else:
     mode = 'celcius'
 
-
 if mode == 'celcius':
     celcius = int(temp.strip('c'))
     Fahrenheit = round((1.8 * celcius) + 32)
-else:# farenheit
+else:  # farenheit
     Fahrenheit = int(temp.strip('f'))
     celcius = round((Fahrenheit - 32) * 5.0 / 9.0)
 

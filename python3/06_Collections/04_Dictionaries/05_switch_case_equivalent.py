@@ -23,12 +23,11 @@ elif choice == 4:
 else:
     print('invalid choice')
 
-
 ########
 result_for_choice = {
-    1:'Addition',
-    2:'Subtraction',
-    3:'Multiplication',
-    4:'Division',
+    1: 'Addition',
+    2: 'Subtraction',
+    3: 'Multiplication',
+    4: 'Division',
 }
 print(result_for_choice.get(choice, 'invalid choice'))

@@ -23,6 +23,7 @@ Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 
 # print()
 import copy
+
 # # shallow copy
 # soft_copy_list = copy.copy(par_list)
 # print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))

@@ -17,11 +17,11 @@ Integer family
 # NOTE: PEP 8 recommends to place one space around the operator
 print('Modulo Operation  % - remainder')
 
-print('13 % 2=', 13 % 2)     # 1
+print('13 % 2=', 13 % 2)  # 1
 
-print('-13 % 2=', -13 % 2)   # 1
-print('13 % -2=', 13 % -2)   # -1
-print('-13 % -2=', -13 % -2) # -1
+print('-13 % 2=', -13 % 2)  # 1
+print('13 % -2=', 13 % -2)  # -1
+print('-13 % -2=', -13 % -2)  # -1
 
 print()
 print('power operation **')
@@ -35,8 +35,8 @@ print('pow(4,2)   =', pow(4, 2))
 print('pow(64,1/2)=', pow(64, 1 / 2))
 print('pow(64,0.5)=', pow(64, 0.5))
 print()
-print('pow(4,2,9) =', pow(4, 2, 9)) # (4 ** 2) % 9
-print('(4**2) % 9 =', (4**2) % 9)
+print('pow(4,2,9) =', pow(4, 2, 9))  # (4 ** 2) % 9
+print('(4**2) % 9 =', (4 ** 2) % 9)
 print(pow(0, 0) == 0 ** 0 == 1)
 
 print()
@@ -48,4 +48,4 @@ print('1 * 10.0 ** 1 = ', 1 * 10.0 ** 1)
 print('3e2 =', 3e2)  # 3 * 10.0 ** 2
 print('-2.3e4 = ', -2.3e4)  # -2.3 * 10.0 ** 4
 
-print('velocity of light', 3e8) # 3 * 10.0 ** 8
+print('velocity of light', 3e8)  # 3 * 10.0 ** 8

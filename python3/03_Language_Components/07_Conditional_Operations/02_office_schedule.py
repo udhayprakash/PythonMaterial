@@ -29,13 +29,12 @@ else:
 # else block is optional in python
 
 
-
-if (day_of_week == 'monday' or 
-    day_of_week == 'tuesday' or 
-    day_of_week == 'wednesday' or 
-    day_of_week == 'thursday' or 
-    day_of_week == 'friday' 
-    ):
+if (day_of_week == 'monday' or
+        day_of_week == 'tuesday' or
+        day_of_week == 'wednesday' or
+        day_of_week == 'thursday' or
+        day_of_week == 'friday'
+):
     print('TIMING: - 9 am to 6 pm')
 elif day_of_week == 'saturday':
     print('TIMING: - 9 am to 1 pm')
@@ -44,9 +43,8 @@ elif day_of_week == 'sunday':
 else:
     print('Invalid input!!!!')
 
-
 # in - membership check operator 
-if day_of_week in ('monday', 'tuesday','wednesday','thursday', 'friday'):
+if day_of_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
     print('TIMING: - 9 am to 6 pm')
 elif day_of_week == 'saturday':
     print('TIMING: - 9 am to 1 pm')

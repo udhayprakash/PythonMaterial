@@ -21,10 +21,10 @@ print(empty_dict, type(empty_dict))
 empty_set = set()
 print(empty_set, type(empty_set))
 
-other_set= {12, 34}
+other_set = {12, 34}
 print(type(other_set))
 
-other_dict = {12:34, 34:56}
+other_dict = {12: 34, 34: 56}
 # print(other_dict, type(other_dict))
 
 # In python2, dicts doesn't retain the assigned order. 
@@ -32,17 +32,18 @@ other_dict = {12:34, 34:56}
 mydict = {
     'name': ['udhay', 'prakash'],
     'blog': 'udhayprakash.blogspot.in',
-    0.000001 : other_dict,
-     99 : ('age', 'price'),
+    0.000001: other_dict,
+    99: ('age', 'price'),
     ('Dr', 'Mr'): 'titles',
-    'name': 'somebody', 
-    (1 ,23): {1:23}
+    'name': 'somebody',
+    (1, 23): {1: 23}
 }
 
 # print(mydict)
 # # print(type(mydict))
 
 from pprint import pprint
+
 # pprint(mydict)
 
 pprint(mydict, indent=2, width=2)
@@ -84,23 +85,22 @@ print(mydict)
 print(mydict.pop('blog', 'no such key'))  # deletes specific mentioned key:value
 print(mydict)
 print()
-del mydict[('Dr', 'Mr')]   # deletes specific mentioned key:value
+del mydict[('Dr', 'Mr')]  # deletes specific mentioned key:value
 print(mydict)
 
-
-print('-'*50)
+print('-' * 50)
 print('mydict.keys()', mydict.keys())
 print('mydict.values()', list(mydict.values()))
 print('mydict.items()', list(mydict.items()))
-print('-'*50)
+print('-' * 50)
 
 replica_dict = {}
-replica_dict= replica_dict.fromkeys(mydict, '')
+replica_dict = replica_dict.fromkeys(mydict, '')
 print('\n\nreplica_dict', replica_dict)
 
 # print(mydict + replica_dict) # TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 
-replica_dict.update({'name':'alpha', 'blog': 'udhay'})
+replica_dict.update({'name': 'alpha', 'blog': 'udhay'})
 print('replica_dict', replica_dict)
 
 mydict.clear()

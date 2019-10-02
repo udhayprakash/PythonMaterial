@@ -14,6 +14,5 @@ else:
 finally:
     print('finally will be executed in all the cases')
 
-
 # when no exception -> try -> else -> finally
 # when  exception  -> try -> except -> finally

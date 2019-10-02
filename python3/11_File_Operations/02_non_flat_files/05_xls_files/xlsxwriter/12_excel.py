@@ -7,12 +7,12 @@ import xlsxwriter
 # The optimization works by flushing each row after a subsequent row is written. 
 
 
-workbook = xlsxwriter.Workbook('memory_ex.xlsx', 
-                        {'constant_memory': True}
-            )
+workbook = xlsxwriter.Workbook('memory_ex.xlsx',
+                               {'constant_memory': True}
+                               )
 worksheet = workbook.add_worksheet()
 
-row_max = 20 
+row_max = 20
 col_max = 6
 
 # # Ok. With 'constant_memory' you must write data in row by column order.
@@ -29,4 +29,3 @@ for col in range(0, col_max):
 
 
 workbook.close()
-

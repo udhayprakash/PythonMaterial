@@ -13,7 +13,7 @@ import json
 
 student = {"101": {"result": True, "class": 'V', "Name": 'Rohit', "Roll_no": 7},
            "103": {"result": False, "class": 'V', "Name": 'Samiya', "Roll_no": 12,
-           "102": {"result": True, "class": 'V', "Name": 'David', "Roll_no": 8}}}
+                   "102": {"result": True, "class": 'V', "Name": 'David', "Roll_no": 8}}}
 print(json.dumps(student))
 
 print('-' * 70)
@@ -112,7 +112,7 @@ data = json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))
 print(data)
 
 # pretty printing
-print(json.dumps({44: 5, 6: 7}, 
-            sort_keys=True,
-            indent=4, 
-            separators=(',', ': ')))
+print(json.dumps({44: 5, 6: 7},
+                 sort_keys=True,
+                 indent=4,
+                 separators=(',', ': ')))

@@ -10,21 +10,6 @@ But 6 is not prime (it is composite) since, 2 x 3 = 6.
 1, 2,  3, 5, 7, 11, ...
 """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # num = 407
 
 # take input from the user

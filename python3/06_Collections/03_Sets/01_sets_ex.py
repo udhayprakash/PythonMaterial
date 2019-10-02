@@ -27,7 +27,7 @@ filtered_list = list(set(running_ports))
 print('type(filtered_list)', type(filtered_list))
 print('len(filtered_list)', len(filtered_list))
 print('filtered_list:', filtered_list)
-print() 
+print()
 
 print('before addition - myset', myset)
 myset.add(12)

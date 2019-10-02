@@ -4,14 +4,13 @@
 # 1. keyword
 # 2. identifier
 
-import keyword 
+import keyword
+
 print(keyword.kwlist)
 
 print(keyword.iskeyword('True'))  # True
 print(keyword.iskeyword('true'))  # False
-print(keyword.iskeyword('while')) # True
-
-
+print(keyword.iskeyword('while'))  # True
 
 # Identifier naming conventions
 ################################
