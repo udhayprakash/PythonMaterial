@@ -8,11 +8,13 @@ Purpose: Data classes
 """
 from dataclasses import dataclass, asdict, astuple
 
+
 @dataclass
 class Book(object):
-    title : str
-    author : str
-    price : float = 20  # default value 
+    title: str
+    author: str
+    price: float = 20  # default value 
+
 
 b = Book('Python', 'Mark Lutz')
 print(vars(b))

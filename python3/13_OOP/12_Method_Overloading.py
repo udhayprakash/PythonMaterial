@@ -10,14 +10,18 @@ class MyNewClass(object):
     """
     This is method overwriting
     """
+
     def myFunction(self, name, age):
         print("Hello World!, two Variable Case!!!")
 
     def myFunction(self, name):
         print("Hello World!, One Variable Case!!!")
 
+
 m = MyNewClass()
 m.myFunction('udhay')
+
+
 # m.myFunction('udhay', 28)
 
 

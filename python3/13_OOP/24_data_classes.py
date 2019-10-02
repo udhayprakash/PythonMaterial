@@ -9,14 +9,16 @@ Purpose: Data classes
 import random
 from dataclasses import dataclass, field
 
+
 def random_price():
-    return random.randint(20,100)
+    return random.randint(20, 100)
+
 
 @dataclass
 class Book(object):
-    title : str
-    author : str
-    price : float = field(default_factory=random_price)
+    title: str
+    author: str
+    price: float = field(default_factory=random_price)
 
 
 b = Book('Python programmig', 'David Beazley')

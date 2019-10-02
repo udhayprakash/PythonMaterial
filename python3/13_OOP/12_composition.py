@@ -5,6 +5,8 @@ In composition, we do not inherit from the base class
 but establish relationships between classes through the 
 use of instance variables that are references to other objects. 
 """
+
+
 class Rocket:
     def __init__(self, name, distance):
         self.name = name
@@ -16,7 +18,7 @@ class Rocket:
 
 class MarsRoverComp():
     def __init__(self, name, distance, maker):
-        self.rocket = Rocket(name, distance) # instantiating the base
+        self.rocket = Rocket(name, distance)  # instantiating the base
 
         self.maker = maker
 

@@ -7,7 +7,8 @@ patterns
     $
 """
 
-import re 
+import re
+
 #  ^  the search should happen at the start of string 
 #  $   to search at the end only 
 #  .   to get any character , except newline 
@@ -15,7 +16,6 @@ import re
 # result = re.search('...', "Programming is good in PyTHOn")
 # result = re.search('...$', "Programming is good in PyTHOn")
 result = re.search('^.....', "P2r ogramming is good in PyTHOn")
-
 
 print(result, type(result))
 if result:

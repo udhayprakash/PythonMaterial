@@ -19,6 +19,7 @@ def area_rectangle(side1, side2):
 
     return side1 * side2
 
+
 def area_circle(radius):
     '''(number) --> number.
     Returns the area of a circle with the specified radius.

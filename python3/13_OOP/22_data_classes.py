@@ -8,9 +8,11 @@ Purpose: Data classes
 """
 from dataclasses import dataclass
 
+
 @dataclass()
 class Foo(object):
-    x : int
+    x: int
+
 
 f = Foo(12)
 print(f.x)
@@ -20,16 +22,17 @@ f.y = 12
 # print(hash(f)) # TypeError: unhashable type: 'Foo'
 
 print('With FROZEN =============')
+
+
 @dataclass(frozen=True)
 class Foo(object):
-    x : int
+    x: int
+
 
 f = Foo(12)
 print(f.x)
 # f.x = 1
 print(hash(f))
 
-
 # NOTE: Namedtuples are also dataclasses, 
 # but immutable by default
-

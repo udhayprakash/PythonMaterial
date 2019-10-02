@@ -4,6 +4,7 @@ Purpose: Linear Search Implemenation
 """
 import time
 
+
 # linear search - O(n)
 # pythonic way 
 
@@ -12,14 +13,14 @@ def linear_search_pythonic(given_list, search_ele):
     return search_ele in given_list
 
 
-def linear_search( given_list, search_ele):
+def linear_search(given_list, search_ele):
     """
     This is faster than pythonic way
     """
     for each_chr in given_list:
         if each_chr == search_ele:
-            return True 
-    return False 
+            return True
+    return False
 
 
 start_time = time.perf_counter()

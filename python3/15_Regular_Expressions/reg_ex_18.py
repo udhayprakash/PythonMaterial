@@ -10,7 +10,8 @@ purpose: regular expression  demo
 \S  - absence of white space and \n
 """
 
-import re 
+import re
+
 print(re.search('[a-z]+', 'Udhay Prakash').group())
 print(re.search('\w+', 'Udhay Prakash').group())
 
@@ -18,7 +19,7 @@ print(re.search('\w+\W\w+', 'Udhay Prakash').group())
 
 print(re.search('(\w+)\W(\w+)', 'Udhay Prakash').group())
 print(re.search('(\w+)\W(\w+)', 'Udhay Prakash').group(0))
-                #  1      2 
+#  1      2 
 print(re.search('(\w+)\W(\w+)', 'Udhay Prakash').group(1))
 print(re.search('(\w+)\W(\w+)', 'Udhay Prakash').group(2))
 

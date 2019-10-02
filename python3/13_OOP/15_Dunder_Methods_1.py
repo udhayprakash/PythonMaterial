@@ -48,14 +48,13 @@ print(isinstance(b, RationalNumber))  # True
 print(isinstance(c, RationalNumber))  # False
 
 print(a.__add__(b))
-print(a + b)                  # same as a.__add__(b)
+print(a + b)  # same as a.__add__(b)
 
 print(a.__sub__(b))
-print(a - b)                  # same as a.__sub__(b)
-
+print(a - b)  # same as a.__sub__(b)
 
 print(a.__str__())
-print(str(a))                 # same as a.__str__()
+print(str(a))  # same as a.__str__()
 
 print(a.__repr__())
 print(repr(a))

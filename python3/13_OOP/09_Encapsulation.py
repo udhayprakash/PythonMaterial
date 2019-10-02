@@ -5,6 +5,7 @@ Name mangling
 """
 from pprint import pprint
 
+
 class Car:
     a = 'public class variable'
     _a = 'protected class variable'
@@ -29,18 +30,18 @@ class Car:
         print(f'self.__instance_method(): {self.__instance_method()}')
         print(f'Car.__a                 : {Car.__a}')
 
+
 c = Car()
 pprint(vars(Car))
 
-print('Car.a', Car.a)   # accessing pubic variable
-print('Car._a', Car._a) # accessing protected variable
+print('Car.a', Car.a)  # accessing pubic variable
+print('Car._a', Car._a)  # accessing protected variable
 
 # print('Car.__a', Car.__a) # accessing private variable
-print('Car._Car__a', Car._Car__a) # accessing private variable
+print('Car._Car__a', Car._Car__a)  # accessing private variable
 
 print()
 pprint(vars(c))
-
 
 c.instance_method()
 c._instance_method()

@@ -19,11 +19,10 @@ print(df.iloc[0][0])
 print(df.loc[0]['A'])
 
 # Using `at[]`
-print(df.at[0,'A'])
+print(df.at[0, 'A'])
 
 # Using `iat[]`
-print(df.iat[0,0])
-
+print(df.iat[0, 0])
 
 # Additional References
 #  ref: https://github.com/justmarkham/pandas-videos

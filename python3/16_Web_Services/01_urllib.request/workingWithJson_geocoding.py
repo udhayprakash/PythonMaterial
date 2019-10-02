@@ -34,7 +34,8 @@ while True:
     location = js['results'][0]['formatted_address']
     print(location)
 
-    print '-' * 80
+    print
+    '-' * 80
     choice = raw_input("Do you want to retry: Y or N: ")
     if choice.lower() == 'n':
         break

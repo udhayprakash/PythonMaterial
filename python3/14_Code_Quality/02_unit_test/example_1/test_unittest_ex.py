@@ -1,6 +1,7 @@
 import unittest
 import unittest_ex
 
+
 class MyTest(unittest.TestCase):
     def testing_equaivalence(self):
         self.assertEqual(unittest_ex.fun(3), 4)
@@ -9,7 +10,8 @@ class MyTest(unittest.TestCase):
         self.assertNotEqual(unittest_ex.fun(3), 3)
 
     def testing_equaivalence_2(self):
-        self.assertEqual(unittest_ex.fun(-0.2) , 0.8)
+        self.assertEqual(unittest_ex.fun(-0.2), 0.8)
+
 
 if __name__ == '__main__':
     unittest.main()

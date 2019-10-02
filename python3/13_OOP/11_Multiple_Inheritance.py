@@ -4,7 +4,7 @@ Purpose: Multiple Inheritance
 """
 
 
-class MyParent1:   #(object):
+class MyParent1:  # (object):
     p1_cv = 1
 
     def __init__(self):
@@ -42,6 +42,7 @@ class MyChild(MyParent2, MyParent1):
 
     def _hello(self):  # Protected instance method
         return 'Hello MyChild'
+
 
 # Instantiation
 ch = MyChild()

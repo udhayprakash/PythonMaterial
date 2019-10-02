@@ -7,6 +7,7 @@ class Person:
     def __init__(self):
         print('I was named')
 
+
 # Instantiation
 p = Person()
 

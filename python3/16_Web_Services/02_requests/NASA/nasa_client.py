@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # TO get API key, sign-up at https://api.nasa.gov/index.html#apply-for-an-api-key
-NASA_API_KEY= 'jdm0WrfEUq3rfZnUP8XYhvAU7QEnG7SUNY1lmiHP'
+NASA_API_KEY = 'jdm0WrfEUq3rfZnUP8XYhvAU7QEnG7SUNY1lmiHP'
 
 # NASA API documentation: https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
 
@@ -13,13 +13,13 @@ METADATA_ENDPOINT = '/metadata/{nasa_id}'
 CAPTIONS_ENDPOINT = '/captions/{nasa_id}'
 ALBUM_ENDPOINT = '/album/{album_name}'
 
-
 import requests
 from pprint import pprint
+
 request_params = {
-    'q':'apollo 11',
-    'description':'moon landing',
-    'media_type':'image',
+    'q': 'apollo 11',
+    'description': 'moon landing',
+    'media_type': 'image',
 }
 
 URL = API_ROOT + SEARCH_ENDPOINT

@@ -7,7 +7,8 @@ patterns
     $
 """
 
-import re 
+import re
+
 #  ^  the search should happen at the start of string 
 
 # result = re.search('^pyTHon', "Programming is good in PyTHOn", re.I)
@@ -19,4 +20,3 @@ if result:
     print('result.span()', result.span())
     print('result.start()', result.start())
     print('result.end()', result.end())
-

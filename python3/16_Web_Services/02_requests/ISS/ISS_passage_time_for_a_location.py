@@ -8,13 +8,13 @@ Purpose:
 """
 import requests
 import sys
-from datetime import datetime 
+from datetime import datetime
 
 URL = 'http://api.open-notify.org/iss-pass.json'
 
 choosen_lat = input('Enter Latitude:')
 choosen_long = input('Enter Longitude:')
-response = requests.get(URL, params = {'lat':choosen_lat, 'lon':choosen_long})
+response = requests.get(URL, params={'lat': choosen_lat, 'lon': choosen_long})
 
 # if response.status_code != 200:
 #     print(response.text)
@@ -23,13 +23,13 @@ response = requests.get(URL, params = {'lat':choosen_lat, 'lon':choosen_long})
 print('response.url', response.url)
 response_data = response.json()
 
-from pprint import pprint 
+from pprint import pprint
+
 pprint(response_data)
 
 if response_data.get('message') != 'success':
     print(response_data.get('reason'))
     sys.exit(1)
-
 
 for each in response_data.get('response'):
     duration = each.get('duration')

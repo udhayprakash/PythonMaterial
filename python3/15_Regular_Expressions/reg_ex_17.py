@@ -10,7 +10,7 @@ purpose: regular expression  demo
 \S  - absence of white space and \n
 """
 
-import re 
+import re
 
 # identify decimal number 
 print(re.findall('\d+', '12 21323.3 23432.234 23.234324 -0.000003243'))

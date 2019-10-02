@@ -2,18 +2,20 @@
 
 class OrdinaryCClass:
     def __init__(self):
-        self.foo = None 
-        self.bar = None 
-        
+        self.foo = None
+        self.bar = None
+
+
 o = OrdinaryCClass()
 # print('o.foo', o.foo)
 
 # Dynamically creating attributes
-o.xxx = 12312          # adhoc attribites can be added to instance
+o.xxx = 12312  # adhoc attribites can be added to instance
 setattr(o, 'yy', 999)
 
 print(vars(o))
 print()
+
 
 class SlottedClass:
     """
@@ -23,8 +25,9 @@ class SlottedClass:
     __slots__ = ('foo', 'bar')
 
     def __init__(self):
-        self.foo = None 
-        self.bar = None 
+        self.foo = None
+        self.bar = None
+
 
 c = SlottedClass()
 # print(dir(c))
@@ -34,7 +37,7 @@ print(f'c.foo={c.foo}')
 
 # can't create new attribute 
 try:
-    c.xxx = 12312          # adhoc attribites can be added to instance
+    c.xxx = 12312  # adhoc attribites can be added to instance
     setattr(c, 'yy', 999)
 except AttributeError as ex1:
     print(repr(ex1))

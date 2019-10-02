@@ -10,7 +10,8 @@ purpose: regular expression  demo
 \S  - absence of white space and \n
 """
 
-import re 
+import re
+
 print(re.findall('python', 'PYTHON python PYTHon pYTHon43454'))
 print(re.findall('python', 'PYTHON python PYTHon pYTHon', re.I))
 target_string = '''
@@ -20,16 +21,16 @@ And the RECEPTION is on 30th of Mat, 2019 at xxx place.
 Thanks
 '''
 
-print(re.findall('2', target_string,  re.I))
+print(re.findall('2', target_string, re.I))
 
 print(re.findall('[a-z]', target_string))
 print(re.findall('[A-Z]', target_string))
 print(re.findall('[aeiou]', target_string, re.I))
 
-print(re.findall('[0-9]', target_string,  re.I))
+print(re.findall('[0-9]', target_string, re.I))
 print()
-print(re.findall('\d', target_string,  re.I))
-print(re.findall('\d+', target_string,  re.I))
+print(re.findall('\d', target_string, re.I))
+print(re.findall('\d+', target_string, re.I))
 print()
 print(re.findall('[a-zA-Z]+', target_string))
 

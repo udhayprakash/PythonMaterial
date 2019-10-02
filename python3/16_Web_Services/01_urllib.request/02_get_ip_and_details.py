@@ -7,6 +7,7 @@ import os
 import urllib.request
 import json
 
+
 def print_n_write_response(url):
     connection = urllib.request.urlopen(url)
     data = connection.read()
@@ -23,7 +24,7 @@ def write_response_to_file(data, extension_name):
         # To save in pretty print format 
         f.write(
             json.dumps(json.loads(data), indent=4, sort_keys=True)
-            )
+        )
         f.close()
 
 
@@ -57,7 +58,6 @@ if __name__ == '__main__':
     # URL4 = 'https://ipapi.co/yaml'
     # print_n_write_response(URL4)
     # print()
-
 
     # print('-' * 20)
     # print('HTML response')

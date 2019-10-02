@@ -11,6 +11,7 @@ sample output : 5 (0, 1, 1, 2, 3, 5)
 """
 from time import perf_counter
 
+
 def getNthFib(n):
     """
     Recursion Based Solution
@@ -22,19 +23,21 @@ def getNthFib(n):
     if n == 2:
         return 1
     elif n == 1:
-        return 0 
-    else: 
+        return 0
+    else:
         return getNthFib(n - 1) + getNthFib(n - 2)
 
-start_time= perf_counter()
+
+start_time = perf_counter()
 print(f'\ngetNthFib(6)  :{getNthFib(6)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
+
 
 # start_time= perf_counter()   ==========> FAILS
 # print(f'getNthFib(100):{getNthFib(100)}')
 # print(f'time taken    :{perf_counter() - start_time: 8} seconds')
 
-def getNthFib(n, memoize = {1: 0, 2: 1}):
+def getNthFib(n, memoize={1: 0, 2: 1}):
     """
     Time Complexity : O(n)
     Space Complexity: O(n)
@@ -42,17 +45,18 @@ def getNthFib(n, memoize = {1: 0, 2: 1}):
     if n in memoize:
         return memoize[n]
     else:
-        memoize[n] = getNthFib(n-1, memoize) + getNthFib(n-2, memoize)
+        memoize[n] = getNthFib(n - 1, memoize) + getNthFib(n - 2, memoize)
         return memoize[n]
 
 
-start_time= perf_counter()
+start_time = perf_counter()
 print(f'\ngetNthFib(6)  :{getNthFib(6)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
 
-start_time= perf_counter()
+start_time = perf_counter()
 print(f'getNthFib(100):{getNthFib(100)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
+
 
 def getNthFib(n):
     """
@@ -69,13 +73,14 @@ def getNthFib(n):
     return last_two[1] if n > 1 else last_two[0]
 
 
-start_time= perf_counter()
+start_time = perf_counter()
 print(f'\ngetNthFib(6)  :{getNthFib(6)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
 
-start_time= perf_counter()
+start_time = perf_counter()
 print(f'getNthFib(100):{getNthFib(100)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
+
 
 def getNthFib(n):
     """
@@ -83,16 +88,17 @@ def getNthFib(n):
     Space Complexity: O(1)
     """
     # memoization design pattern
-    a,b = 0, 1
-    for _ in range(n-1): # range ignores 1, so, -1
-        a,b = b, a+b 
-    return a # nth value 
+    a, b = 0, 1
+    for _ in range(n - 1):  # range ignores 1, so, -1
+        a, b = b, a + b
+    return a  # nth value 
 
-start_time= perf_counter()
+
+start_time = perf_counter()
 print(f'\ngetNthFib(6)  :{getNthFib(6)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
 
-start_time= perf_counter()
+start_time = perf_counter()
 print(f'getNthFib(100):{getNthFib(100)}')
 print(f'time taken    :{perf_counter() - start_time: 8} seconds')
 

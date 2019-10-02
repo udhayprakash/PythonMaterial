@@ -18,6 +18,8 @@ http request methods
 from pprint import pprint
 import json
 import requests
+
+
 # pip install -U requests
 
 
@@ -37,8 +39,6 @@ get_data_n_write_to_file(URL)
 
 URL = 'https://www.metaweather.com/api/location/search/?query=san'
 get_data_n_write_to_file(URL)
-
-
 
 # def location_search(query):
 #     try:

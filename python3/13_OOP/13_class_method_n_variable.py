@@ -1,11 +1,10 @@
-
-
 class Robot:
     """
     Represents a robot, with a name.
     """
     # A class variable, counting the number of robots
     population = 0
+
     def __init__(self, name):
         """
         INITIALIZES THE DATA.
@@ -14,7 +13,7 @@ class Robot:
         self.name = name
         print("(Initializing {})".format(self.name))
 
-        Robot.population+=1
+        Robot.population += 1
 
     def die(self):
         """
@@ -22,7 +21,7 @@ class Robot:
         :return:
         """
         print("{} is being destroyed:".format(self.name))
-        Robot.population-=1
+        Robot.population -= 1
         if Robot.population == 0:
             print("{} was the lst one.".format(self.name))
         else:
@@ -46,7 +45,7 @@ class Robot:
 
 
 droid1 = Robot("R2-D2")
-droid1.say_hi()   # Instance methods
+droid1.say_hi()  # Instance methods
 Robot.how_many()  # class method
 
 droid2 = Robot("C-3PO")

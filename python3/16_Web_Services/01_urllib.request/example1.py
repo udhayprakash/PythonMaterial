@@ -9,4 +9,3 @@ f = open('yahooData.txt', 'ab+')
 
 f.write(data)
 f.close()
-

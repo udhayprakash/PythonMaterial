@@ -3,8 +3,9 @@
 Purpose: Twitter data scrapping
 """
 import tweepy
-from pprint import pprint 
+from pprint import pprint
 import json
+
 
 class TwitterLogin:
     def __init__(self):
@@ -16,9 +17,9 @@ class TwitterLogin:
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
 
-        self.api = tweepy.API(auth, 
-                    wait_on_rate_limit=True,
-                    wait_on_rate_limit_notify=True)
+        self.api = tweepy.API(auth,
+                              wait_on_rate_limit=True,
+                              wait_on_rate_limit_notify=True)
 
     def credentials_verification(self):
         result = vars(self.api.verify_credentials())['_json']
@@ -32,9 +33,11 @@ class TwitterLogin:
         Display URL         : {result['entities']['url']['urls'][0]['display_url']}
         ''')
 
+
 class TwitterScrapping(TwitterLogin):
     def __init__(self):
         TwitterLogin.__init__(self)
+
 
 # twtr = TwitterLogin()
 # twtr.credentials_verification()

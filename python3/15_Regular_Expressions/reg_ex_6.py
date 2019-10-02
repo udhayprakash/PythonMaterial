@@ -3,7 +3,7 @@
 purpose: regular expression  demo 
 """
 
-import re 
+import re
 
 # target_string = "Programming is good in PyTHOn"
 
@@ -24,4 +24,3 @@ if result:
     print('result.span()', result.span())
     print('result.start()', result.start())
     print('result.end()', result.end())
-

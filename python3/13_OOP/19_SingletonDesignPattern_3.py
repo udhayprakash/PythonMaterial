@@ -7,24 +7,28 @@ Purpose: To create a class with singleton design pattern
 	Or NOT allowing new instance creation
 """
 
+
 def singleton(myClass):
     instances = {}
+
     def getInstance(*args, **kwargs):
         if myClass not in instances:
             instances[myClass] = myClass(*args, **kwargs)
         return instances[myClass]
+
     return getInstance
+
 
 @singleton
 class TestClass(object):
     pass
+
 
 x1 = TestClass()
 print(x1, id(x1))
 
 x2 = TestClass()
 print(x2, id(x2))
-
 
 # class Singleton(object):
 #     """Use to create a singleton"""

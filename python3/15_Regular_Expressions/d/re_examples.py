@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import re
+
 string = "foo foobar"
 
 reg = re.compile("foobar$")

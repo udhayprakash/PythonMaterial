@@ -3,10 +3,13 @@
 Purpose: Single Inheritance
 MRO - method resolution order
 """
+
+
 class Account:
     """
     parent or super class
     """
+
     def __init__(self):
         self.balance = 0
 

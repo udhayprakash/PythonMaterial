@@ -3,7 +3,7 @@
 purpose: regular expression  demo 
 """
 
-import re 
+import re
 
 target_string = "Python Programming is good for health"
 

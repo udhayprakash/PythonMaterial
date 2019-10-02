@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import unittest
 
+
 class LoginTest(unittest.TestCase):
 
     def setUp(self):
@@ -23,7 +24,8 @@ class LoginTest(unittest.TestCase):
 
         emailFieldElement = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id(emailFieldId))
         passwordFieldElement = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id(pwdFieldId))
-        loginButtonElement = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath(loginButtonXpath))
+        loginButtonElement = WebDriverWait(driver, 10).until(
+            lambda driver: driver.find_element_by_xpath(loginButtonXpath))
 
         emailFieldElement.clear()
         emailFieldElement.send_keys(facebook_username)
@@ -31,11 +33,11 @@ class LoginTest(unittest.TestCase):
         passwordFieldElement.send_keys(facebook_password)
         loginButtonElement.click()
 
-        WebDriverWait(driver,10).until(lambda driver: driver.find_element_by_xpath(fbLogoPath))
-
+        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath(fbLogoPath))
 
     def tearDown(self):
-         self.driver.quit()
+        self.driver.quit()
+
 
 if __name__ == '__main__':
     unittest.main()

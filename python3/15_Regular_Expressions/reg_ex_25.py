@@ -5,7 +5,7 @@ purpose: regular expression  demo
 Ex: email ids
 """
 
-import re 
+import re
 
 email_ids = '''
 Edit the Expression & Text to see matches. Roll over matches or the expression for details. Und
@@ -24,7 +24,7 @@ mubeen.tom@hacker.com
 1%453&harini_new@in.com
 '''
 
-matched_emails  = re.findall('[a-zA-Z0-9._]+@[a-zA-Z0-9._]+', email_ids)
+matched_emails = re.findall('[a-zA-Z0-9._]+@[a-zA-Z0-9._]+', email_ids)
 
 for each_email in matched_emails:
     print(each_email)

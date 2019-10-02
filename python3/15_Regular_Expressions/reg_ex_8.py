@@ -7,7 +7,8 @@ patterns
     $
 """
 
-import re 
+import re
+
 #  ^  the search should happen at the start of string 
 #  $   to search at the end only 
 
@@ -20,4 +21,3 @@ if result:
     print('result.span()', result.span())
     print('result.start()', result.start())
     print('result.end()', result.end())
-

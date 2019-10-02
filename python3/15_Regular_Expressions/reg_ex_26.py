@@ -5,14 +5,11 @@ purpose: regular expression  demo
 Ex: email ids
 """
 
-import re 
-
+import re
 
 re.split('[.]', '244.255.190.23')
 re.split('.', '244.255.190.23')
 re.split('\.', '244.255.190.23')
-
-
 
 # >>> re.split('\.', '244.255.190.23')
 # ['244', '255', '190', '23']

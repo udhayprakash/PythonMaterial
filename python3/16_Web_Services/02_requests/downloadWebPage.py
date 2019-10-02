@@ -2,6 +2,7 @@
 
 import requests
 
+
 def download(url):
     '''Download the given url and saves it to the current directory.
 
@@ -17,8 +18,7 @@ def download(url):
         fobj.write(req.content)
     print('Download over.')
 
+
 if __name__ == '__main__':
     url = input('Enter a URL:')
     download(url)
-
-

@@ -1,20 +1,20 @@
 import json
 import urllib.request, urllib.error, urllib.parse
 import configparser
-import sys 
-from pprint import pprint 
+import sys
+from pprint import pprint
 
 config = configparser.ConfigParser()
 config.read('weather.ini')
 
-api_key = config.get('prod', 'APIKEY') 
+api_key = config.get('prod', 'APIKEY')
 URL = 'http://api.wunderground.com/api/{apikey}/conditions/q/CA/San_Francisco.json'.format(apikey=api_key)
 print('URL=', URL)
 
 try:
     f = urllib.request.urlopen(URL)
 except urllib.error.HTTPError as ex:
-    print(ex) 
+    print(ex)
     sys.exit(1)
 
 json_string = f.read()

@@ -12,9 +12,10 @@ each node:
 """
 __author__ = 'Udhay Prakash'
 
+
 class LinkedList:
     def __init__(self, data, next_node_add=None):
-        self.data = data 
+        self.data = data
         self.next_node_address = next_node_add
 
     def __repr__(self):
@@ -22,7 +23,7 @@ class LinkedList:
         return f'{self.data}|{self.next_node_address}'
 
     def get_data(self):
-        return self.data 
+        return self.data
 
     def get_next_node_address(self):
         return self.next_node_address
@@ -32,6 +33,7 @@ class LinkedList:
 
     def set_next_node_address(self, next_node_address):
         self.next_node_address = next_node_address
+
 
 n1 = LinkedList(10)
 # print(f'n1:{n1}')
@@ -47,13 +49,11 @@ n1.set_next_node_address(id(n2))
 n2.set_next_node_address(id(n3))
 n3.set_next_node_address(id(n4))
 
-
 print(f'n1:{n1}')
 print(f'n2:{n2}')
 print(f'n3:{n3}')
 print(f'n4:{n4}')
 print('\n\n\n\n')
-
 
 # create a linked list for word 'hello'
 '''
@@ -68,6 +68,6 @@ for _index, ech_chr in enumerate('hello'):
 
     # update address for previous node 
     if _index != 0:
-        list_of_nodes[_index -1].set_next_node_address(id(node))
+        list_of_nodes[_index - 1].set_next_node_address(id(node))
 
 print(list_of_nodes)

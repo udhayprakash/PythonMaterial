@@ -1,5 +1,5 @@
 import requests
- 
+
 r = requests.get('http://httpbin.org/ip')
 print(r.headers['content-type'])
 if r.status_code == 200:

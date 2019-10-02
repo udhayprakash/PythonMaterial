@@ -7,8 +7,11 @@ Methods
 
 Default Decorators: @staticmethod, @classmethod
 """
+
+
 class MyClass(object):
-    myvar = 'something'    # class variable
+    myvar = 'something'  # class variable
+
     def display(self, x):
         print("executing instance method display(%s,%s)" % (self, x))
 
@@ -24,11 +27,11 @@ class MyClass(object):
 
 a = MyClass()
 
-a.display('Django')             # accessing instance method
-MyClass.display(a, 'Django')    # accessing instance method
+a.display('Django')  # accessing instance method
+MyClass.display(a, 'Django')  # accessing instance method
 
-a.cmDisplay('Django')           # accessing class method
-MyClass.cmDisplay('Django')     # accessing class method
+a.cmDisplay('Django')  # accessing class method
+MyClass.cmDisplay('Django')  # accessing class method
 
-a.smDisplay('Django')           # accessing static method
-MyClass.smDisplay('Django')     # accessing static method
+a.smDisplay('Django')  # accessing static method
+MyClass.smDisplay('Django')  # accessing static method

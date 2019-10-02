@@ -3,14 +3,13 @@
 purpose: regular expression  demo 
 """
 
-import re 
+import re
 
 target_string = "The Python Programming is good for health"
 
 search_string = 'pyTHon'
 
-reg_obj = re.compile(search_string, re.I) # re.IGNORECASE
-
+reg_obj = re.compile(search_string, re.I)  # re.IGNORECASE
 
 # .match can get only at the starting of string
 # result = reg_obj.match(target_string)

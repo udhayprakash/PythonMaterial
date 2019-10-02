@@ -6,15 +6,17 @@ Purpose: To create a class with singleton design pattern
 
 	Or NOT allowing new instance creation
 """
-from pprint import pprint 
+from pprint import pprint
+
 
 class Singleton(Exception):
-	__single = None
+    __single = None
 
-	def __init__(self):
-		if Singleton.__single:
-			raise Singleton.__single
-		Singleton.__single = self
+    def __init__(self):
+        if Singleton.__single:
+            raise Singleton.__single
+        Singleton.__single = self
+
 
 s = Singleton()
 pprint(vars(Singleton))

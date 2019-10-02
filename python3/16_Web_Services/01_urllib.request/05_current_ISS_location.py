@@ -39,15 +39,16 @@ print(obj['timestamp'], 'is equal to ', datetime.fromtimestamp(obj['timestamp'])
 print(obj['iss_position']['latitude'], obj['iss_position']['longitude'])
 
 print('At {TIME}, ISS is at lat:{LAT}, long:{LONG}'.format(
-                            TIME=datetime.fromtimestamp(obj['timestamp']),
-                            LAT=obj['iss_position']['latitude'],
-                            LONG=obj['iss_position']['longitude']
-                        ))
+    TIME=datetime.fromtimestamp(obj['timestamp']),
+    LAT=obj['iss_position']['latitude'],
+    LONG=obj['iss_position']['longitude']
+))
 # Example prints:
 #   1364795862
 #   -47.36999493 151.738540034
 import requests
 from pprint import pprint
+
 
 # google_reverse_geocode_URL = 'http://maps.googleapis.com/maps/api/geocode/json?latlng={LATITUDE},{LONGITUDE}&sensor=false'
 
@@ -84,14 +85,14 @@ def get_address_for_given_coordinates(latitude, longitude):
             FUEL:{fuel}
             COUNTRY CODE: {country_code}
             COUNTRY: {country}'''.format(
-                village=response.get('address', {}).get('village', ''),
-                state_district=response.get('address', {}).get('state_district', ''),
-                state=response.get('address', {}).get('state', ''),
-                road=response.get('address', {}).get('road', ''),
-                postcode=response.get('address', {}).get('postcode', ''),
-                fuel=response.get('address', {}).get('fuel', ''),
-                country_code=response.get('address', {}).get('country_code', ''),
-                country=response.get('address', {}).get('country', ''))
+        village=response.get('address', {}).get('village', ''),
+        state_district=response.get('address', {}).get('state_district', ''),
+        state=response.get('address', {}).get('state', ''),
+        road=response.get('address', {}).get('road', ''),
+        postcode=response.get('address', {}).get('postcode', ''),
+        fuel=response.get('address', {}).get('fuel', ''),
+        country_code=response.get('address', {}).get('country_code', ''),
+        country=response.get('address', {}).get('country', ''))
     print(result_string)
 
 

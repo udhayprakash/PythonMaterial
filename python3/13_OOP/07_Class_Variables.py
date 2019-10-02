@@ -1,16 +1,15 @@
-
 class Employee:
     "common base class for employee"
     empcount = 0  # class variable
 
     def __init__(self, name, salary):
-        self.name = name   # instance variable
+        self.name = name  # instance variable
         my_var = 'something'  # ordinary variable
         self.salary = salary
         Employee.empcount += 1
 
     def displaycount(self):
-        print("total employee%s" % Employee.empcount) 
+        print("total employee%s" % Employee.empcount)
 
     def displayemployee(self):
         print(("name:", self.name, ",salary:", self.salary))
@@ -22,7 +21,6 @@ class Employee:
         """
         Employee.empcount -= 1
         print('Destructor is called')
-
 
 
 print(Employee, type(Employee))
@@ -38,7 +36,6 @@ print('After Emp1 creation, Total employee count:', Employee.empcount)
 Emp2 = Employee("Prakash", 60000)
 print('Emp2.salary', Emp2.salary)
 print('After Emp2 creation, Total employee count:', Employee.empcount)
-
 
 # Emp2 was terminated
 del Emp2

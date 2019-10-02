@@ -1,21 +1,21 @@
-#Check out pythonhowto.com for more code tutorials !!
+# Check out pythonhowto.com for more code tutorials !!
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
 
 driver = webdriver.Chrome()
 
-email="" #Your Password Here
-passy="" #Your Password Here
+email = ""  # Your Password Here
+passy = ""  # Your Password Here
 driver.get("http://quora.com")
 
-soup = BeautifulSoup(driver.page_source,"lxml")
+soup = BeautifulSoup(driver.page_source, "lxml")
 forms = soup.find_all(class_="form_column")
 
-#Find Login Css Selectors Here
+# Find Login Css Selectors Here
 for x in forms:
     try:
-        data=x.find("input")["name"]
+        data = x.find("input")["name"]
         if data == "email":
             email_css = "#" + x.find("input")["id"]
         if data == "password":
@@ -23,12 +23,11 @@ for x in forms:
     except:
         pass
     try:
-        data=x.find("input")["value"]
-        if data=="Login":
+        data = x.find("input")["value"]
+        if data == "Login":
             login_css = "#" + x.find("input")["id"]
     except:
         pass
-
 
 driver.find_element_by_css_selector(email_css).send_keys(email)
 driver.find_element_by_css_selector(password_css).send_keys(passy)

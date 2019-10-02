@@ -11,7 +11,7 @@ data = {
     'pay_periods': 1,
     'state': 'CO',
     'year':
-    '2014'
+        '2014'
 }
 
 r = requests.post(

@@ -4,9 +4,9 @@ class Person:  # (object)
         self.first = firstname
         self.last = lastname
 
-    @property  #.getter
+    @property  # .getter
     def fullname(self):
-        return self.first + ' '+ self.last
+        return self.first + ' ' + self.last
 
     @fullname.setter
     def fullname(self, name):
@@ -17,19 +17,20 @@ class Person:  # (object)
     def email(self):
         return '{}.{}@email.com'.format(self.first, self.last)
 
+
 person = Person('Udhay', 'Prakash')
-print(person.first)     #> Udhay
-print(person.last)      #> Prakash
-print(person.fullname)  #> Udhay Prakash
+print(person.first)  # > Udhay
+print(person.last)  # > Prakash
+print(person.fullname)  # > Udhay Prakash
 
 person.last = 'Chaitanya'
-print(person.fullname)  #> Udhay Chaitanya
+print(person.fullname)  # > Udhay Chaitanya
 
 # Setting fullname calls the setter method and updates person.first and person.last
 person.fullname = 'Shyam Benegal'
 
 # Print the changed values of `first` and `last`
-print(person.first)     #> Shyam
-print(person.last)      #> Benegal
+print(person.first)  # > Shyam
+print(person.last)  # > Benegal
 
-print(person.fullname)  #> Shyam Benegal
+print(person.fullname)  # > Shyam Benegal

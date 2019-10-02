@@ -2,6 +2,7 @@
 newly stye classes better support property decorator
 """
 
+
 class Person(object):
     def __init__(self, firstname, lastname):
         self.first = firstname
@@ -9,7 +10,7 @@ class Person(object):
 
     @property
     def fullname(self):
-        return self.first + ' '+ self.last
+        return self.first + ' ' + self.last
 
     def email(self):
         return '{}.{}@email.com'.format(self.first, self.last)

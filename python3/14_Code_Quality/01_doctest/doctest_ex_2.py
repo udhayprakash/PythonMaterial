@@ -1,6 +1,7 @@
-import doctest 
+import doctest
 
-def add_two_numbers(m,n):
+
+def add_two_numbers(m, n):
     """
     Returns the sum of the given two numbers.
     
@@ -14,7 +15,8 @@ def add_two_numbers(m,n):
     46
     """
     # return m + n 
-    return int(m) + int(n) 
+    return int(m) + int(n)
+
 
 if __name__ == '__main__':
     doctest.testmod()

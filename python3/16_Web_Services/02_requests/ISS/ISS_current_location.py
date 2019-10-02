@@ -8,8 +8,8 @@ Purpose:
 """
 import requests
 import sys
-from datetime import datetime 
-from pprint import pprint 
+from datetime import datetime
+from pprint import pprint
 
 URL = 'http://api.open-notify.org/iss-now.json'
 

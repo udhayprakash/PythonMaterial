@@ -10,7 +10,7 @@ purpose: regular expression  demo
 \S  - absence of white space and \n
 """
 
-import re 
+import re
 
 target_string = '''
 Hi everyone!

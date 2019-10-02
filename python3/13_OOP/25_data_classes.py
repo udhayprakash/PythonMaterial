@@ -8,10 +8,11 @@ Purpose: Data classes
 """
 from dataclasses import dataclass, make_dataclass
 
+
 @dataclass(init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)
 class Book(object):
-    title : str
-    author : str
+    title: str
+    author: str
 
 
 # order: By default __gt__ , __ge__, __lt__, __le__ methods 
@@ -25,31 +26,35 @@ print(type(Position))
 p = Position('place', 45, 56)
 print(vars(p))
 
-
 ##################################
 from dataclasses import dataclass
 from typing import Any
+
 
 @dataclass
 class WithoutExplicitTypes:
     name: Any
     value: Any = 42
 
-m = WithoutExplicitTypes(3.14, 'somethng' )
+
+m = WithoutExplicitTypes(3.14, 'somethng')
 print(vars(m))
 
 #################################
 from dataclasses import dataclass
 from typing import List
 
+
 @dataclass
 class PlayingCard:
     rank: str
     suit: str
 
+
 @dataclass
 class Deck:
     cards: List[PlayingCard]
+
 
 queen_of_hearts = PlayingCard('Q', 'Hearts')
 ace_of_spades = PlayingCard('A', 'Spades')
@@ -62,15 +67,18 @@ print(vars(two_cards))
 # INHERITANCE
 from dataclasses import dataclass
 
+
 @dataclass
 class Position:
     name: str
     lon: float
     lat: float
 
+
 @dataclass
 class Capital(Position):
     country: str
+
 
 c = Capital('Oslo', 10.8, 59.9, 'Norway')
 print(c)

@@ -6,14 +6,17 @@ Purpose: binary tree implementation
         In data science, Decision tree based learning
         XML parsers, ...
 """
+
+
 class Tree:
     def __init__(self, info, left=None, right=None):
         self.info = info
-        self.left  = left
+        self.left = left
         self.right = right
 
     def __str__(self):
         return f'{self.info} , Left child: {self.left} , Right child: {self.right}'
+
 
 # tree = Tree(1, Tree(2, 2.1, 2.2), Tree(3, 3.1))
 # print(tree)

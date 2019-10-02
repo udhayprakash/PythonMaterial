@@ -12,15 +12,17 @@
 """
 import requests
 import sys
-from datetime import datetime 
+from datetime import datetime
 
-def get_response(_url, _request_params = None):
+
+def get_response(_url, _request_params=None):
     response = requests.get(_url, params=_request_params)
     if response.status_code != 200:
         print(response.text)
         sys.exit(1)
     # print('response.url', response.url)
     return response.json()
+
 
 def get_iss_location_info():
     URL = 'http://api.open-notify.org/iss-now.json'
@@ -41,7 +43,7 @@ def get_iss_passage_info():
     choosen_lat = input('Enter Latitude:')
     choosen_long = input('Enter Longitude:')
 
-    request_query_params = {'lat':choosen_lat, 'lon':choosen_long}
+    request_query_params = {'lat': choosen_lat, 'lon': choosen_long}
     response_data = get_response(URL, request_query_params)
 
     if response_data.get('message') != 'success':
@@ -53,8 +55,8 @@ def get_iss_passage_info():
         timestamp_raw = each.get('risetime')
         timestamp = datetime.fromtimestamp(timestamp_raw)
         print(f'The ISS will be overhead {choosen_lat, choosen_long} at {timestamp} for {duration}')
-        
-        
+
+
 def get_iss_astros_info():
     URL = 'http://api.open-notify.org/astros.json'
     response = requests.get(URL)
@@ -64,7 +66,7 @@ def get_iss_astros_info():
         print(response_data.get('reason'))
         sys.exit(1)
 
-    number = response_data.get('number')   
+    number = response_data.get('number')
     craft = response_data.get('people')[0].get('craft')
 
     people_names = []
@@ -75,13 +77,13 @@ def get_iss_astros_info():
     print(f'There are {number} people aboard the {craft}. They are {people_names}')
 
 
-if __name__ == '__main__':   
+if __name__ == '__main__':
     while True:
         entered_choice = input('\nEnter a choice: loc, pass or people\n*\t')
 
         if entered_choice == 'loc':
             get_iss_location_info()
-        elif entered_choice =='pass':
+        elif entered_choice == 'pass':
             get_iss_passage_info()
         elif entered_choice == 'people':
             get_iss_astros_info()
