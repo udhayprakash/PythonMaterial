@@ -59,20 +59,19 @@
 def string_reversal(word):
     if len(word) == 1:
         return word[0]
-    return string_reversal(word[1:]) +  word[0]
-        
-print(string_reversal('Python'))
+    return string_reversal(word[1:]) + word[0]
 
+
+print(string_reversal('Python'))
 
 
 def string_reversal(word):
     if len(word) == 1:
-            return word[0]
+        return word[0]
     return word[-1] + string_reversal(word[:-1])
-        
+
+
 print(string_reversal('Python'))
-
-
 
 
 # factorial(9) = 9 *8 * 7 * 6 * .....1
@@ -80,19 +79,19 @@ print(string_reversal('Python'))
 def factorial(num):
     if num == 1:
         return 1
-    return num * factorial(num -1)
+    return num * factorial(num - 1)
+
 
 print(factorial(9))
 import math
+
 print('math.factorial(9)', math.factorial(9))
 
 
 def ceaser_cipher(mystring):
     if mystring == '':
         return ''
-    return  chr(ord(mystring[0]) + 3)  + ceaser_cipher(mystring[1:])
+    return chr(ord(mystring[0]) + 3) + ceaser_cipher(mystring[1:])
+
 
 print(ceaser_cipher('This is good'))
-
-
-

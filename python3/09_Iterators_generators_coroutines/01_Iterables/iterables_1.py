@@ -62,7 +62,6 @@ for each_key, each_val in names.items():
     # print('each_key',each_key, 'each_val', each_val)
     print(f'each_key:{each_key}\t\teach_val:{each_val}')
 
-
 print(list('Python Programming'))
 print(tuple('Python Programming'))
 print(set('Python Programming'))

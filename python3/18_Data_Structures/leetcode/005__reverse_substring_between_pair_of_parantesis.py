@@ -15,6 +15,8 @@ Constraints:
     s only contains lower case English characters and parentheses.
     It's guaranteed that all parentheses are balanced.
 """
+
+
 class Solution:
     def reverseParentheses(self, s):
         if '(' not in s:
@@ -40,8 +42,8 @@ class Solution:
                 word = ''
                 while st[-1] != '(':
                     word += st.pop(-1)
-                #print(f'word is now {word}')
-                #print(f'st is {st}' )
+                # print(f'word is now {word}')
+                # print(f'st is {st}' )
                 st.pop(-1)
                 for letter in word:
                     st.append(letter)
@@ -51,7 +53,7 @@ class Solution:
         return res
 
 
-assert Solution().reverseParentheses( "(ed(et(oc))el)") == "leetcode"
+assert Solution().reverseParentheses("(ed(et(oc))el)") == "leetcode"
 # (ed(et(oc))el)
 # (ed(etco)el)
 # (edocteel)
@@ -61,4 +63,4 @@ assert Solution().reverseParentheses("(u(love)i)") == "iloveu"
 assert Solution().reverseParentheses("ta()usw((((a))))") == "tauswa"
 assert Solution().reverseParentheses("sxmdll(q)eki(x)") == "sxmdllqekix"
 assert Solution().reverseParentheses("wnb(((z()qw)eyt)(bx(()ye)))") == "wnbbxeywqzeyt"
-assert Solution().reverseParentheses( "a(bcdefghijkl(mno)p)q") == "apmnolkjihgfedcbq"
+assert Solution().reverseParentheses("a(bcdefghijkl(mno)p)q") == "apmnolkjihgfedcbq"

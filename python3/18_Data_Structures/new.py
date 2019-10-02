@@ -8,16 +8,17 @@ in A.
 
 
 def solution(A):
-    result = sorted(set(filter(lambda x: x>0, A)))
+    result = sorted(set(filter(lambda x: x > 0, A)))
     if (not result) or (result[0] != 1):
         return 1
     for index, ech_num in enumerate(result):
         try:
-            if result[index +1] - ech_num > 1:
+            if result[index + 1] - ech_num > 1:
                 return ech_num + 1
         except IndexError:
             pass
     return result[-1] + 1
+
 
 assert solution([3, 2, -1]) == 1
 assert solution([-1, -3]) == 1

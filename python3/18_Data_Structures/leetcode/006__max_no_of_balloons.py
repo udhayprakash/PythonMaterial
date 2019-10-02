@@ -9,6 +9,8 @@ You can use each character in text at most once. Return the maximum number of in
 be formed.
 """
 from pprint import pprint
+
+
 class Solution:
     # FAILED LOGIC
     # def maxNumberOfBalloons(self, text): 
@@ -61,13 +63,15 @@ class Solution:
         nl = []
         nl.append(char_count.get('b', 0))
         nl.append(char_count.get('a', 0))
-        nl.append(char_count.get('l', 0)//2)
-        nl.append(char_count.get('o', 0)//2)
+        nl.append(char_count.get('l', 0) // 2)
+        nl.append(char_count.get('o', 0) // 2)
         nl.append(char_count.get('n', 0))
 
         return min(nl)
 
-print(Solution().maxNumberOfBalloons("siobnxjnmhnzoxjztwoezeqgoqkhetrpwszmwwwfpyybcizuzhrxriynbyjpbeplhfavddkwspyoddheetjgfqsmywnmxjviftexuzdbpuexfhsmyagqefhdilhehlhkitmkijgzoogicywcfxzalrvayrxavieoqodwoasbxuuuormvktvhwlidiilotsfwgcztxjktibraglhnhneororppplsylbfkebmqbzvftzsrrwfoiifajmxkjxtaxmvfmgxkdbxdycgottuymuknrnhjjcpwkpmbweirromdikbtcptxgtkslozeoejpchphkydsjexwjkiquaahuphtqftzoayqyqevtwszfmmkjqoqxexexltnwxpisszxdxljfubboxalbxhmnuabbypkpmrxyecuibqjoixdbjfvinxcgnjtwpyhieqneerorbllszkavoxearikldjeomdzyotdxioprkkvisadoccdrhkdknoyzmldomfdytzuvwvwoqatojlczydkvyfifkygtmwjynrtvllunelpkargfrkltadhzhggdmdtzordxrlxegknsqwmyqmpndpjtiwoutoxvgmxomhcjursxqzsoipvecltqjgurzhgsahpgrvshqddlqivbfiwcvrxpmneuwmpepyswrktflewfgfbtghjcvzfomsbozadzxzkmyzjsroftglrpmxzjnyekkiplfmuzkabmvdwurhuwnywqlxfzjzgsfsshbmszxxnxbotgryafvsyksaxvcxqbveuvqmutauqtcrqwnczzhrhgsjbxhnrpgxauqxtaouasklqxhndpsvrfcigpkjqgwyisaqzzcviqibbuzljshpbwgfgkjdcbsygptdebhyrdkmnibhedccpkoyfbgjbokdrxocfavwrqxrdrzfarhidwxcvtiqlmkecrhmvrbswyqsllxieztqppouuvxjuglyajhvypjtwegokegkmeh"))
+
+print(Solution().maxNumberOfBalloons(
+    "siobnxjnmhnzoxjztwoezeqgoqkhetrpwszmwwwfpyybcizuzhrxriynbyjpbeplhfavddkwspyoddheetjgfqsmywnmxjviftexuzdbpuexfhsmyagqefhdilhehlhkitmkijgzoogicywcfxzalrvayrxavieoqodwoasbxuuuormvktvhwlidiilotsfwgcztxjktibraglhnhneororppplsylbfkebmqbzvftzsrrwfoiifajmxkjxtaxmvfmgxkdbxdycgottuymuknrnhjjcpwkpmbweirromdikbtcptxgtkslozeoejpchphkydsjexwjkiquaahuphtqftzoayqyqevtwszfmmkjqoqxexexltnwxpisszxdxljfubboxalbxhmnuabbypkpmrxyecuibqjoixdbjfvinxcgnjtwpyhieqneerorbllszkavoxearikldjeomdzyotdxioprkkvisadoccdrhkdknoyzmldomfdytzuvwvwoqatojlczydkvyfifkygtmwjynrtvllunelpkargfrkltadhzhggdmdtzordxrlxegknsqwmyqmpndpjtiwoutoxvgmxomhcjursxqzsoipvecltqjgurzhgsahpgrvshqddlqivbfiwcvrxpmneuwmpepyswrktflewfgfbtghjcvzfomsbozadzxzkmyzjsroftglrpmxzjnyekkiplfmuzkabmvdwurhuwnywqlxfzjzgsfsshbmszxxnxbotgryafvsyksaxvcxqbveuvqmutauqtcrqwnczzhrhgsjbxhnrpgxauqxtaouasklqxhndpsvrfcigpkjqgwyisaqzzcviqibbuzljshpbwgfgkjdcbsygptdebhyrdkmnibhedccpkoyfbgjbokdrxocfavwrqxrdrzfarhidwxcvtiqlmkecrhmvrbswyqsllxieztqppouuvxjuglyajhvypjtwegokegkmeh"))
 
 assert Solution().maxNumberOfBalloons("nlaebolko") == 1
 assert Solution().maxNumberOfBalloons("loonbalxballpoon") == 2
@@ -75,4 +79,5 @@ assert Solution().maxNumberOfBalloons("leetcode") == 0
 assert Solution().maxNumberOfBalloons("balon") == 0
 assert Solution().maxNumberOfBalloons("ballon") == 0
 assert Solution().maxNumberOfBalloons("baloon") == 0
-assert Solution().maxNumberOfBalloons("krhizmmgmcrecekgyljqkldocicziihtgpqwbticmvuyznragqoyrukzopfmjhjjxemsxmrsxuqmnkrzhgvtgdgtykhcglurvppvcwhrhrjoislonvvglhdciilduvuiebmffaagxerjeewmtcwmhmtwlxtvlbocczlrppmpjbpnifqtlninyzjtmazxdbzwxthpvrfulvrspycqcghuopjirzoeuqhetnbrcdakilzmklxwudxxhwilasbjjhhfgghogqoofsufysmcqeilaivtmfziumjloewbkjvaahsaaggteppqyuoylgpbdwqubaalfwcqrjeycjbbpifjbpigjdnnswocusuprydgrtxuaojeriigwumlovafxnpibjopjfqzrwemoinmptxddgcszmfprdrichjeqcvikynzigleaajcysusqasqadjemgnyvmzmbcfrttrzonwafrnedglhpudovigwvpimttiketopkvqw") == 10
+assert Solution().maxNumberOfBalloons(
+    "krhizmmgmcrecekgyljqkldocicziihtgpqwbticmvuyznragqoyrukzopfmjhjjxemsxmrsxuqmnkrzhgvtgdgtykhcglurvppvcwhrhrjoislonvvglhdciilduvuiebmffaagxerjeewmtcwmhmtwlxtvlbocczlrppmpjbpnifqtlninyzjtmazxdbzwxthpvrfulvrspycqcghuopjirzoeuqhetnbrcdakilzmklxwudxxhwilasbjjhhfgghogqoofsufysmcqeilaivtmfziumjloewbkjvaahsaaggteppqyuoylgpbdwqubaalfwcqrjeycjbbpifjbpigjdnnswocusuprydgrtxuaojeriigwumlovafxnpibjopjfqzrwemoinmptxddgcszmfprdrichjeqcvikynzigleaajcysusqasqadjemgnyvmzmbcfrttrzonwafrnedglhpudovigwvpimttiketopkvqw") == 10

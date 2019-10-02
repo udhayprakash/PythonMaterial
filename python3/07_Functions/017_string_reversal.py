@@ -1,6 +1,6 @@
-
-#!/usr/bin/python
+# !/usr/bin/python
 __author__ = 'udhay Prakash'
+
 
 # 1, 2, 3, 4, 5
 def stringreverse(string):
@@ -8,9 +8,10 @@ def stringreverse(string):
     if string == '':
         return ''
     else:
-        #print(string[1:])
+        # print(string[1:])
         # print(string[0])
         return stringreverse(string[1:]) + string[0]
+
 
 '''
 1st loop

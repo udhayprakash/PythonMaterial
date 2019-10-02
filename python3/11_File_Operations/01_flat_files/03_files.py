@@ -4,8 +4,6 @@ f.write('something')
 f.flush()
 f.close()
 
-
-
 # Method 2 -context manager
 with open('myfile.txt', 'w') as f:
     f.write('line 222222\n')

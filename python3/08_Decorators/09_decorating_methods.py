@@ -6,9 +6,11 @@ ref: https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 
 
 def p_decorate(func):
-   def func_wrapper(self):
-       return "<p>{0}</p>".format(func(self))
-   return func_wrapper
+    def func_wrapper(self):
+        return "<p>{0}</p>".format(func(self))
+
+    return func_wrapper
+
 
 # def p_decorate(func):
 #    def func_wrapper(*args, **kwargs):
@@ -22,7 +24,8 @@ class Person(object):
 
     @p_decorate
     def get_fullname(self):
-        return self.name+" "+self.family
+        return self.name + " " + self.family
+
 
 my_person = Person()
 

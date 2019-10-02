@@ -18,6 +18,7 @@ def outer(num1):
     print('wrapper.__closure__    ', wrapper.__closure__)
     return wrapper
 
+
 outer_result = outer(10)
 
 print('outer_result', outer_result)

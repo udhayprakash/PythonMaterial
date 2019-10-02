@@ -14,7 +14,7 @@ import pyexcelerate
 import xlsxwriter
 import xlwt
 
-try: 
+try:
     from openpyxl.cell import get_column_letter
 except ImportError:
     from openpyxl.utils import get_column_letter
@@ -100,7 +100,7 @@ def time_openpyxl_optimised():
     """ Run OpenPyXL in optimised mode. """
     start_time = clock()
 
-    workbook = openpyxl.workbook.Workbook(write_only = True)#optimized_write=True)
+    workbook = openpyxl.workbook.Workbook(write_only=True)  # optimized_write=True)
     worksheet = workbook.create_sheet()
 
     for row in range(row_max // 2):
@@ -176,4 +176,3 @@ time_xlsxwriter()
 time_openpyxl_optimised()
 time_openpyxl()
 print("")
-

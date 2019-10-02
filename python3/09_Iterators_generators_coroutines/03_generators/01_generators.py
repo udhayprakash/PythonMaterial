@@ -3,6 +3,7 @@
 Purpose: Generators
 """
 
+
 def my_generator():
     print(' I am in the function')
     yield 111
@@ -12,7 +13,7 @@ def my_generator():
     yield 333
     print('yielding 444')
     yield 444
-    
+
 
 result = my_generator()
 print(type(result), result)
@@ -36,12 +37,10 @@ try:
 except StopIteration as ex:
     print(repr(ex))
 
-
 for ech in result:
     print(ech)
 
-print('\n After Re-initializing') 
+print('\n After Re-initializing')
 result = my_generator()
 for ech in result:
     print(ech)
-

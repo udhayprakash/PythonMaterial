@@ -11,7 +11,7 @@ for row in matrix:
 # transposed_matrix = zip(matrix[0], matrix[1], matrix[2])   
 transposed_matrix = list(zip(*matrix))
 
-print() 
+print()
 print('TRANSPOSED matrix:', transposed_matrix)
 for row in transposed_matrix:
     print(row)

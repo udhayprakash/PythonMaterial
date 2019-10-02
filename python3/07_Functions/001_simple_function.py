@@ -9,12 +9,15 @@ Purpose: Functions Demo
 
     Function with no arguments and no return value
 """
+
+
 # hello() # NameError: name 'hello' is not defined
 
 # Function Definition
 def hello():
     print("Hello world")
-    #return None - default
+    # return None - default
+
 
 # print(hello())
 

@@ -8,6 +8,7 @@ a = 56
 print(a)
 """
 
+
 def myfunc(num1, num2):
     """
     Function to perform arithmetic Addition operation
@@ -16,7 +17,8 @@ def myfunc(num1, num2):
     :return: result of addition operation
     """
     return num1 + num2
- 
+
+
 def myfunc(var1, var2, var3):
     """
     Function to perform arithmetic Multiplication operation
@@ -26,6 +28,6 @@ def myfunc(var1, var2, var3):
     """
     return var1 + var2 + var3
 
-    
+
 print('myfunc(2, 3, 5)=', myfunc(2, 3, 5))
 print('myfunc(2, 3)   =', myfunc(2, 3))

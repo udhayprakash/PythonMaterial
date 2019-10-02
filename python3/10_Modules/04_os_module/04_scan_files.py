@@ -5,6 +5,8 @@ Purpose: scan files
 import os
 
 path = r'C:\Python27'
+
+
 # print(os.getcwd())
 # print(os.listdir())
 
@@ -21,5 +23,5 @@ def scan_files_by_extn(given_file_etxn, _path):
 
     print(f'There are {len(files_with_given_extn)} py files under {path}')
 
-scan_files_by_extn('.py', path)
 
+scan_files_by_extn('.py', path)

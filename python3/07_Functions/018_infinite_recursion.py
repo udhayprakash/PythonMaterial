@@ -16,13 +16,15 @@ print(sys.getrecursionlimit())
 global noOfRecursions
 noOfRecursions = 0
 
+
 # Infinite loop
-def loop(noOfRecursions):             
+def loop(noOfRecursions):
     # print('Hi! I am in Loop ')
     # to get the count of number of recursions occurred
-    noOfRecursions+=1              
-    print('This is Loop %d'%noOfRecursions)
+    noOfRecursions += 1
+    print('This is Loop %d' % noOfRecursions)
     return loop(noOfRecursions)
+
 
 loop(noOfRecursions)
 

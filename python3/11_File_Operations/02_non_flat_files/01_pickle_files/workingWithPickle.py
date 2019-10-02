@@ -21,8 +21,8 @@ import pickle
 # Serialization
 students = ['Michel', 'John', 'Udhay', 'Ana', 123]
 
-f = open('BelgiumStudents.pkl', 'wb') # 'wb' instead 'w' for binary file
-pickle.dump(students, f, -1) # -1 specifies highest binary protocol
+f = open('BelgiumStudents.pkl', 'wb')  # 'wb' instead 'w' for binary file
+pickle.dump(students, f, -1)  # -1 specifies highest binary protocol
 f.flush()
 f.close()
 

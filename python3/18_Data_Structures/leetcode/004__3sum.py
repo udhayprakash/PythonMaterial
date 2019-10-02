@@ -3,13 +3,15 @@
 Purpose: https://leetcode.com/problems/3sum/
 """
 import time
+
+
 class Solution(object):
     def threeSum(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        from itertools import combinations 
+        from itertools import combinations
         result = []
         for ech in list(combinations(nums, 3)):
             if not sum(ech):
@@ -26,10 +28,15 @@ class Solution(object):
         #             groups.append(temp_list)
         # return groups
 
+
 s = Solution()
 # print(s.threeSum([-2,0,1,1,2]))
 start_time = time.time_ns()
-s.threeSum([-15,10,0,-2,14,-1,-10,-14,10,12,6,-6,10,2,-11,-9,2,13,2,-9,-14,-12,-10,-12,13,13,-10,-3,2,-11,3,-6,6,10,7,5,-13,4,-2,12,1,-11,14,-4,6,-12,-6,-14,8,11,-8,1,7,-3,5,5,-13,10,9,-3,6,-10,6,-3,7,-9,-13,9,10,0,-1,-11,4,-10,-8,-13,-15,2,-12,8,-2,-12,-14,-10,-8,6,2,-5,-7,-11,7,14,-6,-10,-12,8,-4,-10,-5,14,-3,9,-12,8,14,-13])
+s.threeSum(
+    [-15, 10, 0, -2, 14, -1, -10, -14, 10, 12, 6, -6, 10, 2, -11, -9, 2, 13, 2, -9, -14, -12, -10, -12, 13, 13, -10, -3,
+     2, -11, 3, -6, 6, 10, 7, 5, -13, 4, -2, 12, 1, -11, 14, -4, 6, -12, -6, -14, 8, 11, -8, 1, 7, -3, 5, 5, -13, 10, 9,
+     -3, 6, -10, 6, -3, 7, -9, -13, 9, 10, 0, -1, -11, 4, -10, -8, -13, -15, 2, -12, 8, -2, -12, -14, -10, -8, 6, 2, -5,
+     -7, -11, 7, 14, -6, -10, -12, 8, -4, -10, -5, 14, -3, 9, -12, 8, 14, -13])
 print(time.time_ns() - start_time)
 # print()             # 0 1 2 3 4
 # for i in s.threeSum([-2,0,1,1,2]):
@@ -52,7 +59,6 @@ print(time.time_ns() - start_time)
 #         for each_c in combinations:
 
 #         i += 1
-
 
 
 # -2,0,1
@@ -86,7 +92,6 @@ print(time.time_ns() - start_time)
 # 2, -1, -4
 
 
-
 # def all_subsets(di, i) :
 #     ret = []
 #     for j, item in enumerate(di) :
@@ -116,8 +121,9 @@ print(time.time_ns() - start_time)
 # print(time.time_ns()- start_time)
 
 from itertools import permutations, combinations
+
 print(list(permutations('ABC')))
 print()
-print(list(permutations([-2,0,1,1,2], 3)))
+print(list(permutations([-2, 0, 1, 1, 2], 3)))
 # print()
 # print(list(combinations([-2,0,1,1,2])))

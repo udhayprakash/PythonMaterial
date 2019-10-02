@@ -3,7 +3,6 @@
 Purpose: importance and usage of argparse
 """
 
-
 # # Method 1: hard- coding
 # user_name = 'udhay'
 # password = 'udhay@123'
@@ -37,19 +36,18 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument('-u', '--username',
                     help='login user name',
-                    type=str, 
+                    type=str,
                     required=True)
 parser.add_argument('-p', '--password',
                     help='login password',
-                    type=str, 
+                    type=str,
                     required=True)
 parser.add_argument('-s', '--servername',
                     help='server name',
-                    type=str, 
+                    type=str,
                     required=True)
 
 args = parser.parse_args()
-
 
 user_name = args.username
 password = args.password
@@ -61,5 +59,3 @@ The server login details are:
     PASSWORD    : {password}
     SERVER NAME : {server_name}
 ''')
-
-

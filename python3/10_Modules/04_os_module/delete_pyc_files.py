@@ -35,7 +35,7 @@ if __name__ == '__main__':
     extension_specific_files = delete_pyc_files(custom_path)
     print("extension_specific_files:")
     for file_name in extension_specific_files:
-        print('\t',file_name)
+        print('\t', file_name)
 
     print('total files deleted:', len(extension_specific_files))
 else:

@@ -27,6 +27,6 @@ if 5 < n < 101 and 15 < m < 303:
 
     print('WELCOME'.center(m, '-'))
 
-    for row in range(n-2, 0, -1):
+    for row in range(n - 2, 0, -1):
         if row % 2 != 0:
             print(('.|.' * row).center(m, '-'))

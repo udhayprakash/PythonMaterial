@@ -7,10 +7,9 @@ Purpose: Selection Sort
                  of integers from a such that b1 < b2 < ··· < bn.
 """
 
+
 def selection_sort(unsorted_list):
     pass
 
 
-
-
-print(selection_sort([7,92,87,1,4,3,2,6]))
+print(selection_sort([7, 92, 87, 1, 4, 3, 2, 6]))

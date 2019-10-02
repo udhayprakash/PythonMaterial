@@ -4,6 +4,7 @@ Purpose: importance and usage of argparse
 """
 import argparse
 
+
 def main(m, n, p):
     """ Short script to add three numbers """
     return m + n + p
@@ -30,6 +31,5 @@ if __name__ == '__main__':
     print('type(args.a)', type(args.a))
     print('type(args.b)', type(args.b))
     print('type(args.c)', type(args.c))
-
 
     print(main(args.a, args.b, args.c))

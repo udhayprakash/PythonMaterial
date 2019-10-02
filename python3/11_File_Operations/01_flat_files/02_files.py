@@ -36,15 +36,15 @@ data = fh.read(5)
 print(type(data), data)
 
 data = fh.readline()
-print(type(data),data)
+print(type(data), data)
 
 data = fh.readline()
-print(type(data),data)
+print(type(data), data)
 
 print('fh.tell()', fh.tell())
 fh.seek(0)
 data = fh.readlines()
-print(type(data),data)
+print(type(data), data)
 
 fh.flush()
 fh.close()

@@ -18,23 +18,25 @@ def wrapper(f):
             elif len(ech_num) == 13:
                 new_list.append('+91 ' + ech_num[3:][:5] + ' ' + ech_num[3:][5:])
         f(new_list)
+
     return fun
+
 
 @wrapper
 def sort_phone(l):
     print(*sorted(l), sep='\n')
 
+
 if __name__ == '__main__':
     # l = [input() for _ in range(int(input()))]
-    l = ['9195969878', 
-         '07895462130', 
-         '919875641230', 
-         '+919875641230', 
-         '09191919191', 
-         '9100256236', 
+    l = ['9195969878',
+         '07895462130',
+         '919875641230',
+         '+919875641230',
+         '09191919191',
+         '9100256236',
          '+919593621456']
-    sort_phone(l) 
-
+    sort_phone(l)
 
 """
     7895462130      10

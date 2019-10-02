@@ -9,11 +9,12 @@ Input: 123
 Then, if 1^3 + 2^3 + 3^3 is equal to 123 then it is a crazy number.
 """
 
+
 def crazy_num(num):
     total = 0
     while num:
         total += (num % 10) ** 3
-        print(num, num//10, num % 10, total)
+        print(num, num // 10, num % 10, total)
         num = num // 10
         # breakpoint()
     print(total)
@@ -37,8 +38,7 @@ def crazy_num(num):
     # #     print (f'{n:6} is Not crazy number.')
 
 
-
-num = 10_00_000 #int(input("Enter number: "))
+num = 10_00_000  # int(input("Enter number: "))
 
 # for n in range(num):
 #     crazy_num(n)

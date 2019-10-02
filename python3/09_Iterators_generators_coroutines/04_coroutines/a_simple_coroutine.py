@@ -8,11 +8,12 @@
 - Coroutines consume values using a (yield)
 """
 
+
 def coro():
     hello = yield "Hello"
-    yield hello      # resulted with c.send("World")
- 
- 
+    yield hello  # resulted with c.send("World")
+
+
 c = coro()
 print('c', c)
 
@@ -22,7 +23,7 @@ print(next(c))
 print(c.send("World"))
 
 try:
-    c.throw(RuntimeError,"I am throwing exception")
+    c.throw(RuntimeError, "I am throwing exception")
 except RuntimeError as ex:
     print(ex)
 

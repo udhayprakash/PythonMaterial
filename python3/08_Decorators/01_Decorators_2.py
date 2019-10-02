@@ -6,23 +6,27 @@ def div(a, b):
 
 
 def outer(func):
-    def inner(*args, **kwargs):          #(a, b):
+    def inner(*args, **kwargs):  # (a, b):
         # print(f'In inner(), func:{func}') 
         try:
-            func(*args, **kwargs)        #(a, b)          # div(), add()
+            func(*args, **kwargs)  # (a, b)          # div(), add()
         except Exception as ex:
             return repr(ex)
         else:
-            return func(*args, **kwargs) #(a, b)   # div(), add()
+            return func(*args, **kwargs)  # (a, b)   # div(), add()
+
     return inner
+
 
 result = outer(div)
 print(result(4, 2))
 print(result(4, 0))
 print()
 
+
 def add(n1, n2, n3):
     return n1 + n2 + n3
+
 
 temp_var = outer(add)  # refence  to inner
 print(temp_var(2, 3, 4))

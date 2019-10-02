@@ -27,13 +27,13 @@ print("type(vegetables_iter):", type(vegetables_iter))
 
 print
 # print(vegetables_iter.next())  # AttributeError: 'list_iterator' object has no attribute 'next'
-print(vegetables_iter.__next__())  
+print(vegetables_iter.__next__())
 print(next(vegetables_iter))
 print(next(vegetables_iter))
 # print(vegetables_iter.__next__()) 
 
 try:
-    print(vegetables_iter.__next__()) 
+    print(vegetables_iter.__next__())
 except StopIteration as ex:
     print(repr(ex))
 
@@ -57,7 +57,6 @@ veto_countries = ('USA', 'UK', 'France', 'China', 'Russia')
 print("veto_countries      :", veto_countries)
 print("type(veto_countries):", type(veto_countries))
 print("veto_countries[1]", veto_countries[1])
-
 
 veto_countries_iter = iter(veto_countries)
 print("veto_countries_iter      :", veto_countries_iter)
@@ -85,7 +84,6 @@ for each_country in vegetables_iter:
     print("each_country", each_country)
 
 print('\n')
-
 
 # set - set iterator
 # dictionary - dictionary key iterator

@@ -2,7 +2,8 @@
 """
 Purpose: decorator example
 """
-import time 
+import time
+
 
 def time_taken(func):
     def wrapper(*args, **kwargs):
@@ -10,6 +11,7 @@ def time_taken(func):
         func(*args, **kwargs)
         total = time.time() - start_time
         print(f'Function {func.__name__} took {total} seconds')
+
     return wrapper
 
 

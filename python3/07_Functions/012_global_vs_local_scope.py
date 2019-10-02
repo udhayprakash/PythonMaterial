@@ -73,10 +73,12 @@ details = {  # mutable - call by reference
     'ver': '3.7.0'
 }
 
+
 def simple_function():
     print('\nbefore change ver = {}'.format(details['ver']))
     details['ver'] = '3.8'
     print('after  change ver = {}'.format(details['ver']))
 
-simple_function() 
+
+simple_function()
 print('outside function ver = {}'.format(details['ver']))

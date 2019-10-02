@@ -1,10 +1,11 @@
 # Program that will stop common Windows applications and shut the computer down
 # For the truly lazy. :-)
 
-print ("Stopping applications now")
+print("Stopping applications now")
 # import the operating system module
 # allows user to run operating system commands from Python
 import os
+
 # Run the command "taskkill" to stop applications in Windows
 os.system("taskkill /f /im notepad.exe")
 os.system("taskkill /f /im winword.exe")

@@ -15,5 +15,6 @@ print(toString(1453, 8))
 def func1(num1):
     return func2(num1)
 
+
 def func2(num2):
     return func1(num2)

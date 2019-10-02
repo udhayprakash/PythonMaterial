@@ -1,4 +1,3 @@
-
 with open('myfile.txt', 'a+') as g:
     # import pdb; pdb.set_trace()
     # breakpoint()
@@ -22,5 +21,3 @@ with open('myfile.txt', 'a+') as g:
     print('before closing ---g.closed', g.closed)
     g.close()
     print('after closing  ---g.closed', g.closed)
-    
-    

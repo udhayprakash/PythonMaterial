@@ -1,14 +1,13 @@
-
 def my_coroutine():
     while True:
         received = yield 12312
         print('Received:', received)
 
+
 # creating the generator
 it = my_coroutine()
 
 print(next(it))  # Prime the coroutine
-
 
 it.send('First')
 it.send('Second')

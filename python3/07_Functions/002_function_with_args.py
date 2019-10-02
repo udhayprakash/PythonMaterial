@@ -5,9 +5,11 @@ Purpose: Functions Demo
     Function with one input argument and no return value
 """
 
+
 # Function Definition
 def hello(name):
     print("Hello " + str(name))
+
 
 # hello() # TypeError: hello() missing 1 required positional argument: 'name'
 hello('Python')

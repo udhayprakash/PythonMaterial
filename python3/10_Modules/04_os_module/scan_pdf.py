@@ -33,7 +33,7 @@ def print_pdf(arg, dir, files):
         if not re.search(r".*\.pdf", path): continue
         if re.search(r".\.hu", path): continue
 
-        print path
+        print(path)
 
 
 os.path.walk('.', print_pdf, 0)

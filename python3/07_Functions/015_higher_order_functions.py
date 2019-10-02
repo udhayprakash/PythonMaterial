@@ -13,17 +13,16 @@ print(dict(zip(group1, group2)))
 print(dict([['1', 'a'], ['2', 'b'], ['3', 'c']]))
 print()
 
-
 print(list(
-        zip(
-                (1,   2,   3,   4),
-                (11,  22,  33,  44),
-                (111, 222, 333, 444),
-        )
+    zip(
+        (1, 2, 3, 4),
+        (11, 22, 33, 44),
+        (111, 222, 333, 444),
+    )
 ))
 
 # print(list(map(None, group1, group2)))
-print(list(map(lambda x,y:(x,y), group1, group2)))
+print(list(map(lambda x, y: (x, y), group1, group2)))
 
 # print(list(map(my_mapper, group1, group2)))
 # print(dict(list(map(my_mapper, group1, group2))))
@@ -31,18 +30,20 @@ print(list(map(lambda x,y:(x,y), group1, group2)))
 # print(list(map(lambda x, y: {x:y}, group1, group2)))
 # print(dict(list(map(lambda x, y: {x:y}, group1, group2))))
 
-print('-'* 25)
+print('-' * 25)
+
 
 def check_positive(num):
-    if num>= 0:
-        return True 
+    if num >= 0:
+        return True
     return False
+
 
 print('check_positive ----')
 print(check_positive(-0))
 #### Traditionally
 result = []
-for each_num in range(-4,6):
+for each_num in range(-4, 6):
     result.append(check_positive(each_num))
 print(result)
 

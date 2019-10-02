@@ -1,12 +1,12 @@
-
 def repeater():
     while True:
         received = yield 'ram'
         print('Echo:', received)
 
+
 rp = repeater()
 
-print(next(rp)) # Start the coroutine
+print(next(rp))  # Start the coroutine
 
 rp.send('Aruna')
 rp.send('Akram')

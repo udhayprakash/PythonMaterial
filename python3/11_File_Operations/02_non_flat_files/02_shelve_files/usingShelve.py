@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#usingShelve.py
+# usingShelve.py
 
 '''
     Purpose: Demonstrating the purpose of shelve
@@ -10,7 +10,7 @@ import shelve
 # creating a new shelve file
 s = shelve.open('michelShelve.db')
 try:
-    s['key1'] = { 'int': 10, 'float':9.5, 'string':'Sample data' }
+    s['key1'] = {'int': 10, 'float': 9.5, 'string': 'Sample data'}
 except Exception as  ex:
     print(ex)
 finally:
@@ -38,7 +38,6 @@ finally:
 
 print(existing)
 
-
 # By defaults, shelve do not track modifications to volatile objects.
 
 s = shelve.open('michelShelve.db')
@@ -50,7 +49,7 @@ finally:
 
 s = shelve.open('michelShelve.db', writeback=True)
 try:
-    print(s['key1'])   # modifications are not reflected
+    print(s['key1'])  # modifications are not reflected
 finally:
     s.close()
 

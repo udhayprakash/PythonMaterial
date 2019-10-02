@@ -3,6 +3,7 @@
 Purpose: https://leetcode.com/problems/integer-to-roman/
 """
 
+
 class Solution(object):
     def intToRoman(self, num):
         """
@@ -20,7 +21,7 @@ class Solution(object):
         }
         roman_number = ''
         for each_num in integer_to_roman_mapping:
-            divisor, remainder = divmod(num , each_num)
+            divisor, remainder = divmod(num, each_num)
             if divisor:
                 print(num, each_num, divisor, remainder)
                 # if divisor == 4:
@@ -55,7 +56,7 @@ class Solution(object):
         )
         roman_num = ''
         i = 0
-        while  num > 0:
+        while num > 0:
             for _ in range(num // val[i]):
                 print(num, val[i], num // val[i], syb[i])
                 roman_num += syb[i]
@@ -68,7 +69,7 @@ s = Solution()
 print(s.intToRoman(482) == 'CDLXXXII')
 
 for i in range(1000, 2000):
-    print( f'{i:4} {s.intToRoman(i)}')
+    print(f'{i:4} {s.intToRoman(i)}')
     # print()
 # assert s.intToRoman(33) == "III"
 

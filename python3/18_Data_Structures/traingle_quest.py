@@ -1,6 +1,6 @@
 n = int(input('n='))
 if 0 < n <= 9:
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         print(i * (pow(10, i) // 9))
 
 '''

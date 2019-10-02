@@ -46,4 +46,5 @@ if __name__ == '__main__':
 
     print('total files count', len(extension_specific_files))
 else:
-    print "imported"
+    print
+    "imported"

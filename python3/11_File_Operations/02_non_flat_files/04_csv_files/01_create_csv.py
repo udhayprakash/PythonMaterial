@@ -1,14 +1,13 @@
 #!/usr/bin/python
 
-'''
+"""
 Purpose: creating a new CSV file
 
 with - context manager
 
 garbage collector -- java, python , ..
     - cpu clock cycle
-
-'''
+"""
 
 with open('sample.csv', 'w') as fh:
     fh.write('s_no,name,age,designation\n')

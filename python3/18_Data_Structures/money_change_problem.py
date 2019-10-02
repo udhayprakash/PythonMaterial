@@ -11,12 +11,13 @@ Output: A list of d integers i1,i2,...,id such that c1 · i1 + c2 · i2 +
 
 """
 
+
 def change(money, coins, denominations):
-    r = money 
+    r = money
     i = []
     # breakpoint()
     for k in range(denominations):
-        i.append(r//coins[k])
+        i.append(r // coins[k])
         r = r - coins[k] * i[k]
     return i
 
@@ -25,4 +26,4 @@ money = 77
 coins = (25, 10, 5, 1)
 denominations = len(coins)
 
-print(change(money, coins, denominations)) # [3, 0, 0, 2] = 3 * 25 + 1 * 2
+print(change(money, coins, denominations))  # [3, 0, 0, 2] = 3 * 25 + 1 * 2

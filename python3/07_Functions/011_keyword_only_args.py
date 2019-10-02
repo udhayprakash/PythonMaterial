@@ -10,17 +10,19 @@ Purpose: Functions Demo
     Present only in Python 3.X
 """
 
+
 # Function Definition
 def recv(maxsize, *, block=True):
-    print("\ntype(maxsize)  ",  type(maxsize))
-    print("type(block) ",  type(block))
+    print("\ntype(maxsize)  ", type(maxsize))
+    print("type(block) ", type(block))
 
-    print("maxsize   "+ str(maxsize))
-    print("block "+ str(block))
-    print('-'*20)
+    print("maxsize   " + str(maxsize))
+    print("block " + str(block))
+    print('-' * 20)
+
 
 # Function Call 
 recv(8192, block=False)
-recv(8192, block=True) 
-recv(8192, False) 
+recv(8192, block=True)
+recv(8192, False)
 # TypeError: recv() takes 1 positional argument but 2 were given

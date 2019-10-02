@@ -11,9 +11,10 @@ Problem Statement:
 
 
 def formatted_result(price):
-	return "%d dollor(s) and %d cent(s)" % (
-						price / 100, price % 100)
-	 # default return is None
+    return "%d dollor(s) and %d cent(s)" % (
+        price / 100, price % 100)
+    # default return is None
+
 
 print(formatted_result(4321)  # '43 dollor(s) and 21 cent(s)')
 

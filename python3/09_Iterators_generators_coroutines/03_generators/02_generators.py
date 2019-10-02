@@ -9,8 +9,10 @@ Generator objects
     - stores the state
     - used for large data handling
 """
+
+
 # definition
-def foo():  
+def foo():
     print("Start the function!")
     for i in range(3):
         print("before yield", i)
@@ -20,11 +22,11 @@ def foo():
 
     print("end of function ")
     # return None
-     
+
 
 # call 
-f = foo() 
-print('f', f) 
+f = foo()
+print('f', f)
 # print(dir(f))
 
 print(next(f))

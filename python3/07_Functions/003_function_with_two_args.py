@@ -5,6 +5,7 @@ Purpose: Functions Demo
     Function with two arguments and no return value
 """
 
+
 # Function Definition
 def hello(name, age):
     # print("%s's age is %d"%(name, age))
@@ -16,8 +17,7 @@ def hello(name, age):
 
 # hello('Gudo')
 hello('Gudo', 77)
-hello( 77, 'Gudo')
-
+hello(77, 'Gudo')
 
 hello(name='Gudo', age=77)
 hello(age=77, name='Gudo')
