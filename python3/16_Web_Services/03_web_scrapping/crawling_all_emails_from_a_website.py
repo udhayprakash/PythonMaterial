@@ -41,7 +41,6 @@ while len(unprocessed_urls):
     # You may edit the regular expression as per your requirement
     new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
     emails.update(new_emails)
-    print(emails)
     # create a beutiful soup for the html document
     soup = BeautifulSoup(response.text, 'lxml')
 
@@ -57,3 +56,5 @@ while len(unprocessed_urls):
         # add the new url to the queue if it was not in unprocessed list nor in processed list yet
         if not link in unprocessed_urls and not link in processed_urls:
             unprocessed_urls.append(link)
+
+print(emails)
