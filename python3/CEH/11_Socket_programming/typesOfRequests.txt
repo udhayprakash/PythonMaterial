@@ -1,0 +1,24 @@
+if the request is: "GET / HTTP/1.0\r\n\r\n" then the response contains header as well as body, and the connection closes after the response.
+
+if the request is:"GET / HTTP/1.1\r\nHost: host:port\r\nConnection: close\r\n\r\n" then the response contains header as well as body, and the connection closes after the response.
+
+if the request is:"GET / HTTP/1.1\r\nHost: host:port\r\n\r\n" then the response contains header as well as body, and the connection will not close even after the response.
+
+if your request is: "GET /\r\n\r\n" then the response contains no header and only body, and the connection closes after the response.
+
+if your request is: "HEAD / HTTP/1.0\r\n\r\n" then the response contains only header and no body, and the connection closes after the response.
+
+if the request is: "HEAD / HTTP/1.1\r\nHost: host:port\r\nConnection: close\r\n\r\n" then the response contains only header and no body, and the connection closes after the response.
+
+if the request is: "HEAD / HTTP/1.1\r\nHost: host:port\r\n\r\n" then the response contains only header and no body, and the connection will not close after the response.
+
+------------------------------
+python 2
+--------
+    python -m SimpleHTTPServer
+    python -m SimpleHTTPServer 5000
+python 3
+--------
+python -m http.server
+python -m http.server --help
+
