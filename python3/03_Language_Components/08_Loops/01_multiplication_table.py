@@ -7,27 +7,47 @@ while loop- condition
 """
 # NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 
+# Incrementing Loop
+i = 0
+while i < 10:
+    i += 2
+    print(i)
+
+print()
+# Decrementing loop
+j = 10 
+while  j > 0:
+   j -= 2
+   print(j)
+
+print()
+# Decrementing loop
+j = 10 
+while  j > 0:
+   print(j)
+   j -= 2
+
+print()
+# Loop within Loop
 
 i = 1
 while i <= 10:
     j = 1
     while j <= 10:
-        # print(i,'*', j, '=', i * j)
-        # print('%2d * %2d = %3d'%(i, j, i * j))
-        # print('{:2} * {:2} = {:3}'.format(i, j, i * j))
-        # print(f'{i:2} * {j:2} = {i *j : 3}')
-        # print(i, str(i).zfill(2))
-        print(f'{str(i).zfill(2)} * {str(j).zfill(2)} = {str(i * j).zfill(3)}')
+        # print(i, '*', j, '=', i * j)
+        # print(str(i) + ' * ' + str(j) + ' = ' + str(i*j))
+        # print('%2d * %2d = %3d' %(i, j, i * j))
+        # print('{:2} * {:2} = {:3}'.format(i, j, i *j))
+        print(f'{i:2} * {j:2} = {i * j:3}')
         j += 1
+    # print(i, 'outer')
+    i += 1
+    print()
 
-    # print(i)
-    i += 1  # i = i + 1
-    print('-' * 20)
 
-# p = 10
-# while p > 0:
-#     print(p)
-#     p -= 1
+
+
+
 
 '''
 Assignment - Display the multiplication table horizontally 

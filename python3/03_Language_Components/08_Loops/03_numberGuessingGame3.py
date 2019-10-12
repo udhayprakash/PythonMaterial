@@ -6,36 +6,35 @@ Purpose: Number Guessing Game
 __author__ = 'Python Tutor'
 lucky_number = 67
 
-# attempt = 1
-# while attempt <= 5:
-#     print(f'\nThis is attempt: {attempt}')
+# attempts = 0
+# while attempts < 5:
+#     attempts += 1
+#     print(f'\nThis is attempt no: {attempts}')
+#     guessed_number = int(input('Enter a no. between 0 & 100:'))
 
-#     guessed_number = int(input('Enter a number btwn 0 & 100:'))
-#     # print(guessed_number, type(guessed_number))
-
-#     if guessed_number > lucky_number:
-#         print('Lower your guess')
-#     elif guessed_number < lucky_number:
-#         print('Increase your guess')
+#     if guessed_number < lucky_number:
+#         print('Increase your guessing number')
+#     elif guessed_number > lucky_number:
+#         print('Reduce your guessing number')
 #     else:
-#         print('You GUessed correctly')
+#         print('You GUESSED CORRECTLY!!!')
 #         break
-
-#     attempt += 1
 # else:
-#     print('Sorry! you lost all chances')
+#     print('Sorry! You are unable to Guess within {attempts} attempts')
 
 
-choice = 'y'
-while choice == 'y':
-    guessed_number = int(input('Enter a number btwn 0 & 100:'))
 
-    if guessed_number > lucky_number:
-        print('Lower your guess')
-    elif guessed_number < lucky_number:
-        print('Increase your guess')
+while 1:
+    guessed_number = int(input('\nEnter a no. between 0 & 100:'))
+
+    if guessed_number < lucky_number:
+        print('Increase your guessing number')
+    elif guessed_number > lucky_number:
+        print('Reduce your guessing number')
     else:
-        print('You GUessed correctly')
+        print('You GUESSED CORRECTLY!!!')
         break
 
-    choice = input('\nEnter y to continue:').lower()
+    choice = input('Enter Y(or y) to continue:').upper()
+    if choice != 'Y':
+        break
