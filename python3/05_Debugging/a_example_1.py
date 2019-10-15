@@ -1,7 +1,12 @@
 #!/usr/bin/python
 import pdb
 
-pdb.set_trace()
 
-for i in (1, 2, 3, 4, 5, 6, 7):
-    print(i)
+val_1 = int(input('Enter val_1:'))
+val_2 = int(input('Enter val_2:'))
+
+# pdb.set_trace()
+
+# multiplication
+result = val_1 * val_2
+print(f'Multiplication :{result}')

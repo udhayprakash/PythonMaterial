@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 # raise ValueError('This is my ValueError')
+raise TypeError('This is my TYpeError')
+
 
 try:
     raise ValueError('This is my ValueError')
