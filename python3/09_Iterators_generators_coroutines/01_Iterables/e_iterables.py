@@ -1,31 +1,36 @@
+#!/usr/bin/python
 """
-Purpose:
-sorted()
+Purpose: sorted()
 """
-sorted([5, 2, 3, 1, 4])  # [1, 2, 3, 4, 5]
-
-a = [5, 2, 3, 1, 4]
-a.sort()
-a  # [1, 2, 3, 4, 5]
-
-sorted({1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'})  # [1, 2, 3, 4, 5]
-
-list_of_strings = "This is a test string from Andrew".split()
-sorted(list_of_strings)
-# ['Andrew', 'This', 'a', 'from', 'is', 'string', 'test']
-sorted(list_of_strings, key=str.lower)
-# ['a', 'Andrew', 'from', 'is', 'string', 'test', 'This']
-
 
 student_tuples = [
-    ('john', 'A', 15),
-    ('jane', 'B', 12),
-    ('dave', 'B', 10),
+    ('camel', 'A', 15),
+    ('cat', 'B', 12),
+    ('dog', 'B', 10),
 ]
-sorted(student_tuples, key=lambda student: student[2])  # sort by age
+
+print(student_tuples)
+print()
+
+# default - sorts by 0th element
+print(sorted(student_tuples))
+print(sorted(student_tuples, key=lambda x: x[0]))
+
+print()
+print(sorted(student_tuples, key=lambda x: x[2]))
+print(sorted(student_tuples, key=lambda x: x[1]))
+
+print()
+print(sorted(student_tuples, key=lambda x: (x[1], x[2])))
+
+import operator
+print(sorted(student_tuples, key = operator.itemgetter(1, 2)))
+
+student_tuples.sort(key = operator.itemgetter(1, 2))
+print(student_tuples)
 
 
-# [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
+
 
 class Student:
     def __init__(self, name, grade, age):
@@ -70,6 +75,6 @@ sorted(student_objects, key=attrgetter('age'), reverse=True)
 # [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]
 
 
-data = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]
-sorted(data, key=itemgetter(0))
+student_tuples = [('red', 1), ('blue', 1), ('red', 2), ('blue', 2)]
+sorted(student_tuples, key=itemgetter(0))
 # [('blue', 1), ('blue', 2), ('red', 1), ('red', 2)]

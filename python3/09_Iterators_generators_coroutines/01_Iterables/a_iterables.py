@@ -1,25 +1,17 @@
+#!/usr/bin/python
 """
-Iterable: any object which supports for loop over it.
-    Ex:  string, list, tuple, dictionary, set, frozenset, range
+Purpose: Iterables
 
-NON_Iterable: 
-Integer family
-    - int
-    - float
+non-iterable objects ====> int, float, None, True, False ..
+Iterable objects     ====> str, list, tuple, dict, set, itertor, generator, range()
 
-    - complex
-    - boolean
-
-None
-bool
 """
+# for i in 1234:
+#     print(i)
+# TypeError: 'int' object is not iterable
 
-# int
-# for i in 2:
-#     print(i)  # TypeError: 'int' object is not iterable
-
-# for i in None:
-#     print i # TypeError: 'NoneType' object is not iterable
+for i in '1234':
+    print(i)
 
 # string   -- iterable
 for ch in 'python programming':
@@ -41,6 +33,7 @@ names = {'udhay', 'prakash', 'someone'}
 for each_name in names:
     print(each_name)
 
+
 print('\nCollections - dictionaries  - iterable')
 names = {'first': 'udhay', 'second': 'prakash', 'third': 'someone'}
 for each_name in names:
@@ -59,8 +52,8 @@ for each_name in names.items():
     print(each_name)
 
 for each_key, each_val in names.items():
-    # print('each_key',each_key, 'each_val', each_val)
     print(f'each_key:{each_key}\t\teach_val:{each_val}')
+
 
 print(list('Python Programming'))
 print(tuple('Python Programming'))
