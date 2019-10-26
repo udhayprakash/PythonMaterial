@@ -7,43 +7,48 @@ language = 'Python Programming'
 print('language       = ', language)
 print('type(language) = ', type(language))
 
-myString = 'what\'s next'
-print(myString)
+# my_string = 'what's next'  # SyntaxError: invalid syntax
+my_string = 'what\'s next' 
+print(my_string)
 
-junkData = '$%^%^    &^* &^\'*&^ * uhk'  # escaping '
-print('junkData       = ', junkData)
-print('type(junkData) = ', type(junkData))
+other_string = 'what\'s your next car\'s number '
+print(other_string)
 
-junkData = "$%^%'^&^* &^'*&^' * uhk"  # single quote enclosed in double quotes
-print('junkData       = ', junkData)
-print('type(junkData) = ', type(junkData))
+anoth_str = "as'asd'asd'asd'asd'sad'sad'sad'asd"
+print(anoth_str)
 
-print("'")
-print('"')
-print('\'')
+anoth_str = 'AS"SAD"SDAS"SDASD"SDASD"SDASDDS"'
+print(anoth_str)
 
-print(" ''' ' '''  ")
+anoth_str = '''what's your" next" car's no"'''
+print(anoth_str)
 
-print('""')
-print("''")
+"'"
+'"'
 
-print(''' """ """ ''')
-print(""" ''' ''' """)
+''' " '" ' '''
+""" ''' " '" ' ''' """
 
-# multi-line string 
-print('TOday is an awesome day\
-            to work ')
-
-print("TOday is an awesome day\
-            to work ")
+# multi-line strings
+print('Today is an awesome day \
+        to learn python')
+print("Today is an awesome day \
+        to learn python")
 
 print()
-print('''TOday is an awesome day\
-            to work ''')
-print("""TOday is an awesome day\
-            to work """)
+print('''Today is an awesome day \
+        to learn python''')
+print("""Today is an awesome day \
+        to learn python""")
 
-print('''TOday is an awesome day
-            to work ''')
-print("""TOday is an awesome day
-            to work """)
+print('''Today is an awesome day 
+        to learn python''')
+print("""Today is an awesome day 
+        to learn python""")
+
+
+print(''' 
+a - apple
+b - ball
+c - cat 
+d - dog''')

@@ -6,7 +6,9 @@ Purpose: Demonstration of String Operations
 language = 'Python Programming'
 print('language       = ', language)
 print('type(language) = ', type(language))
+print('len(language)  = ', len(language))
 print('id(language)   = ', id(language))
+
 print('===========================================')
 print('String Attributes')
 print('dir(language) :', dir(language))
@@ -56,6 +58,7 @@ print('"ABCD123#".isupper() :', "ABCD123#".isupper())
 print('"Abcd123#".islower() :', "Abcd123#".islower())
 
 print('"1234".isdigit()     :', "1234".isdigit())
+print('"12 34".isdigit()    :', "12 34".isdigit())
 print('"123edsd".isdigit()  :', "123edsd".isdigit())
 
 print('"abcD".isalpha()     :', "abcD".isalpha())
@@ -64,6 +67,7 @@ print('"abcd1".isalpha()    :', "abcd1".isalpha())
 print('"ab123".isalnum()    :', "ab123".isalnum())
 print('"ab123#".isalnum()   :', "ab123#".isalnum())
 
+print('"    ".isspace()     :', "     ".isspace())
 print('" ".isspace()        :', " ".isspace())
 print('"".isspace()         :', "".isspace())
 print()

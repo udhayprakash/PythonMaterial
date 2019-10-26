@@ -13,3 +13,10 @@ Step 3: Open windows start menu and type "environment variables". In it open PAT
 
 
 python.org
+-------------
+
+
+
+
+pip install --upgrade setuptools
+pip install --only-binary :all: mysqlclient

@@ -2,16 +2,15 @@
 """
 Purpose: Demonstration of Palindrome check 
 """
+test_string =  input('Enter any string:') #'dad' #'mom'
 
-my_string1 = 'dad'  # 'manam' #'adda' # 'mom', 
+# print(test_string)
+# print(test_string[::-1])
 
-my_string2 = my_string1[::-1]
+if test_string == test_string[::-1]:
+    print(test_string, 'is a palindome string')
+else:
+    print(test_string, 'is not a palindrome string')
 
-print(my_string1, my_string2, my_string1 == my_string2)
-
-if my_string1 == my_string2:
-    print('It is a palindrome string')
-
-# assignment : get the string in runtime and validate HINT: input()
 # assignment : display all palindrome numbers btwn 0 and 2000. HINT: str()
-#     222, 333
+#     0, 1, 2, 3, 4, 5, 6,7, ... 11, 22, ... 222, 333
