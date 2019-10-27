@@ -8,8 +8,10 @@ print('f-strings', '=' * 20)
 
 name = 'World'
 print("Hello {name}")
+print("Hello {name}".format(name='world'))
 print(f"Hello {name}")
-# print(f"Hello {name1}")
+# print(f"Hello {name1}") # NameError: name 'name1' is not defined
+
 # python operations on data within the f-string 
 print(f"Hello {name.upper()}")
 print(f"Hello {name.title()}")
@@ -27,6 +29,7 @@ print(f'''
 
 # To get quotes in string
 # print(f'{\'quoted string\'}')  # SyntaxError
+print(f"{'quoted string'}") 
 print(f'{"quoted string"}')
 
 # To get braces in string 
@@ -34,7 +37,7 @@ print(f'{4 * 10}')
 print(f'{{4*10}}')
 print(f'{{{4 * 10}}}')
 
-# PRocessing escape sequences 
+# Processing escape sequences 
 print(f'x={4 * 10}\n')
 print(fr'x={4 * 10}\n')
 

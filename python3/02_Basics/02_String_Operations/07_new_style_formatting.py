@@ -6,6 +6,9 @@ Purpose: String formatting
 
 print('{}'.format(''))
 print('{} and {}'.format('cat', 'mouse'))
+print('{} and {}'.format(213, 'mouse'))
+print('{} and {}'.format(213, True))
+print('{} and {}'.format(None, True))
 
 print('Name:{} Age:{} Salary:{}'.format('udhay', 99, 9999.9999))
 
@@ -14,7 +17,7 @@ print('''Name  :{}
          Salary:{}'''.format('udhay', 99, 9999.9999))
 
 print('''My Name: {0}. My Name: {0}.
-       My Name: {0}. My Name: {0}. '''.format('udhay', 23, 34234))
+       My Name: {2}. My Name: {0}. '''.format('udhay', 23, 34234))
 #                                                0      1    2
 print('''
         Name  :{2} 
@@ -31,7 +34,7 @@ print('''
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 
-        Thank you for shopping. Visit again!
+        Thank you for shopping. Visit again!!!
          '''.format(
     customer='Vijay Malya',
     accound_last_4_digits=1134,

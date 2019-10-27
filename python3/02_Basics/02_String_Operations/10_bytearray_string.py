@@ -26,7 +26,7 @@ print('b_string[9:17]', b_string[9:17])
 b_string[9:17] = b'is '
 print("b_string", b_string)
 
-# #############################
+#############################
 print()
 # indexing a bytearray string
 print("ordinary_string[6]", ordinary_string[6])
@@ -42,10 +42,13 @@ print("ord('o'):", ord('o'))
 # -------------
 # caesar cipher 
 # ------------------  + 3 
-# A B C D E F G H I J
+# A B C D E F G H I J     Y Z
 # 0 1 2 3 4 5
 # D E F
 
+# ASSUMPTION: Ignore case -sensitivity
+# HINTS: % 
+
 # Ex: egg => hjj
 #    bindu => elqg
-#    Yash  =>
+#    Yash  => bd
