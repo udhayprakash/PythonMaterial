@@ -8,12 +8,13 @@ Purpose: Boolean Operations
 choice = True
 print('choice = ', choice, type(choice))
 
+choice = False
+print('choice = ', choice, type(choice))
+
+
 true = 'Udhay Prakash'  # NOT RECOMMENDED to use 'true' for variable name
 
 choice = true
-print('choice = ', choice, type(choice))
-
-choice = False
 print('choice = ', choice, type(choice))
 
 # Object 

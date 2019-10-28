@@ -17,11 +17,14 @@ print("False != 3 ", False != 3)
 # True acts like  1 and 
 # False acts like 0 in all cases, except when coverted 
 # to strings
-print("str(1) != str(True)", str(1) != str(True))
+print("str(1) != str(True) ", str(1) != str(True))
 print("str(0) != str(False)", str(0) != str(False))
+
+print()
 print('str(True * 1) == str(1)', str(True * 1) == str(1))
-# print(str(1))
-# print(str(True))
+print(str(1))
+print(str(True))
+
 '''
     >>> str(1)
     '1'

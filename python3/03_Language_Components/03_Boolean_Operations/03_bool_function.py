@@ -2,7 +2,7 @@
 """
 Purpose: Boolean Operations
 """
-## bool()
+# bool()
 # integer type (int and float)
 #       zero     - False 
 #       non-zero - True
@@ -35,9 +35,13 @@ print()
 print('()               ', bool(()))
 print('[]               ', bool([]))
 print('{}               ', bool({}))
+print()
 
+# None
 print('bool(None)       ', bool(None))
-# True, False
+print()
+
+# bool - True, False
 print('bool(True)       ', bool(True))
 print('bool(False)      ', bool(False))
 print()

@@ -4,6 +4,7 @@ Purpose: range()
 
 these will work only with int type 
 range(initialValue, finalValue, step)
+
 default initialValue = 0
 default step = +1
 """
@@ -33,12 +34,13 @@ values4 = list(range(9, 0, -2))  # builtin function
 print(list(values4))  # 9 7 5 3 1
 
 values6 = range(0, 9, -1)  # range(initialValue, finalValue, step)
-print(values6)
+print(values6)   # []
 print(list(values6))
 
 # values7 = range(0, 9, 1.5)  # range(initialValue, finalValue, step)
 # values7 = range(0.5, 9.5, 1)  # range(initialValue, finalValue, step)
 
+# for(int i = 0; i <= 10; i++)
 
 for i in range(0, 9, 1):
     print(i)

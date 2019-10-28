@@ -5,22 +5,21 @@ Purpose: Number Guessing Game
 """
 __author__ = 'Python Tutor'
 
-lucky_number = 78
+lucky_number = 69
 
-guessed_number = int(input('Enter no. btwn 0 & 100:'))
+# given_number = 56
+given_number = int(input('Enter any no. betwn 1 & 100:'))
 
-# print(guessed_number, type(guessed_number))
-# print(lucky_number == guessed_number)
-
-# if lucky_number == guessed_number:
-#     print('YOu guessed correctly!'.upper())
+# if given_number == lucky_number:
+#     print('You Guessed correctly')
 # else:
-#     print('Please try again!!!'.title())
+#     print('Please try again !!!')
 
+if given_number == lucky_number:
+    print('You Guessed correctly')
+elif given_number < lucky_number:
+    print('Increase your guessing no.!')
+elif given_number > lucky_number:
+    print('Decrease your guessing no.!')
 
-if guessed_number < lucky_number:
-    print('Increase your guessing number!')
-elif guessed_number > lucky_number:
-    print('Decrese your guessing number!!')
-else:
-    print('CONGRATULATION ON GUESSING CORRECTLY')
+# NOTE: else block is optional in python

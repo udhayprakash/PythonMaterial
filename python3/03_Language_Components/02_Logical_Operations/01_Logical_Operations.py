@@ -11,7 +11,7 @@ not - negate the existing value
 # and,  or,  not  
 
 expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
-#        False    and   True    or  ( False    and      True)
+#        False    and   True    or  ( False   and      True) - PEMDAS
 #                False          or            False
 print(expr1)
 
@@ -56,12 +56,16 @@ expr2 = (45 <= 45) or (3 > 333) and (9 == 9)
 #       True       or           False  = True
 print(expr2)
 
-# left to right and top to bottom
+# Execution flow: left to right and top to bottom
+expr3 = (45 <= 45) or (3 > 333) or (9 == 9)
+#       True       or   False   or    True
+#                 True          or    True = True
+print(expr3)
 
 
 print('23 <73 <45', 23 < 73 < 45)
-# 23 <73 and 73 <45
-#    True and  False = False
+#   23 <73  and     73 <45
+#    True   and     False   = False
 
 
 print('89 <73 <99', 89 < 73 < 99)
@@ -82,17 +86,3 @@ print('expr3=', expr3)
 
 expr4 = 3 and 9  # 9
 print('expr4=', expr4)
-
-"""
-Memory 
-    - RAM ===========
-        - HEap Memory
-            - Application specific private heap
-                - BUiltin 
-                    True, False, ...
-                - user defined 
-                    
-
-    - ROM === BIOS 
-    - HDD/SDD === non-voltile 
-"""
