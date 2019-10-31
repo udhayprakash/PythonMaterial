@@ -1,6 +1,6 @@
 # for (int a = 0; a < 10 ; a ++)
 
-# for loop can be applied on iterable object 
+# for loop can be applied on iterable objects only
 # (string, list, tuple, set, frozenset, dictionary, iterator, generator) only
 '''
 >>> for i in 1:
@@ -48,10 +48,11 @@ for index, ch in enumerate(language):
     # print('In loop {:2}, we got {}'.format(index, ch))
     print(f'In loop {index:2}, we got {ch}')
 
+print()
 # Iterating over a list of elements
 numbers = [12, 34, 5, 6, 7, 99, 888]
 for number in numbers:
-    print(number, end=' ')
+    print(number)
 print()
 
 for loop_count, number in enumerate(numbers):
@@ -73,19 +74,19 @@ data_length = len(data)
 for index, number in enumerate(data):
     # print('%f' % (index/data_length) * 100)
     val = round((index / data_length) * 100, 2)
-    # print( '\r', val, end='')
     print(f'\r {val:5} % completed', end='')
 
-# Assignment 
-# Progress bar implementation
+'''
+Assignment: Progress bar implementation
 
-# [*         ]  10
-# [**        ]  20
-# [***       ]  30
-# [****      ]  40
-# [*****     ]  50
-# [******    ]  60
-# [*******   ]  70
-# [********  ]  80
-# [********* ]  90
-# [**********] 100
+[*         ]  10
+[**        ]  20
+[***       ]  30
+[****      ]  40
+[*****     ]  50
+[******    ]  60
+[*******   ]  70
+[********  ]  80
+[********* ]  90
+[**********] 100
+'''

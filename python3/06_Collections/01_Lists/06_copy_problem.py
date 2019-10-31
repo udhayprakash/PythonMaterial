@@ -6,11 +6,11 @@ Purpose: COPY PROBLEM
 Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
 
-# par_list = [11, 111, 1111]
-# print('par_list      ', par_list, type(par_list), id(par_list))
+par_list = [11, 111, 1111]
+print('par_list      ', par_list, type(par_list), id(par_list))
 
-# hard_copy_list = par_list
-# print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
+hard_copy_list = par_list
+print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
 
 # print('par_list[2]   ', par_list[2])
 
@@ -21,32 +21,33 @@ Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 # # leakage problem
 # print('hard_copy_list', hard_copy_list, type(hard_copy_list))
 
-# print()
+print()
 import copy
 
-# # shallow copy
-# soft_copy_list = copy.copy(par_list)
-# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+# shallow copy
+soft_copy_list = copy.copy(par_list)
+print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
 
-# print('hard_copy_list[2]', hard_copy_list[2])
+print('hard_copy_list[2]', hard_copy_list[2])
 
-# hard_copy_list[2] = "FOUR"
-# print()
-# print('par_list       ', par_list, type(par_list), id(par_list))
-# print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+hard_copy_list[2] = "FOUR"
 
-# print('soft_copy_list[0]', soft_copy_list[0])
+print()
+print('par_list       ', par_list, type(par_list), id(par_list))
+print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
-# soft_copy_list[0] = 'ZERO'
-# print()
-# print('par_list       ', par_list, type(par_list), id(par_list))
-# print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-# print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+print('soft_copy_list[0]', soft_copy_list[0])
+
+soft_copy_list[0] = 'ZERO'
+print()
+print('par_list       ', par_list, type(par_list), id(par_list))
+print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
 
-# print('='* 60)
+print('='* 60)
 
 new_list = [90, 89, [78, 89, [4, 441, 6]]]
 new_softcopy_list = copy.copy(new_list)
@@ -72,4 +73,18 @@ In [2]: l2 = l1[::]
 In [3]: id(l1), id(l2)
 Out[3]: (95491656, 95452232)
 
+In [4]: l3 = [12, 34, [44, [55]]]
+
+In [5]: l4 = l3[::]
+
+In [6]: id(l3), id(l4)
+Out[6]: (80939336, 81194632)
+
+In [10]: l3[2][1][0] = 'five'
+
+In [11]: l3
+Out[11]: [12, 34, [44, ['five']]]
+
+In [12]: l4
+Out[12]: [12, 34, [44, ['five']]]
 '''

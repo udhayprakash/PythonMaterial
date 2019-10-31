@@ -18,9 +18,12 @@ mylist1.insert(0, 99)
 mylist1.insert(4, {1, 2})
 print('mylist1       = ', mylist1)
 
+print()
 # Q: make insert to work like append
-mylist1.insert(-1, 12)
-mylist1.insert(-1, [23, 34])
+# mylist1.insert(-1, 12)
+# mylist1.insert(-1, [23, 34])
+mylist1.insert(len(mylist1), 12)
+mylist1.insert(len(mylist1), [23, 34])
 print('mylist1       = ', mylist1)
 
 # ==== deleting with index
@@ -44,11 +47,12 @@ print('mylist1.pop()', mylist1.pop())
 print('mylist1       = ', mylist1)
 
 # deleting by element
-mylist1 = [11, 22, 33, 22]
+mylist1 = [11,  [22], 22, 33, 22]
 mylist1.remove(22)  # first occurence will be deleted
 print('mylist1       = ', mylist1)
 
 # mylist1.remove('q') # ValueError: list.remove(x): x not in list
+
 print()
 mylist1.clear()
 print('mylist1       = ', mylist1)

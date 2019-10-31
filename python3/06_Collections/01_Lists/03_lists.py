@@ -14,8 +14,8 @@ assert x[1:20:3] == x[slice(1, 20, 3)]
 print(slice(1, 20, 3))  # slice(1, 20, 3)
 
 language = "python Programming"
-print(language)
-print(language[2:])
-print(language[slice(2, None, 1)])
+print('language                     ', language)
+print('language[2:]                 ', language[2:])
+print('language[slice(2, None, 1)]  ', language[slice(2, None, 1)])
 
 assert language[2:] == language[slice(2, None, 1)]

@@ -7,48 +7,48 @@ Purpose:
 """
 __author__ = 'Python Tutor'
 
-day_of_week = input('Enter day of week: ').lower().strip()
+week_of_day = input('Enter week of day:').lower().strip()
 
-if day_of_week == 'monday':
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'tuesday':
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'wednesday':
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'thursday':
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'friday':
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'saturday':
-    print('TIMING: - 9 am to 1 pm')
-elif day_of_week == 'sunday':
-    print('HOLIDAY')
+########## METHOD 1
+if week_of_day == 'monday':
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'tuesday':
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'wednesday':
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'thursday':
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'friday':
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'saturday':
+    print('TIMINGS: 9 am to 1 pm')
+elif week_of_day == 'sunday':
+    print(' --HOLIDAY ---')
 else:
-    print('Invalid input!!!!')
-
-# else block is optional in python
+    print('Invalid input!!')
 
 
-if (day_of_week == 'monday' or
-        day_of_week == 'tuesday' or
-        day_of_week == 'wednesday' or
-        day_of_week == 'thursday' or
-        day_of_week == 'friday'
-):
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'saturday':
-    print('TIMING: - 9 am to 1 pm')
-elif day_of_week == 'sunday':
-    print('HOLIDAY')
+########## METHOD 2
+if (week_of_day == 'monday' or 
+    week_of_day == 'tuesday' or
+    week_of_day == 'wednesday' or 
+    week_of_day == 'thursday' or 
+    week_of_day == 'friday'):
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'saturday':
+    print('TIMINGS: 9 am to 1 pm')
+elif week_of_day == 'sunday':
+    print(' --HOLIDAY ---')
 else:
-    print('Invalid input!!!!')
+    print('Invalid input!!')
 
-# in - membership check operator 
-if day_of_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
-    print('TIMING: - 9 am to 6 pm')
-elif day_of_week == 'saturday':
-    print('TIMING: - 9 am to 1 pm')
-elif day_of_week == 'sunday':
-    print('HOLIDAY')
+########## METHOD 3
+# in - membership check operator
+if week_of_day in ( 'monday','tuesday','wednesday', 'thursday', 'friday'):
+    print('TIMINGS: 9 am to 6 pm')
+elif week_of_day == 'saturday':
+    print('TIMINGS: 9 am to 1 pm')
+elif week_of_day == 'sunday':
+    print(' --HOLIDAY ---')
 else:
-    print('Invalid input!!!!')
+    print('Invalid input!!')
