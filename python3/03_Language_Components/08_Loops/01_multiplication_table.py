@@ -7,50 +7,62 @@ while loop- condition
 """
 # NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 
-# Incrementing Loop
+print('\nincrementing loop with increment first')
 i = 0
 while i < 10:
-    i += 2
-    print(i)
+    i = i + 1
+    print(i, end=' ')
 
+print('\nincrementing loop with increment last')
+i = 0
+while i < 10:
+    print(i, end=' ')
+    i = i + 1
+
+print('\ndecrementing loop with decrement first')
+j = 10
+while j > 0:
+    j = j - 1
+    print(j, end=' ')
+
+print('\ndecrementing loop with decrement last')
+j = 10
+while j > 0:
+    print(j, end=' ')
+    j = j - 1
+
+###########################################
 print()
-# Decrementing loop
-j = 10 
-while  j > 0:
-   j -= 2
-   print(j)
 
-print()
-# Decrementing loop
-j = 10 
-while  j > 0:
-   print(j)
-   j -= 2
-
-print()
-# Loop within Loop
-
-i = 1
-while i <= 10:
-    j = 1
-    while j <= 10:
-        # print(i, '*', j, '=', i * j)
-        # print(str(i) + ' * ' + str(j) + ' = ' + str(i*j))
-        # print('%2d * %2d = %3d' %(i, j, i * j))
-        # print('{:2} * {:2} = {:3}'.format(i, j, i *j))
-        print(f'{i:2} * {j:2} = {i * j:3}')
-        j += 1
-    # print(i, 'outer')
-    i += 1
-    print()
-
-
-
-
-
+first = 1
+while first <= 10:
+    second = 1
+    while second <= 10:
+        # print( first, '*', second, '=', first * second)
+        # print( str(first) +' * ' + str(second) +' = ' + str(first * second))
+        # print('%2d * %2d = %3d' %(first, second, first * second))
+        # print('{0:2} * {1:2} = {2:3}'.format(first, second, first * second))
+        print(f'{first:2} * {second:2} = {first * second:3}')
+        second += 1
+    first += 1
+    print('-' * 13)
 
 '''
-Assignment - Display the multiplication table horizontally 
+Assignment
+-----------
+1) WAP to display the multiplication table from 10 to 1, for the first 10 tables
+10 * 10 = 100
+10 *  9 =  90
+10 *  8 =  80
+10 *  7 =  70
+10 *  6 =  60
+10 *  5 =  50
+10 *  4 =  40
+10 *  3 =  30
+10 *  2 =  20
+10 *  1 =  10
+
+2) Assignment - Display the multiplication table horizontally 
 
 01 * 01 = 001 | 02 * 01 = 002 | 03 * 01 = 003 | 04 * 01 = 004 | 05 * 01 = 005 | 06 * 01 = 006 | 07 * 01 = 007 | 08 * 01 = 008 | 09 * 01 = 009 | 10 * 01 = 010
 01 * 02 = 002 | 02 * 02 = 004 | 03 * 02 = 006 | 04 * 02 = 008 | 05 * 02 = 010 | 06 * 02 = 012 | 07 * 02 = 014 | 08 * 02 = 016 | 09 * 02 = 018 | 10 * 02 = 020
@@ -62,4 +74,6 @@ Assignment - Display the multiplication table horizontally
 01 * 08 = 008 | 02 * 08 = 016 | 03 * 08 = 024 | 04 * 08 = 032 | 05 * 08 = 040 | 06 * 08 = 048 | 07 * 08 = 056 | 08 * 08 = 064 | 09 * 08 = 072 | 10 * 08 = 080
 01 * 09 = 009 | 02 * 09 = 018 | 03 * 09 = 027 | 04 * 09 = 036 | 05 * 09 = 045 | 06 * 09 = 054 | 07 * 09 = 063 | 08 * 09 = 072 | 09 * 09 = 081 | 10 * 09 = 090
 01 * 10 = 010 | 02 * 10 = 020 | 03 * 10 = 030 | 04 * 10 = 040 | 05 * 10 = 050 | 06 * 10 = 060 | 07 * 10 = 070 | 08 * 10 = 080 | 09 * 10 = 090 | 10 * 10 = 100
+
+HINTS: string formatting, str.zfill(), while/for loop
 '''

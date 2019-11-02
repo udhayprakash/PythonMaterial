@@ -60,7 +60,10 @@ print('\ndicts.items()')
 for i in cities_n_countries.items():
     print(i, type(i))
 
-# a, b = 12, 23
+a, b = 12, 23
+# a, b, c = 12, 23 # ValueError: not enough values to unpack (expected 3, got 2)
+a, b, c = 12, 23, 45
+a = 12, 23, 45     # tuple
 print()
 for k, v in cities_n_countries.items():
     print(k, '--->', v)

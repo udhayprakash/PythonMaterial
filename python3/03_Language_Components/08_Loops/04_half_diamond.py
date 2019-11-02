@@ -2,44 +2,44 @@
 """
 Purpose: To display the astrickes in a half-diamond pattern
 """
-# i = 0
-# while i < 10:
-#     print('*' * i)
-#     i += 1
+###################################
+for num in range(10):
+    print(' ' * (10 -num) + '*' * num)
 
-# # print(f'i:{i}')
-# # i = 10
-# while i > 0:
-#     print('*' * i)
-#     i -= 1
+for num in range(10, 0, -1):
+    print(' ' * (10 -num) + '*' * num)
 
+###################################
+for num in range(10):
+    print('*' * num + ' ' * (10 -num))
 
-# print('-' * 20)
+for num in range(10, 0, -1):
+    print('*' * num + ' ' * (10 -num) )
 
-# for i in range(10):
-#     print('*' * i)
-
-# for i in range(10, 0, -1):
-#     print('*' * i)
-
-print('-' * 20)
-
-for i in range(10):
-    print(' ' * (10 - i) + '*' * i)
-
-for i in range(10, 0, -1):
-    print(' ' * (10 - i) + '*' * i)
-
-print('-' * 20)
+###################################
 
 i = 0
 while i < 10:
-    print(' ' * (10 - i) + '*' * i)
+    print(' ' * (10 -i) + '*' * i)
     i += 1
 
-while i > 0:
-    print(' ' * (10 - i) + '*' * i)
-    i -= 1
+j = 10
+while j > 0:
+    print(' ' * (10 -j) + '*' * j)
+    j -= 1
+
+
+i = 0
+while i < 10:
+    print('*' * i + ' ' * (10 -i) )
+    i += 1
+
+j = 10
+while j > 0:
+    print('*' * j + ' ' * (10 -j))
+    j -= 1
+
+
 
 # assignent:full diamond problem
 #        *

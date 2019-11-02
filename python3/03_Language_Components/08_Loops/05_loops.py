@@ -6,29 +6,33 @@ Purpose:
 	pass      - will do nothing. it is like a todo
 	sys.exit  - will exit the script execution
 """
+# i = 0
+# while i <= 10:
+#     print(i)
+#     i += 1
 
-print('importance of break')
+print('\n importance of break')
 i = 0
-while i < 10:
-    i += 1
+while i <= 10:
+    print(i)
     if i == 5:
         break
-    print(i)
+    i += 1
 
-print('importance of continue')
+print('\n importance of continue')
 i = 0
-while i < 10:
+while i <= 10:
     i += 1
     if i == 5:
         continue
     print(i)
 
-print('importance of pass')
+print('\n importance of pass')
 i = 0
-while i < 10:
+while i <= 10:
     i += 1
     if i == 5:
-        pass
+        pass  # It acts as a placeholder
     print(i)
 
 import sys

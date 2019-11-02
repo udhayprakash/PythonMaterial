@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Properties of sets '
+Properties of sets
     - can't store duplicates
     - sets are unordered
     - can't be indexed
@@ -15,9 +15,9 @@ print('running_ports      ', running_ports)
 print()
 
 myset = {11, 22, 11, 44, 22, 11}
-print('type(myset)          ', type(myset))
-print('len(myset)           ', len(myset))
-print('myset                ', myset)
+print('type(myset)        ', type(myset))
+print('len(myset)         ', len(myset))
+print('myset              ', myset)
 print()
 
 # # sets can't be indexed
@@ -25,8 +25,8 @@ print()
 
 filtered_list = list(set(running_ports))
 print('type(filtered_list)', type(filtered_list))
-print('len(filtered_list)', len(filtered_list))
-print('filtered_list:', filtered_list)
+print('len(filtered_list) ', len(filtered_list))
+print('filtered_list:     ', filtered_list)
 print()
 
 print('before addition - myset', myset)
@@ -47,6 +47,8 @@ print(myset)
 
 # myset.update((99, [11, 11])) # TypeError: unhashable type: 'list'
 # myset.update((99, {11, 11})) # TypeError: unhashable type: 'set'
+myset.update((99, frozenset({11, 11})))
+print(myset)
 
 print()
 myset.update('tomato')
@@ -69,10 +71,10 @@ print()
 myset.add(('tomato', 'ASa'))
 print(myset)
 
-# print()
-# myset.add(('ASa', 'tomato'))
-# print(myset)
+print()
+myset.add(('ASa', 'tomato'))
+print(myset)
 
-# # myset.add(['1', '2'])TypeError: unhashable type: 'list'
+# myset.add(['1', '2'])TypeError: unhashable type: 'list'
 
 myset.add(tuple(['1', '2']))
