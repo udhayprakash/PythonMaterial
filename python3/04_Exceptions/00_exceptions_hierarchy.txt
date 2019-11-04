@@ -6,7 +6,7 @@ BaseException                               - Base of all built-in exceptions
       +-- StopIteration                     - Raised to stop iteration
       +-- StopAsyncIteration
       +-- ArithmeticError                   - Base for arithmetic exceptions
-      |    +-- FloatingPointError           - faliture of a floating-point operation
+      |    +-- FloatingPointError           - failure of a floating-point operation
       |    +-- OverflowError                - Arithmetic overflow
       |    +-- ZeroDivisionError            - Division or modulus operation with 0
       +-- AssertionError                    - Raised by assert statement

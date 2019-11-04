@@ -1,24 +1,28 @@
 #!/usr/bin/python
 # SyntaxError cant be handled 
-# bat = 0
+
 try:
-    # result = None/100
-    result = 1 / 0 + bat
-except ZeroDivisionError as ex:
-    print('ZeroDivisionError error is ', repr(ex))
-except NameError as ex1:
-    print('NameError error is ', repr(ex1))
-except TypeError as ex1:
-    print('TypeError error is ', repr(ex1))
-except Exception as ex2:
-    print('Exception - error is ', repr(ex2))
+    result = NOne + '0' + 10 / 0
+except TypeError as ex2:
+    print('for type error', repr(ex2))
+except ZeroDivisionError as ex3:
+    print('for zero division', repr(ex3))
+except NameError as ex4:
+    print('for name error', repr(ex4))
+except Exception as ex1:
+    print('Umbrella exception', repr(ex1))
 else:
-    print('else block -')
-    print('result=', result)
+    print('NO Exception in code')
 finally:
     print('finally block')
 
-print('next statement')
-# NOTE: when more than one error is present, 
-# it return the first error encountered when traversing 
+# exception precedence
+#   - python execution flow
+#         - left to right & top to botton
+
+# NOTE: when more than one error is present,
+# it return the first error encountered when traversing
 # from left to right and top to bottom approach
+
+# NOTE: higher the exception, latter it need to be defined
+

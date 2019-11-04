@@ -20,13 +20,13 @@ List is a mutable object, which means elements in list can be changed.
 It can store asymmetric data types
 
 """
-
-numbers = [12, 334, 23, 2, -323]  # Homogenous list 
+# Homogenous list
+numbers = [12, 334, 23, 2, -323]
 print('numbers=', numbers)
 print('type(numbers)', type(numbers))
 
-numbers = [12, 3.4, -0.00004, 434243432432, 'abc', True, 4 + 55 / 6]
 # non-homogenous
+numbers = [12, 3.4, -0.00004, 434243432432, 'abc', True, 4 + 55 / 6]
 print('numbers=     ', numbers)
 print('type(numbers)', type(numbers))
 
@@ -46,7 +46,7 @@ print('type(ml[3])  ', type(ml[3]))
 # print( ml[6])  # Index Error
 
 print('ml[5]        ', ml[5])
-
+#
 print('ml[5][1]     ', ml[5][1])
 print('ml[5][3]     ', ml[5][3])
 print('ml[5][3][0]  ', ml[5][3][0])
@@ -55,29 +55,30 @@ print('ml[5][3][0]  ', ml[5][3][0])
 # forward vs reverse indexing
 # [1, 2, 3, 4.3, 5, [6, 7, 8, (9, 10)]]
 #  0  1  2   3   4   --------5---------  - forward indexing
-# -6 -5  -4  -3  -2          -1          - reverse indexing
-print('ml[-5]   ', ml[-5])
+# -6 -5  -4  -3  -2  ------- -1 -------  - reverse indexing
+print('ml[-5]       ', ml[-5])
 
 print(ml[-5] == ml[1])
 assert ml[-5] == ml[1]
 
-# Slicing
+# Slicing - last value in boundary will not be included
 print('ml[1:4]      ', ml[1:4])
 print('ml[1:4:2]    ', ml[1:4:2])
 
 print('List is a mutable object =======')
 print('id(ml)       ', id(ml))
+print('ml[3]        ', ml[3])
 ml[3] = 3.4
 print('ml[3]        ', ml[3])
 print('id(ml)       ', id(ml))
 
 print('\nString is a immutable object ===')
 name = 'Raj Sekhar'
-print(name)
-print(name[0:3])
+print(f'name         :{name}')
+print(f'name[0:3]    :{name[0:3]}')
 # name[0:3] = 'Tej'    # editing not possible
 
 print('id(name)', id(name))
-name = 'Tej Sekhar'  # overwriting the object 
+name = 'Tej Sekhar'  # overwriting the object
 print('id(name)', id(name))
 print(name)

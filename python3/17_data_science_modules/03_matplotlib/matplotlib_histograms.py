@@ -25,3 +25,6 @@ data2 = randn(1000)
 # import seaborn
 # seaborn.jointplot(data1, data2)
 # seaborn.jointplot(data1, data2, kind='hex')
+
+
+# For futher reference, https://python-graph-gallery.com/

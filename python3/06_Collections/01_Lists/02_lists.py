@@ -34,7 +34,7 @@ print("numbers.__imul__(3) =", numbers.__imul__(3))  # original object IS modifi
 print('numbers             =', numbers)
 
 print("id(numbers)          =", id(numbers))
-# object overwriting 
+# object overwriting
 numbers = [88, 99, 666]
 print("id(numbers)          =", id(numbers))
 numbers = [88, 99, 666]
@@ -43,23 +43,23 @@ print("id(numbers)          =", id(numbers))
 # list concatenation
 print('numbers\t\t\t\t=', numbers)
 alphabets = ['b', 'c']
-print("numbers + alphabets\t\t=", numbers + alphabets)
+print("numbers + alphabets\t=", numbers + alphabets)
 print('numbers\t\t\t\t=', numbers)
 
 print("numbers.__add__(alphabets)\t=", numbers.__add__(alphabets))
 print('numbers\t\t\t\t=', numbers)
 
-# list concatenation will create new obect; 
-# orginal objects are not changed
+# list concatenation will create new object;
+# original objects are not changed
 
 print("numbers.__iadd__(alphabets)\t=", numbers.__iadd__(alphabets))
-print('numbers\t\t\t\t=', numbers)  # first object IS changed 
+print('numbers\t\t\t\t=', numbers)  # first object IS changed
 
 print("numbers.__contains__(12) =", numbers.__contains__(12))
 print("12 in numbers            =", 12 in numbers)
 
-print("numbers.__contains__(99) =", numbers.__contains__(99))
-print("99 in numbers            =", 99 in numbers)
+print("numbers.__contains__('b') =", numbers.__contains__('b'))
+print("'b' in numbers            =", 'b' in numbers)
 
 print(numbers.__sizeof__())
 import sys

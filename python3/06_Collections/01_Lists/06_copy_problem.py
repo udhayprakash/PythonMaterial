@@ -12,14 +12,14 @@ print('par_list      ', par_list, type(par_list), id(par_list))
 hard_copy_list = par_list
 print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
 
-# print('par_list[2]   ', par_list[2])
+print('par_list[2]   ', par_list[2])
 
-# par_list[2] = 3333
-# print('par_list[2]   ', par_list[2])
-# print('par_list      ', par_list, type(par_list))
+par_list[2] = 3333
+print('par_list[2]   ', par_list[2])
+print('par_list      ', par_list, type(par_list))
 
-# # leakage problem
-# print('hard_copy_list', hard_copy_list, type(hard_copy_list))
+# leakage problem
+print('hard_copy_list', hard_copy_list, type(hard_copy_list))
 
 print()
 import copy
@@ -87,4 +87,28 @@ Out[11]: [12, 34, [44, ['five']]]
 
 In [12]: l4
 Out[12]: [12, 34, [44, ['five']]]
+'''
+
+'''
+Assignment 
+----------
+1) implement the stack mechanism - LIFO
+Take the values in run time
+   1. push   - add an element
+   2. pop    - delete last element
+   3. status - stack size
+-       -
+|       |
+|       |
+---------
+
+2) implement the queue mechanism - FIFO
+Take the values in run time
+   1. push   - add an element
+   2. pop    - delete last element
+   3. status - queue size
+    --------
+ ->         ->
+    --------
+    
 '''

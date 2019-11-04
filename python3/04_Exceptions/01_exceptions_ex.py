@@ -1,44 +1,42 @@
 #!/usr/bin/python
+"""
+Purpose: Exception Handling
 
-# if 1:
-# print('hello')
+Syntax errors cant be handled by except
+"""
 
+ # num1 = 10  # IndentationError: unexpected indent
 
-# result = 1 // 0 
-# result = 1 / 0 
-# result = 1 % 0 
-
+# print(10 / 0)
 # try:
-#     result = 1 % 0 
+#     result = 10 / 0
 # except:
-#     print('Please dont divide by zero')
+#     print('Cant divide by zero')
 
-# try:
-#     result = 1 % 0 
-# except Exception:
-#     print('Please dont divide by zero')
 
-# try:
-#     result = 1 % 0 
-# except Exception as ex:
-#     print('error is ', ex)
-#     print('error is ', str(ex))
-#     print('error is ', repr(ex))
+# if result:
+# print(result)  # IndentationError: expected an indented block
 
-# NOTE: else and finally blocks are optional
+#   print('Hello') # IndentationError: unindent does not match any outer indentation level
+
+# ----------------------------------------
 try:
-    result = 1 % 10
+    result = 10 / 10
+    # result = 10 / 0
+    # result = '10' / 0
 except Exception as ex:
-    # print('error is ', ex)
-    # print('error is ', str(ex))
-    print('error is ', repr(ex))
+    # print(f'ex          : {ex}')
+    # print(f'str(ex)     : {str(ex)}')
+    print(f'repr(ex)    : {repr(ex)}')
 else:
-    print('try block has no error')
+    print('code in try block executed without errors')
 finally:
-    print('Finally statement')
+    print('finally closing it')
 
-print('statement outside these blocks')
-"""
-when no error - try - else   - finally
-when error    - try - except - finally
-"""
+print('out side statement')
+# work flow
+# when no error     : try -> else   -> finally
+# when error occured: try -> except -> finally
+
+# else and finally blocks are optional
+
