@@ -20,21 +20,23 @@ print()
 # Access using index
 print("The Student age using index is : ", S[1])
 
-# Access using name 
+# Access using name
 print("The Student name using keyname is : ")
 print('S.name', S.name)
 print('S.age', S.age)
 print('S.DOB ', S.DOB)
+# print('S.DOB1 ', S.DOB1)
 
-print("hasattr(S, 'DOB')", hasattr(S, 'DOB'))
+print("hasattr(S, 'DOB') ", hasattr(S, 'DOB'))
+print("hasattr(S, 'DOB1')", hasattr(S, 'DOB1'))
 
 # Access using getattr()
 if hasattr(S, 'DOB'):
     print("The Student DOB using getattr() is : ")
     print("getattr(S, 'DOB')", getattr(S, 'DOB'))
+    print("S.DOB            ", S.DOB)
 
-# named tupleis immutable
-# print("setattr(S, 'DOB', 76876876)", 
-#                  setattr(S, 'DOB', 76876876))
+# named tuple is immutable
+# print("setattr(S, 'DOB', 76876876)", setattr(S, 'DOB', 76876876))
 
 # S['DOB'] =  76876876

@@ -20,7 +20,7 @@ print('len(myset)         ', len(myset))
 print('myset              ', myset)
 print()
 
-# # sets can't be indexed
+# sets can't be indexed
 # print(myset[0])  # TypeError: 'set' object does not support indexing
 
 filtered_list = list(set(running_ports))

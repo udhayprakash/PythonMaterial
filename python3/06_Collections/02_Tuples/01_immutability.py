@@ -17,7 +17,14 @@ print((12, 4) + (99,))
 
 other_tuple = (99,)
 print(mytuple + other_tuple)
-print('mytuple    ', mytuple)
-print('other_tuple', other_tuple)
+print('mytuple          ', mytuple)
+print('other_tuple      ', other_tuple)
 
 assert mytuple + other_tuple != other_tuple + mytuple
+# tuple concatenation is not commutative
+
+print('other_tuple * 3  ', other_tuple * 3)
+print('3 * other_tuple  ', 3 * other_tuple)
+print('other_tuple      ', other_tuple)
+assert other_tuple * 3 != 3 * other_tuple
+# tuple repetition is commutative
