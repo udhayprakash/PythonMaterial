@@ -4,6 +4,8 @@
 # NO CODE IS REALLY RUN HERE, IT IS ONLY TELLING US WHAT WE WILL DO LATER
 # Here we will define our functions
 # this prints the main menu, and prompts for a choice
+
+
 def menu():
     # print what options you have
 

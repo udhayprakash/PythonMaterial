@@ -18,7 +18,7 @@ sample Output:
 ----------.|..|..|.-----------
 -------------.|.--------------
 """
-n, m = map(int, input('Enter two values space separated, second value should be thrice of first\n').split())
+n, m = map(int, input('Enter two values space separated, second value should be thrice of first\n:').split())
 
 if 5 < n < 101 and 15 < m < 303:
     for row in range(1, n):

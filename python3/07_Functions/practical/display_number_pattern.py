@@ -12,15 +12,15 @@ Purpose: For input of two numbers(say (3,2)), to display number as below:
 """
 
 
-def getCount(m):
+def get_count(m):
     if m == 1:
         return 1
-    return m + getCount(m - 1)
+    return m + get_count(m - 1)
 
 
-def series(count):
+def series(_count):
     numbers = [1]
-    while len(numbers) < count:
+    while len(numbers) < _count:
         numbers.append(numbers[-1] + 2)
     return numbers
 
@@ -28,7 +28,7 @@ def series(count):
 if __name__ == '__main__':
     upSeries, downSeries = 9, 8
     maxValue = max(upSeries, downSeries)  # 9
-    count = getCount(maxValue)  # 9 + 8 +.. + 1 = 45
+    count = get_count(maxValue)  # 9 + 8 +.. + 1 = 45
     numbersList = series(count)  # 45 odd numbers
     numberSeries = []
     for i in range(1, maxValue + 1):
@@ -43,10 +43,3 @@ if __name__ == '__main__':
     for num in numberSeries[:downSeries + 1]:
         print('  ' * indx, '  '.join([str(i).zfill(2) for i in num]))
         indx -= 1
-
-# hackerrank 
-# hackerearth 
-# interviewstreet 
-# careercup 
-# kaggle 
-# leetcode
