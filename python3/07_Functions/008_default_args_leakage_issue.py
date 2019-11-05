@@ -29,7 +29,7 @@ print('\n\nSolution when you need default list ==========')
 
 
 def extend_list(val, my_list=None):
-    if my_list == None:
+    if my_list is None:
         my_list = []
     my_list.append(val)
     return my_list
@@ -42,7 +42,7 @@ list2 = extend_list(10)
 print(f'list2:{list2}')  # [10]
 
 list3 = extend_list('a')
-print(f'list3:{list3}')  # [10, 'a']
+print(f'list3:{list3}')  # ['a']
 
 print(f'id(list1):{id(list1)}')
 print(f'id(list2):{id(list2)}')

@@ -12,20 +12,23 @@ def hello():
 
 
 # Function Call 
-# hello()
+hello()
 
 print(hello())
 result = hello()
 print(f'result={result} {type(result)}')
 
 # Unpacking
-# val1 = 12231
-# val2 = 1232
-# val1, val2 = 12231, 1232
+val1 = 12231
+val2 = 1232
+val1 = 12231, 1232
+val1, val2 = 12231, 1232
+# val1, val2 = 12231 # TypeError: cannot unpack non-iterable int object
+
 val1, val2 = hello()
 print(f'val1 = {val1}  \nval2 = {val2}')
 
-# List unpacking 
+# List unpacking
 val1, val2 = [12231, 1232]
 print(f'val1 = {val1}  \nval2 = {val2}')
 

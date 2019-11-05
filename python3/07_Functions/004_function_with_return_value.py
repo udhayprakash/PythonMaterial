@@ -9,12 +9,12 @@ Purpose: Functions Demo
 # Function Definition
 def hello(name, age):
     print("%s's age is %d" % (name, age))
-    # return 
+    # return
     # return None
     # return 3212321
     # return 3212321.23321
     # return 3212321.23321,
-    # return 3212321.23321,123
+    # return 3212321.23321, 123
     # return 2,,  #SyntaxError: invalid syntax
     # return (2,),
     # return 'asdas'
@@ -23,7 +23,7 @@ def hello(name, age):
 
 # NOTE: return will be last executing statement in functions
 
-# Function Call 
+# Function Call
 # print(hello('India', 75))
 
 result = hello('India', 75)

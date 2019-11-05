@@ -18,8 +18,9 @@ Purpose: Functions Demo
 def myfunc(var1, var2, var3=0):
     """
     Function to perform arithmetic Multiplication operation
-    :param num1: Number
-    :param num2: Number
+    :param var1: Number
+    :param var2: Number
+    :param var3: Number
     :return: result of addition operation
     """
     return var1 + var2 + var3
@@ -29,11 +30,11 @@ print('myfunc(2, 3, 5)=', myfunc(2, 3, 5))
 print('myfunc(2, 3)   =', myfunc(2, 3))
 
 
-# def hello_world(name):
-#     print('Hello ' + name)
+def hello_world(name):
+    print('Hello ' + name)
 
-# # hello_world() # TypeError: hello_world() missing 1 required positional argument: 'name'
-# hello_world('chaitra')
+# hello_world() # TypeError: hello_world() missing 1 required positional argument: 'name'
+hello_world('chaitra')
 
 
 def hello_world(name='world'):
@@ -61,7 +62,7 @@ person_details(age=20)
 
 # NOTE: default arguments should be at the end
 
-def person_details_2(designation, name='alpha', age=99):
+def person_details_2(designation, name='alpha',  age=99):
     # print(designation + ' {} with age {}'.format(name, age))
     print(f'{name} with age {age}')
 
