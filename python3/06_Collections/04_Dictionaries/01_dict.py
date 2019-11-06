@@ -27,7 +27,7 @@ print(type(other_set))
 other_dict = {12: 34, 34: 56}
 print(other_dict, type(other_dict))
 
-# In python2, dicts doesn't retain the assigned order. 
+# In python2, dicts doesn't retain the assigned order.
 # whereas in python3, they wil
 mydict = {
     'name': ['udhay', 'prakash'],
@@ -36,7 +36,8 @@ mydict = {
     99: ('age', 'price'),
     ('Dr', 'Mr'): 'titles',
     'name': 'somebody',
-    (1, 23): ('age', 'price')
+    (1, 23): ('age', 'price'),
+    # [1, 23]: ('age', 'price')
 }
 
 print(type(mydict), mydict)
@@ -51,12 +52,12 @@ pprint(mydict, indent=2, width=2)
 print()
 print("'name' in mydict:", 'name' in mydict)
 print("mydict['name']  :", mydict['name'])
- 
-#  dictionary is a mutable object 
+
+#  dictionary is a mutable object
 mydict['name'] = 'shyam'
 print("mydict['name']  :", mydict['name'])
 
-print('name1' in mydict)
+print("'name1' in mydict", 'name1' in mydict)
 # print("mydict['name1']:", mydict['name1'])#  KeyError: 'name1'
 
 print("mydict.get('name1')                   :", mydict.get('name1'))
@@ -75,12 +76,12 @@ print('mydict', mydict)
 ####################################
 print(dir(mydict))
 print('===============')
-print(mydict.popitem())  # deletes some key:value in random 
+print(mydict.popitem())  # deletes some key:value in random
 print(mydict)
 print()
 print(mydict.popitem())
 print(mydict)
-
+#
 print(mydict.pop('blog', 'no such key'))  # deletes specific mentioned key:value
 print(mydict)
 print()

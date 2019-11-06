@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: working on comprehensions for list, tuple, set, dictionary
+"""
+
 new_list = []
 for i in range(2, 9):
     new_list.append(i)
