@@ -7,7 +7,7 @@ Purpose: Functions Demo
 
 
 # Function Definition
-def hello(*given, **feed_in):  # 
+def hello(*given, **feed_in):
     print("\ntype(given)  ", type(given))
     print("type(feed_in) ", type(feed_in))
 
@@ -17,13 +17,12 @@ def hello(*given, **feed_in):  #
 
 
 # Function Call 
-hello()  # 0 inputs
-
-hello('HARI')  # 1 input
-
+hello()         # 0 inputs
+hello('HARI')   # 1 input
 hello('HARI', 'chaitra')  # 2 inputs
 hello('India', 75, 34, 'sdas', 342432, 212.34)
 
+print()
 hello(std1='HARI')  # 1 input
 hello(std1='HARI', std2='chaitra')  # 2 inputs
 

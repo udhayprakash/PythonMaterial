@@ -6,71 +6,72 @@ Purpose: Functions Demo
 """
 
 
-# def myfunc(num1, num2):
+# def addition(num1, num2):
 #     """
-#     Function to perform arithmetic Addition operation
-#     :param num1: Number
-#     :param num2: Number
-#     :return: result of addition operation
+#     This function will take two args, and return their addition
+#     :param num1: int
+#     :param num2: int
+#     :return: int
 #     """
 #     return num1 + num2
 
-def myfunc(var1, var2, var3=0):
+def addition(var1, var2, var3=0):
     """
-    Function to perform arithmetic Multiplication operation
-    :param var1: Number
-    :param var2: Number
-    :param var3: Number
-    :return: result of addition operation
+    This function will take two/three args, and return their addition
+    :param var1: int
+    :param var2: int
+    :param var3: int - optional
+    :return: int
     """
     return var1 + var2 + var3
 
 
-print('myfunc(2, 3, 5)=', myfunc(2, 3, 5))
-print('myfunc(2, 3)   =', myfunc(2, 3))
+print(f'addition(10, 20)    : {addition(10, 20)}')
+print(f'addition(10, 20, 30): {addition(10, 20, 30)}')
+
+print(dir(addition))
+print(f'addition.__defaults__:{addition.__defaults__}')
 
 
-def hello_world(name):
-    print('Hello ' + name)
+# ---------------------------------
+# def hello():
+#     print('Hello world!')
+#
+#
+# hello()
+#
+#
+# def hello(name):
+#     print(f'Hello {name}!')
+#
+#
+# hello('python')
 
-# hello_world() # TypeError: hello_world() missing 1 required positional argument: 'name'
-hello_world('chaitra')
-
-
-def hello_world(name='world'):
-    print('Hello ' + name)
-
-
-hello_world()
-hello_world('chaitra')
-hello_world(name='chaitra')
-
-
-############################################
-def person_details(name='alpha', age=99):
-    print('{} with age {}'.format(name, age))
+def hello(name='world'):
+    print(f'Hello {name}!')
 
 
-person_details()
-person_details('chaitra')
-person_details(20)
-person_details('chaitra', 20)
-print()
-person_details(name='chaitra')
-person_details(age=20)
+hello()  # Hello world!
+hello('python')  # Hello python!
 
 
-# NOTE: default arguments should be at the end
+# ---------------------------------------------
+# NOTE: default args should be defined at last only
+def statement_creator(name, age=25, qualification='B.Tech'):
+    """
 
-def person_details_2(designation, name='alpha',  age=99):
-    # print(designation + ' {} with age {}'.format(name, age))
-    print(f'{name} with age {age}')
+    :param name: mandatory arg
+    :param age:
+    :param qualification:
+    :return:
+    """
+    print(f"{name}'s age is {age}. qualification is {qualification}")
 
 
-# person_details_2() # TypeError: person_details_2() missing 1 required positional argument: 'designation'
-person_details_2('developer')
-person_details_2('tester', 'chaitra')
-person_details_2('tester', 'chaitra', 45)
+print(f'statement_creator.__defaults__  :{statement_creator.__defaults__}')
+print(f'statement_creator.__kwdefaults__:{statement_creator.__kwdefaults__}')
 
-# person_details_2(name='developer')
-person_details_2(designation='tester', name='chaitra', age=5)
+# statement_creator() # TypeError: statement_creator() missing 1 required positional argument: 'name'
+statement_creator('Udhay')
+statement_creator(name='Udhay')
+statement_creator(name='Udhay', age=28)

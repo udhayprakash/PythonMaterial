@@ -1,3 +1,7 @@
+#!/usr/bin/python
+"""
+Purpose:
+"""
 import turtle
 
 my_turtle = turtle.Turtle()

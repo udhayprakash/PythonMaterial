@@ -5,32 +5,41 @@ Purpose: Functions Demo
     Function with two arguments and two return values
 """
 
+# unpacking
+num1 = 123
+num2 = 323
+num3 = 423
+print(f'num1:{num1} num2:{num2} num3:{num3}')
+
+num1, num2, num3 = 123, 323, 423
+print(f'num1:{num1} num2:{num2} num3:{num3}')
+
+# num1, num2, num3 = 123, 323  # ValueError: not enough values to unpack (expected 3, got 2)
+# num1, num2 = 123, 323, 423     # ValueError: too many values to unpack (expected 2)
+
+num1 = 123, 323, 423  # treats as a tuple
+print(f'{type(num1), num1}')
+
+
+######################################
 
 # Function Definition
 def hello():
     return 123, 45
 
 
-# Function Call 
+# Function Call
 hello()
 
-print(hello())
 result = hello()
-print(f'result={result} {type(result)}')
+print(f'{type(result)}, {result}')
 
-# Unpacking
-val1 = 12231
-val2 = 1232
-val1 = 12231, 1232
-val1, val2 = 12231, 1232
-# val1, val2 = 12231 # TypeError: cannot unpack non-iterable int object
+result1 = result[0]
+result2 = result[1]
+print(f'result1: {result1}')
+print(f'result2: {result2}')
+print()
 
-val1, val2 = hello()
-print(f'val1 = {val1}  \nval2 = {val2}')
-
-# List unpacking
-val1, val2 = [12231, 1232]
-print(f'val1 = {val1}  \nval2 = {val2}')
-
-# m1, m2 = [11, 22, 33]  #ValueError: too many values to unpack (expected 2)
-# print(m1,m2)
+result1, result2 = hello()
+print(f'result1: {result1}')
+print(f'result2: {result2}')

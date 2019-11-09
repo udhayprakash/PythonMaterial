@@ -17,12 +17,12 @@ def recv(maxsize, *, block=True):
     print("type(block) ", type(block))
 
     print("maxsize   " + str(maxsize))
-    print("block " + str(block))
+    print("block     " + str(block))
     print('-' * 20)
 
 
 # Function Call 
-recv(8192, block=False)
-recv(8192, block=True)
-recv(8192, False)
-# TypeError: recv() takes 1 positional argument but 2 were given
+recv(1234)
+# recv(1234, False) # TypeError: recv() takes 1 positional argument but 2 were given
+recv(1234, block=False)
+recv(maxsize=1234, block=False)

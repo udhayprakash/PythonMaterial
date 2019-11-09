@@ -5,30 +5,30 @@ Purpose: Function overwriting Problem
 
 a = 10
 a = 56
-print(a)
+print(a)  ? -> will be answer be 10 or 56
 """
 
 
-def myfunc(num1, num2):
+def addition(var1, var2, var3):
     """
-    Function to perform arithmetic Addition operation
-    :param num1: Number
-    :param num2: Number
-    :return: result of addition operation
-    """
-    return num1 + num2
-
-
-def myfunc(var1, var2, var3):
-    """
-    Function to perform arithmetic Multiplication operation
-    :param var1: Number
-    :param var2: Number
-    :param var3: Number
-    :return: result of addition operation
+    This function will take three args, and return their addition
+    :param var1: int
+    :param var2: int
+    :param var3: int
+    :return: int
     """
     return var1 + var2 + var3
 
 
-print('myfunc(2, 3, 5)=', myfunc(2, 3, 5))
-print('myfunc(2, 3)   =', myfunc(2, 3))
+def addition(num1, num2):
+    """
+    This function will take two args, and return their addition
+    :param num1: int
+    :param num2: int
+    :return: int
+    """
+    return num1 + num2
+
+
+print(f'addition(10, 20)    : {addition(10, 20)}')
+print(f'addition(10, 20, 30): {addition(10, 20, 30)}')

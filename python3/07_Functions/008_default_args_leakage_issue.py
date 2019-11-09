@@ -6,7 +6,7 @@ Memory leakage when mutable objects are taken as
 default arguments
 """
 
-
+# anti-patterns
 def extend_list(val, my_list=[]):
     my_list.append(val)
     return my_list
@@ -21,9 +21,10 @@ print(f'list2:{list2}')  # [10]
 list3 = extend_list('a')
 print(f'list3:{list3}')  # [10, 'a']
 
-print(f'id(list1):{id(list1)}')  # :5067848
-print(f'id(list2):{id(list2)}')  # :5067336
-print(f'id(list3):{id(list3)}')  # :5067336
+print(f'id(list1):{id(list1)}')  # :33707080
+print(f'id(list2):{id(list2)}')  # :33706568
+print(f'id(list3):{id(list3)}')  # :33706568
+
 
 print('\n\nSolution when you need default list ==========')
 

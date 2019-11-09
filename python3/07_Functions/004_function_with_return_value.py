@@ -3,28 +3,28 @@
 Purpose: Functions Demo
 
     Function with two arguments and default return value
+NOTE: return is the last statement in function execution
+
 """
 
 
 # Function Definition
-def hello(name, age):
-    print("%s's age is %d" % (name, age))
+def addition(n1, n2):
+    result = n1 + n2
     # return
     # return None
-    # return 3212321
-    # return 3212321.23321
-    # return 3212321.23321,
-    # return 3212321.23321, 123
-    # return 2,,  #SyntaxError: invalid syntax
-    # return (2,),
-    # return 'asdas'
-    return 12 + 1231 / 3 % 23 - 234
+    # return 'None'
+    # return 123
+    # return 121.12
+    # return True
+    # return 87,
+    # return 87,, # SyntaxError: invalid syntax
+    # return (87,),
+    return 12 - 123 * 23 / 3 // 23
 
 
-# NOTE: return will be last executing statement in functions
+# Function call
+addition(12, 13)
 
-# Function Call
-# print(hello('India', 75))
-
-result = hello('India', 75)
-print(f'result = {result} {type(result)}')
+answer = addition(12, 13)
+print(type(answer), answer)

@@ -14,15 +14,15 @@ print(12, '34', 'three', 'India', 75, 34, 'sdas', 342432, 212.34)
 print()
 
 
-# Function Definition
-def hello(*feed_in):
-    print("\ntype(feed_in)", type(feed_in))
-    print("inputs are ", feed_in)
+# Function definition
+def addition(*nums):
+    print(f'\nnums        :{nums}')
+    print(f'type(nums)  :{type(nums)}')
 
 
-# Function Call 
-hello()  # 0 inputs
-hello('HARI')  # 1 input
-hello('HARI', 'chaitra')  # 2 inputs
-
-hello('India', 75, 34, 'sdas', 342432, 212.34)
+# Function call
+addition()
+addition(10)
+addition(10, 20)
+addition(10, 20, 30)
+addition(10, 20, 30, 20, 30, 20, 30, 20, 30)

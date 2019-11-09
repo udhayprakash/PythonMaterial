@@ -10,35 +10,34 @@ Purpose: Functions Demo
     Function with no arguments and no return value
 """
 
+# hello()  # NameError: name 'hello' is not defined
 
-# hello() # NameError: name 'hello' is not defined
 
-# Function Definition
+# Function definition
 def hello():
-    print("Hello world")
-    # return None - default
+    print('hello function is called')
 
 
+# NOTE: default function return is None
+
+
+# Function call
 print(hello())
 
-# callable()
-print(f'callable(hello)   ={callable(hello)}')
+# callability of an object - callable()
+print(f'callable(hello)  :{callable(hello)}')
+print(f'callable(hello()):{callable(hello())}')
 
-language = 'python'
-print(f'callable(language)={callable(language)}')
-# language()  # TypeError: 'str' object is not callable
+word = 'python'  # string
+print(f'callable(word)   :{callable(word)}')
 
-result = hello()
-print(f'result={result}')
 
-# Functions are First class objects
-num1 = 123
-print(f'type(num1)       ={type(num1)}')
-print(f'id(num1)         ={id(num1)}')
-print(dir(num1))
-# help(num1)
+# Functions are treated as first class objects
+num1 = 12.32
+print(num1, id(num1))
+print(f'type(num1)      : type(num1)')
+print(dir(num1))  #  attributes for float
 
-print(f'hello              ={hello}')
-print(f'type(hello)        ={type(hello)}')
-print(f'id(hello)          ={id(hello)}')
-print(f'dir(hello)         ={dir(hello)}')
+print(hello,  id(hello))
+print(f'type(hello)      : type(hello)')
+print(dir(hello)) # attributes for function

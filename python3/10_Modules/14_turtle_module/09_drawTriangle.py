@@ -14,7 +14,7 @@ def draw_triangle(points, color, my_turtle):
 
 
 def get_mid(p1, p2):
-    return ((p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2)
+    return (p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2
 
 
 def sierpinski(points, degree, my_turtle):
@@ -43,5 +43,5 @@ def main():
     sierpinski(my_points, 3, my_turtle)
     my_win.exitonclick()
 
-
-main()
+if __name__ == '__main__':
+    main()

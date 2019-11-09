@@ -8,16 +8,18 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(name, age):
-    # print("%s's age is %d"%(name, age))
-    print("{}'s age is {}".format(name, age))
+    print(f"{name}'s age is {age}")
 
 
-# Function Call 
-# hello() # TypeError: hello() missing 2 required positional arguments: 'name' and 'age'
+# Function call
+# hello()                       # TypeError: hello() missing 2 required positional arguments: 'name' and 'age'
 
-# hello('Gudo')
-hello('Gudo', 77)
-hello(77, 'Gudo')
+# hello('Gudo van')             # TypeError: hello() missing 1 required positional argument: 'age'
+# hello('GUdo Van', 63, 'sad')  # TypeError: hello() takes 2 positional arguments but 3 were given
 
-hello(name='Gudo', age=77)
-hello(age=77, name='Gudo')
+hello('GUdo Van', 63)
+hello(63, 'GUdo Van')
+
+# keyword args based call
+hello(name='GUdo Van', age=63)
+hello(age=63, name='GUdo Van')
