@@ -55,43 +55,57 @@
 #         HINT: unpacking
 # """
 
-
 def string_reversal(word):
-    if len(word) == 1:
-        return word[0]
-    return string_reversal(word[1:]) + word[0]
-
-
-print(string_reversal('Python'))
-
-
-def string_reversal(word):
-    if len(word) == 1:
-        return word[0]
+    if not word:
+        return ''
     return word[-1] + string_reversal(word[:-1])
 
 
-print(string_reversal('Python'))
+result = string_reversal('Python')
+print(result)
 
 
-# factorial(9) = 9 *8 * 7 * 6 * .....1
+def string_reversal_1(word):
+    if not word:
+        return ''
+    return string_reversal_1(word[1:]) + word[0]
+
+
+result = string_reversal_1('Python')
+print(result)
+
+
+# -----------------------------------
 
 def factorial(num):
+    """
+    factorial(9) = 9 * 8 * 7 * 6 * .....1
+    :param num:
+    :return:
+    """
     if num == 1:
         return 1
     return num * factorial(num - 1)
 
 
-print(factorial(9))
+result = factorial(9)  # 362880
+print(result)
+
 import math
 
-print('math.factorial(9)', math.factorial(9))
+assert math.factorial(9) == factorial(9)
 
 
-def ceaser_cipher(mystring):
-    if mystring == '':
+# ------------------------------
+def caesar_cipher(sentence):
+    if not sentence:
         return ''
-    return chr(ord(mystring[0]) + 3) + ceaser_cipher(mystring[1:])
+    if sentence[0] == ' ':
+        cipher_char = sentence[0]
+    else:
+        cipher_char = chr(ord(sentence[0]) + 3)
+    return cipher_char + caesar_cipher(sentence[1:])
 
 
-print(ceaser_cipher('This is good'))
+cipher_text = caesar_cipher('war is planned at morning sun rise')
+print(cipher_text)

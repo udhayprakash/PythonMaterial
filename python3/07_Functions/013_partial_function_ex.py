@@ -1,3 +1,10 @@
+#!/usr/bin/python
+"""
+Purpose: Partial functions
+"""
+import functools
+
+
 # ordinary function
 def multiply(x, y):
     return x * y
@@ -7,16 +14,18 @@ print(multiply(2, 4))
 print(multiply(2, 14))
 print(multiply(2, 2))
 
-##############################################
-# partial function
-import functools
+# -------------------------------------------
+multiply_2 = functools.partial(multiply, 2)
 
-# create a new function that multiplies by 2
-dbl = functools.partial(multiply, 2)
+print(f'multiply_2      :{multiply_2}')
+print(f'type(multiply_2):{type(multiply_2)}')
 
-print('dbl', dbl)
-print('type(dbl)', type(dbl))
+assert multiply_2(4) == multiply(2, 4)
+assert multiply_2(14) == multiply(2, 14)
 
-print(dbl(4))  # multiply(2, 4)
-print(dbl(14))  # multiply(2, 14)
-print(dbl(3))  # multiply(2, 3)
+'''
+Assignments
+------------
+1) Develop a calculator software which does +, -, *, / operations
+    Then, make use of partial functions to optimize your solution.
+'''

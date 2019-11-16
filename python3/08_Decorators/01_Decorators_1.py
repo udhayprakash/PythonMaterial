@@ -1,40 +1,31 @@
 #!/usr/bin/python
 # http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
 
-def div(a, b):
-    return a / b
-
-
-# print(div(4, 2))
-# print(div(4, 0))
-
 def outer(func):
-    def inner(a, b):
-        # print(f'In inner(), func:{func}') 
+    def inner(v1, v2):
         try:
-            func(a, b)  # div(), add()
+            result = func(v1, v2)  # add(a, b)
         except Exception as ex:
-            return repr(ex)
+            return ex
         else:
-            return func(a, b)  # div(), add()
+            return result
 
     return inner
 
 
-# inner()
-
-result = outer(div)
-# print(type(result), result) # reference to inner()
-
-print(result(4, 2))
-print(result(4, 0))
-print()
+def add(a, b):
+    return a + b
 
 
-def add(n1, n2):
-    return n1 + n2
+def div(n1, n2):
+    return n1 / n2
 
 
-temp_var = outer(add)  # refence  to inner
-print('temp_var(2, 3)  ', temp_var(2, 3))
-print("temp_var('a', 3)", temp_var('a', 3))
+if __name__ == '__main__':
+    temp_var = outer(add)  # reference  to inner
+    print(temp_var)
+    print('temp_var(2, 3)  ', temp_var(2, 3))
+
+    temp_var = outer(div)  # reference  to inner
+    print(temp_var)
+    print('temp_var(2, 3)  ', temp_var(2, 3))

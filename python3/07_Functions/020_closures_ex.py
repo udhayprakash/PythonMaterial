@@ -2,12 +2,10 @@
 """
 Purpose: closure example demo
 """
-
-
 def outer(num1):
     num3 = 30
 
-    def hello_world(name):
+    def hello_world():
         print('Hello world')
 
     def wrapper(num2):
@@ -20,6 +18,7 @@ def outer(num1):
 
 
 outer_result = outer(10)
+
 
 print('outer_result', outer_result)
 print('outer_result()', outer_result(20))

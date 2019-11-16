@@ -4,33 +4,38 @@ Without decorators
 """
 
 
-# def div(a,b):
-#     return a/b
+# def add(a, b):
+#     return a + b
 
-def div(a, b):
+
+# def div(n1, n2):
+#     return n1 / n2
+
+# ------------------------------
+def add(a, b):
     try:
-        a / b
+        result = a + b
     except Exception as ex:
-        return repr(ex)
+        return ex
     else:
-        return a / b
+        return result
 
 
-print('div(4, 2)  ', div(4, 2))
-print('div(4, 0)  ', div(4, 0))
-
-
-# def add(str1, str2):
-#     return str1 + str2 
-
-def add(str1, str2):
+def div(n1, n2):
     try:
-        str1 + str2
+        result = n1 / n2
     except Exception as ex:
-        return repr(ex)
+        return ex
     else:
-        return str1 + str2
+        return result
 
 
-print('add(2, 3)  ', add(2, 3))
-print("add('a', 3)", add('a', 3))
+if __name__ == '__main__':
+    print(add(12, 34))
+    print(add(12, '34'))
+    print(add('12', '34'))
+    print(add('12', 34))
+
+    print(div(10, 5))
+    print(div(0, 5))
+    print(div(5, 0))

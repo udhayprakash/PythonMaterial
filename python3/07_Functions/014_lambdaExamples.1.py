@@ -1,9 +1,6 @@
 #!/usr/bin/python
 """
-Purpose:
-
-Lambda functions or 
-Anonymous functions
+Purpose: Lambda (or) Anonymous functions
 """
 __author__ = 'udhay prakash'
 
@@ -12,106 +9,110 @@ def double(x):
     return x * 2
 
 
-print(double(12))  # 24
+print(f'double(2):{double(2)}')
+print(f'double(3):{double(3)}')
 
 dbl = lambda x: x * 2
-print(dbl(12))
-print((lambda x: x * 2)(12))
-#############################################
+print(f'dbl(2)   :{dbl(2)}')
+print(f'dbl(3)   :{dbl(3)}')
 
-# def binomial_expression(n):
-#     return n**2 - 2*n + 1
-
-# print(binomial_expression(9))
-# print((lambda n: n**2 - 2*n + 1)(9))
-# ##############################################
-
-# def test_evenness(num):
-#     # if num % 2 == 0:
-#     #     return 'even'
-#     # else:
-#     #     return 'odd'
-#     return 'even' if num % 2 == 0 else 'odd'
-
-# print(test_evenness(45))
-# print((lambda num: 'even' if num % 2 == 0 else 'odd')(45))
+assert double(2) == dbl(2)
 
 
-# def get_values(given_tuple, given_position):
-#     return given_tuple[given_position]
-
-# my_tuple = (12, 34, 45, 56, 67 ,78, 90)
-#         #    0    1  2   3   4  5    6
-# print(get_values(my_tuple, 4))
-
-# print((lambda tp, ps: tp[ps])(my_tuple, 4))
-
-########################################
-print(list(range(6)))
-
-new_list = []
-for i in range(6):
-    new_list.append(double(i))
-print(new_list)
-
-new_list = []
-for i in range(6):
-    new_list.append((lambda x: x * 2)(i))
-print(new_list)
-
-# map(function, iterable1, iterable2, ..)
-# iterable objects - str, list, tuple, set, dictionary
-print('map(double, range(6))       :', list(map(double, range(6))))  # applying function for a list
-print('map(lambda x: x*2, range(6)):', list(map(lambda x: x * 2, range(6))))  # applying function for a list
-
-print('-' * 50)
+# ------------------------------------
+def binomial_expression(n):
+    return n ** 2 + 2 * n - 6
 
 
-#######################################
-def addition(m, n):
-    return m + n
+print(f'binomial_expression(10) :{binomial_expression(10)}')
 
-
-print(addition(23, 10))
-
-print((lambda p, q: p + q)(23, 10))
-
-# [1, 2, 3] + [3, 4, 5] => [1, 2, 3, 3, 4, 5]
-# [1, 2, 3] , [3, 4, 5] => [4 , 6, 8]
-
-print(list(map(addition, [1, 2, 3], [3, 4, 5])))
-print(list(map(lambda p, q: p + q, [1, 2, 3], [3, 4, 5])))
-
-# [1, 2, 3] , [3, 4, 5] => [(1, 3), (2, 4), (3, 5)]
-print(list(zip([1, 2, 3], [3, 4, 5])))
-print(list(map(lambda x, y: (x, y), [1, 2, 3], [3, 4, 5])))
-
-print('-' * 80)
-print('with expr')
-print([x ** 2 - 2 * x + 12 for x in range(5)])
-print([x * 2 for x in range(5)])
-print([x for x in [(1, 2), (3, 4), (5, 6)]])
-print([x[0] for x in [(1, 2), (3, 4), (5, 6)]])
-print([x[1] for x in [(1, 2), (3, 4), (5, 6)]])
+binexp = lambda n: n ** 2 + 2 * n - 6
+print(f'binexp(10)              :{binexp(10)}')
 print()
 
-# # mydict = {'a': 7, 'b': 8, 'c': 9}
-# # print([a for a in mydict])
-# # print([a for a in list(mydict.keys())])
-# # print([a for a in list(mydict.values())])
-# # print([a[1] for a in list(mydict.items())])
 
-# numbers = (12, 11, 12, 15, 20)
-# print('numbers', numbers)
-# numbers_sorted = sorted(numbers)
-# print(type(numbers_sorted), numbers_sorted)
-# print('numbers', numbers)
+# -----------------------------------------------
+def hello(first_name, last_name):
+    return f'Hello {first_name} {last_name} !!!'
 
-# numbers_sorted1 = sorted(numbers_sorted, reverse=True)
-# print(numbers_sorted, numbers_sorted1)
 
-# numbers = [12, 11, 12, 15, 20]
-# numbers.sort()
-# print(type(numbers), numbers)
-# numbers.sort(reverse=True)
-# print(type(numbers), numbers)
+h = lambda fn, ln: f'Hello {fn} {ln} !!!'
+
+assert hello('Gudo', 'Russum') == h('Gudo', 'Russum')
+
+
+# ---------------------------------------------------
+def test_evenness(num):
+    # if num % 2 == 0:
+    #     return 'even'
+    # else:
+    #     return 'odd'
+
+    return 'even' if num % 2 == 0 else 'odd'
+
+
+tevl = lambda num: 'even' if num % 2 == 0 else 'odd'
+
+assert test_evenness(222) == tevl(222)
+assert test_evenness(123) == tevl(123)
+assert test_evenness(123) == (lambda num: 'even' if num % 2 == 0 else 'odd')(123)
+
+# --------------------------------------------------------
+my_tuple = (12, 34, 45, 56, 67, 78, 90)
+
+
+#           0    1  2   3   4  5    6
+
+def get_index_of(given_tuple, search_value):
+    return given_tuple.index(search_value)
+
+
+get_index_l = lambda gvn_t, sv: gvn_t.index(sv)
+
+assert get_index_of(my_tuple, 56) == get_index_l(my_tuple, 56)
+
+###############################################
+# Method 1
+odd_nums = []
+for num in range(9):
+    if num % 2:
+        odd_nums.append(num)
+
+print(odd_nums)
+
+# Method 2: list comprehension
+odd_nums1 = [num for num in range(9) if num % 2]
+print(odd_nums1)
+
+
+# Method 3: applying functions
+def is_odd(n):
+    return True if n % 2 else False
+
+
+odd_nums2 = []
+for num in range(9):
+    if is_odd(num):
+        odd_nums2.append(num)
+
+print(odd_nums2)
+
+# Method 4: applying functions
+odd_nums3 = list(map(is_odd, range(9)))
+print(odd_nums3)
+
+odd_nums3 = list(filter(is_odd, range(9)))
+print(odd_nums3)
+
+# Method 4: applying lambdas
+odd_nums3 = list(map(lambda x: x % 2, range(9)))
+print(odd_nums3)
+
+odd_nums3 = list(filter(lambda x: x % 2, range(9)))
+print(odd_nums3)
+
+'''
+Assignment: 
+----------
+1) Try to get the prime numbers between 1208 and 4893
+'''

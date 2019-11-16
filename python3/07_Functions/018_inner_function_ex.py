@@ -1,29 +1,26 @@
 #!/usr/bin/python
 """
 Purpose: Inner function example
+Scoping - LEGB
 """
 
+num1 = 999
+mydict = {'p': 2}
 
+
+# function definition
 def outer():
-    print('In outer function')
-    nnum = 345
-    mytuple = (1, 2, 3)
-    mylist = [1, 2, 3]
-    mydict = {'1': 1}
+    print('outer func -start')
+    num1 = 100
+    mydict = {'a': 1}
 
     def inner():
-        print('In inner function', nnum)
-        print('In inner function', mytuple)
-        print('In inner function', mylist)
-        print('In inner function', mydict)
+        print('inner func - start')
+        print(f'inner, num1  ={num1}')
+        print(f'inner, mydict={mydict}')
 
-    inner()
+    inner()  # calling within outer() func scope
 
 
 outer()
-
-# inner()
-# print(nnum)
-# print(mytuple)
-# print(mylist)
-# print(mydict)
+# inner() # NameError: name 'inner' is not defined

@@ -19,9 +19,11 @@ def decortor_func2(func):
 
     return wrapper
 
+# NOTE: decorator will be executed top to bottom order
 
-@decortor_func1
+
 @decortor_func2
+@decortor_func1
 def actual_function():
     print('I am actual functioon')
 

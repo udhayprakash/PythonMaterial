@@ -18,18 +18,24 @@ def outer(func):
 
 
 #############################
-# def div(a, b):
-#     return a / b
+def div(a, b):
+    return a / b
 
-# print(div(10,3))
-# # print(div(10,0))
-# print(outer(div)(10,0))
 
-# ################################
-# foo = outer(div)
-# print(foo(10,0))
-# ################################
-# outer(div)(1,2)
+print(div(10, 3))
+# print(div(10,0))
+
+result = outer(div)
+print(f' {result}')
+print(result(10, 0))
+
+print(outer(div)(10, 0))
+
+################################
+foo = outer(div)
+print(foo(10,0))
+################################
+outer(div)(1,2)
 
 
 ##############################################

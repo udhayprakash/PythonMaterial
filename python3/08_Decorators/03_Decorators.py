@@ -27,8 +27,9 @@ print('\n###### USING DECORATORS  ############')
 def print_function(func):
     def inner(*args, **kwargs):
         print('function -start ')
+        _result = func(*args, **kwargs)
         print('function - before end')
-        return func(*args, **kwargs)
+        return _result
 
     return inner
 

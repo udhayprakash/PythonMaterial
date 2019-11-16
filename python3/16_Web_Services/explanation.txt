@@ -1,3 +1,7 @@
+request flow:
+    https://web.archive.org/web/20180219193143/https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
+
+
 List of Public APIs : 
     https://github.com/public-apis/public-apis
 
