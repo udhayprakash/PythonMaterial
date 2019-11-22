@@ -33,8 +33,7 @@ print(x)
 y = random.sample(items, 4)
 print(y)
 
-mountains = ['Andes', 'Himalayas',
-             'Alphes', 'Aplachein', 'Ural', 'Vindhya']
+mountains = ['Andes', 'Himalayas', 'Alphes', 'Aplachein', 'Ural', 'Vindhya']
 
 # Pick a random item from the list
 x = random.sample(mountains, 1)
