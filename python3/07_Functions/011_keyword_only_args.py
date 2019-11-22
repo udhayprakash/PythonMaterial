@@ -23,6 +23,6 @@ def recv(maxsize, *, block=True):
 
 # Function Call 
 recv(1234)
-# recv(1234, False) # TypeError: recv() takes 1 positional argument but 2 were given
-recv(1234, block=False)
 recv(maxsize=1234, block=False)
+recv(1234, block=False)
+# recv(1234, False) # TypeError: recv() takes 1 positional argument but 2 were given

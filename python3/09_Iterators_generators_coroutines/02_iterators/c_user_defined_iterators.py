@@ -10,7 +10,7 @@ Iterator objects
     - used for large data handling
     - values can be retrieved by 
         - .next() in python 2.x 
-            .__next__() in pyton 3.x
+        - .__next__() in python 3.x
         - applying for loop
 """
 
@@ -29,7 +29,7 @@ print(f'alpha_it       : {type(alpha_it)} {alpha_it}')
 # print(f'alpha_it[2]    : {alpha_it[2]}') # TypeError: 'list_iterator' object is not subscriptable
 # print(f'alpha_it[2:5]  : {alpha_it[2:5]}') # TypeError: 'list_iterator' object is not subscriptable
 
-# Method 1: iterate over the object 
+# Method 1: iterate over the object
 for ech_ele in alpha_it:
     print(ech_ele)
 
@@ -46,7 +46,7 @@ print('tuple(alpha_it)', tuple(alpha_it))
 alpha_it = iter(alpha)
 print('set(alpha_it)', set(alpha_it))
 
-alpha_it = iter(alpha) 
+alpha_it = iter(alpha)
 print('str(alpha_it)', str(alpha_it)) # <list_iterator object at 0x0000000002684188>
 
 

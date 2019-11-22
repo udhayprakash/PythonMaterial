@@ -1,3 +1,3 @@
 Is xrange() a generator or an iterator? or not both?
 
-write a script using coroutines, which can valate inputed prime numbers
+Q) write a script using coroutines, which can validate inputed prime numbers

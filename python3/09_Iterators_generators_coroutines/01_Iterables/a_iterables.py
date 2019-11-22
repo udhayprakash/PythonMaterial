@@ -1,9 +1,9 @@
 #!/usr/bin/python
 """
-Purpose: Iterables
+Purpose: Iterables - Objects which support iteration over them
 
 non-iterable objects ====> int, float, None, True, False ..
-Iterable objects     ====> str, list, tuple, dict, set, itertor, generator, range()
+Iterable objects     ====> str, list, tuple, dict, set, iterator, generator, range()
 
 """
 # for i in 1234:
@@ -33,11 +33,12 @@ names = {'udhay', 'prakash', 'someone'}
 for each_name in names:
     print(each_name)
 
-
+# -----------
 print('\nCollections - dictionaries  - iterable')
 names = {'first': 'udhay', 'second': 'prakash', 'third': 'someone'}
 for each_name in names:
     print(each_name)
+# NOTE: By default, when iterating over dict, it gives its keys only
 
 print('\nkeys')
 for each_name in names.keys():
@@ -52,9 +53,10 @@ for each_name in names.items():
     print(each_name)
 
 for each_key, each_val in names.items():
-    print(f'each_key:{each_key}\t\teach_val:{each_val}')
+    print(each_key, '====>', each_val)
 
-
+# --------------------
 print(list('Python Programming'))
 print(tuple('Python Programming'))
 print(set('Python Programming'))
+

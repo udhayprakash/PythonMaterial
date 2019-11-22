@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """
 Purpose:  range() type
+    Lazy loading object
 """
 
 nums = range(9)  
@@ -8,7 +9,7 @@ nums = range(9)
 
 print(f'nums: {nums}, {type(nums)}')
 
-# iterating on range object 
+# iterating on range object
 for each_val in nums:
     print(each_val)
 

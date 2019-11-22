@@ -8,7 +8,8 @@ Purpose: importance and usage of argparse
 # password = 'udhay@123'
 # server_name = 'issadsad.mydomain.in'
 
-# # Method 2: input() - run time 
+
+# # Method 2: input() - run time
 # user_name = input('Enter username:')
 # password = input('Enter password:')
 # server_name = input('Enter server name:')
@@ -17,16 +18,19 @@ Purpose: importance and usage of argparse
 # # Method 3: sys.argv
 # import sys
 # print('sys.argv = ', sys.argv)
-
-# print(sys.argv[0] == __file__)
+# assert sys.argv[0] == __file__
+#
 # # user_name = sys.argv[1]
 # # password = sys.argv[2]
 # # server_name = sys.argv[3]
-
+#
+# # unpacking
+# if len(sys.argv) != 4:
+#     print('Help:')
+#     print(f'{__file__} username password server_fqdn')
+#     sys.exit(1)
 # user_name, password, server_name = sys.argv[1:]
 
-# # unpacking 
-# user_name, password, server_name = sys.argv[1:]
 
 # Method 4: argparse
 import argparse
@@ -59,3 +63,4 @@ The server login details are:
     PASSWORD    : {password}
     SERVER NAME : {server_name}
 ''')
+

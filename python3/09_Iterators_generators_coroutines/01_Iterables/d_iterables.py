@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose:
-
+     Python uses timsort algorithm for sorting
 sorted()
 """
 
@@ -11,11 +11,11 @@ print()
 print(f'sorted(numbers) : {sorted(numbers)}')
 print(f'numbers         : {numbers}')
 
-# NOTE: sorted() will create new objects. 
+# NOTE: sorted() will create new objects.
 # existing objects is not modified.
 print()
 
-numbers.sort() # updates the original object
+numbers.sort()  # updates the original object
 print(f'numbers         : {numbers}')
 
 print()
@@ -27,6 +27,7 @@ print(f'reversed(numbers): {reversed(numbers)}')
 revr_numbers = list(reversed(numbers))
 print(f'revr_numbers     : {revr_numbers}')
 
+# ------------------------------------------
 print()
 word = "Python "
 print(f'word        :{word}')
@@ -39,5 +40,15 @@ print(lst_of_strs)
 print(sorted(lst_of_strs))
 print(sorted(lst_of_strs, key=str.lower))
 
+# -----------------------------------------
+
+
 print()
-print(sorted({1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'}))  # [1, 2, 3, 4, 5]
+my_dict = {1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'}
+print(sorted(my_dict))  # [1, 2, 3, 4, 5]
+print(sorted(my_dict.keys()))  # [1, 2, 3, 4, 5]
+print(sorted(my_dict.values()))  # ['A', 'B', 'B', 'D', 'E']
+print(sorted(my_dict.items()))  # [(1, 'D'), (2, 'B'), (3, 'B'), (4, 'E'), (5, 'A')]
+print(sorted(my_dict.items(), key=lambda x: x[0]))  # by key
+print(sorted(my_dict.items(), key=lambda x: x[1]))  # by value
+print(sorted(my_dict.items(), key=lambda x: x[1], reverse=True))  # by value

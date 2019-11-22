@@ -1,7 +1,7 @@
 def minimize():
     current = yield  # 999999999999999999
     while True:
-        value = yield current
+        value = yield f'Minimum Value:{current:3}'
         current = min(value, current)
 
 

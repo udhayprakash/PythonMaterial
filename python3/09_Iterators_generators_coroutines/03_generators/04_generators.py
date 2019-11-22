@@ -18,10 +18,11 @@ def count(n):
         # print i
         i += 1
     print('$', i)
-    # return i 
+    # return i
 
 
-# PEP8 strongly discourages usage of yield and retun, in same function
+# PEP8 strongly discourages usage of yield and
+# retun, in same function
 
 
 c = count(9)

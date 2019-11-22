@@ -10,8 +10,16 @@ def clear_screen():
     print('output', output)
 
 
-clear_screen()
+def ping_a_site(website_name):
+    output = os.system(f'ping {website_name}')
+    print(f'output:{output}')
 
-# os.system('ping google.com')
-exec_result = os.system('dir')
-print(f'exec_result:{exec_result}')
+
+if __name__ == '__main__':
+    clear_screen()
+    ping_a_site('google.com')
+
+#
+# # os.system('ping google.com')
+# exec_result = os.system('dir')
+# print(f'exec_result:{exec_result}')

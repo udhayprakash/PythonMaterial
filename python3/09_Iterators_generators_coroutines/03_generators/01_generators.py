@@ -1,6 +1,11 @@
 #!/usr/bin/python
 """
 Purpose: Generators
+
+range(0, 100000, 2)
+range(2, 100000, 2)
+range(4, 100000, 2)
+0 2
 """
 
 
@@ -17,6 +22,7 @@ def my_generator():
 
 result = my_generator()
 print(type(result), result)
+
 
 # Execution starts below
 res1 = next(result)  # 111

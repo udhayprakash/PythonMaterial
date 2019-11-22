@@ -21,14 +21,15 @@ print('c', c)
 print(next(c))
 
 print(c.send("World"))
+# print(c.send("Python")) # StopIteration
 
 try:
     c.throw(RuntimeError, "I am throwing exception")
 except RuntimeError as ex:
     print(ex)
 
-# closing(shutdown) a coroutine
+# closing(shutdown) a co-routine
 c.close()
-# garbage collection too calls .close() 
+# garbage collection too calls .close()
 
 # close() can be catched by GeneratorExit Exception
