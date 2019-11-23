@@ -13,10 +13,9 @@ def ctx():
     print('end')
 
 
-# c = ctx()
-
-# with c:
-#     print('middle')
+c = ctx()
+with c:
+    print('middle')
 
 with ctx() as c:
     print('middle')

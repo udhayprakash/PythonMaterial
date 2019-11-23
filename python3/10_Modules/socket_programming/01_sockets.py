@@ -9,4 +9,8 @@ print(f'''
 Host name : {host_name}
 IP address: {ip_address}''')
 
-# port adress = mac address == private ip address  ==== ISP (Public IP Adress) ==== Internet
+# port address = mac address == private ip address  ==== ISP (Public IP Adress) ==== Internet
+
+# internet address      -  ip adrress
+# device address        - MAC address
+# applciation address   - port address

@@ -12,3 +12,7 @@ bob.forward(50)
 
 # Step 4: We're done!
 turtle.done()
+
+
+# REF: To enable turtle in jupyter notebook
+# https://medium.com/@jiyuanli93/how-to-make-python-turtle-works-in-jupyter-notebook-6c506b9a973f

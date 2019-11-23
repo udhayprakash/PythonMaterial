@@ -26,7 +26,7 @@ print(type(code), code)
 exec(compile(code, filename="", mode="exec"))
 print(ast.dump(code))
 
-# Multi-line ast 
+# Multi-line ast
 print()
 tree = ast.parse('''
 fruits = ['grapes', 'mango']
