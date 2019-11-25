@@ -1,44 +1,52 @@
 #!/usr/bin/python 
+"""
+    Purpose: module importing demonstration
 
-'''
-	Purpose: module importing demonstration
-	
-	To create documenation for this script, use 
-		python -m pydoc -w newScript
-'''
+    To create documentation for this script, use
+        python -m pydoc -w newScript
+"""
 vowels = 'aeiou'
 
 luckyNumber = 1321
 
 
 def firstFunction():
-    '''
+    """
     This is firstFunction
     :return: None
-    '''
+    """
     print("This is first function")
 
 
 def addition(a, b):
-    '''
-        performs addition operation
+    """
+    performs addition operation
         ex: addition(12, 34)
-        returns: a+b 
-    '''
+        returns: a+b
+    :param a:
+    :param b:
+    :return:
+    """
     return a + b
 
 
 def subtraction(a, b):
-    '''
-        performs subtraction operation
-    '''
+    """
+    performs subtraction operation
+    :param a:
+    :param b:
+    :return:
+    """
     return a - b
 
 
 def multiplication(a, b):
-    '''
-        performs multiplication operation
-    '''
+    """
+    performs multiplication operation
+    :param a:
+    :param b:
+    :return:
+    """
     return a * b
 
 

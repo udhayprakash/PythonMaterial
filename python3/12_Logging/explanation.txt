@@ -9,7 +9,7 @@
 20-July,2015 7.43am     [critical]  [ main        ]	ABORTED installing the product
 
 print ---
-        SDLC
+        SDLC ( dev -> testing/ UAT -> Prod)
 debug      developemnt
 info       dev/testing
 warning    dev/testing

@@ -1,13 +1,13 @@
 #!/usr/bin/python
+"""
+Purpose:
+    file operations
+        - read  - r
+        - write - w
+        - append- a
 
-'''
-file operations 
-    - read  - r
-    - write - w
-    - append- a
-
-    default is read mode
-'''
+        default is read mode
+"""
 fh = open('foo.txt', 'w')
 fh.write('This is first line')
 
@@ -15,22 +15,23 @@ print("Name of the file: ", fh.name)
 print("Opening mode    : ", fh.mode)
 
 fh.flush()
-print("Closed or not : ", fh.closed)
+
+print("Closed or not    : ", fh.closed)
 fh.close()  # garbage collector
-print("Closed or not : ", fh.closed)
+print("Closed or not    : ", fh.closed)
 
 # fh.write('fh world 3 !\n')
 # ValueError: I/O operation on closed file.
 
-
 g = open("foo.txt", 'w')
 g.write('This is second line\n')
-
 g.flush()
 g.close()
 
+
 fh = open("foo.txt", 'a')
 print('fh.writable()', fh.writable())
+print('fh.readable()', fh.readable())
 fh.write('This is third line\n')
 fh.flush()
 fh.close()

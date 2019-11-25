@@ -2,13 +2,13 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 logging.basicConfig(
-    handlers=[RotatingFileHandler('my_log.log',
+    handlers=[RotatingFileHandler('16_rotational_handler.log',
                                   maxBytes=1000, backupCount=2)],
     level=logging.DEBUG,
     format="[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
     datefmt='%Y-%m-%dT%H:%M:%S')
 
-for _ in range(10):
+for _ in range(10000):
     logging.warning('Hello world!')
 
 # logger = logging.getLogger('my_logger')

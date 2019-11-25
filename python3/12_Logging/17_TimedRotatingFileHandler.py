@@ -11,8 +11,8 @@ def create_timed_rotating_log(path):
     formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
 
     handler = TimedRotatingFileHandler(path,
-                                       when="M",  # Minutes
-                                       interval=1,
+                                       when="S",  # Minutes
+                                       interval=30,
                                        backupCount=5)
 
     # S - Seconds 
@@ -32,5 +32,5 @@ def create_timed_rotating_log(path):
 
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
-    log_file = "timed_test.log"
+    log_file = "17_TimedRotatingFileHandler.log"
     create_timed_rotating_log(log_file)

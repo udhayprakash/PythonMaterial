@@ -3,7 +3,7 @@ import logging
 # basicConfig - to set the format of log test
 
 logging.basicConfig(
-    filename='03_logging.log',
+    filename='03_logging.log', # filemode='a',
     level=logging.DEBUG)
 
 logging.debug("This is a debug1")
