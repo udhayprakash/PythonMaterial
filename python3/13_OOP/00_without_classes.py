@@ -19,14 +19,13 @@ def withdraw(amount):
     return balance
 
 
-# Main
+if __name__ == '__main__':
+    # Madhavi
+    print("Madhavi -  initial balance {}".format(balance))
+    deposit(1000)
+    print("Madhavi -  balance after dads deposit {}".format(balance))
+    withdraw(300)
+    print("Madhavi -  balance after movie is {}".format(balance))
 
-# Madhavi
-print("Madhavi -  initial balance {}".format(balance))
-deposit(1000)
-print("Madhavi -  balance after dads deposit {}".format(balance))
-withdraw(300)
-print("Madhavi -  balance after movie is {}".format(balance))
-
-# yash
-print("\nyash -  initial balance {}".format(balance))
+    # yash
+    print("\nyash -  initial balance {}".format(balance))

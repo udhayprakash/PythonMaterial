@@ -1,4 +1,8 @@
 #!/usr/bin/python
+"""
+Purpose:
+"""
+
 
 class Account:
     def __init__(self):
@@ -13,29 +17,23 @@ class Account:
         return self.balance
 
 
-# Zero balance account
-# main
+if __name__ == '__main__':
+    teju = Account()
+    rehman = Account()
 
-sam = Account()
-krish = Account()
+    print(f'teju.balance    :{teju.balance}')
+    print(f'rehman.balance  :{rehman.balance}')
 
-print('dir(sam)', dir(sam))
+    teju.deposit(1200)
+    rehman.deposit(25)
 
-print('\nsam.balance', sam.balance)
-print('krish.balance', krish.balance)
+    print()
+    print(f'teju.balance    :{teju.balance}')
+    print(f'rehman.balance  :{rehman.balance}')
 
-# Deposit
-sam.deposit(1000)  # deposit(sam, 1000)  -- deposit(self, amount)
-krish.deposit(10000)
+    teju.withdraw(500)
+    rehman.withdraw(12)
 
-print("\nafter deposit")
-print('sam.balance', sam.balance)
-print('krish.balance', krish.balance)
-
-# Withdraw
-sam.withdraw(300)
-krish.withdraw(3000)
-
-print("\nafter withdraw")
-print('sam.balance', sam.balance)
-print('krish.balance', krish.balance)
+    print()
+    print(f'teju.balance    :{teju.balance}')
+    print(f'rehman.balance  :{rehman.balance}')

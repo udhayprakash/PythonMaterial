@@ -1,10 +1,19 @@
 #!/usr/bin/python
+"""
+Purpose:
+
+NOTE: This is best practice to define all the instance variables
+      in the constructor, for better memory management
+"""
 
 
+# class Shape:
 class Shape(object):
     def __init__(self, x, y):
         self.x = x
         self.y = y
+        self.description = ''
+        self.author = ''
 
     def perimeter(self):
         return 2 * self.x + 2 * self.y
@@ -12,10 +21,10 @@ class Shape(object):
     def describe(self, text):
         self.description = text
 
-    def authorName(self, name):
+    def author_name(self, name):
         self.author = name
 
-    def scalesize(self, scale):
+    def scale_size(self, scale):
         (self.x, self.y) = (self.x * scale, self.y * scale)
 
 

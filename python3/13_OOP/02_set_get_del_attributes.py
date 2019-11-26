@@ -4,30 +4,30 @@ Purpose: classes (OOP) introduction
 """
 
 
-class MyClass:
+# class Definition
+class Myclass:
     pass
 
 
-m = MyClass()
-print(m)
-# print(dir(m))
+# Instantiation
+m = Myclass()
+print(m, type(m))
 
-# Using bult-in functions
+# To list the attributes
+print(dir(m))
+
+# To set an attribute
 setattr(m, 'value', 100.23)
-# print(dir(m))
-print(getattr(m, 'value'))
+m.value2 = 2342
+print(dir(m))
+# Instances are mutable objects
 
+# To retrieve an attribute
+print(f'm.value:{m.value}')
+assert getattr(m, 'value') == m.value
+
+# To delete an attribute
 delattr(m, 'value')
-# print(getattr(m, 'value'))  # AttributeError: 'MyClass' object has no attribute 'value'
+del m.value2
 
-# --------------------
-# Directly accessing based
-m.value1 = 123
-print(m.value1)
-
-del m.value1
-# print(m.value1)  # AttributeError: 'MyClass' object has no attribute 'value1'
-
-
-m.nirmal = 23
 print(dir(m))

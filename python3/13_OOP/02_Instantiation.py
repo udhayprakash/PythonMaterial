@@ -7,11 +7,11 @@ Purpose: classes (OOP) introduction
             class - type - class object 
         2. new style classes - python 2 & 3
 
-PEP 8 -> class names should be in camelCasing    
+PEP 8 -> class names should be in CamelCasing
 """
 
 
-# class definition
+# Class Definition
 class EmptyClass:
     pass
 
@@ -21,35 +21,37 @@ e1 = EmptyClass()
 print(f'e1:{e1} {type(e1)}')
 
 
-########################################
-# class definition
+# -----------------------------------------
 class MyClassName:
-    number = 786  # class variables
+    number = 786  # class variable
 
     def hello_world(self):  # Methods
-        return "Hello world"
+        return 'Hello world'
 
 
-c1 = MyClassName  # class
-print(c1, type(c1))
-
-c1 = MyClassName()  # instance
-print(c1, type(c1))
-
-print(f'isinstance(c1, MyClassName):{isinstance(c1, MyClassName)}')
-print(f'isinstance(e1, MyClassName):{isinstance(e1, MyClassName)}')
-print(f'isinstance(e1, EmptyClass) :{isinstance(e1, EmptyClass)}')
-
+# Instantiation
+c1 = MyClassName()
+print(f'c1:{c1} {type(c1)}')
 print(dir(c1))
 
-print(f'c1.number     :{c1.number}')
-print(f'c1.hello_world:{c1.hello_world}')
+print(f'callable(c1.number)     :{callable(c1.number)}')
+print(f'c1.number               :{c1.number}')
 
-print(f'c1.hello_world():{c1.hello_world()}')
-print(MyClassName.hello_world(c1))
+print(f'callable(c1.hello_world):{callable(c1.hello_world)}')
+print(f'c1.hello_world          :{c1.hello_world}')
+print(f'c1.hello_world()        :{c1.hello_world()}')
 
-# ----------------------------------------------
-c2 = MyClassName()  # instance
-print(c2, type(c2))
-print(f'c2.hello_world():{c2.hello_world()}')
-print(MyClassName.hello_world(c2))
+print()  # check  for user-defined objects
+print(f'isinstance(c1, MyClassName):{isinstance(c1, MyClassName)}')
+print(f'isinstance(c1, EmptyClass) :{isinstance(c1, EmptyClass)}')
+print(f'isinstance(e1, EmptyClass) :{isinstance(e1, EmptyClass)}')
+
+print()  # Check for builtin objects
+print(f'isinstance(123, int)        :{isinstance(123, int)}')
+print(f'isinstance(123.9, int)      :{isinstance(123.9, int)}')
+print(f'isinstance(123.9, float)    :{isinstance(123.9, float)}')
+print(f'isinstance(123.9, str)      :{isinstance(123.9, str)}')
+
+num1 = 123
+print(f'type(num1) is int:{type(num1) is int}')
+isinstance(num1, int)

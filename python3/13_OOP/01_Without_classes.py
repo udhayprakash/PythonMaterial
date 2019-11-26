@@ -1,4 +1,8 @@
 #!/usr/bin/python
+"""
+Purpose:
+"""
+
 
 def new():
     return {'balance': 0}
@@ -14,19 +18,20 @@ def withdraw(account, amount):
     return account['balance']
 
 
-# Madhavi
-Madhavi = new()
-print("The basic amount for Madhavi {}".format(Madhavi['balance']))
-deposit(Madhavi, 1000)
-print("The  amount for Madhavi {} after deposit".format(Madhavi['balance']))
-withdraw(Madhavi, 300)
-print("The  amount for Madhavi {} after withdraw".format(Madhavi['balance']))
-print()
+if __name__ == '__main__':
+    # Madhavi
+    Madhavi = new()
+    print("The basic amount for Madhavi {}".format(Madhavi['balance']))
+    deposit(Madhavi, 1000)
+    print("The  amount for Madhavi {} after deposit".format(Madhavi['balance']))
+    withdraw(Madhavi, 300)
+    print("The  amount for Madhavi {} after withdraw".format(Madhavi['balance']))
+    print()
 
-# yash
-yash = new()
-print("The basic amount for yash {}".format(yash['balance']))
-deposit(yash, 2000)
-print("The  amount for yash {} after deposit".format(yash['balance']))
-withdraw(yash, 600)
-print("The  amount for yash {} after withdraw".format(yash['balance']))
+    # yash
+    yash = new()
+    print("The basic amount for yash {}".format(yash['balance']))
+    deposit(yash, 2000)
+    print("The  amount for yash {} after deposit".format(yash['balance']))
+    withdraw(yash, 600)
+    print("The  amount for yash {} after withdraw".format(yash['balance']))
