@@ -3,24 +3,29 @@
 Purpose: Inner function example
 Scoping - LEGB
 """
+from math import pi
 
-num1 = 999
-mydict = {'p': 2}
+pi = 300
+mydict = {'lang': 'python'}
 
 
 # function definition
-def outer():
-    print('outer func -start')
-    num1 = 100
-    mydict = {'a': 1}
+def outer(given):
+    print('outer function - start ')
+    pi = 200
+    mydict = {'lang': 'ruby'}
 
     def inner():
-        print('inner func - start')
-        print(f'inner, num1  ={num1}')
-        print(f'inner, mydict={mydict}')
+        pi = 100
+        mydict = {'lang': 'golang'}
+        print('inner function - start')
+        print(f'pi              :{pi}')
+        print(f'mydict["lang"]  :{mydict["lang"]}')
 
-    inner()  # calling within outer() func scope
+    if given % 2 == 0:  # even:
+        inner()
 
 
-outer()
-# inner() # NameError: name 'inner' is not defined
+# function call
+if __name__ == '__main__':
+    outer(123)
