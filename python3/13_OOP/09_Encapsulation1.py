@@ -1,4 +1,11 @@
 #!/usr/bin/env python
+"""
+Purpose: Encapsulation
+
+Private members can be accessed directly within the
+same class definition.
+"""
+
 
 class Car:
     __maxspeed = 0  # class variable
@@ -15,8 +22,9 @@ class Car:
 redcar = Car()
 redcar.drive()
 
-redcar.__maxspeed = 10  # will not change variable because its private
+redcar._Car__maxspeed = 10  # accessing private variable
 redcar.drive()
 
-redcar._Car__maxspeed = 10  # accessing private variable
+# creating new attribute
+redcar.__maxspeed = 10  # will not change variable because its private
 redcar.drive()

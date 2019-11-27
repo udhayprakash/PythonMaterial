@@ -8,7 +8,7 @@ Purpose: Double Linked List
 
             n1     n2   n3
 pre_n_add   None   3    4
-value       h      e    l
+value       h      e    l    l   o
 next_n_add  4      6    8
 
 """
@@ -49,7 +49,7 @@ print(d1)
 print(d2)
 print(d3)
 
-# create a double linked list for word 'hello'
+# Assignment L create a double linked list for word 'hello'
 '''
 id()|h|id()     e      l      l    o
 

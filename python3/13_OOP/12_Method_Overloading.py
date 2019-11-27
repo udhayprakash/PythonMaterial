@@ -29,7 +29,7 @@ class MyOverLoadEx(object):
     """
     This is overloading ex
 
-    Duck typing - the language doesn'it support a feature, 
+    Duck typing - the language doesn't support a feature,
                     but we implement by some workaround
     """
 

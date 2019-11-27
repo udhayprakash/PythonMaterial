@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 Purpose: Encapsulation
-Name mangling
+            Name mangling
 """
 from pprint import pprint
 
@@ -34,7 +34,7 @@ class Car:
 c = Car()
 pprint(vars(Car))
 
-print('Car.a', Car.a)  # accessing pubic variable
+print('Car.a ', Car.a)  # accessing pubic variable
 print('Car._a', Car._a)  # accessing protected variable
 
 # print('Car.__a', Car.__a) # accessing private variable
@@ -43,9 +43,14 @@ print('Car._Car__a', Car._Car__a)  # accessing private variable
 print()
 pprint(vars(c))
 
-c.instance_method()
-c._instance_method()
-c._Car__instance_method()
+print(f'c.b         :{c.b}')
+print(f'c._b        :{c._b}')
+print(f'c._Car__b   :{c._Car__b}')
+
+print()
+c.instance_method()  # public
+c._instance_method() # protected
+c._Car__instance_method() # Private
 
 print()
 c.new_method()

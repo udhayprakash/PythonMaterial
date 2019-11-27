@@ -30,7 +30,7 @@ class Shape(object):
 
 rectangle = Shape(100, 45)  # instantiation
 
-print('rectangle.x', rectangle.x)
+print('rectangle.x     ', rectangle.x)
 print("type(Shape)     ", type(Shape))
 print("type(rectangle) ", type(rectangle))
 

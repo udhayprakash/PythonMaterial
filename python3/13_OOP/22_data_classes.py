@@ -31,7 +31,7 @@ class Foo(object):
 
 f = Foo(12)
 print(f.x)
-# f.x = 1
+# f.x = 1 # dataclasses.FrozenInstanceError: cannot assign to field 'x'
 print(hash(f))
 
 # NOTE: Namedtuples are also dataclasses, 

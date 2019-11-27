@@ -19,7 +19,6 @@ class Employee:
 e = Employee(10, 'Pankaj')  # creating object
 
 print(e)  # printing object
-
-print(callable(e))
+print(f'callable(e):{callable(e)}')
 
 e()  # __call__

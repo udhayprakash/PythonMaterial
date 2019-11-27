@@ -1,5 +1,5 @@
 """
-newly stye classes better support property decorator
+newly style classes better support property decorator
 """
 
 
@@ -21,13 +21,13 @@ print(person.email())
 print('person.first', person.first)
 print('person.last ', person.last)
 
+print(vars(person))
 # print(person.fullname())
 
 # After placing property decorator, method
 # should be accessed like a variable
 
-print(person.fullname)
+print(f'person.fullname:{person.fullname}')
 
 person.last = 'chaitanya'
-
-print(person.fullname)
+print(f'person.fullname:{person.fullname}')

@@ -36,19 +36,22 @@ class LinkedList:
 
 
 n1 = LinkedList(10)
-# print(f'n1:{n1}')
+print(f'n1:{n1}')
 
 n2 = LinkedList(20)
-# print(f'n2:{n2}')
+print(f'n2:{n2}')
 
 n3 = LinkedList(30)
+print(f'n3:{n3}')
 
 n4 = LinkedList(40)
+print(f'n4:{n4}')
 
 n1.set_next_node_address(id(n2))
 n2.set_next_node_address(id(n3))
 n3.set_next_node_address(id(n4))
 
+print('After relating ...')
 print(f'n1:{n1}')
 print(f'n2:{n2}')
 print(f'n3:{n3}')
@@ -66,7 +69,7 @@ for _index, ech_chr in enumerate('hello'):
     node = LinkedList(ech_chr, None)
     list_of_nodes.append(node)
 
-    # update address for previous node 
+    # update address for previous node
     if _index != 0:
         list_of_nodes[_index - 1].set_next_node_address(id(node))
 

@@ -35,7 +35,7 @@ class MyParent2:  # (object):
         self.result = self.num1 - self.num2
 
 
-class MyChild(MyParent2, MyParent1):
+class MyChild(MyParent1, MyParent2):
     def __init__(self):
         MyParent1.__init__(self)
         MyParent2.__init__(self)
@@ -48,4 +48,5 @@ class MyChild(MyParent2, MyParent1):
 ch = MyChild()
 
 print(dir(ch))
+print(ch._hello())
 print(ch.hello())

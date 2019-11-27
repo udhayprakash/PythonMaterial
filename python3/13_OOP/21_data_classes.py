@@ -60,7 +60,6 @@ a = ArithmeticOperations(123, 345)
 # print(dir(a))
 print(f'a.addition():{a.addition()}')
 
-
 ##################################
 @dataclass
 class ArithmeticOperations:

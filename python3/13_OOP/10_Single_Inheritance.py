@@ -1,7 +1,13 @@
 #!/usr/bin/python
 """
 Purpose: Single Inheritance
-MRO - method resolution order
+    MRO - method resolution order
+
+Parent - Child classes relation
+Super - Sub classes relation
+
+All child classes should make calls to the parent class
+constructors
 """
 
 
@@ -22,49 +28,33 @@ class Account:
         return self.balance
 
 
-class MinBalanceAccount(Account):
+# a1 = Account()
+# # print(vars(a1))
+# print(dir(a1))
+
+
+class MinimumBalanceAccount(Account):
     """
-    child or sub class
+        child or sub class
     """
 
     def __init__(self):
-        Account.__init__(self)  # calling the constructor of the parent class
+        # calling the constructor of the parent class
+        Account.__init__(self)
 
     def withdraw(self, amount):
         if self.balance - amount < 1000:
-            return "buddy !!! you need to maintain a minimum balance"
+            print("PLease maintain minimum balance. transaction failed!!!")
         else:
-            Account.withdraw(self, amount)
+            Account.withdraw(amount)
 
 
-mb = MinBalanceAccount()
+a2 = MinimumBalanceAccount()
+print(dir(a2))
 
-print(dir(mb))
+print(f'Initial balance     :{a2.balance}')
+a2.deposit(1300)
+print(f'After deposit(1300) :{a2.balance}')
 
-print('mb.balance      ', mb.balance)
-print('mb.deposit(10)  ', mb.deposit(10))
-print('mb.balance      ', mb.balance)
-print('mb.withdraw(100)', mb.withdraw(100))
-
-print('=================================')
-
-# Main
-# student
-will_smith = MinBalanceAccount()
-print("Initial balance of will_smith {}".format(will_smith.balance))
-will_smith.deposit(2000)
-print("balance of will_smith {}".format(will_smith.balance))
-will_smith.withdraw(500)
-print("balance of will_smith {}".format(will_smith.balance))
-will_smith.withdraw(600)
-print("balance of will_smith {}".format(will_smith.balance))
-
-# working
-federer = Account()
-print("Initial balance of federer {}".format(federer.balance))
-federer.deposit(2000)
-print("balance of federer {}".format(federer.balance))
-federer.withdraw(500)
-print("balance of federer {}".format(federer.balance))
-federer.withdraw(600)
-print("balance of federer {}".format(federer.balance))
+a2.withdraw(900)
+print(f'After withdraw(900) :{a2.balance}')

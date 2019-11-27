@@ -16,7 +16,7 @@ class Rocket:
         return "%s has reached %s" % (self.name, self.distance)
 
 
-class MarsRoverComp():
+class MarsRoverComp:
     def __init__(self, name, distance, maker):
         self.rocket = Rocket(name, distance)  # instantiating the base
 
