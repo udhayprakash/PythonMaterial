@@ -1,5 +1,6 @@
 #!/usr/bin/python
-
+"""Purpose: Calculator Aplication
+"""
 __author__ = ''
 
 

@@ -22,10 +22,10 @@ def decortor_func2(func):
 # NOTE: decorator will be executed top to bottom order
 
 
-@decortor_func2
 @decortor_func1
+@decortor_func2
 def actual_function():
-    print('I am actual functioon')
+    print('I am actual function')
 
 
 actual_function()

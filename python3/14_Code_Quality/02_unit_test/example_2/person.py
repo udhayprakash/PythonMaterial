@@ -15,5 +15,5 @@ class Person:
 
 if __name__ == '__main__':
     person = Person()
-    print(('User Udhay has been added with id ' + str(person.set_name('Udhay'))))
-    print(('User associated with id 0 is ' + str(person.get_name(0))))
+    print('User Udhay has been added with id ' + str(person.set_name('Udhay')))
+    print('User associated with id 0 is ' + str(person.get_name(0)))

@@ -23,9 +23,10 @@ def div(n1, n2):
 
 if __name__ == '__main__':
     temp_var = outer(add)  # reference  to inner
-    print(temp_var)
+    # print(temp_var)
     print('temp_var(2, 3)  ', temp_var(2, 3))
+    assert add(2, 3) == temp_var(2, 3) == outer(add)(2, 3)
 
     temp_var = outer(div)  # reference  to inner
-    print(temp_var)
     print('temp_var(2, 3)  ', temp_var(2, 3))
+    assert div(2, 3) == temp_var(2, 3) == outer(div)(2, 3)

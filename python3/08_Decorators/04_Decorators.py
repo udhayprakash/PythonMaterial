@@ -24,8 +24,8 @@ def print_function(func):
     return wrapper
 
 
-@print_function
 @time_taken
+@print_function
 def my_func(num):
     for i in range(num):
         pass

@@ -18,7 +18,7 @@ def fib(n):
 
 print(list(fib(10)))
 
-# Using Static Typing 
+# Using Static Typing
 from typing import Iterator
 
 

@@ -32,8 +32,8 @@ def div(n1, n2):
 
 if __name__ == '__main__':
     print(add(12, 34))
-    print(add(12, '34'))
     print(add('12', '34'))
+    print(add(12, '34'))
     print(add('12', 34))
 
     print(div(10, 5))

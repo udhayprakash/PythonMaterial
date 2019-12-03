@@ -10,7 +10,6 @@ def square(x):
     >>> square(0.2)
     0.04000000000000001
     """
-
     return x * x
 
 

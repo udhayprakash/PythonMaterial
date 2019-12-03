@@ -16,33 +16,9 @@ def outer(func):
 
     return inner
 
-
-#############################
-def div(a, b):
-    return a / b
-
-
-print(div(10, 3))
-# print(div(10,0))
-
-result = outer(div)
-print(f' {result}')
-print(result(10, 0))
-
-print(outer(div)(10, 0))
-
-################################
-foo = outer(div)
-print(foo(10,0))
-################################
-outer(div)(1,2)
-
-
-##############################################
 @outer  # comment this line and observe difference
 def div(a, b):
     return a / b
-
 
 print(div(4, 2))
 print(div(4, 0))
