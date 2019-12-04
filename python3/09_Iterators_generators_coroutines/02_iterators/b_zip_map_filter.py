@@ -4,8 +4,8 @@ Purpose:
 """
 
 # iterables
-alpha = {'a', 'e', 'i', 'o', 'u'}
-nums = ('1', '2', '3', '4', '5')
+alpha = {'a', 'e', 'i', 'o'}
+nums = ('1', '2', '3', '4')
 
 pairs = zip(alpha, nums)
 print(f'pairs: {type(pairs)} {pairs}')
@@ -14,7 +14,7 @@ print(f'pairs: {type(pairs)} {pairs}')
 for ech_pair in pairs:
     print(ech_pair)
 
-# Convert to other iterables
+# Method 2: Convert to other iterables
 pairs1 = list(pairs)
 print(f'pairs1: {type(pairs1)} {pairs1}')
 
@@ -27,7 +27,7 @@ print(f'pairs3: {type(pairs3)} {pairs3}')
 pairs4 = str(pairs)
 print(f'pairs4: {type(pairs4)} {pairs4}')
 
-# Iterators are disposable objects. 
+# Iterators are disposable objects.
 # can give values only once
 # re-assign to retrieve values again
 print()
@@ -52,7 +52,7 @@ print(f'pairs4: {type(pairs4)} {pairs4}')
 
 print()
 pairs = zip(alpha, nums)
-pairs5 = dict(pairs) 
+pairs5 = dict(pairs)
 print(f'pairs5: {type(pairs5)} {pairs5}')
 
 

@@ -1,3 +1,42 @@
+
+
+
+
+
+
+
+https://
+    www.google.com
+    /search
+    ?
+    q=python+programming
+    &
+    oq=python+programming
+    &
+    aqs=chrome..69i57j69i65l3j69i61j69i60.6334j0j7
+    &
+    sourceid=chrome
+    &
+    ie=UTF-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 request flow:
     https://web.archive.org/web/20180219193143/https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
 

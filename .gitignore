@@ -102,3 +102,6 @@ ENV/
 
 # executables
 *.exe
+
+# mypy cache files
+.mypy_cache

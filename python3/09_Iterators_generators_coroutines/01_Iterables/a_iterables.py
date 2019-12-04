@@ -37,23 +37,23 @@ for each_name in names:
 print('\nCollections - dictionaries  - iterable')
 names = {'first': 'udhay', 'second': 'prakash', 'third': 'someone'}
 for each_name in names:
-    print(each_name)
+    print('\t' + each_name)
 # NOTE: By default, when iterating over dict, it gives its keys only
 
 print('\nkeys')
 for each_name in names.keys():
-    print(each_name)
+    print('\t' + each_name)
 
 print('\nvalues')
 for each_name in names.values():
-    print(each_name)
+    print('\t' + each_name)
 
 print('\nitems')
 for each_name in names.items():
-    print(each_name)
+    print('\t', each_name)
 
 for each_key, each_val in names.items():
-    print(each_key, '====>', each_val)
+    print('\t', each_key, '====>', each_val)
 
 # --------------------
 print(list('Python Programming'))
