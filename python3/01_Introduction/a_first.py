@@ -1,23 +1,24 @@
 num1 = 123
 num2 = 345
 
-num1
+num3 = num1 + num2
+num3
+print('num3')
+print(num3)
 
-print('num1')
-print(num1)
+print('num3       =', num3)
 
-print('num1', num1, 123, 23.3, 213)
+print(type(num3))
+print('type(num3) =', type(num3))
 
-print('type(num1)', type(num1))
-
-# Python is a dynamic typed language 
-num1 = -3.141617
+# Python is dynamic typed language
+num1 = 3.141516
 print(num1, type(num1))
 
-num1 = '-3.141617'
+num1 = '3.141516'
 print(num1, type(num1))
 
-num1 = "-3.141617"
+num1 = "3.141516"
 print(num1, type(num1))
 
 num1 = "three"
