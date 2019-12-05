@@ -36,7 +36,7 @@ print('myNumber = ', myNumber)
 myNumber **= 10  # myNumber = myNumber ** 10
 print('myNumber = ', myNumber)
 
-# python doesn't support unary operations ; 
+# python doesn't support unary operations ;
 # ++i, i++, --i, i--
 # it should used as i += 1, i -=1
 
@@ -57,8 +57,8 @@ print('myNewNumber = ', myNewNumber)
 #  7  0 1 1 1
 # 15  1 1 1 1
 
-# result = 14 >> 2
-# print("14 >> 2 = ", result)
+result = 14 >> 2
+print("14 >> 2 = ", result)
 #        8 4 2 1
 # 14     1 1 1 0
 # >>1    0 1 1 1  = 0 * 8 + 1 * 4 + 1 * 2 + 1 * 1 = 7
@@ -66,16 +66,16 @@ print('myNewNumber = ', myNewNumber)
 
 # result = 3 << 2
 # print("3 << 2 = ", result)
-# #        8 4 2 1
-# # 3      0 0 1 1
-# # <<2    1 1 0 0  =>  12
+#        8 4 2 1
+# 3      0 0 1 1
+# <<2    1 1 0 0  =>  12
 
 
-# calculated_result = 10 << 4
-# print('10 << 4', calculated_result)
-# #            128    64    32    16    8   4   2   1
-# # 10                                  1   0   1   0
-# # 20                             1    0   1   0          1st shift 
-# # 40                       1     0    1   0              2nd shift
-# # 80                 1     0     1    0                  3rd shift
-# # 160        1       0     1     0                       4th shift
+calculated_result = 10 << 4
+print('10 << 4', calculated_result)
+#            128    64    32    16    8   4   2   1
+# 10                                  1   0   1   0
+# 20                             1    0   1   0          1st shift
+# 40                       1     0    1   0              2nd shift
+# 80                 1     0     1    0                  3rd shift
+# 160        1       0     1     0                       4th shift

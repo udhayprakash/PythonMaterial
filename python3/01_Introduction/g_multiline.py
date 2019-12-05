@@ -9,17 +9,15 @@ Purpose: Multiline statements
 
 []
 {}
-Python is interpreter based lanugage
+Python is interpreter based language
     _ It means that each line executes separately
 """
 
 sum_of_values = 12 + 45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + 34534 + 34234 + 67 \
                 + 454 - 435 - 43534 - 34 + 454 + 42534 + 34 / 34 + 34534 - \
-                45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + 34534 + 34234
-
+                45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + 34534 + 34234  # asdsad
+# NOTE:After line continuation operator, even comments should not be added
 print('sum_of_values:', sum_of_values)
-
-# , logic separation operator
 
 sum_of_values = (12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
@@ -33,6 +31,7 @@ sum_of_values = (12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234)
 
 print('sum_of_values:', sum_of_values)
+# PEP 8 recommends not to use both together
 
 sum_of_values = [12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
@@ -46,7 +45,7 @@ sum_of_values = [12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234]
 
 print('sum_of_values:', sum_of_values)
-
+#
 sum_of_values = {12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
                  + 454 - 435 - 43534 - 34 + 454 +

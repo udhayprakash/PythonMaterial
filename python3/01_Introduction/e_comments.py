@@ -7,6 +7,7 @@ python  is interpreter based language
     unless it is a block of code 
      - if elif while function class
 
+ctrl + / - multi-line comment/uncomment
 """
 
 print('Hello World1')  # hjh
@@ -17,7 +18,7 @@ print('Hello ')  # 'World3'#
 
 print()  # 'Hello ' #'World4'
 
-print()
+# print(#)
 
 print('Hello  #World5')
 

@@ -5,12 +5,12 @@ Purpose: Demonstration of Arithmetic Operations
 
 
 Integer family
-	int
-	long  - python 2 only 
-	float
+    int
+    long  - python 2 only
+    float
 
-	complex
-	bool
+    complex
+    bool
 """
 
 # + - * / // %
@@ -35,8 +35,8 @@ print('num5=', num5, type(num5))
 num5 = 123123213123123231232312312312313453454534.0
 print('num5=', num5, type(num5))
 
-####### 
-# Arithemtic Operations
+#######
+# Arithmetic Operations
 print("123 + 100 = ", 123 + 100)
 print("123 - 100 = ", 123 - 100)
 print("123 * 100 = ", 123 * 100)
@@ -48,16 +48,25 @@ print('10/5 = ', 10 / 5)
 print('10/3 = ', 10 / 3)
 # NOTE: division result will be floating point everytime
 
+print()
 print('10 // 3 = ', 10 // 3)  # quotient - floor division
-print('10 % 3 = ', 10 % 3)  # remainder
+print('10 % 3 = ', 10 % 3)  # remainder - modulo division
 
 print('divmod(10, 3)=', divmod(10, 3))  # //, %
-# 3 ) 10 ( 3 -- QUotient
-#      9
-# 	--
-# 	 1 --- remainder
-
+"""
+3 ) 10 ( 3 <-- QUotient
+     9
+    --
+    1 <--- remainder
+"""
 print('divmod(10, 2)=', divmod(10, 2))  # //, %
+"""
+2 ) 10 ( 5 <-- QUotient
+    10
+    --
+     0 <--- remainder
+"""
+
 
 # IMPORTANCE OF SIGNS
 print()
@@ -74,7 +83,7 @@ print('10 // -3  = ', 10 // -3)  # -4    -4 < -3.333 < 3
 print('-10 // -3 = ', -10 // -3)  # 3     3 <  3.333 < 4
 
 print()
-print('10 % 3   = ', 10 % 3)  # 1     
+print('10 % 3   = ', 10 % 3)  # 1
 print('-10 % 3  = ', -10 % 3)  # 2
 print('10 % -3  = ', 10 % -3)  # -2
 print('-10 % -3 = ', -10 % -3)  # -1

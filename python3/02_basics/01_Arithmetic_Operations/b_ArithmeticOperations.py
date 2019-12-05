@@ -26,17 +26,17 @@ print('-13 % -2=', -13 % -2)  # -1
 print()
 print('power operation **')
 
-print('4 ** 2 = ', 4 ** 2)
-print('64 ** (1/2) = ', 64 ** (1 / 2))  # square root
-print('64 ** (1/2.0) = ', 64 ** (1 / 2.0))  # square root
-print('64 ** 0.5 = ', 64 ** 0.5)  # square root
+print('4 ** 2           = ', 4 ** 2)
+print('64 ** (1/2)      = ', 64 ** (1 / 2))  # square root
+print('64 ** (1/2.0)    = ', 64 ** (1 / 2.0))  # square root
+print('64 ** 0.5        = ', 64 ** 0.5)  # square root
 
-print('pow(4,2)   =', pow(4, 2))
-print('pow(64,1/2)=', pow(64, 1 / 2))
-print('pow(64,0.5)=', pow(64, 0.5))
+print('pow(4,2)         =', pow(4, 2))
+print('pow(64,1/2)      =', pow(64, 1 / 2))
+print('pow(64,0.5)      =', pow(64, 0.5))
 print()
-print('pow(4,2,9) =', pow(4, 2, 9))  # (4 ** 2) % 9
-print('(4**2) % 9 =', (4 ** 2) % 9)
+print('pow(4,2,9)       =', pow(4, 2, 9))  # (4 ** 2) % 9
+print('(4**2) % 9       =', (4 ** 2) % 9)
 print(pow(0, 0) == 0 ** 0 == 1)
 
 print()
