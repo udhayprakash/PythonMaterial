@@ -3,7 +3,7 @@
 Purpose: demo of bytearray strings
 """
 
-ordinary_string = "Tomarrow will be ours!!!"
+ordinary_string = "Tomorrow will be ours!!!"
 print("ordinary_string      :", ordinary_string)
 print("type(ordinary_string):", type(ordinary_string))
 
@@ -16,7 +16,7 @@ print('ordinary_string[9:17]', ordinary_string[9:17])
 # Ordinary string are immutable 
 # bytearray strings are mutable 
 
-b_string = bytearray("Tomarrow will be ours!!!", 'ascii')
+b_string = bytearray("Tomorrow will be ours!!!", 'ascii')
 print("b_string      :", b_string)
 print("type(b_string):", type(b_string))
 

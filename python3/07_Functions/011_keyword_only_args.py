@@ -25,4 +25,12 @@ def recv(maxsize, *, block=True):
 recv(1234)
 recv(maxsize=1234, block=False)
 recv(1234, block=False)
+
+
 # recv(1234, False) # TypeError: recv() takes 1 positional argument but 2 were given
+
+"""
+ Recommended order for the arguments
+    def func(positional, keyword=value, *args, **kwargs):
+        pass
+"""

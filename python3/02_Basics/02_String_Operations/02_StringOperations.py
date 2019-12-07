@@ -47,8 +47,8 @@ print("""Today is an awesome day
         to learn python""")
 
 
-print(''' 
+print('''
 a - apple
 b - ball
-c - cat 
+c - cat
 d - dog''')

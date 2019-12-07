@@ -1,0 +1,5 @@
+pip install pep8
+pep8 filename.py
+
+pip install autopep8
+autopep8 --in-place filename.py

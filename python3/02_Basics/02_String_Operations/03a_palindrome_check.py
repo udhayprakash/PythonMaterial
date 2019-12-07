@@ -2,7 +2,7 @@
 """
 Purpose: Demonstration of Palindrome check 
 """
-test_string =  input('Enter any string:') #'dad' #'mom'
+test_string = input('Enter any string:')  # 'dad' #'mom'
 
 # print(test_string)
 # print(test_string[::-1])

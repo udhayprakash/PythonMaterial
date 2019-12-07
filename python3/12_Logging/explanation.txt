@@ -15,3 +15,12 @@ info       dev/testing
 warning    dev/testing
 error      dev/testing/prod
 critical   dev/testing/prod
+
+Logging serves two purposes:
+    1. Diagnostic logging
+        - This logging records events related to the application's operation.
+        - If a user calls in to report an error, for example, the logs can be searched for context.
+    2. Audit logging
+        - Audit logging records events for business analysis.
+        - A user’s transactions (such as a clickstream) can be extracted and combined with other user
+          details (such as eventual purchases) for reports or to optimize a business goal.
