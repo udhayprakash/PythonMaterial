@@ -7,7 +7,7 @@ Purpose: demo of byte strings
 # A zero-filled bytes object of a specified length
 print('bytes(10)', bytes(10))
 
-# From an iterable of integers: 
+# From an iterable of integers:
 print('bytes(range(20))', bytes(range(20)))
 
 # Copying existing binary data via the buffer protocol:
@@ -26,12 +26,12 @@ print(b'\xf0\xf1\xf2'.hex())
 ################################
 b = b'python'
 print(b, type(b))
-# b[0] will be an integer, 
+# b[0] will be an integer,
 print(b[0], type(b[0]))
 # while b[0:1] will be a bytes object of length 1
 print(b[0:1], type(b[0:1]))
 
-##### STRING OPERATIONS
+# STRING OPERATIONS
 # ordinary strings
 a = "abc"
 b = a.replace("a", "f")

@@ -21,6 +21,7 @@ print(' abcba '.lstrip('a '))
 print(' abcba '.rstrip('a '))
 print()
 # How to convert a string to a list
+print('Python Production'.split())
 print('Python Production'.split(' '))
 print('Python Production'.split('r'))
 print('Python Production'.split('t'))
@@ -30,7 +31,7 @@ print('Python Production'.split('P'))
 print('Python Production'.split('n'))
 print('Python Production'.rsplit('P'))
 print('Python Production'.split('Prod'))
-# print 'Python Production'.split('') # ValueError: empty separator
+# print('Python Production'.split('')) # ValueError: empty separator
 print(''.split(' '))
 print()
 # How to convert a string to a list
@@ -38,6 +39,7 @@ print(list('Python Production'))
 
 '1,2,3'.split(',')  # ['1', '2', '3']
 '1,2,3'.split(',', maxsplit=1)  # ['1', '2,3']
+'1,2,3'.rsplit(',', maxsplit=1)  # ['1', '2,3']
 '1,2,,3,'.split(',')  # ['1', '2', '', '3', '']
 
 # default is with white space

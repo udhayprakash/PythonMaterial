@@ -38,16 +38,16 @@ print()
 print("chr(111):", chr(111))
 print("ord('o'):", ord('o'))
 
-# Assignment 
+# Assignment
 # -------------
-# caesar cipher 
-# ------------------  + 3 
+# caesar cipher
+# ------------------  + 3
 # A B C D E F G H I J     Y Z
-# 0 1 2 3 4 5
+# 0 1 2 3 4 5 6 7
 # D E F
 
 # ASSUMPTION: Ignore case -sensitivity
-# HINTS: % 
+# HINTS: %
 
 # Ex: egg => hjj
 #    bindu => elqg

@@ -42,11 +42,11 @@ print('NUmber is %r' % (133224234))
 print('NUmber is %r' % ("python"))
 
 print()
-# %o - octal 
+# %o - octal
 print('%o' % (12), oct(12))
-# %x - hexadecimal lowercase 
+# %x - hexadecimal lowercase
 print('%x' % (12), hex(12))
-# %X - hexadecimal uppercase 
+# %X - hexadecimal uppercase
 print('%X' % (12), hex(12))
 
 print('%s' % ('12'))
@@ -72,7 +72,7 @@ print('%d' % math.pi)   # 3
 print('%f' % math.pi)   # 3.141593
 print('%9f' % math.pi)  #  3.141593
 print('%9.3f' % math.pi)#     3.142
-###########################################################
+###################################################
 print()
 print('lucky number is %d only.' % (786))
 print('lucky number is %d only.' % 786)
@@ -83,11 +83,11 @@ print()
 print('My name is %s. I am %d old paying a tax of %f')
 print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
 
-# print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
+print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
 print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', '78', 15.5))
 print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', '78', 15.5))
 
-# # print('My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ))
-# # TypeError: not enough arguments for format string
+# print('My name is %s. I am %d old paying a tax of %f'%('Udhay', 33 ))
+# TypeError: not enough arguments for format string
 
 print('%(language)s has %(number)03d quote types.' % {'language': "Python", "number": 2})

@@ -29,7 +29,7 @@ print('language[-3] :', language[-3])
 print('language[-18] :', language[-18])
 # print('language[-19] :', language[-19])  # IndexError
 
-print('language[-18] == language[0]', language[-18] == language[0])
+print('language[-18] == language[0]:', language[-18] == language[0])
 
 print('------------------------------')
 print('String Slicing')
@@ -45,14 +45,14 @@ print('language[7:10] :', language[7:10])
 # In python, it doesn't include the last value
 print('language[0:5]  :', language[0:5])
 print('language[0:6]  :', language[0:6])
-
+#
 print('language[7:18] :', language[7:18])
 print('language[7:999]:', language[7:999])  # 999 index isn't present
 print('language[45:87]:', language[45:87])  # indexes are not present
 
 # string slicing :- string[start_index: final_index: step]
 # Default - step = +1
-# print()
+print()
 print("language[7:18]   =", language[7:18])
 print("language[7:18:1] =", language[7:18:1])
 # [7:18:1] => 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
@@ -60,16 +60,16 @@ print("language[7:18:1] =", language[7:18:1])
 print("language[7:18:3] =", language[7:18:3])
 # [7:18:3]  => 7, 10, 13, 16
 
-print("language[7:18:-1]=", language[7:18:-1])  
+print("language[7:18:-1]=", language[7:18:-1])
 # 7-1 = 6 ; it is not between 7 and 18
-# [7:18:-1]  => 
+# [7:18:-1]  =>
 
 print('language[18:7:-1]', language[18:7:-1])  # 18-1 = 17
 # [18:7:-1] => 18, 17, 16, 15, ..10, 9, 8
 
 print('language[18:7:-3]', language[18:7:-3])  # 18-3 = 15
-# [18:7:-3] => 18 15 12 9 
-#         18 15 12 9 
+# [18:7:-3] => 18 15 12 9
+#         18 15 12 9
 #            i   a o
 #         17 14 11 8
 #         g  m  r  r
@@ -80,15 +80,15 @@ print('language[18:7:-3]', language[18:7:-3])  # 18-3 = 15
 # -18                                    -3 -2 -1    - reverse indexing
 
 print('language[23:7:-3]', language[23:7:-3])
-# [23:7:-3] => 23 20 17 14 11 8 
-# [17:7:-3] => 17 14 11 8 
+# [23:7:-3] => 23 20 17 14 11 8
+# [17:7:-3] => 17 14 11 8
 
 print()
 # default start_index = 0
 # default final_index = string length
 # default step = +1
-print('language[:7]  :', language[:7])  # equal to language[0:7:+1] => 0, 1, 2, 3, 4, 5, 6
-print('language[0:]  :', language[0:])  # equal to language[0:18:+1]
+print('language[:7]  :', language[:7])  # language[0:7:+1] => 0, 1, 2, 3, 4, 5, 6
+print('language[0:]  :', language[0:])  # language[0:18:+1]
 print('language[6:]  :', language[6:])  # equal to language[6:18:+1]
 print()
 print('language[:]   :', language[:])  # equal to language[0:18:+1]
@@ -108,6 +108,6 @@ print('language[::-5] :', language[::-5])  # str reversal  language[17:-1:-5]
 
 name = 'manideep'
 #       01234567
-print(name[len(name)-4:])
 print(name[4:])    # positive indexing
+print(name[len(name)-4:])
 print(name[-4:])   # negative indexing
