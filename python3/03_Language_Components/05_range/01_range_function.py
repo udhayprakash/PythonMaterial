@@ -28,10 +28,10 @@ print(values3)  # 0 2 4 6 8
 print(list(values3))
 
 values4 = list(range(9, 0, -1))  # builtin function
-print(list(values4))  # 9 8 7 6 5 4 3 2 1
+print(values4)  # 9 8 7 6 5 4 3 2 1
 
 values4 = list(range(9, 0, -2))  # builtin function
-print(list(values4))  # 9 7 5 3 1
+print(values4)  # 9 7 5 3 1
 
 values6 = range(0, 9, -1)  # range(initialValue, finalValue, step)
 print(values6)   # []
@@ -46,4 +46,4 @@ for i in range(0, 9, 1):
     print(i)
 
 val = range(9)
-print(val[0])
+print('val[0] =', val[0])

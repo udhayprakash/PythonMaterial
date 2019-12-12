@@ -7,30 +7,32 @@ Purpose: String formatting
 print('{}'.format(''))
 print('{} and {}'.format('cat', 'mouse'))
 print('{} and {}'.format(213, 'mouse'))
-print('{} and {}'.format(213, True))
+print('{} and {}'.format(213.0, True))
 print('{} and {}'.format(None, True))
 
 print('Name:{} Age:{} Salary:{}'.format('udhay', 99, 9999.9999))
 
-print('''Name  :{} 
-         Age   :{} 
+print('''Name  :{}
+         Age   :{}
          Salary:{}'''.format('udhay', 99, 9999.9999))
 
 print('''My Name: {0}. My Name: {0}.
        My Name: {2}. My Name: {0}. '''.format('udhay', 23, 34234))
 #                                                0      1    2
 print('''
-        Name  :{2} 
-        Age   :{0} 
+        Name  :{1}
+        Age   :{0}
         Salary:{0}'''.format('udhay', 99, 9999.9999))
 
 print('''
         Name  :{NAME} , Name  :{NAME}
-        Age   :{AGE} 
-        Salary:{SALARY}'''.format(NAME='udhay', AGE=99, SALARY=9999.9999))
+        Age   :{AGE}
+        Salary:{SALARY}'''.format(NAME='udhay',
+                                  AGE=99,
+                                  SALARY=9999.9999))
 
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 
@@ -49,8 +51,8 @@ result = {
     'transaction_time': '12th June 1947 12:34:45'
 }
 
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 
@@ -59,8 +61,8 @@ print('''
     **result
 ))
 
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 

@@ -27,5 +27,5 @@ for i in tqdm(work(2000)):
 for i in tqdm(work(2000), total=2000):
     pass
 
-# for HTML 5 progress bar in jupyter notebook 
+# for HTML 5 progress bar in jupyter notebook
 #       from tqdm import tqdm_notebook as tqdm

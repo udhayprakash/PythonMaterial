@@ -11,15 +11,19 @@ lucky_number = 69
 given_number = int(input('Enter any no. betwn 1 & 100:'))
 
 if given_number == lucky_number:
-    print('You Guessed correctly')
-else:
-    print('Please try again !!!')
+    print('You guessed correctly!!')
 
 if given_number == lucky_number:
-    print('You Guessed correctly')
-elif given_number < lucky_number:
-    print('Increase your guessing no.!')
-elif given_number > lucky_number:
-    print('Decrease your guessing no.!')
+    print('You guessed correctly!!')
+else:
+    print('PLease try again!')
 
 # NOTE: else block is optional in python
+
+
+if given_number == lucky_number:
+    print('You guessed correctly!!')
+elif given_number > lucky_number:   # 70 > 69
+    print('Decrease your guessing number')
+elif given_number < lucky_number:   # 34 < 69
+    print('Increase your guessing number')

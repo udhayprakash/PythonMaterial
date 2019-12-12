@@ -83,7 +83,7 @@ print()
 print('My name is %s. I am %d old paying a tax of %f')
 print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
 
-print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
+# print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
 print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', '78', 15.5))
 print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', '78', 15.5))
 

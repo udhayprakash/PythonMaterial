@@ -13,39 +13,50 @@ while i < 10:
     i = i + 1
     print(i, end=' ')
 
-print('\nincrementing loop with increment last')
+print('\n\nincrementing loop with increment last')
 i = 0
 while i < 10:
     print(i, end=' ')
     i = i + 1
 
-print('\ndecrementing loop with decrement first')
+print('\n\nincrementing loop with increment last')
+i = 0
+while i <= 10:
+    print(i, end=' ')
+    i = i + 1
+
+print('\n\ndecrementing loop with decrement first')
 j = 10
 while j > 0:
     j = j - 1
     print(j, end=' ')
 
-print('\ndecrementing loop with decrement last')
+print('\n\ndecrementing loop with decrement last')
 j = 10
 while j > 0:
     print(j, end=' ')
     j = j - 1
+
+
+
 
 ###########################################
-print()
+print('\n\n Multiplication Table')
+first = 0
+while first < 10:
+    first += 1
+    # print(first)
 
-first = 1
-while first <= 10:
-    second = 1
-    while second <= 10:
-        # print( first, '*', second, '=', first * second)
-        # print( str(first) +' * ' + str(second) +' = ' + str(first * second))
-        # print('%2d * %2d = %3d' %(first, second, first * second))
+    second = 0
+    while second < 10:
+        second += 1
+        # print(first, '*', second, '=', first * second)
+        # print(str(first) + ' * ' + str(second) + ' = ' + str(first * second))
+        # print('%2d * %2d = %3d' % (first, second, first * second))
         # print('{0:2} * {1:2} = {2:3}'.format(first, second, first * second))
         print(f'{first:2} * {second:2} = {first * second:3}')
-        second += 1
-    first += 1
-    print('-' * 13)
+    print('-' * 12)
+
 
 '''
 Assignment

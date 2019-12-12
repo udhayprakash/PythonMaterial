@@ -2,36 +2,35 @@
 
 # for loop can be applied on iterable objects only
 # (string, list, tuple, set, frozenset, dictionary, iterator, generator) only
-'''
->>> for i in 1:
-...     print(i)
-...
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'int' object is not iterable
->>> for i in 1000.2323:
-...     print(i)
-...
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'float' object is not iterable
->>> for i in True:
-...     print(i)
-...
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'bool' object is not iterable
->>> for i in None:
-...     print(i)
-...
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'NoneType' object is not iterable
->>>
-'''
+# """
+# >>> for i in 1:
+# ...     print(i)
+# ...
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'int' object is not iterable
+# >>> for i in 1000.2323:
+# ...     print(i)
+# ...
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'float' object is not iterable
+# >>> for i in True:
+# ...     print(i)
+# ...
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'bool' object is not iterable
+# >>> for i in None:
+# ...     print(i)
+# ...
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'NoneType' object is not iterable
+# """
 
 # iterating over a string  
-language = "python programming"
+language = "python"
 for i in language:
     print(i, end=' ')
 print()
@@ -59,7 +58,7 @@ for loop_count, number in enumerate(numbers):
     print(loop_count, '-->', number)
 
 print('-' * 20)
-######################
+#####################
 print('udhay\tprakash')
 print('udhay\nprakash')
 print()
@@ -74,9 +73,9 @@ data_length = len(data)
 for index, number in enumerate(data):
     # print('%f' % (index/data_length) * 100)
     val = round((index / data_length) * 100, 2)
-    print(f'\r {val:5} % completed', end='')
+    print(f'\r {val:5} % completed', end=' ')
 
-'''
+"""
 Assignment: Progress bar implementation
 
 [*         ]  10
@@ -89,4 +88,4 @@ Assignment: Progress bar implementation
 [********  ]  80
 [********* ]  90
 [**********] 100
-'''
+"""
