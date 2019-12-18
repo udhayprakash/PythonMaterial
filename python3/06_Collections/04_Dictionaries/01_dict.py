@@ -93,7 +93,7 @@ print('mydict.keys()  ', mydict.keys())
 print('mydict.values()', mydict.values())
 print('mydict.items() ', mydict.items())
 print('-' * 50)
-
+# ----
 replica_dict = {}
 replica_dict = replica_dict.fromkeys(mydict)
 print('\n\nreplica_dict', replica_dict)

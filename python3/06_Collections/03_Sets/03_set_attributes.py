@@ -12,7 +12,7 @@ print(all_colors.isdisjoint(colors_present))    # False
 books = {'ramayana', 'bible'}
 print(all_colors.isdisjoint(books))             # True
 
-print(all_colors.isdisjoint(colors_present))
+print(all_colors.isdisjoint(colors_present))    # False
 print(all_colors.intersection(colors_present))  # a INTERSECTION b
 #
 print(all_colors.union(colors_present))

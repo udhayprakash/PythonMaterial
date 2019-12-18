@@ -23,6 +23,7 @@ print('small_set        ', small_set)
 set_with_one_ele = {12}
 print(set_with_one_ele, type(set_with_one_ele))
 print()
+
 print('set_with_one_ele', set_with_one_ele)
 set_with_one_ele.discard(12)
 print('set_with_one_ele', set_with_one_ele)
@@ -34,7 +35,6 @@ print()
 
 # set_with_one_ele.remove(12)  # KeyError:
 # print('set_with_one_ele', set_with_one_ele)
-print()
 #
 #############
 # frozenset ---- immutable object

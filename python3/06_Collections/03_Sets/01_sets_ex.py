@@ -36,13 +36,16 @@ myset.add(12)
 print('after addition  - myset', myset)
 myset.add((12,))
 print('after addition  - myset', myset)
+# myset.add([1, 2, 3]) # TypeError: unhashable type: 'list'
 print()
-# myset.update(22) # TypeErroOut: {11, 12, 22, 44}r: 'int' object is not iterable
+
+# myset.update(22) # TypeErrorOut: {11, 12, 22, 44}r: 'int' object is not iterable
 myset.update('22')
 myset.update([12, 34])
 print(myset)
 print()
-myset.update((12, 34, (23, 8)))
+
+myset.update((12, 34, (23,)))
 print(myset)
 
 # myset.update((99, [11, 11])) # TypeError: unhashable type: 'list'

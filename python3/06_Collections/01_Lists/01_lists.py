@@ -67,9 +67,9 @@ print('ml[1:4:2]    ', ml[1:4:2])
 
 print('List is a mutable object =======')
 print('id(ml)       ', id(ml))
-print('ml[3]        ', ml[3])
+print('ml           ', ml)
 ml[3] = 3.4
-print('ml[3]        ', ml[3])
+print('ml           ', ml)
 print('id(ml)       ', id(ml))
 
 print('\nString is a immutable object ===')

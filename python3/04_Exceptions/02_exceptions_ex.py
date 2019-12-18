@@ -2,7 +2,9 @@
 # SyntaxError cant be handled 
 
 try:
-    result = NOne + '0' + 10 / 0
+    # NOne = 23
+    val = '0'
+    result = NOne + val + 10 / 0
 except TypeError as ex2:
     print('for type error', repr(ex2))
 except ZeroDivisionError as ex3:

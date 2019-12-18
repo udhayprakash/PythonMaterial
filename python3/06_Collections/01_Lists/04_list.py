@@ -3,12 +3,9 @@
 
 mylist1 = [1, 11, 111, [11]]
 print('mylist1       = ', mylist1)
-print('type(mylist1) = ', type(mylist1))
-print()
 
 mylist2 = [2, 22, 222]
 print('mylist2       = ', mylist2)
-print('type(mylist2) = ', type(mylist2))
 print()
 
 # list concatenation 
@@ -48,7 +45,7 @@ mylist1 = [1, 11, 111, [11]]
 mylist1.extend(mylist2)  # - into separate dimension
 print('mylist1       = ', mylist1)
 
-# Error --- extend can't take single element
+# # Error --- extend can't take single element
 # print('--- mylist1.extend(9999)')
 # mylist1.extend(9999)
 
@@ -82,4 +79,7 @@ mylist1.insert(len(mylist1), [99, 9])
 print('mylist1       = ', mylist1)
 
 mylist1.insert(len(mylist1), 888)
+print('mylist1       = ', mylist1)
+
+mylist1.insert(-1, 777)            # not append operation
 print('mylist1       = ', mylist1)

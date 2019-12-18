@@ -1,15 +1,15 @@
 #!/usr/bin/python
 """
 Purpose: 
-	break     - breaks the complete loop
-	continue  - skip the current loop
-	pass      - will do nothing. it is like a todo
-	sys.exit  - will exit the script execution
+    break     - breaks the complete loop
+    continue  - skip the current loop
+    pass      - will do nothing. it is like a todo
+    sys.exit  - will exit the script execution
 """
-# i = 0
-# while i <= 10:
-#     print(i)
-#     i += 1
+i = 0
+while i <= 10:
+    print(i)
+    i += 1
 
 print('\n importance of break')
 i = 0

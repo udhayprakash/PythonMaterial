@@ -1,0 +1,4 @@
+Two modules for debugging
+    - pdb
+    - ipdb
+    - pydevd

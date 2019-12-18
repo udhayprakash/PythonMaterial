@@ -9,4 +9,4 @@ pdb.set_trace()
 
 # multiplication
 result = val_1 * val_2
-print(f'Multiplication  :{result}')
+print(f'Multiplication   :{result}')

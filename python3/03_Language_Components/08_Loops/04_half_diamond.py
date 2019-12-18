@@ -18,6 +18,8 @@ for num in range(10, 0, -1):
 
 ###################################
 
+
+
 i = 0
 while i < 10:
     print(' ' * (10 -i) + '*' * i)
@@ -41,7 +43,7 @@ while j > 0:
 
 
 '''
-assignent:full diamond problem
+Assignment:full diamond problem
        *
       ***
      *****

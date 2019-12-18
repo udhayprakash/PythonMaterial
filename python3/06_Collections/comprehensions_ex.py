@@ -20,6 +20,16 @@ for i in range(2, 9):
 print(new_list)
 
 print([i for i in range(2, 9) if i % 2 != 0])
+
+##########
+new_list = []
+for i in range(2, 9):
+    if i % 2 != 0:
+        new_list.append(i * 4)
+print(new_list)
+
+print([i * 4 for i in range(2, 9) if i % 2 != 0])
+
 ###################
 new_list = []
 for i in range(2, 9):
@@ -38,7 +48,7 @@ print(1 if 6 % 2 == 0 else 0)
 
 print([i % 2 != 0 for i in range(2, 9)])
 print(['odd' if i % 2 != 0 else 'even' for i in range(2, 9)])
-# #########################################
+#########################################
 
 my_variable = [ch for ch in 'Mangalyan']
 print(type(my_variable), my_variable)

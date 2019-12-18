@@ -23,14 +23,14 @@ print(dict(data))
 data = (('red', 1), ('blue', 2), ('yellow', 3))
 print(dict(data))
 
-# data = (['red', 1], ['blue', 2], ('yellow', 3))
-# print(dict(data))
+data = (['red', 1], ['blue', 2], ('yellow', 3))
+print(dict(data))
 
-# # data = (['red', 1, 'A'], ['blue', 2, 'B'], ('yellow', 3, "C"))
-# # print(dict(data))   # ValueError:
+# data = (['red', 1, 'A'], ['blue', 2, 'B'], ('yellow', 3, "C"))
+# print(dict(data))   # ValueError:
 
-# data = (['red',( 1, 'A')], ['blue',( 2, 'B')], ('yellow', (3, "C")))
-# print(dict(data))
+data = (['red',( 1, 'A')], ['blue',( 2, 'B')], ('yellow', (3, "C")))
+print(dict(data))
 # ##################
 cities = ('New York', 'Shangai', 'New Delhi')
 countries = {'US', 'China'}
@@ -60,10 +60,13 @@ print('\ndicts.items()')
 for i in cities_n_countries.items():
     print(i, type(i))
 
-a, b = 12, 23
-# a, b, c = 12, 23 # ValueError: not enough values to unpack (expected 3, got 2)
-a, b, c = 12, 23, 45
-a = 12, 23, 45     # tuple
+for city, country in cities_n_countries.items():
+    print(city , '====>', country)
+
+# a, b = 12, 23
+# # a, b, c = 12, 23 # ValueError: not enough values to unpack (expected 3, got 2)
+# a, b, c = 12, 23, 45
+# a = 12, 23, 45     # tuple
 print()
 for k, v in cities_n_countries.items():
     print(k, '--->', v)

@@ -7,7 +7,7 @@ Syntax errors cant be handled by except
 
  # num1 = 10  # IndentationError: unexpected indent
 
-# print(10 / 0)
+# # print(10 / 0)
 # try:
 #     result = 10 / 0
 # except:
@@ -23,7 +23,7 @@ Syntax errors cant be handled by except
 try:
     result = 10 / 10
     # result = 10 / 0
-    # result = '10' / 0
+    result = '10' / 0
 except Exception as ex:
     # print(f'ex          : {ex}')
     # print(f'str(ex)     : {str(ex)}')

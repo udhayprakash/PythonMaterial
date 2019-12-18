@@ -1,3 +1,7 @@
+#!/usr/bin/python
+
+print('Starting execution ...')
+
 numbers = range(99)
 
 # import pdb; pdb.set_trace()
