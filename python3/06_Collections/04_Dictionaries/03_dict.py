@@ -49,22 +49,25 @@ top_chars_in_asc = sorted(frequency.items(), key=lambda x: [-x[1], x[0]])[:3]
 print(top_chars_in_asc)
 
 '''
-
-
-character frequency analyses
-    - case sensitive
+Assignment
+==========
+choose a large sentence greater than 150 words and perform the following
+1) character frequency analyses
+    a) case sensitive
         {
             'P': 1,
             'y': 2,
             't : 5
             ....
         }
-    - case insensitive
+    b) case insensitive
         {
             'p': 2,
             'y': 2,
             't : 5
             .....
         }
-word frequency analyses
+2) word frequency analyses
+    a) case sensitive 
+    b) case insensitive
 '''
