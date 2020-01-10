@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: Functions Demo
-            - code reusability
+            - code re-usability
             - To modularize the problem 
             - Better maintenance of the code 
 

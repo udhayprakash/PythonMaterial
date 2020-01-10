@@ -3,6 +3,7 @@
 # variable
 # 1. keyword
 # 2. identifier
+# variables are just labels for pieces of memory
 
 import keyword
 

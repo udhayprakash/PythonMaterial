@@ -1,6 +1,10 @@
+#!/usr/bin/python
+"""
+Purpose:
+"""
 total = 0
 count = 0
-while (True):
+while True:
     inp = input('Enter a number: ')
     if inp == 'done':
         break
@@ -13,4 +17,4 @@ while (True):
     count = count + 1
 
 average = total / count
-print('Average:', average)
+print(f'Average:{average}')

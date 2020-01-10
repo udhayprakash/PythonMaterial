@@ -1,5 +1,7 @@
 #!usr/bin/env python
-
+"""
+Purpose:
+"""
 # calculator program
 
 # this variable tells the loop whether it should loop or not.
