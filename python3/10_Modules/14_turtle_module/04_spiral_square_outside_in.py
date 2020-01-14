@@ -6,7 +6,7 @@ import turtle  # Outside_In
 
 wn = turtle.Screen()
 wn.bgcolor("light green")
-wn.title("Turtle")
+wn.title("myTurtle")
 skk = turtle.Turtle()
 skk.color("blue")
 

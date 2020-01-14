@@ -1,13 +1,13 @@
 #!/usr/bin/python
 """
-Purpose: Star Shape using Turtle
+Purpose: To draw a star shape using turtle
 """
 import turtle
 
-star = turtle.Turtle()
+my_turtle = turtle.Turtle()
 
 for i in range(20):
-    star.forward(50)
-    star.right(144)
+    my_turtle.forward(50)
+    my_turtle.right(144)
 
 turtle.done()
