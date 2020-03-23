@@ -43,22 +43,22 @@ if __name__ == '__main__':
 
 
 
-# # --------------------------------------------------
-# def make_multiplier_of(n):
-#     def multiplier(x):
-#         return x * n
-#     return multiplier
-#
-# # Multiplier of 3
-# mul3 = make_multiplier_of(3)
-# print(f'{type(mul3)} {mul3}')
-#
-# print(f'mul3(10):{mul3(10)}')
-# print(f'mul3(7) :{mul3(7)}')
-#
-# mul5 = make_multiplier_of(5)
-# print(f'{type(mul5)} {mul5}')
-#
-# print(f'mul5(10):{mul5(10)}')
-# print(f'mul5(7) :{mul5(7)}')
-#
+# --------------------------------------------------
+def make_multiplier_of(n):
+    def multiplier(x):
+        return x * n
+    return multiplier
+
+# Multiplier of 3
+mul3 = make_multiplier_of(3)
+print(f'{type(mul3)} {mul3}')
+
+print(f'mul3(10):{mul3(10)}')
+print(f'mul3(7) :{mul3(7)}')
+
+mul5 = make_multiplier_of(5)
+print(f'{type(mul5)} {mul5}')
+
+print(f'mul5(10):{mul5(10)}')
+print(f'mul5(7) :{mul5(7)}')
+

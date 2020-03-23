@@ -9,7 +9,7 @@ lucky_number = 67
 
 # Method 1:
 # guessed_number = int(input('GUess a no. between 1 to 100:'))
-#
+
 # if guessed_number == lucky_number:
 #     print('YOU GUEssed CORRECTly !!!')
 # elif guessed_number > lucky_number:

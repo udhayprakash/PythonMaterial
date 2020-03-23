@@ -15,7 +15,7 @@ print("False == 3 ", False == 3)
 print("False != 3 ", False != 3)
 
 # True acts like  1 and 
-# False acts like 0 in all cases, except when coverted 
+# False acts like 0 in all cases, except when converted 
 # to strings
 print("str(1) != str(True) ", str(1) != str(True))
 print("str(0) != str(False)", str(0) != str(False))

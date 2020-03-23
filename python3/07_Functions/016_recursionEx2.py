@@ -21,12 +21,12 @@ print(f'sys.getrecursionlimit():{sys.getrecursionlimit()}')
 count = [0]
 
 
-# def func1(num1):
-#     count[0] += 1
-#     print(f'loop:{count[0]}')
-#     return func1(num1)
-#
-# func1(9)
+def func1(num1):
+    count[0] += 1
+    print(f'loop:{count[0]}')
+    return func1(num1)
+
+func1(9)
 
 def func1(num1):
     count[0] += 1

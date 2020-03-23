@@ -44,8 +44,6 @@ print(sorted(lst_of_strs))
 print(sorted(lst_of_strs, key=str.lower))
 
 # -----------------------------------------
-
-
 print()
 my_dict = {1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'}
 print(sorted(my_dict))              # [1, 2, 3, 4, 5]

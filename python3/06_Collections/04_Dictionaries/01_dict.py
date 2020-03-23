@@ -28,7 +28,7 @@ other_dict = {12: 34, 34: 56}
 print(other_dict, type(other_dict))
 
 # In python2, dicts doesn't retain the assigned order.
-# whereas in python3, they wil
+# whereas in python3, they will
 mydict = {
     'name': ['udhay', 'prakash'],
     'blog': 'udhayprakash.blogspot.in',
