@@ -1,11 +1,20 @@
+#!/usr/bin/python
+"""
+Purpose: Logging
+"""
 import logging
+import sys
 
-logging.debug('This is debug')
-logging.info("This is a info")
-# Observe that debug log is not displayed in output
-logging.warning("This is a warning")
-logging.error("This is an error")
-logging.critical("This is an critical")
+print('This is print message')
+sys.stderr.write("This is sys.stderr write message\n")
+sys.stdout.write("This is sys.stdout write message\n")
+
+logging.debug('This is debug message')
+logging.info('This is info message')
+# Default logging level is warning
+logging.warning('This is warning message')
+logging.error('This is error message')
+logging.critical('This is critical message')
 
 
 # SDLC -

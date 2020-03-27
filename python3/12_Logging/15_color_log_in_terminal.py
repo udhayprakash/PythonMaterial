@@ -3,7 +3,6 @@
 """
 python-colorlog example
 """
-import sys
 import logging
 from os import system
 
@@ -21,7 +20,7 @@ def setup_logger():
     Returns a logger with a default ColoredFormatter.
     """
     formatter = ColoredFormatter(
-        "%(log_color)s%(levelname)-8s%(reset)s %(blue)s%(message)s",
+        "%(log_color)s %(asctime)s %(levelname)-8s%(reset)s %(blue)s%(message)s",
         datefmt=None,
         reset=True,
         log_colors={

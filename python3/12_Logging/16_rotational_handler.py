@@ -2,7 +2,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 logging.basicConfig(
-    handlers=[RotatingFileHandler('16_rotational_handler.log',
+    handlers=[RotatingFileHandler(os.path.splitext(__file__)[0] + '.log',
                                   maxBytes=1000, backupCount=2)],
     level=logging.DEBUG,
     format="[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",

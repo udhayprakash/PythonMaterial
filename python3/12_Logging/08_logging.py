@@ -15,7 +15,7 @@ han = logging.FileHandler('08_logging.log')
 # Formatter
 formatting = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
 
-# adding the formate to the handle
+# adding the format to the handle
 han.setFormatter(formatting)
 
 # starting of logger

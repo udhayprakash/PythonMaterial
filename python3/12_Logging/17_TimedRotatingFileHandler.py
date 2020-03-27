@@ -1,36 +1,30 @@
+#!/usr/bin/python
+"""
+Purpose: Time Rotational Handler
+    S - Seconds
+    M - Minutes
+    H - Hours
+    D - Days
+    W0-w6 - weekday(0-Monday)
+    midnight
+"""
 import logging
+import os
 import time
-
 from logging.handlers import TimedRotatingFileHandler
 
+logger = logging.getLogger("Rotating Log")
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
 
-# ----------------------------------------------------------------------
-def create_timed_rotating_log(path):
-    logger = logging.getLogger("Rotating Log")
-    logger.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
+handler = TimedRotatingFileHandler(os.path.splitext(__file__)[0] + '.log',
+                                   when="S",  # Seconds
+                                   interval=3,
+                                   backupCount=5)
 
-    handler = TimedRotatingFileHandler(path,
-                                       when="S",  # Minutes
-                                       interval=30,
-                                       backupCount=5)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
-    # S - Seconds 
-    # M - Minutes 
-    # H - Hours 
-    # D - Days 
-    # W0-w6 - weekday(0-Monday)
-    # midnight
-
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
-
-    for _ in range(100000000):
-        logger.info("This is a test!")
-        time.sleep(10)
-
-
-# ----------------------------------------------------------------------
-if __name__ == "__main__":
-    log_file = "17_TimedRotatingFileHandler.log"
-    create_timed_rotating_log(log_file)
+for _ in range(30):
+    logger.info("This is a test!")
+    time.sleep(1)
