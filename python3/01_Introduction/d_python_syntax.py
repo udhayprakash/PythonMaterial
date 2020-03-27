@@ -1,27 +1,27 @@
 #!/usr/bin/python
 """
-Purpose: python syntax and basics
+Purpose: print syntax and usage
 """
 name = 'Almighty'
 
 print(name)
 print('name')
-print('name2')
-# print(name2) # NameError: name 'name2' is not defined
-
 print('name', name)
-print('Name of student:' + name)
-print('Name of student:', name)
-print('Name of student:', name, sep=' ')
-print('Name of student:', name, sep='')
+
+print('Name of the student:' + name)  # str + str = str
+print('Name of the student:', name)
+print('Name of the student:', name, sep=' ')
+print('Name of the student:', name, sep='_')
+print('Name of the student:', name, sep='')
 
 print(1, 2, 3, 4, 5, 6)
 print(1, 2, 3, 4, 5, 6, sep=' ')
 print(1, 2, 3, 4, 5, 6, sep='_')
 
+# Python is dynamic typed language
 name = 1232
 print('Name of student:', name)
-# print('Name of student:'+ name)
+# print('Name of student:' + name)  # str + int
 # TypeError: can only concatenate str (not "int") to str
 
 # NOTE: Python is a strictly typed language
@@ -30,14 +30,15 @@ print('1' + "1")  # string concatenation
 # both single & double quote strings are same in python
 
 # type converters - str(), int(), float()
-print("1 + int('1') =", 1 + int('1'))
-print("str(1) + '1' =", str(1) + '1')
+print("1 + int('1') =", 1 + int('1'))  # addition
+print("str(1) + '1' =", str(1) + '1')  # string concatenation
 
-# int('two') # ValueError: invalid literal for int() with base 10: 'two'
+print("int('234'):", int('234'))
+# int('two')
+# ValueError: invalid literal for int() with base 10: 'two'
 
 print('Name of student:' + str(name))
 print('Name of student:', str(name))
-
 print()
 # ------------------------------------
 # Escape sequences
@@ -63,7 +64,7 @@ print('world')
 print('hello', 'python', 123, end='__')
 print('world')
 
-print('hello', 'python', 123, sep=' ', end='__')
+print('hello', 'python', 123, sep=',', end='__')
 print('world')
 
 print('hello', 'python', 123, sep=';', end='\t')
