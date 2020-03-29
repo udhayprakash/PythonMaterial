@@ -1,0 +1,2 @@
+somethingecond line
+This is third line
