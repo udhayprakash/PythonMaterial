@@ -1,0 +1,3 @@
+LoginName,Password,FirstName,LastName,Email,LabName,SecurityGroups,EmployeeID,CanLogin,CanLogMyselfOut,ForcePasswordExpired
+DeNovoSoftware,iLoveFlow,John,Smith,John.Smith@DNS.com,Immunology Lab,Standard User,338477,T,T,T
+Adminstrator,FCSExpress,Joe,Flow,joe.flow@dns.com,Flow Lab,Administrator,837390,TRUE,FALSE,TRUE

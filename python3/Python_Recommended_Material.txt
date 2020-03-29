@@ -1,0 +1,43 @@
+Recommended books/sites
+-------------------
+
+-- books -- 
+1) Learn python the hardway
+2) Byte of python
+3) Dive into python
+4) Think Python
+5) Core python programming language
+6) High performance python
+7) Python standard libary reference ( http://it-ebooks.info)
+
+
+-- sites -- 
+1) http://codeacademy.com
+2) http://www.programmableweb.com/
+3) http://readwrite.com
+4) http://highscalability.com
+5) http://pyvideo.org/
+6) http://thenextweb.com/
+7) http://github.com
+8) http://hasgeek.tv
+9) http://codechef.com
+10) https://www.coursera.org/
+11) https://projecteuler.net/
+12) https://it-ebooks.info
+13) http://ocw.mit.edu
+14) http://opensourceforu.efytimes.com/
+
+Packaging
+-----------
+1) https://docs.python.org/2/distutils/index.html
+
+
+Packages
+----------
+1) https://github.com/vinta/awesome-python
+
+
+
+
+
+http://fossbytes.com/learn-it-faster-the-entire-python-language-in-a-single-image/

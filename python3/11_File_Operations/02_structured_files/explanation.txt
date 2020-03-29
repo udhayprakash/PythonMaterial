@@ -1,0 +1,6 @@
+data
+    - small data communication
+        - human readable - csv, json, yaml, excel
+        - machine readable - marshall, pickle, shelve, csv, json, yaml, excel
+    - large data communication
+        - database

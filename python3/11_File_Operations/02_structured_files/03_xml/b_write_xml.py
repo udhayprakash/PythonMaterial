@@ -1,12 +1,18 @@
 #!/usr/bin/python
 """
-Purpose: 
-pip install lxml
+Purpose: write xml
 """
-from lxml import etree
+try:
+    from lxml import etree
+except ModuleNotFoundError as ex:
+    print(repr(ex))
+    from os import system
+    system('pip install lxml --user')
+    from lxml import etree
 
-# create XML
+# creating the XML
 root = etree.Element('root')
+
 child1 = etree.Element('child1')
 root.append(child1)
 
@@ -18,4 +24,5 @@ child1.append(child2)
 
 # pretty string
 s = etree.tostring(root, pretty_print=True)
+print(s)
 print(s.decode('utf-8'))
