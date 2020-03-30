@@ -4,7 +4,7 @@
 
 try:
     import xlrd
-except ImportError, ie:
+except ImportError as ie:
     print
     ie
     import os
@@ -21,13 +21,10 @@ try:
     while currRow < numRow:
         currRow += 1
         row = worksheet.row(currRow)
-        print
-        row
-except IOError, io:
-    print
-    io
-    print
-    "Please ensure that the specified file is present in the current working directory"
+        print(row)
+except IOError as io:
+    print(io)
+    print("Please ensure that the specified file is present in the current working directory")
 except Exception, ex:
-    print
-    ex
+    print(ex)
+    
