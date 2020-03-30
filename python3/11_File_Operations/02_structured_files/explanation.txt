@@ -4,3 +4,19 @@ data
         - machine readable - marshall, pickle, shelve, csv, json, yaml, excel
     - large data communication
         - database
+
+Serialization
+================
+marshelling
+flattenning
+
+
+pickle
+shelve
+
+=====
+csv
+xml ------- database -
+json
+yaml
+

@@ -1,15 +1,16 @@
+#!/usr/bin/python
 """
-XML parsing: ElementTree (etree) provides a Python-based API for parsing/generating
+Purpose: Reading(Parsing) XML
 """
-import pprint
 from xml.etree.ElementTree import parse
-
+from pprint import pprint
 tree = parse('books.xml')
 
 mapping = {}
 for B in tree.findall('book'):
     isbn = B.attrib['isbn']
     for T in B.findall('title'):
+        # print(isbn, T.text)
         mapping[isbn] = T.text
 
-pprint.pprint(mapping)
+pprint(mapping)
