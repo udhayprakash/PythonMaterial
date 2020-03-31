@@ -1,7 +1,6 @@
-from ConfigParser import SafeConfigParser
-import glob
+from configparser import ConfigParser
 
-parser = SafeConfigParser()
+parser = ConfigParser()
 
 candidates = ['does_not_exist.ini', 'also-does-not-exist.ini',
               'simple.ini', 'multisection.ini',

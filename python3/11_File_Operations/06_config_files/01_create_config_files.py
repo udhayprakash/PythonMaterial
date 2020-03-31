@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: Reading (Parsing) config files
+"""
+
 # python 2.x - ConfigParser
 # python 3.x - configparser
 

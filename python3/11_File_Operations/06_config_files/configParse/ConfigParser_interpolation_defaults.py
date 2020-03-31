@@ -1,7 +1,6 @@
-from configparser import SafeConfigParser
+from configparser import ConfigParser
 
-parser = SafeConfigParser()
+parser = ConfigParser()
 parser.read('interpolation_defaults.ini')
 
-print
-'URL:', parser.get('bug_tracker', 'url')
+print('URL:', parser.get('bug_tracker', 'url'))

@@ -1,7 +1,7 @@
-from configparser import SafeConfigParser
 import codecs
+from configparser import ConfigParser
 
-parser = SafeConfigParser()
+parser = ConfigParser()
 
 # Open the file with the correct encoding
 with codecs.open('unicode.ini', 'r', encoding='utf-8') as f:

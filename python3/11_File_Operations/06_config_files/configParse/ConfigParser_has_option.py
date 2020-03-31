@@ -1,6 +1,6 @@
-from configparser import SafeConfigParser
+from configparser import ConfigParser
 
-parser = SafeConfigParser()
+parser = ConfigParser()
 parser.read('multisection.ini')
 
 for section in ['wiki', 'none']:
