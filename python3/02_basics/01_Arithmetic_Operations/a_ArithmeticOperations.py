@@ -1,41 +1,44 @@
 #!/usr/bin/python
-
 """
-Purpose: Demonstration of Arithmetic Operations
+Purpose: Arithmetic Operations
+    Integer family
+        int
+        long -> only in python 2.x
+        float
 
-
-Integer family
-    int
-    long  - python 2 only
-    float
-
-    complex
-    bool
+        complex
+        bool
 """
 
 # + - * / // %
 # NOTE: PEP 8 recommends to place one space around the operator
 
-num1 = 123  # int
-num2 = 100  # int 
+# = assignment operator
+num1 = 100  # int
+num2 = 123  # int
 
-print('num1=', num1)
-print('num2=', num2)
+print('num1 =', num1, type(num1))
+print('num2 =', num2, type(num2))
 
-num3 = num1 + num2  # int + int = int 
-print('num3=', num3, type(num3))
+# Addition
+num3 = num1 + num2  # int + int = int
+print('num3 =', num3, type(num3))
 
-num4 = -1.2342342342
+num4 = -1.2342342342  # float
 print('num4=', num4, type(num4))
 
-# what is the largest number that can be processed in python
-num5 = 123123213123123231232312312312313453454534
+num5 = num1 + num4  # int + float = float
 print('num5=', num5, type(num5))
 
-num5 = 123123213123123231232312312312313453454534.0
-print('num5=', num5, type(num5))
+# Interview Question: what is the largest number that can be processed in python
+num6 = 9999999956456434344343242343232423423423423423423432432423434
+print('num6=', num6, type(num6))
 
-#######
+# Interview Question: what is the smallest number that can be processed in python
+num6 = 0.00002130213869388792183798798321989812739
+print('num6=', num6, type(num6))
+
+# ---------------------------------------
 # Arithmetic Operations
 print("123 + 100 = ", 123 + 100)
 print("123 - 100 = ", 123 - 100)
@@ -46,26 +49,27 @@ print()
 print('10/2 = ', 10 / 2)
 print('10/5 = ', 10 / 5)
 print('10/3 = ', 10 / 3)
-# NOTE: division result will be floating point everytime
+# NOTE: division result will be floating point every time
 
-print()
-print('10 // 3 = ', 10 // 3)  # quotient - floor division
-print('10 % 3 = ', 10 % 3)  # remainder - modulo division
-
-print('divmod(10, 3)=', divmod(10, 3))  # //, %
 """
-3 ) 10 ( 3 <-- QUotient
+3 ) 10 ( 3 <-- Quotient
      9
     --
-    1 <--- remainder
+     1 <--- remainder
 """
-print('divmod(10, 2)=', divmod(10, 2))  # //, %
+print()
+print('10 // 3 = ', 10 // 3)  # quotient - floor division
+print('10 % 3  = ', 10 % 3)  # remainder - modulo division
+
+print('divmod(10, 3)=', divmod(10, 3))  # //, %
+
 """
-2 ) 10 ( 5 <-- QUotient
+2 ) 10 ( 5 <-- Quotient
     10
     --
      0 <--- remainder
 """
+print('divmod(10, 2)=', divmod(10, 2))  # //, %
 
 
 # IMPORTANCE OF SIGNS
