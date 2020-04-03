@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: without OOPS, solving a problem
 """
 
 
@@ -9,29 +9,24 @@ def new():
 
 
 def deposit(account, amount):
-    account['balance'] = account['balance'] + amount
+    account['balance'] += amount
     return account['balance']
 
 
 def withdraw(account, amount):
-    account['balance'] = account['balance'] - amount
+    account['balance'] -= amount
     return account['balance']
 
 
 if __name__ == '__main__':
-    # Madhavi
-    Madhavi = new()
-    print("The basic amount for Madhavi {}".format(Madhavi['balance']))
-    deposit(Madhavi, 1000)
-    print("The  amount for Madhavi {} after deposit".format(Madhavi['balance']))
-    withdraw(Madhavi, 300)
-    print("The  amount for Madhavi {} after withdraw".format(Madhavi['balance']))
-    print()
+    Akhila = new()
+    print(f"Akhila - initial balance {Akhila['balance']}")
+    deposit(Akhila, 1000)
+    print(f"Akhila - After salary    {Akhila['balance']}")
+    withdraw(Akhila, 300)
+    print(f"Akhila - After withdrawl {Akhila['balance']}")
 
-    # yash
-    yash = new()
-    print("The basic amount for yash {}".format(yash['balance']))
-    deposit(yash, 2000)
-    print("The  amount for yash {} after deposit".format(yash['balance']))
-    withdraw(yash, 600)
-    print("The  amount for yash {} after withdraw".format(yash['balance']))
+    Neha = new()
+    print(f"\nNeha   - initial balance {Neha['balance']}")
+    deposit(Neha, 2300)
+    print(f"Neha - After scolarship  {Neha['balance']}")

@@ -1,31 +1,29 @@
 #!/usr/bin/python
-
-# OOP 
-# - code reusability 
-# - modularity 
-
+"""
+Purpose: without OOPS, solving a problem
+"""
 balance = 0
 
 
 def deposit(amount):
     global balance
-    balance = balance + amount
+    balance += amount
     return balance
 
 
 def withdraw(amount):
     global balance
-    balance = balance - amount
+    balance -= amount
     return balance
 
 
 if __name__ == '__main__':
-    # Madhavi
-    print("Madhavi -  initial balance {}".format(balance))
+    # Akhila
+    print(f"Akhila - initial balance {balance}")
     deposit(1000)
-    print("Madhavi -  balance after dads deposit {}".format(balance))
+    print(f"Akhila - After salary    {balance}")
     withdraw(300)
-    print("Madhavi -  balance after movie is {}".format(balance))
+    print(f"Akhila - After withdrawl {balance}")
 
-    # yash
-    print("\nyash -  initial balance {}".format(balance))
+    # Neha
+    print(f"\nNeha   - initial balance {balance}")
