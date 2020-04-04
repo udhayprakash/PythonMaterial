@@ -3,26 +3,19 @@
 Purpose: Regular Expressions
 """
 import re
+import regex
 
-x1 = re.search(r"\w+", u"♥αβγ!", re.U)
-x2 = re.search(r"\w+", u"♥αβγ!")
+# \p - presence of
+# \P - absence of
+# L - latin
+print(regex.findall(r'\p{L}+', 'fox:αλεπού,eagle:αετός'))
+print(regex.findall(r'\p{Greek}+', 'fox:αλεπού,eagle:αετός'))
+print(regex.findall(r'\p{Word}+', 'φοο12,βτ_4,foo'))
+print(regex.sub(r'\P{L}+', r'', 'φοο12,βτ_4,foo'))
 
-if x1:
-    print(x1.group().encode("utf-8"))  # → 「αβγ」
-else:
-    print('no match')
 
-print(x2)
-
-d = {'hand': 1, 'handy': 2, 'handful': 3, 'a^b': 4}
-
-words = [re.escape(k) for k in d.keys()]
-print(words)
-
-re.findall(r'[[:word:]]+', 'fox:αλεπού,eagle:αετός', flags=re.A)
-
+re.findall(   r'[[:word:]]+', 'fox:αλεπού,eagle:αετός', flags=re.A)
 regex.findall(r'[[:word:]]+', 'fox:αλεπού,eagle:αετός', flags=re.A)
-
 regex.findall(r'[[:word:]]+', 'fox:αλεπού,eagle:αετός', flags=regex.A)
 
 print(regex.split(r'[[:digit:]]+', 'Sample123string42with777numbers'))
