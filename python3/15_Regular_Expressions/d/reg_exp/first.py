@@ -4,7 +4,7 @@ import re
 
 reg = re.compile('yes', re.I)
 
-answer = raw_input("please enter the answer:")
+answer = input("please enter the answer:")
 if reg.match(answer):
     print("you are welcome")
 else:

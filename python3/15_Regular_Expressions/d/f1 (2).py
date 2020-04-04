@@ -3,7 +3,7 @@ import re
 import sys
 
 reg = re.compile("exit", re.I)
-status = raw_input("Do you want to continue or exit:")
+status = input("Do you want to continue or exit:")
 
 if reg.match(status):
     print("Exiting the program")
