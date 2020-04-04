@@ -1,23 +1,37 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+purpose: regular expression  demo
 
-To get alll CRITICAL level log lines in log file
+To get all CRITICAL level log lines in log file
 """
 
+import os
 import re
-import datetime
 
-today_date = datetime.datetime.now().strftime('%d-%b-%Y')
+os.chdir('../11_Logging')
+print(os.getcwd())
 
-with open('logging_ex_5.log', 'r') as fh:
-    log_file_content = fh.read()
+# Method 1 - traditional
+with open('07_file_handler.log', 'r') as f:
+    file_content = f.readlines()
+    critical_logs = []
+    for each_line in file_content:
+        if 'CRITICAL' in each_line:
+            critical_logs.append(each_line)
+    f.close()
 
-    # print(log_file_content)
-    print()
-    critical_log_lines = re.findall(today_date + '.*- CRITICAL -.*', log_file_content)
+print(critical_logs)
 
-    for each_line in critical_log_lines:
-        print(each_line)
+# Method 2 - using re
+with open('07_file_handler.log', 'r') as f:
+    file_content = f.read()
+    critical_logs = re.findall('.*CRITICAL.*', file_content)
+    f.close()
 
-    fh.close()
+critical_event_times = []
+for each_log in critical_logs:
+    # print(each_log)
+    log_time = re.match(r'\d+-\d+-\d+\s\d+:\d+:\d+,\d+', each_log).group()
+    critical_event_times.append(critical_event_times)
+
+print(critical_event_times)

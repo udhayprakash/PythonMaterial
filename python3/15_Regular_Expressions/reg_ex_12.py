@@ -1,19 +1,24 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+Purpose: Regular Expressions
 
-patterns 
+patterns
     *  previous character can occur 0 or more times
     +  previous character can occur 1 or more times
-    ?  previous character can occur 0 or 1 time only 
-"""
+    ?  previous character can occur 0 or 1 time only
 
+? is generally used to make the pattern non-greedy
+"""
 import re
 
-print(re.search('ab?', 'a').group())  # b is occuring 0 times
-print(re.search('ab?', 'ab').group())  # b is occuring 1 times
-print(re.search('ab?', 'abb').group())  # b is occuring 2 times
-print(re.search('ab?', 'abbb').group())  # b is occuring 3 times
+print(re.match('ab', 'ab').group())
+print(re.search('ab', 'ab').group())
 
-# print(re.search('ab?', 'bbbbbbb').group())     # a is occurring 0 times
-print(re.search('a?b?', 'bbbbbbb').group())  # a is occurring 0 times
+print(re.search('ab?', 'a').group())  # b is occurring 0 times
+print(re.search('ab?', 'ab').group())  # b is occurring 1 times
+print(re.search('ab?', 'abb').group())  # b is occurring 2 times
+print(re.search('ab?', 'abbbbbb').group())  # b is occurring 6 times
+
+# print(re.search('ab?', 'bbbbbb').group())  # b is occurring 6 times
+print(re.search('a?b?', 'bbbbbb').group())  # b is occurring 6 times; a - 0 times
+

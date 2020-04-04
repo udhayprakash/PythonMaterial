@@ -1,23 +1,35 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+Purpose: Regular Expressions
 
-patterns 
-    ^ 
-    $
+Question: How to get specific no. of characters from target string
+
+pattern
+    ^   To make to check at the start of string
+    $   To make to check at the end of string
+    .   To get any character, except the newline(\n) character
 """
-
 import re
 
-#  ^  the search should happen at the start of string 
-#  $   to search at the end only 
-#  .   to get any character , except newline 
-
-# result = re.search('...', "Programming is good in PyTHOn")
-# result = re.search('...$', "Programming is good in PyTHOn")
-result = re.search('^.....', "P2r ogramming is good in PyTHOn")
-
-print(result, type(result))
+# To get 5 characters, ( default is from start of string)
+result = re.search('.....', "PyTHOn Programming is good", re.I)
 if result:
-    print('result.group()', result.group())
-    print('result.span()', result.span())
+    print(f'result.group():{result.group()}')
+
+# To get 5 characters, from start of string
+result = re.search('^.....', "PyTHOn Programming is good", re.I)
+if result:
+    print(f'result.group():{result.group()}')
+
+# To get 5 characters, from end of string
+result = re.search('.....$', "PyTHOn Programming is good", re.I)
+if result:
+    print(f'result.group():{result.group()}')
+
+# To get the target string with 5 characters only
+result = re.search('^.....$', "PyTHOn Programming is good", re.I)
+print(f'result:{result}')  # None
+
+# To get the target string with 5 characters only
+result = re.search('^.....$', "PyTHO", re.I)
+print(f'result:{result}')  # None

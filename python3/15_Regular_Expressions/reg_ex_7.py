@@ -1,22 +1,24 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+Purpose: Regular Expressions
 
-patterns 
-    ^ 
-    $
+Question: How to make re.search() to work like re.match ?
+
+pattern
+    ^   To make to check at the start of string
+    $   To make to check at the end of string
 """
-
 import re
 
-#  ^  the search should happen at the start of string 
+result = re.search('^pyTHoN', "Programming is good in PyTHOn", re.I)
+print(f'\nresult:{result}')
 
-# result = re.search('^pyTHon', "Programming is good in PyTHOn", re.I)
-result = re.search('^pyTHon', "PyTHOn Programming is good in ", re.I)
+result = re.search('^pyTHoN', "PyTHOn Programming is good", re.I)
+print(f'\nresult:{result}')
 
-print(result, type(result))
+
 if result:
-    print('result.group()', result.group())
-    print('result.span()', result.span())
-    print('result.start()', result.start())
-    print('result.end()', result.end())
+    print(f'result.group():{result.group()}')
+    print(f'result.span() :{result.span()}')
+    print(f'result.start():{result.start()}')
+    print(f'result.end()  :{result.end()}')

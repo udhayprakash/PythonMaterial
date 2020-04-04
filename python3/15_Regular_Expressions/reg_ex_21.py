@@ -1,17 +1,28 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+purpose: regular expression  demo
 
-Pattern repetion
+application  of regex flags
+    re.I (re.IGNORECASE)--> for case-sensitive search/match
+    re.S (re.DOTALL)    --> to include newline character for . operator
 
-{}  specifies the number of times, the previous character should present
+    . to get any character except newline
 """
 
 import re
 
-print(re.findall('ab{0}', 'a ab abb abbbb abbbbbbb abbbbbbbbbb'))
-print(re.findall('ab{2}', 'a ab abb abbbb abbbbbbb abbbbbbbbbb'))
-print(re.findall('ab{5}', 'a ab abb abbbb abbbbbbb abbbbbbbbbb'))
+string = 'Today is Friday.\n Tomorrow is morning'
+print(re.findall('.*', string))
 
-# range of repetition
-print(re.findall('ab{2,5}', 'a ab abb abbbb abbbbbbb abbbbbbbbbb'))
+print(re.search('.*', string).group())
+
+print(re.search('.*', string, re.DOTALL).group())  # re.S
+print(re.search('.*', string, re.S).group())
+
+print(re.search('Today.*', string, re.S).group())
+
+# print(re.search('today.*', string, re.S).group())
+print(re.search('today.*', string, re.I).group())
+
+# applying more than one flag
+print(re.search('today.*', string, re.I|re.S).group())

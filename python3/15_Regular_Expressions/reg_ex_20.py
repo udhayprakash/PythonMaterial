@@ -1,10 +1,11 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+Purpose: Regular Expressions
 
-Pattern repetion
+Pattern repetition
+    {}  specifies the number of times, the previous character should present
 
-{}  specifies the number of times, the previous character should present
+Mid-way between greedy and non-greedy patterns
 """
 
 import re

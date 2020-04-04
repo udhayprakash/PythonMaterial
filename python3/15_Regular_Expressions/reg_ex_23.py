@@ -9,14 +9,17 @@ PCRE - pearl compatible regular expression
 
 import re
 
-# ip address validation 
+print(re.search('(\w*) (\w*)', 'udhay prakash').group())
+print(re.search('(\w*) (\w*)', 'udhay prakash').group(0))
 
-# pattern = '[0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}'
-pattern = '[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]'
+# group index      1      2
+print(re.search('(\w*) (\w*)', 'udhay prakash').group(1))
+print(re.search('(\w*) (\w*)', 'udhay prakash').group(2))
 
-with open('ip_addresses_info.txt') as fh:
-    ip_addresses = fh.read()
-    print(ip_addresses)
+print(re.search('(\w*) (\w*)', 'udhay prakash').groups())
 
-    print(re.findall(pattern, ip_addresses))
-    fh.close()
+#  (?P<name>)
+print(re.search(r"(?P<first>\w+) (?P<last>\w+)", "Udhay Prakash").group('first'))
+print(re.search(r"(?P<first>\w+) (?P<last>\w+)", "Udhay Prakash").group('last'))
+
+print(re.search(r"(?P<first>\w+) (?P<last>\w+)", "Udhay Prakash").groupdict())

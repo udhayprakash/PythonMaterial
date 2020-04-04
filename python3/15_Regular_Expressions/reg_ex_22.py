@@ -2,19 +2,21 @@
 """
 purpose: regular expression  demo 
 
-application  of regex flags
+pearl based regex grouping 
+PCRE - pearl compatible regular expression 
+
 """
 
 import re
 
-string = 'Today is Friday.\n Tomarrow is morning'
-print(re.findall('.*', string))
+# ip address validation 
 
-print(re.search('.*', string).group())
+# pattern = '[0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}'
+pattern = '[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]\.[0-2][0-9][0-9]'
 
-print(re.search('.*', string, re.DOTALL).group())  # re.S
-print(re.search('.*', string, re.S).group())
+with open('ip_addresses_info.txt') as fh:
+    ip_addresses = fh.read()
+    print(ip_addresses)
 
-print(re.search('Today.*', string, re.S).group())
-# applying more than one flag 
-print(re.search('today.*', string, re.S | re.I).group())
+    print(re.findall(pattern, ip_addresses))
+    fh.close()

@@ -1,21 +1,20 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+Purpose: Regular Expressions
 """
-
 import re
 
 target_string = "Python Programming is good for health"
-
-search_string = 'pyTHon'
+search_string = 'pyTHoN'
 
 reg_obj = re.compile(search_string, re.I)  # re.IGNORECASE
+print(reg_obj, type(reg_obj))
 
 result = reg_obj.match(target_string)
+print(f'result:{result}')
 
-print(result, type(result))
 if result:
-    print('result.group()', result.group())
-    print('result.span()', result.span())
-    print('result.start()', result.start())
-    print('result.end()', result.end())
+    print(f'result.group():{result.group()}')
+    print(f'result.span() :{result.span()}')
+    print(f'result.start():{result.start()}')
+    print(f'result.end()  :{result.end()}')
