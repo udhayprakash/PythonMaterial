@@ -8,6 +8,7 @@ Generator objects
     - can't be indexed
     - stores the state
     - used for large data handling
+    - State suspension and on-demand computation
 """
 
 

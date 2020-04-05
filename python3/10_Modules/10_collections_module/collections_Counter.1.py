@@ -1,6 +1,12 @@
+#!/usr/bin/python
+"""
+Purpose: Collections Module
+
+"""
 from collections import Counter
 
 print(Counter(['a', 'b', 'c', 'a', 'b', 'b']))
+print(Counter({'a', 'b', 'c', 'a', 'b', 'b'}))
 print(Counter('python programming'))
 print()
 
