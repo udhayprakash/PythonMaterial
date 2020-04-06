@@ -13,5 +13,5 @@ Popular RegEx creating Tools:
 =============================
 1. kodos (http://kodos.sourceforge.net/home.html)
     • Tool for computing and practicing regular expressions.
-2. pythex(http://pythex.org/online)
+2. pythex(https://pythex.org/)
     • regex generator created in python.

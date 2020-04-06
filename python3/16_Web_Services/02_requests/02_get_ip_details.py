@@ -11,7 +11,7 @@ import requests
 URL = 'http://freegeoip.net/json/'
 
 response = requests.get(URL)
-geodata = response.json()
+geodata = response.text
 
 # print(geodata)
 pprint(geodata)
