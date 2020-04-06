@@ -1,4 +1,3 @@
-import urllib.request, urllib.parse, urllib.error
-import re
+import urllib.error
 
 htmlfile = urllib.openurl("http://finance.yahoo.com/q?s=AAPL")

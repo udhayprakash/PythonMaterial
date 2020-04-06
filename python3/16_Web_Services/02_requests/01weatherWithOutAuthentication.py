@@ -15,8 +15,8 @@ http request methods
 
 """
 
-from pprint import pprint
 import json
+
 import requests
 
 

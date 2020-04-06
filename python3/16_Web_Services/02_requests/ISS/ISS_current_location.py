@@ -6,10 +6,10 @@ Purpose:
      *   Example: “The ISS current location at {time} is {LAT, LONG}”
 
 """
-import requests
 import sys
 from datetime import datetime
-from pprint import pprint
+
+import requests
 
 URL = 'http://api.open-notify.org/iss-now.json'
 

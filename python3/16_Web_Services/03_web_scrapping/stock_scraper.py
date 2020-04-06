@@ -1,6 +1,7 @@
+from collections import defaultdict
+
 import requests
 from lxml import html
-from collections import defaultdict
 
 
 def get_stocks(url):

@@ -3,9 +3,12 @@
 Purpose:
     http://api.open-notify.org/iss-now.json
 """
-import requests
 import json
 from datetime import datetime
+
+import requests
+
+
 class ISSClient:
     def iss_now(self):
         response = requests.get('http://api.open-notify.org/iss-now.json')

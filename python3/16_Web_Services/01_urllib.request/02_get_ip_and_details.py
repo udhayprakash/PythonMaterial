@@ -3,9 +3,9 @@
 """
 GET https://ipapi.co/{format}/
 """
+import json
 import os
 import urllib.request
-import json
 
 
 def print_n_write_response(url):

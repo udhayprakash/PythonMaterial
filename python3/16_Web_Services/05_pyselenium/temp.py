@@ -3,6 +3,7 @@ from time import sleep
 
 from selenium import webdriver
 
+
 def calculate_stop_reviews(total_reviews):
     stop_loop_for = int(int(total_reviews.replace('.', '').replace('(', '').replace(')', '')) / 5)
     if stop_loop_for % 2 == 0:

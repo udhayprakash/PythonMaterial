@@ -2,8 +2,8 @@
 """
 Purpose: scraping
 """
-import requests
 import lxml.html
+import requests
 
 res = requests.get('https://pydata.org/nyc2018/schedule/')
 print(res.status_code)

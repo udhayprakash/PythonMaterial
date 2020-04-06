@@ -3,8 +3,6 @@
 Purpose: Twitter data scrapping
 """
 import tweepy
-from pprint import pprint
-import json
 
 
 class TwitterLogin:

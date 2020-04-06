@@ -10,9 +10,10 @@
      *   for each craft print the details of those people that are currently in space
      *   Example: “There are {number} people aboard the {craft}. They are {name[0]}…{name[n]}”
 """
-import requests
 import sys
 from datetime import datetime
+
+import requests
 
 
 def get_response(_url, _request_params=None):

@@ -1,5 +1,5 @@
-import urllib
 import re
+import urllib
 
 urls = ["http://google.com", "http://nytimes", "http://CNN.com"]
 

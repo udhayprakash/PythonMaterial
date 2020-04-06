@@ -3,9 +3,9 @@
 Purpose: 
     https://currencylayer.com/quickstart
 """
-import requests
-from pprint import pprint
 from datetime import datetime
+
+import requests
 
 ACCESS_KEY = '96b5ca6a3116caa7a9b8985fd294243e'
 API_URL = 'http://www.apilayer.net/api/'

@@ -1,5 +1,6 @@
 import re
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+
 from lxml import etree, html
 
 # e will try to open this url, in order to get IP Address

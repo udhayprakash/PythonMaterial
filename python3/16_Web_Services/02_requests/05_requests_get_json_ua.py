@@ -1,5 +1,6 @@
-import requests
 from pprint import pprint
+
+import requests
 
 r = requests.get('http://httpbin.org/user-agent')
 

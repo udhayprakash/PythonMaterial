@@ -1,7 +1,8 @@
 # https://realpython.com/python-bitcoin-ifttt/
 
-import requests
 from pprint import pprint
+
+import requests
 
 bitcoin_api_url = 'https://api.coinmarketcap.com/v1/ticker/bitcoin/'
 response = requests.get(bitcoin_api_url)

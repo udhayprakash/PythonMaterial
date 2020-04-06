@@ -9,9 +9,10 @@ Http response status
     4xx     - client side
     5xx     - server side
 """
-import requests
 import ctypes
 import os
+
+import requests
 
 # existing_images_in_cats_site = xrange(100, 600)
 existing_images_in_cats_site = (

@@ -17,6 +17,7 @@
 import re
 import sys
 from urllib.request import urlopen
+
 from bs4 import BeautifulSoup as Soup
 
 

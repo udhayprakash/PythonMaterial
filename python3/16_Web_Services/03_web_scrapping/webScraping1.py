@@ -1,4 +1,4 @@
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
 
 urls = ["http://google.com", "http://nytimes.com", "http://CNN.com"]
 

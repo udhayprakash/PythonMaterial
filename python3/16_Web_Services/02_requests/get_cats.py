@@ -3,8 +3,9 @@
 Purpose:
     https://http.cat/101.jpg
 """
-import requests
 from pprint import pprint
+
+import requests
 
 res = requests.get('https://http.cat/101.jpg')
 print(f'res.status_code : {res.status_code}')

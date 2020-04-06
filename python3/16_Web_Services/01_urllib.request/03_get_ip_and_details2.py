@@ -1,4 +1,6 @@
-import urllib.request, urllib.parse, urllib.error
+import urllib.error
+import urllib.parse
+import urllib.request
 
 """
 https://ipapi.co/api/#location-of-a-specific-ip

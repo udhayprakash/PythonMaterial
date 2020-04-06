@@ -6,10 +6,10 @@ Purpose:
      *   Example: “There are {number} people aboard the {craft}. They are {name[0]}…{name[n]}”
 
 """
-import requests
 import sys
-from datetime import datetime
 from pprint import pprint
+
+import requests
 
 URL = 'http://api.open-notify.org/astros.json'
 

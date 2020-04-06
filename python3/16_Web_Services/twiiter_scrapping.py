@@ -3,8 +3,9 @@
 Purpose:
 """
 
-import twitter
 import os
+
+import twitter
 
 api = twitter.Api(consumer_key=os.getenv('TWITTER_API_KEY'),
                   consumer_secret=os.getenv('TWITTER_API_SECRET_KEY'),

@@ -7,8 +7,9 @@ Purpose: Usage of duckduckgo api
     pip install duckduckgo
 """
 
-import duckduckgo
 import sys
+
+import duckduckgo
 
 # print(dir(duckduckgo))
 

@@ -2,7 +2,10 @@
 # Important: Please do not send too many requests. Respect the robot.txt file.
 
 
-import operator, os, sys
+import operator
+import os
+import sys
+
 import requests
 from bs4 import BeautifulSoup
 

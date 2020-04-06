@@ -8,7 +8,6 @@ Http response status
     4xx     - client side
     5xx     - server side
 """
-import json
 import urllib.request
 
 URL = 'https://http.cat/200'

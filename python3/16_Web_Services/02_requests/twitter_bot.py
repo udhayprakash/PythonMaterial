@@ -1,5 +1,6 @@
-import tweepy
 import time
+
+import tweepy
 
 
 class Bot:

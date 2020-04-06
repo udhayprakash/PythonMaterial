@@ -1,8 +1,8 @@
 import re
-import requests
-import requests.exceptions
-from urllib.parse import urlsplit
 from collections import deque
+from urllib.parse import urlsplit
+
+import requests.exceptions
 from bs4 import BeautifulSoup
 
 # starting url. replace google with your own url.

@@ -1,8 +1,8 @@
-import json
-import urllib.request, urllib.error, urllib.parse
 import configparser
+import json
 import sys
-from pprint import pprint
+import urllib.error
+import urllib.request
 
 config = configparser.ConfigParser()
 config.read('weather.ini')

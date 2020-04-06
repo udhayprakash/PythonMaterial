@@ -6,9 +6,10 @@ Purpose:
      *   Example: “The ISS will be overhead {LAT, LONG} at {time} for {duration}”
 
 """
-import requests
 import sys
 from datetime import datetime
+
+import requests
 
 URL = 'http://api.open-notify.org/iss-pass.json'
 

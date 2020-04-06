@@ -1,8 +1,8 @@
-from lxml import html
-import csv, os, json
+import json
+
 import requests
-from time import sleep
 import urllib3
+from lxml import html
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  

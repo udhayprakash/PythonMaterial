@@ -5,7 +5,6 @@ https://wiki.openstreetmap.org/wiki/Nominatim#Example
 """
 
 import requests
-from pprint import pprint
 
 
 def get_location_coordinates(search_string):

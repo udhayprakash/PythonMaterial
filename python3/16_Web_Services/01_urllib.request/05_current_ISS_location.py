@@ -22,9 +22,9 @@ http response codes
 5XX - server side issues
 """
 import json
-import urllib.request, urllib.error, urllib.parse
-from pprint import pprint
+import urllib.request
 from datetime import datetime
+from pprint import pprint
 
 req = urllib.request.Request("http://api.open-notify.org/iss-now.json")
 response = urllib.request.urlopen(req)
@@ -47,7 +47,6 @@ print('At {TIME}, ISS is at lat:{LAT}, long:{LONG}'.format(
 #   1364795862
 #   -47.36999493 151.738540034
 import requests
-from pprint import pprint
 
 
 # google_reverse_geocode_URL = 'http://maps.googleapis.com/maps/api/geocode/json?latlng={LATITUDE},{LONGITUDE}&sensor=false'

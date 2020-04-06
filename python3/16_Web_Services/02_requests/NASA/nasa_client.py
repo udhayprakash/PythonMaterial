@@ -13,8 +13,9 @@ METADATA_ENDPOINT = '/metadata/{nasa_id}'
 CAPTIONS_ENDPOINT = '/captions/{nasa_id}'
 ALBUM_ENDPOINT = '/album/{album_name}'
 
-import requests
 from pprint import pprint
+
+import requests
 
 request_params = {
     'q': 'apollo 11',

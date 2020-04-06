@@ -5,11 +5,12 @@ Usage: python filename.py keyword
 Tested with Python3
 """
 
-import webbrowser
 import sys
+import webbrowser
+
+import bs4
 import pyperclip
 import requests
-import bs4
 
 
 def start():

@@ -2,10 +2,11 @@
 # Author - ThePythonDjango.Com
 # dependencies - BeautifulSoup, requests
 
-from bs4 import BeautifulSoup
-import requests
-import sys
 import json
+import sys
+
+import requests
+from bs4 import BeautifulSoup
 
 
 def usage():
