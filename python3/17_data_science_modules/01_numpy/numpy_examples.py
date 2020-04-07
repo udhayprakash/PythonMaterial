@@ -1,17 +1,13 @@
 #!usr/bin/env python
-
-# import numpy
-import numpy as np  # aliasing the import
-
-from numpy import *   # Another way of importing
-from numpy import array
-
+"""
+Purpose: Numpy module
+"""
+from numpy import *  # Another way of importing
 '''
-Array is similar to list in python, execept that 
-every element of an array must be of the same type,
-typically a numeric type like FLOAT or INT.
+    Array is similar to list in python, except that
+    every element of an array must be of the same type,
+    typically a numeric type like FLOAT or INT.
 '''
-
 # Integer type array
 a = np.array([1, 4, 5, 8, ])  # default type is Integer.
 
