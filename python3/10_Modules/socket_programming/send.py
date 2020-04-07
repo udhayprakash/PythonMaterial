@@ -29,7 +29,7 @@ s.connect((remote_ip, port))
 print('Socket Connected to ' + host + ' on ip ' + remote_ip)
 
 # sending a data outside
-# message = raw_input("enter the message you want to pass on: \n")
+# message = input("enter the message you want to pass on: \n")
 message = "GET / HTTP/1.1\r\n\r\n"
 
 try:

@@ -12,7 +12,7 @@ import sys
 # print '-' * 80
 #
 # # Run time value
-# word = raw_input('Enter some word:')
+# word = input('Enter some word:')
 #
 # print('You entered:'+ word)
 

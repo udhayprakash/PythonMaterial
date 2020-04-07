@@ -507,7 +507,7 @@ Testing for a Valid Pattern
 
 import re
 while True:
-    pat = raw_input("Pattern? ")
+    pat = input("Pattern? ")
     try:
         re.compile(pat)
     except re.error, err:

@@ -14,7 +14,7 @@
 # 	print "try may or may not get success"
 
 
-# age = raw_input("please enter the age 1-150:")
+# age = input("please enter the age 1-150:")
 
 # import exception
 

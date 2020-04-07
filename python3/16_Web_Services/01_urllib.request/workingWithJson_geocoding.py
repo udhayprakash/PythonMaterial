@@ -1,14 +1,13 @@
 import json
-import pdb
-import urllib
+import urllib.request
 
-serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
+service_url = 'http://maps.googleapis.com/maps/api/geocode/json?'
 
 while True:
-    address = raw_input('Enter location: ')  # Hyderabad, IN
-    if len(address) < 1: break
-    pdb.set_trace()  # debugging line
-    url = serviceurl + urllib.urlencode(
+    address = input('Enter location: ')  # Hyderabad, IN
+    if len(address) < 1:
+        break
+    url = service_url + urllib.request.urlencode(
         {'sensor': 'false', 'address': address})
 
     print('Retrieving', url)
@@ -18,7 +17,7 @@ while True:
 
     try:
         js = json.loads(data)
-    except:
+    except Exception:
         js = None
 
     if not js or 'status' not in js or js['status'] != 'OK':
@@ -34,8 +33,7 @@ while True:
     location = js['results'][0]['formatted_address']
     print(location)
 
-    print
-    '-' * 80
-    choice = raw_input("Do you want to retry: Y or N: ")
+    print('-' * 80)
+    choice = input("Do you want to retry: Y or N: ")
     if choice.lower() == 'n':
         break

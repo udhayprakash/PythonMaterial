@@ -4,7 +4,7 @@ import json
 serviceurl = 'http://maps.googleapis.com/maps/api/geocode/json?'
 
 while True:
-    address = raw_input('Enter location: ')  # Hyderabad, IN
+    address = input('Enter location: ')  # Hyderabad, IN
     if len(address) < 1: break
 
     url = serviceurl + urllib.urlencode(
@@ -34,5 +34,5 @@ while True:
     print(location)
     print
     '-' * 80
-    choice = raw_input("Do you want to retry: Y or N: ")
+    choice = input("Do you want to retry: Y or N: ")
     if choice.lower() == 'n': break

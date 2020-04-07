@@ -4,8 +4,8 @@
 # 
 
 def my_input():
-    my_num1 = int(raw_input("please enter the num1:"))
-    my_num2 = int(raw_input("please enter the num2:"))
+    my_num1 = int(input("please enter the num1:"))
+    my_num2 = int(input("please enter the num2:"))
     return my_num1, my_num2
 
 

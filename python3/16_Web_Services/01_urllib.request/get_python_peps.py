@@ -1,10 +1,11 @@
 import functools
+import urllib.error
 import urllib.request
 
 
 @functools.lru_cache(maxsize=32)
 def get_pep(num):
-    'Retrieve text of a Python Enhancement Proposal'
+    """Retrieve text of a Python Enhancement Proposal"""
     resource = 'http://www.python.org/dev/peps/pep-%04d/' % num
     try:
         with urllib.request.urlopen(resource) as s:
