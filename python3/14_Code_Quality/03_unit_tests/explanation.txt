@@ -1,5 +1,5 @@
 1. Unit Testing
-    - Process of tesing whether a particular unit is working or not
+    - Process of testing whether a particular unit is working or not
 2. Integration Testing
     - Process of testing total application flow (end-to-end testing)
 

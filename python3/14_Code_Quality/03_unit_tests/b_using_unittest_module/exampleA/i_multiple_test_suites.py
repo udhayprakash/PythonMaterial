@@ -1,6 +1,20 @@
 import unittest
 
 
+def function_test_1():
+    name = 'mona'
+    assert name.startswith('mo')
+
+
+def compare_names(name1, name2):
+    if name1 < name2:
+        return 1
+    elif name1 > name2:
+        return -1
+    else:
+        return 0
+
+
 class UnitTests02(unittest.TestCase):
     def testFoo(self):
         self.assertTrue(False)
@@ -24,20 +38,6 @@ class UnitTests01(unittest.TestCase):
     def testBar02(self):
         print('testing testBar02')
         self.assertFalse(False)
-
-
-def function_test_1():
-    name = 'mona'
-    assert name.startswith('mo')
-
-
-def compare_names(name1, name2):
-    if name1 < name2:
-        return 1
-    elif name1 > name2:
-        return -1
-    else:
-        return 0
 
 
 def make_suite():

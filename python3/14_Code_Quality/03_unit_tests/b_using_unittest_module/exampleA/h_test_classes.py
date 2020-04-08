@@ -2,14 +2,14 @@
 """
 Purpose: unit testing
 
-setupClass & tearDownClass methods are executed ONCE
+setupClass & tearDownClass methods are executed ONCE, per test suite
 setUp & tearDown methods are executed for each test case
 """
 
 import unittest
 
 
-class TestCaseDemo(unittest.TestCase):
+class TestSuiteDemo(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         print('setUpClass method executed ...')

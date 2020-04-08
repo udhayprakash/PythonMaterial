@@ -1,24 +1,12 @@
 #!/usr/bin/python
 """
-Purpose: Static typing with mypy
+Purpose: Static Typing in python
+    http://mypy-lang.org
+python -m pip install -U mypy
 
-from python 3.6, mypy will come builtin. no need to import
+python -m mypy filename.py
 """
+import typing
 
-
-# ----------------------------
-def hello():
-    print('Hello world')
-
-
-hello()
-
-
-# ----------------------------
-def hello1() -> None:
-    print('Hello world')
-
-
-hello1()
-
-
+for ech_attr in dir(typing):
+    print(ech_attr)

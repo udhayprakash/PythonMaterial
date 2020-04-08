@@ -1,31 +1,51 @@
-from typing import Tuple, List, Dict
+#!/usr/bin/python
+"""
+Purpose: Static typing with mypy
 
-my_data: Tuple[str, int, float] = ("Adam", 10, 5.7)
-print(f'my_data:{my_data}')
-
-# A list of integers
-numbers: List[int] = [1, 2, 3, 4, 5, 6]
-print(f'numbers:{numbers}')
-
-# List of Tuples
-LatLngVector = List[Tuple[float, float]]
-
-points: LatLngVector = [
-    (25.91375, -60.15503),
-    (-11.01983, -166.48477),
-    (-11.01983, -166.48477)
-]
-print(f'points:{points}')
+from python 3.6, mypy will come builtin. no need to import
+"""
 
 
-# A dictionary where the keys are strings and the values are ints
-name_counts: Dict[str, int] = {
-    "Adam": 10,
-    "Guido": 12
-}
+# Method 1 : Traditional approach
+def hello(name):
+    return f'Hello {name}'
 
-# A list that holds dicts that each hold a string key / int value
-list_of_dicts: List[Dict[str, int]] = [
-    {"key1": 1},
-    {"key2": 2}
-]
+
+result = hello('Python')
+print(result)
+
+
+# -------------------------------
+# Method 2 : Adding Typing
+def hello(name: str) -> str:
+    return f'Hello {name}'
+
+
+result = hello('Python')
+print(result)
+
+
+# =========================
+# Method 1 : Traditional Approach
+def mirror(name):
+    return str(name)
+
+
+print(mirror(100))
+print(mirror(123.453))
+print(mirror(True))
+print(mirror(None))
+
+# ----------------------------
+# Method 2: Adding typing
+from typing import Any
+
+
+def mirror(name: Any) -> str:
+    return str(name)
+
+
+print(mirror(100))
+print(mirror(123.453))
+print(mirror(True))
+print(mirror(None))

@@ -8,7 +8,7 @@ def foo(word='world'):
 
     >>> foo('brother')
     hello brother
-    
+
     """
     print("hello " + word)
 
@@ -16,5 +16,5 @@ def foo(word='world'):
 if __name__ == "__main__":
     import doctest
 
-    doctest.testmod(optionflags=doctest.ELLIPSIS)
-    # doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)
+    # doctest.testmod(optionflags=doctest.ELLIPSIS)
+    doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)

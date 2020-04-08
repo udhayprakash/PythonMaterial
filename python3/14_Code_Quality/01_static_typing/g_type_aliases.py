@@ -1,5 +1,10 @@
+#!/usr/bin/python
+"""
+Purpose: Type Annotation
+"""
 from typing import List
 
+# created a custom type and aliases to use it
 Vector = List[float]
 
 

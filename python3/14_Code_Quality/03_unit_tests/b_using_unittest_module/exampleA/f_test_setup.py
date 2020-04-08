@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: unit testing 
+Purpose: unit testing
 """
 
 import unittest

@@ -6,31 +6,19 @@ from python 3.6, mypy will come builtin. no need to import
 """
 
 
+# Method 1 : Traditional approach
 def hello(name):
-    return f'Hello {name}'
+    print(f'Hello {name}')
 
 
-result = hello('Python')
-print(result)
+hello('Python')
 
 
-# ----------------------------
-def hello3(name: str) -> str:
-    return f'Hello {name}'
+# ---------------------------------
+# Method 2: Adding Typing
+# Method 1 : Traditional approach
+def hello(name: str) -> None:
+    print(f'Hello {name}')
 
 
-result = hello3('Python')
-print(result)
-
-# ----------------------------
-from typing import Any
-
-
-def hello4(name: Any) -> str:
-    return f'Hello {name}'
-
-
-result = hello4('Python')
-print(result)
-result = hello4(32123213)
-print(result)
+hello('Python')

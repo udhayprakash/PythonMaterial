@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
 
-def fun(x):
+def add_one(x):
     return x + 1
 
 
 if __name__ == '__main__':
-    print(fun(33))
-    print(fun(-0.2))
+    print(add_one(33))
+    print(add_one(-0.2))
