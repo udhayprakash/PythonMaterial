@@ -2,22 +2,32 @@
 """
 Purpose: Boolean Operations
 
-    True, False
+    True, False  --> keywords defined in python
+
+
+id() - built-in function to get the address location where given
+       object is stored
 """
+__name__ = 'Author'
 
 choice = True
-print('choice = ', choice, type(choice))
+print('choice = ', choice, type(choice), id(choice))
 
 choice = False
-print('choice = ', choice, type(choice))
+print('choice = ', choice, type(choice), id(choice))
 
+# True = 'Udhay'
+# SyntaxError: cannot assign to True
 
-true = 'Udhay Prakash'  # NOT RECOMMENDED to use 'true' for variable name
+true = 'Udhay'
+# NOTE: NOT RECOMMENDED to use 'true' for variable name
 
 choice = true
-print('choice = ', choice, type(choice))
+print('choice = ', choice, type(choice), id(choice))
 
-# Object 
+print()
+# -----------------------------------
+# Object
 #  - address location where it is stored - id()
 #  - type(s)
 #  - value(s)

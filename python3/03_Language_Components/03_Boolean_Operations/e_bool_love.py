@@ -1,3 +1,9 @@
+#!/usr/bin/python
+"""
+Purpose:
+"""
+__name__ = 'Author'
+
 import this
 
 # print(this)

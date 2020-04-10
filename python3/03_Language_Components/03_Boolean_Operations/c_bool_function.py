@@ -1,26 +1,42 @@
 #!/usr/bin/python
 """
-Purpose: Boolean Operations
+Purpose: bool() built-in function
+
+    Number  - int & float
+    Strings
+    None
+    boolean
+    braces
 """
+__name__ = 'Author'
 # bool()
 # integer type (int and float)
-#       zero     - False 
+#       zero     - False
 #       non-zero - True
 print("bool(12)          ", bool(12))
 print("bool(-12)         ", bool(-12))
 print("bool(0)           ", bool(0))
 print()
-print("bool(0.00)        ", bool(0.00))
+print("bool(0.00000000)  ", bool(0.00000000))
 print("bool(0.000000001) ", bool(0.000000001))
 print("bool(-0.000000001)", bool(-0.000000001))
 print()
 
 # strings
-#  True - non-empty string 
+#  True - non-empty string
 #  False - empty string
 print("bool('ball')     ", bool('ball'))
 print("bool(' ')        ", bool(' '))  # white-space
 print("bool('')         ", bool(''))  # empty string
+print()
+
+# None -> False
+print('bool(None)       ', bool(None))
+print()
+
+# bool - True, False
+print('bool(True)       ', bool(True))
+print('bool(False)      ', bool(False))
 print()
 
 # braces
@@ -37,14 +53,11 @@ print('[]               ', bool([]))
 print('{}               ', bool({}))
 print()
 
-# None
-print('bool(None)       ', bool(None))
-print()
+# Relational operations -> Boolean result -> bool()
+print('74 > 59           ', 74 > 59)
+print('bool(74 > 59)     ', bool(74 > 59))
+print('bool(74 <= 59)    ', bool(74 <= 59))
 
-# bool - True, False
-print('bool(True)       ', bool(True))
-print('bool(False)      ', bool(False))
-print()
-##########################
-
-print('bool(9>34)', bool(9 > 34))  # bool(False) => False
+# Logical operations -> Boolean result -> bool()
+print('1 < 2 and 23 <=23       ', 1 < 2 and 23 <= 23)
+print('bool(1 < 2 and 23 <=23) ', bool(1 < 2 and 23 <= 23))
