@@ -1,18 +1,15 @@
 #!/usr/bin/python
 """
-Purpose: range()
-
-these will work only with int type 
-range(initialValue, finalValue, step)
-default initialValue = 0
-default step = +1
+Purpose: range() builtin function
 """
+__name__ = 'Author'
+
 list(range(0))                     # [] -> range(0, 0, 1)
 list(range(1, 0))                  # [] -> range(1, 0, 1)
 
 r = range(0, 20, 2)
 print(r)                           # range(0, 20, 2) # 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
-                                   #                   0  1  2  3  4  5
+#                                                      0  1  2  3  4  5    6   7  8   9
 r.start                            # 0
 r.stop                             # 20
 r.step                             # 2
