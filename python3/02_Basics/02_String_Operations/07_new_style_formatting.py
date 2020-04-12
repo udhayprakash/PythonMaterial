@@ -17,6 +17,11 @@ print("{:,}".format(1234567890.88))  # 1,234,567,890.88
 print("{:_}".format(1234567890.88))  # 1_234_567_890.88
 print()
 
+print('{:<20}'.format('left aligned'))  # 'left aligned        '
+print('{:>20}'.format('right aligned')) # '       right aligned'
+print('{:^20}'.format('centered'))      # '      centered      '
+print()
+
 print('{}'.format(1024), 1024)  # 1024 1024
 print('{:b}'.format(1024), bin(1024))  # 10000000000 0b1000000000
 print('{:o}'.format(1024), oct(1024))  # 2000 0o2000

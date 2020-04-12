@@ -31,9 +31,14 @@ print(f'''
 
 print()
 value2 = 1234567890.88
-print(f"{value}")  # 1234567890.88
-print(f"{value:,}")  # 1,234,567,890.88
-print(f"{value:_}")  # 1_234_567_890.88
+print(f"{value2}")  # 1234567890.88
+print(f"{value2:,}")  # 1,234,567,890.88
+print(f"{value2:_}")  # 1_234_567_890.88
+print()
+
+print(f'{value2:<20}')  # '1234567890.88        '
+print(f'{value2:>20}')  # '        1234567890.88'
+print(f'{value2:^20}')  # '  1234567890.88      '
 print()
 
 # To get quotes in string

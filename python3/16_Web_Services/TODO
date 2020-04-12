@@ -86,3 +86,9 @@ https://developer.nytimes.com/docs/timeswire-product/1/overview
 
 Wikipedia REST API
     https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_
+
+Rotten Tomatoes Movies API 
+    https://www.rottentomatoes.com/api/private/v1.0/movies/12911
+
+YTS torrent movies API 
+    https://yts.mx/api
