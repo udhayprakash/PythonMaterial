@@ -1,8 +1,8 @@
-#!python -u 
+#!/usr/bin/python
 """
-Purpose:print different amount based on various customer types
+Purpose: print different amount based on various customer types
 """
-__author__ = 'Python Tutor'
+__name__ = 'Author'
 
 apple = 10
 mango = 5
@@ -19,12 +19,12 @@ o_qty = int(input("how many liter(s) oil: "))
 
 if customer == 'regular':
     amt = (((a_qty * apple + m_qty * mango) * .70) + s_qty * sugar + ((o_qty * oil) * .90))
-    print((("Hi %s, the total amt you have to pay is $%d") % (name, amt)))
+    print(f"Hi {name}, the total amt you have to pay is ${amt}")
 elif customer == 'lucky':
     amt = ((a_qty * apple + m_qty * mango + s_qty * sugar + o_qty * oil) * .80)
-    print((("Hi %s,  the total amt you have to pay is$%d") % (name, amt)))
+    print(f"Hi {name},  the total amt you have to pay is ${amt}")
 elif customer == 'nocredit':
     amt = (a_qty * apple + m_qty * mango + s_qty * sugar + o_qty * oil)
-    print((("Hi %s, the total amt you have to pay is$%d") % (name, amt)))
+    print(f"Hi {name}, the total amt you have to pay is ${amt}")
 else:
     print("please enter correct type of customer")

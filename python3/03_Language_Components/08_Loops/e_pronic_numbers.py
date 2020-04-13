@@ -1,11 +1,12 @@
-#!python -u 
+#!python -u
 """
 Purpose: Display the pronic numbers.
- PRONIC NUMBER: Pronic number is a number which is the product
+
+ Pronic number is a number which is the product
  of two consecutive integers.
  Some pronic numbers: 2*3 = 6
-
 """
+__name__ = 'Author'
 
 n = int(input("Enter a number: "))
 

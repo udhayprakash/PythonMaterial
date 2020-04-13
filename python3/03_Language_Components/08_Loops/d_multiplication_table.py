@@ -1,61 +1,37 @@
 #!/usr/bin/python
 """
-initialization
-while loop- condition
-    logic
-    increment/decrement
+Purpose: Multiplication Table Generation
 """
-# NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
+__name__ = 'Author'
 
-print('\nincrementing loop with increment first')
-i = 0
-while i < 10:
-    i = i + 1
-    print(i, end=' ')
+# Two Independent while loops
+first = 0
+while first < 5:
+    first += 1
+    print(first)
 
-print('\n\nincrementing loop with increment last')
-i = 0
-while i < 10:
-    print(i, end=' ')
-    i = i + 1
+second = 0
+while second < 5:
+    second += 1
+    print(second)
 
-print('\n\nincrementing loop with increment last')
-i = 0
-while i <= 10:
-    print(i, end=' ')
-    i = i + 1
-
-print('\n\ndecrementing loop with decrement first')
-j = 10
-while j > 0:
-    j = j - 1
-    print(j, end=' ')
-
-print('\n\ndecrementing loop with decrement last')
-j = 10
-while j > 0:
-    print(j, end=' ')
-    j = j - 1
-
-
-
-
-###########################################
-print('\n\n Multiplication Table')
+print()
+# second while loop is under first while loop
 first = 0
 while first < 10:
     first += 1
     # print(first)
 
     second = 0
-    while second < 10:
+    while second < 12:
         second += 1
         # print(first, '*', second, '=', first * second)
         # print(str(first) + ' * ' + str(second) + ' = ' + str(first * second))
+        # print('%d * %d = %d' % (first, second, first * second))
         # print('%2d * %2d = %3d' % (first, second, first * second))
-        # print('{0:2} * {1:2} = {2:3}'.format(first, second, first * second))
+        # print('{:2} * {:2} = {:2}'.format(first, second, first * second))
         print(f'{first:2} * {second:2} = {first * second:3}')
-    print('-' * 12)
+    print('-' * 14)
 
 
 '''
@@ -71,7 +47,7 @@ Assignment
 10 *  4 =  40
 10 *  3 =  30
 10 *  2 =  20
-10 *  1 =  10
+10 *  1 =  10  
 
 2) Assignment - Display the multiplication table horizontally 
 
@@ -87,4 +63,5 @@ Assignment
 01 * 10 = 010 | 02 * 10 = 020 | 03 * 10 = 030 | 04 * 10 = 040 | 05 * 10 = 050 | 06 * 10 = 060 | 07 * 10 = 070 | 08 * 10 = 080 | 09 * 10 = 090 | 10 * 10 = 100
 
 HINTS: string formatting, str.zfill(), while/for loop
+
 '''

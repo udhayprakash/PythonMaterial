@@ -56,5 +56,3 @@ print(list(values2))  # [9 6 3 0]
 
 # values2 = range(9.5, -1.5, -3)
 # TypeError: 'float' object cannot be interpreted as an integer
-
-# NOTE: INITIAL_VALUE, FINAL_VALUE and STEP must be int type only. 

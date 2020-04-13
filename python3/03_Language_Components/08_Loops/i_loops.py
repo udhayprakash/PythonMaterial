@@ -1,13 +1,14 @@
 #!/usr/bin/python
 """
-Purpose: 
-	break     - breaks the complete loop
+Purpose:
+    break     - breaks the complete loop
 	continue  - skip the current loop
 	pass      - will do nothing. it is like a todo
 	sys.exit  - will exit the script execution
 """
-students = ['akram', 'trusha', 'bhavana', 'jaya', 'chaitra']
+__name__ = 'Author'
 
+students = ['akram', 'trusha', 'bhavana', 'jaya', 'chaitra']
 print('break importance ==========')
 for each_student in students:
     if each_student == 'bhavana':
@@ -35,3 +36,4 @@ for each_student in students:
     print(each_student)
 
 print('-------next statement')
+
