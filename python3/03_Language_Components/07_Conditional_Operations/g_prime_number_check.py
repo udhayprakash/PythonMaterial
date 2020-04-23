@@ -9,7 +9,7 @@ Purpose: Python program to check if the input number is prime or not
 
     1, 2,  3, 5, 7, 11, ...
 """
-__name__ = 'Author'
+
 
 # num = 407
 

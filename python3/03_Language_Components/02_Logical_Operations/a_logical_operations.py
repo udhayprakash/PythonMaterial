@@ -8,7 +8,7 @@ Purpose: Logical Operations
     not - negate the existing value
 
 """
-__name__ = 'Author'
+
 
 '''
 and

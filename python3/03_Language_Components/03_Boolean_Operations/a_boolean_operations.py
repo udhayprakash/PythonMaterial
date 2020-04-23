@@ -8,7 +8,7 @@ Purpose: Boolean Operations
 id() - built-in function to get the address location where given
        object is stored
 """
-__name__ = 'Author'
+
 
 choice = True
 print('choice = ', choice, type(choice), id(choice))

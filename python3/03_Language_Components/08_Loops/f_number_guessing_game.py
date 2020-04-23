@@ -4,7 +4,7 @@ Purpose: Number Guessing Game
 
 break - To come out of any loop (for/while)
 """
-__name__ = 'Author'
+
 
 LUCKY_NUMBER = 67
 

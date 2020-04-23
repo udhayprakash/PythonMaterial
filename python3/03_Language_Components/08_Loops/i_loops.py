@@ -6,7 +6,7 @@ Purpose:
 	pass      - will do nothing. it is like a todo
 	sys.exit  - will exit the script execution
 """
-__name__ = 'Author'
+
 
 students = ['akram', 'trusha', 'bhavana', 'jaya', 'chaitra']
 print('break importance ==========')

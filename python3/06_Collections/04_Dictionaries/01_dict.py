@@ -5,7 +5,7 @@ Purpose: dictionary demo
 1. keys are unique; 
 2. keys should be immutables only
     immutables 
-        string, tuple, int, long, float, bool, frozenset
+        string, tuple, int, long, float, bool, frozenset, None
     mutables
         bytearray string, list, set, dict
 3. indexing based on keys 

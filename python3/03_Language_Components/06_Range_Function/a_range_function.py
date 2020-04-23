@@ -13,7 +13,7 @@ Purpose: range() function
         - either convert to any iterable -list, tuple or set
         - or, for loop over that object
 """
-__name__ = 'Author'
+
 
 # values = range()
 # TypeError: range expected 1 argument, got 0

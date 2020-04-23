@@ -7,7 +7,7 @@ Purpose: Loops
     sys.exit  - will exit the script execution
 
 """
-__name__ = 'Author'
+
 i = 0
 while i <= 7:
     i += 1

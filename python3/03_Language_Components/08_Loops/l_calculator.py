@@ -10,7 +10,7 @@ eval() - built-in function
     eval('  10.34234   ')
     Out[6]: 10.34234
 """
-__name__ = 'Author'
+
 
 while True:
     print('''

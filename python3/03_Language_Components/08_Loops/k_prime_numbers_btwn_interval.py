@@ -2,7 +2,7 @@
 """
 Purpose: program to display all the prime numbers within an interval
 """
-__name__ = 'Author'
+
 
 lower = 90
 upper = 1000

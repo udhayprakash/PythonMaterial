@@ -7,7 +7,7 @@ Purpose: Binary to Decimal conversion, without using builtin functions
 
 
 """
-__name__ = 'Author'
+
 
 binary_number = '10101001'
 

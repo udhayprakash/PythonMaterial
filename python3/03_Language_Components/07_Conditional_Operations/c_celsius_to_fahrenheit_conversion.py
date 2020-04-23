@@ -5,7 +5,7 @@ Purpose: Temperature Conversions
 
 round(number, no_of_digits_to_round_post_decimal)
 """
-__name__ = 'Author'
+
 
 celsius = float(input('Enter temperature in celsius:'))
 

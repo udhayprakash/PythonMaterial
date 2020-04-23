@@ -2,7 +2,7 @@
 """
 Purpose: Boolean Operations
 """
-__name__ = 'Author'
+
 
 # == value level equivalence
 print("True == 1  ", True == 1)

@@ -2,7 +2,7 @@
 """
 Purpose: Logical Operations
 """
-__name__ = 'Author'
+
 
 print('23 <73 <45', 23 < 73 < 45)
 #   23 <73  and     73 <45

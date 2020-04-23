@@ -7,7 +7,7 @@ Purpose: Progress Status Bar Implementation
         \n - new line
         \r - rare feed
 """
-__name__ = 'Author'
+
 
 print('Udhay Prakash')
 print('Udhay\tPrakash')

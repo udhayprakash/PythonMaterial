@@ -3,7 +3,7 @@
 Purpose: Number Guessing Game
 
 """
-__name__ = 'Author'
+
 
 LUCKY_NUMBER = 69
 

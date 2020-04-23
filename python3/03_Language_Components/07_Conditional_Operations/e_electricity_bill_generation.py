@@ -20,7 +20,7 @@ units consumed : 357
          1.25/- + 2.00/-    + 4.00/-+ 7.00/- + 10/-
 
 """
-__name__ = 'Author'
+
 
 # units_consumed = 60
 units_consumed = float(input('Enter the no. of units consumed:'))

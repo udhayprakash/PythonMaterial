@@ -2,7 +2,7 @@
 """
 Purpose: bool() builtin function
 """
-__name__ = 'Author'
+
 
 num1 = -0.000000056
 print('bool(num1)       ', bool(num1))

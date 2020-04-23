@@ -2,7 +2,7 @@
 """
 Purpose: To display the asterisk's in a half-diamond pattern
 """
-__name__ = 'Author'
+
 
 # half - diamond
 for num in range(0, 10, 1):

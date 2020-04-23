@@ -2,7 +2,7 @@
 """
 Purpose: Multiplication Table Generation
 """
-__name__ = 'Author'
+
 
 # Two Independent while loops
 first = 0

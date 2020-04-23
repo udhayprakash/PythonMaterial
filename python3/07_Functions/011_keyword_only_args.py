@@ -12,7 +12,7 @@ Purpose: Functions Demo
 
 
 # Function Definition
-def recv(maxsize, *, block=True):
+def recv(maxsize,  block=True):
     print("\ntype(maxsize)  ", type(maxsize))
     print("type(block) ", type(block))
 

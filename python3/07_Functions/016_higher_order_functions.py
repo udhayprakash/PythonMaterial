@@ -17,7 +17,7 @@ print(' '.join(mystrings))
 print(reduce(lambda ch1, ch2: ch1 + ' ' + ch2, mystrings))
 
 
-# factorial 9 - 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+#   
 def my_factorial(given_num):
     result = 1
     for each_num in range(1, given_num + 1):

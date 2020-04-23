@@ -2,7 +2,7 @@
 """
 Purpose: range() builtin function
 """
-__name__ = 'Author'
+
 
 list(range(0))                     # [] -> range(0, 0, 1)
 list(range(1, 0))                  # [] -> range(1, 0, 1)

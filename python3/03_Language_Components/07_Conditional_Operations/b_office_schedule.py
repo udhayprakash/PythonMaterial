@@ -6,7 +6,7 @@ Purpose: Office Schedule
     Sunday            :- Holiday
 
 """
-__name__ = 'Author'
+
 
 # week_of_day = 'Monday'
 week_of_day = input('Enter week of day:').title().strip()

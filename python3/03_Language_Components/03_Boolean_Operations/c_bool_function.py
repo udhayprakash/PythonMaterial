@@ -8,7 +8,7 @@ Purpose: bool() built-in function
     boolean
     braces
 """
-__name__ = 'Author'
+
 # bool()
 # integer type (int and float)
 #       zero     - False

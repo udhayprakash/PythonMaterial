@@ -2,7 +2,7 @@
 """
 Purpose: print different amount based on various customer types
 """
-__name__ = 'Author'
+
 
 apple = 10
 mango = 5

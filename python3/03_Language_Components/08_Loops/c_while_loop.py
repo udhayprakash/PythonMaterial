@@ -9,7 +9,7 @@ Purpose: while loop
 
 NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 """
-__name__ = 'Author'
+
 
 print('\nincrementing loop with increment first')
 i = 0  # initialization

@@ -3,7 +3,7 @@
 Purpose: Calculating the average for the
     inputted numbers in run-time
 """
-__name__ = 'Author'
+
 
 total = 0
 count = 0

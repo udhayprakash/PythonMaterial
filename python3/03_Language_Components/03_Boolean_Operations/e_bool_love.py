@@ -2,7 +2,7 @@
 """
 Purpose:
 """
-__name__ = 'Author'
+
 
 import this
 

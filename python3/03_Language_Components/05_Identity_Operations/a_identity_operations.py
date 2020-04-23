@@ -19,7 +19,7 @@ Dual Memory management Strategy
             -5 to 256  -> no new object created
             outside bounds -> new object is created for each variable
 """
-__name__ = 'Author'
+
 
 print(f'{4 == 4   = }')
 print(f'{4 == "4" = }')

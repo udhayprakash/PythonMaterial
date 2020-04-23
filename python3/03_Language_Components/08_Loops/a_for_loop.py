@@ -11,7 +11,7 @@ NOTE: for loop can be applied only on ITERABLE OBJECT
     iterable objects     - string, list, tuple, set, dictionary, iterators, generators, range
     non-iterable objects - int, float, None, bool(True/False)
 """
-__name__ = 'Author'
+
 
 # int
 # for i in 12123:

@@ -11,7 +11,6 @@ Purpose: Relational Operations
      != not equal to
      <> not equal to  ( in python 2 only)
 """
-__name__ = 'Author'
 
 us_dollar = 74
 canadian_dollar = 50

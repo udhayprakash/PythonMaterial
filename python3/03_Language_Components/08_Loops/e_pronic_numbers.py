@@ -6,7 +6,7 @@ Purpose: Display the pronic numbers.
  of two consecutive integers.
  Some pronic numbers: 2*3 = 6
 """
-__name__ = 'Author'
+
 
 n = int(input("Enter a number: "))
 

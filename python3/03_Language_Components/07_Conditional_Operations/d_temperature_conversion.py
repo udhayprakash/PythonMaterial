@@ -5,7 +5,7 @@ Purpose: Temperature Conversions
 
 round(number, no_of_digits_to_round_post_decimal)
 """
-__name__ = 'Author'
+
 
 temperature = input('Enter the temperature, followed by C or F:').upper()
 # print(type(temperature), temperature)

@@ -20,7 +20,7 @@ Purpose: Bitwise Operations
 
 
 """
-__name__ = 'Author'
+
 
 num1 = 60
 num2 = 13
