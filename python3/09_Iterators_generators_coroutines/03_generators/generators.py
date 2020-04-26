@@ -296,6 +296,3 @@ print(list(it.combinations(range(1, 5), 3)))
 
 print("Here are all possible replacement combinations of [1, 2, 3, 4].")
 print(list(it.combinations_with_replacement(range(1, 5), 3)))
-
-# For more examples of iterators and generators, see the itertools
-# recipes section in Python documentation.

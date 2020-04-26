@@ -21,6 +21,12 @@ print(result)
 result = sum([10, 20, 30])
 print(f'result:{result}')
 
+result = sum([10, 20, 30], 0)
+print(f'result:{result}')
+
+result = sum([10, 20, 30], -3)
+print(f'result:{result}')
+
 result = sum((10, 20, 30, 50.))
 print(f'result:{result}')
 

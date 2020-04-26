@@ -1,6 +1,7 @@
 non-iterable objects ====> int, float, None, True, False ..
 Iterable objects     ====> str, list, tuple, dict, set, itertor, generator, range()
 
+
 range(9)
     - range(0, 9,1)  => 0
     - range(1,9, 1)  => 1
@@ -8,20 +9,17 @@ range(9)
     - range(3,9, 1)  => 3
     ....
 
-collections - iter() 
 
-list - iter() -> list iterator 
+iter() 
+
+str   - iter() -> string iterator
+list  - iter() -> list iterator 
 tuple - iter() -> tuple iterator 
-set - iter() -> set iterator 
-dict - iter() 
+set   - iter() -> set iterator 
+dict  - iter() 
             -> dict key iterator 
             -> dict value iterator 
             -> dict item iterator 
 
 
 user-defined function -- > generators
-
-============================================================
-# basic types - int, long, float, str, ...
-# collections - list, tuple, set, dict    - iter() - iterators
-# fuctions    - generators
