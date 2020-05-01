@@ -1,45 +1,45 @@
-import sys
+#!/usr/bin/python
+"""
+Purpose: Generating pydoc documentation
+    for custom module
+"""
+
 import pydoc
-import example
+import os 
+import sys
+from my_module import calculator
 
 # import re
 
-"""
-This is the first line.
-
-This is second line.
-This is third line
-fourth
-fifth
-"""
-
-
 def output_help_to_file(filepath, request):
-    f = open(filepath, 'w')
-    sys.stdout = f
-    pydoc.help(request)
-    f.close()
+    with open(filepath, 'w') as f:
+        sys.stdout = f
+        pydoc.help(request)
+        f.close()
     sys.stdout = sys.__stdout__
     return
 
 
-output_help_to_file('newfile.txt', example)
 
-# output_help_to_file(r'test.txt', 're')
+if __name__ == '__main__':
+    if not os.path.exists('docs'):
+        os.mkdir('docs')
 
-print(dir(__name__))
-print(__name__.__doc__)
+    output_help_to_file(r'docs/calculator.txt', calculator)
 
-print(pydoc.help(__name__))
+    output_help_to_file(r'docs/re.txt', 're')
 
-print(pydoc.render_doc(__name__))
+    # print(dir(__name__))
+    # print()
+    # print(__name__.__doc__)
 
-with open('file1.txt', 'wb') as a:
-    a.write(pydoc.render_doc(__name__))
-    a.close()
+    print(pydoc.help(__name__))
+    print()
+    print(pydoc.render_doc(__name__))
 
-with open('file2.txt', 'wb') as a:
-    sys.stdout = a
-    pydoc.render_doc(__name__)
-    sys.stdout = sys.__stdout__
-    a.close()
+
+    with open('docs/__name__.txt', 'w') as a:
+        a.write(pydoc.render_doc(__name__))
+        a.close()
+
+    output_help_to_file(r'docs/__name__2.txt', calculator)

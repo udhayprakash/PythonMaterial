@@ -1,0 +1,15 @@
+Python Library Documentation: module __main__
+
+NNAAMMEE
+    __main__
+
+FFUUNNCCTTIIOONNSS
+    oouuttppuutt__hheellpp__ttoo__ffiillee(filepath, request)
+
+DDAATTAA
+    ____aannnnoottaattiioonnss____ = {}
+    aa = <_io.TextIOWrapper name='docs/__name__.txt' mode='w' encoding='cp1...
+
+FFIILLEE
+    d:\megasync\python-related\training\python_related\python_batch153\10_modules\12_user_defined_modules\saving_pydoc_output.py
+

@@ -1,3 +1,13 @@
+To create .pyc files, 
+    In command line,
+          python -m python_script
+      Ex: python -m fibScript
+
+In python code, 
+    import py_compile
+    py_compile.compile('fibScript.py')   
+
+
 To decompile compiled pyc/pyo files to see original code, 
     Installation:
         pip install uncompyle6

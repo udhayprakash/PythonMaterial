@@ -1,3 +1,8 @@
+#!/usr/bin/python
+"""
+Purpose: Usage of newScript python script
+"""
+
 import newScript
 
 print(dir(newScript))

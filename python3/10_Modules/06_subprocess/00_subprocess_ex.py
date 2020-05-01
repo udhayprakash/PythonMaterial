@@ -13,6 +13,5 @@ p = subprocess.Popen(command_to_execute, shell=True,
                      stderr=subprocess.PIPE)
 output, err = p.communicate()
 
-breakpoint()
 print(f'output:{output.decode("utf-8")}')
 print(f'Error: {err.decode("utf-8")}')
