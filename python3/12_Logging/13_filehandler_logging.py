@@ -1,10 +1,8 @@
 #!/usr/bin/python
-# fifth.py
+"""
+Purpose: Demonstartion of logging
+"""
 import logging
-
-'''
-	Purpose: Demonstartion of logging
-'''
 
 # defining the handler
 han = logging.FileHandler('09_logging.log')
@@ -20,6 +18,7 @@ logger = logging.getLogger('newApp')
 
 # Adding the handler to the logger. 
 logger.addHandler(han)
+
 
 logger.debug("Hello this is a debug message")
 logger.info("Hello this is information")

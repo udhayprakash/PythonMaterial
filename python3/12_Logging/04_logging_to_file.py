@@ -1,9 +1,13 @@
+#!/usr/bin/python
+"""
+Purpose: logging configuration 
+"""
 import logging
 
 # basicConfig - to set the format of log test
 
 logging.basicConfig(
-    filename='03_logging.log', # filemode='a',
+    filename='03_logging.log', filemode='w', # 'a' - default
     level=logging.DEBUG)
 
 logging.debug("This is a debug1")

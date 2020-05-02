@@ -34,7 +34,7 @@ class Loggable(object):
         self.logger.log(severity or self.logLevel, logLine)
 
     def warn(self, logLine):
-        self.logger.warn(logLine)
+        self.logger.warning(logLine)
 
 
 class MyClass(Loggable):

@@ -1,12 +1,18 @@
 #!/usr/bin/python
 """
-Purpose; multiple loggers 
+Purpose: multiple loggers 
         - FileHandler 
         - StreamHandler
 """
 import logging
 import sys
 import os
+
+# print(f'{__file__ =}')
+# print(os.path.splitext(__file__))
+# print(os.path.splitext(__file__)[0])
+# print(os.path.splitext(__file__)[0] + '.log')
+
 
 fmt = logging.Formatter('%(asctime)s %(levelname)8s %(name)s %(message)s')
 

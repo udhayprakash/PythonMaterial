@@ -19,12 +19,12 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(messa
 
 handler = TimedRotatingFileHandler(os.path.splitext(__file__)[0] + '.log',
                                    when="S",  # Seconds
-                                   interval=3,
+                                   interval=5,
                                    backupCount=5)
 
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-for _ in range(30):
-    logger.info("This is a test!")
+for i in range(30):
+    logger.info(f"This is log number: {i:2}")
     time.sleep(1)
