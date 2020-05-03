@@ -24,7 +24,7 @@ print(re.search(r'\d+', 'cost of apples is $150 per basket').group())  # 150
 print(re.search(r'\d?', 'cost of apples is $150 per basket').group())  # 1
 
 # re.match() -> to get a pattern at first of search string
-# re.match() -> to get a pattern at any place in search string
+# re.search() -> to get a pattern at any place in search string
 
 # re.findall() -> to get all the patterns within the search string
 print(re.findall('python', 'PYTHON python PYTHon pYTHon43454'))

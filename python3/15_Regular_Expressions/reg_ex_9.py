@@ -32,4 +32,4 @@ print(f'result:{result}')  # None
 
 # To get the target string with 5 characters only
 result = re.search('^.....$', "PyTHO", re.I)
-print(f'result:{result}')  # None
+print(f'result:{result}')  # PyTHO

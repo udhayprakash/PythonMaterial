@@ -30,6 +30,6 @@ print(re.search(r'(\w+)\s(\w+)', 'Udhay Prakash').group(2))  # Prakash
 print()
 
 
-print(re.search('(\w+)\W(\w+)', 'Udhay Prakash').groups())
+print(re.search(r'(\w+)\W(\w+)', 'Udhay Prakash').groups())
 # ('Udhay', 'Prakash')
 
