@@ -12,7 +12,7 @@ with open('other_file2.csv', 'w', newline='') as gh:
     # To write the headers
     writer.writerow(header_names)
 
-    print(dir(writer))
+    # print(dir(writer))
     writer.writerow([1, 'akhila', 11, 'carpenter'])
     writer.writerows([
         [2, 'hiral', 12, 'software'],

@@ -20,9 +20,10 @@ root.append(child1)
 child2 = etree.Element('child2')
 child2.text = 'some text'
 root.append(child2)
+
 child1.append(child2)
 
 # pretty string
 s = etree.tostring(root, pretty_print=True)
-print(s)
+# print(s)
 print(s.decode('utf-8'))

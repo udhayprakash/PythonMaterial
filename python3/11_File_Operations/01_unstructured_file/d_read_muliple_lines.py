@@ -6,7 +6,8 @@ Purpose: file read operations
     fh.readline()
     fh.readlines()
 """
-fh = open('other_file.tsf', 'r')
+
+fh = open('something.tsf', 'r')
 
 complete_content = fh.read(7)  # -> str
 print(f'type(complete_content)  :{type(complete_content)}')

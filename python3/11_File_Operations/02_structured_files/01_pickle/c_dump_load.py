@@ -26,6 +26,8 @@ with open('serialized_data.pkl', 'rb') as g:
     retrieved_data = pickle.load(g)
     print(f'retrieved_data: {retrieved_data} {type(retrieved_data)}')
 
+
+
 # ---------------------------
 data = True
 

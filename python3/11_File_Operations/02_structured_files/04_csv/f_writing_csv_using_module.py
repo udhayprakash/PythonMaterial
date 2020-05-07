@@ -11,13 +11,15 @@ with open('other_file.csv', 'w', newline='') as gh:
     # To write the headers
     writer.writeheader()
 
-    print(dir(writer))
+    # To write a single record
     writer.writerow({
         'sno': 1,
         'name': 'akhila',
         'age': 11,
         'designation': 'carpenter'
     })
+
+    # To write multiple records 
     writer.writerows([
         {
             'sno': 2,
@@ -32,4 +34,6 @@ with open('other_file.csv', 'w', newline='') as gh:
             'designation': 'business'
         }
     ])
+
+
     gh.close()

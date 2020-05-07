@@ -9,8 +9,10 @@ root = Element('root')
 child = SubElement(root, 'child')
 child.text = 'I am a child'
 
+child2 = SubElement(root, 'child2')
+
 # To a xml string
-print(tostring(root))
+# print(tostring(root))
 result_str = tostring(root).decode('utf-8')
 print(result_str)
 

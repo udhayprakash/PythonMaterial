@@ -7,22 +7,19 @@ file operations
 
     default is read mode
 """
-fh = open('other_file.tsf', 'w')
+
+fh = open('something.tsf', 'w')
 
 # To write a single line
 fh.write('first line\n')
 
-strings = ['first\n', 'second\n', 'third\n', 'fourth\n']
-# for each_ele in strings:
-#     fh.write(each_ele)
+lines = ['second\n', 'third\n', 'fouth\n', 'fifth']
+# Method 1 - To write multiple lines
+# for each in lines:
+#     fh.write(each)
 
-# To write multiple lines
-fh.writelines(strings)
-
-# flushing
-fh.flush()
+# Method 2 - To write multiple lines
+fh.writelines(lines)  # it excepts iteratable of strings
 
 # closing the file handler
 fh.close()
-
-# Assignment  - fh.writeline

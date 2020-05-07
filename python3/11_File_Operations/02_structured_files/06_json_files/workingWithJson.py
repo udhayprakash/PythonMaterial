@@ -28,8 +28,6 @@ with open('ebook.json', 'rb') as g:
 print("data = ", data)
 
 print('\nprinting using pretty print')
-import pprint
-
 pprint.pprint(data)
 pprint.pprint(data, indent=4)
 

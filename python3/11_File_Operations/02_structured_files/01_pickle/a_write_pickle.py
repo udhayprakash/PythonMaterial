@@ -9,10 +9,12 @@ Purpose: Pickle file operations
             dumps -- into a python string
 
     De-serialization
-        string/file --> flattened content -> python objects
+        string/file --> unflattened content -> python objects
 
             load  -- from a file
             loads -- from a python string
+
+.pickle/.pkl
 """
 import pickle
 
