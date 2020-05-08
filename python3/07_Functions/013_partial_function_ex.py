@@ -29,3 +29,13 @@ Assignments
 1) Develop a calculator software which does +, -, *, / operations
     Then, make use of partial functions to optimize your solution.
 '''
+# ----------------------------------------------
+basetwo = functools.partial(int, base=2)
+basetwo.__doc__ = "Convert base 2 string to an int."
+
+print(basetwo("10010"))
+
+basetwo = functools.partial(bin)
+basetwo.__doc__ = "Convert an int to base 2 string."
+
+print(basetwo(18))

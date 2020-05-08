@@ -5,7 +5,7 @@ world made with python blog
 	- https://udhayprakash.blogspot.in/2015/07/world-made-with-python.html
 
 python survey by jetbrains
-	- https://www.jetbrains.com/research/python-developers-survey-2018/
+	- https://www.jetbrains.com/lp/python-developers-survey-2019/
 	
 Python installation in windows (installation not required in linux/Unix/os x)
 	- https://www.youtube.com/watch?v=86wSlQLCkV8
