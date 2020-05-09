@@ -1,3 +1,7 @@
+#!/usr/bin/python
+"""
+Purpose: Parsing an ini file
+"""
 from configparser import ConfigParser
 
 parser = ConfigParser()

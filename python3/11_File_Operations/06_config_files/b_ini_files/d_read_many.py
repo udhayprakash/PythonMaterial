@@ -2,10 +2,8 @@ from configparser import ConfigParser
 
 parser = ConfigParser()
 
-candidates = ['does_not_exist.ini', 'also-does-not-exist.ini',
-              'simple.ini', 'multisection.ini',
-              ]
-
+candidates = ('does_not_exist.ini', 'also-does-not-exist.ini',
+              'simple.ini', 'multisection.ini')
 found = parser.read(candidates)
 
 missing = set(candidates) - set(found)
