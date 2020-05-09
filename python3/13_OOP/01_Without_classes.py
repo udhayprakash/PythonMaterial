@@ -1,32 +1,53 @@
 #!/usr/bin/python
 """
 Purpose: without OOPS, solving a problem
+
+    Problem - To create a saving bank with facilitates transactions
+
+        customer 1 
+                                                Balance
+            Account creation                        0                                    
+            Transaction 1 - deposit  1000        1000
+            Transaction 2 - withdraw  200         800
+
+        Customer 2 
+                                                Balance
+            Account creation                        0                                    
+            Transaction 1 - deposit  3500        3500
+            Transaction 2 - withdraw  550        2950
+
 """
-
-
 def new():
     return {'balance': 0}
 
-
 def deposit(account, amount):
+    print(f'\tDeposited {amount}')
     account['balance'] += amount
-    return account['balance']
-
+    return account['balance'] 
 
 def withdraw(account, amount):
-    account['balance'] -= amount
-    return account['balance']
+    print(f'\tWithdrawn {amount}')
+    account['balance'] += amount
+    return account['balance'] 
 
 
 if __name__ == '__main__':
-    Akhila = new()
-    print(f"Akhila - initial balance {Akhila['balance']}")
-    deposit(Akhila, 1000)
-    print(f"Akhila - After salary    {Akhila['balance']}")
-    withdraw(Akhila, 300)
-    print(f"Akhila - After withdrawl {Akhila['balance']}")
+    # Priyanka
+    Priyanka = new()
+    print(f'Priyanka initial balance :{Priyanka["balance"]}')
+    deposit(Priyanka, 1000)
+    print(f'Priyanka current balance :{Priyanka["balance"]}')
 
-    Neha = new()
-    print(f"\nNeha   - initial balance {Neha['balance']}")
-    deposit(Neha, 2300)
-    print(f"Neha - After scolarship  {Neha['balance']}")
+    deposit(Priyanka, 2500)
+    print(f'Priyanka current balance :{Priyanka["balance"]}')
+    
+    withdraw(Priyanka, 750)
+    print(f'Priyanka current balance :{Priyanka["balance"]}')
+
+    print()
+    # Varun
+    Varun = new()
+    print(f'Varun    initial balance :{Varun["balance"]}')
+
+    deposit(Varun, 99)
+    print(f'Varun    current balance :{Varun["balance"]}')

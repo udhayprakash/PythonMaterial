@@ -1,20 +1,7 @@
+#!/usr/bin/python
 """
-
-database 
-    - relational/structured db 
-        - File based 
-            - sqlite3
-        - port based 
-            - mysql / maria db
-            - ms sql 
-            - oracle 
-    - no sql db 
-        - port based 
-            - mongo db 
-            - cassandra db 
-
+Purpose: Working with sqlite3 
 """
-
 import sqlite3
 from sqlite3 import Error
 
