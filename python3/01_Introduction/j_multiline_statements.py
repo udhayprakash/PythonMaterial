@@ -1,23 +1,28 @@
 #!/usr/bin/python
 """
-Purpose: Multiline statements
+Purpose: Working with multi-line statements
+
+Python is a interpreter-based language 
+    - Each line executes separates 
+    - \ -> Line Continuation Operator
+        - WIll join more than one line to a single statement
 
 
-\ line continuation operator
+Brace 
+    ()  paranthesis
 
-()
-
-[]
-{}
-Python is interpreter based language
-    _ It means that each line executes separately
+    []  square braces
+    {}  flower bracs
 """
 
-sum_of_values = 12 + 45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + 34534 + 34234 + 67 \
+sum_of_values = 12 + 45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 \
+                + 34534 + 34234 + 67343 - 34234 + 34 + 454 + 42534 + 34 \
                 + 454 - 435 - 43534 - 34 + 454 + 42534 + 34 / 34 + 34534 - \
-                45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + 34534 + 34234  # asdsad
+                45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 + \
+                34534 + 34234  # arithmetic operation
+print(sum_of_values)  # display the result
 # NOTE:After line continuation operator, even comments should not be added
-print('sum_of_values:', sum_of_values)
+
 
 sum_of_values = (12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
@@ -29,9 +34,8 @@ sum_of_values = (12 + 45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234)
+print(sum_of_values)
 
-print('sum_of_values:', sum_of_values)
-# PEP 8 recommends not to use both together
 
 sum_of_values = [12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
@@ -43,9 +47,8 @@ sum_of_values = [12 + 45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234]
+print(sum_of_values)
 
-print('sum_of_values:', sum_of_values)
-#
 sum_of_values = {12 + 45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234 + 67
                  + 454 - 435 - 43534 - 34 + 454 +
@@ -56,5 +59,4 @@ sum_of_values = {12 + 45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  45 + 34534545 + 343 - 34234 + 34 +
                  454 + 42534 + 34 / 34 + 34534 + 34234}
-
-print('sum_of_values:', sum_of_values)
+print(sum_of_values)

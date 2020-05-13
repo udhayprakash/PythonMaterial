@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Basic PEP 8 guidelines and shebang line
+Purpose: Basic PEP8 guidelines and shebang line
 """
 
 # print as a statement in python 2
@@ -9,4 +9,4 @@ Purpose: Basic PEP 8 guidelines and shebang line
 
 # print as a function in python  2 & 3
 print("Hello world!")
-print(123)
+print(1232)

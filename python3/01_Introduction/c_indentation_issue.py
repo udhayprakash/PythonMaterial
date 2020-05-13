@@ -1,17 +1,17 @@
 #!/usr/bin/python
 """
-Purpose: Importance of Indentation
+Purpose: Importance of Indendation
 """
-print('Hello world')
-# print('Hello world2')  # IndentationError: unexpected indent
-
+print('Hello World')
+#    print('hello World 2')  # IndentationError: unexpected indent
+print('hello World 2')
 
 # block code - if, else, elif, for, while, def , class, ...
-# if 12>3:
-# print('IT is greater') # IndentationError: expected an indented block
+# if 12 > 3:
+# print('greater')            #IndentationError: expected an indented block
 
 if 12 > 3:
-    print('IT is greater')
+    print('greater')
 
 if 12 > 34:
     print('greater')
@@ -24,6 +24,7 @@ elif 2 > 1:
     print('case 2')
 else:
     print('case 3')
+
 
 if 1 < 2:
     if 2 < 3:
@@ -64,4 +65,7 @@ class MyClass:
 
 # tabs vs white-space
 # PEP 8 (Python Enhancement Proposal) - code style guide
-# Prefer white-spaces , to tabs; four white-spaces
+# Prefer white-spaces, to tabs; four white-spaces
+
+
+# tabspace 2 whitespace 
