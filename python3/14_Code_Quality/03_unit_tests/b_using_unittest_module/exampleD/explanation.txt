@@ -1,0 +1,8 @@
+To run a specific test script, 
+    python test_mymod.py 
+
+To run all the test script in the directory, 
+    python -m unittest
+
+    Then, It will run all the files which have 'test_' as prefix. 
+    

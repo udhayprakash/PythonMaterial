@@ -8,7 +8,7 @@ import unittest
 class TestSuite(unittest.TestCase):
     num1 = 50
     num2 = 40
-
+    
     def test01_addition(self):
         """
         Logic for addition and its test
@@ -19,6 +19,7 @@ class TestSuite(unittest.TestCase):
     @unittest.skipIf(num1 > num2, 'Skip over this routine')
     def test02_subtraction(self):
         result = self.num1 - self.num2
+        self.assertEqual(result, -10)
         self.assertTrue(result == -10)
 
     @unittest.skipUnless(num2 == 0, 'Skip over this routine')
@@ -30,7 +31,7 @@ class TestSuite(unittest.TestCase):
     @unittest.expectedFailure
     def test04_mul(self):
         result = self.num1 * self.num2
-        self.assertEqual(result == 0)
+        self.assertEqual(result , 0)
 
 
 if __name__ == '__main__':

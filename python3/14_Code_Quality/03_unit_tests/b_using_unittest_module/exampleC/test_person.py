@@ -1,3 +1,7 @@
+#!/usr/bin/python 
+"""
+Purpose: unit tests for person.py file 
+"""
 import unittest
 from person import Person
 
@@ -12,17 +16,16 @@ class TestingPerson(unittest.TestCase):
         print('p.get_name(user_id)', p.get_name(user_id))
         self.assertEqual(test_name, p.get_name(user_id))
 
+class Testing(unittest.TestCase):
+    def test_string(self):
+        a = 'some'
+        b = 'some'
+        self.assertEqual(a, b)
 
-# class Testing(unittest.TestCase):
-#     def test_string(self):
-#         a = 'some'
-#         b = 'some'
-#         self.assertEqual(a, b)
-
-#     def test_boolean(self):
-#         a = True
-#         b = True
-#         self.assertEqual(a, b)
+    def test_boolean(self):
+        a = True
+        b = True
+        self.assertEqual(a, b)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

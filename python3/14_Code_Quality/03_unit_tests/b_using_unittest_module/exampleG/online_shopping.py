@@ -1,3 +1,14 @@
+#!/usr/bin/python
+"""
+Purpose: 
+"""
+
+class Item(object):
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+
 class ShoppingCart(object):
     def __init__(self):
         self.items = []
@@ -19,8 +30,3 @@ class ShoppingCart(object):
     def __len__(self):
         return len(self.items)
 
-
-class Item(object):
-    def __init__(self, item, price):
-        self.item = item
-        self.price = price

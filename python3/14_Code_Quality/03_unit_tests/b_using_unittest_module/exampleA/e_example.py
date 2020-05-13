@@ -1,10 +1,14 @@
-import time
-import unittest
+#!/usr/bin/python 
+"""
+Purpose: Performance (time) testing 
+"""
 
+import time 
+from unittest import TestCase, main
 import timeout_decorator
 
 
-class TimeOutTest(unittest.TestCase):
+class TimeOutTest(TestCase):
 
     @timeout_decorator.timeout(5)
     def test_timeout(self):
@@ -16,4 +20,4 @@ class TimeOutTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

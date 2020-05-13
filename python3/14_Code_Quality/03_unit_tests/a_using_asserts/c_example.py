@@ -1,17 +1,21 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: unit testing using asserts 
+
+TDD - Test Driven Development
 """
+from typing import Any 
 
-
-def hello_world(name='World'):
-    return f'Hello {name}'
+def hello(name: Any) -> None:
+    print(name)
 
 
 if __name__ == '__main__':
-    # function call
-    print(hello_world('Python'))
+    # calling the function 
+    hello('Udhay')
 
-    # Adding the assertions
-    assert hello_world() == 'Hello World'
-    assert hello_world() == 'Hello world'
+    # Adding the assertions 
+    assert hello('Udhay') == None
+    assert hello('Udhay') is None
+    assert hello('Python') is None
+    assert hello('Gudo') is None

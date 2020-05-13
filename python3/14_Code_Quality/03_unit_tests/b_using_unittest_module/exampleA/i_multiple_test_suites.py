@@ -1,3 +1,7 @@
+#!/usr/bin/python 
+"""
+Purpose: Working with TestSuites
+"""
 import unittest
 
 

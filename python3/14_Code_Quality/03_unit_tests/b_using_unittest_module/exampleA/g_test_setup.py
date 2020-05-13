@@ -16,6 +16,9 @@ class TestCaseDemo(unittest.TestCase):
     def test_method2(self):
         print('test method 2')
 
+    def test_method3(self):
+        print('test method 3')
+
     def tearDown(self) -> None:
         print('tearDown method execution ...')
 

@@ -4,6 +4,21 @@ Purpose: unit testing
 
 setupClass & tearDownClass methods are executed ONCE, per test suite
 setUp & tearDown methods are executed for each test case
+
+
+setupClass 
+
+    setUp
+    test_case_1
+    tearDown
+
+    setUp
+    test_case_2
+    tearDown
+
+    ...
+    
+tearDownClass
 """
 
 import unittest

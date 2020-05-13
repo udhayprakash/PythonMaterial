@@ -36,7 +36,6 @@ class WordCounter(object):
 
     def __init__(self, source_text):
         self.source_text = source_text
-
         self.sentences = [sentence for sentence in re.split('[\.!\?]+\s*', source_text)]
 
         self.words = dict()

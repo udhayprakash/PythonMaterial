@@ -9,9 +9,6 @@ types of methods:
 3. class methods
 
 
-
-
-
 OOP
     - Data binding ( variables and methods)
     - encapsulation - data  hiding 

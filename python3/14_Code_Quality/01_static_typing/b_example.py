@@ -13,10 +13,8 @@ def hello():
 
 hello()
 
-
 # -------------------------------------
 # Method 2: Adding typing
-# Method 1 : Traditional approach
 def hello() -> None:
     print('Hello world')
 

@@ -1,30 +1,25 @@
 #!/usr/bin/python
 """
-Purpose: Addition function
+Purpose: unit testing using asserts 
+
+Symantic:
+    assert <statement>, "Error Message, if statement is incorrect"
 """
 
+assert 1 + 2 == 3
+assert 1 + 2 == 3, '1+2 is not equal to 3'
 
-def addition(n1, n2):
-    # return int(n1) + int(n2)
-    return float(n1) + float(n2)
+try: 
+    assert 10 - 34 > 3
+except AssertionError as ex:
+    print(f'Error is {ex}')
 
 
-if __name__ == '__main__':
-    # calling the function
-    result = addition(10, 20)
-    print(f'result:{result}')
+try: 
+    assert 10 - 34 > 3, 'This statement is incorrect'
+except AssertionError as ex:
+    print(f'Error is {ex}')
 
-    print('result == 30:', result == 30)
 
-    assert addition(10, 20) == 30, "Incorrect result"
-    assert addition(10, 20.0) == 30.0, "Incorrect result"
-    assert addition(10.0, 20) == 30.0, "Incorrect result"
-    assert addition(10.0, '20') == 30.0, "Incorrect result"
-    assert addition('10.0', 20) == 30.0, "Incorrect result"
-    assert addition('10.0', '20') == 30.0, "Incorrect result"
-
-    try:
-        assert addition('10.0', True) == 30.0, "Incorrect result"
-    except AssertionError as ex:
-        print(repr(ex))
-        print(addition('10.0', True))  # 11.0
+assert 1 == True
+# assert '1' == str(True)

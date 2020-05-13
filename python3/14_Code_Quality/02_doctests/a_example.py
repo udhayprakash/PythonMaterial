@@ -12,14 +12,13 @@ def square(x):
     4
     >>> square(-2)
     4
-    >>> square(2.5)
-    6.25
-    >>> square(-2.5)
-    6.25
+    >>> square(-0.002)
+    4e-06
+    >>> square(0.002)
+    4e-06
     """
-    return x * x
-
+    return x * x 
 
 if __name__ == '__main__':
     doctest.testmod()
-    print(square(2))
+    print(square(2)) 

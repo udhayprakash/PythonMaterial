@@ -13,6 +13,8 @@ def add_two_numbers(m, n):
     46
     >>> add_two_numbers('12', 34)
     46
+    >>> add_two_numbers(12.0, 34.00000000)
+    46
     """
     # return m + n
     return int(m) + int(n)

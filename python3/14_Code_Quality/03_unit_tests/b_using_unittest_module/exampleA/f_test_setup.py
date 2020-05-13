@@ -16,6 +16,5 @@ class TestCaseDemo(unittest.TestCase):
     def tearDown(self) -> None:
         print('tearDown method execution ...')
 
-
 if __name__ == '__main__':
     unittest.main()

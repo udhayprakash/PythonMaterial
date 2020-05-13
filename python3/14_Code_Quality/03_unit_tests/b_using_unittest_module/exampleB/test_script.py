@@ -1,13 +1,11 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: unit test for script.py file 
 """
 import unittest
-
 from script import add_one
 
 print(f'add_one(12):{add_one(12)}')
-
 
 class MyTestSuite(unittest.TestCase):
     def testing01_equivalence(self):

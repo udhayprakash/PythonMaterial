@@ -1,20 +1,36 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: unit testing using asserts 
+
+TDD - Test Driven Development
 """
-from typing import Any
 
-
-def hello(name: Any) -> None:
-    print(name)
+def addition(n1, n2):
+    return float(n1) + float(n2)
+    # return int(n1) + int(n2)
+    # return n1 + n2 
 
 
 if __name__ == '__main__':
-    # calling the function
-    hello('Python')
+    result = addition(10, 20)
+    print(f'{result =}')
 
-    # Adding the assertions
-    # assert hello('Python') == None
-    assert hello('Python') is None
-    assert hello('Udhay') is None
-    assert hello('prakash') is None
+    print(f'{result == 30 =}')
+
+    assert addition(10, 20) == 30, "Incorrect result"
+
+    assert addition(10, 20.0) == 30.0, "Incorrect result"
+    assert addition(10.0, 20) == 30.0, "Incorrect result"
+    assert addition(10.0, 20.0) == 30.0, "Incorrect result"
+
+    assert addition(10.0, '20') == 30.0, "Incorrect result"
+    assert addition('10', '20') == 30.0, "Incorrect result"
+
+    assert addition('10.0', 20) == 30.0, "Incorrect result"
+    assert addition('10.0', '20.0') == 30.0, "Incorrect result"
+
+    try:
+        assert addition('10.0', True) == 30.0, "Incorrect result"
+    except AssertionError as ex:
+        print(repr(ex))
+        print(f"{ addition('10.0', True) =}")

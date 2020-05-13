@@ -1,20 +1,23 @@
-def foo(word='world'):
+#!/usr/bin/python 
+
+def hello(name='world!'):
     """
-    >>> foo()
-    hello ...
+    >>> hello()
+    Hello world!
 
-    >>> foo()
-    hello world
+    >>> hello()
+    Hello ...
 
-    >>> foo('brother')
-    hello brother
-
+    >>> hello('Michel')
+    Hello Michel
     """
-    print("hello " + word)
+    print(f'Hello {name}')
 
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     import doctest
 
-    # doctest.testmod(optionflags=doctest.ELLIPSIS)
+    # doctest.testmod()
+    doctest.testmod(optionflags=doctest.ELLIPSIS)
     doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)

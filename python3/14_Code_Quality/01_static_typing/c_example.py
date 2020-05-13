@@ -13,12 +13,11 @@ def hello(name):
 
 hello('Python')
 
-
 # ---------------------------------
 # Method 2: Adding Typing
-# Method 1 : Traditional approach
 def hello(name: str) -> None:
     print(f'Hello {name}')
 
 
 hello('Python')
+hello(321323)
