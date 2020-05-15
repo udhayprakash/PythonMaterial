@@ -1,29 +1,43 @@
 #!/usr/bin/python
 """
-Purpose: Grocery Store
+Purpose: Grocery Store 
 
     Item       cost         
     ------------------------
-    rice        52/kg       
+    rice        10/kg       
     wheat       34/kg       
 
-input() -> to get value in run-time
+Algorithm
+----------
+Step 1: Get the cost of items into variables
+Step 2: Get the quantity of items from the user(in run time)
+
+
+NOTE: input() 
+        -> to get value in run-time
         -> will give any input as string only
 """
-
 # cost of items
-cost_of_rice = 52  # per kg
-cost_of_wheat = 34  # per kg
+cost_of_rice = 10  # per kg 
+cost_of_wheat = 34 # per kg
 
-# quantity of items
-qty_of_rice = float(input('Enter qty of rice(loosely):'))
-print('qty_of_rice', qty_of_rice, type(qty_of_rice))
+# Quantities of Items
+qty_of_rice = input('Enter Qty. of Rice  (in Kgs):')
+qty_of_rice = int(qty_of_rice)
+print('Qty of Rice  :', qty_of_rice, type(qty_of_rice))
 
-qty_of_wheat = int(input('Enter qty of wheat needed:'))
-print('qty_of_wheat', qty_of_wheat, type(qty_of_wheat))
+# qty_of_wheat = input('Enter Qty. of Wheat(in Kgs):')
+# qty_of_wheat = int(qty_of_wheat)
 
-# data type converters: int(), float(), str()
+qty_of_wheat = int(input('Enter Qty. of Wheat(in Kgs):'))
+print('Qty of Wheat :', qty_of_wheat, type(qty_of_wheat))
 
-# Total Amount
-total_amount = cost_of_rice * qty_of_rice + cost_of_wheat * qty_of_wheat
-print('Total Amount :', total_amount)
+# Selling Price Calculation
+sp_of_rice = cost_of_rice * qty_of_rice
+print('SP of Rice  :', sp_of_rice)
+
+sp_of_wheat = cost_of_wheat * qty_of_wheat
+print('SP of Wheat :', sp_of_wheat)
+
+total_sp = sp_of_rice + sp_of_wheat
+print('Total SP    :', total_sp)

@@ -47,6 +47,7 @@ num6 = 9999999956456434344343242343232423423423423423423432432423434
 print('num6=', num6, type(num6))
 
 # Question 2: what is the smallest number that can be processed in python
+
 num6 = 0.00002130213869388792183798798321989812739
 print('num6=', num6, type(num6))
 

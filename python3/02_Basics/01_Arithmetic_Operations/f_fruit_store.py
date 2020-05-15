@@ -1,51 +1,68 @@
 #!/usr/bin/python
 """
-Purpose: fruit store
+Purpose: Fruit Store
 
     Items   price       qty                         amount
-    ------------------------------------------------------
+    -----------------------------------------------------------
     Apples   12/piece   5 dozens = 5 * 12 = 60      12 * 60 
     Mangos   34/piece   3 dozens = 3 * 12 = 36      34 * 36
-                                                -----------
-                                        discount     2 %
-                                        GST         12.5 %
+                                                ---------------
+                                                      1944   /-
+                                discount     -2 %     - 38.88/-
+                                                ---------------
+                                                      1905.12/-   
+                                GST         +12.5 %   +238.14/-
+                                                ---------------
+                                                      2143.26/-
 
+
+Algorithm
+---------
+Step 1:  Get the cost of fruits into variables
+Step 2:  Get the quantity of fruits into variables. 
+         Compute the end quantity, by substituting dozen value.
+Step 3:  Compute the selling price to each item, 
+         and add them
+Step 4:  Compute the discount amount and subtract 
+         from the selling price, to create payable amount
+Step 5:  Calculate GST amount and Add to payable amount, 
+         to create billable amount
+
+NOTE: Python Execution Flow -> Top to Bottom & Left to Right
 """
-# constants
+# constant
 DOZEN = 12
 DISCOUNT = 2
 GST = 12.5
 
-# Cost of fruits
-cost_of_apple = 12  # per piece
-cost_of_mango = 34  # per piece
+# cost of fruits 
+cost_of_apple = 12 # per piece 
+cost_of_mango = 34 # per piece
 
-# Quantity of fruits
-qty_of_apples = 5 * DOZEN
-qty_of_mangos = 3 * DOZEN
+# Quantities of fruits 
+qty_of_apples = 5 * DOZEN # pieces
+qty_of_mangos = 3 * DOZEN # pieces 
 
-# # Selling Prices
-# sp_of_apples = cost_of_apple * qty_of_apples
-# sp_of_mangos = cost_of_mango * qty_of_mangos
-#
-# # Total amount
-# total_amount = sp_of_apples + sp_of_mangos
 
-total_amount = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos
-print('Total Amount     :', total_amount)
+# Selling Price Computation 
+total_sp = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos   # PEMDAS
+print('Total Selling Price :', total_sp)
 
-# Discount
-discount = (total_amount * DISCOUNT) / 100
-print('Discount Amount  :', discount)
 
-# payable amount
-payable_amount = total_amount - discount
-print('payable_amount   :', payable_amount)
+# Discount Calculation 
+discount_amount = (total_sp * DISCOUNT) / 100
+print('Discount Amount     :', discount_amount)
 
-# GST calculation
+# Payable Amount Calculation
+payable_amount = total_sp - discount_amount
+print('Payable Amount      :', payable_amount)
+
+
+# GST Calculation 
 gst_on_fruits = (payable_amount * GST)/ 100
-print('GST Amount       :', gst_on_fruits)
+print('GST on Fruits       :', gst_on_fruits)
 
-# Billable Amount
+# Billable Amount Calculation 
 billable_amount = payable_amount + gst_on_fruits
-print('Billable Amount  :', billable_amount)
+# print('Billable Amount     :', billable_amount)
+print('Billable Amount(r)  :', round(billable_amount, 2))
