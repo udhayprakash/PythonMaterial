@@ -3,9 +3,7 @@ try:
 except ImportError:
     from os import system
 
-    system('pip install requests')
-    import requests
-"""
+    system('pip install request"""
 Purpose: to get the ISS pass time over a particular location on earth
     API ref: http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
 
@@ -17,7 +15,9 @@ REST API
         - PUT
         - DELETE
         
-"""
+"""s')
+    import requests
+
 
 # Set up the parameters we want to pass to the API.
 # This is the latitude and longitude of New York City.
