@@ -1,87 +1,112 @@
 #!/usr/bin/python
 """
-Basic Types: int, float, str
-    int - decimal       - int()
-        - binary        - bin()
-        - hexadecimal   - hex()
-        - octal         - oct()
+Purpose: Data Type Conversions
 
-Type converters:
-    int(),  float(), 
-    
-    str(), repr()
+        int - decimal       - int() -base 10  (0-9)
+            - binary        - bin() -base  2  (0-1)
+            - hexadecimal   - hex()
+            - octal         - oct()
+        float 
+            float()
+        String
+            str()
 
-    bin(), hex(), oct()
+
+int -> float 
+int -> str 
+
+float -> int 
+float -> str
+
+str  -> int 
+str -> float 
 """
-#####################################
-num1 = 12
-print('num1      ', num1)
-print('type(num1)', type(num1))
+num = 12 
+print('num=', num, type(num))
 
-# int to int = int
-num2 = int(num1)
-print('num2      ', num2)
-print('type(num2)', type(num2))
+# int -> float 
+print(12, float(12))  # 12 12.0
 
-#####################################
-num3 = 1233222222222222222999999993333333
-print('num3      ', num3)
-print('type(num3)', type(num3))
+# int -> str 
+print(12, str(12))   # 12 '12'
 
-# int to int  --> no exception, but not converted
-num4 = int(num3)
-print('num3      ', num3)
-print('type(num3)', type(num3))
+# float -> int 
+print(3.1416, int(3.1416))  # 3.1416,  3
+print(3.1416, str(3.1416))  # 3.1416, '3.1416'
 
-#####################################
-num5 = 3.14161718
-print('num5      ', num5)
-print('type(num5)', type(num5))
+# str  -> int
+print('23', int('23'))      # '23 ', 23
+print('23 ', int('23 '))    # '23 ', 23
+# print('2 3', int('2 3'))  # ValueError: invalid literal for int() with base 10: '2 3'
+# print('two', int('two'))  # ValueError: invalid literal for int() with base 10: 't
 
-# float to int  --> decimal part will be truncated
-num6 = int(num5)
-print('num6      ', num6)
-print('type(num6)', type(num6))
+# print('23.24', int('23.24')) # ValueError: invalid literal for int() with base 10: '23.24'
 
-# number as string to int
-num7 = int('356')
-print('num7      ', num7)
-print('type(num7)', type(num7))
+# str -> float 
+print('23   ', float('23'))    # '23   ', 23.0
+print('23.24', float('23.24')) # '23.24', 23.24
+print('23.  ', float('23.'))   # '23.  ', 23.0
+# print('2 3. ', float('2 3.'))  # ValueError: could not convert string to float: '2 3.'
 
-# # string to int
-# num8 = int('three') # ValueError: invalid literal for int() with base 10: 'Hello'
-# print('num8      ', num8)
-# print('type(num8)', type(num8))
 
-# ----------------
-#     128 64 32 16 8 4 2 1
-# 9 -> 0   0  0  0 1 0 0 1
-# 23 >           1 0 1 1 1
+# NOTE: Anything can be converted to str; but not vice versa
+print('str(12)', str(12))
+print('str(121233.12323)', str(121233.12323))
+print('str(-0.000012)', str(-0.000012))
+print('str(True)', str(True))
+print('str(None)', str(None))
+print()
 
-# decimal to binary
-print('bin(9) ', bin(9))
-print('bin(23)', bin(23))
+# int Value is same in all four representations
+# decimal, binary, hexadecimal & octal 
 
-# binary to decimal
-print(int('0b1001', base=0))
-print(int(bin(9), base=0))
+num1 = 33
+print('num1 =', num1, type(num1)) # -> Decimal form 
 
-print((9).bit_length())  # 4
-print((23).bit_length())  # 5
+# decimal -> binary form 
+print(23, bin(23), type(bin(23))) # 23, '0b10111'
+# print(23.24, bin(23.24), type(bin(23.24))) # TypeError: 'float' object cannot be interpreted as an integer
+print(23.24, bin(int(23.24)))     # 23.24, '0b10111'
 
-print(int(bin(-9), base=0))  # '-0b1001'
-print((-9).bit_length())  # 4
+#       128 64 32 16  8 4 2 1
+# 23 ->   0  0  0  1  0 1 1 1  = 16  + 4 + 2 + 1 = 23
+#  9 ->   0  0  0  0  1 0 0 1
 
-# decimal to hex : A-F 0-9
-print('hex(9)', hex(9))
-# hex to decimal
-int(hex(9), base=16)
+print('bin(9)', bin(9))    # '0b1001'
 
-# decimal to oct :0-7
-print('oct(9)', oct(9))
-# oct to decimal
-int(oct(9), base=8)
+# binary -> decimal form 
+print('0b1001', int('0b1001', base=0)) # 9
+print('1001  ', int('1001', base=0))   # 1001
+print('bin(9)', int(bin(9), base=0))   # 9
+
+print((9).bit_length())  # 4 <- '0b1001'
+print((23).bit_length()) # 5 <- '0b10111'
+
+# Octal -> 0-7
+# decimal -> octal 
+print('oct(9)  ', oct(9))   # '0o11'
+print('oct(-23)', oct(-23)) # '-0o27'
+
+# octal -> decimal 
+print(int(oct(9), base=8))   # 9
+print(int('0o11', base=8))   # 9
+print(int('11', base=8))     # 9
+print(int('11'))             # 11
+
+# Hexadecimal - 0-9 A-F
+# decimal -> hexadecimal 
+print('hex(9)  ', hex(9))    # '0x9'
+print('hex(-23)', hex(-23))  # '-0x17'
+
+# hexadecimal -> decimal 
+print(int(hex(-23), base=16)) # -23
+print(int('-0x17', base=16))  # -23
+print(int('-17', base=16))    # -23
+print(int('-17'))             # -17
+
 
 # Checks ##################
+# is_integer -> Return True if the float is an integer.
 print((-2.0).is_integer())  # True
-print((3.2).is_integer())  # False
+print((-2.1).is_integer())  # False
+print((-1.9999).is_integer())  # False

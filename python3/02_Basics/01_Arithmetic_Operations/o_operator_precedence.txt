@@ -1,12 +1,12 @@
 operator precedence
 -------------------
     PEMDAS 
-    P - parantheses
-    E - exponent 
-    M - multiplication
-    D - Division 
-    A - Addition 
-    S - Subtraction
+        P - parantheses
+        E - exponent 
+        M - multiplication
+        D - Division 
+        A - Addition 
+        S - Subtraction
 
 
 Order of evaluation
