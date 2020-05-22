@@ -8,13 +8,31 @@ from person import Person
 
 class TestingPerson(unittest.TestCase):
     def testing_functionality(self):
-        test_name = 'bhavya'
+        test_name = 'Prakash'
         p = Person()
-        # print 'p.name', p.name
-        # print 'callable(p.set_name)', callable(p.set_name)
         user_id = p.set_name(test_name)
-        print('p.get_name(user_id)', p.get_name(user_id))
-        self.assertEqual(test_name, p.get_name(user_id))
+        # print('p.get_name(user_id)', p.get_name(user_id))
+        self.assertEqual(p.get_name(user_id), test_name)
+
+    def testing_list_of_names(self):
+        test_names = ['Udhay', 'Syed', 'Baseer', 'Hero', 'Prakash', 'Jameel']
+        p = Person()
+        for test_name in test_names:
+            user_id = p.set_name(test_name)
+            # print(f'{user_id =} {p.get_name(user_id) =}')
+            self.assertEqual(p.get_name(user_id), test_name)
+
+    def testing_list_wise(self):
+        test_names = ['Udhay', 'Syed', 'Baseer', 'Hero', 'Prakash', 'Jameel']
+        p = Person()
+        retrieved_names = []
+        for test_name in test_names:
+            user_id = p.set_name(test_name)
+            # print(f'{user_id =} {p.get_name(user_id) =}')
+            retrieved_names.append(p.get_name(user_id))
+        # print(f'{test_names      =}')
+        # print(f'{retrieved_names =}')
+        self.assertListEqual(retrieved_names, test_names)
 
 class Testing(unittest.TestCase):
     def test_string(self):
@@ -28,4 +46,4 @@ class Testing(unittest.TestCase):
         self.assertEqual(a, b)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main(verbosity=4)
