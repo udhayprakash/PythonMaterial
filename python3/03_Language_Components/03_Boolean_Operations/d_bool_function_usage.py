@@ -3,7 +3,6 @@
 Purpose: bool() builtin function
 """
 
-
 num1 = -0.000000056
 print('bool(num1)       ', bool(num1))
 print('bool(num1 != 0)  ', bool(num1 != 0))
@@ -14,8 +13,17 @@ if num1 != 0:  # => bool(num1 != 0) => bool(True) => True
 if num1:  # => bool(num1 != 0) => bool(True) => True
     print('It is non-zero')
 
+if 1:
+    print('It will print everytime')
+
+if 0:
+    print('It will not print everytime')
+
+if not 0:
+    print('It will print everytime')
+
 # -------------------------------------------------------
-num2 = -0.000000000
+num2 = -0.000000000000000000000000000
 print('bool(num2)       ', bool(num2))
 print('bool(num2 != 0)  ', bool(num2 != 0))
 

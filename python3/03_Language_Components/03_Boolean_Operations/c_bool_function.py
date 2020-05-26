@@ -8,7 +8,6 @@ Purpose: bool() built-in function
     boolean
     braces
 """
-
 # bool()
 # integer type (int and float)
 #       zero     - False
@@ -17,6 +16,7 @@ print("bool(12)          ", bool(12))
 print("bool(-12)         ", bool(-12))
 print("bool(0)           ", bool(0))
 print()
+
 print("bool(0.00000000)  ", bool(0.00000000))
 print("bool(0.000000001) ", bool(0.000000001))
 print("bool(-0.000000001)", bool(-0.000000001))
@@ -56,8 +56,11 @@ print()
 # Relational operations -> Boolean result -> bool()
 print('74 > 59           ', 74 > 59)
 print('bool(74 > 59)     ', bool(74 > 59))
+
+print('74 <= 59          ', 74 <= 59)
 print('bool(74 <= 59)    ', bool(74 <= 59))
 
 # Logical operations -> Boolean result -> bool()
 print('1 < 2 and 23 <=23       ', 1 < 2 and 23 <= 23)
+#                                  True and  True    = True
 print('bool(1 < 2 and 23 <=23) ', bool(1 < 2 and 23 <= 23))

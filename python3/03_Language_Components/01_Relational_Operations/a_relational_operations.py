@@ -11,14 +11,14 @@ Purpose: Relational Operations
      != not equal to
      <> not equal to  ( in python 2 only)
 """
-
 us_dollar = 74
 canadian_dollar = 50
 
 print(f'{us_dollar=}')
 print(f'{canadian_dollar=}')
 
-print('us_dollar == canadian_dollar', us_dollar == canadian_dollar)
+print('us_dollar == canadian_dollar:', us_dollar == canadian_dollar)
+
 print(f'{us_dollar == canadian_dollar = }')
 print(f'{us_dollar > canadian_dollar  = }')
 print(f'{us_dollar >= canadian_dollar = }')

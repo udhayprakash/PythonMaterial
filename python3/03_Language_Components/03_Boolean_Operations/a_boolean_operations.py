@@ -4,11 +4,9 @@ Purpose: Boolean Operations
 
     True, False  --> keywords defined in python
 
-
-id() - built-in function to get the address location where given
-       object is stored
+id() - built-in function to get the address location 
+       where given  object is stored
 """
-
 
 choice = True
 print('choice = ', choice, type(choice), id(choice))
@@ -22,8 +20,12 @@ print('choice = ', choice, type(choice), id(choice))
 true = 'Udhay'
 # NOTE: NOT RECOMMENDED to use 'true' for variable name
 
-choice = true
+choice = 'Udhay'
 print('choice = ', choice, type(choice), id(choice))
+
+# True    - 140713435649872
+# False   - 140713435649904
+# 'udhay' -   2587890325168
 
 print()
 # -----------------------------------

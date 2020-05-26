@@ -9,19 +9,14 @@ Purpose: Bitwise Operations
     <<  binary Left Shift
     >>  binary right shift
 
-
      126 64 32 16  8 4  2  1
 60 -   0  0  1  1  1 1  0  0
 13 -   0  0  0  0  1 1  0  1
------------------------------
-&  -   0  0  0  0  1 1  0  0  - 12
-|  -   0  0  1  1  1 1  0  1  - 61
-^  -   0  0  1  1  0 0  0  1  - 49
-
-
+----------------------------
+&  -   0  0  0  0  1 1  0  0 = (8 * 1 + 4 * 1) = 12
+|  -   0  0  1  1  1 1  0  1 = (32 + 16 + 8 + 4 + 1) = 61
+^  -   0  0  1  1  0 0  0  1 = (32 + 16 + 1) = 49
 """
-
-
 num1 = 60
 num2 = 13
 
@@ -58,11 +53,12 @@ print('10 << 4 =', 10 << 4)
 # 160        1       0     1     0                       4th shift
 
 print()
-print('160 >> 1 =', 160 >> 1)
-print('160 >> 2 =', 160 >> 2)
-print('160 >> 3 =', 160 >> 3)
-print('160 >> 4 =', 160 >> 4)
+print('160 >> 1 =', 160 >> 1)  # 80
+print('160 >> 2 =', 160 >> 2)  # 40
+print('160 >> 3 =', 160 >> 3)  # 20
+print('160 >> 4 =', 160 >> 4)  # 10
 
 # NOTE:
 # A left shift by n bits is equivalent to multiplication by pow(2, n) without overflow check.
 # A right shift by n bits is equivalent to division by pow(2, n) without overflow check.
+
