@@ -20,4 +20,7 @@ One-line constructor - to avoid boiler plate code ==> now dataclasses
     class A(object):
         def __init__(self, a, b, c, d, e, f):
             self.__dict__.update({k: v for k, v in locals().items() if k != 'self'})
+
+To get unique characters in a text file, 
+    set(open('myfile.txt', 'r').read())
 """

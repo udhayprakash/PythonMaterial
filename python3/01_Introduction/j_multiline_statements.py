@@ -13,6 +13,12 @@ Brace
 
     []  square braces
     {}  flower bracs
+
+PEP 8 :
+    a) Lines should be 79 characters in length or less 
+    b) Continuations of long expressions onto additional lines should be  
+       indented by four extra spaces from their normal indentation level.
+
 """
 
 sum_of_values = 12 + 45 + 34534545 + 343 - 34234 + 34 + 454 + 42534 + 34 / 34 \

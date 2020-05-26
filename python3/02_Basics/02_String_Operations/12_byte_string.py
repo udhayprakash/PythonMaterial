@@ -17,7 +17,7 @@ print('bytes(obj)', bytes(obj))
 
 #############################
 # hex to byte
-# skips ASCII whitespaces suring conversion
+# skips ASCII whitespaces during conversion
 print(bytes.fromhex('2Ef0 F1f2  '))
 
 # bytes object into its hexadecimal representation
