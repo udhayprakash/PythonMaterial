@@ -48,6 +48,12 @@ print('23.24', float('23.24')) # '23.24', 23.24
 print('23.  ', float('23.'))   # '23.  ', 23.0
 # print('2 3. ', float('2 3.'))  # ValueError: could not convert string to float: '2 3.'
 
+float()              # 0.0
+float('+1.23')       # 1.23
+float('   -12345\n') # -12345.0
+float('1e-003')      # 0.001
+float('+1E6')        # 1000000.0
+float('-Infinity')   # -inf
 
 # NOTE: Anything can be converted to str; but not vice versa
 print('str(12)', str(12))
@@ -87,6 +93,10 @@ print((23).bit_length()) # 5 <- '0b10111'
 print('oct(9)  ', oct(9))   # '0o11'
 print('oct(-23)', oct(-23)) # '-0o27'
 
+'%#o' % 10, '%o' % 10               # ('0o12', '12')
+format(10, '#o'), format(10, 'o')   # ('0o12', '12')
+f'{10:#o}', f'{10:o}'               # ('0o12', '12')
+
 # octal -> decimal 
 print(int(oct(9), base=8))   # 9
 print(int('0o11', base=8))   # 9
@@ -103,6 +113,10 @@ print(int(hex(-23), base=16)) # -23
 print(int('-0x17', base=16))  # -23
 print(int('-17', base=16))    # -23
 print(int('-17'))             # -17
+
+'%#x' % 255, '%x' % 255, '%X' % 255 # ('0xff', 'ff', 'FF')
+format(255, '#x'), format(255, 'x'), format(255, 'X') # ('0xff', 'ff', 'FF')
+f'{255:#x}', f'{255:x}', f'{255:X}' # ('0xff', 'ff', 'FF')
 
 
 # Checks ##################
