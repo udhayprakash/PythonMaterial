@@ -6,9 +6,8 @@ Purpose: Working with comment operator
 - PEP 8 recommends one white space after # operator
 - comments 
     - Line comment 
-    - Multi-line comment
+    - Multi-line comment - Python doesn't support 
 
-Python dont have multiline comment
 NOTE: Python is interpreter-based language 
 - means each line executes separately
     unless it is a block of code 

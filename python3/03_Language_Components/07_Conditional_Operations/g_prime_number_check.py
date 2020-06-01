@@ -7,27 +7,25 @@ Purpose: Python program to check if the input number is prime or not
     as they do not have any other factors.
     But 6 is not prime (it is composite) since, 2 x 3 = 6.
 
-    1, 2,  3, 5, 7, 11, ...
+    2,  3, 5, 7, 11, ...
 """
+import math 
 
-
-# num = 407
+# num = 23
 
 # take input from the user
 num = int(input("Enter a number: "))
 
 # prime numbers are greater than 1
-if num > 1:
+if num <= 1:
+    print(num, "is not a prime number")
+else:
     # check for factors
-    for i in range(2, num):
+    # for i in range(2, num):
+    for i in range(2, int(math.sqrt(num))):
         if (num % i) == 0:
             print(num, "is not a prime number")
             print(i, "times", num // i, "is", num)
             break
     else:
         print(num, "is a prime number")
-
-    # if input number is less than
-# or equal to 1, it is not prime
-else:
-    print(num, "is not a prime number")

@@ -7,11 +7,10 @@ Purpose: Loops
     sys.exit  - will exit the script execution
 
 """
-
 i = 0
 while i <= 7:
     i += 1
-    print(i)
+    print(i, end = ' ')
 
 print('\n importance of break')
 i = 0
@@ -19,7 +18,8 @@ while i <= 7:
     i += 1
     if i == 5:
         break
-    print(i)
+    print(i, end = ' ')
+
 
 print('\n importance of continue')
 i = 0
@@ -27,7 +27,7 @@ while i <= 7:
     i += 1
     if i == 5:
         continue
-    print(i)
+    print(i, end = ' ')
 
 print('\n importance of pass')
 i = 0
@@ -35,20 +35,18 @@ while i <= 7:
     i += 1
     if i == 5:
         pass  # It acts as a placeholder
-    print(i)
+    print(i, end = ' ')
 
 import sys
 
-print('importance of sys.exit')
+print('\nimportance of sys.exit')
 i = 0
 while i < 7:
     i += 1
     if i == 5:
         sys.exit(0)
-    print(i)
+    print(i, end = ' ')
 # exit code 0 - successful/normal termination
 # exit code non-zero - abnormal termination
 print('next statement')
-
-
 

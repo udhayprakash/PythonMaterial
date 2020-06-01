@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Basic PEP8 guidelines and shebang line
+Purpose: Basic PEP-8 guidelines and shebang line
 """
 
 # print as a statement in python 2

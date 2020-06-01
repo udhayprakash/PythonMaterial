@@ -6,6 +6,7 @@ print('Hello World')
 #    print('hello World 2')  # IndentationError: unexpected indent
 print('hello World 2')
 
+
 # block code - if, else, elif, for, while, def , class, ...
 # if 12 > 3:
 # print('greater')            #IndentationError: expected an indented block
@@ -66,6 +67,3 @@ class MyClass:
 # tabs vs white-space
 # PEP 8 (Python Enhancement Proposal) - code style guide
 # Prefer white-spaces, to tabs; four white-spaces
-
-
-# tabspace 2 whitespace 

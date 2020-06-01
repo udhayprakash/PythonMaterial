@@ -23,7 +23,7 @@ no_of_current_processes = 5
 
 
 # 2. Camel casing 
-student = 'Amar'
+Student = 'Amar'
 CostOfMangos = 12 
 SellingPriceOfApples = 34
 
