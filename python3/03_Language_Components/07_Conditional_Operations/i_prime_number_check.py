@@ -21,11 +21,11 @@ if num <= 1:
     print(num, "is not a prime number")
 else:
     # check for factors
-    # for i in range(2, num):
-    for i in range(2, int(math.sqrt(num))):
-        if (num % i) == 0:
+    # for factor in range(2, num):
+    for factor in range(2, int(math.sqrt(num))):
+        if (num % factor) == 0:
             print(num, "is not a prime number")
-            print(i, "times", num // i, "is", num)
+            print(factor, "times", num // factor, "is", num)
             break
     else:
         print(num, "is a prime number")
