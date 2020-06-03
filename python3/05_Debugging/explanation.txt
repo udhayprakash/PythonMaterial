@@ -1,4 +1,22 @@
-Two modules for debugging
-    - pdb
-    - ipdb
-    - pydevd
+Debugging 
+---------
+    - Used to identifying logical errors (or bugs)
+
+    - ways of debugging 
+        - print() statements
+        - modules 
+            1. console-based debugging
+                - pbd / breakpoint()
+                - ipdb
+            2. IDE based debugging
+                - pydevd
+
+
+l  - displays lines around the executing line of code
+ll - displays the lines 
+n  - next     -> to go to next statement 
+c  - continue -> Execute till next breakpoint. If not breakpoint, till end of script
+
+To set a breakpoint, 
+    b <line number>
+    b 10 
