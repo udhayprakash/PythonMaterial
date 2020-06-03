@@ -3,6 +3,7 @@ Popular Regular expression Generators:
     1. http://regexr.com/
     2. https://regex101.com/#python
     3. http://www.regular-expressions.info/python.html
+    4. https://www.rexegg.com/
 
 Popular Regular Expression Visualizers :
 =======================================

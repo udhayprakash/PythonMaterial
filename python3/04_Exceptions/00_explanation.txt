@@ -1,14 +1,13 @@
 Errors:
 =======
-1. Errors caused by lack of understanding of a language construct.
-    
-2. Errors due to logically incorrect code conversion.
-
-
+    1. Errors caused by lack of understanding of a language construct.
+    2. Errors due to logically incorrect code conversion.
 
 Errors
     a. Syntax Errors 
     b. Exception Errors 
+        - db password locked
+        - runtime 
     c. Logical Errors 
         # when you need to add two values
         result = 12 * 34 

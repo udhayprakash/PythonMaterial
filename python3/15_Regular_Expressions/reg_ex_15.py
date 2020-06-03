@@ -9,6 +9,12 @@ Purpose: Regular Expressions
     \W - absence of any alphanumeric a-z A-Z 0-9
     \s  -presence of  white space AND \n
     \S  - absence of white space and \n
+
+    \A | Matches the expression to its right at the absolute start of a string whether in single or multi-line mode.
+    \Z | Matches the expression to its left at the absolute end of a string whether in single or multi-line mode.
+    \b | Matches the boundary (or empty string) at the start and end of a word, that is, between \w and \W.
+    \B | Matches where \b does not, that is, the boundary of \w characters.
+
 """
 
 import re
