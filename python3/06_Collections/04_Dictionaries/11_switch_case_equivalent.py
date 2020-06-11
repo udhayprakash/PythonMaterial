@@ -23,6 +23,7 @@ elif choice == 4:
 else:
     print('invalid choice')
 
+
 ########
 result_for_choice = {
     1: 'Addition',

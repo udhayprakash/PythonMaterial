@@ -1,4 +1,8 @@
-data = list(range(-100, 100000, 3))
+#!/usr/bin/python
+"""
+Purpose: Progress Bar 
+"""
+data = list(range(-100, 1000000, 3))
 data_length = len(data)
 # for index, number in enumerate(data): 
 #     # print( '\r{} of {} completed'.format(index,data_length), end = '')
@@ -11,7 +15,4 @@ values = {
     3: '\\'
 }
 for index, _ in enumerate(data):
-    print('\r', values.get(index % 4), end=' ')
-
-# for index, _ in enumerate(data):
-#     print('\r', '#' * int(10*index/data_length), end = ' ')
+    print('\r', values.get(index % 4), 'Loading ...', end=' ')
