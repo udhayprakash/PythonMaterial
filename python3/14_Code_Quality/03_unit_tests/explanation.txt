@@ -24,7 +24,11 @@ Test Scenario 2: Testing inbox functionality
 .
 .
 
-
+Every unit test should have three things
+    AAA
+        - Arrange 
+        - Act 
+        - Assert
 --------------
 Manual Testing
 Automation Testing : selenium, QTP, Load Runner

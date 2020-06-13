@@ -1,0 +1,75 @@
+# Context Manager Level 
+import unittest
+from unittest.mock import patch 
+
+class TestFoo(unittest.TestCase):
+    def test_foo(self):
+        with patch('my_module.db_write'):
+            x = my_module.foo()
+            self.assertEqual(x, 10)
+        y = my_module.foo()
+        self.assertEquals(y, 5)
+
+# Function Decorator level 
+class TestFoo(unittest.TestCase):
+    @patch('my_module.db_write')
+    def test_foo(self, mock_write):
+        pass
+    
+    def test_foo2(self):
+        pass
+    
+
+# Class Decorator level 
+@patch('my_module.db_write')
+class TestFoo(unittest.TestCase):
+    def test_foo(self, mock_write):
+        pass
+    
+    def test_foo2(self, mock_write):
+        pass
+
+# Multiple patches 
+@patch('my_module.name')
+@patch('my_module.birthday')
+@patch('my_module.address')
+class TestHello(unittest.TestCase):
+    def test_name_1(self, mock_address, mock_birthday, mock_name):
+        pass
+    
+    def test_name_2(self, mock_address, mock_birthday, mock_name):
+        pass
+    
+# Manual Start/Stop
+class TestHello(unittest.TestCase):
+    def setUp(self):
+        mock_name = patch('my_module.name').start()
+        mock_birthday = patch('my_module.birthday').start()
+        mock_address = patch('my_module.address').start()
+        self.addCleanup(patch.stopall)
+
+    def test_name_1(self):
+        pass
+
+    def test_name_2(self):
+        pass
+
+
+# ----------------------------
+# PatcH - 
+# PatcH - spec 
+
+Limitations of mock 
+1. mock objects called with misspelled asserts wont throw error. 
+   Instead it thinks, "assrt_called_with" as new argument. 
+        mock_foo.assrt_called_with()
+2. Mocked objects called incorrectly pass silently.
+
+    def foo(name):
+        return f"Hello {name}"
+
+    def bar():
+        print(foo())
+
+Solution is MagicMock
+------------------------
