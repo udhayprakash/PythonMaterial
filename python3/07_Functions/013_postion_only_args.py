@@ -15,31 +15,37 @@ Purpose: Function with position-only arguments
 
 NOTE: Introduced in python 3.8
 """
+def multiply_then_add(a, b, c, d=10):
+    return a + b + c + d
+
+print(multiply_then_add(5, 10, 20))
+print(multiply_then_add(5, 10, 20, 89))
+
+print(multiply_then_add(5, 10, 20, d=89))
+print(multiply_then_add(a=5, b=10, c=20, d=89))
 
 
 def multiply_then_add(a, b, c, /, d=10):
     return a + b + c + d
 
+print(multiply_then_add(5, 10, 20, d=89))
+# print(multiply_then_add(a=5, b=10, c=20, d=89))
+# TypeError: multiply_then_add() got some positional-only arguments passed as keyword arguments: 'a, b, c'
 
-multiply_then_add(5, 10, 20)
-multiply_then_add(5, 10, 20, 89)
-multiply_then_add(5, 10, 20, d=89)
 
-# multiply_then_add(5, 10, x=20)
-# TypeError: multiply_then_add() got an unexpected keyword argument 'x'
+# -----------------
+print()
+print(f'{pow(4, 2)       =}')
+print(f'{pow(4, 2, 10)   =}')
 
 
 def power(x, y, /, mod=None):
-    """
-    All parameters to the left of / (in this case, x and y) can only be passed positionally.
-    mod can be passed positionally or with a keyword.
-    >>> pow(2, 10)  # valid
-    >>> pow(2, 10, 17)  # valid
-    >>> pow(2, 10, mod=17)  # valid
-    >>> pow(x=2, y=10)  # invalid, will raise a TypeError
-    >>> pow(2, y=10)  # invalid, will raise a TypeError
-    """
     r = x ** y
     if mod is not None:
         r %= mod
-    return r
+    return r 
+
+print(f'{power(4, 2)     =}')
+print(f'{power(4, 2, 10) =}')
+# print(f'{power(x=4, y=2, mod=10) =}')
+# SyntaxError: positional argument follows keyword argument

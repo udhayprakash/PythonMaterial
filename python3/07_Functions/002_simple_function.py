@@ -7,37 +7,47 @@ Purpose: Functions Demo
 
     Functions are called as first class objects in python 
 
-    Function with no arguments and no return value
 """
+# Function with no arguments and no return value
 
-# hello()  # NameError: name 'hello' is not defined
-
-
-# Function definition
+# Function Definition
 def hello():
     print('hello function is called')
 
-
 # NOTE: default function return is None
 
-
-# Function call
+# Function Call
+hello()
 print(hello())
+
 
 # callability of an object - callable()
 print(f'callable(hello)  :{callable(hello)}')
+
 print(f'callable(hello()):{callable(hello())}')
+print(f'callable(None)   :{callable(None)}')
 
 word = 'python'  # string
 print(f'callable(word)   :{callable(word)}')
+# word()  # TypeError: 'str' object is not callable
 
 
+
+print()
 # Functions are treated as first class objects
-num1 = 12.32
-print(num1, id(num1))
-print(f'type(num1)      : type(num1)')
-print(dir(num1))  #  attributes for float
+num1 = 122.13
+print(f'''
+        {num1       =}
+        {type(num1) =} 
+        {id(num1)   =}
+        {dir(num1)  =}
 
-print(hello,  id(hello))
-print(f'type(hello)      : type(hello)')
-print(dir(hello)) # attributes for function
+''')
+
+
+print(f'''
+        {hello       =}
+        {type(hello) =} 
+        {id(hello)   =}
+        {dir(hello)  =}
+''')

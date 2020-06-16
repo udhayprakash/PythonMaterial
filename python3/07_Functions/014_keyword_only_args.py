@@ -9,10 +9,31 @@ Purpose: Functions Demo
 
     Present only in Python 3.X
 """
+def servr_login(server_name, user_name, password):
+    print(f'''
+        {server_name =}
+        {user_name   =}
+        {password    =}
+    ''')
+
+servr_login('facebook.com', 'udhay', 'udhay123')
+servr_login('facebook.com', 'udhay123', 'udhay')
+
+
+def servr_login(server_name, *, user_name, password):
+    print(f'''
+        {server_name =}
+        {user_name   =}
+        {password    =}
+    ''')
+
+servr_login('facebook.com', user_name='udhay', password='udhay123')
+# servr_login('facebook.com', 'udhay123', 'udhay')
+# TypeError: servr_login() takes 1 positional argument but 3 were given
 
 
 # Function Definition
-def recv(maxsize,  block=True):
+def recv(maxsize, *,  block=True):
     print("\ntype(maxsize)  ", type(maxsize))
     print("type(block) ", type(block))
 

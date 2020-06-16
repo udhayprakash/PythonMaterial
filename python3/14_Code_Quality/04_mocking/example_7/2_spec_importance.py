@@ -14,7 +14,7 @@ class MyTest(TestCase):
         bar()
         mock_foo.assrt_called_with('Bob')  # PASS
 
-class MyTest(TestCase):
+class MyTest2(TestCase):
     @patch('__main__.foo', spec=True)
     def test_bar(self, mock_foo):
         bar()

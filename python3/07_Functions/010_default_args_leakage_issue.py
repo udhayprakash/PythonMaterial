@@ -1,9 +1,9 @@
 #!/usr/bin/python
 """
-Purpose: Functions Demo
+Purpose: Functions with default args
 
-Memory leakage when mutable objects are taken as 
-default arguments
+    Memory leakage when mutable objects are taken as 
+    default arguments
 """
 
 # anti-patterns

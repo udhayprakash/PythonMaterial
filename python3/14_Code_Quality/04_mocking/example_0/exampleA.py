@@ -40,7 +40,5 @@ except KeyError as ex:
 
 # print(dir(mock))
 # ['assert_any_call', 'assert_called', 'assert_called_once',
-#  'assert_called_once_with', 'assert_called_with',
 # 'assert_has_calls', 'assert_not_called', 'attach_mock', 
-# 'configure_mock', 'method_calls', 'mock_add_spec',
-# 'mock_calls', 'reset_mock']
+# 'method_calls', 'mock_add_spec', 'mock_calls']
