@@ -72,5 +72,8 @@ print(f'f.__name__:{f.__name__}')  # 'f'
 print(f'f.__doc__ :{f.__doc__}')  # 'does some math'
 f(2)
 
-# NOTE: wraps helps in retaining the properties of 
-# decorated function
+# NOTE: 
+# 1. wraps helps in retaining the properties of decorated function
+# 2. @functools.wraps decorator uses the function functools.update_wrapper() 
+#    to update special attributes like __name__ and __doc__ that are used 
+#    in the introspection.
