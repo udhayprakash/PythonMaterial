@@ -1,8 +1,6 @@
 #!/usr/bin/python
 """
-Purpose:
-
-Generator objects
+Purpose: Generator objects
     - designed for user-defined functions
     - disposable
     - can't be indexed
@@ -10,20 +8,17 @@ Generator objects
     - used for large data handling
     - State suspension and on-demand computation
 """
-
-
 # definition
 def foo():
     print("Start the function!")
     for i in range(3):
-        print("before yield", i)
-        yield i
+        print("\tbefore yield", i)
         # return i
-        print("after yield", i)
+        yield i
+        print("\tafter yield", i)
 
     print("end of function ")
     # return None
-
 
 # call 
 f = foo()
@@ -43,27 +38,34 @@ try:
 except StopIteration as ex:
     print('error is ', repr(ex))
 
-print('using loop to get remaining elements')
+
+print('\nusing loop to get remaining elements')
 for i in f:
     print(i)
 
-print("====reinitialize call ")
+
+print("\n====reinitialize call ")
 f = foo()
 for i in f:
     print(i)
 
-print("====reinitialize call ")
+
+print("\n====reinitialize call ")
 f = foo()
 print(list(f))
 
-print("====reinitialize call ")
+print("\n====reinitialize call ")
 f = foo()
 print(tuple(f))
 
-print("====reinitialize call ")
+print("\n====reinitialize call ")
 f = foo()
 print(set(f))
 
-print("====reinitialize call ")
+print("\n====reinitialize call ")
 f = foo()
 print([i for i in f])
+
+print("\n====reinitialize call ")
+f = foo()
+print(str(f))

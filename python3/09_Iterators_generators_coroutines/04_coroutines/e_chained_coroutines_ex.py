@@ -8,7 +8,6 @@ def producer(sentence, next_coroutine):
         next_coroutine.send(token)
     next_coroutine.close()
 
-
 def pattern_filter(pattern="ing", next_coroutine=None):
     ''' 
     Search for pattern in received token  
@@ -39,10 +38,12 @@ def print_token():
         print('Done with printing!')
 
 
-pt = print_token()
-next(pt)
-pf = pattern_filter(next_coroutine=pt)
-next(pf)
+if __name__ == '__main__':
+    pt = print_token()
+    next(pt)
 
-sentence = 'Bob is running behind a fast moving car'
-producer(sentence, pf)
+    pf = pattern_filter(next_coroutine=pt)
+    next(pf)
+
+    sentence = 'Bob is running behind a fast moving car'
+    producer(sentence, pf)

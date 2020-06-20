@@ -21,7 +21,7 @@ print(list(map(lambda x, y, z: x + y, 'abcd', 'zyx', [1, 2, 3])))
 print(list(map(lambda x, y, z: x + y + str(z), 'abcd', 'zyx', [1, 2, 3])))
 
 
-print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))
+print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))  # (((1+2)+3)+4)
 # NOTE: reduce() will take a single iterable only
 
 print(reduce(lambda x, y: x * y, [1, 2, 3, 4])) # factorial(4)

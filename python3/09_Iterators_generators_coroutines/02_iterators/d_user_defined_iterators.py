@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: Iterators
 """
 alpha = ['a', 'e', 'i', 'o', 'u']
 print(type(alpha), alpha)

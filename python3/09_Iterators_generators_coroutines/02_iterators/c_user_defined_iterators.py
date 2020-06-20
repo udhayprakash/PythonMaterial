@@ -1,19 +1,17 @@
 #!/usr/bin/python
 """
 Purpose: iter() protocol
-
-Iterator objects
-    - iterator is an immutable, disposable and lazy object
-    - designed for builtin iterable objects
-    - can't be indexed
-    - stores the state
-    - used for large data handling
-    - values can be retrieved by 
-        - .next() in python 2.x 
-        - .__next__() in python 3.x
-        - applying for loop
+    Iterator objects
+        - iterator is an immutable, disposable and lazy object
+        - designed for builtin iterable objects
+        - can't be indexed
+        - stores the state
+        - used for large data handling
+        - values can be retrieved by 
+            - .next() in python 2.x 
+            - .__next__() in python 3.x
+            - applying for loop
 """
-
 alpha = ['a', 'e', 'i', 'o', 'u']
 print(f'alpha       : {type(alpha)} {alpha}')
 print(f'len(alpha)  : {len(alpha)}')
@@ -48,5 +46,3 @@ print('set(alpha_it)', set(alpha_it))
 
 alpha_it = iter(alpha)
 print('str(alpha_it)', str(alpha_it)) # <list_iterator object at 0x0000000002684188>
-
-

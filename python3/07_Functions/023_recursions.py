@@ -86,6 +86,5 @@ def string_reversal_1(word):
     # print(f'{word =}')
     return word[-1] + string_reversal_1(word[:-1])
 
-result = string_reversal('Python')
+result = string_reversal_1('Python')
 print(result)
-

@@ -18,20 +18,22 @@ for ch in 'python programming':
     print(ch, end=' ')
 print()
 
-# Collections - Lists  - iterable
+print('Collections - Lists  - iterable')
 names = ['udhay', 'prakash', 'someone']
 for each_name in names:
-    print(each_name)
+    print('\t', each_name)
 
-# Collections - tuples  - iterable
+print('Collections - tuples  - iterable')
 names = ('udhay', 'prakash', 'someone')
 for each_name in names:
-    print(each_name)
+    print('\t', each_name)
 
-# Collections - sets  - iterable
+print('Collections - sets  - iterable')
 names = {'udhay', 'prakash', 'someone'}
 for each_name in names:
-    print(each_name)
+    print('\t', each_name)
+# NOTE: iterating over sets may not 
+# give the elements in defined sequence.
 
 # -----------
 print('\nCollections - dictionaries  - iterable')
@@ -55,8 +57,9 @@ for each_name in names.items():
 for each_key, each_val in names.items():
     print('\t', each_key, '====>', each_val)
 
+
 # --------------------
-print(list('Python Programming'))
-print(tuple('Python Programming'))
-print(set('Python Programming'))
+print(list('Python Prog'))
+print(tuple('Python Prog'))
+print(set('Python Prog'))
 

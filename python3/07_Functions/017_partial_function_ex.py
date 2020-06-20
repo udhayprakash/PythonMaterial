@@ -33,6 +33,9 @@ assert multiply(12, 4) == multiply_4(12)
 assert multiply(22, 4) == multiply_4(22)
 assert multiply(32, 4) == multiply_4(32)
 
+print(f'{multiply_4.func     =}')
+print(f'{multiply_4.args     =}')
+print(f'{multiply_4.keywords =}')
 
 '''
 Assignments
