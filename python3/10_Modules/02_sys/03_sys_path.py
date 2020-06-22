@@ -6,6 +6,7 @@ Purpose:
 """
 import sys
 
+# sys.meta_path
 # print(type(sys.path))
 
 # append custom path 
