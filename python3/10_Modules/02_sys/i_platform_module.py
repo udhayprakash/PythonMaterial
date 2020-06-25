@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose:
+Purpose: platform module
 """
 
 import platform
@@ -8,3 +8,5 @@ import platform
 print("platform.architecture()  :", platform.architecture())  # ('64bit', 'WindowsPE')
 print("platform.machine()       :", platform.machine())  # AMD64
 print("platform.system()        :", platform.system())  # Windows
+
+print(dir(platform))

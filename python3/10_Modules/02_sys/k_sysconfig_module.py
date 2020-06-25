@@ -7,20 +7,28 @@ Purpose: sysconfig module
         python -m sysconfig
 """
 import sysconfig
+from pprint import  pprint
 
+# print(dir(sysconfig))
 
 print(f'{sysconfig.is_python_build()    =}')    # False
 # Return True if the running Python interpreter was built from source 
 
 print(f'{sysconfig.get_platform()       =}')    # 'win-amd64'
 
-print(f'{sysconfig.get_python_version() =}')
+print(f'{sysconfig.get_python_version() =}')    # '3.8'
 print(f'{sysconfig.get_scheme_names()   =}')
-print(f'{sysconfig.get_paths()          =}')
+# ('nt', 'nt_user', 'osx_framework_user', 'posix_home', 'posix_prefix', 'posix_user')
+
 print(f'{sysconfig.get_path_names()     =}')
-# print(f'{sysconfig.get_path()           =}')
-print(f'{sysconfig.get_config_vars()    =}')
-# print(f'{sysconfig.get_config_var()     =}')
+# ('stdlib', 'platstdlib', 'purelib', 'platlib', 'include', 'scripts', 'data')
+
+print('sysconfig.get_paths()\n')
+pprint(sysconfig.get_paths())
+
+
+print('sysconfig.get_config_vars()\n')
+pprint(sysconfig.get_config_vars())
 # get_config_h_filename
 # get_makefile_filename
 # parse_config_h

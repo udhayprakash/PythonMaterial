@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-purpose: sys.platform
+Purpose: sys module 
 """
 import sys
 
