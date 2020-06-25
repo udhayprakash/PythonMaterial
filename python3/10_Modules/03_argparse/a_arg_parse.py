@@ -1,42 +1,43 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
 Purpose: importance and usage of argparse
 """
-
 # # Method 1: hard- coding
 # user_name = 'udhay'
 # password = 'udhay@123'
 # server_name = 'issadsad.mydomain.in'
-
 
 # # Method 2: input() - run time
 # user_name = input('Enter username:')
 # password = input('Enter password:')
 # server_name = input('Enter server name:')
 
-
 # # Method 3: sys.argv
 # import sys
 # print('sys.argv = ', sys.argv)
 # assert sys.argv[0] == __file__
-#
-# # user_name = sys.argv[1]
-# # password = sys.argv[2]
-# # server_name = sys.argv[3]
-#
-# # unpacking
+
+# # help
 # if len(sys.argv) != 4:
 #     print('Help:')
 #     print(f'{__file__} username password server_fqdn')
 #     sys.exit(1)
-# user_name, password, server_name = sys.argv[1:]
 
+# # user_name = sys.argv[1]
+# # password = sys.argv[2]
+# # server_name = sys.argv[3]
+
+# # unpacking
+# user_name, password, server_name = sys.argv[1:]
 
 # Method 4: argparse
 import argparse
 
 parser = argparse.ArgumentParser(
-    description="Details to login to server")
+    description="Details to login to server",
+    epilog='-----Please follow help doc ----')
+# description: for the text that is shown before the help text
+# epilog: for the text shown after the help text
 
 parser.add_argument('-u', '--username',
                     help='login user name',
@@ -49,7 +50,8 @@ parser.add_argument('-p', '--password',
 parser.add_argument('-s', '--servername',
                     help='server name',
                     type=str,
-                    required=True)
+                    default='www.google.com',
+                    required=False)
 
 args = parser.parse_args()
 
@@ -63,4 +65,3 @@ The server login details are:
     PASSWORD    : {password}
     SERVER NAME : {server_name}
 ''')
-
