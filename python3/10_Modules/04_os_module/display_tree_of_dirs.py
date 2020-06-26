@@ -9,10 +9,12 @@ test
 
 """
 import os
+import sys
 
-MAX_DEPTH = 3  # levels 
+MAX_DEPTH = 3  # levels
 
-given_path = r'C:\Python27'  # input('Enter the path:')
+
+given_path = sys.exec_prefix  # input('Enter the path:')
 print(given_path)
 
 
@@ -24,5 +26,6 @@ def display_folders(_path, _depth):
             if os.path.isdir(os.path.join(_path, each)):
                 print('+'+'--' * _depth, each)
                 display_folders(os.path.join(_path, each), _depth)
+
 
 display_folders(given_path, 0)

@@ -9,7 +9,7 @@ print(os.path.splitext("/home/user/temp.log"))  # ('/home/user/temp', '.log')
 print(os.path.splitext("temp.log"))  # ('temp', '.log')
 print(os.path.splitdrive("/home/user/temp.txt"))  # ('', '/home/user/temp.txt')
 print(os.path.extsep)  # .
-print(os.sep)  # / 
+print(os.sep)  # /
 # c:\program\
 # /var/temp/sql
 print()

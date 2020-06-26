@@ -5,14 +5,6 @@ Purpose : working with files and folders
 """
 
 import os
-import sys
-
-print('sys.platform:', sys.platform)
-
-if sys.platform == 'win32':
-    print('It is windows OS')
-else:
-    print('It is either Linux or Unix')
 
 dirToCheck = input('Enter the directory path to check(dont enclose path with quotes):')
 

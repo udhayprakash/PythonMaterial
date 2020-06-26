@@ -10,7 +10,7 @@ for (dirname, dirs, files) in os.walk('.'):
             fhand = open(thefile, 'r')
             data = fhand.read()
             fhand.close()
-            hash = hashlib.md5(data).hexdigest()
+            hash = hashlib.md5(data.encode('utf-8')).hexdigest()
             # print(thefile, hash)
             if hash in hashes:
                 print(hashes[hash], thefile)
