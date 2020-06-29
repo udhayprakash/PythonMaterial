@@ -1,19 +1,18 @@
 #!/usr/bin/python
 """
-Purpose: Usage for custom module
+Purpose: usage for user-defined package 
 """
+import my_package
 
-import my_module
+print(f'{my_package.__name__    =}')
+print(f'{my_package.__doc__     =}')
+# print(f'{my_package.__file__    =}')
+# print(f'{my_package.__path__    =}')
+print(f'{my_package.__package__ =}')
+print()
+print(dir(my_package))
 
-help(my_module)
+print(f'{my_package.calculator.DOZEN            =}')
+print(f'{my_package.calculator.addition(10, 20) =}')
 
-print(dir(my_module))
-
-
-
-print(f'{my_module.__package__ =}')
-
-
-my_module.newScript.firstFunction()
-
-print(my_module.calculator.addition(89, 76))
+print(f'{my_package.operations.factorial(8)     =}')

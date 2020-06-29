@@ -3,6 +3,10 @@ Python Library Documentation: module __main__
 NNAAMMEE
     __main__
 
+DDEESSCCRRIIPPTTIIOONN
+    Purpose: Generating pydoc documentation
+        for custom module
+
 FFUUNNCCTTIIOONNSS
     oouuttppuutt__hheellpp__ttoo__ffiillee(filepath, request)
 
@@ -11,5 +15,5 @@ DDAATTAA
     aa = <_io.TextIOWrapper name='docs/__name__.txt' mode='w' encoding='cp1...
 
 FFIILLEE
-    d:\megasync\python-related\training\python_related\python_batch153\10_modules\12_user_defined_modules\saving_pydoc_output.py
+    d:\megasync\python-related\training\python_related\python_batch154\10_modules\user_defined_modules\saving_pydoc_output.py
 

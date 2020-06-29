@@ -1,4 +1,4 @@
-To create .pyc files, 
+To create .pyc/__pycache__ files, 
     In command line,
           python -m python_script
       Ex: python -m fibScript
@@ -13,7 +13,7 @@ To decompile compiled pyc/pyo files to see original code,
         pip install uncompyle6
     
     USAGE:
-        uncompyle6 -o . <file-name.pc> 
+        uncompyle6 -o . <file-name.pyc> 
     ex:
         uncompyl6 -o . txfile.pyc rxfile.pyc
 

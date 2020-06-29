@@ -7,7 +7,7 @@ Purpose: Generating pydoc documentation
 import pydoc
 import os 
 import sys
-from my_module import calculator
+from my_package import calculator
 
 # import re
 
@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     output_help_to_file(r'docs/calculator.txt', calculator)
 
-    output_help_to_file(r'docs/re.txt', 're')
+    output_help_to_file(r'docs/math.txt', 'math')
 
     # print(dir(__name__))
     # print()
