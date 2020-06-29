@@ -5,11 +5,10 @@ Purpose: Generating pydoc documentation
 """
 
 import pydoc
-import os 
+import os
 import sys
 from my_package import calculator
 
-# import re
 
 def output_help_to_file(filepath, request):
     with open(filepath, 'w') as f:
@@ -20,13 +19,11 @@ def output_help_to_file(filepath, request):
     return
 
 
-
 if __name__ == '__main__':
     if not os.path.exists('docs'):
         os.mkdir('docs')
 
     output_help_to_file(r'docs/calculator.txt', calculator)
-
     output_help_to_file(r'docs/math.txt', 'math')
 
     # print(dir(__name__))
@@ -37,9 +34,6 @@ if __name__ == '__main__':
     print()
     print(pydoc.render_doc(__name__))
 
-
     with open('docs/__name__.txt', 'w') as a:
         a.write(pydoc.render_doc(__name__))
         a.close()
-
-    output_help_to_file(r'docs/__name__2.txt', calculator)

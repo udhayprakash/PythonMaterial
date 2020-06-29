@@ -28,6 +28,6 @@ DATA
     DOZEN = 12
 
 FILE
-    d:\megasync\python-related\training\python_related\python_batch154\10_modules\user_defined_modules\my_package\calculator.py
+    d:\megasync\python-related\pythonmaterial\python3\10_modules\user_defined_modules\my_package\calculator.py
 
 
