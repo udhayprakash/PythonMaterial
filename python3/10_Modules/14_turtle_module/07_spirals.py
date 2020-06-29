@@ -1,21 +1,17 @@
 #!/usr/bin/python
 
-from turtle import *
-from random import randint
 
-bgcolor('black')
-x = 1
-speed(0)
+import turtle
 
-while x < 400:
-    r = randint(0, 255)
-    g = randint(0, 255)
-    b = randint(0, 255)
-
-    colormode(255)
-    pencolor(r, g, b)
-    fd(50 + x)
-    rt(90.991)
-    x = x + 1
-
-exitonclick()
+wn = turtle.Screen()
+t = turtle.Turtle()
+t.speed("fastest")
+radius = 0
+tick = 0
+while True:
+    tick += 1
+    t.forward(tick)
+    t.left(100 + tick)
+    t.forward(5)
+    t.left(3)
+    t.right(0 + tick)

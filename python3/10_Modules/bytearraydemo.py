@@ -17,10 +17,6 @@ from hashlib import sha256
 print(f"Adler checksum of string s: {zlib.adler32(s2)}")
 print(f"CRC32 checksum of string s: {zlib.crc32(s2)}")
 
-with open('warandpeace.txt', encoding="utf-8") as wap:
-    s = " ".join(list(wap))   # this will be a really long string
-print(f"'War and Peace' contains {len(s)} characters.") 
-
 sb = s.encode('utf-8')
 print(f"Encoded as byte array using utf-8, this gives {len(sb)} bytes.")
 
