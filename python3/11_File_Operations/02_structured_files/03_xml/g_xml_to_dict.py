@@ -26,4 +26,3 @@ with open('books.xml', 'r') as fh:
 
 # Assignment:  explore how to convert the dict ,
 # back to xml using this xmltodict module.. Hint: unparse()
-

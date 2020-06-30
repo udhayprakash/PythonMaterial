@@ -31,6 +31,6 @@ child2 = SubElement(root, 'child2')
 result_str = tostring(root).decode('utf-8')
 print(result_str)
 
-# To a xml file
+# To write an xml file
 with open('first.xml', 'w') as f:
     f.write(result_str)

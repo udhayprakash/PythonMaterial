@@ -16,8 +16,9 @@ try:
 except ImportError:
     from io import StringIO ## for Python 3
 
+
 # Arbitrary string
-message = 'This is just a normal string'
+message = 'This is just a normal string\n'
 
 # Use StringIO method to set as file object
 f = StringIO(message)
@@ -27,7 +28,13 @@ print('Data:', data)
 
 f.write('Second line written to file like object')
 
-# Reset cursor position
-f.seek(0)
-
+print(f'\n current cursor postion is {f.tell()}')
 print('Again', f.read())
+
+f.seek(0)
+print(f'\n current cursor postion is {f.tell()}')
+print('Again', f.read())
+
+f.close() 
+# f.read()
+# ValueError: I/O operation on closed file      

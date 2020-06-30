@@ -16,8 +16,8 @@ Purpose: Pickle file operations
 """
 import pickle
 
-n1 = (1, 2, 3, 4, 5)
 
+n1 = (1, 2, 3, 4, 5)
 
 # Python object to pickle string
 pickle_str = pickle.dumps(n1)
@@ -66,4 +66,3 @@ print(f'pickle_str      :{pickle_str}')
 
 retrieved_obj = pickle.loads(pickle_str)
 print(f'retrieved_obj   :{retrieved_obj} {type(retrieved_obj)}')
-

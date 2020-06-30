@@ -24,6 +24,7 @@ favorite_color = {"lion": "yellow", "kitty": "red"}
 serialized_string = pickle.dumps(favorite_color)
 print(serialized_string)
 
+
 # Python object to pickle file
-with open('first_line.pickle', 'wb') as f:
+with open('favorite_color.pickle', 'wb') as f:
     pickle.dump(favorite_color, f)

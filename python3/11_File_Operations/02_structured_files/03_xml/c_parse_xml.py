@@ -4,13 +4,17 @@ Purpose: Reading(Parsing) XML
 """
 from xml.etree.ElementTree import parse
 from pprint import pprint
+
 tree = parse('books.xml')
 
-# print(tree.findall('book'))
+# To check for presence of a particular tag in xml file
+print(f"{tree.findall('book') =}")
+print()
+
 books = {}
 for each in tree.findall('book'):
     isbn = each.attrib['isbn']
-    for ech in  each.findall('title'):
+    for ech in each.findall('title'):
         title = ech.text
         books[isbn] = title
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: write xml
+Purpose: write xml file using lxml module
 """
 try:
     from lxml import etree
@@ -21,7 +21,7 @@ child2 = etree.Element('child2')
 child2.text = 'some text'
 root.append(child2)
 
-child1.append(child2)
+# child1.append(child2)
 
 # pretty string
 s = etree.tostring(root, pretty_print=True)

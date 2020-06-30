@@ -18,11 +18,13 @@ input_string = '''
     </users>
 </stuff>'''
 
+
 stuff = ElementTree.fromstring(input_string)
 nodes = stuff.findall('users/user')
 print('User count:', len(nodes))
 
 # print(nodes)
+
 for item in nodes:
     print('\nName', item.find('name').text)
     print('Id', item.find('id').text)
