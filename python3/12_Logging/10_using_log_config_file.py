@@ -8,7 +8,7 @@ import logging.config
 import os 
 
 current_dir_name = os.path.dirname(os.path.abspath(__file__))
-log_file_path = os.path.join(current_dir_name, '10_logging.conf')
+log_file_path = os.path.join(current_dir_name, 'logs/10_logging.conf')
 
 # create logger
 logger = logging.getLogger('simpleExample')
