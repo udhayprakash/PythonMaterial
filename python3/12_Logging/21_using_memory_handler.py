@@ -22,7 +22,8 @@ memory_handler = logging.handlers.MemoryHandler(
     target=stream_handler
 )
 
-file_handler = logging.FileHandler(os.path.splitext(__file__)[0] + '.log')
+log_file_name = os.path.join('logs', os.path.splitext(__file__)[0] + '.log')
+file_handler = logging.FileHandler(log_file_name)
 file_handler.setLevel(LOG_LEVEL)
 file_handler.setFormatter(formatter)
 

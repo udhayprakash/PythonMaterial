@@ -10,7 +10,7 @@ Purpose: To display the logs in file only
 import logging
 
 # creating a handler
-han = logging.FileHandler('08_logging.log')
+han = logging.FileHandler(filename='logs/13_logging.log')
 
 # Formatter
 formatting = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
@@ -23,6 +23,7 @@ logger = logging.getLogger('pythonApp')
 
 # adding the handle to the logger
 logger.addHandler(han)
+
 
 # setting the level for logs.
 logmessage = "testing the log messages"

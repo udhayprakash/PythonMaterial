@@ -17,7 +17,8 @@ logger = logging.getLogger("Rotating Log")
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
 
-handler = TimedRotatingFileHandler(os.path.splitext(__file__)[0] + '.log',
+log_file_name = os.path.join('logs', os.path.splitext(__file__)[0] + '.log')
+handler = TimedRotatingFileHandler(log_file_name,
                                    when="S",  # Seconds
                                    interval=5,
                                    backupCount=5)

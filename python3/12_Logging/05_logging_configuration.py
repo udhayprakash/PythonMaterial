@@ -27,7 +27,7 @@ import logging
 
 # Time in log
 logging.basicConfig(
-    filename="04_logging.log", # filemode='w',
+    filename="logs/05_logging.log", # filemode='w',
     format='%(asctime)s %(levelname)8s %(name)s %(message)s',
     datefmt='%d-%b-%Y %I:%M:%S %p',
     level=logging.DEBUG)

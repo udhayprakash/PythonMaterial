@@ -17,14 +17,14 @@ Logging serves two purposes:
     20-July,2015 7.42am     [debug	]	[functionName3]	reconfigure the machine setting
     20-July,2015 7.43am     [info]		[ main  	  ]	Successfully installed the product
     20-July,2015 7.42am     [error   ]	[functionName3]	unable to reconfigure the machine setting
-    20-July,2015 7.42am     [warning ]	[functionName3]	retrying to reconfigure the machine setting
+    20-July,2015 7.42am     [warning ]	[functionName3]	retrying to reconfigure ...
     20-July,2015 7.42am     [critical]	[functionName3]	unable to reconfigure the machine setting
     20-July,2015 7.43am     [critical]  [ main        ]	ABORTED installing the product
 ```
 
 print ---
         SDLC ( dev -> testing/ UAT -> Prod)
-debug      developemnt
+debug      developement
 info       dev/testing
 warning    dev/testing
 error      dev/testing/prod

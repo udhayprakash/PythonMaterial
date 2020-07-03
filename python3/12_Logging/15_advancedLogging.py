@@ -1,13 +1,15 @@
+#!/usr/bin/python
+
 import logging
 import os
 import sys
 from datetime import datetime
 
-print('__file__', __file__)
-print('os.path.basename(__file__)', os.path.basename(__file__))
+# print('__file__', __file__)
+# print('os.path.basename(__file__)', os.path.basename(__file__))
 
-fileName = os.path.splitext(os.path.basename(__file__))[0]
-print('fileName', fileName)
+# fileName = os.path.splitext(os.path.basename(__file__))[0]
+# print('fileName', fileName)
 
 SET_DEBUG = 0
 
@@ -51,7 +53,8 @@ try:
     myLogHandler.setFormatter(LogfileFormatter)
     logger.addHandler(myLogHandler)
 
-    fileHandler = logging.FileHandler(log_file, mode='w')  # default is append mode
+    fileHandler = logging.FileHandler(
+        log_file, mode='w')  # default is append mode
     fileHandler.setFormatter(LogfileFormatter)
     logger.addHandler(fileHandler)
 

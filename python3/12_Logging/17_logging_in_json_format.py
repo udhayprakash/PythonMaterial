@@ -2,7 +2,7 @@
 """
 Purpose: Logging in JSON format 
 
-    pip install python-json-logger
+    pip install -U python-json-logger --user
 
 """
 import logging
@@ -29,3 +29,6 @@ logger.info('This is info log')
 logger.warning('This is error log')
 logger.error('This is error log')
 logger.critical('This is critical log')
+
+
+# Assignment: Add datetime & level to this 

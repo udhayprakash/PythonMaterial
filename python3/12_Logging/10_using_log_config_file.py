@@ -5,11 +5,10 @@ Purpose: Using logging configuration file
 
 import logging
 import logging.config
-from os import path
+import os 
 
-log_file_path = path.join(path.dirname(path.abspath(__file__)), '18_logging.conf')
-logging.config.fileConfig(log_file_path)
-
+current_dir_name = os.path.dirname(os.path.abspath(__file__))
+log_file_path = os.path.join(current_dir_name, '10_logging.conf')
 
 # create logger
 logger = logging.getLogger('simpleExample')
@@ -20,3 +19,9 @@ logger.info('info message')
 logger.warning('warning message')
 logger.error('error message')
 logger.critical('critical message')
+
+logging.debug('debug message')
+logging.info('info message')
+logging.warning('warning message')
+logging.error('error message')
+logging.critical('critical message')

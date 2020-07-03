@@ -1,5 +1,9 @@
+#!/usr/bin/python
+"""
+Purpose: Configuring Logging Level 
+"""
 import logging
-import sys
+
 
 # Fixing the level of severity
 logging.basicConfig(level=logging.DEBUG)
@@ -19,8 +23,9 @@ logging.log(logging.ERROR, "This is a error3")
 logging.log(logging.CRITICAL, "This is a critical3")
 print()
 
+# -------------------
 def addition(n1, n2):
-    logging.debug('Entered addition func')
+    logging.debug('addition function - start')
     return n1 + n2
 
 

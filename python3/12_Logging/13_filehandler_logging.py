@@ -5,7 +5,7 @@ Purpose: Demonstartion of logging
 import logging
 
 # defining the handler
-han = logging.FileHandler('09_logging.log')
+han = logging.FileHandler('logs/14_logging.log')
 
 # Formatter
 formate = logging.Formatter('%(asctime)s - %(levelname)8s - %(name)s - %(message)s')
@@ -22,8 +22,8 @@ logger.addHandler(han)
 
 logger.debug("Hello this is a debug message")
 logger.info("Hello this is information")
-logger.warning("Hello this is a warning")
-logger.error("Hello this is an error")
+logger.warning("Hello this is a warning\n")
+logger.error("Hello this is an error\n")
 logger.critical("Hello this an critical error\n")
 
 logging.debug("Hello this is a debug message1")

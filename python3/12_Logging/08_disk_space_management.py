@@ -1,11 +1,13 @@
 #!/usr/bin/python
 import logging as lg
 
-lg.basicConfig(filename="05_logging.log",
-               filemode='a',  # 'w', 
-               datefmt='%m/%d/%Y %I:%M:%S %p',
-               format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
-               level=lg.INFO)
+lg.basicConfig(
+    filename="logs/08_logging.log",
+    filemode='a',  # 'w',
+    datefmt='%m/%d/%Y %I:%M:%S %p',
+    format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
+    level=lg.DEBUG
+)
 
 size = int(input("please enter the disk size:"))
 
@@ -16,4 +18,5 @@ elif 80 <= size < 100:
 elif 70 <= size < 80:
     lg.warning("The disk has hit above 70% and is in warning state")
 else:
-    lg.info("The disk write are good!!!")
+    lg.debug("The disk write are good!!!")
+

@@ -1,5 +1,0 @@
-2020-05-02 22:12:07,748: MyApp - INFO - I did something!
-2020-05-02 22:12:07,749: MyApp - WARNING - Something bad happened!
-2020-05-02 22:12:37,637: MyApp - INFO - I did something!
-2020-05-02 22:13:04,879: MyApp - INFO - I did something!
-2020-05-02 22:13:04,879: MyApp - WARNING - Something bad happened!

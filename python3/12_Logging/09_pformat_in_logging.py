@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import logging
-from pprint import pformat
+from pprint import pformat, pprint
 
 data = [(1, {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D'}),
         (2,
@@ -13,12 +13,17 @@ data = [(1, {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D'}),
           'k': 'K',
           'l': 'L'})]
 
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(levelname)-8s %(message)s',
-                    )
+print(data)
+print()
+pprint(data)
 
-logging.debug('Logging pformatted data')
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(levelname)-8s %(message)s',
+)
+
 logging.debug(data)
+logging.debug('Logging pformatted data')
 
 formatted = pformat(data)
 for line in formatted.splitlines():

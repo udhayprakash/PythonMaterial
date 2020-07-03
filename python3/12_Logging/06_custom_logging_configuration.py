@@ -10,20 +10,14 @@ import logging
 
 FORMAT = "%(asctime)-15s %(client_ip)s %(user)-8s %(message)s"
 logging.basicConfig(format=FORMAT)
-d = { 'client_ip' : '192.168.0.1', 'user' : 'fbloggs' }
+d = {'client_ip': '192.168.0.1', 'user': 'fbloggs'}
 
-logging.basicConfig(
-    filename="04_logging.log", # filemode='w',
-    format='%(asctime)s %(levelname)8s %(name)s %(message)s',
-    datefmt='%d-%b-%Y %I:%M:%S %p',
-    level=logging.DEBUG)
-
-
-logging.warning("Protocol problem: %s", "connection reset", extra=d)
+# logging.basicConfig(
+#     filename="logs/06_logging.log",  # filemode='w',
+#     format='%(asctime)s %(levelname)8s %(name)s %(message)s',
+#     datefmt='%d-%b-%Y %I:%M:%S %p',
+#     level=logging.DEBUG)
+# logging.warning("Protocol problem: %s", "connection reset", extra=d)
 
 logger = logging.getLogger("tcpserver")
 logger.warning("Protocol problem: %s", "connection reset", extra=d)
-
-
-
-
