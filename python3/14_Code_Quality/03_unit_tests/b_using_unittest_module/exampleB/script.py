@@ -2,9 +2,10 @@
 
 
 def add_one(x):
+    """
+    >>> add_one(33)
+    34
+    >>> add_one(-0.2)
+    0.8
+    """
     return x + 1
-
-
-if __name__ == '__main__':
-    print(add_one(33))
-    print(add_one(-0.2))
