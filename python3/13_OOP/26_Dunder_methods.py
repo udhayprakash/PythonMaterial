@@ -1,30 +1,38 @@
 #!/usr/bin/python
 """
-Purpose:
-    Implementing C++ style printing syntax
+Purpose: Dunder Methods
 """
 
 
-class Cout:
-    def __lshift__(self, other):
-        print(other, end='')
-        return self
+class LazyDB:
+    def __init__(self):
+        self.exists = 5
 
-    def __rrshift__(self, other):
-        print(other, end='')
-        return self
+    def __getattr__(self, name):
+        value = 'Value for %s' % name
+        setattr(self, name, value)
+        return value
+
+data = LazyDB()
+print('Before:', data.__dict__)  # vars(data)
+print('foo   :', data.foo)
+print('After :', data.__dict__)
+print()
+
+# -------------
+class LoggingLazyDB(LazyDB):
+    def __getattr__(self, name):
+        print('Called __getattr__(%s)' % name)
+        # return LazyDB.__getattr__(self, name)
+        return super().__getattr__(name)
+
+    def __delattr__(self, attribute):
+        print('Deleting the given attribute')
 
 
-class Endl:
-    def __rshift__(self, other):
-        return other + '\n'
+data = LoggingLazyDB()
+print('exists:', data.exists)
+print('foo   :', data.foo)
 
-    def __str__(self):
-        return '\n'
-
-
-cout = Cout()
-endl = Endl()
-
-cout << 'C++ printing in python' << endl
-endl >> 'Works even this way!' >> cout
+del data.foo
+print(vars(data))   

@@ -2,8 +2,8 @@
 """
 Purpose: Importance of Self
 
-    Self is the placeholder for the instance created
-    from that class
+    Self is the placeholder for the instance created from that class. 
+    NOTE: self is not keyword in python. But, PEP 8 recommends to use the same.
 """
 
 
@@ -19,7 +19,7 @@ class Car:
 
 
 if __name__ == '__main__':
-    tata_nano = Car('tata nano')
+    tata_nano = Car('tata nano')   # Car.__init__(tata_nano, 'tata nano')
     print(tata_nano.display_name())
     print(vars(tata_nano))
 

@@ -15,6 +15,8 @@ class Rocket:
     def launch(self):
         return "%s has reached %s" % (self.name, self.distance)
 
+# # Instantiation
+# r = Rocket('PSLV-4', 7887)
 
 class MarsRoverComp:
     def __init__(self, name, distance, maker):
@@ -39,3 +41,6 @@ if __name__ == '__main__':
 
     print(f'm.maker          :{m.maker}')
     print(m.get_maker())
+
+    print(f'{MarsRoverComp.__mro__ =}')
+    # (<class '__main__.MarsRoverComp'>, <class 'object'>)

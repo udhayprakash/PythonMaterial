@@ -19,14 +19,15 @@ class Person:
     def full_name(self):
         return self.first + ' ' + self.last
 
-
 person1 = Person('Udhay', 'Prakash')
 print(person1.email())
+
+
+print(f'person1.first      :{person1.first}')
+print(f'person1.last       :{person1.last}')
 
 # After placing property decorator, method
 # should be accessed like a variable
 
 print(f'person1.full_name  :{person1.full_name}')
-# print(f'person1.full_name():{person1.full_name()}')
-# TypeError: 'str' object is not callable
-
+# print(f'person1.full_name():{person1.full_name()}')  # TypeError: 'str' object is not callable

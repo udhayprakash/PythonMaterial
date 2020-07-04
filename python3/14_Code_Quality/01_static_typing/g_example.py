@@ -6,11 +6,11 @@ from typing import Tuple, List, Dict
 
 # Traditional Approach
 my_data = ("Adam", 10, 5.7)
-print(f'my_data:{my_data}')
+print(f'{my_data =}')
 
 # Adding Typing
 my_data: Tuple[str, int, float] = ("Adam", 10, 5.7)
-print(f'my_data:{my_data}')
+print(f'{my_data =}')
 
 # --------------------------------
 # A list of integers

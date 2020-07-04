@@ -9,8 +9,6 @@ Purpose: classes (OOP) introduction
 
 PEP 8 -> class names should be in CamelCasing
 """
-
-
 # Function Definition
 def hello():
     pass
@@ -18,7 +16,6 @@ def hello():
 
 # Function call
 hello()
-
 
 # ---------------------------------
 # Class Definition
@@ -29,5 +26,7 @@ class EmptyClass:
 # Class call - Instantiation
 # - process for creating instance from a class
 e1 = EmptyClass()
+print(f'{type(EmptyClass) =}')
+print(f'{EmptyClass =}')
 print(f'type(e1):{type(e1)}')
 print(f'e1      :{e1}')

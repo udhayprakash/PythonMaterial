@@ -4,7 +4,7 @@ Purpose: __slots__ importance
 """
 
 
-class OrdinaryCClass:
+class OrdinaryClass:
     """
     Generally, all class instances are mutable
     """
@@ -14,7 +14,7 @@ class OrdinaryCClass:
         self.bar = None
 
 
-o = OrdinaryCClass()
+o = OrdinaryClass()
 print(vars(o))
 
 # Dynamically creating attributes
@@ -23,7 +23,6 @@ setattr(o, 'yy', 999)
 
 print(vars(o))
 print()
-
 
 # ---------------------------------------------
 class SlottedClass:
@@ -39,16 +38,17 @@ class SlottedClass:
         # self.something = None
         # # AttributeError: 'SlottedClass' object has no attribute 'something'
 
-
+print()
 c = SlottedClass()
 # print(vars(c))
+# TypeError: vars() argument must have __dict__ attribute 
+
 
 # updating existing attribute values are possible
 print(f'c.foo={c.foo}')
 c.foo = 123
 print(f'c.foo={c.foo}')
 
-# can't add new attribute
 
 # can't create new attribute
 try:
@@ -56,5 +56,3 @@ try:
     setattr(c, 'yy', 999)
 except AttributeError as ex1:
     print(repr(ex1))
-
-

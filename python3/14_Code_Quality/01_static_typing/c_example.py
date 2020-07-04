@@ -15,9 +15,9 @@ hello('Python')
 
 # ---------------------------------
 # Method 2: Adding Typing
-def hello(name: str) -> None:
+def hello1(name: str) -> None:
     print(f'Hello {name}')
 
 
-hello('Python')
-hello(321323)
+hello1('Python')
+hello1(321323)    # NO error

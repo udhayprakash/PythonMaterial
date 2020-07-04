@@ -19,7 +19,7 @@ print()
 print([12, 24, 35] + [23, 34])
 print()
 
-# print(99, 45) + [33, 999]
+# (99, 45) + [33, 999]
 # TypeError: unsupported operand type(s) for +: 'NoneType' and 'list'
 
 # tuple concatenation

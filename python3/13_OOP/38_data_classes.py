@@ -17,7 +17,7 @@ class Book(object):
 
 
 b = Book('Python', 'Mark Lutz')
-print(vars(b))
-print(asdict(b))
+print(f'{vars(b)   =}')
+print(f'{asdict(b) =}')
 
-print(astuple(b))
+print(f'{astuple(b)=}')

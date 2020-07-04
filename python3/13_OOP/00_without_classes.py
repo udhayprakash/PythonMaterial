@@ -34,15 +34,15 @@ def withdraw(amount):
 
 if __name__ == '__main__':
     # Priyanka
-    print(f'Priyanka initial balance :{balance}')
+    print(f'\nPriyanka initial balance :{balance}')
     deposit(1000)
     print(f'Priyanka current balance :{balance}')
 
     deposit(2500)
     print(f'Priyanka current balance :{balance}')
-    
+
     withdraw(750)
     print(f'Priyanka current balance :{balance}')
 
     # Varun
-    print(f'Varun    initial balance :{balance}')
+    print(f'\nVarun    initial balance :{balance}')

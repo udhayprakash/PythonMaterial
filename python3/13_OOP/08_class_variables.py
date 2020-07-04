@@ -35,9 +35,8 @@ class Employee(object):
         when the instance is deleted
         :return:
         """
-        print('Destructor is called')
+        print('\nDestructor is called')
         Employee.emp_count -= 1
-
 
 if __name__ == '__main__':
     # instantiation
@@ -55,16 +54,3 @@ if __name__ == '__main__':
     empl_3 = Employee('Akhila')
     print(vars(empl_3))
     empl_3.total_employees_count()
-
-"""
-Assignment
-    Tesla company 
-        class variable: chase number
-            instance variables
-                - car_model
-                - car color
-                - car price
-
-            display()
-
-"""

@@ -10,6 +10,9 @@ Purpose: Abstract Classes
 
 
 # Ordinary classes
+from abc import ABC, abstractmethod
+
+
 class AbstractClass:
     def do_something(self):
         pass
@@ -25,8 +28,6 @@ b = B()
 # and no need to define it
 b.do_something()
 # ---------------------------------------------------
-
-from abc import ABC, abstractmethod
 
 
 class AbstractClassExample(ABC):

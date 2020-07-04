@@ -23,3 +23,8 @@ if __name__ == '__main__':
         print("buddy!!! you are still young {}".format(err.age))
     else:
         print('You are eligible for voting')
+
+    # Method Resolution Order
+    print(InvalidAge.__mro__)
+    # (<class '__main__.InvalidAge'>, <class 'Exception'>, <class 'BaseException'>, <class 'object'>)
+    

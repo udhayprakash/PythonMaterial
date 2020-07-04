@@ -1,15 +1,15 @@
 #!/usr/bin/python
 """
-Purpose: OOP demos
-
- constructor is a method which will be called the moment instance
-    is created
+Purpose: constructor is a method which will be 
+    called the moment instance is created
 """
 __author__ = 'Developer Name'
 
+from pprint import pprint
 
-# Class Definition
+
 class Person(object):
+    """ Class Definition """
     my_class_var = 111  # class - level variable
 
     def __init__(self):
@@ -41,14 +41,13 @@ print(f'vars(p1)   : {vars(p1)}')
 
 assert vars(p1) == p1.__dict__
 
-from pprint import pprint
 
 print('vars(Person):')
 pprint(vars(Person))
 
 # -------------------------------------------------
 
-pprint(vars())
+pprint(vars())  # pprint(globals())
 
 # Note: calling the vars() function without parameters will
 # return a dictionary containing the local symbol table.

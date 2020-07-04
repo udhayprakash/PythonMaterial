@@ -20,4 +20,4 @@ if __name__ == '__main__':
 
     # doctest.testmod()
     doctest.testmod(optionflags=doctest.ELLIPSIS)
-    doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)
+    # doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)

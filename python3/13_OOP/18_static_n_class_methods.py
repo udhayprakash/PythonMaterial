@@ -5,7 +5,7 @@ Methods
     2. class Methods
     3. static Methods
 
-Default Decorators: @staticmethod, @classmethod
+Default Decorators: @staticmethod, @classmethod, @property
 """
 
 
@@ -25,13 +25,14 @@ class MyClass:
         # neither use instance methods, instance variable, class methods nor class variables
 
 
-a = MyClass()
+if __name__ == '__main__':
+    a = MyClass()
 
-a.display('Django')  # accessing instance method
-MyClass.display(a, 'Django')  # accessing instance method
+    a.display('Django')  # accessing instance method
+    MyClass.display(a, 'Django')  # accessing instance method
 
-a.cmDisplay('Django')  # accessing class method
-MyClass.cmDisplay('Django')  # accessing class method
+    a.cmDisplay('Django')  # accessing class method
+    MyClass.cmDisplay('Django')  # accessing class method
 
-a.smDisplay('Django')  # accessing static method
-MyClass.smDisplay('Django')  # accessing static method
+    a.smDisplay('Django')  # accessing static method
+    MyClass.smDisplay('Django')  # accessing static method

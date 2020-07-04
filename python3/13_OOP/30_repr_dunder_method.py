@@ -15,12 +15,13 @@ class TheProblem:
     # def __str__(self):
     #     return 'str is called'
 
+    __str__ = __repr__
+
 
 p1 = TheProblem(range(50))
 print(p1)  # __repr__
-# when both __str__ and __repr__ were present,
+# NOTE: when both __str__ and __repr__ were present,
 # for print, __str__ will be preferred
-
 
 # -----------------------------------------
 import reprlib

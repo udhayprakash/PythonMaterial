@@ -15,9 +15,8 @@ class MyClass:
         """ Used to make the instance callable"""
         print('This is called')
 
-
 m = MyClass()
 print(m)
+
 print(f'callable(m):{callable(m)}')
 m()
-

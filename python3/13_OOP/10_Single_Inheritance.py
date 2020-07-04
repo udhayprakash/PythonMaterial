@@ -28,17 +28,14 @@ class Account:
         self.balance -= amount
         return self.balance
 
-
 # a1 = Account()
-# print(vars(a1))
-# print(dir(a1))
-
+# print(vars(a1))  # {'balance': 0}
+# print(dir(a1))   # ['balance',t' 'deposit', 'withdraw']
 
 class MinimumBalanceAccount(Account):
     """
     Child or sub class
     """
-
     def __init__(self):
         # calling the constructor of the parent class
         Account.__init__(self)
@@ -49,10 +46,10 @@ class MinimumBalanceAccount(Account):
         else:
             Account.withdraw(self, amount)
 
-
 a2 = MinimumBalanceAccount()
-print(vars(a2))
-print(dir(a2))
+print(vars(a2))  # {'balance': 0}
+print(dir(a2))   # 'balance', 'deposit', 'withdraw'
+
 
 # MRO - Method Resolution Order
 print(Account.__mro__)
@@ -60,6 +57,7 @@ print(Account.__mro__)
 
 print(MinimumBalanceAccount.__mro__)
 # (<class '__main__.MinimumBalanceAccount'>, <class '__main__.Account'>, <class 'object'>)
+
 
 print(f'Initial balance     :{a2.balance}')
 a2.deposit(1300)

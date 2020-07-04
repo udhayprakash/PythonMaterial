@@ -1,34 +1,68 @@
 #!/usr/bin/python
 """
-Purpose: Dunder Methods
+Purpose: Usage of Dunder (magic or Double underscore) methods
+
 """
 
 
-class LazyDB:
-    def __init__(self):
-        self.exists = 5
+class RationalNumber:
+    """
+    Rational Numbers with support for arithmetic operations.
 
-    def __getattr__(self, name):
-        value = 'Value for %s' % name
-        setattr(self, name, value)
-        return value
+        >>> a = RationalNumber(1, 2)
+        >>> b = RationalNumber(1, 3)
+        >>> a + b
+        5/6
+    """
+
+    def __init__(self, numerator, denominator=1):
+        self.n = numerator
+        self.d = denominator
+
+    def __add__(self, other):
+        if not isinstance(other, RationalNumber):
+            other = RationalNumber(other)
+
+        n = self.n * other.d + self.d * other.n
+        d = self.d * other.d
+        return RationalNumber(n, d)
+
+    def __sub__(self, other):
+        if not isinstance(other, RationalNumber):
+            other = RationalNumber(other)
+
+        n = self.n * other.d - self.d * other.n
+        d = self.d * other.d
+        return RationalNumber(n, d)
+
+    def __str__(self):
+        return "%s/%s" % (self.n, self.d)
+
+    __repr__ = __str__
+
+    def __del__(self):
+        print('deleting the instance')
 
 
-data = LazyDB()
-print('Before:', data.__dict__)  # vars(data)
-print('foo   :', data.foo)
-print('After :', data.__dict__)
+# Main
+a = RationalNumber(1, 2)  # a.n = 1,a.d=2
+b = RationalNumber(2)
+c = 29
 
+print(isinstance(a, RationalNumber))  # True
+print(isinstance(b, RationalNumber))  # True
+print(isinstance(c, RationalNumber))  # False
+print(isinstance(c, int))  # True
+print()
 
-class LoggingLazyDB(LazyDB):
-    def __getattr__(self, name):
-        print('Called __getattr__(%s)' % name)
-        # return LazyDB.__getattr__(name)
-        return super().__getattr__(name)
+print(a.__add__(b))
+print(a + b)  # same as a.__add__(b)
 
+print(a.__sub__(b))
+print(a - b)  # same as a.__sub__(b)
 
-data = LoggingLazyDB()
-print('exists:', data.exists)
-print('foo   :', data.foo)
-print('foo   :', data.foo)
+print(a.__str__())
+print(str(a))  # same as a.__str__()
 
+print(a.__repr__())
+print(repr(a))

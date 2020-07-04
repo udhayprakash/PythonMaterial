@@ -19,6 +19,7 @@ class Singleton(Exception):
 
 s = Singleton()
 pprint(vars(Singleton))
+print()
 
 # Doesnt allow to create second instance
 d = Singleton()

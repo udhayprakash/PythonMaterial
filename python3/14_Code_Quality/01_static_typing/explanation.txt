@@ -1,5 +1,0 @@
-There are various static typing modules in python:
-- mypy (DropBox)
-- pytype (Google)
-- pyre (Facebook)
-- pyright (Microsoft)

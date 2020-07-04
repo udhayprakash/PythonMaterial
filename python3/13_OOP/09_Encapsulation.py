@@ -8,7 +8,6 @@ Purpose: Encapsulation in OOP
 """
 from pprint import pprint
 
-
 class Car:
     a = 'public class variable'
     _a = 'protected class variable'
@@ -39,27 +38,34 @@ class Car:
         print(f'Car.__a                 : {Car.__a}')
 
 
-c = Car()
-pprint(vars(Car))
-print('Car.a      ', Car.a)  # accessing pubic variable
-print('Car._a     ', Car._a)  # accessing protected variable
+if __name__ == '__main__':
+    print('\n ------------Class Level -------')
+    pprint(vars(Car))
+    {
+        'a': 'public class variable', 
+        '_a': 'protected class variable',
+        '_Car__a': 'private class variable',
+    }
+    print('Car.a      ', Car.a)  # accessing pubic variable
+    print('Car._a     ', Car._a)  # accessing protected variable
 
-# print('Car.__a', Car.__a) # accessing private variable
-print('Car._Car__a', Car._Car__a)  # accessing private variable
+    # print('Car.__a', Car.__a) # accessing private variable
+    print('Car._Car__a', Car._Car__a)  # accessing private variable
 
-print()
+    print('\n ------------Instance Level -------')
+    # Instantiation
+    c = Car()
+    pprint(vars(c))
 
-pprint(vars(c))
+    print()
+    print(f'c.b         :{c.b}')
+    print(f'c._b        :{c._b}')
+    print(f'c._Car__b   :{c._Car__b}')
+    print()
 
-print()
-print(f'c.b         :{c.b}')
-print(f'c._b        :{c._b}')
-print(f'c._Car__b   :{c._Car__b}')
-print()
+    c.instance_method()  # public
+    c._instance_method()  # protected
+    c._Car__instance_method()  # Private
 
-c.instance_method()  # public
-c._instance_method()  # protected
-c._Car__instance_method()  # Private
-
-print()
-c.new_method()
+    print()
+    c.new_method()

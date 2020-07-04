@@ -43,7 +43,7 @@ class MyParent2:
         return self.num1 - self.num2
 
 
-class MyChild(MyParent2, MyParent):  # MRO depends on the order of inheritance
+class MyChild(MyParent, MyParent2):  # MRO depends on the order of inheritance
     def __init__(self):
         MyParent.__init__(self)
         MyParent2.__init__(self)

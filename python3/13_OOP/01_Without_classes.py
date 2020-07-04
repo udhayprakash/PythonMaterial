@@ -27,16 +27,16 @@ def deposit(account, amount):
 
 def withdraw(account, amount):
     print(f'\tWithdrawn {amount}')
-    account['balance'] += amount
+    account['balance'] -= amount
     return account['balance'] 
 
 
 if __name__ == '__main__':
     # Priyanka
-    Priyanka = new()
-    print(f'Priyanka initial balance :{Priyanka["balance"]}')
+    Priyanka = new()                                            # {'balance': 0}
+    print(f'Priyanka initial balance :{Priyanka["balance"]}')   # 0
     deposit(Priyanka, 1000)
-    print(f'Priyanka current balance :{Priyanka["balance"]}')
+    print(f'Priyanka current balance :{Priyanka["balance"]}')   # 1000
 
     deposit(Priyanka, 2500)
     print(f'Priyanka current balance :{Priyanka["balance"]}')

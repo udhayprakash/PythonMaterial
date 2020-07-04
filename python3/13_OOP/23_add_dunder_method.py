@@ -27,4 +27,7 @@ print(father)
 mother = Person('MotherName', 'MotherSurname')
 print(mother)
 
+print()
+print(mother.__add__(father))
 print(mother + father)
+

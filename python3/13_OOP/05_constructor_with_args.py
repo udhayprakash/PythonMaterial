@@ -7,16 +7,15 @@ Purpose: Constructor with args
 # class definition
 class Animal:
     def __init__(self, name):
-        print('Constructor called')
+        print('\nConstructor called')
         self.name = name
 
     def walk(self):
         print(self.name + ' walks.')
 
-
 if __name__ == '__main__':
     # Instantiation
-    # Animal() # TypeError: __init__() missing 1 required positional argument: 'name'
+    # Animal()  # TypeError: __init__() missing 1 required positional argument: 'name'
 
     duck = Animal('Duck')
     # Animal.__init__(duck, 'Duck')
@@ -31,3 +30,7 @@ if __name__ == '__main__':
     # -------------------
     rhino = Animal('African Rhino')
     rhino.walk()
+
+    # TO retrieve the instance variables
+    print(vars(rhino))
+    print(f'rhino.name:{rhino.name}')

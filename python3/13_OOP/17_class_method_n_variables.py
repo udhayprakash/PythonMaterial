@@ -26,7 +26,7 @@ class Robot:
         I am dying.
         :return:
         """
-        print("{} is being destroyed:".format(self.name))
+        print("\n{} is being destroyed:".format(self.name))
         Robot.population -= 1
         if Robot.population == 0:
             print("{} was the lst one.".format(self.name))
@@ -47,7 +47,7 @@ class Robot:
         Prints the current population.
         :return:
         """
-        print("\tWe have {:d} robots.".format(cls.population))
+        print("\tWe have {:d} robots.".format(cls.population))  # Robot.population
 
 
 if __name__ == '__main__':

@@ -6,6 +6,9 @@ Purpose: To create a class with singleton design pattern
 """
 from pprint import pprint
 
+# Question: __new__ vs __init__
+# baby born   => __new__
+# baby named  => __init__
 
 class Logger(object):
     def __new__(cls, *args, **kwargs):
@@ -17,8 +20,10 @@ class Logger(object):
 l1 = Logger()
 pprint(vars(Logger))
 
-print(l1)
+print(f'l1:{l1}')
 print(vars(l1))
 
 l2 = Logger()
 print(id(l1), id(l2))
+
+assert l1 is l2
