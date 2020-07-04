@@ -30,6 +30,3 @@ class TestSuitemultiplication(unittest.TestCase):
     @unittest.expectedFailure
     def test04(self):
         self.assertEqual(multiplication('10.0', True), 200.0)
-
-if __name__ == '__main__':
-    unittest.main()

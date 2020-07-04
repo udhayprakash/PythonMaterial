@@ -1,13 +1,12 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
 Purpose: Testing addition functionality in calculator
 """
-import sys 
-import unittest 
+import sys
+import unittest
 
 
 sys.path.insert(0, '..')
-
 from calculator import addition
 
 
@@ -30,6 +29,3 @@ class TestSuiteAddition(unittest.TestCase):
     @unittest.expectedFailure
     def test04(self):
         self.assertEqual(addition('10.0', True), 30.0)
-
-if __name__ == '__main__':
-    unittest.main()

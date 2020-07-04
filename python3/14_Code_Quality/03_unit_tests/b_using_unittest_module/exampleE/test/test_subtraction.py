@@ -1,14 +1,13 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
 Purpose: Testing subtraction functionality in calculator
 """
-import sys 
-import unittest 
+from calculator import subtraction
+import sys
+import unittest
 
 
 sys.path.insert(0, '..')
-
-from calculator import subtraction
 
 
 class TestSuitesubtraction(unittest.TestCase):
@@ -30,6 +29,3 @@ class TestSuitesubtraction(unittest.TestCase):
     @unittest.expectedFailure
     def test04(self):
         self.assertEqual(subtraction('10.0', True), -10.0)
-
-if __name__ == '__main__':
-    unittest.main()

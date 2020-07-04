@@ -1,14 +1,12 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
 Purpose: Testing division functionality in calculator
 """
-import sys 
-import unittest 
-
+from calculator import division
+import sys
+import unittest
 
 sys.path.insert(0, '..')
-
-from calculator import division
 
 
 class TestSuitedivision(unittest.TestCase):
@@ -30,7 +28,3 @@ class TestSuitedivision(unittest.TestCase):
     @unittest.expectedFailure
     def test04(self):
         self.assertEqual(division('10.0', True), 0.5)
-
-
-if __name__ == '__main__':
-    unittest.main()
