@@ -25,6 +25,7 @@ except ZeroDivisionError:
     exc_traceback: {exc_traceback}
     ''')
     print(f'Error occurred at line {exc_traceback.tb_lineno}')
+    print()
     traceback.print_exc(file=sys.stdout)
 except Exception as ex: 
     print(f'Unhandled exception: {ex =}')

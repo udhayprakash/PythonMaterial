@@ -3,3 +3,8 @@ pep8 filename.py
 
 pip install autopep8
 autopep8 --in-place filename.py
+
+
+pip install pytest-cov 
+py.test test_calculate.py
+coverage run -m 
