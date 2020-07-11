@@ -1,2 +1,3 @@
+https://github.com/tommyod/awesome-pandas
 http://www.datasciencemadesimple.com/
 http://python-ds.com/
