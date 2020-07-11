@@ -12,11 +12,13 @@ def generate_qr():
     message = ''' 
         Name: Udhay Prakash
         Blog: https://udhayprakash.blogspot.com/
+        Email: uday3prakash@gmail.com
+        Phone: +91-9533787794
     '''
     url = pyqrcode.create(message)
-    if os.path.exists('url.png'):
-        os.remove('url.png')
-    url.png('url.png', scale=8)
+    if os.path.exists('QR_CODE.png'):
+        os.remove('QR_CODE.png')
+    url.png('QR_CODE.png', scale=8)
     # print("Printing QR code")
     # print(url.terminal())
 

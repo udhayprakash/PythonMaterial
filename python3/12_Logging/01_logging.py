@@ -23,7 +23,7 @@ print()
 
 
 # Formatting logs
-logging.error('This is %dth error of %s application'%( 5, 'polls'))
+logging.error('This is %dth error of %s application' % (5, 'polls'))
 logging.error('This is %dth error of %s application', 5, 'polls')
 print('This is %dth error of %s application', 5, 'polls')
 print('This is 5th error of polls application', 5, 'polls')
@@ -34,9 +34,11 @@ print()
 # SDLC -
 #   dev --> testing --> staging/UAT ---> production
 
+
 def addition(n1, n2):
     logging.debug('addition function - start')
     return n1 + n2
+
 
 addition(1, 2)
 addition(1, 2)

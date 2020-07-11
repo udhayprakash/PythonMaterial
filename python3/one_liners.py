@@ -23,4 +23,7 @@ One-line constructor - to avoid boiler plate code ==> now dataclasses
 
 To get unique characters in a text file, 
     set(open('myfile.txt', 'r').read())
+
+Fastest way to view package path
+    python -m site 
 """
