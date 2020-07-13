@@ -1,0 +1,37 @@
+10 projects
+
+1 android market
+https://www.kaggle.com/lava18/all-that-you-need-to-know-about-the-android-market
+
+2 pokemon
+https://www.kaggle.com/ash316/learn-pandas-with-pokemons
+
+3 kick starter
+https://www.kaggle.com/kabure/kickstarter-interactive-explanatory-exploration
+https://www.kaggle.com/rtatman/data-cleaning-challenge-scale-and-normalize-data
+
+4 olympic game
+https://www.kaggle.com/marcogdepinto/let-s-discover-more-about-the-olympic-games
+
+
+5 game sale
+https://www.kaggle.com/umeshnarayanappa/explore-video-games-sales
+
+6 world cup
+https://www.kaggle.com/pavanraj159/fifa-world-cup-1930-to-2014-data-analysis
+
+7 ted talk
+https://www.kaggle.com/rounakbanik/ted-data-analysis
+
+8 coinmarketcap
+
+9 crime dataset
+
+10 nba
+https://www.kaggle.com/drgilermo/goats-the-greatest-players-of-all-time
+
+
+
+
+
+

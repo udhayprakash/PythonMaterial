@@ -51,3 +51,14 @@ partial_content = fh.read(6)
 print(f'\n{partial_content = }')
 
 fh.close()
+
+
+# The seek() method accepts two arguments:
+
+# offset – A number of bytes from whence
+# whence – The reference point
+# You can set whence to these three values:
+
+# 0 – The beginning of the file (default)
+# 1 – The current file position
+# 2 – The end of the file
