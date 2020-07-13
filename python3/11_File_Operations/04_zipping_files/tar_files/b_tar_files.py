@@ -1,9 +1,9 @@
 import tarfile
 
 # creating files 
-open('fileOne.txt', 'w')
-open('fileTwo.txt', 'w')
-open('fileThree.txt', 'w')
+open('fileOne.txt', 'w').write('This is first line')
+open('fileTwo.txt', 'w').write('This is second line')
+open('fileThree.txt', 'w').write('This is third line')
 
 # Creating new archives
 with tarfile.open('tarFileOne.tar', mode = 'w') as tF:
