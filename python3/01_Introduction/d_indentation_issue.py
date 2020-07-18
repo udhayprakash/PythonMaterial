@@ -1,18 +1,18 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Importance of Indendation
+Purpose: Importance of Indentation
 """
-print('Hello World')
-#    print('hello World 2')  # IndentationError: unexpected indent
-print('hello World 2')
 
+print('hello world1!')
+#  print('hello world2!') # IndentationError: unexpected indent
+print('hello world3!')
 
 # block code - if, else, elif, for, while, def , class, ...
 # if 12 > 3:
-# print('greater')            #IndentationError: expected an indented block
+# print('12 is greater than 3') # IndentationError: expected an indented block
 
 if 12 > 3:
-    print('greater')
+    print('12 is greater than 3')
 
 if 12 > 34:
     print('greater')
@@ -25,7 +25,6 @@ elif 2 > 1:
     print('case 2')
 else:
     print('case 3')
-
 
 if 1 < 2:
     if 2 < 3:
