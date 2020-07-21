@@ -1,1 +1,0 @@
-The sum of car prices is {{ cars | sum(attribute='price') }}
