@@ -1,0 +1,45 @@
+https://
+    www.google.com
+    /search
+    ?
+    q=python+programming
+    &
+    oq=python+programming
+    &
+    aqs=chrome..69i57j69i65l3j69i61j69i60.6334j0j7
+    &
+    sourceid=chrome
+    &
+    ie=UTF-8
+
+
+request flow:
+    https://web.archive.org/web/20180219193143/https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
+
+
+List of Public APIs : 
+    https://github.com/public-apis/public-apis
+
+Mail-Gun 
+    https://www.mailgun.com/
+    
+http://whc.unesco.org/document/108327
+http://whc.unesco.org/en/documents/108327
+
+
+web services
+    SOAP services     --- xml 
+    RESTful services  --- json, xml
+        CRUD
+            create        CREATE/POST
+            retrieve      GET 
+            update        UPDATE/POST/PUT
+            delete        DELETE
+
+
+
+web site 
+    https://www.timeanddate.com/worldclock/india/new-delhi
+
+API 
+    https://www.timeanddate.com/services/api/

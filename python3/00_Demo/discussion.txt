@@ -1,0 +1,75 @@
+1. which OS are you using ?
+2. whether you installed Python already or not?
+
+
+Python 
+    - installation
+        - except in windows, in all other os, you can find python pre-installed 
+    - distributions
+        - python.org/downloads   100
+        - anaconda python        free : 130   enterprise: 250
+        - active python
+        - python(x,y)          150  comminutu 
+        - chocalaty python
+    - domains/fields in which python is used 
+        - https://udhayprakash.blogspot.com/2015/07/world-made-with-python.html
+    - Python is platform independent
+        - 
+
+OS - MAC /unix/linux
+     - python 2
+     - python 3 
+
+windows
+    - python2 or 3 
+
+
+
+Windows 
+
+
+
+platform independent language 
+
+
+
+
+c & c++ - fastestly language 
+    - win32 
+    - win64 
+
+java - platform independent
+    - .jar 
+
+
+python - platform independent
+    - priise code 
+    - readd
+
+
+compiler based language 
+    - c, c++, java 
+
+    code - > linkage - > assembly _> machine level 
+
+interpreter based languages 
+    - python 
+
+    code -> each line -> interpreter -> byte code -> assembly _> machine level 
+    python is slow 
+
+    project takes - 100 days 
+                -  40 days 
+
+
+android - kivy 
+
+
+
+
+aspect oriented programming 
+    - bash, shell, 
+functional oriented programming 
+    - c, 
+object oriented programming 
+    - java, c++

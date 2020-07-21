@@ -1,0 +1,36 @@
+Built-in Functions (69) - Python 3
+========================
+abs()	        delattr()	hash()	        memoryview()	set()
+all()	        dict()	    help()	        min()	        setattr()
+any()	        dir()	    hex()	        next()	        slice()
+ascii()	        divmod()	id()	        object()	    sorted()
+bin()	        enumerate()	input()	        oct()	        staticmethod()
+bool()	        eval()	    int()	        open()	        str()
+breakpoint()	exec()	    isinstance()	ord()	        sum()
+bytearray()	    filter()	issubclass()	pow()	        super()
+bytes()	        float()	    iter()	        print()	        tuple()
+callable()	    format()	len()	        property()	    type()
+chr()	        frozenset()	list()	        range()	        vars()
+classmethod()	getattr()	locals()	    repr()	        zip()
+compile()	    globals()	map()	        reversed()	    __import__()
+complex()	    hasattr()	max()	        round()
+
+
+Built-in Functions (64) - Python 2
+========================
+abs()            divmod()      input()            open()        staticmethod()
+all()            enumerate()   int()              ord()         str()
+any()            eval()        isinstance()       pow()         sum()
+basestring()     execfile()    issubclass()       print()       super()
+bin()            file()        iter()             property()    tuple()
+bool()           filter()      len()              range()       type()
+bytearray()      float()       list()             raw_input()   unichr()
+callable()       format()      locals()           reduce()      unicode()
+chr()            frozenset()   long()             reload()      vars()
+classmethod()    getattr()     map()              repr()        xrange()
+cmp()            globals()     max()              reversed()    zip()
+compile()        hasattr()     memoryview()       round()       __import__()
+complex()        hash()        min()              set()    
+delattr()        help()        next()             setattr()    
+dict()           hex()         object()           slice()    
+dir()            id()          oct()              sorted()

@@ -1,0 +1,11 @@
+Q) Using the generator concept , display all the prime numbers from 0 till 99 crores 
+
+Q) mylist =[12, 1123, 23, 23, 234, 234, 23, 23, 234, 234, 234]
+  slice_size = 3
+
+  def slicing_list(mylist, slice_size)
+        logic 
+
+  assert slicing_list(mylist, 3) = [ [12, 1123, 23], [ 23, 234, 234], [234, 23, 23], [234, 234]]
+
+Q) Write a generator to mimck the range() function

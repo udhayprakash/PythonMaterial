@@ -1,0 +1,5044 @@
+movie_title,imdb_score,title_year
+Avatar 	,7.9,2009.0
+Pirates of the Caribbean: At World's End ,7.1,2007.0
+Spectre ,6.8,2015.0
+The Dark Knight Rises ,8.5,2012.0
+Star Wars: Episode VII - The Force Awakens             ,7.1,
+John Carter ,6.6,2012.0
+Spider-Man 3 ,6.2,2007.0
+Tangled ,7.8,2010.0
+Avengers: Age of Ultron ,7.5,2015.0
+Harry Potter and the Half-Blood Prince ,7.5,2009.0
+Batman v Superman: Dawn of Justice ,6.9,2016.0
+Superman Returns ,6.1,2006.0
+Quantum of Solace ,6.7,2008.0
+Pirates of the Caribbean: Dead Man's Chest ,7.3,2006.0
+The Lone Ranger ,6.5,2013.0
+Man of Steel ,7.2,2013.0
+The Chronicles of Narnia: Prince Caspian ,6.6,2008.0
+The Avengers ,8.1,2012.0
+Pirates of the Caribbean: On Stranger Tides ,6.7,2011.0
+Men in Black 3 ,6.8,2012.0
+The Hobbit: The Battle of the Five Armies ,7.5,2014.0
+The Amazing Spider-Man ,7.0,2012.0
+Robin Hood ,6.7,2010.0
+The Hobbit: The Desolation of Smaug ,7.9,2013.0
+The Golden Compass ,6.1,2007.0
+King Kong ,7.2,2005.0
+Titanic ,7.7,1997.0
+Captain America: Civil War ,8.2,2016.0
+Battleship ,5.9,2012.0
+Jurassic World ,7.0,2015.0
+Skyfall ,7.8,2012.0
+Spider-Man 2 ,7.3,2004.0
+Iron Man 3 ,7.2,2013.0
+Alice in Wonderland ,6.5,2010.0
+X-Men: The Last Stand ,6.8,2006.0
+Monsters University ,7.3,2013.0
+Transformers: Revenge of the Fallen ,6.0,2009.0
+Transformers: Age of Extinction ,5.7,2014.0
+Oz the Great and Powerful ,6.4,2013.0
+The Amazing Spider-Man 2 ,6.7,2014.0
+TRON: Legacy ,6.8,2010.0
+Cars 2 ,6.3,2011.0
+Green Lantern ,5.6,2011.0
+Toy Story 3 ,8.3,2010.0
+Terminator Salvation ,6.6,2009.0
+Furious 7 ,7.2,2015.0
+World War Z ,7.0,2013.0
+X-Men: Days of Future Past ,8.0,2014.0
+Star Trek Into Darkness ,7.8,2013.0
+Jack the Giant Slayer ,6.3,2013.0
+The Great Gatsby ,7.3,2013.0
+Prince of Persia: The Sands of Time ,6.6,2010.0
+Pacific Rim ,7.0,2013.0
+Transformers: Dark of the Moon ,6.3,2011.0
+Indiana Jones and the Kingdom of the Crystal Skull ,6.2,2008.0
+The Good Dinosaur ,6.8,2015.0
+Brave ,7.2,2012.0
+Star Trek Beyond ,7.5,2016.0
+WALL·E ,8.4,2008.0
+Rush Hour 3 ,6.2,2007.0
+2012 ,5.8,2009.0
+A Christmas Carol ,6.8,2009.0
+Jupiter Ascending ,5.4,2015.0
+The Legend of Tarzan ,6.6,2016.0
+"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe ",6.9,2005.0
+X-Men: Apocalypse ,7.3,2016.0
+The Dark Knight ,9.0,2008.0
+Up ,8.3,2009.0
+Monsters vs. Aliens ,6.5,2009.0
+Iron Man ,7.9,2008.0
+Hugo ,7.5,2011.0
+Wild Wild West ,4.8,1999.0
+The Mummy: Tomb of the Dragon Emperor ,5.2,2008.0
+Suicide Squad ,6.9,2016.0
+Evan Almighty ,5.4,2007.0
+Edge of Tomorrow ,7.9,2014.0
+Waterworld ,6.1,1995.0
+G.I. Joe: The Rise of Cobra ,5.8,2009.0
+Inside Out ,8.3,2015.0
+The Jungle Book ,7.8,2016.0
+Iron Man 2 ,7.0,2010.0
+Snow White and the Huntsman ,6.1,2012.0
+Maleficent ,7.0,2014.0
+Dawn of the Planet of the Apes ,7.6,2014.0
+The Lovers ,4.5,2015.0
+47 Ronin ,6.3,2013.0
+Captain America: The Winter Soldier ,7.8,2014.0
+Shrek Forever After ,6.4,2010.0
+Tomorrowland ,6.5,2015.0
+Big Hero 6 ,7.9,2014.0
+Wreck-It Ralph ,7.8,2012.0
+The Polar Express ,6.6,2004.0
+Independence Day: Resurgence ,5.5,2016.0
+How to Train Your Dragon ,8.2,2010.0
+Terminator 3: Rise of the Machines ,6.4,2003.0
+Guardians of the Galaxy ,8.1,2014.0
+Interstellar ,8.6,2014.0
+Inception ,8.8,2010.0
+Godzilla Resurgence ,8.2,2016.0
+The Hobbit: An Unexpected Journey ,7.9,2012.0
+The Fast and the Furious ,6.7,2001.0
+The Curious Case of Benjamin Button ,7.8,2008.0
+X-Men: First Class ,7.8,2011.0
+The Hunger Games: Mockingjay - Part 2 ,6.6,2015.0
+The Sorcerer's Apprentice ,6.1,2010.0
+Poseidon ,5.6,2006.0
+Alice Through the Looking Glass ,6.4,2016.0
+Shrek the Third ,6.1,2007.0
+Warcraft ,7.3,2016.0
+Terminator Genisys ,6.6,2015.0
+The Chronicles of Narnia: The Voyage of the Dawn Treader ,6.3,2010.0
+Pearl Harbor ,6.1,2001.0
+Transformers ,7.1,2007.0
+Alexander ,5.5,2004.0
+Harry Potter and the Order of the Phoenix ,7.5,2007.0
+Harry Potter and the Goblet of Fire ,7.6,2005.0
+Hancock ,6.4,2008.0
+I Am Legend ,7.2,2007.0
+Charlie and the Chocolate Factory ,6.7,2005.0
+Ratatouille ,8.0,2007.0
+Batman Begins ,8.3,2005.0
+Madagascar: Escape 2 Africa ,6.7,2008.0
+Night at the Museum: Battle of the Smithsonian ,5.9,2009.0
+X-Men Origins: Wolverine ,6.7,2009.0
+The Matrix Revolutions ,6.7,2003.0
+Frozen ,7.6,2013.0
+The Matrix Reloaded ,7.2,2003.0
+Thor: The Dark World ,7.1,2013.0
+Mad Max: Fury Road ,8.1,2015.0
+Angels & Demons ,6.7,2009.0
+Thor ,7.0,2011.0
+Bolt ,6.9,2008.0
+G-Force ,5.1,2009.0
+Wrath of the Titans ,5.8,2012.0
+Dark Shadows ,6.2,2012.0
+Mission: Impossible - Rogue Nation ,7.4,2015.0
+The Wolfman ,5.8,2010.0
+The Legend of Tarzan ,6.6,2016.0
+Bee Movie ,6.2,2007.0
+Kung Fu Panda 2 ,7.3,2011.0
+The Last Airbender ,4.2,2010.0
+Mission: Impossible III ,6.9,2006.0
+White House Down ,6.4,2013.0
+Mars Needs Moms ,5.4,2011.0
+Flushed Away ,6.7,2006.0
+Pan ,5.8,2015.0
+Mr. Peabody & Sherman ,6.9,2014.0
+Troy ,7.2,2004.0
+Madagascar 3: Europe's Most Wanted ,6.9,2012.0
+Die Another Day ,6.1,2002.0
+Ghostbusters ,5.5,2016.0
+Armageddon ,6.6,1998.0
+Men in Black II ,6.1,2002.0
+Beowulf ,6.3,2007.0
+Kung Fu Panda 3 ,7.2,2016.0
+Mission: Impossible - Ghost Protocol ,7.4,2011.0
+Rise of the Guardians ,7.3,2012.0
+Fun with Dick and Jane ,6.1,2005.0
+The Last Samurai ,7.7,2003.0
+Exodus: Gods and Kings ,6.1,2014.0
+Star Trek ,8.0,2009.0
+Spider-Man ,7.3,2002.0
+How to Train Your Dragon 2 ,7.9,2014.0
+Gods of Egypt ,5.5,2016.0
+Stealth ,5.0,2005.0
+Watchmen ,7.7,2009.0
+Lethal Weapon 4 ,6.6,1998.0
+Hulk ,5.7,2003.0
+G.I. Joe: Retaliation ,5.8,2013.0
+Sahara ,6.0,2005.0
+Final Fantasy: The Spirits Within ,6.4,2001.0
+Captain America: The First Avenger ,6.9,2011.0
+The World Is Not Enough ,6.4,1999.0
+Master and Commander: The Far Side of the World ,7.4,2003.0
+The Twilight Saga: Breaking Dawn - Part 2 ,5.5,2012.0
+Happy Feet 2 ,5.9,2011.0
+The Incredible Hulk ,6.8,2008.0
+Miami Vice             ,7.5,
+The BFG ,6.8,2016.0
+The Revenant ,8.1,2015.0
+Turbo ,6.5,2013.0
+Rango ,7.2,2011.0
+Penguins of Madagascar ,6.7,2014.0
+The Bourne Ultimatum ,8.1,2007.0
+Kung Fu Panda ,7.6,2008.0
+Ant-Man ,7.4,2015.0
+The Hunger Games: Catching Fire ,7.6,2013.0
+The Twilight Saga: Breaking Dawn - Part 2 ,5.5,2012.0
+Home ,6.7,2015.0
+War of the Worlds ,6.5,2005.0
+Bad Boys II ,6.6,2003.0
+Puss in Boots ,6.7,2011.0
+Salt ,6.4,2010.0
+Noah ,5.8,2014.0
+The Adventures of Tintin ,7.4,2011.0
+Harry Potter and the Prisoner of Azkaban ,7.8,2004.0
+Australia ,6.6,2008.0
+After Earth ,4.9,2013.0
+Dinosaur ,6.5,2000.0
+Harry Potter and the Deathly Hallows: Part II ,7.5,2011.0
+Night at the Museum: Secret of the Tomb ,6.2,2014.0
+Megamind ,7.3,2010.0
+Harry Potter and the Sorcerer's Stone ,7.5,2001.0
+R.I.P.D. ,5.6,2013.0
+Godzilla Resurgence ,8.2,2016.0
+Pirates of the Caribbean: The Curse of the Black Pearl ,8.1,2003.0
+Harry Potter and the Deathly Hallows: Part I ,6.4,2010.0
+The Hunger Games: Mockingjay - Part 1 ,6.7,2014.0
+The Da Vinci Code ,6.6,2006.0
+Rio 2 ,6.4,2014.0
+X-Men 2 ,7.5,2003.0
+Fast Five ,7.3,2011.0
+Sherlock Holmes: A Game of Shadows ,7.5,2011.0
+Clash of the Titans ,5.8,2010.0
+Total Recall ,7.5,1990.0
+The 13th Warrior ,6.6,1999.0
+The Bourne Legacy ,6.7,2012.0
+Batman & Robin ,3.7,1997.0
+How the Grinch Stole Christmas ,6.0,2000.0
+The Day After Tomorrow ,6.4,2004.0
+Mission: Impossible II ,6.1,2000.0
+The Perfect Storm ,6.4,2000.0
+Fantastic 4: Rise of the Silver Surfer ,5.6,2007.0
+Life of Pi ,8.0,2012.0
+Ghost Rider ,5.2,2007.0
+Jason Bourne ,7.1,2016.0
+Charlie's Angels: Full Throttle ,4.8,2003.0
+Prometheus ,7.0,2012.0
+Stuart Little 2 ,5.4,2002.0
+Elysium ,6.6,2013.0
+The Chronicles of Riddick ,6.7,2004.0
+RoboCop ,6.2,2014.0
+Speed Racer ,6.1,2008.0
+How Do You Know ,5.3,2010.0
+Knight and Day ,6.3,2010.0
+Oblivion ,7.0,2013.0
+Star Wars: Episode III - Revenge of the Sith ,7.6,2005.0
+Star Wars: Episode II - Attack of the Clones ,6.7,2002.0
+"Monsters, Inc. ",8.1,2001.0
+The Wolverine ,6.7,2013.0
+Star Wars: Episode I - The Phantom Menace ,6.5,1999.0
+The Croods ,7.3,2013.0
+Asterix at the Olympic Games ,5.1,2008.0
+Windtalkers ,6.0,2002.0
+The Huntsman: Winter's War ,6.1,2016.0
+Teenage Mutant Ninja Turtles ,5.9,2014.0
+Gravity ,7.8,2013.0
+Dante's Peak ,5.8,1997.0
+Teenage Mutant Ninja Turtles: Out of the Shadows ,6.3,2016.0
+Fantastic Four ,4.3,2015.0
+Night at the Museum ,6.4,2006.0
+San Andreas ,6.1,2015.0
+Tomorrow Never Dies ,6.5,1997.0
+The Patriot ,7.1,2000.0
+Ocean's Twelve ,6.4,2004.0
+Mr. & Mrs. Smith ,6.5,2005.0
+Insurgent ,6.3,2015.0
+The Aviator ,7.5,2004.0
+Gulliver's Travels ,4.9,2010.0
+The Green Hornet ,5.8,2011.0
+The A-Team             ,7.6,
+300: Rise of an Empire ,6.2,2014.0
+The Smurfs ,5.5,2011.0
+Home on the Range ,5.4,2004.0
+Allegiant ,5.8,2016.0
+Real Steel ,7.1,2011.0
+The Smurfs 2 ,5.4,2013.0
+Speed 2: Cruise Control ,3.7,1997.0
+Ender's Game ,6.7,2013.0
+Live Free or Die Hard ,7.2,2007.0
+The Lord of the Rings: The Fellowship of the Ring ,8.8,2001.0
+Around the World in 80 Days ,5.8,2004.0
+Ali ,6.8,2001.0
+The Cat in the Hat ,3.8,2003.0
+"I, Robot ",7.1,2004.0
+Kingdom of Heaven ,7.2,2005.0
+Stuart Little ,5.9,1999.0
+The Princess and the Frog ,7.1,2009.0
+The Martian ,8.1,2015.0
+"10,000 B.C.             ",7.2,
+The Island ,6.9,2005.0
+Town & Country ,4.4,2001.0
+Gone in Sixty Seconds ,6.5,2000.0
+Gladiator ,8.5,2000.0
+Minority Report ,7.7,2002.0
+Harry Potter and the Chamber of Secrets ,7.4,2002.0
+Casino Royale ,8.0,2006.0
+Planet of the Apes ,5.7,2001.0
+Terminator 2: Judgment Day ,8.5,1991.0
+Public Enemies ,7.0,2009.0
+American Gangster ,7.8,2007.0
+True Lies ,7.2,1994.0
+The Taking of Pelham 1 2 3 ,6.4,2009.0
+Little Fockers ,5.5,2010.0
+The Other Guys ,6.7,2010.0
+Eraser ,6.1,1996.0
+Django Unchained ,8.5,2012.0
+The Hunchback of Notre Dame ,6.9,1996.0
+The Emperor's New Groove ,7.3,2000.0
+The Expendables 2 ,6.7,2012.0
+National Treasure ,6.9,2004.0
+Eragon ,5.1,2006.0
+Where the Wild Things Are ,6.8,2009.0
+Pan ,5.8,2015.0
+Epic ,6.7,2013.0
+The Tourist ,6.0,2010.0
+End of Days ,5.7,1999.0
+Blood Diamond ,8.0,2006.0
+The Wolf of Wall Street ,8.2,2013.0
+Batman Forever ,5.4,1995.0
+Starship Troopers ,7.2,1997.0
+Cloud Atlas ,7.5,2012.0
+Legend of the Guardians: The Owls of Ga'Hoole ,7.0,2010.0
+Catwoman ,3.3,2004.0
+Hercules ,6.0,2014.0
+Treasure Planet ,7.1,2002.0
+Land of the Lost ,5.4,2009.0
+The Expendables 3 ,6.1,2014.0
+Point Break ,5.3,2015.0
+Son of the Mask ,2.2,2005.0
+In the Heart of the Sea ,7.0,2015.0
+The Adventures of Pluto Nash ,3.8,2002.0
+Green Zone ,6.9,2010.0
+The Peanuts Movie ,7.2,2015.0
+The Spanish Prisoner ,7.3,1997.0
+The Mummy Returns ,6.3,2001.0
+Gangs of New York ,7.5,2002.0
+The Flowers of War ,7.6,2011.0
+Surf's Up ,6.8,2007.0
+The Stepford Wives ,5.2,2004.0
+Black Hawk Down ,7.7,2001.0
+The Campaign ,6.2,2012.0
+The Fifth Element ,7.7,1997.0
+Sex and the City 2 ,4.3,2010.0
+The Road to El Dorado ,6.9,2000.0
+Ice Age: Continental Drift ,6.6,2012.0
+Cinderella ,7.0,2015.0
+The Lovely Bones ,6.7,2009.0
+Finding Nemo ,8.2,2003.0
+The Lord of the Rings: The Return of the King ,8.9,2003.0
+The Lord of the Rings: The Two Towers ,8.7,2002.0
+Seventh Son ,5.5,2014.0
+Lara Croft: Tomb Raider ,5.7,2001.0
+Transcendence ,6.3,2014.0
+Jurassic Park III ,5.9,2001.0
+Rise of the Planet of the Apes ,7.6,2011.0
+The Spiderwick Chronicles ,6.6,2008.0
+A Good Day to Die Hard ,5.3,2013.0
+The Alamo ,6.0,2004.0
+The Incredibles ,8.0,2004.0
+Cutthroat Island ,5.6,1995.0
+Percy Jackson & the Olympians: The Lightning Thief ,5.9,2010.0
+Men in Black ,7.3,1997.0
+Toy Story 2 ,7.9,1999.0
+Unstoppable ,6.8,2010.0
+Rush Hour 2 ,6.6,2001.0
+What Lies Beneath ,6.6,2000.0
+Cloudy with a Chance of Meatballs ,7.0,2009.0
+Ice Age: Dawn of the Dinosaurs ,7.0,2009.0
+The Secret Life of Walter Mitty ,7.3,2013.0
+Charlie's Angels ,5.5,2000.0
+The Departed ,8.5,2006.0
+Mulan ,7.5,1998.0
+Tropic Thunder ,7.0,2008.0
+The Girl with the Dragon Tattoo ,7.8,2011.0
+Die Hard with a Vengeance ,7.6,1995.0
+Sherlock Holmes ,7.6,2009.0
+Ben-Hur ,6.1,2016.0
+Atlantis: The Lost Empire ,6.8,2001.0
+Alvin and the Chipmunks: The Road Chip ,5.0,2015.0
+Valkyrie ,7.1,2008.0
+You Don't Mess with the Zohan ,5.5,2008.0
+Pixels ,5.6,2015.0
+A.I. Artificial Intelligence ,7.1,2001.0
+The Haunted Mansion ,4.9,2003.0
+Contact ,7.4,1997.0
+Hollow Man ,5.7,2000.0
+The Interpreter ,6.4,2005.0
+Percy Jackson: Sea of Monsters ,5.9,2013.0
+Lara Croft Tomb Raider: The Cradle of Life ,5.5,2003.0
+Now You See Me 2 ,6.9,2016.0
+The Saint ,6.2,1997.0
+Spy Game ,7.0,2001.0
+Mission to Mars ,5.6,2000.0
+Rio ,7.0,2011.0
+Bicentennial Man ,6.8,1999.0
+Volcano ,5.4,1997.0
+The Devil's Own ,6.1,1997.0
+K-19: The Widowmaker ,6.7,2002.0
+Fantastic Four ,4.3,2015.0
+Conan the Barbarian ,6.9,1982.0
+Cinderella Man ,8.0,2005.0
+The Nutcracker in 3D ,4.4,2010.0
+Seabiscuit ,7.3,2003.0
+Twister ,6.3,1996.0
+The Fast and the Furious ,6.7,2001.0
+Cast Away ,7.7,2000.0
+Happy Feet ,6.5,2006.0
+The Bourne Supremacy ,7.8,2004.0
+Air Force One ,6.4,1997.0
+Ocean's Eleven ,7.8,2001.0
+The Three Musketeers ,5.8,2011.0
+Hotel Transylvania ,7.1,2012.0
+Enchanted ,7.1,2007.0
+Hannibal             ,8.6,
+Safe House ,6.8,2012.0
+102 Dalmatians ,4.8,2000.0
+Tower Heist ,6.2,2011.0
+The Holiday ,6.9,2006.0
+Enemy of the State ,7.3,1998.0
+It's Complicated ,6.6,2009.0
+Ocean's Thirteen ,6.9,2007.0
+Open Season ,6.2,2006.0
+Divergent ,6.7,2014.0
+Enemy at the Gates ,7.6,2001.0
+The Rundown ,6.7,2003.0
+Last Action Hero ,6.2,1993.0
+Memoirs of a Geisha ,7.3,2005.0
+The Fast and the Furious: Tokyo Drift ,6.0,2006.0
+Arthur Christmas ,7.1,2011.0
+Meet Joe Black ,7.1,1998.0
+Collateral Damage ,5.5,2002.0
+All That Jazz ,7.8,1979.0
+Mirror Mirror ,5.6,2012.0
+Scott Pilgrim vs. the World ,7.5,2010.0
+The Core ,5.4,2003.0
+Nutty Professor II: The Klumps ,4.3,2000.0
+Scooby-Doo ,4.9,2002.0
+Dredd ,7.1,2012.0
+Click ,6.4,2006.0
+Creepshow ,6.9,1982.0
+Cats & Dogs: The Revenge of Kitty Galore ,4.3,2010.0
+Jumper ,6.1,2008.0
+Hellboy II: The Golden Army ,7.0,2008.0
+Zodiac ,7.7,2007.0
+The 6th Day ,5.9,2000.0
+Bruce Almighty ,6.7,2003.0
+The Expendables ,6.5,2010.0
+Mission: Impossible ,7.1,1996.0
+The Hunger Games ,7.3,2012.0
+The Hangover Part II ,6.5,2011.0
+Batman Returns ,7.0,1992.0
+Over the Hedge ,6.8,2006.0
+Lilo & Stitch ,7.2,2002.0
+Charlotte's Web ,6.4,2006.0
+Deep Impact ,6.1,1998.0
+RED 2 ,6.7,2013.0
+The Longest Yard ,6.4,2005.0
+Alvin and the Chipmunks: Chipwrecked ,4.4,2011.0
+Grown Ups 2 ,5.4,2013.0
+Get Smart ,6.5,2008.0
+Something's Gotta Give ,6.7,2003.0
+Shutter Island ,8.1,2010.0
+Four Christmases ,5.6,2008.0
+Robots ,6.3,2005.0
+Face/Off ,7.3,1997.0
+Bedtime Stories ,6.1,2008.0
+Road to Perdition ,7.7,2002.0
+Just Go with It ,6.4,2011.0
+Daredevil             ,8.8,
+Con Air ,6.8,1997.0
+Eagle Eye ,6.6,2008.0
+Cold Mountain ,7.2,2003.0
+The Book of Eli ,6.9,2010.0
+Flubber ,5.2,1997.0
+The Haunting ,4.9,1999.0
+Space Jam ,6.3,1996.0
+The Pink Panther ,5.6,2006.0
+The Day the Earth Stood Still ,5.5,2008.0
+Conspiracy Theory ,6.7,1997.0
+Fury ,7.6,2014.0
+Six Days Seven Nights ,5.7,1998.0
+Yogi Bear ,4.6,2010.0
+Spirit: Stallion of the Cimarron ,7.0,2002.0
+Zookeeper ,5.2,2011.0
+Lost in Space ,5.1,1998.0
+The Manchurian Candidate ,6.6,2004.0
+Déjà Vu ,7.0,1997.0
+Hotel Transylvania 2 ,6.7,2015.0
+Bewitched             ,7.6,
+Fantasia 2000 ,7.3,1999.0
+The Time Machine ,5.9,2002.0
+Mighty Joe Young ,5.6,1998.0
+Swordfish ,6.5,2001.0
+The Legend of Zorro ,5.9,2005.0
+What Dreams May Come ,7.0,1998.0
+Little Nicky ,5.3,2000.0
+The Brothers Grimm ,5.9,2005.0
+Mars Attacks! ,6.3,1996.0
+Evolution ,6.4,2015.0
+The Edge ,6.9,1997.0
+Surrogates ,6.3,2009.0
+Thirteen Days ,7.3,2000.0
+Daylight ,5.8,1996.0
+Walking with Dinosaurs 3D ,5.2,2013.0
+Battlefield Earth ,2.4,2000.0
+Looney Tunes: Back in Action ,5.7,2003.0
+Nine ,5.8,2009.0
+Timeline ,5.6,2003.0
+The Postman ,6.0,1997.0
+Babe: Pig in the City ,5.8,1998.0
+The Last Witch Hunter ,6.0,2015.0
+Red Planet ,5.7,2000.0
+Arthur and the Invisibles ,6.0,2006.0
+Oceans ,7.8,2009.0
+A Sound of Thunder ,4.2,2005.0
+Pompeii ,5.6,2014.0
+Top Cat Begins ,4.4,2015.0
+A Beautiful Mind ,8.2,2001.0
+The Lion King ,8.5,1994.0
+Journey 2: The Mysterious Island ,5.8,2012.0
+Cloudy with a Chance of Meatballs 2 ,6.5,2013.0
+Red Dragon ,7.2,2002.0
+Hidalgo ,6.7,2004.0
+Jack and Jill ,3.4,2011.0
+2 Fast 2 Furious ,5.9,2003.0
+The Little Prince ,7.8,2015.0
+The Invasion ,5.9,2007.0
+The Adventures of Rocky & Bullwinkle ,4.1,2000.0
+The Secret Life of Pets ,6.8,2016.0
+The League of Extraordinary Gentlemen ,5.8,2003.0
+Despicable Me 2 ,7.5,2013.0
+Independence Day ,6.9,1996.0
+The Lost World: Jurassic Park ,6.5,1997.0
+Madagascar ,6.9,2005.0
+Children of Men ,7.9,2006.0
+X-Men ,7.4,2000.0
+Wanted ,6.7,2008.0
+The Rock ,7.4,1996.0
+Ice Age: The Meltdown ,6.9,2006.0
+50 First Dates ,6.8,2004.0
+Hairspray ,6.7,2007.0
+Exorcist: The Beginning ,5.1,2004.0
+Inspector Gadget ,4.1,1999.0
+Now You See Me ,7.3,2013.0
+Grown Ups ,6.0,2010.0
+The Terminal ,7.3,2004.0
+Constantine             ,7.5,
+Hotel for Dogs ,5.4,2009.0
+Vertical Limit ,5.9,2000.0
+Charlie Wilson's War ,7.1,2007.0
+Shark Tale ,6.0,2004.0
+Dreamgirls ,6.5,2006.0
+Life             ,8.3,
+Be Cool ,5.7,2005.0
+Munich ,7.6,2005.0
+Tears of the Sun ,6.6,2003.0
+Killers ,5.4,2010.0
+The Man from U.N.C.L.E. ,7.3,2015.0
+Spanglish ,6.5,2004.0
+Monster House ,6.6,2006.0
+Bandits ,6.6,2001.0
+First Knight ,5.9,1995.0
+Anna and the King ,6.7,1999.0
+Immortals ,6.1,2011.0
+Hostage ,6.6,2005.0
+Titan A.E. ,6.6,2000.0
+Hollywood Homicide ,5.3,2003.0
+Soldier ,6.0,1998.0
+Carriers ,6.0,2009.0
+Monkeybone ,4.7,2001.0
+Flight of the Phoenix ,6.1,2004.0
+Unbreakable ,7.2,2000.0
+Minions ,6.4,2015.0
+Sucker Punch ,6.1,2011.0
+Snake Eyes ,5.9,1998.0
+Sphere ,6.0,1998.0
+The Angry Birds Movie ,6.3,2016.0
+Fool's Gold ,5.6,2008.0
+Funny People ,6.4,2009.0
+The Kingdom ,7.1,2007.0
+Talladega Nights: The Ballad of Ricky Bobby ,6.6,2006.0
+Dr. Dolittle 2 ,4.6,2001.0
+Braveheart ,8.4,1995.0
+Jarhead ,7.1,2005.0
+The Simpsons Movie ,7.4,2007.0
+The Majestic ,6.9,2001.0
+Driven ,4.5,2001.0
+Two Brothers ,7.1,2004.0
+The Village ,6.5,2004.0
+Doctor Dolittle ,5.3,1998.0
+Signs ,6.7,2002.0
+Shrek 2 ,7.2,2004.0
+Cars ,7.2,2006.0
+Runaway Bride ,5.5,1999.0
+xXx ,5.8,2002.0
+The SpongeBob Movie: Sponge Out of Water ,6.0,2015.0
+Ransom ,6.6,1996.0
+Inglourious Basterds ,8.3,2009.0
+Hook ,6.7,1991.0
+Hercules ,6.0,2014.0
+Die Hard 2 ,7.1,1990.0
+S.W.A.T. ,6.0,2003.0
+Sleepy Hollow             ,7.5,
+Vanilla Sky ,6.9,2001.0
+Lady in the Water ,5.6,2006.0
+AVP: Alien vs. Predator ,5.6,2004.0
+Alvin and the Chipmunks: The Squeakquel ,4.5,2009.0
+We Were Soldiers ,7.1,2002.0
+Olympus Has Fallen ,6.5,2013.0
+Star Trek: Insurrection ,6.4,1998.0
+Battle Los Angeles ,5.8,2011.0
+Big Fish ,8.0,2003.0
+Wolf ,6.2,1994.0
+War Horse ,7.2,2011.0
+The Monuments Men ,6.1,2014.0
+The Abyss ,7.6,1989.0
+Wall Street: Money Never Sleeps ,6.3,2010.0
+Dracula Untold ,6.3,2014.0
+The Siege ,6.3,1998.0
+Stardust ,7.7,2007.0
+Seven Years in Tibet ,7.0,1997.0
+The Dilemma ,5.3,2011.0
+Bad Company ,5.6,2002.0
+Doom ,5.2,2005.0
+I Spy ,5.4,2002.0
+Underworld: Awakening ,6.4,2012.0
+Rock of Ages ,5.9,2012.0
+Hart's War ,6.3,2002.0
+Killer Elite ,6.5,2011.0
+Rollerball ,3.0,2002.0
+Ballistic: Ecks vs. Sever ,3.6,2002.0
+Hard Rain ,5.8,1998.0
+Osmosis Jones ,6.2,2001.0
+Legends of Oz: Dorothy's Return ,5.6,2013.0
+Blackhat ,5.4,2015.0
+Sky Captain and the World of Tomorrow ,6.1,2004.0
+Basic Instinct 2 ,4.2,2006.0
+Escape Plan ,6.7,2013.0
+The Legend of Hercules ,4.2,2014.0
+The Sum of All Fears ,6.4,2002.0
+The Twilight Saga: Eclipse ,4.9,2010.0
+The Score ,6.8,2001.0
+Despicable Me ,7.7,2010.0
+Money Train ,5.6,1995.0
+Ted 2 ,6.4,2015.0
+Agora ,7.2,2009.0
+Mystery Men ,6.0,1999.0
+Hall Pass ,5.9,2011.0
+The Insider ,7.9,1999.0
+The Finest Hours ,6.8,2016.0
+Body of Lies ,7.1,2008.0
+Dinner for Schmucks ,5.9,2010.0
+Abraham Lincoln: Vampire Hunter ,5.9,2012.0
+Entrapment ,6.2,1999.0
+Last Man Standing             ,7.4,
+The X Files ,7.0,1998.0
+The Last Legion ,5.4,2007.0
+Saving Private Ryan ,8.6,1998.0
+Need for Speed ,6.5,2014.0
+What Women Want ,6.4,2000.0
+Ice Age ,7.6,2002.0
+Dreamcatcher ,5.5,2003.0
+Lincoln ,7.4,2012.0
+The Matrix ,8.7,1999.0
+Apollo 13 ,7.6,1995.0
+Total Recall ,7.5,1990.0
+The Santa Clause 2 ,5.5,2002.0
+Les Misérables ,7.6,2012.0
+You've Got Mail ,6.5,1998.0
+Step Brothers ,6.9,2008.0
+The Mask of Zorro ,6.7,1998.0
+Due Date ,6.6,2010.0
+Unbroken ,7.2,2014.0
+Space Cowboys ,6.4,2000.0
+Cliffhanger ,6.4,1993.0
+Broken Arrow ,6.0,1996.0
+The Kid ,6.1,2000.0
+World Trade Center ,6.0,2006.0
+Mona Lisa Smile ,6.4,2003.0
+The Dictator ,6.4,2012.0
+Eyes Wide Shut ,7.3,1999.0
+Annie ,5.2,2014.0
+Focus ,6.6,2015.0
+This Means War ,6.3,2012.0
+Blade: Trinity ,5.9,2004.0
+Red Dawn ,6.4,1984.0
+Primary Colors ,6.7,1998.0
+Resident Evil: Retribution ,5.4,2012.0
+Death Race ,6.4,2008.0
+The Long Kiss Goodnight ,6.7,1996.0
+Proof of Life ,6.2,2000.0
+Zathura: A Space Adventure ,6.1,2005.0
+Fight Club ,8.8,1999.0
+We Are Marshall ,7.1,2006.0
+The Missing             ,8.1,
+Hudson Hawk ,5.7,1991.0
+Lucky Numbers ,5.0,2000.0
+"I, Frankenstein ",5.1,2014.0
+Oliver Twist ,6.9,2005.0
+Elektra ,4.8,2005.0
+Sin City: A Dame to Kill For ,6.5,2014.0
+Random Hearts ,5.1,1999.0
+Everest ,7.1,2015.0
+Perfume: The Story of a Murderer ,7.5,2006.0
+Austin Powers in Goldmember ,6.2,2002.0
+Astro Boy ,6.3,2009.0
+Jurassic Park ,8.1,1993.0
+Wyatt Earp ,6.6,1994.0
+Clear and Present Danger ,6.9,1994.0
+Dragon Blade ,6.1,2015.0
+Littleman ,4.3,2006.0
+U-571 ,6.6,2000.0
+The American President ,6.8,1995.0
+The Love Guru ,3.8,2008.0
+3000 Miles to Graceland ,5.9,2001.0
+The Hateful Eight ,7.9,2015.0
+Blades of Glory ,6.3,2007.0
+Hop ,5.5,2011.0
+300 ,7.7,2006.0
+Meet the Fockers ,6.3,2004.0
+Marley & Me ,7.1,2008.0
+The Green Mile ,8.5,1999.0
+Wild Hogs ,5.9,2007.0
+Chicken Little ,5.8,2005.0
+Gone Girl ,8.1,2014.0
+The Bourne Identity ,7.9,2002.0
+GoldenEye ,7.2,1995.0
+The General's Daughter ,6.3,1999.0
+The Truman Show ,8.1,1998.0
+The Prince of Egypt ,7.0,1998.0
+Daddy Day Care ,5.5,2003.0
+2 Guns ,6.7,2013.0
+Cats & Dogs ,5.2,2001.0
+The Italian Job ,7.0,2003.0
+Two Weeks Notice ,6.1,2002.0
+Antz ,6.6,1998.0
+Couples Retreat ,5.5,2009.0
+Days of Thunder ,5.9,1990.0
+Cheaper by the Dozen 2 ,5.4,2005.0
+The Scorch Trials ,6.4,2015.0
+Eat Pray Love ,5.7,2010.0
+The Family Man ,6.7,2000.0
+RED ,7.1,2010.0
+Any Given Sunday ,6.8,1999.0
+The Horse Whisperer ,6.5,1998.0
+Collateral ,7.6,2004.0
+The Scorpion King ,5.5,2002.0
+Ladder 49 ,6.5,2004.0
+Jack Reacher ,7.0,2012.0
+Deep Blue Sea ,5.8,1999.0
+This Is It ,7.3,2009.0
+Contagion ,6.6,2011.0
+Kangaroo Jack ,4.4,2003.0
+Coraline ,7.7,2009.0
+The Happening ,5.0,2008.0
+Man on Fire ,7.7,2004.0
+The Shaggy Dog ,4.4,2006.0
+Starsky & Hutch ,6.1,2004.0
+Jingle All the Way ,5.4,1996.0
+Hellboy ,6.8,2004.0
+A Civil Action ,6.5,1998.0
+ParaNorman ,7.0,2012.0
+The Jackal ,6.3,1997.0
+Paycheck ,6.3,2003.0
+Up Close & Personal ,6.1,1996.0
+The Tale of Despereaux ,6.1,2008.0
+Rules of Engagement             ,7.3,
+The Tuxedo ,5.3,2002.0
+Under Siege 2: Dark Territory ,5.4,1995.0
+Jack Ryan: Shadow Recruit ,6.2,2014.0
+Joy ,6.6,2015.0
+London Has Fallen ,5.9,2016.0
+Alien: Resurrection ,6.3,1997.0
+Shooter ,7.2,2007.0
+The Boxtrolls ,6.8,2014.0
+Practical Magic ,6.1,1998.0
+The Lego Movie ,7.8,2014.0
+Miss Congeniality 2: Armed and Fabulous ,5.0,2005.0
+Reign of Fire ,6.2,2002.0
+Gangster Squad ,6.7,2013.0
+Year One ,4.9,2009.0
+Invictus ,7.4,2009.0
+State of Play ,7.1,2009.0
+Duplicity ,6.2,2009.0
+My Favorite Martian ,4.9,1999.0
+The Sentinel ,6.1,2006.0
+Planet 51 ,6.1,2009.0
+Star Trek: Nemesis ,6.4,2002.0
+Intolerable Cruelty ,6.3,2003.0
+Trouble with the Curve ,6.8,2012.0
+Edge of Darkness ,6.6,2010.0
+The Relic ,5.7,1997.0
+Analyze That ,5.9,2002.0
+Righteous Kill ,6.0,2008.0
+Mercury Rising ,6.1,1998.0
+The Soloist ,6.7,2009.0
+The Legend of Bagger Vance ,6.7,2000.0
+Almost Famous ,7.9,2000.0
+Garfield 2 ,5.0,2006.0
+xXx: State of the Union ,4.3,2005.0
+Priest ,5.7,2011.0
+Sinbad: Legend of the Seven Seas ,6.7,2003.0
+Event Horizon ,6.7,1997.0
+The Avengers ,8.1,2012.0
+Dragonfly ,6.1,2002.0
+The Black Dahlia ,5.6,2006.0
+Flyboys ,6.6,2006.0
+The Last Castle ,6.9,2001.0
+Supernova ,4.8,2000.0
+Winter's Tale ,6.2,2014.0
+The Mortal Instruments: City of Bones ,6.0,2013.0
+Meet Dave ,4.9,2008.0
+Dark Water ,5.6,2005.0
+Edtv ,6.1,1999.0
+Inkheart ,6.1,2008.0
+The Spirit ,4.8,2008.0
+Mortdecai ,5.5,2015.0
+In the Name of the King: A Dungeon Siege Tale ,3.8,2007.0
+Beyond Borders ,6.5,2003.0
+Xi you ji zhi: Sun Wukong san da Baigu Jing ,6.0,2016.0
+The Great Raid ,6.7,2005.0
+Deadpool ,8.1,2016.0
+Holy Man ,4.9,1998.0
+American Sniper ,7.3,2014.0
+Goosebumps ,6.4,2015.0
+"Sabrina, the Teenage Witch             ",6.6,
+Just Like Heaven ,6.7,2005.0
+The Flintstones in Viva Rock Vegas ,3.6,2000.0
+Rambo III ,5.7,1988.0
+Leatherheads ,6.0,2008.0
+The Ridiculous 6 ,4.9,2015.0
+Did You Hear About the Morgans? ,4.7,2009.0
+The Internship ,6.3,2013.0
+Resident Evil: Afterlife ,5.9,2010.0
+Red Tails ,5.9,2012.0
+Sex and the City             ,7.0,
+The Devil's Advocate ,7.5,1997.0
+That's My Boy ,5.6,2012.0
+DragonHeart ,6.4,1996.0
+After the Sunset ,6.3,2004.0
+Ghost Rider: Spirit of Vengeance ,4.3,2011.0
+Captain Corelli's Mandolin ,5.9,2001.0
+Anger Management             ,6.7,
+The Pacifier ,5.5,2005.0
+Walking Tall ,6.2,2004.0
+Forrest Gump ,8.8,1994.0
+Alvin and the Chipmunks ,5.2,2007.0
+Meet the Parents ,7.0,2000.0
+Pocahontas ,6.6,1995.0
+Superman ,7.3,1978.0
+The Nutty Professor ,5.6,1996.0
+Hitch ,6.6,2005.0
+George of the Jungle ,5.4,1997.0
+American Wedding ,6.3,2003.0
+Captain Phillips ,7.9,2013.0
+Date Night ,6.3,2010.0
+Casper ,6.0,1995.0
+The Equalizer ,7.2,2014.0
+Maid in Manhattan ,5.1,2002.0
+Crimson Tide ,7.3,1995.0
+The Pursuit of Happyness ,8.0,2006.0
+Flightplan ,6.2,2005.0
+Disclosure ,6.0,1994.0
+City of Angels ,6.7,1998.0
+Kill Bill: Vol. 1 ,8.1,2003.0
+Bowfinger ,6.4,1999.0
+Stargate SG-1             ,8.4,
+Kill Bill: Vol. 2 ,8.0,2004.0
+Tango & Cash ,6.3,1989.0
+Death Becomes Her ,6.4,1992.0
+Shanghai Noon ,6.6,2000.0
+Executive Decision ,6.4,1996.0
+Mr. Popper's Penguins ,6.0,2011.0
+The Forbidden Kingdom ,6.6,2008.0
+Free Birds ,5.9,2013.0
+Alien 3 ,6.4,1992.0
+Evita ,6.3,1996.0
+Ronin ,7.3,1998.0
+The Ghost and the Darkness ,6.8,1996.0
+Paddington ,7.2,2014.0
+The Watch ,5.7,2012.0
+The Hunted ,6.0,2003.0
+Instinct ,6.5,1999.0
+Stuck on You ,5.8,2003.0
+Semi-Pro ,5.8,2008.0
+The Pirates! Band of Misfits ,6.7,2012.0
+Changeling ,7.8,2008.0
+Chain Reaction ,5.6,1996.0
+The Fan ,5.8,1996.0
+The Phantom of the Opera ,7.4,2004.0
+Elizabeth: The Golden Age ,6.9,2007.0
+Æon Flux ,5.5,2005.0
+Gods and Generals ,6.3,2003.0
+Turbulence ,4.7,1997.0
+Imagine That ,5.6,2009.0
+Muppets Most Wanted ,6.4,2014.0
+Thunderbirds ,4.2,2004.0
+Burlesque ,6.4,2010.0
+A Very Long Engagement ,7.7,2004.0
+Lolita ,7.7,1962.0
+Eye See You ,5.3,2002.0
+Blade II ,6.7,2002.0
+Seven Pounds ,7.7,2008.0
+Bullet to the Head ,5.7,2012.0
+The Godfather: Part III ,7.6,1990.0
+Elizabethtown ,6.4,2005.0
+"You, Me and Dupree ",5.6,2006.0
+Superman II ,6.8,1980.0
+Gigli ,2.4,2003.0
+All the King's Men ,6.2,2006.0
+Shaft ,5.9,2000.0
+Anastasia ,7.1,1997.0
+Moulin Rouge! ,7.6,2001.0
+Domestic Disturbance ,5.5,2001.0
+Black Mass ,7.0,2015.0
+Flags of Our Fathers ,7.1,2006.0
+Law Abiding Citizen ,7.4,2009.0
+Grindhouse ,7.6,2007.0
+Beloved ,5.9,1998.0
+Lucky You ,5.9,2007.0
+Catch Me If You Can ,8.0,2002.0
+Zero Dark Thirty ,7.4,2012.0
+The Break-Up ,5.8,2006.0
+Mamma Mia! ,6.3,2008.0
+Valentine's Day ,5.7,2010.0
+The Dukes of Hazzard ,5.1,2005.0
+The Thin Red Line ,7.6,1998.0
+The Change-Up ,6.4,2011.0
+Man on the Moon ,7.4,1999.0
+Casino ,8.2,1995.0
+From Paris with Love ,6.5,2010.0
+Bulletproof Monk ,5.5,2003.0
+"Me, Myself & Irene ",6.5,2000.0
+Barnyard ,5.6,2006.0
+Deck the Halls ,4.9,2006.0
+The Twilight Saga: New Moon ,4.6,2009.0
+Shrek ,7.9,2001.0
+The Adjustment Bureau ,7.1,2011.0
+Robin Hood: Prince of Thieves ,6.9,1991.0
+Jerry Maguire ,7.3,1996.0
+Ted ,7.0,2012.0
+As Good as It Gets ,7.7,1997.0
+Patch Adams ,6.7,1998.0
+Anchorman 2: The Legend Continues ,6.3,2013.0
+Mr. Deeds ,5.8,2002.0
+Super 8 ,7.1,2011.0
+Erin Brockovich ,7.3,2000.0
+How to Lose a Guy in 10 Days ,6.4,2003.0
+22 Jump Street ,7.1,2014.0
+Interview with the Vampire: The Vampire Chronicles ,7.6,1994.0
+Yes Man ,6.8,2008.0
+Central Intelligence ,6.6,2016.0
+Stepmom ,6.7,1998.0
+Daddy's Home ,6.1,2015.0
+Into the Woods ,6.0,2014.0
+Inside Man ,7.6,2006.0
+Payback ,7.1,1999.0
+Congo ,5.0,1995.0
+We Bought a Zoo ,7.1,2011.0
+Knowing ,6.2,2009.0
+Failure to Launch ,5.6,2006.0
+The Ring Two ,5.4,2005.0
+"Crazy, Stupid, Love. ",7.4,2011.0
+Garfield ,5.0,2004.0
+Christmas with the Kranks ,5.2,2004.0
+Moneyball ,7.6,2011.0
+Outbreak ,6.6,1995.0
+Non-Stop ,7.0,2014.0
+Race to Witch Mountain ,5.7,2009.0
+V for Vendetta ,8.2,2005.0
+Shanghai Knights ,6.2,2003.0
+Unforgotten             ,7.9,
+Curious George ,6.6,2006.0
+Herbie Fully Loaded ,4.7,2005.0
+Don't Say a Word ,6.3,2001.0
+Hansel & Gretel: Witch Hunters ,6.1,2013.0
+Unfaithful ,6.7,2002.0
+I Am Number Four ,6.1,2011.0
+Syriana ,7.0,2005.0
+13 Hours ,7.4,2016.0
+The Book of Life ,7.3,2014.0
+Firewall ,5.8,2006.0
+Absolute Power ,6.7,1997.0
+G.I. Jane ,5.8,1997.0
+The Game ,7.8,1997.0
+Silent Hill ,6.6,2006.0
+The Replacements ,6.5,2000.0
+American Reunion ,6.7,2012.0
+The Negotiator ,7.3,1998.0
+Into the Storm ,5.8,2014.0
+Beverly Hills Cop III ,5.5,1994.0
+Gremlins 2: The New Batch ,6.3,1990.0
+The Judge ,7.4,2014.0
+The Peacemaker ,5.9,1997.0
+Resident Evil: Apocalypse ,6.2,2004.0
+Bridget Jones: The Edge of Reason ,5.9,2004.0
+Out of Time ,6.5,2003.0
+On Deadly Ground ,4.4,1994.0
+The Adventures of Sharkboy and Lavagirl 3-D ,3.5,2005.0
+The Beach ,6.6,2000.0
+Raising Helen ,6.0,2004.0
+Ninja Assassin ,6.4,2009.0
+For Love of the Game ,6.5,1999.0
+A Touch of Frost             ,7.8,
+Striptease ,4.3,1996.0
+Marmaduke ,4.2,2010.0
+Hereafter ,6.5,2010.0
+Murder by Numbers ,6.1,2002.0
+Assassins ,6.3,1995.0
+Hannibal Rising ,6.2,2007.0
+The Story of Us ,5.9,1999.0
+The Host ,5.9,2013.0
+Basic ,6.5,2003.0
+Blood Work ,6.4,2002.0
+The International ,6.5,2009.0
+Escape from L.A. ,5.7,1996.0
+Twisted             ,7.5,
+The Iron Giant ,8.0,1999.0
+The Life Aquatic with Steve Zissou ,7.3,2004.0
+Free State of Jones ,6.7,2016.0
+The Life of David Gale ,7.5,2003.0
+Man of the House ,5.4,2005.0
+Run All Night ,6.6,2015.0
+Eastern Promises ,7.7,2007.0
+Into the Blue ,5.8,2005.0
+The Messenger: The Story of Joan of Arc ,6.4,1999.0
+Your Highness ,5.6,2011.0
+Dream House ,6.0,2011.0
+Mad City ,6.2,1997.0
+Baby's Day Out ,5.9,1994.0
+The Scarlet Letter ,5.1,1995.0
+Fair Game ,6.8,2010.0
+Defiance             ,7.0,
+Domino ,6.0,2005.0
+Jade ,5.1,1995.0
+Gamer ,5.8,2009.0
+Beautiful Creatures ,6.2,2013.0
+Death to Smoochy ,6.4,2002.0
+Zoolander 2 ,4.8,2016.0
+The Big Bounce ,4.9,2004.0
+What Planet Are You From? ,5.6,2000.0
+Drive Angry ,5.5,2011.0
+Street Fighter: The Legend of Chun-Li ,3.7,2009.0
+The One ,5.9,2001.0
+Outlander             ,8.5,
+The Adventures of Ford Fairlane ,6.3,1990.0
+Pirate Radio ,7.4,2009.0
+Traffic ,7.6,2000.0
+Indiana Jones and the Last Crusade ,8.3,1989.0
+Anna Karenina ,6.6,2012.0
+Chappie ,6.9,2015.0
+The Bone Collector ,6.7,1999.0
+Panic Room ,6.8,2002.0
+The Tooth Fairy ,4.6,2006.0
+Three Kings ,7.1,1999.0
+Child 44 ,6.4,2015.0
+Rat Race ,6.4,2001.0
+K-PAX ,7.4,2001.0
+Kate & Leopold ,6.4,2001.0
+Bedazzled ,6.0,2000.0
+The Cotton Club ,6.5,1984.0
+3:10 to Yuma ,7.8,2007.0
+Taken 3 ,6.0,2014.0
+Out of Sight ,7.0,1998.0
+The Cable Guy ,6.0,1996.0
+Earth ,7.8,1998.0
+Dick Tracy ,6.1,1990.0
+The Thomas Crown Affair ,6.8,1999.0
+Riding in Cars with Boys ,6.4,2001.0
+First Blood ,7.7,1982.0
+Solaris ,8.1,1972.0
+Happily N'Ever After ,4.5,2006.0
+Mary Reilly ,5.8,1996.0
+My Best Friend's Wedding ,6.3,1997.0
+America's Sweethearts ,5.7,2001.0
+Insomnia ,7.2,2002.0
+Star Trek: First Contact ,7.6,1996.0
+Jonah Hex ,4.7,2010.0
+Courage Under Fire ,6.6,1996.0
+Liar Liar ,6.8,1997.0
+The Infiltrator ,7.3,2016.0
+Inchon ,2.7,1981.0
+The Flintstones ,4.8,1994.0
+Taken 2 ,6.3,2012.0
+Scary Movie 3 ,5.5,2003.0
+Miss Congeniality ,6.2,2000.0
+Journey to the Center of the Earth ,5.8,2008.0
+The Princess Diaries 2: Royal Engagement ,5.7,2004.0
+The Pelican Brief ,6.5,1993.0
+The Client ,6.7,1994.0
+The Bucket List ,7.4,2007.0
+Patriot Games ,6.9,1992.0
+Monster-in-Law ,5.5,2005.0
+Prisoners ,8.1,2013.0
+Training Day ,7.7,2001.0
+Galaxy Quest ,7.3,1999.0
+Scary Movie 2 ,5.2,2001.0
+The Muppets ,7.1,2011.0
+Blade ,7.1,1998.0
+Coach Carter ,7.2,2005.0
+Changing Lanes ,6.5,2002.0
+Anaconda ,4.6,1997.0
+Coyote Ugly ,5.6,2000.0
+Love Actually ,7.7,2003.0
+A Bug's Life ,7.2,1998.0
+From Hell ,6.8,2001.0
+The Specialist ,5.4,1994.0
+Tin Cup ,6.3,1996.0
+"Yours, Mine and Ours ",7.2,1968.0
+Kicking & Screaming ,5.6,2005.0
+The Hitchhiker's Guide to the Galaxy ,6.8,2005.0
+Fat Albert ,4.3,2004.0
+Resident Evil: Extinction ,6.3,2007.0
+Blended ,6.5,2014.0
+Last Holiday ,6.4,2006.0
+The River Wild ,6.3,1994.0
+The Indian in the Cupboard ,5.9,1995.0
+Savages ,6.5,2012.0
+Cellular ,6.5,2004.0
+Johnny English ,6.1,2003.0
+The Ant Bully ,5.9,2006.0
+Dune ,6.6,1984.0
+Across the Universe ,7.4,2007.0
+Revolutionary Road ,7.3,2008.0
+16 Blocks ,6.6,2006.0
+Babylon A.D. ,5.6,2008.0
+The Glimmer Man ,5.3,1996.0
+Multiplicity ,6.0,1996.0
+Aliens in the Attic ,5.4,2009.0
+The Pledge ,6.8,2001.0
+The Producers ,6.4,2005.0
+Dredd ,7.1,2012.0
+The Phantom ,4.9,1996.0
+All the Pretty Horses ,5.8,2000.0
+Nixon ,7.1,1995.0
+The Ghost Writer ,7.2,2010.0
+Deep Rising ,6.0,1998.0
+Miracle at St. Anna ,6.0,2008.0
+Curse of the Golden Flower ,7.0,2006.0
+Bangkok Dangerous ,5.4,2008.0
+Big Trouble ,6.5,2002.0
+Love in the Time of Cholera ,6.4,2007.0
+The Returned             ,8.3,
+Shadow Conspiracy ,4.9,1997.0
+Johnny English Reborn ,6.3,2011.0
+Foodfight! ,1.7,2012.0
+Argo ,7.7,2012.0
+The Fugitive ,7.8,1993.0
+The Bounty Hunter ,5.5,2010.0
+Sleepers ,7.5,1996.0
+Rambo: First Blood Part II ,6.4,1985.0
+The Juror ,5.6,1996.0
+Pinocchio ,7.5,1940.0
+Heaven's Gate ,6.8,1980.0
+Underworld: Evolution ,6.8,2006.0
+Victor Frankenstein ,6.0,2015.0
+Finding Forrester ,7.3,2000.0
+28 Days ,6.0,2000.0
+Unleashed ,7.0,2005.0
+The Sweetest Thing ,5.1,2002.0
+The Firm ,6.8,1993.0
+Charlie St. Cloud ,6.5,2010.0
+The Mechanic ,6.6,2011.0
+21 Jump Street ,7.2,2012.0
+Notting Hill ,7.0,1999.0
+Chicken Run ,7.0,2000.0
+Along Came Polly ,5.9,2004.0
+Boomerang ,5.4,1992.0
+The Heat ,6.6,2013.0
+Cleopatra ,7.0,1963.0
+Here Comes the Boom ,6.5,2012.0
+High Crimes ,6.3,2002.0
+The Mirror Has Two Faces ,6.5,1996.0
+The Mothman Prophecies ,6.5,2002.0
+Brüno ,5.8,2009.0
+Licence to Kill ,6.6,1989.0
+Red Riding Hood ,5.4,2011.0
+15 Minutes ,6.1,2001.0
+Super Mario Bros. ,4.0,1993.0
+Lord of War ,7.6,2005.0
+Hero ,7.9,2002.0
+One for the Money ,5.3,2012.0
+The Interview ,6.6,2014.0
+The Warrior's Way ,6.3,2010.0
+McHale's Navy             ,7.5,
+Micmacs ,7.2,2009.0
+8 Mile ,7.0,2002.0
+Animal Kingdom: Let's go Ape ,4.9,2015.0
+A Knight's Tale ,6.9,2001.0
+The Medallion ,5.2,2003.0
+The Sixth Sense ,8.1,1999.0
+Man on a Ledge ,6.6,2012.0
+The Big Year ,6.2,2011.0
+The Karate Kid ,7.2,1984.0
+American Hustle ,7.3,2013.0
+The Proposal ,6.7,2009.0
+Double Jeopardy ,6.4,1999.0
+Back to the Future Part II ,7.8,1989.0
+Lucy ,6.4,2014.0
+Fifty Shades of Grey ,4.1,2015.0
+Spy Kids 3-D: Game Over ,4.1,2003.0
+A Time to Kill ,7.4,1996.0
+Cheaper by the Dozen ,5.8,2003.0
+Lone Survivor ,7.6,2013.0
+A League of Their Own ,7.2,1992.0
+The Conjuring 2 ,7.8,2016.0
+The Social Network ,7.7,2010.0
+He's Just Not That Into You ,6.4,2009.0
+Scary Movie 4 ,5.1,2006.0
+Scream 3 ,5.5,2000.0
+Back to the Future Part III ,7.4,1990.0
+Get Hard ,6.0,2015.0
+Bram Stoker's Dracula ,7.5,1992.0
+Julie & Julia ,7.0,2009.0
+42 ,7.5,2013.0
+The Talented Mr. Ripley ,7.3,1999.0
+Dumb and Dumber To ,5.7,2014.0
+Eight Below ,7.3,2006.0
+The Intern ,7.2,2015.0
+Ride Along 2 ,5.9,2016.0
+The Last of the Mohicans ,7.8,1992.0
+Ray ,7.7,2004.0
+Sin City ,8.1,2005.0
+Vantage Point ,6.6,2008.0
+"I Love You, Man ",7.1,2009.0
+Shallow Hal ,5.9,2001.0
+JFK ,8.0,1991.0
+Big Momma's House 2 ,4.6,2006.0
+The Mexican ,6.1,2001.0
+Unbroken ,7.2,2014.0
+17 Again ,6.4,2009.0
+The Other Woman ,6.0,2014.0
+The Final Destination ,5.2,2009.0
+Bridge of Spies ,7.6,2015.0
+Behind Enemy Lines ,6.4,2001.0
+Get Him to the Greek ,6.4,2010.0
+Shall We Dance ,6.1,2004.0
+Small Soldiers ,6.1,1998.0
+Spawn ,5.2,1997.0
+The Count of Monte Cristo ,7.7,2002.0
+The Lincoln Lawyer ,7.3,2011.0
+Unknown ,6.9,2011.0
+The Prestige ,8.5,2006.0
+Horrible Bosses 2 ,6.3,2014.0
+Escape from Planet Earth ,5.9,2013.0
+Apocalypto ,7.8,2006.0
+The Living Daylights ,6.7,1987.0
+Predators ,6.4,2010.0
+Legal Eagles ,5.9,1986.0
+Secret Window ,6.6,2004.0
+The Lake House ,6.8,2006.0
+The Skeleton Key ,6.5,2005.0
+The Odd Life of Timothy Green ,6.6,2012.0
+Made of Honor ,5.8,2008.0
+Jersey Boys ,6.9,2014.0
+The Rainmaker ,7.1,1997.0
+Gothika ,5.8,2003.0
+Amistad ,7.2,1997.0
+Medicine Man ,6.0,1992.0
+Aliens vs. Predator: Requiem ,4.7,2007.0
+Ri¢hie Ri¢h ,5.2,1994.0
+Autumn in New York ,5.5,2000.0
+Music and Lyrics ,6.5,2007.0
+Paul ,7.0,2011.0
+The Guilt Trip ,5.8,2012.0
+Scream 4 ,6.2,2011.0
+8MM ,6.5,1999.0
+The Doors ,7.2,1991.0
+Sex Tape ,5.1,2014.0
+Hanging Up ,4.7,2000.0
+Final Destination 5 ,5.9,2011.0
+Mickey Blue Eyes ,5.8,1999.0
+Pay It Forward ,7.2,2000.0
+Fever Pitch ,6.2,2005.0
+Arthur             ,7.4,
+Drillbit Taylor ,5.7,2008.0
+A Million Ways to Die in the West ,6.1,2014.0
+The Shadow ,6.0,1994.0
+Extremely Loud & Incredibly Close ,6.9,2011.0
+Morning Glory ,6.5,2010.0
+Get Rich or Die Tryin' ,5.0,2005.0
+The Art of War ,5.7,2000.0
+Rent ,7.0,2005.0
+Bless the Child ,5.1,2000.0
+The Out-of-Towners ,5.3,1999.0
+The Island of Dr. Moreau ,4.4,1996.0
+The Musketeer ,4.7,2001.0
+The Other Boleyn Girl ,6.7,2008.0
+Sweet November ,6.7,2001.0
+The Reaping ,5.7,2007.0
+Mean Streets ,7.4,1973.0
+Renaissance Man ,6.1,1994.0
+Colombiana ,6.4,2011.0
+The Magic Sword: Quest for Camelot ,6.2,1998.0
+City by the Sea ,6.2,2002.0
+At First Sight ,5.9,1999.0
+Torque ,4.0,2004.0
+City Hall ,6.2,1996.0
+Showgirls ,4.6,1995.0
+Marie Antoinette ,6.4,2006.0
+Kiss of Death ,5.9,1995.0
+Get Carter ,5.1,2000.0
+The Impossible ,7.6,2012.0
+Ishtar ,4.2,1987.0
+Fantastic Mr. Fox ,7.8,2009.0
+Life or Something Like It ,5.8,2002.0
+Memoirs of an Invisible Man ,5.9,1992.0
+Amélie ,8.4,2001.0
+New York Minute ,4.8,2004.0
+Alfie ,6.2,2004.0
+Big Miracle ,6.5,2012.0
+The Deep End of the Ocean ,6.3,1999.0
+Feardotcom ,3.3,2002.0
+Cirque du Freak: The Vampire's Assistant ,5.9,2009.0
+Victor Frankenstein ,6.0,2015.0
+Duplex ,5.8,2003.0
+Soul Men ,6.5,2008.0
+Raise the Titanic ,4.7,1980.0
+Universal Soldier: The Return ,4.1,1999.0
+Pandorum ,6.8,2009.0
+Impostor ,6.2,2001.0
+Extreme Ops ,4.5,2002.0
+Just Visiting ,5.8,2001.0
+Sunshine ,7.3,2007.0
+A Thousand Words ,5.9,2012.0
+Delgo ,4.4,2008.0
+The Gunman ,5.8,2015.0
+Alex Rider: Operation Stormbreaker ,5.1,2006.0
+Disturbia ,6.9,2007.0
+Hackers ,6.2,1995.0
+The Hunting Party ,6.9,2007.0
+The Hudsucker Proxy ,7.3,1994.0
+The Warlords ,7.1,2007.0
+Nomad: The Warrior ,6.0,2005.0
+Snowpiercer ,7.0,2013.0
+A Monster in Paris ,6.8,2011.0
+The Last Shot ,5.7,2004.0
+The Crow ,7.6,1994.0
+Baahubali: The Beginning ,8.4,2015.0
+The Time Traveler's Wife ,7.1,2009.0
+Because I Said So ,5.6,2007.0
+The Fast and the Furious ,6.7,2001.0
+Frankenweenie ,7.0,2012.0
+Serenity ,8.0,2005.0
+Against the Ropes ,5.3,2004.0
+Superman III ,4.9,1983.0
+Grudge Match ,6.4,2013.0
+Red Cliff ,7.4,2008.0
+Sweet Home Alabama ,6.1,2002.0
+The Ugly Truth ,6.5,2009.0
+Sgt. Bilko ,5.7,1996.0
+Spy Kids 2: Island of Lost Dreams ,5.1,2002.0
+Star Trek: Generations ,6.6,1994.0
+The Grandmaster ,6.5,2013.0
+Water for Elephants ,6.9,2011.0
+3rd Rock from the Sun             ,7.8,
+Dragon Nest: Warriors' Dawn ,6.4,2014.0
+The Hurricane ,7.6,1999.0
+Enough ,5.6,2002.0
+Heartbreakers ,6.2,2001.0
+Paul Blart: Mall Cop 2 ,4.4,2015.0
+Angel Eyes ,5.6,2001.0
+Joe Somebody ,5.5,2001.0
+The Ninth Gate ,6.7,1999.0
+Extreme Measures ,6.1,1996.0
+Rock Star ,6.2,2001.0
+Precious ,7.3,2009.0
+White Squall ,6.6,1996.0
+The Thing ,8.2,1982.0
+Riddick ,6.4,2013.0
+Switchback ,6.4,1997.0
+Texas Rangers ,5.2,2001.0
+City of Ember ,6.5,2008.0
+The Master ,7.1,2012.0
+Virgin Territory ,4.8,2007.0
+The Express ,7.3,2008.0
+The 5th Wave ,5.2,2016.0
+Creed ,7.7,2015.0
+The Town ,7.6,2010.0
+What to Expect When You're Expecting ,5.7,2012.0
+Burn After Reading ,7.0,2008.0
+Nim's Island ,6.0,2008.0
+Rush ,8.1,2013.0
+Magnolia ,8.0,1999.0
+Cop Out ,5.6,2010.0
+How to Be Single ,6.1,2016.0
+Dolphin Tale ,6.9,2011.0
+Twilight ,5.2,2008.0
+John Q ,7.0,2002.0
+Blue Streak ,6.3,1999.0
+We're the Millers ,7.0,2013.0
+Obitaemyy ostrov ,5.3,2009.0
+Breakdown ,6.9,1997.0
+Never Say Never Again ,6.2,1983.0
+Hot Tub Time Machine ,6.4,2010.0
+Dolphin Tale 2 ,6.4,2014.0
+Reindeer Games ,5.7,2000.0
+A Man Apart ,6.1,2003.0
+Aloha ,5.4,2015.0
+Ghosts of Mississippi ,6.7,1996.0
+Snow Falling on Cedars ,6.8,1999.0
+The Rite ,6.0,2011.0
+Gattaca ,7.8,1997.0
+Isn't She Great ,5.3,2000.0
+Space Chimps ,4.5,2008.0
+Head of State ,5.4,2003.0
+The Hangover ,7.8,2009.0
+Ip Man 3 ,7.2,2015.0
+Austin Powers: The Spy Who Shagged Me ,6.6,1999.0
+Batman ,7.6,1989.0
+There Be Dragons ,5.9,2011.0
+Lethal Weapon 3 ,6.7,1992.0
+The Blind Side ,7.7,2009.0
+Rush Hour             ,5.8,
+Spy Kids ,5.4,2001.0
+Horrible Bosses ,6.9,2011.0
+True Grit ,7.7,2010.0
+The Devil Wears Prada ,6.8,2006.0
+Star Trek: The Motion Picture ,6.4,1979.0
+Identity Thief ,5.7,2013.0
+Cape Fear ,7.3,1991.0
+21 ,6.8,2008.0
+Trainwreck ,6.3,2015.0
+Guess Who ,5.9,2005.0
+The English Patient ,7.4,1996.0
+L.A. Confidential ,8.3,1997.0
+Sky High ,6.2,2005.0
+In & Out ,6.3,1997.0
+Species ,5.8,1995.0
+A Nightmare on Elm Street ,7.5,1984.0
+The Cell ,6.3,2000.0
+The Man in the Iron Mask ,6.4,1998.0
+Secretariat ,7.2,2010.0
+TMNT ,6.3,2007.0
+Radio ,6.9,2003.0
+Friends with Benefits ,6.6,2011.0
+Neighbors 2: Sorority Rising ,6.0,2016.0
+Saving Mr. Banks ,7.5,2013.0
+Malcolm X ,7.7,1992.0
+This Is 40 ,6.2,2012.0
+Old Dogs ,5.4,2009.0
+Underworld: Rise of the Lycans ,6.6,2009.0
+License to Wed ,5.3,2007.0
+The Benchwarmers ,5.6,2006.0
+Must Love Dogs ,5.9,2005.0
+Donnie Brasco ,7.8,1997.0
+Resident Evil ,6.7,2002.0
+Poltergeist ,7.4,1982.0
+The Ladykillers ,6.2,2004.0
+Max Payne ,5.4,2008.0
+In Time ,6.7,2011.0
+The Back-up Plan ,5.3,2010.0
+Something Borrowed ,5.9,2011.0
+Hit the Floor             ,7.0,
+Black Knight ,4.8,2001.0
+The Bad News Bears ,7.3,1976.0
+Street Fighter ,3.8,1994.0
+The Pianist ,8.5,2002.0
+From Hell ,6.8,2001.0
+The Nativity Story ,6.8,2006.0
+House of Wax ,5.3,2005.0
+Closer ,7.3,2004.0
+J. Edgar ,6.6,2011.0
+Mirrors ,6.2,2008.0
+Queen of the Damned ,5.2,2002.0
+Predator 2 ,6.2,1990.0
+Untraceable ,6.2,2008.0
+Blast from the Past ,6.6,1999.0
+Flash Gordon ,6.4,1980.0
+Jersey Girl ,6.2,2004.0
+Alex Cross ,5.1,2012.0
+Midnight in the Garden of Good and Evil ,6.6,1997.0
+Heist ,6.1,2015.0
+Nanny McPhee Returns ,6.1,2010.0
+Hoffa ,6.6,1992.0
+The X Files: I Want to Believe ,5.9,2008.0
+Ella Enchanted ,6.3,2004.0
+Concussion ,7.1,2015.0
+Abduction ,5.0,2011.0
+Valiant ,5.6,2005.0
+Wonder Boys ,7.4,2000.0
+Superhero Movie ,4.5,2008.0
+Broken City ,6.2,2013.0
+Cursed ,5.0,2005.0
+Premium Rush ,6.5,2012.0
+Hot Pursuit ,5.1,2015.0
+The Four Feathers ,6.5,2002.0
+Parker ,6.2,2013.0
+Wimbledon ,6.3,2004.0
+Furry Vengeance ,3.8,2010.0
+Bait ,5.2,2012.0
+Krull ,6.0,1983.0
+Lions for Lambs ,6.2,2007.0
+Flight of the Intruder ,5.7,1991.0
+Walk Hard: The Dewey Cox Story ,6.7,2007.0
+The Shipping News ,6.8,2001.0
+American Outlaws ,6.0,2001.0
+The Young Victoria ,7.3,2009.0
+Whiteout ,5.5,2009.0
+The Tree of Life ,6.7,2011.0
+Knock Off ,4.8,1998.0
+Sabotage ,5.7,2014.0
+The Order ,5.1,2003.0
+Punisher: War Zone ,6.0,2008.0
+Zoom ,4.2,2006.0
+The Walk ,7.4,2015.0
+Warriors of Virtue ,4.6,1997.0
+A Good Year ,6.9,2006.0
+Luther             ,8.6,
+Radio Flyer ,6.9,1992.0
+"Blood In, Blood Out ",8.0,1993.0
+Smilla's Sense of Snow ,6.4,1997.0
+Femme Fatale ,6.3,2002.0
+Lion of the Desert ,8.4,1980.0
+The Horseman on the Roof ,7.1,1995.0
+Ride with the Devil ,6.8,1999.0
+Biutiful ,7.5,2010.0
+The Lovers ,4.5,2015.0
+Bandidas ,5.7,2006.0
+Black Water Transit ,7.2,2009.0
+The Maze Runner ,6.8,2014.0
+Unfinished Business ,5.4,2015.0
+The Age of Innocence ,7.2,1993.0
+The Fountain ,7.3,2006.0
+Chill Factor ,5.2,1999.0
+Stolen ,5.5,2012.0
+Ponyo ,7.7,2008.0
+The Longest Ride ,7.1,2015.0
+The Astronaut's Wife ,5.3,1999.0
+I Dreamed of Africa ,5.6,2000.0
+Playing for Keeps ,5.7,2012.0
+Mandela: Long Walk to Freedom ,7.1,2013.0
+Reds ,7.5,1981.0
+A Few Good Men ,7.6,1992.0
+Exit Wounds ,5.5,2001.0
+Big Momma's House ,5.1,2000.0
+Thunder and the House of Magic ,6.3,2013.0
+The Darkest Hour ,4.9,2011.0
+Step Up Revolution ,6.5,2012.0
+Snakes on a Plane ,5.6,2006.0
+The Watcher ,5.3,2000.0
+The Punisher ,6.5,2004.0
+Goal! The Dream Begins ,6.8,2005.0
+Safe ,6.5,2012.0
+Pushing Tin ,6.0,1999.0
+Star Wars: Episode VI - Return of the Jedi ,8.4,1983.0
+Doomsday ,6.0,2008.0
+The Reader ,7.6,2008.0
+Wanderlust ,5.6,2012.0
+Elf ,6.9,2003.0
+Phenomenon ,6.4,1996.0
+Snow Dogs ,5.1,2002.0
+Scrooged ,7.0,1988.0
+Nacho Libre ,5.7,2006.0
+Bridesmaids ,6.8,2011.0
+This Is the End ,6.7,2013.0
+Stigmata ,6.2,1999.0
+Men of Honor ,7.2,2000.0
+Takers ,6.2,2010.0
+The Big Wedding ,5.6,2013.0
+"Big Mommas: Like Father, Like Son ",4.4,2011.0
+Source Code ,7.5,2011.0
+Alive ,7.1,1993.0
+The Number 23 ,6.4,2007.0
+The Young and Prodigious T.S. Spivet ,7.1,2013.0
+1941 ,5.9,1979.0
+Dreamer: Inspired by a True Story ,6.9,2005.0
+A History of Violence ,7.5,2005.0
+Transporter 2 ,6.3,2005.0
+The Quick and the Dead ,6.4,1995.0
+Laws of Attraction ,5.9,2004.0
+Bringing Out the Dead ,6.8,1999.0
+Repo Men ,6.3,2010.0
+Dragon Wars: D-War ,3.6,2007.0
+Bogus ,5.3,1996.0
+The Incredible Burt Wonderstone ,5.9,2013.0
+Cats Don't Dance ,6.9,1997.0
+Cradle Will Rock ,6.9,1999.0
+The Good German ,6.1,2006.0
+George and the Dragon ,5.7,2004.0
+Apocalypse Now ,8.5,1979.0
+Going the Distance ,6.3,2010.0
+Mr. Holland's Opus ,7.3,1995.0
+Criminal ,6.3,2016.0
+Out of Africa ,7.2,1985.0
+Flight ,7.3,2012.0
+Moonraker ,6.3,1979.0
+The Grand Budapest Hotel ,8.1,2014.0
+Hearts in Atlantis ,6.9,2001.0
+Arachnophobia ,6.3,1990.0
+Frequency ,7.3,2000.0
+Ghostbusters ,5.5,2016.0
+Vacation ,6.1,2015.0
+Get Shorty ,6.9,1995.0
+Chicago ,7.2,2002.0
+Big Daddy ,6.4,1999.0
+American Pie 2 ,6.4,2001.0
+Toy Story ,8.3,1995.0
+Speed ,7.2,1994.0
+The Vow ,6.8,2012.0
+Extraordinary Measures ,6.5,2010.0
+Remember the Titans ,7.8,2000.0
+The Hunt for Red October ,7.6,1990.0
+Lee Daniels' The Butler ,7.2,2013.0
+Dodgeball: A True Underdog Story ,6.7,2004.0
+The Addams Family ,6.8,1991.0
+Ace Ventura: When Nature Calls ,6.3,1995.0
+The Princess Diaries ,6.2,2001.0
+The First Wives Club ,6.2,1996.0
+Se7en ,8.6,1995.0
+District 9 ,8.0,2009.0
+The SpongeBob SquarePants Movie ,7.0,2004.0
+Mystic River ,8.0,2003.0
+Million Dollar Baby ,8.1,2004.0
+Analyze This ,6.7,1999.0
+The Notebook ,7.9,2004.0
+27 Dresses ,6.1,2008.0
+Hannah Montana: The Movie ,4.2,2009.0
+Rugrats in Paris: The Movie ,6.1,2000.0
+The Prince of Tides ,6.6,1991.0
+Legends of the Fall ,7.5,1994.0
+Up in the Air ,7.4,2009.0
+About Schmidt ,7.2,2002.0
+Warm Bodies ,6.9,2013.0
+Looper ,7.4,2012.0
+Down to Earth ,5.4,2001.0
+Babe ,6.8,1995.0
+Hope Springs ,6.3,2012.0
+Forgetting Sarah Marshall ,7.2,2008.0
+Friday Night Lights             ,8.7,
+Four Brothers ,6.9,2005.0
+Baby Mama ,6.0,2008.0
+Hope Floats ,5.9,1998.0
+Bride Wars ,5.4,2009.0
+Without a Paddle ,5.9,2004.0
+13 Going on 30 ,6.1,2004.0
+Midnight in Paris ,7.7,2011.0
+The Nut Job ,5.8,2014.0
+Blow ,7.6,2001.0
+Message in a Bottle ,6.1,1999.0
+Star Trek V: The Final Frontier ,5.4,1989.0
+Like Mike ,5.1,2002.0
+Naked Gun 33 1/3: The Final Insult ,6.4,1994.0
+A View to a Kill ,6.3,1985.0
+The Curse of the Were-Rabbit ,7.5,2005.0
+P.S. I Love You ,7.1,2007.0
+Racing Stripes ,5.2,2005.0
+Atonement ,7.8,2007.0
+Letters to Juliet ,6.5,2010.0
+Black Rain ,6.6,1989.0
+The Three Stooges ,5.1,2012.0
+Corpse Bride ,7.4,2005.0
+Glory Road ,7.2,2006.0
+Sicario ,7.6,2015.0
+Southpaw ,7.5,2015.0
+Drag Me to Hell ,6.6,2009.0
+The Age of Adaline ,7.2,2015.0
+Secondhand Lions ,7.6,2003.0
+Step Up 3D ,6.2,2010.0
+Blue Crush ,5.6,2002.0
+Stranger Than Fiction ,7.6,2006.0
+30 Days of Night ,6.6,2007.0
+The Cabin in the Woods ,7.0,2012.0
+Meet the Spartans ,2.7,2008.0
+Midnight Run ,7.6,1988.0
+The Running Man ,6.6,1987.0
+Little Shop of Horrors ,6.9,1986.0
+Hanna ,6.8,2011.0
+The Family             ,7.5,
+Mortal Kombat: Annihilation ,3.7,1997.0
+Larry Crowne ,6.1,2011.0
+Carrie ,5.9,2013.0
+Take the Lead ,6.7,2006.0
+Entourage             ,8.5,
+Gridiron Gang ,6.9,2006.0
+What's the Worst That Could Happen? ,5.5,2001.0
+9 ,7.1,2009.0
+Side Effects ,7.1,2013.0
+The Prince and Me ,5.9,2004.0
+Winnie the Pooh ,7.3,2011.0
+Dumb and Dumberer: When Harry Met Lloyd ,3.4,2003.0
+Bulworth ,6.8,1998.0
+Get on Up ,6.9,2014.0
+One True Thing ,7.0,1998.0
+Virtuosity ,5.5,1995.0
+My Super Ex-Girlfriend ,5.1,2006.0
+Deliver Us from Evil ,6.2,2014.0
+Sanctum ,5.9,2011.0
+Little Black Book ,5.2,2004.0
+The Five-Year Engagement ,6.2,2012.0
+Mr 3000 ,5.5,2004.0
+The Next Three Days ,7.4,2010.0
+Ultraviolet ,4.4,2006.0
+Assault on Precinct 13 ,6.3,2005.0
+The Replacement Killers ,6.1,1998.0
+Fled ,5.3,1996.0
+Eight Legged Freaks ,5.4,2002.0
+Love & Other Drugs ,6.7,2010.0
+88 Minutes ,5.9,2007.0
+North Country ,7.3,2005.0
+The Whole Ten Yards ,5.5,2004.0
+Splice ,5.8,2009.0
+Howard the Duck ,4.6,1986.0
+Pride and Glory ,6.7,2008.0
+The Cave ,5.1,2005.0
+Alex & Emma ,5.6,2003.0
+Wicker Park ,7.0,2004.0
+Fright Night ,6.4,2011.0
+The New World ,6.7,2005.0
+Wing Commander ,4.1,1999.0
+In Dreams ,5.5,1999.0
+Dragonball: Evolution ,2.7,2009.0
+The Last Stand ,6.4,2013.0
+Godsend ,4.8,2004.0
+Chasing Liberty ,6.1,2004.0
+Hoodwinked Too! Hood vs. Evil ,4.8,2011.0
+An Unfinished Life ,7.0,2005.0
+The Imaginarium of Doctor Parnassus ,6.8,2009.0
+Barney's Version ,7.3,2010.0
+Trapped             ,8.2,
+Runner Runner ,5.6,2013.0
+Antitrust ,6.1,2001.0
+Glory ,7.9,1989.0
+Once Upon a Time in America ,8.4,1984.0
+Dead Man Down ,6.5,2013.0
+The Merchant of Venice ,7.1,2004.0
+The Good Thief ,6.6,2002.0
+Supercross ,4.0,2005.0
+Miss Potter ,7.0,2006.0
+The Promise ,5.6,2005.0
+DOA: Dead or Alive ,4.8,2006.0
+The Assassination of Jesse James by the Coward Robert Ford ,7.5,2007.0
+1911 ,6.0,2011.0
+Little Nicholas ,7.2,2009.0
+Wild Card ,5.6,2015.0
+Machine Gun Preacher ,6.8,2011.0
+Animals United ,4.9,2010.0
+The Color of Freedom ,7.1,2007.0
+United Passions ,2.0,2014.0
+Grace of Monaco ,5.7,2014.0
+A Warrior's Tail ,4.1,2015.0
+Ripley's Game ,6.7,2002.0
+Sausage Party ,7.5,2016.0
+Pitch Perfect 2 ,6.5,2015.0
+Walk the Line ,7.9,2005.0
+12 Monkeys             ,7.6,
+Keeping the Faith ,6.4,2000.0
+The Borrowers ,5.8,1997.0
+Frost/Nixon ,7.7,2008.0
+Confessions of a Dangerous Mind ,7.1,2002.0
+Serving Sara ,5.3,2002.0
+The Boss ,5.3,2016.0
+Cry Freedom ,7.5,1987.0
+Mumford ,6.9,1999.0
+Seed of Chucky ,4.9,2004.0
+The Jacket ,7.1,2005.0
+Aladdin ,8.0,1992.0
+Straight Outta Compton ,7.9,2015.0
+Indiana Jones and the Temple of Doom ,7.6,1984.0
+The Rugrats Movie ,5.9,1998.0
+Along Came a Spider ,6.3,2001.0
+Florence Foster Jenkins ,7.1,2016.0
+Once Upon a Time in Mexico ,6.4,2003.0
+Die Hard ,8.2,1988.0
+Role Models ,6.9,2008.0
+The Big Short ,7.8,2015.0
+Taking Woodstock ,6.7,2009.0
+Miracle ,7.5,2004.0
+Dawn of the Dead ,7.4,2004.0
+The Wedding Planner ,5.2,2001.0
+Harlock: Space Pirate ,6.5,2013.0
+The Royal Tenenbaums ,7.6,2001.0
+Identity ,7.3,2003.0
+Last Vegas ,6.6,2013.0
+For Your Eyes Only ,6.8,1981.0
+Serendipity ,6.9,2001.0
+Timecop ,5.8,1994.0
+Zoolander ,6.6,2001.0
+Safe Haven ,6.7,2013.0
+Hocus Pocus ,6.7,1993.0
+No Reservations ,6.3,2007.0
+Kick-Ass ,7.7,2010.0
+30 Minutes or Less ,6.1,2011.0
+Dracula 2000 ,4.9,2000.0
+"Alexander and the Terrible, Horrible, No Good, Very Bad Day ",6.2,2014.0
+Pride & Prejudice ,7.8,2005.0
+Blade Runner ,8.2,1982.0
+Rob Roy ,6.9,1995.0
+3 Days to Kill ,6.2,2014.0
+We Own the Night ,6.9,2007.0
+Lost Souls ,4.8,2000.0
+Winged Migration ,8.0,2001.0
+Just My Luck ,5.3,2006.0
+"Mystery, Alaska ",6.7,1999.0
+The Spy Next Door ,5.4,2010.0
+A Simple Wish ,5.4,1997.0
+Ghosts of Mars ,4.9,2001.0
+Our Brand Is Crisis ,6.1,2015.0
+Pride and Prejudice and Zombies ,5.8,2016.0
+Kundun ,7.0,1997.0
+How to Lose Friends & Alienate People ,6.5,2008.0
+Kick-Ass 2 ,6.6,2013.0
+Captain Alatriste: The Spanish Musketeer ,6.1,2006.0
+Brick Mansions ,5.7,2014.0
+Octopussy ,6.6,1983.0
+Knocked Up ,7.0,2007.0
+My Sister's Keeper ,7.4,2009.0
+"Welcome Home, Roscoe Jenkins ",5.3,2008.0
+A Passage to India ,7.4,1984.0
+Notes on a Scandal ,7.4,2006.0
+Rendition ,6.8,2007.0
+Limitless             ,7.9,
+Star Trek VI: The Undiscovered Country ,7.2,1991.0
+Divine Secrets of the Ya-Ya Sisterhood ,6.0,2002.0
+The Jungle Book ,7.8,2016.0
+Kiss the Girls ,6.6,1997.0
+The Blues Brothers ,7.9,1980.0
+The Sisterhood of the Traveling Pants 2 ,6.2,2008.0
+Joyful Noise ,5.7,2012.0
+About a Boy ,7.1,2002.0
+Lake Placid ,5.6,1999.0
+Lucky Number Slevin ,7.8,2006.0
+The Right Stuff ,7.9,1983.0
+Anonymous ,6.9,2011.0
+The NeverEnding Story ,7.4,1984.0
+Dark City ,7.7,1998.0
+The Duchess ,6.9,2008.0
+The Honeymooners             ,8.7,
+Return to Oz ,6.7,1985.0
+The Newton Boys ,6.0,1998.0
+Case 39 ,6.2,2009.0
+Suspect Zero ,5.9,2004.0
+Martian Child ,6.8,2007.0
+Spy Kids: All the Time in the World in 4D ,3.6,2011.0
+Money Monster ,6.7,2016.0
+Formula 51 ,6.3,2001.0
+Flawless ,6.4,1999.0
+Mindhunters ,6.4,2004.0
+What Just Happened ,5.7,2008.0
+The Statement ,6.2,2003.0
+The Magic Flute ,6.6,2006.0
+Paul Blart: Mall Cop ,5.2,2009.0
+Freaky Friday ,6.1,2003.0
+The 40-Year-Old Virgin ,7.1,2005.0
+Shakespeare in Love ,7.2,1998.0
+A Walk Among the Tombstones ,6.5,2014.0
+Kindergarten Cop ,6.0,1990.0
+Pineapple Express ,7.0,2008.0
+Ever After: A Cinderella Story ,7.0,1998.0
+Open Range ,7.5,2003.0
+Flatliners ,6.6,1990.0
+It's Always Sunny in Philadelphia             ,8.8,
+A Bridge Too Far ,7.4,1977.0
+Red Eye ,6.5,2005.0
+Final Destination 2 ,6.2,2003.0
+"O Brother, Where Art Thou? ",7.8,2000.0
+Legion ,5.2,2010.0
+Pain & Gain ,6.5,2013.0
+In Good Company ,6.5,2004.0
+Clockstoppers ,5.2,2002.0
+Silverado ,7.2,1985.0
+Brothers ,7.1,2009.0
+Agent Cody Banks 2: Destination London ,4.5,2004.0
+New Year's Eve ,5.7,2011.0
+Original Sin ,6.0,2001.0
+The Raven ,6.4,2012.0
+Welcome to Mooseport ,5.2,2004.0
+Highlander: The Final Dimension ,4.3,1994.0
+Blood and Wine ,6.1,1996.0
+Snow White: A Tale of Terror ,6.3,1997.0
+The Curse of the Jade Scorpion ,6.8,2001.0
+Accidental Love ,4.0,2015.0
+Flipper ,5.2,1996.0
+Self/less ,6.5,2015.0
+The Constant Gardener ,7.5,2005.0
+The Passion of the Christ ,7.1,2004.0
+Mrs. Doubtfire ,6.9,1993.0
+Rain Man ,8.0,1988.0
+Gran Torino ,8.2,2008.0
+W. ,6.4,2008.0
+Taken ,7.9,2008.0
+The Best of Me ,6.7,2014.0
+The Bodyguard ,6.1,1992.0
+Schindler's List ,8.9,1993.0
+The Help ,8.1,2011.0
+The Fifth Estate ,6.2,2013.0
+Scooby-Doo 2: Monsters Unleashed ,4.9,2004.0
+Viy ,5.4,2014.0
+Freddy vs. Jason ,5.8,2003.0
+The Face of an Angel ,4.7,2014.0
+Jimmy Neutron: Boy Genius ,6.0,2001.0
+Cloverfield ,7.0,2008.0
+Teenage Mutant Ninja Turtles II: The Secret of the Ooze ,6.0,1991.0
+The Untouchables ,7.9,1987.0
+No Country for Old Men ,8.1,2007.0
+Ride Along ,6.2,2014.0
+Bridget Jones's Diary ,6.7,2001.0
+Chocolat ,7.3,2000.0
+"Legally Blonde 2: Red, White & Blonde ",4.6,2003.0
+Parental Guidance ,6.1,2012.0
+No Strings Attached ,6.2,2011.0
+Tombstone ,7.8,1993.0
+Romeo Must Die ,6.1,2000.0
+The Omen ,7.6,1976.0
+Final Destination 3 ,5.8,2006.0
+The Lucky One ,6.5,2012.0
+Bridge to Terabithia ,7.2,2007.0
+Finding Neverland ,7.8,2004.0
+A Madea Christmas ,4.7,2013.0
+The Grey ,6.8,2011.0
+Hide and Seek ,5.9,2005.0
+Anchorman: The Legend of Ron Burgundy ,7.2,2004.0
+Goodfellas ,8.7,1990.0
+Agent Cody Banks ,5.0,2003.0
+Nanny McPhee ,6.6,2005.0
+Scarface ,8.3,1983.0
+Nothing to Lose ,6.7,1997.0
+The Last Emperor ,7.8,1987.0
+Contraband ,6.5,2012.0
+Money Talks ,6.1,1997.0
+There Will Be Blood ,8.1,2007.0
+The Wild Thornberrys Movie ,5.2,2002.0
+Rugrats Go Wild ,5.6,2003.0
+Undercover Brother ,5.8,2002.0
+The Sisterhood of the Traveling Pants ,6.6,2005.0
+Kiss of the Dragon ,6.6,2001.0
+The House Bunny ,5.5,2008.0
+Beauty Shop ,5.5,2005.0
+Million Dollar Arm ,7.0,2014.0
+The Giver ,6.5,2014.0
+What a Girl Wants ,5.8,2003.0
+Jeepers Creepers II ,5.6,2003.0
+Good Luck Chuck ,5.6,2007.0
+Cradle 2 the Grave ,5.8,2003.0
+The Hours ,7.6,2002.0
+She's the Man ,6.4,2006.0
+Mr. Bean's Holiday ,6.3,2007.0
+Anacondas: The Hunt for the Blood Orchid ,4.6,2004.0
+Blood Ties ,6.5,2013.0
+August Rush ,7.5,2007.0
+Elizabeth ,7.5,1998.0
+Bride of Chucky ,5.3,1998.0
+Tora! Tora! Tora! ,7.5,1970.0
+Spice World ,3.3,1997.0
+The Sitter ,5.7,2011.0
+Dance Flick ,3.5,2009.0
+The Shawshank Redemption ,9.3,1994.0
+Crocodile Dundee in Los Angeles ,4.8,2001.0
+Kingpin ,6.9,1996.0
+The Gambler ,6.0,2014.0
+August: Osage County ,7.3,2013.0
+Ice Princess ,6.0,2005.0
+A Lot Like Love ,6.6,2005.0
+Eddie the Eagle ,7.5,2016.0
+He Got Game ,6.9,1998.0
+Don Juan DeMarco ,6.8,1994.0
+Shaun the Sheep             ,8.3,
+Dear John ,6.3,2010.0
+The Losers ,6.4,2010.0
+Don't Be Afraid of the Dark ,5.6,2010.0
+War ,6.3,2007.0
+Punch-Drunk Love ,7.3,2002.0
+EuroTrip ,6.6,2004.0
+Half Past Dead ,4.6,2002.0
+Unaccompanied Minors ,5.1,2006.0
+"Bright Lights, Big City ",5.6,1988.0
+The Adventures of Pinocchio ,5.3,1996.0
+The Greatest Game Ever Played ,7.5,2005.0
+The Box ,5.6,2009.0
+The Ruins ,5.9,2008.0
+The Next Best Thing ,4.7,2000.0
+My Soul to Take ,4.8,2010.0
+The Girl Next Door ,6.8,2004.0
+Maximum Risk ,5.4,1996.0
+Stealing Harvard ,5.1,2002.0
+Legend ,7.0,2015.0
+Hot Rod ,6.7,2007.0
+Shark Night 3D ,4.0,2011.0
+Angela's Ashes ,7.3,1999.0
+Draft Day ,6.8,2014.0
+Lifeforce ,6.1,1985.0
+The Powerpuff Girls             ,7.2,
+The Conspirator ,7.0,2010.0
+Lords of Dogtown ,7.1,2005.0
+The 33 ,6.9,2015.0
+Big Trouble in Little China ,7.3,1986.0
+A Perfect Plan ,6.3,2012.0
+Warrior ,8.2,2011.0
+Michael Collins ,7.1,1996.0
+Gettysburg ,7.7,1993.0
+Stop-Loss ,6.5,2008.0
+Abandon ,4.9,2002.0
+Brokedown Palace ,6.4,1999.0
+The Possession ,5.9,2012.0
+Mrs. Winterbourne ,6.2,1996.0
+Straw Dogs ,5.8,2011.0
+The Hoax ,6.7,2006.0
+Stone Cold ,5.9,1991.0
+The Road ,7.3,2009.0
+Sheena ,4.8,1984.0
+Underclassman ,4.1,2005.0
+Say It Isn't So ,4.9,2001.0
+The World's Fastest Indian ,7.9,2005.0
+Snakes on a Plane ,5.6,2006.0
+Tank Girl ,5.2,1995.0
+King's Ransom ,4.1,2005.0
+Blindness ,6.6,2008.0
+BloodRayne ,2.9,2005.0
+Carnage ,7.2,2011.0
+Where the Truth Lies ,6.5,2005.0
+Cirque du Soleil: Worlds Away ,6.8,2012.0
+Without Limits ,7.2,1998.0
+Me and Orson Welles ,6.8,2008.0
+The Best Offer ,7.8,2013.0
+Bad Lieutenant: Port of Call New Orleans ,6.7,2009.0
+A Turtle's Tale: Sammy's Adventures ,6.1,2010.0
+Little White Lies ,7.1,2010.0
+Love Ranch ,5.7,2010.0
+The True Story of Puss'N Boots ,2.9,2009.0
+Space Dogs ,5.2,2010.0
+The Counselor ,5.3,2013.0
+Ironclad ,6.2,2011.0
+Waterloo ,7.3,1970.0
+Kung Fu Killer ,6.5,2014.0
+Red Sky ,4.1,2014.0
+Dangerous Liaisons ,7.7,1988.0
+On the Road ,6.1,2012.0
+Star Trek IV: The Voyage Home ,7.3,1986.0
+Rocky Balboa ,7.2,2006.0
+Point Break ,5.3,2015.0
+Scream 2 ,6.1,1997.0
+Jane Got a Gun ,5.8,2016.0
+Think Like a Man Too ,5.7,2014.0
+The Whole Nine Yards ,6.7,2000.0
+Footloose ,6.5,1984.0
+Old School ,7.2,2003.0
+The Fisher King ,7.6,1991.0
+I Still Know What You Did Last Summer ,4.6,1998.0
+Return to Me ,6.9,2000.0
+Zack and Miri Make a Porno ,6.6,2008.0
+Nurse Betty ,6.3,2000.0
+The Men Who Stare at Goats ,6.2,2009.0
+Double Take ,5.3,2001.0
+"Girl, Interrupted ",7.3,1999.0
+Win a Date with Tad Hamilton! ,5.6,2004.0
+Muppets from Space ,6.2,1999.0
+The Wiz ,5.2,1978.0
+Ready to Rumble ,5.3,2000.0
+Play It to the Bone ,5.4,1999.0
+I Don't Know How She Does It ,4.9,2011.0
+Piranha 3D ,5.5,2010.0
+Beyond the Sea ,6.7,2004.0
+Meet the Deedles ,3.9,1998.0
+The Princess and the Cobbler ,7.2,1993.0
+The Bridge of San Luis Rey ,5.1,2004.0
+Faster ,6.5,2010.0
+Howl's Moving Castle ,8.2,2004.0
+Zombieland ,7.7,2009.0
+King Kong ,7.2,2005.0
+The Waterboy ,6.1,1998.0
+Star Wars: Episode V - The Empire Strikes Back ,8.8,1980.0
+Bad Boys ,6.8,1995.0
+The Naked Gun 2½: The Smell of Fear ,6.8,1991.0
+Final Destination ,6.7,2000.0
+The Ides of March ,7.1,2011.0
+Pitch Black ,7.1,2000.0
+Someone Like You... ,6.1,2001.0
+Her ,8.0,2013.0
+Eddie the Eagle ,7.5,2016.0
+Joy Ride ,6.6,2001.0
+The Adventurer: The Curse of the Midas Box ,5.4,2013.0
+Anywhere But Here ,6.1,1999.0
+Chasing Liberty ,6.1,2004.0
+The Crew ,5.6,2000.0
+Haywire ,5.8,2011.0
+Jaws: The Revenge ,2.8,1987.0
+Marvin's Room ,6.7,1996.0
+The Longshots ,5.1,2008.0
+The End of the Affair ,7.2,1999.0
+Harley Davidson and the Marlboro Man ,6.0,1991.0
+In the Valley of Elah ,7.2,2007.0
+Coco Before Chanel ,6.7,2009.0
+Forsaken ,6.3,2015.0
+Chéri ,6.2,2009.0
+Rogue             ,6.8,
+Vanity Fair ,6.2,2004.0
+Bodyguards and Assassins ,6.9,2009.0
+1408 ,6.8,2007.0
+Spaceballs ,7.1,1987.0
+The Water Diviner ,7.1,2014.0
+Ghost ,7.0,1990.0
+There's Something About Mary ,7.1,1998.0
+The Santa Clause ,6.4,1994.0
+The Rookie ,7.0,2002.0
+The Game Plan ,6.2,2007.0
+The Bridges of Madison County ,7.5,1995.0
+The Animal ,4.8,2001.0
+Gandhi ,8.1,1982.0
+The Hundred-Foot Journey ,7.3,2014.0
+The Net ,5.8,1995.0
+I Am Sam ,7.6,2001.0
+Son of God ,5.6,2014.0
+Underworld ,7.0,2003.0
+Derailed ,6.6,2005.0
+The Informant! ,6.5,2009.0
+Shadowlands ,7.4,1993.0
+Deuce Bigalow: European Gigolo ,4.6,2005.0
+Delivery Man ,6.4,2013.0
+Victor Frankenstein ,6.0,2015.0
+Our Kind of Traitor ,6.4,2016.0
+Saving Silverman ,5.9,2001.0
+Diary of a Wimpy Kid: Dog Days ,6.4,2012.0
+Summer of Sam ,6.6,1999.0
+Jay and Silent Bob Strike Back ,6.9,2001.0
+The Island ,6.9,2005.0
+The Glass House ,5.8,2001.0
+"Hail, Caesar! ",6.4,2016.0
+Josie and the Pussycats ,5.3,2001.0
+Homefront ,6.5,2013.0
+The Little Vampire ,5.7,2000.0
+I Heart Huckabees ,6.7,2004.0
+RoboCop 3 ,3.9,1993.0
+Megiddo: The Omega Code 2 ,4.1,2001.0
+Darling Lili ,6.2,1970.0
+Dudley Do-Right ,3.8,1999.0
+The Transporter Refueled ,5.1,2015.0
+The Libertine ,6.4,2004.0
+Black Book ,7.8,2006.0
+Joyeux Noel ,7.8,2005.0
+Hit and Run ,6.1,2012.0
+Mad Money ,5.8,2008.0
+Before I Go to Sleep ,6.3,2014.0
+Sorcerer ,7.7,1977.0
+Stone ,5.4,2010.0
+Molière ,7.3,2007.0
+Out of the Furnace ,6.8,2013.0
+Michael Clayton ,7.3,2007.0
+My Fellow Americans ,6.5,1996.0
+Arlington Road ,7.2,1999.0
+Underdogs ,6.7,2013.0
+To Rome with Love ,6.3,2012.0
+Firefox ,5.9,1982.0
+South Park: Bigger Longer & Uncut ,7.8,1999.0
+Death at a Funeral ,7.4,2007.0
+Teenage Mutant Ninja Turtles III ,4.8,1993.0
+Hardball ,6.3,2001.0
+Silver Linings Playbook ,7.8,2012.0
+Freedom Writers ,7.5,2007.0
+For Colored Girls ,6.0,2010.0
+The Transporter ,6.8,2002.0
+Never Back Down ,6.6,2008.0
+The Rage: Carrie 2 ,4.6,1999.0
+The Bachelor             ,2.9,
+Away We Go ,7.1,2009.0
+Swing Vote ,6.1,2008.0
+Moonlight Mile ,6.7,2002.0
+Tinker Tailor Soldier Spy ,7.1,2011.0
+Molly ,5.8,1999.0
+The Beaver ,6.7,2011.0
+The Best Little Whorehouse in Texas ,5.8,1982.0
+eXistenZ ,6.8,1999.0
+Raiders of the Lost Ark ,8.5,1981.0
+Home Alone 2: Lost in New York ,6.6,1992.0
+Close Encounters of the Third Kind ,7.7,1977.0
+Pulse ,4.7,2006.0
+Beverly Hills Cop II ,6.4,1987.0
+Bringing Down the House ,5.5,2003.0
+The Silence of the Lambs ,8.6,1991.0
+Wayne's World ,7.0,1992.0
+Jackass 3D ,7.1,2010.0
+Jaws 2 ,5.7,1978.0
+Beverly Hills Chihuahua ,3.7,2008.0
+The Conjuring ,7.5,2013.0
+Are We There Yet? ,4.6,2005.0
+Tammy ,4.9,2014.0
+Disturbia ,6.9,2007.0
+School of Rock ,7.1,2003.0
+Mortal Kombat ,5.8,1995.0
+Wicker Park ,7.0,2004.0
+White Chicks ,5.4,2004.0
+The Descendants ,7.3,2011.0
+Holes ,7.1,2003.0
+The Last Song ,5.8,2010.0
+12 Years a Slave ,8.1,2013.0
+Drumline ,5.7,2002.0
+Why Did I Get Married Too? ,4.4,2010.0
+Edward Scissorhands ,7.9,1990.0
+Me Before You ,7.6,2016.0
+Madea's Witness Protection ,4.8,2012.0
+The French Connection ,7.8,1971.0
+Bad Moms ,6.7,2016.0
+Date Movie ,2.7,2006.0
+Return to Never Land ,5.8,2002.0
+Selma ,7.5,2014.0
+The Jungle Book 2 ,5.4,2003.0
+Boogeyman ,4.1,2005.0
+Premonition ,5.9,2007.0
+The Tigger Movie ,6.3,2000.0
+Orphan ,7.0,2009.0
+Max ,6.8,2015.0
+Meet the Browns             ,3.5,
+Epic Movie ,2.3,2007.0
+Conan the Barbarian ,6.9,1982.0
+Spotlight ,8.1,2015.0
+Lakeview Terrace ,6.1,2008.0
+The Grudge 2 ,5.0,2006.0
+How Stella Got Her Groove Back ,5.5,1998.0
+Bill & Ted's Bogus Journey ,6.2,1991.0
+Man of the Year ,6.2,2006.0
+The Black Hole ,5.9,1979.0
+The American ,6.3,2010.0
+Selena ,6.7,1997.0
+Vampires Suck ,3.5,2010.0
+Babel ,7.5,2006.0
+This Is Where I Leave You ,6.6,2014.0
+Doubt ,7.5,2008.0
+Team America: World Police ,7.2,2004.0
+Texas Chainsaw 3D ,4.8,2013.0
+Copycat ,6.6,1995.0
+Scary Movie 5 ,3.5,2013.0
+Paint Your Wagon ,6.7,1969.0
+Milk ,7.6,2008.0
+Risen ,6.3,2016.0
+Ghost Ship ,5.5,2002.0
+A Very Harold & Kumar 3D Christmas ,6.3,2011.0
+Wild Things ,6.5,1998.0
+The Stepfather ,5.6,2009.0
+The Debt ,6.9,2010.0
+High Fidelity ,7.6,2000.0
+One Missed Call ,3.9,2008.0
+Eye for an Eye ,6.1,1996.0
+The Bank Job ,7.3,2008.0
+Eternal Sunshine of the Spotless Mind ,8.3,2004.0
+You Again ,5.8,2010.0
+Street Kings ,6.8,2008.0
+The World's End ,7.0,2013.0
+Nancy Drew ,5.9,2007.0
+Daybreakers ,6.5,2009.0
+She's Out of My League ,6.4,2010.0
+Monte Carlo ,5.8,2011.0
+Stay Alive ,5.1,2006.0
+Quigley Down Under ,6.8,1990.0
+Alpha and Omega ,5.3,2010.0
+The Covenant ,5.3,2006.0
+Stick It ,6.4,2006.0
+Shorts ,4.9,2009.0
+To Die For ,6.8,1995.0
+Nerve ,7.1,2016.0
+Appaloosa ,6.8,2008.0
+Vampires ,6.1,1998.0
+Yu-Gi-Oh! Duel Monsters             ,7.0,
+Psycho ,8.5,1960.0
+My Best Friend's Girl ,5.9,2008.0
+Endless Love ,6.3,2014.0
+Georgia Rule ,5.9,2007.0
+Under the Rainbow ,5.4,1981.0
+Ladyhawke ,7.0,1985.0
+Simon Birch ,6.9,1998.0
+Reign Over Me ,7.5,2007.0
+Into the Wild ,8.2,2007.0
+School for Scoundrels ,5.9,2006.0
+Silent Hill: Revelation 3D ,5.0,2012.0
+From Dusk Till Dawn ,7.3,1996.0
+Pooh's Heffalump Movie ,6.4,2005.0
+Home for the Holidays ,6.6,1995.0
+Kung Fu Hustle ,7.8,2004.0
+Fired Up             ,6.7,
+The Country Bears ,4.0,2002.0
+The Kite Runner ,7.6,2007.0
+21 Grams ,7.7,2003.0
+Paparazzi ,5.8,2004.0
+Twilight ,5.2,2008.0
+A Guy Thing ,5.6,2003.0
+Loser ,5.3,2000.0
+Capitalism: A Love Story ,7.4,2009.0
+The Greatest Story Ever Told ,6.6,1965.0
+Secret in Their Eyes ,6.2,2015.0
+Disaster Movie ,1.9,2008.0
+Armored ,5.7,2009.0
+The Man Who Knew Too Little ,6.6,1997.0
+What's Your Number? ,6.0,2011.0
+Lockout ,6.1,2012.0
+Envy ,4.8,2004.0
+Crank: High Voltage ,6.2,2009.0
+Bullets Over Broadway ,7.5,1994.0
+One Night with the King ,6.3,2006.0
+The Quiet American ,7.1,2002.0
+The Weather Man ,6.6,2005.0
+Undisputed ,6.1,2002.0
+Ghost Town ,6.7,2008.0
+12 Rounds ,5.6,2009.0
+Let Me In ,7.2,2010.0
+3 Ninjas Kick Back ,4.3,1994.0
+Be Kind Rewind ,6.4,2008.0
+Mrs Henderson Presents ,7.1,2005.0
+Triple 9 ,6.3,2016.0
+Deconstructing Harry ,7.4,1997.0
+Three to Tango ,6.1,1999.0
+Burnt ,6.6,2015.0
+We're No Angels ,6.0,1989.0
+Everyone Says I Love You ,6.8,1996.0
+Death at a Funeral ,7.4,2007.0
+Death Sentence ,6.8,2007.0
+Everybody's Fine ,7.2,2009.0
+Superbabies: Baby Geniuses 2 ,1.9,2004.0
+The Man ,5.5,2005.0
+Code Name: The Cleaner ,4.5,2007.0
+Connie and Carla ,6.3,2004.0
+Sweet Charity ,7.0,1969.0
+Inherent Vice ,6.7,2014.0
+Doogal ,2.8,2006.0
+Battle of the Year ,5.0,2013.0
+Perception             ,7.5,
+An American Carol ,4.3,2008.0
+Machete Kills ,5.6,2013.0
+Willard ,6.2,2003.0
+Strange Wilderness ,5.3,2008.0
+Topsy-Turvy ,7.4,1999.0
+Little Boy ,7.4,2015.0
+A Dangerous Method ,6.5,2011.0
+A Scanner Darkly ,7.1,2006.0
+Chasing Mavericks ,7.2,2012.0
+Alone in the Dark ,2.3,2005.0
+Bandslam ,6.4,2009.0
+Birth ,6.1,2004.0
+A Most Violent Year ,7.0,2014.0
+Passchendaele ,6.5,2008.0
+Flash of Genius ,7.0,2008.0
+I'm Not There. ,7.0,2007.0
+The Cold Light of Day ,4.9,2012.0
+The Brothers Bloom ,6.9,2008.0
+"Synecdoche, New York ",7.5,2008.0
+Princess Mononoke ,8.4,1997.0
+Bon voyage ,6.9,2003.0
+Can't Stop the Music ,4.5,1980.0
+The Proposition ,7.4,2005.0
+Courage ,7.0,2015.0
+Marci X ,2.8,2003.0
+Equilibrium ,7.5,2002.0
+The Children of Huang Shi ,7.1,2008.0
+The Yards ,6.4,2000.0
+The Oogieloves in the Big Balloon Adventure ,6.7,2012.0
+By the Sea ,5.3,2015.0
+Steamboy ,6.9,2004.0
+The Game of Their Lives ,6.2,2005.0
+All Good Things ,6.3,2010.0
+Rapa Nui ,6.4,1994.0
+CJ7 ,6.5,2008.0
+Les couloirs du temps: Les visiteurs II ,6.0,1998.0
+Dylan Dog: Dead of Night ,5.1,2010.0
+People I Know ,5.5,2002.0
+The Doombolt Chase             ,7.2,
+The Tempest ,5.4,2010.0
+Regression ,5.7,2015.0
+The Touch ,5.2,2007.0
+Three Kingdoms: Resurrection of the Dragon ,6.2,2008.0
+Shattered ,6.7,2007.0
+Zambezia ,5.8,2012.0
+Ramanujan ,7.0,2014.0
+Dwegons and Leprechauns ,4.8,2014.0
+Hands of Stone ,7.2,2016.0
+Survivor ,5.6,2015.0
+The Frozen Ground ,6.4,2013.0
+The Painted Veil ,7.5,2006.0
+The Baader Meinhof Complex ,7.4,2008.0
+Dances with Wolves ,8.0,1990.0
+Bad Teacher ,5.7,2011.0
+Sea of Love ,6.8,1989.0
+A Cinderella Story ,5.9,2004.0
+Scream ,7.2,1996.0
+Thir13en Ghosts ,5.5,2001.0
+The Shining ,8.4,1980.0
+Back to the Future ,8.5,1985.0
+House on Haunted Hill ,5.6,1999.0
+I Can Do Bad All by Myself ,4.1,2009.0
+Fight Valley ,5.0,2016.0
+The Switch ,6.1,2010.0
+Just Married ,5.4,2003.0
+The Devil's Double ,7.1,2011.0
+"Gone, Baby, Gone             ",6.6,
+Thomas and the Magic Railroad ,3.6,2000.0
+The Crazies ,6.5,2010.0
+Spirited Away ,8.6,2001.0
+Firestorm ,6.2,2013.0
+The Bounty ,7.0,1984.0
+The Book Thief ,7.6,2013.0
+Sex Drive ,6.5,2008.0
+Leap Year ,6.4,2010.0
+The Fall of the Roman Empire ,6.7,1964.0
+Take Me Home Tonight ,6.3,2011.0
+Won't Back Down ,6.4,2012.0
+The Nutcracker ,5.7,1993.0
+Kansas City ,6.3,1996.0
+Indignation ,7.8,2016.0
+The Amityville Horror ,6.0,2005.0
+Adaptation. ,7.7,2002.0
+Land of the Dead ,6.2,2005.0
+Out of Inferno ,5.7,2013.0
+Fear and Loathing in Las Vegas ,7.7,1998.0
+The Invention of Lying ,6.4,2009.0
+Neighbors ,6.4,2014.0
+The Mask ,6.9,1994.0
+Big ,7.3,1988.0
+Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan ,7.3,2006.0
+Legally Blonde ,6.2,2001.0
+Star Trek III: The Search for Spock ,6.6,1984.0
+The Exorcism of Emily Rose ,6.7,2005.0
+Deuce Bigalow: Male Gigolo ,5.7,1999.0
+Left Behind ,3.1,2014.0
+The Family Stone ,6.3,2005.0
+Barbershop 2: Back in Business ,5.7,2004.0
+Bad Santa ,7.1,2003.0
+Austin Powers: International Man of Mystery ,7.0,1997.0
+My Big Fat Greek Wedding 2 ,6.1,2016.0
+Diary of a Wimpy Kid: Rodrick Rules ,6.6,2011.0
+Predator ,7.8,1987.0
+Amadeus ,8.3,1984.0
+Prom Night ,3.9,2008.0
+Mean Girls ,7.0,2004.0
+Under the Tuscan Sun ,6.7,2003.0
+Gosford Park ,7.3,2001.0
+The O.C.             ,7.5,
+Peggy Sue Got Married ,6.3,1986.0
+Birdman or (The Unexpected Virtue of Ignorance) ,7.8,2014.0
+Blue Jasmine ,7.3,2013.0
+United 93 ,7.6,2006.0
+Honey ,5.3,2003.0
+Glory ,7.9,1989.0
+Spy Hard ,5.3,1996.0
+The Fog ,6.8,1980.0
+Soul Surfer ,7.1,2011.0
+Catch-22 ,7.2,1970.0
+Observe and Report ,5.8,2009.0
+Conan the Destroyer ,5.8,1984.0
+Raging Bull ,8.3,1980.0
+Love Happens ,5.6,2009.0
+Young Sherlock Holmes ,6.8,1985.0
+Fame ,5.0,2009.0
+127 Hours ,7.6,2010.0
+Small Time Crooks ,6.7,2000.0
+Center Stage ,6.7,2000.0
+Love the Coopers ,5.7,2015.0
+Catch That Kid ,5.2,2004.0
+Life as a House ,7.5,2001.0
+Steve Jobs ,7.2,2015.0
+"I Love You, Beth Cooper ",5.3,2009.0
+Youth in Revolt ,6.5,2009.0
+The Legend of the Lone Ranger ,5.0,1981.0
+The Tailor of Panama ,6.1,2001.0
+Blow Out ,7.4,1981.0
+Getaway ,4.4,2013.0
+The Ice Storm ,7.5,1997.0
+And So It Goes ,5.7,2014.0
+Troop Beverly Hills ,5.5,1989.0
+Being Julia ,7.1,2004.0
+9½ Weeks ,5.9,1986.0
+Dragonslayer ,6.7,1981.0
+The Last Station ,7.0,2009.0
+Ed Wood ,7.9,1994.0
+Labor Day ,6.9,2013.0
+Mongol: The Rise of Genghis Khan ,7.3,2007.0
+RocknRolla ,7.3,2008.0
+Megaforce ,3.5,1982.0
+Hamlet ,7.8,1996.0
+Mao's Last Dancer ,7.4,2009.0
+Midnight Special ,6.7,2016.0
+Anything Else ,6.4,2003.0
+The Railway Man ,7.1,2013.0
+Unforgettable             ,6.7,
+The White Ribbon ,7.8,2009.0
+Restoration ,4.0,2016.0
+The Wraith ,5.9,1986.0
+The Salton Sea ,7.2,2002.0
+Metallica Through the Never ,7.2,2013.0
+The Informers ,5.1,2008.0
+Carlos             ,7.7,
+I Come with the Rain ,5.5,2009.0
+One Man's Hero ,6.2,1999.0
+Day of the Dead ,7.2,1985.0
+I Am Wrath ,5.2,2016.0
+Renaissance ,6.7,2006.0
+Forsaken ,6.3,2015.0
+Red Sonja ,5.0,1985.0
+Red Lights ,6.2,2012.0
+Superbad ,7.6,2007.0
+Madea Goes to Jail ,4.1,2009.0
+Wolves ,5.3,2014.0
+Step Up 2: The Streets ,6.2,2008.0
+Hoodwinked! ,6.5,2005.0
+Hotel Rwanda ,8.1,2004.0
+Hitman ,6.3,2007.0
+Black Nativity ,4.4,2013.0
+The Prince ,4.6,2014.0
+City of Ghosts ,6.0,2002.0
+The Others ,7.6,2001.0
+Aliens ,8.4,1986.0
+My Fair Lady ,7.9,1964.0
+I Know What You Did Last Summer ,5.6,1997.0
+Let's Be Cops ,6.5,2014.0
+Sideways ,7.5,2004.0
+Beerfest ,6.3,2006.0
+Halloween ,7.9,1978.0
+Hero ,7.9,2002.0
+Good Boy! ,5.1,2003.0
+The Best Man Holiday ,6.7,2013.0
+Smokin' Aces ,6.7,2006.0
+Saw 3D: The Final Chapter ,5.6,2010.0
+40 Days and 40 Nights ,5.6,2002.0
+TRON: Legacy ,6.8,2010.0
+A Night at the Roxbury ,6.2,1998.0
+Beastly ,5.6,2011.0
+The Hills Have Eyes ,6.4,2006.0
+Dickie Roberts: Former Child Star ,5.6,2003.0
+"McFarland, USA ",7.4,2015.0
+Lottery Ticket ,4.9,2010.0
+ATL ,6.0,2006.0
+Pitch Perfect ,7.2,2012.0
+Summer Catch ,4.9,2001.0
+A Simple Plan ,7.5,1998.0
+They ,4.8,2002.0
+Larry the Cable Guy: Health Inspector ,3.1,2006.0
+The Adventures of Elmo in Grouchland ,5.8,1999.0
+Brooklyn's Finest ,6.7,2009.0
+55 Days at Peking ,6.8,1963.0
+Evil Dead ,6.5,2013.0
+My Life in Ruins ,5.9,2009.0
+American Dreamz ,5.5,2006.0
+Superman IV: The Quest for Peace ,3.6,1987.0
+How She Move ,3.3,2007.0
+Running Scared ,7.4,2006.0
+Bobby Jones: Stroke of Genius ,6.7,2004.0
+Shanghai Surprise ,3.0,1986.0
+The Illusionist ,7.6,2006.0
+Roar ,6.4,1981.0
+Veronica Guerin ,6.9,2003.0
+Escobar: Paradise Lost ,6.6,2014.0
+Southland Tales ,5.5,2006.0
+Dragon Hunters ,6.6,2008.0
+Damnation Alley ,5.2,1977.0
+The Apparition ,4.1,2012.0
+My Girl ,6.8,1991.0
+Fur: An Imaginary Portrait of Diane Arbus ,6.5,2006.0
+The Illusionist ,7.6,2006.0
+Wall Street ,7.4,1987.0
+Sense and Sensibility ,7.7,1995.0
+Becoming Jane ,7.1,2007.0
+Sydney White ,6.3,2007.0
+House of Sand and Fog ,7.6,2003.0
+Dead Poets Society ,8.0,1989.0
+Dumb & Dumber ,7.3,1994.0
+When Harry Met Sally... ,7.6,1989.0
+The Verdict ,7.8,1982.0
+Road Trip ,6.5,2000.0
+Varsity Blues ,6.4,1999.0
+The Artist ,8.0,2011.0
+The Unborn ,4.8,2009.0
+Moonrise Kingdom ,7.8,2012.0
+The Texas Chainsaw Massacre: The Beginning ,5.9,2006.0
+The Young Messiah ,5.4,2016.0
+The Master of Disguise ,3.3,2002.0
+Pan's Labyrinth ,8.2,2006.0
+The Messengers             ,6.6,
+See Spot Run ,5.4,2001.0
+Baby Boy ,6.4,2001.0
+The Roommate ,4.8,2011.0
+Joe Dirt ,5.9,2001.0
+Double Impact ,5.5,1991.0
+Hot Fuzz ,7.9,2007.0
+The Women ,4.9,2008.0
+Vicky Cristina Barcelona ,7.2,2008.0
+Arn: The Knight Templar ,6.6,2007.0
+Bad Moms ,6.7,2016.0
+Boys and Girls ,5.3,2000.0
+White Oleander ,7.2,2002.0
+Jennifer's Body ,5.1,2009.0
+Drowning Mona ,5.6,2000.0
+Radio Days ,7.6,1987.0
+Left Behind ,3.1,2014.0
+Remember Me ,7.2,2010.0
+How to Deal ,5.7,2003.0
+My Stepmother Is an Alien ,5.2,1988.0
+Philadelphia ,7.7,1993.0
+The Thirteenth Floor ,7.0,1999.0
+The Cookout ,3.6,2004.0
+Meteor ,4.9,1979.0
+Duets ,6.0,2000.0
+Hollywood Ending ,6.6,2002.0
+Detroit Rock City ,6.8,1999.0
+Highlander ,7.2,1986.0
+Things We Lost in the Fire ,7.2,2007.0
+Steel ,2.8,1997.0
+The Immigrant ,6.6,2013.0
+The White Countess ,6.7,2005.0
+Trance ,7.0,2013.0
+Soul Plane ,4.4,2004.0
+Welcome to the Sticks ,7.1,2008.0
+Good ,6.2,2008.0
+Enter the Void ,7.3,2009.0
+Vamps ,5.1,2012.0
+Hachi: A Dog's Tale ,8.1,2009.0
+Zulu ,6.7,2013.0
+The Homesman ,6.6,2014.0
+Juwanna Mann ,4.5,2002.0
+Lilyhammer             ,8.1,
+Ararat ,6.6,2002.0
+Madison ,6.5,2001.0
+Slow Burn ,5.9,2005.0
+Wasabi ,6.6,2001.0
+Slither ,6.5,2006.0
+Beverly Hills Cop ,7.3,1984.0
+Home Alone ,7.5,1990.0
+3 Men and a Baby ,5.9,1987.0
+Tootsie ,7.4,1982.0
+Top Gun ,6.9,1986.0
+"Crouching Tiger, Hidden Dragon ",7.9,2000.0
+American Beauty ,8.4,1999.0
+The King's Speech ,8.0,2010.0
+Twins ,6.0,1988.0
+Scream: The TV Series             ,7.3,
+The Yellow Handkerchief ,6.8,2008.0
+The Color Purple ,7.8,1985.0
+Tidal Wave ,5.7,2009.0
+Ben-Hur ,6.1,2016.0
+The Imitation Game ,8.1,2014.0
+Private Benjamin ,6.1,1980.0
+Coal Miner's Daughter ,7.5,1980.0
+Diary of a Wimpy Kid ,6.2,2010.0
+Mama ,6.2,2013.0
+Halloween ,7.9,1978.0
+National Lampoon's Vacation ,7.4,1983.0
+Bad Grandpa ,6.6,2013.0
+The Queen ,7.3,2006.0
+Beetlejuice ,7.5,1988.0
+Why Did I Get Married? ,5.6,2007.0
+Little Women ,7.3,1994.0
+The Woman in Black ,6.4,2012.0
+When a Stranger Calls ,5.0,2006.0
+Big Fat Liar ,5.4,2002.0
+The Deer Hunter ,8.2,1978.0
+Wag the Dog ,7.1,1997.0
+The Lizzie McGuire Movie ,5.3,2003.0
+Snitch ,6.5,2013.0
+Krampus ,6.2,2015.0
+The Faculty ,6.4,1998.0
+What's Love Got to Do with It ,7.2,1993.0
+Cop Land ,6.9,1997.0
+Not Another Teen Movie ,5.7,2001.0
+End of Watch ,7.7,2012.0
+Aloha ,5.4,2015.0
+The Skulls ,5.6,2000.0
+The Theory of Everything ,7.7,2014.0
+Malibu's Most Wanted ,5.1,2003.0
+Where the Heart Is ,6.8,2000.0
+Lawrence of Arabia ,8.4,1962.0
+Halloween II ,4.9,2009.0
+Wild ,7.1,2014.0
+The Last House on the Left ,6.6,2009.0
+The Wedding Date ,6.1,2005.0
+Halloween: Resurrection ,4.1,2002.0
+Clash of the Titans ,5.8,2010.0
+The Princess Bride ,8.1,1987.0
+The Great Debaters ,7.6,2007.0
+Drive ,7.8,2011.0
+Confessions of a Teenage Drama Queen ,4.6,2004.0
+The Object of My Affection ,6.0,1998.0
+28 Weeks Later ,7.0,2007.0
+When the Game Stands Tall ,6.7,2014.0
+Because of Winn-Dixie ,6.4,2005.0
+Love & Basketball ,7.2,2000.0
+Grosse Pointe Blank ,7.4,1997.0
+All About Steve ,4.8,2009.0
+Book of Shadows: Blair Witch 2 ,4.0,2000.0
+The Craft ,6.2,1996.0
+Match Point ,7.7,2005.0
+Ramona and Beezus ,6.7,2010.0
+The Remains of the Day ,7.9,1993.0
+Boogie Nights ,7.9,1997.0
+Nowhere to Run ,5.5,1993.0
+Flicka ,6.2,2006.0
+The Hills Have Eyes II ,5.1,2007.0
+Urban Legends: Final Cut ,4.1,2000.0
+Tuck Everlasting ,6.7,2002.0
+The Marine ,4.7,2006.0
+Keanu ,6.4,2016.0
+Country Strong ,6.3,2010.0
+Disturbing Behavior ,5.5,1998.0
+The Place Beyond the Pines ,7.3,2012.0
+The November Man ,6.3,2014.0
+Eye of the Beholder ,4.9,1999.0
+The Hurt Locker ,7.6,2008.0
+Firestarter ,6.0,1984.0
+Killing Them Softly ,6.2,2012.0
+A Most Wanted Man ,6.8,2014.0
+Freddy Got Fingered ,4.5,2001.0
+The Pirates Who Don't Do Anything: A VeggieTales Movie ,5.7,2008.0
+U2 3D ,8.4,2007.0
+Highlander: Endgame ,4.6,2000.0
+Idlewild ,6.2,2006.0
+One Day ,7.0,2011.0
+Whip It ,6.9,2009.0
+Knockaround Guys ,6.1,2001.0
+Confidence ,6.7,2003.0
+The Muse ,5.6,1999.0
+De-Lovely ,6.6,2004.0
+New York Stories ,6.4,1989.0
+Barney's Great Adventure ,2.8,1998.0
+The Man with the Iron Fists ,5.4,2012.0
+Home Fries ,5.0,1998.0
+Here on Earth ,5.1,2000.0
+Brazil ,8.0,1985.0
+Raise Your Voice ,5.9,2004.0
+The Dead Zone             ,7.5,
+The Big Lebowski ,8.2,1998.0
+Black Snake Moan ,7.0,2006.0
+Dark Blue ,6.6,2002.0
+A Mighty Heart ,6.7,2007.0
+Whatever It Takes ,5.5,2000.0
+Boat Trip ,4.9,2002.0
+The Importance of Being Earnest ,6.9,2002.0
+The Love Letter ,7.4,1998.0
+Hoot ,5.6,2006.0
+In Bruges ,8.0,2008.0
+Peeples ,5.3,2013.0
+The Rocker ,6.2,2008.0
+Post Grad ,5.3,2009.0
+Promised Land ,6.6,2012.0
+Whatever Works ,7.2,2009.0
+The In Crowd ,4.6,2000.0
+Three Burials ,7.5,2005.0
+Jakob the Liar ,6.5,1999.0
+Kiss Kiss Bang Bang ,7.6,2005.0
+Idle Hands ,6.2,1999.0
+Mulholland Drive ,8.0,2001.0
+Blood and Chocolate ,5.5,2007.0
+You Will Meet a Tall Dark Stranger ,6.3,2010.0
+Never Let Me Go ,7.2,2010.0
+The Company             ,7.9,
+Transsiberian ,6.7,2008.0
+The Clan of the Cave Bear ,5.3,1986.0
+Crazy in Alabama ,6.3,1999.0
+Funny Games ,6.5,2007.0
+Listening ,5.6,2014.0
+Felicia's Journey ,7.0,1999.0
+Metropolis ,8.3,1927.0
+District B13 ,7.2,2004.0
+Things to Do in Denver When You're Dead ,6.8,1995.0
+The Assassin ,6.4,2015.0
+Buffalo Soldiers ,6.9,2001.0
+The Return ,8.0,2003.0
+Ong-bak 2 ,6.2,2008.0
+Centurion ,6.4,2010.0
+Silent Trigger ,5.6,1996.0
+The Midnight Meat Train ,6.1,2008.0
+Winnie Mandela ,6.0,2011.0
+The Son of No One ,5.1,2011.0
+All the Queen's Men ,4.5,2001.0
+The Good Night ,5.9,2007.0
+Bathory: Countess of Blood ,6.0,2008.0
+Khumba ,5.8,2013.0
+Automata ,6.1,2014.0
+Dungeons & Dragons: Wrath of the Dragon God ,4.9,2005.0
+Chiamatemi Francesco - Il Papa della gente ,5.7,2015.0
+Shinjuku Incident ,7.1,2009.0
+Pandaemonium ,6.6,2000.0
+Groundhog Day ,8.1,1993.0
+Magic Mike XXL ,5.7,2015.0
+Romeo + Juliet ,6.8,1996.0
+Sarah's Key ,7.5,2010.0
+Freedom ,6.2,2014.0
+Unforgiven ,8.3,1992.0
+Manderlay ,7.4,2005.0
+Slumdog Millionaire ,8.0,2008.0
+Fatal Attraction ,6.9,1987.0
+Pretty Woman ,6.9,1990.0
+Towering Inferno             ,9.5,
+Crocodile Dundee II ,5.5,1988.0
+Broken Horses ,5.7,2015.0
+Born on the Fourth of July ,7.2,1989.0
+Cool Runnings ,6.9,1993.0
+My Bloody Valentine ,5.5,2009.0
+The Possession ,5.9,2012.0
+First Blood ,7.7,1982.0
+Stomp the Yard ,5.2,2007.0
+The Spy Who Loved Me ,7.1,1977.0
+Ghost Hunters             ,6.6,
+Urban Legend ,5.5,1998.0
+Dangerous Liaisons ,7.7,1988.0
+Good Deeds ,5.4,2012.0
+White Fang ,6.7,1991.0
+Superstar ,5.0,1999.0
+The Iron Lady ,6.4,2011.0
+Jonah: A VeggieTales Movie ,6.6,2002.0
+Poetic Justice ,5.9,1993.0
+All About the Benjamins ,5.7,2002.0
+Vampire in Brooklyn ,4.5,1995.0
+Exorcist II: The Heretic ,3.7,1977.0
+An American Haunting ,5.0,2005.0
+My Boss's Daughter ,4.6,2003.0
+A Perfect Getaway ,6.5,2009.0
+Our Family Wedding ,4.9,2010.0
+Dead Man on Campus ,6.0,1998.0
+Tea with Mussolini ,6.9,1999.0
+Thinner ,5.7,1996.0
+"New York, New York ",6.7,1977.0
+Crooklyn ,6.9,1994.0
+I Think I Love My Wife ,5.5,2007.0
+Jason X ,4.4,2001.0
+Big Fat Liar ,5.4,2002.0
+Bobby ,7.0,2006.0
+Head Over Heels ,5.4,2001.0
+Fun Size ,5.4,2012.0
+The Diving Bell and the Butterfly ,8.0,2007.0
+Little Children ,7.6,2006.0
+Gossip ,5.9,2000.0
+A Walk on the Moon ,6.6,1999.0
+Catch a Fire ,6.7,2006.0
+Soul Survivors ,3.9,2001.0
+Jefferson in Paris ,5.7,1995.0
+Easy Virtue ,6.7,2008.0
+Caravans ,6.5,1978.0
+Mr. Turner ,6.8,2014.0
+Wild Grass ,6.3,2009.0
+Amen. ,7.3,2002.0
+Reign of Assassins ,6.9,2010.0
+The Lucky Ones ,7.0,2008.0
+Margaret ,6.5,2011.0
+Stan Helsing ,3.6,2009.0
+Flipped ,7.7,2010.0
+Brokeback Mountain ,7.7,2005.0
+Teenage Mutant Ninja Turtles ,5.9,2014.0
+Clueless ,6.8,1995.0
+Far from Heaven ,7.4,2002.0
+Hot Tub Time Machine 2 ,5.1,2015.0
+Dekalog             ,9.1,
+Quills ,7.4,2000.0
+Seven Psychopaths ,7.2,2012.0
+The Caveman's Valentine ,6.0,2001.0
+The Border             ,7.4,
+Downfall ,8.3,2004.0
+The Sea Inside ,8.1,2004.0
+Under the Skin ,6.3,2013.0
+"Good Morning, Vietnam ",7.3,1987.0
+The Last Godfather ,3.6,2010.0
+Justin Bieber: Never Say Never ,1.6,2011.0
+Black Swan ,8.0,2010.0
+RoboCop ,6.2,2014.0
+The Godfather: Part II ,9.0,1974.0
+Save the Last Dance ,6.1,2001.0
+A Nightmare on Elm Street 4: The Dream Master ,5.7,1988.0
+Miracles from Heaven ,6.8,2016.0
+"Dude, Where's My Car? ",5.5,2000.0
+Young Guns ,6.8,1988.0
+St. Vincent ,7.3,2014.0
+About Last Night ,6.1,2014.0
+10 Things I Hate About You ,7.2,1999.0
+The New Guy ,5.9,2002.0
+Loaded Weapon 1 ,6.1,1993.0
+The Shallows ,6.8,2016.0
+The Butterfly Effect ,7.7,2004.0
+Snow Day ,4.9,2000.0
+This Christmas ,6.1,2007.0
+Baby Geniuses ,2.5,1999.0
+The Big Hit ,6.1,1998.0
+Harriet the Spy ,5.9,1996.0
+Child's Play 2 ,5.7,1990.0
+No Good Deed ,5.6,2014.0
+The Mist ,7.2,2007.0
+Ex Machina ,7.7,2015.0
+Being John Malkovich ,7.8,1999.0
+Two Can Play That Game ,6.1,2001.0
+Earth to Echo ,5.8,2014.0
+Crazy/Beautiful ,6.5,2001.0
+Letters from Iwo Jima ,7.9,2006.0
+The Astronaut Farmer ,6.3,2006.0
+Woo ,3.8,1998.0
+Room ,8.3,2015.0
+Dirty Work ,6.4,1998.0
+Serial Mom ,6.7,1994.0
+Dick ,6.1,1999.0
+Del 1 - Män som hatar kvinnor             ,8.1,
+Light It Up ,6.0,1999.0
+54 ,5.8,1998.0
+Bubble Boy ,5.6,2001.0
+Birthday Girl ,6.1,2001.0
+21 & Over ,5.9,2013.0
+"Paris, je t'aime ",7.3,2006.0
+Resurrecting the Champ ,6.8,2007.0
+Admission ,5.7,2013.0
+The Widow of Saint-Pierre ,7.3,2000.0
+Chloe ,6.3,2009.0
+Faithful ,5.9,1996.0
+Brothers ,7.1,2009.0
+Find Me Guilty ,7.1,2006.0
+The Perks of Being a Wallflower ,8.0,2012.0
+Excessive Force ,5.1,1993.0
+Infamous ,7.1,2006.0
+The Claim ,6.5,2000.0
+The Vatican Tapes ,4.5,2015.0
+Attack the Block ,6.6,2011.0
+In the Land of Blood and Honey ,4.3,2011.0
+The Call ,6.7,2013.0
+Operation Chromite ,6.8,2016.0
+The Crocodile Hunter: Collision Course ,5.4,2002.0
+I Love You Phillip Morris ,6.6,2009.0
+Quest for Fire ,7.4,1981.0
+Antwone Fisher ,7.3,2002.0
+The Emperor's Club ,6.9,2002.0
+True Romance ,8.0,1993.0
+Womb ,6.4,2010.0
+Glengarry Glen Ross ,7.8,1992.0
+The Killer Inside Me ,6.1,2010.0
+Cat People ,6.1,1982.0
+Sorority Row ,5.1,2009.0
+The Prisoner of Zenda ,7.8,1937.0
+Lars and the Real Girl ,7.4,2007.0
+The Boy in the Striped Pajamas ,7.8,2008.0
+Dancer in the Dark ,8.0,2000.0
+Oscar and Lucinda ,6.7,1997.0
+The Funeral ,6.6,1996.0
+Solitary Man ,6.4,2009.0
+Machete ,6.7,2010.0
+Casino Jack ,6.2,2010.0
+The Land Before Time ,7.3,1988.0
+Tae Guk Gi: The Brotherhood of War ,8.1,2004.0
+The Perfect Game ,7.0,2009.0
+The Exorcist ,8.0,1973.0
+Jaws ,8.0,1975.0
+American Pie ,7.0,1999.0
+Ernest & Celestine ,7.9,2012.0
+The Golden Child ,5.9,1986.0
+Think Like a Man ,6.6,2012.0
+Barbershop ,6.3,2002.0
+Star Trek II: The Wrath of Khan ,7.7,1982.0
+Ace Ventura: Pet Detective ,6.9,1994.0
+WarGames ,7.1,1983.0
+Witness ,7.4,1985.0
+Act of Valor ,6.5,2012.0
+Step Up ,6.5,2006.0
+Beavis and Butt-Head Do America ,6.8,1996.0
+Jackie Brown ,7.5,1997.0
+Harold & Kumar Escape from Guantanamo Bay ,6.6,2008.0
+Chronicle ,7.1,2012.0
+Yentl ,6.6,1983.0
+Time Bandits ,7.0,1981.0
+Crossroads ,3.3,2002.0
+Project X ,6.7,2012.0
+Patton ,8.0,1970.0
+One Hour Photo ,6.8,2002.0
+Quarantine ,6.0,2008.0
+The Eye ,5.4,2008.0
+Johnson Family Vacation ,4.3,2004.0
+How High ,6.2,2001.0
+The Muppet Christmas Carol ,7.7,1992.0
+Casino Royale ,8.0,2006.0
+Frida ,7.4,2002.0
+Katy Perry: Part of Me ,5.9,2012.0
+The Fault in Our Stars ,7.8,2014.0
+Rounders ,7.4,1998.0
+Top Five ,6.5,2014.0
+Prophecy ,5.4,1979.0
+Stir of Echoes ,7.0,1999.0
+Spartacus: War of the Damned             ,8.6,
+Philomena ,7.6,2013.0
+The Upside of Anger ,6.9,2005.0
+The Boys from Brazil ,7.0,1978.0
+Aquamarine ,5.3,2006.0
+Paper Towns ,6.4,2015.0
+My Baby's Daddy ,4.5,2004.0
+Nebraska ,7.8,2013.0
+Tales from the Crypt: Demon Knight ,6.7,1995.0
+Max Keeble's Big Move ,5.3,2001.0
+Young Adult ,6.3,2011.0
+Crank ,7.0,2006.0
+How to Be a Player ,5.3,1997.0
+Living Out Loud ,6.6,1998.0
+Just Wright ,5.8,2010.0
+Rachel Getting Married ,6.7,2008.0
+The Postman Always Rings Twice ,6.6,1981.0
+Girl with a Pearl Earring ,7.0,2003.0
+Das Boot ,8.4,1981.0
+The Alamo ,6.0,2004.0
+Sorority Boys ,5.4,2002.0
+About Time ,7.8,2013.0
+House of Flying Daggers ,7.6,2004.0
+Arbitrage ,6.6,2012.0
+Project Almanac ,6.4,2015.0
+Cadillac Records ,7.0,2008.0
+Screwed ,5.7,2000.0
+Fortress ,5.9,1992.0
+For Your Consideration ,6.3,2006.0
+Celebrity ,6.3,1998.0
+Running with Scissors ,6.2,2006.0
+From Justin to Kelly ,2.1,2003.0
+Girl 6 ,5.0,1996.0
+In the Cut ,5.3,2003.0
+Two Lovers ,7.1,2008.0
+Last Orders ,7.0,2001.0
+The Host ,7.0,2006.0
+The Pursuit of D.B. Cooper ,5.7,1981.0
+Ravenous ,7.1,1999.0
+Charlie Bartlett ,7.0,2007.0
+The Great Beauty ,7.7,2013.0
+The Dangerous Lives of Altar Boys ,7.1,2002.0
+Stoker ,6.8,2013.0
+2046 ,7.5,2004.0
+Married Life ,6.3,2007.0
+Duma ,7.3,2005.0
+Ondine ,6.8,2009.0
+Brother ,7.2,2000.0
+Welcome to Collinwood ,6.4,2002.0
+Critical Care ,6.0,1997.0
+The Life Before Her Eyes ,6.4,2007.0
+Darling Companion ,5.1,2012.0
+Trade ,7.5,2007.0
+Fateless ,7.1,2005.0
+Breakfast of Champions ,4.6,1999.0
+"A Woman, a Gun and a Noodle Shop ",5.7,2009.0
+Cypher ,6.8,2002.0
+City of Life and Death ,7.7,2009.0
+Home ,6.7,2015.0
+Legend of Kung Fu Rabbit ,3.2,2011.0
+Space Battleship Yamato ,6.1,2010.0
+5 Days of War ,5.6,2011.0
+Triangle ,6.9,2009.0
+10 Days in a Madhouse ,7.5,2015.0
+Heaven Is for Real ,5.8,2014.0
+Snatch ,8.3,2000.0
+Dancin' It's On ,2.8,2015.0
+Pet Sematary ,6.6,1989.0
+Madadayo ,7.5,1993.0
+The Cry of the Owl ,6.0,2009.0
+A Tale of Three Cities ,6.2,2015.0
+Gremlins ,7.2,1984.0
+Star Wars: Episode IV - A New Hope ,8.7,1977.0
+Dirty Grandpa ,6.0,2016.0
+Doctor Zhivago ,8.0,1965.0
+Trash ,7.2,2014.0
+High School Musical 3: Senior Year ,4.5,2008.0
+The Fighter ,7.9,2010.0
+Jackass Number Two ,7.1,2006.0
+My Cousin Vinny ,7.5,1992.0
+If I Stay ,6.8,2014.0
+Drive Hard ,4.3,2014.0
+Major League ,7.2,1989.0
+St. Trinian's ,5.8,2007.0
+Phone Booth ,7.1,2002.0
+A Walk to Remember ,7.4,2002.0
+Dead Man Walking ,7.6,1995.0
+Cruel Intentions ,6.9,1999.0
+Saw VI ,6.0,2009.0
+History of the World: Part I ,6.9,1981.0
+The Secret Life of Bees ,7.3,2008.0
+Corky Romano ,4.6,2001.0
+Raising Cain ,6.0,1992.0
+F.I.S.T. ,6.4,1978.0
+Invaders from Mars ,5.5,1986.0
+Brooklyn ,7.5,2015.0
+Barry Lyndon ,8.1,1975.0
+Out Cold ,6.3,2001.0
+The Ladies Man ,5.1,2000.0
+Quartet ,6.8,2012.0
+Tomcats ,5.3,2001.0
+Frailty ,7.3,2001.0
+Woman in Gold ,7.3,2015.0
+Kinsey ,7.1,2004.0
+Army of Darkness ,7.6,1992.0
+Slackers ,5.3,2002.0
+What's Eating Gilbert Grape ,7.8,1993.0
+The Visual Bible: The Gospel of John ,7.7,2003.0
+Vera Drake ,7.7,2004.0
+The Guru ,5.4,2002.0
+The Perez Family ,6.2,1995.0
+Inside Llewyn Davis ,7.4,2013.0
+O ,6.2,2001.0
+Return to the Blue Lagoon ,5.1,1991.0
+The Molly Maguires ,6.9,1970.0
+Romance & Cigarettes ,6.3,2005.0
+Copying Beethoven ,6.8,2006.0
+Poltergeist ,7.4,1982.0
+Brighton Rock ,5.7,2010.0
+Saw V ,5.8,2008.0
+Machine Gun McCain ,6.2,1969.0
+LOL ,4.3,2012.0
+Jindabyne ,6.4,2006.0
+Kabhi Alvida Naa Kehna ,6.0,2006.0
+An Ideal Husband ,6.9,1999.0
+The Last Days on Mars ,5.5,2013.0
+Darkness ,5.4,2002.0
+2001: A Space Odyssey ,8.3,1968.0
+E.T. the Extra-Terrestrial ,7.9,1982.0
+In the Land of Women ,6.5,2007.0
+The Blue Butterfly ,6.3,2004.0
+There Goes My Baby ,6.4,1994.0
+Lovesick             ,7.9,
+Housefull ,5.3,2010.0
+September Dawn ,5.8,2007.0
+For Greater Glory: The True Story of Cristiada ,6.6,2012.0
+La Famille Bélier ,7.4,2014.0
+Good Will Hunting ,8.3,1997.0
+Misconduct ,5.3,2016.0
+Saw III ,6.2,2006.0
+Stripes ,6.9,1981.0
+Bring It On ,5.9,2000.0
+The Purge: Election Year ,6.1,2016.0
+She's All That ,5.8,1999.0
+Precious ,7.3,2009.0
+Saw IV ,5.9,2007.0
+White Noise ,5.5,2005.0
+Madea's Family Reunion ,5.0,2006.0
+The Color of Money ,7.0,1986.0
+The Longest Day ,7.8,1962.0
+The Mighty Ducks ,6.4,1992.0
+The Grudge ,5.9,2004.0
+Happy Gilmore ,7.0,1996.0
+Jeepers Creepers ,6.1,2001.0
+Bill & Ted's Excellent Adventure ,6.9,1989.0
+Oliver! ,7.5,1968.0
+The Best Exotic Marigold Hotel ,7.3,2011.0
+Recess: School's Out ,6.5,2001.0
+Mad Max Beyond Thunderdome ,6.2,1985.0
+Commando ,6.7,1985.0
+The Boy ,6.0,2016.0
+Devil ,6.3,2010.0
+Friday After Next ,5.8,2002.0
+Insidious: Chapter 3 ,6.1,2015.0
+The Last Dragon ,6.9,1985.0
+Snatch ,8.3,2000.0
+The Lawnmower Man ,5.4,1992.0
+Nick and Norah's Infinite Playlist ,6.7,2008.0
+Dogma ,7.4,1999.0
+The Banger Sisters ,5.6,2002.0
+Twilight Zone: The Movie ,6.5,1983.0
+Road House ,6.5,1989.0
+A Low Down Dirty Shame ,5.8,1994.0
+Swimfan ,5.0,2002.0
+Employee of the Month ,5.5,2006.0
+Can't Hardly Wait ,6.5,1998.0
+The Outsiders ,7.2,1983.0
+Pete's Dragon ,7.3,2016.0
+The Dead Zone ,7.2,1983.0
+Sinister 2 ,5.2,2015.0
+Sparkle ,5.7,2012.0
+Valentine ,4.7,2001.0
+The Fourth Kind ,5.9,2009.0
+A Prairie Home Companion ,6.8,2006.0
+Sugar Hill ,5.9,1993.0
+Invasion U.S.A. ,5.3,1985.0
+Roll Bounce ,6.0,2005.0
+Rushmore ,7.7,1998.0
+Skyline ,4.4,2010.0
+The Second Best Exotic Marigold Hotel ,6.6,2015.0
+Kit Kittredge: An American Girl ,6.7,2008.0
+The Perfect Man ,5.5,2005.0
+Mo' Better Blues ,6.5,1990.0
+Kung Pow: Enter the Fist ,6.2,2002.0
+Tremors ,7.1,1990.0
+Wrong Turn ,6.1,2003.0
+The Long Riders ,7.1,1980.0
+The Corruptor ,6.0,1999.0
+Mud ,7.4,2012.0
+Reno 911!: Miami ,5.9,2007.0
+One Direction: This Is Us ,4.1,2013.0
+"The Goods: Live Hard, Sell Hard ",5.8,2009.0
+Hey Arnold! The Movie ,5.9,2002.0
+My Week with Marilyn ,7.0,2011.0
+The Matador ,6.8,2005.0
+Love Jones ,7.4,1997.0
+The Gift ,7.1,2015.0
+End of the Spear ,7.0,2005.0
+Get Over It ,5.8,2001.0
+Office Space ,7.8,1999.0
+Drop Dead Gorgeous ,6.5,1999.0
+Big Eyes ,7.0,2014.0
+Very Bad Things ,6.3,1998.0
+Sleepover ,5.3,2004.0
+Body Double ,6.8,1984.0
+MacGruber ,5.5,2010.0
+Dirty Pretty Things ,7.4,2002.0
+Movie 43 ,4.3,2013.0
+The Tourist ,6.0,2010.0
+Over Her Dead Body ,5.2,2008.0
+Seeking a Friend for the End of the World ,6.7,2012.0
+Cedar Rapids ,6.3,2011.0
+Bones             ,7.9,
+American History X ,8.6,1998.0
+The Collection ,6.1,2012.0
+Teacher's Pet ,5.8,2004.0
+The Red Violin ,7.7,1998.0
+The Straight Story ,8.0,1999.0
+Deuces Wild ,5.6,2002.0
+Bad Words ,6.7,2013.0
+"Run, Fatboy, Run ",6.6,2007.0
+Heartbeeps ,4.2,1981.0
+Black or White ,6.6,2014.0
+On the Line ,4.1,2001.0
+Rescue Dawn ,7.3,2006.0
+Danny Collins ,7.1,2015.0
+"Jeff, Who Lives at Home ",6.5,2011.0
+I Am Love ,7.0,2009.0
+Atlas Shrugged II: The Strike ,5.5,2012.0
+Romeo Is Bleeding ,6.6,1993.0
+The Limey ,7.1,1999.0
+Crash ,7.9,2004.0
+The House of Mirth ,7.1,2000.0
+Malone ,5.6,1987.0
+Peaceful Warrior ,7.3,2006.0
+Bucky Larson: Born to Be a Star ,3.3,2011.0
+Bamboozled ,6.5,2000.0
+The Forest ,4.8,2016.0
+Sphinx ,5.2,1981.0
+While We're Young ,6.3,2014.0
+A Better Life ,7.2,2011.0
+Spider ,6.8,2002.0
+Gun Shy ,5.7,2000.0
+Nicholas Nickleby ,7.2,2002.0
+The Iceman ,6.9,2012.0
+Dekalog             ,9.1,
+Krrish ,6.3,2006.0
+Cecil B. DeMented ,6.2,2000.0
+Killer Joe ,6.7,2011.0
+The Joneses ,6.5,2009.0
+Owning Mahowny ,7.2,2003.0
+The Brothers Solomon ,5.3,2007.0
+My Blueberry Nights ,6.7,2007.0
+Illuminata ,6.2,1998.0
+Swept Away ,3.6,2002.0
+"War, Inc. ",5.7,2008.0
+Shaolin Soccer ,7.3,2001.0
+The Brown Bunny ,5.0,2003.0
+The Swindle ,6.6,1997.0
+Rosewater ,6.6,2014.0
+The Chambermaid on the Titanic ,6.8,1997.0
+Coriolanus ,6.2,2011.0
+Imaginary Heroes ,7.3,2004.0
+High Heels and Low Lifes ,6.2,2001.0
+World's Greatest Dad ,6.9,2009.0
+Severance ,6.6,2006.0
+Edmond ,6.3,2005.0
+Welcome to the Rileys ,7.0,2010.0
+Police Academy: Mission to Moscow ,3.3,1994.0
+Blood Done Sign My Name ,6.7,2010.0
+"Cinco de Mayo, La Batalla ",6.2,2013.0
+Elsa & Fred ,6.5,2014.0
+An Alan Smithee Film: Burn Hollywood Burn ,3.5,1997.0
+The Open Road ,5.5,2009.0
+The Good Guy ,5.9,2009.0
+Motherhood ,4.7,2009.0
+Free Style ,4.2,2008.0
+Strangerland ,5.2,2015.0
+The Janky Promoters ,5.2,2009.0
+Blonde Ambition ,3.9,2007.0
+The Oxford Murders ,6.1,2008.0
+The Reef ,5.8,2010.0
+Eulogy ,6.7,2004.0
+White Noise 2: The Light ,5.7,2007.0
+You Got Served: Beat the World ,4.5,2011.0
+Fifty Dead Men Walking ,6.9,2008.0
+Jungle Shuffle ,4.8,2014.0
+Adam Resurrected ,6.3,2008.0
+Of Horses and Men ,6.9,2013.0
+It's a Wonderful Afterlife ,5.4,2010.0
+The Devil's Tomb ,3.8,2009.0
+Partition ,7.0,2007.0
+Good Intentions ,5.2,2010.0
+"The Good, the Bad, the Weird ",7.3,2008.0
+Nurse 3D ,4.6,2013.0
+Gunless ,6.5,2010.0
+Adventureland ,6.8,2009.0
+The Lost City ,6.7,2005.0
+Next Friday ,6.1,2000.0
+American Heist ,5.2,2014.0
+You Only Live Twice ,6.9,1967.0
+Plastic ,6.0,2014.0
+Amour ,7.9,2012.0
+Poltergeist III ,4.5,1988.0
+Re-Kill ,5.1,2015.0
+"It's a Mad, Mad, Mad, Mad World ",7.6,1963.0
+Volver ,7.6,2006.0
+Heavy Metal ,6.7,1981.0
+Gentlemen Broncos ,6.1,2009.0
+Richard III ,7.5,1995.0
+Into the Grizzly Maze ,5.3,2015.0
+Kites ,6.0,2010.0
+Melancholia ,7.1,2011.0
+Red Dog ,7.5,2011.0
+Jab Tak Hai Jaan ,6.9,2012.0
+Alien ,8.5,1979.0
+The Texas Chain Saw Massacre ,7.5,1974.0
+The Runaways ,6.6,2010.0
+Fiddler on the Roof ,8.0,1971.0
+Thunderball ,7.0,1965.0
+Detention ,5.8,2011.0
+Loose Cannons ,7.3,2010.0
+Set It Off ,6.8,1996.0
+The Best Man ,6.7,1999.0
+Child's Play ,6.5,1988.0
+Sicko ,8.0,2007.0
+The Purge: Anarchy ,6.5,2014.0
+Down to You ,4.9,2000.0
+Harold & Kumar Go to White Castle ,7.1,2004.0
+The Contender ,7.0,2000.0
+Boiler Room ,7.0,2000.0
+Trading Places ,7.5,1983.0
+Black Christmas ,4.5,2006.0
+Breakin' All the Rules ,5.5,2004.0
+Henry V ,7.7,1989.0
+The Savages ,7.2,2007.0
+Chasing Papi ,4.8,2003.0
+The Way of the Gun ,6.7,2000.0
+Igby Goes Down ,7.0,2002.0
+PCU ,6.5,1994.0
+The Ultimate Gift ,7.4,2006.0
+The Bold and the Beautiful             ,3.5,
+The Ice Pirates ,5.7,1984.0
+Gracie ,6.2,2007.0
+Trust the Man ,5.7,2005.0
+Hamlet 2 ,6.4,2008.0
+Velvet Goldmine ,7.0,1998.0
+The Wailing ,7.7,2016.0
+Glee: The 3D Concert Movie ,5.4,2011.0
+The Legend of Suriyothai ,6.6,2001.0
+Two Evil Eyes ,6.1,1990.0
+Barbecue ,6.1,2014.0
+All or Nothing ,7.6,2002.0
+Princess Kaiulani ,6.2,2009.0
+Opal Dream ,6.6,2006.0
+Heist ,6.1,2015.0
+Flame and Citron ,7.3,2008.0
+Undiscovered ,4.2,2005.0
+Red Riding: In the Year of Our Lord 1974 ,7.1,2009.0
+The Girl on the Train ,6.0,2009.0
+Veronika Decides to Die ,6.5,2009.0
+Crocodile Dundee ,6.5,1986.0
+"Ultramarines: A Warhammer 40,000 Movie ",5.7,2010.0
+The I Inside ,6.1,2004.0
+Beneath Hill 60 ,7.1,2010.0
+Polisse ,7.3,2011.0
+Awake ,6.5,2007.0
+Star Wars: The Clone Wars             ,7.9,
+Skin Trade ,5.7,2014.0
+The Lost Boys ,7.2,1987.0
+Crazy Heart ,7.3,2009.0
+The Rose ,6.9,1979.0
+Baggage Claim ,5.0,2013.0
+Barbarella ,5.9,1968.0
+Shipwrecked ,6.7,1990.0
+Election ,7.3,1999.0
+The Namesake ,7.6,2006.0
+The DUFF ,6.5,2015.0
+Glitter ,2.1,2001.0
+The Haunting in Connecticut 2: Ghosts of Georgia ,5.3,2013.0
+Silmido ,7.2,2003.0
+Bright Star ,7.0,2009.0
+My Name Is Khan ,8.0,2010.0
+Footloose ,6.5,1984.0
+All Is Lost ,6.9,2013.0
+Limbo ,7.1,1999.0
+Namastey London ,7.3,2007.0
+The Wind That Shakes the Barley ,7.5,2006.0
+Yeh Jawaani Hai Deewani ,6.9,2013.0
+The Karate Kid ,7.2,1984.0
+Quo Vadis ,7.2,1951.0
+Repo! The Genetic Opera ,6.7,2008.0
+Valley of the Wolves: Iraq ,6.0,2006.0
+Pulp Fiction ,8.9,1994.0
+The Muppet Movie ,7.7,1979.0
+Nightcrawler ,7.9,2014.0
+Club Dread ,5.6,2004.0
+The Sound of Music ,8.0,1965.0
+Splash ,6.2,1984.0
+Little Miss Sunshine ,7.9,2006.0
+Stand by Me ,8.1,1986.0
+28 Days Later... ,7.6,2002.0
+You Got Served ,3.5,2004.0
+Escape from Alcatraz ,7.6,1979.0
+Brown Sugar ,6.5,2002.0
+A Thin Line Between Love and Hate ,5.6,1996.0
+50/50 ,7.7,2011.0
+Shutter ,5.2,2008.0
+Creepshow ,6.9,1982.0
+That Awkward Moment ,6.1,2014.0
+Modern Problems ,5.0,1981.0
+Kicks ,7.8,2016.0
+Much Ado About Nothing ,7.4,1993.0
+On Her Majesty's Secret Service ,6.8,1969.0
+The Player             ,7.1,
+New Nightmare ,6.4,1994.0
+Drive Me Crazy ,5.7,1999.0
+Akeelah and the Bee ,7.5,2006.0
+Half Baked ,6.7,1998.0
+New in Town ,5.6,2009.0
+Syriana ,7.0,2005.0
+American Psycho ,7.6,2000.0
+The Good Girl ,6.5,2002.0
+Bon Cop Bad Cop ,7.0,2006.0
+The Boondock Saints II: All Saints Day ,6.3,2009.0
+The City of Your Final Destination ,6.4,2009.0
+Enough Said ,7.1,2013.0
+Easy A ,7.1,2010.0
+The Inkwell ,6.5,1994.0
+Shadow of the Vampire ,6.9,2000.0
+Prom ,5.4,2011.0
+The Pallbearer ,4.9,1996.0
+Held Up ,5.1,1999.0
+Woman on Top ,5.3,2000.0
+Howards End ,7.5,1992.0
+Preacher             ,8.3,
+Anomalisa ,7.3,2015.0
+Another Year ,7.3,2010.0
+8 Women ,7.1,2002.0
+Showdown in Little Tokyo ,6.0,1991.0
+Clay Pigeons ,6.6,1998.0
+It's Kind of a Funny Story ,7.2,2010.0
+Made in Dagenham ,7.2,2010.0
+When Did You Last See Your Father? ,6.9,2007.0
+Prefontaine ,6.8,1997.0
+The Wicked Lady ,4.0,1983.0
+The Secret of Kells ,7.7,2009.0
+Begin Again ,7.4,2013.0
+Down in the Valley ,6.5,2005.0
+Brooklyn Rules ,6.4,2007.0
+Restless ,7.2,2012.0
+The Singing Detective ,5.6,2003.0
+The Land Girls ,6.3,1998.0
+Fido ,6.8,2006.0
+The Wendell Baker Story ,5.5,2005.0
+Wild Target ,6.9,2010.0
+Pathology ,6.0,2008.0
+Wuthering Heights             ,7.7,
+10th & Wolf ,6.4,2006.0
+Dear Wendy ,6.6,2004.0
+Aloft ,5.3,2014.0
+Akira ,8.1,1988.0
+The Death and Life of Bobby Z ,5.9,2007.0
+The Rocket: The Legend of Rocket Richard ,7.7,2005.0
+Swelter ,4.6,2014.0
+My Lucky Star ,5.1,2013.0
+Imagine Me & You ,6.9,2005.0
+Mr. Church ,8.0,2016.0
+Swimming Pool ,6.8,2003.0
+Green Street 3: Never Back Down ,5.4,2013.0
+The Blood of Heroes ,6.5,1989.0
+Code of Honor ,4.2,2016.0
+Driving Miss Daisy ,7.4,1989.0
+Soul Food ,6.9,1997.0
+Rumble in the Bronx ,6.7,1995.0
+Far from Men ,7.3,2014.0
+Thank You for Smoking ,7.6,2005.0
+Hostel: Part II ,5.4,2007.0
+An Education ,7.3,2009.0
+Shopgirl ,6.4,2005.0
+The Hotel New Hampshire ,6.0,1984.0
+Narc ,7.2,2002.0
+Men with Brooms ,6.0,2002.0
+Witless Protection ,3.1,2008.0
+The Work and the Glory ,6.9,2004.0
+Extract ,6.2,2009.0
+Masked and Anonymous ,5.5,2003.0
+Alias Betty ,6.9,2001.0
+Code 46 ,6.3,2003.0
+Outside Bet ,4.8,2012.0
+Crash ,7.9,2004.0
+Albert Nobbs ,6.7,2011.0
+Black November ,5.6,2012.0
+Ta Ra Rum Pum ,5.4,2007.0
+Persepolis ,8.0,2007.0
+The Hole ,5.7,2009.0
+The Wave ,7.6,2008.0
+The Neon Demon ,7.0,2016.0
+Harry Brown ,7.2,2009.0
+Spider-Man 3 ,6.2,2007.0
+The Omega Code ,3.5,1999.0
+Juno ,7.5,2007.0
+Pound of Flesh ,5.1,2015.0
+Diamonds Are Forever ,6.7,1971.0
+The Godfather ,9.2,1972.0
+Flashdance ,6.1,1983.0
+500 Days of Summer ,7.7,2009.0
+The Piano ,7.6,1993.0
+Magic Mike ,6.1,2012.0
+Darkness Falls ,4.9,2003.0
+Live and Let Die ,6.8,1973.0
+My Dog Skip ,7.0,2000.0
+"Definitely, Maybe ",7.2,2008.0
+Jumping the Broom ,5.7,2011.0
+The Great Gatsby ,7.3,2013.0
+"Good Night, and Good Luck. ",7.5,2005.0
+Capote ,7.4,2005.0
+Desperado ,7.2,1995.0
+The Claim ,6.5,2000.0
+Fargo             ,9.0,
+Logan's Run ,6.8,1976.0
+The Man with the Golden Gun ,6.8,1974.0
+Action Jackson ,5.2,1988.0
+The Descent ,7.2,2005.0
+Michael Jordan to the Max ,7.5,2000.0
+Devil's Due ,4.0,2014.0
+Flirting with Disaster ,6.8,1996.0
+The Devil's Rejects ,6.9,2005.0
+Buffy the Vampire Slayer             ,8.2,
+Dope ,7.3,2015.0
+In Too Deep ,6.1,1999.0
+Skyfall ,7.8,2012.0
+House of 1000 Corpses ,6.0,2003.0
+Alien Zone ,4.1,1978.0
+A Serious Man ,7.0,2009.0
+Get Low ,7.1,2009.0
+Warlock ,6.2,1989.0
+Beyond the Lights ,6.9,2014.0
+A Single Man ,7.6,2009.0
+The Last Temptation of Christ ,7.6,1988.0
+Outside Providence ,6.4,1999.0
+Bride & Prejudice ,6.2,2004.0
+Rabbit-Proof Fence ,7.5,2002.0
+Who's Your Caddy? ,2.0,2007.0
+Split Second ,6.2,1992.0
+Nikita             ,7.7,
+The Other Side of Heaven ,6.5,2001.0
+Dark Angel             ,7.4,
+Veer-Zaara ,7.9,2004.0
+Redbelt ,6.8,2008.0
+Cyrus ,6.3,2010.0
+A Dog of Flanders ,6.3,1999.0
+Auto Focus ,6.6,2002.0
+Factory Girl ,6.4,2006.0
+We Need to Talk About Kevin ,7.5,2011.0
+The Christmas Candle ,5.8,2013.0
+The Mighty Macs ,6.5,2009.0
+Losin' It ,4.8,1983.0
+Mother and Child ,7.2,2009.0
+March or Die ,6.3,1977.0
+Les visiteurs ,7.0,1993.0
+Somewhere ,6.3,2010.0
+I Hope They Serve Beer in Hell ,5.3,2009.0
+Chairman of the Board ,2.3,1998.0
+Hesher ,7.1,2010.0
+Dom Hemingway ,6.2,2013.0
+Gerry ,6.2,2002.0
+The Heart of Me ,6.7,2002.0
+Freeheld ,6.5,2015.0
+The Extra Man ,5.9,2010.0
+Hard to Be a God ,6.7,2013.0
+Ca$h ,6.0,2010.0
+Wah-Wah ,6.9,2005.0
+The Boondock Saints ,7.9,1999.0
+Z Storm ,5.3,2014.0
+Twixt ,4.8,2011.0
+Snow Queen ,5.3,2012.0
+Alpha and Omega 4: The Legend of the Saw Toothed Cave ,6.0,2014.0
+Pale Rider ,7.3,1985.0
+Stargate: The Ark of Truth ,7.4,2008.0
+Dazed and Confused ,7.7,1993.0
+High School Musical 2 ,4.8,2007.0
+Two Lovers and a Bear ,7.2,2016.0
+Criminal Activities ,5.8,2015.0
+Aimee & Jaguar ,7.3,1999.0
+The Chumscrubber ,7.0,2005.0
+Shade ,6.4,2003.0
+House at the End of the Street ,5.6,2012.0
+Incendies ,8.2,2010.0
+"Remember Me, My Love ",6.5,2003.0
+Perrier's Bounty ,6.4,2009.0
+Elite Squad ,8.1,2007.0
+Annabelle ,5.4,2014.0
+Bran Nue Dae ,6.3,2009.0
+Boyz n the Hood ,7.8,1991.0
+La Bamba ,6.8,1987.0
+The Four Seasons ,7.2,1981.0
+Dressed to Kill ,7.1,1980.0
+The Adventures of Huck Finn ,6.2,1993.0
+Go ,7.3,1999.0
+Friends with Money ,5.9,2006.0
+The Andromeda Strain ,7.2,1971.0
+Bats ,3.6,1999.0
+Nowhere in Africa ,7.7,2001.0
+Shame ,7.3,2011.0
+Layer Cake ,7.4,2004.0
+The Work and the Glory II: American Zion ,6.6,2005.0
+The East ,6.9,2013.0
+A Home at the End of the World ,6.8,2004.0
+Aberdeen ,7.3,2000.0
+The Messenger ,7.2,2009.0
+Tracker ,6.5,2010.0
+Control ,7.7,2007.0
+The Terminator ,8.1,1984.0
+Good Bye Lenin! ,7.7,2003.0
+The Damned United ,7.6,2009.0
+The Return of the Living Dead ,7.3,1985.0
+Gomorrah             ,8.7,
+Mallrats ,7.2,1995.0
+Grease ,7.2,1978.0
+Platoon ,8.1,1986.0
+Fahrenheit 9/11 ,7.5,2004.0
+Butch Cassidy and the Sundance Kid ,8.1,1969.0
+Mary Poppins ,7.8,1964.0
+Ordinary People ,7.8,1980.0
+Around the World in 80 Days ,5.8,2004.0
+West Side Story ,7.6,1961.0
+Caddyshack ,7.4,1980.0
+The Brothers ,6.3,2001.0
+The Wood ,6.9,1999.0
+The Usual Suspects ,8.6,1995.0
+A Nightmare on Elm Street 5: The Dream Child ,5.1,1989.0
+Van Wilder: Party Liaison ,6.4,2002.0
+The Wrestler ,7.9,2008.0
+Duel in the Sun ,6.9,1946.0
+Best in Show ,7.5,2000.0
+Escape from New York ,7.2,1981.0
+School Daze ,5.8,1988.0
+Daddy Day Camp ,2.9,2007.0
+Mr. Nice Guy ,6.2,1997.0
+A Mighty Wind ,7.3,2003.0
+Mystic Pizza ,6.2,1988.0
+War & Peace             ,8.2,
+Sliding Doors ,6.8,1998.0
+Tales from the Hood ,6.1,1995.0
+The Last King of Scotland ,7.7,2006.0
+Halloween 5 ,5.2,1989.0
+Bernie ,6.8,2011.0
+Dolphins and Whales 3D: Tribes of the Ocean ,6.5,2008.0
+Pollock ,7.0,2000.0
+200 Cigarettes ,5.9,1999.0
+The Words ,7.1,2012.0
+Casa de mi Padre ,5.5,2012.0
+City Island ,7.4,2009.0
+The Guard ,7.3,2011.0
+College ,4.6,2008.0
+The Virgin Suicides ,7.2,1999.0
+Little Voice ,7.0,1998.0
+Miss March ,5.1,2009.0
+Wish I Was Here ,6.7,2014.0
+Simply Irresistible ,5.3,1999.0
+Veronica Mars             ,8.4,
+Hedwig and the Angry Inch ,7.8,2001.0
+Only the Strong ,6.7,1993.0
+Goddess of Love ,5.4,2015.0
+Shattered Glass ,7.2,2003.0
+Novocaine ,5.8,2001.0
+The Business of Strangers ,6.4,2001.0
+The Wild Bunch ,8.0,1969.0
+The Wackness ,7.0,2008.0
+The Great Train Robbery ,7.0,1979.0
+Morvern Callar ,6.7,2002.0
+Beastmaster 2: Through the Portal of Time ,3.8,1991.0
+The 5th Quarter ,5.7,2010.0
+The Flower of Evil ,6.6,2003.0
+The Greatest ,6.7,2009.0
+Snow Flower and the Secret Fan ,6.1,2011.0
+Come Early Morning ,6.2,2006.0
+Lucky Break ,6.2,2001.0
+Julia ,7.4,1977.0
+"Surfer, Dude ",4.7,2008.0
+Lake of Fire ,8.3,2006.0
+11:14 ,7.2,2003.0
+Men of War ,5.8,1994.0
+Don McKay ,5.9,2009.0
+Deadfall ,6.3,2012.0
+A Shine of Rainbows ,7.2,2009.0
+The Hit List ,5.4,2011.0
+Emma             ,8.2,
+Videodrome ,7.3,1983.0
+L'auberge espagnole ,7.3,2002.0
+Song One ,5.8,2014.0
+Murder by Numbers ,6.1,2002.0
+Winter in Wartime ,7.1,2008.0
+Freaky Deaky ,6.5,2012.0
+The Train ,7.9,1964.0
+Trade of Innocents ,5.4,2012.0
+The Protector ,7.1,2005.0
+Stiff Upper Lips ,6.4,1998.0
+The Inbetweeners             ,8.4,
+Bend It Like Beckham ,6.7,2002.0
+Sunshine State ,6.9,2002.0
+Crossover ,2.1,2006.0
+Khiladi 786 ,4.3,2012.0
+[Rec] 2 ,6.6,2009.0
+Standing Ovation ,3.4,2010.0
+The Sting ,8.3,1973.0
+Chariots of Fire ,7.2,1981.0
+Diary of a Mad Black Woman ,5.6,2005.0
+Shine ,7.7,1996.0
+Don Jon ,6.6,2013.0
+High Plains Drifter ,7.6,1973.0
+Ghost World ,7.4,2001.0
+Iris ,7.1,2001.0
+Galaxina ,3.4,1980.0
+The Chorus ,7.9,2004.0
+Mambo Italiano ,6.7,2003.0
+Wonderland ,6.6,2003.0
+Do the Right Thing ,7.9,1989.0
+Harvard Man ,4.9,2001.0
+Le Havre ,7.2,2011.0
+Irreversible ,7.4,2002.0
+R100 ,6.1,2013.0
+Rang De Basanti ,8.4,2006.0
+Animals ,6.2,2014.0
+Salvation Boulevard ,5.3,2011.0
+The Ten ,5.0,2007.0
+A Room for Romeo Brass ,7.7,1999.0
+Headhunters ,7.6,2011.0
+Grabbers ,6.3,2012.0
+Saint Ralph ,7.6,2004.0
+Miss Julie ,5.6,2014.0
+Somewhere in Time ,7.3,1980.0
+Dum Maaro Dum ,6.2,2011.0
+Insidious: Chapter 2 ,6.6,2013.0
+Saw II ,6.6,2005.0
+10 Cloverfield Lane ,7.3,2016.0
+Jackass: The Movie ,6.6,2002.0
+Lights Out ,6.9,2016.0
+Paranormal Activity 3 ,5.8,2011.0
+Ouija ,4.4,2014.0
+A Nightmare on Elm Street 3: Dream Warriors ,6.6,1987.0
+The Gift ,7.1,2015.0
+Instructions Not Included ,7.6,2013.0
+Paranormal Activity 4 ,4.6,2012.0
+The Robe ,6.8,1953.0
+The Return of the Pink Panther ,7.1,1975.0
+Freddy's Dead: The Final Nightmare ,4.9,1991.0
+Monster ,7.3,2003.0
+"20,000 Leagues Under the Sea ",7.2,1954.0
+Paranormal Activity: The Marked Ones ,5.0,2014.0
+The Elephant Man ,8.2,1980.0
+Dallas Buyers Club ,8.0,2013.0
+The Lazarus Effect ,5.2,2015.0
+Memento ,8.5,2000.0
+Oculus ,6.5,2013.0
+Clerks II ,7.4,2006.0
+Billy Elliot ,7.7,2000.0
+The Way Way Back ,7.4,2013.0
+House Party 2 ,5.1,1991.0
+The Man from Snowy River ,7.3,1982.0
+Doug's 1st Movie ,5.0,1999.0
+The Apostle ,7.2,1997.0
+Mommie Dearest ,6.7,1981.0
+Our Idiot Brother ,6.4,2011.0
+Race ,7.1,2016.0
+The Players Club ,5.6,1998.0
+O ,6.2,2001.0
+"As Above, So Below ",6.1,2014.0
+Addicted ,5.2,2014.0
+Eve's Bayou ,7.3,1997.0
+Still Alice ,7.5,2014.0
+The Egyptian ,6.6,1954.0
+Nighthawks ,6.4,1981.0
+Friday the 13th Part VIII: Jason Takes Manhattan ,4.5,1989.0
+My Big Fat Greek Wedding ,6.6,2002.0
+Spring Breakers ,5.3,2012.0
+Halloween: The Curse of Michael Myers ,4.9,1995.0
+Y Tu Mamá También ,7.7,2001.0
+Shaun of the Dead ,8.0,2004.0
+The Haunting of Molly Hartley ,3.8,2008.0
+Lone Star ,7.6,1996.0
+Halloween 4: The Return of Michael Myers ,5.9,1988.0
+April Fool's Day ,6.2,1986.0
+Diner ,7.2,1982.0
+Lone Wolf McQuade ,6.3,1983.0
+Apollo 18 ,5.2,2011.0
+Sunshine Cleaning ,6.9,2008.0
+No Escape ,6.8,2015.0
+The Beastmaster ,6.2,1982.0
+Solomon and Sheba ,6.2,1959.0
+Fifty Shades of Black ,3.5,2016.0
+Not Easily Broken ,6.1,2009.0
+A Farewell to Arms ,6.6,1932.0
+The Perfect Match ,4.5,2016.0
+Digimon: The Movie ,5.9,2000.0
+Saved! ,6.9,2004.0
+The Barbarian Invasions ,7.7,2003.0
+Robin and Marian ,6.6,1976.0
+The Forsaken ,5.3,2001.0
+Force 10 from Navarone ,6.3,1978.0
+UHF ,7.0,1989.0
+Grandma's Boy ,7.0,2006.0
+Slums of Beverly Hills ,6.6,1998.0
+Once Upon a Time in the West ,8.6,1968.0
+Made ,6.4,2001.0
+Moon ,7.9,2009.0
+Keeping Up with the Steins ,5.4,2006.0
+Sea Rex 3D: Journey to a Prehistoric World ,6.9,2010.0
+The Sweet Hereafter ,7.7,1997.0
+Of Gods and Men ,7.2,2010.0
+Bottle Shock ,6.8,2008.0
+Jekyll and Hyde... Together Again ,6.2,1982.0
+Heavenly Creatures ,7.4,1994.0
+90 Minutes in Heaven ,4.6,2015.0
+Everything Must Go ,6.4,2010.0
+Zero Effect ,7.0,1998.0
+The Machinist ,7.7,2004.0
+Light Sleeper ,6.8,1992.0
+Kill the Messenger ,7.0,2014.0
+Rabbit Hole ,7.0,2010.0
+Party Monster ,6.3,2003.0
+Green Room ,7.1,2015.0
+The Oh in Ohio ,5.6,2006.0
+Atlas Shrugged: Who Is John Galt? ,4.4,2014.0
+Bottle Rocket ,7.1,1996.0
+Albino Alligator ,6.1,1996.0
+"Gandhi, My Father ",7.4,2007.0
+Standard Operating Procedure ,7.5,2008.0
+Out of the Blue ,7.2,1980.0
+Tucker and Dale vs Evil ,7.6,2010.0
+"Lovely, Still ",7.3,2008.0
+Tycoon ,6.2,1947.0
+Desert Blue ,6.2,1998.0
+Decoys ,4.6,2004.0
+The Visit ,6.2,2015.0
+Redacted ,6.2,2007.0
+Fascination ,3.3,2004.0
+Saving Grace             ,7.5,
+Area 51 ,4.2,2015.0
+Sleep Tight ,7.2,2011.0
+The Cottage ,6.2,2008.0
+Dead Like Me: Life After Death ,6.1,2009.0
+Farce of the Penguins ,4.2,2006.0
+Flying By ,4.5,2009.0
+Psych             ,8.4,
+Rudderless ,7.5,2014.0
+Henry & Me ,6.7,2014.0
+Christmas Eve ,5.1,2015.0
+We Have Your Husband ,5.5,2011.0
+Dying of the Light ,4.4,2014.0
+Born of War ,4.4,2014.0
+Capricorn One ,6.8,1977.0
+Should've Been Romeo ,6.7,2012.0
+Running Forever ,8.6,2015.0
+Yoga Hosers ,4.8,2016.0
+Navy Seals vs. Zombies ,3.4,2015.0
+I Served the King of England ,7.4,2006.0
+Soul Kitchen ,7.3,2009.0
+Sling Blade ,8.0,1996.0
+The Awakening ,6.5,2011.0
+Hostel ,5.9,2005.0
+Tristram Shandy: A Cock and Bull Story ,6.8,2005.0
+Take Shelter ,7.4,2011.0
+Lady in White ,6.7,1988.0
+Driving Lessons ,6.8,2006.0
+Let's Kill Ward's Wife ,5.4,2014.0
+The Texas Chainsaw Massacre 2 ,5.5,1986.0
+Pat Garrett & Billy the Kid ,7.4,1973.0
+Only God Forgives ,5.7,2013.0
+Camping sauvage ,5.4,2005.0
+Without Men ,3.2,2011.0
+Barfi ,7.1,2013.0
+Dear Frankie ,7.8,2004.0
+All Hat ,5.3,2007.0
+The Names of Love ,7.2,2010.0
+Treading Water ,6.2,2013.0
+Savage Grace ,5.9,2007.0
+Out of the Blue ,7.3,2006.0
+Police Academy ,6.7,1984.0
+The Blue Lagoon ,5.7,1980.0
+Four Weddings and a Funeral ,7.1,1994.0
+Fast Times at Ridgemont High ,7.2,1982.0
+Moby Dick ,7.4,1956.0
+25th Hour ,7.7,2002.0
+Secrets and Lies             ,7.7,
+Bound ,7.4,1996.0
+Requiem for a Dream ,8.4,2000.0
+State Fair ,7.1,1945.0
+Tango ,7.2,1998.0
+Salvador ,7.5,1986.0
+Moms' Night Out ,5.4,2014.0
+Donnie Darko ,8.1,2001.0
+Saving Private Perez ,6.0,2011.0
+Character ,7.8,1997.0
+Spun ,6.8,2002.0
+Life During Wartime ,6.5,2009.0
+Lady Vengeance ,7.7,2005.0
+Mozart's Sister ,6.4,2010.0
+Mean Machine ,6.5,2001.0
+Exiled ,7.3,2006.0
+Blackthorn ,6.6,2011.0
+Lilya 4-Ever ,7.9,2002.0
+After.Life ,5.9,2009.0
+Fugly ,4.7,2014.0
+One Flew Over the Cuckoo's Nest ,8.7,1975.0
+R.L. Stine's Monsterville: The Cabinet of Souls ,5.9,2015.0
+Silent Movie ,6.7,1976.0
+Airlift ,8.5,2016.0
+Anne of Green Gables             ,8.4,
+Falcon Rising ,5.8,2014.0
+The Sweeney ,6.1,2012.0
+Sexy Beast ,7.3,2000.0
+Easy Money ,6.7,2010.0
+Whale Rider ,7.6,2002.0
+Paa ,7.2,2009.0
+Cargo ,6.2,2009.0
+Pan ,5.8,2015.0
+High School Musical ,5.2,2006.0
+Animal Kingdom             ,8.1,
+Love and Death on Long Island ,7.1,1997.0
+Night Watch ,6.5,2004.0
+The Crying Game ,7.3,1992.0
+Porky's ,6.2,1981.0
+Survival of the Dead ,5.0,2009.0
+Night of the Living Dead ,8.0,1968.0
+Lost in Translation ,7.8,2003.0
+Annie Hall ,8.1,1977.0
+The Greatest Show on Earth ,6.7,1952.0
+Exodus: Gods and Kings ,6.1,2014.0
+Monster's Ball ,7.1,2001.0
+Maggie ,5.6,2015.0
+Leaving Las Vegas ,7.6,1995.0
+Hansel & Gretel Get Baked ,4.3,2013.0
+The Return of the Living Dead ,7.3,1985.0
+The Front Page ,7.3,1974.0
+The Boy Next Door ,4.6,2015.0
+Trapeze ,6.8,1956.0
+Saving Grace             ,7.5,
+The Kids Are All Right ,7.1,2010.0
+They Live ,7.3,1988.0
+The Great Escape ,8.3,1963.0
+What the #$*! Do We (K)now!? ,5.4,2004.0
+The Last Exorcism Part II ,4.0,2013.0
+Boyhood ,8.0,2014.0
+Scoop ,6.7,2006.0
+Planet of the Apes ,5.7,2001.0
+The Wash ,4.6,2001.0
+3 Strikes ,4.0,2000.0
+The Cooler ,7.0,2003.0
+The Misfits ,7.4,1961.0
+The Night Listener ,5.9,2006.0
+The Jerky Boys ,4.6,1995.0
+My Soul to Take ,4.8,2010.0
+The Orphanage ,7.5,2007.0
+A Haunted House 2 ,4.7,2014.0
+The Rules of Attraction ,6.7,2002.0
+Topaz ,6.3,1969.0
+Let's Go to Prison ,6.0,2006.0
+Four Rooms ,6.7,1995.0
+Secretary ,7.1,2002.0
+The Real Cancun ,2.7,2003.0
+Talk Radio ,7.3,1988.0
+Waiting for Guffman ,7.6,1996.0
+Love Stinks ,5.8,1999.0
+You Kill Me ,6.5,2007.0
+Thumbsucker ,6.6,2005.0
+Red State ,6.2,2011.0
+Mirrormask ,6.9,2005.0
+Samsara ,8.5,2011.0
+The Barbarians ,4.8,1987.0
+The Art of Getting By ,6.6,2011.0
+Zipper ,5.7,2015.0
+Poolhall Junkies ,7.0,2002.0
+The Loss of Sexual Innocence ,5.4,1999.0
+Holy Motors ,7.1,2012.0
+Joe ,6.9,2013.0
+Shooting Fish ,6.6,1997.0
+Prison ,5.9,1987.0
+Psycho Beach Party ,6.3,2000.0
+The Big Tease ,6.3,1999.0
+"Buen Día, Ramón ",7.7,2013.0
+Trust ,7.0,2010.0
+An Everlasting Piece ,6.3,2000.0
+Among Giants ,5.9,1998.0
+Adore ,6.2,2013.0
+The Velocity of Gary ,5.0,1998.0
+Mondays in the Sun ,7.7,2002.0
+Stake Land ,6.5,2010.0
+Sonny with a Chance             ,6.1,
+The Last Time I Committed Suicide ,5.8,1997.0
+Futuro Beach ,6.1,2014.0
+Another Happy Day ,6.0,2011.0
+A Lonely Place to Die ,6.3,2011.0
+Nothing ,6.3,2003.0
+The Geographer Drank His Globe Away ,7.5,2013.0
+1776 ,7.6,1972.0
+Inescapable ,5.2,2012.0
+Hell's Angels ,7.8,1930.0
+Purple Violets ,6.6,2007.0
+The Veil ,4.7,2016.0
+The Loved Ones ,6.7,2009.0
+No Vacancy ,4.2,2012.0
+How to Fall in Love ,6.3,2012.0
+The Perfect Wave ,4.7,2014.0
+Ben-Hur ,6.0,2016.0
+A Man for All Seasons ,7.9,1966.0
+Network ,8.1,1976.0
+Gone with the Wind ,8.2,1939.0
+Desert Dancer ,6.0,2014.0
+Major Dundee ,6.8,1965.0
+Down for Life ,7.3,2009.0
+Annie Get Your Gun ,7.0,1950.0
+Four Lions ,7.3,2010.0
+House of Sand ,7.5,2005.0
+Defendor ,6.8,2009.0
+The Pirate ,7.1,1948.0
+The Good Heart ,6.9,2009.0
+The History Boys ,6.9,2006.0
+Unknown ,6.9,2011.0
+M*A*S*H             ,8.4,
+Midnight Cowboy ,7.9,1969.0
+The Full Monty ,7.2,1997.0
+Airplane! ,7.8,1980.0
+Chain of Command ,3.5,2015.0
+Friday ,7.3,1995.0
+Menace II Society ,7.5,1993.0
+Empire             ,7.8,
+Creepshow 2 ,6.0,1987.0
+The Ballad of Cable Hogue ,7.3,1970.0
+In Cold Blood ,8.0,1967.0
+The Nun's Story ,7.6,1959.0
+Harper ,7.0,1966.0
+Frenzy ,7.5,1972.0
+The Witch ,6.8,2015.0
+I Got the Hook Up ,3.9,1998.0
+She's the One ,6.1,1996.0
+Gods and Monsters ,7.5,1998.0
+The Secret in Their Eyes ,8.2,2009.0
+Day of the Dead ,7.2,1985.0
+Train ,4.8,2008.0
+Evil Dead II ,7.8,1987.0
+Pootie Tang ,5.2,2001.0
+Sharknado ,3.3,2013.0
+La otra conquista ,6.8,1998.0
+Trollhunter ,7.0,2010.0
+Ira & Abby ,6.5,2006.0
+The Watch ,5.7,2012.0
+Winter Passing ,6.4,2005.0
+D.E.B.S. ,5.3,2004.0
+The Masked Saint ,4.7,2016.0
+The Betrayed ,6.1,2008.0
+Taxman ,5.5,1998.0
+The Secret             ,7.3,
+2:13 ,4.8,2009.0
+"Batman: The Dark Knight Returns, Part 2 ",8.4,2013.0
+Time to Choose ,7.0,2015.0
+In the Name of the King: The Last Job ,3.3,2014.0
+Wicked Blood ,5.4,2014.0
+Dawn Patrol ,4.8,2014.0
+Lords of London ,3.1,2014.0
+High Anxiety ,6.7,1977.0
+March of the Penguins ,7.6,2005.0
+Margin Call ,7.1,2011.0
+August ,6.1,2011.0
+Choke ,6.5,2008.0
+Whiplash ,8.5,2014.0
+City of God ,8.7,2002.0
+Human Traffic ,7.1,1999.0
+Day One ,6.6,2012.0
+The Dead Girl ,6.7,2006.0
+The Hunt ,8.3,2012.0
+A Christmas Story ,8.1,1983.0
+Bella ,7.4,2006.0
+Class of 1984 ,6.6,1982.0
+The Opposite Sex ,4.5,2014.0
+Dreaming of Joseph Lees ,6.4,1999.0
+The Class ,7.5,2008.0
+Rosemary's Baby ,8.0,1968.0
+The Man Who Shot Liberty Valance ,8.1,1962.0
+Adam ,7.2,2009.0
+Maria Full of Grace ,7.5,2004.0
+Beginners ,7.2,2010.0
+Feast ,6.4,2005.0
+Animal House ,7.6,1978.0
+Goldfinger ,7.8,1964.0
+Antiviral ,5.7,2012.0
+It's a Wonderful Life ,8.6,1946.0
+Trainspotting ,8.2,1996.0
+The Original Kings of Comedy ,6.6,2000.0
+Paranormal Activity 2 ,5.7,2010.0
+Waking Ned Devine ,7.4,1998.0
+Bowling for Columbine ,8.0,2002.0
+Coming Home ,7.3,2014.0
+A Nightmare on Elm Street 2: Freddy's Revenge ,5.4,1985.0
+A Room with a View ,7.4,1985.0
+The Purge ,5.7,2013.0
+Sinister ,6.8,2012.0
+Martin Lawrence Live: Runteldat ,5.4,2002.0
+Cat on a Hot Tin Roof ,8.1,1958.0
+Beneath the Planet of the Apes ,6.1,1970.0
+Air Bud ,5.1,1997.0
+Pokémon 3: The Movie ,5.6,2000.0
+Jason Lives: Friday the 13th Part VI ,5.9,1986.0
+The Bridge on the River Kwai ,8.2,1957.0
+Spaced Invaders ,5.3,1990.0
+Family Plot ,6.8,1976.0
+The Apartment ,8.3,1960.0
+Jason Goes to Hell: The Final Friday ,4.3,1993.0
+Torn Curtain ,6.7,1966.0
+Dave Chappelle's Block Party ,7.2,2005.0
+Slow West ,6.9,2015.0
+Krush Groove ,6.6,1985.0
+Next Day Air ,5.9,2009.0
+Elmer Gantry ,7.9,1960.0
+Judgment at Nuremberg ,8.3,1961.0
+Trippin' ,5.2,1999.0
+Robot Chicken             ,7.8,
+Red River ,7.8,1948.0
+Phat Girlz ,3.0,2006.0
+Before Midnight ,7.9,2013.0
+Teen Wolf Too ,3.2,1987.0
+Phantasm II ,6.5,1988.0
+Woman Thou Art Loosed ,6.9,2004.0
+Real Women Have Curves ,7.0,2002.0
+Deadline Gallipoli             ,7.4,
+Water ,7.8,2005.0
+East Is East ,6.9,1999.0
+Whipped ,4.4,2000.0
+Kama Sutra: A Tale of Love ,6.0,1996.0
+Please Give ,6.6,2010.0
+Willy Wonka & the Chocolate Factory ,7.8,1971.0
+Warlock: The Armageddon ,5.3,1993.0
+8 Heads in a Duffel Bag ,5.3,1997.0
+Days of Heaven ,8.0,1978.0
+Thirteen Conversations About One Thing ,7.1,2001.0
+Jawbreaker ,5.4,1999.0
+Basquiat ,6.9,1996.0
+Frances Ha ,7.4,2012.0
+Tsotsi ,7.3,2005.0
+Happiness ,7.8,1998.0
+DysFunktional Family ,6.6,2003.0
+Tusk ,5.4,2014.0
+Oldboy ,8.4,2003.0
+Letters to God ,6.3,2010.0
+Hobo with a Shotgun ,6.1,2011.0
+Compadres ,5.0,2016.0
+Freeway ,6.9,1996.0
+Love's Abiding Joy ,7.2,2006.0
+Fish Tank ,7.3,2009.0
+Damsels in Distress ,5.7,2011.0
+Creature             ,5.0,
+Bachelorette ,5.3,2012.0
+BrainDead             ,7.9,
+Brave New Girl ,5.0,2004.0
+Tim and Eric's Billion Dollar Movie ,5.3,2012.0
+The Gambler ,6.0,2014.0
+The Grand             ,7.6,
+Summer Storm ,7.4,2004.0
+Fort McCoy ,5.9,2011.0
+Chain Letter ,4.1,2009.0
+Just Looking ,6.7,1999.0
+The Divide ,5.8,2011.0
+The Eclipse ,6.2,2009.0
+Demonic ,5.3,2015.0
+My Big Fat Independent Movie ,3.3,2005.0
+Alice in Wonderland ,6.5,2010.0
+The Deported ,6.2,2009.0
+Tanner Hall ,5.9,2009.0
+Open Road ,5.5,2013.0
+They Came Together ,5.5,2014.0
+30 Nights of Paranormal Activity with the Devil Inside the Girl with the Dragon Tattoo ,2.6,2013.0
+Never Back Down 2: The Beatdown ,5.8,2011.0
+Point Blank ,7.4,1967.0
+Four Single Fathers ,5.1,2009.0
+Enter the Dangerous Mind ,5.2,2013.0
+Something Wicked ,4.8,2014.0
+AWOL-72 ,3.9,2015.0
+Iguana ,6.2,1988.0
+Cinderella ,7.0,2015.0
+Chicago Overcoat ,6.2,2009.0
+Barry Munday ,5.9,2010.0
+Central Station ,8.0,1998.0
+Pocketful of Miracles ,7.3,1961.0
+Close Range ,4.9,2015.0
+Boynton Beach Club ,6.5,2005.0
+Amnesiac ,4.3,2014.0
+Freakonomics ,6.4,2010.0
+The Omen ,7.6,1976.0
+High Tension ,6.8,2003.0
+Griff the Invisible ,6.1,2010.0
+Unnatural ,4.0,2015.0
+Hustle & Flow ,7.4,2005.0
+Some Like It Hot ,8.3,1959.0
+Friday the 13th Part VII: The New Blood ,5.3,1988.0
+The Wizard of Oz ,8.1,1939.0
+Young Frankenstein ,8.0,1974.0
+Diary of the Dead ,5.7,2007.0
+Lage Raho Munna Bhai ,8.2,2006.0
+Ulee's Gold ,7.1,1997.0
+The Black Stallion ,7.4,1979.0
+Sardaar Ji ,6.6,2015.0
+Journey to Saturn ,5.7,2008.0
+Donovan's Reef ,6.9,1963.0
+The Dress ,7.0,1996.0
+A Guy Named Joe ,7.0,1943.0
+Blazing Saddles ,7.8,1974.0
+Friday the 13th: The Final Chapter ,5.9,1984.0
+Ida ,7.4,2013.0
+Maurice ,7.8,1987.0
+Beer League ,6.0,2006.0
+The Astronaut's Wife ,5.3,1999.0
+Riding Giants ,7.9,2004.0
+Timecrimes ,7.2,2007.0
+Silver Medallist ,7.4,2009.0
+Timber Falls ,5.3,2007.0
+Singin' in the Rain ,8.3,1952.0
+"Fat, Sick & Nearly Dead ",7.6,2010.0
+A Haunted House ,5.1,2013.0
+2016: Obama's America ,5.1,2012.0
+Halloween II ,4.9,2009.0
+That Thing You Do! ,6.9,1996.0
+Halloween III: Season of the Witch ,4.6,1982.0
+Escape from the Planet of the Apes ,6.3,1971.0
+Hud ,7.9,1963.0
+Kevin Hart: Let Me Explain ,6.7,2013.0
+My Own Private Idaho ,7.1,1991.0
+Garden State ,7.6,2004.0
+Before Sunrise ,8.1,1995.0
+Sur le seuil ,6.6,2003.0
+Jesus' Son ,7.0,1999.0
+Saving Face ,7.6,2004.0
+Brick Lane ,6.7,2007.0
+Robot & Frank ,7.1,2012.0
+My Life Without Me ,7.6,2003.0
+The Spectacular Now ,7.1,2013.0
+Marilyn Hotchkiss' Ballroom Dancing and Charm School ,7.1,1990.0
+Religulous ,7.7,2008.0
+Fuel ,7.6,2008.0
+Valley of the Heart's Delight ,6.6,2006.0
+Dodgeball: A True Underdog Story ,6.7,2004.0
+Eye of the Dolphin ,5.7,2006.0
+8: The Mormon Proposition ,7.1,2010.0
+The Other End of the Line ,6.2,2008.0
+Anatomy ,6.1,2000.0
+Sleep Dealer ,5.9,2008.0
+Super ,6.8,2010.0
+Christmas Mail ,5.8,2010.0
+Stung ,5.0,2015.0
+Antibirth ,6.3,2016.0
+Get on the Bus ,6.8,1996.0
+Thr3e ,5.1,2006.0
+Idiocracy ,6.6,2006.0
+The Rise of the Krays ,5.0,2015.0
+This Is England ,7.7,2006.0
+Alien Uprising ,3.1,2012.0
+Bathing Beauty ,6.5,1944.0
+Go for It! ,3.9,2011.0
+"Dancer, Texas Pop. 81 ",6.8,1998.0
+Show Boat ,7.0,1951.0
+Redemption Road ,5.9,2010.0
+The Calling ,5.8,2014.0
+The Brave Little Toaster ,7.3,1987.0
+Fantasia ,7.8,1940.0
+The French Connection ,7.8,1971.0
+8 Days ,6.9,2014.0
+Friday the 13th Part III ,5.7,1982.0
+Friday the 13th: A New Beginning ,4.7,1985.0
+The Last Sin Eater ,5.9,2007.0
+Do You Believe? ,5.9,2015.0
+Impact Point ,4.3,2008.0
+The Valley of Decision ,7.5,1945.0
+Eden ,4.8,2015.0
+Chicken Tikka Masala ,5.8,2005.0
+Always Woodstock ,5.3,2014.0
+Jack Brooks: Monster Slayer ,6.0,2007.0
+The Best Years of Our Lives ,8.1,1946.0
+Bully ,7.0,2001.0
+Elling ,7.6,2001.0
+Mi America ,7.2,2015.0
+[Rec] ,7.5,2007.0
+Lies in Plain Sight ,6.3,2010.0
+Sharkskin ,6.7,2015.0
+Containment ,4.8,2015.0
+The Timber ,5.5,2015.0
+From Russia with Love ,7.5,1963.0
+The Toxic Avenger Part II ,5.1,1989.0
+In the Heat of the Night             ,7.4,
+Sleeper ,7.3,1973.0
+It Follows ,6.9,2014.0
+Everything You Always Wanted to Know About Sex * But Were Afraid to Ask ,6.8,1972.0
+To Kill a Mockingbird ,8.4,1962.0
+Mad Max 2: The Road Warrior ,7.6,1981.0
+The Legend of Drunken Master ,7.6,1994.0
+Lolita ,7.7,1962.0
+Boys Don't Cry ,7.6,1999.0
+Silent House ,5.3,2011.0
+The Lives of Others ,8.5,2006.0
+Courageous ,7.0,2011.0
+The Hustler ,8.0,1961.0
+Boom Town ,7.1,1940.0
+The Triplets of Belleville ,7.8,2003.0
+Smoke Signals ,7.2,1998.0
+American Splendor ,7.5,2003.0
+Before Sunset ,8.0,2004.0
+Amores Perros ,8.1,2000.0
+Thirteen ,6.8,2003.0
+Gentleman's Agreement ,7.4,1947.0
+Winter's Bone ,7.2,2010.0
+Touching the Void ,8.1,2003.0
+Alexander's Ragtime Band ,7.0,1938.0
+Me and You and Everyone We Know ,7.4,2005.0
+Inside Job ,8.3,2010.0
+We Are Your Friends ,6.1,2015.0
+Ghost Dog: The Way of the Samurai ,7.5,1999.0
+Harsh Times ,7.0,2005.0
+Captive ,5.3,2015.0
+Full Frontal ,4.7,2002.0
+Witchboard ,5.7,1986.0
+Strangers with Candy             ,8.1,
+Hamlet ,7.8,1996.0
+Shortbus ,6.5,2006.0
+Waltz with Bashir ,8.0,2008.0
+"The Book of Mormon Movie, Volume 1: The Journey ",3.3,2003.0
+No End in Sight ,8.3,2007.0
+The Diary of a Teenage Girl ,6.9,2015.0
+Get Real             ,7.3,
+In the Shadow of the Moon ,8.1,2007.0
+Meek's Cutoff ,6.5,2010.0
+Inside Deep Throat ,6.8,2005.0
+Dinner Rush ,7.3,2000.0
+Clockwatchers ,6.4,1997.0
+The Virginity Hit ,4.6,2010.0
+Subway ,6.5,1985.0
+House of D ,7.0,2004.0
+Teeth ,5.4,2007.0
+Six-String Samurai ,6.7,1998.0
+Hum To Mohabbat Karega ,2.8,2000.0
+It's All Gone Pete Tong ,7.4,2004.0
+Saint John of Las Vegas ,5.8,2009.0
+24 7: Twenty Four Seven ,7.1,1997.0
+Stonewall ,4.5,2015.0
+Eureka             ,7.9,
+Roadside Romeo ,5.3,2008.0
+This Thing of Ours ,5.4,2003.0
+The Lost Medallion: The Adventures of Billy Stone ,4.8,2013.0
+The Last Five Years ,5.9,2014.0
+The Missing Person ,6.2,2009.0
+Return of the Living Dead III ,5.9,1993.0
+London ,6.6,2005.0
+Sherrybaby ,6.6,2006.0
+Stealing Harvard ,5.1,2002.0
+Circle ,6.0,2015.0
+Eden Lake ,6.8,2008.0
+Plush ,5.4,2013.0
+Vampire Killers ,5.2,2009.0
+Gangster's Paradise: Jerusalema ,7.8,2008.0
+Freeze Frame ,6.4,2004.0
+Grave Encounters ,6.1,2011.0
+Stitches ,5.7,2012.0
+Nine Dead ,5.5,2010.0
+"To Be Frank, Sinatra at 100 ",7.4,2015.0
+Bananas ,7.1,1971.0
+Supercapitalist ,3.9,2012.0
+Rockaway ,4.6,2007.0
+Wings             ,7.3,
+The Lady from Shanghai ,7.7,1947.0
+No Man's Land: The Rise of Reeker ,4.9,2008.0
+Highway ,6.3,2002.0
+Small Apartments ,6.1,2012.0
+Coffee Town ,6.6,2013.0
+The Ghastly Love of Johnny X ,5.7,2012.0
+All Is Bright ,5.6,2013.0
+The Torture Chamber of Dr. Sadism ,6.0,1967.0
+Straight A's ,5.7,2013.0
+A Funny Thing Happened on the Way to the Forum ,7.0,1966.0
+Slacker Uprising ,5.3,2007.0
+The Legend of Hell's Gate: An American Conspiracy ,4.4,2011.0
+The Walking Deceased ,3.4,2015.0
+The Curse of Downers Grove ,4.5,2015.0
+Shark Lake ,3.4,2015.0
+River's Edge ,7.1,1986.0
+Northfork ,6.4,2003.0
+The Marine 4: Moving Target ,5.2,2015.0
+Buried ,7.0,2010.0
+Submarine ,7.3,2010.0
+The Square ,8.1,2013.0
+One to Another ,5.8,2006.0
+Carrie ,5.9,2013.0
+ABCD (Any Body Can Dance) ,6.4,2013.0
+A Nightmare on Elm Street ,7.5,1984.0
+Man on Wire ,7.8,2008.0
+Abandoned ,6.3,2015.0
+Brotherly Love ,7.2,2015.0
+The Last Exorcism ,5.6,2010.0
+Nowhere Boy ,7.2,2009.0
+A Streetcar Named Desire ,8.0,1951.0
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb ,8.5,1964.0
+El crimen del padre Amaro ,6.8,2002.0
+Beasts of the Southern Wild ,7.3,2012.0
+Battle for the Planet of the Apes ,5.5,1973.0
+Songcatcher ,7.3,2000.0
+Higher Ground ,6.3,2011.0
+Vaalu ,5.1,2015.0
+The Greatest Movie Ever Sold ,6.6,2011.0
+Ed and His Dead Mother ,6.1,1993.0
+Travelers and Magicians ,7.5,2003.0
+Hang 'Em High ,7.0,1968.0
+Deadline - U.S.A. ,7.2,1952.0
+Sublime ,5.3,2007.0
+A Beginner's Guide to Snuff ,8.7,2016.0
+Independence Daysaster ,3.4,2013.0
+Dysfunctional Friends ,5.4,2012.0
+Run Lola Run ,7.8,1998.0
+May ,6.7,2002.0
+Against the Wild ,4.7,2013.0
+Living Dark: The Story of Ted the Caver ,6.3,2013.0
+Under the Same Moon ,7.4,2007.0
+Conquest of the Planet of the Apes ,6.1,1972.0
+In the Bedroom ,7.5,2001.0
+I Spit on Your Grave ,6.3,2010.0
+"Happy, Texas ",6.3,1999.0
+My Summer of Love ,6.8,2004.0
+The Lunchbox ,7.8,2013.0
+Yes ,6.9,2004.0
+You Can't Take It with You ,8.0,1938.0
+From Here to Eternity ,7.8,1953.0
+She Wore a Yellow Ribbon ,7.4,1949.0
+Grace Unplugged ,6.1,2013.0
+Foolish ,4.3,1999.0
+N-Secure ,3.5,2010.0
+Caramel ,7.2,2007.0
+Out of the Dark ,4.7,2014.0
+The Bubble ,7.3,2006.0
+The Conversation ,7.9,1974.0
+Dil Jo Bhi Kahey... ,5.1,2005.0
+Mississippi Mermaid ,7.2,1969.0
+I Love Your Work ,5.4,2003.0
+Cabin Fever ,3.7,2016.0
+Dawn of the Dead ,7.4,2004.0
+Waitress ,7.1,2007.0
+Bloodsport ,6.8,1988.0
+Mr. Smith Goes to Washington ,8.2,1939.0
+Kids ,7.0,1995.0
+The Squid and the Whale ,7.4,2005.0
+Kissing Jessica Stein ,6.7,2001.0
+"A Woman, a Gun and a Noodle Shop ",5.7,2009.0
+Kickboxer: Vengeance ,9.1,2016.0
+Spellbound ,7.6,1945.0
+Exotica ,7.2,1994.0
+Buffalo '66 ,7.5,1998.0
+Insidious ,6.8,2010.0
+Repo Man ,6.9,1984.0
+Nine Queens ,7.9,2000.0
+The Gatekeepers ,7.6,2012.0
+The Ballad of Jack and Rose ,6.7,2005.0
+The To Do List ,5.8,2013.0
+Killing Zoe ,6.5,1993.0
+The Believer ,7.2,2001.0
+Snow Angels ,6.9,2007.0
+Unsullied ,5.5,2014.0
+Session 9 ,6.5,2001.0
+I Want Someone to Eat Cheese With ,6.2,2006.0
+Mooz-Lum ,6.7,2010.0
+Hatchet ,5.7,2006.0
+Modern Times ,8.6,1936.0
+Stolen Summer ,6.5,2002.0
+My Name Is Bruce ,6.3,2007.0
+The Salon ,4.3,2005.0
+Road Hard ,6.1,2015.0
+Forty Shades of Blue ,6.0,2005.0
+Amigo ,5.8,2010.0
+Pontypool ,6.7,2008.0
+Trucker ,6.7,2008.0
+Me You and Five Bucks ,7.6,2015.0
+The Lords of Salem ,5.1,2012.0
+Housebound ,6.8,2014.0
+Wal-Mart: The High Cost of Low Price ,6.8,2005.0
+Fetching Cody ,6.8,2005.0
+Once Upon a Time in Queens ,6.3,2013.0
+Closer to the Moon ,7.1,2014.0
+Mutant World ,2.8,2014.0
+Growing Up Smith ,8.2,2015.0
+Checkmate ,3.1,2015.0
+Jack Reacher ,7.0,2012.0
+#Horror ,3.3,2015.0
+Wind Walkers ,3.6,2015.0
+Snow White and the Seven Dwarfs ,7.7,1937.0
+The Holy Girl ,6.7,2004.0
+Shalako ,5.5,1968.0
+Incident at Loch Ness ,6.6,2004.0
+The Dog Lover ,4.8,2016.0
+Girl House ,5.5,2014.0
+The Blue Room ,6.3,2014.0
+House at the End of the Drive ,6.9,2014.0
+Batman: The Movie ,6.5,1966.0
+"Lock, Stock and Two Smoking Barrels ",8.2,1998.0
+The Ballad of Gregorio Cortez ,7.1,1982.0
+The Streets of San Francisco             ,7.3,
+The Celebration ,8.1,1998.0
+Trees Lounge ,7.2,1996.0
+Journey from the Fall ,7.4,2006.0
+The Basket ,6.5,1999.0
+Eddie: The Sleepwalking Cannibal ,5.7,2012.0
+Mercury Rising ,6.1,1998.0
+Space: Above and Beyond             ,7.7,
+Queen of the Mountains ,8.7,2014.0
+Def-Con 4 ,4.3,1985.0
+The Hebrew Hammer ,6.2,2003.0
+Neal 'N' Nikki ,3.3,2005.0
+The 41-Year-Old Virgin Who Knocked Up Sarah Marshall and Felt Superbad About It ,2.7,2010.0
+Forget Me Not ,5.2,2009.0
+Rebecca ,8.2,1940.0
+Friday the 13th Part 2 ,6.1,1981.0
+The Lost Weekend ,8.0,1945.0
+C.H.U.D. ,5.5,1984.0
+Filly Brown ,5.7,2012.0
+The Lion of Judah ,3.7,2011.0
+Niagara ,7.1,1953.0
+How Green Was My Valley ,7.8,1941.0
+The Girlfriend Experience             ,7.3,
+Da Sweet Blood of Jesus ,4.1,2014.0
+"Sex, Lies, and Videotape ",7.2,1989.0
+Saw ,7.7,2004.0
+Super Troopers ,7.1,2001.0
+The Algerian ,7.6,2014.0
+The Amazing Catfish ,7.0,2013.0
+The Day the Earth Stood Still ,5.5,2008.0
+Monsoon Wedding ,7.4,2001.0
+You Can Count on Me ,7.7,2000.0
+The Trouble with Harry ,7.2,1955.0
+Lucky Number Slevin ,7.8,2006.0
+But I'm a Cheerleader ,6.6,1999.0
+Home Run ,6.0,2013.0
+Reservoir Dogs ,8.4,1992.0
+The Blue Bird ,6.5,1940.0
+"The Good, the Bad and the Ugly ",8.9,1966.0
+The Second Mother ,7.9,2015.0
+Blue Like Jazz ,6.0,2012.0
+Down and Out with the Dolls ,6.1,2001.0
+"Pink Ribbons, Inc. ",7.4,2011.0
+Certifiably Jonathan ,6.2,2007.0
+Q ,5.6,2011.0
+The Knife of Don Juan ,7.2,2013.0
+Grand Theft Parsons ,6.1,2003.0
+Extreme Movie ,3.8,2008.0
+The Charge of the Light Brigade ,7.1,1936.0
+Below Zero ,4.5,2011.0
+Crowsnest ,3.8,2012.0
+Airborne ,6.2,1993.0
+Cotton Comes to Harlem ,6.6,1970.0
+The Wicked Within ,4.6,2015.0
+Bleeding Hearts ,4.2,2015.0
+Waiting... ,6.8,2005.0
+Dead Man's Shoes ,7.7,2004.0
+Wolf Creek             ,7.1,
+From a Whisper to a Scream ,5.9,1987.0
+Sex with Strangers ,4.7,2002.0
+Dracula: Pages from a Virgin's Diary ,7.0,2002.0
+Faith Like Potatoes ,6.9,2006.0
+Beyond the Black Rainbow ,6.1,2010.0
+The Raid: Redemption ,7.6,2011.0
+The Dead Undead ,3.0,2010.0
+The Vatican Exorcisms ,2.6,2013.0
+Casablanca ,8.6,1942.0
+Lake Mungo ,6.1,2008.0
+Rocket Singh: Salesman of the Year ,7.5,2009.0
+Silent Running ,6.7,1972.0
+Rocky ,8.1,1976.0
+The Sleepwalker ,4.9,2014.0
+The Fog ,6.8,1980.0
+Tom Jones ,6.8,1963.0
+Unfriended ,5.7,2014.0
+Taxi Driver ,8.3,1976.0
+The Howling ,6.6,1981.0
+Dr. No ,7.3,1962.0
+Chernobyl Diaries ,5.0,2012.0
+Hellraiser ,7.0,1987.0
+God's Not Dead 2 ,3.4,2016.0
+Cry_Wolf ,5.9,2005.0
+Godzilla 2000 ,6.0,1999.0
+Blue Valentine ,7.4,2010.0
+Transamerica ,7.4,2005.0
+The Devil Inside ,4.2,2012.0
+Beyond the Valley of the Dolls ,6.2,1970.0
+Love Me Tender ,6.2,1956.0
+An Inconvenient Truth ,7.5,2006.0
+Sands of Iwo Jima ,7.2,1949.0
+Shine a Light ,7.2,2008.0
+The Green Inferno ,5.4,2013.0
+Departure ,7.0,2015.0
+The Sessions ,7.2,2012.0
+"Food, Inc. ",7.9,2008.0
+October Baby ,6.8,2011.0
+Next Stop Wonderland ,6.7,1998.0
+Juno ,7.5,2007.0
+The Skeleton Twins ,6.8,2014.0
+Martha Marcy May Marlene ,6.9,2011.0
+Obvious Child ,6.8,2014.0
+Frozen River ,7.2,2008.0
+20 Feet from Stardom ,7.4,2013.0
+Two Girls and a Guy ,5.6,1997.0
+Walking and Talking ,6.8,1996.0
+The Full Monty ,7.2,1997.0
+Who Killed the Electric Car? ,7.7,2006.0
+The Broken Hearts Club: A Romantic Comedy ,7.0,2000.0
+Bubba Ho-Tep ,7.2,2002.0
+Goosebumps ,6.4,2015.0
+Slam ,7.2,1998.0
+Brigham City ,7.2,2001.0
+Fiza ,6.2,2000.0
+History of the World: Part I ,6.9,1981.0
+Orgazmo ,6.2,1997.0
+All the Real Girls ,6.9,2003.0
+Dream with the Fishes ,7.0,1997.0
+Blue Car ,6.7,2002.0
+Luminarias ,3.6,2000.0
+Palo Alto ,6.3,2013.0
+Ajami ,7.4,2009.0
+Wristcutters: A Love Story ,7.4,2006.0
+I Origins ,7.3,2014.0
+The Battle of Shaker Heights ,6.1,2003.0
+The Lovely Bones ,6.7,2009.0
+The Act of Killing ,8.2,2012.0
+Taxi to the Dark Side ,7.7,2007.0
+Once in a Lifetime: The Extraordinary Story of the New York Cosmos ,7.3,2006.0
+Guiana 1838 ,7.4,2004.0
+Lisa Picard Is Famous ,5.7,2000.0
+Antarctica: A Year on Ice ,7.6,2013.0
+A Lego Brickumentary ,6.8,2014.0
+Hardflip ,5.6,2012.0
+Chocolate: Deep Dark Secrets ,4.8,2005.0
+The House of the Devil ,6.4,2009.0
+The Perfect Host ,6.8,2010.0
+Safe Men ,6.1,1998.0
+Speedway Junky ,5.2,1999.0
+The Last Big Thing ,6.9,1996.0
+The Specials ,6.0,2000.0
+16 to Life ,6.3,2009.0
+Alone with Her ,6.1,2006.0
+Creative Control ,5.5,2015.0
+Special ,6.9,2006.0
+Sparkler ,5.6,1997.0
+The Helix... Loaded ,1.9,2005.0
+In Her Line of Fire ,4.1,2006.0
+The Jimmy Show ,5.4,2001.0
+Heli ,6.8,2013.0
+Karachi se Lahore ,7.0,2015.0
+Loving Annabelle ,6.7,2006.0
+Hits ,5.8,2014.0
+Jimmy and Judy ,6.2,2006.0
+Frat Party ,2.8,2009.0
+The Party's Over ,7.3,1965.0
+Proud ,5.8,2004.0
+The Poker House ,6.5,2008.0
+Childless ,6.1,2008.0
+ZMD: Zombies of Mass Destruction ,5.1,2009.0
+Snow White: A Deadly Summer ,2.2,2012.0
+Hidden Away ,7.2,2014.0
+My Last Day Without You ,5.7,2011.0
+Steppin: The Movie ,3.4,2009.0
+Doc Holliday's Revenge ,3.8,2014.0
+Black Rock ,4.7,2012.0
+Truth or Die ,5.6,2012.0
+The Pet ,3.9,2006.0
+Bang Bang Baby ,5.4,2014.0
+Fear Clinic ,5.2,2015.0
+Zombie Hunter ,3.5,2013.0
+A Fine Step ,5.3,2014.0
+Trance ,7.0,2013.0
+Charly ,7.1,1968.0
+Banshee Chapter ,5.5,2013.0
+Jesse             ,5.9,
+Ask Me Anything ,6.0,2014.0
+And Then Came Love ,4.8,2007.0
+Food Chains ,7.1,2014.0
+On the Waterfront ,8.2,1954.0
+L!fe Happens ,5.7,2011.0
+"4 Months, 3 Weeks and 2 Days ",7.9,2007.0
+The Horror Network Vol. 1 ,7.3,2015.0
+Hard Candy ,7.1,2005.0
+The Quiet ,6.4,2005.0
+Circumstance ,5.9,2011.0
+Fruitvale Station ,7.5,2013.0
+The Brass Teapot ,6.4,2012.0
+Bambi ,7.4,1942.0
+The Hammer ,7.3,2007.0
+Snitch ,6.5,2013.0
+Latter Days ,7.2,2003.0
+Elza ,6.7,2011.0
+1982 ,7.1,2013.0
+"For a Good Time, Call... ",6.0,2012.0
+Celeste & Jesse Forever ,6.7,2012.0
+Time Changer ,5.6,2002.0
+London to Brighton ,7.0,2006.0
+American Hero ,4.9,2015.0
+Windsor Drive ,3.2,2015.0
+A Separation ,8.4,2011.0
+Crying with Laughter ,6.9,2009.0
+Welcome to the Dollhouse ,7.5,1995.0
+Ruby in Paradise ,7.2,1993.0
+Raising Victor Vargas ,7.2,2002.0
+Pandora's Box ,8.0,1929.0
+Harrison Montgomery ,7.4,2008.0
+Live-In Maid ,7.2,2004.0
+Deterrence ,6.5,1999.0
+The Mudge Boy ,7.2,2003.0
+The Young Unknowns ,4.2,2000.0
+Not Cool ,5.1,2014.0
+Dead Snow ,6.4,2009.0
+Saints and Soldiers ,6.8,2003.0
+Vessel ,6.2,2012.0
+American Graffiti ,7.5,1973.0
+Iraq for Sale: The War Profiteers ,7.7,2006.0
+Aqua Teen Hunger Force Colon Movie Film for Theaters ,6.9,2007.0
+Safety Not Guaranteed ,7.0,2012.0
+Kevin Hart: Laugh at My Pain ,7.5,2011.0
+Kill List ,6.3,2011.0
+The Innkeepers ,5.5,2011.0
+The Unborn ,4.8,2009.0
+The Conformist ,8.1,1970.0
+Interview with the Assassin ,6.6,2002.0
+Donkey Punch ,5.2,2008.0
+All the Boys Love Mandy Lane ,5.6,2006.0
+Bled ,3.1,2009.0
+High Noon ,8.1,1952.0
+Hoop Dreams ,8.3,1994.0
+Rize ,7.1,2005.0
+Destiny ,8.1,2014.0
+L.I.E. ,7.2,2001.0
+The Sisterhood of Night ,6.3,2014.0
+B-Girl ,4.0,2009.0
+King Kong ,7.2,2005.0
+House of Wax ,5.3,2005.0
+Half Nelson ,7.2,2006.0
+Naturally Native ,6.5,1998.0
+Hav Plenty ,6.5,1997.0
+Adulterers ,4.9,2015.0
+Escape from Tomorrow ,5.2,2013.0
+Starsuckers ,7.4,2009.0
+The Hadza: Last of the First ,7.4,2014.0
+After ,5.4,2012.0
+Treachery ,3.9,2013.0
+Walter ,5.3,2015.0
+Top Hat ,7.8,1935.0
+The Blair Witch Project ,6.4,1999.0
+Woodstock ,8.1,1970.0
+The Kentucky Fried Movie ,6.5,1977.0
+Mercy Streets ,5.6,2000.0
+Arnolds Park ,5.6,2007.0
+Broken Vessels ,6.6,1998.0
+Water & Power ,6.3,2013.0
+They Will Have to Kill Us First ,7.7,2015.0
+Crop Circles: Quest for Truth ,7.0,2002.0
+Light from the Darkroom ,8.0,2014.0
+Irreplaceable ,7.2,2016.0
+The Maid's Room ,4.5,2013.0
+A Hard Day's Night ,7.7,1964.0
+The Harvest/La Cosecha ,7.2,2011.0
+Love Letters ,6.1,1983.0
+Julija in alfa Romeo ,6.4,2015.0
+Fireproof ,6.5,2008.0
+Faith Connections ,7.0,2013.0
+Benji ,6.1,1974.0
+Open Water ,5.7,2003.0
+High Road ,5.4,2011.0
+Kingdom of the Spiders ,5.9,1977.0
+Mad Hot Ballroom ,7.5,2005.0
+The Station Agent ,7.7,2003.0
+To Save a Life ,7.1,2009.0
+Wordplay ,7.4,2006.0
+Beyond the Mat ,7.6,1999.0
+The Singles Ward ,6.4,2002.0
+Osama ,7.4,2003.0
+Sholem Aleichem: Laughing in the Darkness ,6.8,2011.0
+Groove ,6.5,2000.0
+The R.M. ,6.0,2003.0
+Twin Falls Idaho ,7.3,1999.0
+Mean Creek ,7.3,2004.0
+Hurricane Streets ,6.5,1997.0
+Never Again ,6.0,2001.0
+Civil Brand ,5.3,2002.0
+Lonesome Jim ,6.6,2005.0
+Drinking Buddies ,6.1,2013.0
+Deceptive Practice: The Mysteries and Mentors of Ricky Jay ,7.1,2012.0
+Seven Samurai ,8.7,1954.0
+The Other Dream Team ,8.4,2012.0
+Johnny Suede ,5.8,1991.0
+Finishing the Game: The Search for a New Bruce Lee ,6.2,2007.0
+Rubber ,5.8,2010.0
+Home ,6.7,2015.0
+Kiss the Bride ,5.7,2007.0
+The Slaughter Rule ,6.1,2002.0
+Monsters ,6.4,2010.0
+The Californians ,5.0,2005.0
+The Living Wake ,6.5,2007.0
+Detention of the Dead ,4.6,2012.0
+Crazy Stone ,7.7,2006.0
+Scott Walker: 30 Century Man ,7.3,2006.0
+Everything Put Together ,6.6,2000.0
+Good Kill ,6.4,2014.0
+Insomnia Manica ,5.8,2005.0
+The Outrageous Sophie Tucker ,7.2,2014.0
+Now Is Good ,7.2,2012.0
+Girls Gone Dead ,3.5,2012.0
+America Is Still the Place ,7.5,2015.0
+Subconscious ,2.2,2015.0
+Crossroads ,3.3,2002.0
+Enter Nowhere ,6.6,2011.0
+The King of Najayo ,6.9,2012.0
+Fight to the Finish ,4.0,2016.0
+Alleluia! The Devil's Carnival ,7.4,2016.0
+The Sound and the Shadow ,8.3,2014.0
+Rodeo Girl ,5.7,2016.0
+Born to Fly: Elizabeth Streb vs. Gravity ,6.8,2014.0
+The Little Ponderosa Zoo ,5.2,2016.0
+Oz the Great and Powerful ,6.4,2013.0
+The Toxic Avenger ,6.2,1984.0
+Straight Out of Brooklyn ,5.9,1991.0
+Bloody Sunday ,7.7,2002.0
+Diamond Ruff ,4.3,2015.0
+Conversations with Other Women ,7.1,2005.0
+Poultrygeist: Night of the Chicken Dead ,6.2,2006.0
+Mutual Friends ,6.8,2013.0
+42nd Street ,7.7,1933.0
+Rise of the Entrepreneur: The Search for a Better Way ,8.2,2014.0
+Metropolitan ,7.5,1990.0
+As It Is in Heaven ,7.6,2004.0
+Roadside ,4.1,2013.0
+Napoleon Dynamite ,6.9,2004.0
+Blue Ruin ,7.1,2013.0
+Paranormal Activity ,6.3,2007.0
+Dogtown and Z-Boys ,7.7,2001.0
+Monty Python and the Holy Grail ,8.3,1975.0
+Quinceañera ,7.1,2006.0
+Gory Gory Hallelujah ,4.7,2003.0
+Heroes             ,7.7,
+Tarnation ,7.2,2003.0
+I Want Your Money ,5.1,2010.0
+Love in the Time of Monsters ,5.4,2014.0
+The Beyond ,6.9,1981.0
+Home Movies             ,8.2,
+What Happens in Vegas ,6.1,2008.0
+The Dark Hours ,6.1,2005.0
+My Beautiful Laundrette ,6.9,1985.0
+Fabled ,5.8,2002.0
+Show Me ,6.0,2004.0
+Cries & Whispers ,8.2,1972.0
+Intolerance: Love's Struggle Throughout the Ages ,8.0,1916.0
+Trekkies ,7.0,1997.0
+The Broadway Melody ,6.3,1929.0
+The Evil Dead ,7.6,1981.0
+Maniac ,6.1,2012.0
+Censored Voices ,7.2,2015.0
+Murderball ,7.8,2005.0
+American Ninja 2: The Confrontation ,4.7,1987.0
+51 Birch Street ,7.5,2005.0
+Revolution             ,6.7,
+Rotor DR1 ,3.4,2015.0
+Halloween ,7.9,1978.0
+12 Angry Men ,8.9,1957.0
+My Dog Tulip ,6.9,2009.0
+It Happened One Night ,8.2,1934.0
+Dogtooth ,7.3,2009.0
+Tupac: Resurrection ,8.0,2003.0
+Tumbleweeds ,6.7,1999.0
+The Prophecy ,6.6,1995.0
+When the Cat's Away ,6.9,1996.0
+Pieces of April ,7.1,2003.0
+The Big Swap ,5.6,1998.0
+Old Joy ,6.7,2006.0
+Wendy and Lucy ,7.1,2008.0
+3 Backyards ,5.2,2010.0
+Pierrot le Fou ,7.7,1965.0
+Sisters in Law ,7.5,2005.0
+Ayurveda: Art of Being ,7.6,2001.0
+Nothing But a Man ,8.1,1964.0
+"First Love, Last Rites ",5.5,1997.0
+Fighting Tommy Riley ,6.6,2004.0
+Royal Kill ,3.2,2009.0
+Across the Universe ,7.4,2007.0
+The Looking Glass ,6.6,2015.0
+Death Race 2000 ,6.2,1975.0
+Locker 13 ,4.8,2014.0
+Midnight Cabaret ,4.5,1990.0
+Anderson's Cross ,7.2,2010.0
+Bizarre ,4.3,2015.0
+Graduation Day ,4.5,1981.0
+Some Guy Who Kills People ,6.4,2011.0
+Compliance ,6.4,2012.0
+Chasing Amy ,7.3,1997.0
+Lovely & Amazing ,6.9,2001.0
+Death Calls ,4.3,2010.0
+Better Luck Tomorrow ,7.2,2002.0
+The Incredibly True Adventure of Two Girls in Love ,6.5,1995.0
+Chuck & Buck ,6.6,2000.0
+American Desi ,6.7,2001.0
+Amidst the Devil's Wings ,4.3,2014.0
+Cube ,7.3,1997.0
+Love and Other Catastrophes ,6.4,1996.0
+I Married a Strange Person! ,7.0,1997.0
+November ,5.5,2004.0
+Like Crazy ,6.7,2011.0
+Teeth and Blood ,4.3,2015.0
+Sugar Town ,6.1,1999.0
+The Motel ,6.8,2005.0
+The Canyons ,3.9,2013.0
+Happy Valley             ,8.5,
+On the Outs ,6.9,2004.0
+Shotgun Stories ,7.3,2007.0
+Exam ,6.9,2009.0
+The Sticky Fingers of Time ,6.3,1997.0
+Sunday School Musical ,2.5,2008.0
+Rust ,5.7,2010.0
+Ink ,7.0,2009.0
+The Christmas Bunny ,6.2,2010.0
+Jesus People ,6.9,2007.0
+Butterfly ,4.5,1982.0
+UnDivided ,7.8,2013.0
+The Frozen ,4.4,2012.0
+The Love Letter ,7.4,1998.0
+Horse Camp ,6.6,2014.0
+Give Me Shelter ,8.0,2014.0
+The Big Parade ,8.3,1925.0
+Little Big Top ,6.5,2006.0
+Along the Roadside ,7.1,2013.0
+Bronson ,7.1,2008.0
+Western Religion ,4.0,2015.0
+Burn ,7.5,2012.0
+Urbania ,7.0,2000.0
+The Stewardesses ,4.0,1969.0
+"The Beast from 20,000 Fathoms ",6.7,1953.0
+"20,000 Leagues Under the Sea ",7.2,1954.0
+Mad Max ,7.0,1979.0
+Swingers ,7.4,1996.0
+A Fistful of Dollars ,8.0,1964.0
+She Done Him Wrong ,6.5,1933.0
+Short Cut to Nirvana: Kumbh Mela ,7.2,2004.0
+The Grace Card ,6.4,2010.0
+Middle of Nowhere ,6.5,2012.0
+3 ,6.8,2010.0
+The Business of Fancydancing ,6.9,2002.0
+Call + Response ,7.5,2008.0
+Side Effects ,7.1,2013.0
+Malevolence ,5.1,2003.0
+Shooting the Warwicks ,6.2,2015.0
+Super Hybrid ,3.9,2010.0
+Baghead ,6.0,2008.0
+Solitude ,6.8,2014.0
+The Case of the Grinning Cat ,7.4,2004.0
+Ordet ,8.1,1955.0
+Good Dick ,6.5,2008.0
+The Man from Earth ,8.0,2007.0
+The Trials of Darryl Hunt ,7.7,2006.0
+An American Girl Holiday ,7.2,2004.0
+Yesterday Was a Lie ,5.4,2008.0
+Theresa Is a Mother ,6.7,2012.0
+H. ,6.3,2014.0
+Archaeology of a Woman ,8.1,2012.0
+Children of Heaven ,8.5,1997.0
+Weekend ,7.7,2011.0
+She's Gotta Have It ,6.5,1986.0
+Butterfly Girl ,8.7,2014.0
+The World Is Mine ,6.5,2015.0
+Another Earth ,7.0,2011.0
+The Calling ,5.8,2014.0
+Sweet Sweetback's Baadasssss Song ,5.5,1971.0
+Perfect Cowboy ,7.0,2014.0
+Tadpole ,6.3,2000.0
+Once ,7.9,2007.0
+The Woman Chaser ,7.3,1999.0
+The Horse Boy ,7.4,2009.0
+When the Lights Went Out ,5.4,2012.0
+Heroes of Dirt ,7.1,2015.0
+The Texas Chain Saw Massacre ,7.5,1974.0
+A Charlie Brown Christmas ,8.4,1965.0
+Antarctic Edge: 70° South ,7.0,2015.0
+Aroused ,5.3,2013.0
+Top Spin ,7.1,2014.0
+Roger & Me ,7.5,1989.0
+Cat People ,6.1,1982.0
+An American in Hollywood ,7.2,2014.0
+Sound of My Voice ,6.7,2011.0
+The Brain That Sings ,8.2,2013.0
+The Blood of My Brother ,6.6,2005.0
+Your Sister's Sister ,6.7,2011.0
+Romantic Schemer ,5.1,2015.0
+A Dog's Breakfast ,7.0,2007.0
+A Dog's Breakfast ,7.0,2007.0
+Night of the Living Dead ,8.0,1968.0
+Une Femme Mariée ,7.4,1964.0
+The Birth of a Nation ,5.4,2016.0
+The Work and the Story ,5.7,2003.0
+Facing the Giants ,6.7,2006.0
+The Gallows ,4.2,2015.0
+Eraserhead ,7.4,1977.0
+Over the Hill to the Poorhouse ,4.8,1920.0
+Hollywood Shuffle ,7.0,1987.0
+The Mighty ,7.3,1998.0
+Penitentiary ,5.8,1979.0
+The Lost Skeleton of Cadavra ,7.0,2001.0
+"Dude, Where's My Dog?! ",3.2,2014.0
+Cheap Thrills ,6.8,2013.0
+Indie Game: The Movie ,7.7,2012.0
+Closure ,5.6,2007.0
+Open Secret ,7.1,1948.0
+Echo Dr. ,3.6,2013.0
+The Night Visitor ,6.8,1971.0
+The Past is a Grotesque Animal ,7.6,2014.0
+The Last House on the Left ,6.6,2009.0
+"Peace, Propaganda & the Promised Land ",8.3,2004.0
+Pi ,7.5,1998.0
+"I Love You, Don't Touch Me! ",5.4,1997.0
+20 Dates ,5.3,1998.0
+Queen Crab ,4.5,2015.0
+Super Size Me ,7.3,2004.0
+The FP ,5.6,2011.0
+Happy Christmas ,5.6,2014.0
+The Brain That Wouldn't Die ,4.1,1962.0
+Tiger Orange ,6.8,2014.0
+Supporting Characters ,6.3,2012.0
+Absentia ,5.8,2011.0
+The Brothers McMullen ,6.6,1995.0
+The Dirties ,6.7,2013.0
+Gabriela ,6.4,1983.0
+Tiny Furniture ,6.3,2010.0
+Hayride ,3.4,2012.0
+The Naked Ape ,4.7,2006.0
+Counting ,6.0,2015.0
+The Call of Cthulhu ,7.3,2005.0
+Bending Steel ,7.9,2013.0
+The Signal ,6.1,2014.0
+The Image Revolution ,7.4,2014.0
+This Is Martin Bonner ,6.6,2013.0
+A True Story ,5.5,2013.0
+George Washington ,7.5,2000.0
+Smiling Fish & Goat on Fire ,7.6,1999.0
+Dawn of the Crescent Moon ,5.0,2014.0
+Raymond Did It ,3.2,2011.0
+The Last Waltz ,8.2,1978.0
+"Run, Hide, Die ",3.7,2012.0
+The Exploding Girl ,6.3,2009.0
+The Legend of God's Gun ,4.1,2007.0
+Mutual Appreciation ,6.9,2005.0
+Her Cry: La Llorona Investigation ,5.4,2013.0
+Down Terrace ,6.5,2009.0
+Clerks ,7.8,1994.0
+Pink Narcissus ,6.7,1971.0
+Funny Ha Ha ,6.4,2002.0
+In the Company of Men ,7.3,1997.0
+Sabotage ,5.7,2014.0
+Manito ,7.0,2002.0
+Rampage ,6.3,2009.0
+Slacker ,7.1,1991.0
+Dutch Kills ,4.8,2015.0
+Dry Spell ,3.3,2013.0
+Flywheel ,6.9,2003.0
+Exeter ,4.6,2015.0
+The Ridges ,3.0,2011.0
+The Puffy Chair ,6.6,2005.0
+Stories of Our Lives ,7.4,2014.0
+Breaking Upwards ,6.2,2009.0
+All Superheroes Must Die ,4.0,2011.0
+Pink Flamingos ,6.1,1972.0
+Clean ,6.9,2004.0
+The Circle ,7.5,2000.0
+Tin Can Man ,6.7,2007.0
+The Cure ,7.4,1997.0
+On the Downlow ,6.1,2004.0
+Sanctuary; Quite a Conundrum ,5.4,2012.0
+Bang ,6.4,1995.0
+Primer ,7.0,2004.0
+Cavite ,6.3,2005.0
+El Mariachi ,6.9,1992.0
+The Mongol King ,7.8,2005.0
+Newlyweds ,6.4,2011.0
+Signed Sealed Delivered ,7.7,2013.0
+The Following             ,7.5,
+A Plague So Pleasant ,6.3,2013.0
+Shanghai Calling ,6.3,2012.0
+My Date with Drew ,6.6,2004.0

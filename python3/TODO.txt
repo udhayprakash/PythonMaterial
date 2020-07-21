@@ -1,0 +1,316 @@
+Logging 
+    papertrail
+RSS feed
+    https://www.tutorialspoint.com/python_text_processing/python_reading_rss_feed.htm
+xml 
+    https://www.tutorialspoint.com/python/python_xml_processing.htm
+    https://docs.python.org/3/library/xml.etree.elementtree.html
+    
+Encoding 
+    https://stackabuse.com/run-length-encoding/
+
+recursive functions 
+    https://stackabuse.com/understanding-recursive-functions-with-python/
+        take diagram from this link 
+inner/nested functions 
+    https://stackabuse.com/python-nested-functions/
+
+modules 
+    https://stackabuse.com/python-circular-imports/
+    https://stackabuse.com/introduction-to-the-python-pathlib-module/
+
+coroutines
+    https://stackabuse.com/coroutines-in-python/
+
+async
+    https://stackabuse.com/python-async-await-tutorial/
+    https://stackabuse.com/overview-of-async-io-in-python-3-7/
+
+requests
+    https://stackabuse.com/the-python-requests-module/
+
+aiohttp
+    https://stackabuse.com/asynchronous-vs-synchronous-python-performance-analysis/
+    https://stackabuse.com/asynchronous-python-for-web-development/
+
+FileOperations
+    file opening mode 
+        x - creates a new file, failing if it exists
+
+    https://stackabuse.com/reading-and-writing-xml-files-in-python/
+    https://stackabuse.com/introduction-to-the-python-lxml-library/
+    https://stackabuse.com/python-zlib-library-tutorial/
+    pdf 
+        https://stackabuse.com/working-with-pdfs-in-python-inserting-deleting-and-reordering-pages/
+
+pytest 
+    https://stackabuse.com/test-driven-development-with-pytest/
+    https://testandcode.com/104
+    https://mattsegal.dev/pytest-on-github-actions.html
+
+Selenium 
+    https://stackabuse.com/getting-started-with-selenium-and-python/
+Web Scraping 
+    https://stackabuse.com/introduction-to-web-scraping-with-python/
+
+Databases 
+    https://stackabuse.com/a-sqlite-tutorial-with-python/
+    https://stackabuse.com/getting-started-with-mysql-and-python/
+    https://stackabuse.com/working-with-postgresql-in-python/
+
+Parallel processing 
+    https://stackabuse.com/parallel-processing-in-python/
+    https://stackabuse.com/concurrency-in-python/
+    
+networking 
+    https://stackabuse.com/introduction-to-python-ftp/
+windows WSL 
+    https://pbpython.com/wsl-python.html
+Twitter 
+    https://stackabuse.com/accessing-the-twitter-api-with-python/
+Wikipedia 
+    https://stackabuse.com/getting-started-with-pythons-wikipedia-api/
+NLP 
+    https://stackabuse.com/text-summarization-with-nltk-in-python/
+    https://stackabuse.com/python-for-nlp-tokenization-stemming-and-lemmatization-with-spacy-library/
+    https://stackabuse.com/python-for-nlp-working-with-text-and-pdf-files/
+    https://stackabuse.com/python-for-nlp-developing-an-automatic-text-filler-using-n-grams/
+    https://stackabuse.com/python-for-nlp-creating-a-rule-based-chatbot/ 
+    
+    https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/
+    https://stackabuse.com/text-classification-with-python-and-scikit-learn/
+
+    https://stackabuse.com/python-for-nlp-introduction-to-the-pattern-library/
+    https://stackabuse.com/python-for-nlp-working-with-facebook-fasttext-library/
+    https://stackabuse.com/python-for-nlp-introduction-to-the-textblob-library/
+
+Data Visualization
+    https://stackabuse.com/pandas-library-for-data-visualization-in-python/
+    https://stackabuse.com/a-brief-introduction-to-matplotlib-for-data-visualization/
+    https://stackabuse.com/using-plotly-library-for-interactive-data-visualization-in-python/
+    https://stackabuse.com/python-data-visualization-with-matplotlib/
+    https://stackabuse.com/pythons-bokeh-library-for-interactive-data-visualization/
+    https://stackabuse.com/seaborn-library-for-data-visualization-in-python-part-1/
+    https://stackabuse.com/seaborn-library-for-data-visualization-in-python-part-2/
+
+Machine Learning 
+    https://stackabuse.com/analysis-of-black-friday-shopping-trends-via-machine-learning/
+
+Finance
+    http://theautomatic.net/yahoo_fin-documentation/
+    http://theautomatic.net/2020/05/05/how-to-download-fundamentals-data-with-python/
+
+flask
+    https://stackabuse.com/serving-static-files-with-flask/
+    https://stackabuse.com/building-a-todo-app-with-flask-in-python/
+    https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
+
+django 
+    https://stackabuse.com/asynchronous-tasks-in-django-with-redis-and-celery/
+    https://stackabuse.com/working-with-redis-in-python-with-django/
+    https://stackabuse.com/recursive-model-relationships-in-django/
+    https://stackabuse.com/building-a-graphql-api-with-django/
+
+    string templating 
+        https://stackabuse.com/formatting-strings-with-the-python-template-class/
+
+DataScience 
+    https://stackabuse.com/the-best-data-science-libraries-in-python/
+
+Docker
+    https://stackabuse.com/dockerizing-python-applications/
+
+Python Articles 
+    https://stackabuse.com/differences-between-pyc-pyd-and-pyo-python-files/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Memory Management
+    https://stackabuse.com/basics-of-memory-management-in-python/
+
+Profiling
+    https://stackabuse.com/python-performance-optimization/
+
+==================================================================
+Big O notation 
+    https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/
+
+Sorting 
+    https://stackabuse.com/sorting-algorithms-in-python/
+    https://stackabuse.com/merge-sort-in-python/
+    https://stackabuse.com/heap-sort-in-python/
+    https://stackabuse.com/quicksort-in-python/
+    https://stackabuse.com/insertion-sort-in-python/
+
+Datastructures 
+    https://stackabuse.com/doubly-linked-list-with-python-examples/
+    https://stackabuse.com/python-linked-lists/
+    https://stackabuse.com/sorting-and-merging-single-linked-list/
+    https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/
+    https://stackabuse.com/stacks-and-queues-in-python/
+
+Algorithms
+    https://stackabuse.com/search-algorithms-in-python/
+    https://stackabuse.com/levenshtein-distance-and-text-similarity-in-python/
+    https://stackabuse.com/grid-search-optimization-algorithm-in-python/
+
+Design Patterns 
+    https://stackabuse.com/design-patterns-in-python/
+    https://stackabuse.com/creational-design-patterns-in-python/
+    https://stackabuse.com/the-bridge-design-pattern-in-python/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================================================
+
+pandas 
+    https://stackabuse.com/beginners-tutorial-on-the-pandas-python-library/
+    https://stackabuse.com/creating-a-simple-recommender-system-in-python-using-pandas/
+
+    import os
+    import pandas as pd
+
+    # create a list to hold the data from each state
+    list_states = []
+
+    # iteratively loop over all the folders and add their data to the list
+    for root, dirs, files in os.walk(os.getcwd()):
+        if files:
+            list_states.append(pd.read_csv(root+'/'+files[0], index_col=None))
+
+    # merge the dataframes into a single dataframe using Pandas library
+    merge_data = pd.concat(list_states[1:], sort=False)
+
+
+math 
+    Euler's Number
+    The Euler's number (e), which is the base of natural logarithm
+
+
+    log(x, y) Function
+        This function returns the logarithm of x with y being the base. For example:
+    print("The log 3 with base 4 is:", math.log(3, 4))
+
+    log1p(x)
+        This function calculates the logarithm(1+x), as demonstrated here:
+
+    print("Logarithm(1+x) value of 10 is:", math.log1p(10))
+
+
+    expm1(): returns (e^x)-1.
+    exp(x)-1: when the value of x is small, calculating exp(x)-1 may lead to a significant loss in precision. The expm1(x) can return the output in with full precision.
+
+    rint('e^x (using function exp()) is:', math.exp(x)-1)
+    print('e^x (using function expml()) is:', math.expm1(x))
+
+regex
+    Problem1 : Removing Multiple Spaces
+        text = "The film      Pulp Fiction      was released in   year 1994."
+        result = re.sub(r"\s+"," ", text, flags = re.I)
+        print(result)
+    Problem2: Removing Spaces from Start and End
+        text = "         The film Pulp Fiction was released in year 1994"
+        result = re.sub(r"^\s+", "", text)
+        print(result)
+    
+        text = "The film Pulp Fiction was released in year 1994      "
+        result = re.sub(r"\s+$", "", text)
+        print(result)
+    Problem3: Removing a Single Character
+        text = "The film Pulp Fiction     s was b released in year 1994"
+        result = re.sub(r"\s+[a-zA-Z]\s+", " ", text)
+        print(result)
+    Problem4: Splitting a String
+        text = "The film      Pulp   Fiction was released in year 1994      "
+        result = re.split(r"\s+", text)
+        print(result)
+
+        text = "The film, Pulp Fiction, was released in year 1994"
+        result = re.split(r"\,", text)
+        print(result)
+
+    Problem5: Parsing URLs
+        "http://www.example.com/products/27/"
+
+        ^products/(\d+)/$
+            Getting Application name 
+            product ID 
+    Problem6: Validating Email ID 
+        email = "example@gmail.com"
+
+        if not re.match(re.compile(r'^.+@[^.].*\.[a-z]{2,10}$', flags=re.IGNORECASE), email):
+            print("Enter a valid email address")
+        else:
+            print("Email address is valid")
+    Problem7: Validating Phone Numbers
+        numbers = ["+18009592809", "=18009592809"]
+
+        for number in numbers:
+            if not re.match(re.compile(r"^(\+1?[-. ]?(\d+))$"), number):
+                print("Number is not valid")
+            else:
+                print("Number is valid")
+
+    Problem8: Filtering Unwanted Content : fuck -> fxxk
+        curse_words = ["foo", "bar", "baz"]
+        comment = "This string contains a foo word."
+        curse_count = 0
+
+        for word in curse_words:
+            if re.search(word, comment):
+                curse_count += 1
+
+        print("Comment has " + str(curse_count) + " curse word(s).")
+
+
+Decorators 
+        Creating Decorators 
+            def lowercase(func):
+                def wrapper():
+                    func_ret = func()
+                    change_to_lowercase = func_ret.lower()
+                    return change_to_lowercase
+
+                return wrapper
+
+            def split_sentence(func):
+                def wrapper():
+                    func_ret = func()
+                    output = func_ret.split()
+                    return output
+
+                return wrapper
+
+
+        Applying single decorator to function 
+            @lowercase
+            def hello_function():
+                return 'HELLO WORLD'
+
+            print(hello_function())
+
+
+
+        Applying multiple decorators to function 
+
+
+            @split_sentence
+            @lowercase
+            def hello_function():
+                return 'HELLO WORLD'
+            print(hello_function())
+        
+        functools.wraps - to retain the metadata 
+            import functools
+
+            def lowercase(func):
+                @functools.wraps(func)
+                def my_wrapper():
+                    return func().lower()
+                return my_wrapper
+
+            @lowercase
+            def hello_function():
+                "Saying hello"
+                return 'HELLO WORLD'
+
+            print(hello_function())
+AWS Serverless - zappa
+    https://www.sanjaysiddhanti.com/2020/07/05/serverless/

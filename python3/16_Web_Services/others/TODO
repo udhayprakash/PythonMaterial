@@ -1,0 +1,103 @@
+random module 
+Q) https://yesno.wtf/
+Q) https://randomuser.me/  --> imitate it 
+
+web services 
+Q) https://yesno.wtf/api/
+Q) https://randomuser.me/api/
+
+Q) Parse over the json, and display the cities statewise 
+
+Q) https://indian-cities-api-nocbegfhqg.now.sh/cities?State=Karnataka
+
+Q) https://indian-cities-api-nocbegfhqg.now.sh/cities?City_like=Mumb
+
+
+
+List of Public APIs : https://github.com/toddmotto/public-apis
+
+
+weather APIs 
+------------
+https://darksky.net/dev/account
+
+response =requests.get('https://api.darksky.net/forecast/31c39a286280e612d422506ad76cc2db/17.4828617,78.3271216')
+https://www.apixu.com/doc/examples.aspx
+
+Natural Language Processing 
+---------------------------
+https://wit.ai
+
+
+API 
+    - without credentials 
+    - with credentials 
+        - api key based 
+            url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=3cb7f658a281b611379c39ed305f441c&units=metric'.format(city)
+            https://api.darksky.net/forecast/31c39a286280e612d422506ad76cc2db/17.4828617,78.3271216
+        - Oauth based 
+
+
+News API 
+--------
+https://developer.nytimes.com/my-apps/30d36840-f617-4ff2-8451-45dd676eaf4e
+
+images API  
+------
+https://apidocs.imgur.com/
+
+
+Numbers
+-------
+http://numbersapi.com/#53
+
+
+sun rise and sun set API 
+-------------------------
+https://sunrise-sunset.org/api
+
+
+oxford dictionary
+-----------------
+https://developer.oxforddictionaries.com/
+
+
+pollution
+---------
+https://www.airvisual.com/air-quality-map?lat=22.8857821183&lng=79.6119761026&zoomLevel=4
+======================================================================================
+REST API todo 
+    - https://www.deepl.com/en/api.html
+    - https://fixer.io/signup/free
+    - https://currencylayer.com/signup/free
+
+====================
+https://currencylayer.com/
+--------------------------------------
+API Access Key - 96b5ca6a3116caa7a9b8985fd294243e
+
+http://www.apilayer.net/api/live?access_key=96b5ca6a3116caa7a9b8985fd294243e
+
+
+
+======================
+https://restcountries.eu/#api-endpoints-all
+https://developer.nytimes.com/docs/timeswire-product/1/overview
+
+Wikipedia REST API
+    https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_
+
+Rotten Tomatoes Movies API 
+    https://www.rottentomatoes.com/api/private/v1.0/movies/12911
+
+YTS torrent movies API 
+    https://yts.mx/api
+
+https://downdetectorapi.com/v1/docs/#!/cities/City
+https://support.ookla.com/hc/en-us/articles/115002187768-Speedtest-Intelligence-Data-Extracts-API
+https://twitter.com/randomkeyio
+https://twitter.com/randomkeyio/status/1249333385656500224/photo/1
+
+
+
+https://www.timeanddate.com/services/api/

@@ -1,0 +1,13 @@
+how to run the server ?
+
+* open one terminal and run the following:
+
+# python chat_server.py
+
+
+how to run the client ?
+
+After copying the code to the local directories you can do the following:
+
+# python chat_client.py localhost 5000
+

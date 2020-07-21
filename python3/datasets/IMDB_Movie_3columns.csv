@@ -1,0 +1,5044 @@
+movie_title,director_name,title_year
+Avatar ,James Cameron,2009.0
+Pirates of the Caribbean: At World's End ,Gore Verbinski,2007.0
+Spectre ,Sam Mendes,2015.0
+The Dark Knight Rises ,Christopher Nolan,2012.0
+Star Wars: Episode VII - The Force Awakens             ,Doug Walker,
+John Carter ,Andrew Stanton,2012.0
+Spider-Man 3 ,Sam Raimi,2007.0
+Tangled ,Nathan Greno,2010.0
+Avengers: Age of Ultron ,Joss Whedon,2015.0
+Harry Potter and the Half-Blood Prince ,David Yates,2009.0
+Batman v Superman: Dawn of Justice ,Zack Snyder,2016.0
+Superman Returns ,Bryan Singer,2006.0
+Quantum of Solace ,Marc Forster,2008.0
+Pirates of the Caribbean: Dead Man's Chest ,Gore Verbinski,2006.0
+The Lone Ranger ,Gore Verbinski,2013.0
+Man of Steel ,Zack Snyder,2013.0
+The Chronicles of Narnia: Prince Caspian ,Andrew Adamson,2008.0
+The Avengers ,Joss Whedon,2012.0
+Pirates of the Caribbean: On Stranger Tides ,Rob Marshall,2011.0
+Men in Black 3 ,Barry Sonnenfeld,2012.0
+The Hobbit: The Battle of the Five Armies ,Peter Jackson,2014.0
+The Amazing Spider-Man ,Marc Webb,2012.0
+Robin Hood ,Ridley Scott,2010.0
+The Hobbit: The Desolation of Smaug ,Peter Jackson,2013.0
+The Golden Compass ,Chris Weitz,2007.0
+King Kong ,Peter Jackson,2005.0
+Titanic ,James Cameron,1997.0
+Captain America: Civil War ,Anthony Russo,2016.0
+Battleship ,Peter Berg,2012.0
+Jurassic World ,Colin Trevorrow,2015.0
+Skyfall ,Sam Mendes,2012.0
+Spider-Man 2 ,Sam Raimi,2004.0
+Iron Man 3 ,Shane Black,2013.0
+Alice in Wonderland ,Tim Burton,2010.0
+X-Men: The Last Stand ,Brett Ratner,2006.0
+Monsters University ,Dan Scanlon,2013.0
+Transformers: Revenge of the Fallen ,Michael Bay,2009.0
+Transformers: Age of Extinction ,Michael Bay,2014.0
+Oz the Great and Powerful ,Sam Raimi,2013.0
+The Amazing Spider-Man 2 ,Marc Webb,2014.0
+TRON: Legacy ,Joseph Kosinski,2010.0
+Cars 2 ,John Lasseter,2011.0
+Green Lantern ,Martin Campbell,2011.0
+Toy Story 3 ,Lee Unkrich,2010.0
+Terminator Salvation ,McG,2009.0
+Furious 7 ,James Wan,2015.0
+World War Z ,Marc Forster,2013.0
+X-Men: Days of Future Past ,Bryan Singer,2014.0
+Star Trek Into Darkness ,J.J. Abrams,2013.0
+Jack the Giant Slayer ,Bryan Singer,2013.0
+The Great Gatsby ,Baz Luhrmann,2013.0
+Prince of Persia: The Sands of Time ,Mike Newell,2010.0
+Pacific Rim ,Guillermo del Toro,2013.0
+Transformers: Dark of the Moon ,Michael Bay,2011.0
+Indiana Jones and the Kingdom of the Crystal Skull ,Steven Spielberg,2008.0
+The Good Dinosaur ,Peter Sohn,2015.0
+Brave ,Mark Andrews,2012.0
+Star Trek Beyond ,Justin Lin,2016.0
+WALL·E ,Andrew Stanton,2008.0
+Rush Hour 3 ,Brett Ratner,2007.0
+2012 ,Roland Emmerich,2009.0
+A Christmas Carol ,Robert Zemeckis,2009.0
+Jupiter Ascending ,Lana Wachowski,2015.0
+The Legend of Tarzan ,David Yates,2016.0
+"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe ",Andrew Adamson,2005.0
+X-Men: Apocalypse ,Bryan Singer,2016.0
+The Dark Knight ,Christopher Nolan,2008.0
+Up ,Pete Docter,2009.0
+Monsters vs. Aliens ,Rob Letterman,2009.0
+Iron Man ,Jon Favreau,2008.0
+Hugo ,Martin Scorsese,2011.0
+Wild Wild West ,Barry Sonnenfeld,1999.0
+The Mummy: Tomb of the Dragon Emperor ,Rob Cohen,2008.0
+Suicide Squad ,David Ayer,2016.0
+Evan Almighty ,Tom Shadyac,2007.0
+Edge of Tomorrow ,Doug Liman,2014.0
+Waterworld ,Kevin Reynolds,1995.0
+G.I. Joe: The Rise of Cobra ,Stephen Sommers,2009.0
+Inside Out ,Pete Docter,2015.0
+The Jungle Book ,Jon Favreau,2016.0
+Iron Man 2 ,Jon Favreau,2010.0
+Snow White and the Huntsman ,Rupert Sanders,2012.0
+Maleficent ,Robert Stromberg,2014.0
+Dawn of the Planet of the Apes ,Matt Reeves,2014.0
+The Lovers ,Roland Joffé,2015.0
+47 Ronin ,Carl Rinsch,2013.0
+Captain America: The Winter Soldier ,Anthony Russo,2014.0
+Shrek Forever After ,Mike Mitchell,2010.0
+Tomorrowland ,Brad Bird,2015.0
+Big Hero 6 ,Don Hall,2014.0
+Wreck-It Ralph ,Rich Moore,2012.0
+The Polar Express ,Robert Zemeckis,2004.0
+Independence Day: Resurgence ,Roland Emmerich,2016.0
+How to Train Your Dragon ,Dean DeBlois,2010.0
+Terminator 3: Rise of the Machines ,Jonathan Mostow,2003.0
+Guardians of the Galaxy ,James Gunn,2014.0
+Interstellar ,Christopher Nolan,2014.0
+Inception ,Christopher Nolan,2010.0
+Godzilla Resurgence ,Hideaki Anno,2016.0
+The Hobbit: An Unexpected Journey ,Peter Jackson,2012.0
+The Fast and the Furious ,Rob Cohen,2001.0
+The Curious Case of Benjamin Button ,David Fincher,2008.0
+X-Men: First Class ,Matthew Vaughn,2011.0
+The Hunger Games: Mockingjay - Part 2 ,Francis Lawrence,2015.0
+The Sorcerer's Apprentice ,Jon Turteltaub,2010.0
+Poseidon ,Wolfgang Petersen,2006.0
+Alice Through the Looking Glass ,James Bobin,2016.0
+Shrek the Third ,Chris Miller,2007.0
+Warcraft ,Duncan Jones,2016.0
+Terminator Genisys ,Alan Taylor,2015.0
+The Chronicles of Narnia: The Voyage of the Dawn Treader ,Michael Apted,2010.0
+Pearl Harbor ,Michael Bay,2001.0
+Transformers ,Michael Bay,2007.0
+Alexander ,Oliver Stone,2004.0
+Harry Potter and the Order of the Phoenix ,David Yates,2007.0
+Harry Potter and the Goblet of Fire ,Mike Newell,2005.0
+Hancock ,Peter Berg,2008.0
+I Am Legend ,Francis Lawrence,2007.0
+Charlie and the Chocolate Factory ,Tim Burton,2005.0
+Ratatouille ,Brad Bird,2007.0
+Batman Begins ,Christopher Nolan,2005.0
+Madagascar: Escape 2 Africa ,Eric Darnell,2008.0
+Night at the Museum: Battle of the Smithsonian ,Shawn Levy,2009.0
+X-Men Origins: Wolverine ,Gavin Hood,2009.0
+The Matrix Revolutions ,Lana Wachowski,2003.0
+Frozen ,Chris Buck,2013.0
+The Matrix Reloaded ,Lana Wachowski,2003.0
+Thor: The Dark World ,Alan Taylor,2013.0
+Mad Max: Fury Road ,George Miller,2015.0
+Angels & Demons ,Ron Howard,2009.0
+Thor ,Kenneth Branagh,2011.0
+Bolt ,Byron Howard,2008.0
+G-Force ,Hoyt Yeatman,2009.0
+Wrath of the Titans ,Jonathan Liebesman,2012.0
+Dark Shadows ,Tim Burton,2012.0
+Mission: Impossible - Rogue Nation ,Christopher McQuarrie,2015.0
+The Wolfman ,Joe Johnston,2010.0
+The Legend of Tarzan ,David Yates,2016.0
+Bee Movie ,Steve Hickner,2007.0
+Kung Fu Panda 2 ,Jennifer Yuh Nelson,2011.0
+The Last Airbender ,M. Night Shyamalan,2010.0
+Mission: Impossible III ,J.J. Abrams,2006.0
+White House Down ,Roland Emmerich,2013.0
+Mars Needs Moms ,Simon Wells,2011.0
+Flushed Away ,David Bowers,2006.0
+Pan ,Joe Wright,2015.0
+Mr. Peabody & Sherman ,Rob Minkoff,2014.0
+Troy ,Wolfgang Petersen,2004.0
+Madagascar 3: Europe's Most Wanted ,Eric Darnell,2012.0
+Die Another Day ,Lee Tamahori,2002.0
+Ghostbusters ,Paul Feig,2016.0
+Armageddon ,Michael Bay,1998.0
+Men in Black II ,Barry Sonnenfeld,2002.0
+Beowulf ,Robert Zemeckis,2007.0
+Kung Fu Panda 3 ,Alessandro Carloni,2016.0
+Mission: Impossible - Ghost Protocol ,Brad Bird,2011.0
+Rise of the Guardians ,Peter Ramsey,2012.0
+Fun with Dick and Jane ,Dean Parisot,2005.0
+The Last Samurai ,Edward Zwick,2003.0
+Exodus: Gods and Kings ,Ridley Scott,2014.0
+Star Trek ,J.J. Abrams,2009.0
+Spider-Man ,Sam Raimi,2002.0
+How to Train Your Dragon 2 ,Dean DeBlois,2014.0
+Gods of Egypt ,Alex Proyas,2016.0
+Stealth ,Rob Cohen,2005.0
+Watchmen ,Zack Snyder,2009.0
+Lethal Weapon 4 ,Richard Donner,1998.0
+Hulk ,Ang Lee,2003.0
+G.I. Joe: Retaliation ,Jon M. Chu,2013.0
+Sahara ,Breck Eisner,2005.0
+Final Fantasy: The Spirits Within ,Hironobu Sakaguchi,2001.0
+Captain America: The First Avenger ,Joe Johnston,2011.0
+The World Is Not Enough ,Michael Apted,1999.0
+Master and Commander: The Far Side of the World ,Peter Weir,2003.0
+The Twilight Saga: Breaking Dawn - Part 2 ,Bill Condon,2012.0
+Happy Feet 2 ,George Miller,2011.0
+The Incredible Hulk ,Louis Leterrier,2008.0
+Miami Vice             ,,
+The BFG ,Steven Spielberg,2016.0
+The Revenant ,Alejandro G. Iñárritu,2015.0
+Turbo ,David Soren,2013.0
+Rango ,Gore Verbinski,2011.0
+Penguins of Madagascar ,Eric Darnell,2014.0
+The Bourne Ultimatum ,Paul Greengrass,2007.0
+Kung Fu Panda ,Mark Osborne,2008.0
+Ant-Man ,Peyton Reed,2015.0
+The Hunger Games: Catching Fire ,Francis Lawrence,2013.0
+The Twilight Saga: Breaking Dawn - Part 2 ,Bill Condon,2012.0
+Home ,Tim Johnson,2015.0
+War of the Worlds ,Steven Spielberg,2005.0
+Bad Boys II ,Michael Bay,2003.0
+Puss in Boots ,Chris Miller,2011.0
+Salt ,Phillip Noyce,2010.0
+Noah ,Darren Aronofsky,2014.0
+The Adventures of Tintin ,Steven Spielberg,2011.0
+Harry Potter and the Prisoner of Azkaban ,Alfonso Cuarón,2004.0
+Australia ,Baz Luhrmann,2008.0
+After Earth ,M. Night Shyamalan,2013.0
+Dinosaur ,Eric Leighton,2000.0
+Harry Potter and the Deathly Hallows: Part II ,Matt Birch,2011.0
+Night at the Museum: Secret of the Tomb ,Shawn Levy,2014.0
+Megamind ,Tom McGrath,2010.0
+Harry Potter and the Sorcerer's Stone ,Chris Columbus,2001.0
+R.I.P.D. ,Robert Schwentke,2013.0
+Godzilla Resurgence ,Hideaki Anno,2016.0
+Pirates of the Caribbean: The Curse of the Black Pearl ,Gore Verbinski,2003.0
+Harry Potter and the Deathly Hallows: Part I ,Matt Birch,2010.0
+The Hunger Games: Mockingjay - Part 1 ,Francis Lawrence,2014.0
+The Da Vinci Code ,Ron Howard,2006.0
+Rio 2 ,Carlos Saldanha,2014.0
+X-Men 2 ,Bryan Singer,2003.0
+Fast Five ,Justin Lin,2011.0
+Sherlock Holmes: A Game of Shadows ,Guy Ritchie,2011.0
+Clash of the Titans ,Louis Leterrier,2010.0
+Total Recall ,Paul Verhoeven,1990.0
+The 13th Warrior ,John McTiernan,1999.0
+The Bourne Legacy ,Tony Gilroy,2012.0
+Batman & Robin ,Joel Schumacher,1997.0
+How the Grinch Stole Christmas ,Ron Howard,2000.0
+The Day After Tomorrow ,Roland Emmerich,2004.0
+Mission: Impossible II ,John Woo,2000.0
+The Perfect Storm ,Wolfgang Petersen,2000.0
+Fantastic 4: Rise of the Silver Surfer ,Tim Story,2007.0
+Life of Pi ,Ang Lee,2012.0
+Ghost Rider ,Mark Steven Johnson,2007.0
+Jason Bourne ,Paul Greengrass,2016.0
+Charlie's Angels: Full Throttle ,McG,2003.0
+Prometheus ,Ridley Scott,2012.0
+Stuart Little 2 ,Rob Minkoff,2002.0
+Elysium ,Neill Blomkamp,2013.0
+The Chronicles of Riddick ,David Twohy,2004.0
+RoboCop ,José Padilha,2014.0
+Speed Racer ,Lana Wachowski,2008.0
+How Do You Know ,James L. Brooks,2010.0
+Knight and Day ,James Mangold,2010.0
+Oblivion ,Joseph Kosinski,2013.0
+Star Wars: Episode III - Revenge of the Sith ,George Lucas,2005.0
+Star Wars: Episode II - Attack of the Clones ,George Lucas,2002.0
+"Monsters, Inc. ",Pete Docter,2001.0
+The Wolverine ,James Mangold,2013.0
+Star Wars: Episode I - The Phantom Menace ,George Lucas,1999.0
+The Croods ,Kirk De Micco,2013.0
+Asterix at the Olympic Games ,Frédéric Forestier,2008.0
+Windtalkers ,John Woo,2002.0
+The Huntsman: Winter's War ,Cedric Nicolas-Troyan,2016.0
+Teenage Mutant Ninja Turtles ,Jonathan Liebesman,2014.0
+Gravity ,Alfonso Cuarón,2013.0
+Dante's Peak ,Roger Donaldson,1997.0
+Teenage Mutant Ninja Turtles: Out of the Shadows ,Dave Green,2016.0
+Fantastic Four ,Josh Trank,2015.0
+Night at the Museum ,Shawn Levy,2006.0
+San Andreas ,Brad Peyton,2015.0
+Tomorrow Never Dies ,Roger Spottiswoode,1997.0
+The Patriot ,Roland Emmerich,2000.0
+Ocean's Twelve ,Steven Soderbergh,2004.0
+Mr. & Mrs. Smith ,Doug Liman,2005.0
+Insurgent ,Robert Schwentke,2015.0
+The Aviator ,Martin Scorsese,2004.0
+Gulliver's Travels ,Rob Letterman,2010.0
+The Green Hornet ,Michel Gondry,2011.0
+The A-Team             ,,
+300: Rise of an Empire ,Noam Murro,2014.0
+The Smurfs ,Raja Gosnell,2011.0
+Home on the Range ,Will Finn,2004.0
+Allegiant ,Robert Schwentke,2016.0
+Real Steel ,Shawn Levy,2011.0
+The Smurfs 2 ,Raja Gosnell,2013.0
+Speed 2: Cruise Control ,Jan de Bont,1997.0
+Ender's Game ,Gavin Hood,2013.0
+Live Free or Die Hard ,Len Wiseman,2007.0
+The Lord of the Rings: The Fellowship of the Ring ,Peter Jackson,2001.0
+Around the World in 80 Days ,Frank Coraci,2004.0
+Ali ,Michael Mann,2001.0
+The Cat in the Hat ,Bo Welch,2003.0
+"I, Robot ",Alex Proyas,2004.0
+Kingdom of Heaven ,Ridley Scott,2005.0
+Stuart Little ,Rob Minkoff,1999.0
+The Princess and the Frog ,Ron Clements,2009.0
+The Martian ,Ridley Scott,2015.0
+"10,000 B.C.             ",Christopher Barnard,
+The Island ,Michael Bay,2005.0
+Town & Country ,Peter Chelsom,2001.0
+Gone in Sixty Seconds ,Dominic Sena,2000.0
+Gladiator ,Ridley Scott,2000.0
+Minority Report ,Steven Spielberg,2002.0
+Harry Potter and the Chamber of Secrets ,Chris Columbus,2002.0
+Casino Royale ,Martin Campbell,2006.0
+Planet of the Apes ,Tim Burton,2001.0
+Terminator 2: Judgment Day ,James Cameron,1991.0
+Public Enemies ,Michael Mann,2009.0
+American Gangster ,Ridley Scott,2007.0
+True Lies ,James Cameron,1994.0
+The Taking of Pelham 1 2 3 ,Tony Scott,2009.0
+Little Fockers ,Paul Weitz,2010.0
+The Other Guys ,Adam McKay,2010.0
+Eraser ,Chuck Russell,1996.0
+Django Unchained ,Quentin Tarantino,2012.0
+The Hunchback of Notre Dame ,Gary Trousdale,1996.0
+The Emperor's New Groove ,Mark Dindal,2000.0
+The Expendables 2 ,Simon West,2012.0
+National Treasure ,Jon Turteltaub,2004.0
+Eragon ,Stefen Fangmeier,2006.0
+Where the Wild Things Are ,Spike Jonze,2009.0
+Pan ,Joe Wright,2015.0
+Epic ,Chris Wedge,2013.0
+The Tourist ,Florian Henckel von Donnersmarck,2010.0
+End of Days ,Peter Hyams,1999.0
+Blood Diamond ,Edward Zwick,2006.0
+The Wolf of Wall Street ,Martin Scorsese,2013.0
+Batman Forever ,Joel Schumacher,1995.0
+Starship Troopers ,Paul Verhoeven,1997.0
+Cloud Atlas ,Tom Tykwer,2012.0
+Legend of the Guardians: The Owls of Ga'Hoole ,Zack Snyder,2010.0
+Catwoman ,Pitof,2004.0
+Hercules ,Brett Ratner,2014.0
+Treasure Planet ,Ron Clements,2002.0
+Land of the Lost ,Brad Silberling,2009.0
+The Expendables 3 ,Patrick Hughes,2014.0
+Point Break ,Ericson Core,2015.0
+Son of the Mask ,Lawrence Guterman,2005.0
+In the Heart of the Sea ,Ron Howard,2015.0
+The Adventures of Pluto Nash ,Ron Underwood,2002.0
+Green Zone ,Paul Greengrass,2010.0
+The Peanuts Movie ,Steve Martino,2015.0
+The Spanish Prisoner ,David Mamet,1997.0
+The Mummy Returns ,Stephen Sommers,2001.0
+Gangs of New York ,Martin Scorsese,2002.0
+The Flowers of War ,Yimou Zhang,2011.0
+Surf's Up ,Ash Brannon,2007.0
+The Stepford Wives ,Frank Oz,2004.0
+Black Hawk Down ,Ridley Scott,2001.0
+The Campaign ,Jay Roach,2012.0
+The Fifth Element ,Luc Besson,1997.0
+Sex and the City 2 ,Michael Patrick King,2010.0
+The Road to El Dorado ,Bibo Bergeron,2000.0
+Ice Age: Continental Drift ,Steve Martino,2012.0
+Cinderella ,Kenneth Branagh,2015.0
+The Lovely Bones ,Peter Jackson,2009.0
+Finding Nemo ,Andrew Stanton,2003.0
+The Lord of the Rings: The Return of the King ,Peter Jackson,2003.0
+The Lord of the Rings: The Two Towers ,Peter Jackson,2002.0
+Seventh Son ,Sergey Bodrov,2014.0
+Lara Croft: Tomb Raider ,Simon West,2001.0
+Transcendence ,Wally Pfister,2014.0
+Jurassic Park III ,Joe Johnston,2001.0
+Rise of the Planet of the Apes ,Rupert Wyatt,2011.0
+The Spiderwick Chronicles ,Mark Waters,2008.0
+A Good Day to Die Hard ,John Moore,2013.0
+The Alamo ,John Lee Hancock,2004.0
+The Incredibles ,Brad Bird,2004.0
+Cutthroat Island ,Renny Harlin,1995.0
+Percy Jackson & the Olympians: The Lightning Thief ,Chris Columbus,2010.0
+Men in Black ,Barry Sonnenfeld,1997.0
+Toy Story 2 ,John Lasseter,1999.0
+Unstoppable ,Tony Scott,2010.0
+Rush Hour 2 ,Brett Ratner,2001.0
+What Lies Beneath ,Robert Zemeckis,2000.0
+Cloudy with a Chance of Meatballs ,Phil Lord,2009.0
+Ice Age: Dawn of the Dinosaurs ,Carlos Saldanha,2009.0
+The Secret Life of Walter Mitty ,Ben Stiller,2013.0
+Charlie's Angels ,McG,2000.0
+The Departed ,Martin Scorsese,2006.0
+Mulan ,Tony Bancroft,1998.0
+Tropic Thunder ,Ben Stiller,2008.0
+The Girl with the Dragon Tattoo ,David Fincher,2011.0
+Die Hard with a Vengeance ,John McTiernan,1995.0
+Sherlock Holmes ,Guy Ritchie,2009.0
+Ben-Hur ,Timur Bekmambetov,2016.0
+Atlantis: The Lost Empire ,Gary Trousdale,2001.0
+Alvin and the Chipmunks: The Road Chip ,Walt Becker,2015.0
+Valkyrie ,Bryan Singer,2008.0
+You Don't Mess with the Zohan ,Dennis Dugan,2008.0
+Pixels ,Chris Columbus,2015.0
+A.I. Artificial Intelligence ,Steven Spielberg,2001.0
+The Haunted Mansion ,Rob Minkoff,2003.0
+Contact ,Robert Zemeckis,1997.0
+Hollow Man ,Paul Verhoeven,2000.0
+The Interpreter ,Sydney Pollack,2005.0
+Percy Jackson: Sea of Monsters ,Thor Freudenthal,2013.0
+Lara Croft Tomb Raider: The Cradle of Life ,Jan de Bont,2003.0
+Now You See Me 2 ,Jon M. Chu,2016.0
+The Saint ,Phillip Noyce,1997.0
+Spy Game ,Tony Scott,2001.0
+Mission to Mars ,Brian De Palma,2000.0
+Rio ,Carlos Saldanha,2011.0
+Bicentennial Man ,Chris Columbus,1999.0
+Volcano ,Mick Jackson,1997.0
+The Devil's Own ,Alan J. Pakula,1997.0
+K-19: The Widowmaker ,Kathryn Bigelow,2002.0
+Fantastic Four ,Josh Trank,2015.0
+Conan the Barbarian ,John Milius,1982.0
+Cinderella Man ,Ron Howard,2005.0
+The Nutcracker in 3D ,Andrey Konchalovskiy,2010.0
+Seabiscuit ,Gary Ross,2003.0
+Twister ,Jan de Bont,1996.0
+The Fast and the Furious ,Rob Cohen,2001.0
+Cast Away ,Robert Zemeckis,2000.0
+Happy Feet ,George Miller,2006.0
+The Bourne Supremacy ,Paul Greengrass,2004.0
+Air Force One ,Wolfgang Petersen,1997.0
+Ocean's Eleven ,Steven Soderbergh,2001.0
+The Three Musketeers ,Paul W.S. Anderson,2011.0
+Hotel Transylvania ,Genndy Tartakovsky,2012.0
+Enchanted ,Kevin Lima,2007.0
+Hannibal             ,,
+Safe House ,Daniel Espinosa,2012.0
+102 Dalmatians ,Kevin Lima,2000.0
+Tower Heist ,Brett Ratner,2011.0
+The Holiday ,Nancy Meyers,2006.0
+Enemy of the State ,Tony Scott,1998.0
+It's Complicated ,Nancy Meyers,2009.0
+Ocean's Thirteen ,Steven Soderbergh,2007.0
+Open Season ,Roger Allers,2006.0
+Divergent ,Neil Burger,2014.0
+Enemy at the Gates ,Jean-Jacques Annaud,2001.0
+The Rundown ,Peter Berg,2003.0
+Last Action Hero ,John McTiernan,1993.0
+Memoirs of a Geisha ,Rob Marshall,2005.0
+The Fast and the Furious: Tokyo Drift ,Justin Lin,2006.0
+Arthur Christmas ,Sarah Smith,2011.0
+Meet Joe Black ,Martin Brest,1998.0
+Collateral Damage ,Andrew Davis,2002.0
+All That Jazz ,Bob Fosse,1979.0
+Mirror Mirror ,Tarsem Singh,2012.0
+Scott Pilgrim vs. the World ,Edgar Wright,2010.0
+The Core ,Jon Amiel,2003.0
+Nutty Professor II: The Klumps ,Peter Segal,2000.0
+Scooby-Doo ,Raja Gosnell,2002.0
+Dredd ,Pete Travis,2012.0
+Click ,Frank Coraci,2006.0
+Creepshow ,George A. Romero,1982.0
+Cats & Dogs: The Revenge of Kitty Galore ,Brad Peyton,2010.0
+Jumper ,Doug Liman,2008.0
+Hellboy II: The Golden Army ,Guillermo del Toro,2008.0
+Zodiac ,David Fincher,2007.0
+The 6th Day ,Roger Spottiswoode,2000.0
+Bruce Almighty ,Tom Shadyac,2003.0
+The Expendables ,Sylvester Stallone,2010.0
+Mission: Impossible ,Brian De Palma,1996.0
+The Hunger Games ,Gary Ross,2012.0
+The Hangover Part II ,Todd Phillips,2011.0
+Batman Returns ,Tim Burton,1992.0
+Over the Hedge ,Tim Johnson,2006.0
+Lilo & Stitch ,Dean DeBlois,2002.0
+Charlotte's Web ,Gary Winick,2006.0
+Deep Impact ,Mimi Leder,1998.0
+RED 2 ,Dean Parisot,2013.0
+The Longest Yard ,Peter Segal,2005.0
+Alvin and the Chipmunks: Chipwrecked ,Mike Mitchell,2011.0
+Grown Ups 2 ,Dennis Dugan,2013.0
+Get Smart ,Peter Segal,2008.0
+Something's Gotta Give ,Nancy Meyers,2003.0
+Shutter Island ,Martin Scorsese,2010.0
+Four Christmases ,Seth Gordon,2008.0
+Robots ,Chris Wedge,2005.0
+Face/Off ,John Woo,1997.0
+Bedtime Stories ,Adam Shankman,2008.0
+Road to Perdition ,Sam Mendes,2002.0
+Just Go with It ,Dennis Dugan,2011.0
+Daredevil             ,,
+Con Air ,Simon West,1997.0
+Eagle Eye ,D.J. Caruso,2008.0
+Cold Mountain ,Anthony Minghella,2003.0
+The Book of Eli ,Albert Hughes,2010.0
+Flubber ,Les Mayfield,1997.0
+The Haunting ,Jan de Bont,1999.0
+Space Jam ,Joe Pytka,1996.0
+The Pink Panther ,Shawn Levy,2006.0
+The Day the Earth Stood Still ,Scott Derrickson,2008.0
+Conspiracy Theory ,Richard Donner,1997.0
+Fury ,David Ayer,2014.0
+Six Days Seven Nights ,Ivan Reitman,1998.0
+Yogi Bear ,Eric Brevig,2010.0
+Spirit: Stallion of the Cimarron ,Kelly Asbury,2002.0
+Zookeeper ,Frank Coraci,2011.0
+Lost in Space ,Stephen Hopkins,1998.0
+The Manchurian Candidate ,Jonathan Demme,2004.0
+Déjà Vu ,Henry Jaglom,1997.0
+Hotel Transylvania 2 ,Genndy Tartakovsky,2015.0
+Bewitched             ,,
+Fantasia 2000 ,James Algar,1999.0
+The Time Machine ,Simon Wells,2002.0
+Mighty Joe Young ,Ron Underwood,1998.0
+Swordfish ,Dominic Sena,2001.0
+The Legend of Zorro ,Martin Campbell,2005.0
+What Dreams May Come ,Vincent Ward,1998.0
+Little Nicky ,Steven Brill,2000.0
+The Brothers Grimm ,Terry Gilliam,2005.0
+Mars Attacks! ,Tim Burton,1996.0
+Evolution ,Lucile Hadzihalilovic,2015.0
+The Edge ,Lee Tamahori,1997.0
+Surrogates ,Jonathan Mostow,2009.0
+Thirteen Days ,Roger Donaldson,2000.0
+Daylight ,Rob Cohen,1996.0
+Walking with Dinosaurs 3D ,Barry Cook,2013.0
+Battlefield Earth ,Roger Christian,2000.0
+Looney Tunes: Back in Action ,Joe Dante,2003.0
+Nine ,Rob Marshall,2009.0
+Timeline ,Richard Donner,2003.0
+The Postman ,Kevin Costner,1997.0
+Babe: Pig in the City ,George Miller,1998.0
+The Last Witch Hunter ,Breck Eisner,2015.0
+Red Planet ,Antony Hoffman,2000.0
+Arthur and the Invisibles ,Luc Besson,2006.0
+Oceans ,Jacques Perrin,2009.0
+A Sound of Thunder ,Peter Hyams,2005.0
+Pompeii ,Paul W.S. Anderson,2014.0
+Top Cat Begins ,Andrés Couturier,2015.0
+A Beautiful Mind ,Ron Howard,2001.0
+The Lion King ,Roger Allers,1994.0
+Journey 2: The Mysterious Island ,Brad Peyton,2012.0
+Cloudy with a Chance of Meatballs 2 ,Cody Cameron,2013.0
+Red Dragon ,Brett Ratner,2002.0
+Hidalgo ,Joe Johnston,2004.0
+Jack and Jill ,Dennis Dugan,2011.0
+2 Fast 2 Furious ,John Singleton,2003.0
+The Little Prince ,Mark Osborne,2015.0
+The Invasion ,Oliver Hirschbiegel,2007.0
+The Adventures of Rocky & Bullwinkle ,Des McAnuff,2000.0
+The Secret Life of Pets ,Yarrow Cheney,2016.0
+The League of Extraordinary Gentlemen ,Stephen Norrington,2003.0
+Despicable Me 2 ,Pierre Coffin,2013.0
+Independence Day ,Roland Emmerich,1996.0
+The Lost World: Jurassic Park ,Steven Spielberg,1997.0
+Madagascar ,Eric Darnell,2005.0
+Children of Men ,Alfonso Cuarón,2006.0
+X-Men ,Bryan Singer,2000.0
+Wanted ,Timur Bekmambetov,2008.0
+The Rock ,Michael Bay,1996.0
+Ice Age: The Meltdown ,Carlos Saldanha,2006.0
+50 First Dates ,Peter Segal,2004.0
+Hairspray ,Adam Shankman,2007.0
+Exorcist: The Beginning ,Renny Harlin,2004.0
+Inspector Gadget ,David Kellogg,1999.0
+Now You See Me ,Louis Leterrier,2013.0
+Grown Ups ,Dennis Dugan,2010.0
+The Terminal ,Steven Spielberg,2004.0
+Constantine             ,,
+Hotel for Dogs ,Thor Freudenthal,2009.0
+Vertical Limit ,Martin Campbell,2000.0
+Charlie Wilson's War ,Mike Nichols,2007.0
+Shark Tale ,Bibo Bergeron,2004.0
+Dreamgirls ,Bill Condon,2006.0
+Life             ,,
+Be Cool ,F. Gary Gray,2005.0
+Munich ,Steven Spielberg,2005.0
+Tears of the Sun ,Antoine Fuqua,2003.0
+Killers ,Robert Luketic,2010.0
+The Man from U.N.C.L.E. ,Guy Ritchie,2015.0
+Spanglish ,James L. Brooks,2004.0
+Monster House ,Gil Kenan,2006.0
+Bandits ,Barry Levinson,2001.0
+First Knight ,Jerry Zucker,1995.0
+Anna and the King ,Andy Tennant,1999.0
+Immortals ,Tarsem Singh,2011.0
+Hostage ,Florent-Emilio Siri,2005.0
+Titan A.E. ,Don Bluth,2000.0
+Hollywood Homicide ,Ron Shelton,2003.0
+Soldier ,Paul W.S. Anderson,1998.0
+Carriers ,David Pastor,2009.0
+Monkeybone ,Henry Selick,2001.0
+Flight of the Phoenix ,John Moore,2004.0
+Unbreakable ,M. Night Shyamalan,2000.0
+Minions ,Kyle Balda,2015.0
+Sucker Punch ,Zack Snyder,2011.0
+Snake Eyes ,Brian De Palma,1998.0
+Sphere ,Barry Levinson,1998.0
+The Angry Birds Movie ,Clay Kaytis,2016.0
+Fool's Gold ,Andy Tennant,2008.0
+Funny People ,Judd Apatow,2009.0
+The Kingdom ,Peter Berg,2007.0
+Talladega Nights: The Ballad of Ricky Bobby ,Adam McKay,2006.0
+Dr. Dolittle 2 ,Steve Carr,2001.0
+Braveheart ,Mel Gibson,1995.0
+Jarhead ,Sam Mendes,2005.0
+The Simpsons Movie ,David Silverman,2007.0
+The Majestic ,Frank Darabont,2001.0
+Driven ,Renny Harlin,2001.0
+Two Brothers ,Jean-Jacques Annaud,2004.0
+The Village ,M. Night Shyamalan,2004.0
+Doctor Dolittle ,Betty Thomas,1998.0
+Signs ,M. Night Shyamalan,2002.0
+Shrek 2 ,Andrew Adamson,2004.0
+Cars ,John Lasseter,2006.0
+Runaway Bride ,Garry Marshall,1999.0
+xXx ,Rob Cohen,2002.0
+The SpongeBob Movie: Sponge Out of Water ,Paul Tibbitt,2015.0
+Ransom ,Ron Howard,1996.0
+Inglourious Basterds ,Quentin Tarantino,2009.0
+Hook ,Steven Spielberg,1991.0
+Hercules ,Brett Ratner,2014.0
+Die Hard 2 ,Renny Harlin,1990.0
+S.W.A.T. ,Clark Johnson,2003.0
+Sleepy Hollow             ,,
+Vanilla Sky ,Cameron Crowe,2001.0
+Lady in the Water ,M. Night Shyamalan,2006.0
+AVP: Alien vs. Predator ,Paul W.S. Anderson,2004.0
+Alvin and the Chipmunks: The Squeakquel ,Betty Thomas,2009.0
+We Were Soldiers ,Randall Wallace,2002.0
+Olympus Has Fallen ,Antoine Fuqua,2013.0
+Star Trek: Insurrection ,Jonathan Frakes,1998.0
+Battle Los Angeles ,Jonathan Liebesman,2011.0
+Big Fish ,Tim Burton,2003.0
+Wolf ,Mike Nichols,1994.0
+War Horse ,Steven Spielberg,2011.0
+The Monuments Men ,George Clooney,2014.0
+The Abyss ,James Cameron,1989.0
+Wall Street: Money Never Sleeps ,Oliver Stone,2010.0
+Dracula Untold ,Gary Shore,2014.0
+The Siege ,Edward Zwick,1998.0
+Stardust ,Matthew Vaughn,2007.0
+Seven Years in Tibet ,Jean-Jacques Annaud,1997.0
+The Dilemma ,Ron Howard,2011.0
+Bad Company ,Joel Schumacher,2002.0
+Doom ,Andrzej Bartkowiak,2005.0
+I Spy ,Betty Thomas,2002.0
+Underworld: Awakening ,Måns Mårlind,2012.0
+Rock of Ages ,Adam Shankman,2012.0
+Hart's War ,Gregory Hoblit,2002.0
+Killer Elite ,Gary McKendry,2011.0
+Rollerball ,John McTiernan,2002.0
+Ballistic: Ecks vs. Sever ,Wych Kaosayananda,2002.0
+Hard Rain ,Mikael Salomon,1998.0
+Osmosis Jones ,Bobby Farrelly,2001.0
+Legends of Oz: Dorothy's Return ,Will Finn,2013.0
+Blackhat ,Michael Mann,2015.0
+Sky Captain and the World of Tomorrow ,Kerry Conran,2004.0
+Basic Instinct 2 ,Michael Caton-Jones,2006.0
+Escape Plan ,Mikael Håfström,2013.0
+The Legend of Hercules ,Renny Harlin,2014.0
+The Sum of All Fears ,Phil Alden Robinson,2002.0
+The Twilight Saga: Eclipse ,David Slade,2010.0
+The Score ,Frank Oz,2001.0
+Despicable Me ,Pierre Coffin,2010.0
+Money Train ,Joseph Ruben,1995.0
+Ted 2 ,Seth MacFarlane,2015.0
+Agora ,Alejandro Amenábar,2009.0
+Mystery Men ,Kinka Usher,1999.0
+Hall Pass ,Bobby Farrelly,2011.0
+The Insider ,Michael Mann,1999.0
+The Finest Hours ,Craig Gillespie,2016.0
+Body of Lies ,Ridley Scott,2008.0
+Dinner for Schmucks ,Jay Roach,2010.0
+Abraham Lincoln: Vampire Hunter ,Timur Bekmambetov,2012.0
+Entrapment ,Jon Amiel,1999.0
+Last Man Standing             ,,
+The X Files ,Rob Bowman,1998.0
+The Last Legion ,Doug Lefler,2007.0
+Saving Private Ryan ,Steven Spielberg,1998.0
+Need for Speed ,Scott Waugh,2014.0
+What Women Want ,Nancy Meyers,2000.0
+Ice Age ,Chris Wedge,2002.0
+Dreamcatcher ,Lawrence Kasdan,2003.0
+Lincoln ,Steven Spielberg,2012.0
+The Matrix ,Lana Wachowski,1999.0
+Apollo 13 ,Ron Howard,1995.0
+Total Recall ,Paul Verhoeven,1990.0
+The Santa Clause 2 ,Michael Lembeck,2002.0
+Les Misérables ,Tom Hooper,2012.0
+You've Got Mail ,Nora Ephron,1998.0
+Step Brothers ,Adam McKay,2008.0
+The Mask of Zorro ,Martin Campbell,1998.0
+Due Date ,Todd Phillips,2010.0
+Unbroken ,Angelina Jolie Pitt,2014.0
+Space Cowboys ,Clint Eastwood,2000.0
+Cliffhanger ,Renny Harlin,1993.0
+Broken Arrow ,John Woo,1996.0
+The Kid ,Jon Turteltaub,2000.0
+World Trade Center ,Oliver Stone,2006.0
+Mona Lisa Smile ,Mike Newell,2003.0
+The Dictator ,Larry Charles,2012.0
+Eyes Wide Shut ,Stanley Kubrick,1999.0
+Annie ,Will Gluck,2014.0
+Focus ,Glenn Ficarra,2015.0
+This Means War ,McG,2012.0
+Blade: Trinity ,David S. Goyer,2004.0
+Red Dawn ,John Milius,1984.0
+Primary Colors ,Mike Nichols,1998.0
+Resident Evil: Retribution ,Paul W.S. Anderson,2012.0
+Death Race ,Paul W.S. Anderson,2008.0
+The Long Kiss Goodnight ,Renny Harlin,1996.0
+Proof of Life ,Taylor Hackford,2000.0
+Zathura: A Space Adventure ,Jon Favreau,2005.0
+Fight Club ,David Fincher,1999.0
+We Are Marshall ,McG,2006.0
+The Missing             ,,
+Hudson Hawk ,Michael Lehmann,1991.0
+Lucky Numbers ,Nora Ephron,2000.0
+"I, Frankenstein ",Stuart Beattie,2014.0
+Oliver Twist ,Roman Polanski,2005.0
+Elektra ,Rob Bowman,2005.0
+Sin City: A Dame to Kill For ,Frank Miller,2014.0
+Random Hearts ,Sydney Pollack,1999.0
+Everest ,Baltasar Kormákur,2015.0
+Perfume: The Story of a Murderer ,Tom Tykwer,2006.0
+Austin Powers in Goldmember ,Jay Roach,2002.0
+Astro Boy ,David Bowers,2009.0
+Jurassic Park ,Steven Spielberg,1993.0
+Wyatt Earp ,Lawrence Kasdan,1994.0
+Clear and Present Danger ,Phillip Noyce,1994.0
+Dragon Blade ,Daniel Lee,2015.0
+Littleman ,Keenen Ivory Wayans,2006.0
+U-571 ,Jonathan Mostow,2000.0
+The American President ,Rob Reiner,1995.0
+The Love Guru ,Marco Schnabel,2008.0
+3000 Miles to Graceland ,Demian Lichtenstein,2001.0
+The Hateful Eight ,Quentin Tarantino,2015.0
+Blades of Glory ,Josh Gordon,2007.0
+Hop ,Tim Hill,2011.0
+300 ,Zack Snyder,2006.0
+Meet the Fockers ,Jay Roach,2004.0
+Marley & Me ,David Frankel,2008.0
+The Green Mile ,Frank Darabont,1999.0
+Wild Hogs ,Walt Becker,2007.0
+Chicken Little ,Mark Dindal,2005.0
+Gone Girl ,David Fincher,2014.0
+The Bourne Identity ,Doug Liman,2002.0
+GoldenEye ,Martin Campbell,1995.0
+The General's Daughter ,Simon West,1999.0
+The Truman Show ,Peter Weir,1998.0
+The Prince of Egypt ,Brenda Chapman,1998.0
+Daddy Day Care ,Steve Carr,2003.0
+2 Guns ,Baltasar Kormákur,2013.0
+Cats & Dogs ,Lawrence Guterman,2001.0
+The Italian Job ,F. Gary Gray,2003.0
+Two Weeks Notice ,Marc Lawrence,2002.0
+Antz ,Eric Darnell,1998.0
+Couples Retreat ,Peter Billingsley,2009.0
+Days of Thunder ,Tony Scott,1990.0
+Cheaper by the Dozen 2 ,Adam Shankman,2005.0
+The Scorch Trials ,Wes Ball,2015.0
+Eat Pray Love ,Ryan Murphy,2010.0
+The Family Man ,Brett Ratner,2000.0
+RED ,Robert Schwentke,2010.0
+Any Given Sunday ,Oliver Stone,1999.0
+The Horse Whisperer ,Robert Redford,1998.0
+Collateral ,Michael Mann,2004.0
+The Scorpion King ,Chuck Russell,2002.0
+Ladder 49 ,Jay Russell,2004.0
+Jack Reacher ,Christopher McQuarrie,2012.0
+Deep Blue Sea ,Renny Harlin,1999.0
+This Is It ,Kenny Ortega,2009.0
+Contagion ,Steven Soderbergh,2011.0
+Kangaroo Jack ,David McNally,2003.0
+Coraline ,Henry Selick,2009.0
+The Happening ,M. Night Shyamalan,2008.0
+Man on Fire ,Tony Scott,2004.0
+The Shaggy Dog ,Brian Robbins,2006.0
+Starsky & Hutch ,Todd Phillips,2004.0
+Jingle All the Way ,Brian Levant,1996.0
+Hellboy ,Guillermo del Toro,2004.0
+A Civil Action ,Steven Zaillian,1998.0
+ParaNorman ,Chris Butler,2012.0
+The Jackal ,Michael Caton-Jones,1997.0
+Paycheck ,John Woo,2003.0
+Up Close & Personal ,Jon Avnet,1996.0
+The Tale of Despereaux ,Sam Fell,2008.0
+Rules of Engagement             ,,
+The Tuxedo ,Kevin Donovan,2002.0
+Under Siege 2: Dark Territory ,Geoff Murphy,1995.0
+Jack Ryan: Shadow Recruit ,Kenneth Branagh,2014.0
+Joy ,David O. Russell,2015.0
+London Has Fallen ,Babak Najafi,2016.0
+Alien: Resurrection ,Jean-Pierre Jeunet,1997.0
+Shooter ,Antoine Fuqua,2007.0
+The Boxtrolls ,Graham Annable,2014.0
+Practical Magic ,Griffin Dunne,1998.0
+The Lego Movie ,Phil Lord,2014.0
+Miss Congeniality 2: Armed and Fabulous ,John Pasquin,2005.0
+Reign of Fire ,Rob Bowman,2002.0
+Gangster Squad ,Ruben Fleischer,2013.0
+Year One ,Harold Ramis,2009.0
+Invictus ,Clint Eastwood,2009.0
+State of Play ,Kevin Macdonald,2009.0
+Duplicity ,Tony Gilroy,2009.0
+My Favorite Martian ,Donald Petrie,1999.0
+The Sentinel ,Clark Johnson,2006.0
+Planet 51 ,Jorge Blanco,2009.0
+Star Trek: Nemesis ,Stuart Baird,2002.0
+Intolerable Cruelty ,Joel Coen,2003.0
+Trouble with the Curve ,Robert Lorenz,2012.0
+Edge of Darkness ,Martin Campbell,2010.0
+The Relic ,Peter Hyams,1997.0
+Analyze That ,Harold Ramis,2002.0
+Righteous Kill ,Jon Avnet,2008.0
+Mercury Rising ,Harold Becker,1998.0
+The Soloist ,Joe Wright,2009.0
+The Legend of Bagger Vance ,Robert Redford,2000.0
+Almost Famous ,Cameron Crowe,2000.0
+Garfield 2 ,Tim Hill,2006.0
+xXx: State of the Union ,Lee Tamahori,2005.0
+Priest ,Scott Stewart,2011.0
+Sinbad: Legend of the Seven Seas ,Patrick Gilmore,2003.0
+Event Horizon ,Paul W.S. Anderson,1997.0
+The Avengers ,Joss Whedon,2012.0
+Dragonfly ,Tom Shadyac,2002.0
+The Black Dahlia ,Brian De Palma,2006.0
+Flyboys ,Tony Bill,2006.0
+The Last Castle ,Rod Lurie,2001.0
+Supernova ,Walter Hill,2000.0
+Winter's Tale ,Akiva Goldsman,2014.0
+The Mortal Instruments: City of Bones ,Harald Zwart,2013.0
+Meet Dave ,Brian Robbins,2008.0
+Dark Water ,Walter Salles,2005.0
+Edtv ,Ron Howard,1999.0
+Inkheart ,Iain Softley,2008.0
+The Spirit ,Frank Miller,2008.0
+Mortdecai ,David Koepp,2015.0
+In the Name of the King: A Dungeon Siege Tale ,Uwe Boll,2007.0
+Beyond Borders ,Martin Campbell,2003.0
+Xi you ji zhi: Sun Wukong san da Baigu Jing ,Pou-Soi Cheang,2016.0
+The Great Raid ,John Dahl,2005.0
+Deadpool ,Tim Miller,2016.0
+Holy Man ,Stephen Herek,1998.0
+American Sniper ,Clint Eastwood,2014.0
+Goosebumps ,Rob Letterman,2015.0
+"Sabrina, the Teenage Witch             ",,
+Just Like Heaven ,Mark Waters,2005.0
+The Flintstones in Viva Rock Vegas ,Brian Levant,2000.0
+Rambo III ,Peter MacDonald,1988.0
+Leatherheads ,George Clooney,2008.0
+The Ridiculous 6 ,Frank Coraci,2015.0
+Did You Hear About the Morgans? ,Marc Lawrence,2009.0
+The Internship ,Shawn Levy,2013.0
+Resident Evil: Afterlife ,Paul W.S. Anderson,2010.0
+Red Tails ,Anthony Hemingway,2012.0
+Sex and the City             ,,
+The Devil's Advocate ,Taylor Hackford,1997.0
+That's My Boy ,Sean Anders,2012.0
+DragonHeart ,Rob Cohen,1996.0
+After the Sunset ,Brett Ratner,2004.0
+Ghost Rider: Spirit of Vengeance ,Mark Neveldine,2011.0
+Captain Corelli's Mandolin ,John Madden,2001.0
+Anger Management             ,,
+The Pacifier ,Adam Shankman,2005.0
+Walking Tall ,Kevin Bray,2004.0
+Forrest Gump ,Robert Zemeckis,1994.0
+Alvin and the Chipmunks ,Tim Hill,2007.0
+Meet the Parents ,Jay Roach,2000.0
+Pocahontas ,Mike Gabriel,1995.0
+Superman ,Richard Donner,1978.0
+The Nutty Professor ,Tom Shadyac,1996.0
+Hitch ,Andy Tennant,2005.0
+George of the Jungle ,Sam Weisman,1997.0
+American Wedding ,Jesse Dylan,2003.0
+Captain Phillips ,Paul Greengrass,2013.0
+Date Night ,Shawn Levy,2010.0
+Casper ,Brad Silberling,1995.0
+The Equalizer ,Antoine Fuqua,2014.0
+Maid in Manhattan ,Wayne Wang,2002.0
+Crimson Tide ,Tony Scott,1995.0
+The Pursuit of Happyness ,Gabriele Muccino,2006.0
+Flightplan ,Robert Schwentke,2005.0
+Disclosure ,Barry Levinson,1994.0
+City of Angels ,Brad Silberling,1998.0
+Kill Bill: Vol. 1 ,Quentin Tarantino,2003.0
+Bowfinger ,Frank Oz,1999.0
+Stargate SG-1             ,,
+Kill Bill: Vol. 2 ,Quentin Tarantino,2004.0
+Tango & Cash ,Andrey Konchalovskiy,1989.0
+Death Becomes Her ,Robert Zemeckis,1992.0
+Shanghai Noon ,Tom Dey,2000.0
+Executive Decision ,Stuart Baird,1996.0
+Mr. Popper's Penguins ,Mark Waters,2011.0
+The Forbidden Kingdom ,Rob Minkoff,2008.0
+Free Birds ,Jimmy Hayward,2013.0
+Alien 3 ,David Fincher,1992.0
+Evita ,Alan Parker,1996.0
+Ronin ,John Frankenheimer,1998.0
+The Ghost and the Darkness ,Stephen Hopkins,1996.0
+Paddington ,Paul King,2014.0
+The Watch ,Akiva Schaffer,2012.0
+The Hunted ,William Friedkin,2003.0
+Instinct ,Jon Turteltaub,1999.0
+Stuck on You ,Bobby Farrelly,2003.0
+Semi-Pro ,Kent Alterman,2008.0
+The Pirates! Band of Misfits ,Peter Lord,2012.0
+Changeling ,Clint Eastwood,2008.0
+Chain Reaction ,Andrew Davis,1996.0
+The Fan ,Tony Scott,1996.0
+The Phantom of the Opera ,Joel Schumacher,2004.0
+Elizabeth: The Golden Age ,Shekhar Kapur,2007.0
+Æon Flux ,Karyn Kusama,2005.0
+Gods and Generals ,Ron Maxwell,2003.0
+Turbulence ,Robert Butler,1997.0
+Imagine That ,Karey Kirkpatrick,2009.0
+Muppets Most Wanted ,James Bobin,2014.0
+Thunderbirds ,Jonathan Frakes,2004.0
+Burlesque ,Steve Antin,2010.0
+A Very Long Engagement ,Jean-Pierre Jeunet,2004.0
+Lolita ,Stanley Kubrick,1962.0
+Eye See You ,Jim Gillespie,2002.0
+Blade II ,Guillermo del Toro,2002.0
+Seven Pounds ,Gabriele Muccino,2008.0
+Bullet to the Head ,Walter Hill,2012.0
+The Godfather: Part III ,Francis Ford Coppola,1990.0
+Elizabethtown ,Cameron Crowe,2005.0
+"You, Me and Dupree ",Anthony Russo,2006.0
+Superman II ,Richard Lester,1980.0
+Gigli ,Martin Brest,2003.0
+All the King's Men ,Steven Zaillian,2006.0
+Shaft ,John Singleton,2000.0
+Anastasia ,Don Bluth,1997.0
+Moulin Rouge! ,Baz Luhrmann,2001.0
+Domestic Disturbance ,Harold Becker,2001.0
+Black Mass ,Scott Cooper,2015.0
+Flags of Our Fathers ,Clint Eastwood,2006.0
+Law Abiding Citizen ,F. Gary Gray,2009.0
+Grindhouse ,Robert Rodriguez,2007.0
+Beloved ,Jonathan Demme,1998.0
+Lucky You ,Curtis Hanson,2007.0
+Catch Me If You Can ,Steven Spielberg,2002.0
+Zero Dark Thirty ,Kathryn Bigelow,2012.0
+The Break-Up ,Peyton Reed,2006.0
+Mamma Mia! ,Phyllida Lloyd,2008.0
+Valentine's Day ,Garry Marshall,2010.0
+The Dukes of Hazzard ,Jay Chandrasekhar,2005.0
+The Thin Red Line ,Terrence Malick,1998.0
+The Change-Up ,David Dobkin,2011.0
+Man on the Moon ,Milos Forman,1999.0
+Casino ,Martin Scorsese,1995.0
+From Paris with Love ,Pierre Morel,2010.0
+Bulletproof Monk ,Paul Hunter,2003.0
+"Me, Myself & Irene ",Bobby Farrelly,2000.0
+Barnyard ,Steve Oedekerk,2006.0
+Deck the Halls ,John Whitesell,2006.0
+The Twilight Saga: New Moon ,Chris Weitz,2009.0
+Shrek ,Andrew Adamson,2001.0
+The Adjustment Bureau ,George Nolfi,2011.0
+Robin Hood: Prince of Thieves ,Kevin Reynolds,1991.0
+Jerry Maguire ,Cameron Crowe,1996.0
+Ted ,Seth MacFarlane,2012.0
+As Good as It Gets ,James L. Brooks,1997.0
+Patch Adams ,Tom Shadyac,1998.0
+Anchorman 2: The Legend Continues ,Adam McKay,2013.0
+Mr. Deeds ,Steven Brill,2002.0
+Super 8 ,J.J. Abrams,2011.0
+Erin Brockovich ,Steven Soderbergh,2000.0
+How to Lose a Guy in 10 Days ,Donald Petrie,2003.0
+22 Jump Street ,Phil Lord,2014.0
+Interview with the Vampire: The Vampire Chronicles ,Neil Jordan,1994.0
+Yes Man ,Peyton Reed,2008.0
+Central Intelligence ,Rawson Marshall Thurber,2016.0
+Stepmom ,Chris Columbus,1998.0
+Daddy's Home ,Sean Anders,2015.0
+Into the Woods ,Rob Marshall,2014.0
+Inside Man ,Spike Lee,2006.0
+Payback ,Brian Helgeland,1999.0
+Congo ,Frank Marshall,1995.0
+We Bought a Zoo ,Cameron Crowe,2011.0
+Knowing ,Alex Proyas,2009.0
+Failure to Launch ,Tom Dey,2006.0
+The Ring Two ,Hideo Nakata,2005.0
+"Crazy, Stupid, Love. ",Glenn Ficarra,2011.0
+Garfield ,Peter Hewitt,2004.0
+Christmas with the Kranks ,Joe Roth,2004.0
+Moneyball ,Bennett Miller,2011.0
+Outbreak ,Wolfgang Petersen,1995.0
+Non-Stop ,Jaume Collet-Serra,2014.0
+Race to Witch Mountain ,Andy Fickman,2009.0
+V for Vendetta ,James McTeigue,2005.0
+Shanghai Knights ,David Dobkin,2003.0
+Unforgotten             ,,
+Curious George ,Matthew O'Callaghan,2006.0
+Herbie Fully Loaded ,Angela Robinson,2005.0
+Don't Say a Word ,Gary Fleder,2001.0
+Hansel & Gretel: Witch Hunters ,Tommy Wirkola,2013.0
+Unfaithful ,Adrian Lyne,2002.0
+I Am Number Four ,D.J. Caruso,2011.0
+Syriana ,Stephen Gaghan,2005.0
+13 Hours ,Michael Bay,2016.0
+The Book of Life ,Jorge R. Gutiérrez,2014.0
+Firewall ,Richard Loncraine,2006.0
+Absolute Power ,Clint Eastwood,1997.0
+G.I. Jane ,Ridley Scott,1997.0
+The Game ,David Fincher,1997.0
+Silent Hill ,Christophe Gans,2006.0
+The Replacements ,Howard Deutch,2000.0
+American Reunion ,Jon Hurwitz,2012.0
+The Negotiator ,F. Gary Gray,1998.0
+Into the Storm ,Steven Quale,2014.0
+Beverly Hills Cop III ,John Landis,1994.0
+Gremlins 2: The New Batch ,Joe Dante,1990.0
+The Judge ,David Dobkin,2014.0
+The Peacemaker ,Mimi Leder,1997.0
+Resident Evil: Apocalypse ,Alexander Witt,2004.0
+Bridget Jones: The Edge of Reason ,Beeban Kidron,2004.0
+Out of Time ,Carl Franklin,2003.0
+On Deadly Ground ,Steven Seagal,1994.0
+The Adventures of Sharkboy and Lavagirl 3-D ,Robert Rodriguez,2005.0
+The Beach ,Danny Boyle,2000.0
+Raising Helen ,Garry Marshall,2004.0
+Ninja Assassin ,James McTeigue,2009.0
+For Love of the Game ,Sam Raimi,1999.0
+A Touch of Frost             ,,
+Striptease ,Andrew Bergman,1996.0
+Marmaduke ,Tom Dey,2010.0
+Hereafter ,Clint Eastwood,2010.0
+Murder by Numbers ,Barbet Schroeder,2002.0
+Assassins ,Richard Donner,1995.0
+Hannibal Rising ,Peter Webber,2007.0
+The Story of Us ,Rob Reiner,1999.0
+The Host ,Andrew Niccol,2013.0
+Basic ,John McTiernan,2003.0
+Blood Work ,Clint Eastwood,2002.0
+The International ,Tom Tykwer,2009.0
+Escape from L.A. ,John Carpenter,1996.0
+Twisted             ,,
+The Iron Giant ,Brad Bird,1999.0
+The Life Aquatic with Steve Zissou ,Wes Anderson,2004.0
+Free State of Jones ,Gary Ross,2016.0
+The Life of David Gale ,Alan Parker,2003.0
+Man of the House ,Stephen Herek,2005.0
+Run All Night ,Jaume Collet-Serra,2015.0
+Eastern Promises ,David Cronenberg,2007.0
+Into the Blue ,John Stockwell,2005.0
+The Messenger: The Story of Joan of Arc ,Luc Besson,1999.0
+Your Highness ,David Gordon Green,2011.0
+Dream House ,Jim Sheridan,2011.0
+Mad City ,Costa-Gavras,1997.0
+Baby's Day Out ,Patrick Read Johnson,1994.0
+The Scarlet Letter ,Roland Joffé,1995.0
+Fair Game ,Doug Liman,2010.0
+Defiance             ,,
+Domino ,Tony Scott,2005.0
+Jade ,William Friedkin,1995.0
+Gamer ,Mark Neveldine,2009.0
+Beautiful Creatures ,Richard LaGravenese,2013.0
+Death to Smoochy ,Danny DeVito,2002.0
+Zoolander 2 ,Ben Stiller,2016.0
+The Big Bounce ,George Armitage,2004.0
+What Planet Are You From? ,Mike Nichols,2000.0
+Drive Angry ,Patrick Lussier,2011.0
+Street Fighter: The Legend of Chun-Li ,Andrzej Bartkowiak,2009.0
+The One ,James Wong,2001.0
+Outlander             ,,
+The Adventures of Ford Fairlane ,Renny Harlin,1990.0
+Pirate Radio ,Richard Curtis,2009.0
+Traffic ,Steven Soderbergh,2000.0
+Indiana Jones and the Last Crusade ,Steven Spielberg,1989.0
+Anna Karenina ,Joe Wright,2012.0
+Chappie ,Neill Blomkamp,2015.0
+The Bone Collector ,Phillip Noyce,1999.0
+Panic Room ,David Fincher,2002.0
+The Tooth Fairy ,Chuck Bowman,2006.0
+Three Kings ,David O. Russell,1999.0
+Child 44 ,Daniel Espinosa,2015.0
+Rat Race ,Jerry Zucker,2001.0
+K-PAX ,Iain Softley,2001.0
+Kate & Leopold ,James Mangold,2001.0
+Bedazzled ,Harold Ramis,2000.0
+The Cotton Club ,Francis Ford Coppola,1984.0
+3:10 to Yuma ,James Mangold,2007.0
+Taken 3 ,Olivier Megaton,2014.0
+Out of Sight ,Steven Soderbergh,1998.0
+The Cable Guy ,Ben Stiller,1996.0
+Earth ,Deepa Mehta,1998.0
+Dick Tracy ,Warren Beatty,1990.0
+The Thomas Crown Affair ,John McTiernan,1999.0
+Riding in Cars with Boys ,Penny Marshall,2001.0
+First Blood ,Ted Kotcheff,1982.0
+Solaris ,Andrei Tarkovsky,1972.0
+Happily N'Ever After ,Paul Bolger,2006.0
+Mary Reilly ,Stephen Frears,1996.0
+My Best Friend's Wedding ,P.J. Hogan,1997.0
+America's Sweethearts ,Joe Roth,2001.0
+Insomnia ,Christopher Nolan,2002.0
+Star Trek: First Contact ,Jonathan Frakes,1996.0
+Jonah Hex ,Jimmy Hayward,2010.0
+Courage Under Fire ,Edward Zwick,1996.0
+Liar Liar ,Tom Shadyac,1997.0
+The Infiltrator ,Brad Furman,2016.0
+Inchon ,Terence Young,1981.0
+The Flintstones ,Brian Levant,1994.0
+Taken 2 ,Olivier Megaton,2012.0
+Scary Movie 3 ,David Zucker,2003.0
+Miss Congeniality ,Donald Petrie,2000.0
+Journey to the Center of the Earth ,Eric Brevig,2008.0
+The Princess Diaries 2: Royal Engagement ,Garry Marshall,2004.0
+The Pelican Brief ,Alan J. Pakula,1993.0
+The Client ,Joel Schumacher,1994.0
+The Bucket List ,Rob Reiner,2007.0
+Patriot Games ,Phillip Noyce,1992.0
+Monster-in-Law ,Robert Luketic,2005.0
+Prisoners ,Denis Villeneuve,2013.0
+Training Day ,Antoine Fuqua,2001.0
+Galaxy Quest ,Dean Parisot,1999.0
+Scary Movie 2 ,Keenen Ivory Wayans,2001.0
+The Muppets ,James Bobin,2011.0
+Blade ,Stephen Norrington,1998.0
+Coach Carter ,Thomas Carter,2005.0
+Changing Lanes ,Roger Michell,2002.0
+Anaconda ,Luis Llosa,1997.0
+Coyote Ugly ,David McNally,2000.0
+Love Actually ,Richard Curtis,2003.0
+A Bug's Life ,John Lasseter,1998.0
+From Hell ,Albert Hughes,2001.0
+The Specialist ,Luis Llosa,1994.0
+Tin Cup ,Ron Shelton,1996.0
+"Yours, Mine and Ours ",Melville Shavelson,1968.0
+Kicking & Screaming ,Jesse Dylan,2005.0
+The Hitchhiker's Guide to the Galaxy ,Garth Jennings,2005.0
+Fat Albert ,Joel Zwick,2004.0
+Resident Evil: Extinction ,Russell Mulcahy,2007.0
+Blended ,Frank Coraci,2014.0
+Last Holiday ,Wayne Wang,2006.0
+The River Wild ,Curtis Hanson,1994.0
+The Indian in the Cupboard ,Frank Oz,1995.0
+Savages ,Oliver Stone,2012.0
+Cellular ,David R. Ellis,2004.0
+Johnny English ,Peter Howitt,2003.0
+The Ant Bully ,John A. Davis,2006.0
+Dune ,David Lynch,1984.0
+Across the Universe ,Julie Taymor,2007.0
+Revolutionary Road ,Sam Mendes,2008.0
+16 Blocks ,Richard Donner,2006.0
+Babylon A.D. ,Mathieu Kassovitz,2008.0
+The Glimmer Man ,John Gray,1996.0
+Multiplicity ,Harold Ramis,1996.0
+Aliens in the Attic ,John Schultz,2009.0
+The Pledge ,Sean Penn,2001.0
+The Producers ,Susan Stroman,2005.0
+Dredd ,Pete Travis,2012.0
+The Phantom ,Simon Wincer,1996.0
+All the Pretty Horses ,Billy Bob Thornton,2000.0
+Nixon ,Oliver Stone,1995.0
+The Ghost Writer ,Roman Polanski,2010.0
+Deep Rising ,Stephen Sommers,1998.0
+Miracle at St. Anna ,Spike Lee,2008.0
+Curse of the Golden Flower ,Yimou Zhang,2006.0
+Bangkok Dangerous ,Danny Pang,2008.0
+Big Trouble ,Barry Sonnenfeld,2002.0
+Love in the Time of Cholera ,Mike Newell,2007.0
+The Returned             ,,
+Shadow Conspiracy ,George P. Cosmatos,1997.0
+Johnny English Reborn ,Oliver Parker,2011.0
+Foodfight! ,Lawrence Kasanoff,2012.0
+Argo ,Ben Affleck,2012.0
+The Fugitive ,Andrew Davis,1993.0
+The Bounty Hunter ,Andy Tennant,2010.0
+Sleepers ,Barry Levinson,1996.0
+Rambo: First Blood Part II ,George P. Cosmatos,1985.0
+The Juror ,Brian Gibson,1996.0
+Pinocchio ,Norman Ferguson,1940.0
+Heaven's Gate ,Michael Cimino,1980.0
+Underworld: Evolution ,Len Wiseman,2006.0
+Victor Frankenstein ,Paul McGuigan,2015.0
+Finding Forrester ,Gus Van Sant,2000.0
+28 Days ,Betty Thomas,2000.0
+Unleashed ,Louis Leterrier,2005.0
+The Sweetest Thing ,Roger Kumble,2002.0
+The Firm ,Sydney Pollack,1993.0
+Charlie St. Cloud ,Burr Steers,2010.0
+The Mechanic ,Simon West,2011.0
+21 Jump Street ,Phil Lord,2012.0
+Notting Hill ,Roger Michell,1999.0
+Chicken Run ,Peter Lord,2000.0
+Along Came Polly ,John Hamburg,2004.0
+Boomerang ,Reginald Hudlin,1992.0
+The Heat ,Paul Feig,2013.0
+Cleopatra ,Joseph L. Mankiewicz,1963.0
+Here Comes the Boom ,Frank Coraci,2012.0
+High Crimes ,Carl Franklin,2002.0
+The Mirror Has Two Faces ,Barbra Streisand,1996.0
+The Mothman Prophecies ,Mark Pellington,2002.0
+Brüno ,Larry Charles,2009.0
+Licence to Kill ,John Glen,1989.0
+Red Riding Hood ,Catherine Hardwicke,2011.0
+15 Minutes ,John Herzfeld,2001.0
+Super Mario Bros. ,Annabel Jankel,1993.0
+Lord of War ,Andrew Niccol,2005.0
+Hero ,Yimou Zhang,2002.0
+One for the Money ,Julie Anne Robinson,2012.0
+The Interview ,Evan Goldberg,2014.0
+The Warrior's Way ,Sngmoo Lee,2010.0
+McHale's Navy             ,,
+Micmacs ,Jean-Pierre Jeunet,2009.0
+8 Mile ,Curtis Hanson,2002.0
+Animal Kingdom: Let's go Ape ,Jamel Debbouze,2015.0
+A Knight's Tale ,Brian Helgeland,2001.0
+The Medallion ,Gordon Chan,2003.0
+The Sixth Sense ,M. Night Shyamalan,1999.0
+Man on a Ledge ,Asger Leth,2012.0
+The Big Year ,David Frankel,2011.0
+The Karate Kid ,John G. Avildsen,1984.0
+American Hustle ,David O. Russell,2013.0
+The Proposal ,Anne Fletcher,2009.0
+Double Jeopardy ,Bruce Beresford,1999.0
+Back to the Future Part II ,Robert Zemeckis,1989.0
+Lucy ,Luc Besson,2014.0
+Fifty Shades of Grey ,Sam Taylor-Johnson,2015.0
+Spy Kids 3-D: Game Over ,Robert Rodriguez,2003.0
+A Time to Kill ,Joel Schumacher,1996.0
+Cheaper by the Dozen ,Shawn Levy,2003.0
+Lone Survivor ,Peter Berg,2013.0
+A League of Their Own ,Penny Marshall,1992.0
+The Conjuring 2 ,James Wan,2016.0
+The Social Network ,David Fincher,2010.0
+He's Just Not That Into You ,Ken Kwapis,2009.0
+Scary Movie 4 ,David Zucker,2006.0
+Scream 3 ,Wes Craven,2000.0
+Back to the Future Part III ,Robert Zemeckis,1990.0
+Get Hard ,Etan Cohen,2015.0
+Bram Stoker's Dracula ,Francis Ford Coppola,1992.0
+Julie & Julia ,Nora Ephron,2009.0
+42 ,Brian Helgeland,2013.0
+The Talented Mr. Ripley ,Anthony Minghella,1999.0
+Dumb and Dumber To ,Bobby Farrelly,2014.0
+Eight Below ,Frank Marshall,2006.0
+The Intern ,Nancy Meyers,2015.0
+Ride Along 2 ,Tim Story,2016.0
+The Last of the Mohicans ,Michael Mann,1992.0
+Ray ,Taylor Hackford,2004.0
+Sin City ,Frank Miller,2005.0
+Vantage Point ,Pete Travis,2008.0
+"I Love You, Man ",John Hamburg,2009.0
+Shallow Hal ,Bobby Farrelly,2001.0
+JFK ,Oliver Stone,1991.0
+Big Momma's House 2 ,John Whitesell,2006.0
+The Mexican ,Gore Verbinski,2001.0
+Unbroken ,Angelina Jolie Pitt,2014.0
+17 Again ,Burr Steers,2009.0
+The Other Woman ,Nick Cassavetes,2014.0
+The Final Destination ,David R. Ellis,2009.0
+Bridge of Spies ,Steven Spielberg,2015.0
+Behind Enemy Lines ,John Moore,2001.0
+Get Him to the Greek ,Nicholas Stoller,2010.0
+Shall We Dance ,Peter Chelsom,2004.0
+Small Soldiers ,Joe Dante,1998.0
+Spawn ,Mark A.Z. Dippé,1997.0
+The Count of Monte Cristo ,Kevin Reynolds,2002.0
+The Lincoln Lawyer ,Brad Furman,2011.0
+Unknown ,Jaume Collet-Serra,2011.0
+The Prestige ,Christopher Nolan,2006.0
+Horrible Bosses 2 ,Sean Anders,2014.0
+Escape from Planet Earth ,Cal Brunker,2013.0
+Apocalypto ,Mel Gibson,2006.0
+The Living Daylights ,John Glen,1987.0
+Predators ,Nimród Antal,2010.0
+Legal Eagles ,Ivan Reitman,1986.0
+Secret Window ,David Koepp,2004.0
+The Lake House ,Alejandro Agresti,2006.0
+The Skeleton Key ,Iain Softley,2005.0
+The Odd Life of Timothy Green ,Peter Hedges,2012.0
+Made of Honor ,Paul Weiland,2008.0
+Jersey Boys ,Clint Eastwood,2014.0
+The Rainmaker ,Francis Ford Coppola,1997.0
+Gothika ,Mathieu Kassovitz,2003.0
+Amistad ,Steven Spielberg,1997.0
+Medicine Man ,John McTiernan,1992.0
+Aliens vs. Predator: Requiem ,Colin Strause,2007.0
+Ri¢hie Ri¢h ,Donald Petrie,1994.0
+Autumn in New York ,Joan Chen,2000.0
+Music and Lyrics ,Marc Lawrence,2007.0
+Paul ,Greg Mottola,2011.0
+The Guilt Trip ,Anne Fletcher,2012.0
+Scream 4 ,Wes Craven,2011.0
+8MM ,Joel Schumacher,1999.0
+The Doors ,Oliver Stone,1991.0
+Sex Tape ,Jake Kasdan,2014.0
+Hanging Up ,Diane Keaton,2000.0
+Final Destination 5 ,Steven Quale,2011.0
+Mickey Blue Eyes ,Kelly Makin,1999.0
+Pay It Forward ,Mimi Leder,2000.0
+Fever Pitch ,Bobby Farrelly,2005.0
+Arthur             ,,
+Drillbit Taylor ,Steven Brill,2008.0
+A Million Ways to Die in the West ,Seth MacFarlane,2014.0
+The Shadow ,Russell Mulcahy,1994.0
+Extremely Loud & Incredibly Close ,Stephen Daldry,2011.0
+Morning Glory ,Roger Michell,2010.0
+Get Rich or Die Tryin' ,Jim Sheridan,2005.0
+The Art of War ,Christian Duguay,2000.0
+Rent ,Chris Columbus,2005.0
+Bless the Child ,Chuck Russell,2000.0
+The Out-of-Towners ,Sam Weisman,1999.0
+The Island of Dr. Moreau ,John Frankenheimer,1996.0
+The Musketeer ,Peter Hyams,2001.0
+The Other Boleyn Girl ,Justin Chadwick,2008.0
+Sweet November ,Pat O'Connor,2001.0
+The Reaping ,Stephen Hopkins,2007.0
+Mean Streets ,Martin Scorsese,1973.0
+Renaissance Man ,Penny Marshall,1994.0
+Colombiana ,Olivier Megaton,2011.0
+The Magic Sword: Quest for Camelot ,Frederik Du Chau,1998.0
+City by the Sea ,Michael Caton-Jones,2002.0
+At First Sight ,Irwin Winkler,1999.0
+Torque ,Joseph Kahn,2004.0
+City Hall ,Harold Becker,1996.0
+Showgirls ,Paul Verhoeven,1995.0
+Marie Antoinette ,Sofia Coppola,2006.0
+Kiss of Death ,Barbet Schroeder,1995.0
+Get Carter ,Stephen Kay,2000.0
+The Impossible ,J.A. Bayona,2012.0
+Ishtar ,Elaine May,1987.0
+Fantastic Mr. Fox ,Wes Anderson,2009.0
+Life or Something Like It ,Stephen Herek,2002.0
+Memoirs of an Invisible Man ,John Carpenter,1992.0
+Amélie ,Jean-Pierre Jeunet,2001.0
+New York Minute ,Dennie Gordon,2004.0
+Alfie ,Charles Shyer,2004.0
+Big Miracle ,Ken Kwapis,2012.0
+The Deep End of the Ocean ,Ulu Grosbard,1999.0
+Feardotcom ,William Malone,2002.0
+Cirque du Freak: The Vampire's Assistant ,Paul Weitz,2009.0
+Victor Frankenstein ,Paul McGuigan,2015.0
+Duplex ,Danny DeVito,2003.0
+Soul Men ,Malcolm D. Lee,2008.0
+Raise the Titanic ,Jerry Jameson,1980.0
+Universal Soldier: The Return ,Mic Rodgers,1999.0
+Pandorum ,Christian Alvart,2009.0
+Impostor ,Gary Fleder,2001.0
+Extreme Ops ,Christian Duguay,2002.0
+Just Visiting ,Jean-Marie Poiré,2001.0
+Sunshine ,Danny Boyle,2007.0
+A Thousand Words ,Brian Robbins,2012.0
+Delgo ,Marc F. Adler,2008.0
+The Gunman ,Pierre Morel,2015.0
+Alex Rider: Operation Stormbreaker ,Geoffrey Sax,2006.0
+Disturbia ,D.J. Caruso,2007.0
+Hackers ,Iain Softley,1995.0
+The Hunting Party ,Richard Shepard,2007.0
+The Hudsucker Proxy ,Joel Coen,1994.0
+The Warlords ,Peter Ho-Sun Chan,2007.0
+Nomad: The Warrior ,Sergey Bodrov,2005.0
+Snowpiercer ,Joon-ho Bong,2013.0
+A Monster in Paris ,Bibo Bergeron,2011.0
+The Last Shot ,Jeff Nathanson,2004.0
+The Crow ,Alex Proyas,1994.0
+Baahubali: The Beginning ,S.S. Rajamouli,2015.0
+The Time Traveler's Wife ,Robert Schwentke,2009.0
+Because I Said So ,Michael Lehmann,2007.0
+The Fast and the Furious ,Rob Cohen,2001.0
+Frankenweenie ,Tim Burton,2012.0
+Serenity ,Joss Whedon,2005.0
+Against the Ropes ,Charles S. Dutton,2004.0
+Superman III ,Richard Lester,1983.0
+Grudge Match ,Peter Segal,2013.0
+Red Cliff ,John Woo,2008.0
+Sweet Home Alabama ,Andy Tennant,2002.0
+The Ugly Truth ,Robert Luketic,2009.0
+Sgt. Bilko ,Jonathan Lynn,1996.0
+Spy Kids 2: Island of Lost Dreams ,Robert Rodriguez,2002.0
+Star Trek: Generations ,David Carson,1994.0
+The Grandmaster ,Kar-Wai Wong,2013.0
+Water for Elephants ,Francis Lawrence,2011.0
+3rd Rock from the Sun             ,,
+Dragon Nest: Warriors' Dawn ,Yuefeng Song,2014.0
+The Hurricane ,Norman Jewison,1999.0
+Enough ,Michael Apted,2002.0
+Heartbreakers ,David Mirkin,2001.0
+Paul Blart: Mall Cop 2 ,Andy Fickman,2015.0
+Angel Eyes ,Luis Mandoki,2001.0
+Joe Somebody ,John Pasquin,2001.0
+The Ninth Gate ,Roman Polanski,1999.0
+Extreme Measures ,Michael Apted,1996.0
+Rock Star ,Stephen Herek,2001.0
+Precious ,Lee Daniels,2009.0
+White Squall ,Ridley Scott,1996.0
+The Thing ,John Carpenter,1982.0
+Riddick ,David Twohy,2013.0
+Switchback ,Jeb Stuart,1997.0
+Texas Rangers ,Steve Miner,2001.0
+City of Ember ,Gil Kenan,2008.0
+The Master ,Paul Thomas Anderson,2012.0
+Virgin Territory ,David Leland,2007.0
+The Express ,Gary Fleder,2008.0
+The 5th Wave ,J Blakeson,2016.0
+Creed ,Ryan Coogler,2015.0
+The Town ,Ben Affleck,2010.0
+What to Expect When You're Expecting ,Kirk Jones,2012.0
+Burn After Reading ,Ethan Coen,2008.0
+Nim's Island ,Jennifer Flackett,2008.0
+Rush ,Ron Howard,2013.0
+Magnolia ,Paul Thomas Anderson,1999.0
+Cop Out ,Kevin Smith,2010.0
+How to Be Single ,Christian Ditter,2016.0
+Dolphin Tale ,Charles Martin Smith,2011.0
+Twilight ,Catherine Hardwicke,2008.0
+John Q ,Nick Cassavetes,2002.0
+Blue Streak ,Les Mayfield,1999.0
+We're the Millers ,Rawson Marshall Thurber,2013.0
+Obitaemyy ostrov ,Fedor Bondarchuk,2009.0
+Breakdown ,Jonathan Mostow,1997.0
+Never Say Never Again ,Irvin Kershner,1983.0
+Hot Tub Time Machine ,Steve Pink,2010.0
+Dolphin Tale 2 ,Charles Martin Smith,2014.0
+Reindeer Games ,John Frankenheimer,2000.0
+A Man Apart ,F. Gary Gray,2003.0
+Aloha ,Cameron Crowe,2015.0
+Ghosts of Mississippi ,Rob Reiner,1996.0
+Snow Falling on Cedars ,Scott Hicks,1999.0
+The Rite ,Mikael Håfström,2011.0
+Gattaca ,Andrew Niccol,1997.0
+Isn't She Great ,Andrew Bergman,2000.0
+Space Chimps ,Kirk De Micco,2008.0
+Head of State ,Chris Rock,2003.0
+The Hangover ,Todd Phillips,2009.0
+Ip Man 3 ,Wilson Yip,2015.0
+Austin Powers: The Spy Who Shagged Me ,Jay Roach,1999.0
+Batman ,Tim Burton,1989.0
+There Be Dragons ,Roland Joffé,2011.0
+Lethal Weapon 3 ,Richard Donner,1992.0
+The Blind Side ,John Lee Hancock,2009.0
+Rush Hour             ,,
+Spy Kids ,Robert Rodriguez,2001.0
+Horrible Bosses ,Seth Gordon,2011.0
+True Grit ,Ethan Coen,2010.0
+The Devil Wears Prada ,David Frankel,2006.0
+Star Trek: The Motion Picture ,Robert Wise,1979.0
+Identity Thief ,Seth Gordon,2013.0
+Cape Fear ,Martin Scorsese,1991.0
+21 ,Robert Luketic,2008.0
+Trainwreck ,Judd Apatow,2015.0
+Guess Who ,Kevin Rodney Sullivan,2005.0
+The English Patient ,Anthony Minghella,1996.0
+L.A. Confidential ,Curtis Hanson,1997.0
+Sky High ,Mike Mitchell,2005.0
+In & Out ,Frank Oz,1997.0
+Species ,Roger Donaldson,1995.0
+A Nightmare on Elm Street ,Wes Craven,1984.0
+The Cell ,Tarsem Singh,2000.0
+The Man in the Iron Mask ,Randall Wallace,1998.0
+Secretariat ,Randall Wallace,2010.0
+TMNT ,Kevin Munroe,2007.0
+Radio ,Michael Tollin,2003.0
+Friends with Benefits ,Will Gluck,2011.0
+Neighbors 2: Sorority Rising ,Nicholas Stoller,2016.0
+Saving Mr. Banks ,John Lee Hancock,2013.0
+Malcolm X ,Spike Lee,1992.0
+This Is 40 ,Judd Apatow,2012.0
+Old Dogs ,Walt Becker,2009.0
+Underworld: Rise of the Lycans ,Patrick Tatopoulos,2009.0
+License to Wed ,Ken Kwapis,2007.0
+The Benchwarmers ,Dennis Dugan,2006.0
+Must Love Dogs ,Gary David Goldberg,2005.0
+Donnie Brasco ,Mike Newell,1997.0
+Resident Evil ,Paul W.S. Anderson,2002.0
+Poltergeist ,Tobe Hooper,1982.0
+The Ladykillers ,Ethan Coen,2004.0
+Max Payne ,John Moore,2008.0
+In Time ,Andrew Niccol,2011.0
+The Back-up Plan ,Alan Poul,2010.0
+Something Borrowed ,Luke Greenfield,2011.0
+Hit the Floor             ,,
+Black Knight ,Gil Junger,2001.0
+The Bad News Bears ,Michael Ritchie,1976.0
+Street Fighter ,Steven E. de Souza,1994.0
+The Pianist ,Roman Polanski,2002.0
+From Hell ,Albert Hughes,2001.0
+The Nativity Story ,Catherine Hardwicke,2006.0
+House of Wax ,Jaume Collet-Serra,2005.0
+Closer ,Mike Nichols,2004.0
+J. Edgar ,Clint Eastwood,2011.0
+Mirrors ,Alexandre Aja,2008.0
+Queen of the Damned ,Michael Rymer,2002.0
+Predator 2 ,Stephen Hopkins,1990.0
+Untraceable ,Gregory Hoblit,2008.0
+Blast from the Past ,Hugh Wilson,1999.0
+Flash Gordon ,Mike Hodges,1980.0
+Jersey Girl ,Kevin Smith,2004.0
+Alex Cross ,Rob Cohen,2012.0
+Midnight in the Garden of Good and Evil ,Clint Eastwood,1997.0
+Heist ,Scott Mann,2015.0
+Nanny McPhee Returns ,Susanna White,2010.0
+Hoffa ,Danny DeVito,1992.0
+The X Files: I Want to Believe ,Chris Carter,2008.0
+Ella Enchanted ,Tommy O'Haver,2004.0
+Concussion ,Peter Landesman,2015.0
+Abduction ,John Singleton,2011.0
+Valiant ,Gary Chapman,2005.0
+Wonder Boys ,Curtis Hanson,2000.0
+Superhero Movie ,Craig Mazin,2008.0
+Broken City ,Allen Hughes,2013.0
+Cursed ,Wes Craven,2005.0
+Premium Rush ,David Koepp,2012.0
+Hot Pursuit ,Anne Fletcher,2015.0
+The Four Feathers ,Shekhar Kapur,2002.0
+Parker ,Taylor Hackford,2013.0
+Wimbledon ,Richard Loncraine,2004.0
+Furry Vengeance ,Roger Kumble,2010.0
+Bait ,Kimble Rendall,2012.0
+Krull ,Peter Yates,1983.0
+Lions for Lambs ,Robert Redford,2007.0
+Flight of the Intruder ,John Milius,1991.0
+Walk Hard: The Dewey Cox Story ,Jake Kasdan,2007.0
+The Shipping News ,Lasse Hallström,2001.0
+American Outlaws ,Les Mayfield,2001.0
+The Young Victoria ,Jean-Marc Vallée,2009.0
+Whiteout ,Dominic Sena,2009.0
+The Tree of Life ,Terrence Malick,2011.0
+Knock Off ,Hark Tsui,1998.0
+Sabotage ,David Ayer,2014.0
+The Order ,Brian Helgeland,2003.0
+Punisher: War Zone ,Lexi Alexander,2008.0
+Zoom ,Peter Hewitt,2006.0
+The Walk ,Robert Zemeckis,2015.0
+Warriors of Virtue ,Ronny Yu,1997.0
+A Good Year ,Ridley Scott,2006.0
+Luther             ,,
+Radio Flyer ,Richard Donner,1992.0
+"Blood In, Blood Out ",Taylor Hackford,1993.0
+Smilla's Sense of Snow ,Bille August,1997.0
+Femme Fatale ,Brian De Palma,2002.0
+Lion of the Desert ,Moustapha Akkad,1980.0
+The Horseman on the Roof ,Jean-Paul Rappeneau,1995.0
+Ride with the Devil ,Ang Lee,1999.0
+Biutiful ,Alejandro G. Iñárritu,2010.0
+The Lovers ,Roland Joffé,2015.0
+Bandidas ,Joachim Rønning,2006.0
+Black Water Transit ,Tony Kaye,2009.0
+The Maze Runner ,Wes Ball,2014.0
+Unfinished Business ,Ken Scott,2015.0
+The Age of Innocence ,Martin Scorsese,1993.0
+The Fountain ,Darren Aronofsky,2006.0
+Chill Factor ,Hugh Johnson,1999.0
+Stolen ,Simon West,2012.0
+Ponyo ,Hayao Miyazaki,2008.0
+The Longest Ride ,George Tillman Jr.,2015.0
+The Astronaut's Wife ,Rand Ravich,1999.0
+I Dreamed of Africa ,Hugh Hudson,2000.0
+Playing for Keeps ,Gabriele Muccino,2012.0
+Mandela: Long Walk to Freedom ,Justin Chadwick,2013.0
+Reds ,Warren Beatty,1981.0
+A Few Good Men ,Rob Reiner,1992.0
+Exit Wounds ,Andrzej Bartkowiak,2001.0
+Big Momma's House ,Raja Gosnell,2000.0
+Thunder and the House of Magic ,Jeremy Degruson,2013.0
+The Darkest Hour ,Chris Gorak,2011.0
+Step Up Revolution ,Scott Speer,2012.0
+Snakes on a Plane ,David R. Ellis,2006.0
+The Watcher ,Joe Charbanic,2000.0
+The Punisher ,Jonathan Hensleigh,2004.0
+Goal! The Dream Begins ,Danny Cannon,2005.0
+Safe ,Boaz Yakin,2012.0
+Pushing Tin ,Mike Newell,1999.0
+Star Wars: Episode VI - Return of the Jedi ,Richard Marquand,1983.0
+Doomsday ,Neil Marshall,2008.0
+The Reader ,Stephen Daldry,2008.0
+Wanderlust ,David Wain,2012.0
+Elf ,Jon Favreau,2003.0
+Phenomenon ,Jon Turteltaub,1996.0
+Snow Dogs ,Brian Levant,2002.0
+Scrooged ,Richard Donner,1988.0
+Nacho Libre ,Jared Hess,2006.0
+Bridesmaids ,Paul Feig,2011.0
+This Is the End ,Evan Goldberg,2013.0
+Stigmata ,Rupert Wainwright,1999.0
+Men of Honor ,George Tillman Jr.,2000.0
+Takers ,John Luessenhop,2010.0
+The Big Wedding ,Justin Zackham,2013.0
+"Big Mommas: Like Father, Like Son ",John Whitesell,2011.0
+Source Code ,Duncan Jones,2011.0
+Alive ,Frank Marshall,1993.0
+The Number 23 ,Joel Schumacher,2007.0
+The Young and Prodigious T.S. Spivet ,Jean-Pierre Jeunet,2013.0
+1941 ,Steven Spielberg,1979.0
+Dreamer: Inspired by a True Story ,John Gatins,2005.0
+A History of Violence ,David Cronenberg,2005.0
+Transporter 2 ,Louis Leterrier,2005.0
+The Quick and the Dead ,Sam Raimi,1995.0
+Laws of Attraction ,Peter Howitt,2004.0
+Bringing Out the Dead ,Martin Scorsese,1999.0
+Repo Men ,Miguel Sapochnik,2010.0
+Dragon Wars: D-War ,Hyung-rae Shim,2007.0
+Bogus ,Norman Jewison,1996.0
+The Incredible Burt Wonderstone ,Don Scardino,2013.0
+Cats Don't Dance ,Mark Dindal,1997.0
+Cradle Will Rock ,Tim Robbins,1999.0
+The Good German ,Steven Soderbergh,2006.0
+George and the Dragon ,Tom Reeve,2004.0
+Apocalypse Now ,Francis Ford Coppola,1979.0
+Going the Distance ,Nanette Burstein,2010.0
+Mr. Holland's Opus ,Stephen Herek,1995.0
+Criminal ,Ariel Vromen,2016.0
+Out of Africa ,Sydney Pollack,1985.0
+Flight ,Robert Zemeckis,2012.0
+Moonraker ,Lewis Gilbert,1979.0
+The Grand Budapest Hotel ,Wes Anderson,2014.0
+Hearts in Atlantis ,Scott Hicks,2001.0
+Arachnophobia ,Frank Marshall,1990.0
+Frequency ,Gregory Hoblit,2000.0
+Ghostbusters ,Paul Feig,2016.0
+Vacation ,John Francis Daley,2015.0
+Get Shorty ,Barry Sonnenfeld,1995.0
+Chicago ,Rob Marshall,2002.0
+Big Daddy ,Dennis Dugan,1999.0
+American Pie 2 ,J.B. Rogers,2001.0
+Toy Story ,John Lasseter,1995.0
+Speed ,Jan de Bont,1994.0
+The Vow ,Michael Sucsy,2012.0
+Extraordinary Measures ,Tom Vaughan,2010.0
+Remember the Titans ,Boaz Yakin,2000.0
+The Hunt for Red October ,John McTiernan,1990.0
+Lee Daniels' The Butler ,Lee Daniels,2013.0
+Dodgeball: A True Underdog Story ,Rawson Marshall Thurber,2004.0
+The Addams Family ,Barry Sonnenfeld,1991.0
+Ace Ventura: When Nature Calls ,Steve Oedekerk,1995.0
+The Princess Diaries ,Garry Marshall,2001.0
+The First Wives Club ,Hugh Wilson,1996.0
+Se7en ,David Fincher,1995.0
+District 9 ,Neill Blomkamp,2009.0
+The SpongeBob SquarePants Movie ,Stephen Hillenburg,2004.0
+Mystic River ,Clint Eastwood,2003.0
+Million Dollar Baby ,Clint Eastwood,2004.0
+Analyze This ,Harold Ramis,1999.0
+The Notebook ,Nick Cassavetes,2004.0
+27 Dresses ,Anne Fletcher,2008.0
+Hannah Montana: The Movie ,Peter Chelsom,2009.0
+Rugrats in Paris: The Movie ,Stig Bergqvist,2000.0
+The Prince of Tides ,Barbra Streisand,1991.0
+Legends of the Fall ,Edward Zwick,1994.0
+Up in the Air ,Jason Reitman,2009.0
+About Schmidt ,Alexander Payne,2002.0
+Warm Bodies ,Jonathan Levine,2013.0
+Looper ,Rian Johnson,2012.0
+Down to Earth ,Chris Weitz,2001.0
+Babe ,Chris Noonan,1995.0
+Hope Springs ,David Frankel,2012.0
+Forgetting Sarah Marshall ,Nicholas Stoller,2008.0
+Friday Night Lights             ,,
+Four Brothers ,John Singleton,2005.0
+Baby Mama ,Michael McCullers,2008.0
+Hope Floats ,Forest Whitaker,1998.0
+Bride Wars ,Gary Winick,2009.0
+Without a Paddle ,Steven Brill,2004.0
+13 Going on 30 ,Gary Winick,2004.0
+Midnight in Paris ,Woody Allen,2011.0
+The Nut Job ,Peter Lepeniotis,2014.0
+Blow ,Ted Demme,2001.0
+Message in a Bottle ,Luis Mandoki,1999.0
+Star Trek V: The Final Frontier ,William Shatner,1989.0
+Like Mike ,John Schultz,2002.0
+Naked Gun 33 1/3: The Final Insult ,Peter Segal,1994.0
+A View to a Kill ,John Glen,1985.0
+The Curse of the Were-Rabbit ,Steve Box,2005.0
+P.S. I Love You ,Richard LaGravenese,2007.0
+Racing Stripes ,Frederik Du Chau,2005.0
+Atonement ,Joe Wright,2007.0
+Letters to Juliet ,Gary Winick,2010.0
+Black Rain ,Ridley Scott,1989.0
+The Three Stooges ,Bobby Farrelly,2012.0
+Corpse Bride ,Tim Burton,2005.0
+Glory Road ,James Gartner,2006.0
+Sicario ,Denis Villeneuve,2015.0
+Southpaw ,Antoine Fuqua,2015.0
+Drag Me to Hell ,Sam Raimi,2009.0
+The Age of Adaline ,Lee Toland Krieger,2015.0
+Secondhand Lions ,Tim McCanlies,2003.0
+Step Up 3D ,Jon M. Chu,2010.0
+Blue Crush ,John Stockwell,2002.0
+Stranger Than Fiction ,Marc Forster,2006.0
+30 Days of Night ,David Slade,2007.0
+The Cabin in the Woods ,Drew Goddard,2012.0
+Meet the Spartans ,Jason Friedberg,2008.0
+Midnight Run ,Martin Brest,1988.0
+The Running Man ,Paul Michael Glaser,1987.0
+Little Shop of Horrors ,Frank Oz,1986.0
+Hanna ,Joe Wright,2011.0
+The Family             ,,
+Mortal Kombat: Annihilation ,John R. Leonetti,1997.0
+Larry Crowne ,Tom Hanks,2011.0
+Carrie ,Kimberly Peirce,2013.0
+Take the Lead ,Liz Friedlander,2006.0
+Entourage             ,,
+Gridiron Gang ,Phil Joanou,2006.0
+What's the Worst That Could Happen? ,Sam Weisman,2001.0
+9 ,Shane Acker,2009.0
+Side Effects ,Steven Soderbergh,2013.0
+The Prince and Me ,Martha Coolidge,2004.0
+Winnie the Pooh ,Stephen J. Anderson,2011.0
+Dumb and Dumberer: When Harry Met Lloyd ,Troy Miller,2003.0
+Bulworth ,Warren Beatty,1998.0
+Get on Up ,Tate Taylor,2014.0
+One True Thing ,Carl Franklin,1998.0
+Virtuosity ,Brett Leonard,1995.0
+My Super Ex-Girlfriend ,Ivan Reitman,2006.0
+Deliver Us from Evil ,Scott Derrickson,2014.0
+Sanctum ,Alister Grierson,2011.0
+Little Black Book ,Nick Hurran,2004.0
+The Five-Year Engagement ,Nicholas Stoller,2012.0
+Mr 3000 ,Charles Stone III,2004.0
+The Next Three Days ,Paul Haggis,2010.0
+Ultraviolet ,Kurt Wimmer,2006.0
+Assault on Precinct 13 ,Jean-François Richet,2005.0
+The Replacement Killers ,Antoine Fuqua,1998.0
+Fled ,Kevin Hooks,1996.0
+Eight Legged Freaks ,Ellory Elkayem,2002.0
+Love & Other Drugs ,Edward Zwick,2010.0
+88 Minutes ,Jon Avnet,2007.0
+North Country ,Niki Caro,2005.0
+The Whole Ten Yards ,Howard Deutch,2004.0
+Splice ,Vincenzo Natali,2009.0
+Howard the Duck ,Willard Huyck,1986.0
+Pride and Glory ,Gavin O'Connor,2008.0
+The Cave ,Bruce Hunt,2005.0
+Alex & Emma ,Rob Reiner,2003.0
+Wicker Park ,Paul McGuigan,2004.0
+Fright Night ,Craig Gillespie,2011.0
+The New World ,Terrence Malick,2005.0
+Wing Commander ,Chris Roberts,1999.0
+In Dreams ,Neil Jordan,1999.0
+Dragonball: Evolution ,James Wong,2009.0
+The Last Stand ,Jee-woon Kim,2013.0
+Godsend ,Nick Hamm,2004.0
+Chasing Liberty ,Andy Cadiff,2004.0
+Hoodwinked Too! Hood vs. Evil ,Mike Disa,2011.0
+An Unfinished Life ,Lasse Hallström,2005.0
+The Imaginarium of Doctor Parnassus ,Terry Gilliam,2009.0
+Barney's Version ,Richard J. Lewis,2010.0
+Trapped             ,,
+Runner Runner ,Brad Furman,2013.0
+Antitrust ,Peter Howitt,2001.0
+Glory ,Edward Zwick,1989.0
+Once Upon a Time in America ,Sergio Leone,1984.0
+Dead Man Down ,Niels Arden Oplev,2013.0
+The Merchant of Venice ,Michael Radford,2004.0
+The Good Thief ,Neil Jordan,2002.0
+Supercross ,Steve Boyum,2005.0
+Miss Potter ,Chris Noonan,2006.0
+The Promise ,Kaige Chen,2005.0
+DOA: Dead or Alive ,Corey Yuen,2006.0
+The Assassination of Jesse James by the Coward Robert Ford ,Andrew Dominik,2007.0
+1911 ,Li Zhang,2011.0
+Little Nicholas ,Laurent Tirard,2009.0
+Wild Card ,Simon West,2015.0
+Machine Gun Preacher ,Marc Forster,2011.0
+Animals United ,Reinhard Klooss,2010.0
+The Color of Freedom ,Bille August,2007.0
+United Passions ,Frédéric Auburtin,2014.0
+Grace of Monaco ,Olivier Dahan,2014.0
+A Warrior's Tail ,Maksim Fadeev,2015.0
+Ripley's Game ,Liliana Cavani,2002.0
+Sausage Party ,Greg Tiernan,2016.0
+Pitch Perfect 2 ,Elizabeth Banks,2015.0
+Walk the Line ,James Mangold,2005.0
+12 Monkeys             ,,
+Keeping the Faith ,Edward Norton,2000.0
+The Borrowers ,Peter Hewitt,1997.0
+Frost/Nixon ,Ron Howard,2008.0
+Confessions of a Dangerous Mind ,George Clooney,2002.0
+Serving Sara ,Reginald Hudlin,2002.0
+The Boss ,Ben Falcone,2016.0
+Cry Freedom ,Richard Attenborough,1987.0
+Mumford ,Lawrence Kasdan,1999.0
+Seed of Chucky ,Don Mancini,2004.0
+The Jacket ,John Maybury,2005.0
+Aladdin ,Ron Clements,1992.0
+Straight Outta Compton ,F. Gary Gray,2015.0
+Indiana Jones and the Temple of Doom ,Steven Spielberg,1984.0
+The Rugrats Movie ,Igor Kovalyov,1998.0
+Along Came a Spider ,Lee Tamahori,2001.0
+Florence Foster Jenkins ,Stephen Frears,2016.0
+Once Upon a Time in Mexico ,Robert Rodriguez,2003.0
+Die Hard ,John McTiernan,1988.0
+Role Models ,David Wain,2008.0
+The Big Short ,Adam McKay,2015.0
+Taking Woodstock ,Ang Lee,2009.0
+Miracle ,Gavin O'Connor,2004.0
+Dawn of the Dead ,Zack Snyder,2004.0
+The Wedding Planner ,Adam Shankman,2001.0
+Harlock: Space Pirate ,Shinji Aramaki,2013.0
+The Royal Tenenbaums ,Wes Anderson,2001.0
+Identity ,James Mangold,2003.0
+Last Vegas ,Jon Turteltaub,2013.0
+For Your Eyes Only ,John Glen,1981.0
+Serendipity ,Peter Chelsom,2001.0
+Timecop ,Peter Hyams,1994.0
+Zoolander ,Ben Stiller,2001.0
+Safe Haven ,Lasse Hallström,2013.0
+Hocus Pocus ,Kenny Ortega,1993.0
+No Reservations ,Scott Hicks,2007.0
+Kick-Ass ,Matthew Vaughn,2010.0
+30 Minutes or Less ,Ruben Fleischer,2011.0
+Dracula 2000 ,Patrick Lussier,2000.0
+"Alexander and the Terrible, Horrible, No Good, Very Bad Day ",Miguel Arteta,2014.0
+Pride & Prejudice ,Joe Wright,2005.0
+Blade Runner ,Ridley Scott,1982.0
+Rob Roy ,Michael Caton-Jones,1995.0
+3 Days to Kill ,McG,2014.0
+We Own the Night ,James Gray,2007.0
+Lost Souls ,Janusz Kaminski,2000.0
+Winged Migration ,Jacques Perrin,2001.0
+Just My Luck ,Donald Petrie,2006.0
+"Mystery, Alaska ",Jay Roach,1999.0
+The Spy Next Door ,Brian Levant,2010.0
+A Simple Wish ,Michael Ritchie,1997.0
+Ghosts of Mars ,John Carpenter,2001.0
+Our Brand Is Crisis ,David Gordon Green,2015.0
+Pride and Prejudice and Zombies ,Burr Steers,2016.0
+Kundun ,Martin Scorsese,1997.0
+How to Lose Friends & Alienate People ,Robert B. Weide,2008.0
+Kick-Ass 2 ,Jeff Wadlow,2013.0
+Captain Alatriste: The Spanish Musketeer ,Agustín Díaz Yanes,2006.0
+Brick Mansions ,Camille Delamarre,2014.0
+Octopussy ,John Glen,1983.0
+Knocked Up ,Judd Apatow,2007.0
+My Sister's Keeper ,Nick Cassavetes,2009.0
+"Welcome Home, Roscoe Jenkins ",Malcolm D. Lee,2008.0
+A Passage to India ,David Lean,1984.0
+Notes on a Scandal ,Richard Eyre,2006.0
+Rendition ,Gavin Hood,2007.0
+Limitless             ,,
+Star Trek VI: The Undiscovered Country ,Nicholas Meyer,1991.0
+Divine Secrets of the Ya-Ya Sisterhood ,Callie Khouri,2002.0
+The Jungle Book ,Jon Favreau,2016.0
+Kiss the Girls ,Gary Fleder,1997.0
+The Blues Brothers ,John Landis,1980.0
+The Sisterhood of the Traveling Pants 2 ,Sanaa Hamri,2008.0
+Joyful Noise ,Todd Graff,2012.0
+About a Boy ,Chris Weitz,2002.0
+Lake Placid ,Steve Miner,1999.0
+Lucky Number Slevin ,Paul McGuigan,2006.0
+The Right Stuff ,Philip Kaufman,1983.0
+Anonymous ,Roland Emmerich,2011.0
+The NeverEnding Story ,Wolfgang Petersen,1984.0
+Dark City ,Alex Proyas,1998.0
+The Duchess ,Saul Dibb,2008.0
+The Honeymooners             ,,
+Return to Oz ,Walter Murch,1985.0
+The Newton Boys ,Richard Linklater,1998.0
+Case 39 ,Christian Alvart,2009.0
+Suspect Zero ,E. Elias Merhige,2004.0
+Martian Child ,Menno Meyjes,2007.0
+Spy Kids: All the Time in the World in 4D ,Robert Rodriguez,2011.0
+Money Monster ,Jodie Foster,2016.0
+Formula 51 ,Ronny Yu,2001.0
+Flawless ,Joel Schumacher,1999.0
+Mindhunters ,Renny Harlin,2004.0
+What Just Happened ,Barry Levinson,2008.0
+The Statement ,Norman Jewison,2003.0
+The Magic Flute ,Kenneth Branagh,2006.0
+Paul Blart: Mall Cop ,Steve Carr,2009.0
+Freaky Friday ,Mark Waters,2003.0
+The 40-Year-Old Virgin ,Judd Apatow,2005.0
+Shakespeare in Love ,John Madden,1998.0
+A Walk Among the Tombstones ,Scott Frank,2014.0
+Kindergarten Cop ,Ivan Reitman,1990.0
+Pineapple Express ,David Gordon Green,2008.0
+Ever After: A Cinderella Story ,Andy Tennant,1998.0
+Open Range ,Kevin Costner,2003.0
+Flatliners ,Joel Schumacher,1990.0
+It's Always Sunny in Philadelphia             ,,
+A Bridge Too Far ,Richard Attenborough,1977.0
+Red Eye ,Wes Craven,2005.0
+Final Destination 2 ,David R. Ellis,2003.0
+"O Brother, Where Art Thou? ",Joel Coen,2000.0
+Legion ,Scott Stewart,2010.0
+Pain & Gain ,Michael Bay,2013.0
+In Good Company ,Paul Weitz,2004.0
+Clockstoppers ,Jonathan Frakes,2002.0
+Silverado ,Lawrence Kasdan,1985.0
+Brothers ,Jim Sheridan,2009.0
+Agent Cody Banks 2: Destination London ,Kevin Allen,2004.0
+New Year's Eve ,Garry Marshall,2011.0
+Original Sin ,Michael Cristofer,2001.0
+The Raven ,James McTeigue,2012.0
+Welcome to Mooseport ,Donald Petrie,2004.0
+Highlander: The Final Dimension ,Andrew Morahan,1994.0
+Blood and Wine ,Bob Rafelson,1996.0
+Snow White: A Tale of Terror ,Michael Cohn,1997.0
+The Curse of the Jade Scorpion ,Woody Allen,2001.0
+Accidental Love ,David O. Russell,2015.0
+Flipper ,Alan Shapiro,1996.0
+Self/less ,Tarsem Singh,2015.0
+The Constant Gardener ,Fernando Meirelles,2005.0
+The Passion of the Christ ,Mel Gibson,2004.0
+Mrs. Doubtfire ,Chris Columbus,1993.0
+Rain Man ,Barry Levinson,1988.0
+Gran Torino ,Clint Eastwood,2008.0
+W. ,Oliver Stone,2008.0
+Taken ,Pierre Morel,2008.0
+The Best of Me ,Michael Hoffman,2014.0
+The Bodyguard ,Mick Jackson,1992.0
+Schindler's List ,Steven Spielberg,1993.0
+The Help ,Tate Taylor,2011.0
+The Fifth Estate ,Bill Condon,2013.0
+Scooby-Doo 2: Monsters Unleashed ,Raja Gosnell,2004.0
+Viy ,Oleg Stepchenko,2014.0
+Freddy vs. Jason ,Ronny Yu,2003.0
+The Face of an Angel ,Michael Winterbottom,2014.0
+Jimmy Neutron: Boy Genius ,John A. Davis,2001.0
+Cloverfield ,Matt Reeves,2008.0
+Teenage Mutant Ninja Turtles II: The Secret of the Ooze ,Michael Pressman,1991.0
+The Untouchables ,Brian De Palma,1987.0
+No Country for Old Men ,Ethan Coen,2007.0
+Ride Along ,Tim Story,2014.0
+Bridget Jones's Diary ,Sharon Maguire,2001.0
+Chocolat ,Lasse Hallström,2000.0
+"Legally Blonde 2: Red, White & Blonde ",Charles Herman-Wurmfeld,2003.0
+Parental Guidance ,Andy Fickman,2012.0
+No Strings Attached ,Ivan Reitman,2011.0
+Tombstone ,George P. Cosmatos,1993.0
+Romeo Must Die ,Andrzej Bartkowiak,2000.0
+The Omen ,Richard Donner,1976.0
+Final Destination 3 ,James Wong,2006.0
+The Lucky One ,Scott Hicks,2012.0
+Bridge to Terabithia ,Gabor Csupo,2007.0
+Finding Neverland ,Marc Forster,2004.0
+A Madea Christmas ,Tyler Perry,2013.0
+The Grey ,Joe Carnahan,2011.0
+Hide and Seek ,John Polson,2005.0
+Anchorman: The Legend of Ron Burgundy ,Adam McKay,2004.0
+Goodfellas ,Martin Scorsese,1990.0
+Agent Cody Banks ,Harald Zwart,2003.0
+Nanny McPhee ,Kirk Jones,2005.0
+Scarface ,Brian De Palma,1983.0
+Nothing to Lose ,Steve Oedekerk,1997.0
+The Last Emperor ,Bernardo Bertolucci,1987.0
+Contraband ,Baltasar Kormákur,2012.0
+Money Talks ,Brett Ratner,1997.0
+There Will Be Blood ,Paul Thomas Anderson,2007.0
+The Wild Thornberrys Movie ,Cathy Malkasian,2002.0
+Rugrats Go Wild ,John Eng,2003.0
+Undercover Brother ,Malcolm D. Lee,2002.0
+The Sisterhood of the Traveling Pants ,Ken Kwapis,2005.0
+Kiss of the Dragon ,Chris Nahon,2001.0
+The House Bunny ,Fred Wolf,2008.0
+Beauty Shop ,Bille Woodruff,2005.0
+Million Dollar Arm ,Craig Gillespie,2014.0
+The Giver ,Phillip Noyce,2014.0
+What a Girl Wants ,Dennie Gordon,2003.0
+Jeepers Creepers II ,Victor Salva,2003.0
+Good Luck Chuck ,Mark Helfrich,2007.0
+Cradle 2 the Grave ,Andrzej Bartkowiak,2003.0
+The Hours ,Stephen Daldry,2002.0
+She's the Man ,Andy Fickman,2006.0
+Mr. Bean's Holiday ,Steve Bendelack,2007.0
+Anacondas: The Hunt for the Blood Orchid ,Dwight H. Little,2004.0
+Blood Ties ,Guillaume Canet,2013.0
+August Rush ,Kirsten Sheridan,2007.0
+Elizabeth ,Shekhar Kapur,1998.0
+Bride of Chucky ,Ronny Yu,1998.0
+Tora! Tora! Tora! ,Richard Fleischer,1970.0
+Spice World ,Bob Spiers,1997.0
+The Sitter ,David Gordon Green,2011.0
+Dance Flick ,Damien Dante Wayans,2009.0
+The Shawshank Redemption ,Frank Darabont,1994.0
+Crocodile Dundee in Los Angeles ,Simon Wincer,2001.0
+Kingpin ,Bobby Farrelly,1996.0
+The Gambler ,Rupert Wyatt,2014.0
+August: Osage County ,John Wells,2013.0
+Ice Princess ,Tim Fywell,2005.0
+A Lot Like Love ,Nigel Cole,2005.0
+Eddie the Eagle ,Dexter Fletcher,2016.0
+He Got Game ,Spike Lee,1998.0
+Don Juan DeMarco ,Jeremy Leven,1994.0
+Shaun the Sheep             ,,
+Dear John ,Lasse Hallström,2010.0
+The Losers ,Sylvain White,2010.0
+Don't Be Afraid of the Dark ,Troy Nixey,2010.0
+War ,Philip G. Atwell,2007.0
+Punch-Drunk Love ,Paul Thomas Anderson,2002.0
+EuroTrip ,Jeff Schaffer,2004.0
+Half Past Dead ,Don Michael Paul,2002.0
+Unaccompanied Minors ,Paul Feig,2006.0
+"Bright Lights, Big City ",James Bridges,1988.0
+The Adventures of Pinocchio ,Steve Barron,1996.0
+The Greatest Game Ever Played ,Bill Paxton,2005.0
+The Box ,Richard Kelly,2009.0
+The Ruins ,Carter Smith,2008.0
+The Next Best Thing ,John Schlesinger,2000.0
+My Soul to Take ,Wes Craven,2010.0
+The Girl Next Door ,Luke Greenfield,2004.0
+Maximum Risk ,Ringo Lam,1996.0
+Stealing Harvard ,Bruce McCulloch,2002.0
+Legend ,Brian Helgeland,2015.0
+Hot Rod ,Akiva Schaffer,2007.0
+Shark Night 3D ,David R. Ellis,2011.0
+Angela's Ashes ,Alan Parker,1999.0
+Draft Day ,Ivan Reitman,2014.0
+Lifeforce ,Tobe Hooper,1985.0
+The Powerpuff Girls             ,,
+The Conspirator ,Robert Redford,2010.0
+Lords of Dogtown ,Catherine Hardwicke,2005.0
+The 33 ,Patricia Riggen,2015.0
+Big Trouble in Little China ,John Carpenter,1986.0
+A Perfect Plan ,Pascal Chaumeil,2012.0
+Warrior ,Gavin O'Connor,2011.0
+Michael Collins ,Neil Jordan,1996.0
+Gettysburg ,Ron Maxwell,1993.0
+Stop-Loss ,Kimberly Peirce,2008.0
+Abandon ,Stephen Gaghan,2002.0
+Brokedown Palace ,Jonathan Kaplan,1999.0
+The Possession ,Ole Bornedal,2012.0
+Mrs. Winterbourne ,Richard Benjamin,1996.0
+Straw Dogs ,Rod Lurie,2011.0
+The Hoax ,Lasse Hallström,2006.0
+Stone Cold ,Craig R. Baxley,1991.0
+The Road ,John Hillcoat,2009.0
+Sheena ,John Guillermin,1984.0
+Underclassman ,Marcos Siega,2005.0
+Say It Isn't So ,J.B. Rogers,2001.0
+The World's Fastest Indian ,Roger Donaldson,2005.0
+Snakes on a Plane ,David R. Ellis,2006.0
+Tank Girl ,Rachel Talalay,1995.0
+King's Ransom ,Jeffrey W. Byrd,2005.0
+Blindness ,Fernando Meirelles,2008.0
+BloodRayne ,Uwe Boll,2005.0
+Carnage ,Roman Polanski,2011.0
+Where the Truth Lies ,Atom Egoyan,2005.0
+Cirque du Soleil: Worlds Away ,Andrew Adamson,2012.0
+Without Limits ,Robert Towne,1998.0
+Me and Orson Welles ,Richard Linklater,2008.0
+The Best Offer ,Giuseppe Tornatore,2013.0
+Bad Lieutenant: Port of Call New Orleans ,Werner Herzog,2009.0
+A Turtle's Tale: Sammy's Adventures ,Ben Stassen,2010.0
+Little White Lies ,Guillaume Canet,2010.0
+Love Ranch ,Taylor Hackford,2010.0
+The True Story of Puss'N Boots ,Jérôme Deschamps,2009.0
+Space Dogs ,Inna Evlannikova,2010.0
+The Counselor ,Ridley Scott,2013.0
+Ironclad ,Jonathan English,2011.0
+Waterloo ,Sergey Bondarchuk,1970.0
+Kung Fu Killer ,Teddy Chan,2014.0
+Red Sky ,Mario Van Peebles,2014.0
+Dangerous Liaisons ,Stephen Frears,1988.0
+On the Road ,Walter Salles,2012.0
+Star Trek IV: The Voyage Home ,Leonard Nimoy,1986.0
+Rocky Balboa ,Sylvester Stallone,2006.0
+Point Break ,Ericson Core,2015.0
+Scream 2 ,Wes Craven,1997.0
+Jane Got a Gun ,Gavin O'Connor,2016.0
+Think Like a Man Too ,Tim Story,2014.0
+The Whole Nine Yards ,Jonathan Lynn,2000.0
+Footloose ,Herbert Ross,1984.0
+Old School ,Todd Phillips,2003.0
+The Fisher King ,Terry Gilliam,1991.0
+I Still Know What You Did Last Summer ,Danny Cannon,1998.0
+Return to Me ,Bonnie Hunt,2000.0
+Zack and Miri Make a Porno ,Kevin Smith,2008.0
+Nurse Betty ,Neil LaBute,2000.0
+The Men Who Stare at Goats ,Grant Heslov,2009.0
+Double Take ,George Gallo,2001.0
+"Girl, Interrupted ",James Mangold,1999.0
+Win a Date with Tad Hamilton! ,Robert Luketic,2004.0
+Muppets from Space ,Tim Hill,1999.0
+The Wiz ,Sidney Lumet,1978.0
+Ready to Rumble ,Brian Robbins,2000.0
+Play It to the Bone ,Ron Shelton,1999.0
+I Don't Know How She Does It ,Douglas McGrath,2011.0
+Piranha 3D ,Alexandre Aja,2010.0
+Beyond the Sea ,Kevin Spacey,2004.0
+Meet the Deedles ,Steve Boyum,1998.0
+The Princess and the Cobbler ,Richard Williams,1993.0
+The Bridge of San Luis Rey ,Mary McGuckian,2004.0
+Faster ,George Tillman Jr.,2010.0
+Howl's Moving Castle ,Hayao Miyazaki,2004.0
+Zombieland ,Ruben Fleischer,2009.0
+King Kong ,Peter Jackson,2005.0
+The Waterboy ,Frank Coraci,1998.0
+Star Wars: Episode V - The Empire Strikes Back ,Irvin Kershner,1980.0
+Bad Boys ,Michael Bay,1995.0
+The Naked Gun 2½: The Smell of Fear ,David Zucker,1991.0
+Final Destination ,James Wong,2000.0
+The Ides of March ,George Clooney,2011.0
+Pitch Black ,David Twohy,2000.0
+Someone Like You... ,Tony Goldwyn,2001.0
+Her ,Spike Jonze,2013.0
+Eddie the Eagle ,Dexter Fletcher,2016.0
+Joy Ride ,John Dahl,2001.0
+The Adventurer: The Curse of the Midas Box ,Jonathan Newman,2013.0
+Anywhere But Here ,Wayne Wang,1999.0
+Chasing Liberty ,Andy Cadiff,2004.0
+The Crew ,Michael Dinner,2000.0
+Haywire ,Steven Soderbergh,2011.0
+Jaws: The Revenge ,Joseph Sargent,1987.0
+Marvin's Room ,Jerry Zaks,1996.0
+The Longshots ,Fred Durst,2008.0
+The End of the Affair ,Neil Jordan,1999.0
+Harley Davidson and the Marlboro Man ,Simon Wincer,1991.0
+In the Valley of Elah ,Paul Haggis,2007.0
+Coco Before Chanel ,Anne Fontaine,2009.0
+Forsaken ,Jon Cassar,2015.0
+Chéri ,Stephen Frears,2009.0
+Rogue             ,,
+Vanity Fair ,Mira Nair,2004.0
+Bodyguards and Assassins ,Teddy Chan,2009.0
+1408 ,Mikael Håfström,2007.0
+Spaceballs ,Mel Brooks,1987.0
+The Water Diviner ,Russell Crowe,2014.0
+Ghost ,Jerry Zucker,1990.0
+There's Something About Mary ,Bobby Farrelly,1998.0
+The Santa Clause ,John Pasquin,1994.0
+The Rookie ,John Lee Hancock,2002.0
+The Game Plan ,Andy Fickman,2007.0
+The Bridges of Madison County ,Clint Eastwood,1995.0
+The Animal ,Luke Greenfield,2001.0
+Gandhi ,Richard Attenborough,1982.0
+The Hundred-Foot Journey ,Lasse Hallström,2014.0
+The Net ,Irwin Winkler,1995.0
+I Am Sam ,Jessie Nelson,2001.0
+Son of God ,Christopher Spencer,2014.0
+Underworld ,Len Wiseman,2003.0
+Derailed ,Mikael Håfström,2005.0
+The Informant! ,Steven Soderbergh,2009.0
+Shadowlands ,Richard Attenborough,1993.0
+Deuce Bigalow: European Gigolo ,Mike Bigelow,2005.0
+Delivery Man ,Ken Scott,2013.0
+Victor Frankenstein ,Paul McGuigan,2015.0
+Our Kind of Traitor ,Susanna White,2016.0
+Saving Silverman ,Dennis Dugan,2001.0
+Diary of a Wimpy Kid: Dog Days ,David Bowers,2012.0
+Summer of Sam ,Spike Lee,1999.0
+Jay and Silent Bob Strike Back ,Kevin Smith,2001.0
+The Island ,Michael Bay,2005.0
+The Glass House ,Daniel Sackheim,2001.0
+"Hail, Caesar! ",Ethan Coen,2016.0
+Josie and the Pussycats ,Harry Elfont,2001.0
+Homefront ,Gary Fleder,2013.0
+The Little Vampire ,Uli Edel,2000.0
+I Heart Huckabees ,David O. Russell,2004.0
+RoboCop 3 ,Fred Dekker,1993.0
+Megiddo: The Omega Code 2 ,Brian Trenchard-Smith,2001.0
+Darling Lili ,Blake Edwards,1970.0
+Dudley Do-Right ,Hugh Wilson,1999.0
+The Transporter Refueled ,Camille Delamarre,2015.0
+The Libertine ,Laurence Dunmore,2004.0
+Black Book ,Paul Verhoeven,2006.0
+Joyeux Noel ,Christian Carion,2005.0
+Hit and Run ,David Palmer,2012.0
+Mad Money ,Callie Khouri,2008.0
+Before I Go to Sleep ,Rowan Joffe,2014.0
+Sorcerer ,William Friedkin,1977.0
+Stone ,John Curran,2010.0
+Molière ,Laurent Tirard,2007.0
+Out of the Furnace ,Scott Cooper,2013.0
+Michael Clayton ,Tony Gilroy,2007.0
+My Fellow Americans ,Peter Segal,1996.0
+Arlington Road ,Mark Pellington,1999.0
+Underdogs ,Juan José Campanella,2013.0
+To Rome with Love ,Woody Allen,2012.0
+Firefox ,Clint Eastwood,1982.0
+South Park: Bigger Longer & Uncut ,Trey Parker,1999.0
+Death at a Funeral ,Frank Oz,2007.0
+Teenage Mutant Ninja Turtles III ,Stuart Gillard,1993.0
+Hardball ,Brian Robbins,2001.0
+Silver Linings Playbook ,David O. Russell,2012.0
+Freedom Writers ,Richard LaGravenese,2007.0
+For Colored Girls ,Tyler Perry,2010.0
+The Transporter ,Louis Leterrier,2002.0
+Never Back Down ,Jeff Wadlow,2008.0
+The Rage: Carrie 2 ,Katt Shea,1999.0
+The Bachelor             ,,
+Away We Go ,Sam Mendes,2009.0
+Swing Vote ,Joshua Michael Stern,2008.0
+Moonlight Mile ,Brad Silberling,2002.0
+Tinker Tailor Soldier Spy ,Tomas Alfredson,2011.0
+Molly ,John Duigan,1999.0
+The Beaver ,Jodie Foster,2011.0
+The Best Little Whorehouse in Texas ,Colin Higgins,1982.0
+eXistenZ ,David Cronenberg,1999.0
+Raiders of the Lost Ark ,Steven Spielberg,1981.0
+Home Alone 2: Lost in New York ,Chris Columbus,1992.0
+Close Encounters of the Third Kind ,Steven Spielberg,1977.0
+Pulse ,Jim Sonzero,2006.0
+Beverly Hills Cop II ,Tony Scott,1987.0
+Bringing Down the House ,Adam Shankman,2003.0
+The Silence of the Lambs ,Jonathan Demme,1991.0
+Wayne's World ,Penelope Spheeris,1992.0
+Jackass 3D ,Jeff Tremaine,2010.0
+Jaws 2 ,Jeannot Szwarc,1978.0
+Beverly Hills Chihuahua ,Raja Gosnell,2008.0
+The Conjuring ,James Wan,2013.0
+Are We There Yet? ,Brian Levant,2005.0
+Tammy ,Ben Falcone,2014.0
+Disturbia ,D.J. Caruso,2007.0
+School of Rock ,Richard Linklater,2003.0
+Mortal Kombat ,Paul W.S. Anderson,1995.0
+Wicker Park ,Paul McGuigan,2004.0
+White Chicks ,Keenen Ivory Wayans,2004.0
+The Descendants ,Alexander Payne,2011.0
+Holes ,Andrew Davis,2003.0
+The Last Song ,Julie Anne Robinson,2010.0
+12 Years a Slave ,Steve McQueen,2013.0
+Drumline ,Charles Stone III,2002.0
+Why Did I Get Married Too? ,Tyler Perry,2010.0
+Edward Scissorhands ,Tim Burton,1990.0
+Me Before You ,Thea Sharrock,2016.0
+Madea's Witness Protection ,Tyler Perry,2012.0
+The French Connection ,William Friedkin,1971.0
+Bad Moms ,Jon Lucas,2016.0
+Date Movie ,Aaron Seltzer,2006.0
+Return to Never Land ,Robin Budd,2002.0
+Selma ,Ava DuVernay,2014.0
+The Jungle Book 2 ,Steve Trenbirth,2003.0
+Boogeyman ,Stephen Kay,2005.0
+Premonition ,Mennan Yapo,2007.0
+The Tigger Movie ,Jun Falkenstein,2000.0
+Orphan ,Jaume Collet-Serra,2009.0
+Max ,Boaz Yakin,2015.0
+Meet the Browns             ,,
+Epic Movie ,Jason Friedberg,2007.0
+Conan the Barbarian ,John Milius,1982.0
+Spotlight ,Tom McCarthy,2015.0
+Lakeview Terrace ,Neil LaBute,2008.0
+The Grudge 2 ,Takashi Shimizu,2006.0
+How Stella Got Her Groove Back ,Kevin Rodney Sullivan,1998.0
+Bill & Ted's Bogus Journey ,Peter Hewitt,1991.0
+Man of the Year ,Barry Levinson,2006.0
+The Black Hole ,Gary Nelson,1979.0
+The American ,Anton Corbijn,2010.0
+Selena ,Gregory Nava,1997.0
+Vampires Suck ,Jason Friedberg,2010.0
+Babel ,Alejandro G. Iñárritu,2006.0
+This Is Where I Leave You ,Shawn Levy,2014.0
+Doubt ,John Patrick Shanley,2008.0
+Team America: World Police ,Trey Parker,2004.0
+Texas Chainsaw 3D ,John Luessenhop,2013.0
+Copycat ,Jon Amiel,1995.0
+Scary Movie 5 ,Malcolm D. Lee,2013.0
+Paint Your Wagon ,Joshua Logan,1969.0
+Milk ,Gus Van Sant,2008.0
+Risen ,Kevin Reynolds,2016.0
+Ghost Ship ,Steve Beck,2002.0
+A Very Harold & Kumar 3D Christmas ,Todd Strauss-Schulson,2011.0
+Wild Things ,John McNaughton,1998.0
+The Stepfather ,Nelson McCormick,2009.0
+The Debt ,John Madden,2010.0
+High Fidelity ,Stephen Frears,2000.0
+One Missed Call ,Eric Valette,2008.0
+Eye for an Eye ,John Schlesinger,1996.0
+The Bank Job ,Roger Donaldson,2008.0
+Eternal Sunshine of the Spotless Mind ,Michel Gondry,2004.0
+You Again ,Andy Fickman,2010.0
+Street Kings ,David Ayer,2008.0
+The World's End ,Edgar Wright,2013.0
+Nancy Drew ,Andrew Fleming,2007.0
+Daybreakers ,Michael Spierig,2009.0
+She's Out of My League ,Jim Field Smith,2010.0
+Monte Carlo ,Thomas Bezucha,2011.0
+Stay Alive ,William Brent Bell,2006.0
+Quigley Down Under ,Simon Wincer,1990.0
+Alpha and Omega ,Anthony Bell,2010.0
+The Covenant ,Renny Harlin,2006.0
+Stick It ,Jessica Bendinger,2006.0
+Shorts ,Robert Rodriguez,2009.0
+To Die For ,Gus Van Sant,1995.0
+Nerve ,Henry Joost,2016.0
+Appaloosa ,Ed Harris,2008.0
+Vampires ,John Carpenter,1998.0
+Yu-Gi-Oh! Duel Monsters             ,,
+Psycho ,Alfred Hitchcock,1960.0
+My Best Friend's Girl ,Howard Deutch,2008.0
+Endless Love ,Shana Feste,2014.0
+Georgia Rule ,Garry Marshall,2007.0
+Under the Rainbow ,Steve Rash,1981.0
+Ladyhawke ,Richard Donner,1985.0
+Simon Birch ,Mark Steven Johnson,1998.0
+Reign Over Me ,Mike Binder,2007.0
+Into the Wild ,Sean Penn,2007.0
+School for Scoundrels ,Todd Phillips,2006.0
+Silent Hill: Revelation 3D ,Michael J. Bassett,2012.0
+From Dusk Till Dawn ,Robert Rodriguez,1996.0
+Pooh's Heffalump Movie ,Frank Nissen,2005.0
+Home for the Holidays ,Jodie Foster,1995.0
+Kung Fu Hustle ,Stephen Chow,2004.0
+Fired Up             ,,
+The Country Bears ,Peter Hastings,2002.0
+The Kite Runner ,Marc Forster,2007.0
+21 Grams ,Alejandro G. Iñárritu,2003.0
+Paparazzi ,Paul Abascal,2004.0
+Twilight ,Catherine Hardwicke,2008.0
+A Guy Thing ,Chris Koch,2003.0
+Loser ,Amy Heckerling,2000.0
+Capitalism: A Love Story ,Michael Moore,2009.0
+The Greatest Story Ever Told ,George Stevens,1965.0
+Secret in Their Eyes ,Billy Ray,2015.0
+Disaster Movie ,Jason Friedberg,2008.0
+Armored ,Nimród Antal,2009.0
+The Man Who Knew Too Little ,Jon Amiel,1997.0
+What's Your Number? ,Mark Mylod,2011.0
+Lockout ,James Mather,2012.0
+Envy ,Barry Levinson,2004.0
+Crank: High Voltage ,Mark Neveldine,2009.0
+Bullets Over Broadway ,Woody Allen,1994.0
+One Night with the King ,Michael O. Sajbel,2006.0
+The Quiet American ,Phillip Noyce,2002.0
+The Weather Man ,Gore Verbinski,2005.0
+Undisputed ,Walter Hill,2002.0
+Ghost Town ,David Koepp,2008.0
+12 Rounds ,Renny Harlin,2009.0
+Let Me In ,Matt Reeves,2010.0
+3 Ninjas Kick Back ,Charles T. Kanganis,1994.0
+Be Kind Rewind ,Michel Gondry,2008.0
+Mrs Henderson Presents ,Stephen Frears,2005.0
+Triple 9 ,John Hillcoat,2016.0
+Deconstructing Harry ,Woody Allen,1997.0
+Three to Tango ,Damon Santostefano,1999.0
+Burnt ,John Wells,2015.0
+We're No Angels ,Neil Jordan,1989.0
+Everyone Says I Love You ,Woody Allen,1996.0
+Death at a Funeral ,Frank Oz,2007.0
+Death Sentence ,James Wan,2007.0
+Everybody's Fine ,Kirk Jones,2009.0
+Superbabies: Baby Geniuses 2 ,Bob Clark,2004.0
+The Man ,Les Mayfield,2005.0
+Code Name: The Cleaner ,Les Mayfield,2007.0
+Connie and Carla ,Michael Lembeck,2004.0
+Sweet Charity ,Bob Fosse,1969.0
+Inherent Vice ,Paul Thomas Anderson,2014.0
+Doogal ,Dave Borthwick,2006.0
+Battle of the Year ,Benson Lee,2013.0
+Perception             ,,
+An American Carol ,David Zucker,2008.0
+Machete Kills ,Robert Rodriguez,2013.0
+Willard ,Glen Morgan,2003.0
+Strange Wilderness ,Fred Wolf,2008.0
+Topsy-Turvy ,Mike Leigh,1999.0
+Little Boy ,Alejandro Monteverde,2015.0
+A Dangerous Method ,David Cronenberg,2011.0
+A Scanner Darkly ,Richard Linklater,2006.0
+Chasing Mavericks ,Michael Apted,2012.0
+Alone in the Dark ,Uwe Boll,2005.0
+Bandslam ,Todd Graff,2009.0
+Birth ,Jonathan Glazer,2004.0
+A Most Violent Year ,J.C. Chandor,2014.0
+Passchendaele ,Paul Gross,2008.0
+Flash of Genius ,Marc Abraham,2008.0
+I'm Not There. ,Todd Haynes,2007.0
+The Cold Light of Day ,Mabrouk El Mechri,2012.0
+The Brothers Bloom ,Rian Johnson,2008.0
+"Synecdoche, New York ",Charlie Kaufman,2008.0
+Princess Mononoke ,Hayao Miyazaki,1997.0
+Bon voyage ,Jean-Paul Rappeneau,2003.0
+Can't Stop the Music ,Nancy Walker,1980.0
+The Proposition ,John Hillcoat,2005.0
+Courage ,Angelo Pizzo,2015.0
+Marci X ,Richard Benjamin,2003.0
+Equilibrium ,Kurt Wimmer,2002.0
+The Children of Huang Shi ,Roger Spottiswoode,2008.0
+The Yards ,James Gray,2000.0
+The Oogieloves in the Big Balloon Adventure ,Matthew Diamond,2012.0
+By the Sea ,Angelina Jolie Pitt,2015.0
+Steamboy ,Katsuhiro Ôtomo,2004.0
+The Game of Their Lives ,David Anspaugh,2005.0
+All Good Things ,Andrew Jarecki,2010.0
+Rapa Nui ,Kevin Reynolds,1994.0
+CJ7 ,Stephen Chow,2008.0
+Les couloirs du temps: Les visiteurs II ,Jean-Marie Poiré,1998.0
+Dylan Dog: Dead of Night ,Kevin Munroe,2010.0
+People I Know ,Daniel Algrant,2002.0
+The Doombolt Chase             ,,
+The Tempest ,Julie Taymor,2010.0
+Regression ,Alejandro Amenábar,2015.0
+The Touch ,Jane Clark,2007.0
+Three Kingdoms: Resurrection of the Dragon ,Daniel Lee,2008.0
+Shattered ,Mike Barker,2007.0
+Zambezia ,Wayne Thornley,2012.0
+Ramanujan ,Gnana Rajasekaran,2014.0
+Dwegons and Leprechauns ,Tom Walsh,2014.0
+Hands of Stone ,Jonathan Jakubowicz,2016.0
+Survivor ,James McTeigue,2015.0
+The Frozen Ground ,Scott Walker,2013.0
+The Painted Veil ,John Curran,2006.0
+The Baader Meinhof Complex ,Uli Edel,2008.0
+Dances with Wolves ,Kevin Costner,1990.0
+Bad Teacher ,Jake Kasdan,2011.0
+Sea of Love ,Harold Becker,1989.0
+A Cinderella Story ,Mark Rosman,2004.0
+Scream ,Wes Craven,1996.0
+Thir13en Ghosts ,Steve Beck,2001.0
+The Shining ,Stanley Kubrick,1980.0
+Back to the Future ,Robert Zemeckis,1985.0
+House on Haunted Hill ,William Malone,1999.0
+I Can Do Bad All by Myself ,Tyler Perry,2009.0
+Fight Valley ,Rob Hawk,2016.0
+The Switch ,Josh Gordon,2010.0
+Just Married ,Shawn Levy,2003.0
+The Devil's Double ,Lee Tamahori,2011.0
+"Gone, Baby, Gone             ",,
+Thomas and the Magic Railroad ,Britt Allcroft,2000.0
+The Crazies ,Breck Eisner,2010.0
+Spirited Away ,Hayao Miyazaki,2001.0
+Firestorm ,Alan Yuen,2013.0
+The Bounty ,Roger Donaldson,1984.0
+The Book Thief ,Brian Percival,2013.0
+Sex Drive ,Sean Anders,2008.0
+Leap Year ,Anand Tucker,2010.0
+The Fall of the Roman Empire ,Anthony Mann,1964.0
+Take Me Home Tonight ,Michael Dowse,2011.0
+Won't Back Down ,Daniel Barnz,2012.0
+The Nutcracker ,Emile Ardolino,1993.0
+Kansas City ,Robert Altman,1996.0
+Indignation ,James Schamus,2016.0
+The Amityville Horror ,Andrew Douglas,2005.0
+Adaptation. ,Spike Jonze,2002.0
+Land of the Dead ,George A. Romero,2005.0
+Out of Inferno ,Danny Pang,2013.0
+Fear and Loathing in Las Vegas ,Terry Gilliam,1998.0
+The Invention of Lying ,Ricky Gervais,2009.0
+Neighbors ,Nicholas Stoller,2014.0
+The Mask ,Chuck Russell,1994.0
+Big ,Penny Marshall,1988.0
+Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan ,Larry Charles,2006.0
+Legally Blonde ,Robert Luketic,2001.0
+Star Trek III: The Search for Spock ,Leonard Nimoy,1984.0
+The Exorcism of Emily Rose ,Scott Derrickson,2005.0
+Deuce Bigalow: Male Gigolo ,Mike Mitchell,1999.0
+Left Behind ,Vic Armstrong,2014.0
+The Family Stone ,Thomas Bezucha,2005.0
+Barbershop 2: Back in Business ,Kevin Rodney Sullivan,2004.0
+Bad Santa ,Terry Zwigoff,2003.0
+Austin Powers: International Man of Mystery ,Jay Roach,1997.0
+My Big Fat Greek Wedding 2 ,Kirk Jones,2016.0
+Diary of a Wimpy Kid: Rodrick Rules ,David Bowers,2011.0
+Predator ,John McTiernan,1987.0
+Amadeus ,Milos Forman,1984.0
+Prom Night ,Nelson McCormick,2008.0
+Mean Girls ,Mark Waters,2004.0
+Under the Tuscan Sun ,Audrey Wells,2003.0
+Gosford Park ,Robert Altman,2001.0
+The O.C.             ,,
+Peggy Sue Got Married ,Francis Ford Coppola,1986.0
+Birdman or (The Unexpected Virtue of Ignorance) ,Alejandro G. Iñárritu,2014.0
+Blue Jasmine ,Woody Allen,2013.0
+United 93 ,Paul Greengrass,2006.0
+Honey ,Bille Woodruff,2003.0
+Glory ,Edward Zwick,1989.0
+Spy Hard ,Rick Friedberg,1996.0
+The Fog ,John Carpenter,1980.0
+Soul Surfer ,Sean McNamara,2011.0
+Catch-22 ,Mike Nichols,1970.0
+Observe and Report ,Jody Hill,2009.0
+Conan the Destroyer ,Richard Fleischer,1984.0
+Raging Bull ,Martin Scorsese,1980.0
+Love Happens ,Brandon Camp,2009.0
+Young Sherlock Holmes ,Barry Levinson,1985.0
+Fame ,Kevin Tancharoen,2009.0
+127 Hours ,Danny Boyle,2010.0
+Small Time Crooks ,Woody Allen,2000.0
+Center Stage ,Nicholas Hytner,2000.0
+Love the Coopers ,Jessie Nelson,2015.0
+Catch That Kid ,Bart Freundlich,2004.0
+Life as a House ,Irwin Winkler,2001.0
+Steve Jobs ,Danny Boyle,2015.0
+"I Love You, Beth Cooper ",Chris Columbus,2009.0
+Youth in Revolt ,Miguel Arteta,2009.0
+The Legend of the Lone Ranger ,William A. Fraker,1981.0
+The Tailor of Panama ,John Boorman,2001.0
+Blow Out ,Brian De Palma,1981.0
+Getaway ,Courtney Solomon,2013.0
+The Ice Storm ,Ang Lee,1997.0
+And So It Goes ,Rob Reiner,2014.0
+Troop Beverly Hills ,Jeff Kanew,1989.0
+Being Julia ,István Szabó,2004.0
+9½ Weeks ,Adrian Lyne,1986.0
+Dragonslayer ,Matthew Robbins,1981.0
+The Last Station ,Michael Hoffman,2009.0
+Ed Wood ,Tim Burton,1994.0
+Labor Day ,Jason Reitman,2013.0
+Mongol: The Rise of Genghis Khan ,Sergey Bodrov,2007.0
+RocknRolla ,Guy Ritchie,2008.0
+Megaforce ,Hal Needham,1982.0
+Hamlet ,Kenneth Branagh,1996.0
+Mao's Last Dancer ,Bruce Beresford,2009.0
+Midnight Special ,Jeff Nichols,2016.0
+Anything Else ,Woody Allen,2003.0
+The Railway Man ,Jonathan Teplitzky,2013.0
+Unforgettable             ,,
+The White Ribbon ,Michael Haneke,2009.0
+Restoration ,Zack Ward,2016.0
+The Wraith ,Mike Marvin,1986.0
+The Salton Sea ,D.J. Caruso,2002.0
+Metallica Through the Never ,Nimród Antal,2013.0
+The Informers ,Gregor Jordan,2008.0
+Carlos             ,,
+I Come with the Rain ,Tran Anh Hung,2009.0
+One Man's Hero ,Lance Hool,1999.0
+Day of the Dead ,George A. Romero,1985.0
+I Am Wrath ,Chuck Russell,2016.0
+Renaissance ,Christian Volckman,2006.0
+Forsaken ,Jon Cassar,2015.0
+Red Sonja ,Richard Fleischer,1985.0
+Red Lights ,Rodrigo Cortés,2012.0
+Superbad ,Greg Mottola,2007.0
+Madea Goes to Jail ,Tyler Perry,2009.0
+Wolves ,David Hayter,2014.0
+Step Up 2: The Streets ,Jon M. Chu,2008.0
+Hoodwinked! ,Cory Edwards,2005.0
+Hotel Rwanda ,Terry George,2004.0
+Hitman ,Xavier Gens,2007.0
+Black Nativity ,Kasi Lemmons,2013.0
+The Prince ,Brian A Miller,2014.0
+City of Ghosts ,Matt Dillon,2002.0
+The Others ,Alejandro Amenábar,2001.0
+Aliens ,James Cameron,1986.0
+My Fair Lady ,George Cukor,1964.0
+I Know What You Did Last Summer ,Jim Gillespie,1997.0
+Let's Be Cops ,Luke Greenfield,2014.0
+Sideways ,Alexander Payne,2004.0
+Beerfest ,Jay Chandrasekhar,2006.0
+Halloween ,John Carpenter,1978.0
+Hero ,Yimou Zhang,2002.0
+Good Boy! ,John Hoffman,2003.0
+The Best Man Holiday ,Malcolm D. Lee,2013.0
+Smokin' Aces ,Joe Carnahan,2006.0
+Saw 3D: The Final Chapter ,Kevin Greutert,2010.0
+40 Days and 40 Nights ,Michael Lehmann,2002.0
+TRON: Legacy ,Joseph Kosinski,2010.0
+A Night at the Roxbury ,John Fortenberry,1998.0
+Beastly ,Daniel Barnz,2011.0
+The Hills Have Eyes ,Alexandre Aja,2006.0
+Dickie Roberts: Former Child Star ,Sam Weisman,2003.0
+"McFarland, USA ",Niki Caro,2015.0
+Lottery Ticket ,Erik White,2010.0
+ATL ,Chris Robinson,2006.0
+Pitch Perfect ,Jason Moore,2012.0
+Summer Catch ,Michael Tollin,2001.0
+A Simple Plan ,Sam Raimi,1998.0
+They ,Robert Harmon,2002.0
+Larry the Cable Guy: Health Inspector ,Trent Cooper,2006.0
+The Adventures of Elmo in Grouchland ,Gary Halvorson,1999.0
+Brooklyn's Finest ,Antoine Fuqua,2009.0
+55 Days at Peking ,Nicholas Ray,1963.0
+Evil Dead ,Fede Alvarez,2013.0
+My Life in Ruins ,Donald Petrie,2009.0
+American Dreamz ,Paul Weitz,2006.0
+Superman IV: The Quest for Peace ,Sidney J. Furie,1987.0
+How She Move ,Ian Iqbal Rashid,2007.0
+Running Scared ,Wayne Kramer,2006.0
+Bobby Jones: Stroke of Genius ,Rowdy Herrington,2004.0
+Shanghai Surprise ,Jim Goddard,1986.0
+The Illusionist ,Neil Burger,2006.0
+Roar ,Noel Marshall,1981.0
+Veronica Guerin ,Joel Schumacher,2003.0
+Escobar: Paradise Lost ,Andrea Di Stefano,2014.0
+Southland Tales ,Richard Kelly,2006.0
+Dragon Hunters ,Guillaume Ivernel,2008.0
+Damnation Alley ,Jack Smight,1977.0
+The Apparition ,Todd Lincoln,2012.0
+My Girl ,Howard Zieff,1991.0
+Fur: An Imaginary Portrait of Diane Arbus ,Steven Shainberg,2006.0
+The Illusionist ,Neil Burger,2006.0
+Wall Street ,Oliver Stone,1987.0
+Sense and Sensibility ,Ang Lee,1995.0
+Becoming Jane ,Julian Jarrold,2007.0
+Sydney White ,Joe Nussbaum,2007.0
+House of Sand and Fog ,Vadim Perelman,2003.0
+Dead Poets Society ,Peter Weir,1989.0
+Dumb & Dumber ,Peter Farrelly,1994.0
+When Harry Met Sally... ,Rob Reiner,1989.0
+The Verdict ,Sidney Lumet,1982.0
+Road Trip ,Todd Phillips,2000.0
+Varsity Blues ,Brian Robbins,1999.0
+The Artist ,Michel Hazanavicius,2011.0
+The Unborn ,David S. Goyer,2009.0
+Moonrise Kingdom ,Wes Anderson,2012.0
+The Texas Chainsaw Massacre: The Beginning ,Jonathan Liebesman,2006.0
+The Young Messiah ,Cyrus Nowrasteh,2016.0
+The Master of Disguise ,Perry Andelin Blake,2002.0
+Pan's Labyrinth ,Guillermo del Toro,2006.0
+The Messengers             ,,
+See Spot Run ,John Whitesell,2001.0
+Baby Boy ,John Singleton,2001.0
+The Roommate ,Christian E. Christiansen,2011.0
+Joe Dirt ,Dennie Gordon,2001.0
+Double Impact ,Sheldon Lettich,1991.0
+Hot Fuzz ,Edgar Wright,2007.0
+The Women ,Diane English,2008.0
+Vicky Cristina Barcelona ,Woody Allen,2008.0
+Arn: The Knight Templar ,Peter Flinth,2007.0
+Bad Moms ,Jon Lucas,2016.0
+Boys and Girls ,Robert Iscove,2000.0
+White Oleander ,Peter Kosminsky,2002.0
+Jennifer's Body ,Karyn Kusama,2009.0
+Drowning Mona ,Nick Gomez,2000.0
+Radio Days ,Woody Allen,1987.0
+Left Behind ,Vic Armstrong,2014.0
+Remember Me ,Allen Coulter,2010.0
+How to Deal ,Clare Kilner,2003.0
+My Stepmother Is an Alien ,Richard Benjamin,1988.0
+Philadelphia ,Jonathan Demme,1993.0
+The Thirteenth Floor ,Josef Rusnak,1999.0
+The Cookout ,Lance Rivera,2004.0
+Meteor ,Ronald Neame,1979.0
+Duets ,Bruce Paltrow,2000.0
+Hollywood Ending ,Woody Allen,2002.0
+Detroit Rock City ,Adam Rifkin,1999.0
+Highlander ,Russell Mulcahy,1986.0
+Things We Lost in the Fire ,Susanne Bier,2007.0
+Steel ,Kenneth Johnson,1997.0
+The Immigrant ,James Gray,2013.0
+The White Countess ,James Ivory,2005.0
+Trance ,Danny Boyle,2013.0
+Soul Plane ,Jessy Terrero,2004.0
+Welcome to the Sticks ,Dany Boon,2008.0
+Good ,Vicente Amorim,2008.0
+Enter the Void ,Gaspar Noé,2009.0
+Vamps ,Amy Heckerling,2012.0
+Hachi: A Dog's Tale ,Lasse Hallström,2009.0
+Zulu ,Jérôme Salle,2013.0
+The Homesman ,Tommy Lee Jones,2014.0
+Juwanna Mann ,Jesse Vaughan,2002.0
+Lilyhammer             ,,
+Ararat ,Atom Egoyan,2002.0
+Madison ,William Bindley,2001.0
+Slow Burn ,Wayne Beach,2005.0
+Wasabi ,Gérard Krawczyk,2001.0
+Slither ,James Gunn,2006.0
+Beverly Hills Cop ,Martin Brest,1984.0
+Home Alone ,Chris Columbus,1990.0
+3 Men and a Baby ,Leonard Nimoy,1987.0
+Tootsie ,Sydney Pollack,1982.0
+Top Gun ,Tony Scott,1986.0
+"Crouching Tiger, Hidden Dragon ",Ang Lee,2000.0
+American Beauty ,Sam Mendes,1999.0
+The King's Speech ,Tom Hooper,2010.0
+Twins ,Ivan Reitman,1988.0
+Scream: The TV Series             ,,
+The Yellow Handkerchief ,Udayan Prasad,2008.0
+The Color Purple ,Steven Spielberg,1985.0
+Tidal Wave ,JK Youn,2009.0
+Ben-Hur ,Timur Bekmambetov,2016.0
+The Imitation Game ,Morten Tyldum,2014.0
+Private Benjamin ,Howard Zieff,1980.0
+Coal Miner's Daughter ,Michael Apted,1980.0
+Diary of a Wimpy Kid ,Thor Freudenthal,2010.0
+Mama ,Andrés Muschietti,2013.0
+Halloween ,John Carpenter,1978.0
+National Lampoon's Vacation ,Harold Ramis,1983.0
+Bad Grandpa ,Jeff Tremaine,2013.0
+The Queen ,Stephen Frears,2006.0
+Beetlejuice ,Tim Burton,1988.0
+Why Did I Get Married? ,Tyler Perry,2007.0
+Little Women ,Gillian Armstrong,1994.0
+The Woman in Black ,James Watkins,2012.0
+When a Stranger Calls ,Simon West,2006.0
+Big Fat Liar ,Shawn Levy,2002.0
+The Deer Hunter ,Michael Cimino,1978.0
+Wag the Dog ,Barry Levinson,1997.0
+The Lizzie McGuire Movie ,Jim Fall,2003.0
+Snitch ,Ric Roman Waugh,2013.0
+Krampus ,Michael Dougherty,2015.0
+The Faculty ,Robert Rodriguez,1998.0
+What's Love Got to Do with It ,Brian Gibson,1993.0
+Cop Land ,James Mangold,1997.0
+Not Another Teen Movie ,Joel Gallen,2001.0
+End of Watch ,David Ayer,2012.0
+Aloha ,Cameron Crowe,2015.0
+The Skulls ,Rob Cohen,2000.0
+The Theory of Everything ,James Marsh,2014.0
+Malibu's Most Wanted ,John Whitesell,2003.0
+Where the Heart Is ,Matt Williams,2000.0
+Lawrence of Arabia ,David Lean,1962.0
+Halloween II ,Rob Zombie,2009.0
+Wild ,Jean-Marc Vallée,2014.0
+The Last House on the Left ,Dennis Iliadis,2009.0
+The Wedding Date ,Clare Kilner,2005.0
+Halloween: Resurrection ,Rick Rosenthal,2002.0
+Clash of the Titans ,Louis Leterrier,2010.0
+The Princess Bride ,Rob Reiner,1987.0
+The Great Debaters ,Denzel Washington,2007.0
+Drive ,Nicolas Winding Refn,2011.0
+Confessions of a Teenage Drama Queen ,Sara Sugarman,2004.0
+The Object of My Affection ,Nicholas Hytner,1998.0
+28 Weeks Later ,Juan Carlos Fresnadillo,2007.0
+When the Game Stands Tall ,Thomas Carter,2014.0
+Because of Winn-Dixie ,Wayne Wang,2005.0
+Love & Basketball ,Gina Prince-Bythewood,2000.0
+Grosse Pointe Blank ,George Armitage,1997.0
+All About Steve ,Phil Traill,2009.0
+Book of Shadows: Blair Witch 2 ,Joe Berlinger,2000.0
+The Craft ,Andrew Fleming,1996.0
+Match Point ,Woody Allen,2005.0
+Ramona and Beezus ,Elizabeth Allen Rosenbaum,2010.0
+The Remains of the Day ,James Ivory,1993.0
+Boogie Nights ,Paul Thomas Anderson,1997.0
+Nowhere to Run ,Robert Harmon,1993.0
+Flicka ,Michael Mayer,2006.0
+The Hills Have Eyes II ,Martin Weisz,2007.0
+Urban Legends: Final Cut ,John Ottman,2000.0
+Tuck Everlasting ,Jay Russell,2002.0
+The Marine ,John Bonito,2006.0
+Keanu ,Peter Atencio,2016.0
+Country Strong ,Shana Feste,2010.0
+Disturbing Behavior ,David Nutter,1998.0
+The Place Beyond the Pines ,Derek Cianfrance,2012.0
+The November Man ,Roger Donaldson,2014.0
+Eye of the Beholder ,Stephan Elliott,1999.0
+The Hurt Locker ,Kathryn Bigelow,2008.0
+Firestarter ,Mark L. Lester,1984.0
+Killing Them Softly ,Andrew Dominik,2012.0
+A Most Wanted Man ,Anton Corbijn,2014.0
+Freddy Got Fingered ,Tom Green,2001.0
+The Pirates Who Don't Do Anything: A VeggieTales Movie ,Mike Nawrocki,2008.0
+U2 3D ,Catherine Owens,2007.0
+Highlander: Endgame ,Douglas Aarniokoski,2000.0
+Idlewild ,Bryan Barber,2006.0
+One Day ,Lone Scherfig,2011.0
+Whip It ,Drew Barrymore,2009.0
+Knockaround Guys ,Brian Koppelman,2001.0
+Confidence ,James Foley,2003.0
+The Muse ,Albert Brooks,1999.0
+De-Lovely ,Irwin Winkler,2004.0
+New York Stories ,Woody Allen,1989.0
+Barney's Great Adventure ,Steve Gomer,1998.0
+The Man with the Iron Fists ,RZA,2012.0
+Home Fries ,Dean Parisot,1998.0
+Here on Earth ,Mark Piznarski,2000.0
+Brazil ,Terry Gilliam,1985.0
+Raise Your Voice ,Sean McNamara,2004.0
+The Dead Zone             ,,
+The Big Lebowski ,Joel Coen,1998.0
+Black Snake Moan ,Craig Brewer,2006.0
+Dark Blue ,Ron Shelton,2002.0
+A Mighty Heart ,Michael Winterbottom,2007.0
+Whatever It Takes ,David Raynr,2000.0
+Boat Trip ,Mort Nathan,2002.0
+The Importance of Being Earnest ,Oliver Parker,2002.0
+The Love Letter ,Dan Curtis,1998.0
+Hoot ,Wil Shriner,2006.0
+In Bruges ,Martin McDonagh,2008.0
+Peeples ,Tina Gordon Chism,2013.0
+The Rocker ,Peter Cattaneo,2008.0
+Post Grad ,Vicky Jenson,2009.0
+Promised Land ,Gus Van Sant,2012.0
+Whatever Works ,Woody Allen,2009.0
+The In Crowd ,Mary Lambert,2000.0
+Three Burials ,Tommy Lee Jones,2005.0
+Jakob the Liar ,Peter Kassovitz,1999.0
+Kiss Kiss Bang Bang ,Shane Black,2005.0
+Idle Hands ,Rodman Flender,1999.0
+Mulholland Drive ,David Lynch,2001.0
+Blood and Chocolate ,Katja von Garnier,2007.0
+You Will Meet a Tall Dark Stranger ,Woody Allen,2010.0
+Never Let Me Go ,Mark Romanek,2010.0
+The Company             ,,
+Transsiberian ,Brad Anderson,2008.0
+The Clan of the Cave Bear ,Michael Chapman,1986.0
+Crazy in Alabama ,Antonio Banderas,1999.0
+Funny Games ,Michael Haneke,2007.0
+Listening ,Khalil Sullins,2014.0
+Felicia's Journey ,Atom Egoyan,1999.0
+Metropolis ,Fritz Lang,1927.0
+District B13 ,Pierre Morel,2004.0
+Things to Do in Denver When You're Dead ,Gary Fleder,1995.0
+The Assassin ,Hsiao-Hsien Hou,2015.0
+Buffalo Soldiers ,Gregor Jordan,2001.0
+The Return ,Andrey Zvyagintsev,2003.0
+Ong-bak 2 ,Tony Jaa,2008.0
+Centurion ,Neil Marshall,2010.0
+Silent Trigger ,Russell Mulcahy,1996.0
+The Midnight Meat Train ,Ryûhei Kitamura,2008.0
+Winnie Mandela ,Darrell Roodt,2011.0
+The Son of No One ,Dito Montiel,2011.0
+All the Queen's Men ,Stefan Ruzowitzky,2001.0
+The Good Night ,Jake Paltrow,2007.0
+Bathory: Countess of Blood ,Juraj Jakubisko,2008.0
+Khumba ,Anthony Silverston,2013.0
+Automata ,Gabe Ibáñez,2014.0
+Dungeons & Dragons: Wrath of the Dragon God ,Gerry Lively,2005.0
+Chiamatemi Francesco - Il Papa della gente ,Daniele Luchetti,2015.0
+Shinjuku Incident ,Tung-Shing Yee,2009.0
+Pandaemonium ,Julien Temple,2000.0
+Groundhog Day ,Harold Ramis,1993.0
+Magic Mike XXL ,Gregory Jacobs,2015.0
+Romeo + Juliet ,Baz Luhrmann,1996.0
+Sarah's Key ,Gilles Paquet-Brenner,2010.0
+Freedom ,Peter Cousens,2014.0
+Unforgiven ,Clint Eastwood,1992.0
+Manderlay ,Lars von Trier,2005.0
+Slumdog Millionaire ,Danny Boyle,2008.0
+Fatal Attraction ,Adrian Lyne,1987.0
+Pretty Woman ,Garry Marshall,1990.0
+Towering Inferno             ,John Blanchard,
+Crocodile Dundee II ,John Cornell,1988.0
+Broken Horses ,Vidhu Vinod Chopra,2015.0
+Born on the Fourth of July ,Oliver Stone,1989.0
+Cool Runnings ,Jon Turteltaub,1993.0
+My Bloody Valentine ,Patrick Lussier,2009.0
+The Possession ,Ole Bornedal,2012.0
+First Blood ,Ted Kotcheff,1982.0
+Stomp the Yard ,Sylvain White,2007.0
+The Spy Who Loved Me ,Lewis Gilbert,1977.0
+Ghost Hunters             ,,
+Urban Legend ,Jamie Blanks,1998.0
+Dangerous Liaisons ,Stephen Frears,1988.0
+Good Deeds ,Tyler Perry,2012.0
+White Fang ,Randal Kleiser,1991.0
+Superstar ,Bruce McCulloch,1999.0
+The Iron Lady ,Phyllida Lloyd,2011.0
+Jonah: A VeggieTales Movie ,Mike Nawrocki,2002.0
+Poetic Justice ,John Singleton,1993.0
+All About the Benjamins ,Kevin Bray,2002.0
+Vampire in Brooklyn ,Wes Craven,1995.0
+Exorcist II: The Heretic ,John Boorman,1977.0
+An American Haunting ,Courtney Solomon,2005.0
+My Boss's Daughter ,David Zucker,2003.0
+A Perfect Getaway ,David Twohy,2009.0
+Our Family Wedding ,Rick Famuyiwa,2010.0
+Dead Man on Campus ,Alan Cohn,1998.0
+Tea with Mussolini ,Franco Zeffirelli,1999.0
+Thinner ,Tom Holland,1996.0
+"New York, New York ",Martin Scorsese,1977.0
+Crooklyn ,Spike Lee,1994.0
+I Think I Love My Wife ,Chris Rock,2007.0
+Jason X ,James Isaac,2001.0
+Big Fat Liar ,Shawn Levy,2002.0
+Bobby ,Emilio Estevez,2006.0
+Head Over Heels ,Mark Waters,2001.0
+Fun Size ,Josh Schwartz,2012.0
+The Diving Bell and the Butterfly ,Julian Schnabel,2007.0
+Little Children ,Todd Field,2006.0
+Gossip ,Davis Guggenheim,2000.0
+A Walk on the Moon ,Tony Goldwyn,1999.0
+Catch a Fire ,Phillip Noyce,2006.0
+Soul Survivors ,Stephen Carpenter,2001.0
+Jefferson in Paris ,James Ivory,1995.0
+Easy Virtue ,Stephan Elliott,2008.0
+Caravans ,James Fargo,1978.0
+Mr. Turner ,Mike Leigh,2014.0
+Wild Grass ,Alain Resnais,2009.0
+Amen. ,Costa-Gavras,2002.0
+Reign of Assassins ,Chao-Bin Su,2010.0
+The Lucky Ones ,Neil Burger,2008.0
+Margaret ,Kenneth Lonergan,2011.0
+Stan Helsing ,Bo Zenga,2009.0
+Flipped ,Rob Reiner,2010.0
+Brokeback Mountain ,Ang Lee,2005.0
+Teenage Mutant Ninja Turtles ,Jonathan Liebesman,2014.0
+Clueless ,Amy Heckerling,1995.0
+Far from Heaven ,Todd Haynes,2002.0
+Hot Tub Time Machine 2 ,Steve Pink,2015.0
+Dekalog             ,,
+Quills ,Philip Kaufman,2000.0
+Seven Psychopaths ,Martin McDonagh,2012.0
+The Caveman's Valentine ,Kasi Lemmons,2001.0
+The Border             ,,
+Downfall ,Oliver Hirschbiegel,2004.0
+The Sea Inside ,Alejandro Amenábar,2004.0
+Under the Skin ,Jonathan Glazer,2013.0
+"Good Morning, Vietnam ",Barry Levinson,1987.0
+The Last Godfather ,Hyung-rae Shim,2010.0
+Justin Bieber: Never Say Never ,Jon M. Chu,2011.0
+Black Swan ,Darren Aronofsky,2010.0
+RoboCop ,José Padilha,2014.0
+The Godfather: Part II ,Francis Ford Coppola,1974.0
+Save the Last Dance ,Thomas Carter,2001.0
+A Nightmare on Elm Street 4: The Dream Master ,Renny Harlin,1988.0
+Miracles from Heaven ,Patricia Riggen,2016.0
+"Dude, Where's My Car? ",Danny Leiner,2000.0
+Young Guns ,Christopher Cain,1988.0
+St. Vincent ,Theodore Melfi,2014.0
+About Last Night ,Steve Pink,2014.0
+10 Things I Hate About You ,Gil Junger,1999.0
+The New Guy ,Ed Decter,2002.0
+Loaded Weapon 1 ,Gene Quintano,1993.0
+The Shallows ,Jaume Collet-Serra,2016.0
+The Butterfly Effect ,Eric Bress,2004.0
+Snow Day ,Chris Koch,2000.0
+This Christmas ,Preston A. Whitmore II,2007.0
+Baby Geniuses ,Bob Clark,1999.0
+The Big Hit ,Kirk Wong,1998.0
+Harriet the Spy ,Bronwen Hughes,1996.0
+Child's Play 2 ,John Lafia,1990.0
+No Good Deed ,Sam Miller,2014.0
+The Mist ,Frank Darabont,2007.0
+Ex Machina ,Alex Garland,2015.0
+Being John Malkovich ,Spike Jonze,1999.0
+Two Can Play That Game ,Mark Brown,2001.0
+Earth to Echo ,Dave Green,2014.0
+Crazy/Beautiful ,John Stockwell,2001.0
+Letters from Iwo Jima ,Clint Eastwood,2006.0
+The Astronaut Farmer ,Michael Polish,2006.0
+Woo ,Daisy von Scherler Mayer,1998.0
+Room ,Lenny Abrahamson,2015.0
+Dirty Work ,Bob Saget,1998.0
+Serial Mom ,John Waters,1994.0
+Dick ,Andrew Fleming,1999.0
+Del 1 - Män som hatar kvinnor             ,Niels Arden Oplev,
+Light It Up ,Craig Bolotin,1999.0
+54 ,Mark Christopher,1998.0
+Bubble Boy ,Blair Hayes,2001.0
+Birthday Girl ,Jez Butterworth,2001.0
+21 & Over ,Jon Lucas,2013.0
+"Paris, je t'aime ",Olivier Assayas,2006.0
+Resurrecting the Champ ,Rod Lurie,2007.0
+Admission ,Paul Weitz,2013.0
+The Widow of Saint-Pierre ,Patrice Leconte,2000.0
+Chloe ,Atom Egoyan,2009.0
+Faithful ,Paul Mazursky,1996.0
+Brothers ,Jim Sheridan,2009.0
+Find Me Guilty ,Sidney Lumet,2006.0
+The Perks of Being a Wallflower ,Stephen Chbosky,2012.0
+Excessive Force ,Jon Hess,1993.0
+Infamous ,Douglas McGrath,2006.0
+The Claim ,Michael Winterbottom,2000.0
+The Vatican Tapes ,Mark Neveldine,2015.0
+Attack the Block ,Joe Cornish,2011.0
+In the Land of Blood and Honey ,Angelina Jolie Pitt,2011.0
+The Call ,Brad Anderson,2013.0
+Operation Chromite ,John H. Lee,2016.0
+The Crocodile Hunter: Collision Course ,John Stainton,2002.0
+I Love You Phillip Morris ,Glenn Ficarra,2009.0
+Quest for Fire ,Jean-Jacques Annaud,1981.0
+Antwone Fisher ,Denzel Washington,2002.0
+The Emperor's Club ,Michael Hoffman,2002.0
+True Romance ,Tony Scott,1993.0
+Womb ,Benedek Fliegauf,2010.0
+Glengarry Glen Ross ,James Foley,1992.0
+The Killer Inside Me ,Michael Winterbottom,2010.0
+Cat People ,Paul Schrader,1982.0
+Sorority Row ,Stewart Hendler,2009.0
+The Prisoner of Zenda ,John Cromwell,1937.0
+Lars and the Real Girl ,Craig Gillespie,2007.0
+The Boy in the Striped Pajamas ,Mark Herman,2008.0
+Dancer in the Dark ,Lars von Trier,2000.0
+Oscar and Lucinda ,Gillian Armstrong,1997.0
+The Funeral ,Abel Ferrara,1996.0
+Solitary Man ,Brian Koppelman,2009.0
+Machete ,Ethan Maniquis,2010.0
+Casino Jack ,George Hickenlooper,2010.0
+The Land Before Time ,Don Bluth,1988.0
+Tae Guk Gi: The Brotherhood of War ,Je-kyu Kang,2004.0
+The Perfect Game ,William Dear,2009.0
+The Exorcist ,William Friedkin,1973.0
+Jaws ,Steven Spielberg,1975.0
+American Pie ,Paul Weitz,1999.0
+Ernest & Celestine ,Stéphane Aubier,2012.0
+The Golden Child ,Michael Ritchie,1986.0
+Think Like a Man ,Tim Story,2012.0
+Barbershop ,Tim Story,2002.0
+Star Trek II: The Wrath of Khan ,Nicholas Meyer,1982.0
+Ace Ventura: Pet Detective ,Tom Shadyac,1994.0
+WarGames ,John Badham,1983.0
+Witness ,Peter Weir,1985.0
+Act of Valor ,Mike McCoy,2012.0
+Step Up ,Anne Fletcher,2006.0
+Beavis and Butt-Head Do America ,Mike Judge,1996.0
+Jackie Brown ,Quentin Tarantino,1997.0
+Harold & Kumar Escape from Guantanamo Bay ,Jon Hurwitz,2008.0
+Chronicle ,Josh Trank,2012.0
+Yentl ,Barbra Streisand,1983.0
+Time Bandits ,Terry Gilliam,1981.0
+Crossroads ,Tamra Davis,2002.0
+Project X ,Nima Nourizadeh,2012.0
+Patton ,Franklin J. Schaffner,1970.0
+One Hour Photo ,Mark Romanek,2002.0
+Quarantine ,John Erick Dowdle,2008.0
+The Eye ,David Moreau,2008.0
+Johnson Family Vacation ,Christopher Erskin,2004.0
+How High ,Jesse Dylan,2001.0
+The Muppet Christmas Carol ,Brian Henson,1992.0
+Casino Royale ,Martin Campbell,2006.0
+Frida ,Julie Taymor,2002.0
+Katy Perry: Part of Me ,Dan Cutforth,2012.0
+The Fault in Our Stars ,Josh Boone,2014.0
+Rounders ,John Dahl,1998.0
+Top Five ,Chris Rock,2014.0
+Prophecy ,John Frankenheimer,1979.0
+Stir of Echoes ,David Koepp,1999.0
+Spartacus: War of the Damned             ,,
+Philomena ,Stephen Frears,2013.0
+The Upside of Anger ,Mike Binder,2005.0
+The Boys from Brazil ,Franklin J. Schaffner,1978.0
+Aquamarine ,Elizabeth Allen Rosenbaum,2006.0
+Paper Towns ,Jake Schreier,2015.0
+My Baby's Daddy ,Cheryl Dunye,2004.0
+Nebraska ,Alexander Payne,2013.0
+Tales from the Crypt: Demon Knight ,Ernest R. Dickerson,1995.0
+Max Keeble's Big Move ,Tim Hill,2001.0
+Young Adult ,Jason Reitman,2011.0
+Crank ,Mark Neveldine,2006.0
+How to Be a Player ,Lionel C. Martin,1997.0
+Living Out Loud ,Richard LaGravenese,1998.0
+Just Wright ,Sanaa Hamri,2010.0
+Rachel Getting Married ,Jonathan Demme,2008.0
+The Postman Always Rings Twice ,Bob Rafelson,1981.0
+Girl with a Pearl Earring ,Peter Webber,2003.0
+Das Boot ,Wolfgang Petersen,1981.0
+The Alamo ,John Lee Hancock,2004.0
+Sorority Boys ,Wallace Wolodarsky,2002.0
+About Time ,Richard Curtis,2013.0
+House of Flying Daggers ,Yimou Zhang,2004.0
+Arbitrage ,Nicholas Jarecki,2012.0
+Project Almanac ,Dean Israelite,2015.0
+Cadillac Records ,Darnell Martin,2008.0
+Screwed ,Scott Alexander,2000.0
+Fortress ,Stuart Gordon,1992.0
+For Your Consideration ,Christopher Guest,2006.0
+Celebrity ,Woody Allen,1998.0
+Running with Scissors ,Ryan Murphy,2006.0
+From Justin to Kelly ,Robert Iscove,2003.0
+Girl 6 ,Spike Lee,1996.0
+In the Cut ,Jane Campion,2003.0
+Two Lovers ,James Gray,2008.0
+Last Orders ,Fred Schepisi,2001.0
+The Host ,Joon-ho Bong,2006.0
+The Pursuit of D.B. Cooper ,Roger Spottiswoode,1981.0
+Ravenous ,Antonia Bird,1999.0
+Charlie Bartlett ,Jon Poll,2007.0
+The Great Beauty ,Paolo Sorrentino,2013.0
+The Dangerous Lives of Altar Boys ,Peter Care,2002.0
+Stoker ,Chan-wook Park,2013.0
+2046 ,Kar-Wai Wong,2004.0
+Married Life ,Ira Sachs,2007.0
+Duma ,Carroll Ballard,2005.0
+Ondine ,Neil Jordan,2009.0
+Brother ,Takeshi Kitano,2000.0
+Welcome to Collinwood ,Anthony Russo,2002.0
+Critical Care ,Sidney Lumet,1997.0
+The Life Before Her Eyes ,Vadim Perelman,2007.0
+Darling Companion ,Lawrence Kasdan,2012.0
+Trade ,Marco Kreuzpaintner,2007.0
+Fateless ,Lajos Koltai,2005.0
+Breakfast of Champions ,Alan Rudolph,1999.0
+"A Woman, a Gun and a Noodle Shop ",Yimou Zhang,2009.0
+Cypher ,Vincenzo Natali,2002.0
+City of Life and Death ,Chuan Lu,2009.0
+Home ,Tim Johnson,2015.0
+Legend of Kung Fu Rabbit ,Lijun Sun,2011.0
+Space Battleship Yamato ,Takashi Yamazaki,2010.0
+5 Days of War ,Renny Harlin,2011.0
+Triangle ,Christopher Smith,2009.0
+10 Days in a Madhouse ,Timothy Hines,2015.0
+Heaven Is for Real ,Randall Wallace,2014.0
+Snatch ,Guy Ritchie,2000.0
+Dancin' It's On ,David Winters,2015.0
+Pet Sematary ,Mary Lambert,1989.0
+Madadayo ,Akira Kurosawa,1993.0
+The Cry of the Owl ,Jamie Thraves,2009.0
+A Tale of Three Cities ,Mabel Cheung,2015.0
+Gremlins ,Joe Dante,1984.0
+Star Wars: Episode IV - A New Hope ,George Lucas,1977.0
+Dirty Grandpa ,Dan Mazer,2016.0
+Doctor Zhivago ,David Lean,1965.0
+Trash ,Stephen Daldry,2014.0
+High School Musical 3: Senior Year ,Kenny Ortega,2008.0
+The Fighter ,David O. Russell,2010.0
+Jackass Number Two ,Jeff Tremaine,2006.0
+My Cousin Vinny ,Jonathan Lynn,1992.0
+If I Stay ,R.J. Cutler,2014.0
+Drive Hard ,Brian Trenchard-Smith,2014.0
+Major League ,David S. Ward,1989.0
+St. Trinian's ,Oliver Parker,2007.0
+Phone Booth ,Joel Schumacher,2002.0
+A Walk to Remember ,Adam Shankman,2002.0
+Dead Man Walking ,Tim Robbins,1995.0
+Cruel Intentions ,Roger Kumble,1999.0
+Saw VI ,Kevin Greutert,2009.0
+History of the World: Part I ,Mel Brooks,1981.0
+The Secret Life of Bees ,Gina Prince-Bythewood,2008.0
+Corky Romano ,Rob Pritts,2001.0
+Raising Cain ,Brian De Palma,1992.0
+F.I.S.T. ,Norman Jewison,1978.0
+Invaders from Mars ,Tobe Hooper,1986.0
+Brooklyn ,John Crowley,2015.0
+Barry Lyndon ,Stanley Kubrick,1975.0
+Out Cold ,Brendan Malloy,2001.0
+The Ladies Man ,Reginald Hudlin,2000.0
+Quartet ,Dustin Hoffman,2012.0
+Tomcats ,Gregory Poirier,2001.0
+Frailty ,Bill Paxton,2001.0
+Woman in Gold ,Simon Curtis,2015.0
+Kinsey ,Bill Condon,2004.0
+Army of Darkness ,Sam Raimi,1992.0
+Slackers ,Dewey Nicks,2002.0
+What's Eating Gilbert Grape ,Lasse Hallström,1993.0
+The Visual Bible: The Gospel of John ,Philip Saville,2003.0
+Vera Drake ,Mike Leigh,2004.0
+The Guru ,Daisy von Scherler Mayer,2002.0
+The Perez Family ,Mira Nair,1995.0
+Inside Llewyn Davis ,Ethan Coen,2013.0
+O ,Tim Blake Nelson,2001.0
+Return to the Blue Lagoon ,William A. Graham,1991.0
+The Molly Maguires ,Martin Ritt,1970.0
+Romance & Cigarettes ,John Turturro,2005.0
+Copying Beethoven ,Agnieszka Holland,2006.0
+Poltergeist ,Tobe Hooper,1982.0
+Brighton Rock ,Rowan Joffe,2010.0
+Saw V ,David Hackl,2008.0
+Machine Gun McCain ,Giuliano Montaldo,1969.0
+LOL ,Lisa Azuelos,2012.0
+Jindabyne ,Ray Lawrence,2006.0
+Kabhi Alvida Naa Kehna ,Karan Johar,2006.0
+An Ideal Husband ,Oliver Parker,1999.0
+The Last Days on Mars ,Ruairi Robinson,2013.0
+Darkness ,Jaume Balagueró,2002.0
+2001: A Space Odyssey ,Stanley Kubrick,1968.0
+E.T. the Extra-Terrestrial ,Steven Spielberg,1982.0
+In the Land of Women ,Jon Kasdan,2007.0
+The Blue Butterfly ,Léa Pool,2004.0
+There Goes My Baby ,Floyd Mutrux,1994.0
+Lovesick             ,,
+Housefull ,Sajid Khan,2010.0
+September Dawn ,Christopher Cain,2007.0
+For Greater Glory: The True Story of Cristiada ,Dean Wright,2012.0
+La Famille Bélier ,Eric Lartigau,2014.0
+Good Will Hunting ,Gus Van Sant,1997.0
+Misconduct ,Shintaro Shimosawa,2016.0
+Saw III ,Darren Lynn Bousman,2006.0
+Stripes ,Ivan Reitman,1981.0
+Bring It On ,Peyton Reed,2000.0
+The Purge: Election Year ,James DeMonaco,2016.0
+She's All That ,Robert Iscove,1999.0
+Precious ,Lee Daniels,2009.0
+Saw IV ,Darren Lynn Bousman,2007.0
+White Noise ,Geoffrey Sax,2005.0
+Madea's Family Reunion ,Tyler Perry,2006.0
+The Color of Money ,Martin Scorsese,1986.0
+The Longest Day ,Ken Annakin,1962.0
+The Mighty Ducks ,Stephen Herek,1992.0
+The Grudge ,Takashi Shimizu,2004.0
+Happy Gilmore ,Dennis Dugan,1996.0
+Jeepers Creepers ,Victor Salva,2001.0
+Bill & Ted's Excellent Adventure ,Stephen Herek,1989.0
+Oliver! ,Carol Reed,1968.0
+The Best Exotic Marigold Hotel ,John Madden,2011.0
+Recess: School's Out ,Chuck Sheetz,2001.0
+Mad Max Beyond Thunderdome ,George Miller,1985.0
+Commando ,Mark L. Lester,1985.0
+The Boy ,William Brent Bell,2016.0
+Devil ,John Erick Dowdle,2010.0
+Friday After Next ,Marcus Raboy,2002.0
+Insidious: Chapter 3 ,Leigh Whannell,2015.0
+The Last Dragon ,Michael Schultz,1985.0
+Snatch ,Guy Ritchie,2000.0
+The Lawnmower Man ,Brett Leonard,1992.0
+Nick and Norah's Infinite Playlist ,Peter Sollett,2008.0
+Dogma ,Kevin Smith,1999.0
+The Banger Sisters ,Bob Dolman,2002.0
+Twilight Zone: The Movie ,Joe Dante,1983.0
+Road House ,Rowdy Herrington,1989.0
+A Low Down Dirty Shame ,Keenen Ivory Wayans,1994.0
+Swimfan ,John Polson,2002.0
+Employee of the Month ,Greg Coolidge,2006.0
+Can't Hardly Wait ,Harry Elfont,1998.0
+The Outsiders ,Francis Ford Coppola,1983.0
+Pete's Dragon ,David Lowery,2016.0
+The Dead Zone ,David Cronenberg,1983.0
+Sinister 2 ,Ciarán Foy,2015.0
+Sparkle ,Salim Akil,2012.0
+Valentine ,Jamie Blanks,2001.0
+The Fourth Kind ,Olatunde Osunsanmi,2009.0
+A Prairie Home Companion ,Robert Altman,2006.0
+Sugar Hill ,Leon Ichaso,1993.0
+Invasion U.S.A. ,Joseph Zito,1985.0
+Roll Bounce ,Malcolm D. Lee,2005.0
+Rushmore ,Wes Anderson,1998.0
+Skyline ,Colin Strause,2010.0
+The Second Best Exotic Marigold Hotel ,John Madden,2015.0
+Kit Kittredge: An American Girl ,Patricia Rozema,2008.0
+The Perfect Man ,Mark Rosman,2005.0
+Mo' Better Blues ,Spike Lee,1990.0
+Kung Pow: Enter the Fist ,Steve Oedekerk,2002.0
+Tremors ,Ron Underwood,1990.0
+Wrong Turn ,Rob Schmidt,2003.0
+The Long Riders ,Walter Hill,1980.0
+The Corruptor ,James Foley,1999.0
+Mud ,Jeff Nichols,2012.0
+Reno 911!: Miami ,Robert Ben Garant,2007.0
+One Direction: This Is Us ,Morgan Spurlock,2013.0
+"The Goods: Live Hard, Sell Hard ",Neal Brennan,2009.0
+Hey Arnold! The Movie ,Tuck Tucker,2002.0
+My Week with Marilyn ,Simon Curtis,2011.0
+The Matador ,Richard Shepard,2005.0
+Love Jones ,Theodore Witcher,1997.0
+The Gift ,Joel Edgerton,2015.0
+End of the Spear ,Jim Hanon,2005.0
+Get Over It ,Tommy O'Haver,2001.0
+Office Space ,Mike Judge,1999.0
+Drop Dead Gorgeous ,Michael Patrick Jann,1999.0
+Big Eyes ,Tim Burton,2014.0
+Very Bad Things ,Peter Berg,1998.0
+Sleepover ,Joe Nussbaum,2004.0
+Body Double ,Brian De Palma,1984.0
+MacGruber ,Jorma Taccone,2010.0
+Dirty Pretty Things ,Stephen Frears,2002.0
+Movie 43 ,Elizabeth Banks,2013.0
+The Tourist ,Florian Henckel von Donnersmarck,2010.0
+Over Her Dead Body ,Jeff Lowell,2008.0
+Seeking a Friend for the End of the World ,Lorene Scafaria,2012.0
+Cedar Rapids ,Miguel Arteta,2011.0
+Bones             ,,
+American History X ,Tony Kaye,1998.0
+The Collection ,Marcus Dunstan,2012.0
+Teacher's Pet ,Timothy Björklund,2004.0
+The Red Violin ,François Girard,1998.0
+The Straight Story ,David Lynch,1999.0
+Deuces Wild ,Scott Kalvert,2002.0
+Bad Words ,Jason Bateman,2013.0
+"Run, Fatboy, Run ",David Schwimmer,2007.0
+Heartbeeps ,Allan Arkush,1981.0
+Black or White ,Mike Binder,2014.0
+On the Line ,Eric Bross,2001.0
+Rescue Dawn ,Werner Herzog,2006.0
+Danny Collins ,Dan Fogelman,2015.0
+"Jeff, Who Lives at Home ",Jay Duplass,2011.0
+I Am Love ,Luca Guadagnino,2009.0
+Atlas Shrugged II: The Strike ,John Putch,2012.0
+Romeo Is Bleeding ,Peter Medak,1993.0
+The Limey ,Steven Soderbergh,1999.0
+Crash ,Paul Haggis,2004.0
+The House of Mirth ,Terence Davies,2000.0
+Malone ,Harley Cokeliss,1987.0
+Peaceful Warrior ,Victor Salva,2006.0
+Bucky Larson: Born to Be a Star ,Tom Brady,2011.0
+Bamboozled ,Spike Lee,2000.0
+The Forest ,Jason Zada,2016.0
+Sphinx ,Franklin J. Schaffner,1981.0
+While We're Young ,Noah Baumbach,2014.0
+A Better Life ,Chris Weitz,2011.0
+Spider ,David Cronenberg,2002.0
+Gun Shy ,Eric Blakeney,2000.0
+Nicholas Nickleby ,Douglas McGrath,2002.0
+The Iceman ,Ariel Vromen,2012.0
+Dekalog             ,,
+Krrish ,Rakesh Roshan,2006.0
+Cecil B. DeMented ,John Waters,2000.0
+Killer Joe ,William Friedkin,2011.0
+The Joneses ,Derrick Borte,2009.0
+Owning Mahowny ,Richard Kwietniowski,2003.0
+The Brothers Solomon ,Bob Odenkirk,2007.0
+My Blueberry Nights ,Kar-Wai Wong,2007.0
+Illuminata ,John Turturro,1998.0
+Swept Away ,Guy Ritchie,2002.0
+"War, Inc. ",Joshua Seftel,2008.0
+Shaolin Soccer ,Stephen Chow,2001.0
+The Brown Bunny ,Vincent Gallo,2003.0
+The Swindle ,Claude Chabrol,1997.0
+Rosewater ,Jon Stewart,2014.0
+The Chambermaid on the Titanic ,Bigas Luna,1997.0
+Coriolanus ,Ralph Fiennes,2011.0
+Imaginary Heroes ,Dan Harris,2004.0
+High Heels and Low Lifes ,Mel Smith,2001.0
+World's Greatest Dad ,Bobcat Goldthwait,2009.0
+Severance ,Christopher Smith,2006.0
+Edmond ,Stuart Gordon,2005.0
+Welcome to the Rileys ,Jake Scott,2010.0
+Police Academy: Mission to Moscow ,Alan Metter,1994.0
+Blood Done Sign My Name ,Jeb Stuart,2010.0
+"Cinco de Mayo, La Batalla ",Rafa Lara,2013.0
+Elsa & Fred ,Michael Radford,2014.0
+An Alan Smithee Film: Burn Hollywood Burn ,Arthur Hiller,1997.0
+The Open Road ,Michael Meredith,2009.0
+The Good Guy ,Julio DePietro,2009.0
+Motherhood ,Katherine Dieckmann,2009.0
+Free Style ,William Dear,2008.0
+Strangerland ,Kim Farrant,2015.0
+The Janky Promoters ,Marcus Raboy,2009.0
+Blonde Ambition ,Scott Marshall,2007.0
+The Oxford Murders ,Álex de la Iglesia,2008.0
+The Reef ,Andrew Traucki,2010.0
+Eulogy ,Michael Clancy,2004.0
+White Noise 2: The Light ,Patrick Lussier,2007.0
+You Got Served: Beat the World ,Robert Adetuyi,2011.0
+Fifty Dead Men Walking ,Kari Skogland,2008.0
+Jungle Shuffle ,Taedong Park,2014.0
+Adam Resurrected ,Paul Schrader,2008.0
+Of Horses and Men ,Benedikt Erlingsson,2013.0
+It's a Wonderful Afterlife ,Gurinder Chadha,2010.0
+The Devil's Tomb ,Jason Connery,2009.0
+Partition ,Vic Sarin,2007.0
+Good Intentions ,Jim Issa,2010.0
+"The Good, the Bad, the Weird ",Jee-woon Kim,2008.0
+Nurse 3D ,Douglas Aarniokoski,2013.0
+Gunless ,William Phillips,2010.0
+Adventureland ,Greg Mottola,2009.0
+The Lost City ,Andy Garcia,2005.0
+Next Friday ,Steve Carr,2000.0
+American Heist ,Sarik Andreasyan,2014.0
+You Only Live Twice ,Lewis Gilbert,1967.0
+Plastic ,Julian Gilbey,2014.0
+Amour ,Michael Haneke,2012.0
+Poltergeist III ,Gary Sherman,1988.0
+Re-Kill ,Valeri Milev,2015.0
+"It's a Mad, Mad, Mad, Mad World ",Stanley Kramer,1963.0
+Volver ,Pedro Almodóvar,2006.0
+Heavy Metal ,Gerald Potterton,1981.0
+Gentlemen Broncos ,Jared Hess,2009.0
+Richard III ,Richard Loncraine,1995.0
+Into the Grizzly Maze ,David Hackl,2015.0
+Kites ,Anurag Basu,2010.0
+Melancholia ,Lars von Trier,2011.0
+Red Dog ,Kriv Stenders,2011.0
+Jab Tak Hai Jaan ,Yash Chopra,2012.0
+Alien ,Ridley Scott,1979.0
+The Texas Chain Saw Massacre ,Tobe Hooper,1974.0
+The Runaways ,Floria Sigismondi,2010.0
+Fiddler on the Roof ,Norman Jewison,1971.0
+Thunderball ,Terence Young,1965.0
+Detention ,Joseph Kahn,2011.0
+Loose Cannons ,Ferzan Ozpetek,2010.0
+Set It Off ,F. Gary Gray,1996.0
+The Best Man ,Malcolm D. Lee,1999.0
+Child's Play ,Tom Holland,1988.0
+Sicko ,Michael Moore,2007.0
+The Purge: Anarchy ,James DeMonaco,2014.0
+Down to You ,Kris Isacsson,2000.0
+Harold & Kumar Go to White Castle ,Danny Leiner,2004.0
+The Contender ,Rod Lurie,2000.0
+Boiler Room ,Ben Younger,2000.0
+Trading Places ,John Landis,1983.0
+Black Christmas ,Glen Morgan,2006.0
+Breakin' All the Rules ,Daniel Taplitz,2004.0
+Henry V ,Kenneth Branagh,1989.0
+The Savages ,Tamara Jenkins,2007.0
+Chasing Papi ,Linda Mendoza,2003.0
+The Way of the Gun ,Christopher McQuarrie,2000.0
+Igby Goes Down ,Burr Steers,2002.0
+PCU ,Hart Bochner,1994.0
+The Ultimate Gift ,Michael O. Sajbel,2006.0
+The Bold and the Beautiful             ,,
+The Ice Pirates ,Stewart Raffill,1984.0
+Gracie ,Davis Guggenheim,2007.0
+Trust the Man ,Bart Freundlich,2005.0
+Hamlet 2 ,Andrew Fleming,2008.0
+Velvet Goldmine ,Todd Haynes,1998.0
+The Wailing ,Hong-jin Na,2016.0
+Glee: The 3D Concert Movie ,Kevin Tancharoen,2011.0
+The Legend of Suriyothai ,Chatrichalerm Yukol,2001.0
+Two Evil Eyes ,Dario Argento,1990.0
+Barbecue ,Eric Lavaine,2014.0
+All or Nothing ,Mike Leigh,2002.0
+Princess Kaiulani ,Marc Forby,2009.0
+Opal Dream ,Peter Cattaneo,2006.0
+Heist ,Scott Mann,2015.0
+Flame and Citron ,Ole Christian Madsen,2008.0
+Undiscovered ,Meiert Avis,2005.0
+Red Riding: In the Year of Our Lord 1974 ,Julian Jarrold,2009.0
+The Girl on the Train ,André Téchiné,2009.0
+Veronika Decides to Die ,Emily Young,2009.0
+Crocodile Dundee ,Peter Faiman,1986.0
+"Ultramarines: A Warhammer 40,000 Movie ",Martyn Pick,2010.0
+The I Inside ,Roland Suso Richter,2004.0
+Beneath Hill 60 ,Jeremy Sims,2010.0
+Polisse ,Maïwenn,2011.0
+Awake ,Joby Harold,2007.0
+Star Wars: The Clone Wars             ,,
+Skin Trade ,Ekachai Uekrongtham,2014.0
+The Lost Boys ,Joel Schumacher,1987.0
+Crazy Heart ,Scott Cooper,2009.0
+The Rose ,Mark Rydell,1979.0
+Baggage Claim ,David E. Talbert,2013.0
+Barbarella ,Roger Vadim,1968.0
+Shipwrecked ,Nils Gaup,1990.0
+Election ,Alexander Payne,1999.0
+The Namesake ,Mira Nair,2006.0
+The DUFF ,Ari Sandel,2015.0
+Glitter ,Vondie Curtis-Hall,2001.0
+The Haunting in Connecticut 2: Ghosts of Georgia ,Tom Elkins,2013.0
+Silmido ,Woo-Suk Kang,2003.0
+Bright Star ,Jane Campion,2009.0
+My Name Is Khan ,Karan Johar,2010.0
+Footloose ,Herbert Ross,1984.0
+All Is Lost ,J.C. Chandor,2013.0
+Limbo ,John Sayles,1999.0
+Namastey London ,Vipul Amrutlal Shah,2007.0
+The Wind That Shakes the Barley ,Ken Loach,2006.0
+Yeh Jawaani Hai Deewani ,Ayan Mukerji,2013.0
+The Karate Kid ,John G. Avildsen,1984.0
+Quo Vadis ,Mervyn LeRoy,1951.0
+Repo! The Genetic Opera ,Darren Lynn Bousman,2008.0
+Valley of the Wolves: Iraq ,Serdar Akar,2006.0
+Pulp Fiction ,Quentin Tarantino,1994.0
+The Muppet Movie ,James Frawley,1979.0
+Nightcrawler ,Dan Gilroy,2014.0
+Club Dread ,Jay Chandrasekhar,2004.0
+The Sound of Music ,Robert Wise,1965.0
+Splash ,Ron Howard,1984.0
+Little Miss Sunshine ,Jonathan Dayton,2006.0
+Stand by Me ,Rob Reiner,1986.0
+28 Days Later... ,Danny Boyle,2002.0
+You Got Served ,Chris Stokes,2004.0
+Escape from Alcatraz ,Don Siegel,1979.0
+Brown Sugar ,Rick Famuyiwa,2002.0
+A Thin Line Between Love and Hate ,Martin Lawrence,1996.0
+50/50 ,Jonathan Levine,2011.0
+Shutter ,Masayuki Ochiai,2008.0
+Creepshow ,George A. Romero,1982.0
+That Awkward Moment ,Tom Gormican,2014.0
+Modern Problems ,Ken Shapiro,1981.0
+Kicks ,Justin Tipping,2016.0
+Much Ado About Nothing ,Kenneth Branagh,1993.0
+On Her Majesty's Secret Service ,Peter R. Hunt,1969.0
+The Player             ,,
+New Nightmare ,Wes Craven,1994.0
+Drive Me Crazy ,John Schultz,1999.0
+Akeelah and the Bee ,Doug Atchison,2006.0
+Half Baked ,Tamra Davis,1998.0
+New in Town ,Jonas Elmer,2009.0
+Syriana ,Stephen Gaghan,2005.0
+American Psycho ,Mary Harron,2000.0
+The Good Girl ,Miguel Arteta,2002.0
+Bon Cop Bad Cop ,Erik Canuel,2006.0
+The Boondock Saints II: All Saints Day ,Troy Duffy,2009.0
+The City of Your Final Destination ,James Ivory,2009.0
+Enough Said ,Nicole Holofcener,2013.0
+Easy A ,Will Gluck,2010.0
+The Inkwell ,Matty Rich,1994.0
+Shadow of the Vampire ,E. Elias Merhige,2000.0
+Prom ,Joe Nussbaum,2011.0
+The Pallbearer ,Matt Reeves,1996.0
+Held Up ,Steve Rash,1999.0
+Woman on Top ,Fina Torres,2000.0
+Howards End ,James Ivory,1992.0
+Preacher             ,,
+Anomalisa ,Duke Johnson,2015.0
+Another Year ,Mike Leigh,2010.0
+8 Women ,François Ozon,2002.0
+Showdown in Little Tokyo ,Mark L. Lester,1991.0
+Clay Pigeons ,David Dobkin,1998.0
+It's Kind of a Funny Story ,Anna Boden,2010.0
+Made in Dagenham ,Nigel Cole,2010.0
+When Did You Last See Your Father? ,Anand Tucker,2007.0
+Prefontaine ,Steve James,1997.0
+The Wicked Lady ,Michael Winner,1983.0
+The Secret of Kells ,Tomm Moore,2009.0
+Begin Again ,John Carney,2013.0
+Down in the Valley ,David Jacobson,2005.0
+Brooklyn Rules ,Michael Corrente,2007.0
+Restless ,Edward Hall,2012.0
+The Singing Detective ,Keith Gordon,2003.0
+The Land Girls ,David Leland,1998.0
+Fido ,Andrew Currie,2006.0
+The Wendell Baker Story ,Andrew Wilson,2005.0
+Wild Target ,Jonathan Lynn,2010.0
+Pathology ,Marc Schölermann,2008.0
+Wuthering Heights             ,,
+10th & Wolf ,Robert Moresco,2006.0
+Dear Wendy ,Thomas Vinterberg,2004.0
+Aloft ,Claudia Llosa,2014.0
+Akira ,Katsuhiro Ôtomo,1988.0
+The Death and Life of Bobby Z ,John Herzfeld,2007.0
+The Rocket: The Legend of Rocket Richard ,Charles Binamé,2005.0
+Swelter ,Keith Parmer,2014.0
+My Lucky Star ,Dennie Gordon,2013.0
+Imagine Me & You ,Ol Parker,2005.0
+Mr. Church ,Bruce Beresford,2016.0
+Swimming Pool ,François Ozon,2003.0
+Green Street 3: Never Back Down ,James Nunn,2013.0
+The Blood of Heroes ,David Webb Peoples,1989.0
+Code of Honor ,Michael Winnick,2016.0
+Driving Miss Daisy ,Bruce Beresford,1989.0
+Soul Food ,George Tillman Jr.,1997.0
+Rumble in the Bronx ,Stanley Tong,1995.0
+Far from Men ,David Oelhoffen,2014.0
+Thank You for Smoking ,Jason Reitman,2005.0
+Hostel: Part II ,Eli Roth,2007.0
+An Education ,Lone Scherfig,2009.0
+Shopgirl ,Anand Tucker,2005.0
+The Hotel New Hampshire ,Tony Richardson,1984.0
+Narc ,Joe Carnahan,2002.0
+Men with Brooms ,Paul Gross,2002.0
+Witless Protection ,Charles Robert Carner,2008.0
+The Work and the Glory ,Russell Holt,2004.0
+Extract ,Mike Judge,2009.0
+Masked and Anonymous ,Larry Charles,2003.0
+Alias Betty ,Claude Miller,2001.0
+Code 46 ,Michael Winterbottom,2003.0
+Outside Bet ,Sacha Bennett,2012.0
+Crash ,Paul Haggis,2004.0
+Albert Nobbs ,Rodrigo García,2011.0
+Black November ,Jeta Amata,2012.0
+Ta Ra Rum Pum ,Siddharth Anand,2007.0
+Persepolis ,Vincent Paronnaud,2007.0
+The Hole ,Joe Dante,2009.0
+The Wave ,Dennis Gansel,2008.0
+The Neon Demon ,Nicolas Winding Refn,2016.0
+Harry Brown ,Daniel Barber,2009.0
+Spider-Man 3 ,Sam Raimi,2007.0
+The Omega Code ,Robert Marcarelli,1999.0
+Juno ,Jason Reitman,2007.0
+Pound of Flesh ,Ernie Barbarash,2015.0
+Diamonds Are Forever ,Guy Hamilton,1971.0
+The Godfather ,Francis Ford Coppola,1972.0
+Flashdance ,Adrian Lyne,1983.0
+500 Days of Summer ,Marc Webb,2009.0
+The Piano ,Jane Campion,1993.0
+Magic Mike ,Steven Soderbergh,2012.0
+Darkness Falls ,Jonathan Liebesman,2003.0
+Live and Let Die ,Guy Hamilton,1973.0
+My Dog Skip ,Jay Russell,2000.0
+"Definitely, Maybe ",Adam Brooks,2008.0
+Jumping the Broom ,Salim Akil,2011.0
+The Great Gatsby ,Baz Luhrmann,2013.0
+"Good Night, and Good Luck. ",George Clooney,2005.0
+Capote ,Bennett Miller,2005.0
+Desperado ,Robert Rodriguez,1995.0
+The Claim ,Michael Winterbottom,2000.0
+Fargo             ,,
+Logan's Run ,Michael Anderson,1976.0
+The Man with the Golden Gun ,Guy Hamilton,1974.0
+Action Jackson ,Craig R. Baxley,1988.0
+The Descent ,Neil Marshall,2005.0
+Michael Jordan to the Max ,Don Kempf,2000.0
+Devil's Due ,Matt Bettinelli-Olpin,2014.0
+Flirting with Disaster ,David O. Russell,1996.0
+The Devil's Rejects ,Rob Zombie,2005.0
+Buffy the Vampire Slayer             ,,
+Dope ,Rick Famuyiwa,2015.0
+In Too Deep ,Michael Rymer,1999.0
+Skyfall ,Sam Mendes,2012.0
+House of 1000 Corpses ,Rob Zombie,2003.0
+Alien Zone ,Sharron Miller,1978.0
+A Serious Man ,Ethan Coen,2009.0
+Get Low ,Aaron Schneider,2009.0
+Warlock ,Steve Miner,1989.0
+Beyond the Lights ,Gina Prince-Bythewood,2014.0
+A Single Man ,Tom Ford,2009.0
+The Last Temptation of Christ ,Martin Scorsese,1988.0
+Outside Providence ,Michael Corrente,1999.0
+Bride & Prejudice ,Gurinder Chadha,2004.0
+Rabbit-Proof Fence ,Phillip Noyce,2002.0
+Who's Your Caddy? ,Don Michael Paul,2007.0
+Split Second ,Tony Maylam,1992.0
+Nikita             ,,
+The Other Side of Heaven ,Mitch Davis,2001.0
+Dark Angel             ,,
+Veer-Zaara ,Yash Chopra,2004.0
+Redbelt ,David Mamet,2008.0
+Cyrus ,Jay Duplass,2010.0
+A Dog of Flanders ,Kevin Brodie,1999.0
+Auto Focus ,Paul Schrader,2002.0
+Factory Girl ,George Hickenlooper,2006.0
+We Need to Talk About Kevin ,Lynne Ramsay,2011.0
+The Christmas Candle ,John Stephenson,2013.0
+The Mighty Macs ,Tim Chambers,2009.0
+Losin' It ,Curtis Hanson,1983.0
+Mother and Child ,Rodrigo García,2009.0
+March or Die ,Dick Richards,1977.0
+Les visiteurs ,Jean-Marie Poiré,1993.0
+Somewhere ,Sofia Coppola,2010.0
+I Hope They Serve Beer in Hell ,Bob Gosse,2009.0
+Chairman of the Board ,Alex Zamm,1998.0
+Hesher ,Spencer Susser,2010.0
+Dom Hemingway ,Richard Shepard,2013.0
+Gerry ,Gus Van Sant,2002.0
+The Heart of Me ,Thaddeus O'Sullivan,2002.0
+Freeheld ,Peter Sollett,2015.0
+The Extra Man ,Shari Springer Berman,2010.0
+Hard to Be a God ,Aleksey German,2013.0
+Ca$h ,Stephen Milburn Anderson,2010.0
+Wah-Wah ,Richard E. Grant,2005.0
+The Boondock Saints ,Troy Duffy,1999.0
+Z Storm ,David Lam,2014.0
+Twixt ,Francis Ford Coppola,2011.0
+Snow Queen ,Vladlen Barbe,2012.0
+Alpha and Omega 4: The Legend of the Saw Toothed Cave ,Richard Rich,2014.0
+Pale Rider ,Clint Eastwood,1985.0
+Stargate: The Ark of Truth ,Robert C. Cooper,2008.0
+Dazed and Confused ,Richard Linklater,1993.0
+High School Musical 2 ,Kenny Ortega,2007.0
+Two Lovers and a Bear ,Kim Nguyen,2016.0
+Criminal Activities ,Jackie Earle Haley,2015.0
+Aimee & Jaguar ,Max Färberböck,1999.0
+The Chumscrubber ,Arie Posin,2005.0
+Shade ,Damian Nieman,2003.0
+House at the End of the Street ,Mark Tonderai,2012.0
+Incendies ,Denis Villeneuve,2010.0
+"Remember Me, My Love ",Gabriele Muccino,2003.0
+Perrier's Bounty ,Ian Fitzgibbon,2009.0
+Elite Squad ,José Padilha,2007.0
+Annabelle ,John R. Leonetti,2014.0
+Bran Nue Dae ,Rachel Perkins,2009.0
+Boyz n the Hood ,John Singleton,1991.0
+La Bamba ,Luis Valdez,1987.0
+The Four Seasons ,Alan Alda,1981.0
+Dressed to Kill ,Brian De Palma,1980.0
+The Adventures of Huck Finn ,Stephen Sommers,1993.0
+Go ,Doug Liman,1999.0
+Friends with Money ,Nicole Holofcener,2006.0
+The Andromeda Strain ,Robert Wise,1971.0
+Bats ,Louis Morneau,1999.0
+Nowhere in Africa ,Caroline Link,2001.0
+Shame ,Steve McQueen,2011.0
+Layer Cake ,Matthew Vaughn,2004.0
+The Work and the Glory II: American Zion ,Sterling Van Wagenen,2005.0
+The East ,Zal Batmanglij,2013.0
+A Home at the End of the World ,Michael Mayer,2004.0
+Aberdeen ,Hans Petter Moland,2000.0
+The Messenger ,Oren Moverman,2009.0
+Tracker ,Ian Sharp,2010.0
+Control ,Anton Corbijn,2007.0
+The Terminator ,James Cameron,1984.0
+Good Bye Lenin! ,Wolfgang Becker,2003.0
+The Damned United ,Tom Hooper,2009.0
+The Return of the Living Dead ,Dan O'Bannon,1985.0
+Gomorrah             ,,
+Mallrats ,Kevin Smith,1995.0
+Grease ,Randal Kleiser,1978.0
+Platoon ,Oliver Stone,1986.0
+Fahrenheit 9/11 ,Michael Moore,2004.0
+Butch Cassidy and the Sundance Kid ,George Roy Hill,1969.0
+Mary Poppins ,Robert Stevenson,1964.0
+Ordinary People ,Robert Redford,1980.0
+Around the World in 80 Days ,Frank Coraci,2004.0
+West Side Story ,Jerome Robbins,1961.0
+Caddyshack ,Harold Ramis,1980.0
+The Brothers ,Gary Hardwick,2001.0
+The Wood ,Rick Famuyiwa,1999.0
+The Usual Suspects ,Bryan Singer,1995.0
+A Nightmare on Elm Street 5: The Dream Child ,Stephen Hopkins,1989.0
+Van Wilder: Party Liaison ,Walt Becker,2002.0
+The Wrestler ,Darren Aronofsky,2008.0
+Duel in the Sun ,King Vidor,1946.0
+Best in Show ,Christopher Guest,2000.0
+Escape from New York ,John Carpenter,1981.0
+School Daze ,Spike Lee,1988.0
+Daddy Day Camp ,Fred Savage,2007.0
+Mr. Nice Guy ,Sammo Kam-Bo Hung,1997.0
+A Mighty Wind ,Christopher Guest,2003.0
+Mystic Pizza ,Donald Petrie,1988.0
+War & Peace             ,,
+Sliding Doors ,Peter Howitt,1998.0
+Tales from the Hood ,Rusty Cundieff,1995.0
+The Last King of Scotland ,Kevin Macdonald,2006.0
+Halloween 5 ,Dominique Othenin-Girard,1989.0
+Bernie ,Richard Linklater,2011.0
+Dolphins and Whales 3D: Tribes of the Ocean ,Jean-Jacques Mantello,2008.0
+Pollock ,Ed Harris,2000.0
+200 Cigarettes ,Risa Bramon Garcia,1999.0
+The Words ,Brian Klugman,2012.0
+Casa de mi Padre ,Matt Piedmont,2012.0
+City Island ,Raymond De Felitta,2009.0
+The Guard ,John Michael McDonagh,2011.0
+College ,Deb Hagan,2008.0
+The Virgin Suicides ,Sofia Coppola,1999.0
+Little Voice ,Mark Herman,1998.0
+Miss March ,Zach Cregger,2009.0
+Wish I Was Here ,Zach Braff,2014.0
+Simply Irresistible ,Mark Tarlov,1999.0
+Veronica Mars             ,,
+Hedwig and the Angry Inch ,John Cameron Mitchell,2001.0
+Only the Strong ,Sheldon Lettich,1993.0
+Goddess of Love ,Jon Knautz,2015.0
+Shattered Glass ,Billy Ray,2003.0
+Novocaine ,David Atkins,2001.0
+The Business of Strangers ,Patrick Stettner,2001.0
+The Wild Bunch ,Sam Peckinpah,1969.0
+The Wackness ,Jonathan Levine,2008.0
+The Great Train Robbery ,Michael Crichton,1979.0
+Morvern Callar ,Lynne Ramsay,2002.0
+Beastmaster 2: Through the Portal of Time ,Sylvio Tabet,1991.0
+The 5th Quarter ,Rick Bieber,2010.0
+The Flower of Evil ,Claude Chabrol,2003.0
+The Greatest ,Shana Feste,2009.0
+Snow Flower and the Secret Fan ,Wayne Wang,2011.0
+Come Early Morning ,Joey Lauren Adams,2006.0
+Lucky Break ,Peter Cattaneo,2001.0
+Julia ,Fred Zinnemann,1977.0
+"Surfer, Dude ",S.R. Bindler,2008.0
+Lake of Fire ,Tony Kaye,2006.0
+11:14 ,Greg Marcks,2003.0
+Men of War ,Perry Lang,1994.0
+Don McKay ,Jake Goldberger,2009.0
+Deadfall ,Stefan Ruzowitzky,2012.0
+A Shine of Rainbows ,Vic Sarin,2009.0
+The Hit List ,William Kaufman,2011.0
+Emma             ,,
+Videodrome ,David Cronenberg,1983.0
+L'auberge espagnole ,Cédric Klapisch,2002.0
+Song One ,Kate Barker-Froyland,2014.0
+Murder by Numbers ,Barbet Schroeder,2002.0
+Winter in Wartime ,Martin Koolhoven,2008.0
+Freaky Deaky ,Charles Matthau,2012.0
+The Train ,John Frankenheimer,1964.0
+Trade of Innocents ,Christopher M. Bessette,2012.0
+The Protector ,Prachya Pinkaew,2005.0
+Stiff Upper Lips ,Gary Sinyor,1998.0
+The Inbetweeners             ,,
+Bend It Like Beckham ,Gurinder Chadha,2002.0
+Sunshine State ,John Sayles,2002.0
+Crossover ,Preston A. Whitmore II,2006.0
+Khiladi 786 ,Ashish R. Mohan,2012.0
+[Rec] 2 ,Jaume Balagueró,2009.0
+Standing Ovation ,Stewart Raffill,2010.0
+The Sting ,George Roy Hill,1973.0
+Chariots of Fire ,Hugh Hudson,1981.0
+Diary of a Mad Black Woman ,Darren Grant,2005.0
+Shine ,Scott Hicks,1996.0
+Don Jon ,Joseph Gordon-Levitt,2013.0
+High Plains Drifter ,Clint Eastwood,1973.0
+Ghost World ,Terry Zwigoff,2001.0
+Iris ,Richard Eyre,2001.0
+Galaxina ,William Sachs,1980.0
+The Chorus ,Christophe Barratier,2004.0
+Mambo Italiano ,Émile Gaudreault,2003.0
+Wonderland ,James Cox,2003.0
+Do the Right Thing ,Spike Lee,1989.0
+Harvard Man ,James Toback,2001.0
+Le Havre ,Aki Kaurismäki,2011.0
+Irreversible ,Gaspar Noé,2002.0
+R100 ,Hitoshi Matsumoto,2013.0
+Rang De Basanti ,Rakeysh Omprakash Mehra,2006.0
+Animals ,Collin Schiffli,2014.0
+Salvation Boulevard ,George Ratliff,2011.0
+The Ten ,David Wain,2007.0
+A Room for Romeo Brass ,Shane Meadows,1999.0
+Headhunters ,Morten Tyldum,2011.0
+Grabbers ,Jon Wright,2012.0
+Saint Ralph ,Michael McGowan,2004.0
+Miss Julie ,Liv Ullmann,2014.0
+Somewhere in Time ,Jeannot Szwarc,1980.0
+Dum Maaro Dum ,Rohan Sippy,2011.0
+Insidious: Chapter 2 ,James Wan,2013.0
+Saw II ,Darren Lynn Bousman,2005.0
+10 Cloverfield Lane ,Dan Trachtenberg,2016.0
+Jackass: The Movie ,Jeff Tremaine,2002.0
+Lights Out ,David F. Sandberg,2016.0
+Paranormal Activity 3 ,Henry Joost,2011.0
+Ouija ,Stiles White,2014.0
+A Nightmare on Elm Street 3: Dream Warriors ,Chuck Russell,1987.0
+The Gift ,Joel Edgerton,2015.0
+Instructions Not Included ,Eugenio Derbez,2013.0
+Paranormal Activity 4 ,Henry Joost,2012.0
+The Robe ,Henry Koster,1953.0
+The Return of the Pink Panther ,Blake Edwards,1975.0
+Freddy's Dead: The Final Nightmare ,Rachel Talalay,1991.0
+Monster ,Patty Jenkins,2003.0
+"20,000 Leagues Under the Sea ",Richard Fleischer,1954.0
+Paranormal Activity: The Marked Ones ,Christopher Landon,2014.0
+The Elephant Man ,David Lynch,1980.0
+Dallas Buyers Club ,Jean-Marc Vallée,2013.0
+The Lazarus Effect ,David Gelb,2015.0
+Memento ,Christopher Nolan,2000.0
+Oculus ,Mike Flanagan,2013.0
+Clerks II ,Kevin Smith,2006.0
+Billy Elliot ,Stephen Daldry,2000.0
+The Way Way Back ,Nat Faxon,2013.0
+House Party 2 ,George Jackson,1991.0
+The Man from Snowy River ,George Miller,1982.0
+Doug's 1st Movie ,Maurice Joyce,1999.0
+The Apostle ,Robert Duvall,1997.0
+Mommie Dearest ,Frank Perry,1981.0
+Our Idiot Brother ,Jesse Peretz,2011.0
+Race ,Stephen Hopkins,2016.0
+The Players Club ,Ice Cube,1998.0
+O ,Tim Blake Nelson,2001.0
+"As Above, So Below ",John Erick Dowdle,2014.0
+Addicted ,Bille Woodruff,2014.0
+Eve's Bayou ,Kasi Lemmons,1997.0
+Still Alice ,Richard Glatzer,2014.0
+The Egyptian ,Michael Curtiz,1954.0
+Nighthawks ,Bruce Malmuth,1981.0
+Friday the 13th Part VIII: Jason Takes Manhattan ,Rob Hedden,1989.0
+My Big Fat Greek Wedding ,Joel Zwick,2002.0
+Spring Breakers ,Harmony Korine,2012.0
+Halloween: The Curse of Michael Myers ,Joe Chappelle,1995.0
+Y Tu Mamá También ,Alfonso Cuarón,2001.0
+Shaun of the Dead ,Edgar Wright,2004.0
+The Haunting of Molly Hartley ,Mickey Liddell,2008.0
+Lone Star ,John Sayles,1996.0
+Halloween 4: The Return of Michael Myers ,Dwight H. Little,1988.0
+April Fool's Day ,Fred Walton,1986.0
+Diner ,Barry Levinson,1982.0
+Lone Wolf McQuade ,Steve Carver,1983.0
+Apollo 18 ,Gonzalo López-Gallego,2011.0
+Sunshine Cleaning ,Christine Jeffs,2008.0
+No Escape ,John Erick Dowdle,2015.0
+The Beastmaster ,Don Coscarelli,1982.0
+Solomon and Sheba ,King Vidor,1959.0
+Fifty Shades of Black ,Michael Tiddes,2016.0
+Not Easily Broken ,Bill Duke,2009.0
+A Farewell to Arms ,Frank Borzage,1932.0
+The Perfect Match ,Bille Woodruff,2016.0
+Digimon: The Movie ,Mamoru Hosoda,2000.0
+Saved! ,Brian Dannelly,2004.0
+The Barbarian Invasions ,Denys Arcand,2003.0
+Robin and Marian ,Richard Lester,1976.0
+The Forsaken ,J.S. Cardone,2001.0
+Force 10 from Navarone ,Guy Hamilton,1978.0
+UHF ,Jay Levey,1989.0
+Grandma's Boy ,Nicholaus Goossen,2006.0
+Slums of Beverly Hills ,Tamara Jenkins,1998.0
+Once Upon a Time in the West ,Sergio Leone,1968.0
+Made ,Jon Favreau,2001.0
+Moon ,Duncan Jones,2009.0
+Keeping Up with the Steins ,Scott Marshall,2006.0
+Sea Rex 3D: Journey to a Prehistoric World ,Ronan Chapalain,2010.0
+The Sweet Hereafter ,Atom Egoyan,1997.0
+Of Gods and Men ,Xavier Beauvois,2010.0
+Bottle Shock ,Randall Miller,2008.0
+Jekyll and Hyde... Together Again ,Jerry Belson,1982.0
+Heavenly Creatures ,Peter Jackson,1994.0
+90 Minutes in Heaven ,Michael Polish,2015.0
+Everything Must Go ,Dan Rush,2010.0
+Zero Effect ,Jake Kasdan,1998.0
+The Machinist ,Brad Anderson,2004.0
+Light Sleeper ,Paul Schrader,1992.0
+Kill the Messenger ,Michael Cuesta,2014.0
+Rabbit Hole ,John Cameron Mitchell,2010.0
+Party Monster ,Fenton Bailey,2003.0
+Green Room ,Jeremy Saulnier,2015.0
+The Oh in Ohio ,Billy Kent,2006.0
+Atlas Shrugged: Who Is John Galt? ,James Manera,2014.0
+Bottle Rocket ,Wes Anderson,1996.0
+Albino Alligator ,Kevin Spacey,1996.0
+"Gandhi, My Father ",Feroz Abbas Khan,2007.0
+Standard Operating Procedure ,Errol Morris,2008.0
+Out of the Blue ,Dennis Hopper,1980.0
+Tucker and Dale vs Evil ,Eli Craig,2010.0
+"Lovely, Still ",Nicholas Fackler,2008.0
+Tycoon ,Richard Wallace,1947.0
+Desert Blue ,Morgan J. Freeman,1998.0
+Decoys ,Matthew Hastings,2004.0
+The Visit ,M. Night Shyamalan,2015.0
+Redacted ,Brian De Palma,2007.0
+Fascination ,Klaus Menzel,2004.0
+Saving Grace             ,,
+Area 51 ,Oren Peli,2015.0
+Sleep Tight ,Jaume Balagueró,2011.0
+The Cottage ,Paul Andrew Williams,2008.0
+Dead Like Me: Life After Death ,Stephen Herek,2009.0
+Farce of the Penguins ,Bob Saget,2006.0
+Flying By ,Jim Amatulli,2009.0
+Psych             ,,
+Rudderless ,William H. Macy,2014.0
+Henry & Me ,Barrett Esposito,2014.0
+Christmas Eve ,Mitch Davis,2015.0
+We Have Your Husband ,Eric Bross,2011.0
+Dying of the Light ,Paul Schrader,2014.0
+Born of War ,Vicky Jewson,2014.0
+Capricorn One ,Peter Hyams,1977.0
+Should've Been Romeo ,Marc Bennett,2012.0
+Running Forever ,Mike Mayhall,2015.0
+Yoga Hosers ,Kevin Smith,2016.0
+Navy Seals vs. Zombies ,Stanton Barrett,2015.0
+I Served the King of England ,Jirí Menzel,2006.0
+Soul Kitchen ,Fatih Akin,2009.0
+Sling Blade ,Billy Bob Thornton,1996.0
+The Awakening ,Nick Murphy,2011.0
+Hostel ,Eli Roth,2005.0
+Tristram Shandy: A Cock and Bull Story ,Michael Winterbottom,2005.0
+Take Shelter ,Jeff Nichols,2011.0
+Lady in White ,Frank LaLoggia,1988.0
+Driving Lessons ,Jeremy Brock,2006.0
+Let's Kill Ward's Wife ,Scott Foley,2014.0
+The Texas Chainsaw Massacre 2 ,Tobe Hooper,1986.0
+Pat Garrett & Billy the Kid ,Sam Peckinpah,1973.0
+Only God Forgives ,Nicolas Winding Refn,2013.0
+Camping sauvage ,Christophe Ali,2005.0
+Without Men ,Gabriela Tagliavini,2011.0
+Barfi ,Shekar,2013.0
+Dear Frankie ,Shona Auerbach,2004.0
+All Hat ,Leonard Farlinger,2007.0
+The Names of Love ,Michel Leclerc,2010.0
+Treading Water ,Analeine Cal y Mayor,2013.0
+Savage Grace ,Tom Kalin,2007.0
+Out of the Blue ,Robert Sarkies,2006.0
+Police Academy ,Hugh Wilson,1984.0
+The Blue Lagoon ,Randal Kleiser,1980.0
+Four Weddings and a Funeral ,Mike Newell,1994.0
+Fast Times at Ridgemont High ,Amy Heckerling,1982.0
+Moby Dick ,John Huston,1956.0
+25th Hour ,Spike Lee,2002.0
+Secrets and Lies             ,,
+Bound ,Lana Wachowski,1996.0
+Requiem for a Dream ,Darren Aronofsky,2000.0
+State Fair ,Walter Lang,1945.0
+Tango ,Carlos Saura,1998.0
+Salvador ,Oliver Stone,1986.0
+Moms' Night Out ,Andrew Erwin,2014.0
+Donnie Darko ,Richard Kelly,2001.0
+Saving Private Perez ,Beto Gómez,2011.0
+Character ,Mike van Diem,1997.0
+Spun ,Jonas Åkerlund,2002.0
+Life During Wartime ,Todd Solondz,2009.0
+Lady Vengeance ,Chan-wook Park,2005.0
+Mozart's Sister ,René Féret,2010.0
+Mean Machine ,Barry Skolnick,2001.0
+Exiled ,Johnnie To,2006.0
+Blackthorn ,Mateo Gil,2011.0
+Lilya 4-Ever ,Lukas Moodysson,2002.0
+After.Life ,Agnieszka Wojtowicz-Vosloo,2009.0
+Fugly ,Kabir Sadanand,2014.0
+One Flew Over the Cuckoo's Nest ,Milos Forman,1975.0
+R.L. Stine's Monsterville: The Cabinet of Souls ,Peter DeLuise,2015.0
+Silent Movie ,Mel Brooks,1976.0
+Airlift ,Raja Menon,2016.0
+Anne of Green Gables             ,,
+Falcon Rising ,Ernie Barbarash,2014.0
+The Sweeney ,Nick Love,2012.0
+Sexy Beast ,Jonathan Glazer,2000.0
+Easy Money ,Daniel Espinosa,2010.0
+Whale Rider ,Niki Caro,2002.0
+Paa ,R. Balki,2009.0
+Cargo ,Ivan Engler,2009.0
+Pan ,Joe Wright,2015.0
+High School Musical ,Kenny Ortega,2006.0
+Animal Kingdom             ,,
+Love and Death on Long Island ,Richard Kwietniowski,1997.0
+Night Watch ,Timur Bekmambetov,2004.0
+The Crying Game ,Neil Jordan,1992.0
+Porky's ,Bob Clark,1981.0
+Survival of the Dead ,George A. Romero,2009.0
+Night of the Living Dead ,George A. Romero,1968.0
+Lost in Translation ,Sofia Coppola,2003.0
+Annie Hall ,Woody Allen,1977.0
+The Greatest Show on Earth ,Cecil B. DeMille,1952.0
+Exodus: Gods and Kings ,Ridley Scott,2014.0
+Monster's Ball ,Marc Forster,2001.0
+Maggie ,Henry Hobson,2015.0
+Leaving Las Vegas ,Mike Figgis,1995.0
+Hansel & Gretel Get Baked ,Duane Journey,2013.0
+The Return of the Living Dead ,Dan O'Bannon,1985.0
+The Front Page ,Billy Wilder,1974.0
+The Boy Next Door ,Rob Cohen,2015.0
+Trapeze ,Carol Reed,1956.0
+Saving Grace             ,,
+The Kids Are All Right ,Lisa Cholodenko,2010.0
+They Live ,John Carpenter,1988.0
+The Great Escape ,John Sturges,1963.0
+What the #$*! Do We (K)now!? ,William Arntz,2004.0
+The Last Exorcism Part II ,Ed Gass-Donnelly,2013.0
+Boyhood ,Richard Linklater,2014.0
+Scoop ,Woody Allen,2006.0
+Planet of the Apes ,Tim Burton,2001.0
+The Wash ,DJ Pooh,2001.0
+3 Strikes ,DJ Pooh,2000.0
+The Cooler ,Wayne Kramer,2003.0
+The Misfits ,John Huston,1961.0
+The Night Listener ,Patrick Stettner,2006.0
+The Jerky Boys ,James Melkonian,1995.0
+My Soul to Take ,Wes Craven,2010.0
+The Orphanage ,J.A. Bayona,2007.0
+A Haunted House 2 ,Michael Tiddes,2014.0
+The Rules of Attraction ,Roger Avary,2002.0
+Topaz ,Alfred Hitchcock,1969.0
+Let's Go to Prison ,Bob Odenkirk,2006.0
+Four Rooms ,Allison Anders,1995.0
+Secretary ,Steven Shainberg,2002.0
+The Real Cancun ,Rick de Oliveira,2003.0
+Talk Radio ,Oliver Stone,1988.0
+Waiting for Guffman ,Christopher Guest,1996.0
+Love Stinks ,Jeff Franklin,1999.0
+You Kill Me ,John Dahl,2007.0
+Thumbsucker ,Mike Mills,2005.0
+Red State ,Kevin Smith,2011.0
+Mirrormask ,Dave McKean,2005.0
+Samsara ,Ron Fricke,2011.0
+The Barbarians ,Ruggero Deodato,1987.0
+The Art of Getting By ,Gavin Wiesen,2011.0
+Zipper ,Mora Stephens,2015.0
+Poolhall Junkies ,Mars Callahan,2002.0
+The Loss of Sexual Innocence ,Mike Figgis,1999.0
+Holy Motors ,Leos Carax,2012.0
+Joe ,David Gordon Green,2013.0
+Shooting Fish ,Stefan Schwartz,1997.0
+Prison ,Renny Harlin,1987.0
+Psycho Beach Party ,Robert Lee King,2000.0
+The Big Tease ,Kevin Allen,1999.0
+"Buen Día, Ramón ",Jorge Ramírez Suárez,2013.0
+Trust ,David Schwimmer,2010.0
+An Everlasting Piece ,Barry Levinson,2000.0
+Among Giants ,Sam Miller,1998.0
+Adore ,Anne Fontaine,2013.0
+The Velocity of Gary ,Dan Ireland,1998.0
+Mondays in the Sun ,Fernando León de Aranoa,2002.0
+Stake Land ,Jim Mickle,2010.0
+Sonny with a Chance             ,,
+The Last Time I Committed Suicide ,Stephen Kay,1997.0
+Futuro Beach ,Karim Aïnouz,2014.0
+Another Happy Day ,Sam Levinson,2011.0
+A Lonely Place to Die ,Julian Gilbey,2011.0
+Nothing ,Vincenzo Natali,2003.0
+The Geographer Drank His Globe Away ,Aleksandr Veledinskiy,2013.0
+1776 ,Peter H. Hunt,1972.0
+Inescapable ,Ruba Nadda,2012.0
+Hell's Angels ,Howard Hughes,1930.0
+Purple Violets ,Edward Burns,2007.0
+The Veil ,Phil Joanou,2016.0
+The Loved Ones ,Sean Byrne,2009.0
+No Vacancy ,Chris Stokes,2012.0
+How to Fall in Love ,Mark Griffiths,2012.0
+The Perfect Wave ,Bruce Macdonald,2014.0
+Ben-Hur ,Timur Bekmambetov,2016.0
+A Man for All Seasons ,Fred Zinnemann,1966.0
+Network ,Sidney Lumet,1976.0
+Gone with the Wind ,Victor Fleming,1939.0
+Desert Dancer ,Richard Raymond,2014.0
+Major Dundee ,Sam Peckinpah,1965.0
+Down for Life ,Alan Jacobs,2009.0
+Annie Get Your Gun ,George Sidney,1950.0
+Four Lions ,Christopher Morris,2010.0
+House of Sand ,Andrucha Waddington,2005.0
+Defendor ,Peter Stebbings,2009.0
+The Pirate ,Vincente Minnelli,1948.0
+The Good Heart ,Dagur Kári,2009.0
+The History Boys ,Nicholas Hytner,2006.0
+Unknown ,Jaume Collet-Serra,2011.0
+M*A*S*H             ,,
+Midnight Cowboy ,John Schlesinger,1969.0
+The Full Monty ,Peter Cattaneo,1997.0
+Airplane! ,Jim Abrahams,1980.0
+Chain of Command ,Kevin Carraway,2015.0
+Friday ,F. Gary Gray,1995.0
+Menace II Society ,Albert Hughes,1993.0
+Empire             ,,
+Creepshow 2 ,Michael Gornick,1987.0
+The Ballad of Cable Hogue ,Sam Peckinpah,1970.0
+In Cold Blood ,Richard Brooks,1967.0
+The Nun's Story ,Fred Zinnemann,1959.0
+Harper ,Jack Smight,1966.0
+Frenzy ,Alfred Hitchcock,1972.0
+The Witch ,Robert Eggers,2015.0
+I Got the Hook Up ,Michael Martin,1998.0
+She's the One ,Edward Burns,1996.0
+Gods and Monsters ,Bill Condon,1998.0
+The Secret in Their Eyes ,Juan José Campanella,2009.0
+Day of the Dead ,George A. Romero,1985.0
+Train ,Gideon Raff,2008.0
+Evil Dead II ,Sam Raimi,1987.0
+Pootie Tang ,Louis C.K.,2001.0
+Sharknado ,Anthony C. Ferrante,2013.0
+La otra conquista ,Salvador Carrasco,1998.0
+Trollhunter ,André Øvredal,2010.0
+Ira & Abby ,Robert Cary,2006.0
+The Watch ,Akiva Schaffer,2012.0
+Winter Passing ,Adam Rapp,2005.0
+D.E.B.S. ,Angela Robinson,2004.0
+The Masked Saint ,Warren P. Sonoda,2016.0
+The Betrayed ,Amanda Gusack,2008.0
+Taxman ,Avi Nesher,1998.0
+The Secret             ,,
+2:13 ,Charles Adelman,2009.0
+"Batman: The Dark Knight Returns, Part 2 ",Jay Oliva,2013.0
+Time to Choose ,Charles Ferguson,2015.0
+In the Name of the King: The Last Job ,Uwe Boll,2014.0
+Wicked Blood ,Mark Young,2014.0
+Dawn Patrol ,Daniel Petrie Jr.,2014.0
+Lords of London ,Antonio Simoncini,2014.0
+High Anxiety ,Mel Brooks,1977.0
+March of the Penguins ,Luc Jacquet,2005.0
+Margin Call ,J.C. Chandor,2011.0
+August ,Eldar Rapaport,2011.0
+Choke ,Clark Gregg,2008.0
+Whiplash ,Damien Chazelle,2014.0
+City of God ,Fernando Meirelles,2002.0
+Human Traffic ,Justin Kerrigan,1999.0
+Day One ,Nathan Frankowski,2012.0
+The Dead Girl ,Karen Moncrieff,2006.0
+The Hunt ,Thomas Vinterberg,2012.0
+A Christmas Story ,Bob Clark,1983.0
+Bella ,Alejandro Monteverde,2006.0
+Class of 1984 ,Mark L. Lester,1982.0
+The Opposite Sex ,Jennifer Finnigan,2014.0
+Dreaming of Joseph Lees ,Eric Styles,1999.0
+The Class ,Laurent Cantet,2008.0
+Rosemary's Baby ,Roman Polanski,1968.0
+The Man Who Shot Liberty Valance ,John Ford,1962.0
+Adam ,Max Mayer,2009.0
+Maria Full of Grace ,Joshua Marston,2004.0
+Beginners ,Mike Mills,2010.0
+Feast ,John Gulager,2005.0
+Animal House ,John Landis,1978.0
+Goldfinger ,Guy Hamilton,1964.0
+Antiviral ,Brandon Cronenberg,2012.0
+It's a Wonderful Life ,Frank Capra,1946.0
+Trainspotting ,Danny Boyle,1996.0
+The Original Kings of Comedy ,Spike Lee,2000.0
+Paranormal Activity 2 ,Tod Williams,2010.0
+Waking Ned Devine ,Kirk Jones,1998.0
+Bowling for Columbine ,Michael Moore,2002.0
+Coming Home ,Yimou Zhang,2014.0
+A Nightmare on Elm Street 2: Freddy's Revenge ,Jack Sholder,1985.0
+A Room with a View ,James Ivory,1985.0
+The Purge ,James DeMonaco,2013.0
+Sinister ,Scott Derrickson,2012.0
+Martin Lawrence Live: Runteldat ,David Raynr,2002.0
+Cat on a Hot Tin Roof ,Richard Brooks,1958.0
+Beneath the Planet of the Apes ,Ted Post,1970.0
+Air Bud ,Charles Martin Smith,1997.0
+Pokémon 3: The Movie ,Kunihiko Yuyama,2000.0
+Jason Lives: Friday the 13th Part VI ,Tom McLoughlin,1986.0
+The Bridge on the River Kwai ,David Lean,1957.0
+Spaced Invaders ,Patrick Read Johnson,1990.0
+Family Plot ,Alfred Hitchcock,1976.0
+The Apartment ,Billy Wilder,1960.0
+Jason Goes to Hell: The Final Friday ,Adam Marcus,1993.0
+Torn Curtain ,Alfred Hitchcock,1966.0
+Dave Chappelle's Block Party ,Michel Gondry,2005.0
+Slow West ,John Maclean,2015.0
+Krush Groove ,Michael Schultz,1985.0
+Next Day Air ,Benny Boom,2009.0
+Elmer Gantry ,Richard Brooks,1960.0
+Judgment at Nuremberg ,Stanley Kramer,1961.0
+Trippin' ,David Raynr,1999.0
+Robot Chicken             ,,
+Red River ,Howard Hawks,1948.0
+Phat Girlz ,Nnegest Likké,2006.0
+Before Midnight ,Richard Linklater,2013.0
+Teen Wolf Too ,Christopher Leitch,1987.0
+Phantasm II ,Don Coscarelli,1988.0
+Woman Thou Art Loosed ,Michael Schultz,2004.0
+Real Women Have Curves ,Patricia Cardoso,2002.0
+Deadline Gallipoli             ,,
+Water ,Deepa Mehta,2005.0
+East Is East ,Damien O'Donnell,1999.0
+Whipped ,Peter M. Cohen,2000.0
+Kama Sutra: A Tale of Love ,Mira Nair,1996.0
+Please Give ,Nicole Holofcener,2010.0
+Willy Wonka & the Chocolate Factory ,Mel Stuart,1971.0
+Warlock: The Armageddon ,Anthony Hickox,1993.0
+8 Heads in a Duffel Bag ,Tom Schulman,1997.0
+Days of Heaven ,Terrence Malick,1978.0
+Thirteen Conversations About One Thing ,Jill Sprecher,2001.0
+Jawbreaker ,Darren Stein,1999.0
+Basquiat ,Julian Schnabel,1996.0
+Frances Ha ,Noah Baumbach,2012.0
+Tsotsi ,Gavin Hood,2005.0
+Happiness ,Todd Solondz,1998.0
+DysFunktional Family ,George Gallo,2003.0
+Tusk ,Kevin Smith,2014.0
+Oldboy ,Chan-wook Park,2003.0
+Letters to God ,David Nixon,2010.0
+Hobo with a Shotgun ,Jason Eisener,2011.0
+Compadres ,Enrique Begne,2016.0
+Freeway ,Matthew Bright,1996.0
+Love's Abiding Joy ,Michael Landon Jr.,2006.0
+Fish Tank ,Andrea Arnold,2009.0
+Damsels in Distress ,Whit Stillman,2011.0
+Creature             ,,
+Bachelorette ,Leslye Headland,2012.0
+BrainDead             ,,
+Brave New Girl ,Bobby Roth,2004.0
+Tim and Eric's Billion Dollar Movie ,Tim Heidecker,2012.0
+The Gambler ,Rupert Wyatt,2014.0
+The Grand             ,,
+Summer Storm ,Marco Kreuzpaintner,2004.0
+Fort McCoy ,Kate Connor,2011.0
+Chain Letter ,Deon Taylor,2009.0
+Just Looking ,Jason Alexander,1999.0
+The Divide ,Xavier Gens,2011.0
+The Eclipse ,Conor McPherson,2009.0
+Demonic ,Will Canon,2015.0
+My Big Fat Independent Movie ,Philip Zlotorynski,2005.0
+Alice in Wonderland ,Tim Burton,2010.0
+The Deported ,Lance Kawas,2009.0
+Tanner Hall ,Francesca Gregorini,2009.0
+Open Road ,Marcio Garcia,2013.0
+They Came Together ,David Wain,2014.0
+30 Nights of Paranormal Activity with the Devil Inside the Girl with the Dragon Tattoo ,Craig Moss,2013.0
+Never Back Down 2: The Beatdown ,Michael Jai White,2011.0
+Point Blank ,John Boorman,1967.0
+Four Single Fathers ,Paolo Monico,2009.0
+Enter the Dangerous Mind ,Youssef Delara,2013.0
+Something Wicked ,Darin Scott,2014.0
+AWOL-72 ,Christian Sesma,2015.0
+Iguana ,Monte Hellman,1988.0
+Cinderella ,Kenneth Branagh,2015.0
+Chicago Overcoat ,Brian Caunter,2009.0
+Barry Munday ,Chris D'Arienzo,2010.0
+Central Station ,Walter Salles,1998.0
+Pocketful of Miracles ,Frank Capra,1961.0
+Close Range ,Isaac Florentine,2015.0
+Boynton Beach Club ,Susan Seidelman,2005.0
+Amnesiac ,Michael Polish,2014.0
+Freakonomics ,Heidi Ewing,2010.0
+The Omen ,Richard Donner,1976.0
+High Tension ,Alexandre Aja,2003.0
+Griff the Invisible ,Leon Ford,2010.0
+Unnatural ,Hank Braxtan,2015.0
+Hustle & Flow ,Craig Brewer,2005.0
+Some Like It Hot ,Billy Wilder,1959.0
+Friday the 13th Part VII: The New Blood ,John Carl Buechler,1988.0
+The Wizard of Oz ,Victor Fleming,1939.0
+Young Frankenstein ,Mel Brooks,1974.0
+Diary of the Dead ,George A. Romero,2007.0
+Lage Raho Munna Bhai ,Rajkumar Hirani,2006.0
+Ulee's Gold ,Victor Nunez,1997.0
+The Black Stallion ,Carroll Ballard,1979.0
+Sardaar Ji ,Rohit Jugraj,2015.0
+Journey to Saturn ,Thorbjørn Christoffersen,2008.0
+Donovan's Reef ,John Ford,1963.0
+The Dress ,Alex van Warmerdam,1996.0
+A Guy Named Joe ,Victor Fleming,1943.0
+Blazing Saddles ,Mel Brooks,1974.0
+Friday the 13th: The Final Chapter ,Joseph Zito,1984.0
+Ida ,Pawel Pawlikowski,2013.0
+Maurice ,James Ivory,1987.0
+Beer League ,Frank Sebastiano,2006.0
+The Astronaut's Wife ,Rand Ravich,1999.0
+Riding Giants ,Stacy Peralta,2004.0
+Timecrimes ,Nacho Vigalondo,2007.0
+Silver Medallist ,Hao Ning,2009.0
+Timber Falls ,Tony Giglio,2007.0
+Singin' in the Rain ,Stanley Donen,1952.0
+"Fat, Sick & Nearly Dead ",Joe Cross,2010.0
+A Haunted House ,Michael Tiddes,2013.0
+2016: Obama's America ,Dinesh D'Souza,2012.0
+Halloween II ,Rob Zombie,2009.0
+That Thing You Do! ,Tom Hanks,1996.0
+Halloween III: Season of the Witch ,Tommy Lee Wallace,1982.0
+Escape from the Planet of the Apes ,Don Taylor,1971.0
+Hud ,Martin Ritt,1963.0
+Kevin Hart: Let Me Explain ,Leslie Small,2013.0
+My Own Private Idaho ,Gus Van Sant,1991.0
+Garden State ,Zach Braff,2004.0
+Before Sunrise ,Richard Linklater,1995.0
+Sur le seuil ,Éric Tessier,2003.0
+Jesus' Son ,Alison Maclean,1999.0
+Saving Face ,Alice Wu,2004.0
+Brick Lane ,Sarah Gavron,2007.0
+Robot & Frank ,Jake Schreier,2012.0
+My Life Without Me ,Isabel Coixet,2003.0
+The Spectacular Now ,James Ponsoldt,2013.0
+Marilyn Hotchkiss' Ballroom Dancing and Charm School ,Randall Miller,1990.0
+Religulous ,Larry Charles,2008.0
+Fuel ,Joshua Tickell,2008.0
+Valley of the Heart's Delight ,Tim Boxell,2006.0
+Dodgeball: A True Underdog Story ,Rawson Marshall Thurber,2004.0
+Eye of the Dolphin ,Michael D. Sellers,2006.0
+8: The Mormon Proposition ,Reed Cowan,2010.0
+The Other End of the Line ,James Dodson,2008.0
+Anatomy ,Stefan Ruzowitzky,2000.0
+Sleep Dealer ,Alex Rivera,2008.0
+Super ,James Gunn,2010.0
+Christmas Mail ,John Murlowski,2010.0
+Stung ,Benni Diez,2015.0
+Antibirth ,Danny Perez,2016.0
+Get on the Bus ,Spike Lee,1996.0
+Thr3e ,Robby Henson,2006.0
+Idiocracy ,Mike Judge,2006.0
+The Rise of the Krays ,Zackary Adler,2015.0
+This Is England ,Shane Meadows,2006.0
+Alien Uprising ,Dominic Burns,2012.0
+Bathing Beauty ,George Sidney,1944.0
+Go for It! ,Carmen Marron,2011.0
+"Dancer, Texas Pop. 81 ",Tim McCanlies,1998.0
+Show Boat ,George Sidney,1951.0
+Redemption Road ,Mario Van Peebles,2010.0
+The Calling ,Jason Stone,2014.0
+The Brave Little Toaster ,Jerry Rees,1987.0
+Fantasia ,James Algar,1940.0
+The French Connection ,William Friedkin,1971.0
+8 Days ,Jaco Booyens,2014.0
+Friday the 13th Part III ,Steve Miner,1982.0
+Friday the 13th: A New Beginning ,Danny Steinmann,1985.0
+The Last Sin Eater ,Michael Landon Jr.,2007.0
+Do You Believe? ,Jon Gunn,2015.0
+Impact Point ,Hayley Cloake,2008.0
+The Valley of Decision ,Tay Garnett,1945.0
+Eden ,Shyam Madiraju,2015.0
+Chicken Tikka Masala ,Harmage Singh Kalirai,2005.0
+Always Woodstock ,Rita Merson,2014.0
+Jack Brooks: Monster Slayer ,Jon Knautz,2007.0
+The Best Years of Our Lives ,William Wyler,1946.0
+Bully ,Larry Clark,2001.0
+Elling ,Petter Næss,2001.0
+Mi America ,Robert Fontaine,2015.0
+[Rec] ,Jaume Balagueró,2007.0
+Lies in Plain Sight ,Patricia Cardoso,2010.0
+Sharkskin ,Dan Perri,2015.0
+Containment ,Neil Mcenery-West,2015.0
+The Timber ,Anthony O'Brien,2015.0
+From Russia with Love ,Terence Young,1963.0
+The Toxic Avenger Part II ,Michael Herz,1989.0
+In the Heat of the Night             ,,
+Sleeper ,Woody Allen,1973.0
+It Follows ,David Robert Mitchell,2014.0
+Everything You Always Wanted to Know About Sex * But Were Afraid to Ask ,Woody Allen,1972.0
+To Kill a Mockingbird ,Robert Mulligan,1962.0
+Mad Max 2: The Road Warrior ,George Miller,1981.0
+The Legend of Drunken Master ,Chia-Liang Liu,1994.0
+Lolita ,Stanley Kubrick,1962.0
+Boys Don't Cry ,Kimberly Peirce,1999.0
+Silent House ,Chris Kentis,2011.0
+The Lives of Others ,Florian Henckel von Donnersmarck,2006.0
+Courageous ,Alex Kendrick,2011.0
+The Hustler ,Robert Rossen,1961.0
+Boom Town ,Jack Conway,1940.0
+The Triplets of Belleville ,Sylvain Chomet,2003.0
+Smoke Signals ,Chris Eyre,1998.0
+American Splendor ,Shari Springer Berman,2003.0
+Before Sunset ,Richard Linklater,2004.0
+Amores Perros ,Alejandro G. Iñárritu,2000.0
+Thirteen ,Catherine Hardwicke,2003.0
+Gentleman's Agreement ,Elia Kazan,1947.0
+Winter's Bone ,Debra Granik,2010.0
+Touching the Void ,Kevin Macdonald,2003.0
+Alexander's Ragtime Band ,Henry King,1938.0
+Me and You and Everyone We Know ,Miranda July,2005.0
+Inside Job ,Charles Ferguson,2010.0
+We Are Your Friends ,Max Joseph,2015.0
+Ghost Dog: The Way of the Samurai ,Jim Jarmusch,1999.0
+Harsh Times ,David Ayer,2005.0
+Captive ,Jerry Jameson,2015.0
+Full Frontal ,Steven Soderbergh,2002.0
+Witchboard ,Kevin Tenney,1986.0
+Strangers with Candy             ,,
+Hamlet ,Kenneth Branagh,1996.0
+Shortbus ,John Cameron Mitchell,2006.0
+Waltz with Bashir ,Ari Folman,2008.0
+"The Book of Mormon Movie, Volume 1: The Journey ",Gary Rogers,2003.0
+No End in Sight ,Charles Ferguson,2007.0
+The Diary of a Teenage Girl ,Marielle Heller,2015.0
+Get Real             ,,
+In the Shadow of the Moon ,David Sington,2007.0
+Meek's Cutoff ,Kelly Reichardt,2010.0
+Inside Deep Throat ,Fenton Bailey,2005.0
+Dinner Rush ,Bob Giraldi,2000.0
+Clockwatchers ,Jill Sprecher,1997.0
+The Virginity Hit ,Huck Botko,2010.0
+Subway ,Luc Besson,1985.0
+House of D ,David Duchovny,2004.0
+Teeth ,Mitchell Lichtenstein,2007.0
+Six-String Samurai ,Lance Mungia,1998.0
+Hum To Mohabbat Karega ,Kundan Shah,2000.0
+It's All Gone Pete Tong ,Michael Dowse,2004.0
+Saint John of Las Vegas ,Hue Rhodes,2009.0
+24 7: Twenty Four Seven ,Shane Meadows,1997.0
+Stonewall ,Roland Emmerich,2015.0
+Eureka             ,,
+Roadside Romeo ,Jugal Hansraj,2008.0
+This Thing of Ours ,Danny Provenzano,2003.0
+The Lost Medallion: The Adventures of Billy Stone ,Bill Muir,2013.0
+The Last Five Years ,Richard LaGravenese,2014.0
+The Missing Person ,Noah Buschel,2009.0
+Return of the Living Dead III ,Brian Yuzna,1993.0
+London ,Hunter Richards,2005.0
+Sherrybaby ,Laurie Collyer,2006.0
+Stealing Harvard ,Bruce McCulloch,2002.0
+Circle ,Aaron Hann,2015.0
+Eden Lake ,James Watkins,2008.0
+Plush ,Catherine Hardwicke,2013.0
+Vampire Killers ,Phil Claydon,2009.0
+Gangster's Paradise: Jerusalema ,Ralph Ziman,2008.0
+Freeze Frame ,John Simpson,2004.0
+Grave Encounters ,Colin Minihan,2011.0
+Stitches ,Conor McMahon,2012.0
+Nine Dead ,Chris Shadley,2010.0
+"To Be Frank, Sinatra at 100 ",Simon Napier-Bell,2015.0
+Bananas ,Woody Allen,1971.0
+Supercapitalist ,Simon Yin,2012.0
+Rockaway ,Jeff Crook,2007.0
+Wings             ,,
+The Lady from Shanghai ,Orson Welles,1947.0
+No Man's Land: The Rise of Reeker ,Dave Payne,2008.0
+Highway ,James Cox,2002.0
+Small Apartments ,Jonas Åkerlund,2012.0
+Coffee Town ,Brad Copeland,2013.0
+The Ghastly Love of Johnny X ,Paul Bunnell,2012.0
+All Is Bright ,Phil Morrison,2013.0
+The Torture Chamber of Dr. Sadism ,Harald Reinl,1967.0
+Straight A's ,James Cox,2013.0
+A Funny Thing Happened on the Way to the Forum ,Richard Lester,1966.0
+Slacker Uprising ,Michael Moore,2007.0
+The Legend of Hell's Gate: An American Conspiracy ,Tanner Beard,2011.0
+The Walking Deceased ,Scott Dow,2015.0
+The Curse of Downers Grove ,Derick Martini,2015.0
+Shark Lake ,Jerry Dugan,2015.0
+River's Edge ,Tim Hunter,1986.0
+Northfork ,Michael Polish,2003.0
+The Marine 4: Moving Target ,William Kaufman,2015.0
+Buried ,Rodrigo Cortés,2010.0
+Submarine ,Richard Ayoade,2010.0
+The Square ,Jehane Noujaim,2013.0
+One to Another ,Pascal Arnold,2006.0
+Carrie ,Kimberly Peirce,2013.0
+ABCD (Any Body Can Dance) ,Remo,2013.0
+A Nightmare on Elm Street ,Wes Craven,1984.0
+Man on Wire ,James Marsh,2008.0
+Abandoned ,John Laing,2015.0
+Brotherly Love ,Jamal Hill,2015.0
+The Last Exorcism ,Daniel Stamm,2010.0
+Nowhere Boy ,Sam Taylor-Johnson,2009.0
+A Streetcar Named Desire ,Elia Kazan,1951.0
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb ,Stanley Kubrick,1964.0
+El crimen del padre Amaro ,Carlos Carrera,2002.0
+Beasts of the Southern Wild ,Benh Zeitlin,2012.0
+Battle for the Planet of the Apes ,J. Lee Thompson,1973.0
+Songcatcher ,Maggie Greenwald,2000.0
+Higher Ground ,Vera Farmiga,2011.0
+Vaalu ,Vijay Chandar,2015.0
+The Greatest Movie Ever Sold ,Morgan Spurlock,2011.0
+Ed and His Dead Mother ,Jonathan Wacks,1993.0
+Travelers and Magicians ,Khyentse Norbu,2003.0
+Hang 'Em High ,Ted Post,1968.0
+Deadline - U.S.A. ,Richard Brooks,1952.0
+Sublime ,Tony Krantz,2007.0
+A Beginner's Guide to Snuff ,Mitchell Altieri,2016.0
+Independence Daysaster ,W.D. Hogan,2013.0
+Dysfunctional Friends ,Corey Grant,2012.0
+Run Lola Run ,Tom Tykwer,1998.0
+May ,Lucky McKee,2002.0
+Against the Wild ,Richard Boddington,2013.0
+Living Dark: The Story of Ted the Caver ,David Hunt,2013.0
+Under the Same Moon ,Patricia Riggen,2007.0
+Conquest of the Planet of the Apes ,J. Lee Thompson,1972.0
+In the Bedroom ,Todd Field,2001.0
+I Spit on Your Grave ,Steven R. Monroe,2010.0
+"Happy, Texas ",Mark Illsley,1999.0
+My Summer of Love ,Pawel Pawlikowski,2004.0
+The Lunchbox ,Ritesh Batra,2013.0
+Yes ,Sally Potter,2004.0
+You Can't Take It with You ,Frank Capra,1938.0
+From Here to Eternity ,Fred Zinnemann,1953.0
+She Wore a Yellow Ribbon ,John Ford,1949.0
+Grace Unplugged ,Brad J. Silverman,2013.0
+Foolish ,Dave Meyers,1999.0
+N-Secure ,David M. Matthews,2010.0
+Caramel ,Nadine Labaki,2007.0
+Out of the Dark ,Lluís Quílez,2014.0
+The Bubble ,Eytan Fox,2006.0
+The Conversation ,Francis Ford Coppola,1974.0
+Dil Jo Bhi Kahey... ,Romesh Sharma,2005.0
+Mississippi Mermaid ,François Truffaut,1969.0
+I Love Your Work ,Adam Goldberg,2003.0
+Cabin Fever ,Travis Zariwny,2016.0
+Dawn of the Dead ,Zack Snyder,2004.0
+Waitress ,Adrienne Shelly,2007.0
+Bloodsport ,Newt Arnold,1988.0
+Mr. Smith Goes to Washington ,Frank Capra,1939.0
+Kids ,Larry Clark,1995.0
+The Squid and the Whale ,Noah Baumbach,2005.0
+Kissing Jessica Stein ,Charles Herman-Wurmfeld,2001.0
+"A Woman, a Gun and a Noodle Shop ",Yimou Zhang,2009.0
+Kickboxer: Vengeance ,John Stockwell,2016.0
+Spellbound ,Alfred Hitchcock,1945.0
+Exotica ,Atom Egoyan,1994.0
+Buffalo '66 ,Vincent Gallo,1998.0
+Insidious ,James Wan,2010.0
+Repo Man ,Alex Cox,1984.0
+Nine Queens ,Fabián Bielinsky,2000.0
+The Gatekeepers ,Dror Moreh,2012.0
+The Ballad of Jack and Rose ,Rebecca Miller,2005.0
+The To Do List ,Maggie Carey,2013.0
+Killing Zoe ,Roger Avary,1993.0
+The Believer ,Henry Bean,2001.0
+Snow Angels ,David Gordon Green,2007.0
+Unsullied ,Simeon Rice,2014.0
+Session 9 ,Brad Anderson,2001.0
+I Want Someone to Eat Cheese With ,Jeff Garlin,2006.0
+Mooz-Lum ,Qasim Basir,2010.0
+Hatchet ,Adam Green,2006.0
+Modern Times ,Charles Chaplin,1936.0
+Stolen Summer ,Pete Jones,2002.0
+My Name Is Bruce ,Bruce Campbell,2007.0
+The Salon ,Mark Brown,2005.0
+Road Hard ,Adam Carolla,2015.0
+Forty Shades of Blue ,Ira Sachs,2005.0
+Amigo ,John Sayles,2010.0
+Pontypool ,Bruce McDonald,2008.0
+Trucker ,James Mottern,2008.0
+Me You and Five Bucks ,Jaime Zevallos,2015.0
+The Lords of Salem ,Rob Zombie,2012.0
+Housebound ,Gerard Johnstone,2014.0
+Wal-Mart: The High Cost of Low Price ,Robert Greenwald,2005.0
+Fetching Cody ,David Ray,2005.0
+Once Upon a Time in Queens ,Dave Rodriguez,2013.0
+Closer to the Moon ,Nae Caranfil,2014.0
+Mutant World ,David Winning,2014.0
+Growing Up Smith ,Frank Lotito,2015.0
+Checkmate ,Timothy Woodward Jr.,2015.0
+Jack Reacher ,Christopher McQuarrie,2012.0
+#Horror ,Tara Subkoff,2015.0
+Wind Walkers ,Russell Friedenberg,2015.0
+Snow White and the Seven Dwarfs ,William Cottrell,1937.0
+The Holy Girl ,Lucrecia Martel,2004.0
+Shalako ,Edward Dmytryk,1968.0
+Incident at Loch Ness ,Zak Penn,2004.0
+The Dog Lover ,Alex Ranarivelo,2016.0
+Girl House ,Jon Knautz,2014.0
+The Blue Room ,Mathieu Amalric,2014.0
+House at the End of the Drive ,David Worth,2014.0
+Batman: The Movie ,Leslie H. Martinson,1966.0
+"Lock, Stock and Two Smoking Barrels ",Guy Ritchie,1998.0
+The Ballad of Gregorio Cortez ,Robert M. Young,1982.0
+The Streets of San Francisco             ,,
+The Celebration ,Thomas Vinterberg,1998.0
+Trees Lounge ,Steve Buscemi,1996.0
+Journey from the Fall ,Ham Tran,2006.0
+The Basket ,Rich Cowan,1999.0
+Eddie: The Sleepwalking Cannibal ,Boris Rodriguez,2012.0
+Mercury Rising ,Harold Becker,1998.0
+Space: Above and Beyond             ,,
+Queen of the Mountains ,Sadyk Sher-Niyaz,2014.0
+Def-Con 4 ,Paul Donovan,1985.0
+The Hebrew Hammer ,Jonathan Kesselman,2003.0
+Neal 'N' Nikki ,Arjun Sablok,2005.0
+The 41-Year-Old Virgin Who Knocked Up Sarah Marshall and Felt Superbad About It ,Craig Moss,2010.0
+Forget Me Not ,Tyler Oliver,2009.0
+Rebecca ,Alfred Hitchcock,1940.0
+Friday the 13th Part 2 ,Steve Miner,1981.0
+The Lost Weekend ,Billy Wilder,1945.0
+C.H.U.D. ,Douglas Cheek,1984.0
+Filly Brown ,Youssef Delara,2012.0
+The Lion of Judah ,Deryck Broom,2011.0
+Niagara ,Henry Hathaway,1953.0
+How Green Was My Valley ,John Ford,1941.0
+The Girlfriend Experience             ,,
+Da Sweet Blood of Jesus ,Spike Lee,2014.0
+"Sex, Lies, and Videotape ",Steven Soderbergh,1989.0
+Saw ,James Wan,2004.0
+Super Troopers ,Jay Chandrasekhar,2001.0
+The Algerian ,Giovanni Zelko,2014.0
+The Amazing Catfish ,Claudia Sainte-Luce,2013.0
+The Day the Earth Stood Still ,Scott Derrickson,2008.0
+Monsoon Wedding ,Mira Nair,2001.0
+You Can Count on Me ,Kenneth Lonergan,2000.0
+The Trouble with Harry ,Alfred Hitchcock,1955.0
+Lucky Number Slevin ,Paul McGuigan,2006.0
+But I'm a Cheerleader ,Jamie Babbit,1999.0
+Home Run ,David Boyd,2013.0
+Reservoir Dogs ,Quentin Tarantino,1992.0
+The Blue Bird ,Walter Lang,1940.0
+"The Good, the Bad and the Ugly ",Sergio Leone,1966.0
+The Second Mother ,Anna Muylaert,2015.0
+Blue Like Jazz ,Steve Taylor,2012.0
+Down and Out with the Dolls ,Kurt Voss,2001.0
+"Pink Ribbons, Inc. ",Léa Pool,2011.0
+Certifiably Jonathan ,James David Pasternak,2007.0
+Q ,Laurent Bouhnik,2011.0
+The Knife of Don Juan ,Tom Sanchez,2013.0
+Grand Theft Parsons ,David Caffrey,2003.0
+Extreme Movie ,Adam Jay Epstein,2008.0
+The Charge of the Light Brigade ,Michael Curtiz,1936.0
+Below Zero ,Justin Thomas Ostensen,2011.0
+Crowsnest ,Brenton Spencer,2012.0
+Airborne ,Rob Bowman,1993.0
+Cotton Comes to Harlem ,Ossie Davis,1970.0
+The Wicked Within ,Jay Alaimo,2015.0
+Bleeding Hearts ,Dylan Bank,2015.0
+Waiting... ,Rob McKittrick,2005.0
+Dead Man's Shoes ,Shane Meadows,2004.0
+Wolf Creek             ,,
+From a Whisper to a Scream ,Jeff Burr,1987.0
+Sex with Strangers ,Harry Gantz,2002.0
+Dracula: Pages from a Virgin's Diary ,Guy Maddin,2002.0
+Faith Like Potatoes ,Regardt van den Bergh,2006.0
+Beyond the Black Rainbow ,Panos Cosmatos,2010.0
+The Raid: Redemption ,Gareth Evans,2011.0
+The Dead Undead ,Matthew R. Anderson,2010.0
+The Vatican Exorcisms ,Joe Marino,2013.0
+Casablanca ,Michael Curtiz,1942.0
+Lake Mungo ,Joel Anderson,2008.0
+Rocket Singh: Salesman of the Year ,Shimit Amin,2009.0
+Silent Running ,Douglas Trumbull,1972.0
+Rocky ,John G. Avildsen,1976.0
+The Sleepwalker ,Mona Fastvold,2014.0
+The Fog ,John Carpenter,1980.0
+Tom Jones ,Tony Richardson,1963.0
+Unfriended ,Levan Gabriadze,2014.0
+Taxi Driver ,Martin Scorsese,1976.0
+The Howling ,Joe Dante,1981.0
+Dr. No ,Terence Young,1962.0
+Chernobyl Diaries ,Bradley Parker,2012.0
+Hellraiser ,Clive Barker,1987.0
+God's Not Dead 2 ,Harold Cronk,2016.0
+Cry_Wolf ,Jeff Wadlow,2005.0
+Godzilla 2000 ,Takao Okawara,1999.0
+Blue Valentine ,Derek Cianfrance,2010.0
+Transamerica ,Duncan Tucker,2005.0
+The Devil Inside ,William Brent Bell,2012.0
+Beyond the Valley of the Dolls ,Russ Meyer,1970.0
+Love Me Tender ,Robert D. Webb,1956.0
+An Inconvenient Truth ,Davis Guggenheim,2006.0
+Sands of Iwo Jima ,Allan Dwan,1949.0
+Shine a Light ,Martin Scorsese,2008.0
+The Green Inferno ,Eli Roth,2013.0
+Departure ,Andrew Steggall,2015.0
+The Sessions ,Ben Lewin,2012.0
+"Food, Inc. ",Robert Kenner,2008.0
+October Baby ,Andrew Erwin,2011.0
+Next Stop Wonderland ,Brad Anderson,1998.0
+Juno ,Jason Reitman,2007.0
+The Skeleton Twins ,Craig Johnson,2014.0
+Martha Marcy May Marlene ,Sean Durkin,2011.0
+Obvious Child ,Gillian Robespierre,2014.0
+Frozen River ,Courtney Hunt,2008.0
+20 Feet from Stardom ,Morgan Neville,2013.0
+Two Girls and a Guy ,James Toback,1997.0
+Walking and Talking ,Nicole Holofcener,1996.0
+The Full Monty ,Peter Cattaneo,1997.0
+Who Killed the Electric Car? ,Chris Paine,2006.0
+The Broken Hearts Club: A Romantic Comedy ,Greg Berlanti,2000.0
+Bubba Ho-Tep ,Don Coscarelli,2002.0
+Goosebumps ,Rob Letterman,2015.0
+Slam ,Marc Levin,1998.0
+Brigham City ,Richard Dutcher,2001.0
+Fiza ,Khalid Mohamed,2000.0
+History of the World: Part I ,Mel Brooks,1981.0
+Orgazmo ,Trey Parker,1997.0
+All the Real Girls ,David Gordon Green,2003.0
+Dream with the Fishes ,Finn Taylor,1997.0
+Blue Car ,Karen Moncrieff,2002.0
+Luminarias ,José Luis Valenzuela,2000.0
+Palo Alto ,Gia Coppola,2013.0
+Ajami ,Scandar Copti,2009.0
+Wristcutters: A Love Story ,Goran Dukic,2006.0
+I Origins ,Mike Cahill,2014.0
+The Battle of Shaker Heights ,Efram Potelle,2003.0
+The Lovely Bones ,Peter Jackson,2009.0
+The Act of Killing ,Joshua Oppenheimer,2012.0
+Taxi to the Dark Side ,Alex Gibney,2007.0
+Once in a Lifetime: The Extraordinary Story of the New York Cosmos ,Paul Crowder,2006.0
+Guiana 1838 ,Rohit Jagessar,2004.0
+Lisa Picard Is Famous ,Griffin Dunne,2000.0
+Antarctica: A Year on Ice ,Anthony Powell,2013.0
+A Lego Brickumentary ,Kief Davidson,2014.0
+Hardflip ,Johnny Remo,2012.0
+Chocolate: Deep Dark Secrets ,Vivek Agnihotri,2005.0
+The House of the Devil ,Ti West,2009.0
+The Perfect Host ,Nick Tomnay,2010.0
+Safe Men ,John Hamburg,1998.0
+Speedway Junky ,Nickolas Perry,1999.0
+The Last Big Thing ,Dan Zukovic,1996.0
+The Specials ,Craig Mazin,2000.0
+16 to Life ,Becky Smith,2009.0
+Alone with Her ,Eric Nicholas,2006.0
+Creative Control ,Benjamin Dickinson,2015.0
+Special ,Hal Haberman,2006.0
+Sparkler ,Darren Stein,1997.0
+The Helix... Loaded ,A. Raven Cruz,2005.0
+In Her Line of Fire ,Brian Trenchard-Smith,2006.0
+The Jimmy Show ,Frank Whaley,2001.0
+Heli ,Amat Escalante,2013.0
+Karachi se Lahore ,Wajahat Rauf,2015.0
+Loving Annabelle ,Katherine Brooks,2006.0
+Hits ,David Cross,2014.0
+Jimmy and Judy ,Randall Rubin,2006.0
+Frat Party ,Robert Bennett,2009.0
+The Party's Over ,Guy Hamilton,1965.0
+Proud ,Mary Pat Kelly,2004.0
+The Poker House ,Lori Petty,2008.0
+Childless ,Charlie Levi,2008.0
+ZMD: Zombies of Mass Destruction ,Kevin Hamedani,2009.0
+Snow White: A Deadly Summer ,David DeCoteau,2012.0
+Hidden Away ,Mikel Rueda,2014.0
+My Last Day Without You ,Stefan C. Schaefer,2011.0
+Steppin: The Movie ,Michael Taliferro,2009.0
+Doc Holliday's Revenge ,David DeCoteau,2014.0
+Black Rock ,Katie Aselton,2012.0
+Truth or Die ,Robert Heath,2012.0
+The Pet ,D. Stevens,2006.0
+Bang Bang Baby ,Jeffrey St. Jules,2014.0
+Fear Clinic ,Robert Hall,2015.0
+Zombie Hunter ,K. King,2013.0
+A Fine Step ,Jonathan Meyers,2014.0
+Trance ,Danny Boyle,2013.0
+Charly ,Ralph Nelson,1968.0
+Banshee Chapter ,Blair Erickson,2013.0
+Jesse             ,,
+Ask Me Anything ,Allison Burnett,2014.0
+And Then Came Love ,Richard Schenkman,2007.0
+Food Chains ,Sanjay Rawal,2014.0
+On the Waterfront ,Elia Kazan,1954.0
+L!fe Happens ,Kat Coiro,2011.0
+"4 Months, 3 Weeks and 2 Days ",Cristian Mungiu,2007.0
+The Horror Network Vol. 1 ,Brian Dorton,2015.0
+Hard Candy ,David Slade,2005.0
+The Quiet ,Jamie Babbit,2005.0
+Circumstance ,Maryam Keshavarz,2011.0
+Fruitvale Station ,Ryan Coogler,2013.0
+The Brass Teapot ,Ramaa Mosley,2012.0
+Bambi ,James Algar,1942.0
+The Hammer ,Charles Herman-Wurmfeld,2007.0
+Snitch ,Ric Roman Waugh,2013.0
+Latter Days ,C. Jay Cox,2003.0
+Elza ,Mariette Monpierre,2011.0
+1982 ,Tommy Oliver,2013.0
+"For a Good Time, Call... ",Jamie Travis,2012.0
+Celeste & Jesse Forever ,Lee Toland Krieger,2012.0
+Time Changer ,Rich Christiano,2002.0
+London to Brighton ,Paul Andrew Williams,2006.0
+American Hero ,Nick Love,2015.0
+Windsor Drive ,Natalie Bible',2015.0
+A Separation ,Asghar Farhadi,2011.0
+Crying with Laughter ,Justin Molotnikov,2009.0
+Welcome to the Dollhouse ,Todd Solondz,1995.0
+Ruby in Paradise ,Victor Nunez,1993.0
+Raising Victor Vargas ,Peter Sollett,2002.0
+Pandora's Box ,Georg Wilhelm Pabst,1929.0
+Harrison Montgomery ,Daniel Davila,2008.0
+Live-In Maid ,Jorge Gaggero,2004.0
+Deterrence ,Rod Lurie,1999.0
+The Mudge Boy ,Michael Burke,2003.0
+The Young Unknowns ,Catherine Jelski,2000.0
+Not Cool ,Shane Dawson,2014.0
+Dead Snow ,Tommy Wirkola,2009.0
+Saints and Soldiers ,Ryan Little,2003.0
+Vessel ,Clark Baker,2012.0
+American Graffiti ,George Lucas,1973.0
+Iraq for Sale: The War Profiteers ,Robert Greenwald,2006.0
+Aqua Teen Hunger Force Colon Movie Film for Theaters ,Matt Maiellaro,2007.0
+Safety Not Guaranteed ,Colin Trevorrow,2012.0
+Kevin Hart: Laugh at My Pain ,Leslie Small,2011.0
+Kill List ,Ben Wheatley,2011.0
+The Innkeepers ,Ti West,2011.0
+The Unborn ,David S. Goyer,2009.0
+The Conformist ,Bernardo Bertolucci,1970.0
+Interview with the Assassin ,Neil Burger,2002.0
+Donkey Punch ,Oliver Blackburn,2008.0
+All the Boys Love Mandy Lane ,Jonathan Levine,2006.0
+Bled ,Christopher Hutson,2009.0
+High Noon ,Fred Zinnemann,1952.0
+Hoop Dreams ,Steve James,1994.0
+Rize ,David LaChapelle,2005.0
+Destiny ,Joseph Kosinski,2014.0
+L.I.E. ,Michael Cuesta,2001.0
+The Sisterhood of Night ,Caryn Waechter,2014.0
+B-Girl ,Emily Dell,2009.0
+King Kong ,Peter Jackson,2005.0
+House of Wax ,Jaume Collet-Serra,2005.0
+Half Nelson ,Ryan Fleck,2006.0
+Naturally Native ,Jennifer Wynne Farmer,1998.0
+Hav Plenty ,Christopher Scott Cherot,1997.0
+Adulterers ,H.M. Coakley,2015.0
+Escape from Tomorrow ,Randy Moore,2013.0
+Starsuckers ,Chris Atkins,2009.0
+The Hadza: Last of the First ,Bill Benenson,2014.0
+After ,Ryan Smith,2012.0
+Treachery ,Travis Romero,2013.0
+Walter ,Anna Mastro,2015.0
+Top Hat ,Mark Sandrich,1935.0
+The Blair Witch Project ,Daniel Myrick,1999.0
+Woodstock ,Michael Wadleigh,1970.0
+The Kentucky Fried Movie ,John Landis,1977.0
+Mercy Streets ,Jon Gunn,2000.0
+Arnolds Park ,Gene Teigland,2007.0
+Broken Vessels ,Scott Ziehl,1998.0
+Water & Power ,Richard Montoya,2013.0
+They Will Have to Kill Us First ,Johanna Schwartz,2015.0
+Crop Circles: Quest for Truth ,William Gazecki,2002.0
+Light from the Darkroom ,Lance McDaniel,2014.0
+Irreplaceable ,Thomas Lilti,2016.0
+The Maid's Room ,Michael Walker,2013.0
+A Hard Day's Night ,Richard Lester,1964.0
+The Harvest/La Cosecha ,U. Roberto Romano,2011.0
+Love Letters ,Amy Holden Jones,1983.0
+Julija in alfa Romeo ,Blaz Zavrsnik,2015.0
+Fireproof ,Alex Kendrick,2008.0
+Faith Connections ,Pan Nalin,2013.0
+Benji ,Joe Camp,1974.0
+Open Water ,Chris Kentis,2003.0
+High Road ,Matt Walsh,2011.0
+Kingdom of the Spiders ,John 'Bud' Cardos,1977.0
+Mad Hot Ballroom ,Marilyn Agrelo,2005.0
+The Station Agent ,Tom McCarthy,2003.0
+To Save a Life ,Brian Baugh,2009.0
+Wordplay ,Patrick Creadon,2006.0
+Beyond the Mat ,Barry W. Blaustein,1999.0
+The Singles Ward ,Kurt Hale,2002.0
+Osama ,Siddiq Barmak,2003.0
+Sholem Aleichem: Laughing in the Darkness ,Joseph Dorman,2011.0
+Groove ,Greg Harrison,2000.0
+The R.M. ,Kurt Hale,2003.0
+Twin Falls Idaho ,Michael Polish,1999.0
+Mean Creek ,Jacob Aaron Estes,2004.0
+Hurricane Streets ,Morgan J. Freeman,1997.0
+Never Again ,Eric Schaeffer,2001.0
+Civil Brand ,Neema Barnette,2002.0
+Lonesome Jim ,Steve Buscemi,2005.0
+Drinking Buddies ,Joe Swanberg,2013.0
+Deceptive Practice: The Mysteries and Mentors of Ricky Jay ,Molly Bernstein,2012.0
+Seven Samurai ,Akira Kurosawa,1954.0
+The Other Dream Team ,Marius A. Markevicius,2012.0
+Johnny Suede ,Tom DiCillo,1991.0
+Finishing the Game: The Search for a New Bruce Lee ,Justin Lin,2007.0
+Rubber ,Quentin Dupieux,2010.0
+Home ,Tim Johnson,2015.0
+Kiss the Bride ,C. Jay Cox,2007.0
+The Slaughter Rule ,Alex Smith,2002.0
+Monsters ,Gareth Edwards,2010.0
+The Californians ,Jonathan Parker,2005.0
+The Living Wake ,Sol Tryon,2007.0
+Detention of the Dead ,Alex Craig Mann,2012.0
+Crazy Stone ,Hao Ning,2006.0
+Scott Walker: 30 Century Man ,Stephen Kijak,2006.0
+Everything Put Together ,Marc Forster,2000.0
+Good Kill ,Andrew Niccol,2014.0
+Insomnia Manica ,Daston Kalili,2005.0
+The Outrageous Sophie Tucker ,William Gazecki,2014.0
+Now Is Good ,Ol Parker,2012.0
+Girls Gone Dead ,Michael Hoffman Jr.,2012.0
+America Is Still the Place ,Patrick Gilles,2015.0
+Subconscious ,Georgia Hilton,2015.0
+Crossroads ,Tamra Davis,2002.0
+Enter Nowhere ,Jack Heller,2011.0
+The King of Najayo ,Fernando Baez Mella,2012.0
+Fight to the Finish ,Warren Sheppard,2016.0
+Alleluia! The Devil's Carnival ,Darren Lynn Bousman,2016.0
+The Sound and the Shadow ,Justin Paul Miller,2014.0
+Rodeo Girl ,Joel Paul Reisig,2016.0
+Born to Fly: Elizabeth Streb vs. Gravity ,Catherine Gund,2014.0
+The Little Ponderosa Zoo ,Luke Dye,2016.0
+Oz the Great and Powerful ,Sam Raimi,2013.0
+The Toxic Avenger ,Michael Herz,1984.0
+Straight Out of Brooklyn ,Matty Rich,1991.0
+Bloody Sunday ,Paul Greengrass,2002.0
+Diamond Ruff ,Alec Asten,2015.0
+Conversations with Other Women ,Hans Canosa,2005.0
+Poultrygeist: Night of the Chicken Dead ,Lloyd Kaufman,2006.0
+Mutual Friends ,Matthew Watts,2013.0
+42nd Street ,Lloyd Bacon,1933.0
+Rise of the Entrepreneur: The Search for a Better Way ,Joe Kenemore,2014.0
+Metropolitan ,Whit Stillman,1990.0
+As It Is in Heaven ,Kay Pollak,2004.0
+Roadside ,Eric England,2013.0
+Napoleon Dynamite ,Jared Hess,2004.0
+Blue Ruin ,Jeremy Saulnier,2013.0
+Paranormal Activity ,Oren Peli,2007.0
+Dogtown and Z-Boys ,Stacy Peralta,2001.0
+Monty Python and the Holy Grail ,Terry Gilliam,1975.0
+Quinceañera ,Richard Glatzer,2006.0
+Gory Gory Hallelujah ,Sue Corcoran,2003.0
+Heroes             ,,
+Tarnation ,Jonathan Caouette,2003.0
+I Want Your Money ,Ray Griggs,2010.0
+Love in the Time of Monsters ,Matt Jackson,2014.0
+The Beyond ,Lucio Fulci,1981.0
+Home Movies             ,,
+What Happens in Vegas ,Tom Vaughan,2008.0
+The Dark Hours ,Paul Fox,2005.0
+My Beautiful Laundrette ,Stephen Frears,1985.0
+Fabled ,Ari Kirschenbaum,2002.0
+Show Me ,Cassandra Nicolaou,2004.0
+Cries & Whispers ,Ingmar Bergman,1972.0
+Intolerance: Love's Struggle Throughout the Ages ,D.W. Griffith,1916.0
+Trekkies ,Roger Nygard,1997.0
+The Broadway Melody ,Harry Beaumont,1929.0
+The Evil Dead ,Sam Raimi,1981.0
+Maniac ,Franck Khalfoun,2012.0
+Censored Voices ,Mor Loushy,2015.0
+Murderball ,Henry Alex Rubin,2005.0
+American Ninja 2: The Confrontation ,Sam Firstenberg,1987.0
+51 Birch Street ,Doug Block,2005.0
+Revolution             ,,
+Rotor DR1 ,Chad Kapper,2015.0
+Halloween ,John Carpenter,1978.0
+12 Angry Men ,Sidney Lumet,1957.0
+My Dog Tulip ,Paul Fierlinger,2009.0
+It Happened One Night ,Frank Capra,1934.0
+Dogtooth ,Yorgos Lanthimos,2009.0
+Tupac: Resurrection ,Lauren Lazin,2003.0
+Tumbleweeds ,Gavin O'Connor,1999.0
+The Prophecy ,Gregory Widen,1995.0
+When the Cat's Away ,Cédric Klapisch,1996.0
+Pieces of April ,Peter Hedges,2003.0
+The Big Swap ,Niall Johnson,1998.0
+Old Joy ,Kelly Reichardt,2006.0
+Wendy and Lucy ,Kelly Reichardt,2008.0
+3 Backyards ,Eric Mendelsohn,2010.0
+Pierrot le Fou ,Jean-Luc Godard,1965.0
+Sisters in Law ,Florence Ayisi,2005.0
+Ayurveda: Art of Being ,Pan Nalin,2001.0
+Nothing But a Man ,Michael Roemer,1964.0
+"First Love, Last Rites ",Jesse Peretz,1997.0
+Fighting Tommy Riley ,Eddie O'Flaherty,2004.0
+Royal Kill ,Babar Ahmed,2009.0
+Across the Universe ,Julie Taymor,2007.0
+The Looking Glass ,John D. Hancock,2015.0
+Death Race 2000 ,Paul Bartel,1975.0
+Locker 13 ,Bruce Dellis,2014.0
+Midnight Cabaret ,Pece Dingo,1990.0
+Anderson's Cross ,Jerome Elston Scott,2010.0
+Bizarre ,Étienne Faure,2015.0
+Graduation Day ,Herb Freed,1981.0
+Some Guy Who Kills People ,Jack Perez,2011.0
+Compliance ,Craig Zobel,2012.0
+Chasing Amy ,Kevin Smith,1997.0
+Lovely & Amazing ,Nicole Holofcener,2001.0
+Death Calls ,Ken Del Conte,2010.0
+Better Luck Tomorrow ,Justin Lin,2002.0
+The Incredibly True Adventure of Two Girls in Love ,Maria Maggenti,1995.0
+Chuck & Buck ,Miguel Arteta,2000.0
+American Desi ,Piyush Dinker Pandya,2001.0
+Amidst the Devil's Wings ,Daniel Columbie,2014.0
+Cube ,Vincenzo Natali,1997.0
+Love and Other Catastrophes ,Emma-Kate Croghan,1996.0
+I Married a Strange Person! ,Bill Plympton,1997.0
+November ,Greg Harrison,2004.0
+Like Crazy ,Drake Doremus,2011.0
+Teeth and Blood ,Al Franklin,2015.0
+Sugar Town ,Allison Anders,1999.0
+The Motel ,Michael Kang,2005.0
+The Canyons ,Paul Schrader,2013.0
+Happy Valley             ,,
+On the Outs ,Lori Silverbush,2004.0
+Shotgun Stories ,Jeff Nichols,2007.0
+Exam ,Stuart Hazeldine,2009.0
+The Sticky Fingers of Time ,Hilary Brougher,1997.0
+Sunday School Musical ,Rachel Goldenberg,2008.0
+Rust ,Corbin Bernsen,2010.0
+Ink ,Jamin Winans,2009.0
+The Christmas Bunny ,Tom Seidman,2010.0
+Jesus People ,Jason Naumann,2007.0
+Butterfly ,Matt Cimber,1982.0
+UnDivided ,Sam Martin,2013.0
+The Frozen ,Andrew Hyatt,2012.0
+The Love Letter ,Dan Curtis,1998.0
+Horse Camp ,Joel Paul Reisig,2014.0
+Give Me Shelter ,Kristin Rizzo,2014.0
+The Big Parade ,King Vidor,1925.0
+Little Big Top ,Ward Roberts,2006.0
+Along the Roadside ,Zoran Lisinac,2013.0
+Bronson ,Nicolas Winding Refn,2008.0
+Western Religion ,James O'Brien,2015.0
+Burn ,Tom Putnam,2012.0
+Urbania ,Jon Shear,2000.0
+The Stewardesses ,Al Silliman Jr.,1969.0
+"The Beast from 20,000 Fathoms ",Eugène Lourié,1953.0
+"20,000 Leagues Under the Sea ",Richard Fleischer,1954.0
+Mad Max ,George Miller,1979.0
+Swingers ,Doug Liman,1996.0
+A Fistful of Dollars ,Sergio Leone,1964.0
+She Done Him Wrong ,Lowell Sherman,1933.0
+Short Cut to Nirvana: Kumbh Mela ,Maurizio Benazzo,2004.0
+The Grace Card ,David G. Evans,2010.0
+Middle of Nowhere ,Ava DuVernay,2012.0
+3 ,Tom Tykwer,2010.0
+The Business of Fancydancing ,Sherman Alexie,2002.0
+Call + Response ,Justin Dillon,2008.0
+Side Effects ,Steven Soderbergh,2013.0
+Malevolence ,Stevan Mena,2003.0
+Shooting the Warwicks ,Adam Rifkin,2015.0
+Super Hybrid ,Eric Valette,2010.0
+Baghead ,Jay Duplass,2008.0
+Solitude ,Livingston Oden,2014.0
+The Case of the Grinning Cat ,Chris Marker,2004.0
+Ordet ,Carl Theodor Dreyer,1955.0
+Good Dick ,Marianna Palka,2008.0
+The Man from Earth ,Richard Schenkman,2007.0
+The Trials of Darryl Hunt ,Ricki Stern,2006.0
+An American Girl Holiday ,Nadia Tass,2004.0
+Yesterday Was a Lie ,James Kerwin,2008.0
+Theresa Is a Mother ,C. Fraser Press,2012.0
+H. ,Rania Attieh,2014.0
+Archaeology of a Woman ,Sharon Greytak,2012.0
+Children of Heaven ,Majid Majidi,1997.0
+Weekend ,Andrew Haigh,2011.0
+She's Gotta Have It ,Spike Lee,1986.0
+Butterfly Girl ,Cary Bell,2014.0
+The World Is Mine ,Nicolae Constantin Tanase,2015.0
+Another Earth ,Mike Cahill,2011.0
+The Calling ,Jason Stone,2014.0
+Sweet Sweetback's Baadasssss Song ,Melvin Van Peebles,1971.0
+Perfect Cowboy ,Ken Roht,2014.0
+Tadpole ,Gary Winick,2000.0
+Once ,John Carney,2007.0
+The Woman Chaser ,Robinson Devor,1999.0
+The Horse Boy ,Michel Orion Scott,2009.0
+When the Lights Went Out ,Pat Holden,2012.0
+Heroes of Dirt ,Eric Bugbee,2015.0
+The Texas Chain Saw Massacre ,Tobe Hooper,1974.0
+A Charlie Brown Christmas ,Bill Melendez,1965.0
+Antarctic Edge: 70° South ,Dena Seidel,2015.0
+Aroused ,Deborah Anderson,2013.0
+Top Spin ,Sara Newens,2014.0
+Roger & Me ,Michael Moore,1989.0
+Cat People ,Paul Schrader,1982.0
+An American in Hollywood ,Sai Varadan,2014.0
+Sound of My Voice ,Zal Batmanglij,2011.0
+The Brain That Sings ,Amal Al-Agroobi,2013.0
+The Blood of My Brother ,Andrew Berends,2005.0
+Your Sister's Sister ,Lynn Shelton,2011.0
+Romantic Schemer ,Valentine,2015.0
+A Dog's Breakfast ,David Hewlett,2007.0
+A Dog's Breakfast ,David Hewlett,2007.0
+Night of the Living Dead ,George A. Romero,1968.0
+Une Femme Mariée ,Jean-Luc Godard,1964.0
+The Birth of a Nation ,Nate Parker,2016.0
+The Work and the Story ,Nathan Smith Jones,2003.0
+Facing the Giants ,Alex Kendrick,2006.0
+The Gallows ,Travis Cluff,2015.0
+Eraserhead ,David Lynch,1977.0
+Over the Hill to the Poorhouse ,Harry F. Millarde,1920.0
+Hollywood Shuffle ,Robert Townsend,1987.0
+The Mighty ,Peter Chelsom,1998.0
+Penitentiary ,Jamaa Fanaka,1979.0
+The Lost Skeleton of Cadavra ,Larry Blamire,2001.0
+"Dude, Where's My Dog?! ",Stephen Langford,2014.0
+Cheap Thrills ,E.L. Katz,2013.0
+Indie Game: The Movie ,Lisanne Pajot,2012.0
+Closure ,Dan Reed,2007.0
+Open Secret ,John Reinhardt,1948.0
+Echo Dr. ,Patrick Ryan Sims,2013.0
+The Night Visitor ,Laslo Benedek,1971.0
+The Past is a Grotesque Animal ,Jason Miller,2014.0
+The Last House on the Left ,Dennis Iliadis,2009.0
+"Peace, Propaganda & the Promised Land ",Sut Jhally,2004.0
+Pi ,Darren Aronofsky,1998.0
+"I Love You, Don't Touch Me! ",Julie Davis,1997.0
+20 Dates ,Myles Berkowitz,1998.0
+Queen Crab ,Brett Piper,2015.0
+Super Size Me ,Morgan Spurlock,2004.0
+The FP ,Brandon Trost,2011.0
+Happy Christmas ,Joe Swanberg,2014.0
+The Brain That Wouldn't Die ,Joseph Green,1962.0
+Tiger Orange ,Wade Gasque,2014.0
+Supporting Characters ,Daniel Schechter,2012.0
+Absentia ,Mike Flanagan,2011.0
+The Brothers McMullen ,Edward Burns,1995.0
+The Dirties ,Matt Johnson,2013.0
+Gabriela ,Bruno Barreto,1983.0
+Tiny Furniture ,Lena Dunham,2010.0
+Hayride ,Terron R. Parsons,2012.0
+The Naked Ape ,Daniel Mellitz,2006.0
+Counting ,Jem Cohen,2015.0
+The Call of Cthulhu ,Andrew Leman,2005.0
+Bending Steel ,Dave Carroll,2013.0
+The Signal ,William Eubank,2014.0
+The Image Revolution ,Patrick Meaney,2014.0
+This Is Martin Bonner ,Chad Hartigan,2013.0
+A True Story ,Malcolm Goodwin,2013.0
+George Washington ,David Gordon Green,2000.0
+Smiling Fish & Goat on Fire ,Kevin Jordan,1999.0
+Dawn of the Crescent Moon ,Kirk Loudon,2014.0
+Raymond Did It ,Travis Legge,2011.0
+The Last Waltz ,Martin Scorsese,1978.0
+"Run, Hide, Die ",Collin Joseph Neal,2012.0
+The Exploding Girl ,Bradley Rust Gray,2009.0
+The Legend of God's Gun ,Mike Bruce,2007.0
+Mutual Appreciation ,Andrew Bujalski,2005.0
+Her Cry: La Llorona Investigation ,Damir Catic,2013.0
+Down Terrace ,Ben Wheatley,2009.0
+Clerks ,Kevin Smith,1994.0
+Pink Narcissus ,James Bidgood,1971.0
+Funny Ha Ha ,Andrew Bujalski,2002.0
+In the Company of Men ,Neil LaBute,1997.0
+Sabotage ,David Ayer,2014.0
+Manito ,Eric Eason,2002.0
+Rampage ,Uwe Boll,2009.0
+Slacker ,Richard Linklater,1991.0
+Dutch Kills ,Joseph Mazzella,2015.0
+Dry Spell ,Travis Legge,2013.0
+Flywheel ,Alex Kendrick,2003.0
+Exeter ,Marcus Nispel,2015.0
+The Ridges ,Brandon Landers,2011.0
+The Puffy Chair ,Jay Duplass,2005.0
+Stories of Our Lives ,Jim Chuchu,2014.0
+Breaking Upwards ,Daryl Wein,2009.0
+All Superheroes Must Die ,Jason Trost,2011.0
+Pink Flamingos ,John Waters,1972.0
+Clean ,Olivier Assayas,2004.0
+The Circle ,Jafar Panahi,2000.0
+Tin Can Man ,Ivan Kavanagh,2007.0
+The Cure ,Kiyoshi Kurosawa,1997.0
+On the Downlow ,Tadeo Garcia,2004.0
+Sanctuary; Quite a Conundrum ,Thomas L. Phillips,2012.0
+Bang ,Ash Baron-Cohen,1995.0
+Primer ,Shane Carruth,2004.0
+Cavite ,Neill Dela Llana,2005.0
+El Mariachi ,Robert Rodriguez,1992.0
+The Mongol King ,Anthony Vallone,2005.0
+Newlyweds ,Edward Burns,2011.0
+Signed Sealed Delivered ,Scott Smith,2013.0
+The Following             ,,
+A Plague So Pleasant ,Benjamin Roberds,2013.0
+Shanghai Calling ,Daniel Hsia,2012.0
+My Date with Drew ,Jon Gunn,2004.0

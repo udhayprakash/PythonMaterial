@@ -1,0 +1,22 @@
+1) Get substring count in a given string 
+    Input: 
+        string      : ABCDCDC
+        substring   : CDC
+2) 5
+      *
+    * * *
+  * * * *  *
+* * * * *  *  *
+  * * * *  *
+    * * *
+      *
+  
+3)
+alphabets 
+    hen 
+
+H       H  E E E E E  N        N
+H       H  E          N  N     N
+H H H H H  E E E E E  N    N   N
+H       H  E          N      N N
+H       H  E E E E E  N        N

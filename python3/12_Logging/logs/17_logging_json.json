@@ -1,0 +1,51 @@
+{
+    "created": 1593796744.033243,
+    "filename": "17_logging_json.py",
+    "funcName": "<module>",
+    "levelname": "WARNING",
+    "lineno": 30,
+    "module": "17_logging_json",
+    "msecs": 33.24294090270996,
+    "msg": "warning message",
+    "name": "__main__",
+    "pathname": "17_logging_json.py",
+    "process": 15480,
+    "processName": "MainProcess",
+    "relativeCreated": 37.99867630004883,
+    "thread": 22040,
+    "threadName": "MainThread"
+}
+{
+    "created": 1593796744.0462375,
+    "filename": "17_logging_json.py",
+    "funcName": "<module>",
+    "levelname": "ERROR",
+    "lineno": 31,
+    "module": "17_logging_json",
+    "msecs": 46.23746871948242,
+    "msg": "error message",
+    "name": "__main__",
+    "pathname": "17_logging_json.py",
+    "process": 15480,
+    "processName": "MainProcess",
+    "relativeCreated": 50.99320411682129,
+    "thread": 22040,
+    "threadName": "MainThread"
+}
+{
+    "created": 1593796744.053379,
+    "filename": "17_logging_json.py",
+    "funcName": "<module>",
+    "levelname": "CRITICAL",
+    "lineno": 32,
+    "module": "17_logging_json",
+    "msecs": 53.379058837890625,
+    "msg": "critical message",
+    "name": "__main__",
+    "pathname": "17_logging_json.py",
+    "process": 15480,
+    "processName": "MainProcess",
+    "relativeCreated": 58.13479423522949,
+    "thread": 22040,
+    "threadName": "MainThread"
+}

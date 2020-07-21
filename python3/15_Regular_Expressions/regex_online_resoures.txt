@@ -1,0 +1,18 @@
+Popular Regular expression Generators:
+========================================
+    1. http://regexr.com/
+    2. https://regex101.com/#python
+    3. http://www.regular-expressions.info/python.html
+    4. https://www.rexegg.com/
+
+Popular Regular Expression Visualizers :
+=======================================
+1. https://regexper.com
+2. https://www.debuggex.com/
+
+Popular RegEx creating Tools:
+=============================
+1. kodos (http://kodos.sourceforge.net/home.html)
+    • Tool for computing and practicing regular expressions.
+2. pythex(https://pythex.org/)
+    • regex generator created in python.

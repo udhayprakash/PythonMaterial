@@ -1,0 +1,6 @@
+https://github.com/tommyod/awesome-pandas
+http://www.datasciencemadesimple.com/
+http://python-ds.com/
+
+Pandas Best Practices 
+    https://pythonspeed.com/datascience/

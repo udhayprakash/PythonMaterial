@@ -1,0 +1,54 @@
+Debugging 
+---------
+    - Used to identifying logical errors (or bugs)
+
+    - ways of debugging 
+        - print() statements
+        - modules 
+            1. console-based debugging
+                - pbd / breakpoint()
+                - ipdb
+            2. IDE based debugging
+                - pydevd
+
+
+l  - displays lines around the executing line of code
+ll - displays the lines 
+n  - next     -> to go to next statement 
+c  - continue -> Execute till next breakpoint. If not breakpoint, till end of script
+
+To set a breakpoint, 
+    b <line number>
+    b 10 
+
+NOTE: Each breakpoint will be given an ID number in the 
+      order of setting, and not line order, etc...
+
+To disable a breakpoint, 
+    disable <Breakpoint ID>
+    diable  2
+
+To reenable breakpoint, 
+    enable <Breakpoint ID>
+    enable 2
+
+To delete a breakpoint,
+    clear <Breakpoint ID>
+    clear 2 
+
+To come out of a executing function
+    break <function name>
+    break my_func
+
+Conditional breakpoints
+    - can be set in two ways. 
+        1. To specify the condition when the breakpoint is set using break.
+            break <Breakpoint ID>, <condition>
+            break 9, j>0
+        2. with condition command
+            condition <Breakpoint ID>, <condition>  
+
+Ignoring breakpoint 
+    - say, in a for loop, the breakpoint need to be skipped for first 3 iterations
+        - ignore <Breakpoint ID> <No of iterations>
+        - ignore  1  3
