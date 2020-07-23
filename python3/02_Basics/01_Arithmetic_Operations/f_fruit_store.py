@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Fruit Store
 
@@ -15,7 +15,6 @@ Purpose: Fruit Store
                                                 ---------------
                                                       2143.26/-
 
-
 Algorithm
 ---------
 Step 1:  Get the cost of fruits into variables
@@ -28,9 +27,8 @@ Step 4:  Compute the discount amount and subtract
 Step 5:  Calculate GST amount and Add to payable amount, 
          to create billable amount
 
-NOTE: Python Execution Flow -> Top to Bottom & Left to Right
 """
-# constant
+# Constants
 DOZEN = 12
 DISCOUNT = 2
 GST = 12.5
@@ -43,20 +41,17 @@ cost_of_mango = 34 # per piece
 qty_of_apples = 5 * DOZEN # pieces
 qty_of_mangos = 3 * DOZEN # pieces 
 
-
-# Selling Price Computation 
-total_sp = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos   # PEMDAS
+# Selling Price Computation
+total_sp = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos # PEDMAS
 print('Total Selling Price :', total_sp)
 
-
-# Discount Calculation 
-discount_amount = (total_sp * DISCOUNT) / 100
+# Discount Calculation
+discount_amount = (total_sp * DISCOUNT)/100
 print('Discount Amount     :', discount_amount)
 
 # Payable Amount Calculation
 payable_amount = total_sp - discount_amount
 print('Payable Amount      :', payable_amount)
-
 
 # GST Calculation 
 gst_on_fruits = (payable_amount * GST)/ 100
@@ -64,5 +59,7 @@ print('GST on Fruits       :', gst_on_fruits)
 
 # Billable Amount Calculation 
 billable_amount = payable_amount + gst_on_fruits
-# print('Billable Amount     :', billable_amount)
+print('Billable Amount     :', billable_amount)
+
+# round(num, no_of_digits) - function
 print('Billable Amount(r)  :', round(billable_amount, 2))

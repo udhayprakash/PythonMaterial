@@ -1,15 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Component operations
-
-    component operators
-        +=   Adding and assigning
-        -=   Subtracting and assigning
-        *=   Multiply and assigning
-        /=   Divide and assigning
-        //=  floor division and assigning
-        %=   remainder operation and assigning
-        **=  power operation and assigning
 """
 num = 100 + 324
 print('num =', num)  # 424

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Arithmetic Operations
 
@@ -17,13 +17,12 @@ Purpose: Arithmetic Operations
 num1 = 100  # int
 num2 = 123  # int
 
-num3 = num1
-# 100 = 123   # SyntaxError: cannot assign to literal
+num3 = num2
+# 1233 = num4 # SyntaxError: cannot assign to literal
 
 print('num1 =', num1, type(num1))
 print('num2 =', num2, type(num2))
 print('num3 =', num3, type(num3))
-print()
 
 # 1. Addition
 num3 = num1 + num2                # int + int = int
@@ -43,11 +42,10 @@ num5 = num1 + num4                # int + float = float
 print('num5=', num5, type(num5))
 
 # Question 1: what is the largest number that can be processed in python
-num6 = 9999999956456434344343242343232423423423423423423432432423434    
+num6 = 9999999956456434344343242343232423423423423423423432432423434123232323
 print('num6=', num6, type(num6))
 
 # Question 2: what is the smallest number that can be processed in python
-
 num6 = 0.00002130213869388792183798798321989812739
 print('num6=', num6, type(num6))
 
@@ -72,19 +70,16 @@ print('10/3 = ', 10 / 3)
      10
       9
     ---
-      
 
-    3 ) 10 ( 3 <-- Quotient
-        9
-        --
-        1 <--- remainder
+3) 10(3  <-- Quotient  //
+    9
+   --
+    1  <-- Remainder  %
 """
 print()
 print('10 // 3 = ', 10 // 3)  # quotient - floor division
 print('10 % 3  = ', 10 % 3)  # remainder - modulo division
-
 print('divmod(10, 3)=', divmod(10, 3))  # //, %
-
 
 """
 10/2
@@ -95,6 +90,7 @@ print('divmod(10, 3)=', divmod(10, 3))  # //, %
          0  <--- remainder
 
 """
+print()
 print('10 // 2      =', 10 // 2)
 print('10 % 2       =', 10 % 2)
 print('divmod(10, 2)=', divmod(10, 2))  # //, %
@@ -119,27 +115,3 @@ print('10 % 3   = ', 10 % 3)  # 1
 print('-10 % 3  = ', -10 % 3)  # 2
 print('10 % -3  = ', 10 % -3)  # -2
 print('-10 % -3 = ', -10 % -3)  # -1
-
-'''
-10/3
-
-    3)10( 3  <--  quotient
-       9
-    ------
-       1  <--  remainder
-
-
-
-    4)16(4  <--  quotient    //
-      16
-      ---
-       0  <--  remainder     %
-
-
-
-    3)338(111  <--  quotient   
-      333
-      ----
-        5  <--  remainder
-
-'''

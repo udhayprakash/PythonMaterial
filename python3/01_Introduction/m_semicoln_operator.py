@@ -1,23 +1,19 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Multiple statements in same line
-
-; statement completion operator
-, logic separator
+    , logic separator
+    ; statement completion operator
 """
+print('asdsd', 213, 123 + 123 - 3)
 
-print('asdsd', 213, 123+ 123 - 3)
-
-num1 = 123;
-num2 = 300
-
-sum_of_numbers = num1 + num2 
-
+# Method 1
+num1 = 100;
+num2 = 200
+sum_of_numbers = num1 + num2
 print('Sum of Number:', sum_of_numbers)
 
-
-# -----------------------------------------------------
-num1 = 123; num2 = 300; sum_of_numbers = num1 + num2; print('Sum of Number:', sum_of_numbers)
+# Method 2
+num1 = 100; num2 = 200; sum_of_numbers = num1 + num2; print('Sum of Number:', sum_of_numbers)
 
 
 # conclusion 
@@ -25,6 +21,8 @@ num1 = 123; num2 = 300; sum_of_numbers = num1 + num2; print('Sum of Number:', su
 # 2.  ; is important if we need write more than one statement in same line
 # 3.  Unnecessarily placing semicolon at end of statement will increase computation time
 '''
+python -c "print('hello world')"
+
 python -c "num1 = 123; num2 = 300; sum_of_numbers = num1 + num2; print('Sum of Number:', sum_of_numbers)"
 
 

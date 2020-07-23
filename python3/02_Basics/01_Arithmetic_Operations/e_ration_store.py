@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Ration Store
 
@@ -12,7 +12,6 @@ Purpose: Ration Store
                                 subsidy 20%   -270/-
                                 --------------------
                                 BillableAmount:1080/-
-
 Algorithm
 ---------
 Step 1:  Get the cost of items into variables

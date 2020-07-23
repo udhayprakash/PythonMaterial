@@ -13,7 +13,7 @@ Order of evaluation
 ------------------------------------------------------------
 operators                            descriptions
 ------------------------------------------------------------
-(), [], {}, ‘’                       tuple, list, dictionnary, string
+(), [], {}, ‘’                       tuple, list, dictionary, string
 x.attr, x[], x[i:j], f()             attribute, index, slide, function call
 +x, -x, ~x                           unary negation, bitwise invert
 **                                   exponent

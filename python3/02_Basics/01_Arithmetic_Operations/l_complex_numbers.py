@@ -1,36 +1,52 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: complex numbers in Python
+Purpose: Complex Numbers in Python
+
+    Complex Number = Real Number +/- Imaginary Number
+
+In python, 'j' is used to represent the imaginary number.
 
 """
-num1 = 0.0 - 2j
-num2 = 2 + 3j 
+num1 = 2
+print('num1=', num1, type(num1))
 
-# dir() -> Gives list of attributes associated with an object
+num1 = 2 + 3
+print('num1=', num1, type(num1))
 
-# pen - Object 
-#       -> Uses  - writing, painting, .....
+num1 = 2 + 3j
+print('num1=', num1, type(num1))
 
-# Phone - Object 
-        # -> uses   - pics with cam 
-        #           - communications 
-        #           - alaram 
-        #           - watch 
+num1 = -0.02 + 3.234j
+print('num1=', num1, type(num1))
 
-print('num1 =', num1, type(num1))
+num1 = -0.02 + 0j
+print('num1=', num1, type(num1))
 
-print(dir(num1)) # ['conjugate', 'imag', 'real']
+num1 = -0.0j
+print('num1=', num1, type(num1))
 
-print("num1             = ", num1)   # 0 -2j
-print("num1.real        = ", num1.real)  # 0.0
-print("num1.imag        = ", num1.imag)  # -2.0
+print(4j)
+# print(j4)  # NameError: name 'j4' is not defined
+j4 = 200
+print('j4 =', j4)
 
-# CONJUGATE  will result  same number with change in sign of imaginary part
-print("num1.conjugate() = ", num1.conjugate())   # 
-print("num2.conjugate() = ", num2.conjugate())   # 2 - 3j 
+# print(4 * j) # NameError: name 'j' is not defined
+print(4 * 1j)
 
-print()
-print("num1 * num2.real = ", num1 * num2.real)   # PEMDAS
-print("num1 *(num2.real)= ", num1 * (num2.real))
+j = 100
+print('4 * j =', 4 * j)
 
-print("(num1*num2).real = ", (num1 * num2).real)
+# NOTE: 4*j, j4, j*4 are not possible.
+# In these cases, interpreter treats 'j' as a variable.
+
+# complex()  - Builtin function
+print("complex(2,-3.456)", complex(2, -3.456))
+print("complex(2,0)     ", complex(2, 0))
+
+# == checks value equivalence
+print('4 == 4  :', 4 == 4)     # True
+print('4 == 4.3:', 4 == 4.3)   # False
+print('4 == 4j :', 4 == 4j)    # False
+
+print("(3 + 4j) == (4j + 3)= ", (3 + 4j) == (4j + 3))  # True
+print("(3 + 4j) == (4 + 3j)= ", (3 + 4j) == (4 + 3j))  # False

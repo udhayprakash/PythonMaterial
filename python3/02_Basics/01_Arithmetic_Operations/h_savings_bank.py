@@ -1,4 +1,4 @@
-#!/usr/bin/python 
+#!/usr/bin/python3
 """
 Purpose: Saving Bank 
 
@@ -17,7 +17,7 @@ balance = 0
 print('Initial Balance       :', balance)
 
 # Initial account opening deposit of 1500 
-balance += 1500            #balance = balance + 1500
+balance += 1500            # balance = balance + 1500
 print('After initial Deposit :', balance)
 
 # salary credited of 3300
@@ -32,4 +32,4 @@ print('After Online purchase :', balance)
 balance -= 1500
 print('After House Rent paid :', balance)
 
-print('Final Balance :', balance)
+print('Final Balance         :', balance)
