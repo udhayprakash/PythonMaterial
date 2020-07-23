@@ -1,0 +1,7 @@
+http://whc.unesco.org/document/108327
+http://whc.unesco.org/en/documents/108327
+
+
+web services
+    SOAP services     --- xml 
+    RESTful services  --- json, xml

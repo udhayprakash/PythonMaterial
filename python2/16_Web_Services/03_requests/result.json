@@ -1,0 +1,129 @@
+{
+   "DefinitionSource" : "",
+   "AbstractSource" : "Wikipedia",
+   "Redirect" : "",
+   "meta" : {
+      "description" : "Wikipedia",
+      "signal_from" : "wikipedia_fathead",
+      "live_date" : null,
+      "unsafe" : 0,
+      "is_stackexchange" : null,
+      "src_id" : 1,
+      "attribution" : null,
+      "js_callback_name" : "wikipedia",
+      "src_url" : null,
+      "topic" : [
+         "productivity"
+      ],
+      "production_state" : "online",
+      "designer" : null,
+      "src_domain" : "en.wikipedia.org",
+      "developer" : [
+         {
+            "type" : "ddg",
+            "url" : "http://www.duckduckhack.com",
+            "name" : "DDG Team"
+         }
+      ],
+      "id" : "wikipedia_fathead",
+      "example_query" : "nikola tesla",
+      "blockgroup" : null,
+      "created_date" : null,
+      "status" : "live",
+      "dev_date" : null,
+      "maintainer" : {
+         "github" : "duckduckgo"
+      },
+      "src_name" : "Wikipedia",
+      "src_options" : {
+         "skip_abstract" : 0,
+         "is_fanon" : 0,
+         "is_wikipedia" : 1,
+         "source_skip" : "",
+         "skip_icon" : 0,
+         "skip_qr" : "",
+         "min_abstract_length" : "20",
+         "language" : "en",
+         "src_info" : "",
+         "skip_end" : "0",
+         "is_mediawiki" : 1,
+         "directory" : "",
+         "skip_abstract_paren" : 0,
+         "skip_image_name" : 0
+      },
+      "dev_milestone" : "live",
+      "name" : "Wikipedia",
+      "producer" : null,
+      "repo" : "fathead",
+      "tab" : "About",
+      "perl_module" : "DDG::Fathead::Wikipedia"
+   },
+   "Entity" : "",
+   "ImageWidth" : 0,
+   "Results" : [],
+   "AbstractText" : "",
+   "AnswerType" : "",
+   "Answer" : "",
+   "Heading" : "Madhavi",
+   "Abstract" : "",
+   "DefinitionURL" : "",
+   "Type" : "D",
+   "Image" : "",
+   "ImageIsLogo" : 0,
+   "AbstractURL" : "https://en.wikipedia.org/wiki/Madhavi",
+   "Infobox" : "",
+   "RelatedTopics" : [
+      {
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(actress)\">Madhavi (actress)</a>An Indian film actress known for her works in Telugu, Malayalam, Hindi, Tamil, Kannada, Oriya and...",
+         "Icon" : {
+            "Height" : 16,
+            "URL" : "https://duckduckgo.com/i/maadhavi.com.ico",
+            "Width" : 16
+         },
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(actress)",
+         "Text" : "Madhavi (actress) An Indian film actress known for her works in Telugu, Malayalam, Hindi, Tamil, Kannada, Oriya and..."
+      },
+      {
+         "Text" : "Madhavi (Silappatikaram) An important character in the Silappatikaram, one of the epics in Tamil literature.",
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(Silappatikaram)",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(Silappatikaram)\">Madhavi (Silappatikaram)</a>An important character in the Silappatikaram, one of the epics in Tamil literature.",
+         "Icon" : {
+            "Width" : "",
+            "URL" : "",
+            "Height" : ""
+         }
+      },
+      {
+         "Text" : "Madhavi (play) A Hindi play written by Bhisham Sahni. This play recounts an ancient tale from the Mahabharata.",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(play)\">Madhavi (play)</a> A Hindi play written by Bhisham Sahni. This play recounts an ancient tale from the Mahabharata.",
+         "Icon" : {
+            "Width" : "",
+            "URL" : "",
+            "Height" : ""
+         },
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(play)"
+      },
+      {
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(TV_series)",
+         "Icon" : {
+            "Height" : "",
+            "URL" : "https://duckduckgo.com/i/91942591.png",
+            "Width" : ""
+         },
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(TV_series)\">Madhavi (TV series)</a>An Tamil soap opera that aired on Sun TV from 21 December 2009 to 11 November 2011 on Monday...",
+         "Text" : "Madhavi (TV series) An Tamil soap opera that aired on Sun TV from 21 December 2009 to 11 November 2011 on Monday..."
+      },
+      {
+         "Text" : "Madhavi (1969 film) A 1969 Bollywood film starring Aruna Irani.",
+         "Result" : "<a href=\"https://duckduckgo.com/Madhavi_(1969_film)\">Madhavi (1969 film)</a> A 1969 Bollywood film starring Aruna Irani.",
+         "Icon" : {
+            "Height" : "",
+            "URL" : "",
+            "Width" : ""
+         },
+         "FirstURL" : "https://duckduckgo.com/Madhavi_(1969_film)"
+      }
+   ],
+   "ImageHeight" : 0,
+   "Definition" : ""
+}

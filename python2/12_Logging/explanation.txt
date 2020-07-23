@@ -1,0 +1,17 @@
+20-July,2015 7.40am     [info	] 	[functionName1] started installing the product
+20-July,2015 7.41am     [debug	]	[functionName2] Installing the prerequisites
+20-July,2015 7.41am     [info	]	[functionName2]	installing the core software
+20-July,2015 7.42am     [debug	]	[functionName3]	reconfigure the machine setting
+20-July,2015 7.43am     [info]		[ main  	  ]	Successfully installed the product
+20-July,2015 7.42am     [error   ]	[functionName3]	unable to reconfigure the machine setting
+20-July,2015 7.42am     [warning ]	[functionName3]	retrying to reconfigure the machine setting
+20-July,2015 7.42am     [critical]	[functionName3]	unable to reconfigure the machine setting
+20-July,2015 7.43am     [critical]  [ main        ]	ABORTED installing the product
+
+print ---
+
+debug
+info
+warning
+error
+critical

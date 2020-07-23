@@ -1,0 +1,20 @@
+{
+    "ip": "157.119.108.211",
+    "city": "Hyderabad",
+    "region": "Telangana",
+    "region_code": "TG",
+    "country": "IN",
+    "country_name": "India",
+    "continent_code": "AS",
+    "in_eu": false,
+    "postal": "500032",
+    "latitude": 17.3753,
+    "longitude": 78.4744,
+    "timezone": "Asia/Kolkata",
+    "utc_offset": "+0530",
+    "country_calling_code": "+91",
+    "currency": "INR",
+    "languages": "en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc",
+    "asn": "AS134305",
+    "org": "Sampath Venkateswara Communications Pvt Ltd."
+}
