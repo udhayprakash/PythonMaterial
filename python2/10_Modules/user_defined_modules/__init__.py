@@ -1,2 +1,0 @@
-import fibscript
-import newScript
