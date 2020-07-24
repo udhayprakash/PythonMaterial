@@ -1,14 +1,5 @@
 s1 = "Hello there,\tworld!"
 s2 = ""
-
-import unicodedata as uu  # properties of Unicode characters
-
-# Python 3 strings are sequences of arbitrary Unicode characters.
-for c in range(100, 10100, 500):
-    cc = chr(c)
-    s2 += cc
-    print(f"Character {cc} is {uu.name(cc)}, in category {uu.category(cc)}.")
-
 # Old time byte strings can contain only ASCII characters 0-127.
 
 sb = b'Only ASCII characters allowed here!\x60'
@@ -42,17 +33,6 @@ print(s4)  # Here a is 99
 
 a = 42
 print(s4)  # a is still 99 inside the string
-
-# And yet another way to compose strings from smaller pieces.
-
-from string import Template
-
-tt = Template("$who likes $food.")
-
-# Python's flexibility to allow arbitrary keyword arguments in functions
-# really displays its power and usefulness here.
-print(tt.substitute(who="Bob", food="sushi"))
-print(tt.substitute(who="Jack", food="steak"))
 
 # The old-timey string interpolation operator % behaves like in C.
 

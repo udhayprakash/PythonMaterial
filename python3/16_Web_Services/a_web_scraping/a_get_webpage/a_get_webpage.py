@@ -1,6 +1,8 @@
 #!/usr/bin/python
 """
 Purpose: To download a web page 
+
+    To understand the url: https://dfir.blog/unfurl/
 """
 
 import  urllib.request

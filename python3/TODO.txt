@@ -122,6 +122,9 @@ Docker
 
 Python Articles 
     https://stackabuse.com/differences-between-pyc-pyd-and-pyo-python-files/
+
+redis
+    https://redislabs.com/blog/beyond-the-cache-with-python/
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Memory Management
     https://stackabuse.com/basics-of-memory-management-in-python/
