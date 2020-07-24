@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: String formatting 
+Purpose: String Formatting
             - Types 
                 1. Old Style formatting 
                 2. New Style formatting 
@@ -21,6 +21,7 @@ OLD-Style formatting
     %X - hexadecimal uppercase
 
 """
+import math
 print('' % ())
 print('My lucky number is %d')
 print('My lucky number is %d' % (12))
@@ -30,11 +31,10 @@ print('My lucky number is %d' % 12.34)  # int(12.34)
 # print('My lucky number is %d' % '12')
 # TypeError: %d format: a number is required, not str
 
-
 print()
 print('My lucky number is %s' % '12')
 print('My lucky number is %f' % 12.34)
-print('My lucky number is %f' % 12)
+print('My lucky number is %f' % 12)  # float(12)
 
 print()  # str()
 print('My lucky number is %s' % True)
@@ -56,15 +56,13 @@ print()
 # %o - octal
 print('%o' % 34, oct(34))
 # %x - hexadecimal lowercase
-# %X - hexadecimal uppercase
 print('%x' % 34, hex(34))
+# %X - hexadecimal uppercase
 print('%X' % 34, hex(34))
-# # %b - binary
-print('%b' % (12), bin(12))
+# %b - binary
+# print('%b' % (12), bin(12))
 # ValueError: unsupported format character 'b' (0x62) at index 1
 
-format(14, '#b'), format(14, 'b') # ('0b1110', '1110')
-f'{14:#b}', f'{14:b}'   # ('0b1110', '1110')
 
 print()
 print('%s' % '12')
@@ -87,13 +85,12 @@ print('%E' % 12.34)  # 1.234000E+01
 print('%E' % 12.34223123123123)  # 1.234223E+01
 
 print()
-import math
 
 print(math.pi)            # 3.141592653589793
 print('%d' % math.pi)     # 3
 print('%f' % math.pi)     # 3.141593
-print('%9f' % math.pi)    #  3.141593
-print('%9.3f' % math.pi)  #     3.142
+print('%9f' % math.pi)  # 3.141593
+print('%9.3f' % math.pi)  # 3.142
 
 ###################################################
 print()
@@ -108,17 +105,24 @@ print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', 99, 15.5))
 # print('My name is %s. I am %d old paying a tax of %f' % ('Udhay', '99', 15.5))
 # TypeError: %d format: a number is required, not str
 
-
+print()
 print('My name is %r. I am %r old paying a tax of %r' % ('Udhay', '78', 15.5))
 print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', '78', 15.5))
 
 # print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', 15.5))
+# TypeError: not enough arguments for format string
 
-
-print('%(language)s has %(My lucky number)03d quote types.' % {'language': "Python", 
+print('%(language)s has %(My lucky number)03d quote types.' % {'language': "Python",
                                                                "My lucky number": 2})
+
 
 print()
 print('2'.zfill(3))  # '002'
 print('%03d' % 2)    # '002'
 print('%3d' % 2)     # '  2'
+
+
+# Limitations of old style string formatting
+# 1. same data types need to be passed
+# 2. If same value need to go more than one time,
+#     those many number of times, values need to be passed

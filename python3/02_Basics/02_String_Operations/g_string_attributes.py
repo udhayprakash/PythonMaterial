@@ -1,122 +1,139 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: String attributes
 
+Objects
+    1. Pen 
+        -usage: writing, drawing, ....
+    2. Mobile 
+        -usage: communication, messaging, watch videos, 
+                playing
+
 """
+language = 'Python Programming'
+print('language       = ', language)
+print('type(language) = ', type(language))
 
-print('  python Production  ')
-print()
-print('  python Production  '.strip())
-print('  python Production  '.strip('p'))
-print('  python Production  '.strip('p '))
-print('  python Production  '.strip('p thno'))
-print('  python Production  '.strip('p thnoy'))  # 'Producti'
+print('len(language)  = ', len(language))
+print('id(language)   = ', id(language))
 
+print('===========================================')
+print('String Attributes')
+print('dir(language) :', dir(language))
 
-'aaaaaaaaaaaaaaaaaaaaaa'.strip('a') # ''
-'aaaaaaaa b aaaaaaaaaaa'.strip('ab') # ' b '
-'aaaaaaaa b aaaaaaaaaaa'.strip('ab ') # ''
+# string concatenation
+mystr1 = 'Taj'
+mystr2 = "Mahal"
 
-print()
-print('  python Production  '.strip())
-print('  python Production  '.lstrip())
-print('  python Production  '.rstrip())
-print('  python Production  '.lstrip('p thnoy'))
-print('  python Production  '.rstrip('p thnoy'))
+result = mystr1 + mystr2
+print('result=', result)
 
-print('00001231231230'.lstrip('0'))
-'123'.zfill(3)  # '123'
-'123'.zfill(4)  # '0123'
-'123'.zfill(7)  # '0000123'
-
-
-# How to convert a string to a list
-print('Python Production'.split())  # ['Python', 'Production']
-print('Python Production'.split(' '))  # ['Python', 'Production']
-print('Python Production'.split('r'))  # ['Python P', 'oduction']
-print('Python Production'.split('t'))  # ['Py', 'hon Produc', 'ion']
+result = mystr1.__add__(mystr2)
+print('result=', result)
 print()
 
-# Question: what is the type of result, if splitting substring is
-#          not present
-print('Python Production'.split('p'))  # ['Python Production']
-print('Python Production'.split('P'))  # ['', 'ython ', 'roduction']
-print('Python Production'.split('n'))  # ['Pytho', ' Productio', '']
-print('Python Production'.rsplit('n'))  # ['Pytho', ' Productio', '']
-
-print('Python Production'.split('Prod'))  # ['Python ', 'uction']
-print('Python Production'.split('Prdo'))  # ['Python Production']
-
-# print('Python Production'.split(''))  # ValueError: empty separator
-
-# Question:
-print(''.split(' '))  # ['']
-
-print()
-print('1201201301201'.split('0'))  # ['12', '12', '13', '12', '1']
-print('1201201301201'.split('0', maxsplit=0))  # ['1201201301201']
-print('1201201301201'.split('0', maxsplit=1))  # ['12', '1201301201']
-print('1201201301201'.rsplit('0', maxsplit=1))  # ['12012013012', '1']
-
-print('1201201301201'.split('0', 3))  # ['12', '12', '13', '1201']
-print('1201201301201'.rsplit('0', 3))  # ['12012', '13', '12', '1']
-
-
-# partition - will result in 3 values in tuple
-print('Python Production'.split('r'))  # 'Python Production'.split('r')
-print('Python Production'.partition('r'))  # ('Python P', 'r','oduction')
-
-print('Python Production'.split('d'))  # ['Python Pro', 'uction']
-print('Python Production'.partition('d'))  # ('Python Pro', 'd', 'uction')
-
-
-'Python Production'.split('t')     # ['Py', 'hon Produc', 'ion']
-'Python Production'.partition('t') # ('Py', 't', 'hon Production')
-'Python Production'.rpartition('t')# ('Python Produc', 't', 'ion')
-
-# How to convert a string to a list
-print(list('1201201301201'))   # ['1', '2', '0', '1', '2', '0', '1', '3', '0', '1', '2', '0', '1']
-
-print(tuple('1201201301201'))  # ('1', '2', '0', '1', '2', '0', '1', '3', '0', '1', '2', '0', '1')
-print(set('1201201301201'))    # {'2', '1', '0', '3'}
-
-# Question:
-'1,2,3'.split(',')    # ['1', '2', '3']
-'1,2,,3,'.split(',')  # ['1', '2', '', '3', '']
-
-# default is with white space
-'1 2 3'.split()            # ['1', '2', '3']
-'   1   2  3   '.split()   # ['1', '2', '3']
-'   1   2  3   '.split(' ')# ['', '', '', '1', '', '', '2', '', '3', '', '','']
-
-print()
-# Question: HOw to convert list of strings to a single string
-print('Python' + 'Production' + 'Language')
-print('Python' + ' ' + 'Production' + ' ' + 'Language')
-print('Python' + '-' + 'Production' + '-' + 'Language')
-
-# ''.join('Python', 'Production', 'Language')
-# TypeError: join() takes exactly one argument (3 given)
-print()
-print(''.join(['Python', 'Production', 'Language']))
-print(' '.join(['Python', 'Production', 'Language']))
-print('-'.join(['Python', 'Production', 'Language']))
-print('@'.join(['Python', 'Production', 'Language']))
-
-print('0'.join(['1', '2', '3', '4', '5']))
-# print('0'.join([1, 2, 3, 4, 5]))
-# TypeError: sequence item 0: expected str instance, int found
-
-
-print()
-print('___'.join('Python Production'.split('P')))
-print('P'.join('Python Production'.split('P')))
-print('R'.join('Python Production'.split('P')))  # Rython Rroduction
+print('len(language)     :', len(language))
+print('language.__len__():', language.__len__())
 print()
 
-print('Python Production'.replace('P', 'R'))        # Rython Rroduction
-print('Python Production'.replace('Prod', 'cat'))   # Python catuction
-print('Python Production'.replace('Prod1', 'cat'))  # Python Production
+result = mystr1 * 5        # String repetition
+print('result=', result)
 
-'aaaaaaaaaaa'.replace('a', 'b')    # 'bbbbbbbbbbb'
-'aaaaaaaaaaa'.replace('a', 'b', 2) # 'bbaaaaaaaaa'
+result = mystr1.__mul__(5)
+print('result=', result)
+print()
+
+print('str(language)     :', str(language))
+print('language.__str__():', language.__str__())
+print()
+
+print('repr(language)     :', repr(language))
+print('language.__repr__():', language.__repr__())
+print()
+
+print('language             :', language)
+print('language.capitalize():', language.capitalize())
+print('language.title()     :', language.title())
+print('language.upper()     :', language.upper())
+print('language.lower()     :', language.lower())
+print('language.swapcase()  :', language.swapcase())
+print()
+print("'der fluß'.lower()   :", 'der fluß'.lower())
+print("'der fluß'.casefold():", 'der fluß'.casefold())
+print("'der fluss'.lower()  :", 'der fluss'.lower())
+print("'der fluss'.casefold():", 'der fluss'.casefold())
+print()
+
+print('language             :', language)
+
+print('language.istitle()   :', language.istitle())
+
+print('"ABCD123#".isupper() :', "ABCD123#".isupper()) # upper case should be present; lower case absent
+print('"Abcd123#".islower() :', "Abcd123#".islower())
+print('"abcd123#".islower() :', "abcd123#".islower())
+print('"123#".islower()     :', "123#".islower())
+print()
+# isupper
+#     1. atleast one upper case character should present
+#     2. lower case character should NOT present
+
+print('"1234".isdigit()     :', "1234".isdigit())
+print('"1234 ".isdigit()    :', "1234 ".isdigit())
+print('"12 34".isdigit()    :', "12 34".isdigit())
+print('"123edsd".isdigit()  :', "123edsd".isdigit())
+print()
+
+print('"abcD".isalpha()     :', "abcD".isalpha())
+print('"abcd1".isalpha()    :', "abcd1".isalpha())
+print()
+
+print('"ab123".isalnum()    :', "ab123".isalnum())
+print('"ab123#".isalnum()   :', "ab123#".isalnum())
+print('"123".isalnum()      :', "123".isalnum())
+print()
+
+print('" ".isspace()        :', " ".isspace())
+print('"    ".isspace()     :', "     ".isspace())
+print('"    a".isspace()    :', "     a".isspace())
+print('"".isspace()         :', "".isspace())
+print()
+
+print('"αλεπού".isascii()    :', "αλεπού".isascii())
+print('"foxfox".isascii()    :', "foxfox".isascii())
+print()
+
+# P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
+# 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17   - forward indexing
+
+# .find() - to get first occurrence of given substring, within bounds
+print('language.find("t")        :', language.find('t'))  # 2
+
+print('language.find("n")        :', language.find('n'))  # 5
+print('language.rfind("n")       :', language.rfind('n'))  # 16
+print()
+
+print('language.find("n", 6)     :', language.find('n', 6))  # 16
+print('language.rfind("n", 15)   :', language.rfind('n', 15))  # 16
+
+print('language.find("n", 6, 17) :', language.find('n', 6, 17))  # 16
+print()
+
+print('language.find("Prog")     :', language.find('Prog'))  # 7
+print('language.rfind("Prog")    :', language.rfind('Prog'))  # 7
+print()
+
+print('language.index("t")       :', language.index('t'))
+print('language.index("n")       :', language.index('n'))
+print('language.rindex("n")      :', language.rindex('n'))
+print()
+print('language.index("Prog")    :', language.index('Prog'))
+print('language.rindex("Prog")   :', language.rindex('Prog'))
+print()
+
+# Question: string attributes - index vs find
+print('language.find("Q")        :', language.find('Q'))  # -1 (ITS not REVERSE INDEX)
+# print('language.index("Q")       :', language.index('Q')) # ValueError: substring not found
+
+
+print('language.find("Prog")     :', language.find('Prog')) # 7
+print('language.find("Porg")     :', language.find('Porg')) # -1

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: String Operations
 
@@ -15,7 +15,6 @@ print(language, type(language))
 # String with double quotes
 language = "Python Programming" 
 print(language, type(language))
-
 
 # String with triple single quotes
 language = '''Python Programming''' 

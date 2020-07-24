@@ -5,14 +5,14 @@ Purpose: Importance and usage of multiple quotes
 language = 'Python Programming'
 print(language, type(language))
 
-my_string = 'How are you?'
-print(my_string)
+question = 'How are your?'
+print(question, type(question))
 
-# my_string = 'What's up?'   # SyntaxError: invalid syntax
-my_string = 'What\'s up?'   
-print(my_string)
-# NOTE 1: Placing \ before any operator with result in treating operator as a
-# ordinary character
+# where_abouts = 'what's up?' # SyntaxError: invalid syntax    
+where_abouts = 'what\'s up?'
+print(where_abouts, type(where_abouts))
+# NOTE 1: Placing \ before any operator with result 
+# in treating operator as a ordinary character
 
 other_string = 'What\'s going in yours\' in-laws\' house'
 print(other_string)
@@ -32,23 +32,24 @@ print('\n\n')
 # '"'
 # ''' '""' ''''
 # """ ''' '""' '''' """
+# "  ''' "
 
 # Multi-line Strings 
-print('Today is an awesome day \
-          to learn python')
-print("Today is an awesome day \
-          to learn python")
-print('''Today is an awesome day \
-          to learn python''')
-print("""Today is an awesome day \
-          to learn python""")
+print('Today is an awesome day\
+            to learn python')
+print("Today is an awesome day\
+            to learn python")
+print('''Today is an awesome day\
+            to learn python''')
+print("""Today is an awesome day\
+            to learn python""")
+
 
 print()
 print('''Today is an awesome day 
           to learn python''')
 print("""Today is an awesome day 
           to learn python""")
-
 
 print('''
     a - apple
@@ -57,3 +58,12 @@ print('''
     d - dog''')
 
 # NOTE 2: triple quote strings are multi-line strings
+
+# Gotcha
+my_string = '''select * from my_table where column='python' and column2 = "django"'''
+print(my_string)
+# my_string = '''select * from my_table where column='python' and column2 = 'django''''
+# SyntaxError: EOL while scanning string literal
+
+my_string = '''select * from my_table where column='python' and column2 = 'django' '''
+print(my_string)
