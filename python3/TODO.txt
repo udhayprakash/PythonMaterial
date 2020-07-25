@@ -17,7 +17,6 @@ inner/nested functions
 
 modules 
     https://stackabuse.com/python-circular-imports/
-    https://stackabuse.com/introduction-to-the-python-pathlib-module/
 
 coroutines
     https://stackabuse.com/coroutines-in-python/
@@ -40,8 +39,9 @@ FileOperations
     https://stackabuse.com/reading-and-writing-xml-files-in-python/
     https://stackabuse.com/introduction-to-the-python-lxml-library/
     https://stackabuse.com/python-zlib-library-tutorial/
-    pdf 
-        https://stackabuse.com/working-with-pdfs-in-python-inserting-deleting-and-reordering-pages/
+
+pdf 
+    https://stackabuse.com/working-with-pdfs-in-python-inserting-deleting-and-reordering-pages/
 
 pytest 
     https://stackabuse.com/test-driven-development-with-pytest/
@@ -50,6 +50,7 @@ pytest
 
 Selenium 
     https://stackabuse.com/getting-started-with-selenium-and-python/
+
 Web Scraping 
     https://stackabuse.com/introduction-to-web-scraping-with-python/
 
@@ -64,6 +65,7 @@ Parallel processing
     
 networking 
     https://stackabuse.com/introduction-to-python-ftp/
+
 windows WSL 
     https://pbpython.com/wsl-python.html
 Twitter 

@@ -2,7 +2,7 @@
 """
 Purpose: String Formatting
             - Types 
-                1. Old Style formatting 
+                1. Old Style formatting (or literal formatting)
                 2. New Style formatting 
                 3. F-Strings  ( works from python 3.6+)
 

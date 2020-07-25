@@ -5,13 +5,13 @@ Purpose: demo of bytearray strings
 bytearray objects are a mutable strings
 """
 # Creating an empty instance: 
-print('bytearray()', bytearray())
+print('bytearray()          ', bytearray())
 
 # Creating a zero-filled instance with a given length: 
-print('bytearray(10)', bytearray(10))
+print('bytearray(10)        ', bytearray(10))
 
 # From an iterable of integers: 
-print('bytearray(range(20))', bytearray(range(20)))
+print('bytearray(range(10)) ', bytearray(range(10)))
 
 # Copying existing binary data via the buffer protocol: 
 print("bytearray(b'Hi!')", bytearray(b'Hi!'))

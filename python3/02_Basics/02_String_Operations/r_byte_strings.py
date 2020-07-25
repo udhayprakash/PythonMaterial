@@ -1,7 +1,24 @@
 #!/usr/bin/python
 """
-Purpose: byte Strings
+Purpose: byte strings
+    bytes objects actually behave like 
+    immutable sequences of integers, with each 
+    value in the sequence restricted such that 
+    0 <= x < 256
 """
+# Question: bytearray vs bytes
+
+# bytearray('Python:αλεπού', 'ascii')
+# UnicodeEncodeError: 'ascii' codec can't encode
+#  characters in position 7-12: ordinal not in range(128)
+
+bytearray('Python:αλεπού', 'utf-8')
+# bytearray(b'Python:\xce\xb1\xce\xbb\xce\xb5\xcf\x80\xce\xbf\xcf\x8d')
+
+bytes('Python:αλεπού', 'utf-8')
+# b'Python:\xce\xb1\xce\xbb\xce\xb5\xcf\x80\xce\xbf\xcf\x8d'
+
+# ----------------------------------------
 my_string = 'Python is interesting.'
 print(my_string, type(my_string))
 
@@ -9,29 +26,6 @@ print(my_string, type(my_string))
 b_string = bytes(my_string, 'utf-8')
 print(b_string, type(b_string))
 
-# Create a byte of given integer size
-size = 5
-arr = bytes(size)
-print(arr, type(arr))
-
-# Convert iterable list to bytes
-my_list = [11, 12, 13, 14, 15]
-b_list = bytes(my_list)
-print(b_list, type(b_list))
-
-# A zero-filled bytes object of a specified length
-print('bytes(10)', bytes(10))
-
-# From an iterable of integers:
-print('bytes(range(20))', bytes(range(20)))
-
-# Copying existing binary data via the buffer protocol:
-obj = (89, 65, 76)
-print('bytes(obj)', bytes(obj))
-# bytes objects are sequences of integers (akin to a tuple)
-
-
-##########################################
 # bytes to string 
 print(b'hello'.decode('utf-8'))
 
@@ -42,6 +36,18 @@ o_string = str(b_string, 'utf-8')
 print(o_string, type(o_string))
 
 # ascii, utf-8, utf-16, cp-232
+
+# In [6]: bytes('udhay', 'ascii')
+# Out[6]: b'udhay'
+
+# In [6]: bytes('udhay', 'utf-8')
+# Out[6]: b'udhay'
+
+# In [8]: str(b'udhay')
+# Out[8]: "b'udhay'"
+
+# In [9]: str(b'udhay', 'utf-8')
+# Out[9]: 'udhay'
 
 ##########################################
 # hex(0-9 A-F) to byte

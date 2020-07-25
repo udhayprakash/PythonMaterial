@@ -1,30 +1,35 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: demo of bytearray strings
+Purpose: bytearray strings
 """
-
 ordinary_string = "Tomorrow will be ours!!!"
 print("ordinary_string      :", ordinary_string)
 print("type(ordinary_string):", type(ordinary_string))
 
-print(ordinary_string.find('will be'))
+print('ordinary_string[9]   ', ordinary_string[9])
+print('ordinary_string[17]  ', ordinary_string[17])
 print('ordinary_string[9:17]', ordinary_string[9:17])
+print(ordinary_string.find('will be'))
 
-# ordinary_string[9:17] = 'is'
+# ordinary_string[9:17] = 'is '
 # TypeError: 'str' object does not support item assignment
 
-# Ordinary string are immutable 
-# bytearray strings are mutable 
+print(ordinary_string[:9] + 'is ' + ordinary_string[17:])
+print()
+
+# Ordinary string are immutable
+# bytearray strings are mutable
 
 b_string = bytearray("Tomorrow will be ours!!!", 'ascii')
 print("b_string      :", b_string)
 print("type(b_string):", type(b_string))
 
-print(b_string.find(b'will be'))
 print('b_string[9:17]', b_string[9:17])
+print(b_string.find(b'will be'))
 
 b_string[9:17] = b'is '
 print("b_string", b_string)
+
 
 #############################
 print()
@@ -47,8 +52,8 @@ print("ord('o'):", ord('o'))
 # D E F
 
 # ASSUMPTION: Ignore case -sensitivity
-# HINTS: %
+# HINTS: ord(), chr(), %
 
 # Ex: egg => hjj
 #    bindu => elqg
-#    Yash  => bd
+#    Yash  => bd..

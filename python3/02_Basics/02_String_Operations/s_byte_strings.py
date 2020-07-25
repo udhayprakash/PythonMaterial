@@ -1,19 +1,24 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: demo of byte strings
+Purpose: byte Strings
 """
-# Other uses of byte string 
+# Convert iterable list to bytes
+my_list = [11, 12, 13, 14, 15]
+b_list = bytes(my_list)
+print(b_list, type(b_list))
 
+
+# ------------------------------------------------
 # A zero-filled bytes object of a specified length
-print('bytes(10)', bytes(10))
+print('bytes(10)        :', bytes(10))
 
 # From an iterable of integers:
-print('bytes(range(20))', bytes(range(20)))
+print('bytes(range(10)) :', bytes(range(10)))
 
 # Copying existing binary data via the buffer protocol:
-obj = (89, 65, 76)
-print('bytes(obj)', bytes(obj))
+print('bytes((89, 65, 76)):', bytes((89, 65, 76)))
 # bytes objects are sequences of integers (akin to a tuple)
+print()
 
 #############################
 # hex to byte
@@ -22,6 +27,7 @@ print(bytes.fromhex('2Ef0 F1f2  '))
 
 # bytes object into its hexadecimal representation
 print(b'\xf0\xf1\xf2'.hex())
+print()
 
 ################################
 b = b'python'
@@ -30,6 +36,7 @@ print(b, type(b))
 print(b[0], type(b[0]))
 # while b[0:1] will be a bytes object of length 1
 print(b[0:1], type(b[0:1]))
+print()
 
 # STRING OPERATIONS
 # ordinary strings
@@ -54,5 +61,6 @@ print(b'1 2 3'.split())
 print(b'1 2 3'.split(maxsplit=1))
 print(b'   1   2   3   '.split())
 
-print(b'%(language)s has %(number)03d quote types.' % \
+print(b'%(language)s has %(number)03d quote types.' %
       {b'language': b"Python", b"number": 2})
+
