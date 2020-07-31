@@ -1,33 +1,48 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Exception Handling 
+Purpose: Exception handling
+
+In [8]: int('123')
+Out[8]: 123
+
+In [9]: int('123.123')
+-----------------------------------------------------------ValueError                Traceback (most recent call last)<ipython-input-9-262f8b9ed82e> in <module>
+----> 1 int('123.123')
+
+ValueError: invalid literal for int() with base 10: '123.123'
+
+In [10]: float('123.123')
+Out[10]: 123.123
+
+In [11]: float('123')
+Out[11]: 123.0
 
 In [1]: eval('123')
 Out[1]: 123
 
-In [2]: eval('12312.123')
-Out[2]: 12312.123
+In [2]: eval('123.1323')
+Out[2]: 123.1323
 
 In [3]: eval('None')
 
-In [4]: print(eval('None'))
-None
+In [4]: eval('True')
+Out[4]: True
 
-In [5]: eval('True')
-Out[5]: True
+In [5]: eval('123 + 100')
+Out[5]: 223
 
-In [8]: name = 'someting'
+In [6]: name = 'sometihing'
 
-In [9]: eval('name')
-Out[9]: 'someting'
+In [7]: eval('name')
+Out[7]: 'sometihing'
 """
 try: 
     num1 = eval(input('Enter an integer:'))
     num2 = eval(input('Enter an integer:'))
     division = num1 / num2 
-except ValueError as ve:
-    # print(f'{ve =}')
-    print('Please enter integers only')
+# except ValueError as ve:
+#     # print(f'{ve =}')
+#     print('Please enter integers only')
 except ZeroDivisionError as ze:
     # print(f'{ve =}')
     print('Denominator cant be zero')

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: To check whether given string is palindrome or not 
 """
@@ -15,7 +15,7 @@ if given_str == given_str[::-1]:
 for index in range(0, len(given_str)):
     print(f'{given_str[index]} <--{index}--> {given_str[-index-1]}')
     if given_str[index] != given_str[-index-1]:
-        break 
+        break
 else:
     print(f'{given_str} is Palindrome string')
 

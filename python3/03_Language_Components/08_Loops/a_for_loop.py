@@ -1,4 +1,4 @@
-#!/usr/bin/python 
+#!/usr/bin/python3
 """
 Purpose: for loop
 
@@ -11,23 +11,23 @@ NOTE: for loop can be applied only on ITERABLE OBJECT
     iterable objects     - string, range, list, tuple, set, dictionary, iterators, generators
 
 """
-# # int
+# int
 # for i in 12123:
 #     print(i)
 # TypeError: 'int' object is not iterable
 
-# # float 
-# for i in 1233.3123:
+# float
+# for i in 1213213.123:
 #     print(i)
 # TypeError: 'float' object is not iterable
 
-# # None
+# None
 # for i in None:
 #     print(i)
 # TypeError: 'NoneType' object is not iterable
 
-# # bool - True/False
-# for i in True:
+# bool - True/False
+# for i in False:
 #     print(i)
 # TypeError: 'bool' object is not iterable
 
@@ -37,8 +37,8 @@ for i in 'Python':
     print(i, end=', ')
 print()
 
-for ch in '12312123':
-    print(ch, end=', ')
+for ch in '12323233':
+    print(ch, end=' ')
 print()
 
 for each in str(1231.123):
@@ -53,10 +53,11 @@ for each in 'None':
     print(each, end=', ')
 print()
 
+# -----------
 for each_chr in 'Python':
     print(each_chr)
 
-# enumerate() - builtin function to get the 
+# enumerate() - builtin function to get the
 #               loop index
 for each_chr in enumerate('Python'):
     print(each_chr)
@@ -72,6 +73,7 @@ for loop_index, each_chr in enumerate('Python', -3):
     print(f'At position {loop_index}, character is {each_chr}')
 print()
 
+
 for loop_index, each_chr in enumerate('Python', 7):
     print(f'At position {loop_index}, character is {each_chr}')
 print()
@@ -83,11 +85,16 @@ for each_ele in [11, 22, 33, 44, 55]:
 print()
 
 for each_ele in enumerate([11, 22, 33, 44, 55]):
-    print(each_ele)
+    print(f'{each_ele[0]} ===> {each_ele[1]}')
 print()
 
 for loop_index, each_ele in enumerate([11, 22, 33, 44, 55]):
     print(f'{loop_index} ===> {each_ele}')
 print()
+
+for loop_index, each_ele in enumerate([11, 22, 33, 44, 55], -50):
+    print(f'{loop_index} ===> {each_ele}')
+print()
+
 
 # Assignment: perform for loop & Enumeration on range() object

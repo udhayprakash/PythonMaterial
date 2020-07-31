@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Boolean Operations
 
@@ -23,9 +23,12 @@ true = 'Udhay'
 choice = 'Udhay'
 print('choice = ', choice, type(choice), id(choice))
 
-# True    - 140713435649872
-# False   - 140713435649904
-# 'udhay' -   2587890325168
+# Objects
+# 1. built-in:
+#       True  - 140734945089360
+#       False - 140734945089392
+# 2. User-defined:
+#       'udhay' - 2314944981040
 
 print()
 # -----------------------------------

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Relational Operations
     - These operations will result in a boolean value (True or False)
@@ -14,7 +14,7 @@ Purpose: Relational Operations
 us_dollar = 74
 canadian_dollar = 50
 
-print(f'{us_dollar=}')
+print(f'{us_dollar      =}')
 print(f'{canadian_dollar=}')
 
 print('us_dollar == canadian_dollar:', us_dollar == canadian_dollar)
@@ -27,7 +27,6 @@ print(f'{us_dollar <= canadian_dollar = }')
 print(f'{us_dollar != canadian_dollar = }')
 # print(f'{us_dollar <> canadian_dollar = }')  works only in python 2.x
 
-
 print()
 print(f'{74 == 50 =}')
 print(f'{74 != 50 =}')
@@ -35,7 +34,6 @@ print(f'{74 >  50 =}')
 print(f'{74 >= 50 =}')
 print(f'{74 <  50 =}')
 print(f'{74 <= 50 =}')
-
 
 # == value-level equivalence check
 # = assignment operator

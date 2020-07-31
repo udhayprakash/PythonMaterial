@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: bool() builtin function
 """
@@ -6,8 +6,9 @@ Purpose: bool() builtin function
 num1 = -0.000000056
 print('bool(num1)       ', bool(num1))
 print('bool(num1 != 0)  ', bool(num1 != 0))
+print()
 
-if num1 != 0:  # => bool(num1 != 0) => bool(True) => True
+if num1 != 0: # => bool(num1 != 0) => bool(True) => True
     print('It is non-zero')
 
 if num1:  # => bool(num1 != 0) => bool(True) => True
@@ -19,7 +20,7 @@ if 1:
 if 0:
     print('It will not print everytime')
 
-if not 0:
+if not 0: # bool(not 0)
     print('It will print everytime')
 
 # -------------------------------------------------------

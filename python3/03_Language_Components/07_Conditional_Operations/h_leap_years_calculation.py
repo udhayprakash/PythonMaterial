@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Leap Year Checks
 
@@ -9,23 +9,31 @@ Algorithms
     else if (year is not divisible by 400) then (it is a common year)
     else (it is a leap year)
 
+    Compute the leap years in this century
 """
 import calendar
+year = 2029
 
-for year in range(1990, 2025):
-    # Method 1
-    if year % 4:
-        print(f'year {year} is a common year')
-    elif year % 100:
-        print(f'year {year} is a LEAP year')
-    elif year % 400:
-        print(f'year {year} is a common year')
-    else:
-        print(f'year {year} is a LEAP year')
+# Method 1
+if year % 4:
+    print(f'year {year} is a common year')
+elif year % 100:
+    print(f'year {year} is a LEAP year')
+elif year % 400:
+    print(f'year {year} is a common year')
+else:
+    print(f'year {year} is a LEAP year')
 
-    # Method 2
-    if calendar.isleap(year):
-        print(f'year {year} is a LEAP year')
-    else:
-        print(f'year {year} is a common year')
-    print()
+
+# Method 2
+if calendar.isleap(year):
+    print(f'year {year} is a LEAP year')
+else:
+    print(f'year {year} is a common year')
+
+# To generate all years in this century
+for year in range(2000, 2101):
+    print(year)
+
+# Assignment: Join the for loop and conditonal
+# logic to print the results

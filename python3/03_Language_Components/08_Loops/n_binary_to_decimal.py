@@ -18,12 +18,12 @@ decimal_number = int(binary_number, base=2)
 print(binary_number, decimal_number)
 
 
-# Method 2 
+# Method 2
 
 sum_value = 0
 for loop_index, each_digit in enumerate(binary_number[::-1]):
     if each_digit == '1':
         # print(loop_index, pow(2 , loop_index))
-        sum_value += pow(2 , loop_index)
+        sum_value += pow(2, loop_index)
 
 print(f'{sum_value =}')

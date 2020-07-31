@@ -1,39 +1,51 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose:
+Purpose: Loops
     break     - breaks the complete loop
-	continue  - skip the current loop
-	pass      - will do nothing. it is like a todo
-	sys.exit  - will exit the script execution
+    continue  - skip the current loop
+    pass      - will do nothing. it is like a todo
+    sys.exit  - will exit the script execution
+
 """
-
-
-students = ['akram', 'trusha', 'bhavana', 'jaya', 'chaitra']
-print('break importance ==========')
-for each_student in students:
-    if each_student == 'bhavana':
-        break
-    print(each_student)
-
-print('continue importance ==========')
-for each_student in students:
-    if each_student == 'bhavana':
-        continue
-    print(each_student)
-
-print('pass importance ==========')
-for each_student in students:
-    if each_student == 'bhavana':
-        pass
-    print(each_student)
-
 import sys
+i = 0
+while i <= 7:
+    i += 1
+    print(i, end=' ')
 
-print('sys.exit importance ==========')
-for each_student in students:
-    if each_student == 'bhavana':
+print('\n importance of break')
+i = 0
+while i <= 7:
+    i += 1
+    if i % 2 == 0:
+        break
+    print(i, end=' ')
+
+print('\n importance of continue')
+i = 0
+while i <= 7:
+    i += 1
+    if i % 2 == 0:
+        continue
+    print(i, end=' ')
+
+print('\n importance of pass')
+i = 0
+while i <= 7:
+    i += 1
+    if i % 2 == 0:
+        pass  # It acts as a placeholder
+    print(i, end=' ')
+
+
+print('\nimportance of sys.exit')
+i = 0
+while i < 7:
+    i += 1
+    if i % 2 == 0:
         sys.exit(0)
-    print(each_student)
+    print(i, end=' ')
 
-print('-------next statement')
-
+# exit code 0 - successful/normal termination
+# exit code non-zero - abnormal termination
+print('next statement')

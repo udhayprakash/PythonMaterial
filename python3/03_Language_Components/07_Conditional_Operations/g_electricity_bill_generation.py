@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: Electricity Board Current Bill Slab rates
-    
+
     electricity bill slabs
     -----------------------
 	0 till 60   ===> 1.25
@@ -19,15 +19,19 @@ units consumed : 357
          60     +   40      + 50    + 100    + 157
          1.25/- + 2.00/-    + 4.00/-+ 7.00/- + 10/-
 
+
 """
 # units_consumed = 357
-units_consumed = float(input('Enter the no. of units consumed:'))
-remaining_units = units_consumed
+units_consumed = input('Enter the no. of units consumed:')
 
-
-if remaining_units < 0:
+if not units_consumed.isdigit():
     print('Invalid Input')
 else:
+    units_consumed = float(units_consumed)
+    if units_consumed < 0:
+        print('Invalid Input')
+
+    remaining_units = units_consumed
     amount = 0
     if remaining_units > 250:
         slab_units = remaining_units - 250
@@ -36,7 +40,7 @@ else:
 
     if 150 < remaining_units <= 250:
         slab_units = remaining_units - 100
-        amount += slab_units * 7.0 
+        amount += slab_units * 7.0
         remaining_units = 150
 
     if 100 < remaining_units <= 150:
@@ -46,15 +50,13 @@ else:
 
     if 60 < remaining_units <= 100:
         slab_units = remaining_units - 40
-        amount += slab_units * 2.0 
-        remaining_units = 60 
+        amount += slab_units * 2.0
+        remaining_units = 60
 
     if 0 < remaining_units <= 60:
         amount += remaining_units * 1.25
 
     print(f'''
-        Units Consumed : {units_consumed}
-        Amount Payable : Rs. {amount} /-
-    ''')
-
-# Assignment - SOlve the remaining problem 
+		Units Consumed : {units_consumed}
+		Amount Payable : Rs. {amount} /-
+	''')

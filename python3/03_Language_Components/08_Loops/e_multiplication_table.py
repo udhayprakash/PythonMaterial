@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Multiplication Table Generation
 """
 
 # Two Independent while loops
-first = 0 
+first = 0
 while first < 5:
     first += 1
     print(f'{first =}')
@@ -12,41 +12,46 @@ while first < 5:
 second = 0
 while second < 5:
     second += 1
-    print(f'{second = }')
+    print(f'{second =}')
 
 print()
-# second while loop is under first while loop
-first = 0 
-while first < 10:
+# Second while loop under first while loop
+MAX_TABLE = 10
+first = 0
+while first < MAX_TABLE:
     first += 1
     # print(f'{first =}')
 
     second = 0
-    while second < 10:
+    while second < MAX_TABLE:
         second += 1
-        # print(f'\t{second = }')
-
+        # print(f'\t{second =}')
         # print(first, '*', second, '=', first * second)
         # print(str(first) + ' * ' + str(second) + ' = ' + str(first * second))
 
-        # # old style string formatting 
-        # print('%d * %d = %d'% (first, second, first * second))
-        # print('%2d * %2d = %3d'% (first, second, first * second))
+        # old style string formatting
+        # print('%d * %d = %d' % (first, second, first * second))
+        # print('%2d * %2d = %3d' % (first, second, first * second))
 
-        # New Style formatting 
+        # New Style formatting
         # print('{} * {} = {}'.format(first, second, first * second))
-        # print('{:2} * {:2} = {:3}'.format(first, second, first * second))
+        # print('{0} * {1} = {2}'.format(first, second, first * second))
+        # print('{0:2} * {1:2} = {2:2}'.format(first, second, first * second))
+        # print('{:2} * {:2} = {:2}'.format(first, second, first * second))
 
-        # F-Strings 
+        # F-strings
         # print(f'{first} * {second} = {first * second}')
         print(f'{first:2} * {second:2} = {first * second:3}')
- 
     print()
 
 '''
 Assignment
 -----------
 1) WAP to display the multiplication table from 10 to 1, for the first 10 tables
+1 * 10 = 10
+1 * 9  =  9
+...
+
 10 * 10 = 100
 10 *  9 =  90
 10 *  8 =  80

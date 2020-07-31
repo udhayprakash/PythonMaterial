@@ -4,7 +4,7 @@ Purpose: program to display all the
        prime numbers within an interval
 """
 
-lower = 90 
+lower = 90
 upper = 450
 
 lower = int(input('Enter the lower bound:'))

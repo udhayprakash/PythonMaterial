@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Python program to check if the input number is prime or not
 
@@ -9,8 +9,7 @@ Purpose: Python program to check if the input number is prime or not
 
     2,  3, 5, 7, 11, ...
 """
-import math 
-
+import math
 # num = 23
 
 # take input from the user
@@ -20,7 +19,6 @@ num = int(input("Enter a number: "))
 if num <= 1:
     print(num, "is not a prime number")
 else:
-    # check for factors
     # for factor in range(2, num):
     for factor in range(2, int(math.sqrt(num))):
         if (num % factor) == 0:

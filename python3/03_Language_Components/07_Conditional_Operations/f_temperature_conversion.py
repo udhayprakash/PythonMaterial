@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Temperature Conversions
     - celsius to fahrenheit , or vice versa
@@ -15,7 +15,8 @@ output     : xC
 23 C
 23C 
 """
-temperature = input('Enter the temperature, followed by C or F:').upper()
+temperature = input(
+    'Enter the temperature, followed by C or F:').strip().upper()
 
 if 'C' in temperature:
     celsius = float(temperature.strip('C'))
@@ -27,7 +28,8 @@ else:
     # Default is celsius
     celsius = float(temperature.strip('C '))
     fahrenheit = round((1.8 * celsius) + 32, 2)
-    
+
+
 print(f'''
         celsius     : {celsius}
         fahrenheit  : {fahrenheit}

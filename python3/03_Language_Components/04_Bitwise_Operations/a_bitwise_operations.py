@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Bitwise Operations
 
@@ -25,6 +25,7 @@ print('num2=', num2, bin(num2))  # 0b1101
 
 num3 = num1 & num2  # 12 = 0000 1100
 print("Line 1 - Value of num3 is ", num3)
+
 
 num3 = num1 | num2  # 61 = 0011 1101
 print("Line 2 - Value of num3 is ", num3)

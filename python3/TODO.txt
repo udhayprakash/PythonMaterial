@@ -32,6 +32,9 @@ aiohttp
     https://stackabuse.com/asynchronous-vs-synchronous-python-performance-analysis/
     https://stackabuse.com/asynchronous-python-for-web-development/
 
+mongoDB 
+    https://pythonexamples.org/python-mongodb-pymongo-get-started/
+    
 FileOperations
     file opening mode 
         x - creates a new file, failing if it exists
@@ -121,6 +124,7 @@ DataScience
 
 Docker
     https://stackabuse.com/dockerizing-python-applications/
+    https://www.freecodecamp.org/news/the-docker-handbook/
 
 Python Articles 
     https://stackabuse.com/differences-between-pyc-pyd-and-pyo-python-files/

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: while loop
     SYNTAX:
@@ -9,7 +9,6 @@ Purpose: while loop
 
 NOTE: i++, i--, --i, ++i (unary operations) are not supported in python
 """
-
 print('\nincrementing loop with increment first')
 
 i = 0                       # initialization
@@ -31,6 +30,7 @@ while i <= 5:          # condition - less than or equal
     i += 1
 print()
 
+# ------------
 print('\n\ndecrementing loop with decrement first')
 j = 5
 while j > 0:

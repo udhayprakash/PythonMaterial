@@ -3,6 +3,7 @@ Errors:
     1. Errors caused by lack of understanding of a language construct.
     2. Errors due to logically incorrect code conversion.
 
+
 Errors
     a. Syntax Errors 
     b. Exception Errors 

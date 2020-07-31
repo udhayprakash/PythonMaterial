@@ -38,7 +38,7 @@ while True:
     choice = input('Enter the choice:')
     if choice not in ('1', '2', '3', '4'):
         break
-    
+
     space_sep_values = input('Enter values seperated by space:')
     # print(space_sep_values)
     # print(space_sep_values.split())
@@ -64,4 +64,3 @@ while True:
             result /= int(each_val)
 
     print(f'{result=}')
-

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Office Schedule
     Monday to Friday  :- 9 am to 6 pm
@@ -28,11 +28,11 @@ else:
     print('INVALID ENTRY! PLEASE TRY AGAIN!!')
 
 # Method  2
-if (week_of_day == 'Monday' or 
-    week_of_day == 'Tuesday' or 
-    week_of_day == 'Wednesday' or 
+if (week_of_day == 'Monday' or
+    week_of_day == 'Tuesday' or
+    week_of_day == 'Wednesday' or
     week_of_day == 'Thursday' or
-    week_of_day == 'Friday'):       # 5 relational ops + 4 logical ops
+        week_of_day == 'Friday'):      # 5 relational ops + 4 logical ops
     print('TIMINGS: 9 AM to 6 PM')
 elif week_of_day == 'Saturday':
     print('TIMINGS: 9 AM to 1 PM')

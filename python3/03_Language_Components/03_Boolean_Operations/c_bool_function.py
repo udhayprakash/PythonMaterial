@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: bool() built-in function
 
@@ -56,7 +56,6 @@ print()
 # Relational operations -> Boolean result -> bool()
 print('74 > 59           ', 74 > 59)
 print('bool(74 > 59)     ', bool(74 > 59))
-
 print('74 <= 59          ', 74 <= 59)
 print('bool(74 <= 59)    ', bool(74 <= 59))
 

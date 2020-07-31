@@ -4,10 +4,10 @@ Purpose: Exception Handling
 
     Exception Hierarchy
 """
-try: 
+try:
     num1 = int(input('Enter an integer:'))
     num2 = int(input('Enter an integer:'))
-    division = num1 / num2 
+    division = num1 / num2
 except ValueError as ve:
     # print(f'{ve =}')
     print('Please enter integers only')
