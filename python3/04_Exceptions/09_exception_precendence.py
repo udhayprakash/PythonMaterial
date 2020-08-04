@@ -7,7 +7,10 @@ Python Execution flow:-
 
 """
 try:
-    expression = 11 / 0 - '0' * None ** value   # PEMDAS
+    num1 = 10
+    value = 1
+    num2 = None
+    expression = 11 / num1 - '0' * num2 ** value   # PEMDAS
 except ZeroDivisionError as ex: 
     print(repr(ex))
 except Exception as ex: 

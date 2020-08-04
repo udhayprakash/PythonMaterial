@@ -1,11 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Using Custom Exceptions
 """
 # creating a custom exception
 class InvalidAge(Exception):
     pass 
-
 
 try:
     age = int(input('Enter your age:'))
@@ -21,8 +20,3 @@ except Exception as ex:
     print('Unhandled Exception -', repr(ex))
 else:
     print('Eligible for voting!!!')
-
-
-# Assignment: create custom Temperature Exception, 
-# and check if inputted temperature is suitable for 
-# humans. Humans can bear -15 to 50 degree celsius

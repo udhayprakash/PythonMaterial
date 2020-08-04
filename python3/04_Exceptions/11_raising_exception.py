@@ -1,13 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Raising exception 
 """
-
 # raise Exception()
 # raise Exception('This is an Error')
 # raise ValueError('This is an Error')
 # raise TypeError('This is an Error')
-
 
 try:
     num = eval(input('num ='))

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: assertions
 
@@ -11,10 +11,9 @@ SYNTAX:
 
 assert 12 + 10 == 22
 assert 12 + 10 == 22, "Wrong answer"
-# assert 12 + 10 != 22, "Wrong answer"  # AssertionError: Wrong answer
+# assert 12 + 10 != 22 , "Wrong answer" # AssertionError: Wrong answer
 
-try: 
+try:
     assert 12 + 10 != 22, "Wrong answer"
 except AssertionError as ex:
     print(str(ex))
-
