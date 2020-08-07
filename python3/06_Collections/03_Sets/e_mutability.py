@@ -1,4 +1,4 @@
-#!/usr/bin/python 
+#!/usr/bin/python3 
 """
 Purpose: Sets
         - Sets are mutable
@@ -24,7 +24,6 @@ try:
     fz_set.add(99)
 except AttributeError:
     print('frozenset dont have set editable attributes')
-
 
 print(dir(ordinary_set))
 print()

@@ -1,19 +1,19 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Dictionaries
 """
-from pprint import pprint 
+from pprint import pprint
 
 language = dict()
 
-# add new keys 
+# add new keys
 language['name'] = 'Python'
 language['creator'] = 'Gudo Van Russum'
 
 pprint(language)
 print()
 
-# add single key value pair 
+# add single key value pair
 language['latest_version'] = '2.7.16'
 pprint(language)
 
@@ -21,20 +21,20 @@ pprint(language)
 python_dict = {
     'name': 'Python',
     'maintainer': 'Almighty',
-    'latest_version': '3.8.2',
+    'latest_version': '3.8.5',
     'dev_version': '3.9'
 }
 pprint(python_dict)
 
 
-# Dictionary concatenation 
+# Dictionary concatenation
 # language + python_dict # is not possible with +
 
 print('\n After update')
 language.update(python_dict)
-# NOTE: 
-# 1. first dictionary is modified, and not the second one 
-# 2. If keys are present, values will be updates, 
+# NOTE:
+# 1. first dictionary is modified, and not the second one
+# 2. If keys are present, values will be updates,
 #  else new key-values pairs will be created
 
 pprint(language)

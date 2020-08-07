@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Dictionaries
     Memory leakage issue 
@@ -63,7 +63,7 @@ signup_form = {
 }
 new_signup_form = copy.deepcopy(signup_form)
 
-print('\n using copy.copy()')
+print('\n using copy.deepcopy()')
 new_signup_form['name'] = 'Dhoni'
 
 print(signup_form)

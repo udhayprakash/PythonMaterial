@@ -12,7 +12,7 @@ Purpose: Dictionaries
         - Dict keys will be unique
         - Dictionaries are indexed by their keys
 """
-from pprint import pprint 
+from pprint import pprint
 
 employee = {
     'name': 'Saurav Ganguly',
@@ -27,11 +27,11 @@ print('Employee Status:', employee['status'])
 
 try:
     employee['no_of_centuries']
-except KeyError as ex: 
+except KeyError as ex:
     print(f'No such key :{str(ex)}')
 
 
-# Dictionaries are mutable 
+# Dictionaries are mutable
 print()
 print(f'Before change: {id(employee) = }')
 
@@ -45,8 +45,7 @@ print(f'After change : {id(employee) = }')
 employee['no_of_centuries'] = 345
 pprint(employee)
 print()
-
-# Difference ways of indexing 
+# Difference ways of indexing
 print(f"{employee['strike_rate'] =}")
 
 try:
@@ -56,11 +55,12 @@ except KeyError as ex:
 
 print()
 print(f"{employee.get('strike_rate')                    =}")
-print(f"{employee.get('no_of_catches')                  =}") 
+print(f"{employee.get('no_of_catches')                  =}")
 # NOTE: dict.get() - returns None if key is not present
 print(f"{employee.get('no_of_catches', None)            =}")
 print(f"{employee.get('no_of_catches', 'No such key')   =}")
 print(f"{employee.get('no_of_catches', 234)             =}")
+
 
 pprint(employee)
 print()
@@ -70,20 +70,19 @@ print(f"{employee.setdefault('no_of_catches')      =}")  # default is None
 pprint(employee)
 print()
 
-print(f"{employee.setdefault('no_of_catches', 234) =}")  
+print(f"{employee.setdefault('no_of_catches', 234) =}")
 # As this key is present now, default values is not taken
 pprint(employee)
 print()
 
 
-print(f"{employee.setdefault('ODI_matches_played', 155) =}")  
+print(f"{employee.setdefault('ODI_matches_played', 155) =}")
 pprint(employee)
 print()
 
 # Question: dict['key'] vs dict.get() vs dict.setdefault
 
-
-#  in - operator - membership check 
+#  in - operator - membership check
 print(f"{'no_of_catches' in employee            =}")
 print(f"{employee.__contains__('strike_rate')   =}")
 
@@ -93,5 +92,5 @@ print(f"{employee.__contains__('no_of_wickets') =}")
 
 if 'no_of_catches' in employee:
     print("no_of_catches:", employee['no_of_catches'])
-else: 
+else:
     print('No such key')

@@ -16,7 +16,7 @@ mydict = {}
 print(f'{type(mydict)} {mydict =}') # <class 'dict'> mydict ={}
 
 myset2 = set()
-print(f'{type(myset2)} {myset2 =}') # <class 'dict'> myset2 ={}
+print(f'{type(myset2)} {myset2 =}') # <class 'set'> myset2 ={}
 
 # NOTE: empty set should be defined with set()
 
@@ -36,6 +36,5 @@ assert s1 == s2
 myset = {11, 22, 33, 44}
 print('myset        :', myset)
 
-# can't be indexed
-# myset[2]  # TypeError: 'set' object is not subscriptable
-# myset[2:3]  # TypeError: 'set' object is not subscriptable
+# myset[2] # TypeError: 'set' object is not subscriptable
+# myset[2:3]# TypeError: 'set' object is not subscriptable

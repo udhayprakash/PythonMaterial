@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Dictionaries
     - This is representation of the data strcuture 
         - HashMap 
     - Properties 
-        - reprsented using {} or dict()
+        - represented using {} or dict()
 """
 
 empty_dict = {}

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: hash()
 """
@@ -31,7 +31,6 @@ print(f'{hash(None)             = }')
 print(f'{hash((3,4))            = }')
 
 print(f'{hash(frozenset((3,4))) = }')
-
 # Mutable Objects
 for each_obj in [ [1,2], {3,4}, {'a': 1} ]:
     try:
