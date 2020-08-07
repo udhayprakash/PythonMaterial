@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Functions Demo
             - code re-usability
@@ -19,7 +19,6 @@ def hello():
 # Function Call
 hello()
 print(hello())
-
 
 # callability of an object - callable()
 print(f'callable(hello)  :{callable(hello)}')
@@ -51,3 +50,4 @@ print(f'''
         {id(hello)   =}
         {dir(hello)  =}
 ''')
+

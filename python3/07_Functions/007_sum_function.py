@@ -1,11 +1,14 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: WAP to display the addition of given values
 """
 # Function definition
+
+
 def addition(num1, num2, num3):
     result = num1 + num2 + num3
     return result
+
 
 # Function call
 addition(10, 20, 30)
@@ -31,6 +34,7 @@ print(f'result:{result}')        # 50
 
 result = sum((10, 20, 30), 3)
 print(f'result:{result}')        # 63
+
 
 result = sum((10, 20, 30, 50.))
 print(f'result:{result}')
@@ -62,13 +66,14 @@ print(''.join({'a', 'b', 'c', 'd'}))
 # Question: flattening the lists
 my_data = [[1, 2], [3, 4], [5, 6], [7, 8]]
 
-# Method 1: 
+# Method 1:
 flat_data = []
 for each in my_data:
     # print(each, type(each))
+    # flat_data.append(each)
     flat_data.extend(each)
 
-print(flat_data)
+print(f'{flat_data =}')
 
 # Method 2:
 # sum(my_data) # TypeError: unsupported operand type(s) for +: 'int' and 'list'
@@ -82,17 +87,10 @@ print(sum(my_data, ()))
 
 print()
 # my_data = [{1, 2}, {3, 4}, {5, 6}, {7, 8}]
-# print(sum(my_data, set()))  #TypeError: unsupported operand type(s) for +: 'set' and 'set'
+# print(sum(my_data, set()))
 
 # my_data = ((1, 2), 3, 4, (5, 6))
 # sum(my_data, ()) # TypeError: can only concatenate tuple (not "int") to tuple
-
-# print(f'type(int) is type(123)  :{type(int) is type(123)}')
-print(f'isinstance(123, int)    :{isinstance(123, int)}')
-
-print(f'isinstance(10.3, int)   :{isinstance(10.3, int)}')
-print(f'isinstance(10.3, float) :{isinstance(10.3, float)}')
-
 
 '''
 Assignment
@@ -101,7 +99,7 @@ Assignment
     Caution: don't create function with same name
 
 2) write a function to implement the following:
-    - input: ((1,2), 3,4, (5, 6))
+    - input: ((1,2), 3,4, [5, 6])
     - output: (1, 2, 3, 4, 5, 6)
     
     HINT: isinstance() - builtin function
@@ -109,3 +107,9 @@ Assignment
           list.append(), list.extend 
           list & tuple concatenation
 '''
+
+# print(f'type(int) is type(123)  :{type(int) is type(123)}')
+print(f'isinstance(123, int)    :{isinstance(123, int)}')
+
+print(f'isinstance(10.3, int)   :{isinstance(10.3, int)}')
+print(f'isinstance(10.3, float) :{isinstance(10.3, float)}')

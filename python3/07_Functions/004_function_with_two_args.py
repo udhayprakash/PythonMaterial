@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Functions Demo
 
@@ -6,6 +6,8 @@ Purpose: Functions Demo
 """
 
 # Function Definition
+
+
 def hello(name, age):
     print(f"{name}'s age is {age}")
 
@@ -16,8 +18,9 @@ def hello(name, age):
 # hello('SUresh')
 # TypeError: hello() missing 1 required positional argument: 'age'
 
+
 print('\ncall By position')
-hello('SUresh', 34)  
+hello('SUresh', 34)
 hello(34, 'SUresh')
 
 print('\ncall By keyword args')

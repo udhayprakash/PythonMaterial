@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Functions Demo
 
     Function with two arguments and two return values
 """
-
+print(f'{int(1123.123) =}') # returns single value
 print(f'{pow(2, 3)     =}') # returns single value
 print(f'{divmod(20, 3) =}') # returns two values
 
@@ -28,6 +28,7 @@ print(f'num1:{num1} num2:{num2}')
 num1, num2 = 123, 323   # unpacking
 print(f'num1:{num1} num2:{num2}')
 
+print()
 print()
 num1 = 123
 num2 = 323
