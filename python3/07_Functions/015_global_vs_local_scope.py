@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Functions 
     
@@ -18,6 +18,13 @@ NOTE:
 mutable object can be edited within function without passing as args
 immutable object CANT be edited within function without passing as args
 """
+# from pprint import pprint
+# print('\nglobals():')
+# pprint(globals())
+# print('\n locals():')
+# pprint(locals())
+
+
 pi = 3.141  # immutable - call by value
 
 # case 1============
@@ -36,18 +43,18 @@ def simple_function():
 
 
 # simple_function()
-# UnboundLocalError: local variable 'pi' referenced
-# before assignment
+# UnboundLocalError: local variable 'pi' referenced before assignment
 
 # case 3=====   call by value
 def simple_function(pi):
-    print('before change pi = {}'.format(pi))
+    print('before change pi    = {}'.format(pi))
     pi = 3333333
-    print('after  change pi = {}'.format(pi))
+    print('after  change pi    = {}'.format(pi))
 
 
 simple_function(pi)
 print('outside function pi = {}'.format(pi))
+
 # NOTE: changes with in function are not 
 #  reflected outside it.
 
@@ -65,9 +72,9 @@ print('outside function pi = {}'.format(pi))
 print()
 def simple_function():
     global pi
-    print('before change pi = {}'.format(pi))
+    print('before change pi    = {}'.format(pi))
     pi = 3333333
-    print('after  change pi = {}'.format(pi))
+    print('after  change pi    = {}'.format(pi))
 
 
 simple_function()
@@ -85,14 +92,13 @@ details = {  # mutable - call by reference
 # case 6=====   call by reference
 print()
 def simple_function():
-    print(f'\nbefore change ver = {details["ver"]}')
+    print(f'\nbefore change ver   = {details["ver"]}')
     details['ver'] = '3.8'
-    print(f'before change ver = {details["ver"]}')
+    print(f'After change ver     = {details["ver"]}')
 
 
 simple_function()
 print('outside function ver = {}'.format(details['ver']))
-
 
 # case 7=====   call by reference
 print()
@@ -101,8 +107,5 @@ def simple_function(lang_details):
     details['ver'] = '3.9'
     print(f'before change ver = {lang_details["ver"]}')
 
-
 simple_function(details)
 print('outside function ver = {}'.format(details['ver']))
-
-

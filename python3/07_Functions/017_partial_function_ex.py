@@ -22,6 +22,7 @@ print(f'type(multiply_2):{type(multiply_2)}')
 assert multiply_2(4) == multiply(2, 4)
 assert multiply_2(14) == multiply(2, 14)
 
+
 assert multiply_2.func == multiply
 assert multiply_2.args == (2,)
 
@@ -38,6 +39,7 @@ assert multiply(32, 4) == multiply_4(32)
 print(f'{multiply_4.func     =}')
 print(f'{multiply_4.args     =}')
 print(f'{multiply_4.keywords =}')
+
 
 '''
 Assignments

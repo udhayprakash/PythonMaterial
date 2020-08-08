@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Function with position-only arguments
 
@@ -24,14 +24,13 @@ print(multiply_then_add(5, 10, 20, 89))
 print(multiply_then_add(5, 10, 20, d=89))
 print(multiply_then_add(a=5, b=10, c=20, d=89))
 
-
+# -------------------------------------
 def multiply_then_add(a, b, c, /, d=10):
     return a + b + c + d
 
 print(multiply_then_add(5, 10, 20, d=89))
 # print(multiply_then_add(a=5, b=10, c=20, d=89))
 # TypeError: multiply_then_add() got some positional-only arguments passed as keyword arguments: 'a, b, c'
-
 
 # -----------------
 print()
@@ -47,5 +46,6 @@ def power(x, y, /, mod=None):
 
 print(f'{power(4, 2)     =}')
 print(f'{power(4, 2, 10) =}')
+print(f'{power(4, 2, mod=10) =}')
 # print(f'{power(x=4, y=2, mod=10) =}')
 # SyntaxError: positional argument follows keyword argument
