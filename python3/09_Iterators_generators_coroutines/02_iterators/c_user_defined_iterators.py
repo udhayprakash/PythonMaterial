@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: iter() protocol
     Iterator objects
@@ -46,3 +46,4 @@ print('set(alpha_it)', set(alpha_it))
 
 alpha_it = iter(alpha)
 print('str(alpha_it)', str(alpha_it)) # <list_iterator object at 0x0000000002684188>
+

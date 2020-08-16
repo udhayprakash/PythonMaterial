@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose:
      Python uses Timsort algorithm for sorting
@@ -8,7 +8,8 @@ sorted()
     - create  new list object and stores sorted result there
     - default sorting is in ascending order
 reversed()
-    - results in an lazy object 
+    - results in an lazy object
+    - reverses the eleements in reverese order of ASSIGNMENT
 """
 
 numbers = [5, 2, 3, 1, 4]
@@ -32,6 +33,7 @@ numbers.sort(reverse=True)
 print(f'numbers                         : {numbers}')
 
 print()
+numbers = [5, 2, 3, 1, 4]
 print(f'reversed(numbers): {reversed(numbers)}')  # list_reverseiterator
 revr_numbers = list(reversed(numbers))
 print(f'revr_numbers     : {revr_numbers}')

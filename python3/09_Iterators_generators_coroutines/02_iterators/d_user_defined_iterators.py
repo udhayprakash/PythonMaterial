@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Iterators
 """
+# list to iterator -> list iterator
 alpha = ['a', 'e', 'i', 'o', 'u']
 print(type(alpha), alpha)
 
@@ -9,6 +10,7 @@ alpha_it = iter(alpha)
 print(type(alpha_it), alpha_it)
 
 print()
+# tuple to iterator -> tuple iterator
 alpha = ('a', 'e', 'i', 'o', 'u')
 print(type(alpha), alpha)
 
@@ -16,6 +18,7 @@ alpha_it = iter(alpha)
 print(type(alpha_it), alpha_it)
 
 print()
+# set to iterator -> set iterator
 alpha = {'a', 'e', 'i', 'o', 'u'}
 print(type(alpha), alpha)
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose:
 
@@ -35,14 +35,15 @@ False
 '''
 
 # all() -> True if bool(ech_element) is True
-my_list = [1, 2, 3, 4, 6, 0]
+my_list = [1, 2, 3, 4, 6, 0, 6, 7]
 for i in my_list:
     if not bool(i):
         print(i, bool(i))
-        result = False 
-        break 
+        result = False
+        break
 else:
-    result =True 
+    print('All loop given are ran')
+    result = True
 
 print(my_list, result)
 print(my_list, all(my_list))
@@ -53,13 +54,14 @@ my_list = [1, 2, 3, 4, 6, 0]
 for i in my_list:
     if bool(i):
         print(i, bool(i))
-        result = True 
-        break 
+        result = True
+        break
 else:
-    result = False 
+    result = False
 
 print(my_list, result)
 print(my_list, any(my_list))
+
 
 # ------------------
 # list
@@ -74,3 +76,7 @@ print(any([0, 0, 0, 1]))     # True
 print()
 print(all([None, 1, 2, 3]))  # False
 print(any([None, 1, 2, 3]))  # False
+
+print()
+print('python', all('python'))
+print('pyt hon', all('pyt hon'))

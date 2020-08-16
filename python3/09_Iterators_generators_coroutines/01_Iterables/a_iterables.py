@@ -1,22 +1,24 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Iterables - Objects which support iteration over them
+Purpose: Iterables 
+    - Objects which support iteration over them
 
 non-iterable objects ====> int, float, None, True, False ..
 Iterable objects     ====> str, list, tuple, dict, set, iterator, generator, range()
 
 """
-# for i in 1234:
-#     print(i)
-# TypeError: 'int' object is not iterable
+# for digit in 1234:
+#     print(digit)
+# TypeError: 'int' object is not iterable      
 
-for i in '1234':
-    print(i)
+for digit in '1234':
+    print(digit)
 
 # string   -- iterable
 for ch in 'python programming':
     print(ch, end=' ')
 print()
+
 
 print('Collections - Lists  - iterable')
 names = ['udhay', 'prakash', 'someone']
@@ -53,6 +55,7 @@ for each_name in names.values():
 print('\nitems')
 for each_name in names.items():
     print('\t', each_name)
+print()
 
 for each_key, each_val in names.items():
     print('\t', each_key, '====>', each_val)

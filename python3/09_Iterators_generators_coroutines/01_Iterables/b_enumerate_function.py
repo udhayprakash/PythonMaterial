@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Iterating and using enumerate()
 
@@ -28,6 +28,6 @@ print()
 for loop_index, ech_chr in enumerate(my_string, start=-3):
     print(f'At loop {loop_index:2}, we found {ech_chr}')
 
-# TypeError: 'float' object cannot be interpreted as an integer
 # for loop_index, ech_chr in enumerate(my_string, start=-3.5):
 #     print(f'At loop {loop_index:2}, we found {ech_chr}')
+# TypeError: 'float' object cannot be interpreted as an integer

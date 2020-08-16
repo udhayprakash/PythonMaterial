@@ -27,6 +27,7 @@ except StopIteration as ex:
 
 
 print('\nReassigning')
+itr = iter(a)
 while True:
     try:
         print('next(itr)     ', next(itr))
