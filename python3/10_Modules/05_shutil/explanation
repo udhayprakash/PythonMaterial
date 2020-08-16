@@ -6,3 +6,5 @@ shutil.copyfile           No                 No              No             No
 shutil.copy2              Yes                Yes             No             Yes
 shutil.copyfileobj        No                 No              Yes            No
 ──────────────────  ───────────────  ──────────────────  ────────────── ───────────
+
+shutil.move - To move file from one place to another

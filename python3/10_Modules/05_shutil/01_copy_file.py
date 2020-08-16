@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-from shutil import copyfile
-
 """
 Purpose:
 """
 import os
+from shutil import copyfile
 
 SOURCE_FILE = 'test_dir_1/test_file_1.txt'
 DESTINATION_FILE = 'test_dir_2/test_file_1.txt'
