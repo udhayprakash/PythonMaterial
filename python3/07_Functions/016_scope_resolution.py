@@ -27,30 +27,3 @@ def simple_function(pi):
 
 
 simple_function(pi)
-print()
-# ------------------------------------
-x = 0
-def outer():
-    x = 1
-    def inner():
-        nonlocal x
-        # global x
-        x = 2
-        print("inner :", x)
-
-    inner()
-    print("outer :", x) 
-                # not effected when global
-                # effected when nonlocal
-
-outer()
-print("global:", x) 
-        # effected when global
-        # not effected when nonlocal
-
-
-# NOTE: 
-# 1. If a variable is initialized with global, 
-#    changes to it with be reflected globally(through out the script)
-# 2. If a variable is initialized with "nonlocal", 
-#    changes to it will be reflected one-level above it 

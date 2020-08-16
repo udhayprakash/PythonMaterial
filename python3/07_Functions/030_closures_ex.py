@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: closure example demo
 """
@@ -16,14 +16,7 @@ def outer(num1):
     print('wrapper.__closure__    ', wrapper.__closure__)
     return wrapper
 
-
 outer_result = outer(10)
+print(f'{outer_result = }')
 
-
-print('outer_result', outer_result)
-print('outer_result()', outer_result(20))
-
-# print(num3)
-
-# print(dir(outer))
 print('outer.__closure__', outer.__closure__)

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Higher Order Functions 
             - reduce 
@@ -14,17 +14,21 @@ print(list(map(lambda x: x *2, [1, 2, 3, 4])))
 # For map(), if we have two args in function, we need to give two iterables
 
 print(list(map(lambda x, y: x + y, [1, 2, 3, 4], (11, 22, 33))))
-
 print(list(map(lambda x, y: x + y, 'abcd', 'zyx')))
 # print(list(map(lambda x, y, z: x + y + z, 'abcd', 'zyx', [1, 2, 3])))
+# TypeError: can only concatenate str (not "int") to str
+
 print(list(map(lambda x, y, z: x + y, 'abcd', 'zyx', [1, 2, 3])))
 print(list(map(lambda x, y, z: x + y + str(z), 'abcd', 'zyx', [1, 2, 3])))
+
 
 
 print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))  # (((1+2)+3)+4)
 # NOTE: reduce() will take a single iterable only
 
 print(reduce(lambda x, y: x * y, [1, 2, 3, 4])) # factorial(4)
+print(reduce(lambda x, y: x * y, range(1, 4+1))) # factorial(4)
+print()
 
 print(reduce(lambda x, y: x ** y, [1, 2, 3, 4]))
 print(reduce(lambda x, y: x ** y, [2, 3, 4]))
@@ -41,7 +45,7 @@ def my_factorial(given_num):
 print(my_factorial(9))
 
 print(reduce(lambda num1, num2: num1 * num2, range(1, 9 + 1)))
-
+print()
 
 # -------------------------------------------------------------
 import operator
@@ -50,10 +54,10 @@ print(reduce(operator.add, [1, 3, 5, 6, 2]))
 
 print(reduce(operator.mul, [1, 3, 5, 6, 2]))
 
-
 mystrings = ('I', 'am', 'confident', 'about', 'myself')
 print(reduce(operator.add, mystrings))
 print(reduce(lambda word1, word2: word1 + ' ' + word2, mystrings))
+
 
 # ---------------------------------------------------------------
 import itertools
@@ -64,9 +68,11 @@ print(reduce(operator.add, [1, 3, 5, 6, 2]))    # 17
 print(list(itertools.accumulate([1, 3, 5, 6, 2], lambda x, y: x + y)))  # [1, 4, 9, 15, 17 ]
 
 
-# Assignment: mimick sum() builtin function with 
-#  a. user-defined function
-#  d. using reduce
+"""
+Assignment: mimick sum() builtin function with 
+ a. user-defined function
+ b. using reduce
+"""
 print(
     sum((1, 23, 23, 2))
 )

@@ -1,13 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: INfinite recursions 
+Purpose: Infinite recursions 
 """
-import sys 
+import sys
 
 def display(name):
     print(name)
     return display(name)
-
 
 # To get the stack depth - platform dependent
 print(f'{sys.getrecursionlimit() =}')  # 1000 
@@ -40,5 +39,5 @@ def func2():
     print('func2')
     return func1()
 
-# func1()
+func1()
 # RecursionError: maximum recursion depth exceeded while calling a Python object

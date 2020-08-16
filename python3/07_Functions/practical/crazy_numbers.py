@@ -1,4 +1,4 @@
-#!python -u 
+#!python -u
 """
 Purpose: Display the crazy numbers
 

@@ -50,4 +50,3 @@ print(f'''
         {id(hello)   =}
         {dir(hello)  =}
 ''')
-

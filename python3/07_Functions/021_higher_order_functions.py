@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Higher Order functions
     - function which were designed to work on another functions
@@ -10,6 +10,7 @@ group1 = ('1', '2', '3')
 group2 = ('a', 'b', 'c', 'd')
 
 result = list(zip(group1, group2))
+# NOTE: asymetric values will be ignored
 print(result)
 print(dict(result))
 print()
@@ -55,7 +56,9 @@ print(list(
 print(list(
     filter(is_positive, data)
 ))
+print()
 
+# ----------------------------------------
 # Caesar Cipher Implementation
 print(list(
     map(lambda ch: ch, 'Python')

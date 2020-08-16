@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Lambda (or) Anonymous functions
 """
@@ -67,3 +67,13 @@ def get_index_of(given_tuple, search_value):
 get_index_l = lambda gvn_t, sv: gvn_t.index(sv)
 
 assert get_index_of(my_tuple, 56) == get_index_l(my_tuple, 56)
+
+# ---------------------------------------------------------------
+def wish(message):
+    # return message
+    return lambda name: message.upper() + name
+
+greet = wish('Happy Birthday')
+
+print(greet)
+print(greet('Joe'))

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 def print_rangoli(size):
     alphabets = [chr(i) for i in range(97, 97 + size)]

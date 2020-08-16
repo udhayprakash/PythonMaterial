@@ -6,7 +6,6 @@ Purpose: non-local usage & inner functions
 print('\n\nGeneral case')
 name = 'global level'
 
-
 def outer():
     name = 'outer function level'
 
@@ -26,6 +25,7 @@ name = 'global level'
 
 
 def outer():
+    # global name
     name = 'outer function level'
 
     def inner():
@@ -64,7 +64,6 @@ print(f'\toutside   : {name =}')  # un-effected
 #    except one-level up.
 # 2. If a variable is initialized with "nonlocal",
 #    changes to it will be reflected one-level above it
-
 
 # --Example 2----------------------------------
 x = 0

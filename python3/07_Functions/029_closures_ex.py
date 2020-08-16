@@ -13,24 +13,15 @@ Purpose: closures in python
       and then returning the underlying function.
 
 """
-from math import pi
-
-pi = 300
-mydict = {'lang': 'python'}
-
 
 # function definition
+
+
 def outer():
     print('outer function - start ')
-    pi = 200
-    mydict = {'lang': 'ruby'}
 
     def inner():
-        pi = 100
-        mydict = {'lang': 'golang'}
         print('inner function - start')
-        print(f'pi              :{pi}')
-        print(f'mydict["lang"]  :{mydict["lang"]}')
         return 'something'
 
     # case 1:
@@ -44,9 +35,10 @@ def outer():
 if __name__ == '__main__':
     result = outer()
     print(f'{type(result)} {result}')
-    print('\n\ncalling inner() via result()')
+    # inner() NameError: name 'inner' is not defined
     result()
 
+    outer()()
 
 
 # --------------------------------------------------
@@ -54,6 +46,7 @@ def make_multiplier_of(n):
     def multiplier(x):
         return x * n
     return multiplier
+
 
 # Multiplier of 3
 mul3 = make_multiplier_of(3)
@@ -67,4 +60,3 @@ print(f'{type(mul5)} {mul5}')
 
 print(f'mul5(10):{mul5(10)}')
 print(f'mul5(7) :{mul5(7)}')
-
