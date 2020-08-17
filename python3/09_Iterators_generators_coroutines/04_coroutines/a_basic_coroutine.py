@@ -1,13 +1,26 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Purpose: 
-• Coroutines are not related to iteration
+Purpose: Coroutines
+    - pep-0342
+    - generators are data producers
+    - coroutines are data consumers
 
-- generators are data producers
-- coroutines are data consumers
+    - Coroutines consume values using a (yield)
 
-- Coroutines consume values using a (yield)
+valid syntax:
+    x = yield 42
+    x = yield
+    x = 12 + (yield 42)
+    x = 12 + (yield)
+    foo(yield 42)
+    foo(yield)
+
+invalid syntax:
+    x = 12 + yield 42
+    x = 12 + yield
+    foo(yield 42, 12)
+    foo(yield, 12)
 """
 
 
