@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Script to get all the files in a directory and its sub-directories , of a
-particular extension
+Purpose: Script to get 
+    all the files in a directory and its sub-directories,
+    of a particular extension
 """
 import os
 
@@ -46,5 +47,4 @@ if __name__ == '__main__':
 
     print('total files count', len(extension_specific_files))
 else:
-    print
-    "imported"
+    print("imported")
