@@ -1,18 +1,21 @@
-import string
-from random import choice, randint, randrange, sample
+import random
 
-print('string.ascii_letters :', string.ascii_letters)
-print('string.digits        :', string.digits)
-print('string.punctuation   :', string.punctuation)
+alphabet = "abcdefghijklmnopqrstuvwxyz .,!@_-(*)-+/|$%&=?^"
+pw_length = 34  # can change the length of your password by changing this number
+mypw = ""
 
-characters = string.ascii_letters + string.punctuation \
-             + string.digits
-password1 = "".join(choice(characters) for x in range(randint(8, 16)))
-print('password1             :', password1)
+for i in range(pw_length):
+    next_index = random.randrange(len(alphabet))
+    mypw += alphabet[next_index]
 
-password2 = "".join(choice(characters) for x in range(randrange(8, 16)))
-print('password2             :', password2)
+# replace 1 or 2 characters with a number
+for i in range(random.randrange(1, 3)):
+    replace_index = random.randrange(len(mypw) // 2)
+    mypw = mypw[0:replace_index] + str(random.randrange(10)) + mypw[replace_index + 1:]
 
-print(''.join(sample(string.ascii_letters, 4)) \
-      + ''.join(sample(string.digits, 4)) \
-      + ''.join(sample(string.punctuation, 4)))
+# replace 1 or 2 letters with an uppercase letter
+for i in range(random.randrange(1, 3)):
+    replace_index = random.randrange(len(mypw) // 2, len(mypw))
+    mypw = mypw[0:replace_index] + mypw[replace_index].upper() + mypw[replace_index + 1:]
+
+print(mypw)

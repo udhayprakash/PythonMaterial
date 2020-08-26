@@ -4,7 +4,7 @@ import random
 import os
 
 """
-Purpose: demonstration of random module 
+Purpose: Demonstration of random module 
 
     Python random module, uses pseudo-random generator (PRNG) 
     called the Mersenne Twister. 
@@ -15,11 +15,11 @@ cryptographic use.
 In Python3, 'secret' module is used for cryptographic purpose.
 """
 # Generate a pseudo-random number between 0 and 1.
-print('random.random()', random.random())
+print('random.random()      :', random.random())
 
 # Generate a large pseudo-random number
-print('random.random() * 100', random.random() * 100)
-print('random.random() * 100', random.random() * 100)
+print('random.random() * 100:', random.random() * 100)
+print('random.random() * 100:', random.random() * 100)
 
 # if we set the seed, we guarantee that we will get the same answer
 random.seed(18485)
