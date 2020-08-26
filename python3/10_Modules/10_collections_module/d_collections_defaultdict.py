@@ -52,6 +52,7 @@ for i in name:
 pprint(mydict)
 #################################################################
 other_dict = defaultdict(lambda: 0)
-print(other_dict['one']) # 0 
+print(other_dict['one']) # 0
+ 
 print(other_dict['two']) # 0
 pprint(other_dict)  # {'one': 0, 'two': 0}
