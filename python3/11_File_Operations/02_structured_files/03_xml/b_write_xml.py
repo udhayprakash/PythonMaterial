@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: write xml file using lxml module
 """
@@ -19,8 +19,8 @@ root.append(child1)
 # another child with text
 child2 = etree.Element('child2')
 child2.text = 'some text'
-root.append(child2)
 
+root.append(child2)
 # child1.append(child2)
 
 # pretty string

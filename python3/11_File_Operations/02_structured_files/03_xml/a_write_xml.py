@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: writing an XML file
     XML - eXtensible Markup Language
@@ -31,6 +31,7 @@ child2 = SubElement(root, 'child2')
 result_str = tostring(root).decode('utf-8')
 print(result_str)
 
+
 # To write an xml file
-with open('first.xml', 'w') as f:
+with open('a_write_xml.xml', 'w') as f:
     f.write(result_str)
