@@ -12,6 +12,7 @@ import re
 
 print(re.match('ab', 'ab').group())
 print(re.search('ab', 'ab').group())
+print()
 
 print(re.search('ab*', 'a').group())  # b is occurring 0 times
 print(re.search('ab*', 'ab').group())  # b is occurring 1 times
@@ -20,4 +21,4 @@ print(re.search('ab*', 'abbbbbb').group())  # b is occurring 6 times
 
 # print(re.search('ab*', 'bbbbbb').group())  # b is occurring 6 times
 print(re.search('a*b*', 'bbbbbb').group())  # b is occurring 6 times; a - 0 times
-
+print(re.search('a*b*', 'aaaaabbbbbb').group())  # b is occurring 6 times; a - 0 times

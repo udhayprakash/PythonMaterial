@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-purpose: regular expression  demo
+purpose: regular expression
 
 \d - presence of any digit 0-9
 \D - absence of any digit
@@ -32,4 +32,3 @@ print()
 
 print(re.search(r'(\w+)\W(\w+)', 'Udhay Prakash').groups())
 # ('Udhay', 'Prakash')
-

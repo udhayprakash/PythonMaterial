@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -22,12 +22,16 @@ print(re.search('.*', '').group())  # '' - empty string is resulted
 print(re.search('.*', 'aS').group())
 print(re.search('.*', 'ASDASDSADS').group())
 print(re.search('.*', 'ASDASDSADS 3444 *&(*&(_)_.dfaderrrerq').group())
+print(re.search('.*', 'ASDASDSADS 34\n44 *&(*&(_)_.dfaderrrerq').group())
 
 # ------------
 print(re.search('.*', '').group())  # any char occurred 0 times
+
 # print(re.search('.+', '').group())  # any char occurred 0 times
 print(re.search('.+', 'c').group())  # any char occurred 0 times
+
 print(re.search('.?', '').group())  # any char occurred 1 times
+print(re.search('.?', 'c').group())  # any char occurred 1 times
 
 # ----------------
 print(re.search('', '<h1>name</h1>').group())

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -33,6 +33,9 @@ print(re.search(r'\d?', 'cost of apples is $150 per basket').group())  # 1
 # re.search() -> to get a pattern at any place in search string
 
 # re.findall() -> to get all the patterns within the search string
+print(re.match('python', 'PYTHON python PYTHon pYTHon43454', re.I).group())
+print(re.search('python', 'PYTHON python PYTHon pYTHon43454', re.I).group())
+
 print(re.findall('python', 'PYTHON python PYTHon pYTHon43454'))
 print(re.findall('python', 'PYTHON python PYTHon pYTHon43454', re.I))
 
@@ -54,6 +57,7 @@ print(re.findall('[0-9]+', target_string))  # ['23', '2020', '7', '30', '30', '2
 
 print(re.findall('[1-5]', target_string))  # ['2', '3', '2', '2', '3', '3', '2', '2']
 print(re.findall('[1-5]+', target_string))  # ['23', '2', '2', '3', '3', '2', '2']
+print(re.findall('[3457]+', target_string))  # ['3', '7', '3', '3']
 
 print()
 print(re.findall(r'\w', target_string))
@@ -64,7 +68,7 @@ print(re.findall(r'\w+', target_string))
 print(re.findall('[a-z]', target_string))
 # ['i', 'e', 'v', 'e', 'r', 'y', 'o', 'n', 'e', 'h', 'e', 'i', 's', 'o', 'n', 'r', 'd', 'o', 'f', 'a', 'y', 'a', 't', 'x', 'y', 'z', 'p', 'l', 'a', 'c', 'e', 'a', 't', 't', 'i', 'm', 'e', 'p', 'm', 'n', 'd', 't', 'h', 'e', 'i', 's', 'o', 'n', 't', 'h', 'o', 'f', 'a', 'y', 'a', 't', 'x', 'x', 'x', 'p', 'l', 'a', 'c', 'e', 'h', 'a', 'n', 'k', 's']
 print(re.findall('[A-Z]', target_string))
-['H', 'T', 'P', 'A', 'R', 'T', 'Y', 'M', 'I', 'S', 'T', 'A', 'R', 'E', 'C', 'E', 'P', 'T', 'I', 'O', 'N', 'M', 'T']
+# ['H', 'T', 'P', 'A', 'R', 'T', 'Y', 'M', 'I', 'S', 'T', 'A', 'R', 'E', 'C', 'E', 'P', 'T', 'I', 'O', 'N', 'M', 'T']
 
 print(re.findall('[aeiou]', target_string, re.I))
 # ['i', 'e', 'e', 'o', 'e', 'e', 'A', 'i', 'o', 'o', 'a', 'a', 'a', 'e', 'a', 'i', 'e', 'I', 'A', 'e', 'E', 'E', 'I', 'O', 'i', 'o', 'o', 'a', 'a', 'a', 'e', 'a']

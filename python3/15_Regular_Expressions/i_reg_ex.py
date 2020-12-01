@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -31,5 +31,5 @@ result = re.search('^.....$', "PyTHOn Programming is good", re.I)
 print(f'result:{result}')  # None
 
 # To get the target string with 5 characters only
-result = re.search('^.....$', "PyTHO", re.I)
-print(f'result:{result}')  # PyTHO
+result = re.search('^.....$', "UDHAY", re.I)
+print(f'result:{result}')  # UDHAY

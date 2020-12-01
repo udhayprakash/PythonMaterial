@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-purpose: regular expression  demo 
+purpose: regular expression
 
 Ex: email ids
 """
@@ -24,7 +24,9 @@ mubeen.tom@hacker.com
 1%453&harini_new@in.com
 '''
 
-matched_emails = re.findall('[a-zA-Z0-9._]+@[a-zA-Z0-9._]+', email_ids)
+matched_emails = re.findall('[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+', email_ids)
+for each in matched_emails:
+    print(each)
 
-for each_email in matched_emails:
-    print(each_email)
+# Assignment: 
+# 1. FInd all the valid Phone numbers in the given target string

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 purpose: regular expression  demo
 
@@ -43,7 +43,7 @@ print(re.findall(r'\S+', target_string))
 >>> re.search('\\bMy\\b', 'My name is Ethan.')         # matches 'My' placed either at the beginning or end of a string OR placed with word boundaries on either end.
 <_sre.SRE_Match object; span=(0, 2), match='My'>
  
->>> re.search(r'\bMy\b', 'My name is Ethan.')          # matches 'My' placed either at the beginning or end of a string OR placed with word boundaries on either end.
+>>> re.search(r'\bMy\b', 'My name is Mythili.')          # matches 'My' placed either at the beginning or end of a string OR placed with word boundaries on either end.
 <_sre.SRE_Match object; span=(0, 2), match='My'>
  
 >>> re.search(r'\bEthan\b', 'My name is Ethan.')       # matches 'Ethan' placed either at the beginning or end of a string OR placed with word boundaries on either end. Keep in mind that a period counts as a \W character, and hence it returns a match. A \b character is defined as the boundary between a \w & \W character or between \w and the two ends of a string.

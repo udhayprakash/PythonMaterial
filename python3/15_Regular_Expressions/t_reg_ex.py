@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-purpose: regular expression  demo
+purpose: regular expression
 
 application  of regex flags
     re.I (re.IGNORECASE)--> for case-sensitive search/match

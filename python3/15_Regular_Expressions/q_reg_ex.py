@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: regular expression
 
@@ -16,7 +16,7 @@ To escape any re operator in pattern, place a \ before it, or enclose in []
 import re
 
 # identify decimal number
-print(re.findall(r'\d+', '12 21323.3 23432.234 23.234324 -0.000003243'))
+print()
 # ['12', '21323', '3', '23432', '234', '23', '234324', '0', '000003243']
 
 # only floating point values

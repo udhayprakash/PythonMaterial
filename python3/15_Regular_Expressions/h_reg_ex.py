@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -10,6 +10,8 @@ pattern
 """
 import re
 
+result = re.search('pyTHoN', "PyTHOn Programming is good", re.I)
+print(f'\nresult:{result}') 
 
 result = re.search('pyTHoN$', "PyTHOn Programming is good", re.I)
 print(f'\nresult:{result}')  # None

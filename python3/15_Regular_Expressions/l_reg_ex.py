@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -21,4 +21,3 @@ print(re.search('ab?', 'abbbbbb').group())  # b is occurring 6 times
 
 # print(re.search('ab?', 'bbbbbb').group())  # b is occurring 6 times
 print(re.search('a?b?', 'bbbbbb').group())  # b is occurring 6 times; a - 0 times
-

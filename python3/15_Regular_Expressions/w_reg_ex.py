@@ -1,8 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-purpose: regular expression  demo 
-
-Ex: email ids
+purpose: regular expression
 """
 
 import re
