@@ -43,9 +43,11 @@ print()
 
 
 print(f'{1024}', 1024)         # 1024 1024
+print(f'{1024:d}', 1024)       # 1024 1024
 print(f'{1024:b}', bin(1024))  # 10000000000 0b1000000000
 print(f'{1024:o}', oct(1024))  # 2000 0o2000
 print(f'{1024:x}', hex(1024))  # 400 0x400
+print(f'{1024:X}', hex(1024))  # 400 0X400
 print()
 
 import math
@@ -118,3 +120,6 @@ print('{i[";]}'.format(i={'";': 4}))
 
 format(14, '#b'), format(14, 'b') # ('0b1110', '1110')
 f'{14:#b}', f'{14:b}'             # ('0b1110', '1110')
+
+
+# Ref: https://miguendes.me/73-examples-to-help-you-master-pythons-f-strings
