@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 nltk.download('punkt')
 ps = PorterStemmer()
 
+sentence = 'The quick brown fox jumps over the lazy dog'
 sentence = '''I am enjoying writing this tutorial; 
 I love to write and I have written 266 words so far. 
 I wrote more than you did; I am a writer.'''
