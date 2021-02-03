@@ -9,11 +9,13 @@ Purpose: Exception Hooks
 """
 import sys
 
+
 def my_excepthook(exctype, value, traceback):
     print('\nUnhandled error')
     print('\tType     :', exctype)
     print('\tValue    :', value)
     print('\tTraceback:', traceback)
+
 
 sys.excepthook = my_excepthook
 
@@ -21,12 +23,12 @@ print('Before exception')
 
 # Case 1
 try:
-    raise RuntimeError('This is the error message')
+    raise RuntimeError('case 1: This is the error message')
 except Exception as ex:
     print(ex)
 
 # Case 2
-raise RuntimeError('This is the error message')
+raise RuntimeError('case 2: This is the error message')
 
 # 1 + '213'
 print('After exception')
