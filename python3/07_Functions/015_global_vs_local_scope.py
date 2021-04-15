@@ -105,7 +105,41 @@ print()
 def simple_function(lang_details):
     print(f'\nbefore change ver = {lang_details["ver"]}')
     details['ver'] = '3.9'
-    print(f'before change ver = {lang_details["ver"]}')
+    print(f'After change ver = {lang_details["ver"]}')
 
 simple_function(details)
 print('outside function ver = {}'.format(details['ver']))
+
+# case 8=====   call by reference
+print()
+my_list = [1, 2, 3]
+def simple_function():
+    print(f'\nbefore change my_list = {my_list}')
+    my_list.append(4)
+    print(f'After change my_list = {my_list}')
+
+simple_function()
+print('outside function new_list = {}'.format(my_list))
+
+
+# case 9=====   call by reference
+print()
+my_list = [1, 2, 3]
+def simple_function(my_list):
+    print(f'\nbefore change my_list = {my_list}')
+    my_list.append(4)
+    print(f'After change my_list = {my_list}')
+
+simple_function(my_list)
+print('outside function new_list = {}'.format(my_list))
+
+# case 10=====   call by value
+print()
+new_list = [1, 2, 3]
+def simple_function(new_list):
+    print(f'\nbefore change new_list = {new_list}')
+    new_list += [4]
+    print(f'After change new_list = {new_list}')
+
+simple_function(new_list)
+print('outside function new_list = {}'.format(new_list))

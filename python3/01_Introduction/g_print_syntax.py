@@ -52,13 +52,13 @@ print()
 print('#$%*&^(*;')
 
 # \b - overwrites previous character
-print('He\bi')  
+print('He\bi')
 print('12\b34')
 print('first\bsecond')
 print()
 
 # \r - overwrites complete existing line
-print('He\ri')  
+print('He\ri')
 print('12\r34')
 print('first\rsecond')
 print('abcdef\r1234')
@@ -66,10 +66,10 @@ print('1234567\rDOG')
 print()
 
 # Unicode characters \uXXX - unicode character
-print('\u20B9')  
+print('\u20B9')
 print('\u018e')
 
 print('\046')
-# \x... - hexadecimal number 
-print('\x24')   
+# \x... - hexadecimal number
+print('\x24')
 print('\xf1')

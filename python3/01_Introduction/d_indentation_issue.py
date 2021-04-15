@@ -31,6 +31,8 @@ if 1 < 2:
         if 3 < 4:
             if 4 < 5:
                 print('LESSER')
+            else:
+                print('something')
         else:
             print('something')
     else:

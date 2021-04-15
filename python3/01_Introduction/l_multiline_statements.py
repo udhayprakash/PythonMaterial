@@ -11,7 +11,7 @@ Brace
     ()  paranthesis
 
     []  square braces
-    {}  flower bracs
+    {}  flower braces
 
 PEP 8 :
     a) Lines should be 79 characters in length or less 

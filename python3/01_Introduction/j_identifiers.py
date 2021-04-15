@@ -62,7 +62,7 @@ DOZEN = 12
 # $name = 'someone'  # SyntaxError: invalid syntax
 # first-name = 'someone'  # SyntaxError: cannot assign to operator
 # first name = 'someone'  # SyntaxError: invalid syntax
-# 2nd_stdudent = 'someone' # SyntaxError: invalid syntax
+# 2nd_student = 'someone' # SyntaxError: invalid syntax
 
 _2nd_student = 'someone'
 
