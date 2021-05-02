@@ -22,7 +22,6 @@ input_string = '''
 stuff = ElementTree.fromstring(input_string)
 nodes = stuff.findall('users/user')
 print('User count:', len(nodes))
-
 # print(nodes)
 
 for item in nodes:

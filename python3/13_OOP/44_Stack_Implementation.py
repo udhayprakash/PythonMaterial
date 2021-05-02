@@ -17,6 +17,8 @@ class Stack:
         self.items.insert(0, item)
 
     def pop(self):
+        if self.is_empty():
+            raise Exception("No more elements to pop, from stack")
         poped_item = self.items[0]
         del self.items[0]
         return poped_item
