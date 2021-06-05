@@ -107,3 +107,6 @@ ENV/
 .mypy_cache
 
 http response code images/
+
+# multimedia
+*.mp4
