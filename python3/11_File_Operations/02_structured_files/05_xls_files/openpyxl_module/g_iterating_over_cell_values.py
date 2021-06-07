@@ -12,3 +12,11 @@ def iterating_over_values(path):
 
 if __name__ == '__main__':
     iterating_over_values('f_delete_cols_rows.xlsx')
+
+# ws.max_row will give you the number of rows in a worksheet.
+
+# wb = load_workbook(path, use_iterators=True)
+# sheet = wb.worksheets[0]
+
+# row_count = sheet.max_row
+# column_count = sheet.max_column
