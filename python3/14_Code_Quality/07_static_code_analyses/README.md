@@ -28,3 +28,23 @@
                                         further process that line.
     -------------------------------------------------------------------------
 ```
+
+- black : auto-formats Python files in place.
+- docformatter : auto-formats docstrings.
+- flake8 : a linter that enforces Python style guides
+- pylint : another linter for Python.
+- mypy : adds static type checks to Python code, needs code to include type hints for it to work.
+- isort : sorts imports alphabetically.
+- bandit : finds common security issues in Python code.
+
+- pep8
+  pip install pep8
+  pep8 filename.py
+
+- autopep8
+  pip install autopep8
+  autopep8 --in-place filename.py
+
+pip install pytest-cov
+py.test test_calculate.py
+coverage run -m
