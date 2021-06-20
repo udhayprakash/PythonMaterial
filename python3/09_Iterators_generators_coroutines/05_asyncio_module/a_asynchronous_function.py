@@ -19,7 +19,7 @@ async def asynchronous_hello():
     print('World')
 
 # asynchronous_hello()
-# a_asyncio_ex.py:21: RuntimeWarning: coroutine 'asynchronous_hello' was never awaited
+# a_asynchronous_function.py:21: RuntimeWarning: coroutine 'asynchronous_hello' was never awaited
 
 print()
 loop = asyncio.get_event_loop()
