@@ -23,6 +23,7 @@ print('C:\my\newfolder')
 print(r'C:\my\newfolder')
 print()
 
+
 # --------------------
 # print(data, sep=' ', end = '\n')
 
@@ -46,15 +47,13 @@ print('world')  # default end='\n'
 
 print(1, 2, 3, 4, 5, sep=';', end='\t')
 print('a', 'b', 'c', 'd', sep='-') # default end='\n'
-
-# ----------------------
 print()
-print('#$%*&^(*;')
 
 # \b - overwrites previous character
 print('He\bi')
 print('12\b34')
 print('first\bsecond')
+print('\bsecond')
 print()
 
 # \r - overwrites complete existing line
@@ -66,10 +65,14 @@ print('1234567\rDOG')
 print()
 
 # Unicode characters \uXXX - unicode character
-print('\u20B9')
-print('\u018e')
+print('\u20B9')  # ₹
+print('\u018e')  # Ǝ
 
-print('\046')
+print('\046')  # &
+
 # \x... - hexadecimal number
 print('\x24')
 print('\xf1')
+print()
+
+print('#$%*&^(*;')

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Component operations
+Purpose: compound operations
 """
 num = 100 + 324
 print('num =', num)  # 424
@@ -23,7 +23,7 @@ print('num =', num)  # 100
 num *= 1.5           # num = num * 1.5
 print('num =', num)  # 150.0
 
-num *= 1.5 + 20 - 4 / 5  # num = num * 1.5 + 20 - 4/5
+num *= (1.5 + 20 - 4/5)  #num = num *(1.5 + 20 - 4/5)
 print('num =', num)  # 3105.0
 
 other_num = 50
