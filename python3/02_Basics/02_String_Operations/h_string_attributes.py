@@ -52,7 +52,10 @@ print('Python Production'.split('Prdo'))  # ['Python Production']
 # print('Python Production'.split('')) # ValueError: empty separator
 
 # Question:
-print(''.split(' '))  # ['']
+''.split() # []
+' '.split() #[]
+' '.split(' ') # ['', '']
+''.split(' ')  # ['']
 
 print()
 print('1201201301201'.split('0'))  # ['12', '12', '13', '12', '1']

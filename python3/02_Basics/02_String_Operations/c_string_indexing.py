@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: String Operations
-            - Indexing 
-
+            - Indexing
 """
 language = 'Python Programming'
 print(language, type(language))
@@ -46,7 +45,6 @@ print('language[0]   :', language[0])
 
 # NOTE 1: For a string of length N,
 # we can indexing from -N to (N -1)
-
 
 # print('language[0.0]   :', language[0.0])
 # TypeError: string indices must be integers

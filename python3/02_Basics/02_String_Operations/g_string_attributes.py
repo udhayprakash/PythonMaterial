@@ -8,14 +8,13 @@ Objects
     2. Mobile 
         -usage: communication, messaging, watch videos, 
                 playing
-
 """
 language = 'Python Programming'
 print('language       = ', language)
 print('type(language) = ', type(language))
 
 print('len(language)  = ', len(language))
-print('id(language)   = ', id(language))
+print('id(language)   = ', id(language))  # address location
 
 print('===========================================')
 print('String Attributes')
@@ -26,17 +25,19 @@ mystr1 = 'Taj'
 mystr2 = "Mahal"
 
 result = mystr1 + mystr2
-print('result=', result)
+print('result = ', result)
 
 result = mystr1.__add__(mystr2)
-print('result=', result)
+print('result = ', result)
 print()
 
+# string length
 print('len(language)     :', len(language))
 print('language.__len__():', language.__len__())
 print()
 
-result = mystr1 * 5        # String repetition
+# String repetition
+result = mystr1 * 5
 print('result=', result)
 
 result = mystr1.__mul__(5)
@@ -51,6 +52,7 @@ print('repr(language)     :', repr(language))
 print('language.__repr__():', language.__repr__())
 print()
 
+
 print('language             :', language)
 print('language.capitalize():', language.capitalize())
 print('language.title()     :', language.title())
@@ -58,6 +60,7 @@ print('language.upper()     :', language.upper())
 print('language.lower()     :', language.lower())
 print('language.swapcase()  :', language.swapcase())
 print()
+
 print("'der fluß'.lower()   :", 'der fluß'.lower())
 print("'der fluß'.casefold():", 'der fluß'.casefold())
 print("'der fluss'.lower()  :", 'der fluss'.lower())
@@ -65,10 +68,10 @@ print("'der fluss'.casefold():", 'der fluss'.casefold())
 print()
 
 print('language             :', language)
-
 print('language.istitle()   :', language.istitle())
 
-print('"ABCD123#".isupper() :', "ABCD123#".isupper()) # upper case should be present; lower case absent
+print('"ABCD123#".isupper() :', "ABCD123#".isupper())
+# upper case should be present; lower case absent
 print('"Abcd123#".islower() :', "Abcd123#".islower())
 print('"abcd123#".islower() :', "abcd123#".islower())
 print('"123#".islower()     :', "123#".islower())
@@ -90,6 +93,7 @@ print()
 print('"ab123".isalnum()    :', "ab123".isalnum())
 print('"ab123#".isalnum()   :', "ab123#".isalnum())
 print('"123".isalnum()      :', "123".isalnum())
+print('"abc".isalnum()      :', "abc".isalnum())
 print()
 
 print('" ".isspace()        :', " ".isspace())
@@ -100,6 +104,15 @@ print()
 
 print('"αλεπού".isascii()    :', "αλεπού".isascii())
 print('"foxfox".isascii()    :', "foxfox".isascii())
+print()
+
+print('"ab".isprintable()    :', "ab".isprintable())
+print(r'"\n".isprintable()    :', "\n".isprintable())
+print(r'"\t".isprintable()    :', "\t".isprintable())
+print()
+
+print('"$true".isidentifier() :', "$true".isidentifier())
+print('"true".isidentifier() :', "true".isidentifier())
 print()
 
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g
@@ -131,9 +144,10 @@ print('language.rindex("Prog")   :', language.rindex('Prog'))
 print()
 
 # Question: string attributes - index vs find
-print('language.find("Q")        :', language.find('Q'))  # -1 (ITS not REVERSE INDEX)
+# -1 (ITS not REVERSE INDEX)
+print('language.find("Q")        :', language.find('Q'))
 # print('language.index("Q")       :', language.index('Q')) # ValueError: substring not found
 
 
-print('language.find("Prog")     :', language.find('Prog')) # 7
-print('language.find("Porg")     :', language.find('Porg')) # -1
+print('language.find("Prog")     :', language.find('Prog'))  # 7
+print('language.find("Porg")     :', language.find('Porg'))  # -1
