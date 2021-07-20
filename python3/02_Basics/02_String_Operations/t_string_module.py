@@ -4,6 +4,7 @@ Purpose: String Module
 """
 import string
 
+# print(dir(string))
 print(string.__doc__, end='\n\n')
 
 print(f'{string.ascii_letters   =}')
@@ -19,11 +20,12 @@ print()
 
 print(f'{string.capwords("aaaaaaaaaaaaaaaaa")=}')
 print(f'{string.capwords("11111111111111111")=}')
-print(f'{string.capwords("one two three 345")=}')
+print(f'{string.capwords("one two three 345")=}') # str.title
 print()
 
 s = "let us capitalize every word of this sentence."
 print(string.capwords(s))
+print(s.title())
 
 
 t = string.Template('Hello $name!')

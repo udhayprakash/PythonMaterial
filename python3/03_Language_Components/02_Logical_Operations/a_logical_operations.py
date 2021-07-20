@@ -42,6 +42,7 @@ expr2 = (45 <= 45) or (3 > 333)
 #         True     or   False     = True
 print(f'{expr2 =}')
 
+
 expr3 = (45 <= 45) or (3 > 333) and (9 == 9)
 #          True    or   False   and    True
 #          True    or           False       = True

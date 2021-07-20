@@ -6,14 +6,15 @@ Purpose: String formatting using F-strings
 print('' % ())           # OLD Style
 print('{}'.format(''))   # NEW Style
 print(f'{""}')           # F-String
+print()
 
 print("Hello {name}")
 print("Hello {name}".format(name='world'))
 name = 'World'
 print(f"Hello {name}")
-
 # print(f"Hello {name1}")
 # NameError: name 'name1' is not defined
+print()
 
 number = 12312.123
 print(f'number is {number}')
@@ -22,7 +23,6 @@ print(f'number is {number}')
 print(f"Hello {name.upper()}")
 print(f"Hello {name.title()}")
 print(f'number is {int(number)}')
-
 value = 123123
 print(f'The value is {float(value) + 3}')
 print()
@@ -33,6 +33,7 @@ print(f"{value:}")  # 1234567890.88
 print(f"{value:,}") # 1,234,567,890.88
 print(f"{value:_}") # 1_234_567_890.88
 print(f"{value:-}") # 1234567890.88
+print(f"{value:+}") # +1234567890.88
 print()
 
 print(f'{"left aligned":<20}')  # 'left aligned        '
@@ -40,7 +41,6 @@ print(f'{"right aligned":>20}') # '       right aligned'
 print(f'{"centered":^20}')      # '      centered      '
 print(f'{"centered":-^20}')      # '      centered      '
 print()
-
 
 print(f'{1024}', 1024)         # 1024 1024
 print(f'{1024:d}', 1024)       # 1024 1024
@@ -106,6 +106,12 @@ print(f'{name!s}')  # Python:αλεπού
 print(f'{name!r}')  # 'Python:αλεπού'
 # !a - ascii()
 print(f'{name!a}')  # 'Python:\u03b1\u03bb\u03b5\u03c0\u03bf\u03cd'
+print()
+
+from datetime import datetime 
+today = datetime.now()
+print(f'today:%Y-%m-%d') # '2021-07-20'
+print()
 
 #######################
 # f-string vs str.format

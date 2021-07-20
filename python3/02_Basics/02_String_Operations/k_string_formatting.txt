@@ -53,7 +53,6 @@ case 5:
         If you didn't do transcation reach out at contact@somebanck.com
         Thank you {0}
         '''.format('Hitesh', 1000.34, '345')
-
 case 6: 
 -------
       '''
@@ -65,7 +64,6 @@ case 6:
         If you didn't do transcation reach out at contact@somebanck.com
         Thank you {NAME}
         '''.format(NAME='Hitesh', AMOUNT=1000.34, CARD_NO='345')
-
 case 7: 
 -------
     mydict = {
@@ -80,7 +78,6 @@ case 7:
         If you didn't do transcation reach out at contact@somebanck.com
         Thank you {NAME}
         '''.format(**mydict)
-
 case 8: 
 -------
     mydict = {
@@ -95,7 +92,6 @@ case 8:
         If you didn't do transcation reach out at contact@somebanck.com
         Thank you {NAME}
         '''.format_map(mydict)
-
 
 case 9:
 -------

@@ -22,18 +22,20 @@ print('{1} and {0}'.format(None, True))
 print()
 
 # print('{} and {}'.format(None))
-# IndexError: Replacement index 1 out of range 
+# IndexError: Replacement index 1 out of range
 # for positional args tuple
 
 print('{0} and {0}'.format(None))
 print()
 
-print("{}".format(1234567890.88))   # 1234567890.88
-print("{:}".format(1234567890.88))  # 1234567890.88
-print("{:,}".format(1234567890.88)) # 1,234,567,890.88
+
+print("{}".format(1234567890.88))    # 1234567890.88
+print("{:}".format(1234567890.88))   # 1234567890.88
+print("{:,}".format(1234567890.88))  # 1,234,567,890.88
 print("{:_}".format(1234567890.88))  # 1_234_567_890.88
 print("{:-}".format(1234567890.88))  # 1234567890.88
 print("{:+}".format(1234567890.88))  # +1234567890.88
+print("{:+}".format(-1234567890.88))  # -1234567890.88
 print()
 
 # similar to str.zfill()
@@ -56,7 +58,6 @@ print('{}'.format(1024), 1024)         # 1024 1024
 print('{:b}'.format(1024), bin(1024))  # 10000000000 0b1000000000
 print('{:o}'.format(1024), oct(1024))  # 2000 0o2000
 print('{:x}'.format(1024), hex(1024))  # 400 0x400
-
 '''
 >>> "int: {0:d};  hex: {0:x};  oct: {0:o};  bin: {0:b}".format(42)
 'int: 42;  hex: 2a;  oct: 52;  bin: 101010'
@@ -110,7 +111,6 @@ print('''Name  :{NAME} Name  :{NAME} Salary:{SALARY}
          Age   :{AGE} Name  :{NAME}
          Salary:{SALARY}'''.format(NAME='udhay',
                                    AGE=99, SALARY=9999.9999))
-
 # print(NAME) # NameError: name 'NAME' is not defined
 
 # ------------------------------------------------------------
@@ -127,7 +127,6 @@ print('''
     transaction_amount='20.5 crores',
     transaction_time='12th June 1947 12:34:45'
 ))
-
 # Method 2
 result = {
     'customer': 'Vijay Malya',
