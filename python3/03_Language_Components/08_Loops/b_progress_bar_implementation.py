@@ -18,14 +18,17 @@ print('Prakash\rUdhay')
 print('1234567890\rDOG')  # DOG4567890
 print('abcdef\r123')      # 123def
 
+
 data_set = range(-100, 10_00_000)
 data_set_length = len(data_set)
+
+# for num in data_set:
+#     print(num)
 
 for loop_index, _ in enumerate(data_set):
     percent_completed = (loop_index / data_set_length) * 100
     percent_completed = round(percent_completed, 2)
-
-    # print(f'{loop_index =} {data_set_length =} {percent_completed =}', )
+    # print(f'{loop_index =} {data_set_length =} {percent_completed =}')
     print(f'\r{percent_completed:5} completed', end='')
 
 """

@@ -9,21 +9,29 @@ Purpose: Python program to check if the input number is prime or not
 
     2,  3, 5, 7, 11, ...
 """
-import math
-# num = 23
 
-# take input from the user
-num = int(input("Enter a number: "))
+# num = 10
+num = int(input('Enter any positive number:'))
 
-# prime numbers are greater than 1
-if num <= 1:
-    print(num, "is not a prime number")
+# Method 1
+for i in range(2, num):
+    print(i, num % i)
+    if num % i == 0:
+        print(f'{num} is a composite number')
+        break
 else:
-    # for factor in range(2, num):
-    for factor in range(2, int(math.sqrt(num))):
-        if (num % factor) == 0:
-            print(num, "is not a prime number")
-            print(factor, "times", num // factor, "is", num)
-            break
-    else:
-        print(num, "is a prime number")
+    print(f'{num} is a PRIME number')
+
+# Method 2
+import math 
+print(f'{math.sqrt(num) =}')
+
+for i in range(2, int(math.sqrt(num)) + 1):
+    print(i, num % i)
+    if num % i == 0:
+        print(f'{num} is a composite number')
+        break
+else:
+    print(f'{num} is a PRIME number')
+
+print('End of program -------')

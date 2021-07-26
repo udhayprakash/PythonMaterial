@@ -38,6 +38,7 @@ print(f'{tuple(values) =}')
 print(f'{set(values)   =}')
 print()
 
+
 values2 = range(0, 9, 2)
 print(list(values2))  # [0, 2, 4, 6, 8]
 

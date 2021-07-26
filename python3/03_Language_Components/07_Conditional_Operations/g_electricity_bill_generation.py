@@ -1,14 +1,16 @@
-#!/usr/bin/python
+# /usr/bin/python3
 """
 Purpose: Electricity Board Current Bill Slab rates
 
-    electricity bill slabs
-    -----------------------
-	0 till 60   ===> 1.25
-	60 till 100  ===> 2.00
-	100 till 150 ===> 4.00
-	150 till 250 ===> 7.00
-	250 +        ===> 10
+    Electricity bill slabs
+    -------------------------------------
+    units Range     |    amount per unit
+	-------------------------------------
+    0 till 60       |   1.25
+	60 till 100     |   2.00
+	100 till 150    |   4.00
+	150 till 250    |   7.00
+	250 +           |  10.00
 
 electricity cess : 2%
 discount         : -1.11%
@@ -16,47 +18,70 @@ discount         : -1.11%
 GST              : 7%
 
 units consumed : 357
-         60     +   40      + 50    + 100    + 157
+         60     +   40      + 50    + 100    + 107
          1.25/- + 2.00/-    + 4.00/-+ 7.00/- + 10/-
-
 
 """
 # units_consumed = 357
-units_consumed = input('Enter the no. of units consumed:')
+units_consumed = float(input('Enter the no. of units consumed:').strip())
 
-if not units_consumed.isdigit():
-    print('Invalid Input')
+
+if units_consumed < 0:
+    print('INVALID INPUT')
 else:
-    units_consumed = float(units_consumed)
-    if units_consumed < 0:
-        print('Invalid Input')
-
-    remaining_units = units_consumed
     amount = 0
-    if remaining_units > 250:
-        slab_units = remaining_units - 250
+    remaing_units = units_consumed
+    if remaing_units > 250:
+        slab_units = remaing_units - 250
         amount += slab_units * 10.0
-        remaining_units = 250
 
-    if 150 < remaining_units <= 250:
-        slab_units = remaining_units - 100
+        print(f''' 
+            units consumed  : {remaing_units}
+            slab units      : {slab_units}
+        ''')
+        remaing_units -= slab_units
+
+    if 150 < remaing_units <= 250:
+        slab_units = remaing_units - 150
         amount += slab_units * 7.0
-        remaining_units = 150
 
-    if 100 < remaining_units <= 150:
-        slab_units = remaining_units - 50
+        print(f''' 
+            units consumed  : {remaing_units}
+            slab units      : {slab_units}
+        ''')
+        remaing_units -= slab_units
+
+    if 100 < remaing_units <= 150:
+        slab_units = remaing_units - 100
         amount += slab_units * 4.0
-        remaining_units = 100
 
-    if 60 < remaining_units <= 100:
-        slab_units = remaining_units - 40
+        print(f''' 
+            units consumed  : {remaing_units}
+            slab units      : {slab_units}
+        ''')
+        remaing_units -= slab_units
+
+    if 60 < remaing_units <= 100:
+        slab_units = remaing_units - 60
         amount += slab_units * 2.0
-        remaining_units = 60
 
-    if 0 < remaining_units <= 60:
-        amount += remaining_units * 1.25
+        print(f''' 
+            units consumed  : {remaing_units}
+            slab units      : {slab_units}
+        ''')
+        remaing_units -= slab_units
 
-    print(f'''
-		Units Consumed : {units_consumed}
-		Amount Payable : Rs. {amount} /-
-	''')
+    if 0 <= remaing_units <= 60:
+        slab_units = 60  # minimum charge
+        amount += slab_units * 1.25
+
+        print(f''' 
+            units consumed  : {remaing_units}
+            slab units      : {slab_units}
+        ''')
+
+    print(f''' 
+    FINAL BILL:
+        units consumed  : {units_consumed}
+        Amount          : {amount}
+    ''')

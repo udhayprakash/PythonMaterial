@@ -19,7 +19,7 @@ r.step                             # 2
 
 r.count(11)                        # 0
 r.count(10)                        # 1
-r.index(10)                        # 
+r.index(10)                        # 5
 
 r[5]                               # 10
 r[:5]                              # range(0, 10, 2)

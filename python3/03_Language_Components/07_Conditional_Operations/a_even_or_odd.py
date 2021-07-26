@@ -1,41 +1,51 @@
 #!/usr/bin/python3
 """
-Purpose: Check eveness of given number in runtime
+Purpose: Check even-ness of a given number, in runtime.
 """
-
 
 # Logic: determining odd/even status using the modulus arithmetic operator
 number = 34
-print(f'{number =}')
-print(f'{number % 2 =}')
-print(f'{number % 2 == 0 =}')
+print(f'{number             = }')
+print(f'{number / 2         = }')
+print(f'{number % 2         = }')
+print(f'{number % 2 == 0    = }')
+
+if number:
+    print(f"{number} is non-zero")
+
+if number != 0:
+    print(f"{number} is non-zero")
+
+if number % 2:  # number % 2 != 0
+    print(f"{number} is odd")
 
 if number % 2 == 0:
-    print('It is Even')
-else:
-    print('It is odd')
+    print(f"{number} is Even")
+
+# --------------------
 print()
-
 number = 13
-print(f'{number =}')
-print(f'{number % 2 =}')
-print(f'{number % 2 == 0 =}')
+print(f'{number             = }')
+print(f'{number % 2         = }')
+print(f'{number % 2 == 0    = }')
+
+if number % 2:  # number % 2 != 0
+    print(f"{number} is odd")
 
 if number % 2 == 0:
-    print('It is Even')
+    print(f"{number} is Even")
+
+
+# Rewriting with else
+if number % 2:
+    print(f'{number} is ODD')
 else:
-    print('It is odd')
+    print(f'{number} is EVEN')
 
-
-number = int(input('Enter any valid number:'))
-print(f'{number =}')
-print(f'{number % 2 =}')
-print(f'{number % 2 == 0 =}')
-
+# rewriting
 if number % 2 == 0:
-    print('It is Even')
+    print(f'{number} is EVEN')
 else:
-    print('It is odd')
-
+    print(f'{number} is ODD')
 
 # Assignment: Generate even numbers between 45 & 137

@@ -16,21 +16,36 @@ output     : xC
 23C 
 """
 temperature = input(
-    'Enter the temperature, followed by C or F:').strip().upper()
+    'Enter the temperature, followed by C or F:').upper()
 
+# Method 1
 if 'C' in temperature:
-    celsius = float(temperature.strip('C'))
-    fahrenheit = round((1.8 * celsius) + 32, 2)
+    celsius = float(temperature.strip('C '))
+    fahrenheit = (1.8 * celsius) + 32
 elif 'F' in temperature:
-    fahrenheit = float(temperature.strip('F'))
-    celsius = round((fahrenheit - 32) * 5.0 / 9.0, 2)
+    fahrenheit = float(temperature.strip('F '))
+    celsius = (fahrenheit - 32) * 5.0 / 9.0
 else:
     # Default is celsius
     celsius = float(temperature.strip('C '))
-    fahrenheit = round((1.8 * celsius) + 32, 2)
+    fahrenheit = (1.8 * celsius) + 32
 
 
 print(f'''
-        celsius     : {celsius}
-        fahrenheit  : {fahrenheit}
+        celsius     : {round(celsius, 2)}
+        fahrenheit  : {round(fahrenheit, 2)}
+''')
+
+# Method 2 
+if 'F' in temperature:
+    fahrenheit = float(temperature.strip('F '))
+    celsius = (fahrenheit - 32) * 5.0 / 9.0
+else:
+    # Default is celsius
+    celsius = float(temperature.strip('C '))
+    fahrenheit = (1.8 * celsius) + 32
+
+print(f'''
+        celsius     : {round(celsius, 2)}
+        fahrenheit  : {round(fahrenheit, 2)}
 ''')

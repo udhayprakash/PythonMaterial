@@ -12,20 +12,21 @@ Algorithms
     Compute the leap years in this century
 """
 import calendar
-year = 2029
+
+year = 2021
 
 # Method 1
-if year % 4:
+if year % 4:  # != 0:
     print(f'year {year} is a common year')
-elif year % 100:
+elif year % 100:  # != 0
     print(f'year {year} is a LEAP year')
 elif year % 400:
     print(f'year {year} is a common year')
 else:
     print(f'year {year} is a LEAP year')
 
-
 # Method 2
+print(f'{calendar.isleap(year) =}')
 if calendar.isleap(year):
     print(f'year {year} is a LEAP year')
 else:
