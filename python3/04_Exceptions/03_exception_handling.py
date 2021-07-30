@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Exception Handling 
+Purpose: Exception Handling Blocks
 
     blocks - try, except, else, finally 
 
@@ -8,6 +8,7 @@ Purpose: Exception Handling
         1. when no error     -> try -> else   -> finally
         2. when error occurs -> try -> except -> finally 
 
+NOTE: else and finally blocks are optional 
 NOTE: 
     1. code which we may result in errors need to be placed in try block 
     2. Error handling to corresponding errors need to be placed in except block 
@@ -16,17 +17,15 @@ NOTE:
         ex: in try block, socket/file/remote_connect/db_connection was opened 
             in finally block, we can close it 
 
-NOTE: else and finally blocks are optional 
 """
+
 try:
     print('In try block')
-    # 10 / 0
-    10 / 10
+    10 / 0
 except Exception as ex:
-    print('In except block')
-    print(f'\t{ex =}')
+    print(f'In Exception block: {ex =}')
 else:
-    print('No error. So, in else block')
+    print('In Else block')
 finally:
     print('In finally block')
 

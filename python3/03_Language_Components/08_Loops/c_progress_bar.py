@@ -2,11 +2,14 @@
 """
 Purpose: To display the progress as below:
  32% (16 of 50) |################### 
-    pip install -U progressbar --user
-"""
-from time import sleep
-from progressbar import ProgressBar
 
-bar = ProgressBar()
+ pip install --upgrade progressbar --user 
+"""
+import time
+import progressbar
+
+bar = progressbar.ProgressBar()
+print(bar)
+
 for i in bar(range(50)):
-    sleep(0.5)
+    time.sleep(2) # seconds
