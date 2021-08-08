@@ -154,3 +154,47 @@ Ans)
             counts[each_chr] += 1
         print(counts)
 
+Q13) += operation on list of strings 
+Ans) 
+    >>> a = ['yes'] 
+    >>> a + 'no' 
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    TypeError: can only concatenate list (not "str") to list
+    >>>
+    >>> a += 'no' 
+    >>> a
+    ['yes', 'n', 'o']
+    >>>
+Q14) Global namespace leak in python2
+Ans) 
+    In Python2.7, 
+        num = 5 
+        print num # 5
+        mylist = [num for num in range(9)]
+        print num # 8    
+    In python3, 
+        num = 5 
+        print(num) # 5
+        mylist = [num for num in range(9)]
+        print(num) # 5
+
+Q15) Problem with appending to the iterating list 
+Ans) 
+    >>> x = ['ab', 'cd']
+    >>> for i in x:
+    ...     x.append(i.upper())
+    ... print(x)    
+    Traceback (most recent call last):
+    File "<stdin>", line 2, in <module>
+    MemoryError
+
+Q16) 
+    def foo(x):
+    x[0] = ['def']
+    x[1] = ['abc']
+    return id(x)
+
+    q = ['abc', 'def']
+    print(id(q) == foo(q))
+Ans) True

@@ -4,8 +4,11 @@ Purpose: Metaclasses
     - Used for creating classes dynamically
     - useful for code injections
 """
+from pprint import pprint
 
 # Method 1: creating class & instance ordinarily
+
+
 class NewType(object):
     x = 'hello'
 
@@ -30,3 +33,26 @@ print(f'{MyClass =}')  # <class '__main__.'>
 
 my_inst = MyClass()
 print(f'{my_inst.x =}')
+print('\n\n')
+# -----------------------------------------
+print(f'{type                  =}')
+print(f'{type.__bases__        =}')
+print()
+
+descriptor = type.__dict__['__bases__']
+print(f'{descriptor            =}')
+print(f'{type(descriptor)      =}')
+print()
+
+class MyMeta(type):
+    @property        # a property is a descriptor
+    def foo(cls):
+        return "foo"
+
+
+class MyClass(metaclass=MyMeta):
+    pass
+
+
+pprint(vars(MyClass))
+print("MyClass.foo:", MyClass.foo)
