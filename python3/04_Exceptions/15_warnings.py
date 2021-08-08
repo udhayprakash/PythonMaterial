@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """
-Purpose: Handling Warnings 
-
-
+Purpose: Handling warnings
 """
 import warnings
-
-# print(dir(warnings))
+for each_attribute in dir(warnings):
+    if not each_attribute.startswith('_'):
+        print(each_attribute)
+print()
 
 warnings.warn('This is not good practice 1')
-print()
 
 # Adding filter to display on specific warnings
 warnings.filterwarnings('ignore', '.*do not.*', )
@@ -26,4 +25,3 @@ except UserWarning as ex:
     print(repr(ex))
 except Exception as ex:
     print('Unhandled Exception', repr(ex))
-print()

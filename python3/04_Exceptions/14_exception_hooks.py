@@ -4,7 +4,7 @@ Purpose: Exception Hooks
     - When exception is raised with excepthook set, 
         case 1: when exception is handled with except block,
                 it works as ordinary exception handling
-        case 2: When excetpion is not handled with except block, 
+        case 2: When exception is not handled with except block, 
                 exception hook function is executed, and program stops 
 """
 import sys
@@ -21,14 +21,16 @@ sys.excepthook = my_excepthook
 
 print('Before exception')
 
-# Case 1
+# case 1
+# 1 / 0
+
+# case 2
 try:
-    raise RuntimeError('case 1: This is the error message')
-except Exception as ex:
-    print(ex)
+    1 / 0
+except ZeroDivisionError as ex:
+    print(f'{ex=}')
 
-# Case 2
-raise RuntimeError('case 2: This is the error message')
+# case 3
+raise RuntimeError('case3: This is error message')
 
-# 1 + '213'
 print('After exception')
