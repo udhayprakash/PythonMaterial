@@ -3,7 +3,7 @@ name: Tests
 on:
   push:
     paths:
-    - 'distinctipy/**'
+    - 'PythonMaterial/**'
     - 'tests/**'
     - 'requirements.txt'
     - 'setup.py'
