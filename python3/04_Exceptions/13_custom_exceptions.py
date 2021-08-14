@@ -1,22 +1,48 @@
 #!/usr/bin/python3
 """
-Purpose: Using Custom Exceptions
+Purpose: Using Custom Exception
 """
-# creating a custom exception
-class InvalidAge(Exception):
-    pass 
+# # Method 1 - stop when exception araises
+# try:
+#     votes = 0
+#     i = 0
+#     while i < 5:
+#         age = int(input('Enter your age:'))
+#         if age <= 0:
+#             raise Exception('Invalid Entry for the age!')
+#         elif age < 18:
+#             raise Exception('You are Ineligible to vote!!')
+#         else:
+#             votes += 1
+#         i += 1
+# except Exception as ex:
+#     print(f'{ex=}')
 
-try:
-    age = int(input('Enter your age:'))
-    age = abs(age)
-    if age < 18:
-        # raise InvalidAge('You are not eligible for voting')
-        raise InvalidAge(f'You are short by {18 - age} years for voting')
-except InvalidAge as ex:
-    print(str(ex))
-except ValueError:
-    print('Please enter valid age number')
-except Exception as ex:
-    print('Unhandled Exception -', repr(ex))
-else:
-    print('Eligible for voting!!!')
+
+# Method 2 - skip the loop with exception
+class InvalidInput(Exception):
+    pass
+
+
+class InvalidAge(Exception):
+    pass
+
+
+votes = 0
+attempt = 0
+while attempt < 5:
+    print(f'\n{attempt =}')
+    try:
+        age = int(input('Enter your age:'))
+        if age <= 0:
+            raise InvalidInput('Invalid Entry for the age!')
+        elif age < 18:
+            # raise InvalidAge('You are Ineligible to vote!!')
+            raise InvalidAge(f'You are short by {18 - age} years for voting')
+        else:
+            votes += 1
+        attempt += 1
+    except Exception as ex:
+        print(f'{ex=}')
+    else:
+        print(f'Your voterID is {attempt}')
