@@ -1,0 +1,2068 @@
+{
+  "bozo": false,
+  "entries": [
+    {
+      "authors": [
+        {
+          "name": "/u/Im__Joseph",
+          "href": "https://www.reddit.com/user/Im__Joseph"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Im__Joseph",
+        "href": "https://www.reddit.com/user/Im__Joseph"
+      },
+      "href": "https://www.reddit.com/user/Im__Joseph",
+      "author": "/u/Im__Joseph",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Tell <a href=\"https://www.reddit.com/r/python\">/r/python</a> what you're working on this week! You can be bragging, grousing, sharing your passion, or explaining your pain. Talk about your current project or your pet project; whatever you want to share.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Im__Joseph\"> /u/Im__Joseph </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Tell <a href=\"https://www.reddit.com/r/python\">/r/python</a> what you're working on this week! You can be bragging, grousing, sharing your passion, or explaining your pain. Talk about your current project or your pet project; whatever you want to share.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Im__Joseph\"> /u/Im__Joseph </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p04ans",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p04ans/sunday_daily_thread_whats_everyone_working_on/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T00:00:17+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        0,
+        0,
+        17,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T00:00:17+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        0,
+        0,
+        17,
+        6,
+        220,
+        0
+      ],
+      "title": "Sunday Daily Thread: What's everyone working on this week?",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Sunday Daily Thread: What's everyone working on this week?"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/Im__Joseph",
+          "href": "https://www.reddit.com/user/Im__Joseph"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Im__Joseph",
+        "href": "https://www.reddit.com/user/Im__Joseph"
+      },
+      "href": "https://www.reddit.com/user/Im__Joseph",
+      "author": "/u/Im__Joseph",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Found a neat resource related to Python over the past week? Looking for a resource to explain a certain topic?</p> <p>Use this thread to chat about and share Python resources!</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Im__Joseph\"> /u/Im__Joseph </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Found a neat resource related to Python over the past week? Looking for a resource to explain a certain topic?</p> <p>Use this thread to chat about and share Python resources!</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Im__Joseph\"> /u/Im__Joseph </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozinno",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozinno/saturday_daily_thread_resource_request_and/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T00:00:18+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        0,
+        0,
+        18,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T00:00:18+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        0,
+        0,
+        18,
+        5,
+        219,
+        0
+      ],
+      "title": "Saturday Daily Thread: Resource Request and Sharing! Daily Thread",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Saturday Daily Thread: Resource Request and Sharing! Daily Thread"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/Aggravating-Resort-8",
+          "href": "https://www.reddit.com/user/Aggravating-Resort-8"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Aggravating-Resort-8",
+        "href": "https://www.reddit.com/user/Aggravating-Resort-8"
+      },
+      "href": "https://www.reddit.com/user/Aggravating-Resort-8",
+      "author": "/u/Aggravating-Resort-8",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>No one likes interruptions! right? So i wrote this program that detects when an advertisement plays by monitoring the type of the track that is currently playing, using the Spotipy API. When an ad is detected, the program restarts Spotify by the os module and plays it via pynput, which skips the ad and starts right where you left off. Its kinda cool and i am proud of it.</p> <p>Here is the repo- <a href=\"https://github.com/daspartho/SpotiByeAds\">https://github.com/daspartho/SpotiByeAds</a></p> <p>I would love to get some thoughts and feedback on the project.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Aggravating-Resort-8\"> /u/Aggravating-Resort-8 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>No one likes interruptions! right? So i wrote this program that detects when an advertisement plays by monitoring the type of the track that is currently playing, using the Spotipy API. When an ad is detected, the program restarts Spotify by the os module and plays it via pynput, which skips the ad and starts right where you left off. Its kinda cool and i am proud of it.</p> <p>Here is the repo- <a href=\"https://github.com/daspartho/SpotiByeAds\">https://github.com/daspartho/SpotiByeAds</a></p> <p>I would love to get some thoughts and feedback on the project.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Aggravating-Resort-8\"> /u/Aggravating-Resort-8 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozr7s7",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozr7s7/wrote_this_program_to_skip_spotify_ads_using/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T10:58:57+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        10,
+        58,
+        57,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T10:58:57+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        10,
+        58,
+        57,
+        5,
+        219,
+        0
+      ],
+      "title": "Wrote this program to skip Spotify Ads using Spotify API",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Wrote this program to skip Spotify Ads using Spotify API"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/blueblain",
+          "href": "https://www.reddit.com/user/blueblain"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/blueblain",
+        "href": "https://www.reddit.com/user/blueblain"
+      },
+      "href": "https://www.reddit.com/user/blueblain",
+      "author": "/u/blueblain",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>You know, nothing special. Just a linear equation solver that uses Gaussian elimination for solving equations of the form <strong>Ax</strong> = <strong>b</strong>.</p> <p>I remember finding this very laborious in linear algebra class when I first learned about it. I came across the method again recently but this time, armed with programming literacy, decided to write a script for it.</p> <p><a href=\"https://github.com/BlueBlazin/linsolver\">https://github.com/BlueBlazin/linsolver</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/blueblain\"> /u/blueblain </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>You know, nothing special. Just a linear equation solver that uses Gaussian elimination for solving equations of the form <strong>Ax</strong> = <strong>b</strong>.</p> <p>I remember finding this very laborious in linear algebra class when I first learned about it. I came across the method again recently but this time, armed with programming literacy, decided to write a script for it.</p> <p><a href=\"https://github.com/BlueBlazin/linsolver\">https://github.com/BlueBlazin/linsolver</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/blueblain\"> /u/blueblain </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p0adpx",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0adpx/i_made_a_linear_equation_solver/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T07:34:22+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        7,
+        34,
+        22,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T07:34:22+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        7,
+        34,
+        22,
+        6,
+        220,
+        0
+      ],
+      "title": "I made a linear equation solver",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I made a linear equation solver"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/FechinLi",
+          "href": "https://www.reddit.com/user/FechinLi"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/FechinLi",
+        "href": "https://www.reddit.com/user/FechinLi"
+      },
+      "href": "",
+      "author": "/u/FechinLi",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\"> <img alt=\"A cheatsheet for the Python 3 beginner\" src=\"https://external-preview.redd.it/cEE2E6jbeI6nBLo51ucMHY9cbtd1tpKXUfjbyG-1jRA.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5df6fca8ec1b3cb99a40b82367758cab8ed484e5\" title=\"A cheatsheet for the Python 3 beginner\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>This is a cheatsheet for Python 3 beginner containing basic data types, Flow Control and Function, It is not a tutorial, I just think it is a good place for quick query syntax. <a href=\"https://quickref.me/python\">https://quickref.me/python</a></p> <p><a href=\"https://preview.redd.it/ctf0k1f8txf71.png?width=2276&amp;format=png&amp;auto=webp&amp;s=4e4103ac0214e49f17e3767d58eee4b2aa4e641c\">Python 3 cheat sheet</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/FechinLi\"> /u/FechinLi </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\"> <img alt=\"A cheatsheet for the Python 3 beginner\" src=\"https://external-preview.redd.it/cEE2E6jbeI6nBLo51ucMHY9cbtd1tpKXUfjbyG-1jRA.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5df6fca8ec1b3cb99a40b82367758cab8ed484e5\" title=\"A cheatsheet for the Python 3 beginner\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>This is a cheatsheet for Python 3 beginner containing basic data types, Flow Control and Function, It is not a tutorial, I just think it is a good place for quick query syntax. <a href=\"https://quickref.me/python\">https://quickref.me/python</a></p> <p><a href=\"https://preview.redd.it/ctf0k1f8txf71.png?width=2276&amp;format=png&amp;auto=webp&amp;s=4e4103ac0214e49f17e3767d58eee4b2aa4e641c\">Python 3 cheat sheet</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/FechinLi\"> /u/FechinLi </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozt9x1",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/cEE2E6jbeI6nBLo51ucMHY9cbtd1tpKXUfjbyG-1jRA.jpg?width=640&crop=smart&auto=webp&s=5df6fca8ec1b3cb99a40b82367758cab8ed484e5"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozt9x1/a_cheatsheet_for_the_python_3_beginner/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T13:29:25+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        13,
+        29,
+        25,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T13:29:25+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        13,
+        29,
+        25,
+        5,
+        219,
+        0
+      ],
+      "title": "A cheatsheet for the Python 3 beginner",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "A cheatsheet for the Python 3 beginner"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/rupam268",
+          "href": "https://www.reddit.com/user/rupam268"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/rupam268",
+        "href": "https://www.reddit.com/user/rupam268"
+      },
+      "href": "",
+      "author": "/u/rupam268",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/\"> <img alt=\"Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm\" src=\"https://external-preview.redd.it/P1tZuttgJCAMsD_b7T7ErB9Pul4Cl9C8mJ-RyRIrXZE.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5144d68b4706ef41d3c384f535630f534292f8a8\" title=\"Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/rupam268\"> /u/rupam268 </a> <br /> <span><a href=\"https://datamahadev.com/face-detection-using-a-real-time-webcam-and-implemented-with-haar-cascade-algorithm/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/\"> <img alt=\"Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm\" src=\"https://external-preview.redd.it/P1tZuttgJCAMsD_b7T7ErB9Pul4Cl9C8mJ-RyRIrXZE.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5144d68b4706ef41d3c384f535630f534292f8a8\" title=\"Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/rupam268\"> /u/rupam268 </a> <br /> <span><a href=\"https://datamahadev.com/face-detection-using-a-real-time-webcam-and-implemented-with-haar-cascade-algorithm/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_p0819z",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/P1tZuttgJCAMsD_b7T7ErB9Pul4Cl9C8mJ-RyRIrXZE.jpg?width=640&crop=smart&auto=webp&s=5144d68b4706ef41d3c384f535630f534292f8a8"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0819z/face_detection_using_a_realtime_webcam_and/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T04:20:02+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        4,
+        20,
+        2,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T04:20:02+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        4,
+        20,
+        2,
+        6,
+        220,
+        0
+      ],
+      "title": "Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Face Detection Using a real-time webcam and Implemented with Haar cascade Algorithm"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/Maleficent_Dentist_2",
+          "href": "https://www.reddit.com/user/Maleficent_Dentist_2"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Maleficent_Dentist_2",
+        "href": "https://www.reddit.com/user/Maleficent_Dentist_2"
+      },
+      "href": "",
+      "author": "/u/Maleficent_Dentist_2",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/\"> <img alt=\"I built this on python\" src=\"https://external-preview.redd.it/DQZyqaw-yuIenYauUdWMEAjQAHm0RlJdIoQOl_IJLEg.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=7435ad3e913c427f08d5944400f5a479380fa535\" title=\"I built this on python\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Maleficent_Dentist_2\"> /u/Maleficent_Dentist_2 </a> <br /> <span><a href=\"https://youtu.be/af0MVXhSLdg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/\"> <img alt=\"I built this on python\" src=\"https://external-preview.redd.it/DQZyqaw-yuIenYauUdWMEAjQAHm0RlJdIoQOl_IJLEg.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=7435ad3e913c427f08d5944400f5a479380fa535\" title=\"I built this on python\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Maleficent_Dentist_2\"> /u/Maleficent_Dentist_2 </a> <br /> <span><a href=\"https://youtu.be/af0MVXhSLdg\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_p0at5l",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/DQZyqaw-yuIenYauUdWMEAjQAHm0RlJdIoQOl_IJLEg.jpg?width=320&crop=smart&auto=webp&s=7435ad3e913c427f08d5944400f5a479380fa535"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0at5l/i_built_this_on_python/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T08:11:38+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        8,
+        11,
+        38,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T08:11:38+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        8,
+        11,
+        38,
+        6,
+        220,
+        0
+      ],
+      "title": "I built this on python",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I built this on python"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/ElectronicCattle",
+          "href": "https://www.reddit.com/user/ElectronicCattle"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/ElectronicCattle",
+        "href": "https://www.reddit.com/user/ElectronicCattle"
+      },
+      "href": "https://www.reddit.com/user/ElectronicCattle",
+      "author": "/u/ElectronicCattle",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>I always see people mentioning that because of Python they can complete a days worth of work in 20 minutes and so on. But what actually are you doing? Automating? Scripts?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ElectronicCattle\"> /u/ElectronicCattle </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>I always see people mentioning that because of Python they can complete a days worth of work in 20 minutes and so on. But what actually are you doing? Automating? Scripts?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ElectronicCattle\"> /u/ElectronicCattle </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozw12r",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozw12r/what_are_real_life_examples_of_how_python_has/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T16:07:32+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        16,
+        7,
+        32,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T16:07:32+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        16,
+        7,
+        32,
+        5,
+        219,
+        0
+      ],
+      "title": "What are real life examples of how Python has saved you hours of work in your job?",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "What are real life examples of how Python has saved you hours of work in your job?"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/JamieOvechkin",
+          "href": "https://www.reddit.com/user/JamieOvechkin"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/JamieOvechkin",
+        "href": "https://www.reddit.com/user/JamieOvechkin"
+      },
+      "href": "https://www.reddit.com/user/JamieOvechkin",
+      "author": "/u/JamieOvechkin",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Basically the title.</p> <p>last time I was hacking around in Python Eclipse was the IDE of choice for most python devs, albeit a clunky and sometimes annoyingly slow one</p> <p>It\u2019s been 10 years. I\u2019m assuming other IDEs have made substantial progress in that time.</p> <p>What IDE do people generally use these days to get their Python dev work done?</p> <p>Looking for something that has code completion, handles 3rd party libraries/dependencies well, git integration or at the very least, doesn\u2019t break if there are .git files in the project (remember, things were more fragile 10 years ago).</p> <p>What is everyone using these days?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/JamieOvechkin\"> /u/JamieOvechkin </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Basically the title.</p> <p>last time I was hacking around in Python Eclipse was the IDE of choice for most python devs, albeit a clunky and sometimes annoyingly slow one</p> <p>It\u2019s been 10 years. I\u2019m assuming other IDEs have made substantial progress in that time.</p> <p>What IDE do people generally use these days to get their Python dev work done?</p> <p>Looking for something that has code completion, handles 3rd party libraries/dependencies well, git integration or at the very least, doesn\u2019t break if there are .git files in the project (remember, things were more fragile 10 years ago).</p> <p>What is everyone using these days?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/JamieOvechkin\"> /u/JamieOvechkin </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p0375h",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0375h/getting_back_into_python_programming_for_the/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T22:51:06+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        22,
+        51,
+        6,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T22:51:06+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        22,
+        51,
+        6,
+        5,
+        219,
+        0
+      ],
+      "title": "Getting back into Python Programming for the first time in 10 years. Which IDE is the standard these days?",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Getting back into Python Programming for the first time in 10 years. Which IDE is the standard these days?"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/browneyesays",
+          "href": "https://www.reddit.com/user/browneyesays"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/browneyesays",
+        "href": "https://www.reddit.com/user/browneyesays"
+      },
+      "href": "https://www.reddit.com/user/browneyesays",
+      "author": "/u/browneyesays",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Screen shots: <a href=\"https://imgur.com/a/SzMbMuN\">https://imgur.com/a/SzMbMuN</a></p> <p>Code: <a href=\"https://github.com/FannyPackFanatic/autocv/blob/main/gui\">https://github.com/FannyPackFanatic/autocv/blob/main/gui</a></p> <p>Areas that are customizable in the GUI:</p> <p>- 2 spots to put in buzzwords from the job listing.</p> <p>- The company name.</p> <p>- The company motto.</p> <p>- Area to include your personal information so you can auto fill the information by clicking the &quot;default&quot; button, instead of writing it every time you create a cv.</p> <p>&#x200b;</p> <p>You will want to adjust the body of the resume as it was what I personally used.</p> <p>&#x200b;</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/browneyesays\"> /u/browneyesays </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Screen shots: <a href=\"https://imgur.com/a/SzMbMuN\">https://imgur.com/a/SzMbMuN</a></p> <p>Code: <a href=\"https://github.com/FannyPackFanatic/autocv/blob/main/gui\">https://github.com/FannyPackFanatic/autocv/blob/main/gui</a></p> <p>Areas that are customizable in the GUI:</p> <p>- 2 spots to put in buzzwords from the job listing.</p> <p>- The company name.</p> <p>- The company motto.</p> <p>- Area to include your personal information so you can auto fill the information by clicking the &quot;default&quot; button, instead of writing it every time you create a cv.</p> <p>&#x200b;</p> <p>You will want to adjust the body of the resume as it was what I personally used.</p> <p>&#x200b;</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/browneyesays\"> /u/browneyesays </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p05n0r",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p05n0r/i_made_a_simple_gui_that_allows_you_to_tailor/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T01:31:10+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        1,
+        31,
+        10,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T01:31:10+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        1,
+        31,
+        10,
+        6,
+        220,
+        0
+      ],
+      "title": "I made a simple GUI that allows you to tailor your CV quickly to the job you are applying to.",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I made a simple GUI that allows you to tailor your CV quickly to the job you are applying to."
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/ahmedbesbes",
+          "href": "https://www.reddit.com/user/ahmedbesbes"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/ahmedbesbes",
+        "href": "https://www.reddit.com/user/ahmedbesbes"
+      },
+      "href": "https://www.reddit.com/user/ahmedbesbes",
+      "author": "/u/ahmedbesbes",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ahmedbesbes\"> /u/ahmedbesbes </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/ahmedbesbes\"> /u/ahmedbesbes </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p0buwf",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0buwf/what_are_the_worst_python_antipatterns_you/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T09:47:22+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        9,
+        47,
+        22,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T09:47:22+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        9,
+        47,
+        22,
+        6,
+        220,
+        0
+      ],
+      "title": "What are the worst python anti-patterns you regularly see?",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "What are the worst python anti-patterns you regularly see?"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/SamrayLeung",
+          "href": "https://www.reddit.com/user/SamrayLeung"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/SamrayLeung",
+        "href": "https://www.reddit.com/user/SamrayLeung"
+      },
+      "href": "",
+      "author": "/u/SamrayLeung",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/\"> <img alt=\"GitHub - ramsayleung/gtb: &quot;Your mom ask you to go to bed&quot; A delightful, enjoyable console notification tool\" src=\"https://external-preview.redd.it/FcLF_E22-Kgb2dawbGYzLjDoeHJlv6cCQnuH5ruOSvs.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5c4dbc2f9df7244a08c68fe29d4293543a9cfceb\" title=\"GitHub - ramsayleung/gtb: &quot;Your mom ask you to go to bed&quot; A delightful, enjoyable console notification tool\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SamrayLeung\"> /u/SamrayLeung </a> <br /> <span><a href=\"https://github.com/ramsayleung/gtb\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/\"> <img alt=\"GitHub - ramsayleung/gtb: &quot;Your mom ask you to go to bed&quot; A delightful, enjoyable console notification tool\" src=\"https://external-preview.redd.it/FcLF_E22-Kgb2dawbGYzLjDoeHJlv6cCQnuH5ruOSvs.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5c4dbc2f9df7244a08c68fe29d4293543a9cfceb\" title=\"GitHub - ramsayleung/gtb: &quot;Your mom ask you to go to bed&quot; A delightful, enjoyable console notification tool\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SamrayLeung\"> /u/SamrayLeung </a> <br /> <span><a href=\"https://github.com/ramsayleung/gtb\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_p0c4yl",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/FcLF_E22-Kgb2dawbGYzLjDoeHJlv6cCQnuH5ruOSvs.jpg?width=640&crop=smart&auto=webp&s=5c4dbc2f9df7244a08c68fe29d4293543a9cfceb"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0c4yl/github_ramsayleunggtb_your_mom_ask_you_to_go_to/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T10:12:58+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        10,
+        12,
+        58,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T10:12:58+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        10,
+        12,
+        58,
+        6,
+        220,
+        0
+      ],
+      "title": "GitHub - ramsayleung/gtb: \"Your mom ask you to go to bed\" A delightful, enjoyable console notification tool",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "GitHub - ramsayleung/gtb: \"Your mom ask you to go to bed\" A delightful, enjoyable console notification tool"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/DanLavro",
+          "href": "https://www.reddit.com/user/DanLavro"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/DanLavro",
+        "href": "https://www.reddit.com/user/DanLavro"
+      },
+      "href": "https://www.reddit.com/user/DanLavro",
+      "author": "/u/DanLavro",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>English is not my native language, so maybe some parts of this text are poorly translated, sorry.</p> <p>Hi! </p> <p>I've always wanted to learn to code, but I just started recently (by the way, I'm 20 years old). In one of the posts here on reddit, it was said about the book &quot;Code&quot; by Petzold. This is an incredible book, an absolute mustread.</p> <p>As soon as I finished reading this book, I wanted to make a model of the computer described in it. This is quite difficult, so I started small, made a model of 8-bit adder.</p> <p>step by step(like in book): 2 gates(and, or) -&gt; inver -&gt; 2 gates(nor, nand) -&gt;xor gate -&gt; half adder -&gt; 8 bit adder(16 bit adder) -&gt; one's complement -&gt; adder that can subtract</p> <p>repo: <a href=\"https://github.com/DanLavro/8-bit-adder\">https://github.com/DanLavro/8-bit-adder</a></p> <p>I choose python as first language, because it looks like the fastest way to make this program. </p> <p>This is not a particularly complicated program, but still, I'm not sure about the code. I tried to make it correct (meaningful names of variables, comments to functions), but most likely it's terrible, it's hard for me to estimate how much. I will be glad to any feedback.</p> <p>Thank's.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DanLavro\"> /u/DanLavro </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>English is not my native language, so maybe some parts of this text are poorly translated, sorry.</p> <p>Hi! </p> <p>I've always wanted to learn to code, but I just started recently (by the way, I'm 20 years old). In one of the posts here on reddit, it was said about the book &quot;Code&quot; by Petzold. This is an incredible book, an absolute mustread.</p> <p>As soon as I finished reading this book, I wanted to make a model of the computer described in it. This is quite difficult, so I started small, made a model of 8-bit adder.</p> <p>step by step(like in book): 2 gates(and, or) -&gt; inver -&gt; 2 gates(nor, nand) -&gt;xor gate -&gt; half adder -&gt; 8 bit adder(16 bit adder) -&gt; one's complement -&gt; adder that can subtract</p> <p>repo: <a href=\"https://github.com/DanLavro/8-bit-adder\">https://github.com/DanLavro/8-bit-adder</a></p> <p>I choose python as first language, because it looks like the fastest way to make this program. </p> <p>This is not a particularly complicated program, but still, I'm not sure about the code. I tried to make it correct (meaningful names of variables, comments to functions), but most likely it's terrible, it's hard for me to estimate how much. I will be glad to any feedback.</p> <p>Thank's.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DanLavro\"> /u/DanLavro </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p0c3kl",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p0c3kl/first_python_project_8_bit_adder_model/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T10:09:33+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        10,
+        9,
+        33,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T10:09:33+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        10,
+        9,
+        33,
+        6,
+        220,
+        0
+      ],
+      "title": "First python project, 8 bit adder model",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "First python project, 8 bit adder model"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/bohoky",
+          "href": "https://www.reddit.com/user/bohoky"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/bohoky",
+        "href": "https://www.reddit.com/user/bohoky"
+      },
+      "href": "https://www.reddit.com/user/bohoky",
+      "author": "/u/bohoky",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Of late, every 6 days, the fine people at the Python Packaging Authority signal me, through every Python installation that I have, that I really, really, need to upgrade.</p> <p>With this particular warning, they are preventing me from inadvertently missing a fix for</p> <blockquote> <p>Modify the sysconfig.get_preferred_scheme function check to be compatible with CPython 3.10\u2019s alphareleases. (#10252)</p> </blockquote> <p>Who knows what tragedy might befall my Python3.8 development work were I to miss this upgrade.</p> <p>The PyPA people need to cool their warnings a bit. &lt;/rant&gt;</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/bohoky\"> /u/bohoky </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Of late, every 6 days, the fine people at the Python Packaging Authority signal me, through every Python installation that I have, that I really, really, need to upgrade.</p> <p>With this particular warning, they are preventing me from inadvertently missing a fix for</p> <blockquote> <p>Modify the sysconfig.get_preferred_scheme function check to be compatible with CPython 3.10\u2019s alphareleases. (#10252)</p> </blockquote> <p>Who knows what tragedy might befall my Python3.8 development work were I to miss this upgrade.</p> <p>The PyPA people need to cool their warnings a bit. &lt;/rant&gt;</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/bohoky\"> /u/bohoky </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozf8ab",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozf8ab/warning_you_are_using_pip_version_2122_however/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-06T20:48:05+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        6,
+        20,
+        48,
+        5,
+        4,
+        218,
+        0
+      ],
+      "published": "2021-08-06T20:48:05+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        6,
+        20,
+        48,
+        5,
+        4,
+        218,
+        0
+      ],
+      "title": "WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available."
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/nebbly",
+          "href": "https://www.reddit.com/user/nebbly"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/nebbly",
+        "href": "https://www.reddit.com/user/nebbly"
+      },
+      "href": "",
+      "author": "/u/nebbly",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/\"> <img alt=\"Template-less HTML rendering in Python\" src=\"https://external-preview.redd.it/zRVFLfjI58sm6FNSGRYUcnWA4juih6b47RNhJJEwW0g.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=34c514992d4fab42691b17ec329db3087d91765e\" title=\"Template-less HTML rendering in Python\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/nebbly\"> /u/nebbly </a> <br /> <span><a href=\"https://pypi.org/project/simple-html/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/\"> <img alt=\"Template-less HTML rendering in Python\" src=\"https://external-preview.redd.it/zRVFLfjI58sm6FNSGRYUcnWA4juih6b47RNhJJEwW0g.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=34c514992d4fab42691b17ec329db3087d91765e\" title=\"Template-less HTML rendering in Python\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/nebbly\"> /u/nebbly </a> <br /> <span><a href=\"https://pypi.org/project/simple-html/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozzurm",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/zRVFLfjI58sm6FNSGRYUcnWA4juih6b47RNhJJEwW0g.jpg?width=216&crop=smart&auto=webp&s=34c514992d4fab42691b17ec329db3087d91765e"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozzurm/templateless_html_rendering_in_python/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T19:38:45+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        19,
+        38,
+        45,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T19:38:45+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        19,
+        38,
+        45,
+        5,
+        219,
+        0
+      ],
+      "title": "Template-less HTML rendering in Python",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Template-less HTML rendering in Python"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/CreepyEntrepreneur3",
+          "href": "https://www.reddit.com/user/CreepyEntrepreneur3"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/CreepyEntrepreneur3",
+        "href": "https://www.reddit.com/user/CreepyEntrepreneur3"
+      },
+      "href": "",
+      "author": "/u/CreepyEntrepreneur3",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/\"> <img alt=\"Is GPT-3 still King? Introducing GPT-J-6B\" src=\"https://external-preview.redd.it/c2BEPvaZe_NewLa01wTxa57MXizrq3gg1FKqFwQpapg.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=262c62c02a4efc2e372d2582f85c8779c528431b\" title=\"Is GPT-3 still King? Introducing GPT-J-6B\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/CreepyEntrepreneur3\"> /u/CreepyEntrepreneur3 </a> <br /> <span><a href=\"https://ooshimus.com/is-gpt-3-still-king-introducing-gpt-j-6b\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/\"> <img alt=\"Is GPT-3 still King? Introducing GPT-J-6B\" src=\"https://external-preview.redd.it/c2BEPvaZe_NewLa01wTxa57MXizrq3gg1FKqFwQpapg.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=262c62c02a4efc2e372d2582f85c8779c528431b\" title=\"Is GPT-3 still King? Introducing GPT-J-6B\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/CreepyEntrepreneur3\"> /u/CreepyEntrepreneur3 </a> <br /> <span><a href=\"https://ooshimus.com/is-gpt-3-still-king-introducing-gpt-j-6b\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozp0us",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/c2BEPvaZe_NewLa01wTxa57MXizrq3gg1FKqFwQpapg.jpg?width=640&crop=smart&auto=webp&s=262c62c02a4efc2e372d2582f85c8779c528431b"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozp0us/is_gpt3_still_king_introducing_gptj6b/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T07:40:25+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        7,
+        40,
+        25,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T07:40:25+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        7,
+        40,
+        25,
+        5,
+        219,
+        0
+      ],
+      "title": "Is GPT-3 still King? Introducing GPT-J-6B",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Is GPT-3 still King? Introducing GPT-J-6B"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/genericlemon24",
+          "href": "https://www.reddit.com/user/genericlemon24"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/genericlemon24",
+        "href": "https://www.reddit.com/user/genericlemon24"
+      },
+      "href": "",
+      "author": "/u/genericlemon24",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/\"> <img alt=\"What do you when you botch a release on PyPI\" src=\"https://external-preview.redd.it/k8_XRFYTotIq9rlBWhSWZ6vTV7S_3hPJ_Qf4b3-1Bs0.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=cb85edf34e14ec989530e4b59531a8bc338b1e08\" title=\"What do you when you botch a release on PyPI\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/genericlemon24\"> /u/genericlemon24 </a> <br /> <span><a href=\"https://snarky.ca/what-to-do-when-you-botch-a-release-on-pypi/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/\"> <img alt=\"What do you when you botch a release on PyPI\" src=\"https://external-preview.redd.it/k8_XRFYTotIq9rlBWhSWZ6vTV7S_3hPJ_Qf4b3-1Bs0.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=cb85edf34e14ec989530e4b59531a8bc338b1e08\" title=\"What do you when you botch a release on PyPI\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/genericlemon24\"> /u/genericlemon24 </a> <br /> <span><a href=\"https://snarky.ca/what-to-do-when-you-botch-a-release-on-pypi/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_oznubw",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/k8_XRFYTotIq9rlBWhSWZ6vTV7S_3hPJ_Qf4b3-1Bs0.jpg?width=640&crop=smart&auto=webp&s=cb85edf34e14ec989530e4b59531a8bc338b1e08"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/oznubw/what_do_you_when_you_botch_a_release_on_pypi/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T06:00:32+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        6,
+        0,
+        32,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T06:00:32+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        6,
+        0,
+        32,
+        5,
+        219,
+        0
+      ],
+      "title": "What do you when you botch a release on PyPI",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "What do you when you botch a release on PyPI"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/j0ola",
+          "href": "https://www.reddit.com/user/j0ola"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/j0ola",
+        "href": "https://www.reddit.com/user/j0ola"
+      },
+      "href": "",
+      "author": "/u/j0ola",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/\"> <img alt=\"A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools\" src=\"https://external-preview.redd.it/uBT2eBEl63z5d7Bz-zG8nKIltMWkKvraku7ds1iynDg.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=361a11d8be04753792582170415c419cf2f3fe3c\" title=\"A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/j0ola\"> /u/j0ola </a> <br /> <span><a href=\"https://github.com/jooola/gh-release-install\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/\"> <img alt=\"A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools\" src=\"https://external-preview.redd.it/uBT2eBEl63z5d7Bz-zG8nKIltMWkKvraku7ds1iynDg.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=361a11d8be04753792582170415c419cf2f3fe3c\" title=\"A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/j0ola\"> /u/j0ola </a> <br /> <span><a href=\"https://github.com/jooola/gh-release-install\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_p05l1p",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/uBT2eBEl63z5d7Bz-zG8nKIltMWkKvraku7ds1iynDg.jpg?width=640&crop=smart&auto=webp&s=361a11d8be04753792582170415c419cf2f3fe3c"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p05l1p/a_github_release_installer_simple_and_fast_tool/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T01:27:25+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        1,
+        27,
+        25,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T01:27:25+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        1,
+        27,
+        25,
+        6,
+        220,
+        0
+      ],
+      "title": "A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "A Github release installer: simple and fast tool installer for CI, desktops or orchestration tools"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/coding_is_fun123",
+          "href": "https://www.reddit.com/user/coding_is_fun123"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/coding_is_fun123",
+        "href": "https://www.reddit.com/user/coding_is_fun123"
+      },
+      "href": "",
+      "author": "/u/coding_is_fun123",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\"> <img alt=\"I created an Excel Add-in to generate Pandas Dataframes right inside Excel\" src=\"https://b.thumbs.redditmedia.com/xExWpBw_dw5TmVEPLQoENqW9PeArG0qaIAU7IaoETkE.jpg\" title=\"I created an Excel Add-in to generate Pandas Dataframes right inside Excel\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>I am working as a Data Analyst. In many cases, the Excel Files I am dealing with are pretty 'messy'. Often the Excel files are containing headers, comments, additional (unnecessary or blank) columns.</p> <p>If I want to perform analysis using the pandas library, first I need to transform the Excel file into a pandas DataFrame using 'pandas.read_excel(&quot;ExcelFile.xlsx&quot;)'. Pandas offers different parameters to read in 'messy' Excel files, such as <em>usecols</em>, <em>skiprows</em>, <em>nrows</em>, etc.</p> <p>Yet, I found it tedious always to specify those arguments if I just want to perform a quick analysis. That is why I have created an Excel Add-In, which does all the tiresome work. As shown in the gif below, after I select the data I want to transform into a pandas dataframe, the add-in will create a python file in the workbook's directory. The VBA code will translate the cell range into the necessary pandas arguments:</p> <ul> <li>io <em>[File Name]</em></li> <li>sheet_name</li> <li>skiprows <em>[Number of lines to skip (int) at the start of the file]</em></li> <li>usecols <em>[Excel column letters and column ranges (e.g. \u201cA:E\u201d)]</em></li> <li>nrows <em>[Number of rows to parse]</em></li> </ul> <p><a href=\"https://i.redd.it/1aclg7d4aqf71.gif\">Demo of 'Create Pandas Dataframe' Button</a></p> <p>Perhaps this add-in might be also helpful to you. I also added some other neat features into the add-in to expand excel capabilities. With the add-in, you can add images to Excel comments, transform text to checkboxes, easily create Drop Down lists with one click, remove empty &amp; blank spaces from cells, and much more.</p> <p>Here is the link to the tutorial:</p> <p><em>(The Python-specific part starts at 8:40 min)</em></p> <p><a href=\"https://youtu.be/PmJ9rkKGqrI\">https://youtu.be/PmJ9rkKGqrI</a></p> <p>You can download the add-in for free here. There is no email address required :D</p> <p><a href=\"https://pythonandvba.com/mytoolbelt\">https://pythonandvba.com/mytoolbelt</a></p> <p>It would be great if you could share your feedback with me. Any suggestions regarding additional features or improvements? Please let me know :) <strong>Enjoy!</strong></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/coding_is_fun123\"> /u/coding_is_fun123 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\"> <img alt=\"I created an Excel Add-in to generate Pandas Dataframes right inside Excel\" src=\"https://b.thumbs.redditmedia.com/xExWpBw_dw5TmVEPLQoENqW9PeArG0qaIAU7IaoETkE.jpg\" title=\"I created an Excel Add-in to generate Pandas Dataframes right inside Excel\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>I am working as a Data Analyst. In many cases, the Excel Files I am dealing with are pretty 'messy'. Often the Excel files are containing headers, comments, additional (unnecessary or blank) columns.</p> <p>If I want to perform analysis using the pandas library, first I need to transform the Excel file into a pandas DataFrame using 'pandas.read_excel(&quot;ExcelFile.xlsx&quot;)'. Pandas offers different parameters to read in 'messy' Excel files, such as <em>usecols</em>, <em>skiprows</em>, <em>nrows</em>, etc.</p> <p>Yet, I found it tedious always to specify those arguments if I just want to perform a quick analysis. That is why I have created an Excel Add-In, which does all the tiresome work. As shown in the gif below, after I select the data I want to transform into a pandas dataframe, the add-in will create a python file in the workbook's directory. The VBA code will translate the cell range into the necessary pandas arguments:</p> <ul> <li>io <em>[File Name]</em></li> <li>sheet_name</li> <li>skiprows <em>[Number of lines to skip (int) at the start of the file]</em></li> <li>usecols <em>[Excel column letters and column ranges (e.g. \u201cA:E\u201d)]</em></li> <li>nrows <em>[Number of rows to parse]</em></li> </ul> <p><a href=\"https://i.redd.it/1aclg7d4aqf71.gif\">Demo of 'Create Pandas Dataframe' Button</a></p> <p>Perhaps this add-in might be also helpful to you. I also added some other neat features into the add-in to expand excel capabilities. With the add-in, you can add images to Excel comments, transform text to checkboxes, easily create Drop Down lists with one click, remove empty &amp; blank spaces from cells, and much more.</p> <p>Here is the link to the tutorial:</p> <p><em>(The Python-specific part starts at 8:40 min)</em></p> <p><a href=\"https://youtu.be/PmJ9rkKGqrI\">https://youtu.be/PmJ9rkKGqrI</a></p> <p>You can download the add-in for free here. There is no email address required :D</p> <p><a href=\"https://pythonandvba.com/mytoolbelt\">https://pythonandvba.com/mytoolbelt</a></p> <p>It would be great if you could share your feedback with me. Any suggestions regarding additional features or improvements? Please let me know :) <strong>Enjoy!</strong></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/coding_is_fun123\"> /u/coding_is_fun123 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_oz5erv",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/",
+      "media_thumbnail": [
+        {
+          "url": "https://b.thumbs.redditmedia.com/xExWpBw_dw5TmVEPLQoENqW9PeArG0qaIAU7IaoETkE.jpg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/oz5erv/i_created_an_excel_addin_to_generate_pandas/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-06T12:13:53+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        6,
+        12,
+        13,
+        53,
+        4,
+        218,
+        0
+      ],
+      "published": "2021-08-06T12:13:53+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        6,
+        12,
+        13,
+        53,
+        4,
+        218,
+        0
+      ],
+      "title": "I created an Excel Add-in to generate Pandas Dataframes right inside Excel",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I created an Excel Add-in to generate Pandas Dataframes right inside Excel"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/JordanLeichReddit",
+          "href": "https://www.reddit.com/user/JordanLeichReddit"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/JordanLeichReddit",
+        "href": "https://www.reddit.com/user/JordanLeichReddit"
+      },
+      "href": "https://www.reddit.com/user/JordanLeichReddit",
+      "author": "/u/JordanLeichReddit",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p><strong>Description</strong> \ud83c\udccf</p> <p>This is a game where you play against the dealer and try to get the higher values of cards without exceeding the number 21. If your cards ever equal a total of 21, you automatically get blackjack (win) unless both you and the dealer get 21 then you push (tie). The user also has a cash balance that is wagered based on winning or losing, the user must keep their cash balance positive and not negative to keep playing. All the basic rules that are applied to the traditional game of Blackjack 21 are also applied to this card game project along with many great features and additions. If you are unfamiliar or do not know how to play Blackjack 21 and would like to learn it, <a href=\"https://youtu.be/eyoh-Ku9TCI\">click here.</a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21\"><strong>Link to project</strong></a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21/releases\"><strong>Releases / Latest changes</strong></a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21/issues/3\"><strong>TODO List</strong></a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/JordanLeichReddit\"> /u/JordanLeichReddit </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>Description</strong> \ud83c\udccf</p> <p>This is a game where you play against the dealer and try to get the higher values of cards without exceeding the number 21. If your cards ever equal a total of 21, you automatically get blackjack (win) unless both you and the dealer get 21 then you push (tie). The user also has a cash balance that is wagered based on winning or losing, the user must keep their cash balance positive and not negative to keep playing. All the basic rules that are applied to the traditional game of Blackjack 21 are also applied to this card game project along with many great features and additions. If you are unfamiliar or do not know how to play Blackjack 21 and would like to learn it, <a href=\"https://youtu.be/eyoh-Ku9TCI\">click here.</a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21\"><strong>Link to project</strong></a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21/releases\"><strong>Releases / Latest changes</strong></a></p> <p><a href=\"https://github.com/JordanLeich/Blackjack-21/issues/3\"><strong>TODO List</strong></a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/JordanLeichReddit\"> /u/JordanLeichReddit </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozluqa",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozluqa/i_made_blackjack_21_in_python/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T03:33:42+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        3,
+        33,
+        42,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T03:33:42+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        3,
+        33,
+        42,
+        5,
+        219,
+        0
+      ],
+      "title": "I made Blackjack 21 in Python!",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I made Blackjack 21 in Python!"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/andrewthetechie",
+          "href": "https://www.reddit.com/user/andrewthetechie"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/andrewthetechie",
+        "href": "https://www.reddit.com/user/andrewthetechie"
+      },
+      "href": "https://www.reddit.com/user/andrewthetechie",
+      "author": "/u/andrewthetechie",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://github.com/andrewthetechie/pydantic-aioredis\">https://github.com/andrewthetechie/pydantic-aioredis</a></p> <p>I've been working on this library for a while, and it's finally at a point where I'm ready to share it out as it might be helpful to others.</p> <p>I've been using FastAPI a lot lately to write async APIs. I frequently write code to do basic CRUD operations with Redis, and I wanted to do those operations right from my Pydantic models. Some searching led me to <a href=\"https://github.com/sopherapps/pydantic-redis\">pydantic-redis</a>, but I wanted an async solution, so I forked the library and rewrote it to use aioredis 2 instead of redispy. </p> <p>There are examples in the <a href=\"https://github.com/andrewthetechie/pydantic-aioredis/tree/main/examples\">examples directory</a>, using pydantic-aioredis with both FastAPI and asyncio.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/andrewthetechie\"> /u/andrewthetechie </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://github.com/andrewthetechie/pydantic-aioredis\">https://github.com/andrewthetechie/pydantic-aioredis</a></p> <p>I've been working on this library for a while, and it's finally at a point where I'm ready to share it out as it might be helpful to others.</p> <p>I've been using FastAPI a lot lately to write async APIs. I frequently write code to do basic CRUD operations with Redis, and I wanted to do those operations right from my Pydantic models. Some searching led me to <a href=\"https://github.com/sopherapps/pydantic-redis\">pydantic-redis</a>, but I wanted an async solution, so I forked the library and rewrote it to use aioredis 2 instead of redispy. </p> <p>There are examples in the <a href=\"https://github.com/andrewthetechie/pydantic-aioredis/tree/main/examples\">examples directory</a>, using pydantic-aioredis with both FastAPI and asyncio.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/andrewthetechie\"> /u/andrewthetechie </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_ozzshn",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozzshn/pydanticaioredis_use_your_pydantic_models_as_a/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T19:35:08+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        19,
+        35,
+        8,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T19:35:08+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        19,
+        35,
+        8,
+        5,
+        219,
+        0
+      ],
+      "title": "pydantic-aioredis - use your Pydantic models as a simple ORM with Redis",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "pydantic-aioredis - use your Pydantic models as a simple ORM with Redis"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/Maleficent_Dentist_2",
+          "href": "https://www.reddit.com/user/Maleficent_Dentist_2"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Maleficent_Dentist_2",
+        "href": "https://www.reddit.com/user/Maleficent_Dentist_2"
+      },
+      "href": "",
+      "author": "/u/Maleficent_Dentist_2",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/\"> <img alt=\"Automate Instagram with Python/Selenium | Install prerequisites PART 1\" src=\"https://external-preview.redd.it/oFQFLl-OP7sQgr4_x8c-RkpjJ7Fo972HOkMuacGOhhY.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=121ef4d6c4f876c0864d6dab4396f4cb9566a591\" title=\"Automate Instagram with Python/Selenium | Install prerequisites PART 1\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Maleficent_Dentist_2\"> /u/Maleficent_Dentist_2 </a> <br /> <span><a href=\"https://youtu.be/vcfKtFq8E3I\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/\"> <img alt=\"Automate Instagram with Python/Selenium | Install prerequisites PART 1\" src=\"https://external-preview.redd.it/oFQFLl-OP7sQgr4_x8c-RkpjJ7Fo972HOkMuacGOhhY.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=121ef4d6c4f876c0864d6dab4396f4cb9566a591\" title=\"Automate Instagram with Python/Selenium | Install prerequisites PART 1\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Maleficent_Dentist_2\"> /u/Maleficent_Dentist_2 </a> <br /> <span><a href=\"https://youtu.be/vcfKtFq8E3I\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozgpe5",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/oFQFLl-OP7sQgr4_x8c-RkpjJ7Fo972HOkMuacGOhhY.jpg?width=320&crop=smart&auto=webp&s=121ef4d6c4f876c0864d6dab4396f4cb9566a591"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozgpe5/automate_instagram_with_pythonselenium_install/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-06T22:06:26+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        6,
+        22,
+        6,
+        26,
+        4,
+        218,
+        0
+      ],
+      "published": "2021-08-06T22:06:26+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        6,
+        22,
+        6,
+        26,
+        4,
+        218,
+        0
+      ],
+      "title": "Automate Instagram with Python/Selenium | Install prerequisites PART 1",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Automate Instagram with Python/Selenium | Install prerequisites PART 1"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/adiamaan92",
+          "href": "https://www.reddit.com/user/adiamaan92"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/adiamaan92",
+        "href": "https://www.reddit.com/user/adiamaan92"
+      },
+      "href": "https://www.reddit.com/user/adiamaan92",
+      "author": "/u/adiamaan92",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://adiamaan.medium.com/make-your-python-code-look-pretty-c65dc2ff2bfa\">https://adiamaan.medium.com/make-your-python-code-look-pretty-c65dc2ff2bfa</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/adiamaan92\"> /u/adiamaan92 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://adiamaan.medium.com/make-your-python-code-look-pretty-c65dc2ff2bfa\">https://adiamaan.medium.com/make-your-python-code-look-pretty-c65dc2ff2bfa</a></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/adiamaan92\"> /u/adiamaan92 </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p04vpv",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p04vpv/make_your_python_code_look_pretty/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-08T00:39:27+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        8,
+        0,
+        39,
+        27,
+        6,
+        220,
+        0
+      ],
+      "published": "2021-08-08T00:39:27+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        8,
+        0,
+        39,
+        27,
+        6,
+        220,
+        0
+      ],
+      "title": "Make your Python code look pretty",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Make your Python code look pretty"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/glofulo",
+          "href": "https://www.reddit.com/user/glofulo"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/glofulo",
+        "href": "https://www.reddit.com/user/glofulo"
+      },
+      "href": "https://www.reddit.com/user/glofulo",
+      "author": "/u/glofulo",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<!-- SC_OFF --><div class=\"md\"><p>Here's the link to the source code on GitHub - <a href=\"https://github.com/looemkiot/ghdash\">https://github.com/looemkiot/ghdash</a></p> <p>Any kind of code and/or design feedback/critique is very welcome</p> <p>You can try it out through:</p> <p>- <code>$ git clone</code> <a href=\"https://github.com/looemkiot/ghdash\"><code>https://github.com/looemkiot/ghdash</code></a></p> <p>- <code>$ cd ghdash</code></p> <p>- <code>$ pip install --editable .</code> (could fail without the &quot;--editable&quot; option)</p> <p>- <code>$ ghdash</code></p> <p>- Some options are available - <code>$ ghdash --help</code></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/glofulo\"> /u/glofulo </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/\">[comments]</a></span>"
+        }
+      ],
+      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Here's the link to the source code on GitHub - <a href=\"https://github.com/looemkiot/ghdash\">https://github.com/looemkiot/ghdash</a></p> <p>Any kind of code and/or design feedback/critique is very welcome</p> <p>You can try it out through:</p> <p>- <code>$ git clone</code> <a href=\"https://github.com/looemkiot/ghdash\"><code>https://github.com/looemkiot/ghdash</code></a></p> <p>- <code>$ cd ghdash</code></p> <p>- <code>$ pip install --editable .</code> (could fail without the &quot;--editable&quot; option)</p> <p>- <code>$ ghdash</code></p> <p>- Some options are available - <code>$ ghdash --help</code></p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/glofulo\"> /u/glofulo </a> <br /> <span><a href=\"https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/\">[comments]</a></span>",
+      "id": "https://www.reddit.com/r/python/t3_p00rwq",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/",
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/p00rwq/i_have_built_my_first_python_project_as_a_cli/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T20:30:25+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        20,
+        30,
+        25,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T20:30:25+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        20,
+        30,
+        25,
+        5,
+        219,
+        0
+      ],
+      "title": "I have built my first Python project as a CLI tool to stream all GitHub activity in real-time",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "I have built my first Python project as a CLI tool to stream all GitHub activity in real-time"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/Pragyanbo",
+          "href": "https://www.reddit.com/user/Pragyanbo"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/Pragyanbo",
+        "href": "https://www.reddit.com/user/Pragyanbo"
+      },
+      "href": "",
+      "author": "/u/Pragyanbo",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/\"> <img alt=\"Python Programming For Newbies - The Click Reader [Complete Community Course]\" src=\"https://external-preview.redd.it/tT-NYGjz-ErurAeCfqKY-97ZXxrAhkIijO0wUxGGmyA.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=db10167d5631ba33a89590c3c56575a7b3212984\" title=\"Python Programming For Newbies - The Click Reader [Complete Community Course]\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Pragyanbo\"> /u/Pragyanbo </a> <br /> <span><a href=\"https://www.theclickreader.com/python-programming-for-newbies/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/\"> <img alt=\"Python Programming For Newbies - The Click Reader [Complete Community Course]\" src=\"https://external-preview.redd.it/tT-NYGjz-ErurAeCfqKY-97ZXxrAhkIijO0wUxGGmyA.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=db10167d5631ba33a89590c3c56575a7b3212984\" title=\"Python Programming For Newbies - The Click Reader [Complete Community Course]\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Pragyanbo\"> /u/Pragyanbo </a> <br /> <span><a href=\"https://www.theclickreader.com/python-programming-for-newbies/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozqxdj",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/tT-NYGjz-ErurAeCfqKY-97ZXxrAhkIijO0wUxGGmyA.jpg?width=640&crop=smart&auto=webp&s=db10167d5631ba33a89590c3c56575a7b3212984"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozqxdj/python_programming_for_newbies_the_click_reader/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T10:32:36+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        10,
+        32,
+        36,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T10:32:36+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        10,
+        32,
+        36,
+        5,
+        219,
+        0
+      ],
+      "title": "Python Programming For Newbies - The Click Reader [Complete Community Course]",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Python Programming For Newbies - The Click Reader [Complete Community Course]"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/HassaanKH1",
+          "href": "https://www.reddit.com/user/HassaanKH1"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/HassaanKH1",
+        "href": "https://www.reddit.com/user/HassaanKH1"
+      },
+      "href": "",
+      "author": "/u/HassaanKH1",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/\"> <img alt=\"Anyone Interested in Free Python Tutorials??\" src=\"https://external-preview.redd.it/NufxxUMYBJ239fAcZl-7nrNKDvWR27LLPxIp0sOAofo.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=884a7f79f687efd843f528f7dd6fb3c92f77bfb1\" title=\"Anyone Interested in Free Python Tutorials??\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/HassaanKH1\"> /u/HassaanKH1 </a> <br /> <span><a href=\"http://youtube.com/c/DeveloperVibes\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/\"> <img alt=\"Anyone Interested in Free Python Tutorials??\" src=\"https://external-preview.redd.it/NufxxUMYBJ239fAcZl-7nrNKDvWR27LLPxIp0sOAofo.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=884a7f79f687efd843f528f7dd6fb3c92f77bfb1\" title=\"Anyone Interested in Free Python Tutorials??\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/HassaanKH1\"> /u/HassaanKH1 </a> <br /> <span><a href=\"http://youtube.com/c/DeveloperVibes\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozymtx",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/NufxxUMYBJ239fAcZl-7nrNKDvWR27LLPxIp0sOAofo.jpg?width=640&crop=smart&auto=webp&s=884a7f79f687efd843f528f7dd6fb3c92f77bfb1"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozymtx/anyone_interested_in_free_python_tutorials/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T18:30:41+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        18,
+        30,
+        41,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T18:30:41+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        18,
+        30,
+        41,
+        5,
+        219,
+        0
+      ],
+      "title": "Anyone Interested in Free Python Tutorials??",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Anyone Interested in Free Python Tutorials??"
+      }
+    },
+    {
+      "authors": [
+        {
+          "name": "/u/codingXXX",
+          "href": "https://www.reddit.com/user/codingXXX"
+        }
+      ],
+      "author_detail": {
+        "name": "/u/codingXXX",
+        "href": "https://www.reddit.com/user/codingXXX"
+      },
+      "href": "",
+      "author": "/u/codingXXX",
+      "tags": [
+        {
+          "term": "Python",
+          "scheme": null,
+          "label": "r/Python"
+        }
+      ],
+      "content": [
+        {
+          "type": "text/html",
+          "language": null,
+          "base": "https://www.reddit.com/r/python/.rss",
+          "value": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/\"> <img alt=\"Developing, Testing, and Deploying FastAPI applications\" src=\"https://external-preview.redd.it/nCdFVJjMCnrBNRzeBOi-UREB6FrUIkhCSDJ9PEdTdr8.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5c0e1890e50c9f417357d3aca41d70d55f80ea62\" title=\"Developing, Testing, and Deploying FastAPI applications\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/codingXXX\"> /u/codingXXX </a> <br /> <span><a href=\"https://neilruaro.hashnode.dev/developing-testing-and-deploying-fastapi-applications\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/\">[comments]</a></span> </td></tr></table>"
+        }
+      ],
+      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/\"> <img alt=\"Developing, Testing, and Deploying FastAPI applications\" src=\"https://external-preview.redd.it/nCdFVJjMCnrBNRzeBOi-UREB6FrUIkhCSDJ9PEdTdr8.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5c0e1890e50c9f417357d3aca41d70d55f80ea62\" title=\"Developing, Testing, and Deploying FastAPI applications\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/codingXXX\"> /u/codingXXX </a> <br /> <span><a href=\"https://neilruaro.hashnode.dev/developing-testing-and-deploying-fastapi-applications\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/\">[comments]</a></span> </td></tr></table>",
+      "id": "https://www.reddit.com/r/python/t3_ozpinx",
+      "guidislink": true,
+      "link": "https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/",
+      "media_thumbnail": [
+        {
+          "url": "https://external-preview.redd.it/nCdFVJjMCnrBNRzeBOi-UREB6FrUIkhCSDJ9PEdTdr8.jpg?width=640&crop=smart&auto=webp&s=5c0e1890e50c9f417357d3aca41d70d55f80ea62"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.reddit.com/r/Python/comments/ozpinx/developing_testing_and_deploying_fastapi/",
+          "rel": "alternate",
+          "type": "text/html"
+        }
+      ],
+      "updated": "2021-08-07T08:24:22+00:00",
+      "updated_parsed": [
+        2021,
+        8,
+        7,
+        8,
+        24,
+        22,
+        5,
+        219,
+        0
+      ],
+      "published": "2021-08-07T08:24:22+00:00",
+      "published_parsed": [
+        2021,
+        8,
+        7,
+        8,
+        24,
+        22,
+        5,
+        219,
+        0
+      ],
+      "title": "Developing, Testing, and Deploying FastAPI applications",
+      "title_detail": {
+        "type": "text/plain",
+        "language": null,
+        "base": "https://www.reddit.com/r/python/.rss",
+        "value": "Developing, Testing, and Deploying FastAPI applications"
+      }
+    }
+  ],
+  "feed": {
+    "tags": [
+      {
+        "term": "Python",
+        "scheme": null,
+        "label": "r/Python"
+      }
+    ],
+    "updated": "2021-08-08T10:32:06+00:00",
+    "updated_parsed": [
+      2021,
+      8,
+      8,
+      10,
+      32,
+      6,
+      6,
+      220,
+      0
+    ],
+    "icon": "https://www.redditstatic.com/icon.png/",
+    "id": "https://www.reddit.com/r/python/.rss",
+    "guidislink": true,
+    "link": "https://www.reddit.com/r/python/",
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://www.reddit.com/r/python/.rss",
+        "type": "application/atom+xml"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://www.reddit.com/r/python/",
+        "type": "text/html"
+      }
+    ],
+    "logo": "https://b.thumbs.redditmedia.com/8HiO52_EuT_h63Qg.png",
+    "subtitle": "News about the programming language Python. If you have something to teach others post here. If you have questions or are a newbie use r/learnpython",
+    "subtitle_detail": {
+      "type": "text/plain",
+      "language": null,
+      "base": "https://www.reddit.com/r/python/.rss",
+      "value": "News about the programming language Python. If you have something to teach others post here. If you have questions or are a newbie use r/learnpython"
+    },
+    "title": "Python",
+    "title_detail": {
+      "type": "text/plain",
+      "language": null,
+      "base": "https://www.reddit.com/r/python/.rss",
+      "value": "Python"
+    }
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "49384",
+    "content-type": "application/atom+xml; charset=UTF-8",
+    "x-ua-compatible": "IE=edge",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "x-ratelimit-remaining": "296",
+    "x-ratelimit-used": "4",
+    "x-ratelimit-reset": "474",
+    "cache-control": "max-age=0, must-revalidate",
+    "x-moose": "majestic",
+    "accept-ranges": "bytes",
+    "date": "Sun, 08 Aug 2021 10:32:06 GMT",
+    "via": "1.1 varnish",
+    "set-cookie": "edgebucket=qJ3Sa8FmwXT3aSP3H2; Domain=reddit.com; Max-Age=63071999; Path=/;  secure",
+    "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+    "server": "snooserv",
+    "x-clacks-overhead": "GNU Terry Pratchett"
+  },
+  "href": "https://www.reddit.com/r/python/.rss",
+  "status": 301,
+  "encoding": "UTF-8",
+  "version": "atom10",
+  "namespaces": {
+    "": "http://www.w3.org/2005/Atom",
+    "media": "http://search.yahoo.com/mrss/"
+  }
+}

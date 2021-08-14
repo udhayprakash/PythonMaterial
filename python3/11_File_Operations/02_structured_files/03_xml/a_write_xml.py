@@ -18,6 +18,7 @@ XML vs HTML
 
 """
 from xml.etree.ElementTree import Element, SubElement, tostring
+import xml.etree.ElementTree as ET
 
 root = Element('root')
 
@@ -35,3 +36,10 @@ print(result_str)
 # To write an xml file
 with open('a_write_xml.xml', 'w') as f:
     f.write(result_str)
+
+
+from xml.dom import minidom
+
+xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
+with open("a_write_xml2.xml", "w") as f:
+    f.write(xmlstr)
