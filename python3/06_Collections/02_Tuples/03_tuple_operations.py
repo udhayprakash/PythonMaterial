@@ -35,6 +35,6 @@ print(f'{(1, 2) * 3    =}')
 print(f'{(1, (2,)) * 3 =}')
 
 
-# Assignment 
-# 1. Prove that tuple concatenation is not commutative
-# 2. Prove that tuple repetition is commutative
+# Assignment
+# 1. Prove that tuple concatenation is not commutative: t1 + t2 != t2 +t1
+# 2. Prove that tuple repetition is commutative: t1 * 3 == 3 * t1
