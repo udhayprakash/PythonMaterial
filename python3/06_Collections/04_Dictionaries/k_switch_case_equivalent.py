@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Purpose: 
     switch case is not implemented in python. 
@@ -12,6 +13,7 @@ pseudo-code:
 """
 choice = int(input('Enter choice[1, 2, 3, 4]:'))
 print('choice', choice, type(choice))
+
 if choice == 1:
     print('Addition')
 elif choice == 2:
@@ -23,12 +25,12 @@ elif choice == 4:
 else:
     print('invalid choice')
 
-
-########
+# -------------------------------
 result_for_choice = {
     1: 'Addition',
     2: 'Subtraction',
     3: 'Multiplication',
     4: 'Division',
 }
+# print(result_for_choice[choice])
 print(result_for_choice.get(choice, 'invalid choice'))

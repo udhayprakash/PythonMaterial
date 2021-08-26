@@ -26,3 +26,4 @@ print(other_dict, type(other_dict))
 
 dict_with_single_pair = {'a': 1}
 print(dict_with_single_pair, type(dict_with_single_pair))
+print(f'{len(dict_with_single_pair) =}')

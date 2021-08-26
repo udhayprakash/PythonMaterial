@@ -30,4 +30,4 @@ print(f'n1={n1} \nn2={n2}')
 
 print()
 n1, *n2, n3 = 1, 2, 3, 4, 5
-print(f'n1={n1} \nn2={n2} \nn3={n3}')
+print(f'n1={n1} \nn2={n2} \nn3={n3}') # n2 is of type list

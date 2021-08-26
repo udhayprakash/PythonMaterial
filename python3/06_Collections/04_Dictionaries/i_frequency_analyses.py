@@ -30,7 +30,7 @@ print(frequency)
 # Method 3
 frequency = {}
 for each_char in sentence:
-    if frequency.get(each_char):
+    if each_char in frequency:
         # key is present 
         # frequency[each_char] = frequency[each_char] + 1
         frequency[each_char] += 1
@@ -117,5 +117,7 @@ choose a large sentence greater than 150 words and perform the following
         HINT: string module -> string.punctuation
     a) case sensitive 
     b) case insensitive
+
+    Are you coming?  --> ['Are', 'you', 'coming']
 
 '''
