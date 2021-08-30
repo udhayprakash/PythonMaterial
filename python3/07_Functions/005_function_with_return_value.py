@@ -12,9 +12,9 @@ NOTE: return is the last statement in function execution
 def addition(n1, n2):
     result = n1 + n2
     # return
-    # return 'None'
-    # return 'Hello world'
-    # print('12312123')
+    # return "None"
+    # return "Hello world"
+    # print(result)
     # return result
     # return 123
     # return 123.
@@ -26,10 +26,13 @@ def addition(n1, n2):
     return 12 - 123 * 23 / 3 // 23
 
 
-# NOTE:
-# 1. By default, function return is None
 # Function call
 addition(12, 13)
 
 answer = addition(12, 13)
 print(type(answer), answer)
+
+# NOTE:
+# 1. By default, function return is None
+# 2. return is the last execting statement in a function
+

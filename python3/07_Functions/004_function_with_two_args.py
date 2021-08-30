@@ -6,23 +6,30 @@ Purpose: Functions Demo
 """
 
 # Function Definition
-
-
 def hello(name, age):
     print(f"{name}'s age is {age}")
 
-# Function call
+# Function Call
 # hello()
 # TypeError: hello() missing 2 required positional arguments: 'name' and 'age'
 
-# hello('SUresh')
+# hello('sushmitha')
 # TypeError: hello() missing 1 required positional argument: 'age'
 
+# hello(27)
+# TypeError: hello() missing 1 required positional argument: 'age'
 
 print('\ncall By position')
-hello('SUresh', 34)
-hello(34, 'SUresh')
+hello('sushmitha', 27)
+hello(27, 'sushmitha')
 
 print('\ncall By keyword args')
-hello(name='Suresh', age=34)
-hello(age=34, name='Suresh')
+hello(name='sushmitha', age=27)
+hello(age=27, name='sushmitha')
+
+
+# hello('sushmitha', 27, 'asd')
+# TypeError: hello() takes 2 positional arguments but 3 were given
+
+# hello(name='sushmitha', age=27, salary=213312)
+# TypeError: hello() got an unexpected keyword argument 'salary'

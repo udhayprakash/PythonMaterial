@@ -9,7 +9,6 @@ Purpose: Functions Demo
 
     Function with no arguments and no return value
 """
-
 # Method 1
 n = 9
 binomial_expr = n ** 2 + 3 * n + 3
@@ -22,21 +21,21 @@ print(binomial_expr)
 n = -0.98798
 binomial_expr = n ** 2 + 3 * n + 3
 print(binomial_expr)
-
+print()
 
 # Method 2
-print()
 def binomial_expression(x):
-    print(x ** 2 + 3 * x + 3)
+    binomial_expr = x ** 2 + 3 * x + 3
+    print(binomial_expr)
 
 binomial_expression(9)
 binomial_expression(34)
 binomial_expression(-0.98798)
+print()
 
-
+#============================================
 # Example 2 
 # Method 1
-print()
 lower_bound = 0
 upper_bound = 10
 even_nums = []
@@ -53,8 +52,7 @@ for i in range(lower_bound, upper_bound):
         even_nums.append(i)
 print(even_nums)
 
-
-# Method 2
+# Method 2 - using functions
 def get_even_nums(min_val, max_val):
     even_nums = []
     for i in range(min_val, max_val):
