@@ -21,6 +21,8 @@ print()
 
 group3 = (True, False)
 print(list(zip(group1, group2, group3)))
+# print(dict(zip(group1, group2, group3)))
+# ValueError: dictionary update sequence element #0 has length 3; 2 is required
 
 
 print(list(
@@ -39,10 +41,10 @@ print(list(
 print(list(
     map(lambda x, y: (x, y), (1, 2, 3), ['a', 'b'])
 ))
-print()
-
 
 # ----------------------------
+
+
 def is_positive(num):
     return True if num >= 0 else False
 
@@ -72,5 +74,6 @@ print(list(
 print(list(
     map(lambda ch: chr(ord(ch)+3), 'Python')
 ))
-
-print(''.join(map(lambda ch: chr(ord(ch) + 3), 'Python')))
+print(
+    ''.join(map(lambda ch: chr(ord(ch)+3), 'Python'))
+)

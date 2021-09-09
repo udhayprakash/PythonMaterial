@@ -22,7 +22,6 @@ print(type(double), type(dbl))
 print(f'sys.getsizeof(double):{sys.getsizeof(double)}')
 print(f'sys.getsizeof(dbl)   :{sys.getsizeof(dbl)}')
 print()
-
 # ------------------------------------
 def binomial_expression(n):
     return n ** 2 + 2 * n - 6
@@ -30,14 +29,13 @@ def binomial_expression(n):
 
 print(f'binomial_expression(10) :{binomial_expression(10)}')
 
-binexp = lambda n: n ** 2 + 2 * n - 6
+binexp  = lambda n: n ** 2 + 2 * n - 6
 print(f'binexp(10)              :{binexp(10)}')
 print()
 
 # -----------------------------------------------
 def hello(first_name, last_name):
     return f'Hello {first_name} {last_name} !!!'
-
 
 h = lambda fn, ln: f'Hello {fn} {ln} !!!'
 
@@ -52,7 +50,6 @@ def test_evenness(num):
     return 'even' if num % 2 == 0 else 'odd'
 
 tevl = lambda num: 'even' if num % 2 == 0 else 'odd'
-
 assert test_evenness(222) == tevl(222)
 assert test_evenness(123) == tevl(123)
 assert test_evenness(123) == (lambda num: 'even' if num % 2 == 0 else 'odd')(123)
@@ -71,9 +68,9 @@ assert get_index_of(my_tuple, 56) == get_index_l(my_tuple, 56)
 # ---------------------------------------------------------------
 def wish(message):
     # return message
-    return lambda name: message.upper() + name
+    return lambda name: message.upper() + " " + name
+
 
 greet = wish('Happy Birthday')
-
 print(greet)
-print(greet('Joe'))
+print(greet('Sushmitha'))

@@ -15,24 +15,29 @@ print(list(map(lambda x: x *2, [1, 2, 3, 4])))
 
 print(list(map(lambda x, y: x + y, [1, 2, 3, 4], (11, 22, 33))))
 print(list(map(lambda x, y: x + y, 'abcd', 'zyx')))
-# print(list(map(lambda x, y, z: x + y + z, 'abcd', 'zyx', [1, 2, 3])))
+# print(list(map(lambda x, y, z: x + y, 'abcd', 'zyx', [1, 2, 3])))
 # TypeError: can only concatenate str (not "int") to str
 
 print(list(map(lambda x, y, z: x + y, 'abcd', 'zyx', [1, 2, 3])))
 print(list(map(lambda x, y, z: x + y + str(z), 'abcd', 'zyx', [1, 2, 3])))
-
-
-
-print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))  # (((1+2)+3)+4)
-# NOTE: reduce() will take a single iterable only
-
-print(reduce(lambda x, y: x * y, [1, 2, 3, 4])) # factorial(4)
-print(reduce(lambda x, y: x * y, range(1, 4+1))) # factorial(4)
 print()
 
-print(reduce(lambda x, y: x ** y, [1, 2, 3, 4]))
-print(reduce(lambda x, y: x ** y, [2, 3, 4]))
+print(reduce(lambda x, y: x + y, [1, 2, 3, 4]))# (((1+2)+3)+4)
+# NOTE: reduce() will take a single iterable only
+print(
+    reduce(lambda x, y: x *y, [1, 2, 3, 4]) # factorial(4)
+)
+print(
+    reduce(lambda x, y: x *y, range(1, 4+1)) # factorial(4)
+)
+print()
 
+print(
+    reduce(lambda x, y: x ** y, [1, 2, 3, 4])
+)
+print(
+    reduce(lambda x, y: x ** y, [2, 3, 4])
+)
 # -----------------------------------------------------------
 def my_factorial(given_num):
     result = 1
@@ -49,10 +54,13 @@ print()
 
 # -------------------------------------------------------------
 import operator
+# print(dir(operator))
+
 print(reduce(lambda a,b: a+b, [1, 3, 5, 6, 2]))
 print(reduce(operator.add, [1, 3, 5, 6, 2]))
 
 print(reduce(operator.mul, [1, 3, 5, 6, 2]))
+
 
 mystrings = ('I', 'am', 'confident', 'about', 'myself')
 print(reduce(operator.add, mystrings))
@@ -66,6 +74,7 @@ import itertools
 print(reduce(lambda p,q: p+q, [1, 3, 5, 6, 2]))  # 17
 print(reduce(operator.add, [1, 3, 5, 6, 2]))    # 17
 print(list(itertools.accumulate([1, 3, 5, 6, 2], lambda x, y: x + y)))  # [1, 4, 9, 15, 17 ]
+print()
 
 
 """

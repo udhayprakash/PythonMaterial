@@ -10,7 +10,7 @@ Function Overwriting
 
 Default Arguments
 
-    mutable default arguments and meory leakage
+    mutable default arguments and memory leakage
 
 Variadic Functions 
     
@@ -39,7 +39,8 @@ Higher-Order Functions
 Partial Functions 
 
 Inner Functions 
-
+    global vs nonlocal
+    
 Closures
 
 Decorators 
