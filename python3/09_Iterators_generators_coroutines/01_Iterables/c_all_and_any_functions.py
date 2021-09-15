@@ -33,7 +33,6 @@ True
 >>> bool('')
 False
 '''
-
 # all() -> True if bool(ech_element) is True
 my_list = [1, 2, 3, 4, 6, 0, 6, 7]
 for i in my_list:
@@ -47,6 +46,7 @@ else:
 
 print(my_list, result)
 print(my_list, all(my_list))
+
 
 # any() -> True if bool(atleast one element) is True
 print()
@@ -63,6 +63,7 @@ print(my_list, result)
 print(my_list, any(my_list))
 
 
+
 # ------------------
 # list
 print()
@@ -75,8 +76,10 @@ print(any([0, 0, 0, 1]))     # True
 
 print()
 print(all([None, 1, 2, 3]))  # False
-print(any([None, 1, 2, 3]))  # False
+print(any([None, 1, 2, 3]))  # True
 
 print()
-print('python', all('python'))
-print('pyt hon', all('pyt hon'))
+print('python', all('python'))  # True
+print('pyt hon', all('pyt hon')) # True
+print(f'{bool(" ") =}')
+print(f'{bool("")  =}')

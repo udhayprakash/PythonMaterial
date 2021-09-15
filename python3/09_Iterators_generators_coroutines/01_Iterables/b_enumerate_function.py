@@ -5,8 +5,10 @@ Purpose: Iterating and using enumerate()
 """
 my_string = 'Program'
 
+count = 0
 for ech_chr in my_string:
-    print(ech_chr)
+    count += 1
+    print(count, ech_chr)
 
 print()
 for ech_chr in enumerate(my_string):

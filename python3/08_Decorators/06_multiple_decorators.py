@@ -14,6 +14,7 @@ def time_taken(func):
 
     return inner
 
+
 def print_function(func):
     def inner(*args, **kwargs):
         print(f'\n\n{func.__name__} function - start ')
@@ -23,13 +24,17 @@ def print_function(func):
 
     return inner
 
+
 @time_taken
 @print_function
 def my_func(num):
-    for i in range(num):
+    for _ in range(num):
         pass
     print(f'\nfor {num} numbers')
+
 
 my_func(78)
 my_func(900)
 my_func(9000)
+
+# python execution order: top to bottom; left to right
