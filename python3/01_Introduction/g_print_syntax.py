@@ -2,7 +2,7 @@
 """
 Purpose: print() function syntax and usage
     Escapes Sequences
-        - characters whose presence is felt, but they were are printed
+        - characters whose presence is felt, but they were not printed
         \t - tab space
         \n - new line
         \b - overwrites previous character

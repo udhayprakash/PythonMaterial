@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Purpose: Grocery Store 
+Purpose: Grocery Store
 
-    Item       cost         
+    Item       cost
     ------------------------
-    rice        10/kg       
-    wheat       34/kg       
+    rice        10/kg
+    wheat       34/kg
 
 Algorithm
 ----------
 Step 1: Get the cost of items into variables
 Step 2: Get the quantity of items from the user(in run time)
 
-NOTE: input() 
+NOTE: input()
         -> to get value in run-time
         -> will give any input as string only
 """
@@ -29,7 +29,6 @@ print('Qty of Rice  :', qty_of_rice, type(qty_of_rice))
 # qty_of_wheat = int(qty_of_wheat)
 
 qty_of_wheat = int(input('Enter Qty. of Wheat(in Kgs):'))
-
 print('Qty of Wheat :', qty_of_wheat, type(qty_of_wheat))
 
 # Selling Price Computation
