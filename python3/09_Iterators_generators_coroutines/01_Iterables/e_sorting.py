@@ -5,6 +5,7 @@ Purpose: sorted()
 
 student_tuples = [
     ('Ramesh', 'A', 15),
+    ('Ganesh', 'C', 3),
     ('Suresh', 'B', 12),
     ('Naresh', 'B', 10),
 ]   #  0        1   2
@@ -25,12 +26,13 @@ print(sorted(student_tuples, key=lambda x: x[1]))
 print()
 print(sorted(student_tuples, key=lambda x: (x[1], x[2])))
 
+
 import operator
+# print(dir(operator))
 print(sorted(student_tuples, key = operator.itemgetter(1, 2)))
 
 student_tuples.sort(key = operator.itemgetter(1, 2))
 print(student_tuples)
-
 
 # ----------------------------------------------------
 class Student:
@@ -48,6 +50,7 @@ student_objects = [
     Student('jane', 'B', 12),
     Student('dave', 'B', 10),
 ]
+
 
 sorted(student_objects, key=lambda student: student.age)  # sort by age
 # [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
