@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Importance and usage of multiple quotes
 """
