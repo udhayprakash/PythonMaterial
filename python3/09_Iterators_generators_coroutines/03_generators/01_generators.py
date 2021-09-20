@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Generators
 
@@ -26,10 +26,10 @@ def my_generator():
     yield 333
     print('yielding 444')
     yield 444
+    return "No MORE VALUES"
 
 result = my_generator()
 print(type(result), result)
-
 
 # Execution starts below
 res1 = next(result)  # 111
@@ -48,6 +48,7 @@ try:
     res1 = next(result)  # StopIteration
 except StopIteration as ex:
     print(repr(ex))
+
 
 for ech in result:
     print(ech)
