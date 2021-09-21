@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-Purpose: Infinite reception
+Purpose: 
 """
-def my_coroutine():
-    while True:
+def my_coroutine(count=5):
+    for i in range(count):
         received = yield 1234   # values will be received here
         print(f'Received :{received}')
 
 
 # Step 1: creating the generator
-it = my_coroutine()
+it = my_coroutine(5)
 
 # Step 2: Prime the coroutine
 print(f'{next(it) =}')  

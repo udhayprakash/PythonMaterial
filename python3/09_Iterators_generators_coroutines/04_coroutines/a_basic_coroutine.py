@@ -1,63 +1,61 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
 Purpose: Coroutines
     - pep-0342
     - generators are data producers
     - coroutines are data consumers
-
+    
     - Coroutines consume values using a (yield)
 
-valid syntax:
-    x = yield 42
-    x = yield
-    x = 12 + (yield 42)
-    x = 12 + (yield)
-    foo(yield 42)
-    foo(yield)
-
-invalid syntax:
-    x = 12 + yield 42
-    x = 12 + yield
-    foo(yield 42, 12)
-    foo(yield, 12)
 """
+def hello():  # -- generator
+    # print("Hello world")
+    # return "Hello world"
+    yield "Hello world"
 
+result = hello()
+print(f'{type(result)} {result}')
+print(f'{next(result) = }')
 
-def hello():
-    # print('Hello world')
-    # return 'Hello world'
-    # yield 'Hello world'
+# ------------------------------
+def hello():  # coroutine
+    value = yield "Hello world"
+    yield value
+
+result = hello()
+print(f'{type(result)} {result}')
+print(f'{next(result) = }')
+
+# ------------------------------
+def hello():  # coroutine
     value = yield
     yield value
 
+# NOTE: Default initial yield is None
 
 result = hello()
-print(f'{result =}')
+print(f'{type(result)} {result}')
+print(f'{next(result) = }')
+print() 
 
-print(f'{next(result) =}')
-
-
-# ---------------------------
-print()
-
-
-def hello1():
-    value = yield 123232
+# ------------------------------
+def hello():  # coroutine
+    value = yield 123123
     # yield value
     yield f'Passed value is {value}'
 
-
 # NOTE: Default initial yield is None
-result1 = hello1()
+
+result = hello()
+print(f'{type(result)} {result}')
 
 # All coroutines must be "primed" by first calling .next() (or send(None))
-print(f'{next(result1) =}')
+print(f'{next(result) = }')
 
-print(f"{result1.send('World!')  =}")
-
+print(f'{result.send("world") = }')
 
 try:
-    print(f"{result1.send('Python')  =}")
+    print(f"{result.send('Python')  =}")
 except StopIteration:
     print('No more yields to send !!!')

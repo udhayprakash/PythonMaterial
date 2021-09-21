@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+Purpose: chaining the coroutines
+"""
 def producer(sentence, next_coroutine):
     ''' 
     Producer which just split strings and 
