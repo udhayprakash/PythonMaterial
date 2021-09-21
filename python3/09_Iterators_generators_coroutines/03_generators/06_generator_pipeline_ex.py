@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: 
     Problem statement 
@@ -12,28 +12,35 @@ def even_filter(nums):
     print('even_filter - start')
     for num in nums:
         if num % 2 == 0:
-            yield num   # 2, 4, 6, ...
-
+            yield num  # 2, 4, 6, 8, 10
 
 def multiply_by_three(nums):
     print('multiply_by_three - start')
     for num in nums:
-        yield num * 3   # 6, 12, 18, ....
-
+        yield num * 3  # 6, 12, 18, 24, 30
 
 def convert_to_string(nums):
     print('convert_to_string - start')
     for num in nums:
-        yield '\tThe Number: %s' % num    
+        yield f'Number:{num}'
 
 
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-pipeline = convert_to_string(multiply_by_three(even_filter(nums)))
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print(pipeline)  # <generator object convert_to_string at 0x000002BD57CF2F20>
+# problem
+print(list(even_filter(numbers)))
+print(list(multiply_by_three(numbers)))
+print(list(convert_to_string(numbers)))
 
-print(next(pipeline))
-print(next(pipeline))
+# solution
+pipeline = convert_to_string(
+            multiply_by_three(even_filter(numbers))
+)
+
+print(pipeline)
+
+print(f'{next(pipeline) = }')
+
 
 for each in pipeline:
     print(each)

@@ -9,6 +9,8 @@ Purpose: Generator objects
     - State suspension and on-demand computation
 """
 # definition
+
+
 def foo():
     print("Start the function!")
     for i in range(3):
@@ -21,7 +23,7 @@ def foo():
     # return None
 
 
-# call 
+# call
 f = foo()
 print('f', f)
 print(dir(f))

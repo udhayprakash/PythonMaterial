@@ -6,6 +6,8 @@ Purpose: Fibonacci Series
     - 0, 1, 1, 2, 3, 5, 8, 13, ...
 """
 # Method 1
+
+
 def fib_series(num):
     a, b = 0, 1
     if num < 0:
@@ -14,6 +16,7 @@ def fib_series(num):
         for i in range(0, num):
             yield "{}:{:3}".format(i, a)
             a, b = b, a + b
+
 
 result = fib_series(10)
 print(result)
@@ -27,6 +30,8 @@ print(list(fib_series(15)))
 print()
 print(tuple(fib_series(-3)))
 
+
+
 # Method 2
 print()
 def fib_series2(num):
@@ -38,4 +43,3 @@ def fib_series2(num):
         yield curr
         curr, prev = curr + prev, curr
 print(list(fib_series2(10)))
-

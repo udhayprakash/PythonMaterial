@@ -1,33 +1,39 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+"""
+Purpose: Generators
+"""
 
 def simple_gen():
     yield "Hello"
-    yield "World"
+    yield "world"
 
 gen = simple_gen()
-print(next(gen))
-print(next(gen))
+print(f'{gen            = }')
+print(f'{next(gen)      = }')
+print(f'{gen.__next__() = }')
+print()
 
-# -----------------------
-def count(n):
-    print("Stating to count!")
+# ------------------------------
+def countDown(n):
+    print("YOur count Down starts now!")
     i = 0
     while i < n:
+        print(f"yielding {i}")
         yield i
-        # print(i)
         i += 1
-    print('$', i)
-    # return i
+    print("CountDOWN completed")
+    return "NO more values"
 
 
 # PEP8 strongly discourages usage of yield and
 # retun, in same function
 
-c = count(9)
-print(c)
+c = countDown(10)
+print(f"{c              = }")
+print(f"{next(c)        = }")
 
-print('next(c) ', next(c))
 
-print('looping')
 for val in c:
-    print(val)
+    print(f'{val = }')
+
+# print(f"{c.__next__()   = }")
