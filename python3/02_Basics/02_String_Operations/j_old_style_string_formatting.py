@@ -99,6 +99,9 @@ print('%9.3f' % math.pi)  #     3.142
 print()
 print('lucky My lucky number is %d only.' % 786)
 print('pi value is %f!!!!!!!!!!' % 3.1416)
+print('pi value is %10f!!!!!!!!!!' % 3.1416)
+print('pi value is %10.3f!!!!!!!!!!' % 3.1416)
+
 print('my name is %s - %s.' % ('Udhay', 'Prakash'))
 print()
 
