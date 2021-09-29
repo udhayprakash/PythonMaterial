@@ -35,6 +35,8 @@ print("True      ", True)
 print("not True  ", not True)
 print("False     ", False)
 print("not False ", not False)
+print(f"{not not False = }")
+print(f"{not not not False = }")
 print()
 
 # --------------------

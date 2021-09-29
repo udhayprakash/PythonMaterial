@@ -49,3 +49,5 @@ else:
     print(f'{number} is ODD')
 
 # Assignment: Generate even numbers between 45 & 137
+# loop values between limits, test eveness for each number
+# and display , if it is even 

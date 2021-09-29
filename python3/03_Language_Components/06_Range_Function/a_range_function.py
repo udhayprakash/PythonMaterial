@@ -26,7 +26,7 @@ print(type(values), values)  # <class 'range'> range(0,9)
 values = range(0, 9)
 print(type(values), values)  # <class 'range'> range(0,9)
 
-# range(INITIAL_VALUE, FINAL_VALUE, SETP) => range(0, 9, 1)
+# range(INITIAL_VALUE, FINAL_VALUE, STEP) => range(0, 9, 1)
 values = range(0, 9, 1)
 print(type(values), values)  # <class 'range'> range(0,9)
 
