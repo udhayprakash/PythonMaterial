@@ -30,53 +30,53 @@ if units_consumed < 0:
     print('INVALID INPUT')
 else:
     amount = 0
-    remaing_units = units_consumed
-    if remaing_units > 250:
-        slab_units = remaing_units - 250
+    remaining_unitsremaining_units = units_consumed
+    if remaining_units > 250:
+        slab_units = remaining_units - 250
         amount += slab_units * 10.0
 
         print(f''' 
-            units consumed  : {remaing_units}
+            units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
-        remaing_units -= slab_units
+        remaining_units -= slab_units
 
-    if 150 < remaing_units <= 250:
-        slab_units = remaing_units - 150
+    if 150 < remaining_units <= 250:
+        slab_units = remaining_units - 150
         amount += slab_units * 7.0
 
         print(f''' 
-            units consumed  : {remaing_units}
+            units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
-        remaing_units -= slab_units
+        remaining_units -= slab_units
 
-    if 100 < remaing_units <= 150:
-        slab_units = remaing_units - 100
+    if 100 < remaining_units <= 150:
+        slab_units = remaining_units - 100
         amount += slab_units * 4.0
 
         print(f''' 
-            units consumed  : {remaing_units}
+            units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
-        remaing_units -= slab_units
+        remaining_units -= slab_units
 
-    if 60 < remaing_units <= 100:
-        slab_units = remaing_units - 60
+    if 60 < remaining_units <= 100:
+        slab_units = remaining_units - 60
         amount += slab_units * 2.0
 
         print(f''' 
-            units consumed  : {remaing_units}
+            units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
-        remaing_units -= slab_units
+        remaining_units -= slab_units
 
-    if 0 <= remaing_units <= 60:
+    if 0 <= remaining_units <= 60:
         slab_units = 60  # minimum charge
         amount += slab_units * 1.25
 
         print(f''' 
-            units consumed  : {remaing_units}
+            units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
 

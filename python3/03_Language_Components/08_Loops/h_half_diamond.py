@@ -4,16 +4,17 @@ Purpose: To display the asterisk's in a half-diamond pattern
 """
 # half-diamond
 for num in range(0, 10, 1):
-    print(num * '*')
+    print(num * '*')  # string repetition operator
 
-for num in range(10, 0, -1):
+for num in range(9, -1, -1):
     print(num * '*')
 
 for num in range(0, 10, 1):
-    print((10 - num) * ' ' + num * '*')
+    print((9 - num) * ' ' + num * '*')
 
-for num in range(10, 0, -1):
-    print((10 - num) * ' ' + num * '*')
+for num in range(9, -1, -1):
+    print((9 - num) * ' ' + num * '*')
+
 
 # half-diamond using while
 i = 0
@@ -21,20 +22,23 @@ while i < 10:
     i += 1
     print(i * '*')
 
+print(f'{i  = }')
 # i = 10
 while i > 0:
     i -= 1
     print(i * '*')
 
+
 i = 0
 while i < 10:
     i += 1
-    print((10 - i) * ' ' + i * '*')
+    print((9 - i) * ' ' + i * '*')
 
 # i = 10
 while i > 0:
     i -= 1
-    print((10 - i) * ' ' + i * '*')
+    print((9 - i) * ' ' + i * '*')
+
 
 '''
 Assignment:full diamond problem
