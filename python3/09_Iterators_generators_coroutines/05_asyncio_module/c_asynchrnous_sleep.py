@@ -1,4 +1,4 @@
-# /usr/bin/python
+# /usr/bin/python3
 """
 Purpose: asyncio
     working from python 3.7+

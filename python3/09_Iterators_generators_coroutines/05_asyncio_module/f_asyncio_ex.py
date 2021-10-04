@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: asyncio
     asynchrnous functions should be called with await, 
@@ -21,6 +21,8 @@ async def main():
     # Let's do it differently now and await it:
     print(await nested())  # will print "42".
 
+    result = await nested()
+    print(f'{result =}')
 
 asyncio.run(main())
 

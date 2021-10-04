@@ -28,11 +28,12 @@ async def asynchronous_hello():
     await asyncio.sleep(2)
     print('World')
 
-# main()
-# a_asyncio_ex.py:21: RuntimeWarning: coroutine 'main' was never awaited
+# asynchronous_hello()
+# RuntimeWarning: coroutine 'asynchronous_hello' was never awaited
 
 print()
 asyncio.run(asynchronous_hello())
+
 
 
 # stat1 - 2s
@@ -41,3 +42,4 @@ asyncio.run(asynchronous_hello())
 # stat4 - 2s
 # ----------
 # total - 7s  - blocking code - python
+# total - 2s  - non-blocking code - python-asyncio

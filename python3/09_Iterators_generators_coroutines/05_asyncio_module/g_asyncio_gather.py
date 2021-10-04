@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: asyncio
     asyncio.gather: takes a sequence of awaitables, 
@@ -20,3 +20,15 @@ async def main():
 
 
 asyncio.run(main())
+
+'''
+1s -
+2s --
+3s ---
+
+3s ---
+2s --
+1s -
+
+
+'''

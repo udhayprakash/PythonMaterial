@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: asyncio
     asyncio.wait_for: wait for a single awaitable, 
@@ -8,7 +8,8 @@ import asyncio
 
 
 async def foo(n):
-    await asyncio.sleep(10)
+    # await asyncio.sleep(5)
+    await asyncio.sleep(7)
     print(f"n: {n}!")
 
 
