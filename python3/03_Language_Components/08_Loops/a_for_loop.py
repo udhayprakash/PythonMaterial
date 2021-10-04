@@ -53,17 +53,35 @@ for each in 'None':
 print()
 
 # -----------
-count = 0
-for each_chr in 'Python':
-    print(count, each_chr)
-    count += 1
+#!/usr/bin/python3
+"""
+Purpose: for loop
 
-# enumerate() - builtin function to get the
-#               loop index
-for each_chr in enumerate('Python'):
+    Two types of for loops in any language:
+        1. for (int a = 0; a < 10 ; a ++)       ==> This is NOT VALID in python
+        2. for a in range(0, 10, 1)             ==> This is the only valid for loop in python
+
+NOTE: for loop can be applied only on ITERABLE OBJECT
+    non-iterable objects - int, float, None, bool(True/False)
+    iterable objects     - string, range, list, tuple, set, dictionary, iterators, generators
+"""
+loop_count = 0
+for each_chr in 'Python':
+    print(loop_count, each_chr)
+    loop_count += 1
+
+# enumerate() - builtin function to get the   loop index
+for each_chr in 'Python':
     print(each_chr)
 
+for each_pair in enumerate('Python'):
+    print(each_pair, type(each_pair))
+
 # unpacking
+num1, num2 = 123, 345
+print(f'{num1 = }')
+print(f'{num2 = }')
+
 for loop_index, each_chr in enumerate('Python'):
     # print(loop_index, each_chr)
     print(f'At position {loop_index}, character is {each_chr}')
@@ -71,14 +89,14 @@ print()
 
 # To get the loop index with an offset
 for loop_index, each_chr in enumerate('Python', -3):
-    print(f'At position {loop_index}, character is {each_chr}')
+    print(f'At position {loop_index:2}, character is {each_chr}')
 print()
 
-
-for loop_index, each_chr in enumerate('Python', 7):
-    print(f'At position {loop_index}, character is {each_chr}')
+for loop_index, each_chr in enumerate('Python', 77):
+    print(f'At position {loop_index:2}, character is {each_chr}')
 print()
 
+# ----
 # lists
 for each_ele in [11, 22, 33, 44, 55]:
     print(each_ele, end=', ')
@@ -91,6 +109,7 @@ print()
 for loop_index, each_ele in enumerate([11, 22, 33, 44, 55]):
     print(f'{loop_index} ===> {each_ele}')
 print()
+
 
 for loop_index, each_ele in enumerate([11, 22, 33, 44, 55], -50):
     print(f'{loop_index} ===> {each_ele}')

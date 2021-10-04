@@ -28,5 +28,5 @@ print('non-zero' if num1 else 'zero')
 print('non-zero' if not num1 == 0 else 'zero')
 
 
-# Javascript: conditon: success_case, failure_case
+# Javascript: conditIon: success_case, failure_case
 # Python    : success_case if condition else failure_case

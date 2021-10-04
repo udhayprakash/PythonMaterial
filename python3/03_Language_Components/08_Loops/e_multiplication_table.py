@@ -2,7 +2,6 @@
 """
 Purpose: Multiplication Table Generation
 """
-
 # Two Independent while loops
 first = 0
 while first < 5:
@@ -42,7 +41,8 @@ while first < MAX_TABLE:
         # F-strings
         # print(f'{first} * {second} = {first * second}')
         print(f'{first:2} * {second:2} = {first * second:3}')
-    print()
+
+    print('-' * 15)  # String repetition
 
 '''
 Assignment
@@ -76,6 +76,6 @@ Assignment
 01 * 09 = 009 | 02 * 09 = 018 | 03 * 09 = 027 | 04 * 09 = 036 | 05 * 09 = 045 | 06 * 09 = 054 | 07 * 09 = 063 | 08 * 09 = 072 | 09 * 09 = 081 | 10 * 09 = 090
 01 * 10 = 010 | 02 * 10 = 020 | 03 * 10 = 030 | 04 * 10 = 040 | 05 * 10 = 050 | 06 * 10 = 060 | 07 * 10 = 070 | 08 * 10 = 080 | 09 * 10 = 090 | 10 * 10 = 100
 
-HINTS: string formatting, str.zfill(), while/for loop
+HINTS: string formatting, str.zfill()/{:02}, while/for loop
 
 '''
