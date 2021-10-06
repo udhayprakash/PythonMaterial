@@ -13,8 +13,9 @@ try:
     # 100 / 0       # ZeroDivisionError
 
     num2 = 200
+    # num3 = int('123.23')  # ValueError
     num3 = int('123')
-    expr = num2 + 100 + 123 + num3 - 2321 / 0
+    expr = num2 + 100 + 123 + num3 - 2321 / 10
 except Exception as e:
     print(f'{e=}')
 else:
@@ -47,5 +48,5 @@ e=ZeroDivisionError('division by zero')
 """
 
 
-# Assignment 
-# Using input() and eval(), take some expression in run time and solve it 
+# Assignment
+# Using input() and eval(), take some expression in run time and solve it

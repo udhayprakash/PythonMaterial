@@ -2,7 +2,7 @@
 """
 Purpose: Using Custom Exception
 """
-# # Method 1 - stop when exception araises
+# # Method 1 - stop when exception is raised
 # try:
 #     votes = 0
 #     i = 0
@@ -17,6 +17,9 @@ Purpose: Using Custom Exception
 #         i += 1
 # except Exception as ex:
 #     print(f'{ex=}')
+#
+# print(f"Total Eligible Voters: {votes}")
+
 
 
 # Method 2 - skip the loop with exception

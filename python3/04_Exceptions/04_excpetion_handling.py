@@ -1,9 +1,20 @@
 #!/usr/bin/python3
 """
-Purpose: Additon operation, with exception handling
+Purpose: Addition operation, with exception handling
+    Importance of ELSe block 
 """
+# # Case 1 - without exception handling
 # num1= 1000
 # num2 = 2121
+#
+# result = num1 + num2
+# print(f'{result = }')  # result = 3121
+
+# num1= 1000
+# num2 = '2121'
+#
+# result = num1 + num2
+# print(f'{result = }')  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 try:
     num1 = int(input('Enter an integer:'))

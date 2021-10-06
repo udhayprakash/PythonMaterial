@@ -36,10 +36,10 @@ In [6]: name = 'sometihing'
 In [7]: eval('name')
 Out[7]: 'sometihing'
 """
-try: 
+try:
     num1 = eval(input('Enter an integer:'))
     num2 = eval(input('Enter an integer:'))
-    division = num1 / num2 
+    division = num1 / num2
 # except ValueError as ve:
 #     # print(f'{ve =}')
 #     print('Please enter integers only')
@@ -49,12 +49,12 @@ except ZeroDivisionError as ze:
 except TypeError as te:
     print(f'te = {te}')
 except Exception as ex:
-    print(f'Unhandled Error: {ex}')
+    print(f'Unhandled Error: {repr(ex)}')
 else:
     print(f'{division = }')
 
-# NOTE: Though we handle with specific exception based on seen errors, 
-# It is always recommended to have absolute(unmbrella) exception to 
-# handle any unknown runtime errors. 
+# NOTE: Though we handle with specific exception based on seen errors,
+# It is always recommended to have absolute(umbrella) exception to
+# handle any unknown runtime errors.
 
-# NOTE: exception handling should be defined from lower to higher heirarchy.
+# NOTE: exception handling should be defined from lower to higher hierarchy.

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Exception Handling 
+Purpose: Exception Handling
 """
 try:
     num1 = int(input('Enter an integer:'))
