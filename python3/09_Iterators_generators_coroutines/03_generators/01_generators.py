@@ -16,6 +16,7 @@ yield - keyword in python
 
 PEP8 - dont use both return & yield in same function
 
+Generators follow the "STATE SUSPENSION" 
 """
 def my_generator():
     print(' I am in the function')
