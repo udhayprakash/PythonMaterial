@@ -1,8 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: sys module 
 """
 import sys 
+
+print(dir(sys))
 
 print(f''' 
     {sys.executable      =}
@@ -16,14 +18,12 @@ print(f'''
     {sys.dont_write_bytecode=}
 
     {sys.getallocatedblocks()       =}
-    {sys.getcheckinterval()         =}
     {sys.getdefaultencoding()       =}
     {sys.getfilesystemencodeerrors()=}
     {sys.getfilesystemencoding()    =}
     {sys.getprofile()               =}
     {sys.getswitchinterval()        =}
 
-    {sys.setcheckinterval           =}
     {sys.setprofile                 =}
     {sys.setswitchinterval          =}
 

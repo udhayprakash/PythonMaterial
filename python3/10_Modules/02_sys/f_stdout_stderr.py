@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: sys module 
 """
 import sys 
+
 print(f''' 
     {sys.stderr =}
     {sys.stdin  =}

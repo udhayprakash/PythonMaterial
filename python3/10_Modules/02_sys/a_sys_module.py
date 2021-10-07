@@ -1,9 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: sys module 
 """
 import sys 
-# print(dir(sys))
+print(dir(sys))
+
 
 print(f''' 
     {sys.winver             =}
@@ -17,6 +18,7 @@ print(f'''
 
     sys.copyright           =\n{sys.copyright}
 ''')
+
 
 # cpython -c      python.org
 # Jython  - Java  

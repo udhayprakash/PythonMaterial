@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: sys module 
 """
@@ -21,7 +21,8 @@ print(f'{var1 =}')
 var1 +=1
 print(f'{var1 =}')
 
-# sys.maxsize - depends on machine
+# NOTE: sys.maxsize - depends on machine
+
 
 # sys.maxunicode
 print(f'{ord("A")=}')
@@ -31,7 +32,7 @@ print(f'{chr(65) =}')
 #     print(f'{i =} {chr(i) =}')
 
 
-# for i in range(3500, 3700):
+# for i in range(1500, 2700):
 #     print(f'{i =} {chr(i) =}')
 
 print(f'{chr(1114111) =}')
@@ -40,6 +41,7 @@ try:
 except ValueError as ex:
     print(ex)
     print('YOu entered value exceeding sys.maxunicode')
+
 
 #    128  64   32  16  8 4  2 1
 # 14   0   0    0   0  1 1  1 0
