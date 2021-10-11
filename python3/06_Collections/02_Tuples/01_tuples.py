@@ -22,7 +22,7 @@ print('len(another_tuple) ', len(another_tuple))
 # to recognize it as tuple; else recognizes as individual element
 
 print()
-empty_tuple = tuple()  # ()
+empty_tuple = ()  # tuple()
 print('type(empty_tuple):', type(empty_tuple))
 print('len(empty_tuple) :', len(empty_tuple))
 

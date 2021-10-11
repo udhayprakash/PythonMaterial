@@ -5,6 +5,19 @@ Purpose: COPY PROBLEM
 
 Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
+# immutable object
+num1 = 123
+print('num1          ', num1, type(num1), id(num1))
+num2 = num1
+print('num2          ', num2, type(num2), id(num2))
+print()
+
+num2 = 999
+print('num1          ', num1, type(num1), id(num1))
+print('num2          ', num2, type(num2), id(num2))
+print()
+
+# Mutable object
 par_list = [11, 111, 1111]
 print('par_list      ', par_list, type(par_list), id(par_list))
 
@@ -16,6 +29,7 @@ print('par_list[2]   ', par_list[2])
 par_list[2] = 3333  # Substitution
 print('par_list[2]   ', par_list[2])
 print('par_list      ', par_list, type(par_list))
+
 
 # leakage problem
 print('hard_copy_list', hard_copy_list, type(hard_copy_list))
@@ -36,6 +50,7 @@ print('par_list       ', par_list, type(par_list), id(par_list))
 print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
 print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 print()
+
 
 print('soft_copy_list[0]', soft_copy_list[0])
 
@@ -63,7 +78,7 @@ print('new_list          ', new_list, type(new_list), id(new_list))
 print('new_softcopy_list ', new_softcopy_list, type(new_softcopy_list), id(new_softcopy_list))
 print('new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_deepcopy_list))
 
-# NOTE: 
+# NOTE:
 # 1. soft(shallow) copy is fast, but cant work more than one dimension
 # 2. deep copy is slow, but can work with objects of any number of dimensions
 '''
@@ -98,7 +113,7 @@ Take the values in run time
    1. push   - add an element
    2. pop    - delete last element
    3. status - stack size
-   
+
 -       -
 |       |
 |       |

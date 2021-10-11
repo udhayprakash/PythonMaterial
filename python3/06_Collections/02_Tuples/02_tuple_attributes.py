@@ -1,9 +1,17 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Tuple attributes
 """
 mytuple = (12, 5, 6, 8, (5,))
 print(dir(mytuple))
+
+# ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__',
+#  '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__',
+#  '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__',
+#  '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+#
+#  'count', 'index']
+
 
 print()
 print("len(mytuple)           =", len(mytuple))
@@ -24,6 +32,9 @@ print('mytuple                =', mytuple)
 print("mytuple.__mul__(3)     =", mytuple.__mul__(3))
 print('mytuple                =', mytuple)
 
+print(f'{mytuple  == (12, 5, 6, 8, (5,))     = }')
+print(f'{mytuple.__eq__((12, 5, 6, 8, (5,))) = }')
+
 print('\n Tuple Attributes excluding dunder methods')
 for each_attribute in dir(mytuple):
     if not each_attribute.startswith('__'):
@@ -43,5 +54,5 @@ print('mytuple.index(5)       =', mytuple.index(5))
 
 try:
     print('mytuple.index(55)      =', mytuple.index(55))
-except ValueError as ex: 
+except ValueError as ex:
     print(ex)
