@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 """
 Purpose: Dictionaries
-    - This is representation of the data strcuture 
-        - HashMap 
-    - Properties 
-        - reprsented using {} or dict()
+    - This is representation of the data structure
+        - HashMap
+    - Properties
+        - represented using {} or dict()
         - from python 3.6 onwards, the order of dict is maintained
             - In older versions, OrderedDict module should be used for the same
         - Any data type can be used for dict values
-        - dict keys should be immutables only 
+        - dict keys should be immutables only
 """
 from pprint import pprint
-alphabhets = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+alphabhets = {'b': 2, 'a': 1, 'c': 3, 'd': 4}
 print(alphabhets)
 
 '''
@@ -21,6 +22,7 @@ import OrderedDict
 alphabhets = OrderedDict.OrderedDict({'a': 1, 'b': 2, 'c': 3, 'd': 4})
 print(alphabhets)
 '''
+
 person_details = {
     'name': 'Gudo Van Russom',
     'age': 67,
@@ -37,7 +39,6 @@ person_details = {
     tuple([12, 23]): 'something'
 }
 print(person_details)
-
 pprint(person_details)
 pprint(person_details, indent=4)
 # NOTE:

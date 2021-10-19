@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
 Purpose: Dictionaries
-    Memory leakage issue 
+    Memory leakage issue
 """
 import copy
+
 signup_form = {
     'name': 'Udhay',
     'age': 31,

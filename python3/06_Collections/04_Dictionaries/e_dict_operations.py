@@ -26,7 +26,6 @@ python_dict = {
 }
 pprint(python_dict)
 
-
 # Dictionary concatenation
 # language + python_dict # is not possible with +
 
@@ -46,10 +45,11 @@ python_dict.update({
 })
 pprint(python_dict)
 
-
 # For deleting key-value pairs
+
 # print(f"{python_dict.pop() =}")
 # TypeError: pop expected at least 1 argument, got 0
+
 print(f"{python_dict.pop('maintainer') =}")
 print(python_dict)
 
@@ -67,7 +67,6 @@ print()
 print(f"{python_dict.popitem() =}")
 print(f"{python_dict.popitem() =}")
 print(python_dict)
-
 
 del python_dict['name']
 print(python_dict)
