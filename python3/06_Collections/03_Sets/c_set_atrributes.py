@@ -2,21 +2,36 @@
 """
 Purpose: Set Attributes
 """
+# only in Python 2.x , we have sets module
+# import sets
+# print(dir(sets)) # ModuleNotFoundError: No module named 'sets'
 import sys
 
 simple_set = {1, 2, 3}
 print(dir(simple_set))
+# ['__and__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__',
+#  '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__',
+#  '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__',
+#  '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__',
+#  '__str__', '__sub__', '__subclasshook__', '__xor__',
+#
+#  'add', 'clear', 'copy', 'difference', 'difference_update',
+#  'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove',
+#  'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
 
 assert simple_set.__contains__(2) == (2 in simple_set)
 assert simple_set.__contains__(6) == (6 in simple_set)
+print(f'{6 in simple_set =}')
 
-print(f'{simple_set.__sizeof__()   =}')  # python object
+print(f'\n{simple_set.__sizeof__()   =}')  # python object
 print(f'{sys.getsizeof(simple_set) =}')  # Along with c header
 print()
 
-print(f'{simple_set.__and__(1) =}')
-print(f'{simple_set.__and__({1}) =}')
+print(f'{simple_set.__and__(1) =}')  # NotImplemented
+print(f'{simple_set.__and__({1}) =}')  # {1}
 
+# __add__ will not change the original set
+print(f'{simple_set =}')
 
 for each_attribute in dir(simple_set):
     if not each_attribute.startswith('__'):
@@ -61,7 +76,6 @@ try:
 except TypeError:
     print('Only iterable objects can be used with set.update')
 
-
 simple_set.update((8, 88))
 print(f'{simple_set =}')
 
@@ -76,7 +90,6 @@ try:
 except TypeError:
     print('Inner element is a list')
 print(f'{simple_set =}')
-
 
 # Question
 try:
@@ -139,6 +152,7 @@ print('\n After simple_set.clear()')
 print(f'{simple_set =} {id(simple_set) =}')
 print(f'{new_set    =} {id(new_set)    =}')
 
-# Assignment 
-#  1. Try adding a string to both set.add & set.update & observe the difference
+# Assignment
+#  1. Try adding a string to both set.add & set.update &
+#  observe the difference
 #  'tomoto'

@@ -11,20 +11,25 @@ Purpose: Working with Sets
         - stores only immutable object - basic types, tuple, string
         - sets are mutable objects
 """
-print('\nEmpty set ')
-mydict = {}
-print(f'{type(mydict)} {mydict =}') # <class 'dict'> mydict ={}
+empty_list = []  # list()
+print(f'{type(empty_list)} {empty_list}')
 
-myset2 = set()
-print(f'{type(myset2)} {myset2 =}') # <class 'set'> myset2 ={}
+empty_tuple = ()  # tuple()
+print(f'{type(empty_tuple)} {empty_tuple}')
 
+empty_set = set()
+print(f'{type(empty_set)} {empty_set}')
 # NOTE: empty set should be defined with set()
+
+empty_dict = {}  # dict()
+print(f'{type(empty_dict)} {empty_dict}')
+
 
 print('\nSets with single element ')
 myset1 = {223}
 print(f'{type(myset1)} {myset1 =}')
 
-# Defining sets with some values 
+# Defining sets with some values
 s1 = {1, 2, 3}
 s2 = set([1, 2, 3])
 
@@ -36,5 +41,8 @@ assert s1 == s2
 myset = {11, 22, 33, 44}
 print('myset        :', myset)
 
-# myset[2] # TypeError: 'set' object is not subscriptable
-# myset[2:3]# TypeError: 'set' object is not subscriptable
+# sets cant be indexed
+# myset[2]  # TypeError: 'set' object is not subscriptable
+
+# sets cant be sliced too
+# myset[2:3] # TypeError: 'set' object is not subscriptable
