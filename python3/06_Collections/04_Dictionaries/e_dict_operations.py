@@ -75,3 +75,23 @@ del python_dict
 # print(python_dict)  NameError: name 'python_dict' is not defined
 
 # Question: del dict['key'] vs dict.pop('key')
+
+
+# Merging two dicts
+a = {'one': 1}
+b = {'one': 2, 'two': 2}
+
+c = {**a, **b}
+print(f'{c =}')
+
+# Python 3.9+
+d = a | b
+print(f'{d = }')
+
+print()
+print(f'{a = }')
+print(f'{b = }')
+
+a |= b
+print(f'{a = }')
+print(f'{b = }')

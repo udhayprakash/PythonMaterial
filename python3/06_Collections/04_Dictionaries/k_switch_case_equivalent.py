@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-Purpose: 
-    switch case is not implemented in python. 
+Purpose:
+    switch case is not implemented in python.
     This script focuses on work-around for it.
 
 pseudo-code:
-    1. Addition 
+    1. Addition
     2. Subtraction
     3. Multiplication
     4. Division
-    
+
 """
 choice = int(input('Enter choice[1, 2, 3, 4]:'))
 print('choice', choice, type(choice))
@@ -34,3 +34,7 @@ result_for_choice = {
 }
 # print(result_for_choice[choice])
 print(result_for_choice.get(choice, 'invalid choice'))
+
+# -------------------------------
+# PEP 636 -- Structural Pattern Matching: Tutorial -- from python 3.10
+# Ref - https://www.python.org/dev/peps/pep-0636/
