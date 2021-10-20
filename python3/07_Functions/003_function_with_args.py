@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Functions Demo
 
@@ -9,25 +9,28 @@ Purpose: Functions Demo
         2. by keyword arguments
 """
 
+
 def hello_word():
     print('Hello function is called')
 
+
 hello_word()
+
 
 # Function Definition
 def hello(name):
     print("Hello " + name)
 
 
-# Function Call 
-# hello()                     
+# Function Call
+# hello()
 # TypeError: hello() missing 1 required positional argument: 'name'
 
-hello('Python')    #---> call by positional arguments
+hello('Python')  # ---> call by positional arguments
 
-# hello('Python', 'program')  
+# hello('Python', 'program')
 # # TypeError: hello() takes 1 positional argument but 2 were given
 
-hello(name='python')   #-----> call by keyword arguments
+hello(name='python')  # -----> call by keyword arguments
 # hello(name1='python')   
 # # TypeError: hello() got an unexpected keyword argument 'name1'
