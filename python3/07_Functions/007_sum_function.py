@@ -2,6 +2,8 @@
 """
 Purpose: WAP to display the addition of given values
 """
+
+
 # Function definition
 
 
@@ -27,14 +29,13 @@ result = sum((10, 20, 30))
 print(f'result:{result}')
 
 result = sum((10, 20, 30), 0)
-print(f'result:{result}')        # 60
+print(f'result:{result}')  # 60
 
 result = sum((10, 20, 30), -10)
-print(f'result:{result}')        # 50
+print(f'result:{result}')  # 50
 
 result = sum((10, 20, 30), 3)
-print(f'result:{result}')        # 63
-
+print(f'result:{result}')  # 63
 
 result = sum((10, 20, 30, 50.))
 print(f'result:{result}')
@@ -56,11 +57,9 @@ print(f'result:{result}')
 # result = sum({10: 'a', 20: 'b', 30: 'c', 50.: 'd'}.values(), '')
 # TypeError: sum() can't sum strings [use ''.join(seq) instead]
 
-
 print(''.join(['a', 'b', 'c', 'd']))
 print(''.join(('a', 'b', 'c', 'd')))
 print(''.join({'a', 'b', 'c', 'd'}))
-
 
 # -------------------------------------------
 # Question: flattening the lists
@@ -71,7 +70,8 @@ flat_data = []
 for each in my_data:
     # print(each, type(each))
     # flat_data.append(each)
-    flat_data.extend(each)
+    # flat_data.extend(each)
+    flat_data += each
 
 print(f'{flat_data =}')
 
@@ -87,10 +87,16 @@ print(sum(my_data, ()))
 
 print()
 # my_data = [{1, 2}, {3, 4}, {5, 6}, {7, 8}]
-# print(sum(my_data, set()))
+# TypeError: unsupported operand type(s) for +: 'set' and 'set'
+
+
+# my_data = ((1, 2), [3, 4], (5, 6))
+# sum(my_data, ()) # TypeError: can only concatenate tuple (not "list") to tuple
+
 
 # my_data = ((1, 2), 3, 4, (5, 6))
 # sum(my_data, ()) # TypeError: can only concatenate tuple (not "int") to tuple
+
 
 '''
 Assignment
@@ -101,13 +107,12 @@ Assignment
 2) write a function to implement the following:
     - input: ((1,2), 3,4, [5, 6])
     - output: (1, 2, 3, 4, 5, 6)
-    
+
     HINT: isinstance() - builtin function
           int(), float(), list(), tuple(), set()
           list.append(), list.extend 
           list & tuple concatenation
 '''
-
 # print(f'type(int) is type(123)  :{type(int) is type(123)}')
 print(f'isinstance(123, int)    :{isinstance(123, int)}')
 
