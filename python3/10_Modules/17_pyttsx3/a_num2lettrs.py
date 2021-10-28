@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Purpose: digits to alphabets 
 
@@ -52,8 +53,10 @@ def text_to_speech(text):
     engine.runAndWait()
 
 
-digit_to_number(-1.8)
-digit_to_number(10)
-digit_to_number(23)
+if __name__ == '__main__':
+    digit_to_number(-1.8)
+    digit_to_number(10)
+    digit_to_number(23)
+    print()
 
-digit_to_number(986857578)
+    digit_to_number(986857578)
