@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: Recursion
-    - Recursion is a programming technique in which a call to a function results 
+    - Recursion is a programming technique in which a call to a function results
        in another call to that same function.
     - Iteration is calling an object, and moving over it.
 
@@ -20,9 +20,11 @@ def funcName(<input paramaters>):
     return funcName(<input parameters>)
 """
 
+
 def hello():
-    print('Hello')
+    print("Hello")
     return hello()
+
 
 # hello()
 
@@ -31,26 +33,33 @@ def hello():
 def sum_of_list(num_list):
     total = 0
     for num in num_list:
-        # total = total + num 
+        # total = total + num
         total += num
-    return total 
+    return total
 
-print(sum_of_list([12, 23, 34, 546, 1]))
+
+print(sum_of_list([12, 23, 34, 546, 1]))  # 616
+
 
 # Method 2 : implementation using recursions
 def sum_of_list_rec(num_list):
     if not num_list:
         return 0
-    print(f'{num_list[0] = }\t {num_list[1:] =}')
+    # print(f'{num_list = }')
     return num_list[0] + sum_of_list_rec(num_list[1:])
 
-print(sum_of_list_rec([12, 23, 34, 546, 1]))
-# [12, 23, 34, 546, 1]
-# 12 + [ 23, 34, 546, 1]
-# 12 + 23 + [34, 546, 1]
-# 12 + 23 + 34 + [546, 1]
-# 12 + 23 + 34 + 546 + [1]
-# 12 + 23 + 34 + 546 + 1  + []
+
+print(sum_of_list_rec([12, 23, 34, 546, 1]))  # 616
+
+'''
+[12, 23, 34, 546, 1]
+12 + [23, 34, 546, 1]
+12 + 23 + [34, 546, 1]
+12 + 23 + 34 + [546, 1]
+12 + 23 + 34 + 546 + [1]
+12 + 23 + 34 + 546 + 1 + 0 # []
+'''
+
 
 def sum_of_list_rec(num_list):
     if len(num_list) == 1:
@@ -58,37 +67,46 @@ def sum_of_list_rec(num_list):
     print(f'{num_list[0] = }\t {num_list[1:] =}')
     return num_list[0] + sum_of_list_rec(num_list[1:])
 
+
 print(sum_of_list_rec([12, 23, 34, 546, 1]))
 
-# Example 2: String reversal 
-# Python  # take first char and place at end
-# ythonP
-# thonPy
-# honPyt
-# onPyth
-# nPytho
+# Example 2: String reversal
+'''
+Python  # take first char and place at end
+ythonP
+thonPy
+honPyt
+onPyth
+nPytho
+'''
+
 
 def string_reversal(word):
     if not word:
         return ''
-    print(f'{word =}')
+    print(f'{word = }')
     return string_reversal(word[1:]) + word[0]
+
 
 result = string_reversal('Python')
 print(result)
 
 # Python  # take last char and place at start
-# nPytho
-# onPyth
-# honPyt
-# thonPy
-# ....
+'''
+nPytho
+onPyth
+honPyt
+thonPy
+....
+'''
+
 
 def string_reversal_1(word):
     if not word:
         return ''
     print(f'{word =}')
     return word[-1] + string_reversal_1(word[:-1])
+
 
 result = string_reversal_1('Python')
 print(result)
