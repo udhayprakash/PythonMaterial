@@ -33,7 +33,7 @@ Higher-Order Functions
     zip
     map
     filter
-    itertools.reduce
+    functools.reduce
 
 
 Partial Functions 

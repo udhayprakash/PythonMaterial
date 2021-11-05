@@ -1,20 +1,21 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
-Purpose: Recursive Functions 
+Purpose: Recursive Functions
 """
-import math
-from functools import reduce
+
 
 # Example - calculating the factorial
+# factorial(9) = 9 * 8 * 7 * ..... * 1
 
 
+# Method 1 - suing recursions
 def factorial(num):
     """
     factorial(9) = 9 * 8 * 7 * 6 * .....1
     :param num: int
-    :return: final sum 
+    :return: final summation
     """
-    # print(f'{num =}')
+    # print(f'{num = }')
     if num == 1:
         return 1
     return num * factorial(num - 1)
@@ -23,8 +24,13 @@ def factorial(num):
 result = factorial(9)  # 362880
 print(result)
 
-result = reduce(lambda x, y: x*y, range(1, 9 + 1))
+# Method 2
+from functools import reduce
+result = reduce(lambda x, y: x * y, range(1, 9 + 1))
+print(result)
 
+# Method 3
+import math
 assert math.factorial(9) == factorial(9) == result
 
 # Example - Caesar Cipher
@@ -55,7 +61,9 @@ exercises on recursions:
 1. Write a recursive function to reverse a list
         input:  [1, 2, 3, 3, 4, 5]
         output: [5, 4, 3, 3, 2, 1]
+    Methods: recursions, reversed(), values[::-1]
 2. Write a recursive function to compute the fibonacci series
         0, 1, 1, 2, 3, 5, 8, ....
         HINT: unpacking
 """
+
