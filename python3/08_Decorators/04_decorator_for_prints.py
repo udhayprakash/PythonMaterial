@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Decorator for printing start and end of function 
+Purpose: Decorator for printing start and end of function
 """
 
 
@@ -23,6 +23,15 @@ print(multiplication(12, 34, 10))
 
 print('\n###### USING DECORATORS  ############')
 
+
+# def print_function(func):
+#     def inner(*args, **kwargs):
+#         print('function - start ')
+#         result1 = func(*args, **kwargs)
+#         print('function - before end')
+#         return result1
+#
+#     return inner
 
 def print_function(func):
     def inner(*args, **kwargs):
