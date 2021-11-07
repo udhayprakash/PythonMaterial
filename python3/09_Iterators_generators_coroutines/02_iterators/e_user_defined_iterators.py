@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Iterators
-            - To get values from an iterator objects 
-                1. Iterate over it 
-                        - for loop 
-                        - converting to other iterables 
+            - To get values from an iterator objects
+                1. Iterate over it
+                        - for loop
+                        - converting to other iterables
                             - list(), tuple(), set(), dict()
                 2. To apply next()
                     - will result in one element at a time
@@ -13,10 +13,13 @@ Purpose: Iterators
 a = ['foo', 'bar', 'baz']
 
 itr = iter(a)
-print(itr)    # <list_iterator object at 0x0000028542B600A0>
+for value in itr:
+    print("value:", value)
 
+itr = iter(a)
+print('\n', itr)    # <list_iterator object at 0x0000016CFEF10E20>
 
-print('itr.__next__()', itr.__next__())
+print('\nitr.__next__()', itr.__next__())
 print('next(itr)     ', next(itr))
 print('next(itr)     ', next(itr))
 

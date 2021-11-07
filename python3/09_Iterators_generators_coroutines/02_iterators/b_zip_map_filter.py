@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 """
 Purpose: Iterating zip(), map(), filter() result objects
-    - lazy loading  object (or) ondemand loading object
+    - lazy loading  object (or) on-demand loading object
     - Iterators are disposable objects
-        - one time use only 
+        - one time use only
 """
-
 # iterables
 alpha = {'a', 'e', 'i', 'o', 'u'}
 nums = ('1', '2', '3', '4')
 
-pairs = zip(alpha, nums) # zip object at 0x00000165AE6CBEC0>
+pairs = zip(alpha, nums)  # zip object at 0x00000165AE6CBEC0>
 print(f'pairs: {type(pairs)} {pairs}')
 
 # Method 1: Iterate over the object
@@ -29,8 +28,8 @@ print(f'pairs3: {type(pairs3)} {pairs3}')
 
 pairs4 = str(pairs)
 print(f'pairs4: {type(pairs4)} {pairs4}')
-# NOTE: Iterators are disposable objects.
-# can give values only once
+# NOTE: Iterators are disposable objects. can give values only once
+
 # re-assign to retrieve values again
 print()
 pairs = zip(alpha, nums)
@@ -49,7 +48,7 @@ print(f'pairs3: {type(pairs3)} {pairs3}')
 
 print()
 pairs = zip(alpha, nums)
-pairs4 = str(pairs) # <zip object at 0x0000000002606688>
+pairs4 = str(pairs)  # <zip object at 0x0000000002606688>
 print(f'pairs4: {type(pairs4)} {pairs4}')
 
 print()

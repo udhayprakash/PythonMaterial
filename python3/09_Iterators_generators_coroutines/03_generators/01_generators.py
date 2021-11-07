@@ -11,13 +11,15 @@ Purpose: Generators
 return is the last statement to execute in any function
 
 yield - keyword in python
-    If yield is placed within function definition, 
+    If yield is placed within function definition,
     it becomes generator
 
-PEP8 - dont use both return & yield in same function
+PEP8 - don't use both return & yield in same function
 
-Generators follow the "STATE SUSPENSION" 
+Generators follow the "STATE SUSPENSION"
 """
+
+
 def my_generator():
     print(' I am in the function')
     yield 111
@@ -27,7 +29,10 @@ def my_generator():
     yield 333
     print('yielding 444')
     yield 444
-    return "No MORE VALUES"
+    return "No More value to yield"
+
+
+# my_generator()
 
 result = my_generator()
 print(type(result), result)
@@ -50,25 +55,22 @@ try:
 except StopIteration as ex:
     print(repr(ex))
 
-
 for ech in result:
     print(ech)
-
 
 print('\n After Re-initializing')
 result = my_generator()
 for ech in result:
     print(ech)
 
-
 result = my_generator()
-print('\n', list(result))   #  [111, 222, 333, 444]
+print('\n', list(result))  # [111, 222, 333, 444]
 
 result = my_generator()
 print('\n', tuple(result))  # (111, 222, 333, 444)
 
 result = my_generator()
-print('\n', set(result))   # {111, 222, 333, 444}
+print('\n', set(result))  # {111, 222, 333, 444}
 
 result = my_generator()
-print('\n', str(result))   #  <generator object my_generator at 0x000002CC22552F20>
+print('\n', str(result))  # <generator object my_generator at 0x000002CC22552F20>

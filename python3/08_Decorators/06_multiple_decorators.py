@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Decorator for time taken & print start/end together
 """
