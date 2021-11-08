@@ -4,21 +4,22 @@ Purpose: asyncio tasks
 """
 import asyncio
 import time
-from pprint import pprint
 
 
 async def say_after(delay, what):
     await asyncio.sleep(delay)
     print(what)
 
+
 async def main():
-    # # case 1 - first task takes less time compared to seccond one
-    # task1 = asyncio.create_task(say_after(1, 'hello'))
-    # task2 = asyncio.create_task(say_after(2, 'world'))
+    # # case 1 - first task takes less time compared to second one
+    # task1 = asyncio.create_task(say_after(2, 'hello'))
+    # task2 = asyncio.create_task(say_after(1, 'world'))
 
     # case 2 - first task takes MORE time compared to second one
     task1 = asyncio.create_task(say_after(4, 'hello'))
     task2 = asyncio.create_task(say_after(2, 'world'), name='print_world')
+
     print(f'{len(asyncio.all_tasks()) =}')
     print(f'{task1.done()      =}')
     print(f'{task2.done()      =}')
@@ -37,8 +38,8 @@ async def main():
     print(f'{task1.done()      =}')
     print(f'{task2.done()      =}')
 
-
     # pprint(asyncio.all_tasks())
     print(f'{len(asyncio.all_tasks()) =}')
+
 
 asyncio.run(main())

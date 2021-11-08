@@ -5,12 +5,12 @@ Purpose: asyncio
     In Python 3.7, two new keywords (async and await) were introduced
 
 NOTE:
-    If you lock coroutine synchronously — maybe you use time.sleep(10) 
-    instead of await asyncio.sleep(10) — you do not return control to 
+    If you lock coroutine synchronously — maybe you use time.sleep(10)
+    instead of await asyncio.sleep(10) — you do not return control to
     the event loop — the whole process will be blocked.
 """
-import time
 import asyncio
+import time
 
 
 def hello():
@@ -28,13 +28,12 @@ async def asynchronous_hello():
     await asyncio.sleep(2)
     print('World')
 
+
 # asynchronous_hello()
 # RuntimeWarning: coroutine 'asynchronous_hello' was never awaited
 
 print()
 asyncio.run(asynchronous_hello())
-
-
 
 # stat1 - 2s
 # stat2 - 1s

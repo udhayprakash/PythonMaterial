@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
 Purpose: asyncio
-    asyncio.wait_for: wait for a single awaitable, 
+    asyncio.wait_for: wait for a single awaitable,
         until the given ‘timeout’ is reached.
 """
 import asyncio
 
 
 async def foo(n):
-    # await asyncio.sleep(5)
-    await asyncio.sleep(7)
+    await asyncio.sleep(4)
+    # await asyncio.sleep(7)
     print(f"n: {n}!")
 
 

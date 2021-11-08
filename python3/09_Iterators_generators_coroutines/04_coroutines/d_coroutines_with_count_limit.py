@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: 
+Purpose:  finite reception
 """
 def my_coroutine(count=5):
     for i in range(count):
@@ -12,7 +12,7 @@ def my_coroutine(count=5):
 it = my_coroutine(5)
 
 # Step 2: Prime the coroutine
-print(f'{next(it) =}')  
+print(f'{next(it) =}')
 
 # Step 3: sending values to coroutine
 it.send('First')

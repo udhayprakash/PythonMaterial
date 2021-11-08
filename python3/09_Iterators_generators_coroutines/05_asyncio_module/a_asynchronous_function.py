@@ -28,11 +28,10 @@ def hello():
 
 hello()
 
-
-
 async def asynchronous_hello():
     print('Hello')
     print('World')
+
 
 # asynchronous_hello()
 # RuntimeWarning: coroutine 'asynchronous_hello' was never awaited
@@ -44,8 +43,7 @@ print()
 # Method 1
 loop = asyncio.get_event_loop()
 loop.run_until_complete(asynchronous_hello())
-loop.close() 
-
+loop.close()
 
 # Method 2
 print()
