@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Purpose: sys module 
+Purpose: sys module
 """
-import sys 
+import sys
 
 print(f''' 
     {sys.maxsize                    =}
@@ -21,6 +21,7 @@ print(f'{var1 =}')
 var1 +=1
 print(f'{var1 =}')
 
+
 # NOTE: sys.maxsize - depends on machine
 
 
@@ -30,7 +31,6 @@ print(f'{chr(65) =}')
 
 # for i in range(128):
 #     print(f'{i =} {chr(i) =}')
-
 
 # for i in range(1500, 2700):
 #     print(f'{i =} {chr(i) =}')
@@ -43,6 +43,7 @@ except ValueError as ex:
     print('YOu entered value exceeding sys.maxunicode')
 
 
+
 #    128  64   32  16  8 4  2 1
 # 14   0   0    0   0  1 1  1 0
 #  7   0   0    0   0  0 1  1 1
@@ -50,6 +51,7 @@ except ValueError as ex:
 
 # byte - 8 bits (or) 2 nibbles
 # sys.byteorder - 'little' - lower nibble in right
+
 
 
 print(3.33333)
