@@ -31,8 +31,9 @@ print('\n\nSolution when you need default list ==========')
 
 
 def extend_list(val, my_list=None):
-    if my_list is None:
-        my_list = []
+    # if my_list is None:
+    #     my_list = []
+    my_list = my_list or []   # Boolean short-circuiting
     print(f'\t{id(my_list)=} {my_list =}')
     my_list.append(val)
     return my_list
