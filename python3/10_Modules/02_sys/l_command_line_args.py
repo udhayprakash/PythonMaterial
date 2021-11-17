@@ -1,33 +1,30 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Getting Command-line arguments
 """
 import sys
 
-print(f'{__file__ =}')
-print(f'{sys.argv =}')
+print('__file__', __file__)
+print('sys.argv', sys.argv[0])
+print('__file__', __file__.replace('\\', '/'))
 
-assert __file__ == sys.argv[0]
+assert __file__ != sys.argv[0]
+# assert __file__.replace('\\', '/') != sys.argv[0]
+"""
+python .\l_command_line_args.py
+    __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
+    sys.argv ['.\\l_command_line_args.py']
+    
+ python .\02_sys\l_command_line_args.py
+    __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
+    sys.argv ['.\\02_sys\\l_command_line_args.py']
 
-'''
-~python l_command_line_args.py
-__file__ ='l_command_line_args.py'
-sys.argv =['l_command_line_args.py']
+ python .\10_Modules\02_sys\l_command_line_args.py
+    __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
+    sys.argv ['.\\10_Modules\\02_sys\\l_command_line_args.py']
 
-~python ..\03_sys_module\l_command_line_args.py
-__file__ ='..\\03_sys_module\\l_command_line_args.py'
-sys.argv =['..\\03_sys_module\\l_command_line_args.py']
+python .\10_Modules\02_sys\l_command_line_args.py 10 True something 213.2
+    __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
+    sys.argv ['.\\10_Modules\\02_sys\\l_command_line_args.py', '10', 'True', 'something', '213.2']
 
-~python ..\..\10_Modules\03_sys_module\l_command_line_args.py
-__file__ ='..\\..\\10_Modules\\03_sys_module\\l_command_line_args.py'   
-sys.argv =['..\\..\\10_Modules\\03_sys_module\\l_command_line_args.py'] 
-
-~python D:\MEGAsync\Python-related\training\python_related\python_batch154\10_Modules\03_sys_module\l_command_line_args.py
-__file__ ='D:\\MEGAsync\\Python-related\\training\\python_related\\python_batch154\\10_Modules\\03_sys_module\\l_command_line_args.py'
-sys.argv =['D:\\MEGAsync\\Python-related\\training\\python_related\\python_batch154\\10_Modules\\03_sys_module\\l_command_line_args.py'] 
-
-~python l_command_line_args.py apple 123 12.23 True False None
-__file__ ='l_command_line_args.py'
-sys.argv =['l_command_line_args.py', 'apple', '123', '12.23', 'True', 'False', 'None']      
-
-'''
+"""

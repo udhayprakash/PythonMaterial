@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Purpose: sys module 
+Purpose: sys module
 """
-import sys 
+import sys
 
 print(f''' 
     {sys.stderr =}
@@ -13,7 +13,7 @@ print(f'''
 sys.stdout.write('Hello world\n')
 print('Hello world', end='\n')
 
-sys.stderr.write('Hello world\n')
+sys.stderr.write('Hello world Error\n')
 # raise ValueError('wrong error')
 
 # sys.stdin.read() is similar to input()
