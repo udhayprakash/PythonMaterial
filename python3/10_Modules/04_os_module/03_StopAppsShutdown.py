@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Program that will stop common Windows applications and shut the computer down
 # For the truly lazy. :-)
 

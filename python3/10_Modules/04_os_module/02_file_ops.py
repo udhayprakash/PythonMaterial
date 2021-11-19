@@ -1,17 +1,28 @@
-#!/usr/bin/python
-
+#!/usr/bin/python3
+"""
+Purpose: File Operations
+"""
 import os
+# Method 1 - using os.popen()
+# popen() provides a pipe/gateway and accesses the file directly
+file_handler = os.popen('testfile.txt', 'w')
+file_handler.write('this is first line')
+file_handler.write('this is second line')
 
-# popen() is similar to open()
-file = open("testfile.txt", 'w')
-file.write("Hello")
-file.close()
+# # File not closed, shown in next function.
+# os.close(file_handler)
+
+
+# Method 2
+file_handler = open("testfile.txt", 'w')
+file_handler.write('this is first line\n')
+file_handler.write('this is second line\n')
+file_handler.close()
+
 file = open("testfile.txt", 'r')
 text = file.read()
 print(text)
 
-# popen() provides a pipe/gateway and accesses the file directly
-file = os.popen("testfile.txt", 'w')
-file.write("Hello")
-# File not closed, shown in next function.
-os.close(file)
+
+# Renaming the file
+os.rename('testfile.txt', 'mytestfile.txt')
