@@ -45,3 +45,7 @@ print('first 5 fib series nums:', get_fibs_till(5))
 - Python doesnot have Tail Call optimization(TCO), to handle the recursive functions.
 - It is very difficult to add TCO to python, as it is a dynamic language.
 '''
+
+from functools import reduce
+fibSequence = lambda n: reduce(lambda x, _: x+[x[-1]+x[-2]], range(n-2), [0, 1])
+print(f'{fibSequence(5) =}')

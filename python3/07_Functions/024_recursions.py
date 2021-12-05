@@ -2,8 +2,6 @@
 """
 Purpose: Recursive Functions
 """
-
-
 # Example - calculating the factorial
 # factorial(9) = 9 * 8 * 7 * ..... * 1
 
@@ -26,12 +24,15 @@ print(result)
 
 # Method 2
 from functools import reduce
-result = reduce(lambda x, y: x * y, range(1, 9 + 1))
-print(result)
+factorial_red = reduce(lambda x, y: x * y, range(1, 9 + 1))
+print(factorial_red)
 
-# Method 3
+# Method 3 - using Lambda
+factorial_L = lambda num : 1 if num <= 1 else num * factorial_L(num-1)
+
+# Method 4
 import math
-assert math.factorial(9) == factorial(9) == result
+assert math.factorial(9) == factorial(9) == factorial_red == factorial_L(9)
 
 # Example - Caesar Cipher
 

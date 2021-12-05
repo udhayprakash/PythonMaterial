@@ -9,7 +9,7 @@ print()
 print(f'{max(values)                   =}')
 print(f'{values.count(2)               =}')
 print(f'{values.count(3)               =}')
-print(f'{max(values, key=values.count) =}') # mode
+print(f'{max(values, key=values.count) =}')  # mode
 print()
 
 print(f'{min(values)                   =}')
@@ -25,9 +25,9 @@ print(f'{add_result                    =}')
 # Method 2
 print(f'{sum(values)                   =}')
 
-print(f'{sum(values, start=0         ) =}') # +0
-print(f'{sum(values, start=4         ) =}') # +4
-print(f'{sum(values, start=100       ) =}') # +100
+print(f'{sum(values, start=0         ) =}')  # +0
+print(f'{sum(values, start=4         ) =}')  # +4
+print(f'{sum(values, start=100       ) =}')  # +100
 print()
 
 
@@ -37,6 +37,13 @@ print(f'{sorted(values, key=values.count, reverse=True)  =}')
 print(f'{sorted(values, key=values.count, reverse=False) =}')
 print()
 
+# list.reverse() and reversed() will reverse the order of assignment
+values = [3, 2, 6, 4, 9, 5]
+print(f'{values                 =}')
+values.reverse()
+print(f'{values                 =}')
+print(f'{reversed(values)       =}')
+print(f'{list(reversed(values)) =}')
 
 # word = 'malayalam'
 # print(f'{word                       = }')
