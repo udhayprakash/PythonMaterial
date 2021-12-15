@@ -16,5 +16,5 @@ async def hello():
 # http://127.0.0.1:8000/redoc
 
 
-# curl 127.0.0.1: 8000/
+# curl 127.0.0.1:8000/
 # {"Hello": "World"}
