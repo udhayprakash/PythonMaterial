@@ -26,4 +26,11 @@ To run all test cases, under a group,
 
 To run and stop if atleast one test fails,
     $ pytest -maxfail 1 -v
+
+To set the maximum test duration,
+    $ pytest --duration=10
+
+
+JUnit-Style Logs, 
+    $ py.test --junitxml=result.xml 
 """
