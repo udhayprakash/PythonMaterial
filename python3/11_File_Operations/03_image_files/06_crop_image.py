@@ -1,8 +1,13 @@
 from PIL import Image
 
-original_image = Image.open("images/strawberries.png")
-original_image.show()
+def crop_image(path, cropped_path):
+    image = Image.open(path)
+    image.show()
+    cropped = image.crop((40, 590, 979, 1500))
+    # x and y coordinates relative to top left corner
+    cropped.save(cropped_path)
+    cropped.show()
 
-x1, y1, x2, y2 = 150, 150, 300, 300  # x and y coordinates relative to top left corner
-cropped_image = original_image.crop((x1, y1, x2, y2))
-cropped_image.show()
+
+if __name__ == "__main__":
+    crop_image("images/strawberries.png", "images/strawberries_cropped.png")

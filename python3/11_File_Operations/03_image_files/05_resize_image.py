@@ -1,13 +1,20 @@
 from PIL import Image
 
 
-def resize_images(image_names, new_size=(100, 100)):
-    for image_name in image_names:
-        img = Image.open(image_name)
-        img = img.resize(new_size)
-        img.save("resized_" + image_name)
+def resize_image(input_image_path, output_image_path, size):
+    original_image = Image.open(input_image_path)
+    width, height = original_image.size
+    print(f"The original image size is {width} wide x {height} high")
+    resized_image = original_image.resize(size)
+    width, height = resized_image.size
+    print(f"The resized image size is {width} wide x {height} high")
+    resized_image.show()
+    resized_image.save(output_image_path)
 
 
-images = ["cameraman.jpg", "strawberries.png", "python.jpg"]
-
-resize_images(images)
+if __name__ == "__main__":
+    resize_image(
+        input_image_path="images/cameraman.jpg",
+        output_image_path="images/cameraman_small.jpg",
+        size=(800, 400),
+    )
