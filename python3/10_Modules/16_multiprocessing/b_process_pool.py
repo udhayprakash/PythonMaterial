@@ -13,6 +13,6 @@ def worker(name: str) -> None:
 
 if __name__ == '__main__':
     process_names = [f'computer_{i}' for i in range(15)]
-    pool = Pool(processes=5)
+    pool = Pool(processes=5) # to limit no. of processes running to 5
     pool.map(worker, process_names)
     # pool.terminate()

@@ -5,6 +5,7 @@ import pandas as pd
 Faker.seed(0)
 random.seed(0)
 fake = Faker("de_DE")
+
 name, city_name, country, job, age = [[] for k in range(0, 5)]
 for row in range(0, 100):
     name.append(fake.name())

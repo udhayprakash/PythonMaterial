@@ -22,5 +22,6 @@ if __name__ == '__main__':
         procs.append(proc)
         proc.start()
 
+    # Joining processes, to tell python to wait for the proces to terminate
     for proc in procs:
-        proc.join()
+        proc.join() 
