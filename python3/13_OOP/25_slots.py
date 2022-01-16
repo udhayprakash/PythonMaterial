@@ -4,6 +4,10 @@ Purpose: __slots__ importance
 """
 
 
+import sys
+from pympler.asizeof import asizeof
+
+
 class OrdinaryClass:
     """
     Generally, all class instances are mutable
@@ -25,6 +29,8 @@ print(vars(o))
 print()
 
 # ---------------------------------------------
+
+
 class SlottedClass:
     """
     when __slots__ is present, it wont allow
@@ -38,10 +44,11 @@ class SlottedClass:
         # self.something = None
         # # AttributeError: 'SlottedClass' object has no attribute 'something'
 
+
 print()
 c = SlottedClass()
 # print(vars(c))
-# TypeError: vars() argument must have __dict__ attribute 
+# TypeError: vars() argument must have __dict__ attribute
 
 
 # updating existing attribute values are possible
@@ -56,3 +63,14 @@ try:
     setattr(c, 'yy', 999)
 except AttributeError as ex1:
     print(repr(ex1))
+
+
+print(f'{sys.getsizeof(o) =}')
+print(f'{sys.getsizeof(c) =}')
+
+# pympler.asizeof can be used to investigate how much memory 
+# certain Python objects consume. In contrast to sys.getsizeof, 
+# asizeof sizes objects recursively.
+
+print(f'{asizeof(o) =}')
+print(f'{asizeof(c) =}')

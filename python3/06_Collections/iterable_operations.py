@@ -55,3 +55,14 @@ print(f'{list(reversed(values)) =}')
 
 # print(f'{max(list(word), key=values.count)  = }')
 # print(f'{min(list(word), key=values.count)  = }')
+
+
+values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(f'{values =}')
+
+pairs = list(zip(values, values[1:]))
+print(f'{pairs =}')
+
+from itertools import islice
+pairs = list(zip(values, islice(values, 1, None)))
+print(f'{pairs =}')
