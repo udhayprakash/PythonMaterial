@@ -127,8 +127,10 @@ def simple_function(lang_details):
     print(f'\nbefore change ver   = {lang_details["ver"]}')
     details['ver'] = '3.10'
     print(f'After change ver    = {lang_details["ver"]}')
-    print(f'\n{id(globals()["details"])}{ globals()["details"]    = }')  # {'ver': '3.10'}
-    print(f'\n{id(locals()["lang_details"])} {locals()["lang_details"]= }')  # {'ver': '3.10'}
+    # {'ver': '3.10'}
+    print(f'\n{id(globals()["details"])}{ globals()["details"]    = }')
+    # {'ver': '3.10'}
+    print(f'\n{id(locals()["lang_details"])} {locals()["lang_details"]= }')
 
 
 simple_function(details)
@@ -143,8 +145,10 @@ def simple_function(lang_details):
     print(f'\nbefore change ver   = {lang_details2["ver"]}')
     details['ver'] = '3.11'
     print(f'After change ver    = {lang_details2["ver"]}')
-    print(f'\n{id(globals()["details"])}{ globals()["details"]    = }')  # {'ver': '3.10'}
-    print(f'\n{id(locals()["lang_details2"])} {locals()["lang_details2"]= }')  # {'ver': '3.10'}
+    # {'ver': '3.10'}
+    print(f'\n{id(globals()["details"])}{ globals()["details"]    = }')
+    # {'ver': '3.10'}
+    print(f'\n{id(locals()["lang_details2"])} {locals()["lang_details2"]= }')
 
 
 simple_function(details)
@@ -177,17 +181,30 @@ def simple_function(my_list):
 
 simple_function(my_list)
 print('outside function new_list = {}'.format(my_list))
-
-# case 10=====   call by value
 print()
-new_list = [1, 2, 3]
+
+# case 10=====   call by Reference - for Global Mutable objects
 
 
 def simple_function(new_list):
-    print(f'\nbefore change new_list = {new_list}')
+    print(f'\nbefore change new_list = {new_list}')  # [1, 2, 3]
     new_list += [6]
-    print(f'After change new_list = {new_list}')
+    print(f'After change new_list = {new_list}')  # [1, 2, 3, 6]
 
 
+new_list = [1, 2, 3]
 simple_function(new_list)
-print('outside function new_list = {}'.format(new_list))
+print('outside function new_list = {}'.format(new_list))  # [1, 2, 3, 6]
+print()
+
+
+# case 11=====   call by Reference - for Global Mutable objects
+def add_N_to_list(_new_list, n):
+    print(f'\nbefore change new_list = {_new_list}')  # [1, 2, 3]
+    _new_list[:] = [num+n for num in _new_list]
+    print(f'After change new_list = {_new_list}')  # [6, 7, 8]
+
+
+new_list = [1, 2, 3]
+add_N_to_list(new_list, 5)
+print('outside function new_list = {}'.format(new_list))  # [6, 7, 8]

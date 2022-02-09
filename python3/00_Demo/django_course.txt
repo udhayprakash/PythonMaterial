@@ -1,0 +1,144 @@
+----------------------
+Django Course Content
+----------------------
+Duration: 40 hours
+
+Chapter 1: Introduction
+	- About Django
+	- Django Components
+
+Chapter 2: Installing & Configuring Django Components
+	- Downloading & Installing Django
+	- Choosing a Database
+	- Creating a New Project
+
+Chapter 3: Generating Simple Django Views
+	- About View Functions
+	- Using Django's HttpResponse Class
+	- Understanding HttpRequest Objects
+	- Using QueryDict Objects
+
+Chapter 4: Configuring URLconf's
+	- About URLconf
+	- Regular Expressions
+	- Expression Examples
+	- Simple URLConf Examples
+	- Using Multiple URLConf's
+	- Passing URL Arguments
+
+Chapter 5: Django Templates
+	- About Templates
+	- Template Fundamentals
+	- Creating Template Objects
+	- Loading Template Files
+	- Filling in Template Content (Context Objects)
+	- Template Filters
+	- Template Tags
+	- More on For Loops
+	- Template Inheritance
+	- Easy Rendering of Templates
+	- RequestContext Processors
+	- Global Context Processors
+
+Chapter 6: HTML Forms with Forms (formerly newforms)
+	- The Forms Module
+	- Creating the Form
+	- Generating Output From the Form
+	- Customizing Field Parameters
+	- Processing Form Data
+	- Custom Form Field Validation
+	- Generating Custom Field Errors
+	- Customizing Form Output
+
+Chapter 7: Database Models with Django
+	- About Database Models
+	- Configuring Django for Database Access
+	- Understanding Django Apps
+	- About Django Models
+	- Defining Django Models
+	- Understanding Model Fields & Options
+	- Table Naming Conventions
+	- Creating A Django Model
+	- Adding the App to Your Project
+	- Validating the App
+	- Generating & Reviewing the SQL
+	- Adding Data to the Model
+	- Primary Keys and the Model
+	- Simple Data Retrieval Using a Model
+	- Understanding QuerySets
+	- Applying Filters
+	- Specifying Field Lookups
+	- Lookup Types
+	- Slicing QuerySets
+	- Specifying Ordering in QuerySets
+	- Common QuerySet Methods
+	- Deleting Records
+	- Managing Related Records
+	- Retrieving Related Records
+
+Chapter 8: Django ORM
+	- ORM Configuration:
+	- Mapper Configuration
+	- Relationship Configuration
+	- Inheritance Mapping
+	- Advanced Collection Configuration
+	- Configuration Extensions:
+	- Declarative Extension
+	- Association Proxy
+	- Hybrid Attrbutes
+	- Mutable Scalars
+	- Ordered List
+	- ORM Usage: Session Usage and Guidelines
+	- Query API reference
+	- Relationship Loading Techniques
+	- Using Q Objects
+	- Creating Forms from Models
+
+Chapter 8: Using the Django Admin Interface
+	- Enabling the Admin Interface
+	- Creating an Admin User
+
+Chapter 9: Access Control with Sessions and Users
+	- Cookies & Django
+	- The Django Session Framework
+	- Sessions in Views
+	- Session Tuning
+	- Installing Django User Authentication
+	- Using Authentication in Views
+	- Login and Logout
+	- Building your Own Login/Logout Views
+	- Authentication Decorators
+	- Adding & Deactivating Users
+	- Asynchronous Messaging
+	- Managing Permissions
+
+Chapter 10: Generic Views
+	- Simple Generic Views
+	- Using Generic Redirects
+	- Other Generic Views
+	- Create/Update/Delete Generic views
+
+Chapter 11: Creating Syndication Feeds
+	- About Syndication
+
+Chapter 12: AJAX Integration with Django
+	- AJAX with Django
+
+Chapter 13: Data Caching for Performance
+	- Data Caching
+	- Setting up Per-View Caching
+	- Site Caching
+
+Chapter 14: Preventing Cross Site Request Forgery
+	- Cross Site Request Forgery
+
+Chapter 15: Django's Email Functionality
+	- Configuring Mail Settings
+	- Sending Email
+	- Other Email Functions
+
+Chapter 16: Miscellenous 	
+	- Deploying Django Applications
+	- Deploying to Apache
+	- Using ReportLab for PDF Generation
+	- About ReportLab Toolkit
