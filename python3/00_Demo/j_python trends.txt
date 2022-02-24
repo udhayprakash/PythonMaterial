@@ -2,3 +2,61 @@ https://trends.google.com/trends/explore?q=python
 https://www.indeed.com/jobtrends/q-python.html
 https://insights.stackoverflow.com/trends?tags=python
 https://stackoverflow.blog/2017/09/14/python-growing-quickly/
+
+
+Python Modules & Frameworks 
+---------------------------
+    - Machine Learning & Data Science 
+        - Numpy 
+        - Keras
+        - Theano
+        - Pandas
+        - PyTorch 
+        - NLTK
+        - TensorFlow
+        - Scikit-Learn 
+        - Scipy 
+        - Seaborn 
+        - Bokeh 
+    - Web Development 
+        - Django 
+        - Flask 
+        - Bottle 
+        - CherryPy
+        - Pyramid 
+        - Web2Py
+        - FastAPI
+        - TurboGears
+        - CubicWeb
+        - Dash 
+        - Falcon 
+        - Tornado 
+    - Automation Testing 
+        - Splinter 
+        - Robot 
+        - Behave 
+        - PyUnit 
+        - PyTest
+    - Game Development 
+        - PyGame
+        - PyGlet 
+        - PyOpenGI
+        - Arcade
+        - Panda3D
+    - Image Processing & Data Visualization 
+        - OpenCV
+        - Mahotas 
+        - SimpleITK
+        - Pillow
+        - Scikit-Image
+        - Plotly
+        - bokeh 
+        - GGplot
+        - Pygal 
+        - Geoplotlib
+    - Web Scrapping 
+        - Requests
+        - Beautiful Soup
+        - Selenium
+        - Lxml
+        - Scrapy
