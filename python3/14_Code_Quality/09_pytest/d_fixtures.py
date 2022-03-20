@@ -11,21 +11,16 @@ def fixture01(request):
     print("File Path: " + str(request.fspath))
 
 
-# ----- Method 1
-def test_case01(fixture01):
+def test_case01(fixture01):  # ------------- Method 1
     print("\nIn test_case01()...")
 
-# ----- Method 2
 
-
-@pytest.mark.usefixtures('fixture01')
+@pytest.mark.usefixtures('fixture01')  # ----- Method 2
 def test_case01():
     print("\nI'm the test_case01")
 
-# ----- Method 3
 
-
-@pytest.mark.usefixtures('fixture01')
+@pytest.mark.usefixtures('fixture01')  # ----- Method 3
 class TestClass03:
     def test_case01(self):
         print("I'm the test_case01")
