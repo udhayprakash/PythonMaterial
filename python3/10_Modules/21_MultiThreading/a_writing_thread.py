@@ -1,4 +1,3 @@
-cls
 import random
 import time
 from threading import Thread

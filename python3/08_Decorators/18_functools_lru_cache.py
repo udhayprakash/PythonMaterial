@@ -46,3 +46,13 @@ def fib2(n):
 
 
 print(timeit.timeit(lambda: fib(40), number=1))  # 2.2999999998774e-05
+
+
+# ----------------------
+@lru_cache(maxsize=100)
+def count_vowels(sentence):
+    sentence = sentence.casefold()
+    return sum(sentence.count(vowel) for vowel in 'aeiou')
+
+
+print(count_vowels("Welcome to Python"))
