@@ -321,8 +321,12 @@ Decorators
                 return 'HELLO WORLD'
 
             print(hello_function())
+
 AWS Serverless - zappa
     https://www.sanjaysiddhanti.com/2020/07/05/serverless/
 
 sending email
     https://www.blog.pythonlibrary.org/2021/09/21/how-to-send-emails-with-python/
+
+Probability 
+    https://github.com/norvig/pytudes/blob/main/ipynb/Probability.ipynb
