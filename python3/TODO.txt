@@ -1,21 +1,21 @@
-Logging 
+Logging
     papertrail
 RSS feed
     https://www.tutorialspoint.com/python_text_processing/python_reading_rss_feed.htm
-xml 
+xml
     https://www.tutorialspoint.com/python/python_xml_processing.htm
     https://docs.python.org/3/library/xml.etree.elementtree.html
-    
-Encoding 
+
+Encoding
     https://stackabuse.com/run-length-encoding/
 
-recursive functions 
+recursive functions
     https://stackabuse.com/understanding-recursive-functions-with-python/
-        take diagram from this link 
-inner/nested functions 
+        take diagram from this link
+inner/nested functions
     https://stackabuse.com/python-nested-functions/
 
-modules 
+modules
     https://stackabuse.com/python-circular-imports/
 
 coroutines
@@ -32,56 +32,56 @@ aiohttp
     https://stackabuse.com/asynchronous-vs-synchronous-python-performance-analysis/
     https://stackabuse.com/asynchronous-python-for-web-development/
 
-mongoDB 
+mongoDB
     https://pythonexamples.org/python-mongodb-pymongo-get-started/
-    
+
 FileOperations
-    file opening mode 
+    file opening mode
         x - creates a new file, failing if it exists
 
     https://stackabuse.com/reading-and-writing-xml-files-in-python/
     https://stackabuse.com/introduction-to-the-python-lxml-library/
     https://stackabuse.com/python-zlib-library-tutorial/
 
-pdf 
+pdf
     https://stackabuse.com/working-with-pdfs-in-python-inserting-deleting-and-reordering-pages/
 
-pytest 
+pytest
     https://stackabuse.com/test-driven-development-with-pytest/
     https://testandcode.com/104
     https://mattsegal.dev/pytest-on-github-actions.html
 
-Selenium 
+Selenium
     https://stackabuse.com/getting-started-with-selenium-and-python/
 
-Web Scraping 
+Web Scraping
     https://stackabuse.com/introduction-to-web-scraping-with-python/
 
-Databases 
+Databases
     https://stackabuse.com/a-sqlite-tutorial-with-python/
     https://stackabuse.com/getting-started-with-mysql-and-python/
     https://stackabuse.com/working-with-postgresql-in-python/
 
-Parallel processing 
+Parallel processing
     https://stackabuse.com/parallel-processing-in-python/
     https://stackabuse.com/concurrency-in-python/
-    
-networking 
+
+networking
     https://stackabuse.com/introduction-to-python-ftp/
 
-windows WSL 
+windows WSL
     https://pbpython.com/wsl-python.html
-Twitter 
+Twitter
     https://stackabuse.com/accessing-the-twitter-api-with-python/
-Wikipedia 
+Wikipedia
     https://stackabuse.com/getting-started-with-pythons-wikipedia-api/
-NLP 
+NLP
     https://stackabuse.com/text-summarization-with-nltk-in-python/
     https://stackabuse.com/python-for-nlp-tokenization-stemming-and-lemmatization-with-spacy-library/
     https://stackabuse.com/python-for-nlp-working-with-text-and-pdf-files/
     https://stackabuse.com/python-for-nlp-developing-an-automatic-text-filler-using-n-grams/
-    https://stackabuse.com/python-for-nlp-creating-a-rule-based-chatbot/ 
-    
+    https://stackabuse.com/python-for-nlp-creating-a-rule-based-chatbot/
+
     https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/
     https://stackabuse.com/text-classification-with-python-and-scikit-learn/
 
@@ -98,7 +98,7 @@ Data Visualization
     https://stackabuse.com/seaborn-library-for-data-visualization-in-python-part-1/
     https://stackabuse.com/seaborn-library-for-data-visualization-in-python-part-2/
 
-Machine Learning 
+Machine Learning
     https://stackabuse.com/analysis-of-black-friday-shopping-trends-via-machine-learning/
 
 Finance
@@ -110,23 +110,23 @@ flask
     https://stackabuse.com/building-a-todo-app-with-flask-in-python/
     https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
 
-django 
+django
     https://stackabuse.com/asynchronous-tasks-in-django-with-redis-and-celery/
     https://stackabuse.com/working-with-redis-in-python-with-django/
     https://stackabuse.com/recursive-model-relationships-in-django/
     https://stackabuse.com/building-a-graphql-api-with-django/
 
-    string templating 
+    string templating
         https://stackabuse.com/formatting-strings-with-the-python-template-class/
 
-DataScience 
+DataScience
     https://stackabuse.com/the-best-data-science-libraries-in-python/
 
 Docker
     https://stackabuse.com/dockerizing-python-applications/
     https://www.freecodecamp.org/news/the-docker-handbook/
 
-Python Articles 
+Python Articles
     https://stackabuse.com/differences-between-pyc-pyd-and-pyo-python-files/
 
 redis
@@ -139,17 +139,17 @@ Profiling
     https://stackabuse.com/python-performance-optimization/
 
 ==================================================================
-Big O notation 
+Big O notation
     https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/
 
-Sorting 
+Sorting
     https://stackabuse.com/sorting-algorithms-in-python/
     https://stackabuse.com/merge-sort-in-python/
     https://stackabuse.com/heap-sort-in-python/
     https://stackabuse.com/quicksort-in-python/
     https://stackabuse.com/insertion-sort-in-python/
 
-Datastructures 
+Datastructures
     https://stackabuse.com/doubly-linked-list-with-python-examples/
     https://stackabuse.com/python-linked-lists/
     https://stackabuse.com/sorting-and-merging-single-linked-list/
@@ -161,7 +161,7 @@ Algorithms
     https://stackabuse.com/levenshtein-distance-and-text-similarity-in-python/
     https://stackabuse.com/grid-search-optimization-algorithm-in-python/
 
-Design Patterns 
+Design Patterns
     https://stackabuse.com/design-patterns-in-python/
     https://stackabuse.com/creational-design-patterns-in-python/
     https://stackabuse.com/the-bridge-design-pattern-in-python/
@@ -169,7 +169,7 @@ Design Patterns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ==================================================================
 
-pandas 
+pandas
     https://stackabuse.com/beginners-tutorial-on-the-pandas-python-library/
     https://stackabuse.com/creating-a-simple-recommender-system-in-python-using-pandas/
 
@@ -188,7 +188,7 @@ pandas
     merge_data = pd.concat(list_states[1:], sort=False)
 
 
-math 
+math
     Euler's Number
     The Euler's number (e), which is the base of natural logarithm
 
@@ -218,7 +218,7 @@ regex
         text = "         The film Pulp Fiction was released in year 1994"
         result = re.sub(r"^\s+", "", text)
         print(result)
-    
+
         text = "The film Pulp Fiction was released in year 1994      "
         result = re.sub(r"\s+$", "", text)
         print(result)
@@ -239,9 +239,9 @@ regex
         "http://www.example.com/products/27/"
 
         ^products/(\d+)/$
-            Getting Application name 
-            product ID 
-    Problem6: Validating Email ID 
+            Getting Application name
+            product ID
+    Problem6: Validating Email ID
         email = "example@gmail.com"
 
         if not re.match(re.compile(r'^.+@[^.].*\.[a-z]{2,10}$', flags=re.IGNORECASE), email):
@@ -269,8 +269,8 @@ regex
         print("Comment has " + str(curse_count) + " curse word(s).")
 
 
-Decorators 
-        Creating Decorators 
+Decorators
+        Creating Decorators
             def lowercase(func):
                 def wrapper():
                     func_ret = func()
@@ -288,7 +288,7 @@ Decorators
                 return wrapper
 
 
-        Applying single decorator to function 
+        Applying single decorator to function
             @lowercase
             def hello_function():
                 return 'HELLO WORLD'
@@ -297,7 +297,7 @@ Decorators
 
 
 
-        Applying multiple decorators to function 
+        Applying multiple decorators to function
 
 
             @split_sentence
@@ -305,8 +305,8 @@ Decorators
             def hello_function():
                 return 'HELLO WORLD'
             print(hello_function())
-        
-        functools.wraps - to retain the metadata 
+
+        functools.wraps - to retain the metadata
             import functools
 
             def lowercase(func):
@@ -328,5 +328,19 @@ AWS Serverless - zappa
 sending email
     https://www.blog.pythonlibrary.org/2021/09/21/how-to-send-emails-with-python/
 
-Probability 
+Probability
     https://github.com/norvig/pytudes/blob/main/ipynb/Probability.ipynb
+
+
+
+fastapi tutorial - https://www.youtube.com/watch?v=jJYHUp9ZeTY
+pandas speeddup  - https://www.youtube.com/watch?v=SAFmrTnEHLg
+
+datasets - https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+django project - https://github.com/Thejus-ms/first_site-main
+
+
+pip install  python-Levenshtein
+ipython profile create
+ipython --profile projectName

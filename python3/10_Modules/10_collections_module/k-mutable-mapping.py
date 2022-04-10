@@ -30,8 +30,7 @@ def _flatten_dict_gen(d, parent_key, sep):
 def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str = '.'):
     return dict(_flatten_dict_gen(d, parent_key, sep))
 
-
-# method - 3
+# ====== method - 3
 
 
 def flatten_dict(d: MutableMapping, sep: str = '.') -> MutableMapping:
