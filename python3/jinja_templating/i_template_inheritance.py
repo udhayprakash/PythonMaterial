@@ -2,12 +2,12 @@
 
 from jinja2 import Environment, FileSystemLoader
 
-content = 'This is about page'
+content = "This is about page"
 
-file_loader = FileSystemLoader('templates')
+file_loader = FileSystemLoader("templates")
 env = Environment(loader=file_loader)
 
-template = env.get_template('about.html')
+template = env.get_template("about.html")
 
 output = template.render(content=content)
 print(output)

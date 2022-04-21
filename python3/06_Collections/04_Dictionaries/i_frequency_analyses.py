@@ -3,9 +3,9 @@
 Purpose: Test Frequency Analyses
 """
 
-sentence = '''Python is a wonderful language.
+sentence = """Python is a wonderful language.
 we can solve any
-computational problem with this language'''
+computational problem with this language"""
 
 # Character frequency analyses
 # Method 1
@@ -49,41 +49,43 @@ print(frequency)
 print()
 print(f"{sorted('abacus')      =}")
 print(f"{sorted('322321')      =}")
-print(f'{sorted([23,43,-2, 1]) =}')
-print(f'{sorted([23,43,-2, 1], reverse=True) =}')
+print(f"{sorted([23,43,-2, 1]) =}")
+print(f"{sorted([23,43,-2, 1], reverse=True) =}")
 
 print()
-frequency1 = {'a': 3, 'b': 2, 'c': 2, 'd': 1}
-print(f'{frequency1                 =}')
-print(f'{sorted(frequency1)         =}')
-print(f'{sorted(frequency1.keys())  =}')
-print(f'{sorted(frequency1.values())=}')
+frequency1 = {"a": 3, "b": 2, "c": 2, "d": 1}
+print(f"{frequency1                 =}")
+print(f"{sorted(frequency1)         =}")
+print(f"{sorted(frequency1.keys())  =}")
+print(f"{sorted(frequency1.values())=}")
 
 print()
-print(f'{sorted(frequency1.items()) =}')
+print(f"{sorted(frequency1.items()) =}")
 # default - sort by 0th value in pair
 
-print(f'{sorted(frequency1.items(), reverse=True) =}')
+print(f"{sorted(frequency1.items(), reverse=True) =}")
 
 print()
-print(f'{sorted(frequency1.items()) =}')
-print(f'{sorted(frequency1.items(), key=lambda x:x[0]) =}')  # sort by key
-print(f'{sorted(frequency1.items(), key=lambda x:x[0], reverse=True) =}')  # sort by key
+print(f"{sorted(frequency1.items()) =}")
+print(f"{sorted(frequency1.items(), key=lambda x:x[0]) =}")  # sort by key
+print(f"{sorted(frequency1.items(), key=lambda x:x[0], reverse=True) =}")  # sort by key
 
 print()
-print(f'{sorted(frequency1.items(), key=lambda x:x[1]) =}')  # sort by value
-print(f'{sorted(frequency1.items(), key=lambda x:x[1], reverse=True) =}')  # sort by value
+print(f"{sorted(frequency1.items(), key=lambda x:x[1]) =}")  # sort by value
+print(
+    f"{sorted(frequency1.items(), key=lambda x:x[1], reverse=True) =}"
+)  # sort by value
 print()
 
 frequency_result = dict(sorted(frequency.items(), key=lambda x: x[1], reverse=True))
 print(frequency_result)
 print(frequency_result.keys())
-print('Top 3 chars in frequency are', list(frequency_result.keys())[:3])
+print("Top 3 chars in frequency are", list(frequency_result.keys())[:3])
 
 # Assignment
 # In character frequency analyses, try to get top 5 occurring characters
 sorted(frequency.items, key=lambda x: x[1])[-5:]
-'''
+"""
 Assignment
 ==========
 choose a large sentence greater than 150 words and perform the following
@@ -115,4 +117,4 @@ choose a large sentence greater than 150 words and perform the following
 
     Are you coming?  --> ['Are', 'you', 'coming']
 
-'''
+"""

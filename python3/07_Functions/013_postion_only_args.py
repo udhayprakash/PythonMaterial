@@ -41,20 +41,20 @@ print(multiply_then_add(5, 10, 20, d=89))
 
 # -----------------
 print()
-print(f'{pow(4, 2)       =}')
-print(f'{pow(4, 2, 10)   =}')
+print(f"{pow(4, 2)       =}")
+print(f"{pow(4, 2, 10)   =}")
 
 
 def power(x, y, /, mod=None):
-    r = x ** y
+    r = x**y
     if mod is not None:
         r %= mod
     return r
 
 
-print(f'{power(4, 2)     =}')
-print(f'{power(4, 2, 10) =}')
-print(f'{power(4, 2, mod=10) =}')
+print(f"{power(4, 2)     =}")
+print(f"{power(4, 2, 10) =}")
+print(f"{power(4, 2, mod=10) =}")
 
 # print(f'{power(x=4, y=2, mod=10) =}')
 # TypeError: power() got some positional-only arguments passed as keyword arguments: 'x, y'

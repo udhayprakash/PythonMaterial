@@ -5,6 +5,7 @@ from random import randrange
 
 # functions for encryption and decryption
 
+
 def encrypt(m):
     # define circular wheels
     inner_wheel = [i for i in string.lowercase]
@@ -21,8 +22,8 @@ def encrypt(m):
         cipher_dict[outer_wheel[i]] = inner_wheel[key % 26]
         key = key + 1
     # getting encrypted message
-    print('Encrypted with secret key ->> %d\n' % original_key)
-    cipher = ''.join([cipher_dict[i] if i != ' ' else ' ' for i in m])
+    print("Encrypted with secret key ->> %d\n" % original_key)
+    cipher = "".join([cipher_dict[i] if i != " " else " " for i in m])
     return cipher, original_key
 
 
@@ -37,13 +38,13 @@ def decrypt(cipher, key):
     reverse_dict = dict(zip(cipher_dict.values(), cipher_dict.keys()))
 
     # getting original message back
-    message = ''.join([reverse_dict[i] if i != ' ' else ' ' for i in cipher])
+    message = "".join([reverse_dict[i] if i != " " else " " for i in cipher])
     return message
 
 
 # Using cipher wheel here
 while True:
-    s = input('Enter your secret message:')
+    s = input("Enter your secret message:")
     encrypted = encrypt(s)
-    print('encrypted message ->> %s\n' % (encrypted[0]))
-    print('decrypted message ->> %s\n' % decrypt(encrypted[0], encrypted[1]))
+    print("encrypted message ->> %s\n" % (encrypted[0]))
+    print("decrypted message ->> %s\n" % decrypt(encrypted[0], encrypted[1]))

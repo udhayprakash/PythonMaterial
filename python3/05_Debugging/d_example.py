@@ -8,8 +8,10 @@ Purpose: breakpoint hook
 """
 import sys
 
+
 def hello():
-    print('Breakpoint got activated')
+    print("Breakpoint got activated")
+
 
 sys.breakpointhook = hello
 
@@ -22,4 +24,4 @@ breakpoint()
 
 for each_num in numbers:
     if each_num % 2 == 0:
-        print(each_num, end=' ')
+        print(each_num, end=" ")

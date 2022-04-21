@@ -78,21 +78,21 @@ LUCKY_NUMBER = 67
 attempt = 0
 while True:
     attempt += 1
-    print(f'\n {attempt =}', end=' : ')
+    print(f"\n {attempt =}", end=" : ")
 
-    given_number = int(input('Enter no. between 0 & 100:'))
+    given_number = int(input("Enter no. between 0 & 100:"))
 
     if given_number == LUCKY_NUMBER:
-        print('You guessed correctly!')
+        print("You guessed correctly!")
         break
     elif given_number > LUCKY_NUMBER:  # 87 > 67
-        print('Reduce your guessing number')
+        print("Reduce your guessing number")
     else:  # given_number < LUCKY_NUMBER
-        print('Increase your guessing number')
+        print("Increase your guessing number")
 else:
-    print('It will never reach here, as loop breaks to exit')
+    print("It will never reach here, as loop breaks to exit")
 
-'''
+"""
     Assignment
     ------------------------
     attempts        points
@@ -102,4 +102,4 @@ else:
     10-16            20
     17-25             5
     26-               0
-'''
+"""

@@ -9,6 +9,7 @@ class Employee(object):
     """
     common base class for employees
     """
+
     emp_count = 0  # class variable
 
     def __init__(self, name, salary=20000):
@@ -17,7 +18,7 @@ class Employee(object):
         :param name:
         :param salary:
         """
-        print('\n New Employee joined')
+        print("\n New Employee joined")
         self.employee_name = name
         self.salary = salary
         Employee.emp_count += 1
@@ -27,7 +28,7 @@ class Employee(object):
         This method is used to display the count of employees
         :return:
         """
-        print(f'Total Employees count: {Employee.emp_count}')
+        print(f"Total Employees count: {Employee.emp_count}")
 
     def __del__(self):
         """
@@ -35,24 +36,24 @@ class Employee(object):
         when the instance is deleted
         :return:
         """
-        print('\nDestructor is called')
+        print("\nDestructor is called")
         Employee.emp_count -= 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # instantiation
-    empl_1 = Employee('Udhay', 200000)
+    empl_1 = Employee("Udhay", 200000)
     print(vars(empl_1))
     empl_1.total_employees_count()
 
-    empl_2 = Employee('Prakash')
+    empl_2 = Employee("Prakash")
     print(vars(empl_2))
     empl_2.total_employees_count()
 
     # deleting the empl_1
     del empl_1
 
-    empl_3 = Employee('Akhila')
+    empl_3 = Employee("Akhila")
     print(vars(empl_3))
     empl_3.total_employees_count()
 
@@ -68,11 +69,11 @@ class Demo:
 
 
 obj1 = Demo()
-print(Demo.counter, end=' ')
+print(Demo.counter, end=" ")
 obj1.change_counter()
 print(Demo.counter)
 
 obj2 = Demo()
-print(Demo.counter, end=' ')
+print(Demo.counter, end=" ")
 obj2.change_counter()
 print(Demo.counter)

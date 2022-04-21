@@ -20,7 +20,7 @@ def square(x):
     return x * x
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     doctest.testmod()
 
     # print(f'{square(2) =}')

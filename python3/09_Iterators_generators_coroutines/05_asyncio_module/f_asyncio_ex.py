@@ -22,7 +22,8 @@ async def main():
     print(await nested())  # will print "42".
 
     result = await nested()
-    print(f'{result =}')
+    print(f"{result =}")
+
 
 asyncio.run(main())
 

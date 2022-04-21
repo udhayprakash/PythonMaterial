@@ -48,12 +48,12 @@ class LinkedList:
             node = node.next
 
     def add_first(self, node):
-        """ Inserting at the Beginning """
+        """Inserting at the Beginning"""
         node.next = self.head
         self.head = node
 
     def add_last(self, node):
-        """ Inserting at the End """
+        """Inserting at the End"""
         if self.head is None:
             self.head = node
             return
@@ -108,7 +108,7 @@ class LinkedList:
         raise Exception("Node with data '%s' not found" % target_node_data)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     llist = LinkedList(["a", "b", "c", "d"])
     print(llist)  # a -> b -> c -> d -> None
 

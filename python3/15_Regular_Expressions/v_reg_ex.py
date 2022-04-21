@@ -7,7 +7,7 @@ Ex: email ids
 
 import re
 
-email_ids = '''
+email_ids = """
 Edit the Expression & Text to see matches. Roll over matches or the expression for details. Und
 python@programm.com
 Sample text for testing:
@@ -22,9 +22,9 @@ https://mediatemple.net
 mediatepmple@outlook.com
 mubeen.tom@hacker.com
 1%453&harini_new@in.com
-'''
+"""
 
-matched_emails = re.findall('[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+', email_ids)
+matched_emails = re.findall("[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+", email_ids)
 for each in matched_emails:
     print(each)
 

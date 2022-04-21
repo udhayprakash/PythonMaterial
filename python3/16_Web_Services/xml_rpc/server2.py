@@ -5,11 +5,12 @@ Purpose: XML RPC server
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 
-class RequestHandler(SimpleXMLRPCRequestHandler):
-    rpc_paths = ('/RPC2',)
 
-with SimpleXMLRPCServer(('localhost', 8000),
-                        requestHandler=RequestHandler) as server:
+class RequestHandler(SimpleXMLRPCRequestHandler):
+    rpc_paths = ("/RPC2",)
+
+
+with SimpleXMLRPCServer(("localhost", 8000), requestHandler=RequestHandler) as server:
     server.register_introspection_functions()
 
     # Register pow() function; this will use the value of
@@ -19,7 +20,7 @@ with SimpleXMLRPCServer(('localhost', 8000),
     # Register a function under a different name, using
     # register_function as a decorator. *name* can only be given
     # as a keyword argument.
-    @server.register_function(name='add')
+    @server.register_function(name="add")
     def adder_function(x, y):
         return x + y
 

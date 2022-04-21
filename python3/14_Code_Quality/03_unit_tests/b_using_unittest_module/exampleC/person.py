@@ -19,6 +19,6 @@ class Person:
 
     def get_name(self, user_id):
         if user_id < 0 or user_id >= len(self.name):
-            return 'There is no such user'
+            return "There is no such user"
         else:
             return self.name[user_id]

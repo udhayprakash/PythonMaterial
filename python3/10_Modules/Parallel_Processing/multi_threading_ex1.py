@@ -12,16 +12,16 @@ class MyThread(Thread):
     def run(self):
         amount = random.randint(3, 15)
         time.sleep(amount)
-        msg = '{} is running'.format(self.name)
+        msg = "{} is running".format(self.name)
         print(msg)
 
 
 def create_threads():
     for i in range(5):
-        name = 'Thread {}'.format(i + 1)
+        name = "Thread {}".format(i + 1)
         my_thread = MyThread(name)
         my_thread.start()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     create_threads()

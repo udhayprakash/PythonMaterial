@@ -11,8 +11,8 @@ print((3 + 3j) + (4 + 7j))
 print()
 
 # string concatenation
-print('12' + '34')
-print('Python' + ' ' + 'World')
+print("12" + "34")
+print("Python" + " " + "World")
 print()
 
 # List concatenation

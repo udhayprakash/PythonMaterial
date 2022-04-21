@@ -21,15 +21,15 @@ print(True)  # Keyword
 # print(true)
 # NameError: name 'true' is not defined
 
-my_value = 'something'
+my_value = "something"
 print(my_value)  # Identifier
 
 # True = 'something'
 # SyntaxError: cannot assign to True
 
-print(keyword.iskeyword('True'))        # True
-print(keyword.iskeyword('true'))        # False
-print(keyword.iskeyword('my_value'))    # False
+print(keyword.iskeyword("True"))  # True
+print(keyword.iskeyword("true"))  # False
+print(keyword.iskeyword("my_value"))  # False
 
 # ------------------------------------------------------
 # Identifiers - User-defined variables
@@ -44,16 +44,16 @@ print(keyword.iskeyword('my_value'))    # False
 
 # PEP 8 - Dont create identifiers which are similar as Keywords
 true = 123
-none = 'Nothing'
+none = "Nothing"
 
 true_value = 123
-none_result = 'Nothing'
+none_result = "Nothing"
 
 # ---- Rule 2 & 3
-name = 'Pavithra'
-student_1 = 'Pavithra'
-class_123_ = '10th class'
-first_____child = 'Ruthivik'
+name = "Pavithra"
+student_1 = "Pavithra"
+class_123_ = "10th class"
+first_____child = "Ruthivik"
 
 # PEP 8 recommends to use capitals for constants
 PI = 3.1416
@@ -64,10 +64,10 @@ DOZEN = 12
 # first name = 'someone'  # SyntaxError: invalid syntax
 # 2nd_student = 'someone' # SyntaxError: invalid syntax
 
-_2nd_student = 'someone'
+_2nd_student = "someone"
 
-_job = 'software development'
-__role = 'Product support'
+_job = "software development"
+__role = "Product support"
 ___salary = 1231231232312323233
 
 # OOP -> name mangling
@@ -78,8 +78,8 @@ ___salary = 1231231232312323233
 # __variable__ ->  Built-in functions
 # Ex: __file__, __name__, __doc__, __dict__, __init__
 
-print('__name__ =', __name__)
-print('__file__ =', __file__)
+print("__name__ =", __name__)
+print("__file__ =", __file__)
 
 # print('__pavithra__ =', __pavithra__)
 # NameError: name '__pavithra__' is not defined

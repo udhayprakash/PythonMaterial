@@ -4,30 +4,29 @@ Purpose: Set Operations
     - Venn Diagrams
 
 """
-rainbow = {'red', 'orange', 'yellow', 'green',
-           'blue', 'indigo', 'violet'}
+rainbow = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"}
 
-traffic_lights = {'red', 'yellow', 'green', 'white'}
+traffic_lights = {"red", "yellow", "green", "white"}
 
-print(f'{rainbow =}')
-print(f'{traffic_lights =}')
-
-print()
-print(f'{traffic_lights.issubset(rainbow)   =}')
-print(f'{rainbow.issuperset(traffic_lights) =}')
-
-alphabets = {'a', 'b', 'c'}
-print(f'\n{alphabets.issubset(rainbow)   =}')
-print(f'{rainbow.issuperset(alphabets) =}')
-
+print(f"{rainbow =}")
+print(f"{traffic_lights =}")
 
 print()
-print(f'{traffic_lights.isdisjoint(rainbow)   =}') # False
-print(f'{traffic_lights.intersection(rainbow) =}') # {'red', 'yellow', 'green'}
+print(f"{traffic_lights.issubset(rainbow)   =}")
+print(f"{rainbow.issuperset(traffic_lights) =}")
+
+alphabets = {"a", "b", "c"}
+print(f"\n{alphabets.issubset(rainbow)   =}")
+print(f"{rainbow.issuperset(alphabets) =}")
+
 
 print()
-print(f'{alphabets.isdisjoint(rainbow)        =}')  # True
-print(f'{alphabets.intersection(rainbow)      =}')  # set()
+print(f"{traffic_lights.isdisjoint(rainbow)   =}")  # False
+print(f"{traffic_lights.intersection(rainbow) =}")  # {'red', 'yellow', 'green'}
+
+print()
+print(f"{alphabets.isdisjoint(rainbow)        =}")  # True
+print(f"{alphabets.intersection(rainbow)      =}")  # set()
 
 
 # Set concatenation is not possible
@@ -36,22 +35,22 @@ print(f'{alphabets.intersection(rainbow)      =}')  # set()
 # Set difference
 # - from first set, remove common elements between both sets
 print()
-print(f'{rainbow - traffic_lights =}')
-print(f'{traffic_lights - rainbow =}')
+print(f"{rainbow - traffic_lights =}")
+print(f"{traffic_lights - rainbow =}")
 
 # To get the all elements between both sets
 print()
-print(f'{rainbow.union(traffic_lights) =}')
-print(f'{traffic_lights.union(rainbow) =}')
+print(f"{rainbow.union(traffic_lights) =}")
+print(f"{traffic_lights.union(rainbow) =}")
 
 # To get the common elements between both sets
 print()
-print(f'{rainbow.intersection(traffic_lights) =}')
-print(f'{traffic_lights.intersection(rainbow) =}')
+print(f"{rainbow.intersection(traffic_lights) =}")
+print(f"{traffic_lights.intersection(rainbow) =}")
 
 # Symmetric Difference
 #   - To get elements of both sets, which are not common
 #   - For sets A, B, symmetric_difference is (A U B) - (A intersection B)
 print()
-print(f'{rainbow.symmetric_difference(traffic_lights) =}')
-print(f'{traffic_lights.symmetric_difference(rainbow) =}')
+print(f"{rainbow.symmetric_difference(traffic_lights) =}")
+print(f"{traffic_lights.symmetric_difference(rainbow) =}")

@@ -8,22 +8,22 @@ import asyncio
 async def say_after(delay, what):
     await asyncio.sleep(delay)
     print(what)
-    return 'something'
+    return "something"
 
 
 def got_result(future):
     # print(f'{type(future) = }')
     # print(f'{dir(future)  = }')
-    print(f'got the result! {future.result()}')
+    print(f"got the result! {future.result()}")
 
 
 async def hello_world():
-    task = asyncio.create_task(say_after(2, 'Hello'))
+    task = asyncio.create_task(say_after(2, "Hello"))
     task.add_done_callback(got_result)
     print(task)
 
     await asyncio.sleep(5)
-    print('Hello World!')
+    print("Hello World!")
 
     await asyncio.sleep(10)
     print(task)

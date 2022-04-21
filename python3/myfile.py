@@ -18,7 +18,6 @@
 # print(res)
 
 
-
 # A semaphore manages an internal counter which is decremented by each acquire() call and incremented by each release() call.
 
 # text = """
@@ -31,13 +30,16 @@
 # result = pat.sub('', text)
 # print(result)
 
+
 class A:
-    __slots__ = ['x', 'y', 'z']
+    __slots__ = ["x", "y", "z"]
     w = 1
 
+
 class B(A):
-    __slots__ = ['w', 'z']
+    __slots__ = ["w", "z"]
     pass
+
 
 a = A()
 b = B()

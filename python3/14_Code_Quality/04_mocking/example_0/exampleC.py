@@ -4,7 +4,7 @@ from unittest.mock import Mock
 
 def foo(some_object, number):
     if number > 2:
-        some_object.method(number ** 2)
+        some_object.method(number**2)
     else:
         some_object.method(number - 1)
 
@@ -18,5 +18,5 @@ class FooTests(TestCase):
         some_object.method.assert_called_once_with(1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

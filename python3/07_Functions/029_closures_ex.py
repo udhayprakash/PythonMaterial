@@ -15,11 +15,11 @@ Purpose: closures in python
 
 
 def outer():
-    print('outer function - start ')
+    print("outer function - start ")
 
     def inner():
-        print('inner function - start')
-        return 'something'
+        print("inner function - start")
+        return "something"
 
     # case 1:
     # inner()
@@ -35,7 +35,7 @@ outer()
 # inner()  # NameError: name 'inner' is not defined
 
 result = outer()
-print(f'{type(result) = } {result =}')
+print(f"{type(result) = } {result =}")
 
 # type(result) = <class 'str'> result ='something'
 # type(result) = <class 'function'> result =<function outer.<locals>.inner at 0x0000018A71DBE700>
@@ -44,8 +44,8 @@ print(f'{type(result) = } {result =}')
 # inner()  # NameError: name 'inner' is not defined
 
 
-print(f'{result()  =}')  # 'something'
-print(f'{outer()() =}')  # 'something'
+print(f"{result()  =}")  # 'something'
+print(f"{outer()() =}")  # 'something'
 print()
 
 
@@ -59,13 +59,13 @@ def make_multiplier_of(n):
 
 # Multiplier of 3
 mul3 = make_multiplier_of(3)
-print(f'{type(mul3)} {mul3}')  # make_multiplier_of.<locals>.multiplier
+print(f"{type(mul3)} {mul3}")  # make_multiplier_of.<locals>.multiplier
 
-print(f'mul3(10):{mul3(10)}')  # 30
-print(f'mul3(7) :{mul3(7)}')  # 21
+print(f"mul3(10):{mul3(10)}")  # 30
+print(f"mul3(7) :{mul3(7)}")  # 21
 
 mul5 = make_multiplier_of(5)
-print(f'{type(mul5)} {mul5}')
+print(f"{type(mul5)} {mul5}")
 
-print(f'mul5(10):{mul5(10)}')  # 50
-print(f'mul5(7) :{mul5(7)}')  # 35
+print(f"mul5(10):{mul5(10)}")  # 50
+print(f"mul5(7) :{mul5(7)}")  # 35

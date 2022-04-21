@@ -36,12 +36,12 @@ class RationalNumber:
         return RationalNumber(n, d)
 
     def __str__(self):
-        return '%s/%s' % (self.n, self.d)
+        return "%s/%s" % (self.n, self.d)
 
     __repr__ = __str__
 
     def __del__(self):
-        print('deleting the instance')
+        print("deleting the instance")
 
 
 # Main
@@ -85,4 +85,4 @@ class Student:
 
 
 comb = Student(1, 90) + Student(2, 40)
-print('comb', comb)
+print("comb", comb)

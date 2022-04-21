@@ -15,7 +15,7 @@ def test_add_floats():
 
 
 def test_add_strings():
-    nose.tools.assert_raises(AssertionError, add, 'paul', 'carol')
+    nose.tools.assert_raises(AssertionError, add, "paul", "carol")
 
 
 def test_divide_integers_even():
@@ -26,5 +26,5 @@ def test_divide_integers_repetant():
     nose.tools.assert_almost_equal(divide(1, 3), 0.33333333, 7)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nose.run()

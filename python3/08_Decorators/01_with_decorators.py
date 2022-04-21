@@ -34,8 +34,8 @@ def div(n1, n2):
 def outer(func):
     def inner():
         try:
-            result = ''
-            print(f'{func =}')
+            result = ""
+            print(f"{func =}")
         except Exception as ex:
             return ex
         else:
@@ -45,10 +45,10 @@ def outer(func):
 
 
 result_add = outer(add)()  # function add at 0x0000022E5425EA70>
-print(f'{result_add =}')  # ''
+print(f"{result_add =}")  # ''
 
 result_div = outer(div)()  # <function div at 0x000001963F21EB00>
-print(f'{result_add =}')  # ''
+print(f"{result_add =}")  # ''
 print()
 
 
@@ -66,12 +66,12 @@ def outer(func):
     return inner
 
 
-print(f'{outer(add) =}')  # <function outer.<locals>.inner at 0x00000207FDB8EB90>
+print(f"{outer(add) =}")  # <function outer.<locals>.inner at 0x00000207FDB8EB90>
 
-print(f'{outer(add)(10, 20)     =}')
+print(f"{outer(add)(10, 20)     =}")
 
 result_add = outer(add)
-print(f'{result_add(10, 20)     =}')
+print(f"{result_add(10, 20)     =}")
 print(f'{result_add("10", "20") =}')
 print(f'{result_add(10, "20")   =}')
 print(f'{result_add("10", 20)   =}')
@@ -79,10 +79,10 @@ print(f'{result_add("10", 20)   =}')
 assert outer(add)(10, 20) == result_add(10, 20) == add(10, 20)
 
 print()
-print(f'{outer(div)(10, 20)     =}')
+print(f"{outer(div)(10, 20)     =}")
 
 result_div = outer(div)  # reference  to inner
-print(f'{result_div             =}')
-print(f'{result_div(10, 20)     =}')
-print(f'{result_div(0, 20)      =}')
-print(f'{result_div(10, 0)      =}')
+print(f"{result_div             =}")
+print(f"{result_div(10, 20)     =}")
+print(f"{result_div(0, 20)      =}")
+print(f"{result_div(10, 0)      =}")

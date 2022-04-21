@@ -17,15 +17,15 @@ Purpose: Addition operation, with exception handling
 # print(f'{result = }')  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 try:
-    num1 = int(input('Enter an integer:'))
-    num2 = int(input('Enter an integer:'))
+    num1 = int(input("Enter an integer:"))
+    num2 = int(input("Enter an integer:"))
 except Exception as ex:
-    print(f'Error is {ex=}')
+    print(f"Error is {ex=}")
 else:
     result = num1 + num2
     print(result)
 finally:
-    print('------------------------')
+    print("------------------------")
 
 # NOTE: In this problem context,
 # finally is not needed

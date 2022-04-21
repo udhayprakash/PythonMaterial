@@ -8,11 +8,6 @@ data_length = len(data)
 #     # print( '\r{} of {} completed'.format(index,data_length), end = '')
 #     print( '\r{0:.3f} completed'.format((100 *index)/data_length), end = '')
 
-values = {
-    0: '|',
-    1: '/',
-    2: '-',
-    3: '\\'
-}
+values = {0: "|", 1: "/", 2: "-", 3: "\\"}
 for index, _ in enumerate(data):
-    print('\r', values.get(index % 4), 'Loading ...', end=' ')
+    print("\r", values.get(index % 4), "Loading ...", end=" ")

@@ -4,7 +4,6 @@ from main import Pricer
 
 
 class TestClassAttribute(TestCase):
-
     def test_patch_instance_attribute(self):
         pricer = Pricer()
         pricer.DISCOUNT = 0.5
@@ -17,12 +16,12 @@ class TestClassAttribute(TestCase):
 
     @expectedFailure
     def test_patch_incorrect_class_attribute(self):
-        with mock.patch.object(Pricer, 'PERCENTAGE', 1):
+        with mock.patch.object(Pricer, "PERCENTAGE", 1):
             pricer = Pricer()
             self.assertAlmostEqual(pricer.get_discounted_price(100), 100)
 
     def test_patch_class_attribute(self):
-        with mock.patch.object(Pricer, 'DISCOUNT', 1):
+        with mock.patch.object(Pricer, "DISCOUNT", 1):
             pricer = Pricer()
             self.assertAlmostEqual(pricer.get_discounted_price(100), 100)
 

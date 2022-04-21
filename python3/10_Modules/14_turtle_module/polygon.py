@@ -20,9 +20,9 @@ def draw_shape(sides, color):
 
 turtle.goto(-250, 0)
 
-draw_shape(SQUARE, 'blue')
-draw_shape(TRIANGLE, 'red')
-draw_shape(PENTAGON, 'green')
-draw_shape(HEXAGON, 'purple')
+draw_shape(SQUARE, "blue")
+draw_shape(TRIANGLE, "red")
+draw_shape(PENTAGON, "green")
+draw_shape(HEXAGON, "purple")
 
-delay = input('Press enter to finish.')
+delay = input("Press enter to finish.")

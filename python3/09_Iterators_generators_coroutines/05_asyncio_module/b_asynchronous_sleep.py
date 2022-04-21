@@ -14,19 +14,19 @@ import time
 
 
 def hello():
-    print('Hello')
+    print("Hello")
     time.sleep(2)
-    print('world')
+    print("world")
 
 
 hello()
 
 
 async def asynchronous_hello():
-    print('Hello')
+    print("Hello")
     # time.sleep(2)
     await asyncio.sleep(2)
-    print('World')
+    print("World")
 
 
 # asynchronous_hello()

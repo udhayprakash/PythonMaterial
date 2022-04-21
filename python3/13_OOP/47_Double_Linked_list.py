@@ -27,7 +27,7 @@ class DoubleLinkedList:
         self.next_nd_addr = next_n_add
 
     def __repr__(self):
-        return f'{self.prev_nd_addr}|{self.data}|{self.next_nd_addr}'
+        return f"{self.prev_nd_addr}|{self.data}|{self.next_nd_addr}"
 
 
 d1 = DoubleLinkedList(10)
@@ -50,7 +50,7 @@ print(d2)
 print(d3)
 
 # Assignment L create a double linked list for word 'hello'
-'''
+"""
 id()|h|id()     e      l      l    o
 
-'''
+"""

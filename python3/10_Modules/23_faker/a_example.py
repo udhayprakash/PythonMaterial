@@ -1,6 +1,6 @@
 import faker
 
-print(f'{faker.VERSION =}')
+print(f"{faker.VERSION =}")
 
 fake = faker.Faker()
 

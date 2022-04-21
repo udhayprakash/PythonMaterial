@@ -7,7 +7,7 @@ import pandas
 # print(dir(pandas))
 
 # Loading a csv
-data_frame = pandas.read_csv('my_file.csv')
+data_frame = pandas.read_csv("my_file.csv")
 
 print(type(data_frame))
 print(data_frame)

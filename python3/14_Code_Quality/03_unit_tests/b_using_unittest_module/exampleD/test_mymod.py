@@ -13,5 +13,5 @@ class TestAnagram(unittest.TestCase):
         self.assertFalse(is_anagram("one", "two"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -17,7 +17,7 @@ def howmany_within_range_rowonly(row, minimum=4, maximum=8):
     return count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pool = mp.Pool(mp.cpu_count())
 
     results = pool.map(howmany_within_range_rowonly, [row for row in data])

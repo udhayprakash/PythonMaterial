@@ -22,22 +22,24 @@ def get_mid(p1, p2):
 
 
 def sierpinski(points, degree, my_turtle):
-    color_map = ['blue', 'red', 'green', 'white', 'yellow',
-                 'violet', 'orange']
+    color_map = ["blue", "red", "green", "white", "yellow", "violet", "orange"]
     draw_triangle(points, color_map[degree], my_turtle)
     if degree > 0:
-        sierpinski([points[0],
-                    get_mid(points[0], points[1]),
-                    get_mid(points[0], points[2])],
-                   degree - 1, my_turtle)
-        sierpinski([points[1],
-                    get_mid(points[0], points[1]),
-                    get_mid(points[1], points[2])],
-                   degree - 1, my_turtle)
-        sierpinski([points[2],
-                    get_mid(points[2], points[1]),
-                    get_mid(points[0], points[2])],
-                   degree - 1, my_turtle)
+        sierpinski(
+            [points[0], get_mid(points[0], points[1]), get_mid(points[0], points[2])],
+            degree - 1,
+            my_turtle,
+        )
+        sierpinski(
+            [points[1], get_mid(points[0], points[1]), get_mid(points[1], points[2])],
+            degree - 1,
+            my_turtle,
+        )
+        sierpinski(
+            [points[2], get_mid(points[2], points[1]), get_mid(points[0], points[2])],
+            degree - 1,
+            my_turtle,
+        )
 
 
 def main():

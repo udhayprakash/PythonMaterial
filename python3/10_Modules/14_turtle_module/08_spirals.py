@@ -3,7 +3,7 @@
 from turtle import *
 from random import randint
 
-bgcolor('black')
+bgcolor("black")
 x = 1
 speed(0)
 

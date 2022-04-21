@@ -7,7 +7,7 @@ import sys
 import unittest
 
 
-sys.path.insert(0, '..')
+sys.path.insert(0, "..")
 
 
 class TestSuitesubtraction(unittest.TestCase):
@@ -20,12 +20,12 @@ class TestSuitesubtraction(unittest.TestCase):
         self.assertEqual(subtraction(10.0, 20.0), -10.0)
 
     def test03(self):
-        self.assertEqual(subtraction(10.0, '20'), -10.0)
-        self.assertEqual(subtraction('10', '20'), -10.0)
+        self.assertEqual(subtraction(10.0, "20"), -10.0)
+        self.assertEqual(subtraction("10", "20"), -10.0)
 
-        self.assertEqual(subtraction('10.0', 20), -10.0)
-        self.assertEqual(subtraction('10.0', '20.0'), -10.0)
+        self.assertEqual(subtraction("10.0", 20), -10.0)
+        self.assertEqual(subtraction("10.0", "20.0"), -10.0)
 
     @unittest.expectedFailure
     def test04(self):
-        self.assertEqual(subtraction('10.0', True), -10.0)
+        self.assertEqual(subtraction("10.0", True), -10.0)

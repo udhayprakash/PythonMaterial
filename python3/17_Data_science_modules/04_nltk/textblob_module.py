@@ -9,12 +9,14 @@ or use the NLTK downloader to download the missing data: http://nltk.org/data.ht
 
 from textblob import TextBlob
 
-blob = TextBlob(''''I really enjoy programming in Python. It is a very approachable
+blob = TextBlob(
+    """'I really enjoy programming in Python. It is a very approachable
 language with a plethora of valuable, high quality, libraries in
 both the standard library and as third party package from the
-community''')
+community"""
+)
 
-print(f'blob.sentiment: {blob.sentiment}')
+print(f"blob.sentiment: {blob.sentiment}")
 
 for sentence in blob.sentences:
     print(sentence)

@@ -5,29 +5,29 @@ Purpose: file read operations
     fh.readline()
     fh.readlines()
 """
-fh = open('e_write_multiple_lines.tsf', 'r')
+fh = open("e_write_multiple_lines.tsf", "r")
 
 partial_content = fh.read(7)
-print(f'{partial_content  =}')  # str type
+print(f"{partial_content  =}")  # str type
 
 # --------------------------------------------
-print('\ncurrent  fh.tell()', fh.tell())
+print("\ncurrent  fh.tell()", fh.tell())
 
 # TO read current line, from cursor position, till end of line
 current_line = fh.readline()  # -> str
-print(f'\n{type(current_line) =}')  # str type
-print(f'{current_line       =}')
+print(f"\n{type(current_line) =}")  # str type
+print(f"{current_line       =}")
 
-print('\ncurrent  fh.tell()', fh.tell())
+print("\ncurrent  fh.tell()", fh.tell())
 current_line = fh.readline()  # -> str
-print(f'{current_line       =}')
+print(f"{current_line       =}")
 
 # ----------------------------------------------
-print('\ncurrent  fh.tell()', fh.tell())
+print("\ncurrent  fh.tell()", fh.tell())
 # To read all lines, from cursor position, till end of file (EOF)
 multiple_lines = fh.readlines()  # -> list
-print(f'{type(multiple_lines) =}')
-print(f'{multiple_lines       =}')
+print(f"{type(multiple_lines) =}")
+print(f"{multiple_lines       =}")
 
 
 fh.close()

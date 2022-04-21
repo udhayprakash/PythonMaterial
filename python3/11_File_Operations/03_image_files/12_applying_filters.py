@@ -15,6 +15,7 @@ Purpose: Applying filters on Images
 
 from PIL import Image, ImageFilter
 
+
 def blur(path, modified_photo):
     image = Image.open(path)
     blurred_image = image.filter(ImageFilter.BLUR)
@@ -26,6 +27,7 @@ def sharpen(path, modified_photo):
     sharpened_image = image.filter(ImageFilter.SHARPEN)
     sharpened_image.save(modified_photo)
 
-if __name__ == '__main__':
-    blur('images/butterfly.png', 'images/butterfly_blurred.png')
-    blur('images/butterfly.png', 'images/butterfly_sharper.png')
+
+if __name__ == "__main__":
+    blur("images/butterfly.png", "images/butterfly_blurred.png")
+    blur("images/butterfly.png", "images/butterfly_sharper.png")

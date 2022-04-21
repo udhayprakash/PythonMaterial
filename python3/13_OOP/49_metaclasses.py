@@ -10,44 +10,45 @@ from pprint import pprint
 
 
 class NewType(object):
-    x = 'hello'
+    x = "hello"
 
 
 n2 = NewType()
-print(f'{n2.x =}')  # 'hello'
+print(f"{n2.x =}")  # 'hello'
 
 
 # Method 2: Creating class & instance using metaclasses
-NewType = type('NewType', (object,), {'x': 'hello'})
+NewType = type("NewType", (object,), {"x": "hello"})
 n1 = NewType()
-print(f'{n1.x =}')  # 'hello'
+print(f"{n1.x =}")  # 'hello'
 
 
-print(f'{n1 = } {id(n1) =}')
-print(f'{n2 = } {id(n2) =}')
+print(f"{n1 = } {id(n1) =}")
+print(f"{n2 = } {id(n2) =}")
 
-print('\n\n Anonymous types')
+print("\n\n Anonymous types")
 
-MyClass = type('', (object,), {'x': 'blah'})
-print(f'{MyClass =}')  # <class '__main__.'>
+MyClass = type("", (object,), {"x": "blah"})
+print(f"{MyClass =}")  # <class '__main__.'>
 
 my_inst = MyClass()
-print(f'{my_inst.x =}')
-print('\n\n')
+print(f"{my_inst.x =}")
+print("\n\n")
 # -----------------------------------------
-print(f'{type                  =}')
-print(f'{type.__bases__        =}')
+print(f"{type                  =}")
+print(f"{type.__bases__        =}")
 print()
 
-descriptor = type.__dict__['__bases__']
-print(f'{descriptor            =}')
-print(f'{type(descriptor)      =}')
+descriptor = type.__dict__["__bases__"]
+print(f"{descriptor            =}")
+print(f"{type(descriptor)      =}")
 print()
+
 
 class MyMeta(type):
-    @property        # a property is a descriptor
+    @property  # a property is a descriptor
     def foo(cls):
-        return 'foo'
+        return "foo"
 
 
 class MyClass(metaclass=MyMeta):
@@ -55,4 +56,4 @@ class MyClass(metaclass=MyMeta):
 
 
 pprint(vars(MyClass))
-print('MyClass.foo:', MyClass.foo)
+print("MyClass.foo:", MyClass.foo)

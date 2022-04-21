@@ -15,7 +15,7 @@ print(dir(toml))
 print()
 
 # toml file to python dict
-with open('sample.toml', 'r') as fh:
+with open("sample.toml", "r") as fh:
     parsed_toml_dict = toml.load(fh)
     print(parsed_toml_dict)
 
@@ -26,5 +26,5 @@ print(toml_string)
 
 print()
 # python dict to toml file
-with open('new_file.toml', 'w') as fh:
+with open("new_file.toml", "w") as fh:
     toml.dump(parsed_toml_dict, fh)

@@ -14,12 +14,12 @@ try:
 
     num2 = 200
     # num3 = int('123.23')  # ValueError
-    num3 = int('123')
+    num3 = int("123")
     expr = num2 + 100 + 123 + num3 - 2321 / 10
 except Exception as e:
-    print(f'{e=}')
+    print(f"{e=}")
 else:
-    print('No expection- So, in else block')
+    print("No expection- So, in else block")
 
 """
 ~!python3 10_exception_precendence.py

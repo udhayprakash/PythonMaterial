@@ -23,7 +23,7 @@ def time_taken(func):
         start_time = time.perf_counter_ns()
         result = func(*args, **kwargs)
         end_time = time.perf_counter_ns()
-        print(f'Time Taken: {end_time - start_time} ns')
+        print(f"Time Taken: {end_time - start_time} ns")
         return result
 
     return wrapper
@@ -33,7 +33,7 @@ def time_taken(func):
 def my_func(num):
     for _ in range(num):
         pass
-    print(f'for {num:5} numbers', end=':->')
+    print(f"for {num:5} numbers", end=":->")
 
 
 my_func(78)

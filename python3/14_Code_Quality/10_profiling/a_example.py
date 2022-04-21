@@ -13,6 +13,7 @@ The percall following cumtime is calculated as the quotient of cumtime divided b
 """
 
 import cProfile
+
 cProfile.run("20+10")
 
 statement = "20+10"

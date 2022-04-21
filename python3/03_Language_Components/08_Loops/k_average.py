@@ -4,24 +4,24 @@ Purpose: Calculating the average for the
     inputted numbers in run-time
 """
 
-result = eval('1')
-print(f'{result =} {type(result)}') # int
+result = eval("1")
+print(f"{result =} {type(result)}")  # int
 
-result = eval('123.23')
-print(f'{result =} {type(result)}') # float
+result = eval("123.23")
+print(f"{result =} {type(result)}")  # float
 
-result = eval('12 + 23/32 * 23')
-print(f'{result =} {type(result)}') # float
+result = eval("12 + 23/32 * 23")
+print(f"{result =} {type(result)}")  # float
 
 # result = eval('Apple')
 # NameError: name 'Apple' is not defined
 
 result = eval('"Apple"')
-print(f'{result =} {type(result)}') # str
+print(f"{result =} {type(result)}")  # str
 
 Apple = 12132
-result = eval('Apple')
-print(f'{result =} {type(result)}') # int
+result = eval("Apple")
+print(f"{result =} {type(result)}")  # int
 
 
 # Method 1 - Specific no. of times
@@ -63,12 +63,12 @@ while True:
     attempt += 1
 
     try:
-        input_val = eval(input('Enter a number:'))
+        input_val = eval(input("Enter a number:"))
     except:
         break
     summation += input_val
 
 
-print(f'{summation =}')
+print(f"{summation =}")
 average = summation / attempt
-print(f'{average   =}')
+print(f"{average   =}")

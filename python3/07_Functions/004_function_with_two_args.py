@@ -21,13 +21,13 @@ def hello(name, age):
 # hello(27)
 # TypeError: hello() missing 1 required positional argument: 'age'
 
-print('\ncall By position')
-hello('sushmitha', 27)
-hello(27, 'sushmitha')
+print("\ncall By position")
+hello("sushmitha", 27)
+hello(27, "sushmitha")
 
-print('\ncall By keyword args')
-hello(name='sushmitha', age=27)
-hello(age=27, name='sushmitha')
+print("\ncall By keyword args")
+hello(name="sushmitha", age=27)
+hello(age=27, name="sushmitha")
 
 # hello('sushmitha', 27, 'asd')
 # TypeError: hello() takes 2 positional arguments but 3 were given

@@ -7,7 +7,7 @@ def flatten(given_list, final=None):
         elif isinstance(each_ele, (list, tuple, set, dict)):
             final.extend(each_ele)
         else:
-            raise Exception(f'unhandled type:{type(each_ele)}')
+            raise Exception(f"unhandled type:{type(each_ele)}")
     return
 
 

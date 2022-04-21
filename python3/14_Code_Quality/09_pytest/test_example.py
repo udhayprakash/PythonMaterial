@@ -20,6 +20,7 @@ def test_fails_without_info():
     with pytest.raises(Exception):
         x = 1 / 1
 
+
 # Don't do this. Assertions are caught as exceptions.
 
 
@@ -29,6 +30,7 @@ def test_passes_but_should_not():
         assert False
     except Exception:
         assert True
+
 
 # Even if the appropriate exception is caught, it is bad style,
 # because the test result is less informative
@@ -52,7 +54,7 @@ def test_fails_but_bad_style():
         assert True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_passes()
     test_passes_without_info()
     test_fails()
@@ -60,7 +62,6 @@ if __name__ == '__main__':
     test_passes_but_should_not()
     test_passes_but_bad_style()
     test_fails_but_bad_style()
-
 
 
 # python -m py.test

@@ -6,10 +6,10 @@ import tweepy
 class Bot:
     def __init__(self):
         # GET below values from twitter
-        self.CONSUMER_KEY = ''
-        self.CONSUMER_KEY_SECRET = ''
-        self.ACCESS_TOKEN = ''
-        self.ACCESS_TOKEN_SECRET = ''
+        self.CONSUMER_KEY = ""
+        self.CONSUMER_KEY_SECRET = ""
+        self.ACCESS_TOKEN = ""
+        self.ACCESS_TOKEN_SECRET = ""
 
         self.api = self.authenticate()
         self.user_list = []

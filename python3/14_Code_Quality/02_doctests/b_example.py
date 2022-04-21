@@ -20,5 +20,5 @@ def add_two_numbers(m, n):
     return int(m) + int(n)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     doctest.testmod()

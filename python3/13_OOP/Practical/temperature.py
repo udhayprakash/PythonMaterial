@@ -3,17 +3,17 @@
 # look like normal attributes from the outside, but whose setters and
 # getters can silently perform arbitrary computations.
 
-class Temperature:
 
-    def __init__(self, t, unit = 'K'):
-        if unit == 'K':
+class Temperature:
+    def __init__(self, t, unit="K"):
+        if unit == "K":
             self.K = t
-        elif unit == 'C':
+        elif unit == "C":
             self.C = t
-        elif unit == 'F':
+        elif unit == "F":
             self.F = t
         else:
-            raise ValueError(f'Unknown unit system {unit}!')
+            raise ValueError(f"Unknown unit system {unit}!")
 
     # The temperature is actually stored as kelvins inside the object.
     # However, the properties K, C and F allow the same temperature
@@ -27,7 +27,7 @@ class Temperature:
     def K(self, k):
         # Prevent the creation of impossible temperatures.
         if k < 0:
-            raise ValueError(f'Absolute temperature {k} may not be negative.')
+            raise ValueError(f"Absolute temperature {k} may not be negative.")
         else:
             self.__k = k
 
@@ -56,7 +56,7 @@ class Temperature:
     # The dunder methods for the string representation of object.
     # String representation meant for human readers.
     def __str__(self):
-        return f'Temperature of {self.K} kelvins.'
+        return f"Temperature of {self.K} kelvins."
 
     # Representation meant for computer and eval function.
     def __repr__(self):
@@ -73,15 +73,16 @@ class Temperature:
     # how datetime and timedelta are different data types in the
     # datetime standard library module.
 
-if __name__ == '__main__':
-    t1 = Temperature(30, 'C')
-    print(f'Temperature is {t1.C:.1f} C, {t1.F:.1f} F, {t1.K:.1f} K.')
-    t2 = Temperature(100, 'F')
-    print(f'Temperature is {t2.C:.1f} C, {t2.F:.1f} F, {t2.K:.1f} K.')
+
+if __name__ == "__main__":
+    t1 = Temperature(30, "C")
+    print(f"Temperature is {t1.C:.1f} C, {t1.F:.1f} F, {t1.K:.1f} K.")
+    t2 = Temperature(100, "F")
+    print(f"Temperature is {t2.C:.1f} C, {t2.F:.1f} F, {t2.K:.1f} K.")
     t3 = t1 - t2
-    print(f'Their difference is {t3.K:.1f} K.')
+    print(f"Their difference is {t3.K:.1f} K.")
     # And the crash.
     try:
-        t4 = Temperature(-400, 'C')
+        t4 = Temperature(-400, "C")
     except ValueError as e:
-        print(f'Caught error: {e}')
+        print(f"Caught error: {e}")

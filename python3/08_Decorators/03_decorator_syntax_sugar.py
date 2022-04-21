@@ -45,7 +45,7 @@ def add(n1, n2, n3):  # 3 arguments
 result_add = exception_handling(add)
 # print(result_add(10, 20))    # add() missing 1 required positional argument: 'n3'
 print(result_add(10, 20, 30))
-print(result_add(10, 20, '30'))
+print(result_add(10, 20, "30"))
 print()
 
 
@@ -55,4 +55,4 @@ def add1(n1, n2, n3):  # 3 arguments
 
 
 print(add1(10, 20, 30))
-print(add1(10, 20, '30'))
+print(add1(10, 20, "30"))

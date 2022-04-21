@@ -8,6 +8,7 @@ class Robot:
     """
     Represents a robot, with a name.
     """
+
     # A class variable, counting the number of robots
     population = 0
 
@@ -50,18 +51,18 @@ class Robot:
         print("\tWe have {:d} robots.".format(cls.population))  # Robot.population
 
 
-if __name__ == '__main__':
-    chitti = Robot('chitti')
+if __name__ == "__main__":
+    chitti = Robot("chitti")
     chitti.say_hi()
     Robot.how_many()
 
-    irobo = Robot('irobo')
+    irobo = Robot("irobo")
     irobo.say_hi()
     Robot.how_many()
 
     # Delete an instance
     del chitti
 
-    droid = Robot('R2-D2')
+    droid = Robot("R2-D2")
     droid.say_hi()
     Robot.how_many()

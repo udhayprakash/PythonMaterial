@@ -11,10 +11,10 @@ import logging
 
 # logging configuration
 logging.basicConfig(
-    filename='logs/07_logging.log',
-    filemode='a',
-    format='%(asctime)s %(levelname)8s %(name)s %(message)s',
-    datefmt='%d-%b-%Y %H:%M:%S',
+    filename="logs/07_logging.log",
+    filemode="a",
+    format="%(asctime)s %(levelname)8s %(name)s %(message)s",
+    datefmt="%d-%b-%Y %H:%M:%S",
 )
 
 for i in range(10):
@@ -22,7 +22,7 @@ for i in range(10):
         i = str(i)
 
     try:
-        logging.info('i + 1: %d' % (i + 1))
+        logging.info("i + 1: %d" % (i + 1))
     except Exception as ex:
         # logging.error(ex)
         # logging.error(ex, exc_info=True)

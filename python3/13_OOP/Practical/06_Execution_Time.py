@@ -27,9 +27,8 @@ class ExecutionTime:
 
 
 timer = ExecutionTime()
-print(f'{timer.start_time =}')
+print(f"{timer.start_time =}")
 
 sample_list = list()  # []
-my_list = [random.randint(1, 888898) for num in
-           range(1, 1000000) if num % 2 == 0]
-print('Finished in {} seconds.'.format(timer.duration()))
+my_list = [random.randint(1, 888898) for num in range(1, 1000000) if num % 2 == 0]
+print("Finished in {} seconds.".format(timer.duration()))

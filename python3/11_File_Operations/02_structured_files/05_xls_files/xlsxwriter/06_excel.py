@@ -17,24 +17,24 @@ Absolute references maintain fixed row and/or column references.
 """
 import xlsxwriter
 
-with xlsxwriter.Workbook('mybook.xlsx') as wb:
+with xlsxwriter.Workbook("mybook.xlsx") as wb:
     ws = wb.add_worksheet()
 
     for row in range(0, 5):
-        ws.write(row, 0, 'Hello')
+        ws.write(row, 0, "Hello")
 
-    ws.write('D1', 200)
-    ws.write('D2', '=H1+1')
+    ws.write("D1", 200)
+    ws.write("D2", "=H1+1")
 
     data = {
-        'first_name': 'Bharath',
-        'last_name': 'India',
-        'age': 70,
-        'currency': 'INR',
-        'capital': 'New Delhi'
+        "first_name": "Bharath",
+        "last_name": "India",
+        "age": 70,
+        "currency": "INR",
+        "capital": "New Delhi",
     }
 
-    ws2 = wb.add_worksheet('Countries')
+    ws2 = wb.add_worksheet("Countries")
     # row = 0
     col = 0
     ws2.write_row(row, col, tuple(data.keys()))

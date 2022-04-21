@@ -14,19 +14,21 @@ def retry_on_failure(max_attempts=5):
                     result = func(*args, **kwargs)
                 except Exception as ex:
                     print(ex)
-                    print(f'\tWaiting for {times[attempt]} seconds ...')
+                    print(f"\tWaiting for {times[attempt]} seconds ...")
                     time.sleep(times[attempt])
                     attempt += 1
                 else:
                     return result
+
         return wrapper
+
     return inner
 
 
 @retry_on_failure(5)
 def myfunc():
-    print('\nmyfunc - start')
-    1/0
+    print("\nmyfunc - start")
+    1 / 0
 
 
 myfunc()

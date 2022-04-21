@@ -18,19 +18,19 @@ Purpose:
 
 # open('a_create_file.txt', mode='w')
 
-file_handler = open('a_create_file.txt', mode='w')
-print(f'{type(file_handler) =}')
-print(f'{file_handler       =}')
+file_handler = open("a_create_file.txt", mode="w")
+print(f"{type(file_handler) =}")
+print(f"{file_handler       =}")
 # <_io.TextIOWrapper name='a_create_file.txt' mode='w' encoding='cp1252'>
 print()
 
-file_handler = open('a_create_file.txt', mode='w', encoding='utf-8')
-print(f'{file_handler       =}')
+file_handler = open("a_create_file.txt", mode="w", encoding="utf-8")
+print(f"{file_handler       =}")
 # <_io.TextIOWrapper name='a_create_file.txt' mode='w' encoding='utf-8'>
 print()
 
 # To add content to file
-file_handler.write('This is the first line\n')
-file_handler.write('This is the second line\n')
+file_handler.write("This is the first line\n")
+file_handler.write("This is the second line\n")
 
 file_handler.close()

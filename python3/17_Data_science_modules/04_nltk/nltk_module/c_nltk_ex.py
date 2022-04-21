@@ -11,10 +11,19 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
 # Lemmatization
-nltk.download('wordnet')
+nltk.download("wordnet")
 lemmatizer = WordNetLemmatizer()
 
-words = ['dog', 'dogs', 'geese', 'cacti', 'erasers', 'writers',
-         'children', 'childhood', 'feet']
+words = [
+    "dog",
+    "dogs",
+    "geese",
+    "cacti",
+    "erasers",
+    "writers",
+    "children",
+    "childhood",
+    "feet",
+]
 for word in words:
-    print(f'{word:12}: {lemmatizer.lemmatize(word)}')
+    print(f"{word:12}: {lemmatizer.lemmatize(word)}")

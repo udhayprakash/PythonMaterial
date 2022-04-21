@@ -9,15 +9,15 @@ PEP 8 -> use triple double quotes for doc-strings
 
 """
 # String with single quotes
-language = 'Python Programming'
+language = "Python Programming"
 print(language, type(language))
 
 # String with double quotes
-language = 'Python Programming'
+language = "Python Programming"
 print(language, type(language))
 
 # String with triple single quotes
-language = '''Python Programming'''
+language = """Python Programming"""
 print(language, type(language))
 
 # String with triple double quotes

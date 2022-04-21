@@ -5,35 +5,37 @@ Purpose: Writing csv
 """
 import csv
 
-with open('k_delimiter_pipe.csv', 'w', newline='', encoding='utf-8') as gh:
-    header_names = ('sno', 'name', 'language')
-    writer = csv.writer(gh, delimiter='|', dialect='excel')
+with open("k_delimiter_pipe.csv", "w", newline="", encoding="utf-8") as gh:
+    header_names = ("sno", "name", "language")
+    writer = csv.writer(gh, delimiter="|", dialect="excel")
 
     # To write the headers
     writer.writerow(header_names)
 
-    writer.writerow([1, 'english', 'Python'])
-    writer.writerows([
-        [2, 'Russian', 'питон'],
-        [3, 'Italian', 'Pitone'],
-        [4, 'Japanese', 'パイソン'],
-        [5, 'Chinese', '蟒蛇'],
-        [6, 'Telugu', 'పైథాన్'],
-        [7, 'Tamil', 'பைதான்'],
-        [8, 'Hindi', 'अजगर'],
-    ])
+    writer.writerow([1, "english", "Python"])
+    writer.writerows(
+        [
+            [2, "Russian", "питон"],
+            [3, "Italian", "Pitone"],
+            [4, "Japanese", "パイソン"],
+            [5, "Chinese", "蟒蛇"],
+            [6, "Telugu", "పైథాన్"],
+            [7, "Tamil", "பைதான்"],
+            [8, "Hindi", "अजगर"],
+        ]
+    )
     gh.close()
 
 
-print(f'{csv.list_dialects() =}')  # ['excel', 'excel-tab', 'unix']
+print(f"{csv.list_dialects() =}")  # ['excel', 'excel-tab', 'unix']
 # For excel dielect, default delimiter is ,
 # For excel-tab dielect, default delimiter is \t
 
 # To get current maximum field size allowed by the parser
-print(f'{csv.field_size_limit() =}')
+print(f"{csv.field_size_limit() =}")
 
 
-'''
+"""
 Formatting a csv file
 -----------------------
 - quotechar
@@ -57,4 +59,4 @@ Formatting a csv file
     - csv.QUOTE_NONE means that quotes are never placed around fields.
 - doublequote controls the handling of quotes inside fields.
     - When True two consecutive quotes are interpreted as one during read, and when writing, each quote is written as two quotes.
-'''
+"""

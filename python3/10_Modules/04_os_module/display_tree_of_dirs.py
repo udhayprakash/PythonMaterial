@@ -24,7 +24,7 @@ def display_folders(_path, _depth):
         files_n_flders = os.listdir(_path)
         for each in files_n_flders:
             if os.path.isdir(os.path.join(_path, each)):
-                print('+'+'--' * _depth, each)
+                print("+" + "--" * _depth, each)
                 display_folders(os.path.join(_path, each), _depth)
 
 

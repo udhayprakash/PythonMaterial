@@ -2,7 +2,7 @@ import sqlite3
 
 
 def delete_author(author):
-    conn = sqlite3.connect('books.db')
+    conn = sqlite3.connect("books.db")
     cursor = conn.cursor()
 
     sql = f"""
@@ -13,5 +13,5 @@ def delete_author(author):
     conn.commit()
 
 
-if __name__ == '__main__':
-    delete_author(author='Al Sweigart')
+if __name__ == "__main__":
+    delete_author(author="Al Sweigart")

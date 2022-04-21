@@ -2,7 +2,8 @@ from faker import Faker
 
 fake = Faker()
 
-print(f'''
+print(
+    f"""
     FAKE PERSONAL DETAIALS
     ----------------------
     {fake.name()}
@@ -16,4 +17,5 @@ print(f'''
 
     {fake.text()}
     {fake.date_time()}
-''')
+"""
+)

@@ -1,9 +1,9 @@
 from PIL import Image, ImageFilter, ImageEnhance
 
-original_image = Image.open('images/strawberries.png')
+original_image = Image.open("images/strawberries.png")
 original_image.show()
 
-grayscale = original_image.convert('L')
+grayscale = original_image.convert("L")
 edge_detect = original_image.filter(ImageFilter.FIND_EDGES)
 edge_detect.show()
 

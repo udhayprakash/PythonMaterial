@@ -11,29 +11,29 @@ pseudo-code:
     4. Division
 
 """
-choice = int(input('Enter choice[1, 2, 3, 4]:'))
-print('choice', choice, type(choice))
+choice = int(input("Enter choice[1, 2, 3, 4]:"))
+print("choice", choice, type(choice))
 
 if choice == 1:
-    print('Addition')
+    print("Addition")
 elif choice == 2:
-    print('Subtraction')
+    print("Subtraction")
 elif choice == 3:
-    print('Multiplication')
+    print("Multiplication")
 elif choice == 4:
-    print('Division')
+    print("Division")
 else:
-    print('invalid choice')
+    print("invalid choice")
 
 # -------------------------------
 result_for_choice = {
-    1: 'Addition',
-    2: 'Subtraction',
-    3: 'Multiplication',
-    4: 'Division',
+    1: "Addition",
+    2: "Subtraction",
+    3: "Multiplication",
+    4: "Division",
 }
 # print(result_for_choice[choice])
-print(result_for_choice.get(choice, 'invalid choice'))
+print(result_for_choice.get(choice, "invalid choice"))
 
 # -------------------------------
 # PEP 636 -- Structural Pattern Matching: Tutorial -- from python 3.10

@@ -22,15 +22,18 @@ Node.js/ python-asyncio
 """
 import asyncio
 
+
 def hello():
-    print('Hello')
-    print('world')
+    print("Hello")
+    print("world")
+
 
 hello()
 
+
 async def asynchronous_hello():
-    print('Hello')
-    print('World')
+    print("Hello")
+    print("World")
 
 
 # asynchronous_hello()

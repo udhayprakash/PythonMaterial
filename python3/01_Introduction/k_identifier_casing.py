@@ -9,22 +9,22 @@ Purpose: Identifier Casing
 
 """
 # Python is case-sensitive language
-animal = 'DOG'
+animal = "DOG"
 print(animal)
 # print(Animal)
 # NameError: name 'Animal' is not defined
 
-ANIMAL = 'PIG'
+ANIMAL = "PIG"
 print(ANIMAL)
 
-Animal = 'Camel'
+Animal = "Camel"
 print(Animal)
 
 # ------------------------
 # variable casing
 # 1.snake casing or underscore casing
 
-student = 'shiva'
+student = "shiva"
 employee_salary = 2343223432.23
 cost_of_mango = 12
 selling_price_of_apples = 34
@@ -33,7 +33,7 @@ output_of_thermal_sensor = 32
 no_of_current_processes = 5
 
 # 2. Camel casing
-Student = 'Shiva'
+Student = "Shiva"
 EmployeeSalary = 2343223432.23
 CostOfMango = 12
 SellingPriceOfApples = 34

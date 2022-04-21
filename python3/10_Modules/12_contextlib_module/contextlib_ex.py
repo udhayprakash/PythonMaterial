@@ -8,14 +8,14 @@ from contextlib import contextmanager
 
 @contextmanager
 def ctx():
-    print('start')
+    print("start")
     yield
-    print('end')
+    print("end")
 
 
 c = ctx()
 with c:
-    print('middle')
+    print("middle")
 
 with ctx() as c:
-    print('middle')
+    print("middle")

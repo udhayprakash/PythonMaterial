@@ -3,9 +3,9 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 async def hello():
-    return {'Hello': 'World'}
+    return {"Hello": "World"}
 
 
 # python -m uvicorn project1:app --reload

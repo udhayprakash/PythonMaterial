@@ -46,7 +46,7 @@ num1 = 10
 
 # num1.upper()  # AttributeError: 'int' object has no attribute 'upper'
 
-mydict = {'a': 'apple'}
+mydict = {"a": "apple"}
 # mydict['b']   # KeyError: 'b'
 
 # num3 = int(input('Enter number:')) # 12.23
@@ -64,15 +64,15 @@ mydict = {'a': 'apple'}
 
 # Method 2
 try:
-    num3 = int(input('Enter number:')) # 12.23
+    num3 = int(input("Enter number:"))  # 12.23
     print(num3)
-    10 /num3
+    10 / num3
 except Exception as ex:
-    print('ex      :', ex)
-    print('str(ex) :', str(ex))
+    print("ex      :", ex)
+    print("str(ex) :", str(ex))
 
-    print('repr(ex):', repr(ex))
-    print(f'{ex     = }')
+    print("repr(ex):", repr(ex))
+    print(f"{ex     = }")
 
 # CASE - 1
 # 12.23
@@ -100,17 +100,17 @@ try:
     # 10 + '0'              # TypeError
     # 10 + None             # TypeError
 
-    float('3.1415')
+    float("3.1415")
     # int('3.1415')         # ValueError
 
     name = 12123
-    name.upper()            # AttributeError
+    name.upper()  # AttributeError
 except Exception as ex:
-    print('ex      :', ex)
-    print('str(ex) :', str(ex))
+    print("ex      :", ex)
+    print("str(ex) :", str(ex))
 
-    print('repr(ex):', repr(ex))
-    print(f'{ex = }')
+    print("repr(ex):", repr(ex))
+    print(f"{ex = }")
 
 
-print('\nnext statement')
+print("\nnext statement")

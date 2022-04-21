@@ -18,9 +18,9 @@ def euclidean_distance(point1, point2):
 
 # Method 1
 distance1 = euclidean_distance((0, 0), (1, 1))
-print(f'{distance1 =}')
+print(f"{distance1 =}")
 distance2 = euclidean_distance((0, 0), (9, 3))
-print(f'{distance2 =}')
+print(f"{distance2 =}")
 
 # Method 2 - using partial functions
 

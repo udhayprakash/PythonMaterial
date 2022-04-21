@@ -21,9 +21,9 @@ def concatenate(a, b):
     return a + str(b)
 
 
-print(concatenate(['a', 'b'], 'c'))
+print(concatenate(["a", "b"], "c"))
 # ['a', 'b', 'c']
-print(concatenate('Hello', 'World'))
+print(concatenate("Hello", "World"))
 # HelloWorld
-print(concatenate('a', 1))
+print(concatenate("a", 1))
 # a1

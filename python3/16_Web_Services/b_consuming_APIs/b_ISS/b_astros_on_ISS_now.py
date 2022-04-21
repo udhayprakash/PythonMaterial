@@ -7,7 +7,7 @@ Purpose: To get the Astronomers living in ISS now
 import requests
 from pprint import pprint
 
-response = requests.get('http://api.open-notify.org/astros.json')
+response = requests.get("http://api.open-notify.org/astros.json")
 # print(f'{response.status_code =}')
 # print(f'{response.url         =}')
 # print(f'{response.reason      =}')
@@ -18,19 +18,21 @@ response = requests.get('http://api.open-notify.org/astros.json')
 
 # pprint(dict(response.headers))
 
-if response.headers['Content-Type'] == 'application/json':
+if response.headers["Content-Type"] == "application/json":
     response_content = response.json()
     # pprint(response_content)
-    number = response_content['number']
+    number = response_content["number"]
 
     astros = []
-    for each in response_content['people']:
-        astros.append(each['name'])
+    for each in response_content["people"]:
+        astros.append(each["name"])
 
-    craft = each['craft']
+    craft = each["craft"]
 
-    print(f'''
+    print(
+        f"""
         CRAFT               : {craft}
         No. Of ASTRONOMERS  : {number}
         Names of Astronomers: {astros}
-    ''')
+    """
+    )

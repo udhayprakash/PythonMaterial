@@ -11,7 +11,7 @@ Purpose: Functions Demo
 
 
 def hello_word():
-    print('Hello function is called')
+    print("Hello function is called")
 
 
 hello_word()
@@ -19,18 +19,18 @@ hello_word()
 
 # Function Definition
 def hello(name):
-    print('Hello ' + name)
+    print("Hello " + name)
 
 
 # Function Call
 # hello()
 # TypeError: hello() missing 1 required positional argument: 'name'
 
-hello('Python')  # ---> call by positional arguments
+hello("Python")  # ---> call by positional arguments
 
 # hello('Python', 'program')
 # # TypeError: hello() takes 1 positional argument but 2 were given
 
-hello(name='python')  # -----> call by keyword arguments
+hello(name="python")  # -----> call by keyword arguments
 # hello(name1='python')
 # # TypeError: hello() got an unexpected keyword argument 'name1'

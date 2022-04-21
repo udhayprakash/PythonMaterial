@@ -4,12 +4,12 @@
 
 # Function to illustrate the behaviour of variable arguments
 def test_var_arguments(f_argument, *argv):
-    print('first normal arg:', f_argument)
+    print("first normal arg:", f_argument)
     for arg in argv:
-        print('another arg through *argv :', arg)
+        print("another arg through *argv :", arg)
 
 
-test_var_arguments('udhay', 'krishna', 'satya', 'Honeywell')
+test_var_arguments("udhay", "krishna", "satya", "Honeywell")
 
 print()
 
@@ -18,7 +18,7 @@ print()
 def greet_me(**kwargs):
     if kwargs is not None:
         for key, value in kwargs.items():
-            print('%s == %s' % (key, value))
+            print("%s == %s" % (key, value))
 
 
-greet_me(name='Honeywell')  # Input must be given only in pairs like this
+greet_me(name="Honeywell")  # Input must be given only in pairs like this

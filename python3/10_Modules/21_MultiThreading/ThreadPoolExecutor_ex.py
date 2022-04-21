@@ -30,7 +30,9 @@ def main():
     executor = ThreadPoolExecutor(max_workers=3)
     task1 = executor.submit(task)
     task2 = executor.submit(task)
+    print(f"{task1 =}")
+    print(f"{task2 =}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

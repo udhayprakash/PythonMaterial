@@ -20,7 +20,7 @@ from pprint import pprint
 import yaml
 
 # scalar values to python dictionary
-with open('items.yaml') as f:
+with open("items.yaml") as f:
     data = yaml.load(f, Loader=yaml.FullLoader)
     pprint(data)
 

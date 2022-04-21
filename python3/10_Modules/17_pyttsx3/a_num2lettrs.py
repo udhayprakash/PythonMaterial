@@ -8,28 +8,28 @@ Purpose: digits to alphabets
 """
 
 number_to_alphabets = {
-    0: 'ZERO',
-    1: 'ONE',
-    2: 'TWO',
-    3: 'THREE',
-    4: 'FOUR',
-    5: 'FIVE',
-    6: 'SIX',
-    7: 'SEVEN',
-    8: 'EIGHT',
-    9: 'NINE'
+    0: "ZERO",
+    1: "ONE",
+    2: "TWO",
+    3: "THREE",
+    4: "FOUR",
+    5: "FIVE",
+    6: "SIX",
+    7: "SEVEN",
+    8: "EIGHT",
+    9: "NINE",
 }
-'''
+"""
 NOTE:
 abs(-num) = num
 abs(+num) = num
-'''
+"""
 try:
     import pyttsx3
 except ImportError:
     import os
 
-    os.system('pip install pyttsx3')
+    os.system("pip install pyttsx3")
     import pyttsx3
 
 
@@ -53,7 +53,7 @@ def text_to_speech(text):
     engine.runAndWait()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     digit_to_number(-1.8)
     digit_to_number(10)
     digit_to_number(23)

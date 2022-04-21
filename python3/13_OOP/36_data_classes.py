@@ -14,7 +14,7 @@ class UsingRegularClass:
         self.age = age
 
     def __repr__(self):
-        return (f'{self.__class__.__name__}(name={self.name!r}, age={self.age!r})')
+        return f"{self.__class__.__name__}(name={self.name!r}, age={self.age!r})"
 
     def __eq__(self, other):
         if other.__class__ is not self.__class__:
@@ -22,16 +22,16 @@ class UsingRegularClass:
         return (self.name, self.age) == (other.name, other.age)
 
 
-a1 = UsingRegularClass('Udhay', 30)
+a1 = UsingRegularClass("Udhay", 30)
 print(a1)
-a2 = UsingRegularClass('Prakash', 20)
+a2 = UsingRegularClass("Prakash", 20)
 
-print(f'{a1 == a2 =}')
+print(f"{a1 == a2 =}")
 
 # print(a.__repr__())
 # print(vars(a))
 
-print('-' * 40)
+print("-" * 40)
 
 from dataclasses import dataclass
 
@@ -42,7 +42,7 @@ class UsingDataClass:
     age: str
 
 
-b = UsingDataClass('Udhay', 30)
+b = UsingDataClass("Udhay", 30)
 print(b)
 
 print(a1 == b)
@@ -60,16 +60,15 @@ class ArithmeticOperations:
 
 a = ArithmeticOperations(123, 345)
 # print(dir(a))
-print(f'a.addition():{a.addition()}')
+print(f"a.addition():{a.addition()}")
 
 
 ##################################
 @dataclass
 class ArithmeticOperations1:
-
     def addition(self, num1, num2):
         return num1 + num2
 
 
 a = ArithmeticOperations1()
-print(f'a.addition(123, 345):{a.addition(123, 345)}')
+print(f"a.addition(123, 345):{a.addition(123, 345)}")

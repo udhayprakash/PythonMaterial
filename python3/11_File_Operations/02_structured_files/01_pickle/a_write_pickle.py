@@ -18,7 +18,7 @@ Purpose: Pickle file operations
 """
 import pickle
 
-favorite_color = {'lion': 'yellow', 'kitty': 'red'}
+favorite_color = {"lion": "yellow", "kitty": "red"}
 
 # Python object to flat string
 serialized_string = pickle.dumps(favorite_color)
@@ -26,5 +26,5 @@ print(serialized_string)
 
 
 # Python object to pickle file
-with open('favorite_color.pickle', 'wb') as f:
+with open("favorite_color.pickle", "wb") as f:
     pickle.dump(favorite_color, f)

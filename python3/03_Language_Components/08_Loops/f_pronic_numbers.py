@@ -50,5 +50,5 @@ while pronic_nums_count < 100:
 
     for i in range(1, num):
         if num == i * (i + 1):
-            print(num, end = ',')
+            print(num, end=",")
             pronic_nums_count += 1

@@ -16,28 +16,31 @@ output     : xC
 23C
 """
 import sys
-temperature = input('Enter the temperature, followed by C or F:').upper()
 
-if 'C' in temperature:
-    celsius = float(temperature.strip('C '))
+temperature = input("Enter the temperature, followed by C or F:").upper()
+
+if "C" in temperature:
+    celsius = float(temperature.strip("C "))
     fahrenheit = (1.8 * celsius) + 32
-elif 'F' in temperature:
-    fahrenheit = float(temperature.strip('F '))
+elif "F" in temperature:
+    fahrenheit = float(temperature.strip("F "))
     celsius = (fahrenheit - 32) * 5.0 / 9.0
 else:
     temperature = temperature.strip()
     if temperature.isdigit():
         # Default is celsius
-        celsius = float(temperature.strip('C '))
+        celsius = float(temperature.strip("C "))
         fahrenheit = (1.8 * celsius) + 32
     else:
-        print('INVALID INPUT')
+        print("INVALID INPUT")
         sys.exit(1)
 
-print(f'''
+print(
+    f"""
         celsius     : {round(celsius, 2)}
         fahrenheit  : {round(fahrenheit, 2)}
-''')
+"""
+)
 
 
 # Assignment: str.isnumeric() vs srr.isdigit()

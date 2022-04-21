@@ -8,10 +8,10 @@ Enter number of lines 3
 * * * 		   prints 3-3=0 spaces, i =3 '* '
 """
 
-n = int(eval(input('Enter number of lines ')))
+n = int(eval(input("Enter number of lines ")))
 
 for i in range(1, n + 1):
-    print((n - i) * ' ' + i * '* ')
+    print((n - i) * " " + i * "* ")
 
 
 def triangle(n):
@@ -21,8 +21,8 @@ def triangle(n):
             print()  # observe the difference after importing print_function
             k = k - 1
     for j in range(0, i + 1):
-        print('* ')
-    print('\r')
+        print("* ")
+    print("\r")
 
 
 n = 5

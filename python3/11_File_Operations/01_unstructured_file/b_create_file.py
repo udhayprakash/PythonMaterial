@@ -2,29 +2,29 @@
 """
 Purpose: creating file and adding content
 """
-fh = open('b_create_file.txt', mode='w', encoding='utf-8')
+fh = open("b_create_file.txt", mode="w", encoding="utf-8")
 
-print('Name of the file : ', fh.name)
-print('Opening mode     : ', fh.mode)
+print("Name of the file : ", fh.name)
+print("Opening mode     : ", fh.mode)
 
-fh.write('This is first line\n')
-fh.write('This is second line\n')
+fh.write("This is first line\n")
+fh.write("This is second line\n")
 fh.flush()
 
-print('Closed or not    : ', fh.closed)
+print("Closed or not    : ", fh.closed)
 fh.close()  # garbage collector
-print('Closed or not    : ', fh.closed)
+print("Closed or not    : ", fh.closed)
 
 try:
-    fh.write('This is third line\n')
+    fh.write("This is third line\n")
 except ValueError as ve:
     print(ve)
-    print('can not do operations(read/write) on closed file')
+    print("can not do operations(read/write) on closed file")
 
 
 # ---- REOPENING the same file in write mode
-gh = open('b_create_file.txt', mode='w', encoding='utf-8')
-gh.write('This is third line\n')
+gh = open("b_create_file.txt", mode="w", encoding="utf-8")
+gh.write("This is third line\n")
 
 gh.flush()
 gh.close()
@@ -34,10 +34,9 @@ gh.close()
 # 2. IN write mode, if file present, removes existing content and adds new content.
 
 
-
-#----Adding content to existing file
-mh = open('b_create_file.txt', mode='a')
-mh.write('This is fourth line\n')
+# ----Adding content to existing file
+mh = open("b_create_file.txt", mode="a")
+mh.write("This is fourth line\n")
 
 mh.flush()
 mh.close()

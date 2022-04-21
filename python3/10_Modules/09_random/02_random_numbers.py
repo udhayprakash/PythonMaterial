@@ -22,7 +22,7 @@ for i in range(3):
 # To shuffle a list of elements
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 random.shuffle(numbers)
-print('after shuffle', numbers)
+print("after shuffle", numbers)
 
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -33,7 +33,7 @@ print(x)
 y = random.sample(items, 4)
 print(y)
 
-mountains = ['Andes', 'Himalayas', 'Alphes', 'Aplachein', 'Ural', 'Vindhya']
+mountains = ["Andes", "Himalayas", "Alphes", "Aplachein", "Ural", "Vindhya"]
 
 # Pick a random item from the list
 x = random.sample(mountains, 1)

@@ -5,20 +5,20 @@ Purpose: platform module
 
 import platform
 
-print('platform.architecture()  :', platform.architecture())  # ('64bit', 'WindowsPE')
-print('platform.machine()       :', platform.machine())  # AMD64
-print('platform.system()        :', platform.system())  # Windows
+print("platform.architecture()  :", platform.architecture())  # ('64bit', 'WindowsPE')
+print("platform.machine()       :", platform.machine())  # AMD64
+print("platform.system()        :", platform.system())  # Windows
 
-print(f'{platform.python_revision()       = }')
-print(f'{platform.python_implementation() = }')
-print(f'{platform.python_revision()       = }')
-print(f'{platform.python_version()        = }')
-print(f'{platform.python_version_tuple() = }')
-print(f'{platform.uname()                = }')
-print(f'{platform.version() = }')
-print(f'{platform.win32_edition() = }')
-print(f'{platform.win32_is_iot() = }')
-print(f'{platform.win32_ver() = }')
+print(f"{platform.python_revision()       = }")
+print(f"{platform.python_implementation() = }")
+print(f"{platform.python_revision()       = }")
+print(f"{platform.python_version()        = }")
+print(f"{platform.python_version_tuple() = }")
+print(f"{platform.uname()                = }")
+print(f"{platform.version() = }")
+print(f"{platform.win32_edition() = }")
+print(f"{platform.win32_is_iot() = }")
+print(f"{platform.win32_ver() = }")
 
 print(dir(platform))
 #

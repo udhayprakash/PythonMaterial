@@ -1,4 +1,5 @@
 import cProfile
+
 # Using cProfile.Profile example
 import random
 
@@ -25,16 +26,17 @@ def main():
     print_msg()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import cProfile
     import pstats
+
     profiler = cProfile.Profile()
     profiler.enable()
     main()
     profiler.disable()
-    stats = pstats.Stats(profiler).sort_stats('tottime')
+    stats = pstats.Stats(profiler).sort_stats("tottime")
     stats.print_stats()
 
     # Export profiler output to file
     stats = pstats.Stats(profiler)
-    stats.dump_stats('/export-data')
+    stats.dump_stats("/export-data")

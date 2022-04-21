@@ -10,24 +10,26 @@ Installation:
 """
 import feedparser
 from pprint import pprint
-reddit_feed = feedparser.parse('http://www.reddit.com/r/python/.rss')
+
+reddit_feed = feedparser.parse("http://www.reddit.com/r/python/.rss")
 
 print(type(reddit_feed))
 # <class 'feedparser.util.FeedParserDict'>
 
 import json
-with open('reddit_python_feed.rss', 'w') as f:
-    json.dump(reddit_feed,f, indent=2)
+
+with open("reddit_python_feed.rss", "w") as f:
+    json.dump(reddit_feed, f, indent=2)
     f.close()
 
 # two ways of parsing values
-print(reddit_feed['feed']['link'])
+print(reddit_feed["feed"]["link"])
 print(reddit_feed.feed.link)
 print()
 
-print(f'{reddit_feed.version      = }')
-print(f'{reddit_feed.headers      = }')
-print(f'{len(reddit_feed.entries) = }')
+print(f"{reddit_feed.version      = }")
+print(f"{reddit_feed.headers      = }")
+print(f"{len(reddit_feed.entries) = }")
 print()
 for post in reddit_feed.entries[:5]:
-    print(post.title + ': ' + post.link)
+    print(post.title + ": " + post.link)

@@ -10,13 +10,13 @@ from time import sleep
 
 
 def sendmessage(title, message):
-    pynotify.init('Test')
+    pynotify.init("Test")
     notice = pynotify.Notification(title, message)
     notice.show()
     return
 
 
-url = 'http://www.thehindu.com/'
+url = "http://www.thehindu.com/"
 while True:
     r = requests.get(url)
     while r.status_code is not 200:
@@ -24,7 +24,8 @@ while True:
 
         response = r.text
         xxs = HtmlXPathSelector(text=response)
-        news = '\n'.join(xxs.select(
-            '//div[@class="breakingNews_list"]//h3/a/text()').extract()[:6])
-        sendmessage('Breaking News', news)
+        news = "\n".join(
+            xxs.select('//div[@class="breakingNews_list"]//h3/a/text()').extract()[:6]
+        )
+        sendmessage("Breaking News", news)
         sleep(10)

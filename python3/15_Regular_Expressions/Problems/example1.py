@@ -11,13 +11,13 @@ rules = [
     "dev-Stats-StatusToStatRule",
     "dev-UpdateStatus-InvoiceStatusRule",
     "dev-UpdateStatus-StatusRule",
-    "dev-ValidateTitles-PullEventRule"
+    "dev-ValidateTitles-PullEventRule",
 ]
 
 ignore = ["UpdateStatus", "ContractDetails"]
 
 
-expr = '|'.join(ignore)
+expr = "|".join(ignore)
 result = filter(lambda x: not re.search(expr, x), rules)
 for each in result:
     print(each)

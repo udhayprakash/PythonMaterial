@@ -10,17 +10,17 @@ except ModuleNotFoundError as ex:
     print(repr(ex))
     from os import system
 
-    system('pip install xmltodict --user')
+    system("pip install xmltodict --user")
     import xmltodict
 
-with open('books.xml', 'r') as fh:
+with open("books.xml", "r") as fh:
     file_content = fh.read()
     doc = xmltodict.parse(file_content)
     pprint(doc)
 
     mapping = {}
-    for each in doc['catalog']['book']:
-        mapping[each['@isbn']] = each['title']
+    for each in doc["catalog"]["book"]:
+        mapping[each["@isbn"]] = each["title"]
 
     pprint(mapping)
 

@@ -101,17 +101,17 @@ class IShape:
         raise NotImplementedError
 
 
-class Circle(IShape):
+class Circle(IShape):  # noqa: F811
     def draw(self):
         pass
 
 
-class Square(IShape):
+class Square(IShape):  # noqa: F811
     def draw(self):
         pass
 
 
-class Rectangle(IShape):
+class Rectangle(IShape):  # noqa: F811
     def draw(self):
         pass
 

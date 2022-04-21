@@ -4,15 +4,15 @@ import click
 
 
 @click.command()
-@click.option('--blue', is_flag=True, help='message in blue color')
+@click.option("--blue", is_flag=True, help="message in blue color")
 def hello(blue):
     if blue:
-        click.secho('Hello there', fg='blue')
+        click.secho("Hello there", fg="blue")
     else:
-        click.secho('Hello there')
+        click.secho("Hello there")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     hello()
 
 """

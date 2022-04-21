@@ -8,17 +8,17 @@ def cli():
     pass
 
 
-@cli.command(name='gen')
+@cli.command(name="gen")
 def generic():
-    click.echo('Hello there')
+    click.echo("Hello there")
 
 
-@cli.command(name='wel')
+@cli.command(name="wel")
 def welcome():
-    click.echo('Welcome')
+    click.echo("Welcome")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cli()
 
 """

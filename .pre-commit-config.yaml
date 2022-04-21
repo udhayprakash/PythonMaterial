@@ -18,19 +18,21 @@ repos:
       # - id: debug-statements
       #   exclude: python3/14_Code_Quality/python_2to3_ex.py
       - id: destroyed-symlinks
-      # - id: double-quote-string-fixer
       - id: mixed-line-ending
       - id: trailing-whitespace
+      # - id: double-quote-string-fixer
       # - id: check-ast
       # - id: check-shebang-scripts-are-executable
       # - id: pretty-format-json
 
-  # - repo: https://github.com/psf/black
-  #   rev: 22.3.0
-  #   hooks:
-  #     - id: black
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        language_version: python3
+        exclude: python3/14_Code_Quality/python_2to3_ex.py
 
-  # - repo: https://github.com/asottile/reorder_python_imports
-  #   rev: v3.0.1
+  # - repo: https://gitlab.com/pycqa/flake8
+  #   rev: 3.9.2
   #   hooks:
-  #     - id: reorder-python-imports
+  #     - id: flake8

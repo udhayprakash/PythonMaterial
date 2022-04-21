@@ -14,8 +14,7 @@ def test2(mock_listdir):
 
 
 @mock.patch("os.listdir")
-class Test():
-
+class Test:
     def not_decorated_and_not_tested(self):
         assert False
 

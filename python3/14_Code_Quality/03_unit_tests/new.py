@@ -1,4 +1,5 @@
 import rdflib
+
 g = rdflib.Graph()
 
 # RDF - Resource Description Framework (RDF)
@@ -23,5 +24,5 @@ g = rdflib.Graph()
 
 import requests
 
-resp = requests.get('https://query.wikidata.org/sparql')
+resp = requests.get("https://query.wikidata.org/sparql")
 print(vars(resp))

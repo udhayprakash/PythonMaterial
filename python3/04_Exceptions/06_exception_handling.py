@@ -25,14 +25,14 @@ Purpose: Exception Handling
 
 
 try:
-    num1 = int(input('Enter an integer:'))
-    num2 = int(input('Enter an integer:'))
+    num1 = int(input("Enter an integer:"))
+    num2 = int(input("Enter an integer:"))
     division = num1 / num2
 except ValueError as ve:
     # print(f'{ve =}')
-    print('Please enter integers only')
+    print("Please enter integers only")
 except ZeroDivisionError as ze:
     # print(f'{ze =}')
-    print('Denominator(num2) cant be zero')
+    print("Denominator(num2) cant be zero")
 else:
-    print(f'{division = }')
+    print(f"{division = }")

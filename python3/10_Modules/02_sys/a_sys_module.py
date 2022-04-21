@@ -3,10 +3,12 @@
 Purpose: sys module
 """
 import sys
+
 print(dir(sys))
 
 
-print(f'''
+print(
+    f"""
     {sys.winver             =}
     {sys.version            =}
     {sys.version_info       =}
@@ -17,7 +19,8 @@ print(f'''
     {sys.is_finalizing()    =}
 
     sys.copyright           =\n{sys.copyright}
-''')
+"""
+)
 
 
 # cpython -c      python.org

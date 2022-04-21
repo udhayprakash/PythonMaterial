@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-__author__ = ''
+__author__ = ""
 
 import unittest
 from calculate import Calculate
@@ -21,5 +21,6 @@ class TestCalculate(unittest.TestCase):
     def tearDownClass(cls):
         del cls.calc
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

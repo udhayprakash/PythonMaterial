@@ -1,12 +1,13 @@
 from urllib.parse import urlparse
-o = urlparse('http://www.cwi.nl:80/%7Eguido/Python.html')
-o   # ParseResult(scheme='http', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
-            # params='', query='', fragment='')
-o.scheme  # 'http'
-o.port    # 80
-o.geturl() # 'http://www.cwi.nl:80/%7Eguido/Python.html'
 
-'''
+o = urlparse("http://www.cwi.nl:80/%7Eguido/Python.html")
+o  # ParseResult(scheme='http', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
+# params='', query='', fragment='')
+o.scheme  # 'http'
+o.port  # 80
+o.geturl()  # 'http://www.cwi.nl:80/%7Eguido/Python.html'
+
+"""
  >>> urlparse('//www.cwi.nl:80/%7Eguido/Python.html')
  ParseResult(scheme='', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
             params='', query='', fragment='')
@@ -45,4 +46,4 @@ from urllib.parse import urljoin
 >>> r2.geturl()
 'http://www.Python.org/doc/'
 
-'''
+"""

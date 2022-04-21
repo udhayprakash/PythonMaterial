@@ -20,12 +20,12 @@ Purpose: Raising exceptions
 
 
 try:
-    num1 = int(input('Enter an integer:'))
-    num2 = int(input('Enter an integer:'))
+    num1 = int(input("Enter an integer:"))
+    num2 = int(input("Enter an integer:"))
     if num2 == 0:
-        raise ZeroDivisionError('ENsure that num2 is non-zero')
+        raise ZeroDivisionError("ENsure that num2 is non-zero")
 except Exception as ex:
     print(repr(ex))
 else:
-    division = num1 /num2
-    print(f'{division =}')
+    division = num1 / num2
+    print(f"{division =}")

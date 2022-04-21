@@ -15,7 +15,7 @@ def fiboPlot(n):
     square_b = b
 
     # Setting the colour of the plotting pen to blue
-    x.pencolor('blue')
+    x.pencolor("blue")
 
     # Drawing the first square
     x.forward(b * factor)
@@ -53,7 +53,7 @@ def fiboPlot(n):
     x.pendown()
 
     # Setting the colour of the plotting pen to red
-    x.pencolor('red')
+    x.pencolor("red")
 
     # Fibonacci Spiral Plot
     x.left(90)
@@ -77,15 +77,15 @@ factor = 1
 
 # Taking Input for the number of
 # Iterations our Algorithm will run
-n = int(input('Enter the number of iterations (must be > 1): '))
+n = int(input("Enter the number of iterations (must be > 1): "))
 
 # Plotting the Fibonacci Spiral Fractal
 # and printing the corresponding Fibonacci Number
 if n > 0:
-    print('Fibonacci series for', n, 'elements :')
+    print("Fibonacci series for", n, "elements :")
     x = turtle.Turtle()
     x.speed(100)
     fiboPlot(n)
     turtle.done()
 else:
-    print('Number of iterations must be > 0')
+    print("Number of iterations must be > 0")

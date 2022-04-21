@@ -21,7 +21,6 @@ Purpose: Using Custom Exception
 # print(f"Total Eligible Voters: {votes}")
 
 
-
 # Method 2 - skip the loop with exception
 class InvalidInput(Exception):
     pass
@@ -34,18 +33,18 @@ class InvalidAge(Exception):
 votes = 0
 attempt = 0
 while attempt < 5:
-    print(f'\n{attempt =}')
+    print(f"\n{attempt =}")
     try:
-        age = int(input('Enter your age:'))
+        age = int(input("Enter your age:"))
         if age <= 0:
-            raise InvalidInput('Invalid Entry for the age!')
+            raise InvalidInput("Invalid Entry for the age!")
         elif age < 18:
             # raise InvalidAge('You are Ineligible to vote!!')
-            raise InvalidAge(f'You are short by {18 - age} years for voting')
+            raise InvalidAge(f"You are short by {18 - age} years for voting")
         else:
             votes += 1
         attempt += 1
     except Exception as ex:
-        print(f'{ex=}')
+        print(f"{ex=}")
     else:
-        print(f'Your voterID is {attempt}')
+        print(f"Your voterID is {attempt}")

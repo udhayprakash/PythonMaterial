@@ -11,18 +11,18 @@ def download_html(url):
 
 def scraper(url):
     html = download_html(url)
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, "html.parser")
 
-    title_links = soup.findAll('h1')
+    title_links = soup.findAll("h1")
     articles = {}
     for link in title_links:
         if link.a:
-            articles[link.a['href']] = link.text.strip()
+            articles[link.a["href"]] = link.text.strip()
 
     for article in articles:
-        print(f'{articles[article]} - {article}')
+        print(f"{articles[article]} - {article}")
 
 
-if __name__ == '__main__':
-    url = 'https://www.blog.pythonlibrary.org'
+if __name__ == "__main__":
+    url = "https://www.blog.pythonlibrary.org"
     scraper(url)

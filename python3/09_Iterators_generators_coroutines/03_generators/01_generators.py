@@ -21,15 +21,15 @@ Generators follow the "STATE SUSPENSION"
 
 
 def my_generator():
-    print(' I am in the function')
+    print(" I am in the function")
     yield 111
-    print('yielding 222')
+    print("yielding 222")
     yield 222
-    print('yielding 333')
+    print("yielding 333")
     yield 333
-    print('yielding 444')
+    print("yielding 444")
     yield 444
-    return 'No More value to yield'
+    return "No More value to yield"
 
 
 # my_generator()
@@ -39,16 +39,16 @@ print(type(result), result)
 
 # Execution starts below
 res1 = next(result)  # 111
-print(f'res1:{res1} type(res1):{type(res1)}')
+print(f"res1:{res1} type(res1):{type(res1)}")
 
 res1 = next(result)  # 222
-print(f'res1:{res1} type(res1):{type(res1)}')
+print(f"res1:{res1} type(res1):{type(res1)}")
 
 res1 = next(result)  # 333
-print(f'res1:{res1} type(res1):{type(res1)}')
+print(f"res1:{res1} type(res1):{type(res1)}")
 
 res1 = next(result)  # 444
-print(f'res1:{res1} type(res1):{type(res1)}')
+print(f"res1:{res1} type(res1):{type(res1)}")
 
 try:
     res1 = next(result)  # StopIteration
@@ -58,19 +58,19 @@ except StopIteration as ex:
 for ech in result:
     print(ech)
 
-print('\n After Re-initializing')
+print("\n After Re-initializing")
 result = my_generator()
 for ech in result:
     print(ech)
 
 result = my_generator()
-print('\n', list(result))  # [111, 222, 333, 444]
+print("\n", list(result))  # [111, 222, 333, 444]
 
 result = my_generator()
-print('\n', tuple(result))  # (111, 222, 333, 444)
+print("\n", tuple(result))  # (111, 222, 333, 444)
 
 result = my_generator()
-print('\n', set(result))  # {111, 222, 333, 444}
+print("\n", set(result))  # {111, 222, 333, 444}
 
 result = my_generator()
-print('\n', str(result))  # <generator object my_generator at 0x000002CC22552F20>
+print("\n", str(result))  # <generator object my_generator at 0x000002CC22552F20>

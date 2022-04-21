@@ -9,7 +9,7 @@ import sys
 
 LOG_LEVEL = logging.DEBUG
 
-formatter = logging.Formatter('%(asctime)s - %(levelname)8s - %(message)s')
+formatter = logging.Formatter("%(asctime)s - %(levelname)8s - %(message)s")
 
 # Step 1: Create handlers
 stream_handler = logging.StreamHandler(sys.stderr)
@@ -17,12 +17,10 @@ stream_handler.setLevel(LOG_LEVEL)
 stream_handler.setFormatter(formatter)
 
 memory_handler = logging.handlers.MemoryHandler(
-    capacity=1024 * 1,  # 1 kb
-    flushLevel=logging.ERROR,
-    target=stream_handler
+    capacity=1024 * 1, flushLevel=logging.ERROR, target=stream_handler  # 1 kb
 )
 
-log_file_name = os.path.join('logs', os.path.splitext(__file__)[0] + '.log')
+log_file_name = os.path.join("logs", os.path.splitext(__file__)[0] + ".log")
 file_handler = logging.FileHandler(log_file_name)
 file_handler.setLevel(LOG_LEVEL)
 file_handler.setFormatter(formatter)
@@ -43,9 +41,9 @@ def flush():
 atexit.register(flush)
 loop_count = 0
 while loop_count <= 100000:
-    logger.debug(f'This is {loop_count:6} log')
-    logger.info(f'This is {loop_count:6} log')
-    logger.warning(f'This is {loop_count:6} log')
-    logger.error(f'This is {loop_count:6} log')
-    logger.critical(f'This is {loop_count:6} log')
+    logger.debug(f"This is {loop_count:6} log")
+    logger.info(f"This is {loop_count:6} log")
+    logger.warning(f"This is {loop_count:6} log")
+    logger.error(f"This is {loop_count:6} log")
+    logger.critical(f"This is {loop_count:6} log")
     loop_count += 1

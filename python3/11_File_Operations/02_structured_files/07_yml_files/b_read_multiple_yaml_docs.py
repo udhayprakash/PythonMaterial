@@ -4,7 +4,7 @@ Purpose: Reading (parsing) multiple YAML docs
 """
 import yaml
 
-with open('data.yaml') as f:
+with open("data.yaml") as f:
     # Multiple YAML documents are read with load_all()
     docs = yaml.load_all(f, Loader=yaml.FullLoader)
 

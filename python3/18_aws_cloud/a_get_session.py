@@ -1,4 +1,5 @@
 import boto3
+
 # import os
 # session = boto3.Session(
 #     aws_access_key_id=os.environ['AWS_SERVER_PUBLIC_KEY'],
@@ -9,7 +10,8 @@ import boto3
 # aws configure
 session = boto3.Session()
 
-print(f'''
+print(
+    f"""
     {session                            =}
     {session.profile_name               =}
     {session.available_profiles         =}
@@ -17,12 +19,15 @@ print(f'''
     {session.get_available_partitions() =}
     {session.get_available_resources()  =}
     {session.get_available_services()   =}
-''')
+"""
+)
 
 creds = session.get_credentials()
-print(f'''
+print(
+    f"""
     {creds.access_key =}
-''') # {creds.secret_key =}
+"""
+)  # {creds.secret_key =}
 
 # Its recommended to create own session
 import boto3.session

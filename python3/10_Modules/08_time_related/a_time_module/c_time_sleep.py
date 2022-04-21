@@ -10,8 +10,9 @@ def time_taken(func):
         start_time = time.perf_counter_ns()
         result = func(*args, **kwargs)
         end_time = time.perf_counter_ns()
-        print(f'\nTIME TAKEN{args}: {end_time - start_time} ns')
+        print(f"\nTIME TAKEN{args}: {end_time - start_time} ns")
         return result
+
     return inner
 
 
@@ -19,12 +20,13 @@ def time_taken(func):
 def time_taking_function(num):
     time.sleep(num)
 
-if __name__ == '__main__':
-    print('Started! Sleeping for 10 seconds')
+
+if __name__ == "__main__":
+    print("Started! Sleeping for 10 seconds")
     time.sleep(10)
-    print('I am back!! Sleeping 3 seconds')
+    print("I am back!! Sleeping 3 seconds")
     time.sleep(3)
-    print('I am back Again!!!')
+    print("I am back Again!!!")
 
     time_taking_function(1)
     time_taking_function(2)

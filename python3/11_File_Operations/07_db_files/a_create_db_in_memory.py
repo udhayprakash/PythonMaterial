@@ -7,11 +7,11 @@ from sqlite3 import Error
 
 
 def create_connection():
-    """ create a database connection to a database that resides
-        in the memory
+    """create a database connection to a database that resides
+    in the memory
     """
     try:
-        conn = sqlite3.connect(':memory:')
+        conn = sqlite3.connect(":memory:")
         print(sqlite3.version)
     except Error as e:
         print(e)
@@ -19,5 +19,5 @@ def create_connection():
         conn.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     create_connection()

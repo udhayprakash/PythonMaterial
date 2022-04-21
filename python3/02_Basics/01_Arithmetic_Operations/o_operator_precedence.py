@@ -44,5 +44,5 @@ print(result)
 expression = 40 // 10 / 3.0
 print(result)
 
-expression = (40 / 10 // 3.0)  # + 23e45 - 23 + 56 * 67
+expression = 40 / 10 // 3.0  # + 23e45 - 23 + 56 * 67
 print(result)

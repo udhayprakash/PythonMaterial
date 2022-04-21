@@ -20,13 +20,13 @@ NOTE:
 """
 
 try:
-    print('In try block')
+    print("In try block")
     10 / 0
 except Exception as ex:
-    print(f'In Exception block: {ex =}')
+    print(f"In Exception block: {ex =}")
 else:
-    print('In Else block')
+    print("In Else block")
 finally:
-    print('In finally block')
+    print("In finally block")
 
-print('next statement')
+print("next statement")

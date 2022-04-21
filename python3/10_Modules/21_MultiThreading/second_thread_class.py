@@ -2,13 +2,13 @@ from threading import Thread
 
 
 class FibonacciThread(Thread):
-    """ A thread class to produce Fibonacci Numbers"""
+    """A thread class to produce Fibonacci Numbers"""
 
     def __init__(self):
         Thread.__init__(self)
 
     def run(self):
-        """ override the run method to define thread body"""
+        """override the run method to define thread body"""
         print("Fibonacci Thread Started")
         firstTerm = 0
         secondTerm = 1

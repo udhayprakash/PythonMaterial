@@ -13,19 +13,16 @@ class Animal:
         pass
 
 
-animals = [
-    Animal('lion'),
-    Animal('mouse')
-]
+animals = [Animal("lion"), Animal("mouse")]
 
 
 def animal_sound(animals: list):
     for animal in animals:
-        if animal.name == 'lion':
-            print('roar')
+        if animal.name == "lion":
+            print("roar")
 
-        elif animal.name == 'mouse':
-            print('squeak')
+        elif animal.name == "mouse":
+            print("squeak")
 
 
 animal_sound(animals)
@@ -39,21 +36,17 @@ you will see that the if statement would be repeated over and over again
 in the animal_sound function each time a new animal is added, all over the application.
 """
 
-animals = [
-    Animal('lion'),
-    Animal('mouse'),
-    Animal('snake')
-]
+animals = [Animal("lion"), Animal("mouse"), Animal("snake")]
 
 
 def animal_sound(animals: list):
     for animal in animals:
-        if animal.name == 'lion':
-            print('roar')
-        elif animal.name == 'mouse':
-            print('squeak')
-        elif animal.name == 'snake':
-            print('hiss')
+        if animal.name == "lion":
+            print("roar")
+        elif animal.name == "mouse":
+            print("squeak")
+        elif animal.name == "snake":
+            print("hiss")
 
 
 animal_sound(animals)
@@ -77,17 +70,17 @@ class Animal:
 
 class Lion(Animal):
     def make_sound(self):
-        return 'roar'
+        return "roar"
 
 
 class Mouse(Animal):
     def make_sound(self):
-        return 'squeak'
+        return "squeak"
 
 
 class Snake(Animal):
     def make_sound(self):
-        return 'hiss'
+        return "hiss"
 
 
 def animal_sound(animals: list):
@@ -123,9 +116,9 @@ class Discount:
         self.price = price
 
     def give_discount(self):
-        if self.customer == 'fav':
+        if self.customer == "fav":
             return self.price * 0.2
-        if self.customer == 'vip':
+        if self.customer == "vip":
             return self.price * 0.4
 
 

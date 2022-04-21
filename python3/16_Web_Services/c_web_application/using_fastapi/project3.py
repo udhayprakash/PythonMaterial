@@ -1,23 +1,24 @@
 from pydantic import BaseModel
 from fastapi import FastAPI
 from typing import Optional
+
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 async def hello():
-    return {'Hello': 'World'}
+    return {"Hello": "World"}
 
 
-@app.get('/component/{component_id}')  # path paramters
+@app.get("/component/{component_id}")  # path paramters
 async def get_component(component_id: int):
-    return {'component_id': component_id}
+    return {"component_id": component_id}
 
 
-@app.get('/component/')  # query parameters
+@app.get("/component/")  # query parameters
 async def read_component(number: int, text: Optional[str]):
-    """ query params """
-    return {'number': number, 'text': text}
+    """query params"""
+    return {"number": number, "text": text}
 
 
 class Package(BaseModel):
@@ -30,9 +31,11 @@ class Package(BaseModel):
 # async def make_package(package: Package):
 #     return package
 
-@app.post('/package/{priority}')
+
+@app.post("/package/{priority}")
 async def make_package(priority: int, package: Package, value: bool):
-    return {'priority': priority, **package.dict(), 'value': value}
+    return {"priority": priority, **package.dict(), "value": value}
+
 
 # python -m uvicorn project1:app --reload
 

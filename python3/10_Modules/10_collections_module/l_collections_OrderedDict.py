@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 # regular unsorted dictionary
-d = {'banana': 3, 'apple': 4, 'pear': 1, 'orange': 2}
+d = {"banana": 3, "apple": 4, "pear": 1, "orange": 2}
 
 # dictionary sorted by key
 print(OrderedDict(sorted(list(d.items()), key=lambda t: t[0])))
@@ -17,10 +17,10 @@ print(OrderedDict(sorted(list(d.items()), key=lambda t: len(t[0]))))
 
 my_dict = OrderedDict(sorted(list(d.items()), key=lambda t: len(t[0])))
 
-print('my_dict\n', my_dict)
+print("my_dict\n", my_dict)
 
 print(my_dict.popitem())
-print('after my_dict.popitem()\n', my_dict)
+print("after my_dict.popitem()\n", my_dict)
 
 print(my_dict.popitem(last=False))
-print('after my_dict.popitem()\n', my_dict)
+print("after my_dict.popitem()\n", my_dict)

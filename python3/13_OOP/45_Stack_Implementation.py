@@ -2,7 +2,7 @@
 """
 Purpose: Stack Abstract Data Type (ADT) Implementation
 """
-__author__ = 'Udhay Prakash'
+__author__ = "Udhay Prakash"
 
 
 class Stack(object):
@@ -27,16 +27,16 @@ class Stack(object):
 
 s = Stack()  # Object Instantiation
 
-print('s.is_empty() ', s.is_empty())
+print("s.is_empty() ", s.is_empty())
 
 s.push(1234)
-s.push('Python')
-print('s = ', s)
-print('s.peek() ', s.peek())
+s.push("Python")
+print("s = ", s)
+print("s.peek() ", s.peek())
 s.push(True)
-print('s.size()', s.size())
-print('s.is_empty() ', s.is_empty())
+print("s.size()", s.size())
+print("s.is_empty() ", s.is_empty())
 s.push(23.45)
-print('s.pop() ', s.pop())
-print('s.pop() ', s.pop())
-print('s.size() ', s.size())
+print("s.pop() ", s.pop())
+print("s.pop() ", s.pop())
+print("s.size() ", s.size())

@@ -24,10 +24,10 @@ from time import sleep
 
 
 # Method 2
-logger = logging.getLogger('my_logger')
-handler = RotatingFileHandler('logs/my_log.log', maxBytes=2000, backupCount=2)
+logger = logging.getLogger("my_logger")
+handler = RotatingFileHandler("logs/my_log.log", maxBytes=2000, backupCount=2)
 logger.addHandler(handler)
 
 for i in range(50):
-    logger.warning(f'Hello world!: {i:5}')
+    logger.warning(f"Hello world!: {i:5}")
     sleep(3)

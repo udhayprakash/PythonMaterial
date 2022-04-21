@@ -5,13 +5,14 @@ from reportlab.platypus import SimpleDocTemplate, Table
 
 
 def simple_table():
-    doc = SimpleDocTemplate('e_simple_table.pdf', pagesize=letter)
+    doc = SimpleDocTemplate("e_simple_table.pdf", pagesize=letter)
     flowables = []
 
-    data = [['col_{}'.format(x) for x in range(1, 6)],
-            [str(x) for x in range(1, 6)],
-            ['a', 'b', 'c', 'd', 'e']
-            ]
+    data = [
+        ["col_{}".format(x) for x in range(1, 6)],
+        [str(x) for x in range(1, 6)],
+        ["a", "b", "c", "d", "e"],
+    ]
 
     tbl = Table(data)
     flowables.append(tbl)
@@ -19,5 +20,5 @@ def simple_table():
     doc.build(flowables)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     simple_table()

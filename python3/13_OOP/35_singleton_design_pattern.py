@@ -4,7 +4,7 @@ Purpose: To create a class with singleton design pattern
     It means, If an instance of that class is already created,
     Instead of creating new instance, make use of already created instance
 
-	Or NOT allowing new instance creation
+    Or NOT allowing new instance creation
 """
 
 

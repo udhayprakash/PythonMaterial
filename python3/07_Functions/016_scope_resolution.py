@@ -15,17 +15,17 @@ Purpose: Python Scope Resolution
 from math import pi
 from pprint import pprint
 
-print('built-in scope    ', pi)  # Built-in scope
+print("built-in scope    ", pi)  # Built-in scope
 
 pi = 3.14  # Global Scope
-print('Global Scope      ', pi)
+print("Global Scope      ", pi)
 
 
 def simple_function():
     pi = 333  # Local scope
-    print('Local Scope       ', pi)
+    print("Local Scope       ", pi)
     values = [pi for pi in (1, 2, 34)]  # Enclosed scope
-    print('what is pi doing? ', pi, values)
+    print("what is pi doing? ", pi, values)
     pprint(locals())
 
 

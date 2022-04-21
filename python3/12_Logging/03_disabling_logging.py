@@ -28,7 +28,7 @@ print()
 
 
 def addition(n1, n2):
-    logging.debug('addition function -start')
+    logging.debug("addition function -start")
     return n1 + n2
 
 

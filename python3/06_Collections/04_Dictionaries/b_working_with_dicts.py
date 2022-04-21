@@ -12,31 +12,29 @@ Purpose: Dictionaries
 """
 from pprint import pprint
 
-alphabhets = {'b': 2, 'a': 1, 'c': 3, 'd': 4}
+alphabhets = {"b": 2, "a": 1, "c": 3, "d": 4}
 print(alphabhets)
 
-'''
+"""
 In python < 3.6, use below code to retaining the assigned order
 
 import OrderedDict
 alphabhets = OrderedDict.OrderedDict({'a': 1, 'b': 2, 'c': 3, 'd': 4})
 print(alphabhets)
-'''
+"""
 
 person_details = {
-    'name': 'Gudo Van Russom',
-    'age': 67,
-    'salary': 1233123.12,
-    'children': ['mary', 'John'],
-    'parents': ('Sam Russom', 'Michel Russom'),
-
+    "name": "Gudo Van Russom",
+    "age": 67,
+    "salary": 1233123.12,
+    "children": ["mary", "John"],
+    "parents": ("Sam Russom", "Michel Russom"),
     1: [12, 3, 12],
     -1213.213: {33, 33},
-    ('Dr', 'Mr'): 'titles',
-    None: 'This is None',
-
+    ("Dr", "Mr"): "titles",
+    None: "This is None",
     # [12, 23]: 'something',
-    tuple([12, 23]): 'something'
+    tuple([12, 23]): "something",
 }
 print(person_details)
 pprint(person_details)

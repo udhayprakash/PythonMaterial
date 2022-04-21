@@ -5,7 +5,7 @@ Purpose:
 """
 import autopy
 
-print(f'{autopy.__doc__}')
+print(f"{autopy.__doc__}")
 
 # To display an alert
 autopy.alert.alert("Hello, world!")

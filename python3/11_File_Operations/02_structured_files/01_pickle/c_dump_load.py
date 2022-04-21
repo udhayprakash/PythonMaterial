@@ -16,28 +16,40 @@ Purpose: Pickle file operations
 """
 import pickle
 
-data = (123, 123.32, -0.000098, None, True, False, 'Python', [1, 2], (23,), {23, 23}, {'a': 1})
+data = (
+    123,
+    123.32,
+    -0.000098,
+    None,
+    True,
+    False,
+    "Python",
+    [1, 2],
+    (23,),
+    {23, 23},
+    {"a": 1},
+)
 
-with open('serialized_data.pkl', 'wb') as f:
+with open("serialized_data.pkl", "wb") as f:
     pickle.dump(data, f)
     f.close()
 
-with open('serialized_data.pkl', 'rb') as g:
+with open("serialized_data.pkl", "rb") as g:
     retrieved_data = pickle.load(g)
-    print(f'retrieved_data: {retrieved_data} {type(retrieved_data)}')
+    print(f"retrieved_data: {retrieved_data} {type(retrieved_data)}")
 
 assert data == retrieved_data
 
 # ---------------------------
 data = True
 
-with open('serialized_data.pkl', 'wb') as f:
+with open("serialized_data.pkl", "wb") as f:
     pickle.dump(data, f)
     f.close()
 
-with open('serialized_data.pkl', 'rb') as g:
+with open("serialized_data.pkl", "rb") as g:
     retrieved_data = pickle.load(g)
-    print(f'retrieved_data: {retrieved_data} {type(retrieved_data)}')
+    print(f"retrieved_data: {retrieved_data} {type(retrieved_data)}")
 
 # cpython - it is c implementation of python
 # Pickle and cpickle has their importance in interfacing with c and C++.

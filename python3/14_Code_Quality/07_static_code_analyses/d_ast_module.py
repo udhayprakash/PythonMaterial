@@ -18,59 +18,63 @@ import ast
 
 # Executing code
 code = ast.parse("print('Hello world!')")
-print(f'{code       =}')
-print(f'{type(code) =}')
+print(f"{code       =}")
+print(f"{type(code) =}")
 
-exec(compile(code, filename='', mode='exec'))
+exec(compile(code, filename="", mode="exec"))
 
 # To see AST created for above object
-print(f'{ast.dump(code) =}')
-print('\n\n')
+print(f"{ast.dump(code) =}")
+print("\n\n")
 
 
 # Evaluating Python Expression
-expression = '6 + 8'
-code = ast.parse(expression, mode='eval')
-print(f'{code       =}')
-print(f'{type(code) =}')
+expression = "6 + 8"
+code = ast.parse(expression, mode="eval")
+print(f"{code       =}")
+print(f"{type(code) =}")
 
-print(eval(compile(code, '', mode='eval')))
+print(eval(compile(code, "", mode="eval")))
 
 # To see AST created for above object
-print(f'{ast.dump(code) =}')
-print('\n\n')
+print(f"{ast.dump(code) =}")
+print("\n\n")
 
 
 # Constructing multi-line ASTs
-tree = ast.parse('''
+tree = ast.parse(
+    """
 fruits = ['grapes', 'mango']
 name = 'peter'
 
 for fruit in fruits:
     print('{} likes {}'.format(name, fruit))
-''')
+"""
+)
 
 print(ast.dump(tree))
-print('\n\n')
+print("\n\n")
 
 
 class NodeTransformer(ast.NodeTransformer):
     def visit_Str(self, tree_node):
-        return ast.Str('String: ' + tree_node.s)
+        return ast.Str("String: " + tree_node.s)
 
 
 class NodeVisitor(ast.NodeVisitor):
     def visit_Str(self, tree_node):
-        print('{}'.format(tree_node.s))
+        print("{}".format(tree_node.s))
 
 
-tree_node = ast.parse('''
+tree_node = ast.parse(
+    """
 fruits = ['grapes', 'mango']
 name = 'peter'
 
 for fruit in fruits:
     print('{} likes {}'.format(name, fruit))
-''')
+"""
+)
 
 NodeTransformer().visit(tree_node)
 NodeVisitor().visit(tree_node)

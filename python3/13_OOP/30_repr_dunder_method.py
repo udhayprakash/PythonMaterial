@@ -10,7 +10,7 @@ class TheProblem:
 
     def __repr__(self):
         items = self.items
-        return f'{items}'
+        return f"{items}"
 
     # def __str__(self):
     #     return 'str is called'
@@ -33,7 +33,7 @@ class Solution:
 
     def __repr__(self):
         items = reprlib.repr(self.items)
-        return f'{items}'
+        return f"{items}"
 
 
 p2 = Solution(range(50))

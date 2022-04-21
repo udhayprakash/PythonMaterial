@@ -15,12 +15,12 @@ def tree():
 
 root = tree()
 
-root['page 1']['row 1']['content'] = 'This is line ONE'
-root['page 1']['row 2']['content'] = 'This is line TWO'
-root['page 2']['titlw'] = 'This is page 2'
+root["page 1"]["row 1"]["content"] = "This is line ONE"
+root["page 1"]["row 2"]["content"] = "This is line TWO"
+root["page 2"]["titlw"] = "This is page 2"
 
 print(json.dumps(root, indent=4))
-'''
+"""
 {
     "page 1": {
         "row 1": {
@@ -34,4 +34,4 @@ print(json.dumps(root, indent=4))
         "titlw": "This is page 2"
     }
 }
-'''
+"""

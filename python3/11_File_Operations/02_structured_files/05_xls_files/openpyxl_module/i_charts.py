@@ -13,7 +13,7 @@ def main(filename):
 
     # Add data to spreadsheet
     data_rows = [
-        ('Book', 'Kindle', 'Paperback'),
+        ("Book", "Kindle", "Paperback"),
         (1, 9.99, 15.99),
         (2, 9.99, 25.99),
         (3, 9.99, 25.99),
@@ -27,15 +27,13 @@ def main(filename):
     # Create the bar chart
     bar_chart = BarChart()
 
-    data = Reference(worksheet=sheet,
-                     min_row=1, max_row=10, min_col=2, max_col=3
-                     )
+    data = Reference(worksheet=sheet, min_row=1, max_row=10, min_col=2, max_col=3)
 
     bar_chart.add_data(data, titles_from_data=True)
-    sheet.add_chart(bar_chart, 'E2')
+    sheet.add_chart(bar_chart, "E2")
 
     wb.save(filename)
 
 
-if __name__ == '__main__':
-    main('bar_chart.xlsx')
+if __name__ == "__main__":
+    main("bar_chart.xlsx")

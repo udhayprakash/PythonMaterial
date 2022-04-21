@@ -21,7 +21,7 @@ print(f'{Person("shyam", 5, False) =}')
 
 @dataclass
 class Person2:
-    name: Literal['Ram', 'Robert']
+    name: Literal["Ram", "Robert"]
     Age: Literal[0, 1, 2]
     married: bool
 

@@ -7,13 +7,12 @@ def create_worksheets(path):
     workbook.create_sheet()
 
     # Insert a worksheet
-    workbook.create_sheet(index=1,
-                          title='Second sheet')
+    workbook.create_sheet(index=1, title="Second sheet")
     print(workbook.sheetnames)
-    del workbook['Second sheet']
+    del workbook["Second sheet"]
     print(workbook.sheetnames)
     workbook.save(path)
 
 
-if __name__ == '__main__':
-    create_worksheets('c_delete_sheets.xlsx')
+if __name__ == "__main__":
+    create_worksheets("c_delete_sheets.xlsx")

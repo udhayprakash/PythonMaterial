@@ -18,17 +18,17 @@ formatter = jsonlogger.JsonFormatter()
 logHandler.setFormatter(formatter)
 
 # Step 4: create logger object
-logger = logging.getLogger('myApp')
+logger = logging.getLogger("myApp")
 
 # Step 5: Add handler to the logger object
 logger.addHandler(logHandler)
 logger.setLevel(logging.DEBUG)
 
-logger.debug('This is debug log')
-logger.info('This is info log')
-logger.warning('This is error log')
-logger.error('This is error log')
-logger.critical('This is critical log')
+logger.debug("This is debug log")
+logger.info("This is info log")
+logger.warning("This is error log")
+logger.error("This is error log")
+logger.critical("This is critical log")
 
 
 # Assignment: Add datetime & level to this

@@ -9,4 +9,4 @@ NUM1 = 23
 NUM2 = 45
 RESULT = NUM1 + NUM2
 
-print(f'{RESULT =}')
+print(f"{RESULT =}")

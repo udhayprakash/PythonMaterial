@@ -2,18 +2,15 @@
 
 import yaml
 
-users = [{'name': 'John Doe', 'occupation': 'gardener'},
-         {'name': 'Lucy Black', 'occupation': 'teacher'}]
+users = [
+    {"name": "John Doe", "occupation": "gardener"},
+    {"name": "Lucy Black", "occupation": "teacher"},
+]
 
 print(yaml.dump(users))
 
 
-my_dict = {
-    'a': 1,
-    'b': True,
-    'c': False,
-    'd': None
-}
+my_dict = {"a": 1, "b": True, "c": False, "d": None}
 
 # python object to yaml
 yaml_string1 = yaml.dump(my_dict)

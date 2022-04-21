@@ -13,5 +13,5 @@ class TestAnagram(unittest.TestCase):
         self.assertFalse(is_anagram("anagram", "nag a ram"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

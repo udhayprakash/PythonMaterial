@@ -17,26 +17,30 @@ Purpose: without OOPS, solving a problem
             Transaction 2 - withdraw  550        2950
 
 """
+
+
 def new():
-    return {'balance': 0}
+    return {"balance": 0}
+
 
 def deposit(account, amount):
-    print(f'\tDeposited {amount}')
-    account['balance'] += amount
-    return account['balance']
+    print(f"\tDeposited {amount}")
+    account["balance"] += amount
+    return account["balance"]
+
 
 def withdraw(account, amount):
-    print(f'\tWithdrawn {amount}')
-    account['balance'] -= amount
-    return account['balance']
+    print(f"\tWithdrawn {amount}")
+    account["balance"] -= amount
+    return account["balance"]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Priyanka
-    Priyanka = new()                                            # {'balance': 0}
-    print(f'Priyanka initial balance :{Priyanka["balance"]}')   # 0
+    Priyanka = new()  # {'balance': 0}
+    print(f'Priyanka initial balance :{Priyanka["balance"]}')  # 0
     deposit(Priyanka, 1000)
-    print(f'Priyanka current balance :{Priyanka["balance"]}')   # 1000
+    print(f'Priyanka current balance :{Priyanka["balance"]}')  # 1000
 
     deposit(Priyanka, 2500)
     print(f'Priyanka current balance :{Priyanka["balance"]}')

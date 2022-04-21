@@ -1,6 +1,6 @@
 from jinja2 import Template
 
-name = 'Peter'
+name = "Peter"
 age = 34
 
 tm = Template("My name is {{ name }} and I am {{ age }}")

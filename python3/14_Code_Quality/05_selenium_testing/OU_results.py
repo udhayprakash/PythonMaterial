@@ -11,6 +11,6 @@ Hall ticket numbers
 import requests
 from pprint import pprint
 
-response = requests.post('http://www.osmania.ac.in/res07/20180472.jsp')
+response = requests.post("http://www.osmania.ac.in/res07/20180472.jsp")
 
 print(response.text)

@@ -1,5 +1,6 @@
 import cProfile
 import pstats
+
 # Function performing linear regression on diabetes dataset
 
 
@@ -37,7 +38,7 @@ profiler = cProfile.Profile()
 profiler.enable()
 regression()
 profiler.disable()
-stats = pstats.Stats(profiler).sort_stats('tottime')
+stats = pstats.Stats(profiler).sort_stats("tottime")
 
 # Print the stats report
 stats.print_stats()

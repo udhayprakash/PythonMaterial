@@ -8,9 +8,9 @@ Purpose: Adding Logging configuration
 """
 import logging
 
-FORMAT = '%(asctime)-15s %(client_ip)s %(user)-8s %(message)s'
+FORMAT = "%(asctime)-15s %(client_ip)s %(user)-8s %(message)s"
 logging.basicConfig(format=FORMAT)
-d = {'client_ip': '192.168.0.1', 'user': 'fbloggs'}
+d = {"client_ip": "192.168.0.1", "user": "fbloggs"}
 
 # logging.basicConfig(
 #     filename="logs/06_logging.log",  # filemode='w',
@@ -19,5 +19,5 @@ d = {'client_ip': '192.168.0.1', 'user': 'fbloggs'}
 #     level=logging.DEBUG)
 # logging.warning("Protocol problem: %s", "connection reset", extra=d)
 
-logger = logging.getLogger('tcpserver')
-logger.warning('Protocol problem: %s', 'connection reset', extra=d)
+logger = logging.getLogger("tcpserver")
+logger.warning("Protocol problem: %s", "connection reset", extra=d)

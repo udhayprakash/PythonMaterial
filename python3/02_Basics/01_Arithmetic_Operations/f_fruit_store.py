@@ -43,23 +43,23 @@ qty_of_mangos = 3 * DOZEN  # pieces
 
 # Selling Price Computation
 total_sp = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos  # PEDMAS
-print('Total Selling Price :', total_sp)
+print("Total Selling Price :", total_sp)
 
 # Discount Calculation
-discount_amount = (total_sp * DISCOUNT)/100
-print('Discount Amount     :', discount_amount)
+discount_amount = (total_sp * DISCOUNT) / 100
+print("Discount Amount     :", discount_amount)
 
 # Payable Amount Calculation
 payable_amount = total_sp - discount_amount
-print('Payable Amount      :', payable_amount)
+print("Payable Amount      :", payable_amount)
 
 # GST Calculation
-gst_on_fruits = (payable_amount * GST)/ 100
-print('GST on Fruits       :', gst_on_fruits)
+gst_on_fruits = (payable_amount * GST) / 100
+print("GST on Fruits       :", gst_on_fruits)
 
 # Billable Amount Calculation
 billable_amount = payable_amount + gst_on_fruits
-print('Billable Amount     :', billable_amount)
+print("Billable Amount     :", billable_amount)
 
 # round(num, no_of_digits) - function
-print('Billable Amount(r)  :', round(billable_amount, 2))
+print("Billable Amount(r)  :", round(billable_amount, 2))

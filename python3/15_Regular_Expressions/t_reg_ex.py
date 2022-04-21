@@ -11,18 +11,18 @@ application  of regex flags
 
 import re
 
-string = 'Today is Friday.\n Tomorrow is morning'
-print(re.findall('.*', string))
+string = "Today is Friday.\n Tomorrow is morning"
+print(re.findall(".*", string))
 
-print(re.search('.*', string).group())
+print(re.search(".*", string).group())
 
-print(re.search('.*', string, re.DOTALL).group())  # re.S
-print(re.search('.*', string, re.S).group())
+print(re.search(".*", string, re.DOTALL).group())  # re.S
+print(re.search(".*", string, re.S).group())
 
-print(re.search('Today.*', string, re.S).group())
+print(re.search("Today.*", string, re.S).group())
 
 # print(re.search('today.*', string, re.S).group())
-print(re.search('today.*', string, re.I).group())
+print(re.search("today.*", string, re.I).group())
 
 # applying more than one flag
-print(re.search('today.*', string, re.I|re.S).group())
+print(re.search("today.*", string, re.I | re.S).group())

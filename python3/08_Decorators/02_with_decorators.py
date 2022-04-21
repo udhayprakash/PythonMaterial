@@ -14,6 +14,7 @@ def exception_handling(func):  # -> Decorator function
             return ex
         else:
             return result
+
     return inner
 
 
@@ -29,6 +30,7 @@ print()
 
 # ----
 
+
 def add(n1, n2, n3):  # 3 arguments
     return n1 + n2 + n3
 
@@ -36,5 +38,5 @@ def add(n1, n2, n3):  # 3 arguments
 result_add = exception_handling(add)
 print(result_add(10, 20, 30))
 
-print(result_add(10, 20, '30'))
+print(result_add(10, 20, "30"))
 print(result_add(10, 20))

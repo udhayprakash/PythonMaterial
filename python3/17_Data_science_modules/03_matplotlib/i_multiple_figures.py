@@ -10,7 +10,7 @@ def line_plot(numbers, numbers2):
     plt.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     numbers = [2, 4, 1, 6]
     more_numbers = [5, 1, 10, 3]
     line_plot(numbers, more_numbers)

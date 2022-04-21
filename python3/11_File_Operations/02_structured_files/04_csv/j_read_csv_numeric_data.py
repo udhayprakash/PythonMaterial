@@ -9,6 +9,6 @@ non-quoted values are converted into float values.
 """
 import csv
 
-with open('my_file.csv', dialect='excel') as fh:
+with open("my_file.csv", dialect="excel") as fh:
 
     fh.close()

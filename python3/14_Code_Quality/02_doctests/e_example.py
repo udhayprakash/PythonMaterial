@@ -26,11 +26,12 @@ def power(x, y, /, mod=None):
     ...
     TypeError: power() got some positional-only arguments passed as keyword arguments: 'y'
     """
-    r = x ** y
+    r = x**y
     if mod is not None:
         r %= mod
     return r
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # doctest.testmod()
     doctest.testmod(optionflags=doctest.ELLIPSIS)

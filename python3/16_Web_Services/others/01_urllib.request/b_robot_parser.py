@@ -7,16 +7,16 @@ Purpose: Parsing the robots.txt file
 import urllib.robotparser
 
 rp = urllib.robotparser.RobotFileParser()
-rp.set_url('http://www.musi-cal.com/robots.txt')
+rp.set_url("http://www.musi-cal.com/robots.txt")
 rp.read()
 
-rrate = rp.request_rate('*')
-rrate.requests      # 3
-rrate.seconds       # 20
-rp.crawl_delay('*') # 6
+rrate = rp.request_rate("*")
+rrate.requests  # 3
+rrate.seconds  # 20
+rp.crawl_delay("*")  # 6
 
-rp.can_fetch('*', 'http://www.musi-cal.com/cgi-bin/search?city=San+Francisco') # False
-rp.can_fetch('*', 'http://www.musi-cal.com/') # True
+rp.can_fetch("*", "http://www.musi-cal.com/cgi-bin/search?city=San+Francisco")  # False
+rp.can_fetch("*", "http://www.musi-cal.com/")  # True
 
 
 # https://www.google.com/robots.txt

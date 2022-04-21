@@ -3,14 +3,14 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 async def hello():
-    return {'Hello': 'World'}
+    return {"Hello": "World"}
 
 
-@app.get('/component/{component_id}')
+@app.get("/component/{component_id}")
 async def get_component(component_id):
-    return {'component_id': component_id}
+    return {"component_id": component_id}
 
 
 # python -m uvicorn project1:app --reload

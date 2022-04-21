@@ -8,8 +8,8 @@ import time
 def decorator(arg1, arg2):
     def inner_function(function):
         def wrapper(*args, **kwargs):
-            print(f'Arguments passed to decorator are {arg1} and{arg2}')
-            print(f'Function arguments are {args}')
+            print(f"Arguments passed to decorator are {arg1} and{arg2}")
+            print(f"Function arguments are {args}")
             function(*args, **kwargs)
 
         return wrapper
@@ -17,7 +17,7 @@ def decorator(arg1, arg2):
     return inner_function
 
 
-@decorator('arg1', 'arg2')
+@decorator("arg1", "arg2")
 def print_args(*args):
     for arg in args:
         print(arg)
@@ -34,10 +34,10 @@ def time_taken(metric):
             start_time = time.perf_counter_ns()
             result = func(*args, **kwargs)
             end_time = time.perf_counter_ns()
-            if metric == 'ms':
-                print(f'Time Taken: {(end_time - start_time) / 1000} ms')
+            if metric == "ms":
+                print(f"Time Taken: {(end_time - start_time) / 1000} ms")
             else:
-                print(f'Time Taken: {end_time - start_time} ns')
+                print(f"Time Taken: {end_time - start_time} ns")
             return result
 
         return wrapper
@@ -45,11 +45,11 @@ def time_taken(metric):
     return inner
 
 
-@time_taken('ms')
+@time_taken("ms")
 def my_func(num):
     for _ in range(num):
         pass
-    print(f'for {num:5} numbers', end=':->')
+    print(f"for {num:5} numbers", end=":->")
 
 
 my_func(78)

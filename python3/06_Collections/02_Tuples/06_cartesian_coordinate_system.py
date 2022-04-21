@@ -10,7 +10,7 @@ pt1 = (1.0, 5.0)
 pt2 = (2.5, 1.5)
 #       0    1
 
-print(f'{sqrt((2.5 - 1.0) ** 2 + (1.5 - 5.0) ** 2)}')
+print(f"{sqrt((2.5 - 1.0) ** 2 + (1.5 - 5.0) ** 2)}")
 
 # using index referencing
 line_length = sqrt((pt1[0] - pt2[0]) ** 2 + (pt1[1] - pt2[1]) ** 2)
@@ -18,7 +18,7 @@ print(line_length)
 
 # ----------------------------------------
 # named tuples
-Point = namedtuple('Point', 'x y')
+Point = namedtuple("Point", "x y")
 pt1 = Point(1.0, 5.0)
 pt2 = Point(2.5, 1.5)
 

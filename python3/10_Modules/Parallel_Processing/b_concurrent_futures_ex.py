@@ -6,25 +6,23 @@ from pprint import pprint
 
 
 def transform(x):
-    print('Process {} working record {}'.format(os.getpid(), x.name))
+    print("Process {} working record {}".format(os.getpid(), x.name))
     time.sleep(1)
-    result = {'name': x.name, 'age': 2019 - x.born}
+    result = {"name": x.name, "age": 2019 - x.born}
     return result
 
 
-Scientist = collections.namedtuple('Scientist', [
-    'name', 'field', 'born', 'nobel'
-])
+Scientist = collections.namedtuple("Scientist", ["name", "field", "born", "nobel"])
 
 scientists = (
-    Scientist(name='Udhay', field='math', born=1947, nobel=True),
-    Scientist(name='Prakash', field='science', born=1860, nobel=False),
-    Scientist(name='Teja', field='physics', born=1770, nobel=True),
-    Scientist(name='Ravi', field='math', born=1999, nobel=False),
-    Scientist(name='Navya', field='physics', born=1947, nobel=False),
+    Scientist(name="Udhay", field="math", born=1947, nobel=True),
+    Scientist(name="Prakash", field="science", born=1860, nobel=False),
+    Scientist(name="Teja", field="physics", born=1770, nobel=True),
+    Scientist(name="Ravi", field="math", born=1999, nobel=False),
+    Scientist(name="Navya", field="physics", born=1947, nobel=False),
 )
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pprint(scientists)
     print()
 
@@ -38,6 +36,6 @@ if __name__ == '__main__':
         result = executor.map(transform, scientists)
     end = time.time()
 
-    print('\nTime to complete: {}'.format(end - start))
+    print("\nTime to complete: {}".format(end - start))
     pprint(result)
     pprint(tuple(result))

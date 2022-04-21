@@ -21,5 +21,4 @@ for month in range(1, 13):
     else:
         meeting_date = third_week[calendar.THURSDAY]
 
-    print('{:>3}: {:>2}'.format(calendar.month_abbr[month],
-                                meeting_date))
+    print("{:>3}: {:>2}".format(calendar.month_abbr[month], meeting_date))

@@ -4,17 +4,17 @@ Purpose: Generator Expressions
     and chained generator Expressions
 """
 listCompr = [i for i in range(7)]
-print(f'{listCompr} {type(listCompr)}')
+print(f"{listCompr} {type(listCompr)}")
 
 setCompr = {i for i in range(7)}
-print(f'{setCompr} {type(setCompr)}')
+print(f"{setCompr} {type(setCompr)}")
 
-dictCompr = {i:i**2 for i in range(7)}
-print(f'{dictCompr} {type(dictCompr)}')
+dictCompr = {i: i**2 for i in range(7)}
+print(f"{dictCompr} {type(dictCompr)}")
 
 
 genExpr = (i for i in range(7))
-print(f'{genExpr} {type(genExpr)}') # generator
+print(f"{genExpr} {type(genExpr)}")  # generator
 
 # -----
 integers = list(range(8))

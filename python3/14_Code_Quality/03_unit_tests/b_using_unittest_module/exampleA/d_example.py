@@ -16,13 +16,13 @@ class TestSuite(unittest.TestCase):
         result = self.num1 + self.num2
         self.assertEqual(result, 90)
 
-    @unittest.skipIf(num1 > num2, 'Skip over this routine')
+    @unittest.skipIf(num1 > num2, "Skip over this routine")
     def test02_subtraction(self):
         result = self.num1 - self.num2
         self.assertEqual(result, -10)
         self.assertTrue(result == -10)
 
-    @unittest.skipUnless(num2 == 0, 'Skip over this routine')
+    @unittest.skipUnless(num2 == 0, "Skip over this routine")
     def test03_division(self):
         result = self.num1 / self.num2
         self.assertAlmostEqual(result, 1.249999999)
@@ -31,8 +31,8 @@ class TestSuite(unittest.TestCase):
     @unittest.expectedFailure
     def test04_mul(self):
         result = self.num1 * self.num2
-        self.assertEqual(result , 0)
+        self.assertEqual(result, 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

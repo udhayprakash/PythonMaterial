@@ -5,8 +5,8 @@ Purpose: To remove exif data from image
 
 from PIL import Image
 
-SOURCE_IMAGE = 'images/cameraman.jpg'
-TARGET_IMAGE = 'images/cameraman_file_without_exif.jpeg'
+SOURCE_IMAGE = "images/cameraman.jpg"
+TARGET_IMAGE = "images/cameraman_file_without_exif.jpeg"
 
 
 image = Image.open(SOURCE_IMAGE)

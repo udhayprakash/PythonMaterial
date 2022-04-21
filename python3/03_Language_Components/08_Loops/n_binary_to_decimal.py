@@ -11,7 +11,7 @@ Purpose: Binary to Decimal conversion,
 """
 
 # binary_number = '10101001'
-binary_number = '11100010101001'
+binary_number = "11100010101001"
 
 # Method 1
 decimal_number = int(binary_number, base=2)
@@ -22,8 +22,8 @@ print(binary_number, decimal_number)
 
 sum_value = 0
 for loop_index, each_digit in enumerate(binary_number[::-1]):
-    if each_digit == '1':
+    if each_digit == "1":
         # print(loop_index, pow(2 , loop_index))
         sum_value += pow(2, loop_index)
 
-print(f'{sum_value =}')
+print(f"{sum_value =}")

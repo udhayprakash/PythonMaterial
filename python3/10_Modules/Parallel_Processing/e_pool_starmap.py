@@ -19,7 +19,7 @@ def howmany_within_range_rowonly(row, minimum=4, maximum=8):
     return count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pool = mp.Pool(mp.cpu_count())
 
     results = pool.starmap(howmany_within_range, [(row, 4, 8) for row in data])

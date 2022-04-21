@@ -1,4 +1,4 @@
-print('Hello world')
+print("Hello world")
 
 # calculator - addition
 
@@ -34,12 +34,12 @@ print(a.add())
 
 
 # -----------------------
-name = 'Rahul Dravid'
+name = "Rahul Dravid"
 print(name)
 print(name.upper())
 print(name.lower())
 
-print('Rahul' in 'Rahul Dravid')
+print("Rahul" in "Rahul Dravid")
 
 # string reversal
 print(name[::-1])

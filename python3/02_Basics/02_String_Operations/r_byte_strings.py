@@ -12,27 +12,27 @@ Purpose: byte strings
 # UnicodeEncodeError: 'ascii' codec can't encode
 #  characters in position 7-12: ordinal not in range(128)
 
-bytearray('Python:αλεπού', 'utf-8')
+bytearray("Python:αλεπού", "utf-8")
 # bytearray(b'Python:\xce\xb1\xce\xbb\xce\xb5\xcf\x80\xce\xbf\xcf\x8d')
 
-bytes('Python:αλεπού', 'utf-8')
+bytes("Python:αλεπού", "utf-8")
 # b'Python:\xce\xb1\xce\xbb\xce\xb5\xcf\x80\xce\xbf\xcf\x8d'
 
 # ----------------------------------------
-my_string = 'Python is interesting.'
+my_string = "Python is interesting."
 print(my_string, type(my_string))
 
 # string with encoding 'utf-8'
-b_string = bytes(my_string, 'utf-8')
+b_string = bytes(my_string, "utf-8")
 print(b_string, type(b_string))
 
 # bytes to string
-print(b'hello'.decode('utf-8'))
+print(b"hello".decode("utf-8"))
 
-o_string = b_string.decode('utf-8')
+o_string = b_string.decode("utf-8")
 print(o_string, type(o_string))
 
-o_string = str(b_string, 'utf-8')
+o_string = str(b_string, "utf-8")
 print(o_string, type(o_string))
 
 # ascii, utf-8, utf-16, cp-232
@@ -52,7 +52,7 @@ print(o_string, type(o_string))
 ##########################################
 # hex(0-9 A-F) to byte
 # skips ASCII whitespaces during conversion
-print(bytes.fromhex('2Ef0 F1f2  '))
+print(bytes.fromhex("2Ef0 F1f2  "))
 
 # bytes object into its hexadecimal representation
-print(b'\xf0\xf1\xf2'.hex())
+print(b"\xf0\xf1\xf2".hex())

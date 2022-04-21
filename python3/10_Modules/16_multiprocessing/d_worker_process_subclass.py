@@ -4,7 +4,6 @@ import time
 
 
 class WorkerProcess(multiprocessing.Process):
-
     def __init__(self, name):
         multiprocessing.Process.__init__(self)
         self.name = name
@@ -17,16 +16,16 @@ class WorkerProcess(multiprocessing.Process):
 
 
 def worker(name: str) -> None:
-    print(f'Started worker {name}')
+    print(f"Started worker {name}")
     worker_time = random.choice(range(1, 5))
     time.sleep(worker_time)
-    print(f'{name} worker finished in {worker_time} seconds')
+    print(f"{name} worker finished in {worker_time} seconds")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     processes = []
     for i in range(5):
-        process = WorkerProcess(name=f'computer_{i}')
+        process = WorkerProcess(name=f"computer_{i}")
         processes.append(process)
         process.start()
 

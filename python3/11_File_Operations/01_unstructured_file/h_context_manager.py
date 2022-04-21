@@ -8,7 +8,7 @@ Ans) depends on the system clock cycle
         2.3 GHz
 """
 # Method 1: traditional
-fh = open('e_write_multiple_lines.tsf', 'r')
+fh = open("e_write_multiple_lines.tsf", "r")
 
 data = fh.read()
 print(data)
@@ -19,7 +19,7 @@ fh.close()
 
 
 # Method 2: with context manager
-with open('e_write_multiple_lines.tsf', 'r') as gh:
+with open("e_write_multiple_lines.tsf", "r") as gh:
     data = gh.read()
 
 print(data)
@@ -29,17 +29,17 @@ print(data)
 
 # -----------------------------------------------
 # Method 1: traditionally
-gh = open('h_context_manager.txt', 'w')
+gh = open("h_context_manager.txt", "w")
 # gh.writelines(['1', '2', '3', '4'])
-gh.writelines(['1\n', '2\n', '3\n', '4\n'])
+gh.writelines(["1\n", "2\n", "3\n", "4\n"])
 gh.flush()
 gh.close()
 # gh.write('next') # ValueError: I/O operation on closed file.
 
 
 # Method 2: Using context manager
-with open('h_context_manager.txt', 'w') as gh:
-    gh.writelines(['1', '2', '3', '4'])
+with open("h_context_manager.txt", "w") as gh:
+    gh.writelines(["1", "2", "3", "4"])
 
 # gh.write('next') # ValueError: I/O operation on closed file.
 

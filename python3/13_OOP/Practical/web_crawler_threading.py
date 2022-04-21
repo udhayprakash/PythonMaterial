@@ -45,4 +45,4 @@ for thread in parsers + grabbers:
     thread.daemon = True
     thread.start()
 
-url_queue.put('http://brett.is/')
+url_queue.put("http://brett.is/")

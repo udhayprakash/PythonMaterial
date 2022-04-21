@@ -1,6 +1,7 @@
 import logging
 from contextlib import contextmanager
 
+
 @contextmanager
 def log(level):
     logger = logging.getLogger()
@@ -11,10 +12,12 @@ def log(level):
     finally:
         logger.setLevel(current_level)
 
+
 def some_function():
-    logging.debug('Some debug level information...')
-    logging.error('Serious error...')
-    logging.warning('Some warning message...')
+    logging.debug("Some debug level information...")
+    logging.error("Serious error...")
+    logging.warning("Some warning message...")
+
 
 with log(logging.DEBUG):
     some_function()

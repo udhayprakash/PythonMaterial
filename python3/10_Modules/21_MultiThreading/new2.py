@@ -2,7 +2,7 @@ import threading
 
 
 def foo():
-    print('running foo')
+    print("running foo")
 
 
 threads = []
@@ -16,4 +16,4 @@ for t in threads:
 for t in threads:
     t.join()
 
-print('end')
+print("end")

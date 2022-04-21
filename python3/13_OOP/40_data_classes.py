@@ -7,6 +7,7 @@ Purpose: Data classes
 
 """
 from dataclasses import dataclass, make_dataclass
+from typing import Any, List
 
 
 @dataclass(init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)
@@ -20,15 +21,13 @@ class Book(object):
 # If passed as False, they are omitted.
 
 # creating a class
-Position = make_dataclass('Position', ['name', 'lat', 'lon'])
+Position = make_dataclass("Position", ["name", "lat", "lon"])
 print(type(Position))
 
-p = Position('place', 45, 56)
+p = Position("place", 45, 56)
 print(vars(p))
 
 ##################################
-from dataclasses import dataclass
-from typing import Any
 
 
 @dataclass
@@ -37,12 +36,10 @@ class WithoutExplicitTypes:
     value: Any = 42
 
 
-m = WithoutExplicitTypes(3.14, 'somethng')
+m = WithoutExplicitTypes(3.14, "somethng")
 print(vars(m))
 
 #################################
-from dataclasses import dataclass
-from typing import List
 
 
 @dataclass
@@ -56,8 +53,8 @@ class Deck:
     cards: List[PlayingCard]
 
 
-queen_of_hearts = PlayingCard('Q', 'Hearts')
-ace_of_spades = PlayingCard('A', 'Spades')
+queen_of_hearts = PlayingCard("Q", "Hearts")
+ace_of_spades = PlayingCard("A", "Spades")
 
 two_cards = Deck([queen_of_hearts, ace_of_spades])
 print(two_cards)
@@ -65,7 +62,6 @@ print(vars(two_cards))
 
 ########################################
 # INHERITANCE
-from dataclasses import dataclass
 
 
 @dataclass
@@ -80,6 +76,6 @@ class Capital(Position):
     country: str
 
 
-c = Capital('Oslo', 10.8, 59.9, 'Norway')
+c = Capital("Oslo", 10.8, 59.9, "Norway")
 print(c)
 print(vars(c))

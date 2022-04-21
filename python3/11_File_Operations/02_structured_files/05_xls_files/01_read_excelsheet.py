@@ -5,7 +5,7 @@
 import pandas as pd
 
 # Assign spreadsheet filename to `file`
-file = 'pyexcelerate.xlsx'
+file = "pyexcelerate.xlsx"
 
 # Load spreadsheet
 xl = pd.ExcelFile(file)
@@ -14,4 +14,4 @@ xl = pd.ExcelFile(file)
 print(xl.sheet_names)
 
 # Load a sheet into a DataFrame by name: df1
-df1 = xl.parse('Sheet1')
+df1 = xl.parse("Sheet1")

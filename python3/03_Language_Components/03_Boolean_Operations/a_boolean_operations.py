@@ -9,19 +9,19 @@ id() - built-in function to get the address location
 """
 
 choice = True
-print('choice = ', choice, type(choice), id(choice))
+print("choice = ", choice, type(choice), id(choice))
 
 choice = False
-print('choice = ', choice, type(choice), id(choice))
+print("choice = ", choice, type(choice), id(choice))
 
 # True = 'Udhay'
 # SyntaxError: cannot assign to True
 
-true = 'Udhay'
+true = "Udhay"
 # NOTE: NOT RECOMMENDED to use 'true' for variable name
 
-choice = 'Udhay'
-print('choice = ', choice, type(choice), id(choice))
+choice = "Udhay"
+print("choice = ", choice, type(choice), id(choice))
 
 # Objects
 # 1. built-in:
@@ -37,14 +37,14 @@ print()
 #  - type(s)
 #  - value(s)
 
-print('id(True)     = ', id(True))
-print('id(true)     = ', id(true))
+print("id(True)     = ", id(True))
+print("id(true)     = ", id(true))
 
-print('type(True)   =', type(True))
-print('type(true)   =', type(true))
+print("type(True)   =", type(True))
+print("type(true)   =", type(true))
 
-print('True         = ', True)
-print('True * 30    = ', True * 30)  # True has a value of one
+print("True         = ", True)
+print("True * 30    = ", True * 30)  # True has a value of one
 
-print('False        = ', False)
-print('False * 30   = ', False * 30)  # False has a value of zero
+print("False        = ", False)
+print("False * 30   = ", False * 30)  # False has a value of zero

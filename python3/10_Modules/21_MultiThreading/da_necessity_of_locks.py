@@ -1,16 +1,17 @@
 import threading
+
 deposit = 100
 
 
 def add_profit():
-    """ Function to add profit to the deposit"""
+    """Function to add profit to the deposit"""
     global deposit
     for i in range(100000):
         deposit = deposit + 10
 
 
 def pay_bill():
-    """ Function to deduct money from the deposit"""
+    """Function to deduct money from the deposit"""
     global deposit
     for i in range(100000):
         deposit = deposit - 10

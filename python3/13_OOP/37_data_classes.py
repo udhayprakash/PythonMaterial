@@ -15,17 +15,17 @@ class Foo(object):
 
 
 f = Foo(12)
-print(f'{f.x =}')
+print(f"{f.x =}")
 f.x = 1
-f.y = 12        # Adding new attrbute to instance
+f.y = 12  # Adding new attrbute to instance
 
 try:
     print(hash(f))
 except Exception as ex:
     print(ex)
-    print('This instance is mutable. So, hash cant be created')
+    print("This instance is mutable. So, hash cant be created")
 
-print('\nWith FROZEN =============')
+print("\nWith FROZEN =============")
 
 
 @dataclass(frozen=True)
@@ -34,7 +34,7 @@ class Foo(object):
 
 
 f = Foo(12)
-print(f'{f.x =}')
+print(f"{f.x =}")
 # f.x = 1 # dataclasses.FrozenInstanceError: cannot assign to field 'x'
 # f.y = 123 # dataclasses.FrozenInstanceError: cannot assign to field 'y'
 print(hash(f))

@@ -1,9 +1,9 @@
 import re
 import urllib
 
-urls = ['http://google.com', 'http://nytimes', 'http://CNN.com']
+urls = ["http://google.com", "http://nytimes", "http://CNN.com"]
 
-regex = '<title>(.+?)</title>'
+regex = "<title>(.+?)</title>"
 pattern = re.compile(regex)
 
 i = 0

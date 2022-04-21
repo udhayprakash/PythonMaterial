@@ -7,9 +7,9 @@ import contextlib
 
 
 def callback():
-    print('B')
+    print("B")
 
 
 with contextlib.ExitStack() as stack:
     stack.callback(callback)
-    print('A')
+    print("A")

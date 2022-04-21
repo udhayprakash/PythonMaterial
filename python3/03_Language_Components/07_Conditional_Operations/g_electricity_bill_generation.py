@@ -23,11 +23,11 @@ units consumed : 357
 
 """
 # units_consumed = 357
-units_consumed = float(input('Enter the no. of units consumed:').strip())
+units_consumed = float(input("Enter the no. of units consumed:").strip())
 
 
 if units_consumed < 0:
-    print('INVALID INPUT')
+    print("INVALID INPUT")
 else:
     amount = 0
     remaining_unitsremaining_units = units_consumed
@@ -35,53 +35,65 @@ else:
         slab_units = remaining_units - 250
         amount += slab_units * 10.0
 
-        print(f'''
+        print(
+            f"""
             units consumed  : {remaining_units}
             slab units      : {slab_units}
-        ''')
+        """
+        )
         remaining_units -= slab_units
 
     if 150 < remaining_units <= 250:
         slab_units = remaining_units - 150
         amount += slab_units * 7.0
 
-        print(f'''
+        print(
+            f"""
             units consumed  : {remaining_units}
             slab units      : {slab_units}
-        ''')
+        """
+        )
         remaining_units -= slab_units
 
     if 100 < remaining_units <= 150:
         slab_units = remaining_units - 100
         amount += slab_units * 4.0
 
-        print(f'''
+        print(
+            f"""
             units consumed  : {remaining_units}
             slab units      : {slab_units}
-        ''')
+        """
+        )
         remaining_units -= slab_units
 
     if 60 < remaining_units <= 100:
         slab_units = remaining_units - 60
         amount += slab_units * 2.0
 
-        print(f'''
+        print(
+            f"""
             units consumed  : {remaining_units}
             slab units      : {slab_units}
-        ''')
+        """
+        )
         remaining_units -= slab_units
 
     if 0 <= remaining_units <= 60:
         slab_units = 60  # minimum charge
         amount += slab_units * 1.25
 
-        print(f'''
+        print(
+            f"""
             units consumed  : {remaining_units}
             slab units      : {slab_units}
-        ''')
+        """
+        )
 
-    print(f'''
+    print(
+        f"""
     FINAL BILL:
         units consumed  : {units_consumed}
         Amount          : {amount}
-    ''')
+    """
+    )

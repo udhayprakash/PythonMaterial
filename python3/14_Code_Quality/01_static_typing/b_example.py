@@ -8,7 +8,7 @@ from python 3.6, mypy will come builtin. no need to import
 
 # Method 1 : Traditional approach
 def hello():
-    print('Hello world')
+    print("Hello world")
 
 
 hello()
@@ -16,7 +16,7 @@ hello()
 # -------------------------------------
 # Method 2: Adding typing
 def hello() -> None:
-    print('Hello world')
+    print("Hello world")
 
 
 hello()

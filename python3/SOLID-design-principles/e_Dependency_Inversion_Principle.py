@@ -8,6 +8,7 @@ There comes a point in software development where our app will be largely compos
 When this happens, we have to clear things up by using dependency injection.
 High-level components depending on low-level components to function.
 """
+import XMLHttpRequestService
 
 
 class XMLHttpService(XMLHttpRequestService):
@@ -19,10 +20,10 @@ class Http:
         self.xml_http_service = xml_http_service
 
     def get(self, url: str, options: dict):
-        self.xml_http_service.request(url, 'GET')
+        self.xml_http_service.request(url, "GET")
 
     def post(self, url, options: dict):
-        self.xml_http_service.request(url, 'POST')
+        self.xml_http_service.request(url, "POST")
 
 
 """
@@ -52,10 +53,10 @@ class Http:
         self.http_connection = http_connection
 
     def get(self, url: str, options: dict):
-        self.http_connection.request(url, 'GET')
+        self.http_connection.request(url, "GET")
 
     def post(self, url, options: dict):
-        self.http_connection.request(url, 'POST')
+        self.http_connection.request(url, "POST")
 
 
 """

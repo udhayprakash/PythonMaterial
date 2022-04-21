@@ -1,22 +1,24 @@
 from fastapi import FastAPI
 from typing import Optional
+
 app = FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 async def hello():
-    return {'Hello': 'World'}
+    return {"Hello": "World"}
 
 
-@app.get('/component/{component_id}')  # path paramters
+@app.get("/component/{component_id}")  # path paramters
 async def get_component(component_id: int):
-    return {'component_id': component_id}
+    return {"component_id": component_id}
 
 
-@app.get('/component/')  # query parameters
+@app.get("/component/")  # query parameters
 async def read_component(number: int, text: Optional[str]):
-    """ query params """
+    """query params"""
     return {"number": number, "text": text}
+
 
 # python -m uvicorn project1:app --reload
 

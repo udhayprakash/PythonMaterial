@@ -37,21 +37,21 @@ In [7]: eval('name')
 Out[7]: 'sometihing'
 """
 try:
-    num1 = eval(input('Enter an integer:'))
-    num2 = eval(input('Enter an integer:'))
+    num1 = eval(input("Enter an integer:"))
+    num2 = eval(input("Enter an integer:"))
     division = num1 / num2
 # except ValueError as ve:
 #     # print(f'{ve =}')
 #     print('Please enter integers only')
 except ZeroDivisionError as ze:
-    # print(f'{ve =}')
-    print('Denominator cant be zero')
+    print(f"{ze =}")
+    print("Denominator cant be zero")
 except TypeError as te:
-    print(f'te = {te}')
+    print(f"te = {te}")
 except Exception as ex:
-    print(f'Unhandled Error: {repr(ex)}')
+    print(f"Unhandled Error: {repr(ex)}")
 else:
-    print(f'{division = }')
+    print(f"{division = }")
 
 # NOTE: Though we handle with specific exception based on seen errors,
 # It is always recommended to have absolute(umbrella) exception to

@@ -19,30 +19,32 @@ Purpose: without OOPS, solving a problem
 """
 balance = 0
 
+
 def deposit(amount):
     global balance
-    print(f'\tDeposited {amount}')
+    print(f"\tDeposited {amount}")
     balance += amount
     return balance
 
+
 def withdraw(amount):
     global balance
-    print(f'\tWithdrawn {amount}')
+    print(f"\tWithdrawn {amount}")
     balance -= amount
     return balance
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Priyanka
-    print(f'\nPriyanka initial balance :{balance}')
+    print(f"\nPriyanka initial balance :{balance}")
     deposit(1000)
-    print(f'Priyanka current balance :{balance}')
+    print(f"Priyanka current balance :{balance}")
 
     deposit(2500)
-    print(f'Priyanka current balance :{balance}')
+    print(f"Priyanka current balance :{balance}")
 
     withdraw(750)
-    print(f'Priyanka current balance :{balance}')
+    print(f"Priyanka current balance :{balance}")
 
     # Varun
-    print(f'\nVarun    initial balance :{balance}')
+    print(f"\nVarun    initial balance :{balance}")

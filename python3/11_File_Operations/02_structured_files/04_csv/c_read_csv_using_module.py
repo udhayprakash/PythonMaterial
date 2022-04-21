@@ -10,8 +10,8 @@ import csv
 #     print(each_attribute)
 
 
-with open('my_file.csv', 'r') as fh:
-    file_content = csv.reader(fh, delimiter=',')
+with open("my_file.csv", "r") as fh:
+    file_content = csv.reader(fh, delimiter=",")
     # print(file_content)
 
     # To skip the header
@@ -23,4 +23,4 @@ with open('my_file.csv', 'r') as fh:
         names.append(name)
     fh.close()
 
-print(f'{names=}')
+print(f"{names=}")

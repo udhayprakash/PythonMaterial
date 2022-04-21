@@ -31,10 +31,10 @@ def area_circle(radius):
     >>> area_circle(2)
     12.566370614359172
     """
-    return math.pi * radius ** 2
+    return math.pi * radius**2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     doctest.testmod()
 
-    print(f'area_rectangle(2, 8):{area_rectangle(2, 8)}')
+    print(f"area_rectangle(2, 8):{area_rectangle(2, 8)}")

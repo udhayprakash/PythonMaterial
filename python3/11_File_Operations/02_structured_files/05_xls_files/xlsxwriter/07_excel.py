@@ -1,25 +1,29 @@
 from xlsxwriter.utility import (
-    xl_rowcol_to_cell, xl_cell_to_rowcol,
-    xl_col_to_name, xl_range, xl_range_abs)
+    xl_rowcol_to_cell,
+    xl_cell_to_rowcol,
+    xl_col_to_name,
+    xl_range,
+    xl_range_abs,
+)
 
 cell = xl_rowcol_to_cell(1, 2)  # C2
 print(cell)
 
 print(xl_rowcol_to_cell(0, 0))  # A1
-print(xl_rowcol_to_cell(0, 1))   # B1
-print(xl_rowcol_to_cell(1, 0))   # A2
+print(xl_rowcol_to_cell(0, 1))  # B1
+print(xl_rowcol_to_cell(1, 0))  # A2
 
-print(xl_rowcol_to_cell(0, 0, col_abs=True))                # $A1
-print(xl_rowcol_to_cell(0, 0, row_abs=True))                # A$1
+print(xl_rowcol_to_cell(0, 0, col_abs=True))  # $A1
+print(xl_rowcol_to_cell(0, 0, row_abs=True))  # A$1
 print(xl_rowcol_to_cell(0, 0, row_abs=True, col_abs=True))  # $A$1
 
 
-(row, col) = xl_cell_to_rowcol('A1')  # (0, 0)
-(row, col) = xl_cell_to_rowcol('B1')  # (0, 1)
-(row, col) = xl_cell_to_rowcol('C2')  # (1, 2)
-(row, col) = xl_cell_to_rowcol('$C2')  # (1, 2)
-(row, col) = xl_cell_to_rowcol('C$2')  # (1, 2)
-(row, col) = xl_cell_to_rowcol('$C$2')  # (1, 2)
+(row, col) = xl_cell_to_rowcol("A1")  # (0, 0)
+(row, col) = xl_cell_to_rowcol("B1")  # (0, 1)
+(row, col) = xl_cell_to_rowcol("C2")  # (1, 2)
+(row, col) = xl_cell_to_rowcol("$C2")  # (1, 2)
+(row, col) = xl_cell_to_rowcol("C$2")  # (1, 2)
+(row, col) = xl_cell_to_rowcol("$C$2")  # (1, 2)
 
 column = xl_col_to_name(0)  # A
 column = xl_col_to_name(1)  # B

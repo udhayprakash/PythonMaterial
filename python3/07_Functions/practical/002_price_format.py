@@ -11,11 +11,10 @@ Problem Statement:
 
 
 def formatted_result(price):
-    return "%d dollor(s) and %d cent(s)" % (
-        price / 100, price % 100)
+    return "%d dollor(s) and %d cent(s)" % (price / 100, price % 100)
     # default return is None
 
 
-print(formatted_result(4321)  # '43 dollor(s) and 21 cent(s)')
+print(formatted_result(4321))  # '43 dollor(s) and 21 cent(s)'
 
-print(formatted_result(501))  # '5 dollor(s) and 1 cent(s)')
+print(formatted_result(501))  # '5 dollor(s) and 1 cent(s)'

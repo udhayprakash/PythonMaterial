@@ -27,8 +27,8 @@ def factorize(n):
     return n, found
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     with futures.ProcessPoolExecutor() as pool:
         for number, factors in pool.map(factorize, range(1, 10001)):
             print
-            '{}: {}'.format(number, factors)
+            "{}: {}".format(number, factors)

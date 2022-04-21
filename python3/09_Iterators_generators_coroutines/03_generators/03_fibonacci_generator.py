@@ -10,7 +10,7 @@ Purpose: Fibonacci Series
 # Method 1 -- using functions -- you get all values at a time
 def fib_series(num):
     if num < 0:
-        return 'Invalid Input'
+        return "Invalid Input"
     fib_nums = []
     a, b = 0, 1
     for _ in range(0, num):
@@ -26,7 +26,7 @@ print(result)
 # Method 2 -- using Generators
 def fib_series(num):
     if num < 0:
-        yield 'Invalid Input'
+        yield "Invalid Input"
     a, b = 0, 1
     for _ in range(0, num):
         yield a

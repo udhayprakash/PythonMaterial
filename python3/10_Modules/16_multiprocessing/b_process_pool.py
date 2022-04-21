@@ -5,14 +5,14 @@ from multiprocessing import Pool
 
 
 def worker(name: str) -> None:
-    print(f'Started worker {name}')
+    print(f"Started worker {name}")
     worker_time = random.choice(range(1, 5))
     time.sleep(worker_time)
-    print(f'{name} worker finished in {worker_time} seconds')
+    print(f"{name} worker finished in {worker_time} seconds")
 
 
-if __name__ == '__main__':
-    process_names = [f'computer_{i}' for i in range(15)]
-    pool = Pool(processes=5) # to limit no. of processes running to 5
+if __name__ == "__main__":
+    process_names = [f"computer_{i}" for i in range(15)]
+    pool = Pool(processes=5)  # to limit no. of processes running to 5
     pool.map(worker, process_names)
     # pool.terminate()

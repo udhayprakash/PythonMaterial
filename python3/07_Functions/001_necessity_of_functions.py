@@ -10,15 +10,15 @@ Purpose: Functions
     Function with no arguments and no return value
 """
 # Method1
-print('Hello world')
-print('Hello world')
-print('Hello world')
-print('Hello world')
+print("Hello world")
+print("Hello world")
+print("Hello world")
+print("Hello world")
 print()
 
 
 def hello():
-    print('Hello world')
+    print("Hello world")
 
 
 hello()
@@ -30,22 +30,22 @@ print()
 # ============================================
 # Method 1
 n = 9
-binomial_expr = n ** 2 + 3 * n + 3
+binomial_expr = n**2 + 3 * n + 3
 print(binomial_expr)
 
 n = 34
-binomial_expr = n ** 2 + 3 * n + 3
+binomial_expr = n**2 + 3 * n + 3
 print(binomial_expr)
 
 n = -0.98798
-binomial_expr = n ** 2 + 3 * n + 3
+binomial_expr = n**2 + 3 * n + 3
 print(binomial_expr)
 print()
 
 
 # Method 2
 def binomial_expression(x):
-    binomial_expr = x ** 2 + 3 * x + 3
+    binomial_expr = x**2 + 3 * x + 3
     print(binomial_expr)
 
 

@@ -34,7 +34,7 @@ d = Singleton()
 
 class Logger(object):
     def __new__(cls, *args, **kwargs):
-        if not hasattr(cls, '_logger'):
+        if not hasattr(cls, "_logger"):
             cls._logger = super(Logger, cls).__new__(cls, *args, **kwargs)
         return cls._logger
 
@@ -42,7 +42,7 @@ class Logger(object):
 l1 = Logger()
 pprint(vars(Logger))
 
-print(f'l1:{l1}')
+print(f"l1:{l1}")
 print(vars(l1))
 
 l2 = Logger()

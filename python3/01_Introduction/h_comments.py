@@ -15,17 +15,17 @@ ctrl + / - multi-line comment/uncomment
 print('Hello world1')
 """
 
-print('Hello world2')
+print("Hello world2")
 # print('Hello world3')
 
 # any operator within quotes with be treated as
 # ordinary character
-print('Hello #world4')
-print('Hello', 'world5', sep='#')
+print("Hello #world4")
+print("Hello", "world5", sep="#")
 
 
-print('Hello world6') # 123kj12312390809i*^&*(*(*&(*)))
-print('Hello world7') # This is about the world
+print("Hello world6")  # 123kj12312390809i*^&*(*(*&(*)))
+print("Hello world7")  # This is about the world
 
 # print('Hello world7'#)
 # SyntaxError: unexpected EOF while parsing
@@ -33,12 +33,11 @@ print('Hello world7') # This is about the world
 # sldkjlkdj;wl kf'w;  dp'kwf';e kr'!@#$%^&*()
 
 
-
-'''
+"""
 Used to handle multi-line strings
 or
 in cases where multiple single and double quotes are present in string
-'''
+"""
 
 
 """

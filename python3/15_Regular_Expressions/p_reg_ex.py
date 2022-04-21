@@ -18,22 +18,22 @@ purpose: regular expression  demo
 
 import re
 
-target_string = '''
+target_string = """
 Hi everyone!
 The PARTY is on 23rd of May 2019, at xyz place. at time 7.30 pm IST
 And the RECEPTION is on 30th of Mat, 2019 at xxx place.
 Thanks
-'''
+"""
 
-print(re.findall(r'\w+', target_string))
-print(re.findall(r'\W+', target_string))
+print(re.findall(r"\w+", target_string))
+print(re.findall(r"\W+", target_string))
 print()
-print(re.findall(r'\s+', target_string))
+print(re.findall(r"\s+", target_string))
 # ['\n', ' ', '\n', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '\n', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '\n', '\n']
-print(re.findall(r'\S+', target_string))
+print(re.findall(r"\S+", target_string))
 # ['Hi', 'everyone!', 'The', 'PARTY', 'is', 'on', '23rd', 'of', 'May', '2019,', 'at', 'xyz', 'place.', 'at', 'time', '7.30', 'pm', 'IST', 'And', 'the', 'RECEPTION', 'is', 'on', '30th', 'of', 'Mat,', '2019', 'at', 'xxx', 'place.', 'Thanks']
 
-'''
+"""
 >>> re.search('\A123', '123abc')                       # matches '123' placed at the beginning of a string
 <_sre.SRE_Match object; span=(0, 3), match='123'>
 
@@ -61,4 +61,4 @@ print(re.findall(r'\S+', target_string))
 <_sre.SRE_Match object; span=(1, 2), match='\\'>
 
 
-'''
+"""

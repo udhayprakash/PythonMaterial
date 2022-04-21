@@ -24,12 +24,12 @@ class Person:
         self.last = last_name
 
     def email(self):
-        return f'{self.first}.{self.last}@email.com'
+        return f"{self.first}.{self.last}@email.com"
 
     @property  # .getter
     def full_name(self):
         if self.first and self.last:
-            return self.first + ' ' + self.last
+            return self.first + " " + self.last
 
     @full_name.setter
     def full_name(self, name):
@@ -43,36 +43,36 @@ class Person:
         self.last = None
 
 
-person1 = Person('Udhay', 'Prakash')
+person1 = Person("Udhay", "Prakash")
 print(person1.email())
 
 # After placing property decorator, method
 # should be accessed like a variable
 
-print(f'person1.full_name  :{person1.full_name}')
+print(f"person1.full_name  :{person1.full_name}")
 # print(f'person1.full_name():{person1.full_name()}')
 # TypeError: 'str' object is not callable
 
 
-person1 = Person('Udhay', 'Prakash')
+person1 = Person("Udhay", "Prakash")
 print(person1.email())
 
-print(f'person1.first      :{person1.first}')
-print(f'person1.last       :{person1.last}')
-print(f'person1.full_name  :{person1.full_name}')
+print(f"person1.first      :{person1.first}")
+print(f"person1.last       :{person1.last}")
+print(f"person1.full_name  :{person1.full_name}")
 print()
 
 # Updating the value
-person1.full_name = 'Shyam Benegal'
-print(f'person1.first      :{person1.first}')
-print(f'person1.last       :{person1.last}')
-print(f'person1.full_name  :{person1.full_name}')
+person1.full_name = "Shyam Benegal"
+print(f"person1.first      :{person1.first}")
+print(f"person1.last       :{person1.last}")
+print(f"person1.full_name  :{person1.full_name}")
 print()
 
 # Deleting fullname calls the deleter method, which erases self.first and self.last
 del person1.full_name
 # delattr(person1, full_name)
 
-print(f'person1.first      :{person1.first}')
-print(f'person1.last       :{person1.last}')
-print(f'person1.full_name  :{person1.full_name}')
+print(f"person1.first      :{person1.first}")
+print(f"person1.last       :{person1.last}")
+print(f"person1.full_name  :{person1.full_name}")

@@ -1,5 +1,6 @@
 from PIL import Image
 
+
 def crop_image(path, cropped_path):
     image = Image.open(path)
     image.show()

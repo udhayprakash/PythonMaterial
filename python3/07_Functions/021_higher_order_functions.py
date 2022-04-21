@@ -6,8 +6,8 @@ Purpose: Higher Order functions
     - NOTE: zip(), map() & filter() will ignore the asymmetric values in iterables
 """
 
-group1 = ('1', '2', '3')
-group2 = ('a', 'b', 'c', 'd')
+group1 = ("1", "2", "3")
+group2 = ("a", "b", "c", "d")
 
 result = list(zip(group1, group2))
 # NOTE: asymetric values will be ignored
@@ -25,22 +25,20 @@ print(list(zip(group1, group2, group3)))
 # ValueError: dictionary update sequence element #0 has length 3; 2 is required
 
 
-print(list(
-    zip(
-        (1, 2, 3),
-        (11, 22, 33, 44),
-        (111, 222, 333, 444),
+print(
+    list(
+        zip(
+            (1, 2, 3),
+            (11, 22, 33, 44),
+            (111, 222, 333, 444),
+        )
     )
-))
+)
 print()
 
 # Question: How to make map to work like zip
-print(list(
-    zip((1, 2, 3), ['a', 'b'])
-))
-print(list(
-    map(lambda x, y: (x, y), (1, 2, 3), ['a', 'b'])
-))
+print(list(zip((1, 2, 3), ["a", "b"])))
+print(list(map(lambda x, y: (x, y), (1, 2, 3), ["a", "b"])))
 
 # ----------------------------
 
@@ -51,29 +49,15 @@ def is_positive(num):
 
 data = (12, -23.0, 2, -123, -0, 9)
 
-print(list(
-    map(is_positive, data)
-))
+print(list(map(is_positive, data)))
 
-print(list(
-    filter(is_positive, data)
-))
+print(list(filter(is_positive, data)))
 print()
 
 # ----------------------------------------
 # Caesar Cipher Implementation
-print(list(
-    map(lambda ch: ch, 'Python')
-))
-print(list(
-    map(lambda ch: ord(ch), 'Python')
-))
-print(list(
-    map(lambda ch: ord(ch)+3, 'Python')
-))
-print(list(
-    map(lambda ch: chr(ord(ch)+3), 'Python')
-))
-print(
-    ''.join(map(lambda ch: chr(ord(ch)+3), 'Python'))
-)
+print(list(map(lambda ch: ch, "Python")))
+print(list(map(lambda ch: ord(ch), "Python")))
+print(list(map(lambda ch: ord(ch) + 3, "Python")))
+print(list(map(lambda ch: chr(ord(ch) + 3), "Python")))
+print("".join(map(lambda ch: chr(ord(ch) + 3), "Python")))

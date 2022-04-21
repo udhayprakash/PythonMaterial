@@ -18,30 +18,30 @@ class PowTwo:
 
     def __next__(self):
         if self.n <= self.maximum:
-            result = 2 ** self.n
+            result = 2**self.n
             self.n += 1
             return result
         else:
             raise StopIteration
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     output = PowTwo(4)
-    print(f'output      :{output}')
-    print(f'type(output):{type(output)}')
+    print(f"output      :{output}")
+    print(f"type(output):{type(output)}")
 
     output_iter = iter(output)
-    print(f'\noutput_iter      :{output_iter}')
-    print(f'type(output_iter):{type(output_iter)}')
+    print(f"\noutput_iter      :{output_iter}")
+    print(f"type(output_iter):{type(output_iter)}")
 
-    print(f'next(output_iter):{next(output_iter)}')
-    print(f'next(output_iter):{next(output_iter)}')
-    print(f'next(output_iter):{next(output_iter)}')
-    print(f'next(output_iter):{next(output_iter)}')
-    print(f'next(output_iter):{next(output_iter)}')
+    print(f"next(output_iter):{next(output_iter)}")
+    print(f"next(output_iter):{next(output_iter)}")
+    print(f"next(output_iter):{next(output_iter)}")
+    print(f"next(output_iter):{next(output_iter)}")
+    print(f"next(output_iter):{next(output_iter)}")
 
     try:
-        print(f'next(output_iter):{next(output_iter)}')
+        print(f"next(output_iter):{next(output_iter)}")
     except StopIteration as ex:
         print(repr(ex))
 

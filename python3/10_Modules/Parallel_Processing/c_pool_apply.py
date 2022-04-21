@@ -19,7 +19,7 @@ arr = np.random.randint(0, 10, size=[200000, 5])
 data = arr.tolist()
 data[:5]
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Step 1: Init multiprocessing.Pool()
     pool = mp.Pool(mp.cpu_count())
 

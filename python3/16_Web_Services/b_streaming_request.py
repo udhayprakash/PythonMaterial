@@ -24,11 +24,11 @@ import requests
 #         print(json.loads(line))
 
 
-print('\n\n\n')
-r = requests.get('https://httpbin.org/stream/5', stream=True)
+print("\n\n\n")
+r = requests.get("https://httpbin.org/stream/5", stream=True)
 
 if r.encoding is None:
-    r.encoding = 'utf-8'
+    r.encoding = "utf-8"
 
 for line in r.iter_content(decode_unicode=True, chunk_size=1024):
     if line:

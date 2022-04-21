@@ -19,7 +19,7 @@ Purpose: range() function
 
 # help(range)
 
-values = range(9)            # range(FINAL_VALUE) => range(0, 9, 1)
+values = range(9)  # range(FINAL_VALUE) => range(0, 9, 1)
 print(type(values), values)  # <class 'range'> range(0,9)
 
 # range(INITIAL_VALUE, FINAL_VALUE) => range(0, 9, 1)
@@ -33,9 +33,9 @@ print(type(values), values)  # <class 'range'> range(0,9)
 for each_ele in values:
     print(each_ele)
 
-print(f'{list(values)  =}')
-print(f'{tuple(values) =}')
-print(f'{set(values)   =}')
+print(f"{list(values)  =}")
+print(f"{tuple(values) =}")
+print(f"{set(values)   =}")
 print()
 
 

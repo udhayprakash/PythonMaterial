@@ -27,7 +27,7 @@ class CircularLinkedList:
         print(" -> ".join(nodes))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     circular_llist = CircularLinkedList()
     circular_llist.print_list()  # None
 
@@ -40,6 +40,6 @@ if __name__ == '__main__':
     c.next = d
     d.next = a
     circular_llist.head = a
-    circular_llist.print_list()   # a -> b -> c -> d
+    circular_llist.print_list()  # a -> b -> c -> d
     circular_llist.print_list(b)  # b -> c -> d -> a
     circular_llist.print_list(d)  # d -> a -> b -> c

@@ -4,7 +4,9 @@ Purpose: sys module
 """
 import sys
 from pprint import pprint
-print(f'''
+
+print(
+    f"""
     {sys.audit                      =}
     {sys.displayhook                =}
     {sys.int_info                   =}
@@ -13,7 +15,8 @@ print(f'''
     {sys.warnoptions                =}
 
     {sys.builtin_module_names       =}
-''')
+"""
+)
 
 pprint(sys.modules)
 

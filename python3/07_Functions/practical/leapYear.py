@@ -16,9 +16,9 @@ Leap Years from 1900:
 
 def is_leap(year):
     leap = False
-    if (year % 4 == 0):
-        if (year % 100 == 0):
-            if (year % 400 == 0):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
                 leap = True
             else:
                 leap = False
@@ -27,7 +27,7 @@ def is_leap(year):
     return leap
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     years = list(range(1900, 2000))
     for y in years:
         print((y, is_leap(y)))

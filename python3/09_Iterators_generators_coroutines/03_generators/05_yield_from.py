@@ -11,7 +11,7 @@ def num_generator(n):
 
 
 ng = num_generator(10)
-print(f'{list(ng) = }')
+print(f"{list(ng) = }")
 
 
 def sequence_parser(mylist):
@@ -20,7 +20,7 @@ def sequence_parser(mylist):
 
 
 sp = sequence_parser([12, 34, 56, 78, 90])
-print(f'{tuple(sp) =}')
+print(f"{tuple(sp) =}")
 print()
 
 
@@ -32,7 +32,7 @@ def num_generator(n):
 
 
 ng = num_generator(10)
-print(f'{list(ng) = }')
+print(f"{list(ng) = }")
 
 
 def sequence_parser(mylist):
@@ -42,4 +42,4 @@ def sequence_parser(mylist):
 
 
 sp = sequence_parser([12, 34, 56, 78, 90])
-print(f'{tuple(sp) =}')
+print(f"{tuple(sp) =}")

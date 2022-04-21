@@ -2,7 +2,6 @@ from jinja2 import Template
 
 
 class Person:
-
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -14,9 +13,9 @@ class Person:
         return self.name
 
 
-person = Person('Peter', 34)
+person = Person("Peter", 34)
 
-tm = Template('My name is {{ per.get_name() }} and I am {{ per.get_age() }}')
+tm = Template("My name is {{ per.get_name() }} and I am {{ per.get_age() }}")
 msg = tm.render(per=person)
 
 print(msg)

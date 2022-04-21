@@ -12,10 +12,10 @@ plt.hist(dataset1)
 plt.show()
 
 dataset2 = randn(80)
-plt.hist(dataset2, color='indianred')
+plt.hist(dataset2, color="indianred")
 plt.show()
 
-plt.hist(dataset1, density=True, color='indianred', alpha=0.5, bins=20)
+plt.hist(dataset1, density=True, color="indianred", alpha=0.5, bins=20)
 plt.hist(dataset2, density=True, alpha=0.5, bins=20)
 plt.show()
 

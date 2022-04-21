@@ -17,7 +17,7 @@ Purpose:
     any() -> True if bool(at-least one element) is True
 """
 
-'''
+"""
 >>> bool(1)
 True
 >>> bool(0)
@@ -33,7 +33,7 @@ True
 True
 >>> bool('')
 False
-'''
+"""
 # all() -> True if bool(ech_element) is True
 my_list = [1, 2, 3, 4, 6, 0, 6, 7]
 for i in my_list:
@@ -42,7 +42,7 @@ for i in my_list:
         result = False
         break
 else:
-    print('All loop given are ran')
+    print("All loop given are ran")
     result = True
 
 print(my_list, result)
@@ -77,7 +77,7 @@ print(all([None, 1, 2, 3]))  # False
 print(any([None, 1, 2, 3]))  # True
 
 print()
-print('python', all('python'))  # True
-print('pyt hon', all('pyt hon'))  # True
+print("python", all("python"))  # True
+print("pyt hon", all("pyt hon"))  # True
 print(f'{bool(" ") =}')
 print(f'{bool("")  =}')

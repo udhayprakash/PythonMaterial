@@ -7,34 +7,34 @@ Purpose: Getting IP details
 """
 import urllib.request
 
-url = 'https://ipapi.co/'
+url = "https://ipapi.co/"
 with urllib.request.urlopen(url) as url_handler:
     content = url_handler.read()
     # print(type(content), content)
-    with open('result.html', 'wb') as f:
-        f.write(content.replace(b' ', b''))
+    with open("result.html", "wb") as f:
+        f.write(content.replace(b" ", b""))
         f.close()
 
-url = 'https://ipapi.co/json'
+url = "https://ipapi.co/json"
 with urllib.request.urlopen(url) as url_handler:
     content = url_handler.read()
     # print(type(content), content)
-    with open('result.json', 'wb') as f:
+    with open("result.json", "wb") as f:
         f.write(content)
         f.close()
 
-url = 'https://ipapi.co/yaml'
+url = "https://ipapi.co/yaml"
 with urllib.request.urlopen(url) as url_handler:
     content = url_handler.read()
     # print(type(content), content)
-    with open('result.yaml', 'wb') as f:
+    with open("result.yaml", "wb") as f:
         f.write(content)
         f.close()
 
-url = 'https://ipapi.co/csv'
+url = "https://ipapi.co/csv"
 with urllib.request.urlopen(url) as url_handler:
     content = url_handler.read()
     # print(type(content), content)
-    with open('result.csv', 'wb') as f:
+    with open("result.csv", "wb") as f:
         f.write(content)
         f.close()

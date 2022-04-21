@@ -9,7 +9,7 @@ class Worker(threading.Thread):
 
     def run(self):
         for i in range(10):
-           print(i)
+            print(i)
 
 
 def main():
@@ -17,6 +17,7 @@ def main():
     thread1 = Worker()
     # This is the code needed to run our newly created thread
     thread1.start()
+
 
 if __name__ == "__main__":
     main()

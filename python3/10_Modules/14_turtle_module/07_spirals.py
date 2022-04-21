@@ -5,7 +5,7 @@ import turtle
 
 wn = turtle.Screen()
 t = turtle.Turtle()
-t.speed('fastest')
+t.speed("fastest")
 radius = 0
 tick = 0
 while True:

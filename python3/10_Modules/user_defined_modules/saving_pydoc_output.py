@@ -11,7 +11,7 @@ from my_package import calculator
 
 
 def output_help_to_file(filepath, request):
-    with open(filepath, 'w') as f:
+    with open(filepath, "w") as f:
         sys.stdout = f
         pydoc.help(request)
         f.close()
@@ -19,12 +19,12 @@ def output_help_to_file(filepath, request):
     return
 
 
-if __name__ == '__main__':
-    if not os.path.exists('docs'):
-        os.mkdir('docs')
+if __name__ == "__main__":
+    if not os.path.exists("docs"):
+        os.mkdir("docs")
 
-    output_help_to_file(r'docs/calculator.txt', calculator)
-    output_help_to_file(r'docs/math.txt', 'math')
+    output_help_to_file(r"docs/calculator.txt", calculator)
+    output_help_to_file(r"docs/math.txt", "math")
 
     # print(dir(__name__))
     # print()
@@ -34,6 +34,6 @@ if __name__ == '__main__':
     print()
     print(pydoc.render_doc(__name__))
 
-    with open('docs/__name__.txt', 'w') as a:
+    with open("docs/__name__.txt", "w") as a:
         a.write(pydoc.render_doc(__name__))
         a.close()

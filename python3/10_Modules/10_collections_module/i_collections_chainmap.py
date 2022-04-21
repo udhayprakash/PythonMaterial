@@ -4,8 +4,8 @@ Purpose:
 """
 from collections import ChainMap
 
-alpabets = {'a': 1, 'b': 2, 'c': 3}
-fruits = {'a': 'apple', 'b': 'banana'}
+alpabets = {"a": 1, "b": 2, "c": 3}
+fruits = {"a": "apple", "b": "banana"}
 
 # Method 1
 combined = alpabets.copy()
@@ -22,9 +22,9 @@ print(dict(alpabet_fruits))  # {'a': 1, 'b': 2, 'c': 3}
 
 
 # --------------
-d1 = {'a': 1}
-d2 = {'b': 2, 'd': 4}
-d3 = {'c': 3}
+d1 = {"a": 1}
+d2 = {"b": 2, "d": 4}
+d3 = {"c": 3}
 
 # Defining the chainmap
 c = ChainMap(d1, d2, d3)

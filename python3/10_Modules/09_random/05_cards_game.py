@@ -4,8 +4,8 @@
 
 import random
 
-suits = ['♠', '♥', '♦', '♣']
-cardValues = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+suits = ["♠", "♥", "♦", "♣"]
+cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 
 # initializing an empty deck
 deck = []
@@ -15,7 +15,7 @@ for suit in suits:
     for value in cardValues:
         deck.append(value + suit)
 # printing the unshuffled deck
-print('The original deck of cards:\n\n', deck)
+print("The original deck of cards:\n\n", deck)
 
 
 # SHUFFLING CARDS: iterating over all cards one by one using their indexes, swapping the index with any random index
@@ -27,4 +27,4 @@ for index in range(0, len(deck)):
     deck[index] = deck[randomCardForSwitching]
     deck[randomCardForSwitching] = temporaryIndex
 # printing the shuffled deck
-print('\nThe shuffled deck of cards:\n\n', deck)
+print("\nThe shuffled deck of cards:\n\n", deck)

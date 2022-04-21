@@ -19,27 +19,26 @@ XML vs HTML
 """
 from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
-root = Element('root')
+root = Element("root")
 
-child = SubElement(root, 'child')
-child.text = 'I am a child'
+child = SubElement(root, "child")
+child.text = "I am a child"
 
-child2 = SubElement(root, 'child2')
+child2 = SubElement(root, "child2")
 
 # To a xml string
 # print(tostring(root))
-result_str = tostring(root).decode('utf-8')
+result_str = tostring(root).decode("utf-8")
 print(result_str)
 
 
 # To write an xml file
-with open('a_write_xml.xml', 'w') as f:
+with open("a_write_xml.xml", "w") as f:
     f.write(result_str)
 
 
-from xml.dom import minidom
-
-xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent='   ')
-with open('a_write_xml2.xml', 'w') as f:
+xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
+with open("a_write_xml2.xml", "w") as f:
     f.write(xmlstr)

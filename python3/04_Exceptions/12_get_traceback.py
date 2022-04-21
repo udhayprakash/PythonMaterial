@@ -17,9 +17,10 @@ try:
     expr3 = num2 - num4
     expr4 = expr1 * (expr2) / expr3
 except ZeroDivisionError:
-    print('Denominator in divison should not be zero')
+    print("Denominator in divison should not be zero")
     exc_type, exc_value, exc_traceback = sys.exc_info()
-    print(f'''
+    print(
+        f"""
     exc_type     : {exc_type},
     exc_value    : {exc_value},
     exc_traceback: {exc_traceback},
@@ -27,14 +28,15 @@ except ZeroDivisionError:
         tb_lasti  : {exc_traceback.tb_lasti},
         tb_next   : {exc_traceback.tb_next}
         tb_frame  : {exc_traceback.tb_frame},
-    ''')
+    """
+    )
     print()
     traceback.print_exc(file=sys.stdout)
 except Exception as ex:
-    print(f'Unhandled exception:{ex =}')
+    print(f"Unhandled exception:{ex =}")
 else:
-    print(f'{expr4 =}')
+    print(f"{expr4 =}")
 finally:
-    print('Finally block')
+    print("Finally block")
 
-print('next Statement')
+print("next Statement")

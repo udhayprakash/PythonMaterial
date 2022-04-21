@@ -14,23 +14,23 @@ Purpose: Coroutines
 def hello():  # -- generator
     # print('Hello world')
     # return 'Hello world'
-    yield 'Hello world'
+    yield "Hello world"
 
 
 result = hello()
-print(f'{type(result)} {result}')  # generator
-print(f'{next(result) = }')  # 'Hello world'
+print(f"{type(result)} {result}")  # generator
+print(f"{next(result) = }")  # 'Hello world'
 
 
 # ------------------------------
 def hello():  # coroutine
-    value = yield 'Hello world'
+    value = yield "Hello world"
     yield value
 
 
 result = hello()
-print(f'{type(result)} {result}')  # generator
-print(f'{next(result) = }')  # 'Hello world'
+print(f"{type(result)} {result}")  # generator
+print(f"{next(result) = }")  # 'Hello world'
 
 
 # ------------------------------
@@ -42,8 +42,8 @@ def hello():  # coroutine
 # NOTE: Default initial yield is None
 
 result = hello()
-print(f'{type(result)} {result}')
-print(f'{next(result) = }')  # None
+print(f"{type(result)} {result}")
+print(f"{next(result) = }")  # None
 print()
 
 
@@ -51,19 +51,19 @@ print()
 def hello():  # coroutine
     value = yield 123123
     # yield value
-    yield f'Passed value is {value}'
+    yield f"Passed value is {value}"
 
 
 result = hello()
-print(f'{type(result)} {result}')
+print(f"{type(result)} {result}")
 
 # All coroutines must be "primed" by first calling next() (or send(None))
-print(f'{next(result) = }')
+print(f"{next(result) = }")
 
-print(f'{result.send("world") = }')   # 'Passed value is world'
+print(f'{result.send("world") = }')  # 'Passed value is world'
 
 
 try:
     print(f"{result.send('Python')  =}")
 except StopIteration:
-    print('No more yields to send !!!')
+    print("No more yields to send !!!")

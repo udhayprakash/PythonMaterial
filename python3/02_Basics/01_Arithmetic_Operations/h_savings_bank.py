@@ -14,22 +14,22 @@ Step 4: Online Purchase of 33.33
 Step 5: House Rent paid of 1500
 """
 balance = 0
-print('Initial Balance       :', balance)
+print("Initial Balance       :", balance)
 
 # Initial account opening deposit of 1500
-balance += 1500            # balance = balance + 1500
-print('After initial Deposit :', balance)
+balance += 1500  # balance = balance + 1500
+print("After initial Deposit :", balance)
 
 # salary credited of 3300
 balance += 3300
-print('After Salary credited :', balance)
+print("After Salary credited :", balance)
 
 # Online Purchase of 33.33
 balance -= 33.33
-print('After Online purchase :', balance)
+print("After Online purchase :", balance)
 
 # House Rent of 1500 paid
 balance -= 1500
-print('After House Rent paid :', balance)
+print("After House Rent paid :", balance)
 
-print('Final Balance         :', balance)
+print("Final Balance         :", balance)

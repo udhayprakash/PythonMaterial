@@ -8,24 +8,24 @@ num1 = 10
 
 # Method 1
 if num1 % 2 == 0:
-    print('Even')
+    print("Even")
 else:
-    print('Odd')
+    print("Odd")
 
 # Method 2 - using ternary operation
-print('Even' if num1 % 2 == 0 else 'Odd')
+print("Even" if num1 % 2 == 0 else "Odd")
 
 # ------
 if num1 % 2:
-    print('Odd')
+    print("Odd")
 else:
-    print('Even')
+    print("Even")
 
-print('Odd' if num1 % 2 else 'Even')
+print("Odd" if num1 % 2 else "Even")
 
-print('non-zero' if num1 != 0 else 'zero')
-print('non-zero' if num1 else 'zero')
-print('non-zero' if not num1 == 0 else 'zero')
+print("non-zero" if num1 != 0 else "zero")
+print("non-zero" if num1 else "zero")
+print("non-zero" if not num1 == 0 else "zero")
 
 
 # Javascript: conditIon: success_case, failure_case

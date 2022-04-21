@@ -1,1 +1,0 @@
-# https://coinmarketcap.com/api/

@@ -27,21 +27,24 @@ import logging
 
 # Time in log
 logging.basicConfig(
-    filename='logs/05_logging.log', # filemode='w',
-    format='%(asctime)s %(levelname)8s %(name)s %(message)s',
-    datefmt='%d-%b-%Y %I:%M:%S %p',
-    level=logging.DEBUG)
+    filename="logs/05_logging.log",  # filemode='w',
+    format="%(asctime)s %(levelname)8s %(name)s %(message)s",
+    datefmt="%d-%b-%Y %I:%M:%S %p",
+    level=logging.DEBUG,
+)
 
-logging.info('Logging app started')
-logging.warning('An example logging message.')
-logging.warning('Another log message')
+logging.info("Logging app started")
+logging.warning("An example logging message.")
+logging.warning("Another log message")
 print()
 
 # NOTE: based on the logging level placed, the logs will be placed.
 # If the path is not specified, the log file will be created in
 # the current working directory of python script.
+
+
 def addition(n1, n2):
-    logging.debug('Entered addition func')
+    logging.debug("Entered addition func")
     return n1 + n2
 
 

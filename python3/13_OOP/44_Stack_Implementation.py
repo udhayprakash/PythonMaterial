@@ -3,7 +3,7 @@
 Purpose: Stack data structure implementation
             LIFO
 """
-__author__ = 'Udhay Prakash'
+__author__ = "Udhay Prakash"
 
 
 class Stack:
@@ -18,7 +18,7 @@ class Stack:
 
     def pop(self):
         if self.is_empty():
-            raise Exception('No more elements to pop, from stack')
+            raise Exception("No more elements to pop, from stack")
         poped_item = self.items[0]
         del self.items[0]
         return poped_item
@@ -29,8 +29,8 @@ class Stack:
 
 s = Stack()
 
-s.push('Hello world!')
+s.push("Hello world!")
 s.push(True)
-print('s.size()', s.size())
-print('s.pop() ', s.pop())
-print('s.size()', s.size())
+print("s.size()", s.size())
+print("s.pop() ", s.pop())
+print("s.size()", s.size())

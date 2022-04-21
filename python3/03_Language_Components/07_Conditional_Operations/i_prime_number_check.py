@@ -11,27 +11,28 @@ Purpose: Python program to check if the input number is prime or not
 """
 
 # num = 10
-num = int(input('Enter any positive number:'))
+num = int(input("Enter any positive number:"))
 
 # Method 1
 for i in range(2, num):
     print(i, num % i)
     if num % i == 0:
-        print(f'{num} is a composite number')
+        print(f"{num} is a composite number")
         break
 else:
-    print(f'{num} is a PRIME number')
+    print(f"{num} is a PRIME number")
 
 # Method 2
 import math
-print(f'{math.sqrt(num) =}')
+
+print(f"{math.sqrt(num) =}")
 
 for i in range(2, int(math.sqrt(num)) + 1):
     print(i, num % i)
     if num % i == 0:
-        print(f'{num} is a composite number')
+        print(f"{num} is a composite number")
         break
 else:
-    print(f'{num} is a PRIME number')
+    print(f"{num} is a PRIME number")
 
-print('End of program -------')
+print("End of program -------")

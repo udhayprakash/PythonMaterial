@@ -5,9 +5,11 @@ import socket
 host_name = socket.gethostname()
 ip_address = socket.gethostbyname(host_name)
 
-print(f'''
+print(
+    f"""
 Host name : {host_name}
-IP address: {ip_address}''')
+IP address: {ip_address}"""
+)
 
 # port address = mac address == private ip address  ==== ISP (Public IP Adress) ==== Internet
 

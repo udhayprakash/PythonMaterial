@@ -6,7 +6,7 @@ import sys
 import unittest
 
 
-sys.path.insert(0, '..')
+sys.path.insert(0, "..")
 
 from calculator import multiplication
 
@@ -21,12 +21,12 @@ class TestSuitemultiplication(unittest.TestCase):
         self.assertEqual(multiplication(10.0, 20.0), 200.0)
 
     def test03(self):
-        self.assertEqual(multiplication(10.0, '20'), 200.0)
-        self.assertEqual(multiplication('10', '20'), 200.0)
+        self.assertEqual(multiplication(10.0, "20"), 200.0)
+        self.assertEqual(multiplication("10", "20"), 200.0)
 
-        self.assertEqual(multiplication('10.0', 20), 200.0)
-        self.assertEqual(multiplication('10.0', '20.0'), 200.0)
+        self.assertEqual(multiplication("10.0", 20), 200.0)
+        self.assertEqual(multiplication("10.0", "20.0"), 200.0)
 
     @unittest.expectedFailure
     def test04(self):
-        self.assertEqual(multiplication('10.0', True), 200.0)
+        self.assertEqual(multiplication("10.0", True), 200.0)

@@ -17,12 +17,12 @@ async def main():
     # task2 = asyncio.create_task(say_after(1, 'world'))
 
     # case 2 - first task takes MORE time compared to second one
-    task1 = asyncio.create_task(say_after(4, 'hello'))
-    task2 = asyncio.create_task(say_after(2, 'world'), name='print_world')
+    task1 = asyncio.create_task(say_after(4, "hello"))
+    task2 = asyncio.create_task(say_after(2, "world"), name="print_world")
 
-    print(f'{len(asyncio.all_tasks()) =}')
-    print(f'{task1.done()      =}')
-    print(f'{task2.done()      =}')
+    print(f"{len(asyncio.all_tasks()) =}")
+    print(f"{task1.done()      =}")
+    print(f"{task2.done()      =}")
 
     print(f"started at {time.strftime('%X')}")
 
@@ -33,13 +33,13 @@ async def main():
 
     print(f"finished at {time.strftime('%X')}")
 
-    print(f'\n{task1.get_name()=}')
-    print(f'{task2.get_name()=}')
-    print(f'{task1.done()      =}')
-    print(f'{task2.done()      =}')
+    print(f"\n{task1.get_name()=}")
+    print(f"{task2.get_name()=}")
+    print(f"{task1.done()      =}")
+    print(f"{task2.done()      =}")
 
     # pprint(asyncio.all_tasks())
-    print(f'{len(asyncio.all_tasks()) =}')
+    print(f"{len(asyncio.all_tasks()) =}")
 
 
 asyncio.run(main())

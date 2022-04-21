@@ -16,10 +16,10 @@ import datetime
 import heapq
 
 heap = []
-heapq.heappush(heap, (5, 'write code'))
-heapq.heappush(heap, (7, 'release product'))
-heapq.heappush(heap, (1, 'write spec'))
-heapq.heappush(heap, (3, 'create tests'))
+heapq.heappush(heap, (5, "write code"))
+heapq.heappush(heap, (7, "release product"))
+heapq.heappush(heap, (1, "write spec"))
+heapq.heappush(heap, (3, "create tests"))
 
 # pops smallest
 heapq.heappop(heap)  # (1, 'write spec')
@@ -57,8 +57,8 @@ def email(frequency, details):
         yield current, details
 
 
-fast_email = email(datetime.timedelta(minutes=15), 'fast email')
-slow_email = email(datetime.timedelta(minutes=40), 'slow email')
+fast_email = email(datetime.timedelta(minutes=15), "fast email")
+slow_email = email(datetime.timedelta(minutes=40), "slow email")
 
 unified = heapq.merge(fast_email, slow_email)
 print(unified)
@@ -76,7 +76,5 @@ English Gardner          10.94
 Michelle-Lee Ahye        10.92
 Dafne Schippers          10.90
 """
-top_3 = heapq.nsmallest(
-    3, results.splitlines(), key=lambda x: float(x.split()[-1])
-)
-print('\n'.join(top_3))
+top_3 = heapq.nsmallest(3, results.splitlines(), key=lambda x: float(x.split()[-1]))
+print("\n".join(top_3))

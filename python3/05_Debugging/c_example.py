@@ -10,10 +10,12 @@ To install ipdb,
 """
 numbers = range(0, 100)
 
-import ipdb;ipdb.set_trace()
+import ipdb
+
+ipdb.set_trace()
 
 for each_num in numbers:
     if each_num % 2 == 0:  # each_num % 2
-        print(each_num, end=', ')
+        print(each_num, end=", ")
 
 # Assignment: How to clear one specific breakpoint, in pdb

@@ -11,20 +11,20 @@ Purpose: Generator objects
 
 
 def foo():
-    print('Start the function!')
+    print("Start the function!")
     for i in range(3):
-        print('\tbefore yield', i)
+        print("\tbefore yield", i)
         # return i
         yield i
-        print('\tafter yield', i)
+        print("\tafter yield", i)
 
-    print('end of function ')
+    print("end of function ")
     # return None
 
 
 # call
 f = foo()
-print('f', f)
+print("f", f)
 print(dir(f))
 # ['__class__', '__del__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
 #  '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__name__', '__ne__', '__new__',
@@ -46,33 +46,33 @@ print()
 try:
     print(next(f))
 except StopIteration as ex:
-    print('error is ', repr(ex))
+    print("error is ", repr(ex))
 
-print('\nusing loop to get remaining elements')
+print("\nusing loop to get remaining elements")
 for i in f:
     print(i)
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 for i in f:
     print(i)
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 print(list(f))
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 print(tuple(f))
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 print(set(f))
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 print([i for i in f])
 
-print('\n====reinitialize call ')
+print("\n====reinitialize call ")
 f = foo()
 print(str(f))

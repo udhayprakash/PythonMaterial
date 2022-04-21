@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """Purpose: Calculator Application
 """
-__author__ = ''
+__author__ = ""
 
 
 class Calculate(object):

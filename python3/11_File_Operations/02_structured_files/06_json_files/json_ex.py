@@ -11,18 +11,18 @@ strings
 """
 import json
 
-my_dict = {'a': 1, 'b': 2}
+my_dict = {"a": 1, "b": 2}
 
 print(json.dumps(my_dict))
 
-my_tuple = (None, True, 0, -0.004, [1, 2], (4,), 'tom', 'cruise')
+my_tuple = (None, True, 0, -0.004, [1, 2], (4,), "tom", "cruise")
 
 print(json.dumps(my_tuple))
 
-fh = open('test.json', 'w')
+fh = open("test.json", "w")
 json.dump(my_tuple, fh)
 
-gh = open('test.json', 'r')
+gh = open("test.json", "r")
 # print(json.load(gh))
 data = gh.read()
 # print(json.loads(data, 'utf-8'))

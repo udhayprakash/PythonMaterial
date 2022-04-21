@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-'''
+"""
 Purpose: Discussion on unicode strings
     Ref: https://docs.python.org/3/howto/unicode.html
 
@@ -39,50 +39,51 @@ python 3 - default encoding - unicode
 Different encoding can be specified by placing the below line in the first line of script:
 # -*- coding: <encoding name> -*-
 
-'''
+"""
 import unicodedata
-print('\N{GREEK CAPITAL LETTER DELTA}')  # '\u0394' - Using the character name
-print('\u0394')  # '\u0394' - Using a 16-bit hex value
-print('\U00000394')  # '\u0394' - Using a 32-bit hex value
+
+print("\N{GREEK CAPITAL LETTER DELTA}")  # '\u0394' - Using the character name
+print("\u0394")  # '\u0394' - Using a 16-bit hex value
+print("\U00000394")  # '\u0394' - Using a 32-bit hex value
 
 # b'\x80abc'.decode("utf-8", "strict")
 #  UnicodeDecodeError: 'utf-8' codec can't decode
 #      byte 0x80 in position 0: invalid start byte
 
-print(b'\x80abc'.decode('utf-8', 'replace'))  # '\ufffdabc'
-print(b'\x80abc'.decode('utf-8', 'backslashreplace'))  # '\\x80abc'
-print(b'\x80abc'.decode('utf-8', 'ignore'))  # 'abc'
+print(b"\x80abc".decode("utf-8", "replace"))  # '\ufffdabc'
+print(b"\x80abc".decode("utf-8", "backslashreplace"))  # '\\x80abc'
+print(b"\x80abc".decode("utf-8", "ignore"))  # 'abc'
 
 # list of encoding standards supported in python
 # https://docs.python.org/3/library/codecs.html#standard-encodings
 
 # One-character Unicode strings can also be created with the chr() built-in function
 print(chr(57344))  # '\ue000'
-print(ord('\ue000'))  # 57344
+print(ord("\ue000"))  # 57344
 
 # unicode to bytes
-u = chr(40960) + 'abcd' + chr(1972)
+u = chr(40960) + "abcd" + chr(1972)
 print(u, type(u))
 
-print(u.encode('utf-8'))  # b'\xea\x80\x80abcd\xde\xb4'
+print(u.encode("utf-8"))  # b'\xea\x80\x80abcd\xde\xb4'
 # >>> u.encode('ascii')
 # Traceback (most recent call last):
 #     ...
 # UnicodeEncodeError: 'ascii' codec can't encode character '\ua000' in
 #   position 0: ordinal not in range(128)
 
-print(u.encode('ascii', 'ignore'))  # b'abcd'
-print(u.encode('ascii', 'replace'))  # b'?abcd?'
-print(u.encode('ascii', 'xmlcharrefreplace'))  # b'&#40960;abcd&#1972;'
+print(u.encode("ascii", "ignore"))  # b'abcd'
+print(u.encode("ascii", "replace"))  # b'?abcd?'
+print(u.encode("ascii", "xmlcharrefreplace"))  # b'&#40960;abcd&#1972;'
 # b'\\ua000abcd\\u07b4' (inserts a \uNNNN escape sequence)
-print(u.encode('ascii', 'backslashreplace'))
-print(u.encode('ascii', 'namereplace'))  # b'\\N{YI SYLLABLE IT}abcd\\u07b4'
+print(u.encode("ascii", "backslashreplace"))
+print(u.encode("ascii", "namereplace"))  # b'\\N{YI SYLLABLE IT}abcd\\u07b4'
 
 
-u = chr(233) + chr(0x0bf2) + chr(3972) + chr(6000) + chr(13231)
+u = chr(233) + chr(0x0BF2) + chr(3972) + chr(6000) + chr(13231)
 
 for i, c in enumerate(u):
-    print(i, '%04x' % ord(c), unicodedata.category(c), end=' ')
+    print(i, "%04x" % ord(c), unicodedata.category(c), end=" ")
     print(unicodedata.name(c))
 
 # Get numeric value of second character

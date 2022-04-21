@@ -3,60 +3,64 @@
 Purpose: non-local usage & inner functions
 """
 # Case 0
-print('\n\nGeneral case')
-name = 'global level'
+print("\n\nGeneral case")
+name = "global level"
+
 
 def outer():
-    name = 'outer function level'
+    name = "outer function level"
 
     def inner():
-        name = 'inner function level'
-        print(f'\tIn inner(): {name =}')
+        name = "inner function level"
+        print(f"\tIn inner(): {name =}")
+
     inner()
-    print(f'\tIn outer(): {name =}')
+    print(f"\tIn outer(): {name =}")
 
 
 outer()
-print(f'\toutside   : {name =}')
+print(f"\toutside   : {name =}")
 
 # Case 1 =========================
-print('\n\nwhen global name defined in inner() function')
-name = 'global level'
+print("\n\nwhen global name defined in inner() function")
+name = "global level"
 
 
 def outer():
     # global name
-    name = 'outer function level'
+    name = "outer function level"
 
     def inner():
         global name
-        name = 'inner function level'
-        print(f'\tIn inner(): {name =}')  # changed
+        name = "inner function level"
+        print(f"\tIn inner(): {name =}")  # changed
+
     inner()
-    print(f'\tIn outer(): {name =}')  # uneffected
+    print(f"\tIn outer(): {name =}")  # uneffected
 
 
 outer()
-print(f'\toutside   : {name =}')  # effected
+print(f"\toutside   : {name =}")  # effected
 
 # Case 2 =========================
-print('\n\nwhen nonlocal name defined in inner() function')
-name = 'global level'
+print("\n\nwhen nonlocal name defined in inner() function")
+name = "global level"
 
 
 def outer():
-    name = 'outer function level'
+    name = "outer function level"
 
     def inner():
         nonlocal name
-        name = 'inner function level'
-        print(f'\tIn inner(): {name =}')  # changed
+        name = "inner function level"
+        print(f"\tIn inner(): {name =}")  # changed
+
     inner()
-    print(f'\tIn outer(): {name =}')  # effected
+    print(f"\tIn outer(): {name =}")  # effected
 
 
 outer()
-print(f'\toutside   : {name =}')  # un-effected
+print(f"\toutside   : {name =}")  # un-effected
 
 # NOTE:
 # 1. If a variable is initialized with global,
@@ -76,15 +80,15 @@ def outer():
         nonlocal x
         # global x
         x = 2
-        print('inner :', x)
+        print("inner :", x)
 
     inner()
-    print('outer :', x)
+    print("outer :", x)
     # not effected when global
     # effected when nonlocal
 
 
 outer()
-print('global:', x)
+print("global:", x)
 # effected when global
 # not effected when nonlocal

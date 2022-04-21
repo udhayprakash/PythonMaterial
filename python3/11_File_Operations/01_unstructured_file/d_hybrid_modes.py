@@ -4,41 +4,41 @@ Purpose: hybrid file operation modes
     r+, w+, a+
 """
 # r+ -> ensure that file is already present
-gh = open('b_create_file.txt', 'r+')
+gh = open("b_create_file.txt", "r+")
 
-print(f'{gh.name       =}')
-print(f'{gh.mode       =}')
+print(f"{gh.name       =}")
+print(f"{gh.mode       =}")
 
-print(f'{gh.writable() =}')
-gh.write('This is written in w+ mode')
+print(f"{gh.writable() =}")
+gh.write("This is written in w+ mode")
 gh.flush()
 
-print(f'{gh.readable() =}')
+print(f"{gh.readable() =}")
 file_content = gh.read()
-print(f'{file_content =}')
+print(f"{file_content =}")
 
 gh.close()
 
-#-------------------------------------------------
-print('-'* 10)
+# -------------------------------------------------
+print("-" * 10)
 
 # w+ -> removes existing content in file if present
-gh = open('d_hybrid_modes.txt', 'w+')
+gh = open("d_hybrid_modes.txt", "w+")
 
-print(f'{gh.name       =}')
-print(f'{gh.mode       =}')
+print(f"{gh.name       =}")
+print(f"{gh.mode       =}")
 
-print(f'{gh.writable() =}')
-gh.write('This is written in w+ mode')
+print(f"{gh.writable() =}")
+gh.write("This is written in w+ mode")
 gh.flush()
 
-print(f'{gh.readable() =}')
+print(f"{gh.readable() =}")
 file_content = gh.read()
-print(f'Default      : {file_content =}')
+print(f"Default      : {file_content =}")
 
 # Moving cursor to start of file
 gh.seek(0)
 file_content = gh.read()
-print(f'after seek(0): {file_content =}')
+print(f"after seek(0): {file_content =}")
 
 gh.close()

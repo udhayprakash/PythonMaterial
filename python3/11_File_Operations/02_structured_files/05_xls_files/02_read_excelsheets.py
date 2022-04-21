@@ -1,15 +1,16 @@
 from __future__ import print_function
+
 # Import `load_workbook` module from `openpyxl`
 from openpyxl import load_workbook
 
 # Load in the workbook
-wb = load_workbook('./test.xlsx')
+wb = load_workbook("./test.xlsx")
 
 # Get sheet names
 print(wb.get_sheet_names())
 
 # Get a sheet by name
-sheet = wb.get_sheet_by_name('Sheet1')
+sheet = wb.get_sheet_by_name("Sheet1")
 
 # Print the sheet title
 sheet.title
@@ -21,10 +22,10 @@ anotherSheet = wb.active
 anotherSheet
 
 # Retrieve the value of a certain cell
-sheet['A1'].value
+sheet["A1"].value
 
 # Select element 'B2' of your sheet
-c = sheet['B2']
+c = sheet["B2"]
 
 # Retrieve the row number of your element
 c.row

@@ -3,15 +3,15 @@
 Purpose: Handling multiple exceptions together
 """
 try:
-    expression = eval(input('Enter an expression:'))
+    expression = eval(input("Enter an expression:"))
 except KeyboardInterrupt as ex1:
-    print('YOU STOPPED WITH KEYBOARD INTERRUPT')
+    print("YOU STOPPED WITH KEYBOARD INTERRUPT", ex1)
 except (ZeroDivisionError, SyntaxError, TypeError) as ex3:
-    print(f'Either zerodivision or syntax issue, or typing error occured:{ex3}')
+    print(f"Either zerodivision or syntax issue, or typing error occured:{ex3}")
 except Exception as ex:
-    print(f'Unhandled exception: {ex=}')
+    print(f"Unhandled exception: {ex=}")
 else:
-    print(f'{expression =}')
+    print(f"{expression =}")
 
 """
 ~!python3 08_handling_multiple_exceptions.py

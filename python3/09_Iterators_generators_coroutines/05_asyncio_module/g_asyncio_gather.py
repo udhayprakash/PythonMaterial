@@ -9,8 +9,8 @@ import asyncio
 
 async def foo(n):
     # await asyncio.sleep(3)  # wait 3s before continuing
-    await asyncio.sleep(n)    # wait ns before continuing
-    print(f'n: {n}!')
+    await asyncio.sleep(n)  # wait ns before continuing
+    print(f"n: {n}!")
 
 
 async def main():
@@ -21,7 +21,7 @@ async def main():
 
 asyncio.run(main())
 
-'''
+"""
 1s -
 2s --
 3s ---
@@ -31,4 +31,4 @@ asyncio.run(main())
 1s -
 
 
-'''
+"""

@@ -14,13 +14,15 @@ import time
 #         return result
 #     return inner
 
+
 def time_taken(func):
     def inner(*args, **kwargs):
         start_time = time.perf_counter_ns()
         result = func(*args, **kwargs)
         end_time = time.perf_counter_ns()
-        print(f'\nTIME TAKEN: {end_time - start_time} ns')
+        print(f"\nTIME TAKEN: {end_time - start_time} ns")
         return result
+
     return inner
 
 
@@ -32,5 +34,5 @@ def factorial(num):
     return result
 
 
-print(f'{factorial(5) =}')
-print(f'{factorial(50) =}')
+print(f"{factorial(5) =}")
+print(f"{factorial(50) =}")

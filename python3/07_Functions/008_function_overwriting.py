@@ -18,7 +18,7 @@ def addition(num1, num2):
     return num1 + num2
 
 
-print(f'{addition(10, 20)     =}')
+print(f"{addition(10, 20)     =}")
 # print(f'{addition(10, 20, 30) =}')
 # TypeError: addition() takes 2 positional arguments but 3 were given
 
@@ -34,6 +34,6 @@ def addition(var1, var2, var3):
     return var1 + var2 + var3
 
 
-print(f'{addition(10, 20, 30) =}')
+print(f"{addition(10, 20, 30) =}")
 # print(f'{addition(10, 20)     =}')
 # TypeError: addition() missing 1 required positional argument: 'var3'

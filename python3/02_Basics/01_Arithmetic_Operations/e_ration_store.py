@@ -37,11 +37,11 @@ sp_of_wheat = cost_of_wheat * qty_of_wheat
 sp_of_rice = cost_of_rice * qty_of_rice
 
 total_sp = sp_of_wheat + sp_of_rice
-print('Total Selling Price:', total_sp)
+print("Total Selling Price:", total_sp)
 
 # Subsidy calculation at 20 % subsidy
 subsidy_amount = (total_sp * 20) / 100  # PEMDAS
-print('Subsidy Amount     :', subsidy_amount)
+print("Subsidy Amount     :", subsidy_amount)
 
 billable_amount = total_sp - subsidy_amount
-print('Billable Amount    :', billable_amount)
+print("Billable Amount    :", billable_amount)

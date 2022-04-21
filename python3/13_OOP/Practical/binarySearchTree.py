@@ -76,12 +76,12 @@ class BinarySearchTree(Tree):
             return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     btree = BinarySearchTree()
     vals = [5, 3, 9, 4, 1, 7, 30]
     for val in vals:
         btree.insert(val)
-    print('Tree size is %i' % btree.size())
+    print("Tree size is %i" % btree.size())
     tests = [8, 7, 1, 5]
     for t in tests:
-        print('find(%i) = %s' % (t, ('True' if btree.find(t) else 'False')))
+        print("find(%i) = %s" % (t, ("True" if btree.find(t) else "False")))

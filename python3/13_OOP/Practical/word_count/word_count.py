@@ -36,7 +36,9 @@ class WordCounter(object):
 
     def __init__(self, source_text):
         self.source_text = source_text
-        self.sentences = [sentence for sentence in re.split(r'[\.!\?]+\s*', source_text)]
+        self.sentences = [
+            sentence for sentence in re.split(r"[\.!\?]+\s*", source_text)
+        ]
 
         self.words = dict()
         for sentence_index in range(len(self.sentences)):
@@ -55,14 +57,11 @@ class WordCounter(object):
         Will print ordered set of results to standard output.
         """
 
-        ordered_words = sorted(
-            self.words.items(),
-            key=lambda o: (-o[1].count, o[0])
-        )
+        ordered_words = sorted(self.words.items(), key=lambda o: (-o[1].count, o[0]))
 
         for word, o in ordered_words:
             print
-            '%s, %s, %s' % (
+            "%s, %s, %s" % (
                 str(word),
                 str(o.count),
                 str(o.sentences),
@@ -73,16 +72,16 @@ import sys
 
 
 def main(argv=None):
-    if argv == None:
+    if argv is None:
         argv = sys.argv
     scriptname = argv[0]
     if len(argv) < 2:
         print
-        '%s: takes at least one argument (source filename).' % scriptname
+        "%s: takes at least one argument (source filename)." % scriptname
         return 2
     source_filename = argv[1]
 
-    file_o = open(source_filename, 'r')
+    file_o = open(source_filename, "r")
     filecontents = file_o.read()
     file_o.close()
 
@@ -92,5 +91,5 @@ def main(argv=None):
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

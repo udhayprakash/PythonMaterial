@@ -5,16 +5,19 @@ Purpose: getpass
         in concealed way
 """
 import getpass
+
 # print(dir(getpass))
 
-print(f'{getpass.getuser() =}')
+print(f"{getpass.getuser() =}")
 
-user_name = input('Enter user name:')
+user_name = input("Enter user name:")
 # pass_word = input('Enter password :')
-pass_word = getpass.getpass('Enter password :')
+pass_word = getpass.getpass("Enter password :")
 
-print(f'''
+print(
+    f"""
     Entered Details
         {user_name =}
         {pass_word =}
-''')
+"""
+)

@@ -43,10 +43,10 @@ print(odd_nums3)
 odd_nums3 = list(filter(lambda x: x % 2 != 0, range(9)))
 print(odd_nums3)
 
-'''
+"""
 Assignment:
 ----------
 1) Try to get the prime numbers between 1208 and 4893
     HINTS: used-defined function to check primeness of a number
            filter()
-'''
+"""

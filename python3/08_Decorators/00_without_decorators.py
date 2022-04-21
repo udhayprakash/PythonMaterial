@@ -29,11 +29,11 @@ def div(n1, n2):
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(add(12, 34))
-    print(add('12', '34'))
-    print(add(12, '34'))
-    print(add('12', 34))
+    print(add("12", "34"))
+    print(add(12, "34"))
+    print(add("12", 34))
     print()
 
     print(div(10, 5))

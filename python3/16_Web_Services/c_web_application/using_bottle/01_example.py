@@ -6,38 +6,39 @@ Purpose: Creating a REST API using bottle framework
 from bottle import run, get, post, delete
 
 persons = [
-    {'name': 'Udhay', 'age': 30, 'city': 'Hyderabad'},
-    {'name': 'Prakash', 'age': 56, 'city': 'New Delhi'},
-    {'name': 'someone', 'age': 99, 'city': 'Mumbai'},
+    {"name": "Udhay", "age": 30, "city": "Hyderabad"},
+    {"name": "Prakash", "age": 56, "city": "New Delhi"},
+    {"name": "someone", "age": 99, "city": "Mumbai"},
 ]
 
 
-@get('/persons')
+@get("/persons")
 def get_all():
-    return {'persons': persons}
+    return {"persons": persons}
 
 
-@get('/persons/<name>')
+@get("/persons/<name>")
 def get_one(name):
-    person_details = [person for person in persons if person['name'] == name]
-    return {'person_details': person_details}
+    person_details = [person for person in persons if person["name"] == name]
+    return {"person_details": person_details}
 
 
-@post('/persons/')
+@post("/persons/")
 def add_one(request):
-    new_person = {'name': request.json.get('name'),
-                  'age': request.json.get('age'),
-                  'city': request.json.get('city')
-                  }
+    new_person = {
+        "name": request.json.get("name"),
+        "age": request.json.get("age"),
+        "city": request.json.get("city"),
+    }
     persons.append(new_person)
-    return {'persons': persons}
+    return {"persons": persons}
 
 
-@delete('/persons/<name>')
+@delete("/persons/<name>")
 def remove_one(name):
-    removing_person = [person for person in persons if person['name'] == name]
+    removing_person = [person for person in persons if person["name"] == name]
     persons.remove(removing_person)
-    return {'persons': persons}
+    return {"persons": persons}
 
 
 # To start the server

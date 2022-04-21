@@ -12,10 +12,9 @@ http = urllib3.PoolManager()
 
 # Download data
 def download_data_from_url(url, filepath, chunk_size=1024):
-    r = http.request('GET', url,
-                     preload_content=False)
+    r = http.request("GET", url, preload_content=False)
 
-    with open(filepath, 'wb') as out:
+    with open(filepath, "wb") as out:
         while True:
             data = r.read(chunk_size)
             if not data:
@@ -26,25 +25,24 @@ def download_data_from_url(url, filepath, chunk_size=1024):
 
 
 def download_data_from_url2(url, filepath, chunk_size=1024):
-    with open(filepath, 'wb') as out:
-        r = http.request('GET', url, preload_content=False)
+    with open(filepath, "wb") as out:
+        r = http.request("GET", url, preload_content=False)
         shutil.copyfileobj(r, out)
 
     r.release_conn()
 
 
 def uploading_data_to_url():
-    with open('file_name.txt') as f:
+    with open("file_name.txt") as f:
         file_data = f.read()
-
 
     # Sending the request.
     resp = http.request(
-        'POST',
-        'https://reqbin.com/post-online',
+        "POST",
+        "https://reqbin.com/post-online",
         fields={
-            'file': ('file_name.txt', file_data),
-        }
+            "file": ("file_name.txt", file_data),
+        },
     )
 
-    print(json.loads(resp.data.decode('utf-8'))['files'])
+    print(json.loads(resp.data.decode("utf-8"))["files"])

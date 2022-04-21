@@ -6,12 +6,12 @@ Purpose: Multiplication Table Generation
 first = 0
 while first < 5:
     first += 1
-    print(f'{first =}')
+    print(f"{first =}")
 
 second = 0
 while second < 5:
     second += 1
-    print(f'{second =}')
+    print(f"{second =}")
 
 print()
 # Second while loop under first while loop
@@ -40,11 +40,11 @@ while first < MAX_TABLE:
 
         # F-strings
         # print(f'{first} * {second} = {first * second}')
-        print(f'{first:2} * {second:2} = {first * second:3}')
+        print(f"{first:2} * {second:2} = {first * second:3}")
 
-    print('-' * 15)  # String repetition
+    print("-" * 15)  # String repetition
 
-'''
+"""
 Assignment
 -----------
 1) WAP to display the multiplication table from 10 to 1, for the first 10 tables
@@ -78,4 +78,4 @@ Assignment
 
 HINTS: string formatting, str.zfill()/{:02}, while/for loop
 
-'''
+"""

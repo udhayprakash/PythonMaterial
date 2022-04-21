@@ -15,16 +15,16 @@ class Person:
         self.surname = surname
 
     def __repr__(self):
-        return ' '.join((self.name, self.surname)).title()
+        return " ".join((self.name, self.surname)).title()
 
     def __add__(self, other):
         return Person(self.name, other.surname)
 
 
-father = Person('FatherName', 'FatherSurname')
+father = Person("FatherName", "FatherSurname")
 print(father)
 
-mother = Person('MotherName', 'MotherSurname')
+mother = Person("MotherName", "MotherSurname")
 print(mother)
 
 print()

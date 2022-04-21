@@ -4,9 +4,10 @@ Purpose: Get my Public IP address
 """
 import urllib.request
 
-connection = urllib.request.urlopen('http://checkip.dyndns.org')
+connection = urllib.request.urlopen("http://checkip.dyndns.org")
 
-print(f'''
+print(
+    f"""
     {connection.url         = }
     {connection.geturl()    = }
 
@@ -36,7 +37,8 @@ print(f'''
     {connection.isclosed()  = }
 
     {connection.getheader('Content-Type') = }
-''')
+"""
+)
 
 for header_name, Value in connection.getheaders():
-    print(f'{header_name:15}: {Value}')
+    print(f"{header_name:15}: {Value}")

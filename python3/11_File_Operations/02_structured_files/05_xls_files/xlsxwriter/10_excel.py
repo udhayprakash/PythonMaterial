@@ -3,10 +3,13 @@ from datetime import datetime
 from pytz import utc
 
 # default date format
-workbook = xlsxwriter.Workbook('datetimes.xlsx', {
-    'default_date_format': 'dd/mm/yy',
-    # 'remove_timezone': True
-})
+workbook = xlsxwriter.Workbook(
+    "datetimes.xlsx",
+    {
+        "default_date_format": "dd/mm/yy",
+        # 'remove_timezone': True
+    },
+)
 
 worksheet = workbook.add_worksheet()
 

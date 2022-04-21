@@ -4,8 +4,8 @@ import click
 
 
 @click.command()
-@click.argument('file_name', type=click.File('r'))
-@click.argument('lines', default=-1, type=int)
+@click.argument("file_name", type=click.File("r"))
+@click.argument("lines", default=-1, type=int)
 def head(file_name, lines):
 
     counter = 0
@@ -19,7 +19,7 @@ def head(file_name, lines):
             break
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     head()
 
 """

@@ -1,15 +1,15 @@
 from time import sleep
+from tqdm import tqdm
 
 
 def task():
-    sleep(.001)
+    sleep(0.001)
 
 
 for j in range(2000):
-    print('\t', j, end='\r')
+    print("\t", j, end="\r")
     task()
 
-from tqdm import tqdm
 
 for j in tqdm(range(2000)):
     task()
@@ -32,6 +32,6 @@ for i in tqdm(work(2000), total=2000):
 
 
 k = 0
-for outer_loop in tqdm(range(20), desc='outer loop', leave=True):
-    for inner_loop in tqdm(range(10_000_000), desc='inner loop', leave=False):
+for outer_loop in tqdm(range(20), desc="outer loop", leave=True):
+    for inner_loop in tqdm(range(10_000_000), desc="inner loop", leave=False):
         k += 100

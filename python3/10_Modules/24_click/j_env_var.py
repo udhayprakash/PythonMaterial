@@ -3,15 +3,15 @@
 import click
 import os
 
-os.environ['MYDIR'] = '.'  # or set this env variable
+os.environ["MYDIR"] = "."  # or set this env variable
 
 
-@click.argument('mydir', envvar='MYDIR', type=click.Path(exists=True))
+@click.argument("mydir", envvar="MYDIR", type=click.Path(exists=True))
 @click.command()
 def dolist(mydir):
-    print(f'{mydir=}')
+    print(f"{mydir=}")
     click.echo(os.listdir(mydir))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dolist()

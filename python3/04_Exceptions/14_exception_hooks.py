@@ -11,15 +11,15 @@ import sys
 
 
 def my_excepthook(exctype, value, traceback):
-    print('\nUnhandled error')
-    print('\tType     :', exctype)
-    print('\tValue    :', value)
-    print('\tTraceback:', traceback)
+    print("\nUnhandled error")
+    print("\tType     :", exctype)
+    print("\tValue    :", value)
+    print("\tTraceback:", traceback)
 
 
 sys.excepthook = my_excepthook
 
-print('Before exception')
+print("Before exception")
 
 # case 1
 # 1 / 0
@@ -28,9 +28,9 @@ print('Before exception')
 try:
     1 / 0
 except ZeroDivisionError as ex:
-    print(f'{ex=}')
+    print(f"{ex=}")
 
 # case 3
-raise RuntimeError('case3: This is error message')
+raise RuntimeError("case3: This is error message")
 
-print('After exception')
+print("After exception")

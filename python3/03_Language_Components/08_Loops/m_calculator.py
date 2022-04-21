@@ -23,7 +23,8 @@ Output:
 """
 
 while True:
-    print('''
+    print(
+        """
     ================================
     Welcome to calculator.py
 
@@ -34,33 +35,34 @@ while True:
         4) Division
 
         5) Quit calculator.py
-    ''')
-    choice = input('Enter the choice:')
-    if choice not in ('1', '2', '3', '4'):
+    """
+    )
+    choice = input("Enter the choice:")
+    if choice not in ("1", "2", "3", "4"):
         break
 
-    space_sep_values = input('Enter values seperated by space:')
+    space_sep_values = input("Enter values seperated by space:")
     # print(space_sep_values)
     # print(space_sep_values.split())
-    if choice == '1':
-        print('Addition Operation: ', end=' ')
+    if choice == "1":
+        print("Addition Operation: ", end=" ")
         result = 0
         for each_val in space_sep_values.split():
             result += int(each_val)
-    elif choice == '2':
-        print('subtraction operation: ', end=' ')
+    elif choice == "2":
+        print("subtraction operation: ", end=" ")
         result = 0
         for each_val in space_sep_values.split():
             result -= int(each_val)
-    elif choice == '3':
-        print('Multiplication operation: ', end=' ')
+    elif choice == "3":
+        print("Multiplication operation: ", end=" ")
         result = 1
         for each_val in space_sep_values.split():
             result *= int(each_val)
-    elif choice == '4':
-        print('Division operation: ', end=' ')
+    elif choice == "4":
+        print("Division operation: ", end=" ")
         result = 1
         for each_val in space_sep_values.split():
             result /= int(each_val)
 
-    print(f'{result=}')
+    print(f"{result=}")

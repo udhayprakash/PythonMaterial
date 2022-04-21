@@ -29,15 +29,15 @@ def get_data_n_write_to_file(URL):
     if 200 <= response.status_code < 300:
         # storing in a json file
         json_response = response.json()
-        with open('result.json', 'w') as f:
+        with open("result.json", "w") as f:
             json.dump(json_response, f)
             f.close()
 
 
-URL = 'https://www.metaweather.com/api/location/search1/?query=new%20york'
+URL = "https://www.metaweather.com/api/location/search1/?query=new%20york"
 get_data_n_write_to_file(URL)
 
-URL = 'https://www.metaweather.com/api/location/search/?query=san'
+URL = "https://www.metaweather.com/api/location/search/?query=san"
 get_data_n_write_to_file(URL)
 
 # def location_search(query):

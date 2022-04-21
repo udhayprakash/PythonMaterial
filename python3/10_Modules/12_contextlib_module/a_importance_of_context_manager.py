@@ -18,12 +18,12 @@ class Timer:
 
     def start(self):
         if self._start is not None:
-            raise RuntimeError('Timer already started...')
+            raise RuntimeError("Timer already started...")
         self._start = time.perf_counter()
 
     def stop(self):
         if self._start is None:
-            raise RuntimeError('Timer not yet started...')
+            raise RuntimeError("Timer not yet started...")
         end = time.perf_counter()
         self.elapsed += end - self._start
         self._start = None
@@ -35,12 +35,11 @@ class Timer:
     def __exit__(self, *args):  # Teardown
         self.stop()
 
+
 with Timer() as t:
     time.sleep(3)
 
 print(t.elapsed)
-
-
 
 
 manager = Timer()

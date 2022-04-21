@@ -5,23 +5,23 @@ Purpose: Decorator for printing start and end of function
 
 
 def addition(num1, num2):
-    print('function -start ')
+    print("function -start ")
     result = num1 + num2
-    print('function - before end')
+    print("function - before end")
     return result
 
 
 def multiplication(num1, num2, num3):
-    print('function -start ')
+    print("function -start ")
     result = num1 * num2 * num3
-    print('function - before end')
+    print("function - before end")
     return result
 
 
 print(addition(12, 34))
 print(multiplication(12, 34, 10))
 
-print('\n###### USING DECORATORS  ############')
+print("\n###### USING DECORATORS  ############")
 
 
 # def print_function(func):
@@ -33,11 +33,12 @@ print('\n###### USING DECORATORS  ############')
 #
 #     return inner
 
+
 def print_function(func):
     def inner(*args, **kwargs):
-        print(f'{func.__name__} function - start ')
+        print(f"{func.__name__} function - start ")
         result1 = func(*args, **kwargs)
-        print(f'{func.__name__} function - before end')
+        print(f"{func.__name__} function - before end")
         return result1
 
     return inner

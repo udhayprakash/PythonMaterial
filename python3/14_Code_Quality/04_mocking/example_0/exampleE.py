@@ -1,18 +1,22 @@
 from unittest.mock import MagicMock
 
+
 class SomeClass:
     pass
 
+
 real = SomeClass()
-real.method = MagicMock(name='method')
-real.method(3, 4, 5, key='value') # <MagicMock name='method()' id='...'>
+real.method = MagicMock(name="method")
+real.method(3, 4, 5, key="value")  # <MagicMock name='method()' id='...'>
 
 # --------------------------------------------------------
 class ProductionClass:
     def method(self):
         self.something(1, 2, 3)
+
     def something(self, a, b, c):
         pass
+
 
 real = ProductionClass()
 real.something = MagicMock()

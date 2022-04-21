@@ -16,8 +16,8 @@ class Book(object):
     price: float = 20  # default value
 
 
-b = Book('Python', 'Mark Lutz')
-print(f'{vars(b)   =}')
-print(f'{asdict(b) =}')
+b = Book("Python", "Mark Lutz")
+print(f"{vars(b)   =}")
+print(f"{asdict(b) =}")
 
-print(f'{astuple(b)=}')
+print(f"{astuple(b)=}")

@@ -10,10 +10,10 @@ except ModuleNotFoundError as ex:
     print(repr(ex))
     from os import system
 
-    system('pip install untangle --user')
+    system("pip install untangle --user")
     import untangle
 
-obj = untangle.parse('books.xml')
+obj = untangle.parse("books.xml")
 # print(obj)
 # print(dir(obj))
 
@@ -25,7 +25,7 @@ mapping = {}
 for each in obj.catalog.book:
     # print(each)
     # print(each.attrib['isbn'])
-    isbn = each.get_attribute('isbn')
+    isbn = each.get_attribute("isbn")
     title = each.title.cdata
     mapping[isbn] = title
 

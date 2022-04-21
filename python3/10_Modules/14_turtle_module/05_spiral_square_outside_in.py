@@ -5,10 +5,10 @@ Purpose: spiral square outside in
 import turtle  # Outside_In
 
 wn = turtle.Screen()
-wn.bgcolor('light green')
-wn.title('myTurtle')
+wn.bgcolor("light green")
+wn.title("myTurtle")
 skk = turtle.Turtle()
-skk.color('blue')
+skk.color("blue")
 
 
 def sqrfunc(size):

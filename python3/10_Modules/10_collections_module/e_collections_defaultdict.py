@@ -6,7 +6,7 @@ Purpose: Inverting a dictionary
 from collections import defaultdict
 from pprint import pprint
 
-alphabets = {'a': 1, 'b': 2, 'c': 3}
+alphabets = {"a": 1, "b": 2, "c": 3}
 
 inverse_alphabets = defaultdict(None)  # list
 for each_char in alphabets:

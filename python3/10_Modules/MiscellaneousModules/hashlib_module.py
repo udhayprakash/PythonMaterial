@@ -46,7 +46,9 @@ hashlib.algorithms_guaranteed
 # TypeError: Unicode-objects must be encoded before hashing
 
 
-hashlib.sha1(b'Apple')               # <sha1 HASH object @ 0x000001E8D1660550>
-hashlib.sha1(b'Apple').hexdigest()   # '476432a3e85a0aa21c23f5abd2975a89b6820d63'
-hashlib.sha256(b'Apple').hexdigest() # 'f223faa96f22916294922b171a2696d868fd1f9129302eb41a45b2a2ea2ebbfd'
-hashlib.md5(b'Apple').hexdigest()    # '9f6290f4436e5a2351f12e03b6433c3c'
+hashlib.sha1(b"Apple")  # <sha1 HASH object @ 0x000001E8D1660550>
+hashlib.sha1(b"Apple").hexdigest()  # '476432a3e85a0aa21c23f5abd2975a89b6820d63'
+hashlib.sha256(
+    b"Apple"
+).hexdigest()  # 'f223faa96f22916294922b171a2696d868fd1f9129302eb41a45b2a2ea2ebbfd'
+hashlib.md5(b"Apple").hexdigest()  # '9f6290f4436e5a2351f12e03b6433c3c'

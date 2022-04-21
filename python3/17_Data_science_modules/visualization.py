@@ -12,13 +12,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-
 def ergast_retrieve(api_endpoint: str):
-    """ Retrieving data from the Ergast API """
-    url = f'https://ergast.com/api/f1/{api_endpoint}.json'
+    """Retrieving data from the Ergast API"""
+    url = f"https://ergast.com/api/f1/{api_endpoint}.json"
     response = requests.get(url).json()
 
-    return response['MRData']
+    return response["MRData"]
 
 
 # Collecting the data
@@ -37,41 +36,44 @@ driver_team_mapping = {}
 # Initate a loop through all the rounds
 for i in range(1, rounds + 1):
     # Make request to driverStandings endpoint for the current round
-    race = ergast_retrieve(f'current/{i}/driverStandings')
+    race = ergast_retrieve(f"current/{i}/driverStandings")
 
     # Get the standings from the result
-    standings = race['StandingsTable']['StandingsLists'][0]['DriverStandings']
+    standings = race["StandingsTable"]["StandingsLists"][0]["DriverStandings"]
 
     # Initiate a dictionary to store the current rounds' standings in
-    current_round = {'round': i}
+    current_round = {"round": i}
 
     # Loop through all the drivers to collect their information
     for i in range(len(standings)):
-        driver = standings[i]['Driver']['code']
-        position = standings[i]['position']
+        driver = standings[i]["Driver"]["code"]
+        position = standings[i]["position"]
 
         # Store the drivers' position
         current_round[driver] = int(position)
 
         # Create mapping for driver-team to be used for the coloring of the lines
-        driver_team_mapping[driver] = standings[i]['Constructors'][0]['name']
-
+        driver_team_mapping[driver] = standings[i]["Constructors"][0]["name"]
 
     # Append the current round to our fial dataframe
-    all_championship_standings = all_championship_standings.append(current_round, ignore_index=True)
+    all_championship_standings = all_championship_standings.append(
+        current_round, ignore_index=True
+    )
 
 # Set the round as the index of the dataframe
-all_championship_standings = all_championship_standings.set_index('round')
+all_championship_standings = all_championship_standings.set_index("round")
 
 
 # Preparing the data for plotting
 # Melt data so it can be used as input for plot
-all_championship_standings_melted = pd.melt(all_championship_standings.reset_index(), ['round'])
+all_championship_standings_melted = pd.melt(
+    all_championship_standings.reset_index(), ["round"]
+)
 
 
 # Plotting the data
 # Increase the size of the plot
-sns.set(rc={'figure.figsize':(11.7,8.27)})
+sns.set(rc={"figure.figsize": (11.7, 8.27)})
 
 # Initiate the plot
 fig, ax = plt.subplots()
@@ -81,12 +83,14 @@ ax.set_title("2021 Championship Standings until round 18")
 
 # Draw a line for every driver in the data by looping through all the standings
 # The reason we do it this way is so that we can specify the team color per driver
-for driver in pd.unique(all_championship_standings_melted['variable']):
+for driver in pd.unique(all_championship_standings_melted["variable"]):
     sns.lineplot(
-        x='round',
-        y='value',
-        data=all_championship_standings_melted.loc[all_championship_standings_melted['variable']==driver],
-        color=team_color(driver_team_mapping[driver])
+        x="round",
+        y="value",
+        data=all_championship_standings_melted.loc[
+            all_championship_standings_melted["variable"] == driver
+        ],
+        color=team_color(driver_team_mapping[driver]),
     )
 
 # Invert Y-axis to have championship leader (#1) on top
@@ -114,12 +118,9 @@ for line, name in zip(ax.lines, all_championship_standings.columns.tolist()):
         xy=(x + 0.1, y),
         xytext=(0, 0),
         color=line.get_color(),
-        xycoords=(
-            ax.get_xaxis_transform(),
-            ax.get_yaxis_transform()
-        ),
-        textcoords="offset points"
+        xycoords=(ax.get_xaxis_transform(), ax.get_yaxis_transform()),
+        textcoords="offset points",
     )
 
 # Save the plot
-plt.savefig('img/championship_standings.png')
+plt.savefig("img/championship_standings.png")

@@ -3,19 +3,19 @@
 Purpose: Exception Handling
 """
 try:
-    num1 = int(input('Enter an integer:'))
-    num2 = int(input('Enter an integer:'))
+    num1 = int(input("Enter an integer:"))
+    num2 = int(input("Enter an integer:"))
 except Exception as ex:
-    print(f'{ex =}')
-    print('Please enter integers only')
+    print(f"{ex =}")
+    print("Please enter integers only")
 else:
     try:
         division = num1 / num2
     except Exception as ex1:
-        print(f'{ex1 =}')
-        print('Denominator cant be zero')
+        print(f"{ex1 =}")
+        print("Denominator cant be zero")
     else:
-        print(f'{division = }')
+        print(f"{division = }")
 
 # finally:
 #     print('finally block')

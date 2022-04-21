@@ -21,7 +21,7 @@ class Book(object):
     price: float = field(default_factory=random_price)
 
 
-b = Book('Python programming', 'David Beazley')
+b = Book("Python programming", "David Beazley")
 print(vars(b))
 
 # Note that you cannot both set default_factory

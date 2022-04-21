@@ -5,19 +5,19 @@ Purpose: Tuples are immutable
 """
 
 mytuple = (1, 2, 3)
-print('mytuple', mytuple, id(mytuple))
+print("mytuple", mytuple, id(mytuple))
 
 #  Indexing
-print(f'{mytuple[2] =}')
+print(f"{mytuple[2] =}")
 
 # updating an element in tuple
 try:
-    mytuple[2] = '2.2222'
+    mytuple[2] = "2.2222"
 except TypeError as ex:
     print(ex)
-    print('tuple objects are not editable')
+    print("tuple objects are not editable")
 
 # Overwriting
-print('\noverwriting (re-assigning)')
-mytuple = (1, '2.2222', 3)
-print('mytuple', mytuple, id(mytuple))
+print("\noverwriting (re-assigning)")
+mytuple = (1, "2.2222", 3)
+print("mytuple", mytuple, id(mytuple))

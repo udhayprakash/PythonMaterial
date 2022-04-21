@@ -14,9 +14,9 @@ pool = ThreadPoolExecutor(3)
 
 async def doit():
     identify = random.randint(1, 100)
-    future = pool.submit(return_after_5_secs, (f'result: {identify}'))
+    future = pool.submit(return_after_5_secs, (f"result: {identify}"))
     awaitable = asyncio.wrap_future(future)
-    print(f'waiting result: {identify}')
+    print(f"waiting result: {identify}")
     return await awaitable
 
 
@@ -27,5 +27,6 @@ async def app():
     result = await asyncio.gather(*tasks)
     print(result)
 
-print('waiting app')
+
+print("waiting app")
 asyncio.run(app())

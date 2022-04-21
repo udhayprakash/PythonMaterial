@@ -1,17 +1,14 @@
 #!/usr/bin/python
 import logging
 
-__author__ = 'Udhay Prakash'
+__author__ = "Udhay Prakash"
 
 
 class Loggable(object):
-    """Mixing class to add logging. """
+    """Mixing class to add logging."""
 
     # Initialize Loggable
-    def __init__(self,
-                 logFileName='log.txt',
-                 logLevel=logging.INFO,
-                 logName='MyApp'):
+    def __init__(self, logFileName="log.txt", logLevel=logging.INFO, logName="MyApp"):
         self.logFileName = logFileName
         self.logLevel = logLevel
         self.logName = logName
@@ -24,8 +21,8 @@ class Loggable(object):
         handler = logging.FileHandler(self.logFileName)
         logger.addHandler(handler)
         formatter = logging.Formatter(
-            '%(asctime)s: %(name)s - '
-            '%(levelname)s - %(message)s')
+            "%(asctime)s: %(name)s - " "%(levelname)s - %(message)s"
+        )
         handler.setFormatter(formatter)
         return logger
 
@@ -38,18 +35,18 @@ class Loggable(object):
 
 
 class MyClass(Loggable):
-    """A class that you've written. """
+    """A class that you've written."""
 
     def __init__(self):
-        Loggable.__init__(self, logFileName='log2.txt')
+        Loggable.__init__(self, logFileName="log2.txt")
         # super(MyClass, self).__init__(logFileName="log2.txt")
 
     def doSomeThing(self):
         print
-        'Doing Something!!!'
-        self.log('I did something!')
-        self.log('Some debugging info', logging.DEBUG)
-        self.warn('Something bad happened!')
+        "Doing Something!!!"
+        self.log("I did something!")
+        self.log("Some debugging info", logging.DEBUG)
+        self.warn("Something bad happened!")
 
 
 test = MyClass()

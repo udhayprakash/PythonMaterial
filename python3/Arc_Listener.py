@@ -24,11 +24,11 @@ class Uploads:
             self.asset_report(report)
 
     def video_report(self, report_json):
-        file = open('temp.txt', 'a')
+        file = open("temp.txt", "a")
         strEnterVideo = "Entering video_report function \n"
         file.write(strEnterVideo)
 
-        unique_key = report_json["unique_key"].split('_')[0]
+        unique_key = report_json["unique_key"].split("_")[0]
         print(unique_key)
         status = report_json["asset_status"]
         upc = report_json["upc"]
@@ -46,12 +46,14 @@ class Uploads:
         cursor = db.cursor()
 
         sql = "select stateId from videos where upc = '%s' and isrc = '%s'" % (
-            upc, unique_key)
+            upc,
+            unique_key,
+        )
         cursor.execute(sql)
 
         video = cursor.fetchall()
 
-        stateid = ''
+        stateid = ""
 
         print(("Row count :" + str(cursor.rowcount)))
         for row in video:
@@ -62,8 +64,8 @@ class Uploads:
                 file.write(strStateLess)
 
         # while video is not None:
-            # print(video)
-            #video = cursor.fetchone()
+        # print(video)
+        # video = cursor.fetchone()
         now = datetime.datetime.now()
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
         if video is None:
@@ -73,23 +75,27 @@ class Uploads:
             try:
                 strRecExist = "Video record exists in DB \n"
                 file.write(strRecExist)
-                #import pdb; pdb.set_trace()
+                # import pdb; pdb.set_trace()
                 if status == "success":
 
-                    cursor.execute("UPDATE videos SET arcId = '%s', isrcDistPolicy = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30" % (
-                        musicvideo_uuid, isrc_dp_uuid, timestamp, upc, unique_key))
+                    cursor.execute(
+                        "UPDATE videos SET arcId = '%s', isrcDistPolicy = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30"
+                        % (musicvideo_uuid, isrc_dp_uuid, timestamp, upc, unique_key)
+                    )
                     db.commit()
                     strCommit = "Data committed to DB successfully \n"
                     file.write(strCommit)
                 else:
-                    cursor.execute("UPDATE videos SET errorStatusArc = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30" % (
-                        error_spec, timestamp, upc, unique_key))
+                    cursor.execute(
+                        "UPDATE videos SET errorStatusArc = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30"
+                        % (error_spec, timestamp, upc, unique_key)
+                    )
                     db.commit()
                     strUnCom = "Response returned with error status \n"
                     file.write(strUnCom)
             except MySQLdb.Error as e:
                 db.rollback()
-                #e = sys.exc_info()[0]
+                # e = sys.exc_info()[0]
                 file.write("Error encountered : \n")
                 file.write("%s" % e)
                 file.write("\n")
@@ -107,9 +113,10 @@ class Uploads:
 app = falcon.API()
 app.add_route("/MVI/report", Uploads())
 if __name__ == "__main__":
-    def static(req, res, static_dir='static', index_file='index.html'):
+
+    def static(req, res, static_dir="static", index_file="index.html"):
         path = static_dir + req.path
-        if req.path == '/':
+        if req.path == "/":
             path += index_file
         if os.path.isfile(path):
             res.content_type = mimetypes.guess_type(path)[0]

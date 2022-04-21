@@ -7,81 +7,101 @@ Detailed Explanation: https://www.youtube.com/watch?v=yjYIyydmrc0
 """
 # immutable object
 num1 = 123
-print('num1          ', num1, type(num1), id(num1))
+print("num1          ", num1, type(num1), id(num1))
 num2 = num1
-print('num2          ', num2, type(num2), id(num2))
+print("num2          ", num2, type(num2), id(num2))
 print()
 
 num2 = 999
-print('num1          ', num1, type(num1), id(num1))
-print('num2          ', num2, type(num2), id(num2))
+print("num1          ", num1, type(num1), id(num1))
+print("num2          ", num2, type(num2), id(num2))
 print()
 
 # Mutable object
 par_list = [11, 111, 1111]
-print('par_list      ', par_list, type(par_list), id(par_list))
+print("par_list      ", par_list, type(par_list), id(par_list))
 
 hard_copy_list = par_list
-print('hard_copy_list', hard_copy_list, type(hard_copy_list), id(par_list))
+print("hard_copy_list", hard_copy_list, type(hard_copy_list), id(par_list))
 
-print('par_list[2]   ', par_list[2])
+print("par_list[2]   ", par_list[2])
 
 par_list[2] = 3333  # Substitution
-print('par_list[2]   ', par_list[2])
-print('par_list      ', par_list, type(par_list))
+print("par_list[2]   ", par_list[2])
+print("par_list      ", par_list, type(par_list))
 
 
 # leakage problem
-print('hard_copy_list', hard_copy_list, type(hard_copy_list))
+print("hard_copy_list", hard_copy_list, type(hard_copy_list))
 
 print()
 import copy
 
 # shallow copy
 soft_copy_list = copy.copy(par_list)
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+print("soft_copy_list ", soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
-print('hard_copy_list[2]', hard_copy_list[2])
+print("hard_copy_list[2]", hard_copy_list[2])
 
-hard_copy_list[2] = 'FOUR'
+hard_copy_list[2] = "FOUR"
 
 print()
-print('par_list       ', par_list, type(par_list), id(par_list))
-print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+print("par_list       ", par_list, type(par_list), id(par_list))
+print("hard_copy_list ", hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+print("soft_copy_list ", soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 print()
 
 
-print('soft_copy_list[0]', soft_copy_list[0])
+print("soft_copy_list[0]", soft_copy_list[0])
 
-soft_copy_list[0] = 'ZERO'
+soft_copy_list[0] = "ZERO"
 print()
-print('par_list       ', par_list, type(par_list), id(par_list))
-print('hard_copy_list ', hard_copy_list, type(hard_copy_list), id(hard_copy_list))
-print('soft_copy_list ', soft_copy_list, type(soft_copy_list), id(soft_copy_list))
+print("par_list       ", par_list, type(par_list), id(par_list))
+print("hard_copy_list ", hard_copy_list, type(hard_copy_list), id(hard_copy_list))
+print("soft_copy_list ", soft_copy_list, type(soft_copy_list), id(soft_copy_list))
 
-print('='* 60)
+print("=" * 60)
 
 new_list = [90, 89, [78, 89, [4, 441, 6]]]
-new_softcopy_list = copy.copy(new_list) # soft copy or shallow copy
+new_softcopy_list = copy.copy(new_list)  # soft copy or shallow copy
 new_deepcopy_list = copy.deepcopy(new_list)
 
-print('new_list          ', new_list, type(new_list), id(new_list))
-print('new_softcopy_list ', new_softcopy_list, type(new_softcopy_list), id(new_softcopy_list))
-print('new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_deepcopy_list))
+print("new_list          ", new_list, type(new_list), id(new_list))
+print(
+    "new_softcopy_list ",
+    new_softcopy_list,
+    type(new_softcopy_list),
+    id(new_softcopy_list),
+)
+print(
+    "new_deepcopy_list ",
+    new_deepcopy_list,
+    type(new_deepcopy_list),
+    id(new_deepcopy_list),
+)
 
-print('new_list[2][2][1]', new_list[2][2][1])
+print("new_list[2][2][1]", new_list[2][2][1])
 
-new_list[2][2][1] = 'FFO'
+new_list[2][2][1] = "FFO"
 print()
-print('new_list          ', new_list, type(new_list), id(new_list))
-print('new_softcopy_list ', new_softcopy_list, type(new_softcopy_list), id(new_softcopy_list))
-print('new_deepcopy_list ', new_deepcopy_list, type(new_deepcopy_list), id(new_deepcopy_list))
+print("new_list          ", new_list, type(new_list), id(new_list))
+print(
+    "new_softcopy_list ",
+    new_softcopy_list,
+    type(new_softcopy_list),
+    id(new_softcopy_list),
+)
+print(
+    "new_deepcopy_list ",
+    new_deepcopy_list,
+    type(new_deepcopy_list),
+    id(new_deepcopy_list),
+)
 
 # NOTE:
 # 1. soft(shallow) copy is fast, but cant work more than one dimension
 # 2. deep copy is slow, but can work with objects of any number of dimensions
-'''
+"""
 In [1]: l1 = [12, 34]
 
 In [2]: l2 = l1[::]  # soft(shallow) copy
@@ -103,9 +123,9 @@ Out[11]: [12, 34, [44, ['five']]]
 
 In [12]: l4
 Out[12]: [12, 34, [44, ['five']]]
-'''
+"""
 
-'''
+"""
 Assignment
 ----------
 1) implement the stack mechanism - LIFO
@@ -129,4 +149,4 @@ Take the values in run time
  ->         ->
     --------
 HINT: list.insert(), list.pop(), len()
-'''
+"""

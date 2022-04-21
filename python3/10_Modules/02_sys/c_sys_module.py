@@ -6,7 +6,8 @@ import sys
 
 print(dir(sys))
 
-print(f'''
+print(
+    f"""
     {sys.executable      =}
     {sys.exec_prefix     =}
 
@@ -33,7 +34,8 @@ print(f'''
     {sys.getrecursionlimit()        =}
     {sys.setrecursionlimit          =}
 
-''')
+"""
+)
 
 # NOTE: when using virtualenvironment
 # then prefix and base_prefix will change
@@ -43,8 +45,8 @@ print(f'''
 # sys.exc_info - exc_type, exc_value, exc_traceback
 
 try:
-    raise ValueError('Incorrect value')
-except  ValueError:
+    raise ValueError("Incorrect value")
+except ValueError:
     exc_type, exc_value, exc_traceback = sys.exc_info()
-    print(f'{sys.exc_info() =}')
+    print(f"{sys.exc_info() =}")
     print(exc_type, exc_value, exc_traceback)

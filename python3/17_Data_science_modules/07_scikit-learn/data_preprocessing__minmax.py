@@ -17,7 +17,7 @@ import numpy as np
 X = np.random.randint(2, 10, size=(4, 2))
 X2 = np.random.randint(100, 10000, size=(4, 2))
 X = np.concatenate((X, X2), axis=1)
-print('The original matrix')
+print("The original matrix")
 print(X)
 
 # min-max scaler
@@ -25,5 +25,5 @@ print(X)
 minmax = preprocessing.MinMaxScaler()
 minmax.fit(X)
 X_minmax = minmax.transform(X)
-print('The transform data using min-max scaler')
+print("The transform data using min-max scaler")
 print(X_minmax)

@@ -8,27 +8,28 @@ from core import get_user, get_accounts_by_user, compute_balance, debit
 from models import Base, User, Account, UserAccount, Transaction
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope="function")
 def setup_database():
 
-    engine = create_engine('sqlite://')
+    engine = create_engine("sqlite://")
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
     yield session
     session.close()
 
+
 # end setup_database()
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope="function")
 def dataset(setup_database):
 
     session = setup_database
 
     # Creates user
-    john = User(username='john')
-    mary = User(username='mary')
+    john = User(username="john")
+    mary = User(username="mary")
     session.add(john)
     session.add(mary)
     session.commit()
@@ -48,6 +49,7 @@ def dataset(setup_database):
 
     yield session
 
+
 # end dataset_1
 
 
@@ -62,8 +64,8 @@ def test_database(dataset):
     assert len(session.query(UserAccount).all()) == 4
 
     # Retrieves John and Mary
-    john = get_user('john', session)
-    mary = get_user('mary', session)
+    john = get_user("john", session)
+    mary = get_user("mary", session)
 
     # Checks their accounts
     assert len(get_accounts_by_user(john.username, session)) == 2
@@ -78,5 +80,6 @@ def test_database(dataset):
     debit(joint_account.id, 10.0, session)
     assert compute_balance(john.username, session) == 20.0
     assert compute_balance(mary.username, session) == 15.0
+
 
 # end test_database()

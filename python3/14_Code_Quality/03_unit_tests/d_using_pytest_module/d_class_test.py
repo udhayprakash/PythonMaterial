@@ -24,10 +24,10 @@ class TestMyClass:
         assert addition(10, 20) == 31
 
 
-'''
+"""
 Grouping tests in classes can be beneficial for the following reasons:
     • Test organization
     • Sharing fixtures for tests only in that particular class
     • Applying marks at the class level and having them implicitly apply to all tests
 
-'''
+"""

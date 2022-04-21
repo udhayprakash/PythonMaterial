@@ -11,7 +11,7 @@ image = Image.open("A.png")
 # print a[0]
 width, height = image.size
 # print width, height
-rgb_im = image.convert('RGB')
+rgb_im = image.convert("RGB")
 image_array = []
 for i in range(0, height):
     x_array = []

@@ -6,7 +6,7 @@ import sys
 import unittest
 
 
-sys.path.insert(0, '..')
+sys.path.insert(0, "..")
 from calculator import addition
 
 
@@ -20,12 +20,12 @@ class TestSuiteAddition(unittest.TestCase):
         self.assertEqual(addition(10.0, 20.0), 30.0)
 
     def test03(self):
-        self.assertEqual(addition(10.0, '20'), 30.0)
-        self.assertEqual(addition('10', '20'), 30.0)
+        self.assertEqual(addition(10.0, "20"), 30.0)
+        self.assertEqual(addition("10", "20"), 30.0)
 
-        self.assertEqual(addition('10.0', 20), 30.0)
-        self.assertEqual(addition('10.0', '20.0'), 30.0)
+        self.assertEqual(addition("10.0", 20), 30.0)
+        self.assertEqual(addition("10.0", "20.0"), 30.0)
 
     @unittest.expectedFailure
     def test04(self):
-        self.assertEqual(addition('10.0', True), 30.0)
+        self.assertEqual(addition("10.0", True), 30.0)

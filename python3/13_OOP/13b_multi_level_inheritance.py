@@ -6,31 +6,31 @@ Purpose: Multiple and Multi-Level Inheritance
 
 class A:
     def func(self):
-        print('A')
+        print("A")
         super().func()
 
 
 class B(A):
     def func(self):
-        print('B')
+        print("B")
         super().func()
 
 
 class C(A):
     def func(self):
-        print('C')
+        print("C")
         super().func()
 
 
 class D(C, B):
     def func(self):
-        print('D')
+        print("D")
         super().func()
 
 
 class E(D, A):
     def func(self):
-        print('E')
+        print("E")
         super().func()
 
 
@@ -44,6 +44,7 @@ print(D().func())
 
 
 # ===============================================
+
 
 class P1:
     def __init__(self, val):

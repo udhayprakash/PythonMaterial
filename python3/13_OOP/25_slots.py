@@ -23,7 +23,7 @@ print(vars(o))
 
 # Dynamically creating attributes
 o.xxx = 12312  # adhoc attributes can be added to instance
-setattr(o, 'yy', 999)
+setattr(o, "yy", 999)
 
 print(vars(o))
 print()
@@ -36,7 +36,8 @@ class SlottedClass:
     when __slots__ is present, it wont allow
     to create dynamic attributes
     """
-    __slots__ = ('foo', 'bar')
+
+    __slots__ = ("foo", "bar")
 
     def __init__(self):
         self.foo = None
@@ -52,25 +53,25 @@ c = SlottedClass()
 
 
 # updating existing attribute values are possible
-print(f'c.foo={c.foo}')
+print(f"c.foo={c.foo}")
 c.foo = 123
-print(f'c.foo={c.foo}')
+print(f"c.foo={c.foo}")
 
 
 # can't create new attribute
 try:
     c.xxx = 12312  # adhoc attributes can be added to instance
-    setattr(c, 'yy', 999)
+    setattr(c, "yy", 999)
 except AttributeError as ex1:
     print(repr(ex1))
 
 
-print(f'{sys.getsizeof(o) =}')
-print(f'{sys.getsizeof(c) =}')
+print(f"{sys.getsizeof(o) =}")
+print(f"{sys.getsizeof(c) =}")
 
 # pympler.asizeof can be used to investigate how much memory
 # certain Python objects consume. In contrast to sys.getsizeof,
 # asizeof sizes objects recursively.
 
-print(f'{asizeof(o) =}')
-print(f'{asizeof(c) =}')
+print(f"{asizeof(o) =}")
+print(f"{asizeof(c) =}")

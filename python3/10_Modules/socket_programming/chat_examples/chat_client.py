@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 # telnet program example
-import socket, select, string, sys
+import socket
+import select
+import sys
 
 
 def prompt():
-    sys.stdout.write('<You> ')
+    sys.stdout.write("<You> ")
     sys.stdout.flush()
 
 
 # main function
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    if (len(sys.argv) < 3):
-        print('Usage : python telnet.py hostname port')
+    if len(sys.argv) < 3:
+        print("Usage : python telnet.py hostname port")
         sys.exit()
 
     host = sys.argv[1]
@@ -24,11 +26,11 @@ if __name__ == '__main__':
     # connect to remote host
     try:
         s.connect((host, port))
-    except:
-        print('Unable to connect')
+    except Exception:
+        print("Unable to connect")
         sys.exit()
 
-    print('Connected to remote host. Start sending messages')
+    print("Connected to remote host. Start sending messages")
     prompt()
 
     while 1:
@@ -42,7 +44,7 @@ if __name__ == '__main__':
             if sock == s:
                 data = sock.recv(4096)
                 if not data:
-                    print('\nDisconnected from chat server')
+                    print("\nDisconnected from chat server")
                     sys.exit()
                 else:
                     # print data

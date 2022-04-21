@@ -15,7 +15,7 @@ from functools import lru_cache
 
 @lru_cache(None)
 def add(x, y):
-    print(f'calculating: {x} + {y}')
+    print(f"calculating: {x} + {y}")
     return x + y
 
 
@@ -29,7 +29,7 @@ print(add(1, 3))
 def fib(n):
     if n < 2:
         return n
-    return fib(n-2) + fib(n - 1)
+    return fib(n - 2) + fib(n - 1)
 
 
 print(timeit.timeit(lambda: fib(40), number=1))  # 32.758174600000004
@@ -42,7 +42,7 @@ print(timeit.timeit(lambda: fib(40), number=1))  # 32.758174600000004
 def fib2(n):
     if n < 2:
         return n
-    return fib2(n-2) + fib2(n - 1)
+    return fib2(n - 2) + fib2(n - 1)
 
 
 print(timeit.timeit(lambda: fib(40), number=1))  # 2.2999999998774e-05
@@ -52,7 +52,7 @@ print(timeit.timeit(lambda: fib(40), number=1))  # 2.2999999998774e-05
 @lru_cache(maxsize=100)
 def count_vowels(sentence):
     sentence = sentence.casefold()
-    return sum(sentence.count(vowel) for vowel in 'aeiou')
+    return sum(sentence.count(vowel) for vowel in "aeiou")
 
 
-print(count_vowels('Welcome to Python'))
+print(count_vowels("Welcome to Python"))

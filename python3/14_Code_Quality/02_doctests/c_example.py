@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-def hello(name='world!'):
+
+def hello(name="world!"):
     """
     >>> hello()
     Hello world!
@@ -11,11 +12,10 @@ def hello(name='world!'):
     >>> hello('Michel')
     Hello Michel
     """
-    print(f'Hello {name}')
+    print(f"Hello {name}")
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     import doctest
 
     # doctest.testmod()

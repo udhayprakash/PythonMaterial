@@ -20,7 +20,7 @@ def delete_pyc_files(path_file=os.getcwd()):
         for each_file in files:
             file_extn = os.path.splitext(each_file)[1]
             # print(file_extn)
-            if file_extn == '.pyc':
+            if file_extn == ".pyc":
                 # print(present_path + os.sep + each_file)
                 # delete those files
                 os.remove(present_path + os.sep + each_file)
@@ -29,14 +29,14 @@ def delete_pyc_files(path_file=os.getcwd()):
     return extn_files
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # function call
-    custom_path = 'D:/training/batch125'
+    custom_path = "D:/training/batch125"
     extension_specific_files = delete_pyc_files(custom_path)
-    print('extension_specific_files:')
+    print("extension_specific_files:")
     for file_name in extension_specific_files:
-        print('\t', file_name)
+        print("\t", file_name)
 
-    print('total files deleted:', len(extension_specific_files))
+    print("total files deleted:", len(extension_specific_files))
 else:
-    print('imported')
+    print("imported")

@@ -8,20 +8,20 @@ import unittest
 
 class TestCaseDemo(unittest.TestCase):
     def setUp(self):
-        print('\nsetUp method execution ...')
+        print("\nsetUp method execution ...")
 
     def test_method1(self):
-        print('test method 1')
+        print("test method 1")
 
     def test_method2(self):
-        print('test method 2')
+        print("test method 2")
 
     def test_method3(self):
-        print('test method 3')
+        print("test method 3")
 
     def tearDown(self) -> None:
-        print('tearDown method execution ...')
+        print("tearDown method execution ...")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

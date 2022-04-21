@@ -3,7 +3,7 @@
 Purpose: Iterating and using enumerate()
 
 """
-my_string = 'Program'
+my_string = "Program"
 
 count = 0
 for ech_chr in my_string:
@@ -16,19 +16,19 @@ for ech_chr in enumerate(my_string):
 
 print()
 for loop_index, ech_chr in enumerate(my_string):
-    print(f'At loop {loop_index:2}, we found {ech_chr}')
+    print(f"At loop {loop_index:2}, we found {ech_chr}")
 
 print()
 for loop_index, ech_chr in enumerate(my_string, start=0):
-    print(f'At loop {loop_index:2}, we found {ech_chr}')
+    print(f"At loop {loop_index:2}, we found {ech_chr}")
 
 print()
 for loop_index, ech_chr in enumerate(my_string, start=4):
-    print(f'At loop {loop_index:2}, we found {ech_chr}')
+    print(f"At loop {loop_index:2}, we found {ech_chr}")
 
 print()
 for loop_index, ech_chr in enumerate(my_string, start=-3):
-    print(f'At loop {loop_index:2}, we found {ech_chr}')
+    print(f"At loop {loop_index:2}, we found {ech_chr}")
 
 # for loop_index, ech_chr in enumerate(my_string, start=-3.5):
 #     print(f'At loop {loop_index:2}, we found {ech_chr}')

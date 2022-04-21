@@ -10,7 +10,7 @@ import asyncio
 async def foo(n):
     await asyncio.sleep(4)
     # await asyncio.sleep(7)
-    print(f'n: {n}!')
+    print(f"n: {n}!")
 
 
 async def main():
@@ -18,7 +18,7 @@ async def main():
         await asyncio.wait_for(foo(1), timeout=5)
     except asyncio.TimeoutError as ex:
         print(ex)  # no error message comes from this exception
-        print('timeout!')
+        print("timeout!")
 
 
 asyncio.run(main())

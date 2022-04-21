@@ -12,4 +12,4 @@ bar = progressbar.ProgressBar()
 print(bar)
 
 for i in bar(range(50)):
-    time.sleep(2) # seconds
+    time.sleep(2)  # seconds

@@ -23,11 +23,11 @@ class Number:
         return self.value == other.value
 
 
-print(f'{Number(1) < Number(2)   =}')
-print(f'{Number(10) > Number(21) =}')
-print(f'{Number(10) <= Number(2) =}')
-print(f'{Number(10) >= Number(20)=}')
-print(f'{Number(2) <= Number(2)  =}')
-print(f'{Number(2) >= Number(2)  =}')
-print(f'{Number(2) == Number(2)  =}')
-print(f'{Number(2) == Number(3)  =}')
+print(f"{Number(1) < Number(2)   =}")
+print(f"{Number(10) > Number(21) =}")
+print(f"{Number(10) <= Number(2) =}")
+print(f"{Number(10) >= Number(20)=}")
+print(f"{Number(2) <= Number(2)  =}")
+print(f"{Number(2) >= Number(2)  =}")
+print(f"{Number(2) == Number(2)  =}")
+print(f"{Number(2) == Number(3)  =}")

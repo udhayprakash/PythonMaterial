@@ -10,16 +10,16 @@ def time_taken(func):
         start_time = time.perf_counter_ns()
         func(*args, **kwargs)
         end_time = time.perf_counter_ns()
-        print(f'Time Taken: {end_time - start_time} ns')
+        print(f"Time Taken: {end_time - start_time} ns")
 
     return inner
 
 
 def print_function(func):
     def inner(*args, **kwargs):
-        print(f'\n\n{func.__name__} function - start ')
+        print(f"\n\n{func.__name__} function - start ")
         result1 = func(*args, **kwargs)
-        print(f'{func.__name__} function - before end')
+        print(f"{func.__name__} function - before end")
         return result1
 
     return inner
@@ -30,7 +30,7 @@ def print_function(func):
 def my_func(num):
     for _ in range(num):
         pass
-    print(f'\nfor {num} numbers')
+    print(f"\nfor {num} numbers")
 
 
 my_func(78)

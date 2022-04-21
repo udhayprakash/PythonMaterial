@@ -16,7 +16,7 @@ def rand_num(queue):
     queue.put(num)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = Queue()
 
     processes = [Process(target=rand_num, args=(queue,)) for x in range(4)]

@@ -7,10 +7,10 @@ Purpose: Importance of __new__ method
 # class Definition
 class Person:
     def __new__(cls, *args, **kwargs):
-        print('I was born')
+        print("I was born")
 
     def __init__(self):
-        print('I was named')
+        print("I was named")
 
 
 # Instantiation

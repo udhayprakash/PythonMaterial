@@ -24,14 +24,16 @@ print(result)
 
 # Method 2
 from functools import reduce
+
 factorial_red = reduce(lambda x, y: x * y, range(1, 9 + 1))
 print(factorial_red)
 
 # Method 3 - using Lambda
-factorial_L = lambda num : 1 if num <= 1 else num * factorial_L(num-1)
+factorial_L = lambda num: 1 if num <= 1 else num * factorial_L(num - 1)
 
 # Method 4
 import math
+
 assert math.factorial(9) == factorial(9) == factorial_red == factorial_L(9)
 
 # Example - Caesar Cipher
@@ -39,21 +41,20 @@ assert math.factorial(9) == factorial(9) == factorial_red == factorial_L(9)
 
 def caesar_cipher(sentence):
     if not sentence:
-        return ''
+        return ""
     # print(f'{sentence[0]               =}')
     # print(f'{ord(sentence[0])          =}')
     # print(f'{ord(sentence[0]) + 3      =}')
     # print(f'{chr(ord(sentence[0]) + 3) =}')
     # print()
-    if sentence[0] == ' ':
-        enciphered_char = ' '
+    if sentence[0] == " ":
+        enciphered_char = " "
     else:
         enciphered_char = chr(ord(sentence[0]) + 3)
     return enciphered_char + caesar_cipher(sentence[1:])
 
 
-cipher_text = caesar_cipher(
-    'war is planned at morning sun rise')
+cipher_text = caesar_cipher("war is planned at morning sun rise")
 print(cipher_text)
 
 """

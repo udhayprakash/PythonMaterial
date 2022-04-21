@@ -10,41 +10,38 @@ Purpose:
 
 
 def even_filter(nums):
-    print('even_filter - start')
+    print("even_filter - start")
     for num in nums:
         if num % 2 == 0:
             yield num
 
 
 def multiply_by_three(nums):
-    print('multiply_by_three - start')
+    print("multiply_by_three - start")
     for num in nums:
         yield num * 3
 
 
 def convert_to_string(nums):
-    print('convert_to_string - start')
+    print("convert_to_string - start")
     for num in nums:
-        yield f'Number:{num}'
+        yield f"Number:{num}"
 
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Problem
-print(f'{list(even_filter(numbers))       =}')  # [2, 4, 6, 8, 10]
-print(f'{list(multiply_by_three(numbers)) =}')  # [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+print(f"{list(even_filter(numbers))       =}")  # [2, 4, 6, 8, 10]
+print(f"{list(multiply_by_three(numbers)) =}")  # [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 print(
-    f'{list(convert_to_string(numbers)) =}')  # ['Number:1', 'Number:2', 'Number:3', 'Number:4', 'Number:5', 'Number:6', 'Number:7', 'Number:8', 'Number:9', 'Number:10']
+    f"{list(convert_to_string(numbers)) =}"
+)  # ['Number:1', 'Number:2', 'Number:3', 'Number:4', 'Number:5', 'Number:6', 'Number:7', 'Number:8', 'Number:9', 'Number:10']
 
 # Solution
-pipeline = convert_to_string(
-    multiply_by_three(
-        even_filter(numbers)
-    )
-)
+pipeline = convert_to_string(multiply_by_three(even_filter(numbers)))
 print(pipeline)  # <generator object convert_to_string at 0x000001BDA70E60A0>
 
-print(f'{next(pipeline) = }') # 'Number:6'
+print(f"{next(pipeline) = }")  # 'Number:6'
 
 for each in pipeline:
     print(each)

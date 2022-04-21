@@ -2,22 +2,24 @@
 """
 Purpose:  finite reception
 """
+
+
 def my_coroutine(count=5):
     for i in range(count):
-        received = yield 1234   # values will be received here
-        print(f'Received :{received}')
+        received = yield 1234  # values will be received here
+        print(f"Received :{received}")
 
 
 # Step 1: creating the generator
 it = my_coroutine(5)
 
 # Step 2: Prime the coroutine
-print(f'{next(it) =}')
+print(f"{next(it) =}")
 
 # Step 3: sending values to coroutine
-it.send('First')
-it.send('Second')
-it.send('third')
+it.send("First")
+it.send("Second")
+it.send("third")
 
 for i in range(9):
     it.send(i)
@@ -26,6 +28,6 @@ for i in range(9):
 it.close()
 
 try:
-    it.send('fourth')
+    it.send("fourth")
 except StopIteration:
-    print('coroutine is closed. Cant send any value')
+    print("coroutine is closed. Cant send any value")

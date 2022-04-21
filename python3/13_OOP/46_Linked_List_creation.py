@@ -10,7 +10,7 @@ each node:
     n1              n2         n3           n4
  10|id(n2)     20|id(n2)    30|id(n4)    40|None
 """
-__author__ = 'Udhay Prakash'
+__author__ = "Udhay Prakash"
 
 
 class LinkedList:
@@ -20,7 +20,7 @@ class LinkedList:
 
     def __repr__(self):
         # return f'''data             : {self.data} \nnext node address: {self.next_node_address}'''
-        return f'{self.data}|{self.next_node_address}'
+        return f"{self.data}|{self.next_node_address}"
 
     def get_data(self):
         return self.data
@@ -36,35 +36,35 @@ class LinkedList:
 
 
 n1 = LinkedList(10)
-print(f'n1:{n1}')
+print(f"n1:{n1}")
 
 n2 = LinkedList(20)
-print(f'n2:{n2}')
+print(f"n2:{n2}")
 
 n3 = LinkedList(30)
-print(f'n3:{n3}')
+print(f"n3:{n3}")
 
 n4 = LinkedList(40)
-print(f'n4:{n4}')
+print(f"n4:{n4}")
 
 n1.set_next_node_address(id(n2))
 n2.set_next_node_address(id(n3))
 n3.set_next_node_address(id(n4))
 
-print('After relating ...')
-print(f'n1:{n1}')
-print(f'n2:{n2}')
-print(f'n3:{n3}')
-print(f'n4:{n4}')
-print('\n\n\n\n')
+print("After relating ...")
+print(f"n1:{n1}")
+print(f"n2:{n2}")
+print(f"n3:{n3}")
+print(f"n4:{n4}")
+print("\n\n\n\n")
 
 # create a linked list for word 'hello'
-'''
+"""
 h|id()     e      l      l    o
 
-'''
+"""
 list_of_nodes = []
-for _index, ech_chr in enumerate('hello'):
+for _index, ech_chr in enumerate("hello"):
     # new node creation
     node = LinkedList(ech_chr, None)
     list_of_nodes.append(node)
