@@ -11,7 +11,7 @@ $ python json_to_yaml.py json_test.json
 
 if len(sys.argv) != 2:
     print(len(sys.argv))
-    print("USAGE\n$ python json_to_yaml.py json_test.json")
+    print('USAGE\n$ python json_to_yaml.py json_test.json')
     sys.exit(1)
 
 # load json data

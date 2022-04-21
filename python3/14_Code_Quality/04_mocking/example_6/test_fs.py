@@ -1,5 +1,5 @@
 from unittest import TestCase, main, mock
-import fs 
+import fs
 
 class TestExamples(TestCase):
     @mock.patch('example_6.fs.check_ouput', return_value='foo\nbar\n')

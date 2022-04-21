@@ -1,21 +1,21 @@
 """
 
-files 
-    load  -- file to python object 
-    dump  --- python object to file 
+files
+    load  -- file to python object
+    dump  --- python object to file
 
 strings
-    loads  --- string to python object 
-    dumps  --- python object to string 
+    loads  --- string to python object
+    dumps  --- python object to string
 
 """
 import json
 
-my_dict = {'a': 1, "b": 2}
+my_dict = {'a': 1, 'b': 2}
 
 print(json.dumps(my_dict))
 
-my_tuple = (None, True, 0, -0.004, [1, 2], (4,), "tom", 'cruise')
+my_tuple = (None, True, 0, -0.004, [1, 2], (4,), 'tom', 'cruise')
 
 print(json.dumps(my_tuple))
 
@@ -27,7 +27,7 @@ gh = open('test.json', 'r')
 data = gh.read()
 # print(json.loads(data, 'utf-8'))
 
-# Default encoding scheme 
+# Default encoding scheme
 #     python 2 - ASCII
 #     python 3 - UTF-8
 

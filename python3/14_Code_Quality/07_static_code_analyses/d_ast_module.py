@@ -8,9 +8,9 @@ Purpose: AST(Abstract Syntax Tree) Module
 
     - Modes of Code Compilation
         - exec: We can execute normal Python code using this mode.
-        - eval: To evaluate Python’s expressions, this mode will 
+        - eval: To evaluate Python’s expressions, this mode will
                 return the result fo the expression after evaluation.
-        - single: This mode works just like Python shell which 
+        - single: This mode works just like Python shell which
                 execute one statement at a time.
 """
 
@@ -21,7 +21,7 @@ code = ast.parse("print('Hello world!')")
 print(f'{code       =}')
 print(f'{type(code) =}')
 
-exec(compile(code, filename="", mode="exec"))
+exec(compile(code, filename='', mode='exec'))
 
 # To see AST created for above object
 print(f'{ast.dump(code) =}')

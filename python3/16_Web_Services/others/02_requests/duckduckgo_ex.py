@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Purpose: Usage of duckduckgo api 
+Purpose: Usage of duckduckgo api
     https://duckduckgo.com/api
 
     pip install duckduckgo
@@ -17,7 +17,7 @@ try:
     query_string = input('Enter the query:')
     response = duckduckgo.query(query_string)
 except Exception as ex:
-    print("request failed with error:", repr(ex))
+    print('request failed with error:', repr(ex))
     sys.exit(1)
 
 # print(dir(response))

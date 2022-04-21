@@ -5,27 +5,27 @@ import time
 
 driver = webdriver.Chrome()
 
-email = ""  # Your Password Here
-passy = ""  # Your Password Here
-driver.get("http://quora.com")
+email = ''  # Your Password Here
+passy = ''  # Your Password Here
+driver.get('http://quora.com')
 
-soup = BeautifulSoup(driver.page_source, "lxml")
-forms = soup.find_all(class_="form_column")
+soup = BeautifulSoup(driver.page_source, 'lxml')
+forms = soup.find_all(class_='form_column')
 
 # Find Login Css Selectors Here
 for x in forms:
     try:
-        data = x.find("input")["name"]
-        if data == "email":
-            email_css = "#" + x.find("input")["id"]
-        if data == "password":
-            password_css = "#" + x.find("input")["id"]
+        data = x.find('input')['name']
+        if data == 'email':
+            email_css = '#' + x.find('input')['id']
+        if data == 'password':
+            password_css = '#' + x.find('input')['id']
     except:
         pass
     try:
-        data = x.find("input")["value"]
-        if data == "Login":
-            login_css = "#" + x.find("input")["id"]
+        data = x.find('input')['value']
+        if data == 'Login':
+            login_css = '#' + x.find('input')['id']
     except:
         pass
 

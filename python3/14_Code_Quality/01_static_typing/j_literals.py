@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Literal 
+Purpose: Literal
     - to restrict to a specific values ONLY
     - introduced in python 3.8
 """
@@ -21,7 +21,7 @@ print(f'{Person("shyam", 5, False) =}')
 
 @dataclass
 class Person2:
-    name: Literal["Ram", "Robert"]
+    name: Literal['Ram', 'Robert']
     Age: Literal[0, 1, 2]
     married: bool
 

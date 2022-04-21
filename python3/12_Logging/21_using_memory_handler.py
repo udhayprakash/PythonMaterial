@@ -49,4 +49,3 @@ while loop_count <= 100000:
     logger.error(f'This is {loop_count:6} log')
     logger.critical(f'This is {loop_count:6} log')
     loop_count += 1
-

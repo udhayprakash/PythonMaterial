@@ -6,7 +6,7 @@ Purpose: To get the current location of ISS
 """
 import requests
 from pprint import pprint
-import json 
+import json
 
 response = requests.get('http://api.open-notify.org/iss-now.json')
 # print(dir(response))
@@ -33,6 +33,6 @@ if response.headers['Content-Type'] == 'application/json':
     latitude = response_content['iss_position']['latitude']
     longitude = response_content['iss_position']['longitude']
 
-    print(f'''ISS CURRENT LOCATION:   
+    print(f'''ISS CURRENT LOCATION:
                 LATITUDE : {latitude}
                 LONGITUDE: {longitude}''')

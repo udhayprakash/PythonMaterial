@@ -68,8 +68,8 @@ except AttributeError as ex1:
 print(f'{sys.getsizeof(o) =}')
 print(f'{sys.getsizeof(c) =}')
 
-# pympler.asizeof can be used to investigate how much memory 
-# certain Python objects consume. In contrast to sys.getsizeof, 
+# pympler.asizeof can be used to investigate how much memory
+# certain Python objects consume. In contrast to sys.getsizeof,
 # asizeof sizes objects recursively.
 
 print(f'{asizeof(o) =}')

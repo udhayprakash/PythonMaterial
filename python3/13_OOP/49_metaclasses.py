@@ -18,7 +18,7 @@ print(f'{n2.x =}')  # 'hello'
 
 
 # Method 2: Creating class & instance using metaclasses
-NewType = type("NewType", (object,), {"x": "hello"})
+NewType = type('NewType', (object,), {'x': 'hello'})
 n1 = NewType()
 print(f'{n1.x =}')  # 'hello'
 
@@ -47,7 +47,7 @@ print()
 class MyMeta(type):
     @property        # a property is a descriptor
     def foo(cls):
-        return "foo"
+        return 'foo'
 
 
 class MyClass(metaclass=MyMeta):
@@ -55,4 +55,4 @@ class MyClass(metaclass=MyMeta):
 
 
 pprint(vars(MyClass))
-print("MyClass.foo:", MyClass.foo)
+print('MyClass.foo:', MyClass.foo)

@@ -20,7 +20,7 @@ print('Green  : %r' % green)
 print('Opacity: %r' % opacity)
 
 
-# Encode 
+# Encode
 import urllib.parse
 params = urllib.parse.urlencode({'spam': 1, 'eggs': 2, 'bacon': 0})
 print(params) # spam=1&eggs=2&bacon=0

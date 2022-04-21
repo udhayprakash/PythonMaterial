@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Purpose: Coloring the logs 
+Purpose: Coloring the logs
     - useful in terminals
     pip install -U colorlog --user
 """
@@ -14,7 +14,7 @@ def setup_logger():
     Returns a logger with a default ColoredFormatter.
     """
     formatter = ColoredFormatter(
-        "%(log_color)s %(asctime)s %(levelname)-8s%(reset)s %(blue)s%(message)s",
+        '%(log_color)s %(asctime)s %(levelname)-8s%(reset)s %(blue)s%(message)s',
         datefmt=None,
         reset=True,
         log_colors={

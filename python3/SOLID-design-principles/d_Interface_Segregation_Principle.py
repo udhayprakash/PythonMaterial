@@ -20,7 +20,7 @@ class IShape:
 
 
 """
-This interface draws squares, circles, rectangles. class Circle, Square or Rectangle implementing the IShape 
+This interface draws squares, circles, rectangles. class Circle, Square or Rectangle implementing the IShape
 interface must define the methods draw_square(), draw_rectangle(), draw_circle().
 """
 
@@ -59,7 +59,7 @@ class Rectangle(IShape):
 
 
 """
-It’s quite funny looking at the code above. class Rectangle implements methods (draw_circle and draw_square) it has no use of, 
+It’s quite funny looking at the code above. class Rectangle implements methods (draw_circle and draw_square) it has no use of,
 likewise Square implementing draw_circle, and draw_rectangle, and class Circle (draw_square, draw_rectangle).
 
 If we add another method to the IShape interface, like draw_triangle(),
@@ -83,10 +83,10 @@ class IShape:
 """
 the classes must implement the new method or error will be thrown.
 
-We see that it is impossible to implement a shape that can draw a circle but not a rectangle or a square or a triangle. 
+We see that it is impossible to implement a shape that can draw a circle but not a rectangle or a square or a triangle.
 We can just implement the methods to throw an error that shows the operation cannot be performed.
 
-ISP frowns against the design of this IShape interface. clients (here Rectangle, Circle, and Square) should not be forced to depend on methods that they do not need or use. 
+ISP frowns against the design of this IShape interface. clients (here Rectangle, Circle, and Square) should not be forced to depend on methods that they do not need or use.
 Also, ISP states that interfaces should perform only one job (just like the SRP principle) any extra grouping of behavior should be abstracted away to another interface.
 
 Here, our IShape interface performs actions that should be handled independently by other interfaces.

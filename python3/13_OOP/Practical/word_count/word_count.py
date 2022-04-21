@@ -62,7 +62,7 @@ class WordCounter(object):
 
         for word, o in ordered_words:
             print
-            "%s, %s, %s" % (
+            '%s, %s, %s' % (
                 str(word),
                 str(o.count),
                 str(o.sentences),
@@ -78,7 +78,7 @@ def main(argv=None):
     scriptname = argv[0]
     if len(argv) < 2:
         print
-        "%s: takes at least one argument (source filename)." % scriptname
+        '%s: takes at least one argument (source filename).' % scriptname
         return 2
     source_filename = argv[1]
 
@@ -92,5 +92,5 @@ def main(argv=None):
     return 0
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())

@@ -26,11 +26,11 @@ while len(unprocessed_urls):
 
     # extract base url to resolve relative links
     parts = urlsplit(url)
-    base_url = "{0.scheme}://{0.netloc}".format(parts)
+    base_url = '{0.scheme}://{0.netloc}'.format(parts)
     path = url[:url.rfind('/') + 1] if '/' in parts.path else url
 
     # get url's content
-    print("Crawling URL %s" % url)
+    print('Crawling URL %s' % url)
     try:
         response = requests.get(url)
     except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
@@ -39,15 +39,15 @@ while len(unprocessed_urls):
 
     # extract all email addresses and add them into the resulting set
     # You may edit the regular expression as per your requirement
-    new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
+    new_emails = set(re.findall(r'[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+', response.text, re.I))
     emails.update(new_emails)
     # create a beautiful soup for the html document
     soup = BeautifulSoup(response.text, 'lxml')
 
     # Once this document is parsed and processed, now find and process all the anchors i.e. linked urls in this document
-    for anchor in soup.find_all("a"):
+    for anchor in soup.find_all('a'):
         # extract link url from the anchor
-        link = anchor.attrs["href"] if "href" in anchor.attrs else ''
+        link = anchor.attrs['href'] if 'href' in anchor.attrs else ''
         # resolve relative links (starting with /)
         if link.startswith('/'):
             link = base_url + link

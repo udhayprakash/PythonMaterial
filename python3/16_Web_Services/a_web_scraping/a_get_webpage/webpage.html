@@ -91,13 +91,13 @@
           <button type="submit" class="pure-button search-ydn" aria-label="search button"><i class="d-icon d-search is-smal" aria-hidden="true"></i></button>
         </form>
       </div>
-    
+
       <div class="head-right-controls">
-    
+
         <div class="header-search-container" id="search-nav-bar">
         <form action="/find/" method="GET" autocomplete="off" class="search-form">
          <input title="search" aria-label="search scope" id="scope-search" name="q" placeholder="Search"  >
-    
+
             <button type="submit" class="search-ydn" aria-label="search button"><i class="d-icon d-search is-small" aria-hidden="true"></i></button>
          </form>
        </div>
@@ -106,25 +106,25 @@
         </a> -->
         <a id="language-dropdown" aria-label="Language Dropdown"><span class="flag-icon flag-icon-us" aria-hidden="true"></span> <span class="caret" aria-hidden="true"></span></a>
         <a id="dialpad-dropdown" aria-label="Products Dialpad Dropdown"><span class="d-icon d-menu-dialpad" aria-hidden="true"></span></a>
-        
+
             <div class="user-account">
               <!-- <img class="pic-id my-id hidden" src="https://s.yimg.com/dh/ap/social/profile/profile_b64.png"> -->
-    
+
               <a href="https://login.yahoo.com?done=https://developer.yahoo.com/&src=devnet&specId=usernameReg">Sign In</a>
               <!-- <a href="https://login.yahoo.com/config/login?.done=https://developer.yahoo.com/" class="login"><i class="d-icon d-user-profile-circle is-medium pic-id my-id hover"></i></a> -->
-    
+
             </div>
       </div>
-    
+
       <div id="language-overlay" class="overlay"  sign-in ">
         <div class="pointer"></div>
         <ul>
           <li><a class='rapidnofollow' data-lang="en-US" href="#" aria-label="Translate to English"><span class="flag-icon flag-icon-us" aria-hidden="true"></span> English (U.S.)</a></li>
-          <li><a class='rapidnofollow' data-lang="zh-Hant-HK" href="#" aria-label="Translate to Chinese (Hong Kong)"><span class="flag-icon flag-icon-hk" aria-hidden="true"></span> 中文(香港)</a></li> 
-          <li><a class='rapidnofollow' data-lang="zh-Hant-TW" href="#" aria-label="Translate to Chinese (Taiwan)"><span class="flag-icon flag-icon-tw" aria-hidden="true"></span> 中文(台灣)</a></li> 
+          <li><a class='rapidnofollow' data-lang="zh-Hant-HK" href="#" aria-label="Translate to Chinese (Hong Kong)"><span class="flag-icon flag-icon-hk" aria-hidden="true"></span> 中文(香港)</a></li>
+          <li><a class='rapidnofollow' data-lang="zh-Hant-TW" href="#" aria-label="Translate to Chinese (Taiwan)"><span class="flag-icon flag-icon-tw" aria-hidden="true"></span> 中文(台灣)</a></li>
         </ul>
       </div>
-    
+
       <div id="dialpad-overlay" class="overlay">
         <div class="pointer"></div>
         <div class="dialpad-content">
@@ -184,12 +184,12 @@
             </ul>
         </div>
       </div>
-    
-    
+
+
       <div id="apps-overlay" class="overlay">
         <div class="pointer"></div>
         <div>
-    
+
         </div>
         <ul>
           <li><a href="/apps">YDN Apps</a></li>
@@ -198,60 +198,60 @@
         </ul>
       </div>
     </div>
-    
+
     <div class="mobile-header">
       <a href="#menu" id="menuLink" class="menu-link" aria-label="Menu Link">
         <!-- Hamburger icon -->
         <span aria-hidden="true"></span>
       </a>
-    
+
         <a href="/" class="yahoo-phone" role="presentation" aria-label="Logo"><div class="logo-container" style="position:static"></div><div class="devtxt">developer</div></a>
-    
+
       <a href="/find/" class="mobile-search-icon" role="presentation" aria-label="Search Logo"></a>
     </div>
     </div>
     <script>
       var BACKSPACE_KEY = 8;
       var DELETE_KEY = 46;
-    
+
       var searchForm = document.querySelector('#search-form');
       var searchScopeName = document.querySelector('#search-scope-name');
       var searchScopeUrl = document.querySelector('#search-scope-url');
       var searchInput = document.querySelector('#search-input');
       var searchScope = document.querySelector('.search-scope');
-    
+
       if (searchScope) {
         var paddingOffset = searchScope.offsetWidth + 40;
         searchInput.style.paddingLeft = paddingOffset + 'px';
       }
-    
+
       searchInput.addEventListener('keydown', handleSearchKeyDown);
       searchInput.addEventListener('blur', handleSearchLoseFocus);
       searchInput.addEventListener('focus', handleSearchFocus);
       searchInput.addEventListener('blur', handleLoseFocus);
-    
+
       var pageName = window.location.pathname.split("/")[1];
       var navElement = document.getElementById("nav-"+pageName);
       if(navElement){
           navElement.classList.add("selected");
       }
-    
+
       function handleSearchFocus(event) {
         searchForm.style.width = "375px";
       }
-    
+
       function handleLoseFocus(event) {
         searchForm.style.width = "250px";
       }
-    
+
       window.addEventListener('resize', function(event){
         searchForm.style.width = "250px";
       });
-    
+
       function handleSearchKeyDown(event) {
         var searchText = document.querySelector('#search-input').value;
         searchScope = document.querySelector('.search-scope');
-    
+
         // When search bar is empty and Backspace or Delete keys are pressed, then
         // remove contextual scope from the search bar.
         // Note: Brightroll DSP is locked into contextual search.
@@ -263,11 +263,11 @@
           searchScopeUrl.disabled = true;
         }
       }
-    
+
       // Reset contextual search when the search bar loses focus and it's empty.
       function handleSearchLoseFocus(event) {
         var searchText = document.querySelector('#search-input').value;
-    
+
         // Restore contextual label if it has been removed via the backspace key
         // but the text field is still empty.
         if (searchScope && !searchText.length) {
@@ -277,32 +277,32 @@
           searchScopeUrl.disabled = false;
         }
       }
-    
+
       // Update locale setting from language dropdown
       $('a[data-lang]').click(function(e) {
         e.preventDefault();
-    
+
         // Load PH cookie and convert it to object.
         // If PH cookie is not available, create an empty object.
         var locale = $(this).data('lang');
         var phCookie = $.cookie('PH');
         var phCookieObject = phCookie ? queryStringToObject(phCookie) : {};
-    
+
         // Update locale.
         phCookieObject.l = locale;
-    
+
         // Set new PH cookie.
         $.cookie.raw = true;
-    
+
         $.cookie('PH', $.param(phCookieObject), { path: '/', domain: 'yahoo.com' });
-    
+
         location.reload();
       });
-    
+
       function queryStringToObject(query) {
         var qs = {};
         var vars = query.split('&');
-    
+
         for (var i = 0; i < vars.length; i++) {
           var pair = vars[i].split('=');
           pair[0] = decodeURIComponent(pair[0]);
@@ -317,7 +317,7 @@
         }
         return qs;
       }
-    
+
     </script>
   <div id="layout">
 
@@ -346,8 +346,8 @@
       <a href="#" aria-label="Language Menu">Language:</a>
       <ul>
         <li><a class="d" data-lang="en-US" href="#" aria-label="Translates to English"><span class="flag-icon flag-icon-us" aria-hidden="true"></span> English (U.S.)</a></li>
-        <li><a class="d" data-lang="zh-Hant-HK" href="#" aria-label="Translates to Chinese (Hong Kong)"><span class="flag-icon flag-icon-hk" aria-hidden="true"></span> 中文(香港)</a></li> 
-        <li><a class="d" data-lang="zh-Hant-TW" href="#" aria-label="Translates to Chinese (Taiwan)"><span class="flag-icon flag-icon-tw" aria-hidden="true"></span> 中文(台灣)</a></li> 
+        <li><a class="d" data-lang="zh-Hant-HK" href="#" aria-label="Translates to Chinese (Hong Kong)"><span class="flag-icon flag-icon-hk" aria-hidden="true"></span> 中文(香港)</a></li>
+        <li><a class="d" data-lang="zh-Hant-TW" href="#" aria-label="Translates to Chinese (Taiwan)"><span class="flag-icon flag-icon-tw" aria-hidden="true"></span> 中文(台灣)</a></li>
       </ul>
     </li>
   </ul>
@@ -746,7 +746,7 @@ and fine grained access control in dynamic infrastructures</h3> 
             body.classList.remove("disable-scroll");
         });
     })
-    
+
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if(!document.cookie.includes('oauth-notification')){
@@ -767,7 +767,7 @@ and fine grained access control in dynamic infrastructures</h3> 
   <div id="foot" class="footer">
   	<div class="container padding-sides">
   	  <div class="pure-g-r footer-wrapper" style="overflow: hidden;">
-  
+
   	    <div class="pure-u-1-2 pure-u-sm-1-1">
   	      <ul class="footer-links" id="desktop-footer">
   				<li>
@@ -783,7 +783,7 @@ and fine grained access control in dynamic infrastructures</h3> 
   				</li>
   				<li>
   					<ul style="padding: 5px 0 0 0;">
-  						<li class="menu-header">CONNECT</li>	
+  						<li class="menu-header">CONNECT</li>
   						<li><a target="_blank" title="Follow us on GitHub" href="https://github.com/yahoo">GitHub</a></li>
   						<li><a target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/yahoodevelopernetwork">Facebook</a></li>
   						<li><a target="_blank" title="Follow us on Twitter" href="https://twitter.com/ydn">Twitter</a></li>
@@ -793,7 +793,7 @@ and fine grained access control in dynamic infrastructures</h3> 
   				</li>
   				<li>
   					<ul style="padding: 5px 0 0 0; min-width: 225px;">
-  						<li class="menu-header">DISCOVER</li>	
+  						<li class="menu-header">DISCOVER</li>
   						<li><a target="_blank" title="Verizon Media Developer Network" href="https://developer.verizonmedia.com/">Verizon Media Developer Network</a></li>
   						<li><a target="_blank" title="Verizon Ads SDK" href="https://sdk.verizonmedia.com/">Verizon Ads SDK</a></li>
   						<li><a target="_blank" title="Analytics Reports" href="https://help.verizonmedia.com/platform/Analytics-Reports/Analytics-Reports-Overview.htm">Analytics Reports</a></li>
@@ -817,8 +817,8 @@ and fine grained access control in dynamic infrastructures</h3> 
   				</li>
   				<li class="mobile-footer-item">
   					<ul style="padding: 5px 0 0 0;">
-  						<li class="menu-header">DISCOVER</li>	
-  							
+  						<li class="menu-header">DISCOVER</li>
+
   						<li><a target="_blank" title="Verizon Media Developer Network" href="https://developer.verizonmedia.com/">Verizon Media Developer Network</a></li>
   						<li><a target="_blank" title="Verizon Ads SDK" href="https://sdk.verizonmedia.com/">Verizon Ads SDK</a></li>
   						<li><a target="_blank" title="Analytics Reports" href="https://help.verizonmedia.com/platform/Analytics-Reports/Analytics-Reports-Overview.htm">Analytics Reporting</a></li>
@@ -843,7 +843,7 @@ and fine grained access control in dynamic infrastructures</h3> 
   		<div class="pure-u-1-2 pure-u-sm-1-1" id="footer-right" style="color:white">
   			<p>&copy; Verizon Media. All right reserved.</p>
   		</div>
-            
+
   		</div>
   	</div>
   </div>
@@ -872,13 +872,13 @@ and fine grained access control in dynamic infrastructures</h3> 
         pageMenuList, // only the menu items that have heads on this page (used for scrolling highlight)
         isThrottled = false,
         throttleDuration = 100; // ms
-    
+
         if ($('.feedback_close')) {
             $('.feedback_close').click(function (e) {
                 $('.feedback').remove();
             });
         }
-    
+
         // allows the menu to slide in/out on mobile size screens
         function slideMobileMenu() {
             $('#layout').toggleClass('active'); // the menu and page contents
@@ -887,14 +887,14 @@ and fine grained access control in dynamic infrastructures</h3> 
             $('.footer').toggleClass('active'); // footer needs to slide too
             $('.mobile-header').toggleClass('active'); // top bar needs to slide too
         }
-    
+
         $('#menuLink').click(function (e) {
             e.preventDefault(); // without this, the first menu item can get triggered on a mobile device when the hamburger icon is clicked
             setTimeout(function () {
                 slideMobileMenu();
             }, 200);
         });
-    
+
         // set/remove box-shadow on head if scrolled
         $(document).scroll(function () {
             if (window.scrollY > 5) {
@@ -903,31 +903,31 @@ and fine grained access control in dynamic infrastructures</h3> 
                 head.removeClass('head-shadow');
             }
         });
-    
+
         // Begin language overlay
         languageOverlay = $('#language-overlay');
         languageOverlay.css('z-index', 10);
-    
+
         $('.head-right-controls').delegate('#language-dropdown', 'mouseover', function (e) {
             let top;
             let left;
                 left = $(".head-right-controls").position().left + $(".head-right-controls").width()-275;
             top = $(".head-right-controls").position().top + $(".head-right-controls").height() + 5;
-                
+
             dialpadOverlay.css('display','none');
-            
+
             languageOverlay.css({
                 top: top+"px",
                 left: left + "px"
             });
             languageOverlay.css('display','table');
         });
-    
+
         $('#language-overlay').mouseover(function () {
             clearTimeout(languageLeaveWait);
             overMenu = true;
         });
-    
+
         // when cursor leaves My Apps,
         // if it doesn't move over the menu within 1sec,
         // hide the menu
@@ -938,35 +938,35 @@ and fine grained access control in dynamic infrastructures</h3> 
                 }
             }, 1000);
         });
-    
-    
+
+
         function removeLanguageOverlay() {
             languageOverlay.css('display','none');
             overMenu = false;
         }
-    
+
         $('#language-overlay').click(removeLanguageOverlay);
         $('#language-overlay').mouseleave(removeLanguageOverlay);
-    
+
          // Begin dialpad overlay
         dialpadOverlay = $('#dialpad-overlay');
         dialpadOverlay.css('z-index', 10);
-    
+
         $('.head-right-controls').delegate('#dialpad-dropdown', 'mouseover', function (e) {
             let top;
             let left;
                 left = $(".head-right-controls").position().left + $(".head-right-controls").width()-545;
-               
+
             top = $(".head-right-controls").position().top + $(".head-right-controls").height() - 5;
-                
+
             languageOverlay.css('display','none');
-           
+
             dialpadOverlay.css({
                 top: top+"px",
                 left: left + "px"
             });
             dialpadOverlay.css({
-                'display':'block',    
+                'display':'block',
                 'background-color': '#fff',
         'border-radius': '4px',
         'box-shadow': '0 2px 8px 2px rgba(0, 0, 0, 0.36)',
@@ -976,12 +976,12 @@ and fine grained access control in dynamic infrastructures</h3> 
         'min-width': '20rem'});
         });
         var overDialMenu = false;
-        
+
         $('#dialpad-overlay').mouseover(function () {
             clearTimeout(dialpadLeaveWait);
             overDialMenu = true;
         });
-    
+
          // when cursor leaves My Apps,
         // if it doesn't move over the menu within 1sec,
         // hide the menu
@@ -992,28 +992,28 @@ and fine grained access control in dynamic infrastructures</h3> 
                 }
             }, 1000);
         });
-    
-    
+
+
         function removeDialpadOverlay() {
             dialpadOverlay.css('display','none');
             overDialMenu = false;
         }
-    
+
         $('#dialpad-overlay').click(removeDialpadOverlay);
         $('#dialpad-overlay').mouseleave(removeDialpadOverlay);
-    
-        
-    
-        
+
+
+
+
         $('#dialpad-dropdown').click(function(){
                  $('#dialpad-overlay').css('display','block');
         });
-    
-        
+
+
         function supportsSVG() {
             return !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
         }
-    
+
         if (!supportsSVG()) {
             var imgs = document.getElementsByTagName('img');
             var dotSVG = /\.svg$/;
@@ -1023,9 +1023,9 @@ and fine grained access control in dynamic infrastructures</h3> 
                 }
             }
         }
-    
-    
-    
+
+
+
     </script>
 
 
@@ -1037,7 +1037,7 @@ and fine grained access control in dynamic infrastructures</h3> 
   var rapid = new YAHOO.i13n.Rapid({webworker_file: 'http://l.yimg.com/oo/fe/js/vendor/rapidworker-1-min_b8fccc270.js' ,spaceid:1197800063, tracked_mods:['layout']});
 </script>
 
-<script>  
+<script>
 
   $(document).ready(function() {
   $('.dropdown-trigger button').click(function(){
@@ -1091,7 +1091,7 @@ and fine grained access control in dynamic infrastructures</h3> 
 <!--  renders each hoverbox-->
 <script>
 
-  function enableTooltip(){  
+  function enableTooltip(){
     $('.reference.internal').each(function() {
         var reference = $(this).find('.std-term');
         var definition = $(this.hash + ' + dd');
@@ -1125,7 +1125,7 @@ and fine grained access control in dynamic infrastructures</h3> 
         }
     });
   }
-  
+
   enableTooltip();
 
 </script>

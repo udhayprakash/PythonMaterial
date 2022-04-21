@@ -2,27 +2,27 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 a = np.array([1.2, 5.5, -4.3, 9.1, 0.2, -3.3], dtype='double')
-print(f"a is now:\n{a!s}")
+print(f'a is now:\n{a!s}')
 a = a.reshape((2, 3))
-print(f"a is now:\n{a!s}")
+print(f'a is now:\n{a!s}')
 a = a.reshape(6)
-print(f"a is now:\n{a!s}")
+print(f'a is now:\n{a!s}')
 
 # Unlike Python lists, slicing and views share underlying data.
 
 b = a[2:4]
-print(f"b is now:\n{b!s}")
+print(f'b is now:\n{b!s}')
 a[2] = 2.54
-print(f"b is now:\n{b!s}")
+print(f'b is now:\n{b!s}')
 
 # Arithmetic works differently for numpy arrays and Python lists.
 
 pl = [1, 2, 3]
-print(f"Python list addition: {pl + pl}")
-print(f"Python list multiplication: {pl * 3}")
+print(f'Python list addition: {pl + pl}')
+print(f'Python list multiplication: {pl * 3}')
 na = np.array([1, 2, 3])
-print(f"Numpy array addition: {na + na}")
-print(f"Numpy array multiplication: {na * 3}")
+print(f'Numpy array addition: {na + na}')
+print(f'Numpy array multiplication: {na * 3}')
 
 # Ufuncs apply separately to each element of the array. This
 # eliminates the need for us to write that loop explicitly. Often
@@ -31,7 +31,7 @@ print(f"Numpy array multiplication: {na * 3}")
 # the array is humongous.
 
 a = a + np.cos(a)
-print(f"a is now:\n{a!s}")
+print(f'a is now:\n{a!s}')
 
 # When combinining matrices of different ranks, the smaller one
 # is automatically broadcast into higher dimensions so that the
@@ -39,13 +39,13 @@ print(f"a is now:\n{a!s}")
 
 c = np.array([1, 2, 3, 4, 5, 6]).reshape((2, 3))  # shape (2, 3)
 d = np.array([1, 2, 3])  # shape (3,) becomes (2, 3)
-print("c + d equals:", (c + d))
+print('c + d equals:', (c + d))
 
 # Cherry picking elements by indexing with a truth-valued array.
 
 v = a > 3  # Generates a truth-valued array from elementwise comparisons
-print(f"v is now: {v}")
-print(f"a[v] is: {a[v]}")
+print(f'v is now: {v}')
+print(f'a[v] is: {a[v]}')
 
 # Then, onto scipy and its basic functions copied from MATLAB.
 
@@ -81,15 +81,15 @@ import scipy.integrate as scint
 f = lambda x: 3.3 * x * x - np.exp(x - 3) * 4.2 * x + 1.5 * np.cos(x)
 
 # Integration, given a function f that works in any single point.
-print(f"Quad: {scint.quad(f, -5, 5)[0]:.6f}")
-print(f"Romberg: {scint.romberg(f, -5, 5):.6f}")
-print(f"Fixed quad: {scint.fixed_quad(f, -5, 5)[0]:.6f}")
+print(f'Quad: {scint.quad(f, -5, 5)[0]:.6f}')
+print(f'Romberg: {scint.romberg(f, -5, 5):.6f}')
+print(f'Fixed quad: {scint.fixed_quad(f, -5, 5)[0]:.6f}')
 
 # Integration, given a fixed set of samples of values of f.
 xx = np.linspace(-5, 5, 100)
 yy = f(xx)
-print(f"Trapezoidal: {scint.trapz(yy, x=xx):.6f}")
-print(f"Simpson: {scint.simps(yy, x=xx):.6f}")
+print(f'Trapezoidal: {scint.trapz(yy, x=xx):.6f}')
+print(f'Simpson: {scint.simps(yy, x=xx):.6f}')
 
 # Last, the minimization of some function f. (To maximize f,
 # you can always simply minimize -f.)
@@ -97,4 +97,4 @@ print(f"Simpson: {scint.simps(yy, x=xx):.6f}")
 import scipy.optimize as sco
 
 result = sco.minimize(f, 0, method='BFGS')
-print(f"Function is minimized at x = {result.x[0]:.5f}.")
+print(f'Function is minimized at x = {result.x[0]:.5f}.')

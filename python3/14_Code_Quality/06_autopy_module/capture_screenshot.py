@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
     pip install -U autopy --user
 """
 import autopy

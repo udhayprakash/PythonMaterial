@@ -60,7 +60,7 @@ def echo(s, delay = 2000, times = 5):
     for i in range(len(s)):
         res[i] = s[i]
         for k in range(1, times + 1):
-            j = i - k * delay    
+            j = i - k * delay
             if j > 0:
                 res[i] = res[i] + s[j] * 1 / k
     return res
@@ -75,18 +75,18 @@ def fractal(t, period, sf = 44100):
         weirdstate = state & (state >> 3) & (state >> 8) % period
         res[i] = 2 * weirdstate / period - 1
     return res
-        
-if __name__ == "__main__":    
-    from scipy.io.wavfile import read, write    
+
+if __name__ == "__main__":
+    from scipy.io.wavfile import read, write
 
     # We can create our own sounds mathematically...
-    data = mix(sinewave(10, 300), sawtooth(10, 1 / 100), 
+    data = mix(sinewave(10, 300), sawtooth(10, 1 / 100),
                wt = lambda t: np.sin(np.pi*t))
     data = mix(data, fractal(10, 99), wt = lambda t: 1 - .8 * blip(t, 4, 9, 1))
     scaled = np.int16(data/np.max(np.abs(data)) * 32767)
     write('r1.wav', 44100, scaled)
-    
-    # ... or read an existing sound from the given wav file.    
+
+    # ... or read an existing sound from the given wav file.
     freq, req = read('273050__shadowisp__new-song-request.wav')
     data = echo(req, delay = 8000, times = 10)
     scaled = np.int16(data/np.max(np.abs(data)) * 32767)

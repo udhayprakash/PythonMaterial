@@ -1,12 +1,12 @@
-database 
-    - relational/structured db 
-        - File based 
+database
+    - relational/structured db
+        - File based
             - sqlite3
-        - port based 
+        - port based
             - mysql / maria db
-            - ms sql 
-            - oracle 
-    - no sql db 
-        - port based 
-            - mongo db 
-            - cassandra db 
+            - ms sql
+            - oracle
+    - no sql db
+        - port based
+            - mongo db
+            - cassandra db

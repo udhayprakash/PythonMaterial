@@ -2,7 +2,7 @@
 """
 Purpose: Importance of Self
 
-    Self is the placeholder for the instance created from that class. 
+    Self is the placeholder for the instance created from that class.
     NOTE: self is not keyword in python. But, PEP 8 recommends to use the same.
 """
 

@@ -8,7 +8,7 @@ import unittest
 class TestSuite(unittest.TestCase):
     num1 = 50
     num2 = 40
-    
+
     def test01_addition(self):
         """
         Logic for addition and its test

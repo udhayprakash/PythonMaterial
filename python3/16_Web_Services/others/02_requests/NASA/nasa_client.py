@@ -45,7 +45,7 @@ for each_image_url in image_urls:
     image_name = each_image_url.split('/')[-1]
     print("response.headers['content-type']", response.headers['content-type'])
     with open(f'{image_name}', 'w') as g:
-        g.write(response_image.text.encode("utf-8"))
+        g.write(response_image.text.encode('utf-8'))
         g.close()
 
 response = requests.get('')

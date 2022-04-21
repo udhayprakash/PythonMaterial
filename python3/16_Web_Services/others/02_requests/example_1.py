@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: 
-    downloading a web page 
+Purpose:
+    downloading a web page
 
     pip install requests
 """
@@ -12,5 +12,5 @@ response = requests.get('https://www.timeanddate.com/worldclock/india/new-delhi'
 # breakpoint()
 # print(response.text)
 with open('content.html', 'wb') as f:
-    f.write(response.text.encode("utf-8"))
+    f.write(response.text.encode('utf-8'))
     f.close()

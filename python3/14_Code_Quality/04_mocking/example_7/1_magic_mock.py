@@ -4,8 +4,8 @@ class Foo():
     x = 20
     def bar(self):
         y = 10
-        return y 
-    
+        return y
+
 print(dir(Foo))
 
 print()
@@ -16,5 +16,3 @@ print()
 # spec - will create mock object as the orignal
 with patch('__main__.Foo', spec=True) as mock_foo:
     print(dir(mock_foo))  # no x, y attributes
-
-

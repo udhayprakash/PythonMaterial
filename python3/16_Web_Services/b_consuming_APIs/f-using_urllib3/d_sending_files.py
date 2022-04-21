@@ -34,17 +34,17 @@ def download_data_from_url2(url, filepath, chunk_size=1024):
 
 
 def uploading_data_to_url():
-    with open("file_name.txt") as f:
+    with open('file_name.txt') as f:
         file_data = f.read()
 
 
     # Sending the request.
     resp = http.request(
-        "POST",
-        "https://reqbin.com/post-online",
+        'POST',
+        'https://reqbin.com/post-online',
         fields={
-            "file": ("file_name.txt", file_data),
+            'file': ('file_name.txt', file_data),
         }
     )
 
-    print(json.loads(resp.data.decode("utf-8"))["files"])
+    print(json.loads(resp.data.decode('utf-8'))['files'])

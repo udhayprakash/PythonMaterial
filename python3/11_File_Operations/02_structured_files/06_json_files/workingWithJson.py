@@ -11,7 +11,7 @@ book['author'] = 'Udhay'
 book['id'] = 786
 
 print('\nbook details :\n', book)
-print("type(book) is ", type(book))
+print('type(book) is ', type(book))
 pprint(book)
 
 # Serilazation
@@ -25,7 +25,7 @@ with open('ebook.json', 'rb') as g:
     data = json.load(g)
     g.close()
 
-print("data = ", data)
+print('data = ', data)
 
 print('\nprinting using pretty print')
 pprint.pprint(data)

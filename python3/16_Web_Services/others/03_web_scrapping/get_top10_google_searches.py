@@ -17,7 +17,7 @@ def start():
     if len(sys.argv) > 1:
         keyword = ' '.join(sys.argv[1:])
     else:
-        # if no keyword is entered, the script would 
+        # if no keyword is entered, the script would
         # search for the keyword copied in the clipboard
         keyword = pyperclip.paste()
 

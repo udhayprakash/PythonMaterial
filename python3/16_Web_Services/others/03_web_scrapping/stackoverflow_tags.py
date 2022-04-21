@@ -28,7 +28,7 @@ def tag_crawler(question_url):
             if tag is not None:
                 tag_count_dict[tag] = tag_count_dict[tag] + 1 if tag in tag_count_dict else 1
                 # print a dot to indicate script is progressing.
-                print(".")  # , end="")
+                print('.')  # , end="")
                 sys.stdout.flush()
 
 
@@ -43,7 +43,7 @@ def page_crawler(max_page_count):
         current_page_url = starting_url.replace('PAGE_NUMBER', str(current_page_number))
         soup = get_soup_from_link(current_page_url)
         print('Working on page number : ' + str(current_page_number))
-        # get link of all question posted on current page      
+        # get link of all question posted on current page
         question_links = get_question_links(soup)
         for link in question_links:
             question_url = 'http://stackoverflow.com/' + link.get('href')
@@ -55,11 +55,11 @@ def page_crawler(max_page_count):
 
 def print_welcome_msg():
     os.system('clear')
-    print("\n\n")
-    print("This script will crwal stackoverflow pages to fetch the count of occurances of tags.")
-    print("And then print the top 10 tags hence predicting the most popular technology on stackoverflow.")
-    print("Next we will ask you the number of pages to crawl.")
-    print("Remember, more the pages, better is the accuracy but at the same time script will run longer.")
+    print('\n\n')
+    print('This script will crwal stackoverflow pages to fetch the count of occurances of tags.')
+    print('And then print the top 10 tags hence predicting the most popular technology on stackoverflow.')
+    print('Next we will ask you the number of pages to crawl.')
+    print('Remember, more the pages, better is the accuracy but at the same time script will run longer.')
     print('\n\nHow many pages would you like to crawl : ')  # , end="")
 
 
@@ -69,9 +69,9 @@ def start():
     print('Starting now....')
     page_crawler(max_page_count)
     sorted_tag_count_dict = sorted(tag_count_dict.items(), key=operator.itemgetter(1), reverse=True)[:10]
-    print("")
+    print('')
     for tag_count in sorted_tag_count_dict:
-        print("%15s : %d" % (tag_count[0], tag_count[1]))
+        print('%15s : %d' % (tag_count[0], tag_count[1]))
 
 
 start()

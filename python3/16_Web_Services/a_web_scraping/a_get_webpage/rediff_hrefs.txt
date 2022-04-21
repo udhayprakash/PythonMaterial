@@ -13,7 +13,7 @@ www.rediff.com/getahead">get ahead</a></p>
 www.rediff.com/getahead">get ahead</a></p>
 www.rediff.com/getahead">get ahead</a></p>
 www.rediff.com/getahead">get ahead</a></p>
-www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=nav2&label=news&c_type=edit_news&property=hp_in_pc');return false;">NEWS</a></li> 
+www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=nav2&label=news&c_type=edit_news&property=hp_in_pc');return false;">NEWS</a></li>
 www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=6_3_L&label=edit_news&c_type=edit_news&property=hp_in_pc');return false;">news</a></p>
 www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=6_4_L&label=edit_news&c_type=edit_news&property=hp_in_pc');return false;">news</a></p>
 www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=6_5_L&label=edit_news&c_type=edit_news&property=hp_in_pc');return false;">news</a></p>
@@ -25,7 +25,7 @@ www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___ht
 www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=14_5_L&label=edit_news&c_type=edit_news&property=hp_in_pc');return false;">news</a></p>
 www.rediff.com/news" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/news___&position=15_4_L&label=edit_news&c_type=edit_news&property=hp_in_pc');return false;">news</a></p>
 www.rediff.com/movies" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/movies___&position=nav2&label=movies&c_type=edit_movies&property=hp_in_pc');return false;">MOVIES</a></li>
-www.rediff.com/sports" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/sports___&position=nav2&label=sports&c_type=edit_sports&property=hp_in_pc');return false;">SPORTS</a></li> 
+www.rediff.com/sports" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/sports___&position=nav2&label=sports&c_type=edit_sports&property=hp_in_pc');return false;">SPORTS</a></li>
 www.rediff.com/cricket" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/cricket___&position=nav2&label=cricket&c_type=edit_cricket&property=hp_in_pc');return false;">CRICKET</a></li>
 www.rediff.com/movies" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/movies___&position=8_3_L&label=edit_movies&c_type=edit_movies&property=hp_in_pc');return false;">movies</a></p>
 www.rediff.com/movies" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/movies___&position=8_4_L&label=edit_movies&c_type=edit_movies&property=hp_in_pc');return false;">movies</a></p>
@@ -35,7 +35,7 @@ www.rediff.com/sports" onclick="trackURL('https://track.rediff.com/click?url=___
 www.rediff.com/movies" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/movies___&position=15_5_L&label=edit_movies&c_type=edit_movies&property=hp_in_pc');return false;">movies</a></p>
 realtime.rediff.com" onclick="trackURL('https://track.rediff.com/click?url=___https://realtime.rediff.com___&position=nav2&label=realtimenews&c_type=realtimenews&property=hp_in_pc');return false;">REALTIME NEWS</a></li>
 www.rediff.com/cricket" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/cricket___&position=9_5_L&label=edit_cricket&c_type=edit_cricket&property=hp_in_pc');return false;">cricket</a></p>
-www.rediff.com/business" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/business___&position=nav2&label=business&c_type=edit_business&property=hp_in_pc');return false;">BUSINESS</a></li> 
+www.rediff.com/business" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/business___&position=nav2&label=business&c_type=edit_business&property=hp_in_pc');return false;">BUSINESS</a></li>
 www.rediff.com/getahead" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/getahead___&position=nav2&label=getahead&c_type=edit_getahead&property=hp_in_pc');return false;">GET AHEAD</a></li>
 www.rediff.com/business" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/business___&position=11_3_L&label=edit_business&c_type=edit_business&property=hp_in_pc');return false;">business</a></p>
 www.rediff.com/business" onclick="trackURL('https://track.rediff.com/click?url=___https://www.rediff.com/business___&position=11_4_L&label=edit_business&c_type=edit_business&property=hp_in_pc');return false;">business</a></p>

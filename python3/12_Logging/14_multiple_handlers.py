@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: multiple loggers 
-        - FileHandler 
+Purpose: multiple loggers
+        - FileHandler
         - StreamHandler
 """
 import logging

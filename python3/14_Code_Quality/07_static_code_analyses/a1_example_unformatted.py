@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Static Code Analyses, using pylint 
+Purpose: Static Code Analyses, using pylint
 
     python -m pylint script.py
 

@@ -2,14 +2,14 @@ import urllib.request
 
 
 def download_file(url):
-    urllib.request.urlretrieve(url, "code.zip")
+    urllib.request.urlretrieve(url, 'code.zip')
 
 
 def alternate_download(url):
     with urllib.request.urlopen(url) as response:
         data = response.read()
 
-    with open("code2.zip", "wb") as code:
+    with open('code2.zip', 'wb') as code:
         code.write(data)
 
 

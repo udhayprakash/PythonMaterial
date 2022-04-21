@@ -85,8 +85,8 @@ def retrive_values_from_db(db_file):
 
 
 if __name__ == '__main__':
-    create_connection("pythonsqlite.db")
-    create_tables("pythonsqlite.db")
+    create_connection('pythonsqlite.db')
+    create_tables('pythonsqlite.db')
     # create_indexes_for_db("pythonsqlite.db")
     insert_values_in_db('pythonsqlite.db')
     retrive_values_from_db('pythonsqlite.db')

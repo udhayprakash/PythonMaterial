@@ -1,6 +1,6 @@
 from PIL import Image
 
-original_image = Image.open("strawberries.png")
+original_image = Image.open('strawberries.png')
 # original_image = Image.open("cameraman.jpg")
 
 width, height = original_image.size

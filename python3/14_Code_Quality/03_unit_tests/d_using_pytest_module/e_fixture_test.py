@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 Purpose: pytest fixtures
-    - For testing some scenaries, we may need arbitrary resources, 
-      like temporary directory, paths, ... 
+    - For testing some scenaries, we may need arbitrary resources,
+      like temporary directory, paths, ...
     - pytest provides them as 'fixtures'.
     - Used for Dependency Injections
     - To see the list of all (built-in and custom) pytest fixtures
@@ -34,18 +34,18 @@ def test_output(capsys):
     """
     Enable text capturing of writes to sys.stdout and sys.stderr.
     """
-    print("hello")
+    print('hello')
     out, err = capsys.readouterr()
-    assert out == "hello\n"
+    assert out == 'hello\n'
 
 
 def test_output(capsysbinary):
     """
     Enable bytes capturing of writes to sys.stdout and sys.stderr.
     """
-    print("hello")
+    print('hello')
     captured = capsysbinary.readouterr()
-    assert captured.out == b"hello\n"
+    assert captured.out == b'hello\n'
 
 
 def test_system_echo(capfd):
@@ -54,7 +54,7 @@ def test_system_echo(capfd):
     """
     os.system('echo "hello"')
     captured = capfd.readouterr()
-    assert captured.out == "hello\n"
+    assert captured.out == 'hello\n'
 
 
 def test_system_echo(capfdbinary):
@@ -64,4 +64,4 @@ def test_system_echo(capfdbinary):
     """
     os.system('echo "hello"')
     captured = capfdbinary.readouterr()
-    assert captured.out == b"hello\n"
+    assert captured.out == b'hello\n'

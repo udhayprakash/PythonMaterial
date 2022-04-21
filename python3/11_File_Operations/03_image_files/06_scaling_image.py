@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Scaling the Image 
+Purpose: Scaling the Image
 """
 from PIL import Image
 

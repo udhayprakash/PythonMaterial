@@ -5,7 +5,7 @@ There are various static typing modules in python:
     - pyright (Microsoft)
 
 
-constraining Types 
+constraining Types
     - Optional
         - Use to replace None references in your codebase.
     - Union
@@ -16,5 +16,5 @@ constraining Types
         - Use to provide additional description of your types.
     - NewType
         - Use to restrict a type to a specific context.
-    - Final   
+    - Final
         - Use to prevent variables from being rebound to a new value.

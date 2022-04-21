@@ -36,7 +36,7 @@ class RationalNumber:
         return RationalNumber(n, d)
 
     def __str__(self):
-        return "%s/%s" % (self.n, self.d)
+        return '%s/%s' % (self.n, self.d)
 
     __repr__ = __str__
 
@@ -66,3 +66,23 @@ print(str(a))  # same as a.__str__()
 
 print(a.__repr__())
 print(repr(a))
+
+
+# === Another Example
+class Student:
+    def __init__(self, id, marks):
+        self.id = id
+        self.__marks = marks
+
+    def set_marks(self, marks):
+        self.__marks = marks
+
+    def get_marks(self):
+        return self.__marks
+
+    def __add__(self, other):
+        print(other.get_marks() - self.get_marks())
+
+
+comb = Student(1, 90) + Student(2, 40)
+print('comb', comb)

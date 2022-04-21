@@ -2,7 +2,7 @@ import sqlite3
 
 
 def update_author(old_name, new_name):
-    conn = sqlite3.connect("books.db")
+    conn = sqlite3.connect('books.db')
     cursor = conn.cursor()
     sql = f"""
     UPDATE books

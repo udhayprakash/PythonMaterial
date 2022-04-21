@@ -13,7 +13,7 @@ def repeat(num_times):
 
 @repeat(num_times=4)
 def greet(name):
-    print(f"Hello {name}")
+    print(f'Hello {name}')
 
 if __name__ =='__main__':
     greet('World')

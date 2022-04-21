@@ -1,9 +1,9 @@
 from unittest.mock import patch, Mock
 from unittest import TestCase, main
-# speccing solves mocking problem 
+# speccing solves mocking problem
 
 def foo(arg):
-    pass 
+    pass
 
 def bar():
     return foo('Bob')

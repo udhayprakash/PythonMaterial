@@ -1,106 +1,56 @@
-# class Demo:
-#     counter =10
-#     def change_counter(self):
-#         self.counter += 1
-
-# obj1 = Demo()
-# print(Demo.counter, end= ' ')
-# obj1.change_counter()
-# print(Demo.counter)
-
-# class Parent:
-#     def __init__(self, var1):
-#         self.__var1 = var1
-
-#     def get_var1(self):
-#         return self.__var1
-
-# class Child(Parent):
-#     def __init__(self, var1, var2):
-#         super().__init__(var1)
-#         self.var2 = var2
-
-
-# obj1 = Child(10, 20)
-
-# print(obj1.get_var1(), obj1.var2)
-
-
-# class Player:
-#     def play(self):
-#         return 'playing'
-
-# class Cricketer(Player):
-#     def play(self):
-#         return super().play()
-
-# print(Cricketer().play() == Player().play())
-
-
-# class Address:
-#     def __init__(self, city):
-#         self.__city = city
-
-#     def get_city(self):
-#         return self.__city
-
-# class Student:
-#     def __init__(self, id, marks, address):
-#         self.__address = address
-#         self.id = id
-#         self.marks = marks
-
-#     def get_address(self):
-#         return self.__address
-
-# s1 = Student(1, 90, Address('Mysore'))
-# print(s1.get_address().get_city())
-
-
-# class Student:
-#     def __init__(self, id, marks):
-#         self.id = id
-#         self.__marks = marks
-
-#     def set_marks(self, marks):
-#         self.__marks = marks
-
-#     def get_marks(self):
-#         return self.__marks
-
-#     def __add__(self, other):
-#         print(other.get_marks() - self.get_marks())
-
-
-# Student(1, 90) + Student(2, 40)
-
-import os
+from collections import Counter, defaultdict
 from pprint import pprint
-from collections import Counter
 
-os.chdir('..')
-print(f'{os.getcwd() =}')
+jobs_file = r'C:\Users\Amma\Documents\jobs.txt'
 
-extensions = Counter()
-for cur_dir, dirs, files in os.walk(os.getcwd()):
-    if '.git' in cur_dir:
-        continue
-    for file in files:
-        filename, file_extn = os.path.splitext(file)
-        if file_extn != '.py':
-            extensions.update((file_extn,))
-        if file_extn in ('.mp4'): 
-            complete_file = os.path.join(os.getcwd(),cur_dir, file)
-            print(complete_file)
-            # os.remove(complete_file)
-            # os.rename(complete_file, os.path.join(os.getcwd(),cur_dir, filename+'.png'))
-        # if file_extn in ('.p', '.1', '.2', '.3', '.4'):
+months = Counter()
+weeks = Counter()
+dates = Counter()
+vendor = Counter()
+times = Counter()
+month_vendor = defaultdict(Counter)
+for each_line in open(jobs_file, 'r').readlines():
+    if each_line.startswith('--END--'):
+        break
+    if each_line[0].isdigit():
+        try:
+            each_vendor = each_line.split(
+                'IST -')[-1].strip().split('-')[0].strip()
+            dates.update([each_line.split()[0]])
+            months.update(['-'.join(each_line.split()[1:3])])
+            weeks.update([each_line.split()[2]])
+            vendor.update([each_vendor])
+            times.update([each_line.split(')')[1].split('-')[0].strip()])
+            curr_month = each_line.split()[1]
+            month_vendor[curr_month].update([each_vendor])
+        except Exception:
+            pass
 
-pprint(extensions)
+print("~" * 30)
+pprint(months)
+print('Monthly Average:', round(sum(list(months.values()))/len(months), 2))
+# pprint(weeks)
+# pprint(dates)
+pprint(vendor)
+# pprint(times)
 
-import matplotlib.pyplot as plt
-# Plot
-plt.pie(extensions.values(), labels=extensions.keys(), 
-        autopct='%1.1f%%', shadow=True, startangle=140)
-plt.axis('equal')
-plt.show()
+pprint(month_vendor[curr_month])
+
+
+# keys = [k for k in times.keys() if k < '12:00']\
+#     + [k for k in times.keys() if k >= '12:00']
+
+# from matplotlib import pyplot as plt
+# plt.bar(keys, times.values(),
+#         label="times", width=.5, align='center')
+
+# plt.legend()
+# plt.xlabel('Times')
+# plt.ylabel('Counts')
+# plt.title('Time Distribution')
+# plt.show()
+
+# plt.pie(extensions.values(), labels=extensions.keys(),
+#         autopct='%1.1f%%', shadow=True, startangle=140)
+# plt.axis('equal')
+# plt.show()

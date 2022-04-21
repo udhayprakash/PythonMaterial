@@ -1,8 +1,8 @@
 Python Interview Questions  & their answers
 ============================================
 Q1) What is the purpose of python decorators, and how can they be used?
-Ans) Generally, functions are used for code reusability. 
-    Decorators are the functions used to handle redundant code among 
+Ans) Generally, functions are used for code reusability.
+    Decorators are the functions used to handle redundant code among
     multiple functions.
 
     WITHOUT decorator:
@@ -49,31 +49,31 @@ Q2)	What is the purpose of the property decorator?
 Ans) In a class, to access a method as a variable, we need property decorator.
     property decorator comes with attributes:
          getter()  --> To retrieve a method as a variable
-         setter()  --> To set the value to the method 
-         deletter()--> Executes when "del" operator is invoked against this method 
+         setter()  --> To set the value to the method
+         deletter()--> Executes when "del" operator is invoked against this method
 
 Q3) What is the purpose of PYTHONPATH, and how do you modify it?
-Ans) It is an environment variable, storing directory where python looks for 
-    modules & packages. For recent installations, it will be automatically set, during 
+Ans) It is an environment variable, storing directory where python looks for
+    modules & packages. For recent installations, it will be automatically set, during
     python installation.
 
 Q4) Which builtin types are mutable/immutable?
-Ans) Mutable objects - objects which support changes(add/modify/delete) on them 
+Ans) Mutable objects - objects which support changes(add/modify/delete) on them
         Ex: list, dict, set , ordinary class instance
-     Immutable objects - objects which doesnt support changes on them 
+     Immutable objects - objects which doesnt support changes on them
         Ex: tuple, frozenset, instance of class with __slots__ defined
 
 Q5) What is the purpose of *args and **kwargs?
-Ans) variadic functions - functions which support any number of arguments. 
+Ans) variadic functions - functions which support any number of arguments.
     *args - defining it in function definition means to take any no. of arguments
-           in function calls; all given elements will be part of a tuple. 
-    **kwargs - defining it in function definition means to take any no. of keyword 
+           in function calls; all given elements will be part of a tuple.
+    **kwargs - defining it in function definition means to take any no. of keyword
            arguments in function calls; all given elements will be part of dictionary.
 
     EXAMPLE:
     ===========
         def my_func(arg1, *arg2, **arg3):
-            pass 
+            pass
 
         my_func(10, 1, '1', 'a', a='apple', b=True)
 
@@ -82,30 +82,30 @@ Ans) variadic functions - functions which support any number of arguments.
            arg3 (variable keyword argument) will store {'a': 'apple', 'b': True}
 
 Q6) How do you get current working dir in python?
-Ans) using below code: 
-        import os 
+Ans) using below code:
+        import os
         print("current working directory:", os.getcwd())
 
 Q7) How do you use ABCs? What contexts are they suitable for?
-Ans) ABC - abstract base class 
-    In project, when we want to create child classes, which should all have 
-    same methods (like a template of methods), those abc classes will be 
-    created and inherited in all the child classes. 
+Ans) ABC - abstract base class
+    In project, when we want to create child classes, which should all have
+    same methods (like a template of methods), those abc classes will be
+    created and inherited in all the child classes.
     This will ensure all the child classes with have same method names.
 
 Q8) What’s a list/dict comprehension? How do you create them? How do you filter items?
-Ans) comprehension is writing the for loop code in single line. 
-    Example: 
+Ans) comprehension is writing the for loop code in single line.
+    Example:
         even_nums = [num for num in range(10) if num % 2 == 0] # list comprehension
         even_nums = {num for num in range(10) if num % 2 == 0} # set comprehension
         even_nums = {num:num * num for num in range(10) if num % 2 == 0} # dict comprehension
-        
-    As shown above, if the elements are stored in key, value pairs and placed within {} braces, 
+
+    As shown above, if the elements are stored in key, value pairs and placed within {} braces,
     it is a dictionary comprehension.
 
 Q9) How do you create a nested comprehension? How does it compare to for loops?
-Ans) Nexted comprehension is placement of multiple for loops within same statement. 
-    Example: 
+Ans) Nexted comprehension is placement of multiple for loops within same statement.
+    Example:
         Method 1 (traditional):
             values = []
             for c in "aeiou":
@@ -115,38 +115,38 @@ Ans) Nexted comprehension is placement of multiple for loops within same stateme
         Method 2 (using comprehensions):
             values = [f'{c}:{num}' for c in "aeiou" for num in range(5) if num % 2 == 0]
 
-Q10) How do you sort a list? How about a list of dicts by one of the dict fields? 
+Q10) How do you sort a list? How about a list of dicts by one of the dict fields?
      How about multiple fields?
-Ans) A list can be sorted using list.sort() attribute, or using sorted() builtin function 
-       list.sort() - sorting with be inline on same object 
-       sorted(list)- new list object is created with sorted values 
+Ans) A list can be sorted using list.sort() attribute, or using sorted() builtin function
+       list.sort() - sorting with be inline on same object
+       sorted(list)- new list object is created with sorted values
 
-    Example: 
-        my_list = [{'name': 'John', 'age': 12, 'sex': 'male'}, 
-                    {'name': 'Jessi', 'age': 32, 'sex': 'female'}, 
+    Example:
+        my_list = [{'name': 'John', 'age': 12, 'sex': 'male'},
+                    {'name': 'Jessi', 'age': 32, 'sex': 'female'},
                     {'name': 'Jack', 'age': 34, 'sex': 'male'}]
 
         sorted(my_list, key=lambda obj: obj['name'])
 
-Q11) Given a list of dictionaries with keys "firstName" and "lastName", return the 
-     same list in ascending order of "lastName", then in ascending order of 
+Q11) Given a list of dictionaries with keys "firstName" and "lastName", return the
+     same list in ascending order of "lastName", then in ascending order of
      "firstName" for equal last names.
 Ans) sorted(my_list, key=lambda dt: (dt['lastName'], dt['firstName'])
 
-Q12) Given a string, return a dictionary where the keys are characters in the 
+Q12) Given a string, return a dictionary where the keys are characters in the
     string and the values count the number of occurrences of the character.
-Ans) 
+Ans)
     given_string = "abbbabababbabakjhkjassa"
 
     METHOD 1: using setdefault
-        
+
         counts = {}
         for each_char in given_string:
             counts.setdefault(each_char, 0)
             counts[each_char] += 1
         print(counts)
-        
-    METHOD 2: using collections.defaultdict 
+
+    METHOD 2: using collections.defaultdict
 
         from collections import defaultdict
         counts = defaultdict(int)
@@ -154,42 +154,42 @@ Ans)
             counts[each_chr] += 1
         print(counts)
 
-Q13) += operation on list of strings 
-Ans) 
-    >>> a = ['yes'] 
-    >>> a + 'no' 
+Q13) += operation on list of strings
+Ans)
+    >>> a = ['yes']
+    >>> a + 'no'
     Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     TypeError: can only concatenate list (not "str") to list
     >>>
-    >>> a += 'no' 
+    >>> a += 'no'
     >>> a
     ['yes', 'n', 'o']
     >>>
 Q14) Global namespace leak in python2
-Ans) 
-    In Python2.7, 
-        num = 5 
+Ans)
+    In Python2.7,
+        num = 5
         print num # 5
         mylist = [num for num in range(9)]
-        print num # 8    
-    In python3, 
-        num = 5 
+        print num # 8
+    In python3,
+        num = 5
         print(num) # 5
         mylist = [num for num in range(9)]
         print(num) # 5
 
-Q15) Problem with appending to the iterating list 
-Ans) 
+Q15) Problem with appending to the iterating list
+Ans)
     >>> x = ['ab', 'cd']
     >>> for i in x:
     ...     x.append(i.upper())
-    ... print(x)    
+    ... print(x)
     Traceback (most recent call last):
     File "<stdin>", line 2, in <module>
     MemoryError
 
-Q16) 
+Q16)
     def foo(x):
     x[0] = ['def']
     x[1] = ['abc']

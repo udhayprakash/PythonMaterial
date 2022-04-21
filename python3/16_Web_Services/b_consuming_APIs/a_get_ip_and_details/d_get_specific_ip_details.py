@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: Get IP details of specifc given IP address 
-    
+Purpose: Get IP details of specifc given IP address
+
     https://ipapi.co/api/{#location-of-a-specific-ip}/{# output format}
 """
 import os

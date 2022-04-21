@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, engine
 
 engine = create_engine('sqlite:///:memory:', echo=True)
-# echo=True will make SQLAlchemy to log all SQL commands it is doing while you apply commands. 
+# echo=True will make SQLAlchemy to log all SQL commands it is doing while you apply commands.
 # NOT recommended in production
 
 # conn = engine.connect()
@@ -18,10 +18,10 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 
-# Creating Tables 
+# Creating Tables
 from sqlalchemy.ext.declarative import declarative_base
 
-# To map which table in the db will be related to each class in our files, we will use a SQLAlchemy system called Declarative. 
+# To map which table in the db will be related to each class in our files, we will use a SQLAlchemy system called Declarative.
 Base = declarative_base()
 
 from sqlalchemy import Column, Integer, String
@@ -37,11 +37,11 @@ class User(Base):
         return f'User {self.name}'
 
 
-# Finally, to create all tables 
+# Finally, to create all tables
 Base.metadata.create_all(engine)
 
 
-# Adding new records, to table 
+# Adding new records, to table
 user = User(name='John Snow', password='johnspassword')
 
 # tO register the transaction
@@ -50,7 +50,7 @@ session.add(user)
 print(user.id)  # None
 
 # to commits (persists) those changes to the database.
-session.commit() 
+session.commit()
 
 
 # Making queries

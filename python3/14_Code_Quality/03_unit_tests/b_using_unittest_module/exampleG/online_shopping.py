@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 """
 
 class Item(object):
@@ -29,4 +29,3 @@ class ShoppingCart(object):
 
     def __len__(self):
         return len(self.items)
-

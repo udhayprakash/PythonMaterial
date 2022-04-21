@@ -18,7 +18,7 @@ def add_color_border(input_image, output_image, border, color=0):
     if isinstance(border, int) or isinstance(
         border, tuple):
         bimg = ImageOps.expand(img,
-                               border=border, 
+                               border=border,
                                fill=color)
     else:
         msg = 'Border is not an integer or tuple!'
@@ -26,8 +26,8 @@ def add_color_border(input_image, output_image, border, color=0):
     bimg.save(output_image)
 
 if __name__ == "__main__":
-    add_border('images/butterfly.png', 
+    add_border('images/butterfly.png',
             output_image='images/butterfly_border.png', border=100)
-    add_color_border('images/butterfly.png', 
+    add_color_border('images/butterfly.png',
             output_image='images/butterfly_color_border.png', border=100,
                color='indianred')

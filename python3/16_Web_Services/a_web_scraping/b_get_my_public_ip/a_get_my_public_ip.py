@@ -23,10 +23,10 @@ print(content)
 # Method 1
 # print(content.split('Current IP Address: ')[1])
 my_public_ip = content.split('Current IP Address: ')[1].split('</body>')[0]
-print("My Public IP Address is: ", my_public_ip)
+print('My Public IP Address is: ', my_public_ip)
 
 
 # Method 2 - Using Regular Expressions
-import re 
-my_public_ip = re.findall(r"\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}", content)[0]
-print("My Public IP Address is: ", my_public_ip)
+import re
+my_public_ip = re.findall(r'\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}', content)[0]
+print('My Public IP Address is: ', my_public_ip)

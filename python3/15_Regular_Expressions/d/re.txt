@@ -99,7 +99,7 @@ façade
 coöperate
 niño
 Renée
-Molière 
+Molière
 hæmoglobin
 naïve
 tschüß
@@ -123,7 +123,7 @@ Matching Words
 # string split is similar to splitting on "\s+"
 "A text   with some\tseparator".split()
 
-"\b*([A-Za-z]+)\b*"   # word boundaries 
+"\b*([A-Za-z]+)\b*"   # word boundaries
 "\s*([A-Za-z]+)\s*"   # might work too as on letters are allowed.
 
 re.search("\Bis\B","this thistle") # matches on thistle not on this
@@ -344,7 +344,7 @@ chunks = re.findall(r"""(?xms)       # multiline, dot matches lineend, allow com
                           )""",
                     open(sys.argv[1]).read())
 # [1] if "?:" is removed the result holds tuples: ('.Ch\nchapter x','.Ch')
-#     which might be more usefull. 
+#     which might be more usefull.
 Extracting a Range of Lines
 
 ##-----------------------------
@@ -416,7 +416,7 @@ tests = (("list.?",r"^list\..$"),
 def glob2pat(globstr):
     pat = globstr.replace("\\",r"\\")
     pat = pat.replace(".",r"\.").replace("?",r".").replace("*",r".*")
-    
+
     return "^"+pat+"$"
 
 for globstr, patstr in tests:
@@ -549,7 +549,7 @@ for filename in filter(os.path.isfile,sys.argv[2:]):
                 parano += 1
                 if pat_re.search(para):
                         print filename, parano, para, "\n"
-                        
+
 
 
 # ----
@@ -632,7 +632,7 @@ if tail:
     print "Found %s after the last number."%tail.group(0)
 Greedy and Non-Greedy Matches
 
-# Python's regexes are based on Perl's, so it has the non-greedy 
+# Python's regexes are based on Perl's, so it has the non-greedy
 # '*?', '+?', and '??' versions of '*', '+', and '?'.
 # DO NOT DO THIS. import htmllib, formatter, etc, instead
 #-----------------------------
@@ -653,7 +653,7 @@ print re.findall("<b><i>((?:(?!<b>|<i>).)*)</i></b>", txt)
 print re.findall("<b><i>((?:(?!<[ib]>).)*)</i></b>", txt)
 ##-----------------------------
 print re.findall("""
-    <b><i> 
+    <b><i>
     [^<]*  # stuff not possibly bad, and not possibly the end.
     (?:    # at this point, we can have '<' if not part of something bad
      (?!  </?[ib]>  )   # what we can't have
@@ -718,7 +718,7 @@ def diaphantine(n, x, y, z):
         print "No solutions."
     else:
         print "One solution is: x=%s, y=%s, z=%s."%tuple(vals)
-        
+
 diaphantine(n=281, x=12, y=15, z=16)
 Expressing AND, OR, and NOT in a Single Pattern
 
@@ -850,7 +850,7 @@ for action in ("SEND", "STOP", "ABORT", "LIST", "EDIT"):
         print "Action is %s."%action.lower()
 ##-----------------------------
 import re, sys
-def handle_cmd(cmd):    
+def handle_cmd(cmd):
     cmd = re.escape(cmd.strip())
     for name, action in {"edit": invoke_editor,
                          "send": deliver_message,
@@ -871,11 +871,11 @@ import re, sys, fileinput
 
 def urlify_string(s):
     urls = r'(http|telnet|gopher|file|wais|ftp)'
-    
+
     ltrs = r'\w';
     gunk = r'/#~:.?+=&%@!\-'
     punc = r'.:?\-'
-    any  = ltrs + gunk + punc 
+    any  = ltrs + gunk + punc
 
     pat = re.compile(r"""
       \b                    # start at word boundary
@@ -1035,7 +1035,7 @@ capwords = [word for word in txt.split() if word.isupper()]
 # Otherwise
 capwords = [word for word in re.findall(r"\b(\S+)\b", txt) if word.isupper()]
 
-# (probably) DON'T DO THIS. 
+# (probably) DON'T DO THIS.
 capwords = re.findall(r"(\b[^\Wa-z0-9_]+\b)", txt)
 ##-----------------------------
 # If the words are clearly delimited just use:
@@ -1044,7 +1044,7 @@ lowords = [word for word in txt.split() if word.islower()]
 # Otherwise
 lowords = [word for word in re.findall(r"\b(\S+)\b", txt) if word.islower()]
 
-# (probably) DON'T DO THIS. 
+# (probably) DON'T DO THIS.
 lowords = re.findall(r"(\b[^\WA-Z0-9_]+\b)", txt)
 ##-----------------------------
 # If the words are clearly delimited just use:
@@ -1053,7 +1053,7 @@ icwords = [word for word in txt.split() if word.istitle()]
 # Otherwise
 icwords = [word for word in re.finditer(r"\b(\S+)\b") if word.istitle()]
 
-# DON'T DO THIS. 
+# DON'T DO THIS.
 icwords = re.findall(r"(\b[^\Wa-z0-9_][^\WA-Z0-9_]*\b)", txt)
 ##-----------------------------
 # DON'T DO THIS - use HTMLParser, etc.
@@ -1065,7 +1065,7 @@ if len(names) == 3:
 else:
     initial = ""
 
-# DON'T DO THIS. 
+# DON'T DO THIS.
 pat = "^\S+\s+(\S)\S*\s+\S"
 try:
     initial = re.match(pat, txt).group(1)
@@ -1104,6 +1104,6 @@ for line in file(fname, "Ur"):          #Universal newlines
     process(line)
 
 # DON'T DO THIS
-lines = [re.sub(r"^([^\012\015]*)(\012\015?|\015\012?)", "", line) 
+lines = [re.sub(r"^([^\012\015]*)(\012\015?|\015\012?)", "", line)
          for line in file(fname)]
 ##-----------------------------

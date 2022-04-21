@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
-Purpose: StringIO Module 
+Purpose: StringIO Module
     - Implements an in-memory file like object.
-    - This object can then be used as input or 
-      output to most functions that would expect 
-      a standard file object. 
+    - This object can then be used as input or
+      output to most functions that would expect
+      a standard file object.
 
 cStringIO is c based implementation for StringIO,
 which is faster.
@@ -35,6 +35,6 @@ f.seek(0)
 print(f'\n current cursor postion is {f.tell()}')
 print('Again', f.read())
 
-f.close() 
+f.close()
 # f.read()
-# ValueError: I/O operation on closed file      
+# ValueError: I/O operation on closed file

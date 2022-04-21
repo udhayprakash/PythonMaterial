@@ -6,7 +6,7 @@ import re
 
 # print(dir(re))
 
-target_string = "Python Programming is good for health"
+target_string = 'Python Programming is good for health'
 search_string = 'Python'
 
 print(f'{target_string.find(search_string) =}')

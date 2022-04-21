@@ -1,20 +1,20 @@
-Pytest 
-    - most popular python package for testing 
+Pytest
+    - most popular python package for testing
     - basis for rich ecosystem of testing plugins and extensions
     - Not unittest
-    - Need to install 
-        pip install -U pytest 
-        
+    - Need to install
+        pip install -U pytest
+
         ~pytest --version
          pytest 6.0.0
-    - pytest will run all files of the form test_*.py or *_test.py in 
+    - pytest will run all files of the form test_*.py or *_test.py in
       the current directory and its subdirectories.
     - pytest provides Builtin fixtures/function arguments to request arbitrary resources, like a unique temporary directory:
     - commands
         pytest --version # shows where pytest was imported from
         pytest --fixtures # show available builtin function arguments
         pytest -h | --help # show help on command line and config file options
-    
+
     - Running pytest can result in six different exit codes:
         Exit code 0 All tests were collected and passed successfully
         Exit code 1 Tests were collected and run but some of the tests failed

@@ -1,6 +1,6 @@
 import tarfile
 
-# creating files 
+# creating files
 open('fileOne.txt', 'w').write('This is first line')
 open('fileTwo.txt', 'w').write('This is second line')
 open('fileThree.txt', 'w').write('This is third line')
@@ -14,8 +14,8 @@ with tarfile.open('tarFileOne.tar', mode = 'w') as tF:
 with tarfile.open('tarFileOne.tar', mode = 'a') as tF:
     tF.add('fileThree.txt')
 
-# deleting existing files 
-import os 
+# deleting existing files
+import os
 os.remove('fileOne.txt')
 os.remove('fileTwo.txt')
 os.remove('fileThree.txt')

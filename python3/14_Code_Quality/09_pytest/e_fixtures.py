@@ -4,11 +4,11 @@ import pytest
 
 @pytest.fixture()
 def my_fruit():
-    return "apple"
+    return 'apple'
 
 
 def test_fruit(my_fruit):
-    assert my_fruit == "apple"
+    assert my_fruit == 'apple'
 
 # ======================================================
 

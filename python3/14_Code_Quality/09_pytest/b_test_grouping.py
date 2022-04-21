@@ -16,9 +16,9 @@ def test_add_neg_num():
 
 """
 To run all,
-    $ pytest 
+    $ pytest
 
-To run all in verbose mode, 
+To run all in verbose mode,
     $ pytest -v
 
 To run all test cases, under a group,
@@ -31,6 +31,6 @@ To set the maximum test duration,
     $ pytest --duration=10
 
 
-JUnit-Style Logs, 
-    $ py.test --junitxml=result.xml 
+JUnit-Style Logs,
+    $ py.test --junitxml=result.xml
 """

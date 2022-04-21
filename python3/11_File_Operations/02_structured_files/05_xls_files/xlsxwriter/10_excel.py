@@ -13,7 +13,7 @@ worksheet = workbook.add_worksheet()
 date_time = datetime.now()
 worksheet.write_datetime(0, 0, date_time)  # Formatted as 'dd/mm/yy'
 
-# Timezone handling 
+# Timezone handling
 utc_datetime = datetime(2016, 9, 23, 14, 13, 21, tzinfo=utc)
 naive_datetime = utc_datetime.replace(tzinfo=None)
 

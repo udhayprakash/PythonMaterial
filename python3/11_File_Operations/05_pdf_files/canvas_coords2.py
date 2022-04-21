@@ -1,4 +1,4 @@
-from reportlab.pdfgen import canvas    
+from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
 
 def coord(x, y, unit=1):

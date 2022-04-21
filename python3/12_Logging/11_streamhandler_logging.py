@@ -7,7 +7,7 @@ Purpose: To display the logs in console only
     step 3: add the handler to logger object
     step 4: use the logger object for logging
 """
-import logging 
+import logging
 
 # create console handler and set level to debug
 ch = logging.StreamHandler()

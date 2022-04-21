@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("books.db")
+conn = sqlite3.connect('books.db')
 cursor = conn.cursor()
 
 # insert a record into the database
@@ -19,5 +19,5 @@ books = [('Python Interviews', 'Mike Driscoll',
           'Al Sweigart', '', 'No Starch Press', 'PDF'),
          ('The Well-Grounded Python Developer',
           'Doug Farrell', '2020', 'Manning', 'Kindle')]
-cursor.executemany("INSERT INTO books VALUES (?,?,?,?,?)", books)
+cursor.executemany('INSERT INTO books VALUES (?,?,?,?,?)', books)
 conn.commit()

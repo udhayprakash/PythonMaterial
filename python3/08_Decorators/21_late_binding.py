@@ -10,7 +10,7 @@ from functools import partial
 
 
 def problem():
-    """ Late binding - all functions will get last value . 
+    """ Late binding - all functions will get last value .
     Because values of variables used in closures are looked up at the time of
     calling the inner function."""
     return [lambda x: i * x for i in range(4)]

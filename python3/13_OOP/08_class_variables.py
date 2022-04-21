@@ -38,6 +38,7 @@ class Employee(object):
         print('\nDestructor is called')
         Employee.emp_count -= 1
 
+
 if __name__ == '__main__':
     # instantiation
     empl_1 = Employee('Udhay', 200000)
@@ -54,3 +55,24 @@ if __name__ == '__main__':
     empl_3 = Employee('Akhila')
     print(vars(empl_3))
     empl_3.total_employees_count()
+
+
+# =================================================
+# class variables can be modified at instance level,
+# by the changes will reflect only to that instance
+class Demo:
+    counter = 10
+
+    def change_counter(self):
+        self.counter += 1
+
+
+obj1 = Demo()
+print(Demo.counter, end=' ')
+obj1.change_counter()
+print(Demo.counter)
+
+obj2 = Demo()
+print(Demo.counter, end=' ')
+obj2.change_counter()
+print(Demo.counter)

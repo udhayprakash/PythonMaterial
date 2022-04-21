@@ -8,6 +8,7 @@ Purpose: Encapsulation in OOP
 """
 from pprint import pprint
 
+
 class Car:
     a = 'public class variable'
     _a = 'protected class variable'
@@ -42,7 +43,7 @@ if __name__ == '__main__':
     print('\n ------------Class Level -------')
     pprint(vars(Car))
     {
-        'a': 'public class variable', 
+        'a': 'public class variable',
         '_a': 'protected class variable',
         '_Car__a': 'private class variable',
     }

@@ -10,10 +10,10 @@ class ContextFilter(logging.Filter):
         return True
 
 handler = logging.StreamHandler()
-handler.formatter = logging.Formatter("%(global_data)s %(message)s")
+handler.formatter = logging.Formatter('%(global_data)s %(message)s')
 handler.addFilter(ContextFilter())
 logger = logging.getLogger(__name__)
 logger.addHandler(handler)
 
-logger.error("Hi1")
-logger.error("Hi2")
+logger.error('Hi1')
+logger.error('Hi2')

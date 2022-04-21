@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: To get the Astronomers living in ISS now
-    
+
     http://api.open-notify.org/astros.json
 """
 import requests

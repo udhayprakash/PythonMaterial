@@ -6,7 +6,7 @@ class Foo:
         x = 20
 
     def bar(self):
-        pass 
+        pass
 
 class TestFoo(TestCase):
     @patch('__main__.Foo', autospec=True)
@@ -15,7 +15,7 @@ class TestFoo(TestCase):
         # f.x    # AttributeError
         f.x = 20  # solution
 
-# NOTE: autospec can't recognize dynamically 
+# NOTE: autospec can't recognize dynamically
 # created objects/attributes
 
 if __name__ == '__main__':

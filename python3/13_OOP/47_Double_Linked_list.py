@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Double Linked List 
+Purpose: Double Linked List
 
 
   h  e  l  l  o

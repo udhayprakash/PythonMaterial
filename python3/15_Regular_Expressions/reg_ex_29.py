@@ -35,9 +35,9 @@ A(?!B) | Negative lookahead assertion. This matches the expression A only if it 
 (...)\1 | The number 1 corresponds to the first group to be matched. If we want to match more instances of the same expresion, simply use its number instead of writing out the whole expression again. We can use from 1 up to 99 such groups and their corresponding numbers.
 
 """
-import re 
-result = re.search(r'([A-Za-z]{3})\s(\d{1,2})', 'Feb 5')             
-# without ?: syntax; matches 3 letter month, followed by a space, 
+import re
+result = re.search(r'([A-Za-z]{3})\s(\d{1,2})', 'Feb 5')
+# without ?: syntax; matches 3 letter month, followed by a space,
 # followed by a 1 to 2 digit number.
 result.groups()  # ('Feb', '5')
 
@@ -60,8 +60,8 @@ result.groups()   # ('5',)
 '''
 >>> re.search('ETHAN', 'Ethan')                        # does not match
 >>> re.search('(?i)ETHAN', 'Ethan')                    # matches
-<_sre.SRE_Match object; span=(0, 5), match='Ethan'>  
- 
+<_sre.SRE_Match object; span=(0, 5), match='Ethan'>
+
 # s: the dotall flag; it makes the dot match all characters, including newline character
 >>> re.search('...', 'Hi\n')                       # does not match
 >>> re.search('(?s)...', 'Hi\n')                   # matches
@@ -90,7 +90,3 @@ Once you have gotten the control characters out of the way, you can bring in the
 
 re.purge() function clears the regular expression caches.
 '''
-
-
-
-

@@ -45,7 +45,7 @@ twrt_scrp.credentials_verification()
 
 # Latest Public Timeline
 tweet = twrt_scrp.api.home_timeline()[0]
-print(f''' 
+print(f'''
 tweet.text                          : {tweet.text}
 tweet.contributors                  : {tweet.contributors}
 tweet.created_at                    : {tweet.created_at}

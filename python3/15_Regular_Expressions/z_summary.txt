@@ -11,11 +11,11 @@ $   : matches ending of a string respectively.
 ( ) : used to capture portions of an expression; also used to denote precedence especially in complex expressions; (?:...) makes represents the non-grouping version of ().
 { } : {m,n} matches m to n repetitions of the preceding expression
 \   : used to escape control characters or signal a control sequence (e.g. \w, \W etc.) or special characters such as \n, \t etc.
- 
+
 ############## PYTHON SPECIFIC EXTENSIONS ?P DISCUSSED IN THIS ARTICLE ################
 (?P<name>...) The substring matched by the group is accessible by name.
 (?P=name)     Matches the text matched earlier by the group named name.
- 
+
 ############## FLAGS IN PYTHON SPECIFIC EXTENSIONS ?P ################
 i: tells the searching engine to ignore case
 L: makes \w, \b, and \s locale dependent
@@ -23,7 +23,7 @@ m: enables multiline expression
 s: the dotall flag; it makes the dot match all characters, including newline character
 u: makes \w, \b, \d, and \s unicode dependent
 x: makes the expression verbose i.e. ignores unescaped whitespace as well as text after # sign i.e. it treats text after # as comments.
- 
+
 ############# VALID VALUES FOR OPTIONAL ARGUMENT flag IN FUNCTIONS OF re MODULE ###############
 A  also re.ASCII        Makes \w, \W, \b, \B, \d, \D match the corresponding ASCII character categories
                         (rather than the whole Unicode categories, which is the default) for string patterns.
@@ -34,7 +34,7 @@ M  also re.MULTILINE    Makes "^" match the beginning of lines (after a newline)
 S  also re.DOTALL       Makes "." match any character at all, including the newline.
 X  also re.VERBOSE      Asks Regex Engine to ignore whitespace and comments.
 U  also re.UNICODE      Asks the Regex Engine to use the Unicode character set for substitution, which is default for string patterns.
- 
+
 ############### CONTROL SEQUENCES ###############
 \d       matches numerals or digits; is equivalent to the character class [0-9]
 \D       matches non-numeral or non-digit characters; equivalent to [^0-9]
@@ -48,7 +48,7 @@ U  also re.UNICODE      Asks the Regex Engine to use the Unicode character set f
 \b       matches an empty string at word boundaries; \b is defined as the boundary between a \w & \W character or between \w and the two ends of a string; note that you will need to write your regex containing \b sequences with raw string notation i.e. r'patternContaining\bSequences', since \b in regular string notation denotes the backspace character. Alternatively, you can use two backslashes to mean the same i.e. 'patternContaining\\bSequences'.
 \B       matches an empty string not at word boundaries i.e. re.search('\Bam\B', 'name') will get return a match whereas '\Bn' will not, since there is a word boundary right before the letter n;
 # In order to match a literal backslash, use the raw string notation, i.e. re.search(r'\\', 'x\\y'). Alternatively, you can escape both the backslashes by prefixing each of them with another backslash i.e. re.search('\\\\', 'x\\y')
- 
+
 ######### FUNCTIONS OF re MODULE DISCUSSED IN THIS ARTICLE ############
 * match(pattern, stringSource, flags=0) applies the pattern at the beginning of the string and returns a match object if a match is found, and if no match is found, returns None
 * search(pattern, stringSource, flags=0) applies the pattern in the entire of the string and returns a match object if a match is found, and if no match is found, returns None
@@ -61,7 +61,7 @@ U  also re.UNICODE      Asks the Regex Engine to use the Unicode character set f
 * finditer(pattern, stringSource, flags = 0) performs the same way as findall(), except for the fact that it returns an iterator of match objects in case there are no capturing groups, instead of a list. If there are groups in the expression, then an iterator of tuples of matches of these groups is returned.
 * escape(pattern) asks the regular expression engine to escape all the characters in pattern except letters, numbers & underscore(_).
 * purge()function clears the regular expression caches.
- 
+
 ############ FUNCTIONS OF MATCH OBJECT DISCUSSED IN THIS ARTICLE ############
 * end(): returns index of the original string where the match ended.
 * groups(): returns a tuple of groups of the matched string.

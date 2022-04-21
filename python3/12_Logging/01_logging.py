@@ -9,8 +9,8 @@ import sys
 
 
 print('This is print message')
-sys.stderr.write("This is sys.stderr write message\n")
-sys.stdout.write("This is sys.stdout write message\n")
+sys.stderr.write('This is sys.stderr write message\n')
+sys.stdout.write('This is sys.stdout write message\n')
 print()
 
 logging.debug('This is debug message')

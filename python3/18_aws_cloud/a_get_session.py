@@ -9,7 +9,7 @@ import boto3
 # aws configure
 session = boto3.Session()
 
-print(f''' 
+print(f'''
     {session                            =}
     {session.profile_name               =}
     {session.available_profiles         =}
@@ -20,11 +20,11 @@ print(f'''
 ''')
 
 creds = session.get_credentials()
-print(f''' 
+print(f'''
     {creds.access_key =}
 ''') # {creds.secret_key =}
 
-# Its recommended to create own session 
+# Its recommended to create own session
 import boto3.session
 
 # Create your own session

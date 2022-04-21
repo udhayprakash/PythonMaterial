@@ -3,7 +3,7 @@ from unittest import TestCase, main
 
 class Foo:
     def bar(self):
-        pass 
+        pass
 
 class TestFoo(TestCase):
     @patch('__main__.Foo', spec=True)
@@ -12,7 +12,7 @@ class TestFoo(TestCase):
         f.bar()
         mock_foo.bar.assrt_called_with() # PASS
 
-# NOTE: spec cant find objects within objects. 
+# NOTE: spec cant find objects within objects.
 # so, we should go with autospec
 class TestFoo2(TestCase):
     @patch('__main__.Foo', autospec=True)

@@ -16,7 +16,7 @@ def get_location_coordinates(search_string):
     # pprint(response)
     for each in response:
         result_string = '''====Search Result=====\n{DISPLAY_NAME}
-                           latitude: {LATITUDE} 
+                           latitude: {LATITUDE}
                            longitude:{LONGITUDE}'''.format(
             DISPLAY_NAME=each.get('display_name'),
             LATITUDE=each.get('lat'),

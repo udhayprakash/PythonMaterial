@@ -5,14 +5,14 @@ import urllib3
 from lxml import html
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
- 
+
 def linkedin_companies_parser(url):
     for i in range(5):
         try:
             headers = {
                         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
             }
-            print("Fetching :",url)     
+            print('Fetching :',url)
             response = requests.get(url, headers = headers,verify=False)
             formatted_response = response.content.replace('<!--', '').replace('-->', '')
             doc = html.fromstring(formatted_response)
@@ -23,7 +23,7 @@ def linkedin_companies_parser(url):
             if content_about:
                 pass
                 # json_text = content_about[0].html_content().replace('<code id="stream-footer-embed-id-content"><!--','').replace('<code id="stream-about-section-embed-id-content"><!--','').replace('--></code>','')
-            
+
             if datafrom_xpath:
                 try:
                     json_formatted_data = json.loads(datafrom_xpath[0])
@@ -37,13 +37,13 @@ def linkedin_companies_parser(url):
                     type = json_formatted_data['companyType'] if 'companyType' in list(json_formatted_data.keys()) else None
                     specialities = json_formatted_data['specialties'] if 'specialties' in list(json_formatted_data.keys()) else None
 
-                    if "headquarters" in list(json_formatted_data.keys()):
-                        city = json_formatted_data["headquarters"]['city'] if 'city' in list(json_formatted_data["headquarters"].keys()) else None
-                        country = json_formatted_data["headquarters"]['country'] if 'country' in list(json_formatted_data['headquarters'].keys()) else None
-                        state = json_formatted_data["headquarters"]['state'] if 'state' in list(json_formatted_data['headquarters'].keys()) else None
-                        street1 = json_formatted_data["headquarters"]['street1'] if 'street1' in list(json_formatted_data['headquarters'].keys()) else None
-                        street2 = json_formatted_data["headquarters"]['street2'] if 'street2' in list(json_formatted_data['headquarters'].keys()) else None
-                        zip = json_formatted_data["headquarters"]['zip'] if 'zip' in list(json_formatted_data['headquarters'].keys()) else None
+                    if 'headquarters' in list(json_formatted_data.keys()):
+                        city = json_formatted_data['headquarters']['city'] if 'city' in list(json_formatted_data['headquarters'].keys()) else None
+                        country = json_formatted_data['headquarters']['country'] if 'country' in list(json_formatted_data['headquarters'].keys()) else None
+                        state = json_formatted_data['headquarters']['state'] if 'state' in list(json_formatted_data['headquarters'].keys()) else None
+                        street1 = json_formatted_data['headquarters']['street1'] if 'street1' in list(json_formatted_data['headquarters'].keys()) else None
+                        street2 = json_formatted_data['headquarters']['street2'] if 'street2' in list(json_formatted_data['headquarters'].keys()) else None
+                        zip = json_formatted_data['headquarters']['zip'] if 'zip' in list(json_formatted_data['headquarters'].keys()) else None
                         street = street1 + ', ' + street2
                     else:
                         city = None
@@ -73,17 +73,17 @@ def linkedin_companies_parser(url):
                             }
                     return data
                 except:
-                    print("cant parse page", url)
+                    print('cant parse page', url)
 
             # Retry in case of captcha or login page redirection
-            if len(response.content) < 2000 or "trk=login_reg_redirect" in url:
+            if len(response.content) < 2000 or 'trk=login_reg_redirect' in url:
                 if response.status_code == 404:
-                    print("linkedin page not found")
+                    print('linkedin page not found')
                 else:
                     raise ValueError('redirecting to login page or captcha found')
         except :
-            print("retrying :",url)
- 
+            print('retrying :',url)
+
 def readurls():
     companyurls = ['https://www.linkedin.com/company/tata-consultancy-services']
     extracted_data = []
@@ -91,6 +91,6 @@ def readurls():
         extracted_data.append(linkedin_companies_parser(url))
         f = open('data.json', 'w')
         json.dump(extracted_data, f, indent=4)
- 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     readurls()

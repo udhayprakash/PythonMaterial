@@ -35,4 +35,4 @@ print('exists:', data.exists)
 print('foo   :', data.foo)
 
 del data.foo
-print(vars(data))   
+print(vars(data))

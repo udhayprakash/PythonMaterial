@@ -38,7 +38,7 @@ Contents of this server:
 	Trees with crypto material, such as PGP
 
 /pub/languages
-	Trees for several programming languages: GCC, Python, Perl and the 
+	Trees for several programming languages: GCC, Python, Perl and the
 	Perl CPAN archive, tcl, java JDK
 
 /pub/comp
@@ -48,11 +48,11 @@ Contents of this server:
 	Trees with the Gimp and ImageMagick
 
 /pub/internet
-	Trees with Internet software: apache, lynx, mozilla, squid and 
-	information from/about W3C and inn. 
+	Trees with Internet software: apache, lynx, mozilla, squid and
+	information from/about W3C and inn.
 
 /pub/mail
-	Trees with mail handling software, such as metamail, mutt, 
+	Trees with mail handling software, such as metamail, mutt,
 	postfix, sendmail and vm
 
 /pub/networking
@@ -101,10 +101,10 @@ Contents of this server:
 /pub/vim
 /pub/knoppix
 	All Quick links deeper in the tree
-ion from/about W3C and inn. 
+ion from/about W3C and inn.
 
 /pub/mail
-	Trees with mail handling software, such as metamail, mutt, 
+	Trees with mail handling software, such as metamail, mutt,
 	postfix, sendmail and vm
 
 /pub/networking

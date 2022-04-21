@@ -1,9 +1,9 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
 Purpose: Testing multiplication functionality in calculator
 """
-import sys 
-import unittest 
+import sys
+import unittest
 
 
 sys.path.insert(0, '..')

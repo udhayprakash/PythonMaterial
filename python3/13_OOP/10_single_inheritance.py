@@ -42,7 +42,7 @@ class MinimumBalanceAccount(Account):
 
     def withdraw(self, amount):
         if self.balance - amount < 100:
-            print("PLease maintain minimum balance. transaction failed!!!")
+            print('PLease maintain minimum balance. transaction failed!!!')
         else:
             Account.withdraw(self, amount)
 

@@ -5,14 +5,14 @@ from twython import Twython
 
 APP_KEY = '***'
 APP_SECRET = '***'
-ACCESS_TOKEN = "***"
-ACCESS_TOKEN_SECRET = "***"
+ACCESS_TOKEN = '***'
+ACCESS_TOKEN_SECRET = '***'
 
 twitter = Twython(APP_KEY, APP_SECRET,
                   ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 user_tweets = twitter.get_user_timeline(screen_name='_true_false', include_rts=True)
-tweets = ""
+tweets = ''
 for tweet in user_tweets:
     tweet = Twython.html_for_tweet(tweet)
     tweets += '<li>' + tweet + '</li>'
@@ -29,6 +29,6 @@ html = """
 
 """
 
-create_html = open("tweets.html", "w")
+create_html = open('tweets.html', 'w')
 create_html.write(html.encode('utf-8').strip())
 create_html.close()

@@ -1,6 +1,6 @@
-# Context Manager Level 
+# Context Manager Level
 import unittest
-from unittest.mock import patch 
+from unittest.mock import patch
 
 class TestFoo(unittest.TestCase):
     def test_foo(self):
@@ -10,36 +10,36 @@ class TestFoo(unittest.TestCase):
         y = my_module.foo()
         self.assertEquals(y, 5)
 
-# Function Decorator level 
+# Function Decorator level
 class TestFoo(unittest.TestCase):
     @patch('my_module.db_write')
     def test_foo(self, mock_write):
         pass
-    
+
     def test_foo2(self):
         pass
-    
 
-# Class Decorator level 
+
+# Class Decorator level
 @patch('my_module.db_write')
 class TestFoo(unittest.TestCase):
     def test_foo(self, mock_write):
         pass
-    
+
     def test_foo2(self, mock_write):
         pass
 
-# Multiple patches 
+# Multiple patches
 @patch('my_module.name')
 @patch('my_module.birthday')
 @patch('my_module.address')
 class TestHello(unittest.TestCase):
     def test_name_1(self, mock_address, mock_birthday, mock_name):
         pass
-    
+
     def test_name_2(self, mock_address, mock_birthday, mock_name):
         pass
-    
+
 # Manual Start/Stop
 class TestHello(unittest.TestCase):
     def setUp(self):
@@ -56,12 +56,12 @@ class TestHello(unittest.TestCase):
 
 
 # ----------------------------
-# PatcH - 
-# PatcH - spec 
+# PatcH -
+# PatcH - spec
 
-Limitations of mock 
-1. mock objects called with misspelled asserts wont throw error. 
-   Instead it thinks, "assrt_called_with" as new argument. 
+Limitations of mock
+1. mock objects called with misspelled asserts wont throw error.
+   Instead it thinks, "assrt_called_with" as new argument.
         mock_foo.assrt_called_with()
 2. Mocked objects called incorrectly pass silently.
 

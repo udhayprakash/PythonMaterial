@@ -10,3 +10,5 @@ if __name__ == '__main__':
     foo = [1, 2, 3]
     bar = id(foo)
     print(deref(bar))  # [1, 2, 3]
+
+    print(gc.get_objects()[:5])

@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
-Purpose: partialmethod() 
-    - function, which returns partialmethod descriptors. 
-    - You can think of it as the partial() function for methods. 
+Purpose: partialmethod()
+    - function, which returns partialmethod descriptors.
+    - You can think of it as the partial() function for methods.
     - This means, it is not intended to be callable, but as a way
-      to define new methods. 
+      to define new methods.
 """
 
 from functools import partialmethod

@@ -11,31 +11,31 @@ from numpy import *  # Another way of importing
 # Integer type array
 a = np.array([1, 4, 5, 8, ])  # default type is Integer.
 
-print("a=", a)
-print("type(a)=", type(a))
-print("type(a[2])=", type(a[2]))
+print('a=', a)
+print('type(a)=', type(a))
+print('type(a[2])=', type(a[2]))
 
-print("a[3]=", a[3])
-print("a[:2]=", a[:2])
+print('a[3]=', a[3])
+print('a[:2]=', a[:2])
 
 a[0] = 5.
-print("after assignment, a=", a)
-print("type(a[0])=", type(a[0]))
+print('after assignment, a=', a)
+print('type(a[0])=', type(a[0]))
 # -------------------------------------------
 # Float type array
 a = np.array([1, 4, 5, 8, ], float)
 
-print("a=", a)
-print("type(a)=", type(a))
-print("type(a[2])=", type(a[2]))
+print('a=', a)
+print('type(a)=', type(a))
+print('type(a[2])=', type(a[2]))
 
-print("a[:2]=", a[:2])
-print("a[3]=", a[3])
+print('a[:2]=', a[:2])
+print('a[3]=', a[3])
 # -------------------------------------------
 
 a[0] = 5
-print("after assignment, a=", a)
-print("type(a[0])=", type(a[0]))
+print('after assignment, a=', a)
+print('type(a[0])=', type(a[0]))
 
 '''
 Arrays can also be multi-dimensional.
@@ -46,18 +46,18 @@ Arrays can also be multi-dimensional.
 '''
 
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
-print("a=", a)
-print("a[0,0]=", a[0, 0])
-print("a[0,1]=", a[0, 1])
+print('a=', a)
+print('a[0,0]=', a[0, 0])
+print('a[0,1]=', a[0, 1])
 
 '''
 Array slicing works with multiple dimensions in the same way, as for lists
 '''
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
 
-print("a[1,:]=", a[1, :])
-print("a[:,2]=", a[:, 2])
-print("a[-1:, -2:]=", a[-1:, -2:])
+print('a[1,:]=', a[1, :])
+print('a[:,2]=', a[:, 2])
+print('a[-1:, -2:]=', a[-1:, -2:])
 
 print('a.shape=', a.shape)  # results in the dimensions of that array
 
@@ -65,23 +65,23 @@ print('a.shape=', a.shape)  # results in the dimensions of that array
 dtype property tells you what type of values are stored by the array.
 '''
 
-print("a.dtype=", a.dtype)
+print('a.dtype=', a.dtype)
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
-print("a=", a)
-print("len(a)=", len(a))
+print('a=', a)
+print('len(a)=', len(a))
 
 ''' in operator is used to test the presence of an element in an array. '''
-print("2 in a ", 2 in a)
-print("0 in a ", 0 in a)
+print('2 in a ', 2 in a)
+print('0 in a ', 0 in a)
 
 ''' Arrays can be reshaped using TUPLES that specify new dimensions. '''
 a = np.array(range(10), float)
 
-print("a=", a)
-print("a.shape = ", a.shape)
+print('a=', a)
+print('a.shape = ', a.shape)
 a = a.reshape((5, 2))  # possible reshapes will be the multiples of the total no. of elements.
-print("a=", a)
-print("a.shape = ", a.shape)
+print('a=', a)
+print('a.shape = ', a.shape)
 print("Notice that reshape function creates a new array and doesn't itself modify the original array.")
 
 ''' Python's name binding approach applies to arrays,also. '''
@@ -89,35 +89,35 @@ a = np.array([1, 2, 3], float)
 b = a
 c = a.copy()
 a[0] = 0
-print("a= ", a)
-print("b= ", b)
-print("c= ", c)
+print('a= ', a)
+print('b= ', b)
+print('c= ', c)
 # try hard copy and deepcopy problem with arrays, as an assignment.
 
 ''' Lists can also be created from arrays. '''
 a = np.array([1, 2, 3], float)
-print("a= ", a)
-print("a.tolist()   =", a.tolist())
+print('a= ', a)
+print('a.tolist()   =', a.tolist())
 print('list(a)      = ', list(a))
 
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
-print("a= ", a)
-print("a.tolist() =", a.tolist())
+print('a= ', a)
+print('a.tolist() =', a.tolist())
 print('list(a) = ', list(a))
 
 '''raw data to binary conversion'''
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
-print("a=", a)
+print('a=', a)
 s = a.tostring()
-print("s=", s)
+print('s=', s)
 a1 = np.fromstring(s)
-print("a1 = ", a1)
+print('a1 = ', a1)
 
 ''' The complete array can be filled with a single value. '''
 a = np.array([[1, 2, 3], [4, 5, 6]], float)
-print("a= ", a)
+print('a= ', a)
 a.fill(99)
-print("a= ", a)
+print('a= ', a)
 
 # ''' Transposed versions of arrays can also be generated, which will create a new array with the final two axes switched.'''
 # a = np.array(range(6), float).reshape((2, 3))

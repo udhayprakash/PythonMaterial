@@ -1,12 +1,12 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 """
-from unittest import TestCase, main 
+from unittest import TestCase, main
 from unittest.mock import Mock, patch, PropertyMock
 
 class Foo:
-    x = 10 
+    x = 10
 
 class Bar:
     x = 20

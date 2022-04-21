@@ -26,7 +26,7 @@ with open('file2.txt', 'rb') as file2:
 #
 # result = file2_data
 
-# Method 2 
+# Method 2
 result = set(file2_data) - set(file1_data)  # set difference operation
 
 # writing that data to file2_formatted.txt

@@ -11,7 +11,7 @@ print(yaml.dump(users))
 my_dict = {
     'a': 1,
     'b': True,
-    "c": False,
+    'c': False,
     'd': None
 }
 

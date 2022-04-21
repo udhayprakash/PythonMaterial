@@ -27,7 +27,7 @@ def test_case01():
 
 
 def test_uppercase():
-    assert "loud noises".upper() == "LOUD NOISES"
+    assert 'loud noises'.upper() == 'LOUD NOISES'
 
 
 def test_reversed():

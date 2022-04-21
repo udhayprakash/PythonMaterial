@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: working with RSS feeds 
+Purpose: working with RSS feeds
     # pip install feedparser
     # REF: https://www.slideshare.net/LindseySmith1/feedparser
 """
@@ -8,7 +8,7 @@ Purpose: working with RSS feeds
 import feedparser
 
 d = feedparser.parse('http://www.reddit.com/r/python/.rss')
-import ipdb; ipdb.set_trace()
+
 print(d['feed']['title'])
 print(d['feed']['link'])
 print(d.feed.subtitle)

@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+      - id: check-json
+      # - id: pretty-format-json
+      - id: check-added-large-files
+      - id: requirements-txt-fixer
+      - id: check-merge-conflict
+      - id: debug-statements
+        exclude: python3/14_Code_Quality/python_2to3_ex.py
+
+      - id: mixed-line-ending
+      - id: trailing-whitespace

@@ -28,5 +28,5 @@ matched_emails = re.findall('[a-zA-Z0-9_.]+@[a-zA-Z0-9_.]+', email_ids)
 for each in matched_emails:
     print(each)
 
-# Assignment: 
+# Assignment:
 # 1. FInd all the valid Phone numbers in the given target string

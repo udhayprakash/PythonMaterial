@@ -10,13 +10,13 @@ pattern
 """
 import re
 
-result = re.search('pyTHoN', "PyTHOn Programming is good", re.I)
-print(f'\nresult:{result}') 
+result = re.search('pyTHoN', 'PyTHOn Programming is good', re.I)
+print(f'\nresult:{result}')
 
-result = re.search('pyTHoN$', "PyTHOn Programming is good", re.I)
+result = re.search('pyTHoN$', 'PyTHOn Programming is good', re.I)
 print(f'\nresult:{result}')  # None
 
-result = re.search('pyTHoN$', "Programming is good in PyTHOn", re.I)
+result = re.search('pyTHoN$', 'Programming is good in PyTHOn', re.I)
 print(f'\nresult:{result}')
 
 if result:

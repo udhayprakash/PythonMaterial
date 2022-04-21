@@ -1,12 +1,12 @@
-To run a specific test script, 
-    python test_mymod.py 
+To run a specific test script,
+    python test_mymod.py
 
-To run all the test script in the directory, 
+To run all the test script in the directory,
     python -m unittest
 
-    Then, It will run all the files which have 'test_' as prefix. 
-    
-To run for coverage 
+    Then, It will run all the files which have 'test_' as prefix.
+
+To run for coverage
     coverage run -m unittest
-    coverage report 
+    coverage report
     coverage html

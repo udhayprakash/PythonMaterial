@@ -20,7 +20,7 @@ questions = copy.deepcopy(original_questions)
 
 def shuffle(q):
     """
-    This function is for shuffling 
+    This function is for shuffling
     the dictionary elements.
     """
     selected_keys = []

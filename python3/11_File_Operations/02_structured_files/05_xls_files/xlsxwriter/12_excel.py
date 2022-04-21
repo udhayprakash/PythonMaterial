@@ -1,10 +1,10 @@
 import xlsxwriter
 
-# By default, xlsxwriter stores all the data in memory for 
+# By default, xlsxwriter stores all the data in memory for
 # for any further cell formmatting; which can lead to memory errors
-#  if the holding capacity exceeds. 
+#  if the holding capacity exceeds.
 
-# The optimization works by flushing each row after a subsequent row is written. 
+# The optimization works by flushing each row after a subsequent row is written.
 
 
 workbook = xlsxwriter.Workbook('memory_ex.xlsx',

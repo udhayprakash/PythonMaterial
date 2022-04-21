@@ -36,7 +36,7 @@ def get_all_reviews(hotel, language):
 
     # Extrac reviews for every Page
     for pagination in range(1, 3):
-        print(f"Reviews Page: {pagination}")
+        print(f'Reviews Page: {pagination}')
         if pagination == 1:
             # Click in "Read More"
             page.execute_script("document.querySelector('.hotels-review-list-parts-ExpandableReview__cta--3U9OU').click();")
@@ -60,7 +60,7 @@ def get_all_reviews(hotel, language):
                 'review_text': review.find_elements_by_xpath('//q[@class="hotels-review-list-parts-ExpandableReview__reviewText--3oMkH"]')[reviews_count].text,
                 'review_date': review.find_elements_by_xpath('//div[@class="hotels-review-list-parts-EventDate__event_date--CRXs4"]')[reviews_count].text,
                 'review_header': review.find_elements_by_xpath('//div[@class="hotels-review-list-parts-ReviewTitle__reviewTitle--2Fauz"]')[reviews_count].text,
-                'review_rating': "XXXXX",
+                'review_rating': 'XXXXX',
                 'review_author': review.find_elements_by_xpath('//a[@class="ui_header_link social-member-event-MemberEventOnObjectBlock__member--35-jC"]')[reviews_count].text
             }
             review_total_pages.append(review_dict)
@@ -80,7 +80,7 @@ def core():
     hotels = ['https://www.tripadvisor.co/Hotel_Review-g150807-d152886-Reviews-The_Ritz_Carlton_Cancun-Cancun_Yucatan_Peninsula.html']
     language = 'en'
     for hotel in hotels:
-        print(f"IN PROCESS FOR: {hotel}")
+        print(f'IN PROCESS FOR: {hotel}')
         response = get_all_reviews(hotel, language)
         file = open('hotel_reviews.json', 'w', encoding='utf8')
         dump(response, file, indent=4, ensure_ascii=False)

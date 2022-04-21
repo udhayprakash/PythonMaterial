@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Configuring Logging Level 
+Purpose: Configuring Logging Level
 """
 import logging
 

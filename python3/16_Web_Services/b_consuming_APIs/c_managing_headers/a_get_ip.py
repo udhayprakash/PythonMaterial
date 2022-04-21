@@ -3,7 +3,7 @@
 Purpose: Get IP address
     http://httpbin.org/ip
 """
-import requests 
+import requests
 from pprint import pprint
 
 response = requests.get('http://httpbin.org/ip')

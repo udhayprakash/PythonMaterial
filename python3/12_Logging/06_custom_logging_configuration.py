@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Adding Logging configuration 
+Purpose: Adding Logging configuration
 
     %(asctime)s  : displays the date and time of the log, in local time
     %(levelname)s: the logging level of the message
@@ -8,7 +8,7 @@ Purpose: Adding Logging configuration
 """
 import logging
 
-FORMAT = "%(asctime)-15s %(client_ip)s %(user)-8s %(message)s"
+FORMAT = '%(asctime)-15s %(client_ip)s %(user)-8s %(message)s'
 logging.basicConfig(format=FORMAT)
 d = {'client_ip': '192.168.0.1', 'user': 'fbloggs'}
 
@@ -19,5 +19,5 @@ d = {'client_ip': '192.168.0.1', 'user': 'fbloggs'}
 #     level=logging.DEBUG)
 # logging.warning("Protocol problem: %s", "connection reset", extra=d)
 
-logger = logging.getLogger("tcpserver")
-logger.warning("Protocol problem: %s", "connection reset", extra=d)
+logger = logging.getLogger('tcpserver')
+logger.warning('Protocol problem: %s', 'connection reset', extra=d)

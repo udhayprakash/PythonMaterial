@@ -6,16 +6,16 @@ class Foo:
         x = 20
 
     def bar(self):
-        pass 
+        pass
 
 class TestFoo(TestCase):
     @patch('__main__.Foo', autospec=True, spec_set=True)
     def test_bar(self, mock_foo):
         f = mock_foo()
         f.x = 20  # AttributeError: Mock object has no attribute 'x'
-        
 
-# NOTE: spec_set prevents from setting attributes 
+
+# NOTE: spec_set prevents from setting attributes
 # which dont exist
 
 if __name__ == '__main__':

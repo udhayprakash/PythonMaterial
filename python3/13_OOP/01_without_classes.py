@@ -4,15 +4,15 @@ Purpose: without OOPS, solving a problem
 
     Problem - To create a saving bank with facilitates transactions
 
-        customer 1 
+        customer 1
                                                 Balance
-            Account creation                        0                                    
+            Account creation                        0
             Transaction 1 - deposit  1000        1000
             Transaction 2 - withdraw  200         800
 
-        Customer 2 
+        Customer 2
                                                 Balance
-            Account creation                        0                                    
+            Account creation                        0
             Transaction 1 - deposit  3500        3500
             Transaction 2 - withdraw  550        2950
 
@@ -23,12 +23,12 @@ def new():
 def deposit(account, amount):
     print(f'\tDeposited {amount}')
     account['balance'] += amount
-    return account['balance'] 
+    return account['balance']
 
 def withdraw(account, amount):
     print(f'\tWithdrawn {amount}')
     account['balance'] -= amount
-    return account['balance'] 
+    return account['balance']
 
 
 if __name__ == '__main__':
@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     deposit(Priyanka, 2500)
     print(f'Priyanka current balance :{Priyanka["balance"]}')
-    
+
     withdraw(Priyanka, 750)
     print(f'Priyanka current balance :{Priyanka["balance"]}')
 

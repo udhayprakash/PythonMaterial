@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     s = Square(10)
     print(f'{s.area()      =}') # 100
-    print(f'{s.perimeter() =}') # 20 
+    print(f'{s.perimeter() =}') # 20
 
     r = Rectangle(10, 20)
     print(f'{r.area()      =}') # 200

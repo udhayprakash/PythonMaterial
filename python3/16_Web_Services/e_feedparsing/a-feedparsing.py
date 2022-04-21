@@ -12,7 +12,7 @@ import feedparser
 from pprint import pprint
 reddit_feed = feedparser.parse('http://www.reddit.com/r/python/.rss')
 
-print(type(reddit_feed)) 
+print(type(reddit_feed))
 # <class 'feedparser.util.FeedParserDict'>
 
 import json
@@ -30,4 +30,4 @@ print(f'{reddit_feed.headers      = }')
 print(f'{len(reddit_feed.entries) = }')
 print()
 for post in reddit_feed.entries[:5]:
-    print(post.title + ": " + post.link)
+    print(post.title + ': ' + post.link)

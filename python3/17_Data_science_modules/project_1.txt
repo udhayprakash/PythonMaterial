@@ -1,12 +1,12 @@
 ________________________________________________________________________________
-Project: Sentiment Analyses on twitter tweets using Natural Language Processing 
+Project: Sentiment Analyses on twitter tweets using Natural Language Processing
 ________________________________________________________________________________
-Step 1: Create an app in https://developer.twitter.com and get 
-           API Key 
-           API Secret 
+Step 1: Create an app in https://developer.twitter.com and get
+           API Key
+           API Secret
 
-           Access Token 
-           Access Token Secret 
+           Access Token
+           Access Token Secret
 
 Step 2 :
 

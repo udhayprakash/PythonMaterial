@@ -3,7 +3,7 @@ from reportlab.pdfgen import canvas
 
 def draw_lines(my_canvas):
     my_canvas.setLineWidth(.3)
-    
+
     start_y = 710
     my_canvas.line(30, start_y, 580, start_y)
 

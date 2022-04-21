@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 Take a backup zip file for all files on desktop
 """
 from zipfile import ZipFile

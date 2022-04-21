@@ -1,9 +1,9 @@
 from unittest.mock import Mock
 
-mock = Mock(name='Udhay', 
-            age = 25, 
+mock = Mock(name='Udhay',
+            age = 25,
             salary = 123123123.123,
-            absent_days = None, 
+            absent_days = None,
             roles = ['SE', 'Architect'])
 print(mock)   # <Mock id='1782551724960'>
 
@@ -40,5 +40,5 @@ except KeyError as ex:
 
 # print(dir(mock))
 # ['assert_any_call', 'assert_called', 'assert_called_once',
-# 'assert_has_calls', 'assert_not_called', 'attach_mock', 
+# 'assert_has_calls', 'assert_not_called', 'attach_mock',
 # 'method_calls', 'mock_add_spec', 'mock_calls']

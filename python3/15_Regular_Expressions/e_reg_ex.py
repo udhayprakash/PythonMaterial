@@ -4,7 +4,7 @@ Purpose: Regular Expressions
 """
 import re
 
-target_string = "Programming is good in PyTHOn"
+target_string = 'Programming is good in PyTHOn'
 search_string = 'python'
 
 print(f'{target_string.lower().find(search_string.lower()) =}')

@@ -34,5 +34,5 @@ class TestBlog(TestCase):
         # blog.posts.assert_called_with(1, 2, 3) - This assertion is False and will fail since we called blog.posts with no arguments
 
         blog.reset_mock() # Reset the mock object
-        
+
         blog.posts.assert_not_called() # After resetting, posts has not been called.

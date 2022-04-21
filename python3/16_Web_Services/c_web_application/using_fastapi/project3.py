@@ -17,7 +17,7 @@ async def get_component(component_id: int):
 @app.get('/component/')  # query parameters
 async def read_component(number: int, text: Optional[str]):
     """ query params """
-    return {"number": number, "text": text}
+    return {'number': number, 'text': text}
 
 
 class Package(BaseModel):
@@ -32,7 +32,7 @@ class Package(BaseModel):
 
 @app.post('/package/{priority}')
 async def make_package(priority: int, package: Package, value: bool):
-    return {'priority': priority, **package.dict(), "value": value}
+    return {'priority': priority, **package.dict(), 'value': value}
 
 # python -m uvicorn project1:app --reload
 

@@ -32,4 +32,3 @@ if user_ticket == winning_ticket:
     print('YOU Won the Lottery!!')
 else:
     print('Try Again!!!')
-

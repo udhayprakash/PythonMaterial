@@ -21,7 +21,7 @@ def get_stock_tickers():
 def get_stock_prices(ticker_list):
     for ticker in ticker_list:
         htmlfile = urllib.request.urlopen(
-            "http://finance.yahoo.com/q?s={0}".format(ticker)
+            'http://finance.yahoo.com/q?s={0}'.format(ticker)
         )
         htmltext = htmlfile.read()
         soup = BeautifulSoup(htmltext, 'html.parser')

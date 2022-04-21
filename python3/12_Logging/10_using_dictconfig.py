@@ -35,5 +35,5 @@ logging.error('This is error message')
 logging.critical('This is critical message')
 
 
-# NOTE: dictConfig will disable all existing loggers, 
-# unless disable_existing_loggers is set to false. 
+# NOTE: dictConfig will disable all existing loggers,
+# unless disable_existing_loggers is set to false.

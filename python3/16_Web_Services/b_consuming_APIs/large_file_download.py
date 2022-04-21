@@ -6,7 +6,7 @@ import urllib.request
 import urllib.error
 import urllib.parse
 
-url = "http://download.thinkbroadband.com/10MB.zip"
+url = 'http://download.thinkbroadband.com/10MB.zip'
 
 file_name = url.split('/')[-1]
 req = urllib.request.Request(url)
@@ -15,8 +15,8 @@ url_handler = urllib.request.urlopen(req)
 
 f = open(file_name, 'wb')
 meta = url_handler.info()
-file_size = int(meta.getheaders("Content-Length")[0])
-print("Downloading: %s Bytes: %s" % (file_name, file_size))
+file_size = int(meta.getheaders('Content-Length')[0])
+print('Downloading: %s Bytes: %s' % (file_name, file_size))
 
 
 
@@ -29,7 +29,7 @@ while True:
 
     file_size_dl += len(buffer)
     f.write(buffer)
-    status = r"%10d  [%3.2f%%]" % (
+    status = r'%10d  [%3.2f%%]' % (
         file_size_dl, file_size_dl * 100. / file_size)
     status = status + chr(8)*(len(status)+1)
     print(status, end=' ')

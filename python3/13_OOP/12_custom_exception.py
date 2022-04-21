@@ -20,11 +20,11 @@ if __name__ == '__main__':
     try:
         validate_age(age)
     except Exception as err:
-        print("buddy!!! you are still young {}".format(err.age))
+        print('buddy!!! you are still young {}'.format(err.age))
     else:
         print('You are eligible for voting')
 
     # Method Resolution Order
     print(InvalidAge.__mro__)
     # (<class '__main__.InvalidAge'>, <class 'Exception'>, <class 'BaseException'>, <class 'object'>)
-    
+

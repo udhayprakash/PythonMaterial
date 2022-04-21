@@ -8,6 +8,6 @@ from datetime import timedelta
 
 CELERY_BEAT_SCHEDULE = {
     'doctor-every-10-seconds': {
-        'task': 
+        'task': ''
     }
 }

@@ -28,4 +28,4 @@ def char_frequency(givenStr: str) -> Dict[str, int]:
     return freq
 
 
-print(char_frequency("apple"))
+print(char_frequency('apple'))

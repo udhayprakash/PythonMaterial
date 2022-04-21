@@ -25,29 +25,29 @@ def get_limit():
         result = t.application.rate_limit_status()
         print(result)
     except TwitterHTTPError as e:
-        print("Error: ", e)
+        print('Error: ', e)
         return None
 
 
 def fav_tweet(tweet):
     try:
         result = t.favorites.create(_id=tweet['id'])
-        print("Favorited: %s" % (result['text']))
+        print('Favorited: %s' % (result['text']))
         return result
     # when you have already favourited a tweet
     # this error is thrown
     except TwitterHTTPError as e:
-        print("Error: ", e)
+        print('Error: ', e)
         return None
 
 
 def retweet_tweet(tweet):
     try:
         result = t.statuses.retweet._id(_id=tweet['id'])
-        print("Retweeted: %s" % (result['text']))
+        print('Retweeted: %s' % (result['text']))
         return result
     except TwitterHTTPError as e:
-        print("Error: ", e)
+        print('Error: ', e)
         return None
 
 
@@ -59,7 +59,7 @@ def auto_fav(q, count):
     for tweet in result['statuses']:
         if fav_tweet(tweet) is not None:
             success += 1
-    print("We Favorited a total of %i out of %i tweets" % (success,
+    print('We Favorited a total of %i out of %i tweets' % (success,
           len(result['statuses'])))
 
 
@@ -72,20 +72,20 @@ def auto_retweet(q, count):
         if retweet_tweet(tweet) is not None:
             success += 1
         time.sleep(10)
-    print("We Favorited a total of %i out of %i tweets" %
+    print('We Favorited a total of %i out of %i tweets' %
           (success, len(result['statuses'])))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     while(1):
         try:
-            auto_retweet("GameDev", 1)
-            auto_retweet("IndieDev", 1)
-            auto_retweet("ScreenshotSaturday", 1)
+            auto_retweet('GameDev', 1)
+            auto_retweet('IndieDev', 1)
+            auto_retweet('ScreenshotSaturday', 1)
         except Exception as e:
             print(e)
 
         try:
-            auto_fav("IndieDev", 1)
+            auto_fav('IndieDev', 1)
         except Exception as e:
             print(e)

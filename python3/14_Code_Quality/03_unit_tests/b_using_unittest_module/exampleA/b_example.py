@@ -2,12 +2,12 @@
 """
 Purpose: Unit testing using unittest module
 
-unit tesing modules 
-    - unittest 
-    - pytest 
-    - nose test 
+unit tesing modules
+    - unittest
+    - pytest
+    - nose test
 
-NOTE: All the test cases will be executed in 
+NOTE: All the test cases will be executed in
       alphabetical order
 
 """
@@ -40,9 +40,9 @@ class TestAddition(unittest.TestCase):
         print('In test case - test03_addition_positive')
         assert addition(10, 20) == 30
         self.assertAlmostEqual(addition(10, 20), 30)
- 
+
     def test04_addition_negative(self):
-        self.skipTest("another method for skipping")
+        self.skipTest('another method for skipping')
 
         print('In test case - test04_addition_negative')
         assert addition(10, 20) != 31

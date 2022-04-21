@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Working with sqlite3 
+Purpose: Working with sqlite3
 """
 import sqlite3
 from sqlite3 import Error

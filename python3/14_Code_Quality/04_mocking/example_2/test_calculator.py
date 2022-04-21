@@ -8,4 +8,3 @@ class TestCalculator(TestCase):
     def test_sum(self):
         answer = self.calc.sum(2, 4)
         self.assertEqual(answer, 6)
-

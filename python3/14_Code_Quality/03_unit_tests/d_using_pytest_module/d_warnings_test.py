@@ -11,10 +11,10 @@ with pytest.deprecated_call():
     assert api_call_v2() == 200
 
 with pytest.warns(UserWarning, match='must be 0 or None'):
-    warnings.warn("value must be 0 or None", UserWarning)
+    warnings.warn('value must be 0 or None', UserWarning)
 
 with pytest.warns(UserWarning, match=r'must be \d+$'):
-    warnings.warn("value must be 42", UserWarning)
+    warnings.warn('value must be 42', UserWarning)
 
 with pytest.warns(UserWarning, match=r'must be \d+$'):
-    warnings.warn("this is not here", UserWarning)
+    warnings.warn('this is not here', UserWarning)

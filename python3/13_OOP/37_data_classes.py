@@ -21,7 +21,7 @@ f.y = 12        # Adding new attrbute to instance
 
 try:
     print(hash(f))
-except Exception as ex: 
+except Exception as ex:
     print(ex)
     print('This instance is mutable. So, hash cant be created')
 

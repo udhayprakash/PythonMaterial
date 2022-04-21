@@ -25,4 +25,3 @@ if __name__ == '__main__':
     make_greeting('Ramesh')
     make_greeting('Suresh', age=23)
     make_greeting('Ganesh', age=61)
-

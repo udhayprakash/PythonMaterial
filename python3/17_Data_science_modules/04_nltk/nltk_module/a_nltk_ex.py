@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: NLTK 
+Purpose: NLTK
     Stemming words and sentences
 """
 import nltk
@@ -11,14 +11,14 @@ ps = PorterStemmer()
 # Stemming individual words
 words = ['write', 'writer', 'writing', 'writers']
 for word in words:
-    print(f"{word:12}: {ps.stem(word)}")
+    print(f'{word:12}: {ps.stem(word)}')
 print()
 
 words = ['game', 'gaming', 'gamed', 'games']
 for word in words:
-    print(f"{word:12}: {ps.stem(word)}")
+    print(f'{word:12}: {ps.stem(word)}')
 print()
 
 words = ['child', 'children', 'childhood', 'childs']
 for word in words:
-    print(f"{word:12}: {ps.stem(word)}")
+    print(f'{word:12}: {ps.stem(word)}')

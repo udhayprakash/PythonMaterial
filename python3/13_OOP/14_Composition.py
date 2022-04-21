@@ -13,7 +13,7 @@ class Rocket:
         self.distance = distance
 
     def launch(self):
-        return "%s has reached %s" % (self.name, self.distance)
+        return '%s has reached %s' % (self.name, self.distance)
 
 # # Instantiation
 # r = Rocket('PSLV-4', 7887)
@@ -25,11 +25,11 @@ class MarsRoverComp:
         self.maker = maker
 
     def get_maker(self):
-        return "%s Launched by %s" % (self.rocket.name, self.maker)
+        return '%s Launched by %s' % (self.rocket.name, self.maker)
 
 
 if __name__ == '__main__':
-    m = MarsRoverComp("mars_rover2", "till Mars", "ISRO")
+    m = MarsRoverComp('mars_rover2', 'till Mars', 'ISRO')
     # for each_attribute in dir(m):
     #     print(each_attribute)
 

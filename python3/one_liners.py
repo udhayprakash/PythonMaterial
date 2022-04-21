@@ -6,7 +6,7 @@ TO start a local http server,
     # Python 3
     python -m http.server 8080
 
-To pretty print a json from terminal quickly, 
+To pretty print a json from terminal quickly,
     cat file.json | python -m json.tool
 
 To profile a python script,
@@ -21,9 +21,9 @@ One-line constructor - to avoid boiler plate code ==> now dataclasses
         def __init__(self, a, b, c, d, e, f):
             self.__dict__.update({k: v for k, v in locals().items() if k != 'self'})
 
-To get unique characters in a text file, 
+To get unique characters in a text file,
     set(open('myfile.txt', 'r').read())
 
 Fastest way to view package path
-    python -m site 
+    python -m site
 """

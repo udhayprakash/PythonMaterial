@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
     https://currencylayer.com/quickstart
 """
 from datetime import datetime
@@ -14,7 +14,7 @@ API_URL = 'http://www.apilayer.net/api/'
 def get_live_currency_quote():
     URL = API_URL + 'live?access_key=' + ACCESS_KEY
     response = requests.get(URL)
-    # pprint(response.json()) 
+    # pprint(response.json())
     quotes = response.json().get('quotes')
     USDINR_quote = quotes.get('USDINR')
     # print(USDINR_quote)
@@ -42,7 +42,7 @@ def get_live_currency_quote2(requesting_data='live'):
     if response.get('error', {}):
         return response.get('error', {}).get('info')
 
-    # pprint(response) 
+    # pprint(response)
     quotes = response.get('quotes')
     USDINR_quote = quotes.get('USDINR')
     # print(USDINR_quote)

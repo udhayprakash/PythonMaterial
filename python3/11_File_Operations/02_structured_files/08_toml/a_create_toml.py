@@ -14,7 +14,7 @@ import toml
 print(dir(toml))
 print()
 
-# toml file to python dict 
+# toml file to python dict
 with open('sample.toml', 'r') as fh:
     parsed_toml_dict = toml.load(fh)
     print(parsed_toml_dict)

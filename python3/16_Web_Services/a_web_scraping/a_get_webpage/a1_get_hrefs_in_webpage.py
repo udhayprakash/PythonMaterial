@@ -2,7 +2,7 @@
 """
 Purpose: Web scrapping
 """
-import re 
+import re
 
 
 hrefs = []

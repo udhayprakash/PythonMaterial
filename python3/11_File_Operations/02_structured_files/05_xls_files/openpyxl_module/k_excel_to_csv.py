@@ -12,11 +12,11 @@ def excel_to_csv(excel_file, csv_file):
     for value in sheet.iter_rows(values_only=True):
         csv_data.append(list(value))
     # Write to CSV
-    with open(csv_file, "w") as csv_file_obj:
-        writer = csv.writer(csv_file_obj, delimiter=",")
+    with open(csv_file, 'w') as csv_file_obj:
+        writer = csv.writer(csv_file_obj, delimiter=',')
         for line in csv_data:
             writer.writerow(line)
 
 
-if __name__ == "__main__":
-    excel_to_csv("my_file.xlsx", "my_file1.csv")
+if __name__ == '__main__':
+    excel_to_csv('my_file.xlsx', 'my_file1.csv')

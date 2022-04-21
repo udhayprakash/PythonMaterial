@@ -1,8 +1,8 @@
 #!/usr/bin/python
 """
-Purpose: Create a Flask App 
+Purpose: Create a Flask App
     with /echo endpoint which should accept only 'message' as parameter
-    
+
 """
 from flask import Flask, request, make_response
 

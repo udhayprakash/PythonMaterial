@@ -1,7 +1,7 @@
 Recommended books/sites
 -------------------
 
--- books -- 
+-- books --
 1) Learn python the hardway
 2) Byte of python
 3) Dive into python
@@ -11,7 +11,7 @@ Recommended books/sites
 7) Python standard libary reference ( http://it-ebooks.info)
 
 
--- sites -- 
+-- sites --
 1) http://codeacademy.com
 2) http://www.programmableweb.com/
 3) http://readwrite.com

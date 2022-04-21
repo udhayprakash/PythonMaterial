@@ -9,30 +9,30 @@ import numpy as np
 # First, read in the wordlist and extract all 5-letter words.
 
 n = 5
-with open('words_alpha.txt', encoding="utf-8") as f:
+with open('words_alpha.txt', encoding='utf-8') as f:
     wordlist = [x.strip() for x in f if x.islower()]
-print(f"Read in a word list of {len(wordlist)} words.")
+print(f'Read in a word list of {len(wordlist)} words.')
 wordlist = sorted([x for x in wordlist if len(x) == n])
-print(f"There remain {len(wordlist)} words of length {n}.")
+print(f'There remain {len(wordlist)} words of length {n}.')
 
 # Convert list of words to numpy array.
 
 words = np.asarray(wordlist)
-print(f"The numpy array has the shape {words.shape}.")
+print(f'The numpy array has the shape {words.shape}.')
 
 # Convert that numpy array to matrix of Unicode characters.
 
 word_bytes = np.ndarray((words.size, words.itemsize),
                         dtype='int8',
                         buffer=words.data)
-print(f"Unicode matrix has the shape {word_bytes.shape}.")
+print(f'Unicode matrix has the shape {word_bytes.shape}.')
 
 # Compute the distance between each pair of words. You can also
 # try the Euclidean distance instead of Hamming distance.
 
 from scipy.spatial.distance import pdist, squareform
 
-hamming_dist = pdist(word_bytes, metric="hamming")
+hamming_dist = pdist(word_bytes, metric='hamming')
 
 # Convert the words into sparse graphs.
 
@@ -45,7 +45,7 @@ graph_h = csr_matrix(squareform(hamming_dist < 1.5 / words.itemsize))
 from scipy.sparse.csgraph import connected_components
 
 N_h, components_h = connected_components(graph_h, directed=False)
-print(f"The word graph is in {N_h} separate components.")
+print(f'The word graph is in {N_h} separate components.')
 comps = [words[components_h == i] for i in range(N_h)]
 
 # Compute the shortest distances between 'live' and 'dead'.
@@ -56,7 +56,7 @@ from scipy.sparse.csgraph import dijkstra
 
 def word_ladder(graph, start, ends):
     d, p = dijkstra(graph, indices=start, return_predecessors=True)
-    print(f"Shortest paths from {words[start]!r} are:", flush=True)
+    print(f'Shortest paths from {words[start]!r} are:', flush=True)
     for end in ends:
         if d[end] != np.inf:
             result = []
@@ -65,9 +65,9 @@ def word_ladder(graph, start, ends):
                 result.append(words[i])
                 i = p[i]
             result.append(words[start])
-            print(f"To {words[end]}: {result[::-1]}")
+            print(f'To {words[end]}: {result[::-1]}')
         else:
-            print(f"To {words[end]}: NO PATH FOUND.")
+            print(f'To {words[end]}: NO PATH FOUND.')
 
         # First, find the position indices of these words in wordlist.
 

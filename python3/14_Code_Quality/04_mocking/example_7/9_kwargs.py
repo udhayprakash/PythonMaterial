@@ -1,18 +1,20 @@
-kwargs
-@patch('my_module.Foo.name', return_value='Python')
+from unittest.mock import patch
 
-@patch('my_module.Foo', name='Python', version=3.8)
+# kwargs
+# @patch('my_module.Foo.name', return_value='Python')
 
-@patch('my_module.Foo', **{'name.return_value': 'Python'})
+# @patch('my_module.Foo', name='Python', version=3.8)
 
-
-patch.object 
-patch.dict 
-patch.multiple
+# @patch('my_module.Foo', **{'name.return_value': 'Python'})
 
 
-# patch.dict() for setting values in a dictionary just during 
-# a scope and restoring the dictionary to its original state 
+# patch.object
+# patch.dict
+# patch.multiple
+
+
+# patch.dict() for setting values in a dictionary just during
+# a scope and restoring the dictionary to its original state
 # when the test ends:
 foo = {'key': 'value'}
 original = foo.copy()

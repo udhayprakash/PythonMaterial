@@ -84,7 +84,7 @@ def ifs(size, n, tbl, w=2, exp = .2):
         for x in range(size):
             pix[size - y - 1][x] = math.pow(ctr[y][x] / mv, exp)
     return ndimage.convolve(pix,[[.3, -.1, .3],[-.1,.2,-.1],[.3,-.1,.3]])
-    
+
 def pascal(size, n = 2):
     tri = np.ones(shape=(size, size), dtype = 'uint8')
     for row in range(1, size):
@@ -103,8 +103,8 @@ def display(img, info, cmap = 'gray_r'):
 
 from functools import partial
 
-if __name__ == "__main__":
-    
+if __name__ == '__main__':
+
     tbl = [ # http://paulbourke.net/fractals/ifs_tree_a/
        (0.1950, -0.4880, 0.3440, 0.4430, 0.4431, 0.2452),
        (0.4620, 0.4140, -0.2520, 0.3610, 0.2511, 0.5692),
@@ -112,10 +112,10 @@ if __name__ == "__main__":
        (-0.0350, 0.0700, -0.4690, 0.0220, 0.4884, 0.5069),
        (-0.0580, -0.0700, 0.4530, -0.1111, 0.5976, 0.0969)
     ]
-    display(ifs(1000, 100000, tbl, w=1), "IFS Tree", cmap="tab20c")
+    display(ifs(1000, 100000, tbl, w=1), 'IFS Tree', cmap='tab20c')
     display(avalanche_world(500, 500000, 1, prob = 0.3,
-                            pf = partial(np.random.exponential, .5)), "Avalanche", cmap="gray")
-    display(clifford(800, 1000000, -1.4, 1.6, 1.0, 0.7), "Clifford", cmap="plasma")
-    display(dejong(800, 1000000, 1.4, -2.3, 2.4, -2.1), "DeJong")
-    display(pascal(800, 5), "Pascal", cmap="prism")
-    display(pascal(800, 3), "Pascal", cmap="tab20")
+                            pf = partial(np.random.exponential, .5)), 'Avalanche', cmap='gray')
+    display(clifford(800, 1000000, -1.4, 1.6, 1.0, 0.7), 'Clifford', cmap='plasma')
+    display(dejong(800, 1000000, 1.4, -2.3, 2.4, -2.1), 'DeJong')
+    display(pascal(800, 5), 'Pascal', cmap='prism')
+    display(pascal(800, 3), 'Pascal', cmap='tab20')

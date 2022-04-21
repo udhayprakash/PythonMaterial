@@ -7,7 +7,7 @@ Purpose: Solving Bank account management problem, using classes
 class Account:
     def __init__(self, name):
         self.balance = 0
-        self.account_holder = name 
+        self.account_holder = name
 
     def deposit(self, amount):
         self.balance += amount
@@ -41,4 +41,3 @@ if __name__ == '__main__':
 
     hiral.withdraw(400)
     print('After withdraw', hiral.display_balance())
-

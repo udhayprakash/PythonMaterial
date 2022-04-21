@@ -26,11 +26,11 @@ logger.addHandler(han)
 
 
 # setting the level for logs.
-logmessage = "testing the log messages"
+logmessage = 'testing the log messages'
 logger.error(logmessage)
 
 
 logging.basicConfig(
-        format="%(asctime)s - %(levelname)s - %(message)s",
+        format='%(asctime)s - %(levelname)s - %(message)s',
 )
 logging.error(logmessage)

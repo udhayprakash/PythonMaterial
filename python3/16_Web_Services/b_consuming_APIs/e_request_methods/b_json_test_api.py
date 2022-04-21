@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: To demonstrate the usage of API 
+Purpose: To demonstrate the usage of API
 
 https://jsonplaceholder.typicode.com/
 
@@ -26,7 +26,7 @@ def get_response(url):
     response = requests.get(url)
     if response.ok:
         print(f'\n{response.headers["Content-Type"]}') # application/json; charset=utf-8
-        if 'application/json' in response.headers["Content-Type"]:
+        if 'application/json' in response.headers['Content-Type']:
             pprint(response.json())
     else:
         print(f'\n{response.status_code =}')

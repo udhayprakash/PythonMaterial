@@ -1,13 +1,13 @@
 #!/usr/bin/python
 """
-purpose: regular expression  demo 
+purpose: regular expression  demo
 
 """
 
 import re
 
 print(re.findall(r'\w+', 'fox:αλεπού'))
-print(re.findall(r'\w+', 'fox:αλεπού', flags=re.A)) # ASCII only 
+print(re.findall(r'\w+', 'fox:αλεπού', flags=re.A)) # ASCII only
 print(re.findall(r'[a-zA-Z0-9_]+', 'fox:αλεπού'))
 print(re.search(r'[a-zA-Z]', 'İıſK'))  # False
 print(re.search(r'[a-z]+', 'İıſK', flags=re.I)[0])
@@ -20,11 +20,11 @@ print([c.encode('unicode_escape') for c in 'İıſK'])
 print(re.findall(r'[\u0061-\u007a]+', 'fox:αλεπού,eagle:αετός'))
 print()
 
-x1 = re.search(r"\w+", u"♥αβγ!", re.U)
-x2 = re.search(r"\w+", u"♥αβγ!")
+x1 = re.search(r'\w+', u'♥αβγ!', re.U)
+x2 = re.search(r'\w+', u'♥αβγ!')
 
 if x1:
-    print(x1.group().encode("utf-8"))  # → 「αβγ」
+    print(x1.group().encode('utf-8'))  # → 「αβγ」
 else:
     print('no match')
 

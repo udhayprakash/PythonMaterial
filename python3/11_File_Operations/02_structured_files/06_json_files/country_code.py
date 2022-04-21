@@ -17,13 +17,13 @@ def get_data(csv_file, json_file):
         reader = csv.reader(file_one)
         with open(json_file) as file_two:
             json_data = json.load(file_two)
-            all_countries = json_data["country"]
+            all_countries = json_data['country']
             for csv_row in reader:
                 for json_row in all_countries:
-                    if csv_row[0] == json_row["countryCode"]:
-                        countryCodes.append(json_row["countryCode"])
-                        countryNames.append(json_row["countryName"])
-                        continentNames.append(json_row["continentName"])
+                    if csv_row[0] == json_row['countryCode']:
+                        countryCodes.append(json_row['countryCode'])
+                        countryNames.append(json_row['countryName'])
+                        continentNames.append(json_row['continentName'])
 
     return [
         countryCodes,

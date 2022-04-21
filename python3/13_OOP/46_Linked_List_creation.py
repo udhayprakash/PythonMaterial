@@ -7,7 +7,7 @@ node1 -> node2  -> node3 , ...
 each node:
     |data|address of next node
 
-    n1              n2         n3           n4 
+    n1              n2         n3           n4
  10|id(n2)     20|id(n2)    30|id(n4)    40|None
 """
 __author__ = 'Udhay Prakash'

@@ -35,8 +35,8 @@ Logging Handlers
 ----------------
 1. StreamHandler instances send messages to streams (file-like objects).
 2. FileHandler instances send messages to disk files.
-3. BaseRotatingHandler is the base class for handlers that rotate log files at a certain point. 
-    It is not meant to be instantiated directly. 
+3. BaseRotatingHandler is the base class for handlers that rotate log files at a certain point.
+    It is not meant to be instantiated directly.
     Instead, use RotatingFileHandler or TimedRotatingFileHandler.
     a) RotatingFileHandler instances send messages to disk files, with support for maximum log file sizes and log file rotation.
     b) TimedRotatingFileHandler instances send messages to disk files, rotating the log file at certain timed intervals.
@@ -47,8 +47,8 @@ Logging Handlers
 8. NTEventLogHandler instances send messages to a Windows NT/2000/XP event log.
 9. MemoryHandler instances send messages to a buffer in memory, which is flushed whenever specific criteria are met.
 10. HTTPHandler instances send messages to an HTTP server using either GET or POST semantics.
-11. WatchedFileHandler instances watch the file they are logging to. 
-        If the file changes, it is closed and reopened using the file name. 
+11. WatchedFileHandler instances watch the file they are logging to.
+        If the file changes, it is closed and reopened using the file name.
         This handler is only useful on Unix-like systems; Windows does not support the underlying mechanism used.
-12. NullHandler instances do nothing with error messages. 
+12. NullHandler instances do nothing with error messages.
     They are used by library developers who want to use logging, but want to avoid the “No handlers could be found for logger XXX” message which can be displayed if the library user has not configured logging.

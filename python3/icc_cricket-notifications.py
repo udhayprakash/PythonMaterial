@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-I tweaked his script of live scores for windows 
+I tweaked his script of live scores for windows
 notifications because pynotify don't work on Windows.
-This requires Growl for Windows to show notifications. 
+This requires Growl for Windows to show notifications.
 I hope it helps the windows' users.
 """
 from time import sleep
@@ -13,9 +13,9 @@ import gntp.notifier
 # register
 
 growl = gntp.notifier.GrowlNotifier(
-    applicationName="Cricket Scores",
-    notifications=["New Updates", "New Messages"],
-    defaultNotifications=["New Messages"],
+    applicationName='Cricket Scores',
+    notifications=['New Updates', 'New Messages'],
+    defaultNotifications=['New Messages'],
     # hostname = "http://computer.example.com", # Defaults to localhost
     # password = "abc123" # Defaults to a blank password
 )
@@ -24,10 +24,10 @@ growl.register()
 
 def show_message(score):
     # Send message
-    image = open('C:\Users\Naqushab\Desktop\cricket\cric.jpg', 'rb').read()
+    image = open('cric.jpg', 'rb').read()
     growl.notify(
-        noteType="New Messages",
-        title="Match Scores",
+        noteType='New Messages',
+        title='Match Scores',
         description=score,
         icon=image,
         sticky=False,
@@ -36,13 +36,13 @@ def show_message(score):
     return
 
 
-url = "http://static.cricinfo.com/rss/livescores.xml"
+url = 'http://static.cricinfo.com/rss/livescores.xml'
 while True:
     r = requests.get(url)
     while r.status_code is not 200:
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
-        data = soup.find_all("description")
+        data = soup.find_all('description')
         score = data[1].text
         show_message(str(score))
         sleep(10)

@@ -12,9 +12,9 @@ classifier_knn = KNeighborsClassifier(n_neighbors=3)
 classifier_knn.fit(X_train, y_train)
 y_pred = classifier_knn.predict(X_test)
 # Finding accuracy by comparing actual response values(y_test)with predicted response value(y_pred)
-print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
+print('Accuracy:', metrics.accuracy_score(y_test, y_pred))
 # Providing sample data and the model will make prediction out of that data
 sample = [[5, 5, 3, 2], [2, 4, 3, 5]]
 preds = classifier_knn.predict(sample)
 pred_species = [iris.target_names[p] for p in preds]
-print("Predictions:", pred_species)
+print('Predictions:', pred_species)

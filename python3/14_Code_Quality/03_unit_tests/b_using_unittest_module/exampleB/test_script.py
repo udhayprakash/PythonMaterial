@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: unit test for script.py file 
+Purpose: unit test for script.py file
 """
 import unittest
 

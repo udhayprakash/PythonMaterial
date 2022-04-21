@@ -6,7 +6,7 @@ setupClass & tearDownClass methods are executed ONCE, per test suite
 setUp & tearDown methods are executed for each test case
 
 
-setupClass 
+setupClass
 
     setUp
     test_case_1
@@ -17,7 +17,7 @@ setupClass
     tearDown
 
     ...
-    
+
 tearDownClass
 """
 

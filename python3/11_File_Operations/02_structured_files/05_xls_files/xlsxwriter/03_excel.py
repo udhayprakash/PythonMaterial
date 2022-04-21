@@ -9,7 +9,7 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
     ws1.write_comment('C3', 'Hello', {'x_scale': 1.2, 'y_scale': 0.8})
     ws1.write_comment('C3', 'Atonement', {'author': 'Elon Musk'})
 
-    # author name can be defaultly specified 
+    # author name can be defaultly specified
     ws1.set_comments_author('John Smith')
 
     ws1.write_comment('D3', 'Hello', {'visible': False})
@@ -55,7 +55,7 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
                                         },
                               'gradient': {'colors': ['green', 'white']}})
 
-    # borders to text box 
+    # borders to text box
     worksheet.insert_textbox('B21', 'A textbox with a color border',
                              {'line': {'color': '#FF9900'}})
 

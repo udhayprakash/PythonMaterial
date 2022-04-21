@@ -37,7 +37,7 @@ class A:
 
 class B(A):
     __slots__ = ['w', 'z']
-    pass 
+    pass
 
 a = A()
 b = B()

@@ -26,14 +26,14 @@
 3. inline
 
 
-Patch 
-  - Temporarily replaces your target with a different object 
+Patch
+  - Temporarily replaces your target with a different object
   - package.module.ClassName
   - Rule - target must be importable from the test script
-  - Levels of patching 
+  - Levels of patching
     1. At context manager level   :- recommended for builtins
-    2. At function decorator level 
-    3. At class decorator level 
+    2. At function decorator level
+    3. At class decorator level
         - IN this case, all methods in this class need to be defined
-          with addition argument to consume it 
-    4. Manual 
+          with addition argument to consume it
+    4. Manual

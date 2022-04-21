@@ -1,7 +1,7 @@
 from unittest.mock import MagicMock
 
 class SomeClass:
-    pass 
+    pass
 
 real = SomeClass()
 real.method = MagicMock(name='method')

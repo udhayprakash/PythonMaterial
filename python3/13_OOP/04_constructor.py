@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: constructor is a method which will be 
+Purpose: constructor is a method which will be
     called the moment instance is created
 """
 __author__ = 'Developer Name'

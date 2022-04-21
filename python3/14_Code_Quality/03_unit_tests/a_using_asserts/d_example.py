@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: unit testing using asserts 
+Purpose: unit testing using asserts
 
 TDD - Test Driven Development
 """

@@ -3,13 +3,13 @@
 Purpose: Simple function with pytest
     b_sysexit_test.py
 
-    Running pytest on this script 
+    Running pytest on this script
         ~pytest b_sysexit_test.py
 
     Running quitely
         ~pytest --quiet b_sysexit_test.py
         ~pytest -q b_sysexit_test.py
-    
+
 """
 import pytest
 

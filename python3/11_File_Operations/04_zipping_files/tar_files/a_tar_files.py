@@ -13,7 +13,7 @@ for file_name in ['fileThree.txt', 'tarFileOne.tar', 'some.txt']:
 
         if is_tar_file:
             t = tarfile.open(file_name, 'r')
-            print("\tFiles in TAR file:", t.getnames())
+            print('\tFiles in TAR file:', t.getnames())
 
             print('\n\tMeta Data about that tarfile')
             for info in t.getmembers():

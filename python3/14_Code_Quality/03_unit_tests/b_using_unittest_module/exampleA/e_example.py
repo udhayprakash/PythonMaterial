@@ -1,9 +1,9 @@
-#!/usr/bin/python 
+#!/usr/bin/python
 """
-Purpose: Performance (time) testing 
+Purpose: Performance (time) testing
 """
 
-import time 
+import time
 from unittest import TestCase, main
 import timeout_decorator
 

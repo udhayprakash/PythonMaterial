@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Getting IP details 
+Purpose: Getting IP details
 
     GET https://ipapi.co/{format}/
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Logging in JSON format 
+Purpose: Logging in JSON format
 
     pip install -U python-json-logger --user
 
@@ -31,4 +31,4 @@ logger.error('This is error log')
 logger.critical('This is critical log')
 
 
-# Assignment: Add datetime & level to this 
+# Assignment: Add datetime & level to this
