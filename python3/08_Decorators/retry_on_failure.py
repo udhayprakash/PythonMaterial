@@ -25,7 +25,7 @@ def retry_on_failure(max_attempts=5):
 
 @retry_on_failure(5)
 def myfunc():
-    print("\nmyfunc - start")
+    print('\nmyfunc - start')
     1/0
 
 

@@ -6,5 +6,5 @@ def toString(n, base):
         return toString(n / base, base) + convertString[n % base]
 
 
-print toString(1453, 16)
-print toString(1453, 8)
+print(toString(1453, 16))
+print(toString(1453, 8))

@@ -31,7 +31,7 @@ def fib(n):
                         # fib(3) -> fib(2)+fib(1)
                                     # fib(2) -> fib(1)+ fib(0) = 1+ 0
                  #             fib ...
-print fib(5)
+print(fib(5))
 
 # print '='*80
 # factorial(5) = 5*4*3*2*1 =
@@ -43,16 +43,16 @@ def factorial(n):
     else:
         return abs(n) * factorial(abs(n)-1)
 
-print factorial(0)
-print factorial(1)
-print factorial(3)
-print factorial(5)
+print(factorial(0))
+print(factorial(1))
+print(factorial(3))
+print(factorial(5))
 
-print factorial(-5)
+print(factorial(-5))
 
 
 
-print '='*80
+print('='*80)
 
 # infinite loop
 '''

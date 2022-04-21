@@ -7,12 +7,12 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(*given, **feed_in):
-    print('\ntype(given)  ',  type(given))
-    print('type(feed_in) ',  type(feed_in))
+    print(('\ntype(given)  ',  type(given)))
+    print(('type(feed_in) ',  type(feed_in)))
 
-    print('given   '+ str(given))
-    print('feed_in '+ str(feed_in))
-    print('-'*20)
+    print(('given   '+ str(given)))
+    print(('feed_in '+ str(feed_in)))
+    print(('-'*20))
 
 # Function Call
 hello()            # 0 inputs

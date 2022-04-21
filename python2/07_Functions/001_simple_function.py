@@ -7,16 +7,16 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello():
-    print 'Hello world'
+    print('Hello world')
     #return None - default
 
 
-print hello
-print 'callable(hello)', callable(hello)
+print(hello)
+print('callable(hello)', callable(hello))
 fruit = 'apple'
-print 'callable(fruit)', callable(fruit)
+print('callable(fruit)', callable(fruit))
 
 
 # Function Call
 hello()
-print hello()
+print(hello())

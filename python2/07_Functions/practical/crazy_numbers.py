@@ -33,5 +33,5 @@ def crazy_num(n):
     return None
 
 
-n = int(input('Enter number: '))
+n = int(eval(input('Enter number: ')))
 crazy_num(n)

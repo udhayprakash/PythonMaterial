@@ -12,4 +12,4 @@ def hello(name, age):
 
 # Function Call
 result = hello('India', 75)
-print 'result =', result
+print(('result =', result))

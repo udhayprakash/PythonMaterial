@@ -31,7 +31,7 @@ print(f'{sorted(numbers, reverse=True) =}')
 print()
 print(f'{numbers =}')
 numbers.sort(reverse =True)
-print("After numbers.sort(reverse =True)\n\t", numbers)
+print('After numbers.sort(reverse =True)\n\t', numbers)
 print()
 
 mylist = [1, 2, 9, '1', '2', '9', 'a', 'z', 'A', 'Z', True, False, None]

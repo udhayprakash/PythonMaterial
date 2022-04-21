@@ -8,10 +8,10 @@ alphabets = {'a':1, 'b':2} # mutable object
 
 
 def computation():
-    print 'in - before - alphabets', alphabets
+    print('in - before - alphabets', alphabets)
     alphabets['c'] = 3
-    print 'in - after - alphabets', alphabets
+    print('in - after - alphabets', alphabets)
 
 
 computation()
-print 'outside --- alphabets', alphabets
+print('outside --- alphabets', alphabets)

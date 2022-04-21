@@ -45,12 +45,12 @@ print()
 # # hello()   # TypeError: hello() missing 1 required positional argument: 'name'
 
 
-def hello(name="world"):
-    print(f"Hello {name}!")
+def hello(name='world'):
+    print(f'Hello {name}!')
 
 
 hello()
-hello("Python")
+hello('Python')
 
 
 # ---------------------------------------------
@@ -80,7 +80,7 @@ def statement_creator(name, age=24, qualification='B.Tech'):
 
 # statement_creator()
 # TypeError: statement_creator() missing 1 required positional argument: 'name'
-statement_creator("Udhay")
+statement_creator('Udhay')
 statement_creator(name='Udhay')
 print()
 

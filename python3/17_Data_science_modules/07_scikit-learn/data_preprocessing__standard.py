@@ -21,11 +21,11 @@ import numpy as np
 X = np.random.randint(2, 10, size=(4, 2))
 X2 = np.random.randint(100, 10000, size=(4, 2))
 X = np.concatenate((X, X2), axis=1)
-print('The original matrix')
+print("The original matrix")
 print(X)
 
 std = preprocessing.StandardScaler()
 std.fit(X)
 X_std = std.transform(X)
-print('The transform data using Standard scaler')
+print("The transform data using Standard scaler")
 print(X_std)

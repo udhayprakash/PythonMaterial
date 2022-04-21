@@ -14,15 +14,15 @@ details = {  # mutable  - call by reference
 
 
 def simple_function(phi, details1):
-    print 'Inside function call, pi', phi, 'details', details1
+    print('Inside function call, pi', phi, 'details', details1)
     phi = 78
     details1['framework'] = 'django'
-    print 'Before function exit, pi', phi , 'details', details1
+    print('Before function exit, pi', phi , 'details', details1)
 
 
 
-print 'before function call, pi', pi, 'details', details
+print('before function call, pi', pi, 'details', details)
 simple_function(pi, details)
-print 'after function call, pi', pi, 'details', details
+print('after function call, pi', pi, 'details', details)
 
 # print 'phi=', phi # NameError: name 'phi' is not defined

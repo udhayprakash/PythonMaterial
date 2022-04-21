@@ -39,11 +39,11 @@ if __name__ == '__main__':
 
     # print "numberSeries:", numberSeries
 
-    print 'FINAL OUTPUT'
+    print('FINAL OUTPUT')
     maxLen = len(numberSeries[::-1][:upSeries][0])
     for indx, num in enumerate(numberSeries[::-1][:upSeries]):
-        print '  ' * indx, '  '.join([str(i).zfill(2) for i in num])
+        print('  ' * indx, '  '.join([str(i).zfill(2) for i in num]))
 
     for num in numberSeries[:downSeries]:
-        print '  ' * indx, '  '.join([str(i).zfill(2) for i in num])
+        print('  ' * indx, '  '.join([str(i).zfill(2) for i in num]))
         indx -= 1

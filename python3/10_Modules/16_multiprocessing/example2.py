@@ -21,10 +21,10 @@ class BaseProcess(mp.Process):
     def dispatch(self, msg):
         event, args = msg
 
-        handler = getattr(self, "do_%s" % event, None)
+        handler = getattr(self, 'do_%s' % event, None)
         if not handler:
             raise NotImplementedError(
-                "Process has no handler for [%s]" % event)
+                'Process has no handler for [%s]' % event)
 
         handler(*args)
 
@@ -41,7 +41,7 @@ class MyProcess(BaseProcess):
         print(arg1, arg2)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     process = MyProcess()
     process.start()
     process.send('helloworld', 'hello', 'world')

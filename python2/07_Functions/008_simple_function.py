@@ -8,7 +8,7 @@ Purpose: Functions Demo
 # Function Definition
 def hello(height,name='BINDU', age=200):
     # print "%s's age is %d with height %d"%(name, age, height)
-    print "{0}'s age is {1} with height {2}".format(name, age, height)
+    print("{0}'s age is {1} with height {2}".format(name, age, height))
 
 # NOTE: default arguments should be at the end
 

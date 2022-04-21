@@ -29,5 +29,5 @@ def myfunc(var1, var2, var3):
 
 
 
-print myfunc(2, 3)
-print myfunc(2, 3, 5)
+print(myfunc(2, 3))
+print(myfunc(2, 3, 5))

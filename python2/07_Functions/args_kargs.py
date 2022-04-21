@@ -5,9 +5,9 @@ just try to use *args and **kargs.
 '''
 
 def foo(*args, **kwargs):
-    print 'args = ', args
-    print 'kwargs = ', kwargs
-    print '---------------------------------------'
+    print('args = ', args)
+    print('kwargs = ', kwargs)
+    print('---------------------------------------')
 
 if __name__ == '__main__':
     foo(1,2,3,4)

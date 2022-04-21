@@ -8,7 +8,7 @@ Purpose: Functions Demo
 # Function Definition
 def hello(name, age):
     # print "%s's age is %d"%(name, age)
-    print "{}'s age is {}".format(name, age)
+    print("{}'s age is {}".format(name, age))
 
 
 # Function Call

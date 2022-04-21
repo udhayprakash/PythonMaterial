@@ -7,7 +7,7 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(name):
-    print 'Hello ' + str(name)
+    print('Hello ' + str(name))
 
 
 # Function Call

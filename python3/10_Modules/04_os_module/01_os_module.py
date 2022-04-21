@@ -23,23 +23,23 @@ import os
 #  'utime', 'waitpid', 'waitstatus_to_exitcode', 'walk', 'write']
 
 
-print(os.path.basename("/home/user/temp.txt"))  # temp.txt
-print(os.path.dirname("/home/user/temp.txt"))  # /home/user
+print(os.path.basename('/home/user/temp.txt'))  # temp.txt
+print(os.path.dirname('/home/user/temp.txt'))  # /home/user
 print()
 
 print(os.path.abspath('temp.txt'))  # /home/user/temp.txt
 print(os.getcwd())
 print()
 
-print(os.path.realpath("/home/user/temp.txt"))
+print(os.path.realpath('/home/user/temp.txt'))
 print()
 
-print(os.path.splitext("/home/user/temp.log"))  # ('/home/user/temp', '.log')
-print(os.path.splitext("temp.log"))  # ('temp', '.log')
+print(os.path.splitext('/home/user/temp.log'))  # ('/home/user/temp', '.log')
+print(os.path.splitext('temp.log'))  # ('temp', '.log')
 print()
 
-print(os.path.splitdrive("/home/user/temp.txt"))  # ('', '/home/user/temp.txt')
-print(os.path.splitdrive(r"C:\user\temp.txt"))  # ('C:', '\\user\\temp.txt')
+print(os.path.splitdrive('/home/user/temp.txt'))  # ('', '/home/user/temp.txt')
+print(os.path.splitdrive(r'C:\user\temp.txt'))  # ('C:', '\\user\\temp.txt')
 print()
 
 print(os.path.extsep)  # .

@@ -4,11 +4,11 @@ Purpose: Inner function example
 """
 
 def outer():
-    print 'In outer function'
+    print('In outer function')
     nnum = 786
 
     def inner():
-        print 'In Inner function', nnum
+        print('In Inner function', nnum)
 
     inner()
 

@@ -14,12 +14,12 @@ details = {  # mutable
 
 def simple_function():
     global pi
-    print 'Inside function call, pi', pi, 'details', details
+    print('Inside function call, pi', pi, 'details', details)
     pi = 78
     details['framework'] = 'django'
-    print 'Before function exit, pi', pi, 'details', details
+    print('Before function exit, pi', pi, 'details', details)
 
 
-print 'before function call, pi', pi, 'details', details
+print('before function call, pi', pi, 'details', details)
 simple_function()
-print 'after function call, pi', pi, 'details', details
+print('after function call, pi', pi, 'details', details)

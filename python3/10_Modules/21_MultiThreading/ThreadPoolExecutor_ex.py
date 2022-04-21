@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
 Purpose:
-- ThreadPoolExecutors provide a simple abstraction 
-around spinning up multiple threads and using 
-these threads to perform tasks in a concurrent 
-fashion. 
-- Adding threading to your application can help to 
-drastically improve the speed of your application 
+- ThreadPoolExecutors provide a simple abstraction
+around spinning up multiple threads and using
+these threads to perform tasks in a concurrent
+fashion.
+- Adding threading to your application can help to
+drastically improve the speed of your application
 when used in the right context.
 - By using multiple threads we can speed up applications
-which face an input/output based bottleneck, a good 
+which face an input/output based bottleneck, a good
 example of this would be a web crawler.
 """
 from concurrent.futures import ThreadPoolExecutor

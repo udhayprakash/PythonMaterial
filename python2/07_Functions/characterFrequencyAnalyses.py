@@ -8,10 +8,10 @@ count = {}
 
 for character in sentence:
     #print character,
-    print count.get(character, 0),
+    print(count.get(character, 0), end=' ')
     count[character] = count.get(character,0) + 1
 
-print
+print()
 #print count.items()
 #print sorted(count.items())
 #print sorted(count.items(), reverse= False)

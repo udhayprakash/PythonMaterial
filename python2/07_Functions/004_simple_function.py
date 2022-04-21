@@ -7,7 +7,7 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(name, age):
-    print("%s's age is %d"%(name, age))
+    print(("%s's age is %d"%(name, age)))
     # return None
     # return 12,
     # return (12,),
@@ -15,6 +15,6 @@ def hello(name, age):
     # default return is None type object
 
 # Function Call
-print(hello('India', 75))
+print((hello('India', 75)))
 result = hello('India', 75)
-print('result =', result, type(result))
+print(('result =', result, type(result)))

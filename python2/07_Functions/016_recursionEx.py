@@ -20,7 +20,7 @@ def sumOfList(numList):  # conventional implementation
     return total
 
 
-print sumOfList([12, 23, 34, 546, 1])
+print(sumOfList([12, 23, 34, 546, 1]))
 
 
 def sumOfListRec(numList):  # implementation using recursions
@@ -30,7 +30,7 @@ def sumOfListRec(numList):  # implementation using recursions
         return numList[0] + sumOfListRec(numList[1:])
 
 
-print sumOfListRec([12, 23, 34, 546, 1])
+print(sumOfListRec([12, 23, 34, 546, 1]))
 
 """
 exercises on recursions:

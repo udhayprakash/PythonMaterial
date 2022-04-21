@@ -2,8 +2,8 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
     hooks:
-      - id: check-yaml
-        args: [--allow-multiple-documents]
+      # - id: check-yaml
+      #   args: [--allow-multiple-documents]
       - id: check-json
       - id: check-xml
       - id: check-toml
@@ -15,13 +15,22 @@ repos:
       - id: check-added-large-files
       - id: requirements-txt-fixer
       - id: check-merge-conflict
-      - id: debug-statements
-        exclude: python3/14_Code_Quality/python_2to3_ex.py
+      # - id: debug-statements
+      #   exclude: python3/14_Code_Quality/python_2to3_ex.py
       - id: destroyed-symlinks
-      - id: double-quote-string-fixer
+      # - id: double-quote-string-fixer
       - id: mixed-line-ending
       - id: trailing-whitespace
-  - repo: https://github.com/psf/black
-    rev: 22.3.0
-    hooks:
-      - id: black
+      # - id: check-ast
+      # - id: check-shebang-scripts-are-executable
+      # - id: pretty-format-json
+
+  # - repo: https://github.com/psf/black
+  #   rev: 22.3.0
+  #   hooks:
+  #     - id: black
+
+  # - repo: https://github.com/asottile/reorder_python_imports
+  #   rev: v3.0.1
+  #   hooks:
+  #     - id: reorder-python-imports

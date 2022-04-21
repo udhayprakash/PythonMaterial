@@ -14,16 +14,16 @@ Problem Statement:
 
 """
 
-num = int(raw_input('n='))
+num = int(input('n='))
 
-max_width = len(' '.join(map(str, range(num, 0, -1))) + ' '.join(map(str, range(2, num + 1)))) + 1
+max_width = len(' '.join(map(str, list(range(num, 0, -1)))) + ' '.join(map(str, list(range(2, num + 1))))) + 1
 # max_width is the maximum width, i.e width of the last line
 
-print '{0:^{1}}'.format('1', max_width)  # print 1 , ^ is used to place the
+print('{0:^{1}}'.format('1', max_width))  # print 1 , ^ is used to place the
 # string in the center of the max_width
 for i in range(2, num + 1):  # print rest of the numbers from 2 to num
-    range1 = range(i, 0, -1)
+    range1 = list(range(i, 0, -1))
     strs1 = ' '.join(map(str, range1))
-    range2 = range(2, i + 1)
+    range2 = list(range(2, i + 1))
     strs2 = ' '.join(map(str, range2))
-    print '{0:^{1}}'.format(' '.join((strs1, strs2)), max_width)  # use ^ again with max_width
+    print('{0:^{1}}'.format(' '.join((strs1, strs2)), max_width))  # use ^ again with max_width

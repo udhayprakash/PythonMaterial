@@ -3,7 +3,7 @@
 Purpose: importance of thread locks for synchonization
 
 NOTE: The code between the acquire() and release() methods are
- executed atomically so that there is no chance that a thread will 
+ executed atomically so that there is no chance that a thread will
  read a non-updated version after another thread has already made a change.
 
 """
