@@ -5,12 +5,23 @@ repos:
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: check-json
+      - id: check-xml
+      - id: check-toml
+      - id: check-symlinks
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: detect-aws-credentials
       # - id: pretty-format-json
       - id: check-added-large-files
       - id: requirements-txt-fixer
       - id: check-merge-conflict
       - id: debug-statements
         exclude: python3/14_Code_Quality/python_2to3_ex.py
-
+      - id: destroyed-symlinks
+      - id: double-quote-string-fixer
       - id: mixed-line-ending
       - id: trailing-whitespace
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
