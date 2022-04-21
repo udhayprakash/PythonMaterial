@@ -11,10 +11,10 @@ class MyNewClass(object):
     This is method overwriting
     """
     def myFunction(self, name, age):
-        print "Hello World!, two Variable Case!!!"
+        print 'Hello World!, two Variable Case!!!'
 
     def myFunction(self, name):
-        print "Hello World!, One Variable Case!!!"
+        print 'Hello World!, One Variable Case!!!'
 
 m = MyNewClass()
 m.myFunction('udhay')
@@ -25,15 +25,15 @@ class MyOverLoadEx(object):
     """
     This is overloading ex
 
-    Duck typing - the language doesn'it support a feature, 
+    Duck typing - the language doesn'it support a feature,
                     but we implement by some workaround
     """
 
     def myOverLoadFunction(self, name, age=None):
         if age:
-            print "Hello World!, two Variable Case!!!"
+            print 'Hello World!, two Variable Case!!!'
         else:
-            print "Hello World!, One Variable Case!!!"
+            print 'Hello World!, One Variable Case!!!'
 
 
 n = MyOverLoadEx()

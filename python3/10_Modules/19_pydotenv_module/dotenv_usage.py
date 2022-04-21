@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: dotenv module 
+Purpose: dotenv module
 
     pip install -U python-dotenv --user
 
@@ -22,7 +22,7 @@ env_path = Path('.') / '.env'
 dotenv.load_dotenv(dotenv_path=env_path)
 
 # Accessing the .env file keys
-print(f''' 
+print(f'''
     {os.getenv('REDIS_ADDRESS')   =}
     {os.getenv('MEANING_OF_LIFE') =}
     {os.getenv('MULTILINE_VAR')   =}

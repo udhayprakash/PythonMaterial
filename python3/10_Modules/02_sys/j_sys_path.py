@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Purpose: sys.path 
+Purpose: sys.path
     - Gives the paths to refer
-    Scope Resolution - LEGB 
-        - Builtin 
+    Scope Resolution - LEGB
+        - Builtin
 
 """
 import sys

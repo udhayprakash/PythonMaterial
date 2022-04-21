@@ -5,4 +5,3 @@ for line in hand:
     x = re.findall('^X\S*: ([0-9.]+)', line)
     if len(x) > 0 :
         print x
-

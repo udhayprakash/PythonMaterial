@@ -19,7 +19,7 @@ print('socket now listening')
 
 while 1:
     conn, addr = s.accept()
-    print("connected with" + addr[0] + ':' + str(addr[1]))
+    print('connected with' + addr[0] + ':' + str(addr[1]))
 
     data = conn.recv(1024)
     reply = 'OK ... ' + data

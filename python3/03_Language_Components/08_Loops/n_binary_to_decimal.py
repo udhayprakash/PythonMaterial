@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Binary to Decimal conversion, 
+Purpose: Binary to Decimal conversion,
          without using builtin functions
 
             128  64 32 16 8 4 2 1

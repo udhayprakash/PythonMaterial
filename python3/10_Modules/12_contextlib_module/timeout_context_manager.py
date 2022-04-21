@@ -2,7 +2,7 @@ import signal
 from time import sleep
 
 class timeout:
-    def __init__(self, seconds, *, timeout_message=""):
+    def __init__(self, seconds, *, timeout_message=''):
         self.seconds = int(seconds)
         self.timeout_message = timeout_message
 

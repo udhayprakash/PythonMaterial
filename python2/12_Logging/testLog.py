@@ -4,7 +4,7 @@ import logging
 import os
 debug = 0
 # Log defining information.
-strdate = datetime.now().strftime("%Y_%b_%d_%I_%M")
+strdate = datetime.now().strftime('%Y_%b_%d_%I_%M')
 
 if not os.path.exists('./MyApplicationLogs'):
     os.makedirs('MyApplicationLogs')
@@ -29,4 +29,4 @@ LogfileFormatter = logging.Formatter(
 logger_fh.setFormatter(LogfileFormatter)
 logger.addHandler(logger_fh)
 
-logging.info("Helo world")
+logging.info('Helo world')

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Inverting a dictionary 
+Purpose: Inverting a dictionary
 """
 from collections import defaultdict
 import json
@@ -8,7 +8,7 @@ import json
 
 def tree():
     """
-    factory that creates  a defaultdict that also uses this factory 
+    factory that creates  a defaultdict that also uses this factory
     """
     return defaultdict(tree)
 

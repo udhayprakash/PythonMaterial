@@ -35,7 +35,7 @@ else:
         slab_units = remaining_units - 250
         amount += slab_units * 10.0
 
-        print(f''' 
+        print(f'''
             units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
@@ -45,7 +45,7 @@ else:
         slab_units = remaining_units - 150
         amount += slab_units * 7.0
 
-        print(f''' 
+        print(f'''
             units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
@@ -55,7 +55,7 @@ else:
         slab_units = remaining_units - 100
         amount += slab_units * 4.0
 
-        print(f''' 
+        print(f'''
             units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
@@ -65,7 +65,7 @@ else:
         slab_units = remaining_units - 60
         amount += slab_units * 2.0
 
-        print(f''' 
+        print(f'''
             units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
@@ -75,12 +75,12 @@ else:
         slab_units = 60  # minimum charge
         amount += slab_units * 1.25
 
-        print(f''' 
+        print(f'''
             units consumed  : {remaining_units}
             slab units      : {slab_units}
         ''')
 
-    print(f''' 
+    print(f'''
     FINAL BILL:
         units consumed  : {units_consumed}
         Amount          : {amount}

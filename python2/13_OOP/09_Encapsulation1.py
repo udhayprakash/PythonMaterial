@@ -1,17 +1,17 @@
 #!/usr/bin/env python
- 
+
 class Car:
- 
+
     __maxspeed = 0    # class variable
-    __name = ""
- 
+    __name = ''
+
     def __init__(self):
         self.__maxspeed = 200   # instance variable
-        self.__name = "Supercar"
- 
+        self.__name = 'Supercar'
+
     def drive(self):
         print 'driving. maxspeed ' + str(self.__maxspeed)
- 
+
 redcar = Car()
 redcar.drive()
 

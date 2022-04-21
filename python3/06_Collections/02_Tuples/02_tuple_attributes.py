@@ -14,22 +14,22 @@ print(dir(mytuple))
 
 
 print()
-print("len(mytuple)           =", len(mytuple))
-print("mytuple.__len__()      =", mytuple.__len__())
+print('len(mytuple)           =', len(mytuple))
+print('mytuple.__len__()      =', mytuple.__len__())
 assert len(mytuple) == mytuple.__len__()
 
 print()
-print("str(mytuple)           =", str(mytuple))
-print("type(str(mytuple))     =", type(str(mytuple)))
-print("mytuple.__str__()      =", mytuple.__str__())
-print("type(mytuple.__str__())=", type(mytuple.__str__()))
+print('str(mytuple)           =', str(mytuple))
+print('type(str(mytuple))     =', type(str(mytuple)))
+print('mytuple.__str__()      =', mytuple.__str__())
+print('type(mytuple.__str__())=', type(mytuple.__str__()))
 assert str(mytuple) == mytuple.__str__()
 
 # Tuple repetition operation - original object not modified
 print()
-print("mytuple * 3            =", mytuple * 3)
+print('mytuple * 3            =', mytuple * 3)
 print('mytuple                =', mytuple)
-print("mytuple.__mul__(3)     =", mytuple.__mul__(3))
+print('mytuple.__mul__(3)     =', mytuple.__mul__(3))
 print('mytuple                =', mytuple)
 
 print(f'{mytuple  == (12, 5, 6, 8, (5,))     = }')

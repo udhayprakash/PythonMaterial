@@ -3,14 +3,14 @@
 Features:
 
  - Line numbers are displayed in a seperate Text widget.
-  
+
  - Line number display is entirely automatic.
-  
+
  - Text in the main Text widget can be manipulated normally,
    without regard to line numbers.
 
  - Line numbers are displayed correctly for wrapped lines.
-  
+
 Drawbacks:
 
  - The height of each line in the main Text widget must all
@@ -25,9 +25,9 @@ Drawbacks:
 """
 
 __version__ = 0.2
-__date__    = "2009-07-25"
-__author__  = "robert@pytrash.co.uk"
-__licence__ = "Public Domain"
+__date__    = '2009-07-25'
+__author__  = 'robert@pytrash.co.uk'
+__licence__ = 'Public Domain'
 
 
 __changelog__ = (
@@ -39,7 +39,7 @@ __changelog__ = (
 ('2009-07-24', '0.1', 'PyTrash',
 
 """Initial version."""),
- 
+
 )
 
 
@@ -55,7 +55,7 @@ class EditorClass(object):
     updateId = None
 
     def __init__(self, master):
-        
+
         self.__class__.editors.append(self)
 
         self.lineNumbers = ''
@@ -95,23 +95,23 @@ class EditorClass(object):
 
         if self.__class__.updateId is None:
             self.updateAllLineNumbers()
-   
+
     def getLineNumbers(self):
-        
+
         x = 0
         line = '0'
         col= ''
         ln = ''
-        
+
         # assume each line is at least 6 pixels high
         step = 6
-        
+
         nl = '\n'
         lineMask = '    %s\n'
         indexMask = '@0,%d'
-        
+
         for i in range(0, self.text.winfo_height(), step):
-            
+
             ll, cc = self.text.index( indexMask % i).split('.')
 
             if line == ll:
@@ -134,17 +134,17 @@ class EditorClass(object):
             tt.delete('1.0', END)
             tt.insert('1.0', self.lineNumbers)
             tt.config(state='disabled')
-        
+
     @classmethod
     def updateAllLineNumbers(cls):
 
         if len(cls.editors) < 1:
             cls.updateId = None
             return
-        
+
         for ed in cls.editors:
             ed.updateLineNumbers()
-        
+
         cls.updateId = ed.text.after(
             cls.UPDATE_PERIOD,
             cls.updateAllLineNumbers)
@@ -160,13 +160,13 @@ def demo(noOfEditors, noOfLines):
 
     s = 'line ................................... %s'
     s = '\n'.join( s%i for i in xrange(1, noOfLines+1) )
-    
+
     for ed in EditorClass.editors:
         ed.text.insert(END, s)
 
     pane.pack(fill='both', expand=1)
 
-    root.title("Example - Line Numbers For Text Widgets")
+    root.title('Example - Line Numbers For Text Widgets')
 
 
 if __name__ == '__main__':

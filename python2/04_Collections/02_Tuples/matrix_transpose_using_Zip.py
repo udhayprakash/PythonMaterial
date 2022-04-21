@@ -8,10 +8,10 @@ print 'ORIGINAL matrix:', matrix
 for row in matrix:
     print row
 
-# transposed_matrix = zip(matrix[0], matrix[1], matrix[2])   
+# transposed_matrix = zip(matrix[0], matrix[1], matrix[2])
 transposed_matrix = zip(*matrix)
 
-print 
+print
 print 'TRANSPOSED matrix:', transposed_matrix
 for row in transposed_matrix:
     print row

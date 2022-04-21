@@ -1,12 +1,12 @@
 import random
 import time
 
-from threading import Thread 
+from threading import Thread
 
 class MyThread(Thread):
     def __init__(self, name):
         Thread.__init__(self)
-        self.name = name 
+        self.name = name
 
     def run(self):
         amount = random.randint(3, 15)

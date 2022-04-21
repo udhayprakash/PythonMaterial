@@ -27,11 +27,11 @@ while True:
 
     print(json.dumps(js, indent=4))
 
-    lat = js["results"][0]["geometry"]["location"]["lat"]
-    lng = js["results"][0]["geometry"]["location"]["lng"]
+    lat = js['results'][0]['geometry']['location']['lat']
+    lng = js['results'][0]['geometry']['location']['lng']
     print('lat',lat,'lng',lng)
     location = js['results'][0]['formatted_address']
     print(location)
     print '-'*80
-    choice = raw_input("Do you want to retry: Y or N: ")
+    choice = raw_input('Do you want to retry: Y or N: ')
     if choice.lower() == 'n': break

@@ -32,7 +32,7 @@ class MinBalanceAccount(Account):
 
     def withdraw(self, amount):
         if self.balance - amount < 1000:
-            return "buddy !!! you need to maintain a minimum balance"
+            return 'buddy !!! you need to maintain a minimum balance'
         else:
             Account.withdraw(self, amount)
 
@@ -51,20 +51,20 @@ print '================================='
 # Main
 # student
 will_smith = MinBalanceAccount()
-print "Initial balance of will_smith {}".format(will_smith.balance)
+print 'Initial balance of will_smith {}'.format(will_smith.balance)
 will_smith.deposit(2000)
-print "balance of will_smith {}".format(will_smith.balance)
+print 'balance of will_smith {}'.format(will_smith.balance)
 will_smith.withdraw(500)
-print "balance of will_smith {}".format(will_smith.balance)
+print 'balance of will_smith {}'.format(will_smith.balance)
 will_smith.withdraw(600)
-print "balance of will_smith {}".format(will_smith.balance)
+print 'balance of will_smith {}'.format(will_smith.balance)
 
 # working
 federer = Account()
-print "Initial balance of federer {}".format(federer.balance)
+print 'Initial balance of federer {}'.format(federer.balance)
 federer.deposit(2000)
-print "balance of federer {}".format(federer.balance)
+print 'balance of federer {}'.format(federer.balance)
 federer.withdraw(500)
-print "balance of federer {}".format(federer.balance)
+print 'balance of federer {}'.format(federer.balance)
 federer.withdraw(600)
-print "balance of federer {}".format(federer.balance)
+print 'balance of federer {}'.format(federer.balance)

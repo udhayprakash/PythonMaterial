@@ -10,6 +10,6 @@ with open('example.html', 'rb') as searchFile:
 	print temp
 	with open('searchResults.txt', 'a+b') as resultFile:
 		resultFile.write(temp)
-	
+
 resultFile.close()
 searchFile.close()

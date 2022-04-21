@@ -7,7 +7,7 @@ class Person(object):
         self.first = firstname
         self.last = lastname
 
-    @property    
+    @property
     def fullname(self):
         return self.first + ' '+ self.last
 
@@ -20,10 +20,9 @@ print(person.fullname)  #()
 
 person.last = 'chaitanya'
 
-print(person.fullname) 
+print(person.fullname)
 
 # person.fullname = 'raja ram'
 # print 'person.fullname', person.fullname
-# print 'person.first', person.first 
+# print 'person.first', person.first
 # # But, 'self.first' and 'self.last' are not changed
-

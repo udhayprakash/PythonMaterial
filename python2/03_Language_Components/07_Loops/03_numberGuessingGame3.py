@@ -9,7 +9,7 @@ while loop syntax:
 -----------------
     initilization
     while(condition check):
-        logic 
+        logic
         increment/decrement
 
 example:

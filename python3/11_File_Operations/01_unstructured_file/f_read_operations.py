@@ -11,7 +11,7 @@ Purpose: multiple ways of file read operations
 fh = open('e_write_multiple_lines.tsf', 'r') # default is read mode
 
 print(f'{fh.writable() =}')  # False
-print(f'{fh.readable() =}')  # True 
+print(f'{fh.readable() =}')  # True
 
 
 complete_content = fh.read()
@@ -35,7 +35,7 @@ fh.seek(29)
 print('after fh.tell()', fh.tell())
 
 # reads from cursor position till EOF
-partial_content = fh.read() 
+partial_content = fh.read()
 print(f'{partial_content = }')
 
 # ---------------------------------------------

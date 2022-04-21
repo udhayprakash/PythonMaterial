@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 
 
 Three Laws of Recursion:

@@ -2,10 +2,10 @@
 """
 Purpose: Heap - will store data in sorted order, for each modification
 
-Heaps are concrete data structures, 
-whereas priority queues are abstract data structures. 
+Heaps are concrete data structures,
+whereas priority queues are abstract data structures.
 
-An abstract data structure determines the interface, 
+An abstract data structure determines the interface,
 while a concrete data structure defines the implementation.
 
 Heaps are commonly used to implement priority queues.
@@ -57,8 +57,8 @@ def email(frequency, details):
         yield current, details
 
 
-fast_email = email(datetime.timedelta(minutes=15), "fast email")
-slow_email = email(datetime.timedelta(minutes=40), "slow email")
+fast_email = email(datetime.timedelta(minutes=15), 'fast email')
+slow_email = email(datetime.timedelta(minutes=40), 'slow email')
 
 unified = heapq.merge(fast_email, slow_email)
 print(unified)
@@ -79,4 +79,4 @@ Dafne Schippers          10.90
 top_3 = heapq.nsmallest(
     3, results.splitlines(), key=lambda x: float(x.split()[-1])
 )
-print("\n".join(top_3))
+print('\n'.join(top_3))

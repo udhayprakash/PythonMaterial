@@ -75,7 +75,7 @@ print 'randomList:', randomList
 print 'randomList.pop():', randomList.pop()
 print 'randomList:', randomList
 
-print "randomList.remove(12):", randomList.remove(12)
+print 'randomList.remove(12):', randomList.remove(12)
 print 'randomList:', randomList
 
 print 'randomList.count(12) :', randomList.count(12)

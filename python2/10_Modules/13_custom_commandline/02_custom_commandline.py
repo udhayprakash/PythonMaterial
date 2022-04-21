@@ -1,21 +1,21 @@
 from cmd import Cmd
- 
+
 class MyPrompt(Cmd):
    def do_exit(self, inp):
         '''exit the application.'''
-        print("Bye")
+        print('Bye')
         return True
- 
+
    def do_add(self, inp):
         print("Adding '{}'".format(inp))
- 
+
    def help_add(self):
-       print("Add a new entry to the system.")
- 
+       print('Add a new entry to the system.')
+
 MyPrompt().cmdloop()
 
 """
-USAGE 
+USAGE
     (Cmd) ?
 
     Documented commands (type help <topic>):
@@ -33,5 +33,5 @@ USAGE
     exit the application.
     (Cmd) add 123
     Adding '123'
-    (Cmd) exit                                                                    plete_hBye                                                                           'doc_le    
+    (Cmd) exit                                                                    plete_hBye                                                                           'doc_le
 """

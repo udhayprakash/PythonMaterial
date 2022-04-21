@@ -5,10 +5,10 @@ Purpose: Coroutines
 
 
 def my_coroutine(num):
-    value = yield "default string"
+    value = yield 'default string'
     yield value
     yield value
-    value = yield "new string"
+    value = yield 'new string'
     yield value
 
 

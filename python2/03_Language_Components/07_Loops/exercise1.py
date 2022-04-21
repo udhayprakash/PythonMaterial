@@ -5,7 +5,7 @@
 # Suppose the following input is supplied to the program:
 # without,hello,bag,world Then, the output should be: bag,hello,without,world
 
-a=input("Enter words,separated with comma:")
+a=input('Enter words,separated with comma:')
 a=list(a)
 print a
 a.sort()

@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-Purpose: Exception Hooks 
-    - When exception is raised with excepthook set, 
+Purpose: Exception Hooks
+    - When exception is raised with excepthook set,
         case 1: when exception is handled with except block,
                 it works as ordinary exception handling
-        case 2: When exception is not handled with except block, 
-                exception hook function is executed, and program stops 
+        case 2: When exception is not handled with except block,
+                exception hook function is executed, and program stops
 """
 import sys
 

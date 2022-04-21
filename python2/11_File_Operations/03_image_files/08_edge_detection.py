@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter, ImageEnhance
 
-original_image = Image.open("strawberries.png")
+original_image = Image.open('strawberries.png')
 original_image.show()
 
 grayscale = original_image.convert('L')

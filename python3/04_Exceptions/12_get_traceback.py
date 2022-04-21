@@ -17,11 +17,11 @@ try:
     expr3 = num2 - num4
     expr4 = expr1 * (expr2) / expr3
 except ZeroDivisionError:
-    print("Denominator in divison should not be zero")
+    print('Denominator in divison should not be zero')
     exc_type, exc_value, exc_traceback = sys.exc_info()
-    print(f''' 
-    exc_type     : {exc_type}, 
-    exc_value    : {exc_value}, 
+    print(f'''
+    exc_type     : {exc_type},
+    exc_value    : {exc_value},
     exc_traceback: {exc_traceback},
         Error Line: {exc_traceback.tb_lineno},
         tb_lasti  : {exc_traceback.tb_lasti},

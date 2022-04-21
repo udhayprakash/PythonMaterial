@@ -12,7 +12,7 @@ def hello(height,name='BINDU', age=200):
 
 # NOTE: default arguments should be at the end
 
-# Function Call 
+# Function Call
 hello(1)  # mandatory args shoud be given
 
 hello('HARI')

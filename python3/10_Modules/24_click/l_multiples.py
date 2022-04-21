@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
 
 """
-USAGE: 
+USAGE:
 
     ~py l_multiples.py  -w sky --word forest --word rock -w cloud
     sky

@@ -12,7 +12,7 @@ etree.SubElement(root_elem, 'head')
 etree.SubElement(root_elem, 'title')
 etree.SubElement(root_elem, 'body')
 
-print(etree.tostring(root_elem, pretty_print=True).decode("utf-8"))
+print(etree.tostring(root_elem, pretty_print=True).decode('utf-8'))
 
 # These html elements can be accessed as a list
 

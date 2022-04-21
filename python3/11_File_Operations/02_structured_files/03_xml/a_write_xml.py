@@ -2,11 +2,11 @@
 """
 Purpose: writing an XML file
     XML - eXtensible Markup Language
-        - designed to store and transport data. 
-        - often used for distributing data over the 
+        - designed to store and transport data.
+        - often used for distributing data over the
            Internet(especial in web development).
 
-XML vs HTML 
+XML vs HTML
     XML : is used to store or transport data. So the XML is a Complement to HTML.
     HTML: is used to format and display the same data.
 
@@ -40,6 +40,6 @@ with open('a_write_xml.xml', 'w') as f:
 
 from xml.dom import minidom
 
-xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
-with open("a_write_xml2.xml", "w") as f:
+xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent='   ')
+with open('a_write_xml2.xml', 'w') as f:
     f.write(xmlstr)

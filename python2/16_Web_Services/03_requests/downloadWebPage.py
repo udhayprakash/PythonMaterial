@@ -15,10 +15,8 @@ def download(url):
     filename = url.split('/')[-1]
     with open('downloadedWebPage.html', 'a+b') as fobj:
         fobj.write(req.content)
-    print("Download over.")
+    print('Download over.')
 
 if __name__ == '__main__':
     url = raw_input('Enter a URL:')
     download(url)
-
-

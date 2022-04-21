@@ -7,7 +7,7 @@ Purpose: Data Type Conversions
             - binary        - bin() -base  2  (0-1)
             - hexadecimal   - hex()
             - octal         - oct()
-        float 
+        float
             float()
         String
             str()
@@ -16,13 +16,13 @@ Purpose: Data Type Conversions
 num = 12     # decimal representation
 print('num=', num, type(num))
 
-# int -> float 
+# int -> float
 print(12, float(12))  # 12 12.0
 
-# int -> str 
+# int -> str
 print(12, str(12))   # 12 '12'
 
-# float -> int 
+# float -> int
 print(3.1416, int(3.1416))  # 3.1416,  3
 
 # float -> str
@@ -36,7 +36,7 @@ print('23 ', int('23 '))    # '23 ', 23
 # print('two', int('two')) # ValueError: invalid literal for int() with base 10: 'two'
 # print('23.24', int('23.24')) # ValueError: invalid literal for int() with base 10: '23.24'
 
-# str -> float 
+# str -> float
 print('23   ', float('23'))    # '23   ', 23.0
 print('23.24', float('23.24')) # '23.24', 23.24
 print('23.  ', float('23.'))   # '23.  ', 23.0
@@ -60,12 +60,12 @@ print('str(None)', str(None))
 print()
 
 # int Value is same in all four representations
-# decimal, binary, hexadecimal & octal 
+# decimal, binary, hexadecimal & octal
 
 num1 = 33
-print('num1 =', num1, type(num1)) # -> Decimal form 
+print('num1 =', num1, type(num1)) # -> Decimal form
 
-# decimal -> binary form 
+# decimal -> binary form
 print(23, bin(23), type(bin(23))) # 23, '0b10111'
 # print(23.24, bin(23.24), type(bin(23.24))) # TypeError: 'float' object cannot be interpreted as an integer
 print(23.24, bin(int(23.24)))     # 23.24, '0b10111'
@@ -76,7 +76,7 @@ print(23.24, bin(int(23.24)))     # 23.24, '0b10111'
 
 print('bin(9)', bin(9))    # '0b1001'
 
-# binary -> decimal form 
+# binary -> decimal form
 # int('0b1001')
 print('0b1001', int('0b1001', base=0)) # 9
 print('1001  ', int('1001', base=0))   # 1001
@@ -86,7 +86,7 @@ print((9).bit_length())  # 10014 <- '0b'
 print((23).bit_length()) # 5 <- '0b10111'
 
 # Octal -> 0-7
-# decimal -> octal 
+# decimal -> octal
 print('oct(9)  ', oct(9))   # '0o11'
 print('oct(-23)', oct(-23)) # '-0o27'
 
@@ -94,18 +94,18 @@ print('oct(-23)', oct(-23)) # '-0o27'
 format(10, '#o'), format(10, 'o')   # ('0o12', '12')
 f'{10:#o}', f'{10:o}'               # ('0o12', '12')
 
-# octal -> decimal 
+# octal -> decimal
 print(int(oct(9), base=8))   # 9
 print(int('0o11', base=8))   # 9
 print(int('11', base=8))     # 9
 print(int('11'))             # 11
 
 # Hexadecimal - 0-9 A-F
-# decimal -> hexadecimal 
+# decimal -> hexadecimal
 print('hex(9)  ', hex(9))    # '0x9'
 print('hex(-23)', hex(-23))  # '-0x17'
 
-# hexadecimal -> decimal 
+# hexadecimal -> decimal
 print(int(hex(-23), base=16)) # -23
 print(int('-0x17', base=16))  # -23
 print(int('-17', base=16))    # -23

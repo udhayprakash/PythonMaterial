@@ -31,7 +31,7 @@ for i in tqdm(work(2000), total=2000):
 #       from tqdm import tqdm_notebook as tqdm
 
 
-k = 0 
+k = 0
 for outer_loop in tqdm(range(20), desc='outer loop', leave=True):
     for inner_loop in tqdm(range(10_000_000), desc='inner loop', leave=False):
-        k += 100 
+        k += 100

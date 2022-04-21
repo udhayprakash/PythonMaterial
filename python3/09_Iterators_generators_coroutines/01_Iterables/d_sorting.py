@@ -39,7 +39,7 @@ print(f'revr_numbers     : {revr_numbers}')  # [4, 1, 3, 2, 5]
 
 # ------------------------------------------
 print()
-word = "az AZ 10"
+word = 'az AZ 10'
 print(f'word                        :{word}')
 print(f'list(word)                  :{list(word)}')
 print(f'sorted(word)                :{sorted(word)}')

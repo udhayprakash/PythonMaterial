@@ -6,17 +6,17 @@ def bread(func):
     def wrapper():
         print("</''''''\>")
         func()
-        print("<\______/>")
+        print('<\______/>')
     return wrapper
 
 def ingredients(func):
     def wrapper():
-        print("#tomatoes#")
+        print('#tomatoes#')
         func()
-        print("~salad~")
+        print('~salad~')
     return wrapper
 
-def sandwich(food="--ham--"):
+def sandwich(food='--ham--'):
     print(food)
 
 sandwich()
@@ -36,7 +36,7 @@ print('============Using decorators===')
 
 @bread
 @ingredients
-def sandwich(food="--ham--"):
+def sandwich(food='--ham--'):
     print(food)
 
 sandwich()

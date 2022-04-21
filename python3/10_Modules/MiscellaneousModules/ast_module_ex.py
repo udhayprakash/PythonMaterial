@@ -23,7 +23,7 @@ print(eval(compile(code, '', mode='eval')))
 
 code = ast.parse("print('Hello world!')")
 print(type(code), code)
-exec(compile(code, filename="", mode="exec"))
+exec(compile(code, filename='', mode='exec'))
 print(ast.dump(code))
 
 # Multi-line ast
@@ -37,6 +37,6 @@ for fruit in fruits:
 ''')
 
 print(ast.dump(tree))
-exec(compile(tree, filename="", mode="exec"))
+exec(compile(tree, filename='', mode='exec'))
 
 # NOTE: Tools like Pylint uses ASTs to perform static code analysis

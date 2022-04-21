@@ -20,8 +20,8 @@ import sys
 
 # sys.argv
 
-print "sys.argv     :", sys.argv
-print "len(sys.argv):", len(sys.argv)
+print 'sys.argv     :', sys.argv
+print 'len(sys.argv):', len(sys.argv)
 
 winningTicket = '123Alpha'
 

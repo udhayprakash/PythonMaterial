@@ -21,7 +21,7 @@ def get_geolocation(all_the_ip_address):
     Given a list of lists from `get_addresses()`, this function
     returns an updated lists of lists containing the geolocation.
     """
-    print("Getting geo information...")
+    print('Getting geo information...')
     updated_addresses = []
     counter = 1
     # update header
@@ -29,7 +29,7 @@ def get_geolocation(all_the_ip_address):
     header_row.extend(['Country', 'City'])
     # get geolocation
     for line in all_the_ip_address:
-        print("Grabbing geo info for row # {0}".format(counter))
+        print('Grabbing geo info for row # {0}'.format(counter))
         r = requests.get('https://freegeoip.net/json/{0}'.format(line[0]))
         line.extend([str(r.json()['country_name']), str(r.json()['city'])])
         updated_addresses.append(line)
@@ -51,7 +51,7 @@ def create_csv(updated_address_list):
     with f:
         writer = csv.writer(f)
         writer.writerows(updated_address_list)
-    print("All done!")
+    print('All done!')
 
 
 if __name__ == '__main__':

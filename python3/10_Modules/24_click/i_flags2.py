@@ -23,7 +23,7 @@ USAGE:
     ~py i_flags2.py --shout udhay
     UDHAY
 
-    ~py i_flags2.py --no-shout udhay 
+    ~py i_flags2.py --no-shout udhay
     udhay
 
 """

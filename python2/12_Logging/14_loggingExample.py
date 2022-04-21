@@ -24,8 +24,8 @@ class Loggable(object):
         handler = logging.FileHandler(self.logFileName)
         logger.addHandler(handler)
         formatter = logging.Formatter(
-            "%(asctime)s: %(name)s - "
-            "%(levelname)s - %(message)s")
+            '%(asctime)s: %(name)s - '
+            '%(levelname)s - %(message)s')
         handler.setFormatter(formatter)
         return logger
 
@@ -41,14 +41,14 @@ class MyClass(Loggable):
     """A class that you've written. """
 
     def __init__(self):
-        Loggable.__init__(self, logFileName="log2.txt")
+        Loggable.__init__(self, logFileName='log2.txt')
         # super(MyClass, self).__init__(logFileName="log2.txt")
 
     def doSomeThing(self):
-        print "Doing Something!!!"
-        self.log("I did something!")
-        self.log("Some debugging info", logging.DEBUG)
-        self.warn("Something bad happened!")
+        print 'Doing Something!!!'
+        self.log('I did something!')
+        self.log('Some debugging info', logging.DEBUG)
+        self.warn('Something bad happened!')
 
 
 test = MyClass()

@@ -13,13 +13,13 @@ students = ['Michel', 'John', 'Udhay', 'An', 123]
 
 #f = open('BelgiumStudents.pkl', 'ab+')
 my_pickle_string =  pickle.dumps(students)
-print "my_pickle_string", my_pickle_string
+print 'my_pickle_string', my_pickle_string
 print type(my_pickle_string)
 
 # Deserialization
 # g = open('BelgiumStudents.pkl', 'rb')
 myStudents = pickle.loads(my_pickle_string)
-print "myStudents are ", myStudents
+print 'myStudents are ', myStudents
 
 
 # cpython - it is c implementation of python

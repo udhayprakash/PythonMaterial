@@ -4,19 +4,19 @@ import argparse
 # ex1: 4 2
 # ex2: 4 2 -v
 parser = argparse.ArgumentParser()
-parser.add_argument("x",
+parser.add_argument('x',
                     type=int,
-                    help="the base"
+                    help='the base'
                     )
 
-parser.add_argument("y",
+parser.add_argument('y',
                     type=int,
-                    help="the exponent"
+                    help='the exponent'
                     )
 
-parser.add_argument("-v",
-                    "--verbosity",
-                    action="count",
+parser.add_argument('-v',
+                    '--verbosity',
+                    action='count',
                     default=0
                     )
 
@@ -26,5 +26,5 @@ answer = args.x ** args.y
 if args.verbosity >= 2:
     print "Running '{}'".format(__file__)
 elif args.verbosity >= 1:
-    print "{}^{} ==".format(args.x, args.y),
+    print '{}^{} =='.format(args.x, args.y),
 print answer

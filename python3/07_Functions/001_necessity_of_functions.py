@@ -10,15 +10,15 @@ Purpose: Functions
     Function with no arguments and no return value
 """
 # Method1
-print("Hello world")
-print("Hello world")
-print("Hello world")
-print("Hello world")
+print('Hello world')
+print('Hello world')
+print('Hello world')
+print('Hello world')
 print()
 
 
 def hello():
-    print("Hello world")
+    print('Hello world')
 
 
 hello()

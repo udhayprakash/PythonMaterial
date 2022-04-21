@@ -20,7 +20,7 @@ def get_time_delays(site_name):
     if error:
         print(f'error:{error}')
     else:
-        output = output.decode("utf-8")
+        output = output.decode('utf-8')
         print(f'output:{output}')
 
 

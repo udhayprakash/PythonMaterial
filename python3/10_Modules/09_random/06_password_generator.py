@@ -1,8 +1,8 @@
 import random
 
-alphabet = "abcdefghijklmnopqrstuvwxyz .,!@_-(*)-+/|$%&=?^"
+alphabet = 'abcdefghijklmnopqrstuvwxyz .,!@_-(*)-+/|$%&=?^'
 pw_length = 34  # can change the length of your password by changing this number
-mypw = ""
+mypw = ''
 
 for i in range(pw_length):
     next_index = random.randrange(len(alphabet))

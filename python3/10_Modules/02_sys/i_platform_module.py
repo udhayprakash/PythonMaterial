@@ -5,9 +5,9 @@ Purpose: platform module
 
 import platform
 
-print("platform.architecture()  :", platform.architecture())  # ('64bit', 'WindowsPE')
-print("platform.machine()       :", platform.machine())  # AMD64
-print("platform.system()        :", platform.system())  # Windows
+print('platform.architecture()  :', platform.architecture())  # ('64bit', 'WindowsPE')
+print('platform.machine()       :', platform.machine())  # AMD64
+print('platform.system()        :', platform.system())  # Windows
 
 print(f'{platform.python_revision()       = }')
 print(f'{platform.python_implementation() = }')

@@ -20,14 +20,14 @@ def foo(firstArg, *args, **kwargs):
     print 'kwargs = ', kwargs
     print 'type(kwargs) is', type(kwargs)
     if kwargs:
-        print "The keyword arguments are\n",
+        print 'The keyword arguments are\n',
         # for kwarg in kwargs:
         #    print kwarg
         for k, v in kwargs.items():
             print '%15r  --> %10r' % (k, v)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     print '\n', '_' * 70
     foo(321)
     print '\n', '_' * 70

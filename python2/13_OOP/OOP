@@ -4,7 +4,7 @@ functions written within the classes are called methods.
 
 types of methods:
 1. Instance methods - have 'self' as the default input argument
-2. Static methods   - Doesn't have any default input argument. 
+2. Static methods   - Doesn't have any default input argument.
 					  created loosely, or using decorator @staticmethod
 3. class methods
 

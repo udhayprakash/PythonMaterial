@@ -15,6 +15,6 @@ class CsvTest(unittest.TestCase):
         w.writerow([u'包名'.encode('utf-8'), u'应用名称'.encode('utf-8'), u'下载次数'.encode('utf-8')])
         f.close()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     #import sys;sys.argv = ['', 'CsvTest.test_writeCsv']
     unittest.main()

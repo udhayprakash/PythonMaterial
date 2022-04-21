@@ -137,7 +137,7 @@ Chapter 15: Django's Email Functionality
 	- Sending Email
 	- Other Email Functions
 
-Chapter 16: Miscellenous 	
+Chapter 16: Miscellenous
 	- Deploying Django Applications
 	- Deploying to Apache
 	- Using ReportLab for PDF Generation

@@ -19,9 +19,9 @@ def foo():
     Part 2
     >>>
     """
-    print "Part 1"
+    print 'Part 1'
     yield
-    print "Part 2"
+    print 'Part 2'
     yield
 
 
@@ -30,13 +30,13 @@ class Scheduler(object):
     def __init__(self):
         self.ready = Queue()
         self.taskmap = {}
-    
+
     def new(self,target):
         newtask = Task(target)
         self.taskmap[newtask.tid] = newtask
         self.schedule(newtask)
         return newtask.tid
-    
+
     def schedule(self,task):
         self.ready.put(task)
 

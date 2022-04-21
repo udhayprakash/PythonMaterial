@@ -4,7 +4,7 @@ def highlightVowels():
     while True:
         myString = yield
         print ''.join([ch.upper() if ch.lower() in ['a', 'e', 'i', 'o', 'u'] else ch for ch in myString])
-        
+
 hV = highlightVowels()
 
 next(hV)  # coroutine starts

@@ -1,7 +1,7 @@
-import logging 
+import logging
 from logging import handlers
-import socket 
-import traceback 
+import socket
+import traceback
 
 HOST = 'localhost'
 FROM = '"Application Alert" <pythontutor@domain.com>'
@@ -24,13 +24,3 @@ try:
             ''.join(traceback.format_stack()))
 except socket.error as error:
     logging.critical('Could not send email via SMTPHandler: %r', error)
-
-
-
-
-
-
-
-
-
-

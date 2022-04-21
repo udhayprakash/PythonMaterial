@@ -1,7 +1,7 @@
 # We subclass from object to get a class.
 class Human(object):
     # A class attribute. It is shared by all instances of this class
-    species = "H. sapiens"
+    species = 'H. sapiens'
 
     # Basic initializer, this is called when this class is instantiated.
     # Note that the double leading and trailing underscores denote objects
@@ -16,7 +16,7 @@ class Human(object):
 
     # An instance method. All methods take "self" as the first argument
     def say(self, msg):
-        return "{0}: {1}".format(self.name, msg)
+        return '{0}: {1}'.format(self.name, msg)
 
     # A class method is shared among all instances
     # They are called with the calling class as the first argument
@@ -27,7 +27,7 @@ class Human(object):
     # A static method is called without a class or instance reference
     @staticmethod
     def grunt():
-        return "*grunt*"
+        return '*grunt*'
 
     # A property is just like a getter.
     # It turns the method age() into an read-only attribute
@@ -48,17 +48,17 @@ class Human(object):
 
 
 # Instantiate a class
-i = Human(name="Ian")
-print i.say("hi")  # prints out "Ian: hi"
+i = Human(name='Ian')
+print i.say('hi')  # prints out "Ian: hi"
 
-j = Human("Joel")
-print j.say("hello")  # prints out "Joel: hello"
+j = Human('Joel')
+print j.say('hello')  # prints out "Joel: hello"
 
 # Call our class method
 i.get_species()  # => "H. sapiens"
 
 # Change the shared attribute
-Human.species = "H. neanderthalensis"
+Human.species = 'H. neanderthalensis'
 i.get_species()  # => "H. neanderthalensis"
 j.get_species()  # => "H. neanderthalensis"
 

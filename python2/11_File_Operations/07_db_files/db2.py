@@ -3,9 +3,9 @@ import sqlite3
 conn = sqlite3.connect('music.sqlite')
 cur = conn.cursor()
 
-cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )', 
+cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',
     ( 'Thunderstruck', 20 ) )
-cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )', 
+cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',
     ( 'My Way', 15 ) )
 conn.commit()
 
@@ -17,4 +17,3 @@ for row in cur :
 cur.execute('DELETE FROM Tracks WHERE plays < 100')
 
 cur.close()
-

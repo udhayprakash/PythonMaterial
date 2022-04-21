@@ -35,13 +35,12 @@ print('4 * 1j', 4 * 1j)
 # In these cases, interpreter treats 'j' as a variable.
 
 # complex()  - Builtin function
-print("complex(2,-3.456)", complex(2, -3.456))
-print("complex(2,0)     ", complex(2, 0))
+print('complex(2,-3.456)', complex(2, -3.456))
+print('complex(2,0)     ', complex(2, 0))
 
 # == checks value equivalence
 print('4 == 4  :', 4 == 4)     # True
 print('4 == 4.3:', 4 == 4.3)   # False
 
-print("(3 + 4j) == (4j + 3)= ", (3 + 4j) == (4j + 3))  # True 
-print("(3 + 4j) == (4 + 3j)= ", (3 + 4j) == (4 + 3j))  # False
-
+print('(3 + 4j) == (4j + 3)= ', (3 + 4j) == (4j + 3))  # True
+print('(3 + 4j) == (4 + 3j)= ', (3 + 4j) == (4 + 3j))  # False

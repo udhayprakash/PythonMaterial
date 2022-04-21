@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Purpose: breakpoint hook 
-    - sys.breakpointhook 
+Purpose: breakpoint hook
+    - sys.breakpointhook
         - Gets called when breakpoint is called
         - works only with builtin breakpoint() function
         - Doesnt work with pdb/ipdb modules
 """
-import sys 
+import sys
 
 def hello():
     print('Breakpoint got activated')

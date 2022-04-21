@@ -31,8 +31,8 @@ print('language[45:87]:', language[45:87])  # indexes are not present
 #   string[start_index: final_index: step]
 #   Default Step is +1
 print()
-print("language[7:18]   =", language[7:18])
-print("language[7:18:1] =", language[7:18:1])
+print('language[7:18]   =', language[7:18])
+print('language[7:18:1] =', language[7:18:1])
 # [7:18:1] => 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
 
 
@@ -40,11 +40,11 @@ print("language[7:18:1] =", language[7:18:1])
 # 0   1  2  3  4 5 6 7 8 9 10 11 12 13 14 15 16 17    - forward indexing
 # -18                                    -3 -2 -1    - reverse indexing
 print()
-print("language[7:18:3] =", language[7:18:3])
+print('language[7:18:3] =', language[7:18:3])
 # [7:18:3] => 7, 10, 13, 16
 
 
-print("language[7:18:-1]=", language[7:18:-1])
+print('language[7:18:-1]=', language[7:18:-1])
 # 7-1 = 6 ; it is not between 7 and 18
 # [7:18:-1]  =>
 

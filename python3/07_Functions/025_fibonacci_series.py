@@ -1,17 +1,17 @@
 #!/usr/bin/python
 """
-Purpose: Fibonacci series Generation 
+Purpose: Fibonacci series Generation
     - first two numbers are 0 & 1
-    - each next number is a summation of previous two nums 
+    - each next number is a summation of previous two nums
     - 0, 1, 1, 2, 3, 5, 8, 13, .....
 
- (0, 1, 1, 2, 3, 5, 8, 13....) 
-  0  1  2  3  4  5  6   7 
+ (0, 1, 1, 2, 3, 5, 8, 13....)
+  0  1  2  3  4  5  6   7
            using recursions
 """
 def fib(n):
     if n == 0:
-        return 0 
+        return 0
     elif n == 1:
         return 1
     return fib(n - 1) + fib(n - 2)

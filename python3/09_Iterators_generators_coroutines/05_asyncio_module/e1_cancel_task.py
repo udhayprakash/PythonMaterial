@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: cancelling a run task 
+Purpose: cancelling a run task
     asyncio.cancel - Request the Task to be cancelled.
 
 """
@@ -28,13 +28,13 @@ async def main():
     print(f'main(): Before cancelling: {task.cancelled()=}') # False
     task.cancel()
     print(f'main(): After  cancelling: {task.cancelled()=}') # False
-    
+
     try:
         await task
     except asyncio.CancelledError:
-        print("main(): cancel_me is cancelled now")
+        print('main(): cancel_me is cancelled now')
         print(f'{task.exception =}')
-    
+
     print(f'main(): After  cancelling: {task.cancelled()=}') # True
 
 asyncio.run(main())

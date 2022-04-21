@@ -6,7 +6,7 @@ Purpose: Decorator Hierarchy
 
 def decorator_func1(func):
     def wrapper(*args, **kwargs):
-        print("I am in decorator 1")
+        print('I am in decorator 1')
         func(*args, **kwargs)
 
     return wrapper
@@ -14,7 +14,7 @@ def decorator_func1(func):
 
 def decorator_func2(func):
     def wrapper(*args, **kwargs):
-        print("I am in decorator 2")
+        print('I am in decorator 2')
         func(*args, **kwargs)
 
     return wrapper
@@ -22,7 +22,7 @@ def decorator_func2(func):
 
 def decorator_func3(func):
     def wrapper(*args, **kwargs):
-        print("I am in decorator 3")
+        print('I am in decorator 3')
         func(*args, **kwargs)
 
     return wrapper

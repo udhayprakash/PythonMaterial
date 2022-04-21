@@ -3,7 +3,7 @@
 Purpose: Function overwriting Problem
 
 
-a = 10 
+a = 10
 a = 56
 
 """

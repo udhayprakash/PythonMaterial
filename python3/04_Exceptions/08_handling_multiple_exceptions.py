@@ -24,7 +24,7 @@ Either zerodivision or syntax issue, or typing error occured:unsupported operand
 
 ~!python3 08_handling_multiple_exceptions.py
 Enter an expression:766+ 0007
-Either zerodivision or syntax issue, or typing error occured:leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (<string>, line 1)    
+Either zerodivision or syntax issue, or typing error occured:leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (<string>, line 1)
 
 ~!python3 08_handling_multiple_exceptions.py
 Enter an expression:6546547647 ** 7657657658875

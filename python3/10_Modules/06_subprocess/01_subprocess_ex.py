@@ -3,8 +3,8 @@ from sys import platform, exit
 import os
 
 # subprocess.Popen is more general than subprocess.call.
-# Popen doesn't block, allowing you to interact with the 
-# process while it's running, or continue with other things 
+# Popen doesn't block, allowing you to interact with the
+# process while it's running, or continue with other things
 # in your Python program; whereas call does block.
 
 if platform in ['linux', 'linux2', 'darwin']:
@@ -25,5 +25,5 @@ elif platform == 'win32':
     print('output==============\n', output.decode('utf-8'))
     print('err=================\n', err.decode('utf-8'))
 else:
-    print("unhandled platform :", platform)
+    print('unhandled platform :', platform)
     exit(1)

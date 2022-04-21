@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: Unpacking 
-    - works when same no. of variables and values 
+Purpose: Unpacking
+    - works when same no. of variables and values
       are present on both sides
 """
 num1 = 12
@@ -17,7 +17,7 @@ print(f'p1 = {p1}  p2 = {p2} p3 = {p3} p4 = {p4} p5 = {p5}')
 
 try:
     p1, p2, p3, p4 = 99, 88, 66, 77, 44
-except ValueError as ex: 
+except ValueError as ex:
     print(ex)
 
 p = 99, 88, 66, 77, 44

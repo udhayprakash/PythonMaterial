@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# SyntaxError cant be handled 
+# SyntaxError cant be handled
 # bat = 0
 try:
     result =bat + 1 / 0
@@ -25,6 +25,6 @@ else:
 finally:
     print 'finally block'
 
-# NOTE: when more than one error is present, 
-# it return the first error encountered when traversing 
+# NOTE: when more than one error is present,
+# it return the first error encountered when traversing
 # from left to right and top to bottom approach

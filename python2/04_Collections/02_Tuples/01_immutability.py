@@ -23,5 +23,3 @@ student_name = 'Theja'  # Overwriting
 print 'id(student_name)', id(student_name)
 
 print student_name
-
-

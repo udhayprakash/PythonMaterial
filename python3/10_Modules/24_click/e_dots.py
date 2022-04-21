@@ -24,7 +24,7 @@ USAGE:
     ~py e_dots.py --n 10
     ..........
 
-    ~py e_dots.py --n 5 
+    ~py e_dots.py --n 5
     .....
 
 """

@@ -21,12 +21,12 @@ print 'Hello  #World5'
 
 '''
 Used to handle multi-line strings
-or 
+or
 in cases where multiple single and double quotes are present in string
 '''
 
 """
-used for 
+used for
 docstrings
 
 print 'Hello World7'

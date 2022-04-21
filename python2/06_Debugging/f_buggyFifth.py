@@ -5,7 +5,7 @@ def eo(num):
   if num % 2 == 0:
     return 'even'
   else:
-    return 'odd' 
+    return 'odd'
 
 import pdb;pdb.set_trace()
 print eo(2)

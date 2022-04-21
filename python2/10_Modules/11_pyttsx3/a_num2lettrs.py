@@ -1,5 +1,5 @@
 """
-Purpose: digits to alphabets 
+Purpose: digits to alphabets
 
 786 -> SEVEN EIGHT SIX
 
@@ -19,7 +19,7 @@ number_to_alphabets = {
     9: 'NINE'
 }
 '''
-NOTE: 
+NOTE:
 abs(-num) = num
 abs(+num) = num
 '''
@@ -40,14 +40,14 @@ def digit_to_number(num1):
 try:
     import pyttsx3
 except ImportError:
-    import os 
+    import os
     os.system('pip install pyttsx3')
     import pyttsx3
 
 def text_to_speech(text):
     engine = pyttsx3.init()
     engine.say(text)
-    engine.runAndWait() 
+    engine.runAndWait()
 
 digit_to_number(-1.8)
 digit_to_number(10)

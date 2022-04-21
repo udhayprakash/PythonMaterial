@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
-Purpose: Functions will math operations 
-    - factorial 
+Purpose: Functions will math operations
+    - factorial
     - fibonacci
 """
 

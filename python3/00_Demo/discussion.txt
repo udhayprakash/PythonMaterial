@@ -2,74 +2,74 @@
 2. whether you installed Python already or not?
 
 
-Python 
+Python
     - installation
-        - except in windows, in all other os, you can find python pre-installed 
+        - except in windows, in all other os, you can find python pre-installed
     - distributions
         - python.org/downloads   100
         - anaconda python        free : 130   enterprise: 250
         - active python
-        - python(x,y)          150  comminutu 
+        - python(x,y)          150  comminutu
         - chocalaty python
-    - domains/fields in which python is used 
+    - domains/fields in which python is used
         - https://udhayprakash.blogspot.com/2015/07/world-made-with-python.html
     - Python is platform independent
-        - 
+        -
 
 OS - MAC /unix/linux
      - python 2
-     - python 3 
+     - python 3
 
 windows
-    - python2 or 3 
+    - python2 or 3
 
 
 
-Windows 
+Windows
 
 
 
-platform independent language 
+platform independent language
 
 
 
 
-c & c++ - fastestly language 
-    - win32 
-    - win64 
+c & c++ - fastestly language
+    - win32
+    - win64
 
 java - platform independent
-    - .jar 
+    - .jar
 
 
 python - platform independent
-    - priise code 
+    - priise code
     - readd
 
 
-compiler based language 
-    - c, c++, java 
+compiler based language
+    - c, c++, java
 
-    code - > linkage - > assembly _> machine level 
+    code - > linkage - > assembly _> machine level
 
-interpreter based languages 
-    - python 
+interpreter based languages
+    - python
 
-    code -> each line -> interpreter -> byte code -> assembly _> machine level 
-    python is slow 
+    code -> each line -> interpreter -> byte code -> assembly _> machine level
+    python is slow
 
-    project takes - 100 days 
-                -  40 days 
-
-
-android - kivy 
+    project takes - 100 days
+                -  40 days
 
 
+android - kivy
 
 
-aspect oriented programming 
-    - bash, shell, 
-functional oriented programming 
-    - c, 
-object oriented programming 
+
+
+aspect oriented programming
+    - bash, shell,
+functional oriented programming
+    - c,
+object oriented programming
     - java, c++

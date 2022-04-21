@@ -58,7 +58,7 @@ while i < 10:
 
 
 def my_func():
-    return "hello world"
+    return 'hello world'
 
 
 class MyClass:

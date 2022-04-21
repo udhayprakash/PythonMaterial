@@ -19,7 +19,7 @@ hello_word()
 
 # Function Definition
 def hello(name):
-    print("Hello " + name)
+    print('Hello ' + name)
 
 
 # Function Call
@@ -32,5 +32,5 @@ hello('Python')  # ---> call by positional arguments
 # # TypeError: hello() takes 1 positional argument but 2 were given
 
 hello(name='python')  # -----> call by keyword arguments
-# hello(name1='python')   
+# hello(name1='python')
 # # TypeError: hello() got an unexpected keyword argument 'name1'

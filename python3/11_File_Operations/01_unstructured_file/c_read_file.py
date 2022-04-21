@@ -1,12 +1,12 @@
 #!/usr/bin/python
 """
-Purpose: reading existing file 
+Purpose: reading existing file
     - If file is not present, it throws an error
 """
 fh1 = open('b_create_file.txt', mode='r', encoding='utf-8')
 
-print("Name of the file : ", fh1.name)
-print("Opening mode     : ", fh1.mode)
+print('Name of the file : ', fh1.name)
+print('Opening mode     : ', fh1.mode)
 
 print(f'{fh1.writable() =}')
 # fh1.write('This is fifth line\n')

@@ -11,11 +11,11 @@ try:
     import ntplib
 except ImportError as ie:
     print(ie)
-    print("Trying to install the module")
+    print('Trying to install the module')
     from os import system
 
     if not system('pip install ntplib --user'):
-        print("Unable to install module")
+        print('Unable to install module')
         from sys import exit
 
         exit(1)

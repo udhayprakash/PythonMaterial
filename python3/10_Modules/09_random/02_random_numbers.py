@@ -1,16 +1,16 @@
 import random
 
 """
-Purpose: demonstration of random module 
+Purpose: demonstration of random module
 
-    Python random module, uses pseudo-random generator (PRNG) 
-    called the Mersenne Twister. 
+    Python random module, uses pseudo-random generator (PRNG)
+    called the Mersenne Twister.
 """
 # Pick a random number between 1 and 100.
 print(random.randint(1, 100))  # 75
 # randint also includes the upper bound value
 
-# Pick a random floating point number between 1 and 10 
+# Pick a random floating point number between 1 and 10
 # random.uniform(a,b) => a <= N <= b
 print(random.uniform(1, 10))
 

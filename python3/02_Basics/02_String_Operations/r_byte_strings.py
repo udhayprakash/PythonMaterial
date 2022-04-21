@@ -1,9 +1,9 @@
 #!/usr/bin/python
 """
 Purpose: byte strings
-    bytes objects actually behave like 
-    immutable sequences of integers, with each 
-    value in the sequence restricted such that 
+    bytes objects actually behave like
+    immutable sequences of integers, with each
+    value in the sequence restricted such that
     0 <= x < 256
 """
 # Question: bytearray vs bytes
@@ -26,7 +26,7 @@ print(my_string, type(my_string))
 b_string = bytes(my_string, 'utf-8')
 print(b_string, type(b_string))
 
-# bytes to string 
+# bytes to string
 print(b'hello'.decode('utf-8'))
 
 o_string = b_string.decode('utf-8')

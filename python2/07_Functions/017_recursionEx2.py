@@ -1,5 +1,5 @@
 def toString(n, base):
-    convertString = "0123456789ABCDEF"
+    convertString = '0123456789ABCDEF'
     if n < base:
         return convertString[n]
     else:

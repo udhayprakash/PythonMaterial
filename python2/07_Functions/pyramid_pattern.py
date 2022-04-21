@@ -2,10 +2,10 @@
 from __future__ import print_function
 
 """
-Problem statement: 
-		
+Problem statement:
+
 Enter number of lines 3
-  *            prints 3-1=2 spaces, i=1 '* ' 
+  *            prints 3-1=2 spaces, i=1 '* '
  * * 		   prints 3-2=1 space, i =2 '* '
 * * * 		   prints 3-3=0 spaces, i =3 '* '
 """
@@ -23,8 +23,8 @@ def triangle(n):
             print()  # observe the difference after importing print_function
             k = k - 1
     for j in range(0, i + 1):
-        print("* ")
-    print("\r")
+        print('* ')
+    print('\r')
 
 
 n = 5

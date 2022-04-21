@@ -32,7 +32,7 @@ except:
 
 print('Ip address of ' + host + ' is ' + remote_ip)
 
-print("connecting to the server \n")
+print('connecting to the server \n')
 
 s.connect((remote_ip, port))
 

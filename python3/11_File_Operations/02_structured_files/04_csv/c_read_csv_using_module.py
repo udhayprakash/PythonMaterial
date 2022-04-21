@@ -16,7 +16,7 @@ with open('my_file.csv', 'r') as fh:
 
     # To skip the header
     next(file_content, None)
-    
+
     names = []
     for each_line in file_content:
         name = each_line[1]

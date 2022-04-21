@@ -3,8 +3,8 @@ from subprocess import *
 import os
 
 '''
-By default when a new file is created under Unix, 
-it receives permissions based on the umask of the current user. 
+By default when a new file is created under Unix,
+it receives permissions based on the umask of the current user.
 To copy the permissions from one file to another, use copymode().
 '''
 

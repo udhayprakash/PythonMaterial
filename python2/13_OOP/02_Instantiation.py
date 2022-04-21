@@ -21,7 +21,7 @@ print 'type(n)            :', type(n)
 print
 print 'isinstance(n, MyClassName) :', isinstance(n, MyClassName)
 print 'isinstance(1, MyClassName) :', isinstance(1, MyClassName)
-print "__name__", __name__
+print '__name__', __name__
 
 print n.hello_world()
 print MyClassName.hello_world(n)

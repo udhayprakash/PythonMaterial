@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: Addition operation, with exception handling
-    Importance of ELSe block 
+    Importance of ELSe block
 """
 # # Case 1 - without exception handling
 # num1= 1000

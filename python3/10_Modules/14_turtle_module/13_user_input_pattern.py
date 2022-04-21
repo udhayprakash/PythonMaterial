@@ -6,8 +6,8 @@ import turtle
 import time
 import random
 
-print("This program draws shapes based on the number you enter in a uniform pattern.")
-num_str = input("Enter the side number of the shape you want to draw: ")
+print('This program draws shapes based on the number you enter in a uniform pattern.')
+num_str = input('Enter the side number of the shape you want to draw: ')
 if num_str.isdigit():
     squares = int(num_str)
 

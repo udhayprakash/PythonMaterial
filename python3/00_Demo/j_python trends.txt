@@ -4,57 +4,57 @@ https://insights.stackoverflow.com/trends?tags=python
 https://stackoverflow.blog/2017/09/14/python-growing-quickly/
 
 
-Python Modules & Frameworks 
+Python Modules & Frameworks
 ---------------------------
-    - Machine Learning & Data Science 
-        - Numpy 
+    - Machine Learning & Data Science
+        - Numpy
         - Keras
         - Theano
         - Pandas
-        - PyTorch 
+        - PyTorch
         - NLTK
         - TensorFlow
-        - Scikit-Learn 
-        - Scipy 
-        - Seaborn 
-        - Bokeh 
-    - Web Development 
-        - Django 
-        - Flask 
-        - Bottle 
+        - Scikit-Learn
+        - Scipy
+        - Seaborn
+        - Bokeh
+    - Web Development
+        - Django
+        - Flask
+        - Bottle
         - CherryPy
-        - Pyramid 
+        - Pyramid
         - Web2Py
         - FastAPI
         - TurboGears
         - CubicWeb
-        - Dash 
-        - Falcon 
-        - Tornado 
-    - Automation Testing 
-        - Splinter 
-        - Robot 
-        - Behave 
-        - PyUnit 
+        - Dash
+        - Falcon
+        - Tornado
+    - Automation Testing
+        - Splinter
+        - Robot
+        - Behave
+        - PyUnit
         - PyTest
-    - Game Development 
+    - Game Development
         - PyGame
-        - PyGlet 
+        - PyGlet
         - PyOpenGI
         - Arcade
         - Panda3D
-    - Image Processing & Data Visualization 
+    - Image Processing & Data Visualization
         - OpenCV
-        - Mahotas 
+        - Mahotas
         - SimpleITK
         - Pillow
         - Scikit-Image
         - Plotly
-        - bokeh 
+        - bokeh
         - GGplot
-        - Pygal 
+        - Pygal
         - Geoplotlib
-    - Web Scrapping 
+    - Web Scrapping
         - Requests
         - Beautiful Soup
         - Selenium
@@ -72,7 +72,7 @@ Python Modules & Frameworks
 		9. NLTK
 		10. Twisted
 		11. Pymetasploit3
-		12. Cryptography 
+		12. Cryptography
 		13. Nmap
 		14. Scikit
 		15. Mechanize

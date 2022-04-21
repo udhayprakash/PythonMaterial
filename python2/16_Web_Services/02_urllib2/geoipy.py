@@ -23,10 +23,10 @@ from bs4 import BeautifulSoup as Soup
 def main(ipaddr):
     """Geo-locates an IP address passed in argv[1]."""
 
-    geody = "http://www.geody.com/geoip.php?ip=" + ipaddr
+    geody = 'http://www.geody.com/geoip.php?ip=' + ipaddr
     print 'geody:', geody
     html_page = urlopen(geody).read()
-    soup = Soup(html_page, "lxml")
+    soup = Soup(html_page, 'lxml')
 
     # Filter paragraph containing geolocation info.
     paragraph = soup('p')[3]
@@ -36,7 +36,7 @@ def main(ipaddr):
     print geo_txt[32:].strip() + '\n'
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if len(sys.argv) > 1:
         main(sys.argv[1])
     else:

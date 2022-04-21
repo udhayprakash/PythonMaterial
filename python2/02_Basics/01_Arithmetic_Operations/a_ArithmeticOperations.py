@@ -19,11 +19,11 @@ Integer family
 num1 = 10  # int
 num2 = 200  # int
 
-print "num1=", num1
+print 'num1=', num1
 print 'num2=', num2
 
 print '-----------------------------'
-print "Arithmetic Operations"
+print 'Arithmetic Operations'
 print '-----------------------------'
 
 print 'Addition'

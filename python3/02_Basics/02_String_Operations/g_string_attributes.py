@@ -3,10 +3,10 @@
 Purpose: String attributes
 
 Objects
-    1. Pen 
+    1. Pen
         -usage: writing, drawing, ....
-    2. Mobile 
-        -usage: communication, messaging, watch videos, 
+    2. Mobile
+        -usage: communication, messaging, watch videos,
                 playing
 """
 language = 'Python Programming'
@@ -22,7 +22,7 @@ print('dir(language) :', dir(language))
 
 # string concatenation
 mystr1 = 'Taj'
-mystr2 = "Mahal"
+mystr2 = 'Mahal'
 
 result = mystr1 + mystr2
 print('result = ', result)
@@ -70,49 +70,49 @@ print()
 print('language             :', language)
 print('language.istitle()   :', language.istitle())
 
-print('"ABCD123#".isupper() :', "ABCD123#".isupper())
+print('"ABCD123#".isupper() :', 'ABCD123#'.isupper())
 # upper case should be present; lower case absent
-print('"Abcd123#".islower() :', "Abcd123#".islower())
-print('"abcd123#".islower() :', "abcd123#".islower())
-print('"123#".islower()     :', "123#".islower())
+print('"Abcd123#".islower() :', 'Abcd123#'.islower())
+print('"abcd123#".islower() :', 'abcd123#'.islower())
+print('"123#".islower()     :', '123#'.islower())
 print()
 # isupper
 #     1. atleast one upper case character should present
 #     2. lower case character should NOT present
 
-print('"1234".isdigit()     :', "1234".isdigit())
-print('"1234 ".isdigit()    :', "1234 ".isdigit())
-print('"12 34".isdigit()    :', "12 34".isdigit())
-print('"123edsd".isdigit()  :', "123edsd".isdigit())
+print('"1234".isdigit()     :', '1234'.isdigit())
+print('"1234 ".isdigit()    :', '1234 '.isdigit())
+print('"12 34".isdigit()    :', '12 34'.isdigit())
+print('"123edsd".isdigit()  :', '123edsd'.isdigit())
 print()
 
-print('"abcD".isalpha()     :', "abcD".isalpha())
-print('"abcd1".isalpha()    :', "abcd1".isalpha())
+print('"abcD".isalpha()     :', 'abcD'.isalpha())
+print('"abcd1".isalpha()    :', 'abcd1'.isalpha())
 print()
 
-print('"ab123".isalnum()    :', "ab123".isalnum())
-print('"ab123#".isalnum()   :', "ab123#".isalnum())
-print('"123".isalnum()      :', "123".isalnum())
-print('"abc".isalnum()      :', "abc".isalnum())
+print('"ab123".isalnum()    :', 'ab123'.isalnum())
+print('"ab123#".isalnum()   :', 'ab123#'.isalnum())
+print('"123".isalnum()      :', '123'.isalnum())
+print('"abc".isalnum()      :', 'abc'.isalnum())
 print()
 
-print('" ".isspace()        :', " ".isspace())
-print('"    ".isspace()     :', "     ".isspace())
-print('"    a".isspace()    :', "     a".isspace())
-print('"".isspace()         :', "".isspace())
+print('" ".isspace()        :', ' '.isspace())
+print('"    ".isspace()     :', '     '.isspace())
+print('"    a".isspace()    :', '     a'.isspace())
+print('"".isspace()         :', ''.isspace())
 print()
 
-print('"αλεπού".isascii()    :', "αλεπού".isascii())
-print('"foxfox".isascii()    :', "foxfox".isascii())
+print('"αλεπού".isascii()    :', 'αλεπού'.isascii())
+print('"foxfox".isascii()    :', 'foxfox'.isascii())
 print()
 
-print('"ab".isprintable()    :', "ab".isprintable())
-print(r'"\n".isprintable()    :', "\n".isprintable())
-print(r'"\t".isprintable()    :', "\t".isprintable())
+print('"ab".isprintable()    :', 'ab'.isprintable())
+print(r'"\n".isprintable()    :', '\n'.isprintable())
+print(r'"\t".isprintable()    :', '\t'.isprintable())
 print()
 
-print('"$true".isidentifier() :', "$true".isidentifier())
-print('"true".isidentifier() :', "true".isidentifier())
+print('"$true".isidentifier() :', '$true'.isidentifier())
+print('"true".isidentifier() :', 'true'.isidentifier())
 print()
 
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g

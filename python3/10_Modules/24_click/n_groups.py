@@ -31,7 +31,7 @@ USAGE:
     Hello there
     ~py n_groups.py welcome
     Welcome
-    ~py n_groups.py        
+    ~py n_groups.py
     Usage: n_groups.py [OPTIONS] COMMAND [ARGS]...
 
     Options:

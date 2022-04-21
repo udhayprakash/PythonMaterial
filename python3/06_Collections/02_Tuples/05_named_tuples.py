@@ -25,13 +25,13 @@ Students = collections.namedtuple('Students', ['name', 'age', 'dob'])
 # Step 2: create tuples using that object
 student_details2 = Students('Santosh', 25, '04/04/1993')
 
-# Accessing Values - using index 
+# Accessing Values - using index
 print()
 print('Student Name:', student_details2[0])
 print('Student Age :', student_details2[1])
 print('Student DOB :', student_details2[2])
 
-# Accssing Values - using position names 
+# Accssing Values - using position names
 print()
 print('Student Name:', student_details2.name)
 print('Student Age :', student_details2.age)
@@ -58,7 +58,7 @@ if hasattr(student_details2, 'dob'):
 
 
 
-# Named Tuples are also immutable 
+# Named Tuples are also immutable
 # student_details2[1] = 45            # TypeError: 'Students' object does not support item assignment
 # student_details2.age = 45           # AttributeError: can't set attribute
 # setattr(student_details2, 'age', 45)  # AttributeError: can't set attribute

@@ -3,8 +3,8 @@
 import re
 reg = re.compile('yes',re.I)
 
-answer = raw_input("please enter the answer:")
+answer = raw_input('please enter the answer:')
 if reg.match(answer):
-  print "you are welcome"
+  print 'you are welcome'
 else:
-  print "you will be welcome next time"
+  print 'you will be welcome next time'

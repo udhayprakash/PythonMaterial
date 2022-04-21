@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: Identifier Casing
-    PEP (python Enhancement Proposal) 8 - coding style guide 
+    PEP (python Enhancement Proposal) 8 - coding style guide
         - class names should be CamelCase
         - identifier names should be in snake( or Underscore) case .
 

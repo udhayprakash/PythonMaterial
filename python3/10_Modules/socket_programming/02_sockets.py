@@ -4,7 +4,7 @@ def get_ip_for_website(remote_host):
     ip_address = socket.gethostbyname(remote_host)
 
     try:
-        print(f"{remote_host} IP address: {ip_address}")
+        print(f'{remote_host} IP address: {ip_address}')
     except socket.error  as err_msg:
         print(f'{remote_host} : {err_msg}')
     except Exception as ex:

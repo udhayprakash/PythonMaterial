@@ -6,7 +6,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 
 def simple_table_with_style():
-    doc = SimpleDocTemplate("f_simple_table_with_style.pdf",
+    doc = SimpleDocTemplate('f_simple_table_with_style.pdf',
                             pagesize=letter)
     flowables = []
 

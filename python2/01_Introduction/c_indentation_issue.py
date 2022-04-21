@@ -2,17 +2,17 @@
 """
 Purpose: Indentation Issues demo
 """
-__author__ = "PYthon Tutor"
+__author__ = 'PYthon Tutor'
 
-print "Hello World"
+print 'Hello World'
 
 
-summation = 34 + 99                                   
-# dynamic typed languages 
+summation = 34 + 99
+# dynamic typed languages
 
-print summation     
+print summation
 
-print "Summation result is ", summation  # , (comma) operator works as a logic separator
+print 'Summation result is ', summation  # , (comma) operator works as a logic separator
 
 # for i in range(9):
 # print i            # IndentationError
@@ -26,7 +26,7 @@ if 2 < 3:
 if 2 < 3:
     if 2 < 6:
         print '2 < 3 < 6'
-    print ""
+    print ''
 
 
 # tabs vs white-space

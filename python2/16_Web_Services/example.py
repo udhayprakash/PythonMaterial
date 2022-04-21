@@ -1,18 +1,18 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
     https://currencylayer.com/quickstart
 """
-import requests 
+import requests
 from pprint import pprint
-from datetime import datetime 
+from datetime import datetime
 
 ACCESS_KEY = '96b5ca6a3116caa7a9b8985fd294243e'
 API_URL = 'http://www.apilayer.net/api/'
 def get_live_currency_quote():
     URL = API_URL +'live?access_key='+ ACCESS_KEY
     response = requests.get(URL)
-    # pprint(response.json()) 
+    # pprint(response.json())
     quotes = response.json().get('quotes')
     USDINR_quote = quotes.get('USDINR')
     # print USDINR_quote
@@ -40,7 +40,7 @@ def get_live_currency_quote2(requesting_data = 'live'):
     if response.get('error', {}):
         return response.get('error', {}).get('info')
 
-    # pprint(response) 
+    # pprint(response)
     quotes = response.get('quotes')
     USDINR_quote = quotes.get('USDINR')
     # print USDINR_quote

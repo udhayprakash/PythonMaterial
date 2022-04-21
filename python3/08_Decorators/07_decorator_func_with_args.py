@@ -45,7 +45,7 @@ def time_taken(metric):
     return inner
 
 
-@time_taken("ms")
+@time_taken('ms')
 def my_func(num):
     for _ in range(num):
         pass

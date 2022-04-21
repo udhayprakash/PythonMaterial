@@ -1,7 +1,7 @@
 from PIL import Image, ImageFilter
 from numpy import array
 import numpy as np
-image = Image.open("A.png")
+image = Image.open('A.png')
 # arr = array(image)
 # a = np.array(arr)
 # # mask = np.all(a==[255,255,255,255])
@@ -17,7 +17,7 @@ for i in range(0,height):
 	for j in range(0,width):
 		if rgb_im.getpixel((i, j)) == (0,0,0):
 			x_array.append(1)
-		else: 
+		else:
 			x_array.append(0)
 	image_array.append(x_array)
 # print image_array

@@ -37,7 +37,7 @@ def create_circle(turtle, x, y, radius, color):
     oogway.end_fill()
 
 
-BG_COLOR = "#0080ff"
+BG_COLOR = '#0080ff'
 
 # "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present.”
 # 	                                                    — Oogway to Po under the peach tree, Kung Fu Panda
@@ -48,13 +48,13 @@ screen = oogway.getscreen()
 # set background color
 screen.bgcolor(BG_COLOR)
 # set tile of screen
-screen.title("Merry Christmas")
+screen.title('Merry Christmas')
 # maximize the screen
 screen.setup(width=1.0, height=1.0)
 
 y = -100
 # create tree trunk
-create_rectangle(oogway, "red", -15, y-60, 30, 60)
+create_rectangle(oogway, 'red', -15, y-60, 30, 60)
 
 # create tree
 width = 240
@@ -63,7 +63,7 @@ while width > 10:
     width = width - 10
     height = 10
     x = 0 - width/2
-    create_rectangle(oogway, "green", x, y, width, height)
+    create_rectangle(oogway, 'green', x, y, width, height)
     y = y + height
 
 # create a star a top of tree
@@ -82,7 +82,7 @@ tree_height = y + 40
 
 # create moon in sky
 # create a full circle
-create_circle(oogway, 230, 180, 60, "white")
+create_circle(oogway, 230, 180, 60, 'white')
 # overlap with full circle of BG color to make a crescent shape
 create_circle(oogway, 220, 180, 60, BG_COLOR)
 
@@ -107,11 +107,11 @@ for _ in range(0,number_of_stars):
 # print greeting message
 oogway.speed(1)
 oogway.penup()
-msg = "Merry Christmas from ThePythonDjango.Com"
+msg = 'Merry Christmas from ThePythonDjango.Com'
 oogway.goto(0, -200)  # y is in minus because tree trunk was below x axis
-oogway.color("white")
+oogway.color('white')
 oogway.pendown()
-oogway.write(msg, move=False, align="center", font=("Arial", 15, "bold"))
+oogway.write(msg, move=False, align='center', font=('Arial', 15, 'bold'))
 
 oogway.hideturtle()
 screen.mainloop()

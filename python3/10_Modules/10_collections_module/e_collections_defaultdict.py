@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Inverting a dictionary 
+Purpose: Inverting a dictionary
 """
 
 from collections import defaultdict

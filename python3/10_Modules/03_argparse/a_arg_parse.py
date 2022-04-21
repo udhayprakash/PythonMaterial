@@ -33,7 +33,7 @@ Purpose: importance and usage of argparse
 import argparse
 
 parser = argparse.ArgumentParser(
-    description="Details to login to server",
+    description='Details to login to server',
     epilog='-----Please follow help doc ----'
 )
 # description: for the text that is shown before the help text

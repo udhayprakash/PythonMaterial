@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: Calculating simple area.
-    
+
 """
 
 import math

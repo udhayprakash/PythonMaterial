@@ -26,7 +26,7 @@ print(f'{result =} {type(result)}') # int
 
 # Method 1 - Specific no. of times
 # summation = 0
-# attempt = 0 
+# attempt = 0
 # while attempt < 5:
 #     attempt += 1
 
@@ -44,7 +44,7 @@ print(f'{result =} {type(result)}') # int
 # # Method 2 - Take the no. of attempts val in runtime
 # ATTEMPTS = eval(input('\nEnter the no. of values of pass:'))
 # summation = 0
-# attempt = 0 
+# attempt = 0
 # while attempt < ATTEMPTS:
 #     attempt += 1
 
@@ -58,7 +58,7 @@ print(f'{result =} {type(result)}') # int
 
 # Method 3 - Entering values till the customer need
 summation = 0
-attempt = 0 
+attempt = 0
 while True:
     attempt += 1
 

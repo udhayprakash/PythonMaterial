@@ -1,5 +1,5 @@
                 ------------------------------------
-                 PYTHON FOR AWS COURSE CONTENT 
+                 PYTHON FOR AWS COURSE CONTENT
                 ----------------------------------
 01.Introduction
     Importance of Python
@@ -11,90 +11,90 @@
 02.Basics
     Arithmetic operations
         +, -, , /, //, %, *
-        divmod() function 
-        working with complex numbers 
-        abs() function 
+        divmod() function
+        working with complex numbers
+        abs() function
         Operator precedence in Arithmetic operations
     String operations
         Usage of single, double and triple quotes
         len() function
         Indexing and Slicing Strings
-        String formatting: old & new styles, f-strings 
-        bytearray() and byte() strings 
-        unicode strings 
-    Usage of help 
+        String formatting: old & new styles, f-strings
+        bytearray() and byte() strings
+        unicode strings
+    Usage of help
     Usage of pydoc
 
-03.Language Components 
-    Relational Operations 
+03.Language Components
+    Relational Operations
     Logical Operations
     Boolean Operations
     Bitwise Operations
-    range() function 
+    range() function
     Identity Operations
     Conditional Operations
     Loops: for & while
 
-04.Exception Handling 
-    Exceptions Hierarchy 
-    Different types of errors, error vs exception 
-    Handling single and multiple exceptions 
-    raising exceptions 
-    asserts 
+04.Exception Handling
+    Exceptions Hierarchy
+    Different types of errors, error vs exception
+    Handling single and multiple exceptions
+    raising exceptions
+    asserts
 
-05.Debugging 
-    Importance of logical errors 
-    Debugging with pydevd 
+05.Debugging
+    Importance of logical errors
+    Debugging with pydevd
     Debugging with pdb, ipdb
-    breakpoint() function 
+    breakpoint() function
 
-06.Collections 
-    Lists 
-    Tuples 
-    Sets 
-    Dictionaries 
-        zip() function 
+06.Collections
+    Lists
+    Tuples
+    Sets
+    Dictionaries
+        zip() function
         workaround for switch case
     Comprehensions
 
-07.Functions 
+07.Functions
     Functions with & without arguments, keyword arguments
-    Functions with Different return types and unpacking 
-    Functions with with Default arguments 
+    Functions with Different return types and unpacking
+    Functions with with Default arguments
     variadic functions : variable arguments and variable keyword arguments
-    Functions with keyword only arguments 
-    Scoping: Global vs Local 
-        call by reference 
+    Functions with keyword only arguments
+    Scoping: Global vs Local
+        call by reference
         call by value
-    Anonymous(Lambda) Functions 
+    Anonymous(Lambda) Functions
     Higher order functions: map(), filter()
-    Recursions and recursions limit 
+    Recursions and recursions limit
     Decorators
 
-08.Modules 
-    math, 
+08.Modules
+    math,
     sys, argparse, os, shutil, pathlib, subprocess, getpass,
     time related
         time, datetime, pytz, timeit
-    random, collections, atexit, 
-    contextlib, base64, turtle, tqdm 
+    random, collections, atexit,
+    contextlib, base64, turtle, tqdm
 
-    create user-defined module 
-    creating user-defined package 
-    
+    create user-defined module
+    creating user-defined package
+
 09.File Operations
-    flat files 
+    flat files
     Non-flat files
         pickle
-        shelve 
+        shelve
         xml
-        csv 
-        dat 
+        csv
+        dat
         xls/xlsx
         json
         yaml
     Image files
-        displaying, creating and editing images  
+        displaying, creating and editing images
     zipping files: .zip, .tar
     pdf files
     config files : .ini, .cfg
@@ -103,39 +103,39 @@
         Relational DB - sqlite3, MySQL
 
 10.Logging
-    Simple logging 
-    configuring log file 
+    Simple logging
+    configuring log file
     formatting logs and adding timestamp
-    working with file handler and stream hanlder 
-    configuring multiple handlers 
-    Rotating logger 
+    working with file handler and stream hanlder
+    configuring multiple handlers
+    Rotating logger
 
 11. OOP
-    Importance of OOP 
+    Importance of OOP
     Instantiation and managing attributes
-    constructor and Importance of self 
-    instance and class variables 
+    constructor and Importance of self
+    instance and class variables
     Encapsulation
     MRO, Single and multiple inheritance, composition
     Method Overwriting, Operator Overloading
     instance, class and static methods
 
-12. Code Quality 
-    Doctest 
-    unittest 
+12. Code Quality
+    Doctest
+    unittest
 
-13. Regular Expressions 
-    re module 
-    compiling regex objects 
-    match & search 
+13. Regular Expressions
+    re module
+    compiling regex objects
+    match & search
     find & finditer
     regex Flags
-    Greedy & Non-Greedy patterns 
+    Greedy & Non-Greedy patterns
 
-14. Web Services 
+14. Web Services
     crawling web pages
     consuming REST API
-    
+
 15. Development with AWS Cloud
     boto3
-    AWS products - AWS Lambda, S3 
+    AWS products - AWS Lambda, S3

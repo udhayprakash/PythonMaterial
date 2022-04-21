@@ -14,7 +14,7 @@ another_tuple = (99.9,)
 print 'type(another_tuple)',type(another_tuple)
 print 'len(another_tuple)', len(another_tuple)
 
-print 
+print
 empty_tuple = () # tuple()
 print 'type(empty_tuple)',type(empty_tuple)
 print 'len(empty_tuple)', len(empty_tuple)
@@ -41,7 +41,7 @@ result = (9,99) + (9,) # tuple concatenation
 print 'result', result
 
 print
-# tuples are immutable 
+# tuples are immutable
 print 'mytuple', mytuple, id(mytuple)
 # mytuple[2] = '2.2222' # TypeError: 'tuple' object does not support item assignment
 

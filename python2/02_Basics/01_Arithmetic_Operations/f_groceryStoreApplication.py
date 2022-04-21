@@ -10,13 +10,13 @@ costOfApple = 12
 costOfMango = 5
 
 quantityOfApples = input('Enter quantity of Apples:')
-print "type(quantityOfApples) = ", type(quantityOfApples)
+print 'type(quantityOfApples) = ', type(quantityOfApples)
 
 quantityOfMangos = input('quantityOfMangos=')
 
 TotalCost = ((costOfApple * quantityOfApples)
              + (costOfMango * quantityOfMangos))
-print "Total Cost = ", TotalCost
+print 'Total Cost = ', TotalCost
 # NOTE: Due to security issues, input() is discarded
 
 """

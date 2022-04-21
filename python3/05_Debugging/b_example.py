@@ -1,12 +1,12 @@
 #!/usr/bin/python
 """
-Purpose: Debugging 
+Purpose: Debugging
 
 TASK - To display all even numbers between 0 & 100
 
-NOTE: 
+NOTE:
     ;(semi-colon) is statement separator
-    breakpoint() 
+    breakpoint()
         - builtin function, introducted in python 3.6
         - same as import pdb; pdb.set_trace()
 """

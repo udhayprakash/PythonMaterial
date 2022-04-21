@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: usage for user-defined package 
+Purpose: usage for user-defined package
 """
 import my_package
 

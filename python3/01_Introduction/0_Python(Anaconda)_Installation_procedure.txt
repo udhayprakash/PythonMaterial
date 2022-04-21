@@ -1,6 +1,6 @@
 Python Installation (Anaconda Python)
 -------------------------------------
-Step 1: Go to https://www.anaconda.com/download/ and download latest 3.x version 
+Step 1: Go to https://www.anaconda.com/download/ and download latest 3.x version
 
 Step 2: Download and Install
 

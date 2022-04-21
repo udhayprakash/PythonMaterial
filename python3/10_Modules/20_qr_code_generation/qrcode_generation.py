@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: To generate QR Code 
+Purpose: To generate QR Code
 
 pip install pyqrcode pypng --user
 """
@@ -9,7 +9,7 @@ import pyqrcode
 
 
 def generate_qr():
-    message = ''' 
+    message = '''
         Name: Udhay Prakash
         Blog: https://udhayprakash.blogspot.com/
         Email: uday3prakash@gmail.com

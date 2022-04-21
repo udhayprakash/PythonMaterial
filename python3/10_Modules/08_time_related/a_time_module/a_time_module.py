@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: time module 
+Purpose: time module
 """
 import time
 print(f'{time.altzone  =}')  # -23400

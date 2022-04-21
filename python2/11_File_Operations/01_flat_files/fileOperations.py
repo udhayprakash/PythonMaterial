@@ -12,12 +12,12 @@ print f, type(f)
 
 # reading the data present in the test.txt
 data = f.read()
-print "data  = ", data
+print 'data  = ', data
 
 
 print 'Again trying to print the data from file'
 data = f.read()
-print "data  = ", data
+print 'data  = ', data
 
 print 'The current position of cursor in file is ', f.tell()
 
@@ -59,7 +59,7 @@ g = open('test.txt', 'wb')   # opening existing file in read mode will erase its
 
 try:
     datag = g.read()
-    print "datag = ", datag
+    print 'datag = ', datag
 except IOError, ex:
     print ex
     print 'opened file in write mode. can not read the data'
@@ -72,7 +72,7 @@ g.close()  # it is not mandatory , but extremely recommended.
 # python interpreter with close the file, but
 # IronPython, Jython, ... may not close the file automatically.
 
-print "="*80, "\n", "USING CONTEXT MANAGER".center(80),"\n", "="*80
+print '='*80, '\n', 'USING CONTEXT MANAGER'.center(80),'\n', '='*80
 # Using Context manager for file handling
 
 with open('test.txt', 'ab+') as h:

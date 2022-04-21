@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Purpose: Demonstration of Palindrome check 
+Purpose: Demonstration of Palindrome check
 
-    palindrome strings 
+    palindrome strings
         dad
         mom
 
@@ -16,7 +16,7 @@ Step 4: If equal, print that it is palindrome string
 test_string = input('Enter any string:')
 print(test_string)
 
-# reverse string 
+# reverse string
 reverse_string = test_string[::-1]
 print(reverse_string)
 

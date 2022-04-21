@@ -3,8 +3,8 @@
 import shutil
 import os
 
-SOURCE = "pyDemo/Demo Programs"
-BACKUP = "samples-bak"
+SOURCE = 'pyDemo/Demo Programs'
+BACKUP = 'samples-bak'
 
 # copytree function copies an entire directory tree (same as cp -r), and rmtree removes an entire tree (same as rm -r)
 

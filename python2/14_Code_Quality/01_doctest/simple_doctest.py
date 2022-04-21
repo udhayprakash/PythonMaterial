@@ -12,7 +12,7 @@ def simple_math(x, y):
 
     >>> simple_math('k', 'v')
     'kv'
-    
+
     We should get 'kv'
     '''
     return x + y
@@ -29,4 +29,3 @@ def class_testing_method_ahoy(obj):
     '''
 
     return [obj]
-    

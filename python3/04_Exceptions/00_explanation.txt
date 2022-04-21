@@ -5,10 +5,10 @@ Errors:
 
 
 Errors
-    a. Syntax Errors 
-    b. Exception Errors 
+    a. Syntax Errors
+    b. Exception Errors
         - db password locked
-        - runtime 
-    c. Logical Errors 
+        - runtime
+    c. Logical Errors
         # when you need to add two values
-        result = 12 * 34 
+        result = 12 * 34

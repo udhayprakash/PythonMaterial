@@ -10,21 +10,21 @@ Generator objects
     - used for large data handling
 """
 # definition
-def foo():  
-    print "Start the function!"
+def foo():
+    print 'Start the function!'
     for i in range(3):
-        print "before yield", i
+        print 'before yield', i
         # return i
         yield i
-        print "after yield", i
-    print "end of function "
+        print 'after yield', i
+    print 'end of function '
     return
-     
 
 
-# call 
-f = foo() 
-print 'f', f 
+
+# call
+f = foo()
+print 'f', f
 print dir(f)
 print f.next()
 print
@@ -44,7 +44,7 @@ for i in f:
     print i
 
 
-print "====reinitialize call "
+print '====reinitialize call '
 f = foo()
 for i in f:
     print i

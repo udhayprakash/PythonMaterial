@@ -2,7 +2,7 @@ class Logger(object):
 	def __new__(cls, *args, **kwargs):
 		if not hasattr(cls, '_logger'):
 			cls._logger = super(Logger, cls).__new__(cls, *args, **kwargs)
-		return cls._logger 
+		return cls._logger
 
 l = Logger()
 print l
@@ -47,7 +47,7 @@ class Singleton(object):
         >>> id(s) == id(p)
         True
         """
-        self = "__self__"
+        self = '__self__'
         if not hasattr(cls, self):
             instance = object.__new__(cls)
             instance.init(*args, **kwds)

@@ -2,7 +2,7 @@
 """
 Purpose: Python is a dynamic Typed Language
 
-progr. language 
+progr. language
     1. static typed language
         - first declare the variables, & then use them
             int a, float b
@@ -30,10 +30,10 @@ print('num1 =', num1, type(num1))
 num1 = '0.03'
 print('num1 =', num1, type(num1))
 
-num1 = "0.03"
+num1 = '0.03'
 print('num1 =', num1, type(num1))
 
-num1 = "three"
+num1 = 'three'
 print('num1 =', num1, type(num1))
 
 num1 = True

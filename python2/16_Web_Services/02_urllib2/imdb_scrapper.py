@@ -8,10 +8,10 @@ import re
 import urllib2
 
 # Ask for movie title
-title = raw_input("Please enter a movie title: ")
+title = raw_input('Please enter a movie title: ')
 
 # Ask for which year
-year = raw_input("which year? ")
+year = raw_input('which year? ')
 
 # Search for spaces in the title string
 raw_string = re.compile(r' ')
@@ -23,7 +23,7 @@ searchstring = raw_string.sub('+', title)
 print searchstring
 
 # The actual query
-url = "http://www.imdbapi.com/?t=" + searchstring + "&y=" + year
+url = 'http://www.imdbapi.com/?t=' + searchstring + '&y=' + year
 
 request = urllib2.Request(url)
 

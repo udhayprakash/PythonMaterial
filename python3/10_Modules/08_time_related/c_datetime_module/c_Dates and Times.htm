@@ -34,39 +34,39 @@
       }
     -->
     </style></head><body class="SECT1" alink="#0000FF" bgcolor="#4f6f6f" link="#f5deb3" text="#cecece" vlink="#d5ae83"><div class="NAVHEADER"><table summary="Header navigation table" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><th colspan="3" align="center">PLEAC-Python
-</th></tr><tr><td align="left" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/numbers.html" accesskey="P">Prev</a></td><td align="center" valign="bottom" width="80%"></td><td align="right" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/arrays.html" accesskey="N">Next</a></td></tr></tbody></table><hr align="LEFT" width="100%"></div><div class="SECT1"><h1 class="SECT1"><a name="DATESANDTIMES">3. Dates and Times</a></h1><div class="SECT2"><h2 class="SECT2"><a name="AEN132">Introduction</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</th></tr><tr><td align="left" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/numbers.html" accesskey="P">Prev</a></td><td align="center" valign="bottom" width="80%"></td><td align="right" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/arrays.html" accesskey="N">Next</a></td></tr></tbody></table><hr align="LEFT" width="100%"></div><div class="SECT1"><h1 class="SECT1"><a name="DATESANDTIMES">3. Dates and Times</a></h1><div class="SECT2"><h2 class="SECT2"><a name="AEN132">Introduction</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter">#</span><span class="comment">introduction
 </span><span class="comment-delimiter"># </span><span class="comment">There are three common ways of manipulating dates in Python
-</span><span class="comment-delimiter"># </span><span class="comment">mxDateTime - a popular third-party module (not discussed here) 
-</span><span class="comment-delimiter"># </span><span class="comment">time - a fairly low-level standard library module 
-</span><span class="comment-delimiter"># </span><span class="comment">datetime - a new library module for Python 2.3 and used for most of these samples 
+</span><span class="comment-delimiter"># </span><span class="comment">mxDateTime - a popular third-party module (not discussed here)
+</span><span class="comment-delimiter"># </span><span class="comment">time - a fairly low-level standard library module
+</span><span class="comment-delimiter"># </span><span class="comment">datetime - a new library module for Python 2.3 and used for most of these samples
 </span><span class="comment-delimiter"># </span><span class="comment">(I will use full names to show which module they are in, but you can also use
-</span><span class="comment-delimiter"># </span><span class="comment">from datetime import datetime, timedelta and so on for convenience) 
+</span><span class="comment-delimiter"># </span><span class="comment">from datetime import datetime, timedelta and so on for convenience)
 </span>
 <span class="keyword">import</span> time
 <span class="keyword">import</span> datetime
 
-<span class="keyword">print</span> <span class="string">"Today is day"</span>, time.localtime()[7], <span class="string">"of the current year"</span> 
+<span class="keyword">print</span> <span class="string">"Today is day"</span>, time.localtime()[7], <span class="string">"of the current year"</span>
 <span class="comment-delimiter"># </span><span class="comment">Today is day 218 of the current year
 </span>
 today = datetime.date.today()
 <span class="keyword">print</span> <span class="string">"Today is day"</span>, today.timetuple()[7], <span class="string">"of "</span>, today.year
 <span class="comment-delimiter"># </span><span class="comment">Today is day 218 of 2003
 </span>
-<span class="keyword">print</span> <span class="string">"Today is day"</span>, today.strftime(<span class="string">"%j"</span>), <span class="string">"of the current year"</span> 
+<span class="keyword">print</span> <span class="string">"Today is day"</span>, today.strftime(<span class="string">"%j"</span>), <span class="string">"of the current year"</span>
 <span class="comment-delimiter"># </span><span class="comment">Today is day 218 of the current year
-</span> </font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN135">Finding Today's Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span> </font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN135">Finding Today's Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Finding todays date
 </span>
 today = datetime.date.today()
-<span class="keyword">print</span> <span class="string">"The date is"</span>, today 
+<span class="keyword">print</span> <span class="string">"The date is"</span>, today
 <span class="comment-delimiter">#</span><span class="comment">=&gt; The date is 2003-08-06
 </span>
 <span class="comment-delimiter"># </span><span class="comment">the function strftime() (string-format time) produces nice formatting
 </span><span class="comment-delimiter"># </span><span class="comment">All codes are detailed at http://www.python.org/doc/current/lib/module-time.html
-</span><span class="keyword">print</span> t.strftime(<span class="string">"four-digit year: %Y, two-digit year: %y, month: %m, day: %d"</span>) 
+</span><span class="keyword">print</span> t.strftime(<span class="string">"four-digit year: %Y, two-digit year: %y, month: %m, day: %d"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; four-digit year: 2003, two-digit year: 03, month: 08, day: 06
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN138">Converting DMYHMS to Epoch Seconds</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN138">Converting DMYHMS to Epoch Seconds</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Converting DMYHMS to Epoch Seconds
 </span><span class="comment-delimiter"># </span><span class="comment">To work with Epoch Seconds, you need to use the time module
 </span>
@@ -79,7 +79,7 @@ today = datetime.date.today()
 </span>t = datetime.datetime.utcnow()
 <span class="keyword">print</span> <span class="string">"Epoch Seconds:"</span>, time.mktime(t.timetuple())
 <span class="comment-delimiter">#</span><span class="comment">=&gt; Epoch Seconds: 1060195503.0
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN141">Converting Epoch Seconds to DMYHMS</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN141">Converting Epoch Seconds to DMYHMS</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Converting Epoch Seconds to DMYHMS
 </span>
 now = datetime.datetime.fromtimestamp(EpochSeconds)
@@ -91,10 +91,10 @@ now = datetime.datetime.fromtimestamp(EpochSeconds)
 </span>
 <span class="comment-delimiter"># </span><span class="comment">or with the time module
 </span>oldtimetuple = time.localtime(EpochSeconds)
-<span class="comment-delimiter"># </span><span class="comment">oldtimetuple contains (year, month, day, hour, minute, second, weekday, yearday, daylightSavingAdjustment) 
-</span><span class="keyword">print</span> oldtimetuple 
+<span class="comment-delimiter"># </span><span class="comment">oldtimetuple contains (year, month, day, hour, minute, second, weekday, yearday, daylightSavingAdjustment)
+</span><span class="keyword">print</span> oldtimetuple
 <span class="comment-delimiter">#</span><span class="comment">=&gt; (2003, 8, 6, 20, 43, 20, 2, 218, 1)
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN144">Adding to or Subtracting from a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN144">Adding to or Subtracting from a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Adding to or Subtracting from a Date
 </span><span class="comment-delimiter"># </span><span class="comment">Use the rather nice datetime.timedelta objects
 </span>
@@ -111,10 +111,10 @@ difference2 = datetime.timedelta(weeks=-2)
 <span class="keyword">print</span> datetime.date(2003, 8, 6) - datetime.date(2000, 8, 6)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; 1095 days, 0:00:00
 </span>
-<span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+<span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span>birthtime = datetime.datetime(1973, 01, 18, 3, 45, 50)   <span class="comment-delimiter"># </span><span class="comment">1973-01-18 03:45:50
 </span>
-interval = datetime.timedelta(seconds=5, minutes=17, hours=2, days=55) 
+interval = datetime.timedelta(seconds=5, minutes=17, hours=2, days=55)
 then = birthtime + interval
 
 <span class="keyword">print</span> <span class="string">"Then is"</span>, then.ctime()
@@ -124,15 +124,15 @@ then = birthtime + interval
 <span class="comment-delimiter">#</span><span class="comment">=&gt; Then is Wednesday March 14 06:02:55 AM 1973
 </span>
 <span class="comment-delimiter">#</span><span class="comment">-----------------------------
-</span>when = datetime.datetime(1973, 1, 18) + datetime.timedelta(days=55) 
+</span>when = datetime.datetime(1973, 1, 18) + datetime.timedelta(days=55)
 <span class="keyword">print</span> <span class="string">"Nat was 55 days old on:"</span>, when.strftime(<span class="string">"%m/%d/%Y"</span>).lstrip(<span class="string">"0"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; Nat was 55 days old on: 3/14/1973
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN147">Difference of Two Dates</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN147">Difference of Two Dates</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Dates produce timedeltas when subtracted.
 </span>
 diff = date2 - date1
 diff = datetime.date(year1, month1, day1) - datetime.date(year2, month2, day2)
-<span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+<span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span>
 bree = datetime.datetime(1981, 6, 16, 4, 35, 25)
 nat  = datetime.datetime(1973, 1, 18, 3, 45, 50)
@@ -149,10 +149,10 @@ hours, minutes = <span class="py-builtins">divmod</span>(minutes, 60)
 <span class="keyword">print</span> <span class="string">"%d weeks, %d days, %d:%d:%d"</span> % (weeks, days, hours, minutes, seconds)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; 438 weeks, 5 days, 0:49:35
 </span>
-<span class="comment-delimiter">#</span><span class="comment">----------------------------- 
-</span><span class="keyword">print</span> <span class="string">"There were"</span>, difference.days, <span class="string">"days between Bree and Nat."</span> 
+<span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span><span class="keyword">print</span> <span class="string">"There were"</span>, difference.days, <span class="string">"days between Bree and Nat."</span>
 <span class="comment-delimiter">#</span><span class="comment">=&gt; There were 3071 days between bree and nat
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN150">Day in a Week/Month/Year or Week Number</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN150">Day in a Week/Month/Year or Week Number</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Day in a Week/Month/Year or Week Number
 </span>
 when = datetime.date(1981, 6, 16)
@@ -164,7 +164,7 @@ when = datetime.date(1981, 6, 16)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; 16/6/1981 was:
 </span><span class="comment-delimiter">#</span><span class="comment">=&gt; Day 2 of the week (a Tuesday). Day 16 of the month (June).
 </span><span class="comment-delimiter">#</span><span class="comment">=&gt; Day 167 of the year (1981), in week 24 of the year.
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN153">Parsing Dates and Times from Strings</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN153">Parsing Dates and Times from Strings</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Parsing Dates and Times from Strings
 </span>
 time.strptime(<span class="string">"Tue Jun 16 20:18:03 1981"</span>)
@@ -174,16 +174,16 @@ time.strptime(<span class="string">"16/6/1981"</span>, <span class="string">"%d/
 <span class="comment-delimiter"># </span><span class="comment">(1981, 6, 16, 0, 0, 0, 1, 167, -1)
 </span><span class="comment-delimiter"># </span><span class="comment">strptime() can use any of the formatting codes from time.strftime()
 </span>
-<span class="comment-delimiter"># </span><span class="comment">The easiest way to convert this to a datetime seems to be; 
+<span class="comment-delimiter"># </span><span class="comment">The easiest way to convert this to a datetime seems to be;
 </span>now = datetime.datetime(*time.strptime(<span class="string">"16/6/1981"</span>, <span class="string">"%d/%m/%Y"</span>)[0:5])
 <span class="comment-delimiter"># </span><span class="comment">the '*' operator unpacks the tuple, producing the argument list.
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN156">Printing a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN156">Printing a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Printing a Date
 </span><span class="comment-delimiter"># </span><span class="comment">Use datetime.strftime() - see helpfiles in distro or at python.org
 </span>
-<span class="keyword">print</span> datetime.datetime.now().strftime(<span class="string">"The date is %A (%a) %d/%m/%Y"</span>) 
+<span class="keyword">print</span> datetime.datetime.now().strftime(<span class="string">"The date is %A (%a) %d/%m/%Y"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; The date is Friday (Fri) 08/08/2003
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN159">High-Resolution Timers</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN159">High-Resolution Timers</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">High Resolution Timers
 </span>
 t1 = time.clock()
@@ -199,7 +199,7 @@ time.clock(); time.clock()
 <span class="comment-delimiter"># </span><span class="comment">174485.51365466841
 </span><span class="comment-delimiter"># </span><span class="comment">174485.55702610247
 </span>
-<span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+<span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Also useful;
 </span><span class="keyword">import</span> timeit
 code = <span class="string">'[x for x in range(10) if x % 2 == 0]'</span>
@@ -207,26 +207,26 @@ code = <span class="string">'[x for x in range(10) if x % 2 == 0]'</span>
 <span class="comment-delimiter"># </span><span class="comment">[0, 2, 4, 6, 8]
 </span>
 t = timeit.Timer(code)
-<span class="keyword">print</span> <span class="string">"10,000 repeats of that code takes:"</span>, t.timeit(10000), <span class="string">"seconds"</span> 
+<span class="keyword">print</span> <span class="string">"10,000 repeats of that code takes:"</span>, t.timeit(10000), <span class="string">"seconds"</span>
 <span class="keyword">print</span> <span class="string">"1,000,000 repeats of that code takes:"</span>, t.timeit(), <span class="string">"seconds"</span>
 
 <span class="comment-delimiter"># </span><span class="comment">10,000 repeats of that code takes: 0.128238644856 seconds
 </span><span class="comment-delimiter"># </span><span class="comment">1,000,000 repeats of that code takes:  12.5396490336 seconds
 </span>
-<span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+<span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="keyword">import</span> timeit
-code = <span class="string">'import random; l = random.sample(xrange(10000000), 1000); l.sort()'</span> 
+code = <span class="string">'import random; l = random.sample(xrange(10000000), 1000); l.sort()'</span>
 t = timeit.Timer(code)
 
-<span class="keyword">print</span> <span class="string">"Create a list of a thousand random numbers. Sort the list. Repeated a thousand times."</span> 
+<span class="keyword">print</span> <span class="string">"Create a list of a thousand random numbers. Sort the list. Repeated a thousand times."</span>
 <span class="keyword">print</span> <span class="string">"Average Time:"</span>, t.timeit(1000) / 1000
 <span class="comment-delimiter"># </span><span class="comment">Time taken: 5.24391507859
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN162">Short Sleeps</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN162">Short Sleeps</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Short Sleeps
 </span>
 seconds = 3.1
 time.sleep(seconds)
-<span class="keyword">print</span> <span class="string">"boo"</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN165">Program: hopdelta</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">----------------------------- 
+<span class="keyword">print</span> <span class="string">"boo"</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN165">Program: hopdelta</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Program HopDelta
 </span><span class="comment-delimiter"># </span><span class="comment">Save a raw email to disk and run "python hopdelta.py FILE"
 </span><span class="comment-delimiter"># </span><span class="comment">and it will process the headers and show the time taken
@@ -245,7 +245,7 @@ time.sleep(seconds)
     time_tuple = email.Utils.parsedate(date_string)
 
     <span class="comment-delimiter"># </span><span class="comment">convert time_tuple to datetime
-</span>    EpochSeconds = time.mktime(time_tuple) 
+</span>    EpochSeconds = time.mktime(time_tuple)
     dt = datetime.datetime.fromtimestamp(EpochSeconds)
     <span class="keyword">return</span> dt
 
@@ -256,13 +256,13 @@ time.sleep(seconds)
     msg = email.message_from_file(f)
 
     hops = msg.get_all(<span class="string">'received'</span>)
-    
+
     <span class="comment-delimiter"># </span><span class="comment">in reverse order, get the server(s) and date/time involved
 </span>    hops.reverse()
     results = []
     <span class="keyword">for</span> hop <span class="keyword">in</span> hops:
         hop = hop.lower()
-        
+
         <span class="keyword">if</span> hop.startswith(<span class="string">'by'</span>):  <span class="comment-delimiter"># </span><span class="comment">'Received: by' line
 </span>            sender = <span class="string">"start"</span>
             receiver = hop[3:hop.find(<span class="string">' '</span>,3)]
@@ -284,14 +284,14 @@ time.sleep(seconds)
     <span class="keyword">for</span> (sender, receiver, date) <span class="keyword">in</span> results:
         <span class="keyword">if</span> previous_dt:
             delta = date - previous_dt
-        
+
         <span class="keyword">print</span> <span class="string">"%s, %s, %s, %s"</span> % (sender,
                                receiver,
                                date.strftime(<span class="string">"%Y/%d/%m %H:%M:%S"</span>),
                                delta)
         <span class="keyword">print</span>
-        previous_dt = date   
-            
+        previous_dt = date
+
 <span class="keyword">def</span> <span class="function-name">main</span>():
     <span class="comment-delimiter"># </span><span class="comment">Perform some basic argument checking
 </span>    <span class="keyword">if</span> <span class="py-builtins">len</span>(sys.argv) != 2:

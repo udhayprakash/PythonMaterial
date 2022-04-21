@@ -35,12 +35,12 @@ def get_arguments():
 
     # Use arparse to get command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input_file", required=True,
-                        help="csv input file (with extension)", type=str)
-    parser.add_argument("-o", "--output_file", required=True,
-                        help="csv output file (without extension)", type=str)
-    parser.add_argument("-r", "--row_limit", required=True,
-                        help="row limit to split csv at", type=int)
+    parser.add_argument('-i', '--input_file', required=True,
+                        help='csv input file (with extension)', type=str)
+    parser.add_argument('-o', '--output_file', required=True,
+                        help='csv output file (without extension)', type=str)
+    parser.add_argument('-r', '--row_limit', required=True,
+                        help='row limit to split csv at', type=int)
     args = parser.parse_args()
 
     # Check if the input_file exits
@@ -105,7 +105,7 @@ def parse_file(arguments):
 
             current_output = os.path.join(  # Create new output file
                 output_path,
-                "{}-{}.csv".format(output_file, current_chunk)
+                '{}-{}.csv'.format(output_file, current_chunk)
             )
 
             # Add header
@@ -117,15 +117,15 @@ def parse_file(arguments):
                 writer = writer.writerows(chunk)
 
             # Output info
-            print("")
-            print("Chunk # {}:".format(current_chunk))
-            print("Filepath: {}".format(current_output))
-            print("# of rows: {}".format(len(chunk)))
+            print('')
+            print('Chunk # {}:'.format(current_chunk))
+            print('Filepath: {}'.format(current_output))
+            print('# of rows: {}'.format(len(chunk)))
 
             # Create new chunk
             current_chunk += 1
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     arguments = get_arguments()
     parse_file(arguments)

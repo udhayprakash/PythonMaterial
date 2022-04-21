@@ -1,4 +1,4 @@
-from Tkinter import *           # Importing the Tkinter (tool box) library 
+from Tkinter import *           # Importing the Tkinter (tool box) library
 root = Tk()                     # Create a background window
                                 # Create a list
 li = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday'.split()

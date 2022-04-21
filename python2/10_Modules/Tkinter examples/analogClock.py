@@ -6,11 +6,11 @@
 #
 #  A very simple analog clock.
 #
-#  The program transforms worldcoordinates into screencoordinates 
-#  and vice versa according to an algorithm found in: 
+#  The program transforms worldcoordinates into screencoordinates
+#  and vice versa according to an algorithm found in:
 #  "Programming principles in computer graphics" by Leendert Ammeraal.
 #
-#  Based on the code of Anton Vredegoor (anton.vredegoor@gmail.com) 
+#  Based on the code of Anton Vredegoor (anton.vredegoor@gmail.com)
 #
 #  @author Paulo Roma
 #  @since 01/05/2014
@@ -49,12 +49,12 @@ class mapper:
     #  @param viewport screen rectangle.
     #
     def __init__(self, world, viewport):
-        self.world = world 
+        self.world = world
         self.viewport = viewport
         x_min, y_min, x_max, y_max = self.world
         X_min, Y_min, X_max, Y_max = self.viewport
-        f_x = float(X_max-X_min) / float(x_max-x_min) 
-        f_y = float(Y_max-Y_min) / float(y_max-y_min) 
+        f_x = float(X_max-X_min) / float(x_max-x_min)
+        f_y = float(Y_max-Y_min) / float(y_max-y_min)
         self.f = min(f_x,f_y)
         x_c = 0.5 * (x_min + x_max)
         y_c = 0.5 * (y_min + y_max)
@@ -70,7 +70,7 @@ class mapper:
     #
     def __windowToViewport(self, x, y):
         X = self.f *  x + self.c_1
-        Y = self.f * -y + self.c_2      # Y axis is upside down 
+        Y = self.f * -y + self.c_2      # Y axis is upside down
         return X , Y
 
     ## Maps two points from world coordinates to viewport (screen) coordinates.
@@ -98,12 +98,12 @@ class makeThread (Thread):
       ## Destructor.
       #
       def __del__ (self):
-          if ( self.debug ): print ("Thread end")
+          if ( self.debug ): print ('Thread end')
 
       ## Starts this thread.
       #
       def run (self):
-          if ( self.debug ): print ("Thread begin")
+          if ( self.debug ): print ('Thread begin')
           self.__action()
 
 ## Class for drawing a simple analog clock.
@@ -137,14 +137,14 @@ class clock:
         if self.showImage:
            self.fluImg = Image.open(self.imgPath)
 
-        self.root.bind("<Escape>", lambda _ : root.destroy())
-        self.delta = timedelta(hours = deltahours)  
+        self.root.bind('<Escape>', lambda _ : root.destroy())
+        self.delta = timedelta(hours = deltahours)
         self.canvas = Canvas(root, width = width, height = height, background = self.bgcolor)
         viewport = (self.pad,self.pad,width-self.pad,height-self.pad)
         self.T = mapper(self.world,viewport)
         self.root.title('Clock')
-        self.canvas.bind("<Configure>",self.resize)
-        self.root.bind("<KeyPress-i>", self.toggleImage)
+        self.canvas.bind('<Configure>',self.resize)
+        self.root.bind('<KeyPress-i>', self.toggleImage)
         self.canvas.pack(fill=BOTH, expand=YES)
 
         if useThread:
@@ -168,13 +168,13 @@ class clock:
         self.T = mapper(self.world,viewport)
 
         if self.showImage:
-           flu = self.fluImg.resize((int(0.8*0.8*imgSize), int(0.8*imgSize)), Image.ANTIALIAS) 
+           flu = self.fluImg.resize((int(0.8*0.8*imgSize), int(0.8*imgSize)), Image.ANTIALIAS)
            self.flu = ImageTk.PhotoImage(flu)
            sc.create_image(width/2,height/2,image=self.flu)
         else:
            self.canvas.create_rectangle([[0,0],[width,height]], fill = self.bgcolor)
 
-        self.redraw()             # redraw the clock	
+        self.redraw()             # redraw the clock
 
     ## Sets the clock colors.
     #
@@ -197,7 +197,7 @@ class clock:
            self.resize(event)
 
     ## Redraws the whole clock.
-    # 
+    #
     def redraw(self):
         start = pi/2              # 12h is at pi/2
         step = pi/6
@@ -208,16 +208,16 @@ class clock:
         self.painthms()           # draw the handles
         if not self.showImage:
            self.paintcircle(0,0)  # draw a circle at the centre of the clock
-   
+
     ## Draws the handles.
-    # 
+    #
     def painthms(self):
         self.canvas.delete(self._ALL)  # delete the handles
         T = datetime.timetuple(datetime.utcnow()-self.delta)
         x,x,x,h,m,s,x,x,x = T
         self.root.title('%02i:%02i:%02i' %(h,m,s))
         angle = pi/2 - pi/6 * (h + m/60.0)
-        x, y = cos(angle)*0.70,sin(angle)*0.70   
+        x, y = cos(angle)*0.70,sin(angle)*0.70
         scl = self.canvas.create_line
         # draw the hour handle
         scl(self.T.windowToViewport(0,0,x,y), fill = self.timecolor, tag=self._ALL, width = self.pad/3)
@@ -226,20 +226,20 @@ class clock:
         # draw the minute handle
         scl(self.T.windowToViewport(0,0,x,y), fill = self.timecolor, tag=self._ALL, width = self.pad/5)
         angle = pi/2 - pi/30 * s
-        x, y = cos(angle)*0.95,sin(angle)*0.95   
+        x, y = cos(angle)*0.95,sin(angle)*0.95
         # draw the second handle
         scl(self.T.windowToViewport(0,0,x,y), fill = self.timecolor, tag=self._ALL, arrow = 'last')
-   
+
     ## Draws a circle at a given point.
-    # 
+    #
     #  @param x,y given point.
-    # 
+    #
     def paintcircle(self,x,y):
         ss = self.circlesize / 2.0
         sco = self.canvas.create_oval
         sco(self.T.windowToViewport(-ss+x,-ss+y,ss+x,ss+y), fill = self.circlecolor)
-  
-    ## Animates the clock, by redrawing everything after a certain time interval. 
+
+    ## Animates the clock, by redrawing everything after a certain time interval.
     #
     def poll(self):
         self.redraw()
@@ -261,11 +261,11 @@ def main(argv=None):
            h = int(argv[4])
            t = (argv[5] == 'True')
        except ValueError:
-           print ("A timezone is expected.")
+           print ('A timezone is expected.')
            return 1
     else:
        deltahours = 3
-       sImage = True  
+       sImage = True
        w = h = 400
        t = True
 

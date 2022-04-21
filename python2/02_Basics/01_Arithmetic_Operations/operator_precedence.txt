@@ -1,11 +1,11 @@
 operator precedence
 -------------------
-PEMDAS 
+PEMDAS
 P - parantheses
-E - exponent 
+E - exponent
 M - multiplication
-D - Division 
-A - Addition 
+D - Division
+A - Addition
 S - Subtraction
 
 

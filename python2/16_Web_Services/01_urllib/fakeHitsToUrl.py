@@ -6,10 +6,10 @@ import webbrowser
 totalBreaks = 30
 countBreaks = 0
 
-print("Enjoy your Time\n" +time.ctime())
+print('Enjoy your Time\n' +time.ctime())
 while(countBreaks < totalBreaks):
-    time.sleep(5) 
-    webbrowser.open("https://www.youtube.com/watch?v=ZeN4a0GNNRc")
-    time.sleep(5) 
-    
+    time.sleep(5)
+    webbrowser.open('https://www.youtube.com/watch?v=ZeN4a0GNNRc')
+    time.sleep(5)
+
     countBreaks += 1

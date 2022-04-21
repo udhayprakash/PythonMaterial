@@ -1,10 +1,10 @@
 # Operator overloading
-# ,(comma) 
+# ,(comma)
 print 'hello', 'world',
 print 'udhay'
 
 # Arithmetic  Addition
-print 12 + 34  
+print 12 + 34
 print 12.0 + 34
 print 12.0 + 234234234234234
 print (3 + 3j) + (4 + 7j)

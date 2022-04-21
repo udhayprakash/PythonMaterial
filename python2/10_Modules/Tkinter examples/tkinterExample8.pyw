@@ -6,8 +6,8 @@ def DrawList():
 
         for item in plist:
                 listbox.insert(END,item);
-                
-        
+
+
 root = Tk()                     #This creates a window, but it won't show up
 
 listbox = Listbox(root)

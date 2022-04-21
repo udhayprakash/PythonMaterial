@@ -1,23 +1,23 @@
 #!/usr/bin/python
 """
-Purpose: To get the current location of ISS. 
+Purpose: To get the current location of ISS.
 
-API 
+API
     URL: http://api.open-notify.org/iss-now.json
     RESPONSE:
     {
-        "message": "success", 
-        "timestamp": UNIX_TIME_STAMP, 
+        "message": "success",
+        "timestamp": UNIX_TIME_STAMP,
         "iss_position": {
-            "latitude": CURRENT_LATITUDE, 
+            "latitude": CURRENT_LATITUDE,
             "longitude": CURRENT_LONGITUDE
         }
     }
 
-http response codes 
+http response codes
 ----------------------
 2XX - success
-3XX - redirecting 
+3XX - redirecting
 4XX - client side errors
 5XX - server side issues
 """
@@ -26,7 +26,7 @@ import urllib2
 from pprint import pprint
 from datetime import datetime
 
-req = urllib2.Request("http://api.open-notify.org/iss-now.json")
+req = urllib2.Request('http://api.open-notify.org/iss-now.json')
 response = urllib2.urlopen(req)
 
 obj = json.loads(response.read())

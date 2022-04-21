@@ -12,9 +12,9 @@ garbage collector -- java, python , ..
 
 with open('sampleCSVFile.csv', 'wb') as myCsv:
     # csv header
-    myCsv.write("fruits, vegetables, cars\n")
-    # csv body 
-    myCsv.write("Apple, Cabbagge, Benz\n")
-    myCsv.write("Mango, Cucumber, Volvo\n")
-    myCsv.write("Banana, Raddish, Maruthi suzuki\n")
+    myCsv.write('fruits, vegetables, cars\n')
+    # csv body
+    myCsv.write('Apple, Cabbagge, Benz\n')
+    myCsv.write('Mango, Cucumber, Volvo\n')
+    myCsv.write('Banana, Raddish, Maruthi suzuki\n')
     myCsv.close()

@@ -28,7 +28,7 @@ print 'krish.balance', krish.balance
 sam.deposit(1000)  # deposit(sam, 1000)  -- deposit(self, amount)
 krish.deposit(10000)
 
-print "\nafter deposit"
+print '\nafter deposit'
 print 'sam.balance', sam.balance
 print 'krish.balance', krish.balance
 
@@ -36,6 +36,6 @@ print 'krish.balance', krish.balance
 sam.withdraw(300)
 krish.withdraw(3000)
 
-print "\nafter withdraw"
+print '\nafter withdraw'
 print 'sam.balance', sam.balance
 print 'krish.balance', krish.balance

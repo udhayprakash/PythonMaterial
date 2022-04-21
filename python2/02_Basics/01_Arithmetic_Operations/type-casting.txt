@@ -9,4 +9,3 @@ type-casting is present in python 2.x only
 
         0 < 0.2 < 1
         2 < 2.5 < 3
-

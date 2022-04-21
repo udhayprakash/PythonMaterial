@@ -90,7 +90,7 @@ while True:
     else:  # given_number < LUCKY_NUMBER
         print('Increase your guessing number')
 else:
-    print("It will never reach here, as loop breaks to exit")
+    print('It will never reach here, as loop breaks to exit')
 
 '''
     Assignment

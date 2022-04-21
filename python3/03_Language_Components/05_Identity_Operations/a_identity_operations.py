@@ -19,12 +19,12 @@ Dual Memory management Strategy
             -5 to 256      -> no new object created
             outside bounds -> new object is created for each variable
 
-- Python preallocates small integers in a range of -5 to 256. 
-- This allocation happens during initialization and since 
-   we cannot update integers (immutability) these preallocated 
-   integers are singletons and are directly referenced instead 
-   of reallocating. 
-- This means every time we use/creates a small integer, python instead 
+- Python preallocates small integers in a range of -5 to 256.
+- This allocation happens during initialization and since
+   we cannot update integers (immutability) these preallocated
+   integers are singletons and are directly referenced instead
+   of reallocating.
+- This means every time we use/creates a small integer, python instead
    of reallocating just returns the reference of preallocated one.
 
 """

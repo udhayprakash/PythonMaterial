@@ -4,19 +4,19 @@
 Purpose: Discussion on unicode strings
     Ref: https://docs.python.org/3/howto/unicode.html
 
-ASCII - english only 
+ASCII - english only
 
-ENCODING: Unicode string is a sequence of code points, 
-    which are numbers from 0 through 0x10FFFF (1,114,111 decimal). 
+ENCODING: Unicode string is a sequence of code points,
+    which are numbers from 0 through 0x10FFFF (1,114,111 decimal).
     This sequence needs to be represented as a set of bytes (meaning,
-    values from 0 through 255) in memory. The rules for translating a 
+    values from 0 through 255) in memory. The rules for translating a
     Unicode string into a sequence of bytes are called an encoding.
 
 RULES of converting Unicode string to ASCII encoding
 ----------------------------------------------------
 for each code point:
     - If the code point is < 128, each byte is the same as the value of the code point.
-    - If the code point is 128 or greater, the Unicode string can’t be represented in this encoding. 
+    - If the code point is 128 or greater, the Unicode string can’t be represented in this encoding.
     (Python raises a UnicodeEncodeError exception in this case.)
 
 UTF - Unicode Transformation Format
@@ -41,17 +41,17 @@ Different encoding can be specified by placing the below line in the first line 
 
 '''
 import unicodedata
-print("\N{GREEK CAPITAL LETTER DELTA}")  # '\u0394' - Using the character name
-print("\u0394")  # '\u0394' - Using a 16-bit hex value
-print("\U00000394")  # '\u0394' - Using a 32-bit hex value
+print('\N{GREEK CAPITAL LETTER DELTA}')  # '\u0394' - Using the character name
+print('\u0394')  # '\u0394' - Using a 16-bit hex value
+print('\U00000394')  # '\u0394' - Using a 32-bit hex value
 
 # b'\x80abc'.decode("utf-8", "strict")
 #  UnicodeDecodeError: 'utf-8' codec can't decode
 #      byte 0x80 in position 0: invalid start byte
 
-print(b'\x80abc'.decode("utf-8", "replace"))  # '\ufffdabc'
-print(b'\x80abc'.decode("utf-8", "backslashreplace"))  # '\\x80abc'
-print(b'\x80abc'.decode("utf-8", "ignore"))  # 'abc'
+print(b'\x80abc'.decode('utf-8', 'replace'))  # '\ufffdabc'
+print(b'\x80abc'.decode('utf-8', 'backslashreplace'))  # '\\x80abc'
+print(b'\x80abc'.decode('utf-8', 'ignore'))  # 'abc'
 
 # list of encoding standards supported in python
 # https://docs.python.org/3/library/codecs.html#standard-encodings
@@ -82,7 +82,7 @@ print(u.encode('ascii', 'namereplace'))  # b'\\N{YI SYLLABLE IT}abcd\\u07b4'
 u = chr(233) + chr(0x0bf2) + chr(3972) + chr(6000) + chr(13231)
 
 for i, c in enumerate(u):
-    print(i, '%04x' % ord(c), unicodedata.category(c), end=" ")
+    print(i, '%04x' % ord(c), unicodedata.category(c), end=' ')
     print(unicodedata.name(c))
 
 # Get numeric value of second character

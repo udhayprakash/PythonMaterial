@@ -2,15 +2,15 @@ import unittest
 
 class ArithTestSuper (unittest.TestCase):
     def setUp (self):
-        print "Setting up ArithTest cases"
+        print 'Setting up ArithTest cases'
 
     def tearDown (self):
-        print "Cleaning up ArithTest cases"
+        print 'Cleaning up ArithTest cases'
 
 class ArithTest (ArithTestSuper):
     def runTest (self):
         """ Test addition and succeed. """
-        print "Running ArithTest"
+        print 'Running ArithTest'
         self.failUnless (1+1==2, 'one plus one fails!')
         self.failIf (1+1 != 2, 'one plus one fails again!')
         self.failUnlessEqual (1+1, 2, 'more trouble with one plus one!')
@@ -18,7 +18,7 @@ class ArithTest (ArithTestSuper):
 class ArithTestFail (ArithTestSuper):
     def runTest (self):
         """ Test addition and fail. """
-        print "Running ArithTestFail"
+        print 'Running ArithTestFail'
         self.failUnless (1+1==2, 'one plus one fails!')
         self.failIf (1+1 != 2, 'one plus one fails again!')
         self.failUnlessEqual (1+1, 2, 'more trouble with one plus one!')
@@ -28,20 +28,20 @@ class ArithTestFail (ArithTestSuper):
 
 class ArithTest2 (unittest.TestCase):
     def setUp (self):
-        print "Setting up ArithTest2 cases"
+        print 'Setting up ArithTest2 cases'
     def tearDown (self):
-        print "Cleaning up ArithTest2 cases"
+        print 'Cleaning up ArithTest2 cases'
 
     def runArithTest (self):
         """ Test addition and succeed, in one class. """
-        print "Running ArithTest in ArithTest2"
+        print 'Running ArithTest in ArithTest2'
         self.failUnless (1+1==2, 'one plus one fails!')
         self.failIf (1+1 != 2, 'one plus one fails again!')
         self.failUnlessEqual (1+1, 2, 'more trouble with one plus one!')
 
     def runArithTestFail (self):
         """ Test addition and fail, in one class. """
-        print "Running ArithTestFail in ArithTest2"
+        print 'Running ArithTestFail in ArithTest2'
         self.failUnless (1+1==2, 'one plus one fails!')
         self.failIf (1+1 != 2, 'one plus one fails again!')
         self.failUnlessEqual (1+1, 2, 'more trouble with one plus one!')
@@ -57,8 +57,8 @@ def suite():
     suite.addTest (ArithTestFail())
 
     # Second style:
-    suite.addTest (ArithTest2("runArithTest"))
-    suite.addTest (ArithTest2("runArithTestFail"))
+    suite.addTest (ArithTest2('runArithTest'))
+    suite.addTest (ArithTest2('runArithTestFail'))
 
     return suite
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 try:
-    result = bat + 1 / 0 
+    result = bat + 1 / 0
     print 'result=', result
 except (ZeroDivisionError, NameError) as ex2:
     print 'error is ', ex2

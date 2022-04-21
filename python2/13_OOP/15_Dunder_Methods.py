@@ -31,7 +31,7 @@ class RationalNumber:
         return RationalNumber(n, d)
 
     def __str__(self):
-        return "%s/%s" % (self.n, self.d)
+        return '%s/%s' % (self.n, self.d)
 
     __repr__ = __str__
 

@@ -21,8 +21,8 @@ print('\n\n case 1 ===============================')
 def logged(func):
     def with_logging(*args, **kwargs):
         """ with logging doc"""
-        print(func.__name__ + " was called")
-        print(func.__doc__ + " is func doc")
+        print(func.__name__ + ' was called')
+        print(func.__doc__ + ' is func doc')
         return func(*args, **kwargs)
 
     return with_logging
@@ -56,7 +56,7 @@ from functools import wraps
 def logged(func):
     @wraps(func)
     def with_logging(*args, **kwargs):
-        print(func.__name__ + " was called")
+        print(func.__name__ + ' was called')
         return func(*args, **kwargs)
 
     return with_logging
@@ -72,8 +72,8 @@ print(f'f.__name__:{f.__name__}')  # 'f'
 print(f'f.__doc__ :{f.__doc__}')  # 'does some math'
 f(2)
 
-# NOTE: 
+# NOTE:
 # 1. wraps helps in retaining the properties of decorated function
-# 2. @functools.wraps decorator uses the function functools.update_wrapper() 
-#    to update special attributes like __name__ and __doc__ that are used 
+# 2. @functools.wraps decorator uses the function functools.update_wrapper()
+#    to update special attributes like __name__ and __doc__ that are used
 #    in the introspection.

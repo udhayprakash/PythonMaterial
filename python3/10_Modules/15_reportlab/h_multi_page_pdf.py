@@ -5,7 +5,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 
 
 def create_document():
-    doc = SimpleDocTemplate("h_multi_page_pdf.pdf",
+    doc = SimpleDocTemplate('h_multi_page_pdf.pdf',
                             pagesize=letter)
     styles = getSampleStyleSheet()
     flowables = []
@@ -14,7 +14,7 @@ def create_document():
     # Create a lot of content to make a multipage PDF
     for i in range(50):
         text = 'Paragraph #{}'.format(i)
-        para = Paragraph(text, styles["Normal"])
+        para = Paragraph(text, styles['Normal'])
         flowables.append(para)
         flowables.append(spacer)
 

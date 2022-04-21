@@ -5,7 +5,7 @@ import openpyxl
 def create_worksheets(path):
     workbook = openpyxl.Workbook()
     workbook.create_sheet()
-    
+
     # Insert a worksheet
     workbook.create_sheet(index=1,
                           title='Second sheet')

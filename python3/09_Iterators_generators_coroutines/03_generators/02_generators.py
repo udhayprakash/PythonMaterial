@@ -11,14 +11,14 @@ Purpose: Generator objects
 
 
 def foo():
-    print("Start the function!")
+    print('Start the function!')
     for i in range(3):
-        print("\tbefore yield", i)
+        print('\tbefore yield', i)
         # return i
         yield i
-        print("\tafter yield", i)
+        print('\tafter yield', i)
 
-    print("end of function ")
+    print('end of function ')
     # return None
 
 
@@ -52,27 +52,27 @@ print('\nusing loop to get remaining elements')
 for i in f:
     print(i)
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 for i in f:
     print(i)
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 print(list(f))
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 print(tuple(f))
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 print(set(f))
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 print([i for i in f])
 
-print("\n====reinitialize call ")
+print('\n====reinitialize call ')
 f = foo()
 print(str(f))

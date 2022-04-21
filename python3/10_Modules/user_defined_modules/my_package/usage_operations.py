@@ -18,5 +18,5 @@ print(f'{fibonacci(9) =}')
 print(f'{factorial(9) =}')
 
 # byte code (.pyc) file created can be stopped, by setting
-# environment variable 
+# environment variable
 # export PYTHONDONTWRITEBYTECODE=1

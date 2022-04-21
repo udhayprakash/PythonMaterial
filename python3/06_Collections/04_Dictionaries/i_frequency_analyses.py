@@ -3,8 +3,8 @@
 Purpose: Test Frequency Analyses
 """
 
-sentence = '''Python is a wonderful language. 
-we can solve any 
+sentence = '''Python is a wonderful language.
+we can solve any
 computational problem with this language'''
 
 # Character frequency analyses
@@ -49,8 +49,8 @@ print(frequency)
 print()
 print(f"{sorted('abacus')      =}")
 print(f"{sorted('322321')      =}")
-print(f"{sorted([23,43,-2, 1]) =}")
-print(f"{sorted([23,43,-2, 1], reverse=True) =}")
+print(f'{sorted([23,43,-2, 1]) =}')
+print(f'{sorted([23,43,-2, 1], reverse=True) =}')
 
 print()
 frequency1 = {'a': 3, 'b': 2, 'c': 2, 'd': 1}
@@ -104,13 +104,13 @@ choose a large sentence greater than 150 words and perform the following
         }
         HINT: str.lower()
 2) word frequency analyses
-    a) case sensitive 
+    a) case sensitive
     b) case insensitive
     HINT: str.split()
 
-3) cleansed_words frequency analyses 
+3) cleansed_words frequency analyses
         HINT: string module -> string.punctuation
-    a) case sensitive 
+    a) case sensitive
     b) case insensitive
 
     Are you coming?  --> ['Are', 'you', 'coming']

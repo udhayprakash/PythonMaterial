@@ -1,4 +1,2 @@
-Python scope resolution is based on the LEGB rule, 
+Python scope resolution is based on the LEGB rule,
 	which is shorthand for Local, Enclosing, Global, Built-in.
-	
-	

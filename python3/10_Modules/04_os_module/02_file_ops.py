@@ -14,12 +14,12 @@ file_handler.write('this is second line')
 
 
 # Method 2
-file_handler = open("testfile.txt", 'w')
+file_handler = open('testfile.txt', 'w')
 file_handler.write('this is first line\n')
 file_handler.write('this is second line\n')
 file_handler.close()
 
-file = open("testfile.txt", 'r')
+file = open('testfile.txt', 'r')
 text = file.read()
 print(text)
 

@@ -21,9 +21,9 @@ class Squares:
     def __iter__(self):
         return self
     def __str__(self): # Human readable
-        return "Range iterator from " + self.start + " to " + self.end
+        return 'Range iterator from ' + self.start + ' to ' + self.end
     def __repr__(self): # Expression to generate this object
-        return "Squares(" + self.start + ", " + self.end + ")"
+        return 'Squares(' + self.start + ', ' + self.end + ')'
 
 # Iterators are much easier to define as generators. Simply using the
 # keyword yield instead of return makes Python convert that function to a
@@ -35,10 +35,10 @@ def squares(start, end):
         yield curr * curr
         curr += 1
 
-print("Printing the squares with Squares class:")
+print('Printing the squares with Squares class:')
 for x in Squares(1, 10):
     print(x, end = ' ')
-print("\nPrinting the squares with generator:")
+print('\nPrinting the squares with generator:')
 for x in squares(1, 10):
     print(x, end = ' ')
 print('\n')
@@ -94,7 +94,7 @@ def primes():
     primes = [2, 3, 5, 7, 11]
     yield from primes # Handy syntactic sugar for yield inside for-loop
     current = 13
-    while True:        
+    while True:
         for divisor in primes:
             if current % divisor == 0:
                 break
@@ -114,7 +114,7 @@ def every_kth(it, k):
     count = k
     for x in it:
         count -= 1
-        if count == 0:            
+        if count == 0:
             yield x
             count = k
 
@@ -143,16 +143,16 @@ def clip(it, lower, upper):
 
 def unique_permutations(it, n):
     # Set of permutations that we have already seen before.
-    seen = set()    
+    seen = set()
     # Current sublist of n most recent elements.
-    curr = []    
+    curr = []
     # Counts of how many times each value occurs in current sublist.
     counts = [0 for i in range(n)]
     # How many of those counts are ones, for quick lookup.
     ones = 0
     # Iterate through the values produced by the iterator.
     for v in it:
-        curr.append(v)        
+        curr.append(v)
         # If sublist is too long, shorten it from the front.
         if len(curr) > n:
             out = curr[0] # Note the outgoing element
@@ -165,7 +165,7 @@ def unique_permutations(it, n):
                 ones -= 1
         # Update the count for the current element.
         counts[v] += 1
-        if counts[v] == 1:            
+        if counts[v] == 1:
             ones += 1
             # If each value occurs exactly once, this is a permutation.
             if ones == n:
@@ -174,23 +174,23 @@ def unique_permutations(it, n):
                     seen.add(currt)
                     yield currt
         elif counts[v] == 2:
-            ones -= 1                   
+            ones -= 1
 
-print("Collatz sequence starting from 12345 is:")
+print('Collatz sequence starting from 12345 is:')
 print(list(every_kth(stutter(collatz(12345), 3),3)))
 
-print("The string split into three consecutive words, overlapping:")
-print(list(ngrams("Hello world, how are you today?".split(" "), 3)))
+print('The string split into three consecutive words, overlapping:')
+print(list(ngrams('Hello world, how are you today?'.split(' '), 3)))
 
 # Print each sequence in the corresponding column, each column as far
 # down as there are elements in it.
 
-print("Clipping the values between 5 and 10:")
+print('Clipping the values between 5 and 10:')
 print(list(clip(range(0, 20), 5, 10)))
 
 # Extract the unique permutations from the list.
 items = [0, 2, 1, 0, 1, 2, 0, 0, 2, 2, 0, 1]
-print(f"Unique 3-permutations of {items} are:")
+print(f'Unique 3-permutations of {items} are:')
 print(list(unique_permutations(items, 3)))
 
 # Since the iterator produces values one at the time, we could
@@ -209,8 +209,8 @@ def tabu_generator(n, len_, recent = None):
             yield v
             tabu.append(v)
             if len(tabu) > recent:
-                tabu = tabu[1:]            
-            len_ -= 1        
+                tabu = tabu[1:]
+            len_ -= 1
 
 # Count how many permutations occur for different values of recent.
 
@@ -219,13 +219,13 @@ for recent in range(0, 6):
     total = 0
     for perm in unique_permutations(itemgen, 8):
         total += 1
-    print(f"Using tabu length {recent}, found {total} unique permutations.")
+    print(f'Using tabu length {recent}, found {total} unique permutations.')
 
 # Constructing the shortest possible sequence that contains all
 # permutations of {0, ..., n-1} is an unsolved mathematical problem.
 # Google "greg egan haruhi superpermutation" for an interesting story.
 
-def vertical_print(*its, start="", end="", sep=" "):
+def vertical_print(*its, start='', end='', sep=' '):
     its = list(map(iter, its))
     term = len(its)
     while term > 0:
@@ -236,16 +236,16 @@ def vertical_print(*its, start="", end="", sep=" "):
                     val = str(next(its[idx]))
                 except StopIteration:
                     its[idx] = None
-                    val = " "
+                    val = ' '
                     term -= 1
-            else: val = " "
-            result += val + sep                
+            else: val = ' '
+            result += val + sep
         result += end
         if term > 0: yield result
 
-for line in vertical_print("Hello", "there", "how", "are", "yeh?",
-                           "supercalifragilisticexpialidocious",
-                           start = "[", end="]"):
+for line in vertical_print('Hello', 'there', 'how', 'are', 'yeh?',
+                           'supercalifragilisticexpialidocious',
+                           start = '[', end=']'):
     print(line)
 
 # Sieve of Erathostenes is a classic but inefficient way to generate
@@ -265,34 +265,34 @@ def sieve_of_erathostenes(m, div):
 
 import itertools as it
 
-print("Middle square 10-digit random numbers from 1234567890:")
+print('Middle square 10-digit random numbers from 1234567890:')
 print(list(it.islice(middle_square(1234567890, 10), 50)))
 
-print("4-digit random numbers from 540 fall into a cycle right away:")
+print('4-digit random numbers from 540 fall into a cycle right away:')
 print(list(it.islice(middle_square(540, 4), 12)))
 
 # Python's built in function enumerate is handy if you need the position
 # of each iterated element.
 
-print ("Here are the first 5 prime numbers that contain their index:")
+print ('Here are the first 5 prime numbers that contain their index:')
 print(list(it.islice(((i, p) for (i, p) in enumerate(primes()) if str(i) in str(p)), 5)))
 
 # Take primes until they become greater than thousand
-print ("Here is every seventh prime number up to one thousand:")
+print ('Here is every seventh prime number up to one thousand:')
 print (list(it.takewhile( (lambda x: x <= 1000), every_kth(primes(), 7))))
 
-print("Here are the prime numbers under 10000 filtered with the sieve:")
+print('Here are the prime numbers under 10000 filtered with the sieve:')
 print(list(sieve_of_erathostenes(10000, 101)))
 
 # Iterators can be turned into various combinatorial possibilities.
 # Again, even though there are exponentially many solutions, these
 # are generated lazily one at the time as needed by the computation.
 
-print("Here are all possible permutations of [1, 2, 3, 4].")
+print('Here are all possible permutations of [1, 2, 3, 4].')
 print(list(it.permutations(range(1, 5))))
 
-print("Here are all possible 3-combinations of [1, 2, 3, 4].")
+print('Here are all possible 3-combinations of [1, 2, 3, 4].')
 print(list(it.combinations(range(1, 5), 3)))
 
-print("Here are all possible replacement combinations of [1, 2, 3, 4].")
+print('Here are all possible replacement combinations of [1, 2, 3, 4].')
 print(list(it.combinations_with_replacement(range(1, 5), 3)))

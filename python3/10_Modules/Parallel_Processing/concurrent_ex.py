@@ -4,8 +4,8 @@ from concurrent import futures
 def factorize(n):
     """Return the prime factors of *n*
 
-    This is a **very** bad factoring algorithm, which makes it good 
-    example of a CPU bound task. 
+    This is a **very** bad factoring algorithm, which makes it good
+    example of a CPU bound task.
 
     """
 

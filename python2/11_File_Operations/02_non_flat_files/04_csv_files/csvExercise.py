@@ -16,7 +16,7 @@ print '='*80
 with open('sampleCSVFile.csv') as csvFile1:
     data = csv.reader(csvFile1, delimiter=',')
     print data
-    
+
     vegetables = []
     fruits = []
     cars = []
@@ -34,7 +34,7 @@ with open('sampleCSVFile.csv') as csvFile1:
 print '=' * 80
 with open('sampleCSVFile.csv') as c2:
     data2 = csv.reader(c2, delimiter=',')
-    print "data is ", data2
+    print 'data is ', data2
     vegetables = []
     fruits = []
     cars = []

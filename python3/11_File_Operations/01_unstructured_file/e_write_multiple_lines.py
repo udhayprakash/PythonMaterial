@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: file write operations 
+Purpose: file write operations
     possible modes: w, w+
 """
 new_fh = open('e_write_multiple_lines.tsf', 'w')

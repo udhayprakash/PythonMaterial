@@ -13,5 +13,5 @@ class TestCalculate(unittest.TestCase):
         self.assertEqual(4,self.calc.add(2,2))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

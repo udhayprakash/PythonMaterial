@@ -1,0 +1,8 @@
+sky
+cloud
+water
+forest
+rock
+moon
+falcon
+lake

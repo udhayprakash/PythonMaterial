@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Display all text files with size 
+Purpose: Display all text files with size
 greater than 1kb i,e., 1024 bytes
 """
 

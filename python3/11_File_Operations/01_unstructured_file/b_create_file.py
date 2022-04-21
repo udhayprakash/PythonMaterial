@@ -4,16 +4,16 @@ Purpose: creating file and adding content
 """
 fh = open('b_create_file.txt', mode='w', encoding='utf-8')
 
-print("Name of the file : ", fh.name)
-print("Opening mode     : ", fh.mode)
+print('Name of the file : ', fh.name)
+print('Opening mode     : ', fh.mode)
 
 fh.write('This is first line\n')
 fh.write('This is second line\n')
 fh.flush()
 
-print("Closed or not    : ", fh.closed)
+print('Closed or not    : ', fh.closed)
 fh.close()  # garbage collector
-print("Closed or not    : ", fh.closed)
+print('Closed or not    : ', fh.closed)
 
 try:
     fh.write('This is third line\n')
@@ -29,13 +29,13 @@ gh.write('This is third line\n')
 gh.flush()
 gh.close()
 
-# NOTE: 
+# NOTE:
 # 1. In write mode, if file is not present, new file is created and content is added
 # 2. IN write mode, if file present, removes existing content and adds new content.
 
 
 
-#----Adding content to existing file 
+#----Adding content to existing file
 mh = open('b_create_file.txt', mode='a')
 mh.write('This is fourth line\n')
 

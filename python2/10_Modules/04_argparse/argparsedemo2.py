@@ -9,16 +9,16 @@ def login(user_name, password, email_address):
     :param email_address:
     :return:
     """
-    print("USERNAME:", user_name)
-    print("PASSWORD:", password)
-    print("EMAIL ID:", email_address)
+    print('USERNAME:', user_name)
+    print('PASSWORD:', password)
+    print('EMAIL ID:', email_address)
 
 
 # print '__name__', __name__
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Script to get the user credetials and display them")
+        description='Script to get the user credetials and display them')
     parser.add_argument('-user',
                         help='Username')
     parser.add_argument('-passwrd',

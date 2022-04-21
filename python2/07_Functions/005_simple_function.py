@@ -10,6 +10,6 @@ def hello(name, age):
     return "%s's age is %d"%(name, age)
     # default return is None type object
 
-# Function Call 
+# Function Call
 result = hello('India', 75)
-print "result =", result
+print 'result =', result

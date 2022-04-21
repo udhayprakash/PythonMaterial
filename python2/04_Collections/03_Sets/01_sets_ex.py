@@ -28,7 +28,7 @@ filtered_list = sorted(set(running_ports), reverse=True)
 print 'type(filtered_list)', type(filtered_list)
 print 'len(filtered_list)', len(filtered_list)
 print 'filtered_list:', filtered_list
-print 
+print
 
 print 'before addition - myset', myset
 myset.add(12)
@@ -86,9 +86,3 @@ data Structures
 
     iter()
 '''
-
-
-
-
-
-

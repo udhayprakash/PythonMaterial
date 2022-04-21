@@ -6,7 +6,7 @@ def beg(target_function):
     def wrapper(*args, **kwargs):
         msg, say_please = target_function(*args, **kwargs)
         if say_please:
-            return "{} {}".format(msg, "Please! I am poor :(")
+            return '{} {}'.format(msg, 'Please! I am poor :(')
         return msg
 
     return wrapper
@@ -14,7 +14,7 @@ def beg(target_function):
 
 @beg
 def say(say_please=False):
-    msg = "How about party today?"
+    msg = 'How about party today?'
     return msg, say_please
 
 

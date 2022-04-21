@@ -17,10 +17,10 @@ if __name__ == '__main__':
 
     ~py f_option_names.py -s udhay
     udhay
-    ~py f_option_names.py --string udhay 
+    ~py f_option_names.py --string udhay
     udhay
 
-    ~py f_option_names.py --help        
+    ~py f_option_names.py --help
     Usage: f_option_names.py [OPTIONS]
 
     Options:

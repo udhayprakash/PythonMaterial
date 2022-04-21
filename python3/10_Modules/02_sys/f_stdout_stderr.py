@@ -4,7 +4,7 @@ Purpose: sys module
 """
 import sys
 
-print(f''' 
+print(f'''
     {sys.stderr =}
     {sys.stdin  =}
     {sys.stdout =}

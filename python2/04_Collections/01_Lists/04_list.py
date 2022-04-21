@@ -49,7 +49,7 @@ mylist1.insert(0, mylist2)
 print 'mylist1       = ', mylist1
 
 
-# difference between subsititution and insert 
+# difference between subsititution and insert
 print '--- mylist1.insert(3, 99999)'
 mylist1.insert(3, 99999)
 print 'mylist1       = ', mylist1

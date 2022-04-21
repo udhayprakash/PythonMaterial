@@ -10,18 +10,18 @@ Purpose: Logical Operations
 """
 # and - If all are True, result is True; else False
 print('and operation ')
-print("True and True  ", True and True)  # True
-print("True and False ", True and False)
-print("False and True  ", False and True)
-print("False and False ", False and False)
+print('True and True  ', True and True)  # True
+print('True and False ', True and False)
+print('False and True  ', False and True)
+print('False and False ', False and False)
 print()
 
 # or - If all are False, result is False; else True
 print('or operation ')
-print("True or True  ", True or True)
-print("True or False ", True or False)
-print("False or True  ", False or True)
-print("False or False ", False or False)  # False
+print('True or True  ', True or True)
+print('True or False ', True or False)
+print('False or True  ', False or True)
+print('False or False ', False or False)  # False
 
 print()
 expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
@@ -31,12 +31,12 @@ expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
 print(f'{expr1=}')
 print()
 
-print("True      ", True)
-print("not True  ", not True)
-print("False     ", False)
-print("not False ", not False)
-print(f"{not not False = }")
-print(f"{not not not False = }")
+print('True      ', True)
+print('not True  ', not True)
+print('False     ', False)
+print('not False ', not False)
+print(f'{not not False = }')
+print(f'{not not not False = }')
 print()
 
 # --------------------

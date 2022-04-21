@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Ternary operation usage 
+Purpose: Ternary operation usage
 
 Useful, when there is  one condition and two ways
 """

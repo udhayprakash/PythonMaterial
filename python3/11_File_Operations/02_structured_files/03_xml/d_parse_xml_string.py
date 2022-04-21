@@ -27,4 +27,4 @@ print('User count:', len(nodes))
 for item in nodes:
     print('\nName', item.find('name').text)
     print('Id', item.find('id').text)
-    print('Attribute', item.get("x"))
+    print('Attribute', item.get('x'))

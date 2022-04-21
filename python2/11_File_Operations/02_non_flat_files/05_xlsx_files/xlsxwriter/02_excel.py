@@ -18,7 +18,7 @@ for item, cost in expenses:
     row += 1
 
 
-# write total using formula 
+# write total using formula
 worksheet.write(row, 0, 'Total')
 worksheet.write(row, 1, '=SUM(B1:B4)')
 

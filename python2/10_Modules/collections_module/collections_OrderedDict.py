@@ -25,4 +25,3 @@ print 'after my_dict.popitem()\n', my_dict
 
 print my_dict.popitem(last=False)
 print 'after my_dict.popitem()\n', my_dict
-

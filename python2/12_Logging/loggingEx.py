@@ -6,7 +6,7 @@ import os
 try:
     debug = 0
     # Log defining information.
-    strdate = datetime.now().strftime("%Y_%b_%d_%I_%M")
+    strdate = datetime.now().strftime('%Y_%b_%d_%I_%M')
 
     if not os.path.exists('./passWordResetLogs'):
         os.makedirs('passWordResetLogs')
@@ -30,7 +30,7 @@ try:
     logger_fh.setFormatter(LogfileFormatter)
     logger.addHandler(logger_fh)
 except Exception as ex:
-    print "unable to create logs\n", ex
+    print 'unable to create logs\n', ex
     exit(1)
 
 

@@ -23,7 +23,7 @@ with xlsxwriter.Workbook('Expenses02.xlsx') as wb:
         worksheet.write(row, col, item)
         worksheet.write(row, col+1, cost, money)
         row+=1
-    
+
     worksheet.write(row, 0, 'Total', bold)
     worksheet.write(row, 1, '=SUM(B2:B5)', money)
 

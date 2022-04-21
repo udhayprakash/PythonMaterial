@@ -1,4 +1,4 @@
-#!python -u 
+#!python -u
 """
 Purpose: Display the crazy numbers
 
@@ -26,12 +26,12 @@ def crazy_num(n):
         b = int(b / 10)
 
     if s == n:
-        print ("Crazy number.")
+        print ('Crazy number.')
     else:
-        print ("Not crazy number.")
+        print ('Not crazy number.')
 
     return None
 
 
-n = int(input("Enter number: "))
+n = int(input('Enter number: '))
 crazy_num(n)

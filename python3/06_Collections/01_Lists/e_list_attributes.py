@@ -109,12 +109,12 @@ print('After del mylist[3]   =', mylist)
 
 print(f'{mylist[0::2]          =}')
 del mylist[0::2]
-print("After del mylist[0::2]:", mylist)
+print('After del mylist[0::2]:', mylist)
 
 
 # Question: list.clear vs del list
 mylist.clear()
-print("After mylist.clear()  :", mylist)
+print('After mylist.clear()  :', mylist)
 
 del mylist
 # print(mylist)

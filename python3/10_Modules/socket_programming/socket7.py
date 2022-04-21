@@ -20,29 +20,29 @@ def main():
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     except socket.error, e:
-        print("Error creating socket:%s" % e)
+        print('Error creating socket:%s' % e)
         sys.exit(1)
 
     try:
         s.connect((host, port))
     except socket.gaierror, e:
-        print("Address-related error connecting to server: %s" % e)
+        print('Address-related error connecting to server: %s' % e)
         sys.exit(1)
     except socket.error, e:
-        print("connection error: %s" % e)
+        print('connection error: %s' % e)
         sys.exit(1)
 
     try:
-        s.sendall("GET %s HTTP/1.0\r\n\\r\n" % filename)
+        s.sendall('GET %s HTTP/1.0\r\n\\r\n' % filename)
     except socket.error, e:
-        print("Error sending data: %s" % e)
+        print('Error sending data: %s' % e)
         sys.exit(1)
 
     while 1:
         try:
             buf = s.recv(2048)
         except socket.error, e:
-            print("Error receivig data: %s" % e)
+            print('Error receivig data: %s' % e)
             sys.exit(1)
 
         if not len(buf):

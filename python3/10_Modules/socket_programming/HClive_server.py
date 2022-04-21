@@ -34,7 +34,7 @@ def clientthread(conn):
 
 while 1:
     conn, addr = s.accept()
-    print("connected with" + addr[0] + ':' + str(addr[1]))
+    print('connected with' + addr[0] + ':' + str(addr[1]))
     start_new_thread(clientthread, (conn,))
 
 s.close()

@@ -9,7 +9,7 @@ import turtle as t
 
 t.forward(100)  # same as fd(100)
 
-t.shape("turtle")
+t.shape('turtle')
 
 #help(t.shape())
 
@@ -23,4 +23,4 @@ for i in range(0,100,10):
 	t.square(i)
 	t.left(90)
 
-for in 
+for in

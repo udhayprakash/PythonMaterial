@@ -6,11 +6,11 @@ ASCII - english characters & commonly used symbols
       - 0 to 127
 
       65 - A
-      66 - B 
+      66 - B
       67 - C
       .....
       97 - a
-      98 - b 
+      98 - b
       99 - c
  Further Reference: https://home.unicode.org/
 """
@@ -74,5 +74,5 @@ print(f'{sys.maxunicode =}')
 # string reversal on unicode characters is tricky
 s6 = u'noe\u0308l'
 print(s6)                     # 'noël'
-print("".join(reversed(s6)))  # 'l̈eon'
+print(''.join(reversed(s6)))  # 'l̈eon'
 print(s6[::-1])               # 'l̈eon'

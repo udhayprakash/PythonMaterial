@@ -41,17 +41,17 @@ def get_elapsed_time(pid):
         return 0
     pidInfo = [result.split()[1] for result in results
                if result.split()[0] == str(pid)][0]
-    pidInfo = pidInfo.partition("-")
+    pidInfo = pidInfo.partition('-')
     if pidInfo[1] == '-':
         # there is a day
         days = int(pidInfo[0])
-        rest = pidInfo[2].split(":")
+        rest = pidInfo[2].split(':')
         hours = int(rest[0])
         minutes = int(rest[1])
         seconds = int(rest[2])
     else:
         days = 0
-        rest = pidInfo[0].split(":")
+        rest = pidInfo[0].split(':')
         if len(rest) == 3:
             hours = int(rest[0])
             minutes = int(rest[1])

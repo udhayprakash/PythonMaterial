@@ -5,17 +5,17 @@ import pickle
     Purpose: Working with Pickle files
     pickling
 
-    serilization 
+    serilization
         python objects - > flattened content  -- string/file
-        
-            dump  -- into a file 
-            dumps -- into a python string 
 
-    De-serilization 
-        flattened content -> python objects 
+            dump  -- into a file
+            dumps -- into a python string
 
-            load  -- from a file 
-            loads -- from a python string 
+    De-serilization
+        flattened content -> python objects
+
+            load  -- from a file
+            loads -- from a python string
 
 '''
 # Serialization
@@ -30,7 +30,7 @@ f.close()
 # Deserialization
 g = open('BelgiumStudents.pkl', 'rb')
 myStudents = pickle.load(g)
-print "myStudents are ", myStudents
+print 'myStudents are ', myStudents
 g.close()
 
 

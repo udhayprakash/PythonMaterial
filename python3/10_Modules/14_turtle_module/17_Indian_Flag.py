@@ -9,10 +9,10 @@ import time
 screen = turtle.getscreen()
 
 # set background color of screen
-screen.bgcolor("#b3daff")
+screen.bgcolor('#b3daff')
 
 # set tile of screen
-screen.title("Indian Flag")
+screen.title('Indian Flag')
 
 oogway = turtle.Turtle()
 
@@ -21,7 +21,7 @@ oogway.speed(100)
 oogway.penup()
 
 # decide the shape of cursor/turtle
-oogway.shape("turtle")
+oogway.shape('turtle')
 
 # flag height to width ratio is 2:3
 flag_height = 300
@@ -62,11 +62,11 @@ def draw_stripes():
     x = start_x
     y = start_y
     # we need to draw total 3 stripes, 1 saffron, 1 white and 1 green
-    draw_fill_rectangle(x, y, stripe_height, stripe_width, "#FF9933")
+    draw_fill_rectangle(x, y, stripe_height, stripe_width, '#FF9933')
     # decrease value of y by stripe_height
     y = y - stripe_height
     # create middle white stripe
-    draw_fill_rectangle(x, y, stripe_height, stripe_width, "white")
+    draw_fill_rectangle(x, y, stripe_height, stripe_width, 'white')
     y = y - stripe_height
 
     # create last green stripe
@@ -77,7 +77,7 @@ def draw_stripes():
 def draw_chakra():
     oogway.speed(1)
     oogway.goto(0, 0)
-    color = "#000080"  # navy blue
+    color = '#000080'  # navy blue
     oogway.penup()
     oogway.color(color)
     oogway.fillcolor(color)

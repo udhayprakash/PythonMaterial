@@ -7,14 +7,14 @@ class Tree:
 	def __init__(self):
 		self.root = None
 	def setRoot(self, node):
-	    self.root = node        
+	    self.root = node
     	def size(self):
 		if self.root == None:
 			return 0
 		def subtreeSize(node):
 			return 1 + sum(subtreeSize(c) for c in node.getChildren())
 		return subtreeSize(self.root)
-    
+
 class BinaryNode:
 	def __init__(self, v):
 		self.val = v
@@ -31,7 +31,7 @@ class BinaryNode:
 		if self.rightChild != None:
 			children.append(self.rightChild)
 		return children
-    
+
 class BinarySearchTree(Tree):
     def insert(self, val):
         if self.root == None:
@@ -47,7 +47,7 @@ class BinarySearchTree(Tree):
                         break
                 else:
                     if currentRoot.rightChild != None:
-                       currentRoot = currentRoot.rightChild 
+                       currentRoot = currentRoot.rightChild
                     else:
                         currentRoot.rightChild = BinaryNode(val)
                         break
@@ -59,19 +59,18 @@ class BinarySearchTree(Tree):
                 currentRoot = currentRoot.leftChild
             else:
                 currentRoot = currentRoot.rightChild
-                
+
        	if currentRoot == None:
             return False
         else:
             return True
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     btree = BinarySearchTree()
     vals = [5, 3, 9, 4, 1, 7, 30]
     for val in vals:
         btree.insert(val)
-    print "Tree size is %i" % btree.size()
+    print 'Tree size is %i' % btree.size()
     tests = [8, 7, 1, 5]
     for t in tests:
-		print "find(%i) = %s" % (t, ("True" if btree.find(t) else "False"))
-            
+		print 'find(%i) = %s' % (t, ('True' if btree.find(t) else 'False'))

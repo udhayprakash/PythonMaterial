@@ -22,10 +22,10 @@ class Shape(object):
 rectangle = Shape(100, 45)  # instantiation
 
 print 'rectangle.x', rectangle.x
-print "type(Shape)     ", type(Shape)
-print "type(rectangle) ", type(rectangle)
+print 'type(Shape)     ', type(Shape)
+print 'type(rectangle) ', type(rectangle)
 
-print "dir(rectangle) ", dir(rectangle)
+print 'dir(rectangle) ', dir(rectangle)
 
 print rectangle.perimeter()
-rectangle.describe("wide rectangle more than twice as wide as tall")
+rectangle.describe('wide rectangle more than twice as wide as tall')

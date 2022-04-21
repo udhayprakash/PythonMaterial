@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-named tuples provide 
+named tuples provide
 1. access by index - like normal tuples
 2. access by keyname - like dictionaries
 3. using getattr()
@@ -16,15 +16,15 @@ S = Student('Nandini', '19', '2541997')
 print 'type(S)', type(S)
 print
 # Access using index
-print "The Student age using index is : "
+print 'The Student age using index is : '
 print S[1]
 
-# Access using name 
-print "The Student name using keyname is : "
+# Access using name
+print 'The Student name using keyname is : '
 print 'S.name', S.name
 print ' S.age',  S.age
 print S.DOB
 
 # Access using getattr()
-print "The Student DOB using getattr() is : "
+print 'The Student DOB using getattr() is : '
 print getattr(S, 'DOB')

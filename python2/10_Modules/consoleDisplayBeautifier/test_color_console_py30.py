@@ -31,5 +31,5 @@ def test():
   print('===========================================')
   cons.set_text_attr(default_colors)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
   test()

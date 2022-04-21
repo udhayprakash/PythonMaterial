@@ -1,7 +1,7 @@
 import urllib
 import re
 
-urls = ["http://google.com", "http://nytimes", "http://CNN.com"]
+urls = ['http://google.com', 'http://nytimes', 'http://CNN.com']
 
 i=0
 

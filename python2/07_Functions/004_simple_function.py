@@ -14,7 +14,7 @@ def hello(name, age):
     # return {12:34}
     # default return is None type object
 
-# Function Call 
+# Function Call
 print(hello('India', 75))
 result = hello('India', 75)
-print("result =", result, type(result))
+print('result =', result, type(result))

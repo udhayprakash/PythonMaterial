@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Purpose: Higher Order Functions 
-            - reduce 
+Purpose: Higher Order Functions
+            - reduce
             - bulitin function in python 2.x
-            - part of functools module in python 3.x 
+            - part of functools module in python 3.x
 
 """
 from functools import reduce
@@ -78,7 +78,7 @@ print()
 
 
 """
-Assignment: mimick sum() builtin function with 
+Assignment: mimick sum() builtin function with
  a. user-defined function
  b. using reduce
 """

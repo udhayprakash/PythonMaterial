@@ -1,10 +1,10 @@
-	
+
 Be careful with mutable default arguments
 
 >>> def foo(x=[]):
 ...     x.append(1)
 ...     print x
-... 
+...
 >>> foo()
 [1]
 >>> foo()
@@ -30,7 +30,7 @@ From 2.5 onwards dicts have a special method __missing__ that is invoked for mis
 ...  def __missing__(self, key):
 ...   self[key] = rv = []
 ...   return rv
-... 
+...
 >>> m = MyDict()
 >>> m["foo"].append(1)
 >>> m["foo"].append(2)
@@ -68,7 +68,7 @@ which is exactly the same as
 "hello"
 
 =========================================================
-	
+
 Operator overloading for the set builtin:
 
 >>> a = set([1,2,3,4])
@@ -103,31 +103,31 @@ print C()[1:2, ..., 3]
 
 ===================================
 In[32]: pow(4,2)
-Out[32]: 
+Out[32]:
 16
 In[33]: pow(4,2,10)
-Out[33]: 
+Out[33]:
 6
 In[34]: pow(4,2,12)  # pow(x,y,z) is  (x ** y) % z
-Out[34]: 
+Out[34]:
 4
 ==============================================
 Transposing an array
 In[35]: a = [(1,2), (3,4), (5,6)]
 In[36]: zip(*a)
-Out[36]: 
+Out[36]:
 [(1, 3, 5), (2, 4, 6)]
 In[37]: map(None, *a)
-Out[37]: 
+Out[37]:
 [(1, 3, 5), (2, 4, 6)]
 ================================================
 Enumerating with different starting index
 In[38]: l = ["spam", "ham", "eggs"]
 In[39]: list(enumerate(l))
-Out[39]: 
+Out[39]:
 [(0, 'spam'), (1, 'ham'), (2, 'eggs')]
 In[40]: list(enumerate(l, 9))
-Out[40]: 
+Out[40]:
 [(9, 'spam'), (10, 'ham'), (11, 'eggs')]
 ===========================================
 Built-in base64, zlib, and rot13 codecs
@@ -157,19 +157,19 @@ Tuple unpacking
 In[41]: (a, (b, c), d) = [(1, 2), (3, 4), (5, 6)]
 
 In[42]: a
-Out[42]: 
+Out[42]:
 (1, 2)
 In[43]: b
-Out[43]: 
+Out[43]:
 3
 In[44]: c
-Out[44]: 
+Out[44]:
 4
 In[45]: d
-Out[45]: 
+Out[45]:
 (5, 6)
 ====================================================
-	
+
 Implicit string concatenation:
 
 >>> print "Hello " "World"
@@ -180,7 +180,7 @@ hello = "Greaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Hello " \
         "Word"
 or
 
-hello = ("Greaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Hello " 
+hello = ("Greaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa Hello "
          "Word")
 =================================================================
 FUNCTIONS ARE FIRST CLASS OBJECTS. 	They too can be used as objects
@@ -193,7 +193,7 @@ doNothing.monkeys = 4
 print doNothing.monkeys
 4
 ====================================
-	
+
 __slots__ is a nice way to save memory, but it's very hard to get a dict of the values of the object. Imagine the following object:
 
 class Point(object):
@@ -210,7 +210,7 @@ This however won't work if point was subclassed and new slots were added. Howeve
 >>> p.__reduce_ex__(2)[2][1]
 {'y': 5, 'x': 3}
 ========================================
-	
+
 "Unpacking" to function parameters
 
 def foo(a, b, c):
@@ -227,13 +227,13 @@ NAMED Tuple
 In[71]: from collections import namedtuple
 In[72]: node = namedtuple('node', "a b")
 In[73]: node(1,2)+node(5,6)
-Out[73]: 
+Out[73]:
 (1, 2, 5, 6)
 In[74]: node(99,77)
-Out[74]: 
+Out[74]:
 node(a=99, b=77)
 ================================================
-Borg Pattern for singleton classes. 
+Borg Pattern for singleton classes.
 
 class Borg:
     __shared_state = {'foo': 'bar'}
@@ -241,9 +241,9 @@ class Borg:
         self.__dict__ = self.__shared_state
     # rest of your class here
 
-So, every time new instantiation is done, the attributes remain the same 
+So, every time new instantiation is done, the attributes remain the same
 ==============================================================================
-	
+
 infinite recursion in list
 
 >>> a = [1,2]
@@ -265,7 +265,7 @@ recursion limit can be manipulated. By default, the limit is 1000 frames.
 898
 >>>
 
-The limit is confined to the current session only. 
+The limit is confined to the current session only.
 
 =================================================================
 Rounding Integers: Python has the function round, which returns numbers of type double:
@@ -290,7 +290,7 @@ If you need an integer as a result use int to convert type:
 8360000
 =========================================================================
 
-	
+
 Monkeypatching objects
 
 Every object in Python has a __dict__ member, which stores the object's attributes. So, you can do something like this:
@@ -310,4 +310,3 @@ class struct(object):
 
 s = struct(foo=10, bar=11, baz="i'm a string!')
 ================================================================================
-

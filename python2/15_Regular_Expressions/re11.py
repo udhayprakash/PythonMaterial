@@ -6,4 +6,3 @@ for line in hand:
     x = re.findall('^Details:.*rev=([0-9.]+)', line)
     if len(x) > 0:
         print x
-

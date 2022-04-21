@@ -53,14 +53,14 @@ print 'language[45:87]:', language[45:87]  # indexes are not present
 # string slicing - string[start_index: final_index: step]
 # Default - step = +1
 print
-print "language[7:18]   =", language[7:18]
-print "language[7:18:1] =", language[7:18:1]
-print "language[7:18:3] =", language[7:18:3]
-print "language[7:18:-1]=", language[7:18:-1]  # 7-1 = 6 ; it is not between 7 and 18
+print 'language[7:18]   =', language[7:18]
+print 'language[7:18:1] =', language[7:18:1]
+print 'language[7:18:3] =', language[7:18:3]
+print 'language[7:18:-1]=', language[7:18:-1]  # 7-1 = 6 ; it is not between 7 and 18
 
 print 'language[18:7:-1]', language[18:7:-1]  # 18-1 = 17
 print 'language[18:7:-3]', language[18:7:-3]  # 18-3 = 15
-#         18 15 12 9 
+#         18 15 12 9
 #            i   a o
 #         17 14 11 8
 #         g  m  r  r

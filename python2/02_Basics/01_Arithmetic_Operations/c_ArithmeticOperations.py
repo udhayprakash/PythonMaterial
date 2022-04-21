@@ -57,13 +57,13 @@ print 'myNewNumber = ', myNewNumber
 # 15  1 1 1 1
 
 result = 14 >> 2
-print "14 >> 2 = ", result
+print '14 >> 2 = ', result
 #        8 4 2 1
 # 14     1 1 1 0
 # >>2    0 0 1 1
 
 result = 3 << 2
-print "3 << 2 = ", result
+print '3 << 2 = ', result
 #        8 4 2 1
 # 3      0 0 1 1
 # <<2    1 1 0 0  =>  12
@@ -73,7 +73,7 @@ calculated_result = 10 << 4
 print '10 << 4', calculated_result
 #           128    64    32    16    8   4   2   1
 # 10                                 1   0   1   0
-#                                1    0   1   0          1st shift 
+#                                1    0   1   0          1st shift
 #                          1     0    1   0              2nd shift
 #                    1     0     1    0                  3rd shift
 #            1       0     1     0                       4th shift

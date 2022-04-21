@@ -2,8 +2,8 @@
 This material is designed to learn Python with problem solving.
 Just follow the scripts as per the serial order given.
 
-## Basic Programs 
-### First Program 
+## Basic Programs
+### First Program
 
 [Hello World Program](https://github.com/udhayprakash/PythonMaterial/blob/master/00_Basic/00_hellowWorld.py)
 
@@ -46,10 +46,10 @@ Just follow the scripts as per the serial order given.
 ### range() and xrange()
 1. [range() and xrange](https://github.com/udhayprakash/PythonMaterial/blob/master/00_Basic/10_rangeNxrange.py)
 
-### Collections 
+### Collections
 1. [Collections in Python](https://github.com/udhayprakash/PythonMaterial/blob/master/00_Basic/11_collections.py)
 
-### File Operations 
+### File Operations
 1. [Working With Files And Folders](https://github.com/udhayprakash/PythonMaterial/blob/master/00_Basic/workingWithFilesAndFolders.py)
 
 

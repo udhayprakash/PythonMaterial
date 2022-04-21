@@ -26,7 +26,7 @@ if __name__ == '__main__':
     results = [pool.apply(howmany_within_range, args=(row, 4, 8)) for row in data]
 
     # Step 3: Don't forget to close
-    pool.close()    
+    pool.close()
 
     print(results[:10])
     #> [3, 1, 4, 4, 4, 2, 1, 1, 3, 3]

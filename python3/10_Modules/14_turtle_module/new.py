@@ -5,7 +5,7 @@ Purpose: Traffic Light Simulator
 import turtle
 
 # constants
-BG_COLOR = "#0080ff" # sky-blue
+BG_COLOR = '#0080ff' # sky-blue
 
 class TrafficLightSimulator:
     def __init__(self):

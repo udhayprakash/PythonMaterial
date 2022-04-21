@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: asyncio
-    asynchrnous functions should be called with await, 
+    asynchrnous functions should be called with await,
     even within another asynchronous functions
 """
 import asyncio

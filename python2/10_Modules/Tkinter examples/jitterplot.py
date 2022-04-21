@@ -5,16 +5,16 @@ from Tkinter import *
 
 import math, random
 
-GREY = "grey"
-GREEN = "green"
-WHITE = "white"
-BLACK = "black"
+GREY = 'grey'
+GREEN = 'green'
+WHITE = 'white'
+BLACK = 'black'
 
-# 
+#
 # Draw jitterplot (should turn this into a compound widget instead)
 
 def jitterplot(canvas, bbox, data):
-    "Draw a jitter plot"
+    'Draw a jitter plot'
 
     # get min/max and average
     lo, hi = min(data), max(data)
@@ -34,8 +34,8 @@ def jitterplot(canvas, bbox, data):
 
     # draw "cloud"
     y = (y0 + y1) / 2
-    canvas.create_oval(x - sd, y0, x + sd, y1, fill=GREY, outline="")
-    canvas.create_oval(x - sd, y - sd, x + sd, y + sd, fill=WHITE, outline="")
+    canvas.create_oval(x - sd, y0, x + sd, y1, fill=GREY, outline='')
+    canvas.create_oval(x - sd, y - sd, x + sd, y + sd, fill=WHITE, outline='')
 
     # draw min/max and average bars
     y = avg*ystep+ybase
@@ -59,7 +59,7 @@ data = map(lambda a:random.random(), range(200))
 
 root = Tk()
 
-Label(text="Jitter Plot Example").pack()
+Label(text='Jitter Plot Example').pack()
 canv = Canvas(root, height=500, width=500, bg=WHITE)
 canv.pack()
 
@@ -68,7 +68,7 @@ canv.pack()
 ##def printcanvas():
 ##    os.popen("lpr", "w").write(canv.postscript())
 
-Button(text="Dismiss", command=root.quit).pack(side=LEFT)
+Button(text='Dismiss', command=root.quit).pack(side=LEFT)
 ##Button(text="Print", command=printcanvas).pack(side=LEFT)
 
 # draw the diagram

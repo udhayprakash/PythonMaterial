@@ -8,10 +8,10 @@ print(language, type(language))
 question = 'How are your?'
 print(question, type(question))
 
-# where_abouts = 'what's up?' # SyntaxError: invalid syntax    
+# where_abouts = 'what's up?' # SyntaxError: invalid syntax
 where_abouts = 'what\'s up?'
 print(where_abouts, type(where_abouts))
-# NOTE 1: Placing \ before any operator with result 
+# NOTE 1: Placing \ before any operator with result
 # in treating operator as a ordinary character
 
 other_string = 'What\'s going in yours\' in-laws\' house'
@@ -34,11 +34,11 @@ print('\n\n')
 # """ ''' '""' '''' """
 # "  ''' "
 
-# Multi-line Strings 
+# Multi-line Strings
 print('Today is an awesome day\
             to learn python')
-print("Today is an awesome day\
-            to learn python")
+print('Today is an awesome day\
+            to learn python')
 print('''Today is an awesome day\
             to learn python''')
 print("""Today is an awesome day\
@@ -46,9 +46,9 @@ print("""Today is an awesome day\
 
 
 print()
-print('''Today is an awesome day 
+print('''Today is an awesome day
           to learn python''')
-print("""Today is an awesome day 
+print("""Today is an awesome day
           to learn python""")
 
 print('''

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: To check whether given string is palindrome or not 
+Purpose: To check whether given string is palindrome or not
 """
 
 # 'Anna','Civic','Kayak','Level','Madam','Mom','Noon','Racecar','Radar','Redder','Refer','Repaper','Rotator','Rotor','Sagas','Solos','Stats','Tenet','Wow'

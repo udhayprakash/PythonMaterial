@@ -21,7 +21,7 @@ def crawl(url):
     # Find links
     links = link_re.findall(req.text)
 
-    print("\nFound {} links".format(len(links)))
+    print('\nFound {} links'.format(len(links)))
 
     # Search links for emails
     for link in links:

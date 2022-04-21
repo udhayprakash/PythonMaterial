@@ -8,10 +8,10 @@ print('{}'.format(''))   # NEW Style
 print(f'{""}')           # F-String
 print()
 
-print("Hello {name}")
-print("Hello {name}".format(name='world'))
+print('Hello {name}')
+print('Hello {name}'.format(name='world'))
 name = 'World'
-print(f"Hello {name}")
+print(f'Hello {name}')
 # print(f"Hello {name1}")
 # NameError: name 'name1' is not defined
 print()
@@ -20,20 +20,20 @@ number = 12312.123
 print(f'number is {number}')
 
 # python operations on data within the f-string
-print(f"Hello {name.upper()}")
-print(f"Hello {name.title()}")
+print(f'Hello {name.upper()}')
+print(f'Hello {name.title()}')
 print(f'number is {int(number)}')
 value = 123123
 print(f'The value is {float(value) + 3}')
 print()
 
 value = 1234567890.88
-print(f"{value}")   # 1234567890.88
-print(f"{value:}")  # 1234567890.88
-print(f"{value:,}") # 1,234,567,890.88
-print(f"{value:_}") # 1_234_567_890.88
-print(f"{value:-}") # 1234567890.88
-print(f"{value:+}") # +1234567890.88
+print(f'{value}')   # 1234567890.88
+print(f'{value:}')  # 1234567890.88
+print(f'{value:,}') # 1,234,567,890.88
+print(f'{value:_}') # 1_234_567_890.88
+print(f'{value:-}') # 1234567890.88
+print(f'{value:+}') # +1234567890.88
 print()
 
 print(f'{"left aligned":<20}')  # 'left aligned        '
@@ -108,7 +108,7 @@ print(f'{name!r}')  # 'Python:αλεπού'
 print(f'{name!a}')  # 'Python:\u03b1\u03bb\u03b5\u03c0\u03bf\u03cd'
 print()
 
-from datetime import datetime 
+from datetime import datetime
 today = datetime.now()
 print(f'today:%Y-%m-%d') # '2021-07-20'
 print()

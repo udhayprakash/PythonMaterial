@@ -7,7 +7,7 @@ ref: https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 
 def p_decorate(func):
    def func_wrapper(self):
-       return "<p>{0}</p>".format(func(self))
+       return '<p>{0}</p>'.format(func(self))
    return func_wrapper
 
 # def p_decorate(func):
@@ -17,12 +17,12 @@ def p_decorate(func):
 
 class Person(object):
     def __init__(self):
-        self.name = "Udhay"
-        self.family = "Prakash"
+        self.name = 'Udhay'
+        self.family = 'Prakash'
 
     @p_decorate
     def get_fullname(self):
-        return self.name+" "+self.family
+        return self.name+' '+self.family
 
 my_person = Person()
 

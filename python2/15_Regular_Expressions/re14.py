@@ -11,4 +11,3 @@ for line in hand:
         nums.append(val)
 print len(nums)
 print sum(nums)/len(nums)
-

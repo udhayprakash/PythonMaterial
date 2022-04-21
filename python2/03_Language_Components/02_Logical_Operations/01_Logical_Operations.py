@@ -3,12 +3,12 @@
 Purpose: Logical Operations
 
 
-and - if  all are True, result is True 
+and - if  all are True, result is True
 or  - if any one of them is True, result is True
-not - negate the existing value 
+not - negate the existing value
 """
 
-# and,  or,  not  
+# and,  or,  not
 
 expr1 = (12 > 34) and (99 >= 9) or ((12 > 34) and (99 >= 9))
 #        False          True       False          True
@@ -21,22 +21,22 @@ True and True = True
 
 '''
 print 'and operation '
-print "True and True  ", True and True
-print "True and False ", True and False
-print "False and True  ", False and True
-print "False and False ", False and False
+print 'True and True  ', True and True
+print 'True and False ', True and False
+print 'False and True  ', False and True
+print 'False and False ', False and False
 
 print
 print 'or operation '
-print "True or True  ", True or True
-print "True or False ", True or False
-print "False or True  ", False or True
-print "False or False ", False or False
+print 'True or True  ', True or True
+print 'True or False ', True or False
+print 'False or True  ', False or True
+print 'False or False ', False or False
 
 print
-print "True     ", True
-print "not True ", not True
-print "not False ", not False
+print 'True     ', True
+print 'not True ', not True
+print 'not False ', not False
 
 print '============================='
 
@@ -59,15 +59,15 @@ print 'expr4=', expr4
 
 
 """
-Memory 
+Memory
     - RAM ===========
         - HEap Memory
             - Application specific private heap
-                - BUiltin 
+                - BUiltin
                     True, False, ...
-                - user defined 
-                    
+                - user defined
 
-    - ROM === BIOS 
-    - HDD/SDD === non-voltile 
+
+    - ROM === BIOS
+    - HDD/SDD === non-voltile
 """

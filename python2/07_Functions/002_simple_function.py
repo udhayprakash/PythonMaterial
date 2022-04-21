@@ -7,10 +7,10 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello(name):
-    print "Hello " + str(name)
+    print 'Hello ' + str(name)
 
 
-# Function Call 
+# Function Call
 # hello() # TypeError: hello() takes exactly 1 argument (0 given)
 hello('Python')
 # hello('Python', 'programming')# TypeError: hello() takes exactly 1 argument (2 given)

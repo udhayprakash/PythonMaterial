@@ -1,8 +1,8 @@
 #!/usr/bin/python
 """
 Type converters:
-    int(), long(), float(), 
-    
+    int(), long(), float(),
+
     str(), repr()
 
     bin(), hex(), oct()
@@ -59,5 +59,3 @@ print 'type(num7)', type(num7)
 # num8 = int('three') # ValueError: invalid literal for int() with base 10: 'Hello'
 # print 'num8      ', num8
 # print 'type(num8)', type(num8)
-
-

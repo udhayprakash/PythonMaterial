@@ -15,8 +15,7 @@ print(calendar.month(yy, mm))
 print(calendar.month(1947, 8))
 print calendar.isleap(2018)
 
-# # current year calendar 
+# # current year calendar
 print(calendar.calendar(2018, 2, 1, 10))
 print help(calendar)
 # # print dir(calendar)
-

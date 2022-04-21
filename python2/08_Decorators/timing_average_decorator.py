@@ -3,7 +3,7 @@ import math
 
 def geom_average(x, y):
    if x<0 or y<0:
-      raise Exception("Both x and y have to be positive")
+      raise Exception('Both x and y have to be positive')
 
    avg = math.sqrt(x*y)
    return avg
@@ -13,7 +13,7 @@ def timing_average(func):
       t0 = time.time()
       res = func(x, y)
       t1 = time.time()
-      print("It took {} seconds to calculate the average".format(t1-t0))
+      print('It took {} seconds to calculate the average'.format(t1-t0))
       return res
 
    return wrapper
@@ -34,7 +34,7 @@ print('The average between 4 and 6 is {}'.format(avg))
 def check_positive(func):
    def func_wrapper(x, y):
       if x<0 or y<0:
-         raise Exception("Both x and y have to be positive for function {} to work".format(func.__name__))
+         raise Exception('Both x and y have to be positive for function {} to work'.format(func.__name__))
       res = func(x,y)
       return res
    return func_wrapper

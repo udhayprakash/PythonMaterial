@@ -7,7 +7,7 @@ os.chdir(ProjectName)
 
 for i in range(1,11):
     os.mkdir('district'+str(i))
-    
+
 locationPath = os.getcwd()
 
 for dp, d, f in os.walk('.'):

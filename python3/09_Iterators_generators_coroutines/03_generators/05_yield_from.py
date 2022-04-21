@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Purpose: Usage of yield from 
-        - can be used with any iterable object 
+Purpose: Usage of yield from
+        - can be used with any iterable object
 """
 
 

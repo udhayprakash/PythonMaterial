@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
 Purpose: String Formatting
-            - Types 
+            - Types
                 1. Old Style formatting (or literal formatting)
-                2. New Style formatting 
+                2. New Style formatting
                 3. F-Strings  ( works from python 3.6+)
 
 OLD-Style formatting
@@ -42,7 +42,7 @@ print('My lucky number is %s' % None)
 print('My lucky number is %s' % 1)
 print('My lucky number is %s' % 13.4)
 print('My lucky number is %s' % 133224234)
-print('My lucky number is %s' % "python")
+print('My lucky number is %s' % 'python')
 
 print()  # repr()
 print('My lucky number is %r' % True)
@@ -50,7 +50,7 @@ print('My lucky number is %r' % None)
 print('My lucky number is %r' % 1)
 print('My lucky number is %r' % 13.4)
 print('My lucky number is %r' % 133224234)
-print('My lucky number is %r' % "python")
+print('My lucky number is %r' % 'python')
 
 
 print()
@@ -88,7 +88,7 @@ print('%E' % 12.34223123123123)  # 1.234223E+01
 
 print()
 
-import math 
+import math
 print(math.pi)            # 3.141592653589793
 print('%d' % math.pi)     # 3
 print('%f' % math.pi)     # 3.141593
@@ -118,8 +118,8 @@ print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', '78', 15.5))
 # print('My name is %s. I am %s old paying a tax of %s' % ('Udhay', 15.5))
 # TypeError: not enough arguments for format string
 
-print('%(language)s has %(My lucky number)03d quote types.' % {'language': "Python",
-                                                               "My lucky number": 2})
+print('%(language)s has %(My lucky number)03d quote types.' % {'language': 'Python',
+                                                               'My lucky number': 2})
 
 print()
 print('2'.zfill(3))  # '002'

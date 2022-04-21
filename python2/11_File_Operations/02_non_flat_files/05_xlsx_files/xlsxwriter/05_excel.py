@@ -1,4 +1,4 @@
-from datetime import datetime 
+from datetime import datetime
 import xlsxwriter
 
 with xlsxwriter.Workbook('Expenses03.xlsx') as wb:
@@ -14,7 +14,7 @@ with xlsxwriter.Workbook('Expenses03.xlsx') as wb:
     ws.write('A1', 'Item', bold)
     ws.write('B1', 'Date', bold)
     ws.write('C1', 'Cost', bold)
-    
+
     expenses = (
      ['Rent', '2013-01-13', 1000],
      ['Gas',  '2013-01-14',  100],
@@ -22,11 +22,11 @@ with xlsxwriter.Workbook('Expenses03.xlsx') as wb:
      ['Gym',  '2013-01-20',   50],
     )
 
-    row, col = 1,0 
+    row, col = 1,0
 
     for item, date_str, cost in (expenses):
         # Convert the date string into a datetime object.
-        date = datetime.strptime(date_str, "%Y-%m-%d")
+        date = datetime.strptime(date_str, '%Y-%m-%d')
 
         ws.write_string  (row, col,     item              )
         ws.write_datetime(row, col + 1, date, date_format )

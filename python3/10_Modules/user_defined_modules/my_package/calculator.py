@@ -9,7 +9,7 @@ DOZEN = 12
 
 def addition(n1, n2):
     """
-    This function will add the two given args, 
+    This function will add the two given args,
     and results it.
     :param num1:
     :param num2:

@@ -18,7 +18,7 @@ help(dozen)
 
 
 print('=' * 40)
-mountain = "Himalayas"  # string
+mountain = 'Himalayas'  # string
 print(f'{type(mountain) =}')
 print(f'{id(mountain)   =}')
 print(f'{mountain       =}')

@@ -5,7 +5,7 @@ def onStart(name):
 
 def onWord(name, location, length):
    print 'word', name, location, length
-   
+
 def onEnd(name, completed):
    print 'finishing', name, completed
 

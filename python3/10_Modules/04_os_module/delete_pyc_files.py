@@ -33,10 +33,10 @@ if __name__ == '__main__':
     # function call
     custom_path = 'D:/training/batch125'
     extension_specific_files = delete_pyc_files(custom_path)
-    print("extension_specific_files:")
+    print('extension_specific_files:')
     for file_name in extension_specific_files:
         print('\t', file_name)
 
     print('total files deleted:', len(extension_specific_files))
 else:
-    print("imported")
+    print('imported')

@@ -43,11 +43,11 @@ servr_login('facebook.com', user_name='udhay', password='udhay123')
 
 # Function Definition
 def recv(maxsize, *, block=True):
-    print("\ntype(maxsize)  ", type(maxsize))
-    print("type(block) ", type(block))
+    print('\ntype(maxsize)  ', type(maxsize))
+    print('type(block) ', type(block))
 
-    print("maxsize   " + str(maxsize))
-    print("block     " + str(block))
+    print('maxsize   ' + str(maxsize))
+    print('block     ' + str(block))
     print('-' * 20)
 
 

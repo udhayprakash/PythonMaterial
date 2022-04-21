@@ -13,10 +13,9 @@ except ZeroDivisionError as ex:
 else:                               # optional block
     print 'result=', result
 finally:                            # optional block
-    print "finally"
+    print 'finally'
 
-print "next statement"
+print 'next statement'
 
 # # result = 1 / 0
 # print "outside "
-

@@ -4,7 +4,7 @@ class sty(object):
 
     def __call__(self, f):
         def newf():
-            return "<{tag}>{res}</{tag}>".format(res=f(), tag=self.tag)
+            return '<{tag}>{res}</{tag}>'.format(res=f(), tag=self.tag)
 
         return newf
 

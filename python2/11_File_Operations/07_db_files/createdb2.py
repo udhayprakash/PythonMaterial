@@ -64,6 +64,6 @@ def create_indexes_for_db(db_file):
 
 
 if __name__ == '__main__':
-    create_connection("pythonsqlite.db")
-    create_tables("pythonsqlite.db")
-    create_indexes_for_db("pythonsqlite.db")
+    create_connection('pythonsqlite.db')
+    create_tables('pythonsqlite.db')
+    create_indexes_for_db('pythonsqlite.db')

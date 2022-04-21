@@ -40,12 +40,12 @@ print()
 
 # STRING OPERATIONS
 # ordinary strings
-a = "abc"
-b = a.replace("a", "f")
+a = 'abc'
+b = a.replace('a', 'f')
 
 # bytes and bytearray strings
-a = b"abc"
-b = a.replace(b"a", b"f")
+a = b'abc'
+b = a.replace(b'a', b'f')
 
 print(b'Py' in b'Python')
 print(b'   spacious   '.lstrip())
@@ -62,5 +62,4 @@ print(b'1 2 3'.split(maxsplit=1))
 print(b'   1   2   3   '.split())
 
 print(b'%(language)s has %(number)03d quote types.' %
-      {b'language': b"Python", b"number": 2})
-
+      {b'language': b'Python', b'number': 2})

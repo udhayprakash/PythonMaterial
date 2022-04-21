@@ -17,7 +17,7 @@ def writer(count, queue):
 
 if __name__=='__main__':
     pqueue = Queue() # writer() writes to pqueue from _this_ process
-    for count in [10**4, 10**5, 10**6]:             
+    for count in [10**4, 10**5, 10**6]:
         ### reader_proc() reads from pqueue as a separate process
         reader_p = Process(target=reader_proc, args=((pqueue),))
         reader_p.daemon = True
@@ -26,5 +26,5 @@ if __name__=='__main__':
         _start = time.time()
         writer(count, pqueue)    # Send a lot of stuff to reader()
         reader_p.join()         # Wait for the reader to finish
-        print("Sending {0} numbers to Queue() took {1} seconds".format(count, 
+        print('Sending {0} numbers to Queue() took {1} seconds'.format(count,
             (time.time() - _start)))

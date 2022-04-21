@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: program to display all the 
+Purpose: program to display all the
        prime numbers within an interval
 """
 

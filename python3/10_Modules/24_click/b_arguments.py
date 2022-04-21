@@ -15,11 +15,11 @@ if __name__ == '__main__':
 
 """
 USAGE:
-    ~py b_arguments.py --help 
+    ~py b_arguments.py --help
     Usage: b_arguments.py [OPTIONS] [NAME]
     Options:  --help  Show this message and exit.
 
-    ~py b_arguments.py       
+    ~py b_arguments.py
     Hello guest
 
     ~py b_arguments.py udhay

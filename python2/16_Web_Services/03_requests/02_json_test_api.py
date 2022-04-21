@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: To demonstrate the usage of API 
+Purpose: To demonstrate the usage of API
 
 https://jsonplaceholder.typicode.com/
 """

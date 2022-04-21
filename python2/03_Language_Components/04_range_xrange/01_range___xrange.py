@@ -2,7 +2,7 @@
 """
 Purpose: range() and xrange()
 
-these will work only with int type 
+these will work only with int type
 range(initialValue, finalValue, step)
 default initialValue = 0
 default step = +1

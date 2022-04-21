@@ -20,7 +20,7 @@ class Grabber(threading.Thread):
         self.c_queue = content_queue
         self.u_queue = url_queue
         super(Grabber, self).__init__()
-        
+
     def run(self):
         while True:
             next_url = self.u_queue.get()

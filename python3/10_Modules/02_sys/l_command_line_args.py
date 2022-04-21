@@ -14,7 +14,7 @@ assert __file__ != sys.argv[0]
 python .\l_command_line_args.py
     __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
     sys.argv ['.\\l_command_line_args.py']
-    
+
  python .\02_sys\l_command_line_args.py
     __file__ D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\10_Modules\02_sys\l_command_line_args.py
     sys.argv ['.\\02_sys\\l_command_line_args.py']

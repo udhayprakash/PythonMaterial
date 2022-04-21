@@ -14,9 +14,9 @@ class ArchiveHTMLParser(HTMLParser):
             return
         attr = dict(attrs)
         if 'href' in attr:
-            self.urls.append(attr["href"])
+            self.urls.append(attr['href'])
         else:
-            print("Missing href from a with attributes: ", attr)
+            print('Missing href from a with attributes: ', attr)
 
 
 class Collector(object):
@@ -56,7 +56,7 @@ class Collector(object):
                 if u == '#':
                     continue
                 if not re.search(r'^https?://', u):
-                    print("Unhandled url: " + u)
+                    print('Unhandled url: ' + u)
                     continue
                 match = re.search(r'^https?://([^/]+)', u)
                 if match:
@@ -73,7 +73,7 @@ class Collector(object):
             total += int(self.data['hosts'][k])
             # print(k, self.data['hosts'][k])
             print('<li><a href="http://{0}/">{0}</a> {1}</li>'.format(k, self.data['hosts'][k]))
-        print("A total of {} links to {} hosts in {} issues.".format(total, hosts, self.data['issue']))
+        print('A total of {} links to {} hosts in {} issues.'.format(total, hosts, self.data['issue']))
 
     def run(self):
         if len(sys.argv) == 2:

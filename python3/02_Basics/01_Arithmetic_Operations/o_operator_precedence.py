@@ -5,7 +5,7 @@ Purpose: Operator precedence in python
     Python Execution Flow:
         left to right, and top to bottom
 
-    It follows PEMDAS rule, and execution flow 
+    It follows PEMDAS rule, and execution flow
         P - Paranthesis
         E - Exponent
         M - Multiplication

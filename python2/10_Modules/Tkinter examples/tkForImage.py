@@ -11,7 +11,7 @@ class Julia:
         self.lright = box[1]
         self.xwidth = self.lright[0] - self.uleft[0]
         self.ywidth = self.uleft[1]  - self.lright[1]
-        
+
         self.im = PhotoImage(width=500, height=500)
         self.rgb = []
         self.make_colours()
@@ -27,12 +27,12 @@ class Julia:
             b = i*11%200 + 55
             colour = '#%02x%02x%02x' %(r,g,b)
             self.rgb.append(colour)
-            
+
     def compute(self):
-        print "Computing %s..." % self.__class__.__name__
+        print 'Computing %s...' % self.__class__.__name__
         for x in range(self.size[0]):
             for y in range(self.size[1]):
-                xp,yp = self.getcoords(x,y)                
+                xp,yp = self.getcoords(x,y)
                 dotcolor = self.fractal(xp,yp)
                 self.im.put(dotcolor,to=(x,y))
 
@@ -47,7 +47,7 @@ class Julia:
             else:
                 dotcolor = trials
                 break  # diverged
-        return self.rgb[dotcolor]            
+        return self.rgb[dotcolor]
 
     def getcoords(self,x,y):
         percentx = x/float(self.size[0])
@@ -55,7 +55,7 @@ class Julia:
         xp = self.uleft[0] + percentx * (self.xwidth)
         yp = self.uleft[1] - percenty * (self.ywidth)
         return (xp,yp)
-    
+
 class Mandelbrot(Julia):
     def fractal(self,x,y):
         n = self.n
@@ -69,7 +69,7 @@ class Mandelbrot(Julia):
                 dotcolor = trials
                 break  # diverged
         return self.rgb[dotcolor]
-    
+
 root = Tk()
 #f = Julia((500,500), n=128, box=((-1.2,1.2),(1.2,-1.2)) )
 #or

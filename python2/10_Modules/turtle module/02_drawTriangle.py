@@ -38,5 +38,5 @@ def main():
     sierpinski(my_points, 3, my_turtle)
     my_win.exitonclick()
 
-	
+
 main()

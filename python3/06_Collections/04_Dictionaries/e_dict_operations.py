@@ -64,8 +64,8 @@ print(python_dict)
 
 # last key-value pair will be deleted
 print()
-print(f"{python_dict.popitem() =}")
-print(f"{python_dict.popitem() =}")
+print(f'{python_dict.popitem() =}')
+print(f'{python_dict.popitem() =}')
 print(python_dict)
 
 del python_dict['name']

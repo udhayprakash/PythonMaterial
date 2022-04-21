@@ -7,7 +7,7 @@ def download(url):
     return requests.get(url)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     urls = [
         'http://google.com',
         'http://facebook.com',
@@ -21,4 +21,4 @@ if __name__ == "__main__":
     # pdb.set_trace()
     html = [response.text for response in responses]
     end = time.time()
-    print "Time: %f seconds" % (end - start)
+    print 'Time: %f seconds' % (end - start)

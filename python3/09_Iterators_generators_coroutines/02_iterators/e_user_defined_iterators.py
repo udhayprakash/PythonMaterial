@@ -14,7 +14,7 @@ a = ['foo', 'bar', 'baz']
 
 itr = iter(a)
 for value in itr:
-    print("value:", value)
+    print('value:', value)
 
 itr = iter(a)
 print('\n', itr)    # <list_iterator object at 0x0000016CFEF10E20>

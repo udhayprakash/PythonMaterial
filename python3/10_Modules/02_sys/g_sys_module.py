@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-Purpose: sys module 
+Purpose: sys module
 """
-import sys 
+import sys
 from pprint import pprint
-print(f''' 
+print(f'''
     {sys.audit                      =}
     {sys.displayhook                =}
     {sys.int_info                   =}

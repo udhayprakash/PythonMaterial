@@ -1,7 +1,7 @@
-import os 
-import urllib.request 
+import os
+import urllib.request
 
-from threading import Thread 
+from threading import Thread
 
 class DownloadThread(Thread):
     """
@@ -10,8 +10,8 @@ class DownloadThread(Thread):
     def __init__(self, url, name):
         """ Initialize the thread """
         Thread.__init__(self)
-        self.name = name 
-        self.url = url 
+        self.name = name
+        self.url = url
 
     def run(self):
         """ Run the thread """
@@ -21,7 +21,7 @@ class DownloadThread(Thread):
             while True:
                 chunk = handle.read(1024)
                 if not chunk:
-                    break 
+                    break
                 f_handler.write(chunk)
         msg = '{} has finished downloading {}!'.format(self.name, self.url)
         print(msg)

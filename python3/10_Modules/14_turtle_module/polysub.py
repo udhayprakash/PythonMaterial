@@ -31,7 +31,7 @@ def polysub(pts, depth = 5, width = 0.1):
 
 def render(polys):
     turtle.hideturtle()
-    turtle.title("Pastel subdivision")
+    turtle.title('Pastel subdivision')
     turtle.tracer(10000,0)
     turtle.colormode(cmode = 255)
     for pts in polys:
@@ -45,6 +45,6 @@ def render(polys):
             turtle.goto(pt)
         turtle.end_fill()
     turtle.update()
-            
+
 
 render(polysub(((-350,-350),(350,-350),(350,350),(-350,350)), 6, 0.07))

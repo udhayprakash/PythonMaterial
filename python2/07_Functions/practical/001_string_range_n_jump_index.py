@@ -21,17 +21,3 @@ def range_n_jump_index(str1):
 print range_n_jump_index('abcdef')
 
 print range_n_jump_index('acf')
-
-
-
-
-
-
-
-
-
-
-
-
-
-

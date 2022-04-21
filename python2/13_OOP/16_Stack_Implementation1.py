@@ -29,6 +29,6 @@ s = Stack()
 
 s.push('Hello world!')
 s.push(True)
-print "s.size()", s.size()
+print 's.size()', s.size()
 print 's.pop() ', s.pop()
-print "s.size()", s.size()
+print 's.size()', s.size()

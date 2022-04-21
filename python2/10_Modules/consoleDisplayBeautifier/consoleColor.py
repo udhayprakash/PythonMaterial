@@ -14,25 +14,25 @@ WORD = c_ushort
 class COORD(Structure):
   """struct in wincon.h."""
   _fields_ = [
-    ("X", SHORT),
-    ("Y", SHORT)]
+    ('X', SHORT),
+    ('Y', SHORT)]
 
 class SMALL_RECT(Structure):
   """struct in wincon.h."""
   _fields_ = [
-    ("Left", SHORT),
-    ("Top", SHORT),
-    ("Right", SHORT),
-    ("Bottom", SHORT)]
+    ('Left', SHORT),
+    ('Top', SHORT),
+    ('Right', SHORT),
+    ('Bottom', SHORT)]
 
 class CONSOLE_SCREEN_BUFFER_INFO(Structure):
   """struct in wincon.h."""
   _fields_ = [
-    ("dwSize", COORD),
-    ("dwCursorPosition", COORD),
-    ("wAttributes", WORD),
-    ("srWindow", SMALL_RECT),
-    ("dwMaximumWindowSize", COORD)]
+    ('dwSize', COORD),
+    ('dwCursorPosition', COORD),
+    ('wAttributes', WORD),
+    ('srWindow', SMALL_RECT),
+    ('dwMaximumWindowSize', COORD)]
 
 # winbase.h
 STD_INPUT_HANDLE = -10

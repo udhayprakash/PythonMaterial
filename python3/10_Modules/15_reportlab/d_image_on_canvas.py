@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 
 
 def add_image(image_path):
-    my_canvas = canvas.Canvas("d_image_on_canvas.pdf",
+    my_canvas = canvas.Canvas('d_image_on_canvas.pdf',
                               pagesize=letter)
     my_canvas.drawImage(image_path, 30, 600,
                         width=100, height=100)

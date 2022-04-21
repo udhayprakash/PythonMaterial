@@ -8,23 +8,23 @@ import argparse
 # ex5: 4 -v 1
 # ex6: 4 -h
 parser = argparse.ArgumentParser()
-parser.add_argument("square",
+parser.add_argument('square',
                     type=int,
-                    help="display the square 10_prog.py of a given number"
+                    help='display the square 10_prog.py of a given number'
                     )
 
-parser.add_argument("-v",
-                    "--verbosity",
-                    action="count",
-                    help="increase output verbosity"
+parser.add_argument('-v',
+                    '--verbosity',
+                    action='count',
+                    help='increase output verbosity'
                     )
 
 args = parser.parse_args()
 answer = args.square ** 2
 
 if args.verbosity >= 2:
-    print "the square of {} equals {}".format(args.square, answer)
+    print 'the square of {} equals {}'.format(args.square, answer)
 elif args.verbosity >= 1:
-    print "{}^2 == {}".format(args.square, answer)
+    print '{}^2 == {}'.format(args.square, answer)
 else:
     print answer

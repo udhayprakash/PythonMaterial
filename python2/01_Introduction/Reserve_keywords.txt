@@ -21,7 +21,7 @@ NOTE: These reserved keywords should not be used for the names of user-defined i
 ======================
 
 variable
-    keyword  -- variables defined by the language 
+    keyword  -- variables defined by the language
     identifier  --- variables defined by user
 
 

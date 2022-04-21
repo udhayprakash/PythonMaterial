@@ -12,7 +12,7 @@ def log(level):
         logger.setLevel(current_level)
 
 def some_function():
-    logging.debug("Some debug level information...")
+    logging.debug('Some debug level information...')
     logging.error('Serious error...')
     logging.warning('Some warning message...')
 

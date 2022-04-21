@@ -1,27 +1,27 @@
-Function without arguments 
+Function without arguments
 
-Function with arguments 
+Function with arguments
 
 Function with arguments and return
-    
+
         return values unpacking
 
-Function Overwriting 
+Function Overwriting
 
 Default Arguments
 
     mutable default arguments and memory leakage
 
-Variadic Functions 
-    
-        variable Arguments 
+Variadic Functions
+
+        variable Arguments
 
         variable keyword arguments
 
-Variable Scoping: Global & Local 
+Variable Scoping: Global & Local
 
 Recursions
-    
+
     controlled recursions
     infinite recursions
     Mutually recursions
@@ -36,11 +36,11 @@ Higher-Order Functions
     functools.reduce
 
 
-Partial Functions 
+Partial Functions
 
-Inner Functions 
+Inner Functions
     global vs nonlocal
-    
+
 Closures
 
-Decorators 
+Decorators

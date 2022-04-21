@@ -14,9 +14,9 @@ print('datetime.MINYEAR:', datetime.MINYEAR)
 print('datetime.tzinfo:', datetime.tzinfo)
 """
 datetime  has three different kinds of objects:
-    1. date object      :- stores the date 
-    2. time object      :- stores the time 
-    3. datetime object  :- stores both the date and time 
+    1. date object      :- stores the date
+    2. time object      :- stores the time
+    3. datetime object  :- stores both the date and time
 """
 
 now = datetime.datetime.now()

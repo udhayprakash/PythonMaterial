@@ -5,11 +5,11 @@
 try:
     import xlrd
 except ImportError, ie:
-    print ie 
+    print ie
     import os
     if not os.system('pip install xlrd'):
         print 'Unable to install the module!'
-    
+
 try:
     workbook = xlrd.open_workbook('new.xls', 'ab+')
     worksheet = workbook.sheet_by_name('sheet1')
@@ -21,8 +21,6 @@ try:
         print row
 except IOError, io:
     print io
-    print "Please ensure that the specified file is present in the current working directory"
+    print 'Please ensure that the specified file is present in the current working directory'
 except Exception, ex:
     print ex
-
-

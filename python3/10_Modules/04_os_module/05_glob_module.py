@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: File Pattern Matching using glob module 
+Purpose: File Pattern Matching using glob module
 """
 import sys
 import glob

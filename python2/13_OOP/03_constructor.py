@@ -14,7 +14,7 @@ class Name:
         # return should not be present for constructor
 
     def my_instance_method(self):
-        print "my instance method"
+        print 'my instance method'
 
 n = Name()
 print dir(n)

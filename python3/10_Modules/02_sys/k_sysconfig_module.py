@@ -1,9 +1,9 @@
 #!/usr/bin/python
 """
-Purpose: sysconfig module 
+Purpose: sysconfig module
     Ref: https://docs.python.org/3.8/library/sysconfig.html
 
-    In terminal, 
+    In terminal,
         python -m sysconfig
 """
 import sysconfig
@@ -12,7 +12,7 @@ from pprint import  pprint
 # print(dir(sysconfig))
 
 print(f'{sysconfig.is_python_build()    =}')    # False
-# Return True if the running Python interpreter was built from source 
+# Return True if the running Python interpreter was built from source
 
 print(f'{sysconfig.get_platform()       =}')    # 'win-amd64'
 

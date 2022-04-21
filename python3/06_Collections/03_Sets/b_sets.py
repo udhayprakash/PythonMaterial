@@ -33,8 +33,8 @@ print(f'{type(myset1)} {myset1 =}')
 s1 = {1, 2, 3}
 s2 = set([1, 2, 3])
 
-print(f"{s1 =} - {type(s1)}")
-print(f"{s2 =} - {type(s2)}")
+print(f'{s1 =} - {type(s1)}')
+print(f'{s2 =} - {type(s2)}')
 assert s1 == s2
 
 # sets are unordered

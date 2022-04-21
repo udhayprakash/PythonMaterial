@@ -81,7 +81,7 @@ assert get_index_of(my_tuple, 56) == get_index_l(my_tuple, 56)
 # ---------------------------------------------------------------
 def wish(message):
     # return message
-    return lambda name: message.upper() + " " + name
+    return lambda name: message.upper() + ' ' + name
 
 
 greet = wish('Happy Birthday')
@@ -89,18 +89,18 @@ print(greet)
 print(greet('Sushmitha'))
 
 # ----- Lambda with no args
-myfunc = lambda: "hello! no args given"
+myfunc = lambda: 'hello! no args given'
 print(f'{myfunc() = }')
 print(f'{myfunc() = }')
 print()
 
 # ----- Lambda with args not used
-myfunc = lambda name: "hello! My name is name"
+myfunc = lambda name: 'hello! My name is name'
 print(f'{myfunc("Udhay") = }')
 print(f'{myfunc("Neha") = }')
 print()
 
 # ----- Lambda with args used
-myfunc = lambda name: f"hello! My name is {name}"
+myfunc = lambda name: f'hello! My name is {name}'
 print(f'{myfunc("Udhay") = }')
 print(f'{myfunc("Neha") = }')

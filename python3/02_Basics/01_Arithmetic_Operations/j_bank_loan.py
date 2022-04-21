@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Purpose: Bank Loan 
+Purpose: Bank Loan
 
     Simple Interest : A = P (1 + rt)
-    
+
                         A	=	final amount
                         P	=	initial principal balance
                         r	=	annual interest rate

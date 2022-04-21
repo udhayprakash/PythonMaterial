@@ -14,8 +14,8 @@ print(x[slice(1, 9, 1)])  # [2, 3, 4, 5, 6, 7, 8, 9]
 print(x[1:9:3])           # [2, 5, 8]
 print(x[slice(1, 9, 3)])  # [2, 5, 8]
 
-print(x[1:20:3])         # [2, 5, 8, 11, 14, 17] 
-print(x[slice(1,20,3)])  # [2, 5, 8, 11, 14, 17] 
+print(x[1:20:3])         # [2, 5, 8, 11, 14, 17]
+print(x[slice(1,20,3)])  # [2, 5, 8, 11, 14, 17]
 
 assert x[1:20:3] == x[slice(1, 20, 3)]
 
@@ -23,7 +23,7 @@ assert x[1:20:3] == x[slice(1, 20, 3)]
 print(slice(1, 20, 3))  # slice(1, 20, 3)
 
 
-language = "python Programming"
+language = 'python Programming'
 print('language                     ', language)
 print('language[2:]                 ', language[2:])
 print('language[slice(2, None, 1)]  ', language[slice(2, None, 1)])

@@ -19,7 +19,7 @@ with open('other_file.csv', 'w', newline='') as gh:
         'designation': 'carpenter'
     })
 
-    # To write multiple records 
+    # To write multiple records
     writer.writerows([
         {
             'sno': 2,

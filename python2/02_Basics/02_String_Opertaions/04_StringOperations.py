@@ -15,7 +15,7 @@ print 'dir(language) :', dir(language)
 
 # string concatenation
 mystr1 = 'Taj'
-mystr2 = "Mahal"
+mystr2 = 'Mahal'
 
 result = mystr1 + mystr2
 print 'result=', result

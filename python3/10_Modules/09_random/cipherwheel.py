@@ -43,7 +43,7 @@ def decrypt(cipher, key):
 
 # Using cipher wheel here
 while True:
-    s = input("Enter your secret message:")
+    s = input('Enter your secret message:')
     encrypted = encrypt(s)
     print('encrypted message ->> %s\n' % (encrypted[0]))
     print('decrypted message ->> %s\n' % decrypt(encrypted[0], encrypted[1]))

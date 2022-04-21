@@ -4,7 +4,7 @@ Purpose: Debugging with ipdb
 
 TASK - To display all even numbers between 0 & 100
 
-To install ipdb, 
+To install ipdb,
     pip install -U ipdb --user
 
 """

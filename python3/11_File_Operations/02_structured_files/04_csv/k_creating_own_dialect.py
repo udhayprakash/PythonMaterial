@@ -3,8 +3,8 @@
 Purpose: creating custom dialect
 
 Dialect - https://docs.python.org/3/library/csv.html#dialects-and-formatting-parameters
-    - It is a construct that allows you to create, 
-    store, and re-use various formatting parameters 
+    - It is a construct that allows you to create,
+    store, and re-use various formatting parameters
     for your data.
 
 Dialect supports several attributes. The most frequently used are:
@@ -21,7 +21,7 @@ csv.register_dialect('myDialect', delimiter='/', quoting=csv.QUOTE_NONE)
 with open('other_file3.csv', 'r', newline='') as myFile:
    reader = csv.reader(myFile, dialect='myDialect')
    for row in reader:
-       print(row) 
+       print(row)
 
 
 myData = [[1, 2, 3], ['Good Morning', 'Good Evening', 'Good Afternoon']]

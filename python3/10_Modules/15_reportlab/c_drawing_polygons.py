@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 
 
 def draw_shapes():
-    my_canvas = canvas.Canvas("c_drawing_polygons.pdf")
+    my_canvas = canvas.Canvas('c_drawing_polygons.pdf')
     my_canvas.setStrokeColorRGB(0.2, 0.5, 0.3)
     my_canvas.rect(10, 740, 100, 80, stroke=1, fill=0)
     my_canvas.ellipse(10, 680, 100, 630, stroke=1, fill=1)

@@ -1,4 +1,4 @@
 
-Alteratively, the doctest can be done 
-from commandline using 
+Alteratively, the doctest can be done
+from commandline using
    python -m doctest scriptname.py

@@ -8,7 +8,7 @@
             - ZeroDivisionError            - Division or modulus operation with 0
         - AssertionError                   - Raised by assert statement
         - AttributeError                   - Raised when an attribute name is invalid
-        - EnvironmentError                 - Errors that occur externally to python 
+        - EnvironmentError                 - Errors that occur externally to python
             - IOError                      - I/O or file-related error
             - OSError                      - Operating System error
         - EOFError                         - Raised when end of file is reached
@@ -19,7 +19,7 @@
             - KeyError                     - Non-existent dictionary key
         - MemoryError                      - Out of memory error
         - NameError                        - Failure to find a local or global name
-            - UnboundLocalError            - unbound local variable 
+            - UnboundLocalError            - unbound local variable
         - ReferenceError                   - Weak reference used after referent destroyed
         - RuntimeError                     - A generic catch-all error
             - NotImplementedError          - unimplemented feature

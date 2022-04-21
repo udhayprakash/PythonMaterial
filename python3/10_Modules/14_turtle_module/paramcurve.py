@@ -48,16 +48,15 @@ def lissajous(cp, a, b, A=45, B=45, delta=0):
                 cp[1] + B * math.cos(b * math.tau * t))
     return f
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     e = 1.2
-    turtle.title("Superellipses and Lissajous curves")
+    turtle.title('Superellipses and Lissajous curves')
     for x in range(-400, 100, 100):
         for y in range(-300, 400, 100):
             render(superellipse((x,y),45,e), 0, 1)
             e += 0.1
     for a in range(1, 5):
         for b in range(a+1, a+15, 2):
-            x = 100 * a 
+            x = 100 * a
             y = -350 + 50 * (b - a)
             render(lissajous((x,y), a, b), 0, 1, fill = False)
-

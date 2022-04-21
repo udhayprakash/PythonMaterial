@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Given two dates, 
+Purpose: Given two dates,
     generate a list of dates between these dates
 """
 
@@ -13,4 +13,4 @@ def daterange(date1, date2):
 start_dt = date(2015, 12, 20)
 end_dt = date(2016, 1, 11)
 for dt in daterange(start_dt, end_dt):
-    print(dt.strftime("%Y-%m-%d"))
+    print(dt.strftime('%Y-%m-%d'))

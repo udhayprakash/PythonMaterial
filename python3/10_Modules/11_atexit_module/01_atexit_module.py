@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: atexit 
+Purpose: atexit
     – Call functions when a program is closing down
 """
 import atexit

@@ -11,13 +11,13 @@ eval() - built-in function
     Out[6]: 10.34234
 
 Output:
-    1 
-        Addition  
+    1
+        Addition
         12 3 23 45 23
         12+3+23+45+23
 
-    1 
-        Addition  
+    1
+        Addition
         12 3
         12+3
 """

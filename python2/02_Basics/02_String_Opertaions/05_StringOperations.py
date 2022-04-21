@@ -31,12 +31,12 @@ print 'Python Production'.split('n')
 print 'Python Production'.rsplit('P')
 print 'Python Production'.split('Prod')
 # print 'Python Production'.split('') # ValueError: empty separator
-print ''.split(' ') 
+print ''.split(' ')
 print
 # How to convert a string to a list
 print list('Python Production')
 
-print 
+print
 # HOw to convert list of strings to a single string
 print ''.join(['Python', 'Production', 'language'])
 print '@'.join(['Python', 'Production', 'language'])
@@ -81,20 +81,18 @@ print '{} and {}'.format('cat', 'mouse')
 print 'Name:{} Age:{} Salary:{}'.format('udhay', 99, 9999.9999)
 
 print '''
-        Name  :{} 
-        Age   :{} 
+        Name  :{}
+        Age   :{}
         Salary:{}'''.format('udhay', 99, 9999.9999)
 
 print 'My Name: {0}. My Name: {0}. My Name: {0}. My Name: {0}. '.format('udhay')
 
 print '''
-        Name  :{2} 
-        Age   :{0} 
+        Name  :{2}
+        Age   :{0}
         Salary:{0}'''.format('udhay', 99, 9999.9999)
 
 print '''
         Name  :{NAME} , Name  :{NAME}
-        Age   :{AGE} 
+        Age   :{AGE}
         Salary:{SALARY}'''.format(NAME='udhay', AGE=99, SALARY=9999.9999)
-
-

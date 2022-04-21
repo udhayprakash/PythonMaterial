@@ -1,14 +1,14 @@
 import collections
 import concurrent.futures
-import os 
-import time 
-from pprint import pprint 
+import os
+import time
+from pprint import pprint
 
 def transform(x):
     print('Process {} working record {}'.format(os.getpid(), x.name))
     time.sleep(1)
     result = {'name': x.name, 'age': 2019 - x.born}
-    return result 
+    return result
 
 
 Scientist = collections.namedtuple('Scientist', [
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     start = time.time()
 
     # pool = multiprocessing.Pool() #(processes=2, maxtasksperchild=1)#(processes=len(scientists))
-    # # default - it will process as much as capacity of CPU on system 
+    # # default - it will process as much as capacity of CPU on system
     # result = pool.map(transform, scientists)
 
     with concurrent.futures.ProcessPoolExecutor() as executor:

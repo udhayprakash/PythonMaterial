@@ -11,8 +11,8 @@ ex: 153 = 1*1*1 + 5*5*5 + 3*3*3  --- 153 is an Armstrong number.
 # upper = 2000
 
 # To take input from the user
-lower = int(raw_input("Enter lower range: "))
-upper = int(raw_input("Enter upper range: "))
+lower = int(raw_input('Enter lower range: '))
+upper = int(raw_input('Enter upper range: '))
 
 for num in range(lower, upper + 1):
 

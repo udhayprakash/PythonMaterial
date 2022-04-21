@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: cartesian coordinate system 
+Purpose: cartesian coordinate system
 """
 from math import sqrt
 from collections import namedtuple

@@ -2,7 +2,7 @@
 """
 Purpose: Arithmetic Operations
 
-    Integer Family 
+    Integer Family
         - int
         - long -> only in python 2.x
         - float
@@ -52,10 +52,10 @@ print('num6=', num6, type(num6))
 print()
 # ---------------------------------------
 # Arithmetic Operations
-print("123 + 100 = ", 123 + 100)
-print("123 - 100 = ", 123 - 100)
-print("123 * 100 = ", 123 * 100)
-print("123 / 100 = ", 123 / 100)
+print('123 + 100 = ', 123 + 100)
+print('123 - 100 = ', 123 - 100)
+print('123 * 100 = ', 123 * 100)
+print('123 / 100 = ', 123 / 100)
 
 print()
 print('10/2 = ', 10 / 2)
@@ -84,7 +84,7 @@ print('divmod(10, 3)=', divmod(10, 3))  # //, %
 """
 10/2
 
-    2 ) 10 ( 5  <-- Quotient 
+    2 ) 10 ( 5  <-- Quotient
         10
         ---
          0  <--- remainder

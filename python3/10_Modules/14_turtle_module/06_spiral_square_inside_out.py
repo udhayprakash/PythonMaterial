@@ -5,9 +5,9 @@ Purpose:Spiral Square inside out
 import turtle  # Inside_Out
 
 wn = turtle.Screen()
-wn.bgcolor("light green")
+wn.bgcolor('light green')
 skk = turtle.Turtle()
-skk.color("blue")
+skk.color('blue')
 
 
 def sqrfunc(size):

@@ -7,7 +7,7 @@ try:  # Actual body
 finally:  # Teardown
     end = time.perf_counter()
     elapsed = end - start
-    
+
 print(elapsed)
 
 # Using Context Manager

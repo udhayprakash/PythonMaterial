@@ -9,12 +9,12 @@ import sys
 # for i in  dir(sys):
 #     print i
 
-print("sys.platform", sys.platform)
+print('sys.platform', sys.platform)
 '''
-Windows                 - win32 
+Windows                 - win32
 Linux (debain/ubuntu)   - linux
 Linux( redhat/centos/fedora) - linux2
-mac                     - darwin 
+mac                     - darwin
 '''
 print('-' * 60)
 
@@ -25,8 +25,8 @@ print('-' * 60)
 
 # sys.argv
 
-print("sys.argv     :", sys.argv)
-print("len(sys.argv):", len(sys.argv))
+print('sys.argv     :', sys.argv)
+print('len(sys.argv):', len(sys.argv))
 
 winningTicket = '123Alpha'
 

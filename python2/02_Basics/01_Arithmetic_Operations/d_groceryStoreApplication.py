@@ -22,12 +22,12 @@ cost_of_wheat = wheat_selling_price * wheat_quantity
 
 # amount to pay
 total_cost = cost_of_rice + cost_of_wheat
-print "total cost is", total_cost
+print 'total cost is', total_cost
 
 
-# discount of 12% 
+# discount of 12%
 total_discount = (12.0/total_cost)  * 100
-print "total_discount", total_discount
+print 'total_discount', total_discount
 
 final_price = total_cost - total_discount
-print "final Price", final_price
+print 'final Price', final_price

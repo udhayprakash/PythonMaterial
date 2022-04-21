@@ -39,5 +39,5 @@ def render(circs):
         turtle.circle(c[1])
         turtle.end_fill()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     render(circlefill(50))

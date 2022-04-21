@@ -5,7 +5,7 @@ from reportlab.platypus import SimpleDocTemplate, Table
 
 
 def simple_table():
-    doc = SimpleDocTemplate("e_simple_table.pdf", pagesize=letter)
+    doc = SimpleDocTemplate('e_simple_table.pdf', pagesize=letter)
     flowables = []
 
     data = [['col_{}'.format(x) for x in range(1, 6)],

@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Purpose: sys module 
+Purpose: sys module
 """
-import sys 
+import sys
 
 print(dir(sys))
 
-print(f''' 
+print(f'''
     {sys.executable      =}
     {sys.exec_prefix     =}
 
@@ -14,7 +14,7 @@ print(f'''
     {sys.base_prefix     =}
     {sys.base_exec_prefix=}
     {sys.pycache_prefix  =}
- 
+
     {sys.dont_write_bytecode=}
 
     {sys.getallocatedblocks()       =}

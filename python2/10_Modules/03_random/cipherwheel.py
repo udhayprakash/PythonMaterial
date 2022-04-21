@@ -25,7 +25,7 @@ def encrypt(m):
     return cipher,original_key
 
 def decrypt(cipher,key):
-    inner_wheel = [i for i in string.lowercase]    
+    inner_wheel = [i for i in string.lowercase]
     outer_wheel = inner_wheel
     cipher_dict={}
     for i in range(26):
@@ -42,7 +42,7 @@ def decrypt(cipher,key):
 
 
 while True:
-    s = raw_input("Enter your secret message:")
+    s = raw_input('Enter your secret message:')
     encrypted = encrypt(s)
     print 'encrypted message ->> %s\n'%(encrypted[0])
     print 'decrypted message ->> %s\n'%decrypt(encrypted[0],encrypted[1])

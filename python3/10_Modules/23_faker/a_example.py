@@ -1,11 +1,11 @@
 import faker
 
-print(f"{faker.VERSION =}")
+print(f'{faker.VERSION =}')
 
 fake = faker.Faker()
 
 print(
-    f""" 
+    f"""
     {fake.address()                 =}
     {fake.am_pm()                   =}
     {fake.android_platform_token()  =}
@@ -16,7 +16,7 @@ print(
     {fake.bank_country()            =}
     {fake.boolean()                 =}
     {fake.building_number()         =}
-    #{fake.cache_pattern            =}  
+    #{fake.cache_pattern            =}
     {fake.catch_phrase()            =}
     {fake.century()                 =}
     {fake.chrome()                  =}

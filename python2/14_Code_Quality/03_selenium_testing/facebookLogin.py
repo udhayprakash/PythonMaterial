@@ -6,7 +6,7 @@ class LoginTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Firefox()
-        self.driver.get("http://facebook.com")
+        self.driver.get('http://facebook.com')
 
     def test_Login(self):
         """Function verifies the login successful or not
@@ -14,10 +14,10 @@ class LoginTest(unittest.TestCase):
         """
 
         driver = self.driver
-        facebook_username = input("\nEnter Your FaceBook Username:")
-        facebook_password = input("\nEnter Your FaceBook Password:")
-        emailFieldId = "email"
-        pwdFieldId = "pass"
+        facebook_username = input('\nEnter Your FaceBook Username:')
+        facebook_password = input('\nEnter Your FaceBook Password:')
+        emailFieldId = 'email'
+        pwdFieldId = 'pass'
         loginButtonXpath = "//input[@value='Log In']"
         fbLogoPath = "(//a[contains(@href,'logo')])[1]"
 

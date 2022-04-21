@@ -15,7 +15,7 @@ if __name__ == '__main__':
 USAGE:
     ~py k_multi_val.py --data udhay 25
     name=udhay age=25
-    ~py k_multi_val.py --help         
+    ~py k_multi_val.py --help
     Usage: k_multi_val.py [OPTIONS]
     Options:
     --data <TEXT INTEGER>...  [required]

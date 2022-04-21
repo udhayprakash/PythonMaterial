@@ -4,10 +4,10 @@
 Purpose: Demonstration of Arithmetic Operations
 
 
-Integer family 
-    int 
-    long 
-    float 
+Integer family
+    int
+    long
+    float
 
     complex
     bool

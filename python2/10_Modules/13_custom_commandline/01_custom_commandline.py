@@ -1,8 +1,8 @@
 from cmd import Cmd
- 
+
 class MyPrompt(Cmd):
     pass
- 
+
 p = MyPrompt()
 p.cmdloop()
 

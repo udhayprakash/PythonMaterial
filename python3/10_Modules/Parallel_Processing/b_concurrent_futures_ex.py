@@ -31,7 +31,7 @@ if __name__ == '__main__':
     start = time.time()
 
     # pool = multiprocessing.Pool() #(processes=2, maxtasksperchild=1)#(processes=len(scientists))
-    # # default - it will process as much as capacity of CPU on system 
+    # # default - it will process as much as capacity of CPU on system
     # result = pool.map(transform, scientists)
 
     with concurrent.futures.ProcessPoolExecutor() as executor:

@@ -6,20 +6,20 @@ Purpose: Data Type Conversions
             - binary        - bin() -base  2  (0-1)
             - hexadecimal   - hex()
             - octal         - oct()
-        float 
+        float
             float()
         String
             str()
 
 
-int -> float 
-int -> str 
+int -> float
+int -> str
 
-float -> int 
+float -> int
 float -> str
 
-str  -> int 
-str -> float 
+str  -> int
+str -> float
 """
 num = 12
 print('num=', num, type(num))

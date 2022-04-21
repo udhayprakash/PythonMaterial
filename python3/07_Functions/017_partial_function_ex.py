@@ -47,12 +47,12 @@ Assignments
 '''
 # ----------------------------------------------
 basetwo = functools.partial(int, base=2)
-basetwo.__doc__ = "Convert base 2 string to an int."
+basetwo.__doc__ = 'Convert base 2 string to an int.'
 
-assert int("10010", base=2) == basetwo("10010")
+assert int('10010', base=2) == basetwo('10010')
 
 basetwo = functools.partial(bin)
-basetwo.__doc__ = "Convert an int to base 2 string."
+basetwo.__doc__ = 'Convert an int to base 2 string.'
 
 print(basetwo(18))
 assert bin(18) == basetwo(18)

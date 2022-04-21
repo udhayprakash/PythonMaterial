@@ -12,14 +12,14 @@ Purpose: bool() built-in function
 # integer type (int and float)
 #       zero     - False
 #       non-zero - True
-print("bool(12)          ", bool(12))
-print("bool(-12)         ", bool(-12))
-print("bool(0)           ", bool(0))
+print('bool(12)          ', bool(12))
+print('bool(-12)         ', bool(-12))
+print('bool(0)           ', bool(0))
 print()
 
-print("bool(0.00000000)  ", bool(0.00000000))
-print("bool(0.000000001) ", bool(0.000000001))
-print("bool(-0.000000001)", bool(-0.000000001))
+print('bool(0.00000000)  ', bool(0.00000000))
+print('bool(0.000000001) ', bool(0.000000001))
+print('bool(-0.000000001)', bool(-0.000000001))
 print()
 
 # strings

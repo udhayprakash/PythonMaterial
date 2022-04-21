@@ -3,8 +3,8 @@
 Purpose: Least Recently Used (LRU) Cache
 
     lru_cache(maxsize, typed)
-    - maxsize: how many results of this function call can be cached 
-               at most, if None, there is no limit, when set to a 
+    - maxsize: how many results of this function call can be cached
+               at most, if None, there is no limit, when set to a
                power of 2, the performance is the best
     - typed: If True, calls of different parameter types will be
               cached separately.
@@ -55,4 +55,4 @@ def count_vowels(sentence):
     return sum(sentence.count(vowel) for vowel in 'aeiou')
 
 
-print(count_vowels("Welcome to Python"))
+print(count_vowels('Welcome to Python'))

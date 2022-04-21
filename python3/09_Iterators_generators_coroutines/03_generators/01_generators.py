@@ -29,7 +29,7 @@ def my_generator():
     yield 333
     print('yielding 444')
     yield 444
-    return "No More value to yield"
+    return 'No More value to yield'
 
 
 # my_generator()

@@ -22,7 +22,7 @@ except:
 
 print('Ip address of ' + host + ' is ' + remote_ip)
 
-print("connecting to the server \n")
+print('connecting to the server \n')
 
 s.connect((remote_ip, port))
 
@@ -30,7 +30,7 @@ print('Socket Connected to ' + host + ' on ip ' + remote_ip)
 
 # sending a data outside
 # message = input("enter the message you want to pass on: \n")
-message = "GET / HTTP/1.1\r\n\r\n"
+message = 'GET / HTTP/1.1\r\n\r\n'
 
 try:
     s.sendall(message)

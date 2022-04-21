@@ -16,6 +16,6 @@ links = re.findall('"((http|ftp)s?://.*?)"', html)
 emails = re.findall('([\w\.,]+@[\w\.,]+\.\w+)', html)
 
 # print the number of links in the list
-print("\nFound {} links".format(len(links)))
+print('\nFound {} links'.format(len(links)))
 for email in emails:
     print(email)

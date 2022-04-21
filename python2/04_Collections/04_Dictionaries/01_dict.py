@@ -2,13 +2,13 @@
 """
 Purpose: dictionary demo
 
-1. keys are unique; 
+1. keys are unique;
 2. keys should be immutables only
-    immutables 
+    immutables
         string, tuple, int, long, float, bool
     mutables
         bytearray string, list, set, dict
-3. indexing based on keys 
+3. indexing based on keys
 4. They were unordered
 
 """
@@ -51,7 +51,7 @@ print
 print mydict.has_key('name')
 print "mydict['name']:", mydict['name']
 
-#  dictionary is a mutable object 
+#  dictionary is a mutable object
 mydict['name'] = 'shyam'
 print "mydict['name']:", mydict['name']
 
@@ -74,7 +74,7 @@ print 'mydict', mydict
 # # ####################################
 print dir(mydict)
 print '==============='
-print mydict.popitem()  # deletes some key:value in random 
+print mydict.popitem()  # deletes some key:value in random
 print mydict
 
 print mydict.popitem()

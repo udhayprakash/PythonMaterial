@@ -21,7 +21,7 @@ for each in tree.findall('book'):
 
 pprint(books)
 
-# Assignment: Enhance it by changing the values of books dict 
+# Assignment: Enhance it by changing the values of books dict
 # as a tuple containing book_title, author and date
 
 {'0-596-00128-2': ('Python & XML', 'Jones, Drake', 'December 2001')}

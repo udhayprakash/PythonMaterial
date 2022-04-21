@@ -6,11 +6,11 @@ Purpose: F-String Assignments
 """
 language = 'Python'
 print(language)
-print("language =", language)
-print("language = %s"% (language))
-print("language = {}".format(language))
-print(f"language = {language}")
-print(f"{language = }")
+print('language =', language)
+print('language = %s'% (language))
+print('language = {}'.format(language))
+print(f'language = {language}')
+print(f'{language = }')
 print()
 
 num = 1234

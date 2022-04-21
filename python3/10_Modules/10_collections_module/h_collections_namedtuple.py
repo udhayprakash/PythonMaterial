@@ -66,7 +66,7 @@ print(colors(**{'r': 255, 'g': 0, 'b': 0}))
 # To check the fields belonging to a namedtuple
 print(red._fields)
 
-# namedtuples are immtuable, but to change a value in it 
+# namedtuples are immtuable, but to change a value in it
 print(red._replace(g=3))
 
 # original object remains intact

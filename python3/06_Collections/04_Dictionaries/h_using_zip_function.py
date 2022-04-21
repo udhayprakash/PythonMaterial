@@ -33,10 +33,10 @@ print(dict(data))
 # ValueError: dictionary update sequence element #0 has length 3; 2 is required
 
 
-data = (['red', (1, 'A')], ['blue', (2, 'B')], ('yellow', (3, "C")))
+data = (['red', (1, 'A')], ['blue', (2, 'B')], ('yellow', (3, 'C')))
 print(dict(data))
 
-data = ([('red', 1), 'A'], [('blue', 2), 'B'], ('yellow', (3, "C")))
+data = ([('red', 1), 'A'], [('blue', 2), 'B'], ('yellow', (3, 'C')))
 print(dict(data))
 
 # -----------------------

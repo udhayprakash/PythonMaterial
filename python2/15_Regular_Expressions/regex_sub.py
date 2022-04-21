@@ -1,9 +1,9 @@
 import re
 #
 #
-text="what is the  price of dry chilli?"
+text='what is the  price of dry chilli?'
 #
-products=["rice","dry chilli","wheat","apple","banana"]
+products=['rice','dry chilli','wheat','apple','banana']
 #
 # remove extra white spaces
 text_formatted =  re.sub(' +',' ',text)

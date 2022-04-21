@@ -7,7 +7,7 @@ version = '3.0'
 
 def hello():
     ''' this is just for printing hello '''
-    print "hello today is modules class"
+    print 'hello today is modules class'
 
 
 def add(a=1, b=2):
@@ -25,4 +25,4 @@ if __name__ == '__main__':
     print sum
     print version
 else:
-    print "Hello this has to be part of my modules"
+    print 'Hello this has to be part of my modules'

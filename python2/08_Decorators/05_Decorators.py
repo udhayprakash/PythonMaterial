@@ -11,20 +11,20 @@ Decorators slow down the function call. Keep that in mind.
 
 def makebold(fn):
     def wrapped(*args, **kwargs):
-        print "makebold - args", args
-        print "makebold  - kwargs", kwargs
+        print 'makebold - args', args
+        print 'makebold  - kwargs', kwargs
         print
-        return "<b>" + fn(*args, **kwargs) + "</b>"
+        return '<b>' + fn(*args, **kwargs) + '</b>'
 
     return wrapped
 
 
 def makeitalic(fn):
     def wrapped(*args, **kwargs):
-        print "makeitalic - args", args
-        print "makeitalic  - kwargs", kwargs
+        print 'makeitalic - args', args
+        print 'makeitalic  - kwargs', kwargs
         print
-        return "<i>" + fn(*args, **kwargs) + "</i>"
+        return '<i>' + fn(*args, **kwargs) + '</i>'
 
     return wrapped
 
@@ -32,7 +32,7 @@ def makeitalic(fn):
 @makebold
 @makeitalic
 def hello(name, salary=20000000):
-    return "hello world:{}\t salary:{}".format(name, salary)
+    return 'hello world:{}\t salary:{}'.format(name, salary)
 
 
 print hello('udhay', 9000000)  ## returns "<b><i>hello world</i></b>"

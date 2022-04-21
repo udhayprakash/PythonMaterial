@@ -1,6 +1,6 @@
 from numpy.random import randn
 
-import matplotlib as mpl 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # http://en.wikipedia.org/wiki/Histogram

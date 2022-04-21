@@ -14,9 +14,9 @@ def func2(n):
         yield i
 
 
-print "func(5) ", func(5)
-print "func1(5) ", func1(5)
-print "func2(5) ", func2(5)
+print 'func(5) ', func(5)
+print 'func1(5) ', func1(5)
+print 'func2(5) ', func2(5)
 
 f5 = func2(5)
 

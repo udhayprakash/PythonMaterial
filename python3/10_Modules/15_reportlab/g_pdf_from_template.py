@@ -4,7 +4,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 
 def hello():
-    doc = SimpleDocTemplate("g_pdf_from_template.pdf",
+    doc = SimpleDocTemplate('g_pdf_from_template.pdf',
                             pagesize=letter,
                             rightMargin=72,
                             leftMargin=72,
@@ -15,7 +15,7 @@ def hello():
     flowables = []
 
     text = "Hello, I'm a Paragraph"
-    para = Paragraph(text, style=styles["Normal"])
+    para = Paragraph(text, style=styles['Normal'])
     flowables.append(para)
 
     doc.build(flowables)

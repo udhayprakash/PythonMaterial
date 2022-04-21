@@ -1,4 +1,4 @@
-import re 
+import re
 print re.match('a{1,2}?shique', 'aashique').group()
 print re.search('a{1,2}?shique', 'aashique').group()
 

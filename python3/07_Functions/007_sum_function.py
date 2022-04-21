@@ -110,7 +110,7 @@ Assignment
 
     HINT: isinstance() - builtin function
           int(), float(), list(), tuple(), set()
-          list.append(), list.extend 
+          list.append(), list.extend
           list & tuple concatenation
 '''
 # print(f'type(int) is type(123)  :{type(int) is type(123)}')

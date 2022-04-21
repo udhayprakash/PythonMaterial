@@ -7,7 +7,7 @@ Purpose: Functions Demo
 
 # Function Definition
 def hello():
-    print "Hello world"
+    print 'Hello world'
     #return None - default
 
 
@@ -17,6 +17,6 @@ fruit = 'apple'
 print 'callable(fruit)', callable(fruit)
 
 
-# Function Call 
+# Function Call
 hello()
 print hello()

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-named tuples provide 
+named tuples provide
 1. access by index - like normal tuples
 2. access by keynaame - like dictionaries
 3. using getattr()
@@ -30,8 +30,8 @@ print line_length
 x1, y1 = pt1
 
 """
-use named tuples instead of tuples anywhere you think 
-object notation will make your code more pythonic and more 
+use named tuples instead of tuples anywhere you think
+object notation will make your code more pythonic and more
 easily readable.
 
 """

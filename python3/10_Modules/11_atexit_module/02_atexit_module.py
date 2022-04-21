@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: atexit 
+Purpose: atexit
     – Call functions when a program is closing down
     The callbacks registered with atexit are not invoked if:
         - the program dies because of a signal

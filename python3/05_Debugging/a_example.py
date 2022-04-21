@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Debugging 
+Purpose: Debugging
 """
 val_1 = int(input('Enter val_1      :'))
 val_2 = int(input('Enter val_2      :'))

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: digits to alphabets 
+Purpose: digits to alphabets
 
 786 -> SEVEN EIGHT SIX
 
@@ -20,7 +20,7 @@ number_to_alphabets = {
     9: 'NINE'
 }
 '''
-NOTE: 
+NOTE:
 abs(-num) = num
 abs(+num) = num
 '''

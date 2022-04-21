@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Purpose: sys module 
+Purpose: sys module
 """
-import sys 
+import sys
 print(dir(sys))
 
 
-print(f''' 
+print(f'''
     {sys.winver             =}
     {sys.version            =}
     {sys.version_info       =}
@@ -21,5 +21,5 @@ print(f'''
 
 
 # cpython -c      python.org
-# Jython  - Java  
+# Jython  - Java
 # Ironthon- dotnet

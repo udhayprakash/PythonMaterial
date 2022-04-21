@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Higher-Order Functions 
+Purpose: Higher-Order Functions
     - function which were designed to work on another functions
         - zip, map, filter, reduce
 """

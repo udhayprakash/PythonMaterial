@@ -32,7 +32,7 @@ print()
 num1 = 122.13
 print(f'''
         {num1       =}
-        {type(num1) =} 
+        {type(num1) =}
         {id(num1)   =}
         {dir(num1)  =}
 
@@ -40,7 +40,7 @@ print(f'''
 
 print(f'''
         {hello       =}
-        {type(hello) =} 
+        {type(hello) =}
         {id(hello)   =}
         {dir(hello)  =}
 ''')

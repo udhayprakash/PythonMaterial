@@ -15,10 +15,10 @@ def main():
     # weekday returns 0 (monday) through 6 (sunday)
     wd = date.weekday(today)
     # Days start at 0 for monday
-    days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
-    print("Today is day number %d" % wd)
-    print("which is a " + days[wd])
+    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    print('Today is day number %d' % wd)
+    print('which is a ' + days[wd])
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

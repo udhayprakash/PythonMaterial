@@ -8,7 +8,7 @@ Purpose:
 __author__ = 'Python Tutor'
 
 day_of_the_week = raw_input('Enter the day of the week:').lower().strip()
-print "day_of_the_week:", day_of_the_week
+print 'day_of_the_week:', day_of_the_week
 
 if (day_of_the_week == 'monday'
         or day_of_the_week == 'tuesday'
@@ -16,22 +16,22 @@ if (day_of_the_week == 'monday'
         or day_of_the_week == 'thursday'
         or day_of_the_week == 'friday'):
 
-    print "Office Timings: 9 am to 6 pm"
+    print 'Office Timings: 9 am to 6 pm'
 
 elif day_of_the_week == 'saturday':
-    print "Office Timings: 9 am to 1 pm"
+    print 'Office Timings: 9 am to 1 pm'
 elif day_of_the_week == 'sunday':
-    print "SUNDAY is HOLIDAY!!!!!!"
+    print 'SUNDAY is HOLIDAY!!!!!!'
 else:
-    print "Please enter the correct weekname!"
+    print 'Please enter the correct weekname!'
 
 # In operator - membership check operator
 
 if day_of_the_week in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday'):
-    print "Office Timings: 9 am to 6 pm"
+    print 'Office Timings: 9 am to 6 pm'
 elif day_of_the_week == 'saturday':
-    print "Office Timings: 9 am to 1 pm"
+    print 'Office Timings: 9 am to 1 pm'
 elif day_of_the_week == 'sunday':
-    print "SUNDAY is HOLIDAY!!!!!!"
+    print 'SUNDAY is HOLIDAY!!!!!!'
 else:
-    print "Please enter the correct weekname!"
+    print 'Please enter the correct weekname!'

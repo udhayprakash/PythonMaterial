@@ -8,7 +8,7 @@ print '\nFields by index:'
 for p in [ bob, jane ]:
     print '%s is a %d year old %s' % p
 
-print '-' * 30 
+print '-' * 30
 import collections
 
 Person = collections.namedtuple('Person', 'name age gender')
@@ -24,8 +24,8 @@ print '\nField by name:', jane.name
 print '\nFields by index:'
 for p in [ bob, jane ]:
     print '%s is a %d year old %s' % p
-    
-print '-' * 30 
+
+print '-' * 30
 try:
     collections.namedtuple('Person', 'name class age gender')
 except ValueError, err:
@@ -36,7 +36,7 @@ try:
 except ValueError, err:
     print err
 
-print '-' * 30 
+print '-' * 30
 
 with_class = collections.namedtuple('Person', 'name class age gender', rename=True)
 print with_class._fields
@@ -45,7 +45,7 @@ two_ages = collections.namedtuple('Person', 'name age gender age', rename=True)
 print two_ages._fields
 
 
-print '-' * 30 
+print '-' * 30
 colors=collections.namedtuple('colors','r g b')
 red=colors(r=255,g=0,b=0)
 
@@ -58,7 +58,7 @@ print 'red[0]', red[0]
 print red._asdict() # namedtuple into dictionary
 
 #Iterable to namedtuple
-print colors._make(['1','2','3']) 
+print colors._make(['1','2','3'])
 
 # dictionary to namedtuple
 print colors(**{'r':255,'g':0,'b':0})
@@ -66,5 +66,5 @@ print colors(**{'r':255,'g':0,'b':0})
 # To check the fields belonging to a namedtuple
 print red._fields
 
-# namedtuples are immtuable, but to change a value in it 
+# namedtuples are immtuable, but to change a value in it
 print red._replace(g=3)

@@ -6,4 +6,3 @@ for line in hand:
     x = re.findall('Author:.*@(\S+)', line)
     if not x : continue
     print x
-

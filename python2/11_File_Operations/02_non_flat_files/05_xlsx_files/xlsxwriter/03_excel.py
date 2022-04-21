@@ -9,7 +9,7 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
     ws1.write_comment('C3', 'Hello', {'x_scale': 1.2, 'y_scale': 0.8})
     ws1.write_comment('C3', 'Atonement', {'author': 'Elon Musk'})
 
-    # author name can be defaultly specified 
+    # author name can be defaultly specified
     ws1.set_comments_author('John Smith')
 
     ws1.write_comment('D3', 'Hello', {'visible': False})
@@ -49,15 +49,15 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
                             {'x_scale': 1.5, 'y_scale': 0.25})
 
 
-    # nesting format properties 
+    # nesting format properties
     worksheet.insert_textbox('B19', 'Some text in a textbox with formatting',
                          {'font': {'color': 'white'},
                           'align': {'vertical': 'middle',
                                     'horizontal': 'center'
                                     },
                           'gradient': {'colors': ['green', 'white']}})
-    
-    # borders to text box 
+
+    # borders to text box
     worksheet.insert_textbox('B21', 'A textbox with a color border',
                          {'line': {'color': '#FF9900'}})
 
@@ -66,5 +66,5 @@ with xlsxwriter.Workbook('three.xlsx') as workbook:
 
     worksheet.insert_textbox('B27', 'A textbox a dash border',
                          {'line': {'dash_type': 'dash_dot'}})
-    
+
     #workbook.close()

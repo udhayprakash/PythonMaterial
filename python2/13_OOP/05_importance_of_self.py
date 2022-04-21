@@ -14,7 +14,7 @@ class Name:
         print('I will be called, the moment you create an instance')
         self.s = ''
 
-    def display_names(self): 
+    def display_names(self):
         """
         This is an instance method.
         """

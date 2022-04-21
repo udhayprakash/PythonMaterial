@@ -23,7 +23,7 @@ else:
     print(f'{num} is a PRIME number')
 
 # Method 2
-import math 
+import math
 print(f'{math.sqrt(num) =}')
 
 for i in range(2, int(math.sqrt(num)) + 1):

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 	break     - breaks the complete loop
 	continue  - skip the current loop
 	pass      - will do nothing. it is like a todo

@@ -1,4 +1,4 @@
-import datetime as dt 
+import datetime as dt
 import calendar
 
 # today = dt.datetime.now().year
@@ -19,5 +19,3 @@ print(f'{today.day   =}')
 print(dir(today))
 
 last_day = calendar.monthrange(today.year, today.month)[1]
-
-

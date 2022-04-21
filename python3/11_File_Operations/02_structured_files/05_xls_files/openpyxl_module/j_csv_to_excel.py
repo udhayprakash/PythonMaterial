@@ -15,6 +15,6 @@ def csv_to_excel(csv_file, excel_file):
     workbook.save(excel_file)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     import os
-    csv_to_excel("../../04_csv/my_file.csv", "my_file.xlsx")
+    csv_to_excel('../../04_csv/my_file.csv', 'my_file.xlsx')

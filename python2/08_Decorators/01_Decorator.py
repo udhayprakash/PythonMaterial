@@ -10,7 +10,7 @@ def outer(func):
             return e
         else:
             return func(num1, num2) #*args, **kwargs)
-    
+
     return inner
 
 ############################################

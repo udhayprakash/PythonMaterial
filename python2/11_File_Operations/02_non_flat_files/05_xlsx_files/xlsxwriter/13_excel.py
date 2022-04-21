@@ -7,7 +7,7 @@ writer = pd.ExcelWriter('pandas_example.xlsx',
                         date_format='mmmm dd yyyy')
 
 df = pd.DataFrame({'Data': [10, 20, 30, 20, 15, 30, 45]})
-df.to_excel(writer, sheet_name='Sheet1', 
+df.to_excel(writer, sheet_name='Sheet1',
         startrow=1, header=False
         )
 
@@ -41,5 +41,3 @@ worksheet.set_column('C:C', None, format2)
 
 writer.save()
 writer.close()
-
-

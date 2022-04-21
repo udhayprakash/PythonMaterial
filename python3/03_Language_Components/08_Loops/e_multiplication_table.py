@@ -61,9 +61,9 @@ Assignment
 10 *  4 =  40
 10 *  3 =  30
 10 *  2 =  20
-10 *  1 =  10  
+10 *  1 =  10
 
-2) Assignment - Display the multiplication table horizontally 
+2) Assignment - Display the multiplication table horizontally
 
 01 * 01 = 001 | 02 * 01 = 002 | 03 * 01 = 003 | 04 * 01 = 004 | 05 * 01 = 005 | 06 * 01 = 006 | 07 * 01 = 007 | 08 * 01 = 008 | 09 * 01 = 009 | 10 * 01 = 010
 01 * 02 = 002 | 02 * 02 = 004 | 03 * 02 = 006 | 04 * 02 = 008 | 05 * 02 = 010 | 06 * 02 = 012 | 07 * 02 = 014 | 08 * 02 = 016 | 09 * 02 = 018 | 10 * 02 = 020

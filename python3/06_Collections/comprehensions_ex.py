@@ -86,7 +86,7 @@ my_variable = {ch: ord(ch) for ch in 'Mangalyan'}
 print(type(my_variable), my_variable)
 #########################################
 
-# Assignment 
+# Assignment
 # chr(), ord()
 print('chr(77) ', chr(77))
 print("ord('M')", ord('M'))

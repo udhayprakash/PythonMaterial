@@ -2,9 +2,9 @@
 """
 Purpose: Multiprocessing using Queues
 
-Queue objects are a FIFO data structure that are 
-thread and process safe which make them perfect 
-for passing data between different processes 
+Queue objects are a FIFO data structure that are
+thread and process safe which make them perfect
+for passing data between different processes
     without potentially corrupting data.
 """
 from multiprocessing import Process, Queue
@@ -16,7 +16,7 @@ def rand_num(queue):
     queue.put(num)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     queue = Queue()
 
     processes = [Process(target=rand_num, args=(queue,)) for x in range(4)]

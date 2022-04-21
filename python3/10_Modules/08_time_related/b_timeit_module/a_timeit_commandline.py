@@ -1,5 +1,5 @@
 """
-In commandline, 
+In commandline,
     ~python -m timeit "'-'.join(str(n) for n in range(10))"
     100000 loops, best of 5: 2.48 usec per loop
 
@@ -34,11 +34,11 @@ python -m timeit [-n N] [-r N] [-u U] [-s S] [-h] [statement ...]
 20 loops, best of 15: 1.72e-06 sec per loop
 
 ~python -m timeit -n 20 -r 15 -u sec -v "'-'.join(map(str, range(10)))"
-raw times: 6.91e-05 sec, 6.67e-05 sec, 6.58e-05 sec, 6.78e-05 sec, 9.45e-05 sec, 5.89e-05 sec, 6.74e-05 sec, 6.73e-05 sec, 6.66e-05 sec, 6.13e-05 sec, 6.02e-05 sec, 0.000449 
+raw times: 6.91e-05 sec, 6.67e-05 sec, 6.58e-05 sec, 6.78e-05 sec, 9.45e-05 sec, 5.89e-05 sec, 6.74e-05 sec, 6.73e-05 sec, 6.66e-05 sec, 6.13e-05 sec, 6.02e-05 sec, 0.000449
 sec, 7.09e-05 sec, 8.62e-05 sec, 5.8e-05 sec
 
 20 loops, best of 15: 2.9e-06 sec per loop
-:0: UserWarning: The test results are likely unreliable. The worst time (2.24e-05 sec) 
+:0: UserWarning: The test results are likely unreliable. The worst time (2.24e-05 sec)
 was more than four times slower than the best time (2.9e-06 sec).
 
 ~python -m timeit -n 20 -r 15 -u sec -v "'-'.join(map(str, range(10)))"

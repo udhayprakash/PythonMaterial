@@ -17,17 +17,17 @@ def test():
   cons.set_text_attr(cons.FOREGROUND_BLUE | cons.BACKGROUND_GREY |
                      cons.FOREGROUND_INTENSITY | cons.BACKGROUND_INTENSITY)
 
-  print "_" * windowLength
-  print "|" * windowLength
-  print "-" * windowLength
+  print '_' * windowLength
+  print '|' * windowLength
+  print '-' * windowLength
   cons.set_text_attr(cons.FOREGROUND_BLUE | cons.BACKGROUND_BLUE |
                      cons.FOREGROUND_INTENSITY | cons.BACKGROUND_INTENSITY)
 
-  print "XYZ BANK".center(windowLength)
+  print 'XYZ BANK'.center(windowLength)
   cons.set_text_attr(cons.FOREGROUND_YELLOW | cons.BACKGROUND_BLUE |
                      cons.FOREGROUND_INTENSITY |cons.BACKGROUND_INTENSITY)
 
-  print "FINANCIAL TRANSACTION INTERFACE ".center(windowLength)
+  print 'FINANCIAL TRANSACTION INTERFACE '.center(windowLength)
   cons.set_text_attr(cons.FOREGROUND_YELLOW | cons.BACKGROUND_BLUE | cons.BACKGROUND_INTENSITY)
 
   print '@xyz company, interface version 0.0012'.rjust(windowLength)
@@ -45,18 +45,18 @@ def test():
          '\n\tb. WITHDRAW' \
          '\n\tc. BALANCE ENQUIRY' \
          '\n3. Delete an existing Account '
-  choice = raw_input("Please Enter the interger, corresponding to your choice:")
+  choice = raw_input('Please Enter the interger, corresponding to your choice:')
 
   cons.set_text_attr(cons.FOREGROUND_BLUE | cons.BACKGROUND_GREY |
                      cons.FOREGROUND_INTENSITY | cons.BACKGROUND_INTENSITY)
 
-  print "." * windowLength
-  print "@" * windowLength
-  print "-" * windowLength
+  print '.' * windowLength
+  print '@' * windowLength
+  print '-' * windowLength
   cons.set_text_attr( default_bg )
   cons.set_text_attr(default_colors)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
   test()
 
 

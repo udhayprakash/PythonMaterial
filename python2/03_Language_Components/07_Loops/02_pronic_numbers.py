@@ -1,4 +1,4 @@
-#!python -u 
+#!python -u
 """
 Purpose: Display the pronic numbers.
  PRONIC NUMBER: Pronic number is a number which is the product
@@ -7,12 +7,12 @@ Purpose: Display the pronic numbers.
 
 """
 
-n = int(raw_input("Enter a number: "))
+n = int(raw_input('Enter a number: '))
 
 for i in range(1, n):
     print i, i * (i + 1) == n
     if i * (i + 1) == n:
-        print "%d is a pronic number." % n
+        print '%d is a pronic number.' % n
         break
 else:
     print 'All iterations in for loop completed'

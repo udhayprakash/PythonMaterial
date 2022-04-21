@@ -3,9 +3,9 @@
 Purpose: Working with comment operator
     - Once # is encountered, complete line from that position is ignored
     - PEP 8 recommends one white space after # operator
-    - comments 
+    - comments
         - Single Line comment  #
-        - Multi-line comment - Python doesn't support 
+        - Multi-line comment - Python doesn't support
 
 Question: Why python dont have multi-line comment operator
 Answer  : Python is a interpreter based language. means each line exceutes separately
@@ -18,9 +18,9 @@ print('Hello world1')
 print('Hello world2')
 # print('Hello world3')
 
-# any operator within quotes with be treated as 
+# any operator within quotes with be treated as
 # ordinary character
-print('Hello #world4') 
+print('Hello #world4')
 print('Hello', 'world5', sep='#')
 
 
@@ -36,13 +36,13 @@ print('Hello world7') # This is about the world
 
 '''
 Used to handle multi-line strings
-or 
+or
 in cases where multiple single and double quotes are present in string
 '''
 
 
 """
-used for 
+used for
 docstrings
 
 print 'Hello World8'

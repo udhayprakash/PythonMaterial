@@ -2,7 +2,7 @@ from faker import Faker
 
 fake = Faker()
 
-print(f''' 
+print(f'''
     FAKE PERSONAL DETAIALS
     ----------------------
     {fake.name()}

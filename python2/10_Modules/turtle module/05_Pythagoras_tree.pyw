@@ -1,5 +1,5 @@
 from turtle import goto, pu, pd, color, done
- 
+
 def level(ax, ay, bx, by, depth=0):
     if depth > 0:
         dx,dy = bx-ax, ay-by
@@ -12,7 +12,7 @@ def level(ax, ay, bx, by, depth=0):
         pu()
         level(x4,y4, x5,y5, depth - 1)
         level(x5,y5, x3,y3, depth - 1)
- 
+
 if __name__ == '__main__':
     color('red', 'yellow')
     pu()

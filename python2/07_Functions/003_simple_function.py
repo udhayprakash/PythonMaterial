@@ -11,7 +11,7 @@ def hello(name, age):
     print "{}'s age is {}".format(name, age)
 
 
-# Function Call 
+# Function Call
 # hello() # TypeError: hello() takes exactly 1 argument (0 given)
 
 # hello('Python')  # TypeError: hello() takes exactly 2 arguments (1 given)

@@ -18,4 +18,4 @@ def bottles_cnt_beer(money=10):
 
 if __name__ == '__main__':
     n = int(raw_input('Enter a number: '))
-    print "you can drink %d bottles of beer." % bottles_cnt_beer(n)
+    print 'you can drink %d bottles of beer.' % bottles_cnt_beer(n)

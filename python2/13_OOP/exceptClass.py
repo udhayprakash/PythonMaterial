@@ -9,11 +9,11 @@ class TestClass(object):
     def return_values(self):
         try:
             if (type(self.name) is int):
-                return "The values are: ", type(self.name), type(self.number)
+                return 'The values are: ', type(self.name), type(self.number)
             else:
                 raise notANumber(self.number)
         except notANumber as e:
-            print("The value for number must be an int you passed: ", e.value)
+            print('The value for number must be an int you passed: ', e.value)
 
 
 class notANumber(Exception):

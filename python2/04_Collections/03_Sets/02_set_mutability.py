@@ -1,9 +1,9 @@
 #####################
-# set is mutable but can store 
-# immutables only 
+# set is mutable but can store
+# immutables only
 
 
-empty_set =  set() 
+empty_set =  set()
 print type(empty_set)
 
 small_set = set([12, 3242, 45])

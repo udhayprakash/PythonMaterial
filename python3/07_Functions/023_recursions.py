@@ -22,7 +22,7 @@ def funcName(<input paramaters>):
 
 
 def hello():
-    print("Hello")
+    print('Hello')
     return hello()
 
 

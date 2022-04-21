@@ -5,15 +5,15 @@ from datetime import date, time
 class Formatter:
     @singledispatchmethod
     def format(self, arg):
-        raise NotImplementedError(f"Cannot format value of type {type(arg)}")
+        raise NotImplementedError(f'Cannot format value of type {type(arg)}')
 
     @format.register
     def _(self, arg: date):
-        return f"{arg.day}-{arg.month}-{arg.year}"
+        return f'{arg.day}-{arg.month}-{arg.year}'
 
     @format.register
     def _(self, arg: time):
-        return f"{arg.hour}:{arg.minute}:{arg.second}"
+        return f'{arg.hour}:{arg.minute}:{arg.second}'
 
 
 f = Formatter()

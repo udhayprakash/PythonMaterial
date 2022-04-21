@@ -3,8 +3,8 @@
 Purpose: format , format with dict unpacking and format_map
 """
 
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 
@@ -24,8 +24,8 @@ result = {
 }
 
 # Dictionary Unpacking
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 
@@ -35,8 +35,8 @@ print('''
 ))
 
 # Using format_map
-print('''       
-        Dear {customer}, 
+print('''
+        Dear {customer},
                 Your account ending with {accound_last_4_digits} was
                 deducted {transaction_amount} on {transaction_time}.
 

@@ -1,4 +1,4 @@
-REST API todo 
+REST API todo
     - https://www.deepl.com/en/api.html
     - https://fixer.io/signup/free
     - https://currencylayer.com/signup/free

@@ -9,8 +9,8 @@ class VerboseStringIO(StringIO):
         print('read(%d) =>' % n, next)
         return next
 
-lorem_ipsum = '''Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-Vestibulum aliquam mollis dolor. Donec vulputate nunc ut diam. 
+lorem_ipsum = '''Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Vestibulum aliquam mollis dolor. Donec vulputate nunc ut diam.
 Ut rutrum mi vel sem. Vestibulum ante ipsum.'''
 
 print('Default:')

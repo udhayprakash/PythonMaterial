@@ -3,7 +3,7 @@
 Purpose:
     file operations
         - read  - r
-        - write - w -> if file not present, file will be created; 
+        - write - w -> if file not present, file will be created;
                        if present, existing content will be overwritten
         - append- a
 

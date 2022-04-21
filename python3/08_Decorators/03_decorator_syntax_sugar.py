@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: Decorator Syntax Sugar 
+Purpose: Decorator Syntax Sugar
 """
 
 

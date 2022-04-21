@@ -5,7 +5,7 @@
 try:
     import simplejson as json
 except ImportError as ex:
-    print "The error  is \t", ex
+    print 'The error  is \t', ex
     print 'importing json module'
     import json
 
@@ -18,7 +18,7 @@ book['author'] = 'Udhay'
 book['id'] = 786
 
 print '\nbook details :\n', book
-print "type(book) is ", type(book)
+print 'type(book) is ', type(book)
 # Serilazation
 with open('ebook.json', 'wb') as f:
     json.dump(book, f)
@@ -29,7 +29,7 @@ with open('ebook.json', 'rb') as g:
     data = json.load(g)
     g.close()
 
-print "data = ", data
+print 'data = ', data
 
 print '\nprinting using pretty print'
 import pprint
@@ -42,6 +42,6 @@ import sys
 if sys.platform == 'win32':
     os.system('type ebook.json')  # linux - cat ; windows - type
 else:
-    os.system("cat ebook.json")
+    os.system('cat ebook.json')
 
 # Assignemnt ; try to work with json.load and json.dumps- json.loads

@@ -23,7 +23,7 @@ print(f'{string.capwords("11111111111111111")=}')
 print(f'{string.capwords("one two three 345")=}') # str.title
 print()
 
-s = "let us capitalize every word of this sentence."
+s = 'let us capitalize every word of this sentence.'
 print(string.capwords(s))
 print(s.title())
 
@@ -38,7 +38,7 @@ t.substitute(name='World', age=30)  # 'name: World - $name - $World  age : 30yea
 # NOTE: $$ is an escape; it is replaced with a single $.
 # ${identifier} is equivalent to $identifier
 
-string.Template('$who likes $what').substitute({'who':'udhay', 'what':'python'}) 
+string.Template('$who likes $what').substitute({'who':'udhay', 'what':'python'})
 # 'udhay likes python'
 
 string.Template('$who likes $what').substitute({'who':'udhay'})

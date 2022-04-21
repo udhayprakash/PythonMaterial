@@ -3,9 +3,9 @@
 Purpose: Demo of Identity Operations
 
 
-is 
+is
 
-is not 
+is not
 
 == - object level equivalence ( value and type) check
 is - object level equivalence (address location, value and type) check
@@ -20,7 +20,7 @@ Dual Memory management Strategy
 """
 
 print '4 == 4  ', 4 == 4
-print '4 == "4"', 4 == "4"
+print '4 == "4"', 4 == '4'
 print '4 is 4  ', 4 is 4
 
 a = 100
@@ -55,13 +55,13 @@ print 'id(a)=', id(a), 'id(b)', id(b)  # id(a)= 4370056 id(b) 4370056
 print 'a == b ', a == b
 print 'a is b ', a is b
 
-# Dual memory management strategy 
+# Dual memory management strategy
 # -------------------------------------
 # if each object created in independent line,
 # -5- 256 --- no new object created
-# > 256 ---  new object created for every assignment 
-# else 
-# no new object get created on new variable assignment for the same value 
+# > 256 ---  new object created for every assignment
+# else
+# no new object get created on new variable assignment for the same value
 
 """
 >>> m = 300

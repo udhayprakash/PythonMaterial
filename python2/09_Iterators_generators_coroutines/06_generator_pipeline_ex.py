@@ -6,7 +6,7 @@ def even_filter(nums):
 def multiply_by_three(nums):
     for num in nums:
         yield num * 3
-        
+
 def convert_to_string(nums):
     for num in nums:
         yield 'The Number: %s' % num

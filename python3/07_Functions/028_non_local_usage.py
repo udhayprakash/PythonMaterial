@@ -76,15 +76,15 @@ def outer():
         nonlocal x
         # global x
         x = 2
-        print("inner :", x)
+        print('inner :', x)
 
     inner()
-    print("outer :", x)
+    print('outer :', x)
     # not effected when global
     # effected when nonlocal
 
 
 outer()
-print("global:", x)
+print('global:', x)
 # effected when global
 # not effected when nonlocal

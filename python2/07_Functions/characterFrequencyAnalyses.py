@@ -2,7 +2,7 @@
 
 __author__ = 'udhay'
 
-sentence = "It is always seen imposible, until we attempt!"
+sentence = 'It is always seen imposible, until we attempt!'
 
 count = {}
 

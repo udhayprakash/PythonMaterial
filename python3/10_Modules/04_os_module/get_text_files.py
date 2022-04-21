@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Problem: Let's take a look around the current 
+Problem: Let's take a look around the current
   directory and find all the .txt files inside it.
 """
 import os

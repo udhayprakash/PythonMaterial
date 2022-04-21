@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: timeit - with setup 
+Purpose: timeit - with setup
 """
 import timeit
 
@@ -14,14 +14,14 @@ with setup,
     500000 loops, best of 5: 626 nsec per loop
 
 """
-print(timeit.timeit("char in lang", setup="lang = 'Python'; char = 't'"))
+print(timeit.timeit('char in lang', setup="lang = 'Python'; char = 't'"))
 # 0.15269916100000014
-print(timeit.timeit("lang.find(char)", setup="lang = 'Python'; char = 't'"))
+print(timeit.timeit('lang.find(char)', setup="lang = 'Python'; char = 't'"))
 # 0.4405657889999999
 
 # The same can be done alternatively,
 print('\n-----with setup, alternatively')
-t = timeit.Timer("char in lang", setup="lang = 'Python'; char = 't'")
+t = timeit.Timer('char in lang', setup="lang = 'Python'; char = 't'")
 print(t.timeit())
 print(t.repeat())
 

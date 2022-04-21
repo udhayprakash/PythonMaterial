@@ -5,13 +5,13 @@ with open('mydata.csv', 'rb') as file_handler:
     print 'Content in the csv file:'
     print csv_file_data
 
-    print 
+    print
     employee_names = []
     for eachLine in csv_file_data[1:]:
         # print eachLine, type(eachLine)
         # print eachLine.split(',')
         print eachLine.split(',')[0]
         employee_names.append(eachLine.split(',')[0])
-    
+
     print 'Employee names:', employee_names
     file_handler.close()

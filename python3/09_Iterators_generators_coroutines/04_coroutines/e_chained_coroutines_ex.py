@@ -3,22 +3,22 @@
 Purpose: chaining the coroutines
 """
 def producer(sentence, next_coroutine):
-    ''' 
-    Producer which just split strings and 
-    feed it to pattern_filter coroutine 
     '''
-    tokens = sentence.split(" ")
+    Producer which just split strings and
+    feed it to pattern_filter coroutine
+    '''
+    tokens = sentence.split(' ')
     for token in tokens:
         next_coroutine.send(token)
     next_coroutine.close()
 
-def pattern_filter(pattern="ing", next_coroutine=None):
-    ''' 
-    Search for pattern in received token  
-    and if pattern got matched, send it to 
-    print_token() coroutine for printing 
+def pattern_filter(pattern='ing', next_coroutine=None):
     '''
-    print("Searching for {}".format(pattern))
+    Search for pattern in received token
+    and if pattern got matched, send it to
+    print_token() coroutine for printing
+    '''
+    print('Searching for {}'.format(pattern))
     try:
         while True:
             token = (yield)
@@ -29,9 +29,9 @@ def pattern_filter(pattern="ing", next_coroutine=None):
 
 
 def print_token():
-    ''' 
-    Act as a sink, simply print the 
-    received tokens 
+    '''
+    Act as a sink, simply print the
+    received tokens
     '''
     print("I'm sink, i'll print tokens")
     try:

@@ -18,19 +18,19 @@ print(etree.tostring(html, pretty_print=True,
 
 
 # The parse() function can be used to parse from files and file-like objects
-title = StringIO("<title>Title Here</title>")
+title = StringIO('<title>Title Here</title>')
 tree = etree.parse(title)
 print(etree.tostring(tree).decode('utf-8'))
 
 
 # The fromstring() function can be used to parse Strings:
-title = "<title>Title Here</title>"
+title = '<title>Title Here</title>'
 root = etree.fromstring(title)
 print(root.tag)
 print(etree.tostring(root).decode('utf-8'))
 
 
 # The fromstring() function can be used to write XML literals directly into the source:
-title = etree.XML("<title>Title Here</title>")
+title = etree.XML('<title>Title Here</title>')
 print(title.tag)
 print(etree.tostring(title).decode('utf-8'))

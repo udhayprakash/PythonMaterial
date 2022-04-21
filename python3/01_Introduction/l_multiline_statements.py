@@ -2,20 +2,20 @@
 """
 Purpose: Working with Multi-line statements
 
-    Python is a interpreter-based language 
+    Python is a interpreter-based language
         - Each line executes separates
         - \ -> Line Continuation Operator
         - WIll join more than one line to a single statement
 
-Brace 
+Brace
     ()  paranthesis
 
     []  square braces
     {}  flower braces
 
 PEP 8 :
-    a) Lines should be 79 characters in length or less 
-    b) Continuations of long expressions onto additional lines should be  
+    a) Lines should be 79 characters in length or less
+    b) Continuations of long expressions onto additional lines should be
        indented by four extra spaces from their normal indentation level.
 
 """

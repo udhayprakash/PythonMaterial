@@ -1,9 +1,9 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 """
 Purpose: Sets
         - Sets are mutable
         - Sets cant store mutable objects
-        - So, sets cant be stored in sets 
+        - So, sets cant be stored in sets
 """
 ordinary_set = {11, 22, 33, 22}
 print(f'{id(ordinary_set)} {type(ordinary_set)} {ordinary_set}')

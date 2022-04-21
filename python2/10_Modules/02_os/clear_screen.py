@@ -7,5 +7,5 @@ def clear_screen():
     else:
         output = os.system('cls')
     print 'output', output
-    
+
 clear_screen()

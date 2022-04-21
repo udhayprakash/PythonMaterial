@@ -42,5 +42,5 @@ s = shelve.open('michelShelve.db', writeback=True)
 print(s['key1'])
 s.close()
 
-# Note: Shelve must not be opened with writeback enabled, 
+# Note: Shelve must not be opened with writeback enabled,
 # unless it is essential

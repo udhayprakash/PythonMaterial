@@ -20,6 +20,6 @@ print 'req.get_header', req.get_header
 response = urllib2.urlopen(req)
 print
 print 'response.getcode()', response.getcode()
-# print response.readline()  # image 
+# print response.readline()  # image
 # print dir(response)
 print response.headers

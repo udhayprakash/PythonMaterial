@@ -39,7 +39,7 @@
 class MyError(Exception):
      def __init__(self, value):
         self.value = value
-        print ""
+        print ''
      def str(self):
          return repr(self.value)
 
@@ -48,4 +48,4 @@ try:
 	raise MyError(2*2)    #_=MyError(2*2)
 except MyError as e:   #e= MyError()
 	print 'My exception occurred, value:', e.value
-	print "str value is", e.__str__()
+	print 'str value is', e.__str__()

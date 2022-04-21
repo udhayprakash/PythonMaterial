@@ -10,11 +10,11 @@ NOTE: PEP8 recommends not use more than 7 args for an function
 
 
 def hello(*given, **feed_in):
-    print("\ntype(given)  ", type(given))
-    print("type(feed_in) ", type(feed_in))
+    print('\ntype(given)  ', type(given))
+    print('type(feed_in) ', type(feed_in))
 
-    print("given   " + str(given))
-    print("feed_in " + str(feed_in))
+    print('given   ' + str(given))
+    print('feed_in ' + str(feed_in))
     print('-' * 20)
 
 

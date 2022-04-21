@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: 
+Purpose:
 --------------------------------------------------------------
 (0, 0)      # Row-column notation.
 ('A1')      # The same cell in A1 notation.
@@ -8,7 +8,7 @@ Purpose:
 (6, 2)      # Row-column notation.
 ('C7')      # The same cell in A1 notation.
 --------------------------------------------------------------
-Relative cell references change when they are copied while 
+Relative cell references change when they are copied while
 Absolute references maintain fixed row and/or column references.
 'A1'    # Column and row are relative.
 '$A1'   # Column is absolute and row is relative.
@@ -28,7 +28,7 @@ with xlsxwriter.Workbook('mybook.xlsx') as wb:
 
     data = {
         'first_name': 'Bharath',
-        'last_name': 'India', 
+        'last_name': 'India',
         'age': 70,
         'currency': 'INR',
         'capital': 'New Delhi'

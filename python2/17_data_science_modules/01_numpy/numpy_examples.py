@@ -12,9 +12,9 @@ stypically a numeric type like FLOAT or INT.
 #Integer type array
 a=np.array([1,4,5,8,])		#default type is Integer.
 
-print "a=",a
-print "type(a)=", type(a)		
-print "type(a[2])=", type(a[2])
+print 'a=',a
+print 'type(a)=', type(a)
+print 'type(a[2])=', type(a[2])
 
 # print "a[:2]=",a[:2]
 # print "a[3]=", a[3]
@@ -60,7 +60,7 @@ print "type(a[2])=", type(a[2])
 # dtype property tells you what type of values are stored by the array.
 # '''
 
-# print "a.dtype=", a.dtype 
+# print "a.dtype=", a.dtype
 # a = np.array([[1,2,3], [4,5,6]], float)
 # print "a=", a
 # print "len(a)=", len(a)
@@ -72,11 +72,11 @@ print "type(a[2])=", type(a[2])
 ''' Arrays can be reshaped using TUPLES that specify new dimensions. '''
 a=np.array(range(10), float)
 
-print "a=", a
-print "a.shape = ", a.shape
+print 'a=', a
+print 'a.shape = ', a.shape
 a=a.reshape((5,2)) #possible reshapes will be the multiples of the total no. of elements.
-print "a=", a
-print "a.shape = ", a.shape
+print 'a=', a
+print 'a.shape = ', a.shape
 print "Notice that reshape function creates a new array and doesn't itself modify the original array."
 
 # ''' Python's name binding approach applies to arrays,also. '''
@@ -152,7 +152,7 @@ print "Notice that reshape function creates a new array and doesn't itself modif
 # print "np.arange(5, dtype = float)  ", np.arange(5, dtype = float)
 # print "np.arange(1,6,2, dtype = int)", np.arange(1,6,2, dtype = int)
 
-# """ Ones and Zeros creates 1's and 0's corrrespondingly, OF THE TYPE SPECIFIED. """ 
+# """ Ones and Zeros creates 1's and 0's corrrespondingly, OF THE TYPE SPECIFIED. """
 # print "np.ones((2,3), dtype = float) ", np.ones((2,3), dtype = float)
 # print "np.zeros(7, dtype = int) ", np.zeros(7, dtype = int)
 
@@ -195,6 +195,6 @@ print "Notice that reshape function creates a new array and doesn't itself modif
 # 	a = np.array([1,2,3], float)
 # 	b = np.array([4,5], float)
 # 	print "a+b", a+b
-# except: 
+# except:
 # 	print "dimensions mismatch"
-# 	
+#

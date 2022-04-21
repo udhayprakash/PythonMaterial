@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Purpose: 
+Purpose:
 """
 from openpyxl import Workbook
 from openpyxl.chart import BarChart, Reference

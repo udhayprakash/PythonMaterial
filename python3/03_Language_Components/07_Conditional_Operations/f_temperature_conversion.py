@@ -33,7 +33,7 @@ else:
     else:
         print('INVALID INPUT')
         sys.exit(1)
-        
+
 print(f'''
         celsius     : {round(celsius, 2)}
         fahrenheit  : {round(fahrenheit, 2)}

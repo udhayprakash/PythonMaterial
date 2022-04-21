@@ -22,7 +22,7 @@ print(f'{my_set =}')
 my_set = {2+3 == 6, 0, False}
 print(f'{my_set =}')
 
-# NOTE: 
+# NOTE:
 # 1. True, False has values of 1, 0 respectively
 # 2. Whichever value is placed first in definition,
 #    that will come in the output

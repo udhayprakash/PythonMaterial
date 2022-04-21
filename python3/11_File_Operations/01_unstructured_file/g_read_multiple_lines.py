@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: file read operations 
+Purpose: file read operations
     fh.read()
     fh.readline()
     fh.readlines()

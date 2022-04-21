@@ -3,7 +3,7 @@
 Purpose:  range() type
     Lazy loading object
 """
-nums = range(0, 9, 1)  
+nums = range(0, 9, 1)
 # optimized object - Lazy loading
 
 print(f'nums: {nums}, {type(nums)}')

@@ -8,7 +8,7 @@ def print_pdf(arg, dir, files):
     for file in files:
         path = os.path.join(dir, file)
         path = os.path.normcase(path)
-        if re.search(r".*\.pdf", path):
+        if re.search(r'.*\.pdf', path):
             print(path)
 
 
@@ -18,8 +18,8 @@ def print_pdf(arg, dir, files):
     for file in files:
         path = os.path.join(dir, file)
         path = os.path.normcase(path)
-        if not re.search(r".*\.pdf", path): continue
-        if re.search(r" ", path): continue
+        if not re.search(r'.*\.pdf', path): continue
+        if re.search(r' ', path): continue
 
         print(path)
 
@@ -30,8 +30,8 @@ def print_pdf(arg, dir, files):
     for file in files:
         path = os.path.join(dir, file)
         path = os.path.normcase(path)
-        if not re.search(r".*\.pdf", path): continue
-        if re.search(r".\.hu", path): continue
+        if not re.search(r'.*\.pdf', path): continue
+        if re.search(r'.\.hu', path): continue
 
         print(path)
 

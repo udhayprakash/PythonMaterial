@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
 Purpose: To display the progress as below:
- 32% (16 of 50) |################### 
+ 32% (16 of 50) |###################
 
- pip install --upgrade progressbar --user 
+ pip install --upgrade progressbar --user
 """
 import time
 import progressbar

@@ -12,12 +12,12 @@ IMAG_TO   =  1.5   #
 
 N = 64
 
-                
+
 class MandelbrotWorker(threading.Thread):
     def __init__(self, aQueue, imgWidth, imgHeight, bounds, **kwargs):
         threading.Thread.__init__(self)
         self.setDaemon(1)
-        self.imgWidth = imgWidth 
+        self.imgWidth = imgWidth
         self.imgHeight = imgHeight
         self.fwidth = float(imgWidth)
         self.fheight = float(imgHeight)
@@ -28,7 +28,7 @@ class MandelbrotWorker(threading.Thread):
         self.resultQueue = aQueue
         self.n = N
         self.start()
-        
+
     def run(self):
         for x in xrange(self.imgWidth):
             for y in xrange(self.imgHeight):
@@ -51,7 +51,7 @@ class MandelbrotWorker(threading.Thread):
 class ThreadedFractal(tk.Toplevel):
     def __init__(self, master):
         tk.Toplevel.__init__(self, master)
-        self.protocol('WM_DELETE_WINDOW', self.on_close)        
+        self.protocol('WM_DELETE_WINDOW', self.on_close)
         self.status = tk.Label(self)
         self.status.pack(fill='x')
         self.display = tk.Label(self)
@@ -59,12 +59,12 @@ class ThreadedFractal(tk.Toplevel):
         self.img = tk.PhotoImage(width=WIDE, height=HIGH)
         self.display.config(image=self.img)
         self.count = 0
-        self.totalPixels = WIDE*HIGH 
+        self.totalPixels = WIDE*HIGH
         self.queue = Queue.Queue()
         self.rgb = []
         self.make_colours()
         self.go()
-        
+
     def make_colours(self):
         for i in xrange(N):
             r = i*7%200 + 55
@@ -75,12 +75,12 @@ class ThreadedFractal(tk.Toplevel):
 
     def scheduler(self):
         self.after(0, self.poll)
-            
+
     def go(self):
         self.workerThread = MandelbrotWorker(self.queue, WIDE, HIGH,
                                     (REAL_FROM,REAL_TO,IMAG_FROM,IMAG_TO))
         self.after(500, self.poll)
-                
+
     def poll(self):
         if self.count < self.totalPixels:
             try:
@@ -94,7 +94,7 @@ class ThreadedFractal(tk.Toplevel):
                 self.status.config(text='%s of %s pixels' %(self.count,
                                                             self.totalPixels))
             self.after_idle(self.scheduler)
-            
+
     def on_close(self):
         self.master.destroy()
 

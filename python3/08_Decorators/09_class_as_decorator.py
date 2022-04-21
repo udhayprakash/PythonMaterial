@@ -11,7 +11,7 @@ class bol(object):
         self.f = f
 
     def __call__(self):
-        return "<b>{}</b>".format(self.f())
+        return '<b>{}</b>'.format(self.f())
 
 
 class ita(object):
@@ -19,7 +19,7 @@ class ita(object):
         self.f = f
 
     def __call__(self):
-        return "<i>{}</i>".format(self.f())
+        return '<i>{}</i>'.format(self.f())
 
 
 @bol

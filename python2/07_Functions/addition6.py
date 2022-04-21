@@ -10,7 +10,7 @@ def sumProblemString(x, y):
 def main():
     print(sumProblemString(2, 3))
     print(sumProblemString(1234567890123, 535790269358))
-    a = int(input("Enter an integer: "))
-    b = int(input("Enter another integer: "))
+    a = int(input('Enter an integer: '))
+    b = int(input('Enter another integer: '))
     print(sumProblemString(a, b))
 main()

@@ -8,12 +8,12 @@ class CountCalls:
 
     def __call__(self, *args, **kwargs):
         self.num_calls += 1
-        print(f"Call {self.num_calls} of {self.func.__name__!r}")
+        print(f'Call {self.num_calls} of {self.func.__name__!r}')
         return self.func(*args, **kwargs)
 
 @CountCalls
 def say_whee():
-    print("\t\t\tWhee!")
+    print('\t\t\tWhee!')
 
 if __name__ =='__main__':
     say_whee()
