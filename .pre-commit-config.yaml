@@ -21,7 +21,8 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
       # - id: double-quote-string-fixer
-      # - id: check-ast
+      - id: check-ast
+        exclude: python3/14_Code_Quality/python_2to3_ex.py
       # - id: check-shebang-scripts-are-executable
       # - id: pretty-format-json
 
