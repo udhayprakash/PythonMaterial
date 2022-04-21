@@ -36,8 +36,7 @@
       "longitude": "-122.42",
       "elevation": "75 ft"
     },
-    "estimated": {
-    },
+    "estimated": {},
     "station_id": "KCASANFR1332",
     "observation_time": "Last Updated on January 7, 4:55 PM PST",
     "observation_time_rfc822": "Mon, 07 Jan 2019 16:55:54 -0800",

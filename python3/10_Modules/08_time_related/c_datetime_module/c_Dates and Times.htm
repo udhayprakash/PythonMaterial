@@ -1,40 +1,115 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Dates and Times</title><meta name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79"><link rel="HOME" title="PLEAC-Python
-" href="http://pleac.sourceforge.net/pleac_python/index.html"><link rel="PREVIOUS" title="Numbers" href="http://pleac.sourceforge.net/pleac_python/numbers.html"><link rel="NEXT" title="Arrays" href="http://pleac.sourceforge.net/pleac_python/arrays.html"><style type="text/css">    <!--
-      .comment {
-        /* font-lock-comment-face */
-        color: #bebebe;
-      }
-      .comment-delimiter {
-      }
-      .function-name {
-        /* font-lock-function-name-face */
-        color: #b2dfee;
-      }
-      .keyword {
-        /* font-lock-keyword-face */
-        color: #ffa500;
-      }
-      .py-builtins {
-        /* py-builtins-face */
-        color: #ffa500;
-      }
-      .py-pseudo-keyword {
-        /* py-pseudo-keyword-face */
-        color: #ffa500;
-      }
-      .string {
-        /* font-lock-string-face */
-        color: #00cd00;
-      }
-      .type {
-        /* font-lock-type-face */
-        color: #98fb98;
-      }
-    -->
-    </style></head><body class="SECT1" alink="#0000FF" bgcolor="#4f6f6f" link="#f5deb3" text="#cecece" vlink="#d5ae83"><div class="NAVHEADER"><table summary="Header navigation table" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><th colspan="3" align="center">PLEAC-Python
-</th></tr><tr><td align="left" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/numbers.html" accesskey="P">Prev</a></td><td align="center" valign="bottom" width="80%"></td><td align="right" valign="bottom" width="10%"><a href="http://pleac.sourceforge.net/pleac_python/arrays.html" accesskey="N">Next</a></td></tr></tbody></table><hr align="LEFT" width="100%"></div><div class="SECT1"><h1 class="SECT1"><a name="DATESANDTIMES">3. Dates and Times</a></h1><div class="SECT2"><h2 class="SECT2"><a name="AEN132">Introduction</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <title>Dates and Times</title>
+    <meta
+      name="GENERATOR"
+      content="Modular DocBook HTML Stylesheet Version 1.79"
+    />
+    <link
+      rel="HOME"
+      title="PLEAC-Python
+"
+      href="http://pleac.sourceforge.net/pleac_python/index.html"
+    />
+    <link
+      rel="PREVIOUS"
+      title="Numbers"
+      href="http://pleac.sourceforge.net/pleac_python/numbers.html"
+    />
+    <link
+      rel="NEXT"
+      title="Arrays"
+      href="http://pleac.sourceforge.net/pleac_python/arrays.html"
+    />
+    <style type="text/css">
+      <!--
+        .comment {
+          /* font-lock-comment-face */
+          color: #bebebe;
+        }
+        .comment-delimiter {
+        }
+        .function-name {
+          /* font-lock-function-name-face */
+          color: #b2dfee;
+        }
+        .keyword {
+          /* font-lock-keyword-face */
+          color: #ffa500;
+        }
+        .py-builtins {
+          /* py-builtins-face */
+          color: #ffa500;
+        }
+        .py-pseudo-keyword {
+          /* py-pseudo-keyword-face */
+          color: #ffa500;
+        }
+        .string {
+          /* font-lock-string-face */
+          color: #00cd00;
+        }
+        .type {
+          /* font-lock-type-face */
+          color: #98fb98;
+        }
+      -->
+    </style>
+  </head>
+  <body
+    class="SECT1"
+    alink="#0000FF"
+    bgcolor="#4f6f6f"
+    link="#f5deb3"
+    text="#cecece"
+    vlink="#d5ae83"
+  >
+    <div class="NAVHEADER">
+      <table
+        summary="Header navigation table"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+      >
+        <tbody>
+          <tr>
+            <th colspan="3" align="center">PLEAC-Python</th>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" width="10%">
+              <a
+                href="http://pleac.sourceforge.net/pleac_python/numbers.html"
+                accesskey="P"
+                >Prev</a
+              >
+            </td>
+            <td align="center" valign="bottom" width="80%"></td>
+            <td align="right" valign="bottom" width="10%">
+              <a
+                href="http://pleac.sourceforge.net/pleac_python/arrays.html"
+                accesskey="N"
+                >Next</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr align="LEFT" width="100%" />
+    </div>
+    <div class="SECT1">
+      <h1 class="SECT1"><a name="DATESANDTIMES">3. Dates and Times</a></h1>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN132">Introduction</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter">#</span><span class="comment">introduction
 </span><span class="comment-delimiter"># </span><span class="comment">There are three common ways of manipulating dates in Python
 </span><span class="comment-delimiter"># </span><span class="comment">mxDateTime - a popular third-party module (not discussed here)
@@ -55,7 +130,21 @@ today = datetime.date.today()
 </span>
 <span class="keyword">print</span> <span class="string">"Today is day"</span>, today.strftime(<span class="string">"%j"</span>), <span class="string">"of the current year"</span>
 <span class="comment-delimiter"># </span><span class="comment">Today is day 218 of the current year
-</span> </font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN135">Finding Today's Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span> </font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN135">Finding Today's Date</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Finding todays date
 </span>
 today = datetime.date.today()
@@ -66,7 +155,23 @@ today = datetime.date.today()
 </span><span class="comment-delimiter"># </span><span class="comment">All codes are detailed at http://www.python.org/doc/current/lib/module-time.html
 </span><span class="keyword">print</span> t.strftime(<span class="string">"four-digit year: %Y, two-digit year: %y, month: %m, day: %d"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; four-digit year: 2003, two-digit year: 03, month: 08, day: 06
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN138">Converting DMYHMS to Epoch Seconds</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2">
+          <a name="AEN138">Converting DMYHMS to Epoch Seconds</a>
+        </h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Converting DMYHMS to Epoch Seconds
 </span><span class="comment-delimiter"># </span><span class="comment">To work with Epoch Seconds, you need to use the time module
 </span>
@@ -79,7 +184,23 @@ today = datetime.date.today()
 </span>t = datetime.datetime.utcnow()
 <span class="keyword">print</span> <span class="string">"Epoch Seconds:"</span>, time.mktime(t.timetuple())
 <span class="comment-delimiter">#</span><span class="comment">=&gt; Epoch Seconds: 1060195503.0
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN141">Converting Epoch Seconds to DMYHMS</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2">
+          <a name="AEN141">Converting Epoch Seconds to DMYHMS</a>
+        </h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Converting Epoch Seconds to DMYHMS
 </span>
 now = datetime.datetime.fromtimestamp(EpochSeconds)
@@ -94,7 +215,23 @@ now = datetime.datetime.fromtimestamp(EpochSeconds)
 <span class="comment-delimiter"># </span><span class="comment">oldtimetuple contains (year, month, day, hour, minute, second, weekday, yearday, daylightSavingAdjustment)
 </span><span class="keyword">print</span> oldtimetuple
 <span class="comment-delimiter">#</span><span class="comment">=&gt; (2003, 8, 6, 20, 43, 20, 2, 218, 1)
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN144">Adding to or Subtracting from a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2">
+          <a name="AEN144">Adding to or Subtracting from a Date</a>
+        </h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Adding to or Subtracting from a Date
 </span><span class="comment-delimiter"># </span><span class="comment">Use the rather nice datetime.timedelta objects
 </span>
@@ -127,7 +264,21 @@ then = birthtime + interval
 </span>when = datetime.datetime(1973, 1, 18) + datetime.timedelta(days=55)
 <span class="keyword">print</span> <span class="string">"Nat was 55 days old on:"</span>, when.strftime(<span class="string">"%m/%d/%Y"</span>).lstrip(<span class="string">"0"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; Nat was 55 days old on: 3/14/1973
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN147">Difference of Two Dates</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN147">Difference of Two Dates</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Dates produce timedeltas when subtracted.
 </span>
 diff = date2 - date1
@@ -152,7 +303,23 @@ hours, minutes = <span class="py-builtins">divmod</span>(minutes, 60)
 <span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="keyword">print</span> <span class="string">"There were"</span>, difference.days, <span class="string">"days between Bree and Nat."</span>
 <span class="comment-delimiter">#</span><span class="comment">=&gt; There were 3071 days between bree and nat
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN150">Day in a Week/Month/Year or Week Number</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2">
+          <a name="AEN150">Day in a Week/Month/Year or Week Number</a>
+        </h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Day in a Week/Month/Year or Week Number
 </span>
 when = datetime.date(1981, 6, 16)
@@ -164,7 +331,23 @@ when = datetime.date(1981, 6, 16)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; 16/6/1981 was:
 </span><span class="comment-delimiter">#</span><span class="comment">=&gt; Day 2 of the week (a Tuesday). Day 16 of the month (June).
 </span><span class="comment-delimiter">#</span><span class="comment">=&gt; Day 167 of the year (1981), in week 24 of the year.
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN153">Parsing Dates and Times from Strings</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2">
+          <a name="AEN153">Parsing Dates and Times from Strings</a>
+        </h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Parsing Dates and Times from Strings
 </span>
 time.strptime(<span class="string">"Tue Jun 16 20:18:03 1981"</span>)
@@ -177,13 +360,41 @@ time.strptime(<span class="string">"16/6/1981"</span>, <span class="string">"%d/
 <span class="comment-delimiter"># </span><span class="comment">The easiest way to convert this to a datetime seems to be;
 </span>now = datetime.datetime(*time.strptime(<span class="string">"16/6/1981"</span>, <span class="string">"%d/%m/%Y"</span>)[0:5])
 <span class="comment-delimiter"># </span><span class="comment">the '*' operator unpacks the tuple, producing the argument list.
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN156">Printing a Date</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN156">Printing a Date</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Printing a Date
 </span><span class="comment-delimiter"># </span><span class="comment">Use datetime.strftime() - see helpfiles in distro or at python.org
 </span>
 <span class="keyword">print</span> datetime.datetime.now().strftime(<span class="string">"The date is %A (%a) %d/%m/%Y"</span>)
 <span class="comment-delimiter">#</span><span class="comment">=&gt; The date is Friday (Fri) 08/08/2003
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN159">High-Resolution Timers</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN159">High-Resolution Timers</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">High Resolution Timers
 </span>
 t1 = time.clock()
@@ -221,12 +432,40 @@ t = timeit.Timer(code)
 <span class="keyword">print</span> <span class="string">"Create a list of a thousand random numbers. Sort the list. Repeated a thousand times."</span>
 <span class="keyword">print</span> <span class="string">"Average Time:"</span>, t.timeit(1000) / 1000
 <span class="comment-delimiter"># </span><span class="comment">Time taken: 5.24391507859
-</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN162">Short Sleeps</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN162">Short Sleeps</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Short Sleeps
 </span>
 seconds = 3.1
 time.sleep(seconds)
-<span class="keyword">print</span> <span class="string">"boo"</span></font></pre></td></tr></tbody></table></div><div class="SECT2"><h2 class="SECT2"><a name="AEN165">Program: hopdelta</a></h2><table bgcolor="#2F4F4F" border="0" width="100%"><tbody><tr><td><pre class="SCREEN"><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
+<span class="keyword">print</span> <span class="string">"boo"</span></font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="SECT2">
+        <h2 class="SECT2"><a name="AEN165">Program: hopdelta</a></h2>
+        <table bgcolor="#2F4F4F" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td>
+                <pre
+                  class="SCREEN"
+                ><font color="#f5deb3" size="+1"><span class="comment-delimiter"></span><span class="comment"></span><span class="comment-delimiter">#</span><span class="comment">-----------------------------
 </span><span class="comment-delimiter"># </span><span class="comment">Program HopDelta
 </span><span class="comment-delimiter"># </span><span class="comment">Save a raw email to disk and run "python hopdelta.py FILE"
 </span><span class="comment-delimiter"># </span><span class="comment">and it will process the headers and show the time taken
@@ -305,4 +544,53 @@ time.sleep(seconds)
             <span class="keyword">print</span> filename, <span class="string">"doesn't seem to be a valid file."</span>
 
 <span class="keyword">if</span> <span class="py-builtins">__name__</span> == <span class="string">'__main__'</span>:
-    main()</font></pre></td></tr></tbody></table></div></div><div class="NAVFOOTER"><hr align="LEFT" width="100%"><table summary="Footer navigation table" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="left" valign="top" width="33%"><a href="http://pleac.sourceforge.net/pleac_python/numbers.html" accesskey="P">Prev</a></td><td align="center" valign="top" width="34%"><a href="http://pleac.sourceforge.net/pleac_python/index.html" accesskey="H">Home</a></td><td align="right" valign="top" width="33%"><a href="http://pleac.sourceforge.net/pleac_python/arrays.html" accesskey="N">Next</a></td></tr><tr><td align="left" valign="top" width="33%">Numbers</td><td align="center" valign="top" width="34%">&nbsp;</td><td align="right" valign="top" width="33%">Arrays</td></tr></tbody></table></div></body></html>
+    main()</font></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="NAVFOOTER">
+      <hr align="LEFT" width="100%" />
+      <table
+        summary="Footer navigation table"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+      >
+        <tbody>
+          <tr>
+            <td align="left" valign="top" width="33%">
+              <a
+                href="http://pleac.sourceforge.net/pleac_python/numbers.html"
+                accesskey="P"
+                >Prev</a
+              >
+            </td>
+            <td align="center" valign="top" width="34%">
+              <a
+                href="http://pleac.sourceforge.net/pleac_python/index.html"
+                accesskey="H"
+                >Home</a
+              >
+            </td>
+            <td align="right" valign="top" width="33%">
+              <a
+                href="http://pleac.sourceforge.net/pleac_python/arrays.html"
+                accesskey="N"
+                >Next</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" width="33%">Numbers</td>
+            <td align="center" valign="top" width="34%">&nbsp;</td>
+            <td align="right" valign="top" width="33%">Arrays</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

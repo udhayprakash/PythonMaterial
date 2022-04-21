@@ -35,11 +35,10 @@ Higher-Order Functions
     filter
     functools.reduce
 
-
 Partial Functions
 
 Inner Functions
-    global vs nonlocal
+global vs nonlocal
 
 Closures
 
