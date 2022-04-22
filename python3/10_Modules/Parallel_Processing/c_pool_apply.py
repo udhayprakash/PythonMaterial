@@ -1,6 +1,7 @@
 # Parallelizing using Pool.apply()
 
 import multiprocessing as mp
+
 import numpy as np
 
 

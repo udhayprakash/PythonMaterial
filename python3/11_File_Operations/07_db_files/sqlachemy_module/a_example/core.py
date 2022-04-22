@@ -1,12 +1,12 @@
 # Standard imports
 from typing import List
 
-# Third party imports
-from sqlalchemy.orm.session import Session
+# Application imports
+from models import Account, Transaction, User
 from sqlalchemy.orm.exc import NoResultFound
 
-# Application imports
-from models import Account, User, Transaction
+# Third party imports
+from sqlalchemy.orm.session import Session
 
 
 def get_user(username: str, session: Session) -> User:

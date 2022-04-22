@@ -4,8 +4,9 @@ Purpose: To get the Astronomers living in ISS now
 
     http://api.open-notify.org/astros.json
 """
-import requests
 from pprint import pprint
+
+import requests
 
 response = requests.get("http://api.open-notify.org/astros.json")
 # print(f'{response.status_code =}')

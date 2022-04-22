@@ -1,4 +1,5 @@
 from time import sleep
+
 from tqdm import tqdm
 
 
@@ -11,20 +12,20 @@ for j in range(2000):
     task()
 
 
-for j in tqdm(range(2000)):
+for _ in tqdm(range(2000)):
     task()
 
 
 def work(n):
-    for j in range(n):
+    for _ in range(n):
         task()
         yield
 
 
-for i in tqdm(work(2000)):
+for _ in tqdm(work(2000)):
     pass
 
-for i in tqdm(work(2000), total=2000):
+for _ in tqdm(work(2000), total=2000):
     pass
 
 # for HTML 5 progress bar in jupyter notebook

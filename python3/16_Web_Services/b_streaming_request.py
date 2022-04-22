@@ -1,4 +1,5 @@
 import json
+
 import requests
 
 # r = requests.get('https://httpbin.org/stream/5', stream=True)

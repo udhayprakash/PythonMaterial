@@ -4,9 +4,10 @@ Purpose: Generating pydoc documentation
     for custom module
 """
 
-import pydoc
 import os
+import pydoc
 import sys
+
 from my_package import calculator
 
 

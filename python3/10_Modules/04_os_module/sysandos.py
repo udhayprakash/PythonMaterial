@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 
 print("Finding out some properties of the system this program runs in.")
 

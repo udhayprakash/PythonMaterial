@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import sys
-import socket
 import argparse
+import socket
+import sys
 
 
 def main():

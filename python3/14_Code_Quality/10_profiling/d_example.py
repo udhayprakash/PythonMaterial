@@ -1,9 +1,8 @@
 import cProfile
+import pstats
 
 # Using cProfile.Profile example
 import random
-import cProfile
-import pstats
 
 
 def print_msg():

@@ -5,9 +5,8 @@ Purpose: multiple loggers
         - StreamHandler
 """
 import logging
-import sys
 import os
-
+import sys
 
 # print(f'{__file__ =}')
 # print(os.path.splitext(__file__))

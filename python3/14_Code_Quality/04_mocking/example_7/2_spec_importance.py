@@ -1,5 +1,5 @@
-from unittest.mock import patch, Mock
 from unittest import TestCase, main
+from unittest.mock import Mock, patch
 
 # speccing solves mocking problem
 

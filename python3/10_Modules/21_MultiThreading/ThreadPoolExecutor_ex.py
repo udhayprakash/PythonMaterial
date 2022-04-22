@@ -12,8 +12,8 @@ when used in the right context.
 which face an input/output based bottleneck, a good
 example of this would be a web crawler.
 """
-from concurrent.futures import ThreadPoolExecutor
 import threading
+from concurrent.futures import ThreadPoolExecutor
 
 
 def task():

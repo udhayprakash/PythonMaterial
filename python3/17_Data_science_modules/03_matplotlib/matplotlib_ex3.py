@@ -1,5 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
 

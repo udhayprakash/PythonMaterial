@@ -2,8 +2,8 @@
 """
 Purpose: To create USA flag using turtle.
 """
-import turtle
 import time
+import turtle
 
 # create a screen
 screen = turtle.getscreen()

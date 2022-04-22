@@ -5,6 +5,7 @@ Purpose: To generate QR Code
 pip install pyqrcode pypng --user
 """
 import os
+
 import pyqrcode
 
 

@@ -1,4 +1,4 @@
-from gazpacho import get, Soup
+from gazpacho import Soup, get
 
 url = "https://scrape.world/books"
 html = get(url)

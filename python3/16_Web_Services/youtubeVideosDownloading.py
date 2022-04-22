@@ -1,6 +1,6 @@
 import os
 import urllib.request
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import parse_qs, urlparse
 
 
 def download_video(url):

@@ -1,6 +1,6 @@
+import concurrent.futures
 import os
 import sys
-import concurrent.futures
 
 THREAD_POOL = concurrent.futures.ThreadPoolExecutor(max_workers=5)
 

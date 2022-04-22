@@ -2,8 +2,8 @@
 """
 Purpose:
 """
-import signal
 import os
+import signal
 import time
 
 print(dir(signal))

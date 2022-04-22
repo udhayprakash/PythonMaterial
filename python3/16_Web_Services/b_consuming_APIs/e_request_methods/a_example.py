@@ -1,8 +1,9 @@
 #!/usr/bin/python
-import urllib.request
 import json
-import requests
 import urllib
+import urllib.request
+
+import requests
 
 # How to: Send a GET request
 print(requests.get("http://mock.kite.com/text").text)

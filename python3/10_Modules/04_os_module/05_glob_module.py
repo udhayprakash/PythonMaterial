@@ -2,9 +2,9 @@
 """
 Purpose: File Pattern Matching using glob module
 """
-import sys
 import glob
 import os
+import sys
 
 print(f"{sys.exec_prefix =}")
 os.chdir(sys.exec_prefix)

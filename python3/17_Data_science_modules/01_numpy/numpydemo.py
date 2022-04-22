@@ -1,8 +1,8 @@
-import scipy.optimize as sco
-import scipy.integrate as scint
 import matplotlib.pyplot as plt
 import numpy as np
+import scipy.integrate as scint
 import scipy.interpolate as sci
+import scipy.optimize as sco
 
 a = np.array([1.2, 5.5, -4.3, 9.1, 0.2, -3.3], dtype="double")
 print(f"a is now:\n{a!s}")

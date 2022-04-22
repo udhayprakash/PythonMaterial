@@ -1,7 +1,7 @@
 import logging
-from logging import handlers
 import socket
 import traceback
+from logging import handlers
 
 HOST = "localhost"
 FROM = '"Application Alert" <pythontutor@domain.com>'

@@ -56,7 +56,7 @@ student_objects = [
 sorted(student_objects, key=lambda student: student.age)  # sort by age
 # [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 
-from operator import itemgetter, attrgetter
+from operator import attrgetter, itemgetter
 
 sorted(student_tuples, key=itemgetter(2))
 # [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]

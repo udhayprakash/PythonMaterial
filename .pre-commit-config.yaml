@@ -1,12 +1,17 @@
 # Pre-commit framework Configuration
 # See https://pre-commit.com for more information
-fail_fast: true
+fail_fast: false
 repos:
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v2.6.2
     hooks:
       - id: prettier
-
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [--profile=black] # , --check-only
+        description: Sort Python imports
   # Some out-of-the-box hooks for pre-commit
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
@@ -49,6 +54,7 @@ repos:
     hooks:
       - id: black
         language_version: python3
+        args: [--check]
         exclude: python3/14_Code_Quality/python_2to3_ex.py
       - id: black-jupyter
         language_version: python3
@@ -58,4 +64,18 @@ repos:
   #   rev: 3.9.2
   #   hooks:
   #     - id: flake8
-  #       args: [--max-line-length=131]
+  #       args: [--max-line-length=131, --statistics]
+  #       additional_dependencies: ["flake8-bugbear"]
+  #       description: Lint Python Files
+
+  # - repo: https://github.com/PyCQA/bandit
+  #   rev: 1.7.4
+  #   hooks:
+  #     - id: bandit
+  #       args: ["-ll"]
+  #       files: .py$
+
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v0.942
+  #   hooks:
+  #     - id: mypy

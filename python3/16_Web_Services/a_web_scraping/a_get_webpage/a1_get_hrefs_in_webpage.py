@@ -4,7 +4,6 @@ Purpose: Web scrapping
 """
 import re
 
-
 hrefs = []
 with open("rediff.html", "r") as f:
     file_content = f.readlines()

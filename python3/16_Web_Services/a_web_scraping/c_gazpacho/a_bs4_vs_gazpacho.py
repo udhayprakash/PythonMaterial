@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-from bs4 import BeautifulSoup
-from gazpacho import get, Soup
 from datetime import datetime
+
+from bs4 import BeautifulSoup
+from gazpacho import Soup, get
 
 url = "https://en.wikipedia.org/wiki/Gazpacho"
 html = get(url)

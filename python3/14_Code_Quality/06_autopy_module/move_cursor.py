@@ -1,7 +1,8 @@
-import autopy
 import math
 import random
 import time
+
+import autopy
 
 TWO_PI = math.pi * 2.0
 

@@ -3,8 +3,9 @@
 Purpose: Get IP address
     http://httpbin.org/ip
 """
-import requests
 from pprint import pprint
+
+import requests
 
 response = requests.get("http://httpbin.org/ip")
 print(f"{response.status_code =}")

@@ -12,7 +12,9 @@ class TestBlog(TestCase):
                 "userId": 1,
                 "id": 1,
                 "title": "Test Title",
-                "body": "Far out in the uncharted backwaters of the unfashionable  end  of the  western  spiral  arm  of  the Galaxy lies a small unregarded yellow sun.",
+                "body": "Far out in the uncharted backwaters of the unfashionable\
+                    end  of the  western  spiral  arm  of  the Galaxy lies a small\
+                         unregarded yellow sun.",
             }
         ]
 

@@ -1,5 +1,6 @@
-import xlsxwriter
 from datetime import datetime
+
+import xlsxwriter
 from pytz import utc
 
 # default date format

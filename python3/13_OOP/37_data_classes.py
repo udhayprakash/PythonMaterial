@@ -29,11 +29,11 @@ print("\nWith FROZEN =============")
 
 
 @dataclass(frozen=True)
-class Foo(object):
+class Foo2(object):
     x: int
 
 
-f = Foo(12)
+f = Foo2(12)
 print(f"{f.x =}")
 # f.x = 1 # dataclasses.FrozenInstanceError: cannot assign to field 'x'
 # f.y = 123 # dataclasses.FrozenInstanceError: cannot assign to field 'y'

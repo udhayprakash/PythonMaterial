@@ -3,8 +3,8 @@
 Purpose:
 Take a backup zip file for all files on desktop
 """
-from zipfile import ZipFile
 import os
+from zipfile import ZipFile
 
 file_path = os.environ["USERPROFILE"] + os.sep + "Downloads"
 print(f"file_path:{file_path}")

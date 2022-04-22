@@ -1,11 +1,11 @@
 import io
 import time
-import requests
-from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor
+from pathlib import Path
 
-from PIL import Image
 import numpy as np
+import requests
+from PIL import Image
 
 IMAGE_FOLDER = Path(".").absolute() / "demo"
 

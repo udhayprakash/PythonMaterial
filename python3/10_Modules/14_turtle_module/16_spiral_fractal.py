@@ -2,10 +2,11 @@
 """
 Purpose: Spiral Fractal
 """
+import math
+
 # Python program for Plotting Fibonacci
 # spiral fractal using Turtle
 import turtle
-import math
 
 
 def fiboPlot(n):

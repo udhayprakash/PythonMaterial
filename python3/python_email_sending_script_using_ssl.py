@@ -1,8 +1,7 @@
 import logging
-import sys
 import smtplib
+import sys
 from email.mime.text import MIMEText
-
 
 if len(sys.argv) != 6:
     print("\nLess or Unnecessary parameters")

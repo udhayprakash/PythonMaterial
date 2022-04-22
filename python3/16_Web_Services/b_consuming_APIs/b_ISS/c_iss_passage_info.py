@@ -7,9 +7,10 @@ Purpose:
 
      http://api.open-notify.org/iss-pass.json?lat=23&lon=21
 """
-import requests
-from pprint import pprint
 from datetime import datetime
+from pprint import pprint
+
+import requests
 
 URL = "http://api.open-notify.org/iss-pass.json"
 

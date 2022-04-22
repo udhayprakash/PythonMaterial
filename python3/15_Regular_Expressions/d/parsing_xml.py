@@ -2,7 +2,8 @@
 """
 XML parsing: regular expressions (no robust or general)
 """
-import re, pprint
+import pprint
+import re
 
 text = open("books.xml").read()  # str if str pattern
 pattern = '(?s)isbn="(.*?)".*?<title>(.*?)</title>'  # *?=nongreedy

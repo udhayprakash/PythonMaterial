@@ -2,9 +2,9 @@
 """
 Purpose: Downloading Large data files
 """
-import urllib.request
 import urllib.error
 import urllib.parse
+import urllib.request
 
 url = "http://download.thinkbroadband.com/10MB.zip"
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from turtle import *
 from random import randint
+from turtle import *
 
 
 def create_rectangle(turtle, color, x, y, width, height):

@@ -4,15 +4,11 @@ import inspect
 #     print(each)
 
 # FrameInfo(
-
 #      filename='D:\\MEGAsync\\Python-related\\PythonMaterial\\python3\\10_Modules\\21_MultiThreading\\old\\new3.py',
 #      lineno=3,
 #      function='<module>',
 #      code_context=['for each in inspect.stack():\n'],
 #      index=0)
-
-
-import inspect
 
 print(__file__)
 c = inspect.currentframe()

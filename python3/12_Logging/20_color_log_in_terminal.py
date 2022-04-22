@@ -6,6 +6,7 @@ Purpose: Coloring the logs
 """
 import logging
 from os import system
+
 from colorlog import ColoredFormatter
 
 

@@ -3,8 +3,9 @@
 Purpose: Get IP address
     http://httpbin.org/user-agent
 """
-import requests
 from pprint import pprint
+
+import requests
 
 response = requests.get(
     "http://httpbin.org/user-agent",
@@ -20,9 +21,10 @@ if response.headers["Content-Type"] == "application/json":
     response_data = response.json()
     print(f'You are hitting this API with {response_data["user-agent"]}')
 
+import json
+
 # Method 2
 import urllib.request
-import json
 
 req = urllib.request.Request("http://httpbin.org/user-agent")
 req.add_header("User-agent", "Internet Explorer/2.0")

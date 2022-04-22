@@ -1,6 +1,6 @@
-from shutil import *
 import os
 import time
+from shutil import *
 
 
 def show_file_info(filename):

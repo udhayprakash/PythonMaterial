@@ -1,5 +1,5 @@
-import urllib
 import json
+import urllib
 
 serviceurl = "http://maps.googleapis.com/maps/api/geocode/json?"
 

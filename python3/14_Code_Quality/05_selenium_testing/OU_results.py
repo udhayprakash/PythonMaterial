@@ -8,8 +8,9 @@ Hall ticket numbers
 	160314732001, 160314732005
 """
 
-import requests
 from pprint import pprint
+
+import requests
 
 response = requests.post("http://www.osmania.ac.in/res07/20180472.jsp")
 

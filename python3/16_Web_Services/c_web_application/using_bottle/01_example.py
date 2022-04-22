@@ -3,7 +3,7 @@
 Purpose: Creating a REST API using bottle framework
 """
 
-from bottle import run, get, post, delete
+from bottle import delete, get, post, run
 
 persons = [
     {"name": "Udhay", "age": 30, "city": "Hyderabad"},

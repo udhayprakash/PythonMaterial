@@ -2,8 +2,8 @@
 """
 Purpose: cartesian coordinate system
 """
-from math import sqrt
 from collections import namedtuple
+from math import sqrt
 
 # Ordinary tuples
 pt1 = (1.0, 5.0)

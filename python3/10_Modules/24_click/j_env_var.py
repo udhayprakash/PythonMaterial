@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import click
 import os
+
+import click
 
 os.environ["MYDIR"] = "."  # or set this env variable
 

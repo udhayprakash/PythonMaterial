@@ -1,7 +1,7 @@
 from sklearn import metrics
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
 iris = load_iris()
 X = iris.data

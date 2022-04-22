@@ -1,5 +1,5 @@
-from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 
 def string_alignment(my_canvas):

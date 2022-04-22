@@ -7,8 +7,7 @@ Purpose: NLTK
   words that do. lemmas are actual words.
 """
 import nltk
-from nltk.stem import PorterStemmer
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import PorterStemmer, WordNetLemmatizer
 
 ps = PorterStemmer()
 lz = WordNetLemmatizer()

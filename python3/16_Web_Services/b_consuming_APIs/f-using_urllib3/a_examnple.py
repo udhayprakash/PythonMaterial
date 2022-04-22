@@ -1,5 +1,6 @@
-import urllib3
 from pprint import pprint
+
+import urllib3
 
 print(f"{urllib3.__version__ =}")
 

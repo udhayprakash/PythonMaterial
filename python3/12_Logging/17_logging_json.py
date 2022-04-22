@@ -1,6 +1,6 @@
+import json
 import logging
 import logging.config
-import json
 
 
 class JsonFormatter:

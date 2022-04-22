@@ -1,6 +1,6 @@
-from subprocess import call, Popen, PIPE
-from sys import platform, exit
 import os
+from subprocess import PIPE, Popen, call
+from sys import exit, platform
 
 # subprocess.Popen is more general than subprocess.call.
 # Popen doesn't block, allowing you to interact with the

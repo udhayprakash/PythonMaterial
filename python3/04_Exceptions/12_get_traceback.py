@@ -2,8 +2,8 @@
 """
 Purpose: Get the exception traceback
 """
-import traceback
 import sys
+import traceback
 
 num1 = 12
 num2 = 34

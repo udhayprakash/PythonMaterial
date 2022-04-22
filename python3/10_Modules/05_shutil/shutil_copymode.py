@@ -1,6 +1,6 @@
+import os
 from shutil import *
 from subprocess import *
-import os
 
 """
 By default when a new file is created under Unix,

@@ -5,7 +5,6 @@ Purpose: Testing addition functionality in calculator
 import sys
 import unittest
 
-
 sys.path.insert(0, "..")
 from calculator import addition
 

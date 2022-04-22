@@ -1,5 +1,5 @@
+from dataclasses import KW_ONLY, dataclass, field
 from datetime import datetime
-from dataclasses import dataclass, field, KW_ONLY
 
 
 @dataclass(kw_only=True)

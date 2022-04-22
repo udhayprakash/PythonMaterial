@@ -2,9 +2,9 @@
 """
 Purpose: User Input Pattern - Outside_In
 """
-import turtle
-import time
 import random
+import time
+import turtle
 
 print("This program draws shapes based on the number you enter in a uniform pattern.")
 num_str = input("Enter the side number of the shape you want to draw: ")

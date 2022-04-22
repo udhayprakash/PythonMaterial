@@ -2,8 +2,8 @@
 """
 Purpose: To display the Indian Flag
 """
-import turtle
 import time
+import turtle
 
 # create a screen
 screen = turtle.getscreen()

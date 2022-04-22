@@ -3,7 +3,7 @@
 Purpose:
 """
 from unittest import TestCase, main
-from unittest.mock import Mock, patch, PropertyMock
+from unittest.mock import Mock, PropertyMock, patch
 
 
 class Foo:

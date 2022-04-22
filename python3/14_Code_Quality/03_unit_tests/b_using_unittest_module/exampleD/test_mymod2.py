@@ -1,4 +1,5 @@
 import unittest
+
 from mymod import is_anagram
 
 

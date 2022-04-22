@@ -7,6 +7,7 @@ Purpose: dotenv module
 """
 import os
 from pathlib import Path  # Python 3.6+ only
+
 import dotenv
 
 print(f"{dotenv.find_dotenv() =}")

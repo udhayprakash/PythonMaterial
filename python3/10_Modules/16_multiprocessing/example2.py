@@ -1,5 +1,5 @@
-import multiprocessing as mp
 import collections
+import multiprocessing as mp
 
 Msg = collections.namedtuple("Msg", ["event", "args"])
 

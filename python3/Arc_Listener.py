@@ -1,12 +1,13 @@
-import os
-import json
-import re
-import falcon
-import mimetypes
-import sys
-import MySQLdb
 import datetime
+import json
+import mimetypes
+import os
+import re
+import sys
 from wsgiref import simple_server
+
+import falcon
+import MySQLdb
 
 
 class Uploads:

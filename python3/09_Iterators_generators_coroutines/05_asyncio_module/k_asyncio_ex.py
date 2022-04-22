@@ -10,10 +10,10 @@ Purpose: Pools
         1. ThreadPoolExecutor (default for asyncio.run_in_executor)
         2. ProcessPoolExecutor
 """
-import os
-import sys
 import asyncio
 import concurrent.futures
+import os
+import sys
 
 
 def blocking_io():

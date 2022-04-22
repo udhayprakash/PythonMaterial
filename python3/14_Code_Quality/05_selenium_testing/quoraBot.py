@@ -1,7 +1,8 @@
 # Check out pythonhowto.com for more code tutorials !!
-from selenium import webdriver
-from bs4 import BeautifulSoup
 import time
+
+from bs4 import BeautifulSoup
+from selenium import webdriver
 
 driver = webdriver.Chrome()
 

@@ -1,5 +1,6 @@
 import cProfile
 
+
 # How to use Profile class of cProfile
 def create_array():
     arr = []
@@ -17,7 +18,8 @@ def main():
 
 
 if __name__ == "__main__":
-    import cProfile, pstats
+    import cProfile
+    import pstats
 
     profiler = cProfile.Profile()
     profiler.enable()

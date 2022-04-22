@@ -1,4 +1,4 @@
-from unittest import main, TestCase
+from unittest import TestCase, main
 from unittest.mock import Mock
 
 

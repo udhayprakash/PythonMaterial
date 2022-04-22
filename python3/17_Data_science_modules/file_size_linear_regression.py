@@ -1,10 +1,11 @@
-import random
 import gzip
-import shutil
 import os
-from sklearn import linear_model
+import random
+import shutil
+
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn import linear_model
 
 destination = "./samples/"
 

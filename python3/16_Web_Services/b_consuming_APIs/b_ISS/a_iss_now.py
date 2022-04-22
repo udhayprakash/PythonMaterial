@@ -4,9 +4,10 @@ Purpose: To get the current location of ISS
 
     http://api.open-notify.org/iss-now.json
 """
-import requests
-from pprint import pprint
 import json
+from pprint import pprint
+
+import requests
 
 response = requests.get("http://api.open-notify.org/iss-now.json")
 # print(dir(response))

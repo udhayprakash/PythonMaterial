@@ -2,7 +2,7 @@
 """
 Purpose: Static typing
 """
-from typing import Tuple, List, Dict
+from typing import Dict, List, Tuple
 
 # Traditional Approach
 my_data = ("Adam", 10, 5.7)

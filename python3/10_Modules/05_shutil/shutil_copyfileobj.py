@@ -1,7 +1,7 @@
-from shutil import *
 import os
-from io import StringIO
 import sys
+from io import StringIO
+from shutil import *
 
 
 class VerboseStringIO(StringIO):

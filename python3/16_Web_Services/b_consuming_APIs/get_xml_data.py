@@ -1,6 +1,7 @@
-from typing import Optional
 from numbers import Number
+from typing import Optional
 from xml.dom.minidom import parseString
+
 import requests
 
 SETTINGS = {

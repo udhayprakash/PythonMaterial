@@ -1,6 +1,6 @@
 import csv
-import sys
 import json
+import sys
 
 """
 Example usage:

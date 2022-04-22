@@ -1,8 +1,7 @@
 # File: shutil-example-1.py
 
-import shutil
 import os
-
+import shutil
 
 # copy function copies a file in pretty much the same way as the Unix cp command.
 

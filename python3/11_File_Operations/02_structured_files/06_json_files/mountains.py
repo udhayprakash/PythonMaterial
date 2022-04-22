@@ -1,5 +1,5 @@
-import json
 import itertools as it
+import json
 
 with open("mountains.json", encoding="utf-8") as data_file:
     mountains = json.load(data_file)

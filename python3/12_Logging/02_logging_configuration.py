@@ -4,7 +4,6 @@ Purpose: Configuring Logging Level
 """
 import logging
 
-
 # Fixing the level of severity
 logging.basicConfig(level=logging.DEBUG)
 

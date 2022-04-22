@@ -1,6 +1,7 @@
-from faker import Faker
 import random
+
 import pandas as pd
+from faker import Faker
 
 Faker.seed(0)
 random.seed(0)

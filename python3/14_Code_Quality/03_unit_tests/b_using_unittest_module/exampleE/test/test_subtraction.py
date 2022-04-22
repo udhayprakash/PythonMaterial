@@ -2,10 +2,10 @@
 """
 Purpose: Testing subtraction functionality in calculator
 """
-from calculator import subtraction
 import sys
 import unittest
 
+from calculator import subtraction
 
 sys.path.insert(0, "..")
 

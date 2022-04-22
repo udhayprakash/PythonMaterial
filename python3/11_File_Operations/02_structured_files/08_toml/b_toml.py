@@ -1,5 +1,5 @@
-import toml
 import numpy as np
+import toml
 
 a = np.arange(0, 10, dtype=np.double)
 output = {"a": a}

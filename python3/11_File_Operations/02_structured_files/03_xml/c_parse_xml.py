@@ -2,8 +2,8 @@
 """
 Purpose: Reading(Parsing) XML
 """
-from xml.etree.ElementTree import parse
 from pprint import pprint
+from xml.etree.ElementTree import parse
 
 tree = parse("books.xml")
 

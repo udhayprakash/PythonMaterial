@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import click
-from operator import mul
 from functools import reduce
+from operator import mul
+
+import click
 
 
 @click.command()

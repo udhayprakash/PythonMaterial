@@ -1,11 +1,11 @@
 # Third party imports
 import pytest
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 
 # Application imports
-from core import get_user, get_accounts_by_user, compute_balance, debit
-from models import Base, User, Account, UserAccount, Transaction
+from core import compute_balance, debit, get_accounts_by_user, get_user
+from models import Account, Base, Transaction, User, UserAccount
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 
 @pytest.fixture(scope="function")

@@ -3,9 +3,10 @@
 Purpose: Get IP address
     http://httpbin.org/user-agent
 """
-import requests
-import urllib.request
 import json
+import urllib.request
+
+import requests
 
 response = requests.get("http://httpbin.org/user-agent")
 print(f"{response.status_code =}")

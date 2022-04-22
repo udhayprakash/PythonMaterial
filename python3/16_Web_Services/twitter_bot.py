@@ -3,8 +3,9 @@
 Purpose:
 pip install python-twitter
 """
-from twitter import Twitter, OAuth, TwitterHTTPError
 import time
+
+from twitter import OAuth, Twitter, TwitterHTTPError
 
 # enter the corresponding information from your Twitter application:
 consumer_key = ""  # keep the quotes, replace this with your consumer key

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-import sys, socket
+import socket
+import sys
 
 HOST = "localhost"
 PORT = 8888

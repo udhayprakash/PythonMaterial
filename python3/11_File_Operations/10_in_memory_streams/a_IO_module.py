@@ -12,9 +12,9 @@ which is faster.
 In Python 3, these both modules are replaced with io module
 """
 try:
-    from StringIO import StringIO  ## for Python 2
+    from StringIO import StringIO  # # for Python 2
 except ImportError:
-    from io import StringIO  ## for Python 3
+    from io import StringIO  # # for Python 3
 
 
 # Arbitrary string

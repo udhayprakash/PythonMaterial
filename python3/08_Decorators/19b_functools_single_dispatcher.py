@@ -1,5 +1,5 @@
-from functools import singledispatchmethod
 from datetime import date, time
+from functools import singledispatchmethod
 
 
 class Formatter:

@@ -1,6 +1,7 @@
 # WORKS ONLY IN PYTHON 3.X
 
 import multiprocessing as mp
+
 import numpy as np
 
 # Prepare data

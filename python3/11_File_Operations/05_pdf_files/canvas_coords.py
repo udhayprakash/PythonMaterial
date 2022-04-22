@@ -1,6 +1,6 @@
-from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import mm
+from reportlab.pdfgen import canvas
 
 
 def coord(x, y, height, unit=1):

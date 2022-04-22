@@ -3,7 +3,7 @@
 Purpose: Type Annotation
 """
 from collections import defaultdict
-from typing import List, Dict, DefaultDict
+from typing import DefaultDict, Dict, List
 
 # created a custom type and aliases to use it
 Vector = List[float]

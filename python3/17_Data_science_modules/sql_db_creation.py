@@ -1,7 +1,7 @@
 import numpy as np
 import sqlalchemy
 from faker import Faker
-from sqlalchemy import Table, Column, Integer, String, MetaData, Date, ForeignKey
+from sqlalchemy import Column, Date, ForeignKey, Integer, MetaData, String, Table
 
 
 class SQLData:

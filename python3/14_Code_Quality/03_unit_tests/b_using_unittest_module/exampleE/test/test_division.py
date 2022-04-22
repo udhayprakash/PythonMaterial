@@ -2,9 +2,10 @@
 """
 Purpose: Testing division functionality in calculator
 """
-from calculator import division
 import sys
 import unittest
+
+from calculator import division
 
 sys.path.insert(0, "..")
 

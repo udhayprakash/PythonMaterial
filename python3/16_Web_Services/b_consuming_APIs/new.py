@@ -1,5 +1,5 @@
-import urllib.request
 import json
+import urllib.request
 
 url = "https://jsonmock.hackerrank.com/api/countries/search?name="
 

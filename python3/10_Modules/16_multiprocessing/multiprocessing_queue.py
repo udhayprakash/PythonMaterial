@@ -7,8 +7,8 @@ thread and process safe which make them perfect
 for passing data between different processes
     without potentially corrupting data.
 """
-from multiprocessing import Process, Queue
 import random
+from multiprocessing import Process, Queue
 
 
 def rand_num(queue):

@@ -1,7 +1,7 @@
-import main
-
 from unittest import TestCase
 from unittest.mock import patch
+
+import main
 
 
 class TestBlog(TestCase):

@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-import pandas as pd
-import numpy as np
 import random
-import requests
 
 # Don't forget to 'pip install fastf1'
 import fastf1 as ff1
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import requests
 
 # Don't forget to 'pip install seaborn'
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 
 def ergast_retrieve(api_endpoint: str):

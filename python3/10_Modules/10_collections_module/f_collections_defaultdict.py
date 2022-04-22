@@ -2,8 +2,8 @@
 """
 Purpose: Inverting a dictionary
 """
-from collections import defaultdict
 import json
+from collections import defaultdict
 
 
 def tree():

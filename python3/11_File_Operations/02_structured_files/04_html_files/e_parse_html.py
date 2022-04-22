@@ -3,8 +3,8 @@
 Purpose: HtML parsing, using lxml
     - lxml has simple syntax and faster in performance
 """
-from lxml import html
 import requests
+from lxml import html
 
 page = requests.get("https://html.com/")
 tree = html.fromstring(page.content)

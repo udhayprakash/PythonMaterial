@@ -1,9 +1,9 @@
 #!/bin/env python
 
-import sys
-import socketserver
-from http.server import HTTPServer
 import http.server
+import socketserver
+import sys
+from http.server import HTTPServer
 
 
 class ThreadingSimpleServer(socketserver.ThreadingMixIn, HTTPServer):

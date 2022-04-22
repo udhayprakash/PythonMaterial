@@ -8,8 +8,9 @@ Purpose: Parsing reddit feeds
 Installation:
     pip install -U feedparser --user
 """
-import feedparser
 from pprint import pprint
+
+import feedparser
 
 reddit_feed = feedparser.parse("http://www.reddit.com/r/python/.rss")
 

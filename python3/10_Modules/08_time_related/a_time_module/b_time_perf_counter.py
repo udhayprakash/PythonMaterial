@@ -4,7 +4,6 @@ Purpose: Calculating time taken for any logic
 """
 import time
 
-
 # def time_taken(func):
 #     def inner(*args, **kwargs):
 #         start_time = time.perf_counter()

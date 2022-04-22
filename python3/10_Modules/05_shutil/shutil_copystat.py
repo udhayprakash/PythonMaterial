@@ -1,6 +1,6 @@
-from shutil import *
 import os
 import time
+from shutil import *
 
 """
 To copy other meta-data about the file (permissions, last access time, and last modified time), use copystat().

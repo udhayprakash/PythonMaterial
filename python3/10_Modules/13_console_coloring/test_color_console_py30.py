@@ -7,8 +7,9 @@ Test module color_console (Python 3.0). Does not work with Python 2.6.
 $Id: test_color_console_py30.py 535 2009-05-11 02:48:29Z andre $
 """
 
-import consoleColor as cons
 import sys
+
+import consoleColor as cons
 
 
 def test():

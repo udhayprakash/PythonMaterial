@@ -1,6 +1,7 @@
-from flask import Flask, render_template
-import random
 import copy
+import random
+
+from flask import Flask, render_template
 
 app = Flask(__name__)
 

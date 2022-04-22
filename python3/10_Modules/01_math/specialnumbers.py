@@ -1,5 +1,5 @@
-from fractions import Fraction
 from decimal import *
+from fractions import Fraction
 from math import fsum
 
 

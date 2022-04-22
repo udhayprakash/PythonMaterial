@@ -6,7 +6,7 @@ Purpose: Data classes
                 pip install dataclasses
 
 """
-from dataclasses import dataclass, asdict, astuple
+from dataclasses import asdict, astuple, dataclass
 
 
 @dataclass

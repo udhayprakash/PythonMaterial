@@ -1,6 +1,6 @@
-from multiprocessing import Process, Queue
-import time
 import sys
+import time
+from multiprocessing import Process, Queue
 
 
 def reader_proc(queue):

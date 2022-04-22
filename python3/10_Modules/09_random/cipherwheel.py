@@ -2,7 +2,6 @@
 import string
 from random import randrange
 
-
 # functions for encryption and decryption
 
 

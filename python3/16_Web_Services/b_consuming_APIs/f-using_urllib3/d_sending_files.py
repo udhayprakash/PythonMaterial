@@ -2,9 +2,10 @@
 """
 Purpose:
 """
-import urllib3
 import json
 import shutil
+
+import urllib3
 
 # Pool Manager
 http = urllib3.PoolManager()

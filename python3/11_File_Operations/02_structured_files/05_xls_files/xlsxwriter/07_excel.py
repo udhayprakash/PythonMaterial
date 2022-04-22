@@ -1,9 +1,9 @@
 from xlsxwriter.utility import (
-    xl_rowcol_to_cell,
     xl_cell_to_rowcol,
     xl_col_to_name,
     xl_range,
     xl_range_abs,
+    xl_rowcol_to_cell,
 )
 
 cell = xl_rowcol_to_cell(1, 2)  # C2

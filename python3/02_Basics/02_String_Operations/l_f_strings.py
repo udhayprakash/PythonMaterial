@@ -3,9 +3,9 @@
 Purpose: String formatting using F-strings
         Introducted in python 3.6
 """
-from datetime import datetime
-import math
 import decimal
+import math
+from datetime import datetime
 
 print("" % ())  # OLD Style
 print("{}".format(""))  # NEW Style

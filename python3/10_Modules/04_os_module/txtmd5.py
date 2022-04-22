@@ -1,5 +1,5 @@
-import os
 import hashlib
+import os
 from os.path import join
 
 hashes = dict()

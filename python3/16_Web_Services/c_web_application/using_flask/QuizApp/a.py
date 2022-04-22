@@ -1,6 +1,6 @@
 #!/usr/bin/python
-import random
 import copy
+import random
 
 original_questions = {
     # Format is 'question':[options]

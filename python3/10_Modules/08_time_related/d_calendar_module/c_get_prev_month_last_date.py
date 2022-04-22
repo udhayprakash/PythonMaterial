@@ -1,5 +1,5 @@
-import datetime as dt
 import calendar
+import datetime as dt
 
 # today = dt.datetime.now().year
 # calendar.monthrange(today.year)
@@ -9,7 +9,6 @@ import calendar
 # date_list = [base - dt.timedelta(days=x) for x in range(numdays)]
 # print(date_list)
 
-import datetime as dt
 
 today = dt.datetime.now()
 prev_month_last_day = today - dt.timedelta(days=today.day)

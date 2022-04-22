@@ -1,7 +1,7 @@
 import sklearn.datasets as datasets
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 import sklearn.metrics as metrics
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 
 house = datasets.load_boston()
 

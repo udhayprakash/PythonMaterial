@@ -1,7 +1,7 @@
 # File: shutil-example-2.py
 
-import shutil
 import os
+import shutil
 
 SOURCE = "pyDemo/Demo Programs"
 BACKUP = "samples-bak"

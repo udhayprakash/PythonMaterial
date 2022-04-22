@@ -5,6 +5,7 @@ Purpose: __slots__ importance
 
 
 import sys
+
 from pympler.asizeof import asizeof
 
 

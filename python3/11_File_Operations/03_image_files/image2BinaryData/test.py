@@ -1,6 +1,6 @@
-from PIL import Image, ImageFilter
-from numpy import array
 import numpy as np
+from numpy import array
+from PIL import Image, ImageFilter
 
 image = Image.open("A.png")
 # arr = array(image)

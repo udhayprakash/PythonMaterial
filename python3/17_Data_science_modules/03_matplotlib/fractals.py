@@ -1,6 +1,7 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import math
+
+import matplotlib.pyplot as plt
+import numpy as np
 from scipy import ndimage
 
 # Generally all these are after http://paulbourke.net/fractals/

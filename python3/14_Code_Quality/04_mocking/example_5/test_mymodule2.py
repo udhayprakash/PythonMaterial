@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from mymodule import rm
-
 from unittest import TestCase, mock
+
+from mymodule import rm
 
 
 class RmTestCase(TestCase):

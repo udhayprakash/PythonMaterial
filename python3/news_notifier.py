@@ -3,10 +3,11 @@
 Purpose:
     Breaking News Notifications for every one minute
 """
+from time import sleep
+
+import pynotify
 import requests
 from scrapy.selector import HtmlXPathSelector
-import pynotify
-from time import sleep
 
 
 def sendmessage(title, message):

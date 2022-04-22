@@ -1,5 +1,5 @@
-import sys
 import subprocess
+import sys
 
 package = "requests"
 # implement pip as a subprocess:

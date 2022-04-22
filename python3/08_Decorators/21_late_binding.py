@@ -5,8 +5,8 @@ Purpose: Late Binding
 """
 
 
-from operator import mul
 from functools import partial
+from operator import mul
 
 
 def problem():
@@ -44,11 +44,11 @@ def create_multipliers():
 print([m(2) for m in create_multipliers()])  # [8, 8, 8, 8, 8]
 
 
-def create_multipliers():
+def create_multipliers2():
     return [partial(mul, i) for i in range(5)]
 
 
-print([m(2) for m in create_multipliers()])  # [0, 2, 4, 6, 8]
+print([m(2) for m in create_multipliers2()])  # [0, 2, 4, 6, 8]
 
 
 # PS: In some cases, this late binding is advantageous

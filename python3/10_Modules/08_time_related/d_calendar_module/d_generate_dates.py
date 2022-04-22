@@ -4,7 +4,7 @@ Purpose: Given two dates,
     generate a list of dates between these dates
 """
 
-from datetime import timedelta, date
+from datetime import date, timedelta
 
 
 def daterange(date1, date2):

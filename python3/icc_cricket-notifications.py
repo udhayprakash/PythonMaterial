@@ -6,9 +6,10 @@ This requires Growl for Windows to show notifications.
 I hope it helps the windows' users.
 """
 from time import sleep
-from bs4 import BeautifulSoup
-import requests
+
 import gntp.notifier
+import requests
+from bs4 import BeautifulSoup
 
 # register
 

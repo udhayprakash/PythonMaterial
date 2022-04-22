@@ -5,11 +5,7 @@ import sys
 # taking port from first argument
 
 if len(sys.argv) != 3:
-    print(
-        """
-          ./sys.argv[0] <hostname> <port no>
-                  """
-    )
+    print("""./sys.argv[0] <hostname> <port no>""")
     sys.exit()
 else:
     host = str(sys.argv[1])
@@ -30,7 +26,6 @@ except socket.error as error:
 print("socket created")
 
 # host = 'localhost'
-
 try:
     remote_ip = socket.gethostbyname(host)
 except Exception:
@@ -38,9 +33,7 @@ except Exception:
     sys.exit()
 
 print("Ip address of " + host + " is " + remote_ip)
-
 print("connecting to the server \n")
 
 s.connect((remote_ip, port))
-
 print("Socket Connected to " + host + " on ip " + remote_ip + " on port " + str(port))

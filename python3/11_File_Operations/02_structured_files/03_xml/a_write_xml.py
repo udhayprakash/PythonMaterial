@@ -17,9 +17,9 @@ XML vs HTML
 - XML Attribute Values Must Always be Quoted
 
 """
-from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+from xml.etree.ElementTree import Element, SubElement, tostring
 
 root = Element("root")
 

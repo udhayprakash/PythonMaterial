@@ -1,6 +1,7 @@
+from collections.abc import MutableMapping
+
 import flatdict
 import pandas as pd
-from collections.abc import MutableMapping
 
 # ======= method - 1
 

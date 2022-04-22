@@ -1,5 +1,6 @@
-import pytest
 import warnings
+
+import pytest
 
 
 def api_call_v2():

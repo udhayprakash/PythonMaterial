@@ -2,8 +2,8 @@
 """
 Purpose: creating temp files
 """
-import tempfile
 import os
+import tempfile
 
 # print(dir(tempfile))
 print("Current temp directory:", tempfile.gettempdir())

@@ -1,5 +1,6 @@
-import numpy as np
 from time import time
+
+import numpy as np
 
 # Prepare data
 np.random.RandomState(100)

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patheffects as path_effects
 import json
+
+import matplotlib.patheffects as path_effects
+import matplotlib.pyplot as plt
+import numpy as np
 
 with open("mountains.json", encoding="utf-8") as data_file:
     mountains = json.load(data_file)

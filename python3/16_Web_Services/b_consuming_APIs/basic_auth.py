@@ -1,5 +1,6 @@
-import requests
 import sys
+
+import requests
 
 url = "http://httpbin.org/basic-auth/user/passwd"
 

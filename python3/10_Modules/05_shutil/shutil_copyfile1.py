@@ -1,5 +1,5 @@
-from shutil import *
 import os
+from shutil import *
 
 if not os.path.exists("example"):
     os.mkdir("example")

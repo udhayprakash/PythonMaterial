@@ -1,7 +1,6 @@
 from unittest import TestCase, main
 from unittest.mock import patch
 
-
 foo = "Hello"
 bar = "Goodbye"
 

@@ -1,5 +1,5 @@
-import shutil
 import os
+import shutil
 
 if not os.path.exists("target_dir"):
     os.mkdir("target_dir")

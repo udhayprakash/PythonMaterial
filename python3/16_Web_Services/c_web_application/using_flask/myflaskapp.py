@@ -4,7 +4,7 @@ Purpose: Create a Flask App
     with /echo endpoint which should accept only 'message' as parameter
 
 """
-from flask import Flask, request, make_response
+from flask import Flask, make_response, request
 
 app = Flask(__name__)
 

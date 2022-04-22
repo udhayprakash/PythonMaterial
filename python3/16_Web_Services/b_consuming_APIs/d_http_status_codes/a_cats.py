@@ -10,10 +10,11 @@ Purpose: To get the http response status codes
                 4xx     - client side
                 5xx     - server side
 """
-import os
 import ctypes
-import requests
+import os
 from pprint import pprint
+
+import requests
 
 URL = "https://http.cat/{HTTP_CODE}.jpg"
 

@@ -2,8 +2,8 @@
 """
 Purpose: Rotating log handlers
 """
-import os
 import logging
+import os
 from logging.handlers import RotatingFileHandler
 from time import sleep
 

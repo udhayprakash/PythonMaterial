@@ -1,5 +1,5 @@
-import turtle
 import math
+import turtle
 
 
 def dist(p1, p2):

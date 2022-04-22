@@ -1,5 +1,5 @@
-from functools import singledispatch
 from datetime import date, datetime, time
+from functools import singledispatch
 
 # To overload the format() function.
 # Though it is generally not possible, here using singledispatch,

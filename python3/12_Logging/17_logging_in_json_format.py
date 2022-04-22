@@ -6,6 +6,7 @@ Purpose: Logging in JSON format
 
 """
 import logging
+
 from pythonjsonlogger import jsonlogger
 
 # Step 1: create handler

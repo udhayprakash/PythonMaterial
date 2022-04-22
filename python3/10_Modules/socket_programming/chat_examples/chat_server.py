@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # Tcp Chat server
 
-import socket, select
+import select
+import socket
 
 
 # Function to broadcast chat messages to all connected clients

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # telnet program example
-import socket
 import select
+import socket
 import sys
 
 

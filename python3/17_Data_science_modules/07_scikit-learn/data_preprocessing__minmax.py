@@ -11,8 +11,8 @@ Purpose: Data preprocessing
 
         x_transform = (x - minVal)/ (maxVal - minVal)
 """
-import sklearn.preprocessing as preprocessing
 import numpy as np
+import sklearn.preprocessing as preprocessing
 
 X = np.random.randint(2, 10, size=(4, 2))
 X2 = np.random.randint(100, 10000, size=(4, 2))

@@ -6,6 +6,7 @@ Purpose: To display the progress as below:
  pip install --upgrade progressbar --user
 """
 import time
+
 import progressbar
 
 bar = progressbar.ProgressBar()

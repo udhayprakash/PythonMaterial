@@ -5,10 +5,11 @@ Purpose: Using memcached to cache expensive results.
     pip install -U python-memcached --user
 """
 
-import memcache
 import random
 import time
 import timeit
+
+import memcache
 
 # starting the memcache client
 mc = memcache.Client(["127.0.0.1:11211"])

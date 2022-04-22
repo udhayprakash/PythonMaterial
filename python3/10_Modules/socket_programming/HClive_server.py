@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-import sys
 import socket
+import sys
 from _thread import *
 
 HOST = "localhost"

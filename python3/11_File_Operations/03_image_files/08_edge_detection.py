@@ -1,4 +1,4 @@
-from PIL import Image, ImageFilter, ImageEnhance
+from PIL import Image, ImageEnhance, ImageFilter
 
 original_image = Image.open("images/strawberries.png")
 original_image.show()

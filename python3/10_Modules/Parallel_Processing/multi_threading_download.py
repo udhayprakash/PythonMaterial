@@ -1,6 +1,5 @@
 import os
 import urllib.request
-
 from threading import Thread
 
 

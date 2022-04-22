@@ -8,8 +8,9 @@ Purpose: pytest fixtures
     - To see the list of all (built-in and custom) pytest fixtures
         ~pytest --fixtures
 """
-import pytest
 import os
+
+import pytest
 
 
 def test_work_with_tmp_dirs(tmpdir):

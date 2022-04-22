@@ -16,7 +16,6 @@ Purpose: Pickle file operations
 """
 import pickle
 
-
 n1 = (1, 2, 3, 4, 5)
 
 # Python object to pickle string
