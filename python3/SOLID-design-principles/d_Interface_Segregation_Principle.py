@@ -128,5 +128,6 @@ class Rectangle(IShape):  # noqa: F811
 
 
 """
-We can then use the I -interfaces to create Shape specifics like Semi Circle, Right-Angled Triangle, Equilateral Triangle, Blunt-Edged Rectangle, etc.
+We can then use the I -interfaces to create Shape specifics like Semi Circle,
+Right-Angled Triangle, Equilateral Triangle, Blunt-Edged Rectangle, etc.
 """

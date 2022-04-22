@@ -40,7 +40,7 @@ def get_total_size(list_of_image_names):
 
 def resize_images(list_of_image_names):
     print("Optimizing ... ")
-    for index, image_name in enumerate(list_of_image_names):
+    for image_name in list_of_image_names:
         with open(image_name) as f:
             image_binary = f.read()
         with Image(blob=image_binary) as img:
