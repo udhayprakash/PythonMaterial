@@ -2,10 +2,10 @@
 # See https://pre-commit.com for more information
 fail_fast: false
 repos:
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.6.2
-    hooks:
-      - id: prettier
+  # - repo: https://github.com/pre-commit/mirrors-prettier
+  #   rev: v2.6.2
+  #   hooks:
+  #     - id: prettier
   - repo: https://github.com/PyCQA/isort
     rev: 5.10.1
     hooks:
@@ -27,8 +27,8 @@ repos:
       - id: check-symlinks
       - id: check-toml
       - id: check-xml
-      - id: check-yaml
-        args: [--allow-multiple-documents]
+      # - id: check-yaml
+      #   args: [--allow-multiple-documents]
       - id: debug-statements
         exclude: |
           (?x)(
