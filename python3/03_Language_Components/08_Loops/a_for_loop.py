@@ -53,18 +53,6 @@ for each in "None":
 print()
 
 # -----------
-#!/usr/bin/python3
-"""
-Purpose: for loop
-
-    Two types of for loops in any language:
-        1. for (int a = 0; a < 10 ; a ++)       ==> This is NOT VALID in python
-        2. for a in range(0, 10, 1)             ==> This is the only valid for loop in python
-
-NOTE: for loop can be applied only on ITERABLE OBJECT
-    non-iterable objects - int, float, None, bool(True/False)
-    iterable objects     - string, range, list, tuple, set, dictionary, iterators, generators
-"""
 loop_count = 0
 for each_chr in "Python":
     print(loop_count, each_chr)
@@ -96,7 +84,6 @@ for loop_index, each_chr in enumerate("Python", 77):
     print(f"At position {loop_index:2}, character is {each_chr}")
 print()
 
-# ----
 # lists
 for each_ele in [11, 22, 33, 44, 55]:
     print(each_ele, end=", ")

@@ -1,6 +1,7 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 import re
+import sys
 
 
 class Word(object):
@@ -66,9 +67,6 @@ class WordCounter(object):
                 str(o.count),
                 str(o.sentences),
             )
-
-
-import sys
 
 
 def main(argv=None):

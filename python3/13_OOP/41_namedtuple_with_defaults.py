@@ -3,10 +3,11 @@
 Purpose: Named tuple with default values
 
 """
-# from dataclasses import dataclass
+from dataclasses import dataclass
 from typing import NamedTuple
 
-# @dataclass
+
+@dataclass
 class Person(NamedTuple):
     name: str
     age: int

@@ -14,8 +14,8 @@ for each_char in sentence:
     # print(each_char)
     try:
         frequency[each_char] = frequency[each_char] + 1
-    except KeyError as ex:
-        # print('No such key', ex)
+    except KeyError:
+        # print('No such key')
         frequency[each_char] = 1
 
 print(frequency)
@@ -68,7 +68,8 @@ print(f"{sorted(frequency1.items(), reverse=True) =}")
 print()
 print(f"{sorted(frequency1.items()) =}")
 print(f"{sorted(frequency1.items(), key=lambda x:x[0]) =}")  # sort by key
-print(f"{sorted(frequency1.items(), key=lambda x:x[0], reverse=True) =}")  # sort by key
+# sort by key
+print(f"{sorted(frequency1.items(), key=lambda x:x[0], reverse=True) =}")
 
 print()
 print(f"{sorted(frequency1.items(), key=lambda x:x[1]) =}")  # sort by value

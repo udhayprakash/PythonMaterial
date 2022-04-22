@@ -4,7 +4,7 @@ from unittest import TestCase, main
 
 class Foo:
     def __init__(self):
-        x = 20
+        x = 20  # noqa: F841
 
     def bar(self):
         pass

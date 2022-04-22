@@ -39,10 +39,10 @@ def show_message(score):
 url = "http://static.cricinfo.com/rss/livescores.xml"
 while True:
     r = requests.get(url)
-    while r.status_code is not 200:
-        r = requests.get(url)
-        soup = BeautifulSoup(r.text)
-        data = soup.find_all("description")
-        score = data[1].text
-        show_message(str(score))
-        sleep(10)
+    if r.status_code != 200:
+        break
+    soup = BeautifulSoup(r.text)
+    data = soup.find_all("description")
+    score = data[1].text
+    show_message(str(score))
+    sleep(10)

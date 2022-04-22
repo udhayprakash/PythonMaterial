@@ -2,6 +2,8 @@ import cProfile
 
 # Using cProfile.Profile example
 import random
+import cProfile
+import pstats
 
 
 def print_msg():
@@ -27,9 +29,6 @@ def main():
 
 
 if __name__ == "__main__":
-    import cProfile
-    import pstats
-
     profiler = cProfile.Profile()
     profiler.enable()
     main()

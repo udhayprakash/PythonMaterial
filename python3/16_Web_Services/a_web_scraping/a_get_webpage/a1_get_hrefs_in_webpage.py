@@ -11,7 +11,7 @@ with open("rediff.html", "r") as f:
 
     for each_line in file_content:
         if "href" in each_line:
-            result = re.search('href="https://(.*)("\s)?', each_line)
+            result = re.search(r'href="https://(.*)("\s)?', each_line)
             if result:
                 # print(result.group())
                 hrefs.append(result.groups(1)[0] + "\n")

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import ast
 
 # eval expects only strings, bytes or code object
 print(eval("5"))
@@ -15,8 +16,6 @@ print(exec("5"))
 exec("print('Hello world!')")
 
 print("\n############### AST ##################")
-import ast
-
 code = ast.parse("5 * 34 - 2342/2 %23 //3", mode="eval")
 print(type(code), code)
 print(eval(compile(code, "", mode="eval")))

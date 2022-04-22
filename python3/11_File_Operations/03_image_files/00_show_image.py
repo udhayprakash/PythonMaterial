@@ -3,13 +3,15 @@
 
 pip install -U pillow --user
 """
+import matplotlib.pyplot as plt
 from PIL import Image
 
 my_image = Image.open("images/cameraman.jpg")
 my_image.show()
 
-# Get Image information
+
 def get_image_info(path):
+    """To Get Image information"""
     image = Image.open(path)
     print(f"This image is {image.width} x {image.height}")
     exif = image._getexif()
@@ -18,8 +20,6 @@ def get_image_info(path):
 
 get_image_info("images/cameraman.jpg")
 get_image_info("images/python.jpg")
-
-import matplotlib.pyplot as plt
 
 
 def get_image_histrogram(path):

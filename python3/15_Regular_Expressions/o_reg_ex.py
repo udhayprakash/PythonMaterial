@@ -79,7 +79,7 @@ print(re.findall("[a-zA-Z]+", target_string))
 # ['Hi', 'everyone', 'The', 'PARTY', 'is', 'on', 'rd', 'of', 'May', 'at', 'xyz', 'place', 'at', 'time', 'pm', 'IST', 'And', 'the', 'RECEPTION', 'is', 'on', 'th', 'of', 'May', 'at', 'xxx', 'place', 'Thanks']
 
 print(re.findall("[a-zA-Z0-9]+", target_string))
-print(re.findall("\w+", target_string))
+print(re.findall(r"\w+", target_string))
 # ['Hi', 'everyone', 'The', 'PARTY', 'is', 'on', '23rd', 'of', 'May', '2020', 'at', 'xyz', 'place', 'at', 'time', '7', '30', 'pm', 'IST', 'And', 'the', 'RECEPTION', 'is', 'on', '30th', 'of', 'May', '2020', 'at', 'xxx', 'place', 'Thanks']
 
 

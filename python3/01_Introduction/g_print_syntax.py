@@ -19,7 +19,7 @@ print()
 print("hello \tworld \\npython")
 print(r"hello \tworld \npython")
 
-print("C:\my\newfolder")
+print("C:\my\newfolder")  # noqa: W605
 print(r"C:\my\newfolder")
 print()
 

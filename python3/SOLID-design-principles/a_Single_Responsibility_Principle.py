@@ -15,7 +15,7 @@ class Animal:
     def get_name(self) -> str:
         pass
 
-    def save(self, animal: Animal):
+    def save(self, animal: Animal):  # noqa: F821
         pass
 
 
@@ -31,7 +31,7 @@ To make this conform to SRP, we create another class that will handle the sole r
 """
 
 
-class Animal:
+class Animal:  # noqa: F821
     def __init__(self, name: str):
         self.name = name
 

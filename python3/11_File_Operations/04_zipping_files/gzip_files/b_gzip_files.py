@@ -1,7 +1,6 @@
-# compress a gzip file
-
 import gzip
 
+# compress a gzip file
 input = open("/Users/joe/xxtest", "rb")
 s = input.read()
 input.close()
@@ -15,9 +14,6 @@ print("done")
 
 # ----------------------------------------
 # decompress a gzip file
-
-import gzip
-
 input = gzip.GzipFile("/Users/joe/xxtest.gz", "rb")
 s = input.read()
 input.close()

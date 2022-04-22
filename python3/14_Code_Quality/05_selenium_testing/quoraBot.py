@@ -20,13 +20,13 @@ for x in forms:
             email_css = "#" + x.find("input")["id"]
         if data == "password":
             password_css = "#" + x.find("input")["id"]
-    except:
+    except Exception:
         pass
     try:
         data = x.find("input")["value"]
         if data == "Login":
             login_css = "#" + x.find("input")["id"]
-    except:
+    except Exception:
         pass
 
 driver.find_element_by_css_selector(email_css).send_keys(email)

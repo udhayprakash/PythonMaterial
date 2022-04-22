@@ -144,7 +144,7 @@ def linkedin_companies_parser(url):
                         "url": url,
                     }
                     return data
-                except:
+                except Exception:
                     print("cant parse page", url)
 
             # Retry in case of captcha or login page redirection
@@ -153,7 +153,7 @@ def linkedin_companies_parser(url):
                     print("linkedin page not found")
                 else:
                     raise ValueError("redirecting to login page or captcha found")
-        except:
+        except Exception:
             print("retrying :", url)
 
 

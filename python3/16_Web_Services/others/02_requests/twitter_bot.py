@@ -20,7 +20,7 @@ class Bot:
         api = tweepy.API(auth)
         try:
             api.verify_credentials()
-        except:
+        except Exception:
             print("The bot was unable to authenticate")
         else:
             print("The bot has been authenticate")

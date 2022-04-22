@@ -8,11 +8,11 @@ To install ipdb,
     pip install -U ipdb --user
 
 """
-numbers = range(0, 100)
-
 import ipdb
 
 ipdb.set_trace()
+
+numbers = range(0, 100)
 
 for each_num in numbers:
     if each_num % 2 == 0:  # each_num % 2
