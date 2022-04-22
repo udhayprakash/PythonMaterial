@@ -44,3 +44,18 @@ pre-commit installs and manages the environments for the code linting and format
 - For running the pre-commit hook, before commiting the code,
 
   pre-commit run --all-files
+
+# Git Hooks
+
+- Before committing ("pre-commit")
+- Before writing a commit message ("prepare-commit-msg")
+- After writing a commit message ("commit-msg")
+- After committing ("post-commit")
+- Before a rebase ("pre-rebase")
+- After a checkout ("post-checkout")
+- After a merge ("post-merge")
+- Before receiving a push ("pre-receive")
+- After receiving a push ("post-receive")
+- Before receiving a push, run once per branch ("update")
+
+To add a hook, place a file with the hook name in .git/hooks/.

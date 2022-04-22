@@ -2,6 +2,7 @@
 
 - Threads share memory and don’t need to create a new virtual memory space when they are created and thus don’t require a MMU (memory management unit) context switch
 - Communication between threads is simpler as they have a shared memory while processes requires various modes of IPC (Inter-Process Communications) like semaphores, message queues, pipes etc.
+- Threading can allow concurrency and reduces time consumption, increase performance.
 
 ## Thread Synchronization in Python
 
