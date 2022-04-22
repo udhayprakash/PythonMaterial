@@ -1,255 +1,197 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+############# SITE PROPERTIES #############
 
-# --- Required options --- #
+# localhost port (can be anything)
+port: 4000
 
-# Name of website
-title: My Website
+# used with localization. change to "japanese" or "german" if localizing.
+language: english
 
-# Your name to show in the footer
-author: Udhay Prakash Pethakamsetty
+# the output. in the _config_pdf.yml, this is "pdf". you can create conditions based on this property (such as navtab content that should appear in web but not pdf).
+format: web
 
-# --- List of links in the navigation bar --- #
+# the little icon that appears in the browser window's tab
+favicon: assets/favicon.ico
 
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://udhay3prakash.blogspot.in/"
+############# TOP NAVIGATION BAR ################
 
-# --- Logo --- #
+# use a logo image in your nav bar.
+use_logo: true
 
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# logo image to use. logo images are constrained at 50px in height.
+logo: assets/companylogo.png
 
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+# use text title instead. text title read from uistring.title in ui strings section.
+use_text_title: false
 
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
-#title-img: /path/to/image
+# make search bar appear in top nav?
+search_in_topnav: true
 
-# --- Footer social media links --- #
+# make search bar appear in sidebar?
+search_in_sidebar: false
 
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
-social-network-links:
-  email: "uday3prakash@gmail.com"
-  rss: true # remove this line if you don't want to show an RSS link at the bottom
-  facebook: udhay.prakash.3939
-  github: udhayprakash
-  twitter: uday3prakash
-  youtube: c/UCxRtCHnBPXQjyf12A4IhaKQ
-#  medium: yourname
-#  reddit: yourname
- linkedin: udhayprakashpethakamsetty
-#  xing: yourname
- stackoverflow: "3131613/udhay-prakash"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid
-#  kaggle: yourname
+# in responsive view, show sidebar toggle button?
+toggle-sidebar-button: true
 
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# in responsive view, show navbar toggle button?
+navbar-toggle: true
 
-# --- General options --- #
+############# AUTOMATED LINKS #############
 
-# Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
+# the links.html script requires you to list your sidebars here. this is if you're using managed links (see jekyllhowto-content-and-formatting.html#automatedlinks)
+sidebars:
+  - generic
+  - jekyllhowto
 
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# determines whether the links.html script uses the jurl or hurl values in the sidebar data file
+link_type: jurl
 
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
+############# FEEDBACK BUTTON #############
 
-# Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
+# show feedback button in top nav bar?
+show_feedback: true
 
-# Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
+# email address feedback gets sent to
+feedback_email: someemail@gmail.com
 
-# Add a search button to the navbar
-post_search: true
+# note: to customize the auto-completed body text, overwrite it by adding _includes/feedback.html in your own theme.
 
-# The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+############# GITHUB BUTTON #############
 
-# --- Colours / background image --- #
+# inserts github link in top nav bar (recommended)
+github_button_location_top_navbar: true
 
-# Personalize the colours in your website. Colour values can be any valid CSS colour
+# inserts github link below page title
+github_button_location_below_title: false
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+# inserts github link at bottom of page (least visible)
+github_button_location_page_bottom: false
 
-# Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
+# link to your github repo. replace <organization> (if applicable) and <repo name> and <branch name>. Note that the github link will be {{site.github_editme_path}}/{{page.path}}
+github_editme_path: https://github.com/<organization>/<repo name>/blob/<branch name>
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+############# EXCLUDE LIST #############
+# these folders or files will not be included in the output. you can use wildcards with asterisks.
+exclude:
+  - Config
+  - s3_website
+  - _config_*
+  - Gemfile*
+  - serve_*
+  - build_*
+  - gem_*
+  - prince-list.txt
+  - jekyll-theme-doc-project*
+  - pdf
+  - mobi
 
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+############# IMAGE PATHS #############
 
-# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+# if you want the images to be prefaced with a specific path, insert it here. Don't include a trailing slash at the end.
+# the image include will insert this path before the image file name and will also add a /.
+image_path: images
+audio_path: audio
 
-# If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
-
-# --- Web Analytics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using Google Analytics
-#google_analytics: ""
-
-# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
-#cloudflare_analytics: ""
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comments --- #
-
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
-
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
-
-# To use CommentBox, sign up for a Project ID on https://commentbox.io
-#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
-
-# To use Utterances comments: (0) uncomment the following section, (1) fill in
-# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-# (3) Install the Utterances app in your repository https://github.com/apps/utterances
-# See more details about the parameters below at https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-# section commented if you aren't using reCaptcha for spam protection.
-# Using Staticman requires advanced knowledge, please consult
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
-# instructions. For any support with staticman please direct questions to staticman and
-# not to BeautifulJekyll.
-#staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
-#    siteKey  : # You need to apply for a site key on Google
-#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
-
-# To use giscus comments:
-# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository,
-# (2) Install the giscus app in your repository (details at https://giscus.app),
-# (3) Fill in *all* the parameters below
-# See more details about giscus and each of the following parameters at https://giscus.app
-#giscus:
-#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
-#  category: Announcements # Category name of your GitHub Discussion posts
-#  category-id: # ID of your category, retrieve this info from https://giscus.app
-#  mapping: pathname
-#  reactions-enabled: 1
-#  emit-metadata: 0
-#  theme: light
-
-# --- Misc --- #
-
-# Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
-
-# Facebook App ID
-#fb_app_id: ""
-
-# --- You don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-
-kramdown:
-  input: GFM
-
-# Default YAML values (more information on Jekyll's site)
+############# DEFAULTS #############
+# you can define default frontmatter values here. you can narrow the type down with subfolders (e.g., docs/myfolder).
+# you might want to list your sidebar and product as default frontmatter values
+# with translation, change topnav, footer (and sidebar) to use topnav_ja, footer_ja, generic_ja etc. for Japanese, or _de for german. you must have corresponding
+# data files with those _ja or _de file names. Read more in jekyllhowto-localization.html.
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: pages
     values:
-      layout: "post"
-      comments: true # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      layout: default
+      topnav: topnav
+      footer: footer
   - scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: ""
+      type: docs
     values:
-      layout: "page"
+      layout: default
+      topnav: topnav
+      footer: footer
+  - scope:
+      path: ""
+      type: search
+    values:
+      layout: default
+      topnav: topnav
+      footer: footer
+      type: search
+      sidebar: jekyllhowto
 
-# Exclude these files from production site
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
+  - scope:
+      path: "images"
+    values:
+      image: true
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+############# COMMENTS #############
+# show Disqus comments after pages
+show_disqus_comments: false
+
+# shortname for configuring Disqus
+disqus_shortname:
+
+############# GOOGLE ANALYTICS #############
+
+# include Google Analytics?
+show_google_analytics: false
+
+# Google Analytics tracking code number (not the whole code snippet -- just UA-123456 or so)
+# To adjust the google analytics code snippet, see the _includes/google_analytics.html code in the gem
+google_analytics_code:
+
+############# Breadcrumb ############
+# you can modify the breadcrumb in _includes/breadcrumb.html
+
+# Display breadcrumbs at all?
+breadcrumb_display: true
+
+# Display Home path in breadcrumb?
+breadcrumb_home_display: true
+
+# Url for Home path to point to
+breadcrumb_home_url: http://yourcompanysite.com
+
+##########  MARKDOWN PROCESS AND FILTER ##########
+# leave these settings as is unless you want to use something other than kramdown Markdown
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+  ########## SASS SETTINGS ##########
+  # used to define sass settings. leave as is.
+
+  sass:
+    style: compressed
+
+############# COLLECTIONS #############
+# used to define collections used in project. leave as is.
+
+collections:
+  docs:
+    output: true
+
+########## UI text ###############
+# The UI text is separated into strings defined here to facilitate translation. Grouping them here also consolidates all UI text.
+# Translate these for Japanese and German outputs.
+
+uistring:
+  title: Jekyll Doc Project theme # title to appear in nav bar and page meta
+  description: Description of the site # Displays as site description meta tag for site
+  copyright: 2017 Your Company, Inc. # appears in footer
+  breadcrumb_home_name: Home # display name for "Home" path in the breadcrumb
+  tableofcontents: Table of Contents # text that appears before in-page table of contents
+  expandall: Expand All # appears as text in sidebar to expand all levels
+  collapseall: Collapse All # appears as text in sidebar to collapse all levels
+  search_placeholder_text: Search ... # appears as placeholder in search field
+  no_search_results_found: No matches found. Try using other keywords?
+  feedback_link_name: Feedback # name of Feedback link
+  feedback_subject_line: Feedback about docs # Auto-filled Subject link of email
+  github_edit_button_text: Edit on GitHub # text for github button
