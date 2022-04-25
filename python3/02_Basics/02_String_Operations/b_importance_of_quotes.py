@@ -37,30 +37,30 @@ print("\n\n")
 # Multi-line Strings
 print(
     "Today is an awesome day\
-            to learn python"
+    to learn python"
 )
 print(
     "Today is an awesome day\
-            to learn python"
+    to learn python"
+)
+
+print(
+    """Today is an awesome day\
+    to learn python"""
 )
 print(
     """Today is an awesome day\
-            to learn python"""
+    to learn python"""
 )
-print(
-    """Today is an awesome day\
-            to learn python"""
-)
-
-
 print()
+
 print(
     """Today is an awesome day
-          to learn python"""
+    to learn python"""
 )
 print(
     """Today is an awesome day
-          to learn python"""
+    to learn python"""
 )
 
 print(
@@ -74,10 +74,15 @@ print(
 # NOTE 2: triple quote strings are multi-line strings
 
 # Gotcha
-my_string = '''select * from my_table where column='python' and column2 = "django"'''
+# my_string = 'select * from my_table where column='python' and column2 = "django"'
+# my_string = "select * from my_table where column='python' and column2 = "django""
+my_string = ''' select * from my_table where column='python' and column2 = "django"'''
 print(my_string)
-# my_string = '''select * from my_table where column='python' and column2 = 'django''''
-# SyntaxError: EOL while scanning string literal
 
-my_string = """select * from my_table where column='python' and column2 = 'django' """
+# my_string = """  select * from my_table where column='python' and column2 = "django""""
+# my_string = ''' select * from my_table where column='python' and column2 = 'django''''
+my_string = """ select * from my_table where column='python' and column2 = 'django' """
+print(my_string)
+
+my_string = """ select * from my_table where column='python' and column2 = 'django';"""
 print(my_string)

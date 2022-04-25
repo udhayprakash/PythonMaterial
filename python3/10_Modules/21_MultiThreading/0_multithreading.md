@@ -1,3 +1,12 @@
+# Tasks
+
+- I/O-bound tasks
+  – the time spending on I/O significantly more than the time spending on computation
+- CPU-bound tasks
+  – the time spending on computation is significantly higher than the time waiting for I/O.
+
+- Python threading is optimized for I/O bound tasks. For example, requesting remote resources, connecting a database server, or reading and writing files.
+
 ## Threads
 
 - Threads share memory and don’t need to create a new virtual memory space when they are created and thus don’t require a MMU (memory management unit) context switch

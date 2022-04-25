@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: String slicing operations
 """
@@ -15,7 +14,9 @@ language = "Python Programming"
 # default step = +1
 
 # language[0:7:+1] => 0, 1, 2, 3, 4, 5, 6
+print("language[0:7:1]:", language[0:7:1])
 print("language[:7]  :", language[:7])
+
 print("language[0:]  :", language[0:])  # language[0:18:+1]
 print("language[6:]  :", language[6:])  # language[6:18:+1]
 print()
@@ -33,10 +34,14 @@ print()
 # then
 #   start_index = length of string - 1
 #   final_index = -1
+
 # str reversal  language[17:-1:-1]=> 17,16,15, .... 3, 2, 1, 0
 print("language[::-1] :", language[::-1])
-print("language[::-2] :", language[::-2])  # str reversal  language[17:-1:-2]
-# str reversal  language[17:-1:-5]=> 17,12,7,2
+
+# str reversal  language[17:-1:-3]=> 17, 14, 11, 8, 5, 2, -1
+print("language[::-3] :", language[::-3])
+
+# str reversal  language[17:-1:-5]=> 17, 12, 7, 2
 print("language[::-5] :", language[::-5])
 print()
 
@@ -49,10 +54,14 @@ name = "Varun Dhawan"
 # -12  -11 -10  -9  -8 -7 -6 -5 -4 -3 -2 -1  - reverse indexing
 
 print("name             :", name)
+
 print("name[:]          :", name[:])
 print("name[::]         :", name[::])
 print("name[::1]        :", name[::1])
 print("name[::-1]       :", name[::-1])  # string reversal
+
+print("name[2::-1]      :", name[2::-1])  # name[2:-1:-1]
+print("name[2:4:-1]      :", name[2:4:-1])  # name[2:4:-1]
 
 # Assignment: reverse each word in given sentence in same order
 # input : today is good day

@@ -52,7 +52,6 @@ print("repr(language)     :", repr(language))
 print("language.__repr__():", language.__repr__())
 print()
 
-
 print("language             :", language)
 print("language.capitalize():", language.capitalize())
 print("language.title()     :", language.title())
