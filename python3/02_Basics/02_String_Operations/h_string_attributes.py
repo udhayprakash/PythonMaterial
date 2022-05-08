@@ -14,6 +14,11 @@ print("  python Production  ".strip("p "))
 print("  python Production  ".strip("p thno"))
 print("  python Production  ".strip("p thnoy"))  # 'Producti'
 
+# >>> "  python Production  ".strip(" ").strip("pn").strip("t").strip("i").strip("o").strip("y")
+# 'thon Producti'
+
+# >>> "  python Production  ".strip(" pntioy")
+# 'hon Produc'
 
 "aaaaaaaaaaaaaaaaaaaaaa".strip("a")  # ''
 "aaaaaaaa b aaaaaaaaaaa".strip("ab")  # ' b '

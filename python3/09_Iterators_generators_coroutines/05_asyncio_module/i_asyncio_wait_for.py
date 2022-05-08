@@ -2,7 +2,12 @@
 """
 Purpose: asyncio
     asyncio.wait_for: wait for a single awaitable,
-        until the given ‘timeout’ is reached.
+        until the given "timeout" is reached.
+
+    Takes one awaitable.
+    Wraps the awaitable in a task if necessary.
+    Takes a timeout that cancels the task if it expires.
+    Unlike create_task(), is a coroutine itself that doesn't execute until awaited.
 """
 import asyncio
 

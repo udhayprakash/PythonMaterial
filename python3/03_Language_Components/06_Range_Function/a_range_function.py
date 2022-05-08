@@ -15,12 +15,12 @@ Purpose: range() function
     - Lazy Loading Object
 """
 # values = range()
-# TypeError: range expected 1 argument, got 0
+# TypeError: range expected at least 1 argument, got 0
 
 # help(range)
 
 values = range(9)  # range(FINAL_VALUE) => range(0, 9, 1)
-print(type(values), values)  # <class 'range'> range(0,9)
+print(type(values), values)  # <class 'range'> range(0, 9)
 
 # range(INITIAL_VALUE, FINAL_VALUE) => range(0, 9, 1)
 values = range(0, 9)
@@ -30,8 +30,10 @@ print(type(values), values)  # <class 'range'> range(0,9)
 values = range(0, 9, 1)
 print(type(values), values)  # <class 'range'> range(0,9)
 
+
 for each_ele in values:
     print(each_ele)
+
 
 print(f"{list(values)  =}")
 print(f"{tuple(values) =}")

@@ -17,14 +17,17 @@ print()
 print("True == 1.0  ", True == 1.0)
 print("False == 0.0 ", False == 0.0)
 print()
+
 print("True == 1.1  ", True == 1.1)
 print()
 
-# True acts like  1 and False acts like 0 in all cases,
-# except when converted to strings
+
+# True acts like  1 and False acts like 0 during
+# arithmetic/relational/conditional operations
 print("str(1) != str(True) ", str(1) != str(True))
 print("str(0) != str(False)", str(0) != str(False))
 print()
+
 
 print("str(True * 1) == str(1)", str(True * 1) == str(1))
 
@@ -45,3 +48,12 @@ print(str(True))
 >>> str(True * 1)
 '1'
 """
+
+print()
+
+# print(True + '1')
+# TypeError: unsupported operand type(s) for +: 'bool' and 'str'
+
+print(str(True) + "1")
+print(True + int("1"))
+print(True + bool("1"))

@@ -1,16 +1,22 @@
 #!/usr/bin/python3
 """
-Purpose: bool() builtin function
+Purpose: bool() builtin function usage
 """
+
+name = "Udhay"
+print("bool(name)       = ", bool(name))
+print("bool(name != '') = ", bool(name != ""))
 
 num1 = -0.000000056
 print("bool(num1)       ", bool(num1))
 print("bool(num1 != 0)  ", bool(num1 != 0))
 print()
 
+# explicit condition
 if num1 != 0:  # => bool(num1 != 0) => bool(True) => True
     print("It is non-zero")
 
+# Implicit condition
 if num1:  # => bool(num1 != 0) => bool(True) => True
     print("It is non-zero")
 
@@ -42,6 +48,7 @@ if (
 ):  # => bool(not num2) => bool( not num2 != 0) => bool(not False) => bool(True) => True
     print("It is zero ")
 
+
 # ---------------------------------------------------------
 if num1 < 7 and num1 < 8:
     print("num1 < 7 and num1 < 8")
@@ -54,6 +61,7 @@ if num1 < 7 and num1 < 8:
 if not (num1 > 7 and num1 < 8):
     print("not (num1 > 7 and num1 < 8)")
 
+
 # ---------------------------
 if num1:  # num1 != 0
     print("a=", num1)
@@ -64,6 +72,7 @@ if not 0:
 while 1:
     print("hello")
     break
+print()
 
 # -----------------------------
 # Question

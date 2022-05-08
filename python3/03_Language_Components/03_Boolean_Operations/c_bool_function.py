@@ -22,6 +22,7 @@ print("bool(0.000000001) ", bool(0.000000001))
 print("bool(-0.000000001)", bool(-0.000000001))
 print()
 
+
 # strings
 #  True - non-empty string
 #  False - empty string
@@ -53,11 +54,14 @@ print("[]               ", bool([]))
 print("{}               ", bool({}))
 print()
 
+
 # Relational operations -> Boolean result -> bool()
 print("74 > 59           ", 74 > 59)
 print("bool(74 > 59)     ", bool(74 > 59))
+
 print("74 <= 59          ", 74 <= 59)
 print("bool(74 <= 59)    ", bool(74 <= 59))
+print()
 
 # Logical operations -> Boolean result -> bool()
 print("1 < 2 and 23 <=23       ", 1 < 2 and 23 <= 23)

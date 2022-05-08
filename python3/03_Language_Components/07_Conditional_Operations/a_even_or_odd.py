@@ -16,6 +16,7 @@ if number:
 if number != 0:
     print(f"{number} is non-zero")
 
+
 if number % 2:  # number % 2 != 0
     print(f"{number} is odd")
 
@@ -35,6 +36,7 @@ if number % 2:  # number % 2 != 0
 if number % 2 == 0:
     print(f"{number} is Even")
 
+# --------------------------------
 
 # Rewriting with else
 if number % 2:
@@ -47,6 +49,7 @@ if number % 2 == 0:
     print(f"{number} is EVEN")
 else:
     print(f"{number} is ODD")
+
 
 # Assignment: Generate even numbers between 45 & 137
 # loop values between limits, test eveness for each number

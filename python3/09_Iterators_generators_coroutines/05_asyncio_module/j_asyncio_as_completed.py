@@ -3,6 +3,12 @@
 Purpose: asyncio
     asyncio.as_completed: similar to gather but returns
         Futures that are populated when results are ready.
+
+    Takes many awaitables in an iterable.
+    Yields Futures that you have to await as soon as something is done.
+    Does not guarantee to return the original awaitables that you passed in.
+    Does wrap the awaitables in tasks (it actually calls asyncio.ensure_future() on them).
+    Takes an optional timeout.
 """
 import asyncio
 from random import randrange

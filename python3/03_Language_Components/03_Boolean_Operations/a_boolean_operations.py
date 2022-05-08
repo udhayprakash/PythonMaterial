@@ -42,9 +42,11 @@ print("id(true)     = ", id(true))
 
 print("type(True)   =", type(True))
 print("type(true)   =", type(true))
+print()
 
 print("True         = ", True)
-print("True * 30    = ", True * 30)  # True has a value of one
+print("True * 30    = ", True * 30)
+print("True * 3.4   = ", True * 3.4)  # True has a value of one
 
 print("False        = ", False)
 print("False * 30   = ", False * 30)  # False has a value of zero

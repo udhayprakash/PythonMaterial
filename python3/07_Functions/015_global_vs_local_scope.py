@@ -26,10 +26,12 @@ immutable object CANT be edited within function without passing as args
 #
 # assert globals() == locals()
 
+from audioop import reverse
+
+print("\n case 1============")
 pi = 3.141  # immutable - call by value
 
 
-# case 1============
 def simple_function():
     print("pi = {}".format(pi))
     print("pi = {}".format(pi * 12))
@@ -40,7 +42,9 @@ def simple_function():
 simple_function()
 
 
-# case 2 ==================
+print("\n case 2 ==================")
+
+
 def simple_function():
     print("before change pi = {}".format(pi))
     pi = 3333333
@@ -52,8 +56,9 @@ def simple_function():
 # simple_function()
 # UnboundLocalError: local variable 'pi' referenced before assignment
 
+print("\n case 3=====   call by value")
 
-# case 3=====   call by value
+
 def simple_function(pi):
     print("before change pi    = {}".format(pi))
     pi = 3333333
@@ -79,9 +84,7 @@ print("outside function pi = {}".format(pi))
 # simple_function(pi) # SyntaxError: name 'pi' is parameter and global
 # print('outside function pi = {}'.format(pi))
 
-
-# case 5=====   call by reference
-print()
+print("\n case 5=====   call by reference")
 
 
 def simple_function():
@@ -101,9 +104,8 @@ print()
 # 2. When global keyword is used, it will become call by reference.
 
 ##############################################
+print("\n case 6=====   call by reference")
 details = {"ver": "3.7.0"}  # mutable - call by reference
-# case 6=====   call by reference
-print()
 
 
 def simple_function():
@@ -117,8 +119,7 @@ def simple_function():
 simple_function()
 print("outside function ver = {}".format(details["ver"]))
 
-# case 7=====   call by reference
-print()
+print("\n case 7=====   call by reference")
 
 
 def simple_function(lang_details):
@@ -134,8 +135,7 @@ def simple_function(lang_details):
 simple_function(details)
 print("outside function ver = {}".format(details["ver"]))
 
-# case 8=====   call by reference
-print()
+print("\n case 8=====   call by reference")
 
 
 def simple_function(lang_details):
@@ -152,8 +152,7 @@ def simple_function(lang_details):
 simple_function(details)
 print("outside function ver = {}".format(details["ver"]))
 
-# case 8=====   call by reference
-print()
+print("\n case 8=====   call by reference")
 my_list = [1, 2, 3]
 
 
@@ -166,8 +165,7 @@ def simple_function():
 simple_function()
 print("outside function new_list = {}".format(my_list))
 
-# case 9=====   call by reference
-print()
+print("\n case 9=====   call by reference")
 my_list = [1, 2, 3]
 
 
@@ -179,9 +177,8 @@ def simple_function(my_list):
 
 simple_function(my_list)
 print("outside function new_list = {}".format(my_list))
-print()
 
-# case 10=====   call by Reference - for Global Mutable objects
+print("\n case 10=====   call by Reference - for Global Mutable objects")
 
 
 def simple_function(new_list):
@@ -193,10 +190,11 @@ def simple_function(new_list):
 new_list = [1, 2, 3]
 simple_function(new_list)
 print("outside function new_list = {}".format(new_list))  # [1, 2, 3, 6]
-print()
 
 
-# case 11=====   call by Reference - for Global Mutable objects
+print("\n case 11=====   call by Reference - for Global Mutable objects")
+
+
 def add_N_to_list(_new_list, n):
     print(f"\nbefore change new_list = {_new_list}")  # [1, 2, 3]
     _new_list[:] = [num + n for num in _new_list]
@@ -206,3 +204,31 @@ def add_N_to_list(_new_list, n):
 new_list = [1, 2, 3]
 add_N_to_list(new_list, 5)
 print("outside function new_list = {}".format(new_list))  # [6, 7, 8]
+
+
+print("\n\n # LEAKAGE ISSUE")
+
+
+def simple_function(mylist2):
+    # [1, 2, 3]
+    print(f"\nbefore change mylist2 = {mylist2} {id(mylist2)}")
+    mylist2.sort(reverse=True)
+    # [1, 2, 3, 6]
+    print(f"After change mylist2 = {mylist2} {id(mylist2)}")
+
+
+new_list = [1, 2, 3]
+simple_function(new_list)
+
+print(f"outside function new_list = {new_list} {id(new_list)}")  # [1, 2, 3, 6]
+
+
+def simple_function(mylist2):
+    print(f"\nbefore change mylist2 = {mylist2} {id(mylist2)}")  # [1, 2, 3]
+    mylist2 = sorted(mylist2, reverse=True)
+    print(f"After change mylist2 = {mylist2} {id(mylist2)}")  # [1, 2, 3, 6]
+
+
+new_list = [1, 2, 3]
+simple_function(new_list)
+print(f"outside function new_list = {new_list} {id(new_list)}")  # [1, 2, 3, 6]
