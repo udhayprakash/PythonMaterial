@@ -21,6 +21,8 @@ print("After :", data.__dict__)
 print()
 
 # -------------
+
+
 class LoggingLazyDB(LazyDB):
     def __getattr__(self, name):
         print("Called __getattr__(%s)" % name)
@@ -37,3 +39,28 @@ print("foo   :", data.foo)
 
 del data.foo
 print(vars(data))
+
+
+##########################
+class ValueDescriptor:
+    def __init__(self):
+        self.value = 42
+
+    def __get__(self, obj, cls):
+        return self.value
+
+    def __set__(self, obj, new_value):
+        self.value = new_value
+
+
+class C:
+    x = ValueDescriptor()
+    y = ValueDescriptor()
+
+
+c = C()
+print(c.x)  # 42
+print(c.y)  # 42
+c.x += 10
+print(c.x)  # 52
+print(c.y)  # 42
