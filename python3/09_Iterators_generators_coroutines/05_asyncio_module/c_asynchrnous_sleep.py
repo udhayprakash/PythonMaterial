@@ -15,8 +15,8 @@ async def say_after(delay, what):
 async def main():
     print(f"started at {time.strftime('%X')}")
 
-    await say_after(4, "hello")
-    await say_after(2, "world")
+    await say_after(4, "hello")  # 4s
+    await say_after(2, "world")  #  2s
 
     print(f"finished at {time.strftime('%X')}")
 

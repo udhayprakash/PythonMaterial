@@ -12,7 +12,7 @@ Python/java/c++
     ----------------
         total - 15s - Blocking Execution - one after another
 
-Node.js/ python-asyncio
+Node.js/ python-asyncio / Goroutines
     statement 1 - 5s
     statement 2 - 5s
     statement 3 - 5s
@@ -44,9 +44,10 @@ async def asynchronous_hello():
 
 print()
 # Method 1
-loop = asyncio.get_event_loop()
+loop = asyncio.get_event_loop()  # DeprecationWarning: There is no current event loop
 loop.run_until_complete(asynchronous_hello())
 loop.close()
+
 
 # Method 2
 print()

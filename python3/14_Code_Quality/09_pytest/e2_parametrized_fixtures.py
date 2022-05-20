@@ -1,12 +1,10 @@
-import pytest
+from pytest import mark
 
 
-@pytest.fixture(name="number", params=(1, 2))
-def _number(request):
-    """Every time a test requires number, it gets called twice,
-    once with 1 and once with 2 passed for number."""
-    return request.param
+def add(a, b):
+    return a + b
 
 
-def test_parametrized_fixture(number):
-    assert number in {1, 2}
+@mark.parametrize("num1, num2, expected", [(2, 5, 7), (3, 7, 10)])
+def test_addition(num1, num2, expected):
+    assert add(num1, num2) == expected

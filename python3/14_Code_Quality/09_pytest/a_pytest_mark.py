@@ -1,11 +1,23 @@
 import pytest
-from pytest import mark
 
 
-def add(a, b):
-    return a + b
+@pytest.mark.great
+def test_greater():
+    num = 100
+    assert num > 100
 
 
-@mark.parametrize("num1, num2, expected", [(2, 5, 7), (3, 7, 10)])
-def test_addition(num1, num2, expected):
-    assert add(num1, num2) == expected
+@pytest.mark.great
+def test_greater_equal():
+    num = 100
+    assert num >= 100
+
+
+@pytest.mark.others
+def test_less():
+    num = 100
+    assert num < 200
+
+
+# pytest -m <markername> -v
+# pytest -m great -v

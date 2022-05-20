@@ -35,7 +35,7 @@ print()
 numbers = [5, 2, 3, 1, 4]
 print(f"reversed(numbers): {reversed(numbers)}")  # list_reverseiterator
 revr_numbers = list(reversed(numbers))
-print(f"revr_numbers     : {revr_numbers}")  # [4, 1, 3, 2, 5]
+print(f"revr_numbers     : {revr_numbers}")  # [4, 1, 3, 2, 5]      numbers[::-1]
 
 # ------------------------------------------
 print()
