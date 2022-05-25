@@ -5,7 +5,7 @@ Purpose: timeit module
 import timeit
 
 print("\n timeit.timeit")
-print(timeit.timeit('"-".join(str(n) for n in range(10))', number=10000))
+print(timeit.timeit('"-".join(str(n) for n in range(10))', number=10_000))   # 0.02176020003389567
 print(timeit.timeit('"-".join([str(n) for n in range(10)])', number=10000))
 print(timeit.timeit('"-".join(map(str, range(10)))', number=10000))
 print(timeit.timeit(lambda: "-".join(map(str, range(10))), number=10000))

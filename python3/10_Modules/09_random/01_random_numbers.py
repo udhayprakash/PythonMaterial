@@ -10,7 +10,7 @@ Purpose: Demonstration of random module
     called the Mersenne Twister.
 
 NOTE: random module is good enough for many purposes, including simulations,
-numerical analysis, and games, but it’s definitely not good enough for
+numerical analysis, and games, but it's definitely not good enough for
 cryptographic use.
 In Python3, 'secret' module is used for cryptographic purpose.
 """
