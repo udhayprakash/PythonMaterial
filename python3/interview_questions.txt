@@ -198,3 +198,35 @@ Q16)
     q = ['abc', 'def']
     print(id(q) == foo(q))
 Ans) True
+
+Q17) while using python in interactive mode, default secondary prompt for continuation lines
+
+Q18)Identify 10 to the power of 3
+	10 ** 3
+	10 ^ 3
+	10 (3)
+	10 * 3
+
+Q19)In interactive mode, which variable holds the value of last printed expression?
+	?
+	-
+	_
+	*
+
+Q20) name = 'Python'. what is print(name[-1])
+	Invalid Syntax
+	End-of-lines
+	P
+	n
+
+Q21) which of followibg statements can be used to force a particular exception to occur?
+	raise
+	throw
+	throws
+	except
+
+Q22) which of the following python utility programs is used to install or remove packages ?
+	sudo
+	yum
+	pip
+	apt

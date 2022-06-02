@@ -10,17 +10,20 @@ Fixtures have optional arguments called scope. The scope parameters has the foll
 """
 import pytest
 
-@pytest.fixture(scope='class')
+
+@pytest.fixture(scope="class")
 def class_scope_fixture():
     "Run once per test class"
     pass
 
-@pytest.fixture(scope='session')
+
+@pytest.fixture(scope="session")
 def session_scope_fixture():
     "Run once per test session"
     pass
 
-@pytest.fixture(scope='module')
+
+@pytest.fixture(scope="module")
 def module_scope_fixture():
     "Run once per test module"
     pass
@@ -28,9 +31,8 @@ def module_scope_fixture():
 
 @pytest.mark.usefixtures(class_scope_fixture)
 class TestFixture:
-    
     def test_1(self):
         pass
-    
+
     def test_2(self):
         pass

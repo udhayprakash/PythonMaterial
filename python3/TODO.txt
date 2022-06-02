@@ -344,3 +344,14 @@ django project - https://github.com/Thejus-ms/first_site-main
 pip install  python-Levenshtein
 ipython profile create
 ipython --profile projectName
+
+
+Python db -- sql injection
+	https://bobby-tables.com/python
+
+
+Dask Course
+	https://training.talkpython.fm/courses/introduction-to-scaling-python-and-pandas-with-dask
+PyFakes
+	http://jmcgeheeiv.github.io/pyfakefs/master/usage.html
+	frm pyfakefs.fake_filesystem_unittest import Patcher as FakeFs

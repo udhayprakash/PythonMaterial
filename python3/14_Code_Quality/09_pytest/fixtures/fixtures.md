@@ -1,5 +1,5 @@
-Fixtures 
----------
+## Fixtures
+
 - fixtures are reusable, fixtures are implemented in a modular manner, so each fixture name triggers a fixture function.
 - fixtures can use other fixtures.
 - test or fixture can request more than one fixture at a time.

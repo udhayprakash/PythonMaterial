@@ -10,9 +10,9 @@ print(f"{time.timezone   =}")  # -19800  - second difference from GMtime
 print(f"{time.tzname   =}")  # ('India Standard Time', 'India Daylight Time')
 print()
 
-print(f'{time.gmtime()                  =}')
+print(f"{time.gmtime()                  =}")
 # time.struct_time(tm_year=2022, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=32, tm_sec=48, tm_wday=2, tm_yday=145, tm_isdst=0)
-print(f'{time.localtime()               =}')
+print(f"{time.localtime()               =}")
 # time.struct_time(tm_year=2022, tm_mon=5, tm_mday=25, tm_hour=17, tm_min=2, tm_sec=48, tm_wday=2, tm_yday=145, tm_isdst=0)
 print(f"{time.gmtime(23434)             =}")
 print(f"{time.localtime(23434)          =}")

@@ -27,3 +27,20 @@ print(df.iat[0, 0])
 # Additional References
 #  ref: https://github.com/justmarkham/pandas-videos
 #  ref: https://www.youtube.com/watch?reload=9&v=RlIiVeig3hc
+
+
+s = pd.Series([0, 1, np.nan, 3])
+print(s)
+# 0   0.0
+# 1   1.0
+# 2   NaN
+# 3   3.0
+# dtype: float64
+
+s.interpolate()
+print(s)
+# 0   0.0
+# 1   1.0
+# 2   2.0
+# 3   3.0
+# dtype: float64
