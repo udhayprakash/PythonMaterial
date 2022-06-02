@@ -58,7 +58,7 @@ result = hello()
 print(f"{type(result)} {result}")
 
 # All coroutines must be "primed" by first calling next() (or send(None))
-print(f"{next(result) = }")
+print(f"{next(result) = }")  # 123123
 
 print(f'{result.send("world") = }')  # 'Passed value is world'
 

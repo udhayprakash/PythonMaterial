@@ -14,7 +14,7 @@ def my_coroutine():
 it = my_coroutine()
 
 # Step 2: Prime the coroutine
-print(f"{next(it) =}")
+print(f"{next(it) =}")  # 1234
 
 # Step 3: sending values to coroutine
 it.send("First")

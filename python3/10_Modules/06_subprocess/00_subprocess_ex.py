@@ -1,17 +1,28 @@
 import os
 import subprocess
 
-# command_to_execute = 'ping -n 4 www.google.com'
-command_to_execute = "dir /x"
-
-# result = os.system(command_to_execute)
-# print(f'result:{result}')
+def execute_command(cmd):
+    result = os.system(cmd)  # returns 0 if command executed successfully, else 1
+    print(f'result:{result}')
 
 
-p = subprocess.Popen(
-    command_to_execute, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
-)
-output, err = p.communicate()
+execute_command('ping google.com') # 0
+execute_command('ipconfig') # 0
+execute_command('ipconfigjhg')  # 1
 
-print(f'output:{output.decode("utf-8")}')
-print(f'Error: {err.decode("utf-8")}')
+def get_execution_result(cmd):
+    p = subprocess.Popen(cmd,
+      shell=True,
+      stdout=subprocess.PIPE, stderr = subprocess.PIPE
+    )
+    output, err = p.communicate()
+
+    output = output.decode("utf-8")
+    err = err.decode("utf-8")
+
+    print(f'\noutput:{output}')
+    print(f'err   :{err}')
+
+get_execution_result('ping google.com')
+get_execution_result('ipconfig')
+get_execution_result('ipconfigjhg')

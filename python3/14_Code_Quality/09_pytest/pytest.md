@@ -1,3 +1,20 @@
+## Anatomy of a test
+
+- Tests are broken into FOUR steps:
+  1.  Arrange
+      - mean preparing objects,
+      - starting/killing services,
+      - entering records into a database, or
+      - defining a URL to query,
+      - generating some credentials for a user that doesn’t exist yet, or
+      - just waiting for some process to finish.
+  2.  Act
+      - singular, state-changing action that kicks off the behavior we want to test
+  3.  Assert
+      - It’s where we gather evidence to say the behavior does or does not aligns with what we expect.
+  4.  Cleanup
+      - where the test picks up after itself, so other tests aren’t being accidentally influenced by it.
+
 ## commands
 
     - Running Only One Test

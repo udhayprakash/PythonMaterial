@@ -53,7 +53,7 @@ print(f"res1:{res1} type(res1):{type(res1)}")
 try:
     res1 = next(result)  # StopIteration
 except StopIteration as ex:
-    print(repr(ex))
+    print(repr(ex))  #  "No More value to yield"
 
 for ech in result:
     print(ech)
