@@ -2,17 +2,6 @@
 # See https://pre-commit.com for more information
 fail_fast: false
 repos:
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.6.2
-    hooks:
-      - id: prettier
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
-        args: [--profile=black] # , --check-only
-        description: Sort Python imports
-  # Some out-of-the-box hooks for pre-commit
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
     hooks:
@@ -48,15 +37,34 @@ repos:
         args: [--markdown-linebreak-ext=md]
       #- id: check-shebang-scripts-are-executable
 
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [--profile=black] # , --check-only
+        description: Sort Python imports
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.6.2
+    hooks:
+      - id: prettier
+
   - repo: https://github.com/psf/black
     rev: 22.3.0
     hooks:
       - id: black
         language_version: python3
+        args: [--check]
         exclude: python3/14_Code_Quality/python_2to3_ex.py
       - id: black-jupyter
         language_version: python3
         exclude: python3/14_Code_Quality/python_2to3_ex.py
+
+  - repo: https://github.com/sirosen/check-jsonschema
+    rev: 0.10.0 # checks for Github Actions CI config files
+    hooks:
+      - id: check-github-actions
+      - id: check-github-workflows
 
   # - repo: https://gitlab.com/pycqa/flake8
   #   rev: 3.9.2
