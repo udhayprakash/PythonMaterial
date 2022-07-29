@@ -1,7 +1,6 @@
-#!/usr/bin/env python
+#! /usr/bin/env python
 
 import re
-import sys
 
 
 class Word(object):
@@ -37,9 +36,8 @@ class WordCounter(object):
 
     def __init__(self, source_text):
         self.source_text = source_text
-        self.sentences = [
-            sentence for sentence in re.split(r"[\.!\?]+\s*", source_text)
-        ]
+
+        self.sentences = [sentence for sentence in re.split("[\.!\?]+\s*", source_text)]
 
         self.words = dict()
         for sentence_index in range(len(self.sentences)):
@@ -69,8 +67,11 @@ class WordCounter(object):
             )
 
 
+import sys
+
+
 def main(argv=None):
-    if argv is None:
+    if argv == None:
         argv = sys.argv
     scriptname = argv[0]
     if len(argv) < 2:

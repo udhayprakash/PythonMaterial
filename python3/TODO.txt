@@ -355,3 +355,112 @@ Dask Course
 PyFakes
 	http://jmcgeheeiv.github.io/pyfakefs/master/usage.html
 	frm pyfakefs.fake_filesystem_unittest import Patcher as FakeFs
+
+
+------------------
+Python Modules
+--------------
+- Data Science
+	https://pypi.org/project/fuzzywuzzy/
+		https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/
+		https://towardsdatascience.com/fuzzy-string-matching-in-python-68f240d910fe
+- consuming API
+	httpie
+	httpx - https://opensource.com/article/22/3/python-httpx
+
+- ORM
+	Tortoise ORM - Easy async ORM for python, built with relations in mind: tortoise.github.io
+	Beanie - Asynchronous Python ODM for MongoDB: github.com
+
+- Data Science
+	gTTS (Google Text-to-Speech)
+	umap-learn - Uniform Manifold Approximation and Projection: readthedocs.io
+	Automatic text summarizer - https://pypi.org/project/sumy/
+	pyjokes
+	NLP - https://www.youtube.com/watch?v=hOuvYcw_sVQ
+		- https://newscatcherapi.com/blog/learning-natural-lanuage-processing-made-easy
+		- https://www.youtube.com/watch?v=M7SWr5xObkA
+
+	levenshtein-distance
+		- https://towardsdatascience.com/text-similarity-w-levenshtein-distance-in-python-2f7478986e75
+
+	notebook
+		- https://zeppelin.apache.org/docs/0.10.0/quickstart/install.html
+
+- Audio Processing
+	- https://www.youtube.com/watch?v=ZqpSb5p1xQo
+	- Fourier Tranform - https://github.com/lukepolson/youtube_channel/blob/main/Python%20Tutorial%20Series/fourier_transform1.ipynb
+
+gtts-cli "Priyanka! nuvvu nee noru mooy ra, jaffa" --lang hi --output hello.mp3 --slow && hello.mp3
+
+
+https://talkpython.fm/episodes/show/360/removing-pythons-dead-batteries-in-just-5-years
+
+https://github.com/bloomberg/memray
+Golang MongoDB Setup - https://www.youtube.com/watch?v=EaZo7pcueBE
+https://www.python-httpx.org/
+https://codewithmosh.com/courses
+https://docs.python.org/3/library/inspect.html
+ELVIRA NABULLIANA - russian economist
+https://stackoverflow.com/questions/3278077/difference-between-getattr-vs-getattribute
+https://leetcode.com/problems/jump-game-ii/
+
+
+https://api.themoviedb.org/3/search/movie?api_key=f4490e87ef02e9c33939a24e4559a8e7&query=titanic
+https://developers.themoviedb.org/3/search/search-movies
+
+https://docs.python.org/3/library/asyncio.html
+https://docs.python.org/3/library/asyncio-task.html
+Data structures like Hashmaps, Linked lists, Trees
+
+
+write a chrome plugin,
+	when highlighted on $100, it should convert to INR
+	when highlighted 10:00 UTC, it should convert to IST
+
+
+Youtube videos
+1) Economic Data Analysis Project with Python Pandas - Data scraping, cleaning and exploration!
+	https://www.youtube.com/watch?v=R67XuYc9NQ4
+2) Live Discussion with Sebastián Ramírez (Tiangelo/FastAPI)
+	https://www.youtube.com/watch?v=8IJkSs9Dvjo
+3) FastAPI with SQLModel, Alembic and Authentication. Full Course
+	https://www.youtube.com/watch?v=8EoVjYw3V2g
+
+4) Efficient Pandas Dataframes in Python
+		https://www.youtube.com/watch?v=u4_c2LDi4b8
+   Awesome Pandas Tricks - Advent of Code Problems 1-5
+		https://www.youtube.com/watch?v=6aH4RMrhbVc
+
+Python Data Classes - https://www.youtube.com/watch?v=CvQ7e6yUtnw
+
+insurance project -- Analyse the insurance claims. we build bots for validating these claims. Use Machine Learning for it
+
+
+rename files in regular expressions folder
+
+
+hunter.io, haveibeenpwned.com, emailrep.io
+Gensim python module
+aiohttp, Asyncio, httpx, Pillow, Six, Tkinter, Twisted, Kivy, wxPython, Scrapy
+python testing modules - Hypothesis, tox
+
+python ORM -
+Tortoise ORM, SQLObject, Peewee, Dejavu, Django ORM, SQLAlchemy, PonyORM
+
+python documentation Tools - Sphinx, MKDocs, Doxygen
+python -- automated services to  update versions fo applicatiopn dependencies
+	Dependabot, PyUp,
+python scheduler - https://www.youtube.com/watch?v=zF_DroDICaM
+https://www.twilio.com/blog/automatically-send-birthday-wishes-python-flask-whatsapp
+
+------
+	git api to list all golang repositories with more stars
+	tool for creating jiras
+	Todoier
+		- to check all the files and repository and create JIRAs for them
+
+------
+https://towardsdatascience.com/get-interactive-plots-directly-with-pandas-13a311ebf426
+https://hakibenita.com/sql-for-data-analysis
+github.com/jimportilla/complete-python-bootcamp

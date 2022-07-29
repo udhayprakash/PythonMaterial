@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Purpose: Binary Search Tree
+binary search tree
 """
 
 
@@ -8,17 +8,17 @@ class Tree:
     def __init__(self):
         self.root = None
 
-    def set_root(self, node):
+    def setRoot(self, node):
         self.root = node
 
     def size(self):
-        if self.root is None:
+        if self.root == None:
             return 0
 
-        def sub_tree_size(node):
-            return 1 + sum(sub_tree_size(c) for c in node.get_children())
+        def subtreeSize(node):
+            return 1 + sum(subtreeSize(c) for c in node.getChildren())
 
-        return sub_tree_size(self.root)
+        return subtreeSize(self.root)
 
 
 class BinaryNode:
@@ -33,44 +33,44 @@ class BinaryNode:
     def set(self, v):
         self.val = v
 
-    def get_children(self):
+    def getChildren(self):
         children = []
-        if self.leftChild:
+        if self.leftChild != None:
             children.append(self.leftChild)
-        if self.rightChild:
+        if self.rightChild != None:
             children.append(self.rightChild)
         return children
 
 
 class BinarySearchTree(Tree):
     def insert(self, val):
-        if self.root is None:
-            self.set_root(BinaryNode(val))
+        if self.root == None:
+            self.setRoot(BinaryNode(val))
         else:
-            current_root = self.root
+            currentRoot = self.root
             while True:
-                if val <= current_root.get():
-                    if current_root.leftChild:
-                        current_root = current_root.leftChild
+                if val <= currentRoot.get():
+                    if currentRoot.leftChild != None:
+                        currentRoot = currentRoot.leftChild
                     else:
-                        current_root.leftChild = BinaryNode(val)
+                        currentRoot.leftChild = BinaryNode(val)
                         break
                 else:
-                    if current_root.rightChild:
-                        current_root = current_root.rightChild
+                    if currentRoot.rightChild != None:
+                        currentRoot = currentRoot.rightChild
                     else:
-                        current_root.rightChild = BinaryNode(val)
+                        currentRoot.rightChild = BinaryNode(val)
                         break
 
     def find(self, val):
-        current_root = self.root
-        while current_root and current_root.get() != val:
-            if val < current_root.get():
-                current_root = current_root.leftChild
+        currentRoot = self.root
+        while currentRoot != None and currentRoot.get() != val:
+            if val < currentRoot.get():
+                currentRoot = currentRoot.leftChild
             else:
-                current_root = current_root.rightChild
+                currentRoot = currentRoot.rightChild
 
-        if current_root is None:
+        if currentRoot == None:
             return False
         else:
             return True

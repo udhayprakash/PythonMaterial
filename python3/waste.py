@@ -1,3 +1,4 @@
+import re
 from collections import Counter, defaultdict
 from pprint import pprint
 
@@ -8,32 +9,44 @@ weeks = Counter()
 dates = Counter()
 vendor = Counter()
 times = Counter()
-month_vendor = defaultdict(Counter)
-for each_line in open(jobs_file, "r").readlines():
+month_consultancy = defaultdict(Counter)
+for each_line in open(jobs_file, "rb").readlines():
+    each_line = each_line.decode("utf-8").strip()
     if each_line.startswith("--END--"):
         break
     if each_line[0].isdigit():
         try:
-            each_vendor = each_line.split("IST -")[-1].strip().split("-")[0].strip()
-            dates.update([each_line.split()[0]])
-            months.update(["-".join(each_line.split()[1:3])])
-            weeks.update([each_line.split()[2]])
-            vendor.update([each_vendor])
-            times.update([each_line.split(")")[1].split("-")[0].strip()])
-            curr_month = each_line.split()[1]
-            month_vendor[curr_month].update([each_vendor])
+            data = re.search(
+                r"(?P<date>\d+ \w+ \d+)\s+(?P<week>[a-zA-Z()]+)\s+(?P<startTime>\d{2}:\d{2} \w{2} \w{3})\s+"
+                "(?P<endTime>\d{2}:\d{2} \w{2} \w{3})\s+-(?P<consultancy>.*)",
+                each_line,
+            ).groupdict()
+
+            dates.update(data["date"])
+            dates.update(data["date"])
+            dates.update(data["date"])
+
+            # each_vendor = each_line.split("IST -")[-1].strip().split("-")[0].strip()
+            # dates.update([each_line.split()[0]])
+            # months.update(["-".join(each_line.split()[1:3])])
+            # weeks.update([each_line.split()[2]])
+            # vendor.update([each_vendor])
+            # times.update([each_line.split(")")[1].split("-")[0].strip()])
+
+            # curr_month = each_line.split()[1]
+            # month_vendor[curr_month].update([each_vendor])
         except Exception:
             pass
 
-print("~" * 30)
-pprint(months)
-print("Monthly Average:", round(sum(list(months.values())) / len(months), 2))
-# pprint(weeks)
-# pprint(dates)
-pprint(vendor)
-# pprint(times)
+# print("~" * 30)
+# pprint(months)
+# #print("Monthly Average:", round(sum(list(months.values())) / len(months), 2))
+# # pprint(weeks)
+# # pprint(dates)
+# pprint(vendor)
+# # pprint(times)
 
-pprint(month_vendor[curr_month])
+# pprint(month_vendor[curr_month])
 
 
 # keys = [k for k in times.keys() if k < '12:00']\
