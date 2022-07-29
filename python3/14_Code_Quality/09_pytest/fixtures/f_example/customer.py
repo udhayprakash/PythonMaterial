@@ -1,13 +1,12 @@
 class Customer:
-
     def __init__(self, cust_id, level=0):
         self._cust_id = cust_id
         self._level = level
 
     def __str__(self):
-        return f'< Customer cust_id = {self._cust_id}, level = {self._level} >'
+        return f"< Customer cust_id = {self._cust_id}, level = {self._level} >"
 
-    @property 
+    @property
     def cust_id(self):
         return self._cust_id
 
