@@ -230,3 +230,67 @@ Q22) which of the following python utility programs is used to install or remove
 	yum
 	pip
 	apt
+
+Q23)"""
+	Questions to ask yourself: what is lambda, what does range create, how does element removal work in python
+	"""
+	odd = lambda x: bool(x % 2)
+	numbers = [n for n in range(10) if odd()  if  not odd(n)]
+
+
+	for i in range(len(numbers)):
+		if odd(numbers[i]):
+			del numbers[i]
+
+	print(numbers)
+
+Q24) """
+	Questions to ask yourself: How does inheritance work, what is the difference between a class and an instance of a class
+	"""
+	class Foo(object):
+		def __init__(self):
+			self.x = 5
+			self.bubbles = 2
+
+	class Buzz(Foo):
+		def __init__(self):
+			Foo.__init__(self)
+			self.bubbles = "Bubbles"
+
+	foo = Foo()
+	print(foo.x)
+	print(foo.bubbles)
+
+	buzz = Buzz()
+	print(buzz.x)
+	print(buzz.bubbles)
+
+	foo.x = 22
+	print(buzz.x)
+
+	print(Foo.bubbles)
+	Foo.bubbles = "dasf"
+	print(foo.bubbles)
+	print(foo.x)
+
+Q25) """Questions to ask yourself: When are lists instanciated and how are they passed"""
+	x = [[]] * 6       [[], p[/..]]
+	x[0].append('Na')  [  ['Na'], v, ['Na'], ['Na'], ['Na']     ]
+
+	x.append("BATMAN!!!")  [  ['Na'], v, ['Na'], ['Na'], ['Na']   "BATMAN"  ]
+
+	print(x)
+
+Q26)  """Questions to ask yourself: Is something obvious distracting you from something thats not"""
+	x = [a, b, c]
+	value = x[3]
+
+Q27) """ Questions to ask yourself: How do data types interact with each other """
+	print(5/2)
+	print(5.0/2)
+	print(5*1.0/2)
+
+Q28) """You have an array of 99 unique numbers from 1 to 100
+	   How do you determine which number from 1-100 is missing?
+	   What is the run time?
+	"""
