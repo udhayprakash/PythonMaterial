@@ -9,7 +9,7 @@ with open("my_file.csv", "r") as fh:
     file_content = csv.DictReader(fh, delimiter=",")
     # print(file_content)
 
-    # To skip the first record  --- NOTE: not skipping header
+    # To skip the first record  --- NOTE: skipping header
     next(file_content, None)
 
     names = []
