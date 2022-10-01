@@ -25,3 +25,13 @@ print(regObject.search(string))
 # ^
 # $
 # re.M or re.MULTILINE
+
+text = """
+hello      hello
+goodbye
+bye    bye bye
+hello goodbye
+"""
+pat = re.compile(r"$.*\s*\0*^", re.MULTILINE)
+result = pat.sub("", text)
+print(result)

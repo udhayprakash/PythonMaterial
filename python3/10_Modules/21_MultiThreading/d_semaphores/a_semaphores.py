@@ -11,6 +11,10 @@ Purpose: Synchronization using SemaPhores
     - Semaphores are typically used for limiting a resource, like limiting a server to
       handle only 10 clients at a time. In such a case, multiple thread connections compete
       for a limited resource.
+
+    - A semaphore manages an internal counter which is decremented by each acquire()
+      call and incremented by each release() call.
+
 Following code demonstrates the use of semaphores in a simple producer-consumer problem.
 """
 import random
