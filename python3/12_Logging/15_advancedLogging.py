@@ -8,7 +8,7 @@ from datetime import datetime
 # print('__file__', __file__)
 # print('os.path.basename(__file__)', os.path.basename(__file__))
 
-# fileName = os.path.splitext(os.path.basename(__file__))[0]
+fileName = os.path.splitext(os.path.basename(__file__))[0]
 # print('fileName', fileName)
 
 SET_DEBUG = 0

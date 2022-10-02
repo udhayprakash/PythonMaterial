@@ -1,5 +1,5 @@
 from glob import glob
-from shutil import *
+from shutil import copyfile
 
 print("BEFORE:", glob("shutil_copyfile.*"))
 

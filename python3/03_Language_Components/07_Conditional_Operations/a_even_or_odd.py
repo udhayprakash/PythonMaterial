@@ -16,6 +16,13 @@ if number:
 if number != 0:
     print(f"{number} is non-zero")
 
+"""
+It can evaluate that
+    number != None and
+    number != False and
+    number != 0 and
+    number != ""
+"""
 
 if number % 2:  # number % 2 != 0
     print(f"{number} is odd")
@@ -53,4 +60,4 @@ else:
 
 # Assignment: Generate even numbers between 45 & 137
 # loop values between limits, test eveness for each number
-# and display , if it is even
+# and display, if it is even

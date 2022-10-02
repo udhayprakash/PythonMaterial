@@ -16,7 +16,7 @@ def delete_pyc_files(path_file=os.getcwd()):
     """
     extn_files = []
     for present_path, folders, files in os.walk(path_file):
-        # print(present_path,folders, files)
+        print(present_path, folders, files)
         for each_file in files:
             file_extn = os.path.splitext(each_file)[1]
             # print(file_extn)
@@ -25,7 +25,7 @@ def delete_pyc_files(path_file=os.getcwd()):
                 # delete those files
                 os.remove(present_path + os.sep + each_file)
                 extn_files.append(present_path + os.sep + each_file)
-        # # break
+        # break
     return extn_files
 
 

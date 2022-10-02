@@ -20,7 +20,7 @@ def sendmessage(title, message):
 url = "http://www.thehindu.com/"
 while True:
     r = requests.get(url)
-    while r.status_code is not 200:
+    while r.status_code != 200:
         r = requests.get(url)
 
         response = r.text

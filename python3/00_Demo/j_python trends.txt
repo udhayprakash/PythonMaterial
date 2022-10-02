@@ -1,3 +1,4 @@
+https://spectrum.ieee.org/top-programming-languages-2022
 https://trends.google.com/trends/explore?q=python
 https://www.indeed.com/jobtrends/q-python.html
 https://insights.stackoverflow.com/trends?tags=python

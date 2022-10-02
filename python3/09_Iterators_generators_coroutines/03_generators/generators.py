@@ -6,6 +6,8 @@
 # First, a sneak preview of the last lecture about defining your own data
 # types as classes. Here is an iterator defined as a proper class with
 # certain "magic" methods to implement the iterator behaviour.
+import itertools as it
+import random
 
 
 class Squares:
@@ -71,7 +73,7 @@ def fibonacci():
 def pyramid_series():
     v = 1
     while True:
-        for i in range(v):
+        for _ in range(v):
             yield v
         v += 1
 
@@ -141,7 +143,7 @@ def every_kth(it, k):
 # Duplicate each element k times.
 def stutter(it, k):
     for x in it:
-        for i in range(k):
+        for _ in range(k):
             yield x
 
 
@@ -223,11 +225,9 @@ print(list(unique_permutations(items, 3)))
 # generator that produces random numbers in 0, ..., n - 1 so that
 # a number that was seen recently cannot be emitted this round.
 
-import random
-
 
 def tabu_generator(n, len_, recent=None):
-    if recent == None:
+    if recent is None:
         recent = n // 2
     tabu = []
     while len_ > 0:
@@ -245,7 +245,7 @@ def tabu_generator(n, len_, recent=None):
 for recent in range(0, 6):
     itemgen = (random.randint(0, 7) for i in tabu_generator(8, 10**5, recent))
     total = 0
-    for perm in unique_permutations(itemgen, 8):
+    for _ in unique_permutations(itemgen, 8):
         total += 1
     print(f"Using tabu length {recent}, found {total} unique permutations.")
 
@@ -303,8 +303,6 @@ def sieve_of_erathostenes(m, div):
 
 # The itertools module defines tons of handy functions to perform
 # computations on existing iterators, to be combined arbitrarily.
-
-import itertools as it
 
 print("Middle square 10-digit random numbers from 1234567890:")
 print(list(it.islice(middle_square(1234567890, 10), 50)))

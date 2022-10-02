@@ -19,6 +19,7 @@ class MyTestCase(TestCase):
             c = Client()
             c.login(username="user@example.com", password="abc123")
             response = c.get(url)
+            print(response)
 
         toggle_registration()
 
@@ -44,7 +45,7 @@ def test_concurrently(times):
                     raise
 
             threads = []
-            for i in range(times):
+            for _ in range(times):
                 threads.append(threading.Thread(target=call_test_func))
             for t in threads:
                 t.start()

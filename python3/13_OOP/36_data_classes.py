@@ -6,6 +6,7 @@ Purpose: Data classes
                 pip install dataclasses
 
 """
+from dataclasses import dataclass
 
 
 class UsingRegularClass:
@@ -32,8 +33,6 @@ print(f"{a1 == a2 =}")
 # print(vars(a))
 
 print("-" * 40)
-
-from dataclasses import dataclass
 
 
 @dataclass

@@ -40,9 +40,8 @@ class AbstractClassExample(ABC):
         pass
 
 
-class DoAdd42(AbstractClassExample):
-    pass
-
+# class DoAdd42(AbstractClassExample):
+#     pass
 
 # x = DoAdd42(4)
 # TypeError: Can't instantiate abstract class DoAdd42 with abstract methods do_something

@@ -11,8 +11,8 @@ group2 = ("a", "b", "c", "d")
 
 result = list(zip(group1, group2))
 # NOTE: asymetric values will be ignored
-print(result)  #  [('1', 'a'), ('2', 'b'), ('3', 'c')]
-print(dict(result))  #  {'1': 'a', '2': 'b', '3': 'c'}
+print(result)  # [('1', 'a'), ('2', 'b'), ('3', 'c')]
+print(dict(result))  # {'1': 'a', '2': 'b', '3': 'c'}
 print()
 
 result = zip(group2, group1)

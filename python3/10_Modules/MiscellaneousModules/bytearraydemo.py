@@ -2,6 +2,8 @@
 # can be extracted to a byte array with given Unicode encoding. This
 # byte array can be processed with byte array operations such as
 # checksums and compressions, not caring where these bytes came from.
+import zlib
+from hashlib import sha256
 
 s = "This will be turned into an array of bytes."
 
@@ -10,9 +12,6 @@ s2 = s.encode("utf-8")
 print(f"Length of s2 bytes is {len(s2)}.")
 s3 = s2.decode("utf-8")
 print(f"Decoding bytes gives the string <{s3}>.")
-
-import zlib
-from hashlib import sha256
 
 print(f"Adler checksum of string s: {zlib.adler32(s2)}")
 print(f"CRC32 checksum of string s: {zlib.crc32(s2)}")

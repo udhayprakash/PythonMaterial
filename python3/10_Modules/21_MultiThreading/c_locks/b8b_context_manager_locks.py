@@ -14,7 +14,7 @@ logging.basicConfig(
 def consumer(cond):
     """wait for the condition and use the resource"""
     logging.debug("Starting consumer thread")
-    t = threading.current_thread()
+    threading.current_thread()
     with cond:
         cond.wait()
         logging.debug("Resource is available to consumer")

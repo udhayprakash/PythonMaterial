@@ -12,8 +12,8 @@ website = requests.get(url)
 html = website.text
 
 # use re.findall to grab all the links
-links = re.findall('"((http|ftp)s?://.*?)"', html)
-emails = re.findall("([\w\.,]+@[\w\.,]+\.\w+)", html)
+links = re.findall(r'"((http|ftp)s?://.*?)"', html)
+emails = re.findall(r"([\w\.,]+@[\w\.,]+\.\w+)", html)
 
 # print the number of links in the list
 print("\nFound {} links".format(len(links)))

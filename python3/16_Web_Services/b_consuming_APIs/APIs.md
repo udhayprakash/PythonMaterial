@@ -24,3 +24,7 @@
     - https://sendgrid.com/pricing/
 
 https://www.signalhire.com/api
+
+## Random Text generators
+
+    - https://loremipsum.io/generator/?n=8&t=p

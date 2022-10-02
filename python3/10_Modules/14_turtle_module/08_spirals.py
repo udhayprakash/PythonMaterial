@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from random import randint
-from turtle import *
+from turtle import bgcolor, colormode, exitonclick, fd, pencolor, rt, speed
 
 bgcolor("black")
 x = 1

@@ -33,6 +33,6 @@ for _ in tqdm(work(2000), total=2000):
 
 
 k = 0
-for outer_loop in tqdm(range(20), desc="outer loop", leave=True):
-    for inner_loop in tqdm(range(10_000_000), desc="inner loop", leave=False):
+for _ in tqdm(range(20), desc="outer loop", leave=True):
+    for _ in tqdm(range(10_000_000), desc="inner loop", leave=False):
         k += 100

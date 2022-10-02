@@ -56,7 +56,7 @@ while len(unprocessed_urls):
         elif not link.startswith("http"):
             link = path + link
         # add the new url to the queue if it was not in unprocessed list nor in processed list yet
-        if not link in unprocessed_urls and not link in processed_urls:
+        if not (link in unprocessed_urls) and not (link in processed_urls):
             unprocessed_urls.append(link)
 
 print(emails)

@@ -12,7 +12,7 @@ skk.color("blue")
 
 
 def sqrfunc(size):
-    for i in range(4):
+    for _ in range(4):
         skk.fd(size)
         skk.left(90)
         size = size - 5

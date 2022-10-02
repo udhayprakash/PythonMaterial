@@ -8,6 +8,7 @@ Debugging
             1. console-based debugging
                 - pbd / breakpoint()
                 - ipdb
+                - https://documen.tician.de/pudb/
             2. IDE based debugging
                 - pydevd
 

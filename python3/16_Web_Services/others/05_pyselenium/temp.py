@@ -40,7 +40,7 @@ def get_all_reviews(hotel, language):
     hotel_rating = page.find_element_by_class_name(
         "hotels-hotel-review-about-with-photos-Reviews__overallRating--vElGA"
     ).text
-    stop_loop_for = calculate_stop_reviews(total_reviews)
+    calculate_stop_reviews(total_reviews)
 
     url_remove_http = hotel.replace("https://www.tripadvisor.co", "")
     url_split = url_remove_http.split("-Reviews-")
