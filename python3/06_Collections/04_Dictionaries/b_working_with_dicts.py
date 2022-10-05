@@ -10,7 +10,7 @@ Purpose: Dictionaries
         - Any data type can be used for dict values
         - dict keys should be immutables only
 """
-from pprint import pprint
+from pprint import pp
 
 alphabhets = {"b": 2, "a": 1, "c": 3, "d": 4}
 print(alphabhets)
@@ -37,8 +37,12 @@ person_details = {
     tuple([12, 23]): "something",
 }
 print(person_details)
-pprint(person_details)
-pprint(person_details, indent=4)
+# pprint(person_details)
+# pprint(person_details, indent=4)
 # NOTE:
 # 1. general print() will retain dict order
 # 2. pprint() will sort by keys and display
+# 3. pp() will retain dict order, as created.
+
+pp(person_details)
+pp(person_details, indent=4)

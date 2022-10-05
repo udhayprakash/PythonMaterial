@@ -24,6 +24,11 @@ file = open("testfile.txt", "r")
 text = file.read()
 print(text)
 
+# Method 3
+file_handler = open("testfile.txt", "w")
+print("this is first line\n", file=file_handler)
+print("this is second line\n", file=file_handler)
+file_handler.close()
 
 # Renaming the file
 os.rename("testfile.txt", "mytestfile.txt")

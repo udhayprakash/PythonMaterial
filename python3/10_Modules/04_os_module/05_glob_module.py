@@ -28,3 +28,8 @@ print("\n Three Levels Deep")
 text_files = glob.glob("*/*/*/*.txt")
 for each_txt_file in text_files:
     print("\t", each_txt_file)
+
+print("\n All levels Deep (as available)")
+text_files = glob.glob("**/*.txt", recursive=True)
+for each_txt_file in text_files:
+    print("\t", each_txt_file)

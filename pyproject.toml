@@ -12,6 +12,8 @@ requests = "^2.28.1"
 jupyter = "^1.0.0"
 ipython = "^8.5.0"
 ipdb = "^0.13.9"
+fastapi = "^0.85.0"
+uvicorn = "^0.18.3"
 
 
 [build-system]

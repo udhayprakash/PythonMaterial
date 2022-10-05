@@ -26,3 +26,5 @@ def scan_files_by_extn(given_file_etxn, _path):
 
 
 scan_files_by_extn(".py", path)
+
+# NOTE: os.walk(PATH, topdown=False) will walk from down to top
