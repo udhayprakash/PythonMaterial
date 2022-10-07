@@ -14,6 +14,7 @@ ipython = "^8.5.0"
 ipdb = "^0.13.9"
 fastapi = "^0.85.0"
 uvicorn = "^0.18.3"
+Flask-JWT-Extended = "^4.4.4"
 
 
 [build-system]
