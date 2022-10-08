@@ -7,7 +7,7 @@ from random import randrange
 
 def encrypt(m):
     # define circular wheels
-    inner_wheel = [i for i in string.lowercase]
+    inner_wheel = [i for i in string.ascii_lowercase]
     outer_wheel = inner_wheel
     # calculate random secret key
     while True:
@@ -27,7 +27,7 @@ def encrypt(m):
 
 
 def decrypt(cipher, key):
-    inner_wheel = [i for i in string.lowercase]
+    inner_wheel = [i for i in string.ascii_lowercase]
     outer_wheel = inner_wheel
     cipher_dict = {}
     for i in range(26):
@@ -45,5 +45,5 @@ def decrypt(cipher, key):
 while True:
     s = input("Enter your secret message:")
     encrypted = encrypt(s)
-    print("encrypted message ->> %s\n" % (encrypted[0]))
-    print("decrypted message ->> %s\n" % decrypt(encrypted[0], encrypted[1]))
+    print(f"encrypted message ->> {encrypted[0]}\n")
+    print(f"decrypted message ->> {decrypt(encrypted[0], encrypted[1])}\n")

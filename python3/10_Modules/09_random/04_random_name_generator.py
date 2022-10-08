@@ -11,7 +11,7 @@ def random_name_generator(first, second, x):
     """
     names = []
     for i in range(x):
-        names.append("{0} {1}".format(choice(first), choice(second)))
+        names.append(f"{choice(first)} {choice(second)}")
     return set(names)
 
 

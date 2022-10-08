@@ -6,7 +6,7 @@ Purpose: Working with tar files
 import tarfile
 import time
 
-for file_name in ["fileThree.txt", "tarFileOne.tar", "some.txt"]:
+for file_name in ("fileThree.txt", "tarFileOne.tar", "some.txt"):
     try:
         is_tar_file = tarfile.is_tarfile(file_name)
         print(file_name, "\t", is_tar_file)

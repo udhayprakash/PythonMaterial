@@ -29,7 +29,7 @@ print(data)
 
 # -----------------------------------------------
 # Method 1: traditionally
-gh = open("h_context_manager.txt", "w")
+gh = open("h_context_manager.txt", "w", encoding="utf_8")
 # gh.writelines(['1', '2', '3', '4'])
 gh.writelines(["1\n", "2\n", "3\n", "4\n"])
 gh.flush()
@@ -38,7 +38,7 @@ gh.close()
 
 
 # Method 2: Using context manager
-with open("h_context_manager.txt", "w") as gh:
+with open("h_context_manager.txt", "w", encoding="utf_8") as gh:
     gh.writelines(["1", "2", "3", "4"])
 
 # gh.write('next') # ValueError: I/O operation on closed file.

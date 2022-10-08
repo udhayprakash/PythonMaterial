@@ -4,7 +4,7 @@ import os
 import subprocess
 
 base_dir = "/tmp/pid_dir"
-pid_files = ["ut.pid", "ft.pid"]
+pid_files = ("ut.pid", "ft.pid")
 max_seconds = 48 * 3600
 
 
@@ -20,7 +20,7 @@ def check_pid(pid):
 
 def get_elapsed_time(pid):
     """get the elapsed time of the process with this pid"""
-    cmd = "ps -p %s -o pid,etime" % str(pid)
+    cmd = f"ps -p {str(pid)} -o pid,etime"
     proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
     # get data from stdout
     proc.wait()
@@ -37,7 +37,7 @@ def get_elapsed_time(pid):
             pass  # ignore it
     else:
         # didn't find one
-        print("Process PID %s doesn't seem to exist!" % pid)
+        print(f"Process PID {pid} doesn't seem to exist!")
         return 0
     pidInfo = [
         result.split()[1] for result in results if result.split()[0] == str(pid)
@@ -73,18 +73,18 @@ def get_elapsed_time(pid):
 def remove_pid(pidfiles):
     """remove pid files if the process is not running."""
     for i in pidfiles:
-        filepath = "%s/%s" % (base_dir, i)
+        filepath = f"{base_dir}/{i}"
         if os.path.exists(filepath):
             del_flag = 0
             with open(filepath) as f:
                 pid = f.read()
                 if not check_pid(int(pid)):
-                    print("pid file: %s" % i)
-                    print("process does not exist with pid %s" % pid)
+                    print(f"pid file: {i}")
+                    print(f"process does not exist with pid {pid}")
                     del_flag = 1
                 elif get_elapsed_time(pid) > max_seconds:
                     print("elapsed_time is greater than max_seconds")
-                    print("tring to kill pid %s" % pid)
+                    print(f"tring to kill pid {pid}")
                     os.kill(int(pid), 9)
                     del_flag = 1
             if del_flag:

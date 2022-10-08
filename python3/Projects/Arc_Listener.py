@@ -3,7 +3,6 @@ import json
 import mimetypes
 import os
 import re
-import sys
 from wsgiref import simple_server
 
 import falcon
@@ -25,7 +24,7 @@ class Uploads:
             self.asset_report(report)
 
     def video_report(self, report_json):
-        file = open("temp.txt", "a")
+        file = open("temp.txt", "a", encoding="utf_8")
         strEnterVideo = "Entering video_report function \n"
         file.write(strEnterVideo)
 
@@ -46,9 +45,8 @@ class Uploads:
 
         cursor = db.cursor()
 
-        sql = "select stateId from videos where upc = '%s' and isrc = '%s'" % (
-            upc,
-            unique_key,
+        sql = (
+            f"select stateId from videos where upc = '{upc}' and isrc = '{unique_key}'"
         )
         cursor.execute(sql)
 
@@ -58,7 +56,7 @@ class Uploads:
 
         print(("Row count :" + str(cursor.rowcount)))
         for row in video:
-            print("here --> %s" % row[0])
+            print(f"here --> {row[0]}")
             stateid = row[0]
             if stateid < 30:
                 strStateLess = "Video record exists where stateId is less than 30 \n"
@@ -76,20 +74,24 @@ class Uploads:
             try:
                 strRecExist = "Video record exists in DB \n"
                 file.write(strRecExist)
-                # import pdb; pdb.set_trace()
                 if status == "success":
 
                     cursor.execute(
-                        "UPDATE videos SET arcId = '%s', isrcDistPolicy = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30"
-                        % (musicvideo_uuid, isrc_dp_uuid, timestamp, upc, unique_key)
+                        f"""UPDATE videos
+                            SET arcId = '{musicvideo_uuid}',
+                                isrcDistPolicy = '{isrc_dp_uuid}',
+                                receiptDateArc ='{timestamp}'
+                            WHERE upc = '{upc}' AND isrc = '{unique_key}' AND stateId >= 30"""
                     )
                     db.commit()
                     strCommit = "Data committed to DB successfully \n"
                     file.write(strCommit)
                 else:
                     cursor.execute(
-                        "UPDATE videos SET errorStatusArc = '%s', receiptDateArc ='%s' WHERE upc = '%s' AND isrc = '%s' AND stateId >= 30"
-                        % (error_spec, timestamp, upc, unique_key)
+                        f"""UPDATE videos
+                            SET errorStatusArc = '{error_spec}',
+                            receiptDateArc ='{timestamp}'
+                            WHERE upc = '{upc}' AND isrc = '{unique_key}' AND stateId >= 30"""
                     )
                     db.commit()
                     strUnCom = "Response returned with error status \n"
@@ -111,21 +113,21 @@ class Uploads:
         file.write(strAsset)
 
 
-app = falcon.API()
-app.add_route("/MVI/report", Uploads())
+def static(req, res, static_dir="static", index_file="index.html"):
+    path = static_dir + req.path
+    if req.path == "/":
+        path += index_file
+    if os.path.isfile(path):
+        res.content_type = mimetypes.guess_type(path)[0]
+        res.status = falcon.HTTP_200
+        res.stream = open(path)
+    else:
+        res.status = falcon.HTTP_404
+
+
 if __name__ == "__main__":
-
-    def static(req, res, static_dir="static", index_file="index.html"):
-        path = static_dir + req.path
-        if req.path == "/":
-            path += index_file
-        if os.path.isfile(path):
-            res.content_type = mimetypes.guess_type(path)[0]
-            res.status = falcon.HTTP_200
-            res.stream = open(path)
-        else:
-            res.status = falcon.HTTP_404
-
+    app = falcon.API()
+    app.add_route("/MVI/report", Uploads())
     app.add_sink(static)
 
     host = "166.77.182.110"  # Change appropriately
