@@ -31,6 +31,12 @@ Weaknesses
         holding nn items.
         - That's O(n) space, but it's still two
         data structures (as opposed to one).
+
+----------------------------------------
+space	                        O(n)
+get least recently used item	O(1)
+access item	                    O(1)
+----------------------------------------
 """
 import functools
 
