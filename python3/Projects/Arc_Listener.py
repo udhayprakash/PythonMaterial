@@ -130,7 +130,7 @@ if __name__ == "__main__":
     app.add_route("/MVI/report", Uploads())
     app.add_sink(static)
 
-    host = "166.77.182.110"  # Change appropriately
+    host = "127.0.0.1"  # Change appropriately
     port = 5000
     httpd = simple_server.make_server(host, port, app)
     print("Serving on %s:%s" % (host, port))

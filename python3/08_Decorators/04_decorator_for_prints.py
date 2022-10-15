@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """
 Purpose: Decorator for printing start and end of function
+
+    A decorator is a function that allows us to wrap another function
+    in order to extend the behavior of the wrapped function, without
+    permanently modifying it.
+
+
 """
 
 

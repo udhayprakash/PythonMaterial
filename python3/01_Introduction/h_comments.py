@@ -23,7 +23,6 @@ print("Hello world2")
 print("Hello #world4")
 print("Hello", "world5", sep="#")
 
-
 print("Hello world6")  # 123kj12312390809i*^&*(*(*&(*)))
 print("Hello world7")  # This is about the world
 
