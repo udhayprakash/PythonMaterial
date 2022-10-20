@@ -12,6 +12,7 @@
     Arithmetic operations
         +, -, , /, //, %, *
         divmod() function
+		Practical Problem solving
         working with complex numbers
         abs() function
         Operator precedence in Arithmetic operations

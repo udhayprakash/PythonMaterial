@@ -21,6 +21,7 @@ Purpose: Operator precedence in python
 
 
 result = (22 + 2 / 2 * 4 // 4 - 89) + 67 - 10e7
+# result = (22 + 2 / 8 // 4 - 89) + 67 - 10e7
 print(result)
 
 expression = 40 / 2

@@ -56,11 +56,11 @@ float("+1E6")  # 1000000.0
 float("-Infinity")  # -inf
 
 # NOTE: Anything can be converted to str; but not vice versa
-print("str(12)", str(12))
+print("str(12)          ", str(12))
 print("str(121233.12323)", str(121233.12323))
-print("str(-0.000012)", str(-0.000012))
-print("str(True)", str(True))
-print("str(None)", str(None))
+print("str(-0.000012)   ", str(-0.000012))
+print("str(True)        ", str(True))
+print("str(None)        ", str(None))
 print()
 
 # int Value is same in all four representations

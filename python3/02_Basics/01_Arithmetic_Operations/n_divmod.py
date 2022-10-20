@@ -19,7 +19,6 @@ print()
 # print("divmod( 3+4j, 2) =", divmod(3 + 4j, 2))
 # TypeError: can't take floor or mod of complex number.
 
-
 # To get last digit in an integer
 print(divmod(45676, 10))
 print(divmod(4567, 10))

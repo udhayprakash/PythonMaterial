@@ -15,6 +15,7 @@ Step 2: Get the quantity of items from the user(in run time)
 NOTE: input()
         -> to get value in run-time
         -> will give any input as string only
+
 """
 # cost of items
 cost_of_rice = 10  # per kg

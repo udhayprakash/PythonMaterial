@@ -4,7 +4,6 @@ Purpose: Saving Bank
 
     Initial Balance 0
 
-
 Algorithm
 ----------
 Step 1: Create an variable 'balance' with initial value 0
