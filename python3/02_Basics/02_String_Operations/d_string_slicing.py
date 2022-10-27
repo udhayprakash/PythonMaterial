@@ -25,7 +25,6 @@ print()
 print("language[0:5]  :", language[0:5])  # Pytho
 print("language[0:6]  :", language[0:6])  # Python
 
-
 print()
 print("language[7:18] :", language[7:18])  # Programming
 print("language[7:999]:", language[7:999])  # 999 index isn't present
@@ -56,7 +55,6 @@ print("language[17:7:-1]", language[17:7:-1])  # 17-1 = 16
 
 print("language[17:6:-1]", language[17:6:-1])  # 17-1 = 16
 # [17:6:-1]  =>17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7
-
 
 # -> slicing above the limit
 print("language[18:6:-1]", language[18:6:-1])  # 18-1 = 17

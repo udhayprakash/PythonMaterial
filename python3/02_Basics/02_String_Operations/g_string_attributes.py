@@ -80,6 +80,7 @@ print()
 #     2. lower case character should NOT present
 
 print('"1234".isdigit()     :', "1234".isdigit())
+print('"-1234".isdigit()     :', "-1234".isdigit())
 print('"1234 ".isdigit()    :', "1234 ".isdigit())
 print('"12 34".isdigit()    :', "12 34".isdigit())
 print('"123edsd".isdigit()  :', "123edsd".isdigit())
@@ -103,6 +104,7 @@ print()
 
 print('"αλεπού".isascii()    :', "αλεπού".isascii())
 print('"foxfox".isascii()    :', "foxfox".isascii())
+print('"!@#@#".isascii()    :', "!@#@#".isascii())
 print()
 
 print('"ab".isprintable()    :', "ab".isprintable())
@@ -112,6 +114,44 @@ print()
 
 print('"$true".isidentifier() :', "$true".isidentifier())
 print('"true".isidentifier() :', "true".isidentifier())
+"""
+>>> 'name'.isidentifier()
+True
+>>> 'name123'.isidentifier()
+True
+>>> 'name_some_1'.isidentifier()
+True
+>>> 'name_some_TWO'.isidentifier()
+True
+>>> 'PI'.isidentifier()
+True
+>>> 'DOZEN'.isidentifier()
+True
+>>>
+>>>
+>>> '2name'.isidentifier()
+False
+>>> '$name'.isidentifier()
+False
+>>> 'first-name'.isidentifier()
+False
+>>> ''.isidentifier()
+False
+>>>
+>>>
+>>> '_val'.isidentifier()
+True
+>>> '_-val'.isidentifier()
+False
+>>> '__val'.isidentifier()
+True
+>>> '__val__'.isidentifier()
+True
+>>> '__name__'.isidentifier()
+True
+>>> '__________name__'.isidentifier()
+True
+"""
 print()
 
 # P   y  t  h  o n   P r o g  r  a  m  m  i  n  g

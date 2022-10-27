@@ -43,7 +43,7 @@ print()
 print(f'{"left aligned":<20}')  # 'left aligned        '
 print(f'{"right aligned":>20}')  # '       right aligned'
 print(f'{"centered":^20}')  # '      centered      '
-print(f'{"centered":-^20}')  # '      centered      '
+print(f'{"centered":-^20}')  # '------centered------'
 print()
 
 print(f"{1024}", 1024)  # 1024 1024
@@ -111,7 +111,7 @@ print()
 
 
 today = datetime.now()
-print(f"today:%Y-%m-%d")  # '2021-07-20'
+print(f"{today:%Y-%m-%d}")  # '2021-07-20'
 print()
 
 #######################

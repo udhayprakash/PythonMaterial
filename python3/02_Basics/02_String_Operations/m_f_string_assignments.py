@@ -14,8 +14,8 @@ print(f"{language = }")
 print()
 
 num = 1234
-print(f"num={num}")
-print(f"{num =}")
+print(f"num = {num}")
+print(f"{num = }")
 # print(f'{NUmber =}')
 # NameError: name 'NUmber' is not defined
 

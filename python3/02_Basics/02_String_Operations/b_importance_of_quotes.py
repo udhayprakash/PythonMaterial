@@ -62,7 +62,6 @@ print(
     """Today is an awesome day
     to learn python"""
 )
-
 print(
     """
     a - apple

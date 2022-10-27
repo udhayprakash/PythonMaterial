@@ -72,6 +72,8 @@ for i in range(3000, 3500):
 
 print(f"{sys.maxunicode =}")
 
+# chr(1114111+1)  # ValueError: chr() arg not in range(0x110000)
+
 # string reversal on unicode characters is tricky
 s6 = "noe\u0308l"
 print(s6)  # 'noël'

@@ -51,9 +51,10 @@ print("ord('o'):", ord("o"))
 # 0 1 2 3 4 5 6 7
 # D E F
 
-# ASSUMPTION: Ignore case -sensitivity
-# HINTS: ord(), chr(), %
 
 # Ex: egg => hjj
 #    bindu => elqg
 #    Yash  => bd..
+
+# ASSUMPTION: Ignore case -sensitivity
+# HINTS: ord(), chr(), %

@@ -60,7 +60,7 @@ print("name[::]         :", name[::])
 print("name[::1]        :", name[::1])
 print("name[::-1]       :", name[::-1])  # string reversal
 
-print("name[2::-1]      :", name[2::-1])  # name[2:-1:-1]
+print("name[2::-1]      :", name[2::-1])  # name[2:12:-1]
 print("name[2:4:-1]      :", name[2:4:-1])  # name[2:4:-1]
 
 # Assignment: reverse each word in given sentence in same order

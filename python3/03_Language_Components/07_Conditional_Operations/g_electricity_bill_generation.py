@@ -97,3 +97,6 @@ else:
         Amount          : {amount}
     """
     )
+
+
+# NOTE: Prefer to use if-Guarded clause to make code syntax simple

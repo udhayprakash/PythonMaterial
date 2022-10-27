@@ -90,45 +90,50 @@ print()
 
 print("Name:{} Age:{} Salary:{}".format("udhay", 99, 9999.9999))
 print(
-    """Name  :{}
-         Age   :{}
-         Salary:{}""".format(
+    """
+        Name  :{}
+        Age   :{}
+        Salary:{}""".format(
         "udhay", 99, 9999.9999
     )
 )
 
 print(
-    """Name  :{0}
-         Age   :{1}
-         Salary:{2}""".format(
-        "udhay", 99, 9999.9999
-    )
-)
-#                               0      1     2
-
-print(
-    """Name  :{0} Name  :{0} Salary:{2}
-         Age   :{1} Name  :{0}
-         Salary:{2}""".format(
-        "udhay", 99, 9999.9999
-    )
-)
-#                               0      1     2
-
-
-print(
-    """Name  :{1} Name  :{1} Salary:{1}
-         Age   :{1} Name  :{1}
-         Salary:{1}""".format(
+    """
+        Name  :{0}
+        Age   :{1}
+        Salary:{2}""".format(
         "udhay", 99, 9999.9999
     )
 )
 #                               0      1     2
 
 print(
-    """Name  :{NAME} Name  :{NAME} Salary:{SALARY}
-         Age   :{AGE} Name  :{NAME}
-         Salary:{SALARY}""".format(
+    """
+        Name  :{0} Name  :{0} Salary:{2}
+        Age   :{1} Name  :{0}
+        Salary:{2}""".format(
+        "udhay", 99, 9999.9999
+    )
+)
+#                               0      1     2
+
+
+print(
+    """
+        Name  :{1} Name  :{1} Salary:{1}
+        Age   :{1} Name  :{1}
+        Salary:{1}""".format(
+        "udhay", 99, 9999.9999
+    )
+)
+#                               0      1     2
+
+print(
+    """
+        Name  :{NAME} Name  :{NAME} Salary:{SALARY}
+        Age   :{AGE} Name  :{NAME}
+        Salary:{SALARY}""".format(
         NAME="udhay", AGE=99, SALARY=9999.9999
     )
 )
