@@ -14,6 +14,14 @@ r.start  # 0
 r.stop  # 20
 r.step  # 2
 
+print(
+    f"""
+  r.start: {r.start}
+  r.stop:  {r.stop}
+  r.step:  {r.step}
+"""
+)
+
 11 in r  # False
 10 in r  # True
 

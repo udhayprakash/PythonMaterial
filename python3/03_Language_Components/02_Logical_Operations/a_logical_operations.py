@@ -31,6 +31,10 @@ print("not not True = ", not not True)
 print("not not False = ", not not False)
 print()
 
+print(
+    "not not not not not not not not not not not not True",
+    not not not not not not not not not not not not True,
+)
 # --------------------
 expr2 = (45 <= 45) or (3 > 333)
 #         True     or   False     = True

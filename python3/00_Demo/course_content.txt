@@ -31,10 +31,12 @@
     Logical Operations
     Boolean Operations
     Bitwise Operations
-    range() function
     Identity Operations
+    range() function
     Conditional Operations
+	Structural Pattern Matching
     Loops: for & while
+    Walrus Operator
 
 04.Exception Handling
     Exceptions Hierarchy

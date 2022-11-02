@@ -49,6 +49,5 @@ print(f"{1 or 2 or 3 or 4    = }")  # 1
 print(f"{4.4 or 2 or 3 or 4  = }")  # 4.4
 print()
 
-
 print(f"{0 or 1 and 2 or 3      = }")  # 2
 print(f"{0 or (1 and 2) or 3    = }")  # 2

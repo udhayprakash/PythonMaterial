@@ -1,4 +1,4 @@
-Reserved Keywords (33 in python 3.x)
+Reserved Keywords (35 in python 3.x)
 -------------------------------------
 False               class               from                or
 None                continue            global              pass

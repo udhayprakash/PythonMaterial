@@ -2,14 +2,13 @@ import concurrent.futures
 
 
 def foo(bar):
-    print("hello {}".format(bar))
-    return "foo"
+    return "hello {}".format(bar)
 
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
     future = executor.submit(foo, "world!")
     return_value = future.result()
-    print(return_value)
+    print(f"{return_value =}")
 
 
 def hello_world(name, age):

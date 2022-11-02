@@ -17,7 +17,7 @@ output     : xC
 """
 import sys
 
-temperature = input("Enter the temperature, followed by C or F:").upper()
+temperature = input("Enter the temperature, followed by C or F:").upper().strip()
 
 if "C" in temperature:
     celsius = float(temperature.strip("C "))

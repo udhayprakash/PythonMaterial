@@ -22,7 +22,6 @@ print("bool(0.000000001) ", bool(0.000000001))
 print("bool(-0.000000001)", bool(-0.000000001))
 print()
 
-
 # strings
 #  True - non-empty string
 #  False - empty string

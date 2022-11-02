@@ -1,19 +1,21 @@
-Built-in Functions (69) - Python 3
+Built-in Functions (71) - Python 3.11
 ========================
-abs()	        delattr()	hash()	        memoryview()	set()
-all()	        dict()	    help()	        min()	        setattr()
-any()	        dir()	    hex()	        next()	        slice()
-ascii()	        divmod()	id()	        object()	    sorted()
-bin()	        enumerate()	input()	        oct()	        staticmethod()
-bool()	        eval()	    int()	        open()	        str()
-breakpoint()	exec()	    isinstance()	ord()	        sum()
-bytearray()	    filter()	issubclass()	pow()	        super()
-bytes()	        float()	    iter()	        print()	        tuple()
-callable()	    format()	len()	        property()	    type()
-chr()	        frozenset()	list()	        range()	        vars()
-classmethod()	getattr()	locals()	    repr()	        zip()
-compile()	    globals()	map()	        reversed()	    __import__()
-complex()	    hasattr()	max()	        round()
+abs()	        delattr()	hex()			oct()			sum()
+aiter()			dict()		id()			open()			super()
+all()	        dir()	    input()			ord()	        tuple()
+any()	        divmod()	int()			pow()	        type()
+anext()			enumerate()	isinstance()	print()			vars()
+ascii()	        eval()		issubclass()	property()	    zip()
+bin()			exec()	    iter()	        range()	        __import__()
+bool()	        filter()	len()	        repr()
+breakpoint()	float()	    list()			reversed()
+bytearray()	    format()	locals()		round()
+bytes()	        frozenset()	map()	        set()
+callable()	    getattr()	max()	        setattr()
+chr()	        globals()	memoryview()	slice()
+classmethod()	hasattr()	min()	    	sorted()
+compile()	    hash()		next()	        staticmethod()
+complex()	    help()		object()	    str()
 
 
 Built-in Functions (64) - Python 2

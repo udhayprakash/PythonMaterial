@@ -30,7 +30,7 @@ if units_consumed < 0:
     print("INVALID INPUT")
 else:
     amount = 0
-    remaining_unitsremaining_units = units_consumed
+    remaining_units = units_consumed
     if remaining_units > 250:
         slab_units = remaining_units - 250
         amount += slab_units * 10.0

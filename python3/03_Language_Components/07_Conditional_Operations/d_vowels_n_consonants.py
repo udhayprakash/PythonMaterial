@@ -7,7 +7,7 @@ Purpose: To check whether the given character
 
 in operator  works with any iterable object
 """
-letter = input("Enter an english alphabet:").strip()
+letter = input("Enter an english alphabet:").strip().lower()
 
 # using the membership operator - 'in'
 # Method 1
