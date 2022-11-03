@@ -24,7 +24,6 @@ while i < 5:  # condition - less than
     i += 1  # increment/decrement
 print()
 
-
 i = 0
 while i <= 5:  # condition - less than or equal
     print(i, end=" ")  # logic
@@ -46,7 +45,6 @@ while j > 0:  # condition- greater than
     print(j, end=" ")
     j -= 1
 print()
-
 
 j = 5
 while j >= 0:  # condition- greater than or equal

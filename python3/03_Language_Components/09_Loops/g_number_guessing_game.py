@@ -6,7 +6,7 @@ Purpose: Number Guessing Game
 """
 LUCKY_NUMBER = 67
 
-# Method 1 - No limit on number of chances(attempt)
+# # Method 1 - No limit on number of chances(attempt)
 # given_number = int(input('Enter no. between 0 & 100:'))
 
 # if given_number == LUCKY_NUMBER:
@@ -21,7 +21,7 @@ LUCKY_NUMBER = 67
 # while attempt < 5:
 #     attempt += 1
 #     print(f'{attempt = }')
-#
+
 #     given_number = int(input('Enter no. between 0 & 100:'))
 #     if given_number == LUCKY_NUMBER:
 #         print('You guessed correctly!')
@@ -30,7 +30,7 @@ LUCKY_NUMBER = 67
 #         print('Reduce your guessing number')
 #     else:  # given_number < LUCKY_NUMBER
 #         print('Increase your guessing number')
-#
+
 #     if attempt == 5:
 #         print(f'Sorry! YOu failed to guess in all {attempt} attempts'.upper())
 
@@ -39,7 +39,7 @@ LUCKY_NUMBER = 67
 # while attempt < 5:
 #     attempt += 1
 #     print(f'{attempt = }')
-#
+
 #     given_number = int(input('Enter no. between 0 & 100:'))
 #     if given_number == LUCKY_NUMBER:
 #         print('You guessed correctly!')
@@ -53,6 +53,7 @@ LUCKY_NUMBER = 67
 
 
 # # Method 4 - Check for user choice after each incorrect guess
+
 # # choice = 'Y'
 # # attempt = 0
 # choice, attempt = 'Y', 0
@@ -68,13 +69,14 @@ LUCKY_NUMBER = 67
 #         print('Reduce your guessing number')
 #     else:  # given_number < LUCKY_NUMBER
 #         print('Increase your guessing number')
-#
+
 #     choice = input('Enter Y(or y) to continue .. ').upper()
 # else:
 #     print(f'Sorry! YOu failed to guess in all {attempt} attempts'.upper())
 
 
 # Method 5 - Giving Infinite Attempts; but tracking attempts
+
 attempt = 0
 while True:
     attempt += 1
@@ -89,8 +91,9 @@ while True:
         print("Reduce your guessing number")
     else:  # given_number < LUCKY_NUMBER
         print("Increase your guessing number")
-else:
-    print("It will never reach here, as loop breaks to exit")
+# else:  # CODE IS NOT REACHABLE
+#     print("It will never reach here, as loop breaks to exit")
+
 
 """
     Assignment

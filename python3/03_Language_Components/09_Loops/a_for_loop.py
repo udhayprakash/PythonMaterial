@@ -66,9 +66,16 @@ for each_pair in enumerate("Python"):
     print(each_pair, type(each_pair))
 
 # unpacking
-num1, num2 = 123, 345
-print(f"{num1 = }")
-print(f"{num2 = }")
+num1 = 222, 333  # Asignment operation
+num2, num3 = 222, 333  # UNpacking
+# num4 , num5= 444        # TypeError: cannot unpack non-iterable int object
+print(
+    f"""
+    {type(num1) = } {num1 = }
+    {type(num2) = } {num2 = }
+    {type(num3) = } {num3 = }
+"""
+)
 
 for loop_index, each_chr in enumerate("Python"):
     # print(loop_index, each_chr)

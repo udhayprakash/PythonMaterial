@@ -6,7 +6,7 @@ Purpose: Multiplication Table Generation
 first = 0
 while first < 5:
     first += 1
-    print(f"{first =}")
+    print(f"{first  =}")
 
 second = 0
 while second < 5:
@@ -16,15 +16,15 @@ while second < 5:
 print()
 # Second while loop under first while loop
 MAX_TABLE = 10
+
 first = 0
 while first < MAX_TABLE:
     first += 1
-    # print(f'{first =}')
+    # print(f"{first  =}")
 
     second = 0
     while second < MAX_TABLE:
         second += 1
-        # print(f'\t{second =}')
         # print(first, '*', second, '=', first * second)
         # print(str(first) + ' * ' + str(second) + ' = ' + str(first * second))
 
@@ -35,14 +35,16 @@ while first < MAX_TABLE:
         # New Style formatting
         # print('{} * {} = {}'.format(first, second, first * second))
         # print('{0} * {1} = {2}'.format(first, second, first * second))
-        # print('{0:2} * {1:2} = {2:2}'.format(first, second, first * second))
-        # print('{:2} * {:2} = {:2}'.format(first, second, first * second))
+        # print('{0:2} * {1:2} = {2:3}'.format(first, second, first * second))
+        # print('{0:02} * {1:02} = {2:03}'.format(first, second, first * second))  # zero - padding
+        # print('{:2} * {:2} = {:3}'.format(first, second, first * second))
 
         # F-strings
         # print(f'{first} * {second} = {first * second}')
         print(f"{first:2} * {second:2} = {first * second:3}")
 
-    print("-" * 15)  # String repetition
+    print("=" * 15)  # print("===============")
+
 
 """
 Assignment
