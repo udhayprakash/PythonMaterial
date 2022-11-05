@@ -9,3 +9,5 @@ val_2 = int(input("Enter val_2      :"))
 # Multiplication
 result = val_1 * val_2  # val_1 + val_2
 print(f"Multiplication   :{result}")
+
+# NOTE: ;(semi-colon) is statement separator

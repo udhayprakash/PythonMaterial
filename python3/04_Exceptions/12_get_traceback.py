@@ -8,7 +8,7 @@ import traceback
 num1 = 12
 num2 = 34
 num3 = 456
-num4 = 34
+num4 = "34"
 num5 = 3445
 
 try:
@@ -18,7 +18,11 @@ try:
     expr4 = expr1 * (expr2) / expr3
 except ZeroDivisionError:
     print("Denominator in divison should not be zero")
-    exc_type, exc_value, exc_traceback = sys.exc_info()
+except Exception as ex:
+    print(f"Unhandled exception:{ex =}")
+    # print(" sys.exc_info()",  sys.exc_info())
+    exc_type, exc_value, exc_traceback = sys.exc_info()  # TUPLE UNPACKING
+
     print(
         f"""
     exc_type     : {exc_type},
@@ -32,8 +36,6 @@ except ZeroDivisionError:
     )
     print()
     traceback.print_exc(file=sys.stdout)
-except Exception as ex:
-    print(f"Unhandled exception:{ex =}")
 else:
     print(f"{expr4 =}")
 finally:

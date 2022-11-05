@@ -21,6 +21,7 @@ else:
 assert 2 + 10 == 12, "Wrong answer"
 assert 10 + 2 == 12, "Wrong answer"
 
+# assert 12 + 10 == 12, "Wrong answer"
 try:
     assert 12 + 10 == 12, "Wrong answer"
 except AssertionError as ex:
