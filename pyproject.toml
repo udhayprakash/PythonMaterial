@@ -16,6 +16,8 @@ fastapi = "^0.85.0"
 uvicorn = "^0.18.3"
 Flask-JWT-Extended = "^4.4.4"
 httpx = "^0.23.0"
+colorama = "^0.4.6"
+wget = "^3.2"
 
 
 [build-system]
