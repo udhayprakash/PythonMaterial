@@ -50,6 +50,8 @@ mylist = [1, 2, 9, True, False, None]
 mylist = [1, 2, 9, True, False]
 print(f"{sorted(mylist) =}")  # [False, 1, True, 2, 9]
 
+sorted([False, 0])
+sorted([1, 1.0])
 
 # Question: list.sort(reverse=True), sorted(mylist, reverse=True) vs reversed()
 mylist = ["1", "2", "9", "a", "z", "A", "Z"]
