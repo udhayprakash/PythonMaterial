@@ -15,7 +15,7 @@ print(person_details)
 # To get the dictionary keys
 print(f"{person_details.keys()  =}")
 
-# To get the dictionary keys
+# To get the dictionary values
 print(f"{person_details.values() =}")
 
 # To get both keys & values as pairs

@@ -40,3 +40,19 @@ print_function(12)
 print_function(12, "34")
 print_function(12, "34", "three")
 print_function(12, "34", "three", "India", 75, 34, "sdas", 342432, 212.34)
+
+# ----------------------------------------
+from datetime import datetime
+
+
+def print_time_func(*args):
+    print("\n", datetime.now(), end="::")
+    for each_arg in args:
+        print(each_arg, sep=" ", end=" ")
+
+
+print_time_func(12, "34", "three", "India", None, True, "sdas", 342432, 212.34)
+print_time_func(12, "34", "three")
+print_time_func(12, "34")
+print_time_func(12)
+print_time_func()

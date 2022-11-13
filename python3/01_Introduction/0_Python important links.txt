@@ -78,6 +78,30 @@ IDEs to work with Python
 24. SourceLair
 25. Pyzo
 
+Jupyter Notebooks Online Environments
+--------------------------------------
+1. CoCalc
+2. Google Colab
+3. Kaggle Kernels
+4. Datalore
+5. Deepnote
+
+Jupyter Notebook Commands
+--------------------------
+1. To convert to html/pdf
+	jupyter nbconvert --to html --no-input my_notebook.ipynb
+	jupyter nbconvert --to webpdf --no-input my_notebook.ipynb
+
+2. Code Memory Profiling
+
+	pip install memory_profiler
+
+	Within Jupyter notebook/ipython shell,
+	activate it
+		%load_ext memory_profiler
+
+	%memit sum([n*n for n in range(1_000_000)])
+	%memit sum((n*n for n in range(1_000_000)))
 
 Virtual Environment
 --------------------

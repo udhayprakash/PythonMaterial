@@ -7,6 +7,9 @@ TASK - To display all even numbers between 0 & 100
 To install ipdb,
     pip install -U ipdb --user
 
+NOTE: TO make ipdb as the default, when using breakpoint(),
+    export PYTHONBREAKPOINT='ipdb.set_trace'
+
 """
 import ipdb
 

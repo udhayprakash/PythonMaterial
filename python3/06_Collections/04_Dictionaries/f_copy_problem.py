@@ -5,7 +5,7 @@ Purpose: Dictionaries
 """
 import copy
 
-signup_form = {"name": "Udhay", "age": 31, "hieght": 169, "weight": 73}
+signup_form = {"name": "Udhay", "age": 31, "height": 169, "weight": 73}
 
 # assignment operation
 new_signup_form = signup_form
@@ -31,7 +31,7 @@ del new_signup_form
 # ----------------------------------------
 # Solution
 print()
-signup_form = {"name": "Udhay", "age": 31, "hieght": 169, "weight": 73}
+signup_form = {"name": "Udhay", "age": 31, "height": 169, "weight": 73}
 new_signup_form = signup_form.copy()
 
 print("\n using dict.copy()")
@@ -46,11 +46,11 @@ del signup_form
 del new_signup_form
 
 # -----------------------------------
-signup_form = {"name": "Udhay", "age": 31, "hieght": 169, "weight": 73}
+signup_form = {"name": "Udhay", "age": 31, "health": {"height": 169, "weight": 73}}
 new_signup_form = copy.deepcopy(signup_form)
 
 print("\n using copy.deepcopy()")
-new_signup_form["name"] = "Dhoni"
+new_signup_form["health"]["weight"] = 82
 
 print(signup_form)
 print(new_signup_form)

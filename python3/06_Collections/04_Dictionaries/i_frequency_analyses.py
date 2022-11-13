@@ -83,9 +83,9 @@ print(frequency_result)
 print(frequency_result.keys())
 print("Top 3 chars in frequency are", list(frequency_result.keys())[:3])
 
-# Assignment
 # In character frequency analyses, try to get top 5 occurring characters
-sorted(frequency.items, key=lambda x: x[1])[-5:]
+print(sorted(frequency.items(), key=lambda x: x[1])[-5:])
+
 """
 Assignment
 ==========
