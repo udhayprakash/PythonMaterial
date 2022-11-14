@@ -6,7 +6,7 @@ Purpose: Recursive Functions
 # factorial(9) = 9 * 8 * 7 * ..... * 1
 
 
-# Method 1 - suing recursions
+# Method 1 - using recursions
 def factorial(num):
     """
     factorial(9) = 9 * 8 * 7 * 6 * .....1
@@ -14,7 +14,7 @@ def factorial(num):
     :return: final summation
     """
     # print(f'{num = }')
-    if num == 1:
+    if num <= 1:
         return 1
     return num * factorial(num - 1)
 

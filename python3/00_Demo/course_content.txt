@@ -1,6 +1,11 @@
                 ------------------------------------
                  PYTHON PROGRAMMING COURSE CONTENT
                 ----------------------------------
+00. Dev Setup
+    Installing IDE/Editor
+    Installing Python and local setup
+    Github access, creating project
+
 01.Introduction
     Importance of Python
     Two versions of Python (2.x & 3.x)
@@ -12,7 +17,7 @@
     Arithmetic operations
         +, -, , /, //, %, *
         divmod() function
-		Practical Problem solving
+        Practical Problem solving
         working with complex numbers
         abs() function
         Operator precedence in Arithmetic operations
@@ -20,12 +25,12 @@
         Usage of single, double and triple quotes
         len() function
         Indexing and Slicing Strings
+        string attributes
         String formatting: old & new styles, f-strings
         bytearray() and byte() strings
         unicode strings
     Usage of help
     Usage of pydoc
-
 03.Language Components
     Relational Operations
     Logical Operations
@@ -34,8 +39,8 @@
     Identity Operations
     range() function
     Conditional Operations
-	Structural Pattern Matching
-    Loops: for & while
+    Structural Pattern Matching
+    Loops: for & while, break, continue, pass, sys.exit
     Walrus Operator
 
 04.Exception Handling
@@ -44,6 +49,8 @@
     Handling single and multiple exceptions
     raising exceptions
     asserts
+    traceback
+    warnings
 
 05.Debugging
     Importance of logical errors
@@ -59,6 +66,7 @@
         zip() function
         workaround for switch case
     Comprehensions
+    Working with Iterables - sum(), max(), min()
 
 07.Functions
     Functions with & without arguments, keyword arguments
@@ -71,7 +79,7 @@
         call by value
     Partial Functions
     Anonymous(Lambda) Functions
-    Higher order functions: map(), filter()
+    Higher order functions: map(), filter(), functool.reduce()
     Recursions and recursions limit
     inner functions
     closures
@@ -79,8 +87,11 @@
 08.Decorator Design Pattern
     Necessity
     function Decorator
+    Practical Examples
     syntactic sugar for decorators
     multiple decorators on same function
+    decorators with arguments
+    functools - wrap, lru_cache
     class decorator
 
 09.Iterables, Iterators, Generators and co-routines
