@@ -7,9 +7,13 @@ import asyncio
 import time
 
 
-async def say_after(delay, what):
+async def say_after(delay, message):
     await asyncio.sleep(delay)
-    print(what)
+    print(message)
+
+
+# asyncio.run(say_after(2, "Hello world"))
+# asyncio.run(say_after(2, "Hello Python"))
 
 
 async def main():

@@ -35,6 +35,8 @@ async def asynchronous_hello():
 print()
 asyncio.run(asynchronous_hello())
 
+print("Next statement")
+
 # stat1 - 2s
 # stat2 - 1s
 # stat3 - 2s

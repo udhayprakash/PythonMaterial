@@ -62,6 +62,10 @@ print()
 for each_key, each_val in names.items():
     print("\t", each_key, "====>", each_val)
 
+
+for each_index, (each_key, each_val) in enumerate(names.items()):
+    print("\t", each_index, ":", each_key, "====>", each_val)
+
 # --------------------
 print(list("Python Prog"))
 print(tuple("Python Prog"))
