@@ -66,6 +66,18 @@ for each_key, each_val in names.items():
 for each_index, (each_key, each_val) in enumerate(names.items()):
     print("\t", each_index, ":", each_key, "====>", each_val)
 
+# ===================================================
+mylist = [(1, 2, 3, 4), (5, 6, 7, 8), (9, 10, 11, 12)]
+
+for eachTuple in mylist:
+    print(eachTuple)
+
+for first, second, third, fourth in mylist:
+    print(f"{first =} {second =} {third =} {fourth =}")
+
+for first, second, *remaining in mylist:
+    print(f"{first =} {second =} {remaining =}")
+
 # --------------------
 print(list("Python Prog"))
 print(tuple("Python Prog"))

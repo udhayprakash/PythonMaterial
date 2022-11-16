@@ -8,7 +8,38 @@ Purpose:
             - convert to string
 """
 
+# Method 1
+def even_filter(nums):
+    print("even_filter - start")
+    even_nums = []
+    for num in nums:
+        if num % 2 == 0:
+            even_nums.append(num)
+    return even_nums
 
+
+def multiply_by_three(nums):
+    print("multiply_by_three - start")
+    muls_of_3 = []
+    for num in nums:
+        muls_of_3.append(num * 3)
+
+    return muls_of_3
+
+
+def convert_to_string(nums):
+    print("convert_to_string - start")
+    num_strs = []
+    for num in nums:
+        num_strs.append(f"Number:{num}")
+
+    return num_strs
+
+
+result = convert_to_string(multiply_by_three(even_filter(numbers)))
+print(f"{result = }")
+
+# Method 2
 def even_filter(nums):
     print("even_filter - start")
     for num in nums:

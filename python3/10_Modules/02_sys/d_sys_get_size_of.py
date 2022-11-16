@@ -28,6 +28,7 @@ my_str = "Python"  # str
 print(f"\n{my_str.__sizeof__()   =}")
 print(f"{sys.getsizeof(my_str) =}")
 
+print()
 # ----------------
 my_list = [12, 123, 23]  # list
 print(f"\n{my_list.__sizeof__()   =}")  # 104

@@ -98,7 +98,12 @@ print(f"{b = }")
 a |= b
 print(f"{a = }")
 print(f"{b = }")
+print()
 
-# Dict Union Is Not Commutative
+# set Union Is Not Commutative
 print({0} | {False})  # {0}
 print({False} | {0})  # {False}
+print()
+
+print({0: "0"} | {False: "False"})  # {0: 'False'}
+print({False: "False"} | {0: "0"})  # {False: '0'}

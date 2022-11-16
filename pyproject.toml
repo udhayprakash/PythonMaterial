@@ -20,6 +20,9 @@ colorama = "^0.4.6"
 wget = "^3.2"
 
 
+[tool.poetry.group.dev.dependencies]
+nbconvert = {extras = ["webpdf"], version = "^7.2.5"}
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -12,15 +12,19 @@ Purpose: importance and usage of argparse
 # password = input('Enter password:')
 # server_name = input('Enter server name:')
 
-# # # Method 3: sys.argv
-# import sys
+# Method 4: argparse
+import argparse
+
+# # Method 3: sys.argv
+import sys
+
 # print('sys.argv = ', sys.argv)
-#
+
 # if len(sys.argv) != 4:
 #     print('Help:')
 #     print(f'python {__file__} username password server_fqdn')
 #     sys.exit(1)
-#
+
 # # user_name = sys.argv[1]
 # # password = sys.argv[2]
 # # server_name = sys.argv[3]
@@ -28,9 +32,6 @@ Purpose: importance and usage of argparse
 # # unpacking
 # user_name, password, server_name = sys.argv[1:]
 
-
-# Method 4: argparse
-import argparse
 
 parser = argparse.ArgumentParser(
     description="Details to login to server", epilog="-----Please follow help doc ----"
@@ -57,6 +58,7 @@ args = parser.parse_args()
 user_name = args.username
 password = args.password
 server_name = args.servername
+
 
 print(
     f"""

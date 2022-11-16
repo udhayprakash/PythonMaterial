@@ -15,44 +15,76 @@ for each_path in sys.path:
 
 # NOTE: Installed modules are stored in "site-packages"
 
-# Case 1
+
+# def add(n1, n2):
+#     return n1 + n2
+
+# def sub(n1, n2):
+#     return n1 - n2
+
+# print(f"{add(2, 3) =}")
+# print(f"{sub(2, 3) =}")
+
+# Case 1 - importing script from current directory
+import j_calculator
+
+print(dir(j_calculator))
+
+print(f"{j_calculator.add(2, 3) =}")
+print(f"{j_calculator.sub(2, 3) =}")
+
+# Case 1.1 - selective import
 from j_calculator import add
 
-print(f"{add(10, 20) = }")
+assert j_calculator.add(2, 3) == add(2, 3)
+
+# sub(2,3)  # NameError: name 'sub' is not defined. Did you mean: 'sum'?
+print()
 
 # Case 2
 from myfolder import myops
 
-print(f"{myops.factorial(10) =}")
+print(dir(myops))
 
-# Case 3
+print(f"{myops.math.sqrt(81) =}")
+print(f"{myops.factorial(8) =}")
+
+# Case 2.1
 from myfolder.myops import factorial
 
-print(f"{factorial(10) =}")
+print(f"{factorial(8) =}")
 
-# import c_coroutines
-# ModuleNotFoundError: No module named 'c_coroutines'
+
+# from asyncio_ex import a_asynchronous_function
+# ModuleNotFoundError: No module named 'asyncio_ex'
+
+
 sys.path.append(
-    r"D:\MEGAsync\Python-related\training\python_related\python_UK_Sept_2021\09_Iterators_Generators_Coroutines\04_Couroutines"
+    # absolute path
+    # r"D:\MEGAsync\Python-related\PythonMaterial\python3\09_Iterators_generators_coroutines\05_asyncio_module"
+    # relative path
+    r"..\..\09_Iterators_generators_coroutines\05_asyncio_module"
 )
-
 print(f"{sys.path[-1] =}")
+
 
 sys.dont_write_bytecode = True
 # pycache files are not created when it is True
 
-import c_coroutines as cc
 
-print(dir(cc))
+import a1_asynchronous_function as aaf  # Alias import
 
-print(f"{cc.__cached__      = }")
-print(f"{cc.__doc__         = }")
-print(f"{cc.__file__        = }")
-print(f"{cc.__loader__      = }")
-print(f"{cc.__name__        = }")
-print(f"{cc.__package__     = }")
-print(f"{cc.__spec__        = }")
-print(f"{cc.my_coroutine    = }")
+print(dir(aaf))
+
+aaf.hello()
+
+print(aaf.__doc__)
+print()
+print(f"{aaf.__file__ =}")
+print(f"{__file__     =}")
+
+print(f"{aaf.__name__ =}")
+print(f"{aaf.__package__ =}")
 
 # Assignments
 # Try to add and use with relative path
