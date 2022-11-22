@@ -31,6 +31,7 @@
         unicode strings
     Usage of help
     Usage of pydoc
+
 03.Language Components
     Relational Operations
     Logical Operations
@@ -86,12 +87,14 @@
 	Decorators
 
 08.Modules
-    math,
-    sys, argparse, os, shutil, pathlib, subprocess, getpass,
+    Basic Modules
+        - math, sys, argparse, os, shutil, pathlib, subprocess, getpass
     time related
-        time, datetime, pytz, timeit
-    random, collections, atexit,
-    contextlib, base64, turtle, tqdm
+        - time, datetime, pytz, timeit
+    concurrency
+        - Multiprocessing, Multithreading
+    others
+        - random, collections, atexit, contextlib, base64, turtle, tqdm
 
     create user-defined module
     creating user-defined package

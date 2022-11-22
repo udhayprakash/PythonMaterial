@@ -24,11 +24,6 @@ windows
     - python2 or 3
 
 
-
-Windows
-
-
-
 platform independent language
 
 
@@ -63,8 +58,6 @@ interpreter based languages
 
 
 android - kivy
-
-
 
 
 aspect oriented programming

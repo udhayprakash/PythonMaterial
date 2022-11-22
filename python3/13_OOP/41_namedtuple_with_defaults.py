@@ -22,3 +22,16 @@ print(type(p1))
 
 print(f"{p1._fields   =}")
 print(f"{p1._asdict() =}")
+
+
+from typing import NamedTuple
+
+
+class ShippingRate(NamedTuple):
+    name: str
+    code: str
+    price: int
+    phone_required: bool = False
+
+
+ShippingRate("SomeName", "code", 5, phone_required=True)

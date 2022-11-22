@@ -42,6 +42,10 @@ Open new cmd prompt, and type
 To start a new notebook:
 	jupyter notebook
 
+To download jupyter notebook, as pdf
+
+	pip install nbconvert[webpdf]
+
 
 To install pycharm in linux/unix
 	http://ubuntuhandbook.org/index.php/2015/07/install-pycharm-ubuntu-1404/
