@@ -15,9 +15,10 @@ print(f"{mock.salary        =}")
 print(f"{mock.absent_days   =}")
 print(f"{mock.roles         =}")
 
-print(f"{mock.return_value  =}")
+print(f"\n{mock.return_value  =}")
 
-print(f"{mock.return_values =}")
+# calling Undefined attributes
+print(f"\n{mock.return_values =}")
 print(f"{mock.something     =}")
 print()
 
@@ -25,6 +26,8 @@ mock = Mock(return_values=10)
 mock(1)
 mock(1, 4)
 mock(1, 4, foo="bar")
+
+print(f"\n{mock.return_value  =}")
 print(f"{mock.return_values =}")
 print(f"{mock.call_count    =}")
 print(f"{mock.call_args     =}")
@@ -32,9 +35,10 @@ print(f"{mock.call_args_list=}")
 print(f"{mock.called        =}")
 print(f"{mock.mock_calls    =}")
 
+print(mock.assert_called())
 
 mock = Mock(side_effect=KeyError("foobar"))
-print(f"{mock.side_effect   =}")
+print(f"\n{mock.side_effect   =}")
 try:
     mock()
 except KeyError as ex:
