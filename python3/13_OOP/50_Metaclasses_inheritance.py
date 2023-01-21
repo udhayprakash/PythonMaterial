@@ -16,13 +16,17 @@ class Mascot:
 
 
 if __name__ == "__main__":
-    # Method 1 - Instance-Level Changes
-    k = Mascot("apple")
-    k.__class__ = type("someNewType", (Mascot, CuteMixin), {})
-    k.be_cute()
+    # Method 1 - Class-Level Changes
+    k1 = Mascot("Mango")
+    print(f"{Mascot.__bases__ =}")
+    try:
+        Mascot.__bases__ += (CuteMixin,)  # WORKS ONLY IN PYTHON 2
+    except Exception as ex:
+        print(ex)
+    else:
+        k1.be_cute()
 
-    # Method 2 - Class-Level Changes
-    k2 = Mascot("Mango")
-    print(Mascot.__bases__)
-    Mascot.__bases__ += (CuteMixin,)  # WORKS ONLY IN PYTHON 2
+    # Method 2 - Instance-Level Changes
+    k2 = Mascot("apple")
+    k2.__class__ = type("someNewType", (Mascot, CuteMixin), {})
     k2.be_cute()

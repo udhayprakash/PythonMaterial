@@ -36,3 +36,23 @@ if __name__ == "__main__":
 
     a.smDisplay("Django")  # accessing static method
     MyClass.smDisplay("Django")  # accessing static method
+
+
+class Myclass:
+    val = 0
+
+    def __init__(self):
+        self.val = 0
+
+    @staticmethod
+    def incr(self):
+        Myclass.val = Myclass.val + 1
+
+
+I = Myclass()
+print(f"{I.val = }")
+
+I.incr()
+print(f"{I.val = }")
+
+Myclass.incr()

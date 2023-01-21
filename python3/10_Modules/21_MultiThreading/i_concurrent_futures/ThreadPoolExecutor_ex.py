@@ -28,6 +28,7 @@ def task():
 
 def main():
     executor = ThreadPoolExecutor(max_workers=3)
+    # to limit to max 3 workers, at a time
     task1 = executor.submit(task)
     task2 = executor.submit(task)
     print(f"{task1 =}")

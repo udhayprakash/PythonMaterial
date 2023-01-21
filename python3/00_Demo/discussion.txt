@@ -38,8 +38,8 @@ java - platform independent
 
 
 python - platform independent
-    - priise code
-    - readd
+    - precise code
+    - read
 
 
 compiler based language
