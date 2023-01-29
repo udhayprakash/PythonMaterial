@@ -1,8 +1,6 @@
-from structlog import get_logger
-from structlog.testing import capture_logs
+from structlog import configure, get_logger
+from structlog.stdlib import LoggerFactory
 
-with capture_logs() as cap_logs:
-    get_logger().bind(x="y").info("hello")
-
-cap_logs
-[{"x": "y", "event": "hello", "log_level": "info"}]
+configure(logger_factory=LoggerFactory())
+log = get_logger()
+log.critical("this is too easy!")

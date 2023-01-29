@@ -40,3 +40,13 @@ mh.write("This is fourth line\n")
 
 mh.flush()
 mh.close()
+
+
+# The truncate() method resizes the file to the given number of bytes.
+f = open("b_create_file.txt", "a")
+f.truncate(20)
+f.close()
+
+# open and read the file after the truncate:
+f = open("b_create_file.txt", "r")
+print(f.read())

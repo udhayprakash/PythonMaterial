@@ -1,4 +1,5 @@
 import os
+import time
 from concurrent.futures import ProcessPoolExecutor
 
 
@@ -8,8 +9,13 @@ def task():
 
 def main():
     executor = ProcessPoolExecutor(max_workers=3)
-    task1 = executor.submit(task)
-    task2 = executor.submit(task)
+    # pool some processes, and reuse them, instead of using new process
+
+    # task1 = executor.submit(task)
+
+    for _ in range(10):
+        time.sleep(1)
+        executor.submit(task)
 
 
 if __name__ == "__main__":
