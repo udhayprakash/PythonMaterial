@@ -134,12 +134,13 @@
         xls/xlsx
         json
         yaml
+        parquet
+        avro
     Image files
         displaying, creating and editing images
     zipping files: .zip, .tar
     pdf files
     config files : .ini, .cfg
-    db files - sqlite3
     pyw files
 
 12.Logging
@@ -178,12 +179,17 @@
     regex Flags
     Greedy & Non-Greedy patterns
 
-16. Web Services
+16. Databases
+    db files - sqlite3
+    Relational DB - MySQL
+    Non-Relational DB - mongoDB
+
+17. Web Services
     consuming REST API
     scraping web pages
     urllib, requests
 
-17. Data Science
+18. Data Science
     statistics
     Numpy
     Pandas

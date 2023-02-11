@@ -40,7 +40,7 @@
     Identity Operations
     range() function
     Conditional Operations
-		Structural Pattern Matching
+	Structural Pattern Matching
     Loops: for & while, break, continue, pass, sys.exit
     Walrus Operator
 
@@ -110,14 +110,14 @@
         xls/xlsx
         json
         yaml
+        parquet
     Image files
         displaying, creating and editing images
     zipping files: .zip, .tar
     pdf files
     config files : .ini, .cfg
-    db files - sqlite3
-        Non-Relational DB - mongoDB
-        Relational DB - sqlite3, MySQL
+    pyw files
+
 
 10.Logging
     Simple logging
@@ -149,10 +149,25 @@
     regex Flags
     Greedy & Non-Greedy patterns
 
-14. Web Services
+14. Databases
+    db files - sqlite3
+    Relational DB - MySQL
+    Non-Relational DB - mongoDB
+
+15. Web Services
     crawling web pages
     consuming REST API
+    creating REST API
+        - CRUD  operations
 
-15. Development with AWS Cloud
+16. Development with AWS Cloud
+	AWS cloud Importance & Introduction
+	AWS IAM - creating roles, generating secrets
     boto3
-    AWS products - AWS Lambda, S3
+    s3 bucket
+	EC2 instance
+	AWS Lambda - time, event and http triggers
+	AWS Step functions
+	API Gateway
+	AWS RDS
+	AWS DynamoDB
