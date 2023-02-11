@@ -40,3 +40,13 @@ print(f"{new_list =}")  # [[5, None], [5, None], [5, None]]
 new_list = [[None] * 2 for i in range(3)]
 new_list[0][0] = 5
 print(f"{new_list =}")  # [[5, None], [None, None], [None, None]]
+
+
+# another Example
+n = 12
+names = [[]] * n
+
+employee = "Adam"
+m = 6
+names[m].append(employee)
+print(names)

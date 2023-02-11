@@ -1,7 +1,8 @@
-# Write class(es) that represent the following shapes:
-#       square, rectangle, circle.
-# Each shape should have a perimeter and an area.
-
+"""
+Write class(es) that represent the following shapes:
+      square, rectangle, circle.
+Each shape should have a perimeter and an area.
+"""
 import math
 from abc import ABC, abstractmethod
 
@@ -55,6 +56,12 @@ class Rectangle(Shape):
 
 
 if __name__ == "__main__":
+    # An abstract class cannot be instantiated.
+    try:
+        s = Shape()
+    except Exception as e:
+        print(f"Caught: {e}")
+
     c = circle(10)
     print(f"{c.area()      =}")  # 314.1592653589793
     print(f"{c.perimeter() =}")  # 62.83185307179586
