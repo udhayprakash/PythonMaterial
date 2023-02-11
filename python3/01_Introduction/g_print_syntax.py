@@ -54,6 +54,7 @@ print("He\bi")
 print("12\b34")
 print("first\bsecond")
 print("\bsecond")
+print("second\b")
 print()
 
 # \r - overwrites complete existing line
