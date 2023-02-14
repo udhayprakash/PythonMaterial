@@ -19,7 +19,6 @@ emails = set()
 
 # process urls one by one from unprocessed_url queue until queue is empty
 while len(unprocessed_urls):
-
     # move next url from the queue to the set of processed urls
     url = unprocessed_urls.popleft()
     processed_urls.add(url)

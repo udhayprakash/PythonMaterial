@@ -130,6 +130,7 @@ def primes():
 # have to care how that iterator was originally defined, as long at it
 # somehow produces new values.
 
+
 # Let through every k:th element and discard the rest.
 def every_kth(it, k):
     count = k

@@ -90,7 +90,6 @@ for each_code in existing_images_in_cats_site:
     response = requests.get(URL.format(HTTP_CODE=each_code))
 
     if response.status_code == 200 and response.headers["Content-Type"] == "image/jpeg":
-
         print(f"{response.url         =}")
         # pprint(dict(response.headers))
         with open(f"{each_code}.jpg", "wb") as f:

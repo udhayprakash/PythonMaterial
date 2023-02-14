@@ -60,6 +60,7 @@ print(f"{http_error(400) =}")
 print(f"{http_error(404) =}")
 print(f"{http_error(300) =}")
 
+
 # -----------
 def as_pattern(p):
     match p:

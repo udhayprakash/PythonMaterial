@@ -25,7 +25,6 @@ def modPix(pix, data):
     imdata = iter(pix)
 
     for i in range(lendata):
-
         # Extracting 3 pixels at a time
         pix = [
             value
@@ -38,7 +37,6 @@ def modPix(pix, data):
         # odd for 1 and even for 0
         for j in range(0, 8):
             if (datalist[i][j] == "0") and (pix[j] % 2 != 0):
-
                 if pix[j] % 2 != 0:
                     pix[j] -= 1
 
@@ -67,7 +65,6 @@ def encode_enc(newimg, data):
     (x, y) = (0, 0)
 
     for pixel in modPix(newimg.getdata(), data):
-
         # Putting modified pixels in the new image
         newimg.putpixel((x, y), pixel)
         if x == w - 1:

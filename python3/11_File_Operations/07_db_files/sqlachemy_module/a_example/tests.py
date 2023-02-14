@@ -10,7 +10,6 @@ from sqlalchemy.orm import sessionmaker
 
 @pytest.fixture(scope="function")
 def setup_database():
-
     engine = create_engine("sqlite://")
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
@@ -24,7 +23,6 @@ def setup_database():
 
 @pytest.fixture(scope="function")
 def dataset(setup_database):
-
     session = setup_database
 
     # Creates user
@@ -54,7 +52,6 @@ def dataset(setup_database):
 
 
 def test_database(dataset):
-
     # Gets the session from the fixture
     session = dataset
 

@@ -32,6 +32,8 @@ def old_style_coroutine():
 
 asyncio.run(old_style_coroutine())
 print()
+
+
 # --------------------------------
 # async, await -- new keywords in python 3.7
 async def main():

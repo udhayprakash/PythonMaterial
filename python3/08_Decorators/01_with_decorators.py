@@ -22,6 +22,7 @@ Purpose: Solving the problem with decorator function
 # result = outer()
 # print(f'{result() =}')  # ''
 
+
 # -======================================
 def add(a, b):
     return a + b

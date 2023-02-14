@@ -13,6 +13,7 @@ def hello():
 
 hello()
 
+
 # -------------------------------------
 # Method 2: Adding typing
 def hello() -> None:

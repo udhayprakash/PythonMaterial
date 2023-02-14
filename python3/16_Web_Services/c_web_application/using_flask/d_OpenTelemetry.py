@@ -49,13 +49,13 @@ app = Flask(__name__)
 #         sum += result
 #     return str(sum)
 
+
 # Method 3 : With Tracing
 @app.route("/roll")
 def roll():
     with tracer.start_as_current_span(
         "server_request", attributes={"endpoint": "/roll"}
     ):
-
         sides = int(request.args.get("sides"))
         rolls = int(request.args.get("rolls"))
         return roll_sum(sides, rolls)

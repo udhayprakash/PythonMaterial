@@ -26,7 +26,6 @@ def hanoi(n, a, b, c, report):
 
 # The graphical interface
 class Tkhanoi:
-
     # Create our objects
     def __init__(self, n, bitmap=None):
         self.n = n

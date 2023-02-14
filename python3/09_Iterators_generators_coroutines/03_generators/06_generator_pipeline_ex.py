@@ -8,6 +8,7 @@ Purpose:
             - convert to string
 """
 
+
 # Method 1
 def even_filter(nums):
     print("even_filter - start")
@@ -38,6 +39,7 @@ def convert_to_string(nums):
 
 result = convert_to_string(multiply_by_three(even_filter(numbers)))
 print(f"{result = }")
+
 
 # Method 2
 def even_filter(nums):

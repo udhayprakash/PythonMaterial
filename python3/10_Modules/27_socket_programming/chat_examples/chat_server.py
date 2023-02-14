@@ -19,7 +19,6 @@ def broadcast_data(sock, message):
 
 
 if __name__ == "__main__":
-
     # List to keep track of socket descriptors
     CONNECTION_LIST = []
     RECV_BUFFER = 4096  # Advisable to keep it as an exponent of 2

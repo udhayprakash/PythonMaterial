@@ -5,7 +5,6 @@ year = int(sys.argv[1])
 
 # Show every month
 for month in range(1, 13):
-
     # Compute the dates for each week that overlaps the month
     c = calendar.monthcalendar(year, month)
     first_week = c[0]

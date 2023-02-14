@@ -9,6 +9,7 @@ real = SomeClass()
 real.method = MagicMock(name="method")
 real.method(3, 4, 5, key="value")  # <MagicMock name='method()' id='...'>
 
+
 # --------------------------------------------------------
 class ProductionClass:
     def method(self):

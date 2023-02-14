@@ -3,7 +3,6 @@ from functools import wraps
 
 # decorator to trace execution of recursive function
 def trace(func):
-
     # cache func name, which will be used for trace print
     func_name = func.__name__
     # define the separator, which will indicate current recursion level (repeated N times)
@@ -14,7 +13,6 @@ def trace(func):
 
     @wraps(func)
     def traced_func(*args, **kwargs):
-
         # repeat separator N times (where N is recursion depth)
         # `map(str, args)` prepares the iterable with str representation of positional arguments
         # `", ".join(map(str, args))` will generate comma-separated list of positional arguments

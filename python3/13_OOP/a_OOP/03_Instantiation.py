@@ -3,6 +3,7 @@
 Purpose: Understanding Class instantiation
 """
 
+
 # Class Definition
 class MyClassName:
     number = 786  # class Variables

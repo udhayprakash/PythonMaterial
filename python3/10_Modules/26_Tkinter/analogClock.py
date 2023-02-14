@@ -42,6 +42,7 @@ try:
 except ImportError:
     hasPIL = False
 
+
 ## Class for handling the mapping from window coordinates
 #  to viewport coordinates.
 #

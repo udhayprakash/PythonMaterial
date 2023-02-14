@@ -9,7 +9,6 @@ from mymodule import rm
 
 
 class RmTestCase(unittest.TestCase):
-
     tmpfilepath = os.path.join(tempfile.gettempdir(), "tmp-testfile")
 
     def setUp(self):

@@ -75,7 +75,6 @@ class Uploads:
                 strRecExist = "Video record exists in DB \n"
                 file.write(strRecExist)
                 if status == "success":
-
                     cursor.execute(
                         f"""UPDATE videos
                             SET arcId = '{musicvideo_uuid}',

@@ -8,6 +8,7 @@ NOTE: default function return is None
 
 # Type 1: Function with no arguments and no return value
 
+
 # Function Definition
 def hello():
     print("hello function is called")

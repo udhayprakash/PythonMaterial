@@ -7,7 +7,6 @@ import requests
 
 
 def loadRSS():
-
     # url of rss feed
     url = "http://www.hindustantimes.com/rss/topnews/rssfeed.xml"
 
@@ -20,7 +19,6 @@ def loadRSS():
 
 
 def parseXML(xmlfile):
-
     # create element tree object
     tree = ET.parse(xmlfile)
 
@@ -32,13 +30,11 @@ def parseXML(xmlfile):
 
     # iterate news items
     for item in root.findall("./channel/item"):
-
         # empty news dictionary
         news = {}
 
         # iterate child elements of item
         for child in item:
-
             # special checking for namespace object content:media
             if child.tag == "{http://search.yahoo.com/mrss/}content":
                 news["media"] = child.attrib["url"]
@@ -53,13 +49,11 @@ def parseXML(xmlfile):
 
 
 def savetoCSV(newsitems, filename):
-
     # specifying the fields for csv file
     fields = ["guid", "title", "pubDate", "description", "link", "media"]
 
     # writing to csv file
     with open(filename, "w") as csvfile:
-
         # creating a csv dict writer object
         writer = csv.DictWriter(csvfile, fieldnames=fields)
 
@@ -82,6 +76,5 @@ def main():
 
 
 if __name__ == "__main__":
-
     # calling main function
     main()

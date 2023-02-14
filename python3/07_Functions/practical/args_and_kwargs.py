@@ -2,6 +2,7 @@
 
 # Program to illustrate the usage of variable arguments and variable Keyword arguments
 
+
 # Function to illustrate the behaviour of variable arguments
 def test_var_arguments(f_argument, *argv):
     print("first normal arg:", f_argument)

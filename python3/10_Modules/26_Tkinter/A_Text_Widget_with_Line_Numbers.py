@@ -47,14 +47,12 @@ root = Tk()
 
 
 class EditorClass(object):
-
     UPDATE_PERIOD = 100  # ms
 
     editors = []
     updateId = None
 
     def __init__(self, master):
-
         self.__class__.editors.append(self)
 
         self.lineNumbers = ""
@@ -93,7 +91,6 @@ class EditorClass(object):
             self.updateAllLineNumbers()
 
     def getLineNumbers(self):
-
         x = 0
         line = "0"
         col = ""
@@ -107,7 +104,6 @@ class EditorClass(object):
         indexMask = "@0,%d"
 
         for i in range(0, self.text.winfo_height(), step):
-
             ll, cc = self.text.index(indexMask % i).split(".")
 
             if line == ll:
@@ -121,7 +117,6 @@ class EditorClass(object):
         return ln
 
     def updateLineNumbers(self):
-
         tt = self.lnText
         ln = self.getLineNumbers()
         if self.lineNumbers != ln:
@@ -133,7 +128,6 @@ class EditorClass(object):
 
     @classmethod
     def updateAllLineNumbers(cls):
-
         if len(cls.editors) < 1:
             cls.updateId = None
             return
@@ -145,7 +139,6 @@ class EditorClass(object):
 
 
 def demo(noOfEditors, noOfLines):
-
     pane = PanedWindow(root, orient=HORIZONTAL, opaqueresize=True)
 
     for e in range(noOfEditors):
@@ -164,6 +157,5 @@ def demo(noOfEditors, noOfLines):
 
 
 if __name__ == "__main__":
-
     demo(3, 9999)
     mainloop()

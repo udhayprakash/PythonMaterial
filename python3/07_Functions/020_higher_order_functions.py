@@ -16,6 +16,7 @@ print(odd_nums)
 odd_nums1 = [num for num in range(9) if num % 2]
 print(odd_nums1)
 
+
 # Method 3: applying functions
 def is_odd(n):
     return True if n % 2 else False

@@ -13,6 +13,7 @@ def hello(name):
 
 hello("Python")
 
+
 # ---------------------------------
 # Method 2: Adding Typing
 def hello1(name: str) -> None:

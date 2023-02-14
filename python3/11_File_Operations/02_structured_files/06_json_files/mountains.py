@@ -31,7 +31,7 @@ print("\nHere are top thirty countries sorted by their tallest mountains:")
 countries = sorted(
     countries, key=(lambda c: tallest.get(c["Name"], smallest)), reverse=True
 )
-for (i, c) in it.islice(enumerate(countries), 30):
+for i, c in it.islice(enumerate(countries), 30):
     (te, tn) = tallest[c["Name"]]
     print(f'{i+1:2}. {c["Name"]} with {tn}, elevation {te} m.')
 
@@ -41,7 +41,7 @@ countries = sorted(
     countries, key=(lambda c: (len(mic.get(c["Name"], [])), c["Name"])), reverse=True
 )
 
-for (i, c) in it.islice(enumerate(countries), 100):
+for i, c in it.islice(enumerate(countries), 100):
     print(f'{i+1:2}. {c["Name"]} has {len(mic[c["Name"]])} named mountains.')
 
 # https://en.wikipedia.org/wiki/Benford%27s_law
@@ -57,7 +57,7 @@ for mountain in mountains:
         # Elevation of the current mountain
         m = int(mountain["Elevation"].split(" ")[0])
         # Convert to various units and update the leading digit counter.
-        for (dic, mul) in zip(leading, muls):
+        for dic, mul in zip(leading, muls):
             h = int(str(mul * m)[0])  # Leading digit in the current units
             dic[h] = dic.get(h, 0) + 1
         count += 1

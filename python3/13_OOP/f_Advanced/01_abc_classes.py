@@ -46,6 +46,7 @@ class AbstractClassExample(ABC):
 # x = DoAdd42(4)
 # TypeError: Can't instantiate abstract class DoAdd42 with abstract methods do_something
 
+
 # -----------------------------------------------------
 class DoAdd42(AbstractClassExample):
     def do_something(self):

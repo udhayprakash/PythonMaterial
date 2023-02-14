@@ -10,6 +10,7 @@ finally:  # Teardown
 
 print(elapsed)
 
+
 # Using Context Manager
 class Timer:
     def __init__(self):
