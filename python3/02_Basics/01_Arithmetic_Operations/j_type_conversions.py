@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Purpose: Data Type Conversions
+    - int, float, complex, boolean, string, None
 
         int - decimal       - int() -base 10  (0-9)
             - binary        - bin() -base  2  (0-1)
