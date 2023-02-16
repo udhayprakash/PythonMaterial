@@ -19,8 +19,7 @@ print("language[0:11] :", language[0:11])  # Python Prog
 print("language[5:17] :", language[5:17])  # n Programmin
 print("language[7:10] :", language[7:10])  # Pro
 
-# NOTE: In python, it doesn't include the last value,
-# in a boundary condition.
+# NOTE: In python, it doesn't include the last value, in a boundary condition.
 print()
 print("language[0:5]  :", language[0:5])  # Pytho
 print("language[0:6]  :", language[0:6])  # Python

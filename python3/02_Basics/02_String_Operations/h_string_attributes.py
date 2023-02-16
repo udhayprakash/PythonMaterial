@@ -45,8 +45,7 @@ print("Python Production".split("r"))  # ['Python P', 'oduction']
 print("Python Production".split("t"))  # ['Py', 'hon Produc', 'ion']
 print()
 
-# Question: what is the type of result, if splitting substring is
-#          not present
+# Question: what is the type of result, if splitting substring is not present
 print("Python Production".split("p"))  # ['Python Production']
 print("Python Production".split("P"))  # ['', 'ython ', 'roduction']
 print("Python Production".split("n"))  # ['Pytho', ' Productio', '']
