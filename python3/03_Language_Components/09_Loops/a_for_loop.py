@@ -58,7 +58,7 @@ for each_chr in "Python":
     print(loop_count, each_chr)
     loop_count += 1
 
-# enumerate() - builtin function to get the   loop index
+# enumerate() - builtin function to get the loop index
 for each_chr in "Python":
     print(each_chr)
 

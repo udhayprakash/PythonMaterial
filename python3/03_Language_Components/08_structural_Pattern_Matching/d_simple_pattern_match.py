@@ -1,13 +1,6 @@
 #!/usr/bin/python3
 """
 Purpose: Structural Pattern Matching
-    - new in python 3.10
-    - Syntax:
-        match <expression>:
-            case <pattern 1> [<if guard>]:
-                <handle pattern 1>
-            case <pattern n> [<if guard>]:
-                <handle pattern n>
 """
 from enum import Enum
 
