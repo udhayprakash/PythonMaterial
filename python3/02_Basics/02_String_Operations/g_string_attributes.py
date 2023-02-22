@@ -102,6 +102,11 @@ print('"    a".isspace()    :', "     a".isspace())
 print('"".isspace()         :', "".isspace())
 print()
 
+print('ascii("αλεπού")   :', ascii("αλεπού"))
+print('ascii("foxfox")   :', ascii("foxfox"))
+print('ascii("!@#@#")    :', ascii("!@#@#"))
+print()
+
 print('"αλεπού".isascii()    :', "αλεπού".isascii())
 print('"foxfox".isascii()    :', "foxfox".isascii())
 print('"!@#@#".isascii()    :', "!@#@#".isascii())

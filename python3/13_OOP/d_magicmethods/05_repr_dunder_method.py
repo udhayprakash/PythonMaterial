@@ -38,3 +38,16 @@ class Solution:
 
 p2 = Solution(range(50))
 print(p2)
+
+
+# --------------------------------------------
+class Foo(object):
+    def __str__(self):
+        return "Testing"
+
+    def __repr__(self):
+        return "Programming"
+
+
+print("{!s} {!r}".format(Foo()))
+print("{0!s} {0!r}".format(Foo()))
