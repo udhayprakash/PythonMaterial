@@ -80,6 +80,7 @@ print()
 "   1   2  3   ".split()  # ['1', '2', '3']
 "   1   2  3   ".split(" ")  # ['', '', '', '1', '', '', '2', '', '3', '', '','']
 
+"1,2,3,4,5".rsplit(None, 1)  # ['1,2,3,4,5']
 print()
 
 # partition - will result in 3 values in tuple

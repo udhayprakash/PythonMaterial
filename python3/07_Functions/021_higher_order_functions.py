@@ -61,3 +61,21 @@ print(list(map(lambda ch: ord(ch), "Python")))
 print(list(map(lambda ch: ord(ch) + 3, "Python")))
 print(list(map(lambda ch: chr(ord(ch) + 3), "Python")))
 print("".join(map(lambda ch: chr(ord(ch) + 3), "Python")))
+
+# ----------------------------------------
+
+
+def f1(x):
+    return 3 * x
+
+
+def f2(x):
+    try:
+        return x > 3
+    except:
+        return 0
+
+
+data = [1, 2, 3, 4, 5, 6]
+result = list(map(f1, list(filter(f2, data))))
+print(result)

@@ -16,3 +16,7 @@ print(f"{my_package.calculator.DOZEN            =}")
 print(f"{my_package.calculator.addition(10, 20) =}")
 
 print(f"{my_package.operations.factorial(8)     =}")
+
+# from package import *
+# from package.module1 import *
+# pp(globals())
