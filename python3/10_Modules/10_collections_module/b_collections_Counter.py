@@ -2,7 +2,7 @@ import collections
 
 c = collections.Counter()
 
-with open(r"C:\Python27\README.rst", "rt") as f:
+with open(r"C:\Python311\LICENSE.txt", "rt") as f:
     # print(f.read())
     for line in f:
         # print(line.rstrip().lower())
