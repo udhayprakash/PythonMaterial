@@ -51,8 +51,8 @@ basetwo.__doc__ = "Convert base 2 string to an int."
 
 assert int("10010", base=2) == basetwo("10010")
 
-basetwo = functools.partial(bin)
-basetwo.__doc__ = "Convert an int to base 2 string."
+bin_func = functools.partial(bin)
+bin_func.__doc__ = "Convert an int to base 2 string."
 
-print(basetwo(18))
-assert bin(18) == basetwo(18)
+print(bin_func(18))
+assert bin(18) == bin_func(18)

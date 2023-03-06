@@ -26,7 +26,10 @@ def get_ip_info():
 
 if __name__ == "__main__":
     clear_screen()
+    print()
     ping_a_site("yahoo.com")
+
+    print()
     ping_a_site("yahoo")
 
     clear_screen()

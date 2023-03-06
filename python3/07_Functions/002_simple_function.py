@@ -43,6 +43,15 @@ print(
 
 print(
     f"""
+        {print       =}
+        {type(print) =}
+        {id(print)   =}
+        {dir(print)  =}
+"""
+)
+
+print(
+    f"""
         {hello       =}
         {type(hello) =}
         {id(hello)   =}

@@ -9,6 +9,15 @@ NOTE: PEP8 recommends not use more than 7 args for an function
 # Function Definition
 
 
+def myfunc(**kwargs):
+    print(type(kwargs), kwargs)
+
+
+myfunc()
+myfunc(name="Udhay")
+myfunc(name="udhay", age=55)
+
+
 def hello(*given, **feed_in):
     print("\ntype(given)  ", type(given))
     print("type(feed_in) ", type(feed_in))

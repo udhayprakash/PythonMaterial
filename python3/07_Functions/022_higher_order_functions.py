@@ -30,7 +30,7 @@ print(reduce(lambda x, y: x * y, [1, 2, 3, 4]))  # factorial(4)
 print(reduce(lambda x, y: x * y, range(1, 4 + 1)))  # factorial(4)
 print()
 
-print(reduce(lambda x, y: x**y, [1, 2, 3, 4]))
+print(reduce(lambda x, y: x**y, [1, 2, 3, 4]))  # # (  ( (1 ** 2)) ** 3 ) ** 4
 print(reduce(lambda x, y: x**y, [2, 3, 4]))
 # -----------------------------------------------------------
 

@@ -232,3 +232,7 @@ def simple_function(mylist2):
 new_list = [1, 2, 3]
 simple_function(new_list)
 print(f"outside function new_list = {new_list} {id(new_list)}")  # [1, 2, 3, 6]
+
+# NOTE:
+# immuatble -- by dfault cal by value; with global, call by ReferenceError
+# mutable -- by dfault is call by refernece; create copy() to call by value
