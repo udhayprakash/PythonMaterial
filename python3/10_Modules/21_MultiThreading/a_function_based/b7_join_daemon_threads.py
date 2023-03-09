@@ -2,6 +2,14 @@ import logging
 import threading
 import time
 
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="(%(threadName)-10s) %(message)s",
+)
+
+# logging.debug("Starting")
+# print("starting")
+
 
 def daemon():
     logging.debug("Starting")
@@ -14,14 +22,9 @@ def non_daemon():
     logging.debug("Exiting")
 
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="(%(threadName)-10s) %(message)s",
-)
-
 d = threading.Thread(name="daemon", target=daemon, daemon=True)
-
 t = threading.Thread(name="non-daemon", target=non_daemon)
+
 
 d.start()
 t.start()

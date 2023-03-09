@@ -1,8 +1,9 @@
 #!/usr/bin/python
 """
 Purpose: atexit
-    – Call functions when a program is closing down
+    - Call functions when a program is closing down
 """
+
 import atexit
 
 
@@ -15,8 +16,12 @@ def all_done():
     print("all_done()")
 
 
+# all_done()
+
 print("Registering")
 atexit.register(all_done)
 print("Registered")
 
-add(10, 20)
+
+res = add(10, 20)
+print(f"{res = }")

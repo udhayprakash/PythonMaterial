@@ -5,8 +5,10 @@ Purpose:
 
 
 """
-
 import threading
+
+# print(dir(threading))
+# help(threading)
 
 
 def hello_world():
@@ -14,6 +16,10 @@ def hello_world():
     print("Hello World")
 
 
+# Method 1- Sequential
+# hello_world()
+
+# Method 2 - Using multithreading
 # Initializing a thread
 my_thread = threading.Thread(target=hello_world)
 

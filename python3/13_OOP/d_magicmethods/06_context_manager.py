@@ -40,3 +40,23 @@ class ManagedFile:
 with ManagedFile("31_context_manager.txt", "w") as f1:
     print(f1)
     f1.write("I am good")
+
+
+###########################################################
+class CM:
+    def __enter__(self):
+        print("Raing Erro 1")
+        raise OSError()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tab):
+        pass
+
+
+c = CM()
+with c:
+    try:
+        print("raining valueError2")
+        raise ValueError()
+    except ValueError:
+        print("excepty caght")

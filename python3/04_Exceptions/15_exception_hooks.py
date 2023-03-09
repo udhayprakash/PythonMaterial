@@ -34,3 +34,19 @@ except ZeroDivisionError as ex:
 raise RuntimeError("case3: This is error message")
 
 print("After exception")
+
+import sys
+
+# -------------------
+import traceback
+
+
+def debug(e, i, tb):
+    print("---in")
+    traceback.print_excption(e, i, tb)
+
+
+# sys.excepthook = debug -- CORRECT
+# sys.exitfunc = debug
+
+1 / 0

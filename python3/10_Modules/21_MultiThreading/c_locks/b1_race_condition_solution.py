@@ -12,7 +12,7 @@ counter = 0
 def increase(by, lock):
     global counter
 
-    lock.acquire()
+    lock.acquire()  # ---------------- GET CONTROL
 
     local_counter = counter
     local_counter += by
@@ -22,7 +22,7 @@ def increase(by, lock):
     counter = local_counter
     print(f"counter={counter}")
 
-    lock.release()
+    lock.release()  # ------------------- RELEASE CONTROL
 
 
 lock = Lock()

@@ -6,40 +6,41 @@ print("Hello world")
 num1 = 100
 num2 = 200
 
-result = num1 + num2
-print(result)
+add_res = num1 + num2
+print(add_res)
 
 
 # Method 2 - function-oriented programming
 def addition(n1, n2):
-    r1 = n1 + n2
-    return r1
+    return n1 + n2
 
 
-print(addition(num1, num2))
+add_res = addition(num1, num2)
+print(add_res)
 
 
 # Method 3 -  Object Oriented Programming
-class Arithmetic:
-    def __init__(self, n1, n2):
-        self.num1 = n1
-        self.num2 = n2
+class Calculator:
+    def __init__(self, v1, v2) -> None:
+        self.v1 = v1
+        self.v2 = v2
 
     def add(self):
-        return self.num1 + self.num2
+        return self.v1 + self.v2
 
 
-a = Arithmetic(num1, num2)
-print(a.add())
+cl = Calculator(num1, num2)
+add_res = cl.add()
+print(add_res)
 
 
 # -----------------------
-name = "Rahul Dravid"
+name = "Hari Krishna"
 print(name)
 print(name.upper())
 print(name.lower())
 
-print("Rahul" in "Rahul Dravid")
+print("Hari" in name)
 
 # string reversal
-print(name[::-1])
+print(name[::-1])  # anhsirK iraH

@@ -20,7 +20,9 @@ def PrintCube(numbers):
 
 
 arr = [2, 3, 4, 5]
-t = time.time()
+
+start = time.time()
 PrintSquare(arr)
 PrintCube(arr)
-print("Program took", time.time() - t)
+
+print("Program took", time.time() - start)

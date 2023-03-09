@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 Purpose: atexit
-    – Call functions when a program is closing down
+    - Call functions when a program is closing down
     The callbacks registered with atexit are not invoked if:
         - the program dies because of a signal
         - os._exit() is invoked directly
@@ -16,6 +16,6 @@ def my_cleanup(name):
 
 atexit.register(my_cleanup, "first")
 atexit.register(my_cleanup, "second")
-atexit.register(my_cleanup, "third")
+atexit.register(my_cleanup, "third")  # LIFO - stack
 
 # raise Exception()
