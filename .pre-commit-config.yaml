@@ -61,7 +61,7 @@ repos:
         exclude: python3/14_Code_Quality/python_2to3_ex.py
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.21.0 # checks for Github Actions CI config files
+    rev: 0.22.0 # checks for Github Actions CI config files
     hooks:
       - id: check-github-actions
       - id: check-github-workflows

@@ -38,14 +38,15 @@ if __name__ == "__main__":
     time_end = time.time()
     print(f"Time elapsed: {round(time_end - time_start, 2)}s")
 
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Task 1 done (slept for 2s)! Process ID: 22308
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Task 1 done (slept for 2s)! Process ID: 22308
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Task 1 done (slept for 2s)! Process ID: 22308
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Task 1 done (slept for 2s)! Process ID: 22308
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Task 1 done (slept for 2s)! Process ID: 20464
-    # Time elapsed: 12.58s
+
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Task 1 done (slept for 2s)! Process ID: 22308
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Task 1 done (slept for 2s)! Process ID: 22308
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Task 1 done (slept for 2s)! Process ID: 22308
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Task 1 done (slept for 2s)! Process ID: 22308
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Task 1 done (slept for 2s)! Process ID: 20464
+# Time elapsed: 12.58s

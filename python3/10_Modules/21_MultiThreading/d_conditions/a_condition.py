@@ -20,47 +20,44 @@ import random
 import time
 from threading import Condition, Thread
 
-"""
-'condition' variable will be used to represent the availability of a produced
-item.
-"""
+# 'condition' variable will be used to represent the availability of a produced item.
 condition = Condition()
-box = []
+
+# shared object
+values = []
 
 
-def producer(box, nitems):
-    for _ in range(nitems):
+def producer(ntimes):
+    for i in range(ntimes):
+        val = f"Producer- { random.randint(1, 10)}"
         time.sleep(random.randrange(2, 5))  # Sleeps for some time.
+
         condition.acquire()
-        num = random.randint(1, 10)
-        box.append(num)  # Puts an item into box for consumption.
+        values.append(val)  # writing on shared object
+
         condition.notify()  # Notifies the consumer about the availability.
-        print("Produced:", num)
+        print(val)
         condition.release()
 
 
-def consumer(box, nitems):
-    for _ in range(nitems):
+def consumer(ntimes):
+    for i in range(ntimes):
+        time.sleep(random.randrange(2, 5))  # Sleeps for some time.
+
         condition.acquire()
         condition.wait()  # Blocks until an item is available for consumption.
-        print("%s: Acquired: %s" % (time.ctime(), box.pop()))
+        print("Received - ", values.pop())
         condition.release()
 
 
 threads = []
-"""
-'nloops' is the number of times an item will be produced and
-consumed.
-"""
-nloops = random.randrange(3, 6)
-for func in [producer, consumer]:
-    threads.append(Thread(target=func, args=(box, nloops)))
-    threads[-1].start()  # Starts the thread.
+for func in (producer, consumer):
+    t = Thread(target=func, args=(5,))
+    t.start()  # Starts the thread.
+    threads.append(t)
 
 for thread in threads:
-    """Waits for the threads to complete before moving on
-    with the main script.
-    """
+    """Waits for the threads to complete before moving on with the main script."""
     thread.join()
 
 print("All done.")

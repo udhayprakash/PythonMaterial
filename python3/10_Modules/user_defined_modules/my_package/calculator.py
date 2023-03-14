@@ -27,7 +27,7 @@ def subtraction(n1, n2):
     return n1 - n2
 
 
-def multipliation(m1, m2):
+def multiplication(m1, m2):
     return m1 * m2
 
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     print("This script is executed directly")
     print(f"{addition(100, 200)     =}")
     print(f"{subtraction(100, 200)  =}")
-    print(f"{multipliation(100, 200)=}")
+    print(f"{multiplication(100, 200)=}")
     print(f"{division(100, 200)     =}")
 else:
     print("This script is executed indirectly")

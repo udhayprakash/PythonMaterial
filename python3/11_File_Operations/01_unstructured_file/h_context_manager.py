@@ -8,12 +8,13 @@ Ans) depends on the system clock cycle
         2.3 GHz
 """
 # Method 1: traditional
-fh = open("e_write_multiple_lines.tsf", "r")
+try:
+    fh = open("e_write_multiple_lines.tsf", "r")
 
-data = fh.read()
-print(data)
-
-fh.close()
+    data = fh.read()
+    print(data)
+finally:
+    fh.close()
 # fh.read()
 # ValueError: I/O operation on closed file.
 

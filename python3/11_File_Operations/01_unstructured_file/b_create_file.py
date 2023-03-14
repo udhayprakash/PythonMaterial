@@ -6,6 +6,7 @@ fh = open("b_create_file.txt", mode="w", encoding="utf-8")
 
 print("Name of the file : ", fh.name)
 print("Opening mode     : ", fh.mode)
+print("Softspace flag   : ", fh.softspace)
 
 fh.write("This is first line\n")
 fh.write("This is second line\n")

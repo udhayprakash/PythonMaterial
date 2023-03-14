@@ -1,4 +1,4 @@
-#!/isr/bin/python
+#!/usr/bin/python3
 """
 Purpose: To read large file
 """

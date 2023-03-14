@@ -15,7 +15,7 @@ if __name__ == "__main__":
     numbers = [5, 10, 15, 20, 25]
     procs = []
 
-    for index, number in enumerate(numbers):
+    for number in numbers:
         proc = Process(target=doubler, args=(number,))
         procs.append(proc)
         proc.start()
