@@ -31,6 +31,10 @@ print("This is 5th error of polls application", 5, "polls")
 # TypeError: not all arguments converted during string formatting
 print()
 
+# F-strinsg replace is next things
+logging.error("This is {}th error of {} application".format(5, "polls"))
+logging.error(f"This is {5}th error of {'polls'} application")
+
 # SDLC -
 #   dev --> testing --> staging/UAT ---> production
 

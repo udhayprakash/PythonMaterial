@@ -8,6 +8,8 @@ import sys
 # Fixing the level of severity
 logging.basicConfig(level=logging.DEBUG)
 
+logging.debug("This is a debug1")
+
 
 # To disable the logging completely
 # Method 1
@@ -37,3 +39,6 @@ addition(1, 2)
 addition(1, 2)
 addition(1, 2)
 addition(1, 2)
+
+logging.getLogger().disabled = False
+logging.info("Last statement")

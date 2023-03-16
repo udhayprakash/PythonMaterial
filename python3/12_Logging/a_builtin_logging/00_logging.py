@@ -7,7 +7,11 @@ print()
 
 f = open("logs/00_print_log.log", "w")
 print("print() function - with file handler", file=f, flush=True)
+fh.close()
 
+fh = open("00_print_log.log", "a")
+print("print() function - with file handler 22", file=fh, flush=True)
+# fh.close()
 
 # To make all further prints to go to file
 sys.stdout = f

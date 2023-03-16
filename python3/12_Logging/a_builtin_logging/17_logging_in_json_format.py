@@ -13,6 +13,7 @@ from pythonjsonlogger import jsonlogger
 logHandler = logging.StreamHandler()
 
 # Step 2: create json formatter
+# formatter = "%(asctime)s %(levelname)s %(messsage)"
 formatter = jsonlogger.JsonFormatter()
 
 # Step 3: Add formatting to handler
