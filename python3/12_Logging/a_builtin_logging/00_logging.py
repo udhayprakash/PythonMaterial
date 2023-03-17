@@ -5,16 +5,16 @@ sys.stderr.write("This is sys.stderr write message\n")
 sys.stdout.write("This is sys.stdout write message\n")
 print()
 
-f = open("logs/00_print_log.log", "w")
-print("print() function - with file handler", file=f, flush=True)
+fh = open("logs/00_print_log.log", "w")
+print("print() function - with file handler", file=fh, flush=True)
 fh.close()
 
-fh = open("00_print_log.log", "a")
+fh = open("logs/00_print_log.log", "a")
 print("print() function - with file handler 22", file=fh, flush=True)
 # fh.close()
 
 # To make all further prints to go to file
-sys.stdout = f
+sys.stdout = fh
 sys.stderr.write("This is sys.stderr write message\n")
 sys.stdout.write("This is sys.stdout write message\n")
 print("print() function - ordinary1")
@@ -29,8 +29,8 @@ try:
 except Exception as ex:
     print(ex)
 
-sys.stderr = f
+sys.stderr = fh
 1 / 0
 
-f.close()
+fh.close()
 print("Last statement")  # will not execute

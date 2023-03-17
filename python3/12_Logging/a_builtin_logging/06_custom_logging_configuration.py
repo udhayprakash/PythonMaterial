@@ -8,16 +8,25 @@ Purpose: Adding Logging configuration
 """
 import logging
 
-FORMAT = "%(asctime)-15s %(client_ip)s %(user)-8s %(message)s"
+FORMAT = "%(asctime)-15s %(client_ip)s %(name)9s %(user)-8s %(message)s"
 logging.basicConfig(format=FORMAT)
 d = {"client_ip": "192.168.0.1", "user": "fbloggs"}
 
-# logging.basicConfig(
-#     filename="logs/06_logging.log",  # filemode='w',
-#     format='%(asctime)s %(levelname)8s %(name)s %(message)s',
-#     datefmt='%d-%b-%Y %I:%M:%S %p',
-#     level=logging.DEBUG)
-# logging.warning("Protocol problem: %s", "connection reset", extra=d)
+# Method 1
+logging.basicConfig(
+    filename="logs/06_logging.log",  # filemode='w',
+    format="%(asctime)s %(levelname)8s %(name)s %(message)s",
+    datefmt="%d-%b-%Y %I:%M:%S %p",
+    level=logging.DEBUG,
+)
+logging.warning("Protocol problem: %s", "connection reset", extra=d)
 
-logger = logging.getLogger("tcpserver")
+# Method 2
+logger = logging.getLogger("TCPserver")
 logger.warning("Protocol problem: %s", "connection reset", extra=d)
+
+logger2 = logging.getLogger("UDPserver")
+logger2.warning("Protocol problem: %s", "connection reset", extra=d)
+
+logger3 = logging.getLogger("myApp")
+logger3.warning("Protocol problem: %s", "connection reset", extra=d)

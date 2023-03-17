@@ -19,25 +19,25 @@ Purpose: without OOPS, solving a problem
 """
 
 
-def new():
+def creat_account():
     return {"balance": 0}
 
 
 def deposit(account, amount):
     print(f"\tDeposited {amount}")
+    # balance += amount
     account["balance"] += amount
-    return account["balance"]
 
 
 def withdraw(account, amount):
     print(f"\tWithdrawn {amount}")
+    # balance -= amount
     account["balance"] -= amount
-    return account["balance"]
 
 
 if __name__ == "__main__":
     # Priyanka
-    Priyanka = new()  # {'balance': 0}
+    Priyanka = creat_account()  # {'balance': 0}
     print(f'Priyanka initial balance :{Priyanka["balance"]}')  # 0
     deposit(Priyanka, 1000)
     print(f'Priyanka current balance :{Priyanka["balance"]}')  # 1000
@@ -48,10 +48,9 @@ if __name__ == "__main__":
     withdraw(Priyanka, 750)
     print(f'Priyanka current balance :{Priyanka["balance"]}')
 
-    print()
-    # Varun
-    Varun = new()
-    print(f'Varun    initial balance :{Varun["balance"]}')
-
-    deposit(Varun, 99)
-    print(f'Varun    current balance :{Varun["balance"]}')
+    print("----------------------------------------")
+    # UDahy
+    udhay = creat_account()
+    print(f'udhay initial balance :{udhay["balance"]}')  # 0
+    deposit(udhay, 1000)
+    print(f'udhay current balance :{udhay["balance"]}')  # 1000

@@ -26,6 +26,8 @@ pprint(data)
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)-8s %(message)s",
+    filename="logs/09_logging.log",
+    filemode="w",
 )
 
 logging.debug(data)
