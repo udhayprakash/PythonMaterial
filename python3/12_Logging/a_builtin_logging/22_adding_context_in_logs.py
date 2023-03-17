@@ -1,7 +1,7 @@
 import logging
 import logging.config
 
-GLOBAL_STUFF = 1
+GLOBAL_STUFF = 0
 
 
 class ContextFilter(logging.Filter):
@@ -13,10 +13,14 @@ class ContextFilter(logging.Filter):
 
 
 handler = logging.StreamHandler()
-handler.formatter = logging.Formatter("%(global_data)s %(message)s")
+handler.formatter = logging.Formatter("Line - %(global_data)s %(message)s")
 handler.addFilter(ContextFilter())
+
 logger = logging.getLogger(__name__)
 logger.addHandler(handler)
 
 logger.error("Hi1")
 logger.error("Hi2")
+logger.info("information log")
+logger.warning("Warning Log")
+logger.critical("critical log")

@@ -13,9 +13,12 @@ import sys
 # print(os.path.splitext(__file__)[0])
 # print(os.path.splitext(__file__)[0] + '.log')
 # print(os.path.join('logs', os.path.splitext(__file__)[0] + '.log'))
-
-log_file = os.path.join("logs", os.path.splitext(__file__)[0] + ".log")
-
+log_file = os.path.join(
+    os.path.dirname(__file__),
+    "logs",
+    os.path.splitext(os.path.basename(__file__))[0] + ".log",
+)
+print("log_file:", log_file)
 
 fmt = logging.Formatter("%(asctime)s %(levelname)8s %(name)s %(message)s")
 
