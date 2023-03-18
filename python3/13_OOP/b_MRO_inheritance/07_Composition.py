@@ -18,6 +18,7 @@ class Rocket:
 
 # # Instantiation
 # r = Rocket('PSLV-4', 7887)
+# print('r.launch()', r.launch())
 
 
 class MarsRoverComp:
