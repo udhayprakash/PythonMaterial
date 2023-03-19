@@ -7,59 +7,137 @@ Purpose: Abstract Classes
     - Abstract classes cannot be instantiated, and require subclasses
       to provide implementations for the abstract methods.
 """
-
-
-# Ordinary classes
 from abc import ABC, abstractmethod
 
 
-class AbstractClass:
-    def do_something(self):
-        pass
-
-
-class B(AbstractClass):
+# Ordinary classes 1
+class OrdinaryClass:
     pass
 
 
-a = AbstractClass()
-b = B()
-# do_something() method will be inherited in b,
-# and no need to define it
-b.do_something()
-# ---------------------------------------------------
+# Instantiation
+o1 = OrdinaryClass()
+print(vars(o1))  # {}
+print()
 
 
-class AbstractClassExample(ABC):
-    def __init__(self, value):
+# Ordinary classes 2
+class OrdinaryClass2:
+    def __init__(self, name) -> None:
+        self.name = name
+
+
+# Instantiation
+o2 = OrdinaryClass2("Python")
+print(vars(o2))  # {'name': 'Python'}
+print()
+
+
+# Ordinary classes 3
+class OrdinaryClass:
+    def __init__(self, name) -> None:
+        self.name = name
+
+    def say_hello(self):
+        print("Hello world")
+
+
+# Instantiation
+o3 = OrdinaryClass("Python")
+print(vars(o3))  # {'name': 'Python'}
+o3.say_hello()
+print()
+print("---------------------------------------------\n\n")
+
+
+# Abstract Class 1
+class AbstractClassExample1(ABC):
+    pass
+
+
+a1 = AbstractClassExample1()
+print(a1)
+print()
+
+
+# Abstract Class 2
+class AbstractClassExample2(ABC):
+    def __init__(self, value) -> None:
+        self.value = value
+        super().__init__()
+
+
+a2 = AbstractClassExample2("Python")
+print(a2)
+print()
+
+
+# Abstract Class 3
+class AbstractClassExample3(ABC):
+    def __init__(self, value) -> None:
+        self.value = value
+        super().__init__()
+
+    def say_hello(self):
+        print("Hello world")
+
+
+# instantiation
+a3 = AbstractClassExample3("Python")
+print(a3)
+a3.say_hello()
+print()
+
+
+# Abstract Class 4
+class AbstractClassExample4(ABC):
+    def __init__(self, value) -> None:
         self.value = value
         super().__init__()
 
     @abstractmethod
-    def do_something(self):
+    def say_hello(self):
+        print("Hello world")
+
+
+# instantiation
+try:
+    a4 = AbstractClassExample4("Python")
+except TypeError as ex:
+    print(ex)
+
+# Can't instantiate abstract class AbstractClassExample4 with abstract method say_hello
+
+# NOTE: If ABC is inherented, we can instatiate; but if one of
+# the methods is marked as abstractmethod, we can do even instaiation.
+
+
+# ----- Real-world Example
+class BasicCar(ABC):
+    @abstractmethod
+    def get_chasis_number(self):
+        pass
+
+    def get_car_model(self):
         pass
 
 
-# class DoAdd42(AbstractClassExample):
-#     pass
-
-# x = DoAdd42(4)
-# TypeError: Can't instantiate abstract class DoAdd42 with abstract methods do_something
+# Problem
+class RolsRoys(BasicCar):
+    pass
 
 
-# -----------------------------------------------------
-class DoAdd42(AbstractClassExample):
-    def do_something(self):
-        return self.value + 42
+try:
+    car_r = RolsRoys()
+except TypeError as ex:
+    print(ex)
+    print("Excepting methods marked as abstractmethods need to be IMPLEMENTED")
 
 
-class DoMul42(AbstractClassExample):
-    def do_something(self):
-        return self.value * 42
+# Solution
+class RolsRoys(BasicCar):
+    def get_chasis_number(self):
+        pass
 
 
-x = DoAdd42(10)
-y = DoMul42(10)
-
-print(x.do_something())
-print(y.do_something())
+car_r = RolsRoys()

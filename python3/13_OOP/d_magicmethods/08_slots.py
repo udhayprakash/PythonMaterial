@@ -1,6 +1,8 @@
 #!/usr/bin/python
 """
 Purpose: __slots__ importance
+
+    pip install pympler --user
 """
 
 

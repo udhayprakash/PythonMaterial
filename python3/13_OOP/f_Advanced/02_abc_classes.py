@@ -3,20 +3,55 @@
 Purpose: Abstract Base classes
 
 """
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod, abstractproperty
 
 
-class AbstractClassExample(ABC):
+class BasicCar(ABC):
+    modal_name: str = NotImplemented
+
     @abstractmethod
-    def do_something(self):
-        print("Some implementation!")
+    def get_chasis_number(self):
+        pass
+
+    def get_car_model(self):
+        pass
 
 
-class AnotherSubclass(AbstractClassExample):
-    def do_something(self):
-        super().do_something()
-        print("The enrichment from AnotherSubclass")
+# Solution
+class RolsRoys(BasicCar):
+    def get_chasis_number(self):
+        pass
 
 
-x = AnotherSubclass()
-x.do_something()
+car_r = RolsRoys()
+
+
+# NOTE: We cant enforce variables to be defined.
+# for that we need to use property
+# ----------------------------------------
+class BasicCar(ABC):
+    @abstractmethod
+    def get_chasis_number(self):
+        pass
+
+    def get_car_model(self):
+        pass
+
+    @property
+    @abstractmethod
+    def modal_name(self):
+        pass
+
+
+# NOTE: Earlier asbtractproperty is used, but deprecated in Python 3.8
+# Solution
+class RolsRoys(BasicCar):
+    def get_chasis_number(self):
+        pass
+
+    @property
+    def modal_name(self):
+        pass
+
+
+car_r = RolsRoys()

@@ -17,6 +17,9 @@ class UsingRegularClass:
     def __repr__(self):
         return f"{self.__class__.__name__}(name={self.name!r}, age={self.age!r})"
 
+    def __lt__(self, other):
+        return self.age < other.age
+
     def __eq__(self, other):
         if other.__class__ is not self.__class__:
             return NotImplemented
@@ -25,8 +28,9 @@ class UsingRegularClass:
 
 a1 = UsingRegularClass("Udhay", 30)
 print(a1)
-a2 = UsingRegularClass("Prakash", 20)
 
+a2 = UsingRegularClass("Prakash", 40)
+print(a2)
 print(f"{a1 == a2 =}")
 
 # print(a.__repr__())

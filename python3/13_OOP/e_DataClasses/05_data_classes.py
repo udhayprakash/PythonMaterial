@@ -10,7 +10,7 @@ from dataclasses import dataclass, make_dataclass
 from typing import Any, List
 
 
-@dataclass(init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)
+@dataclass(init=True, repr=True, eq=True, order=True, unsafe_hash=False, frozen=False)
 class Book(object):
     title: str
     author: str
@@ -19,6 +19,14 @@ class Book(object):
 # order: By default __gt__ , __ge__, __lt__, __le__ methods
 # will be generated.
 # If passed as False, they are omitted.
+
+
+b1 = Book("python proa", "MArk Lutz")
+b2 = Book("python asd", "MArk Lutz")
+b3 = Book("python fd", "MArk Lutz")
+
+print(f"{b1 <= b2 < b3 =}")
+
 
 # creating a class
 Position = make_dataclass("Position", ["name", "lat", "lon"])

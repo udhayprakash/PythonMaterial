@@ -1,6 +1,4 @@
 #!/usr/bin/python
-
-__author__ = ""
 """
 purpose: Menu-Driven Bank User Interface
 usage: python scriptName.py

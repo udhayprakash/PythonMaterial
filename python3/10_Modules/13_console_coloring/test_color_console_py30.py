@@ -1,10 +1,8 @@
-#!/usr/bin/python
-
-__author__ = ""
-
+#!/usr/bin/python3
 """
-Test module color_console (Python 3.0). Does not work with Python 2.6.
-$Id: test_color_console_py30.py 535 2009-05-11 02:48:29Z andre $
+Purpose: Test module color_console
+
+    $./test_color_console_py30.py 535 2009-05-11 02:48:29Z andre
 """
 
 import sys
@@ -13,7 +11,7 @@ import consoleColor as cons
 
 
 def test():
-    """Simple Pyton 3.0 test for color_console."""
+    """Simple test for color_console."""
     default_colors = cons.get_text_attr()
     default_bg = default_colors & 0x0070
     # default_fg = default_colors & 0x0007

@@ -5,12 +5,12 @@ Purpose: Context Manager
 # context mangers
 
 # Method 1
-f = open("31_context_manager.txt", "w")
+f = open("06_context_manager.txt", "w")
 f.write("I am good")
 f.close()
 
 # Method 2
-with open("31_context_manager.txt", "w") as f:
+with open("06_context_manager.txt", "w") as f:
     f.write("I am good")
 
 ##############################################
@@ -33,11 +33,11 @@ class ManagedFile:
             self.file.close()
 
 
-# f1 = ManagedFile('31_context_manager.txt', 'w')
+# f1 = ManagedFile('06_context_manager.txt', 'w')
 # print(f1)
 
 
-with ManagedFile("31_context_manager.txt", "w") as f1:
+with ManagedFile("06_context_manager.txt", "w") as f1:
     print(f1)
     f1.write("I am good")
 

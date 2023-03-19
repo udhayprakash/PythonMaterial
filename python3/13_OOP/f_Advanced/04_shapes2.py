@@ -36,8 +36,6 @@ class Shape(ABC):
     def perimeter(self):
         pass
 
-    # Dunder ("magic") method to convert the object into a string. Note
-    # how we take the existence of name() and area() for granted.
     def __str__(self):
         return f"{self.name()} of area {self.area():.2f} and perimeter {self.perimeter():.2f}"
 

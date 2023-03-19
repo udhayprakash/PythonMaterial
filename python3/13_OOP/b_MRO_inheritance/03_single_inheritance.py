@@ -75,3 +75,7 @@ print(Bmw.__mro__)
 
 print(Volvo.__mro__)
 # (<class '__main__.Volvo'>, <class '__main__.Cars'>, <class 'object'>)
+
+print(f"{issubclass(Bmw, Cars)= }")  # True
+print(f"{issubclass(Volvo, Cars)= }")  # True
+print(f"{issubclass(int, Cars)= }")  # False
