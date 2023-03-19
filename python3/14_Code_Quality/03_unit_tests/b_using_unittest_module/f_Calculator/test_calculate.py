@@ -21,7 +21,3 @@ class TestCalculate(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         del cls.calc
-
-
-if __name__ == "__main__":
-    unittest.main()

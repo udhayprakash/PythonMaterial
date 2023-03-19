@@ -6,8 +6,16 @@ Symantic:
     assert <statement>, "Error Message, if statement is incorrect"
 """
 
-assert 1 + 2 == 3
-assert 1 + 2 == 3, "1+2 is not equal to 3"
+print(2 + 3 == 5)
+
+assert 2 + 3 == 5
+assert 2 + 3 == 5, "2+ 3 is Not resulting to 5"
+
+print(2 + 3 == 6)
+try:
+    assert 2 + 3 == 6, "2+ 3 is Not resulting to 6"
+except AssertionError as ex:
+    print(ex)
 
 try:
     assert 10 - 34 > 3
@@ -22,4 +30,4 @@ except AssertionError as ex:
 
 
 assert 1 == True
-# assert '1' == str(True)
+assert "1" != str(True)

@@ -8,6 +8,9 @@ import unittest
 sys.path.insert(0, "..")
 from calculator import addition
 
+# for each_path in sys.path:
+#     print(each_path)
+
 
 class TestSuiteAddition(unittest.TestCase):
     def test01(self):

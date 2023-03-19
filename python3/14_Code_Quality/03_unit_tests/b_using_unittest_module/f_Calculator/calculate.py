@@ -4,7 +4,7 @@
 __author__ = ""
 
 
-class Calculate(object):
+class Calculate:
     """
     >>> calc = Calculate()
     >>> calc.add(-2, 2)

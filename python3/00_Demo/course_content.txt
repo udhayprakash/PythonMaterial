@@ -46,7 +46,7 @@
 
 04.Exception Handling
     Exceptions Hierarchy
-    Different types of errors, error vs exception
+    Different types of errors, error vs exception and exception groups
     Handling single and multiple exceptions
     raising exceptions
     asserts
@@ -168,6 +168,7 @@
     Dataclasses
 
 14. Code Quality
+    typing
     Doctest
     unittest
 

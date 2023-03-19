@@ -28,6 +28,7 @@ class TestingPerson(unittest.TestCase):
         for test_name in test_names:
             user_id = self.p.set_name(test_name)
             retrieved_names.append(self.p.get_name(user_id))
+
         self.assertListEqual(retrieved_names, test_names)
 
     def test_user_id_greater_than_len(self):

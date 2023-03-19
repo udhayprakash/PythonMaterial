@@ -4,12 +4,12 @@ Purpose: Performance (time) testing
 """
 
 import time
-from unittest import TestCase, main
+import unittest
 
 import timeout_decorator
 
 
-class TimeOutTest(TestCase):
+class TimeOutTest(unittest.TestCase):
     @timeout_decorator.timeout(5)
     def test_timeout(self):
         print("start")
@@ -20,4 +20,4 @@ class TimeOutTest(TestCase):
 
 
 if __name__ == "__main__":
-    main()
+    unittest.main(verbosity=True)

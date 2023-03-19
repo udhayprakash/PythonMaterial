@@ -1,19 +1,4 @@
-#!/usr/bin/python
-"""
-Purpose: Unit testing using unittest module
-
-unit tesing modules
-    - unittest
-    - pytest
-    - nose test
-
-NOTE: All the test cases will be executed in
-      alphabetical order
-
-"""
 import unittest
-
-# print(dir(unittest))
 
 
 def addition(n1, n2):
@@ -23,7 +8,7 @@ def addition(n1, n2):
 
 
 class TestAddition(unittest.TestCase):
-    def test01_addition_positive(self):
+    def test01_addition_positive(self):  # Happy testing
         print("In test case - test01_addition_positive")
         # assert addition(10, 20) == 30
         self.assertEqual(addition(10, 20), 30)

@@ -10,13 +10,13 @@ def hello():
 
 
 class TestHello(unittest.TestCase):
-    def test01_hello(self):
-        # assert hello() is None
-        self.assertIsNone(hello())
-
-    def test02_hello(self):
-        # assert hello() == None
+    def test01_hello_result_equal_check(self):
+        assert hello() == None
         self.assertEqual(hello(), None)
+
+    def test02_hello_result_identity_check(self):
+        assert hello() is None
+        self.assertIsNone(hello())
 
     @unittest.skip("Incorrectly written. Need the team review")
     def test03_negative(self):

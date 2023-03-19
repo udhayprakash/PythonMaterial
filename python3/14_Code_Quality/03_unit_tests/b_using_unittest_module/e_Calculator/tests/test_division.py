@@ -5,9 +5,8 @@ Purpose: Testing division functionality in calculator
 import sys
 import unittest
 
-from calculator import division
-
 sys.path.insert(0, "..")
+from calculator import division
 
 
 class TestSuitedivision(unittest.TestCase):

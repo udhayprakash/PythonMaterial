@@ -1,0 +1,5 @@
+To run all the unittest scripts in a directory
+    python -m unittest discover tests
+
+To run for coverage
+    coverage run  -m unittest discover tests
