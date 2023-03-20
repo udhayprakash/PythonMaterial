@@ -11,6 +11,7 @@ class Employee(object):
     """
 
     emp_count = 0  # class variable
+    emp_id = 0  # Class variable
 
     def __init__(self, name, salary=20000):
         """
@@ -28,7 +29,12 @@ class Employee(object):
         This method is used to display the count of employees
         :return:
         """
-        print(f"Total Employees count: {Employee.emp_count}")
+        print(f"Total Employees count(before): {Employee.emp_count}")
+
+        self.emp_count += 10
+        print(f"self.emp_count               : {self.emp_count}")
+
+        print(f"Total Employees count(after): {Employee.emp_count}")
 
     def __del__(self):
         """
@@ -56,24 +62,22 @@ if __name__ == "__main__":
     empl_3 = Employee("Akhila")
     print(vars(empl_3))
     empl_3.total_employees_count()
+    print()
 
+    print(f"{empl_3.__class__ =}")
+    print(dir(empl_3.__class__))
+    print()
 
-# =================================================
-# class variables can be modified at instance level,
-# by the changes will reflect only to that instance
-class Demo:
-    counter = 10
+    # To get class level value
+    print(f"{empl_3.__class__.emp_count =}")
+    print(f"{empl_3.__class__.emp_id =}")
+    print()
 
-    def change_counter(self):
-        self.counter += 1
+    # To get instance level value
+    print(f"{empl_3.emp_count =}")
+    print(f"{empl_3.emp_id =}")
 
-
-obj1 = Demo()
-print(Demo.counter, end=" ")
-obj1.change_counter()
-print(Demo.counter)
-
-obj2 = Demo()
-print(Demo.counter, end=" ")
-obj2.change_counter()
-print(Demo.counter)
+"""
+NOTE: class variables can be modified at instance level,
+    by the changes will reflect only to that instance
+"""
