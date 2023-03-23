@@ -19,7 +19,6 @@ Purpose: Operator precedence in python
     ()  - used of tuples; also used in arithmetic operations
 """
 
-
 result = (22 + 2 / 2 * 4 // 4 - 89) + 67 - 10e7
 # result = (22 + 2 / 8 // 4 - 89) + 67 - 10e7
 print(result)
@@ -46,4 +45,7 @@ expression = 40 // 10 / 3.0
 print(result)
 
 expression = 40 / 10 // 3.0  # + 23e45 - 23 + 56 * 67
+print(result)
+
+result = (True == False) in (False,) == False
 print(result)

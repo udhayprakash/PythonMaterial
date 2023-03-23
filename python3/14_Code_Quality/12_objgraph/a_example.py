@@ -1,6 +1,6 @@
 import objgraph
 
-print(dir(objgraph))
+# print(dir(objgraph))
 objgraph.show_most_common_types()
 print()
 

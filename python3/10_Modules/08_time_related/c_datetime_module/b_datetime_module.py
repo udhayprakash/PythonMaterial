@@ -3,9 +3,9 @@
 Purpose: datetime.date
 """
 
-import datetime
+from datetime import date, datetime, timedelta
 
-today = datetime.date.today()
+today = date.today()
 print(today)  # 2020-06-24
 print("ctime  :", today.ctime())  # Wed Jun 24 00:00:00 2020
 print("tuple  :", today.timetuple())
@@ -17,3 +17,21 @@ print()
 print("year  :", today.year)  # 2020
 print("Month :", today.month)  # 6
 print("Day   :", today.day)  # 24
+print()
+
+
+def next_consec_friday(given_date: str) -> None:
+    """given a date, get next consecutive friday
+    M T W Th F
+    0 1 2 3  4
+    """
+    date_obj = datetime.strptime(given_date, "%d-%m-%Y")
+    days_till_friday = (4 - date_obj.weekday()) % 7
+    friday_date = date_obj + timedelta(days=days_till_friday)
+    return friday_date.strftime("%d-%m-%Y")
+
+
+print(next_consec_friday("20-03-2023"))  # 24-03-2023
+print(next_consec_friday("24-03-2023"))  # 24-03-2023
+print(next_consec_friday("25-03-2023"))  # 31-03-2023
+print(next_consec_friday("29-03-2023"))  # 31-03-2023

@@ -1,17 +1,11 @@
 #!/usr/bin/python
 """
 Purpose: sched module
+    python -m pip install sched"
 """
 
+import sched
 import time
-
-try:
-    import sched
-except ImportError:
-    from os import system
-
-    system("python -m pip install sched")
-    import sched
 
 scheduler = sched.scheduler(time.time, time.sleep)
 

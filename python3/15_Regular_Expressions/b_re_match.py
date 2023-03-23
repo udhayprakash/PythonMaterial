@@ -1,8 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
+    Using re.match
+        - It helps to identify patterns at the starting of string
+        - By default, it is case-sensitive
 """
 import re
+
+# print(dir(re))
 
 target_string = "Python Programming is good for health"
 search_string = "python"

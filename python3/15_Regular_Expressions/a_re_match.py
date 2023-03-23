@@ -1,6 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Purpose: Regular Expressions
+    Using re.match
+        - It helps to identify patterns at the starting of string
 """
 import re
 

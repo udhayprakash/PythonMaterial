@@ -4,26 +4,6 @@ from unittest import TestCase
 from django.urls import reverse
 
 
-class Client:
-    pass
-
-
-class MyTestCase(TestCase):
-    def testRegistrationThreaded(self):
-        url = reverse("toggle_registration")
-
-        @test_concurrently(15)
-        def toggle_registration():
-            # perform the code you want to test here; it must be thread-safe
-            # (e.g., each thread must have its own Django test client)
-            c = Client()
-            c.login(username="user@example.com", password="abc123")
-            response = c.get(url)
-            print(response)
-
-        toggle_registration()
-
-
 def test_concurrently(times):
     """
     Add this decorator to small pieces of code that you want to test
@@ -60,3 +40,23 @@ def test_concurrently(times):
         return wrapper
 
     return test_concurrently_decorator
+
+
+class Client:
+    pass
+
+
+class MyTestCase(TestCase):
+    def testRegistrationThreaded(self):
+        url = reverse("toggle_registration")
+
+        @test_concurrently(15)
+        def toggle_registration():
+            # perform the code you want to test here; it must be thread-safe
+            # (e.g., each thread must have its own Django test client)
+            c = Client()
+            c.login(username="user@example.com", password="abc123")
+            response = c.get(url)
+            print(response)
+
+        toggle_registration()

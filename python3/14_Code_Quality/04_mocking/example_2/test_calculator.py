@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from main import Calculator
+from myscript import Calculator
 
 
 class TestCalculator(TestCase):

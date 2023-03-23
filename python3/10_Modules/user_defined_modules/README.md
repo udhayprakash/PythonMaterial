@@ -18,3 +18,12 @@ pip install uncompyle6
 
     Instead of saving as py file, if you want to see in terminal,
          uncompyle6 <filename.pyc>
+
+## How to profile startup time
+
+    -X importtime: Python’s import profiler
+
+    Python 3.7 introduced the -X importtime option, a specialized profiler that times all imports.
+    It prints a table to stderr, summarizing microsecond timing information for each imported module:
+
+    $ python -X importtime -c 'import django'

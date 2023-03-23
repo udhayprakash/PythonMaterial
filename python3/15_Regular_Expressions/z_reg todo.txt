@@ -18,6 +18,9 @@ Lookaround	Name	                What it Does
 (?<!foo)	Negative Lookbehind	Asserts that what immediately precedes the current position in the string is not foo
 
 
+Look forward regex (?<=)
+Look behind regex   (?<!)
+
 
 
 real world examples

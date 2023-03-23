@@ -56,7 +56,8 @@ Selenium
 
 Web Scraping
     https://stackabuse.com/introduction-to-web-scraping-with-python/
-
+	https://sangaline.com/post/advanced-web-scraping-tutorial/
+	https://github.com/xxg1413/python#web-scraping
 Databases
     https://stackabuse.com/a-sqlite-tutorial-with-python/
     https://stackabuse.com/getting-started-with-mysql-and-python/
@@ -65,6 +66,7 @@ Databases
 Parallel processing
     https://stackabuse.com/parallel-processing-in-python/
     https://stackabuse.com/concurrency-in-python/
+	https://superfastpython.com/threading-in-python/
 
 networking
     https://stackabuse.com/introduction-to-python-ftp/
@@ -109,18 +111,29 @@ flask
     https://stackabuse.com/serving-static-files-with-flask/
     https://stackabuse.com/building-a-todo-app-with-flask-in-python/
     https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
+	https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
+
+fastapi
+	https://engineering.forethought.ai/blog/2023/02/28/migrating-from-flask-to-fastapi-part-3/
 
 django
     https://stackabuse.com/asynchronous-tasks-in-django-with-redis-and-celery/
     https://stackabuse.com/working-with-redis-in-python-with-django/
     https://stackabuse.com/recursive-model-relationships-in-django/
     https://stackabuse.com/building-a-graphql-api-with-django/
-
+	https://www.digitalocean.com/community/tutorials/working-with-django-templates-static-files
+	https://testdriven.io/blog/django-permissions/
     string templating
         https://stackabuse.com/formatting-strings-with-the-python-template-class/
 
+	drf
+		https://www.cdrf.co/
+
 DataScience
     https://stackabuse.com/the-best-data-science-libraries-in-python/
+
+Data Validation
+	https://endjin.com/blog/2023/03/a-look-into-pandera-and-great-expectations-for-data-validation
 
 Docker
     https://stackabuse.com/dockerizing-python-applications/
@@ -336,7 +349,9 @@ Probability
 fastapi tutorial - https://www.youtube.com/watch?v=jJYHUp9ZeTY
 pandas speeddup  - https://www.youtube.com/watch?v=SAFmrTnEHLg
 
-datasets - https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+datasets
+	- https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+	- https://paperswithcode.com/datasets
 
 django project - https://github.com/Thejus-ms/first_site-main
 
@@ -412,7 +427,7 @@ https://developers.themoviedb.org/3/search/search-movies
 https://docs.python.org/3/library/asyncio.html
 https://docs.python.org/3/library/asyncio-task.html
 Data structures like Hashmaps, Linked lists, Trees
-
+	https://www.youtube.com/watch?v=8WucUsTespU&t=6s
 
 write a chrome plugin,
 	when highlighted on $100, it should convert to INR
@@ -464,3 +479,7 @@ https://www.twilio.com/blog/automatically-send-birthday-wishes-python-flask-what
 https://towardsdatascience.com/get-interactive-plots-directly-with-pandas-13a311ebf426
 https://hakibenita.com/sql-for-data-analysis
 github.com/jimportilla/complete-python-bootcamp
+
+
+EDA Data analysis
+	https://blog.patricktriest.com/police-data-python/

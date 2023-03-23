@@ -4,8 +4,8 @@
 +   : matches 1 or more repetitions of the preceding expression greedily
 ?   : matches 0 or 1 occurrence of the preceding expression non-greedily
 .   : matches any character except for \n
-^   : matches beginning of a string respectively.
-$   : matches ending of a string respectively.
+^   : matches beginning of a string respectively. /A
+$   : matches ending of a string respectively. /Z
 |   : matches either of the expressions around the | symbol
 [ ] : matches any of the characters listed inside []; a hyphen (-) denotes alphanumeric ranges; ^ right after opening square bracket makes it match any character except for the listed ones.
 ( ) : used to capture portions of an expression; also used to denote precedence especially in complex expressions; (?:...) makes represents the non-grouping version of ().
@@ -73,19 +73,59 @@ U  also re.UNICODE      Asks the Regex Engine to use the Unicode character set f
 * string: attribute which stores the original string.
 
 
-Exercises§
-Make a regular expression that matches an 'a' followed by 4 'b's in a string. Solution: ab{4}
-Make a regular expression which matches sequences of a single uppercase letter followed by one or more lowercase letters. Solution: [A-Z][a-z]*
-Compose a regular expression that matches a word at the end of a string, ending with an optional punctuation mark. Solution: \w+\S*$
-Write a Python script to remove leading zeroes from parts of an IP address. Solution: re.sub('\.[0]*', '.', '192.168.01.01')
-Write a Python program to convert camelCase words to underscore_separated_lowercase words. Solution: re.sub('([a-z]+)([A-Z])', r'\1_\2', 'randomCamelCaseVariableOne randomCamelCaseVariableTwo').lower()
-Write a Python script to convert a date of dd-mm-yyyy format to yyyy-mm-dd format. Solution: re.sub('(\d{1,2})-(\d{1,2})-(\d{4})', r'\3-\2-\1', '13-02-2017')
-Make a regular expression to extract all words from a string starting with a, d or s. Solution: re.findall(r'\b[ads]\w+\b', 'apple ball cat dog eagle sea sort')
-Write a Python script to replace any occurrence of underscore, comma, or period with an at-the-rate symbol. Solution: re.sub('[_,\.]', '@', '_,._,.')
-Write a Python script to find all 4 characters long words in a string. Solution: re.findall(r'\b\w{4}\b', 'two three four five six seven')
-Write a Python script to find all words in a string which are either 2-letter long, 3-letter long or 4-letter long. Solution: re.findall(r'\b\w{2,4}\b', 'on two three four five six seven')
-Write a Python script to obtain a list of numbers from a string containing alphanumeric characters. Solution: re.split('[a-zA-Z]+', '1a2b3c4de5f6')
-Write a Python script to extract the contents lying between a paragraph tag with an id 'para'. Solution: matchObject = re.search('<p id\s*=\s*\'para\'>(.*?)</p>', '<p id = \'para\'>Contents of paragraph</p>'); print(matchObject.group(1)) # 'Contents of paragraph'
-Write a regular expression that matches two of a kind characters from a string containing characters other than a newline e.g. 'abc123abc'. Solution: matchObject = re.search(r'.*?(.).*?\1', 'abc123abc'); matchObject.groups(). For clarity, try it out on https://regex101.com/.
-Write a regular expression that matches three of a kind characters from a string containing characters other than a newline e.g. 'abc123abc'. Solution: matchObject = re.search(r'.*?(.).*?\1.*?\1', 'abc123abc123abc'); matchObject.groups(). For clarity, try it out on https://regex101.com/.
-Write a Python script to remove excessive spacing from a string. Solution: re.sub('\s+', ' ', 'this is a    string     with excessive     spacing.')
+## Exercises
+=============
+    1) Make a regular expression that matches an 'a' followed by 4 'b's in a string.
+    Solution: ab{4}
+    2) Make a regular expression which matches sequences of a single uppercase letter followed by one or more lowercase letters.
+    Solution: [A-Z][a-z]*
+    3) Compose a regular expression that matches a word at the end of a string, ending with an optional punctuation mark.
+    Solution: \w+\S*$
+    4) Write a Python script to remove leading zeroes from parts of an IP address.
+    Solution: re.sub('\.[0]*', '.', '192.168.01.01')
+    5) Write a Python program to convert camelCase words to underscore_separated_lowercase words.
+    Solution: re.sub('([a-z]+)([A-Z])', r'\1_\2', 'randomCamelCaseVariableOne randomCamelCaseVariableTwo').lower()
+    6) Write a Python script to convert a date of dd-mm-yyyy format to yyyy-mm-dd format.
+    Solution: re.sub('(\d{1,2})-(\d{1,2})-(\d{4})', r'\3-\2-\1', '13-02-2017')
+    7) Make a regular expression to extract all words from a string starting with a, d or s.
+    Solution: re.findall(r'\b[ads]\w+\b', 'apple ball cat dog eagle sea sort')
+    8) Write a Python script to replace any occurrence of underscore, comma, or period with an at-the-rate symbol.
+    Solution: re.sub('[_,\.]', '@', '_,._,.')
+    9) Write a Python script to find all 4 characters long words in a string.
+    Solution: re.findall(r'\b\w{4}\b', 'two three four five six seven')
+    10) Write a Python script to find all words in a string which are either 2-letter long, 3-letter long or 4-letter long.
+    Solution: re.findall(r'\b\w{2,4}\b', 'on two three four five six seven')
+    11) Write a Python script to obtain a list of numbers from a string containing alphanumeric characters.
+    Solution: re.split('[a-zA-Z]+', '1a2b3c4de5f6')
+    12) Write a Python script to extract the contents lying between a paragraph tag with an id 'para'.
+    Solution: matchObject = re.search('<p id\s*=\s*\'para\'>(.*?)</p>', '<p id = \'para\'>Contents of paragraph</p>'); print(matchObject.group(1)) # 'Contents of paragraph'
+    13) Write a regular expression that matches two of a kind characters from a string containing characters other than a newline e.g. 'abc123abc'.
+    Solution: matchObject = re.search(r'.*?(.).*?\1', 'abc123abc'); matchObject.groups(). For clarity, try it out on https://regex101.com/.
+    14) Write a regular expression that matches three of a kind characters from a string containing characters other than a newline e.g. 'abc123abc'.
+    Solution: matchObject = re.search(r'.*?(.).*?\1.*?\1', 'abc123abc123abc'); matchObject.groups(). For clarity, try it out on https://regex101.com/.
+    15) Write a Python script to remove excessive spacing from a string.
+    Solution: re.sub('\s+', ' ', 'this is a    string     with excessive     spacing.')
+
+Assignment
+============
+Your task is to write a regular expression that matches only and exactly strings of form:
+, where each variable  can be any single character except the newline.
+
+    postive
+        123.456.abc.def
+        asd.asd.asd.asd
+        `!@.#$%.^&*.()_
+
+    negative
+        1123.456.abc.def
+        123.123.123.132.123.123
+
+    Your task is to match the pattern  xxXxxXxxxx
+    Here x denotes a digit character, and X denotes a non-digit character.
+    positive
+        06-11-2015
+        10a10.2015452254
+
+Write a regex which can match all the occurences of digit which are immediately preceded by odd digit.
+positive
+    123Go!
