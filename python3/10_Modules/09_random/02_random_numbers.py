@@ -19,10 +19,6 @@ print(random.uniform(1, 10))
 for i in range(3):
     print(random.randrange(0, 101, 5))
 
-# To shuffle a list of elements
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-random.shuffle(numbers)
-print("after shuffle", numbers)
 
 items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -46,3 +42,21 @@ print(y)
 # Pick a random item from the list
 x = random.choice(mountains)
 print(x)
+print()
+
+
+# To shuffle a list of elements
+def shuffler(mylist):
+    new_list = []
+    while len(mylist):
+        rand_pos = random.randint(0, len(mylist))
+        new_list.append(mylist[rand_pos])
+        del mylist[rand_pos]
+    return new_list
+
+
+print(shuffler(["a", "b", "c", "d", "e"]))
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random.shuffle(numbers)
+print("after shuffle", numbers)

@@ -30,6 +30,7 @@ moviepy = "^1.0.3"
 pympler = "^1.0.1"
 black = {extras = ["jupyter"], version = "^23.1.0"}
 objgraph = "^3.5.0"
+pyselenium = "^1.0.2"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -39,3 +39,25 @@ print(f"{obj1.val = }")
 
 obj2 = SuperClass()
 print(f"{obj2.val = }")
+print()
+
+
+# -----------------------------------
+class A:
+    def __get__(self, instance, owner):
+        return 10
+
+    def __str__(self) -> str:
+        return "11"
+
+    __repr__ = __str__
+
+
+class B:
+    at = A()
+
+    def __init__(self) -> None:
+        self.at = A()
+
+
+print(f"{B().at =}")
