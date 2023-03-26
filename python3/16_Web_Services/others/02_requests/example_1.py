@@ -9,7 +9,6 @@ Purpose:
 import requests
 
 response = requests.get("https://www.timeanddate.com/worldclock/india/new-delhi")
-# breakpoint()
 # print(response.text)
 with open("content.html", "wb") as f:
     f.write(response.text.encode("utf-8"))
