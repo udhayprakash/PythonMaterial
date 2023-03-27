@@ -11,6 +11,11 @@ def index():
     return response
 
 
+@app.route("/user/")
+def user(name):
+    return "<h1>Specify the User" % name
+
+
 @app.route("/user/<name>")
 def user(name):
     return "<h1>Hello, %s!</h1>" % name
