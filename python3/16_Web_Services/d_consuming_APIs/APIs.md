@@ -1,8 +1,13 @@
+## Dummy API with all methods
+
+    https://httpbin.org/#/Request_inspection
+
 ## Without Authentication
 
     Random User API - https://randomuser.me/api
     Ninja Facts API - https://catfact.ninja/fact
     Yoda Lang traslation API - https://funtranslations.com/api/#yoda
+    cats API - https://cataas.com/
 
 ## with Authentication
 
@@ -12,6 +17,7 @@
     Github - https://docs.github.com/en/rest
     		- https://api.github.com/
     Twitter - https://developer.twitter.com/en/docs/twitter-api
+    Geo - https://apidocs.geoapify.com/playground/maps/
 
 ## Real-time Usage
 
