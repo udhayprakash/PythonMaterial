@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 from uuid import uuid4
 
-from flask import Flask
+import jwt
+import requests
+from flask import Flask, redirect, session, url_for
+from jwt import PyJWKClient
+from jwt.exceptions import DecodeError
+from requests_oauthlib import OAuth2Session
+from werkzeug.exceptions import InternalServerError, Unauthorized
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = str(uuid4())
@@ -13,10 +19,6 @@ IDP_CONFIG = {
     "client_secret": "Your app client secret",
     "scope": ["profile", "email", "openid"],
 }
-
-import requests
-from flask import url_for
-from requests_oauthlib import OAuth2Session
 
 
 def get_well_known_metadata():
@@ -35,9 +37,6 @@ def get_oauth2_session(**kwargs):
     return oauth2_session
 
 
-from flask import redirect, session
-
-
 @app.route("/login")
 def login():
     well_known_metadata = get_well_known_metadata()
@@ -47,9 +46,6 @@ def login():
     )
     session["oauth_state"] = state
     return redirect(authorization_url)
-
-
-from flask import request
 
 
 @app.route("/callback")
@@ -69,19 +65,10 @@ def get_user_token():
     return session["oauth_token"]
 
 
-import jwt
-from jwt import PyJWKClient
-from jwt.exceptions import DecodeError
-from werkzeug.exceptions import InternalServerError, Unauthorized
-
-
 def get_jwks_client():
     well_known_metadata = get_well_known_metadata()
     jwks_client = PyJWKClient(well_known_metadata["jwks_uri"])
     return jwks_client
-
-
-jwks_client = get_jwks_client()
 
 
 @app.before_request
@@ -115,4 +102,5 @@ def get_user_id():
 
 
 if __name__ == "__main__":
+    jwks_client = get_jwks_client()
     app.run()

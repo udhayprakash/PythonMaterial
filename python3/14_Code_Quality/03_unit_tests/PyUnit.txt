@@ -1,0 +1,20 @@
+PyUnit
+======
+- Pyunit is a Python port of JUnit.
+- Pyunit has five key classes:
+
+	1) TestCase class:
+		- The TestCase class bears the test routines and delivers hooks for making each routine and cleaning up thereafter
+
+	2) TestSuite class:
+		- It caters as a collection container, and it can possess multiple testcase objects and multiple testsuites objects
+
+	3) TestLoader class:
+		- This class loads test cases and suites defined locally or from an external file.
+		- It emits a testsuite objects that posseses those suites and cases
+
+	4) TextTestRunner class:
+		- To run the tests it caters a standard platform to execute the tests
+
+	5) TestResults class:
+		- It offers a standard container for the test results

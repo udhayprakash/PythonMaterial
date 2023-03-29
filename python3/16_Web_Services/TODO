@@ -101,3 +101,9 @@ https://twitter.com/randomkeyio/status/1249333385656500224/photo/1
 
 
 https://www.timeanddate.com/services/api/
+
+
+## Bitbucket
+https://bitbucket-api.readthedocs.io/en/latest/usage.html
+groups = requests.get("https://api.bitbucket.org/1.0/groups/myaccount/", headers={'Authorization' : "Bearer %s" %access_token})
+https://bitbucket-api.readthedocs.io/en/latest/bitbucket.html
