@@ -8,6 +8,7 @@
     Ninja Facts API - https://catfact.ninja/fact
     Yoda Lang traslation API - https://funtranslations.com/api/#yoda
     cats API - https://cataas.com/
+    https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 ## with Authentication
 

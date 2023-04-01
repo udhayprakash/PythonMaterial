@@ -10,3 +10,10 @@ database
         - port based
             - mongo db
             - cassandra db
+
+Tuturial
+    https://www.sqlitetutorial.net/
+
+Tools
+    https://sqlitebrowser.org/dl/
+    https://sqlitestudio.pl/

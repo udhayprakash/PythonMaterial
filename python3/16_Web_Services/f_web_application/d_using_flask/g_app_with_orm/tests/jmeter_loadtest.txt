@@ -1,0 +1,107 @@
+Open JMeter and create a new Test Plan.
+
+Add a Thread Group to the Test Plan.
+
+Add an HTTP Request Defaults element to the Thread Group.
+
+Set the Server Name or IP field to the hostname or IP address of your Flask app.
+
+Set the Port Number field to the port number of your Flask app (usually 5000).
+
+Set the Protocol field to HTTP.
+
+Add an HTTP Header Manager element to the Thread Group.
+
+Add a User Defined Variables element to the Thread Group.
+
+Define the following variables in the User Defined Variables element:
+
+BASE_URL: the base URL of your Flask app (e.g., http://localhost:5000)
+NUM_THREADS: the number of threads to use in the load test (e.g., 10)
+NUM_REQUESTS: the number of requests to send per thread (e.g., 100)
+Add a CSV Data Set Config element to the Thread Group.
+
+Set the Filename field to a CSV file containing a list of book titles, authors, and descriptions.
+
+Set the Variable Names field to title,author,description.
+
+Add an HTTP Request element to the Thread Group.
+
+Set the Path field to /books.
+
+Set the Method field to POST.
+
+Set the Body Data field to ${title},${author},${description}.
+
+Add a Response Assertion element to the HTTP Request.
+
+Set the Pattern to Book created successfully.
+
+Add a Loop Controller element to the Thread Group.
+
+Set the Loop Count field to ${NUM_REQUESTS}.
+
+Add a Random CSV Data Set Config element to the Loop Controller.
+
+Set the Filename field to the same CSV file as before.
+
+Set the Variable Names field to title,author,description.
+
+Add another HTTP Request element to the Thread Group.
+
+Set the Path field to /books.
+
+Set the Method field to GET.
+
+Add a Response Assertion element to the HTTP Request.
+
+Set the Pattern to ${__javaScript(vars.get('ResponseData').length > 0)}.
+
+Add a Loop Controller element to the Thread Group.
+
+Set the Loop Count field to ${NUM_REQUESTS}.
+
+Add a Random CSV Data Set Config element to the Loop Controller.
+
+Set the Filename field to the same CSV file as before.
+
+Set the Variable Names field to title,author,description.
+
+Add another HTTP Request element to the Thread Group.
+
+Set the Path field to /books/${__threadNum}.
+
+Set the Method field to PUT.
+
+Set the Body Data field to ${title},${author},${description}.
+
+Add a Response Assertion element to the HTTP Request.
+
+Set the Pattern to Book updated successfully.
+
+Add a Loop Controller element to the Thread Group.
+
+Set the Loop Count field to ${NUM_REQUESTS}.
+
+Add a Counter element to the Loop Controller.
+
+Set the Start field to 1.
+
+Set the Increment field to 1.
+
+Set the Reference Name field to book_id.
+
+Add another HTTP Request element to the Thread Group.
+
+Set the Path field to /books/${book_id}.
+
+Set the Method field to DELETE.
+
+Add a Response Assertion element to the HTTP Request.
+
+Set the Pattern to `Book
+
+
+
+
+Regenerate response
