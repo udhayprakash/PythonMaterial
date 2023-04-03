@@ -39,6 +39,19 @@ print(f"{multiply_4.func     =}")
 print(f"{multiply_4.args     =}")
 print(f"{multiply_4.keywords =}")
 
+
+# ----- Another Example
+def f(a, b, c):
+    return a + b * c
+
+
+def g(x, y=3):
+    return x(y)
+
+
+p = functools.partial(f, 4, 2)
+print(g(p))
+
 """
 Assignments
 ------------

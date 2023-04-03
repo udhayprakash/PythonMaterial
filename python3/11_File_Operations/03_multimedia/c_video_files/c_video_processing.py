@@ -19,9 +19,9 @@ BASE_DIR = r"C:\Users\Amma\Downloads\class_recordings"
 
 # Set video filenames as constant variables
 VIDEO_NAMES = [
-    "video1616694944.mp4",
-    "video1907828055.mp4",
-    # "video1057394683.mp4",
+    "1.mp4",
+    "2.mp4",
+    "3.mp4",
     # "4.mp4",
 ]
 
@@ -50,4 +50,4 @@ final_video = concatenate_videoclips(videos_processed)
 # Increase the play speed by a factor of 2
 # final_video = speedx(final_video, factor=1.2)
 
-final_video.write_videofile(os.path.join(BASE_DIR, "class35_Flask_REST_API.mp4"))
+final_video.write_videofile(os.path.join(BASE_DIR, "class38_pandas_series.mp4"))
