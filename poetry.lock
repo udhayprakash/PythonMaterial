@@ -514,6 +514,18 @@ Werkzeug = ">=0.14"
 asymmetric-crypto = ["cryptography (>=3.3.1)"]
 
 [[package]]
+name = "flask-ngrok"
+version = "0.0.25"
+description = "A simple way to demo Flask apps from your machine."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=0.8"
+requests = "*"
+
+[[package]]
 name = "flask-sqlalchemy"
 version = "3.0.3"
 description = "Add SQLAlchemy support to your Flask application."
@@ -2602,7 +2614,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "b38fc7da6f6e45b9dca8ccced2b47f737de6cae9e5d9805e908552cd623d2862"
+content-hash = "cfca0bf6e56743ac9f5e4f4bf97897f1dc4aa7e17d1a482579474bee7964a354"
 
 [metadata.files]
 aiohttp = [
@@ -3114,6 +3126,10 @@ flask-cors = [
 flask-jwt-extended = [
     {file = "Flask-JWT-Extended-4.4.4.tar.gz", hash = "sha256:62b521d75494c290a646ae8acc77123721e4364790f1e64af0038d823961fbf0"},
     {file = "Flask_JWT_Extended-4.4.4-py2.py3-none-any.whl", hash = "sha256:a85eebfa17c339a7260c4643475af444784ba6de5588adda67406f0a75599553"},
+]
+flask-ngrok = [
+    {file = "flask-ngrok-0.0.25.tar.gz", hash = "sha256:3f8ec704ab54b981c08d7044702f2b46023bafc4958bfeb7cbc1a905fde6ef8d"},
+    {file = "flask_ngrok-0.0.25-py3-none-any.whl", hash = "sha256:724519a4dd3a2d374af50d4c0c21a26548737de0cf23f68dfb8d3b31c7311e93"},
 ]
 flask-sqlalchemy = [
     {file = "Flask-SQLAlchemy-3.0.3.tar.gz", hash = "sha256:2764335f3c9d7ebdc9ed6044afaf98aae9fa50d7a074cef55dde307ec95903ec"},
