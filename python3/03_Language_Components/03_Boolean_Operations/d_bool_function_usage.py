@@ -78,3 +78,16 @@ print()
 # Question
 print("bool('False')", bool("False"))
 print("bool(False)  ", bool(False))
+
+# -----------------------------
+x = None
+
+# Method 1
+if x is None:
+    x = "default"
+
+# Method 2
+x = x if x else "default"
+
+# Method 3
+x = x or "default"
