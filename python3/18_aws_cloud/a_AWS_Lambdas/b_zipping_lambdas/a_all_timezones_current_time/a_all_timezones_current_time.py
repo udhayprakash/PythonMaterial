@@ -16,4 +16,9 @@ def lambda_handler(event, context):
 """
 pip install --platform manylinux2014_x86_64 --target=. --implementation cp --python 3.9 --only-binary=:all: --upgrade pytz
 
+
+  "errorMessage": "Unable to import module 'lambda_function': No module named 'lambda_function'",
+
+    Go to the configuration, and change the lambda hanlder path
+
 """

@@ -2,15 +2,29 @@ import json
 
 
 def lambda_handler(event, context):
-    # # return string
-    # return 'Hello, world!'
+    # return 'Hello, world!'  # string
+    # return 42 # int
+    # return 42.43 # float
 
-    # # return int
-    # return 42
+    # return None # None
+    # return True  # bool
 
-    # # return list
-    # return ['Hello', 'world!']
+    # return ['Hello', 'world!', 3]  # list
+    # return ('Hello', 'world!', 3)  # tuple
+    # return {'Hello', 'world!', 3}  # set
 
-    # return dict
-    data = {"name": "Alice", "age": 30}
-    return {"statusCode": 200, "body": json.dumps(data)}
+    # return {"name": "Gudo", "age": 78}  # dict
+
+    return json.dumps(
+        {
+            "int": 12,
+            "float": 2132.21,
+            "bool": True,
+            "None": None,
+            "string": "Hello",
+            "list": [11, 22, 33],
+            "tuple": (11, 22, 33),
+            # "set": {11, 22, 33, 11, 22, 33},
+            "dict": {"a": 1, "b": 2},
+        }
+    )

@@ -1,9 +1,29 @@
+"""
+AWS Predefined Environment Variables
+    AWS_LAMBDA_FUNCTION_NAME    - The name of the Lambda function.
+    AWS_LAMBDA_FUNCTION_VERSION - The version number of the Lambda function.
+    AWS_REGION                  - The AWS region in which the Lambda function is running.
+    AWS_EXECUTION_ENV           - The runtime environment of the Lambda function.
+    AWS_ACCESS_KEY_ID           - The access key ID used to invoke the Lambda function.
+    AWS_SECRET_ACCESS_KEY       - The secret access key used to invoke the Lambda function.
+    AWS_SESSION_TOKEN           - The session token used to invoke the Lambda function.
+    AWS_DEFAULT_REGION          - The default AWS region to use for the SDK and CLI commands.
+    AWS_ACCOUNT_ID              - The AWS account ID of the function's owner.
+    AWS_COGNITO_IDENTITY        - The identity information for the Cognito user who invoked the Lambda function.
+    AWS_LOG_GROUP_NAME          - The name of the CloudWatch Logs group where the logs are stored.
+    AWS_LOG_STREAM_NAME         - The name of the CloudWatch Logs stream where the logs are stored.
+    AWS_XRAY_DAEMON_ADDRESS     - The address of the X-Ray daemon.
+    AWS_XRAY_CONTEXT_MISSING    - The behavior of the X-Ray SDK when it can't find a trace segment or subsegment.
+
+"""
 import json
 import os
 
 
 def lambda_handler(event, context):
     env_vars = {
+        "NAME": os.environ.get("NAME", ""),
+        "AGE": os.environ.get("AGE", ""),
         "AWS_REGION": os.environ.get("AWS_REGION"),
         "AWS_EXECUTION_ENV": os.environ.get("AWS_EXECUTION_ENV"),
         "AWS_LAMBDA_FUNCTION_NAME": os.environ.get("AWS_LAMBDA_FUNCTION_NAME"),

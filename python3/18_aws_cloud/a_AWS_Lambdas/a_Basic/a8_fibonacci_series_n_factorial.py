@@ -15,7 +15,7 @@ def fibonacci(num):
         return [0]
     else:
         fib = [0, 1]
-        while len(fib) < n:
+        while len(fib) < num:
             fib.append(fib[-1] + fib[-2])
         return fib
 

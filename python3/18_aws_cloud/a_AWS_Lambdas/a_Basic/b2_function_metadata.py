@@ -11,14 +11,18 @@ def lambda_handler(event, context):
     invoked_function_arn = context.invoked_function_arn
     aws_request_id = context.aws_request_id
 
-    # Print the extracted metadata
-    print(f"Function Name: {function_name}")
-    print(f"Function Version: {function_version}")
-    print(f"Log Group Name: {log_group_name}")
-    print(f"Log Stream Name: {log_stream_name}")
-    print(f"Memory Limit in MB: {memory_limit_in_mb}")
-    print(f"Invoked Function ARN: {invoked_function_arn}")
-    print(f"AWS Request ID: {aws_request_id}")
-
     # Return a response
-    return {"statusCode": 200, "body": json.dumps({"message": "Hello, world!"})}
+    return {
+        "statusCode": 200,
+        "body": json.dumps(
+            {
+                "Function Name": function_name,
+                "Function Version": function_version,
+                "Log Group Name": log_group_name,
+                "Log Stream Name": log_stream_name,
+                "Memory Limit in MB": memory_limit_in_mb,
+                "Invoked Function ARN": invoked_function_arn,
+                "AWS Request ID": aws_request_id,
+            }
+        ),
+    }

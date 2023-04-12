@@ -20,3 +20,13 @@ def lambda_handler(event, context):
 
     # Return a response
     return {"statusCode": 200, "body": json.dumps({"message": "Hello, world!"})}
+
+
+{
+    "requestContext": {"requestId": 1},
+    "headers": "",
+    "body": "",
+    "path": "/tmp/path",
+    "httpMethod": "GET",
+    "queryStringParameters": {"pagenumber": 1, "pagesize": 10},
+}

@@ -36,7 +36,7 @@ def lambda_handler(event, context):
     function_execution_id = context.aws_request_id.split("-")[1]
 
     # 12: Get the function memory usage from the context object
-    function_memory_usage = context.memory_limit_in_mb - context.memory_left
+    # function_memory_usage = context.memory_limit_in_mb - context.memory_left
 
     # 13: Get the function duration from the context object
     function_duration = context.get_remaining_time_in_millis()
@@ -52,18 +52,6 @@ def lambda_handler(event, context):
         context.function_name == context.invoked_function_arn.split(":")[-1]
     )
 
-    # 17: Get the function request ID from the event object
-    request_id = event["request_id"]
-
-    # 18: Get the function user ID from the event object
-    user_id = event["user_id"]
-
-    # 19: Get the function action type from the event object
-    action_type = event["action_type"]
-
-    # 20: Get the function action value from the event object
-    action_value = event["action_value"]
-
     # Combine all results into a single dictionary
     return {
         "current_time": current_time,
@@ -77,15 +65,11 @@ def lambda_handler(event, context):
         "remaining_time_in_seconds": remaining_time_in_seconds,
         "client_context": client_context,
         "function_execution_id": function_execution_id,
-        "function_memory_usage": function_memory_usage,
+        # "function_memory_usage": function_memory_usage,
         "function_duration": function_duration,
         "function_start_time": function_start_time,
         "function_end_time": function_end_time,
         "function_cold_start": function_cold_start,
-        "request_id": request_id,
-        "user_id": user_id,
-        "action_type": action_type,
-        "action_value": action_value,
         "event": event,
         "context": context,
     }
