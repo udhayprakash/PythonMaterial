@@ -1,0 +1,46 @@
+sqlite3
+=======
+Creating a new database:
+	sqlite3 mydatabase.db
+
+Creating a new table with columns:
+	CREATE TABLE students (
+	  id INTEGER PRIMARY KEY,
+	  name TEXT,
+	  age INTEGER,
+	  grade INTEGER
+	);
+
+Inserting data into a table:
+	INSERT INTO students (name, age, grade) VALUES
+	  ('Alice', 17, 95),
+	  ('Bob', 16, 82),
+	  ('Charlie', 18, 88);
+
+Updating data in a table:
+	UPDATE students SET grade = 90 WHERE name = 'Bob';
+
+Deleting data from a table:
+	DELETE FROM students WHERE id = 3;
+
+Selecting all data from a table:
+	SELECT * FROM students;
+
+Selecting data from a table with conditions:
+	SELECT * FROM students WHERE age >= 17;
+
+Counting rows in a table:
+	SELECT COUNT(*) FROM students;
+
+Sorting data in a table:
+	SELECT * FROM students ORDER BY grade DESC;
+
+Joining data from multiple tables:
+	SELECT students.name, classes.name FROM students
+	  JOIN classes ON students.id = classes.student_id;
+
+
+
+
+
+pystudio

@@ -11,3 +11,9 @@ def lambda_handler(event, context):
         timezone = pytz.timezone(tz)
         results[tz] = current_time.astimezone(timezone).strftime("%Y-%m-%d %H:%M:%S")
     return {"statusCode": 200, "body": results}
+
+
+"""
+pip install --platform manylinux2014_x86_64 --target=. --implementation cp --python 3.9 --only-binary=:all: --upgrade pytz
+
+"""

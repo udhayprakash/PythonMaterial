@@ -1,0 +1,48 @@
+{
+  "todo_list": {
+    "prompt": "This is a todo list app.",
+    "state": {
+      "todos": [
+        {
+          "title": "Learn react",
+          "completed": true
+        },
+        {
+          "title": "Buy Milk",
+          "completed": true
+        },
+        {
+          "title": "Do laundry",
+          "completed": false
+        },
+        {
+          "title": "Clean room",
+          "completed": true
+        }
+      ]
+    }
+  },
+  "chess": {
+    "prompt": "You are a chess assistant",
+    "state": {
+      "board": [
+        ["r", "n", "b", "q", "k", "b", "n", "r"],
+        ["p", "p", "p", "p", "p", "p", "p", "p"],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        ["P", "P", "P", "P", "P", "P", "P", "P"],
+        ["R", "N", "B", "Q", "K", "B", "N", "R"]
+      ],
+      "turn": "white",
+      "white_castle_kingside": true,
+      "white_castle_queenside": true,
+      "black_castle_kingside": true,
+      "black_castle_queenside": true,
+      "en_passant": null,
+      "halfmove_clock": 0,
+      "fullmove_number": 1
+    }
+  }
+}

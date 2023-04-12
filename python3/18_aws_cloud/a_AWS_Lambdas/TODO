@@ -1,0 +1,22 @@
+SAM templates
+	https://www.sentinelone.com/blog/aws-lambda-with-python/
+
+aws lmabda powertools
+	https://awslabs.github.io/aws-lambda-powertools-python/2.11.0/tutorial/#enriching-our-generated-traces
+
+
+first IAM roles
+accessing with aws configure for boto3 within EC2
+then create IAM role for EC2 access and access (best practice)
+    aws iam list-users
+
+AWS CLI
+AWS Lambda - https://www.youtube.com/watch?v=seaBeltaKhw
+
+
+AWs Lambda SAM
+    - https://www.youtube.com/watch?v=MipjLaTp5nA
+
+
+AWS CDK
+    https://www.youtube.com/watch?v=1YrmUzOjIqE

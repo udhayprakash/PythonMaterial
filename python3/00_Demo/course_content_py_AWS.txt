@@ -1,173 +1,224 @@
-                ------------------------------------
-                 PYTHON FOR AWS COURSE CONTENT
-                ----------------------------------
-00. Dev Setup
-    Installing IDE/Editor
-    Installing Python and local setup
-    Github access, creating project
+                -------------------------------------------
+                 PYTHON FOR DATA ENGINEERING COURSE CONTENT
+                -------------------------------------------
 
-01.Introduction
-    Importance of Python
-    Two versions of Python (2.x & 3.x)
-    built-in functions
-    keywords and Identifiers
-    Line continuation and statement separator operators
+    00. Dev Setup
+        Installing IDE/Editor
+        Installing Python and local setup
+        Github access, creating project
 
-02.Basics
-    Arithmetic operations
-        +, -, , /, //, %, *
-        divmod() function
-        Practical Problem solving
-        working with complex numbers
-        abs() function
-        Operator precedence in Arithmetic operations
-    String operations
-        Usage of single, double and triple quotes
-        len() function
-        Indexing and Slicing Strings
-        string attributes
-        String formatting: old & new styles, f-strings
-        bytearray() and byte() strings
-        unicode strings
-    Usage of help
-    Usage of pydoc
+    01.Introduction
+        Importance of Python
+        Two versions of Python (2.x & 3.x)
+        built-in functions
+        keywords and Identifiers
+        Line continuation and statement separator operators
+        USing Ipython/ Jupyter Notebook
 
-03.Language Components
-    Relational Operations
-    Logical Operations
-    Boolean Operations
-    Bitwise Operations
-    Identity Operations
-    range() function
-    Conditional Operations
-	Structural Pattern Matching
-    Loops: for & while, break, continue, pass, sys.exit
-    Walrus Operator
+    02.Basics
+        Arithmetic operations
+            +, -, *, /, //, %, **
+            divmod() function
+            pow() function
+            Operator precedence in Arithmetic operations
+            Practical Problem solving
+            builtin types and type conversions
+            working with complex numbers
+            abs() function
 
-04.Exception Handling
-    Exceptions Hierarchy
-    Different types of errors, error vs exception
-    Handling single and multiple exceptions
-    raising exceptions
-    asserts
-    traceback
-    warnings
+        String operations
+            Usage of single, double and triple quotes
+            len() function
+            Indexing in Strings
+            Slicing Strings
+            string attributes
+            String formatting: old & new styles, f-strings
+            Immutability of strings
+            bytearray() and byte() strings
+            chr() and ord() functions
+            unicode strings
+            string module
+        Usage of help
+        Usage of pydoc
 
-05.Debugging
-    Importance of logical errors
-    Debugging with pydevd
-    Debugging with pdb, ipdb
-    breakpoint() function
+    03.Language Components
+        Relational Operations
+        Logical Operations
+        Boolean Operations
+        Bitwise Operations
+        Identity Operations
+        range() function
+        Conditional Operations
+        Structural Pattern Matching
+        Loops: for & while; else condition for loops, break, continue, pass, sys.exit
+        Walrus Operator
 
-06.Collections
-    Lists
-    Tuples
-    Sets
-    Dictionaries
-        zip() function
-        workaround for switch case
-    Comprehensions
-    Working with Iterables - sum(), max(), min()
+    04.Exception Handling
+        Exceptions Hierarchy
+        Different types of errors, error vs exception
+        Handling single and multiple exceptions
+        raising exceptions
+        asserts
+        traceback
+        warnings
 
-07.Functions
-    Functions with & without arguments, keyword arguments
-    Functions with Different return types and unpacking
-    Functions with with Default arguments
-    variadic functions : variable arguments and variable keyword arguments
-    Functions with keyword only arguments
-    Scoping: Global vs Local
-        call by reference
-        call by value
-    Partial Functions
-    Anonymous(Lambda) Functions
-    Higher order functions: map(), filter(), functool.reduce()
-    Recursions and recursions limit
-    inner functions
-    closures
-	Decorators
+    05.Debugging
+        Importance of logical errors
+        Debugging with pydevd
+        Debugging with pdb, ipdb
+        breakpoint() function
 
-08.Modules
-    Basic Modules
-        - math, sys, argparse, os, shutil, pathlib, subprocess, getpass
-    time related
-        - time, datetime, pytz, timeit
-    concurrency
-        - Multiprocessing, Multithreading
-    others
-        - random, collections, atexit, contextlib, base64, turtle, tqdm
+    06.Collections
+        Lists
+        Tuples
+        Sets
+        Dictionaries
+            zip() function
+            workaround for switch case
+        Comprehensions
+        Working with Iterables - sum(), max(), min()
 
-    create user-defined module
-    creating user-defined package
+    07.Functions
+        Functions with & without arguments, keyword arguments
+        Functions with Different return types and unpacking
+        Functions with with Default arguments
+        variadic functions : variable arguments and variable keyword arguments
+        Functions with keyword only arguments
+        Scoping: Global vs Local
+            call by reference
+            call by value
+        Partial Functions
+        Anonymous(Lambda) Functions
+        Higher order functions: map(), filter(), functool.reduce()
+        Recursions and recursions limit
+        inner functions
+        closures
+        Decorators
 
-09.File Operations
-    flat files
-    Non-flat files
-        pickle
-        shelve
-        xml
-        csv
-        dat
-        xls/xlsx
-        json
-        yaml
-        parquet
-    Image files
-        displaying, creating and editing images
-    zipping files: .zip, .tar
-    pdf files
-    config files : .ini, .cfg
-    pyw files
+    08.Modules
+        Basic Modules
+            - math, sys, argparse, os, shutil, pathlib, subprocess, getpass
+        time related
+            - time, datetime, pytz, timeit
+        others
+            - random, atexit, base64, collections
+        concurrency
+            - Multithreading, Multiprocessing
 
+        turtle
+        create user-defined module
+        creating user-defined package
 
-10.Logging
-    Simple logging
-    configuring log file
-    formatting logs and adding timestamp
-    working with file handler and stream hanlder
-    configuring multiple handlers
-    Rotating logger
+    09.File Operations
+        Unstructured files
+        Structured files
+            pickle
+            shelve
+            xml
+            csv
+            dat
+            html
+            xls/xlsx
+            json
+            yaml
+            parquet
+        Image files
+            displaying, creating and editing images
+        zipping files: .zip, .tar
+        pdf files
+        config files : .ini, .cfg
+        pyw files
 
-11. OOP
-    Importance of OOP
-    Instantiation and managing attributes
-    constructor and Importance of self
-    instance and class variables
-    Encapsulation
-    MRO, Single and multiple inheritance, composition
-    Method Overwriting, Operator Overloading
-    instance, class and static methods
+    10.Logging
+        Simple logging
+        configuring log file
+        formatting logs and adding timestamp
+        working with file handler and stream hanlder
+        configuring multiple handlers
+        Rotating logger
+        structlog module
 
-12. Code Quality
-    Doctest
-    unittest
+    11. OOP
+        Importance of OOP
+        Instantiation and managing attributes
+        constructor and Importance of self
+        instance and class variables
+        Encapsulation
+        MRO, Single and multiple inheritance, composition
+        Method Overwriting, Operator Overloading
+        instance, class and static methods
+        dataclasses
+        abstract/abc classes
 
-13. Regular Expressions
-    re module
-    compiling regex objects
-    match & search
-    find & finditer
-    regex Flags
-    Greedy & Non-Greedy patterns
+    12. Code Quality
+        typing with mypy
+        Doctest
+        unittest
+        coverage
+        unittest - concurrency
+        mocking
+        patching
+        pytest
+            fixtures
+            parameterization
 
-14. Databases
-    db files - sqlite3
-    Relational DB - MySQL
-    Non-Relational DB - mongoDB
+    13. Regular Expressions
+        re module
+        compiling regex objects
+        match & search
+        Greedy & Non-Greedy patterns
+        findall & finditer
+        regex Flags
+        Advanced PCREs
+        substitutions
+        regex module
 
-15. Web Services
-    crawling web pages
-    consuming REST API
-    creating REST API
-        - CRUD  operations
+    14. Web Services
+        consuming REST API
+        crawling web pages
+        consuming REST API
+        creating Virtual Environment
+        creating Web Applications using Flask
+            calculator Web application
 
-16. Development with AWS Cloud
-	AWS cloud Importance & Introduction
-	AWS IAM - creating roles, generating secrets
-    boto3
-    s3 bucket
-	EC2 instance
-	AWS Lambda - time, event and http triggers
-	AWS Step functions
-	API Gateway
-	AWS RDS
-	AWS DynamoDB
+        Flask - function based vs class based views
+        Implementing Web apps with Flask
+        Implementing REST APIs with Flask
+        creating REST API & CRUD  operations
+
+    Chocolately package manager
+
+    15. Databases
+        db files - sqlite3
+
+    16. REAL-TIME PROJECT
+            - setup
+                - git repository creation & cloning
+                - pre-commit hooks
+                - System Design
+                - Database Design
+                - coding the application
+                - Swagger for documentation
+                - Pull request & Code review
+
+    17. Data Processing and Transformations
+        numpy
+        Google Collab
+        pandas Series
+        Kaggle
+        pandas DataFrames
+        EDA - Exploratory Data Analysis
+
+    17. Development with AWS Cloud
+        AWS cloud Importance & Introduction
+        AWS IAM - creating roles, generating secrets
+        EC2 instance
+        AWS Lambda - time, event and http triggers
+            https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
+
+        boto3
+        s3 bucket
+        AWS Step functions
+        API Gateway
+        AWS RDS
+        AWS DynamoDB

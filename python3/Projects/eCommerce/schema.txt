@@ -1,0 +1,36 @@
+schema for an e-commerce website:
+
+Customers
+---------
+customer_id (PK)
+name
+email
+phone
+
+Products
+--------
+product_id (PK)
+name
+description
+price
+
+Orders
+------
+order_id (PK)
+customer_id (FK)
+order_date
+
+Order_Items
+-----------
+order_id (PK, FK)
+product_id (PK, FK)
+quantity
+price
+
+Payments
+--------
+payment_id (PK)
+order_id (FK)
+payment_date
+amount
+status
