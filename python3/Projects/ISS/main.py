@@ -13,7 +13,7 @@ class ISS(object):
         self.base_url = "http://api.open-notify.org"
 
     def get_response_data(self, endpoint, _params=None):
-        response = requests.get(self.base_url + endpoint, params=_params)
+        response = requests.get(self.base_url + endpoint, params=_params, timeout=5)
         if response.headers["Content-Type"] == "application/json":
             response_content = response.json()
             return response_content

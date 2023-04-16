@@ -6,7 +6,7 @@ from tomorrow import threads
 
 @threads(5)
 def download(url):
-    return requests.get(url)
+    return requests.get(url, timeout=5)
 
 
 if __name__ == "__main__":

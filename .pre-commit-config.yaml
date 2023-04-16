@@ -1,6 +1,6 @@
 # Pre-commit framework Configuration
 # See https://pre-commit.com for more information
-fail_fast: true
+fail_fast: false
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0

@@ -78,7 +78,7 @@ def roll_sum(sides, rolls):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8081)
+    app.run(debug=false, port=8081)
 
 
 # curl "http://127.0.0.1:8081/roll?sides=10&rolls=1"

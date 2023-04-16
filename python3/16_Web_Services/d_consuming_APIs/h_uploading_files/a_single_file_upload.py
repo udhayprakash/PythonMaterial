@@ -17,7 +17,7 @@ def upload_file(file_name):
     url = "http://httpbin.org/post"
 
     fh = open(file_name, "rb")
-    response = requests.post(url, files={"file": fh})
+    response = requests.post(url, files={"file": fh}, timeout=5)
     print(response.status_code)
     print(response.text)
 

@@ -17,7 +17,7 @@ latitude = input("Enter the latitude:")
 longitude = input("Enter the longitude:")
 # 17.3850° N, 78.4867° E
 
-response = requests.get(URL, params={"lat": latitude, "lon": longitude})
+response = requests.get(URL, params={"lat": latitude, "lon": longitude}, timeout=5)
 
 print(f"{response.url         =}")
 print(f"{response.status_code =}")

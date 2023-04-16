@@ -25,7 +25,7 @@ def create_post():
 # Use the isinstance(variable, type) function for this (Google is your friend!)
 def test_send_post_check_status_code_is_200_and_id_is_integer():
     response = requests.post(
-        "https://jsonplaceholder.typicode.com/posts", json=create_post()
+        "https://jsonplaceholder.typicode.com/posts", json=create_post(), timeout=5
     )
     assert response.status_code == 201
     assert isinstance(response.json()["id"], int) is True
@@ -74,6 +74,7 @@ def test_payee_name_ends_up_in_response_body():
         "http://parabank.parasoft.com/parabank/services/bank/billpay?accountId=12345&amount=500",
         headers={"Accept": "application/json"},
         json=json_object,
+        timeout=5,
     )
     assert response.status_code == 200
     assert response.json()["payeeName"] == my_name

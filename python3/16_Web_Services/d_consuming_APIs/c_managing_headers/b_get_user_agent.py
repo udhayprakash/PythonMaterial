@@ -15,7 +15,7 @@ response_data = json.loads(response)
 print(f'You are hitting this API with {response_data["user-agent"]}')
 
 #  Method 2
-response = requests.get("http://httpbin.org/user-agent")
+response = requests.get("http://httpbin.org/user-agent", timeout=5)
 # print(f"{response.status_code =}")
 # print(f"{response.url         =}")
 

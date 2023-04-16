@@ -13,7 +13,7 @@ site_link_count = 0
 
 for i in range(1, 201):
     url = "http://websitelists.in/website-list-" + str(i) + ".html"
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=5)
     if response.status_code != 200:
         print(url + str(response.status_code))
         continue

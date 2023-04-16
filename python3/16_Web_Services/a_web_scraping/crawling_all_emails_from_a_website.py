@@ -31,7 +31,7 @@ while len(unprocessed_urls):
     # get url's content
     print("Crawling URL %s" % url)
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)
     except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
         # ignore pages with errors and continue with next url
         continue
