@@ -10,6 +10,7 @@
     Importance of Python
     Two versions of Python (2.x & 3.x)
     built-in functions
+	Comment Operator
     keywords and Identifiers
     Line continuation and statement separator operators
 

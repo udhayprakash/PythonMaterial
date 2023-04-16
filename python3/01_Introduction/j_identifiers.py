@@ -17,9 +17,10 @@ print(keyword.kwlist)
 #  'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or',
 #  'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
-print(True)  # Keyword
-# print(true)
-# NameError: name 'true' is not defined
+
+print(True)  # True
+# print(true) NameError: name 'true' is not defined. Did you mean: 'True'?
+
 
 my_value = "something"
 print(my_value)  # Identifier
@@ -30,6 +31,7 @@ print(my_value)  # Identifier
 print(keyword.iskeyword("True"))  # True
 print(keyword.iskeyword("true"))  # False
 print(keyword.iskeyword("my_value"))  # False
+
 
 # ------------------------------------------------------
 # Identifiers - User-defined variables
@@ -50,25 +52,29 @@ true_value = 123
 none_result = "Nothing"
 
 # ---- Rule 2 & 3
-name = "Pavithra"
-student_1 = "Pavithra"
-class_123_ = "10th class"
-first_____child = "Ruthivik"
+name = "Priyanka"
+name_of_student = "Priyanka"
+first_name = "Priyanka"
+student_1 = "Priyanka"
+class_02_a = "Python comment operations"
+first_____child = "Satvik"
+
 
 # PEP 8 recommends to use capitals for constants
 PI = 3.1416
 DOZEN = 12
 
-# $name = 'someone'  # SyntaxError: invalid syntax
-# first-name = 'someone'  # SyntaxError: cannot assign to operator
-# first name = 'someone'  # SyntaxError: invalid syntax
-# 2nd_student = 'someone' # SyntaxError: invalid syntax
+# $name = "Priyanka"
+# name-of-student = "Priyanka"
+# name of student = "Priyanka"
+# 1st_name = "Priyanka"  SyntaxError: invalid decimal literal
 
 _2nd_student = "someone"
 
 _job = "software development"
 __role = "Product support"
 ___salary = 1231231232312323233
+
 
 # OOP -> name mangling
 # variable   -> Public variable
@@ -78,7 +84,7 @@ ___salary = 1231231232312323233
 # __variable__ ->  Built-in functions
 # Ex: __file__, __name__, __doc__, __dict__, __init__
 
-print("__name__ =", __name__)
+print("__name__ =", __name__)  # __main__
 print("__file__ =", __file__)
 
 # print('__pavithra__ =', __pavithra__)

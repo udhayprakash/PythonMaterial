@@ -22,6 +22,7 @@ print("num1")
 
 print("num1", num1)
 print("num1 =", num1)
+
 print("num1 =", num1, "type =", type(num1))
 
 # Python is a dynamic-typed language
@@ -53,6 +54,7 @@ print("num1 =", num1, "type =", type(num1))  # string
 print()
 
 num1 = True
+# num1 = true  # PYTHON IS A CASE-SENSITIVE LANGUAGE
 print("num1 =", num1, "type =", type(num1))  # bool
 
 num1 = False
@@ -61,14 +63,10 @@ print("num1 =", num1, "type =", type(num1))  # bool
 num1 = None
 print("num1 =", num1, "type =", type(num1))  # none
 
-# num1 = true
-# NameError: name 'true' is not defined. Did you mean: 'True'?
-# PYTHON IS A CASE-SENSITIVE LANGUAG
-
-num1 = "None"
+num1 = "NONE"
 print("num1 =", num1, "type =", type(num1))  # string
 
-num1 = "None"
+num1 = "none"
 print("num1 =", num1, "type =", type(num1))  # string
 
 # NOTE: Strings need to be declared in quotes

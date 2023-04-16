@@ -16,6 +16,7 @@ Purpose: Fruit Store
                                                       2143.26/-
                                                 ---------------
 
+
 Algorithm
 ---------
 Step 1:  Get the cost of fruits into variables
@@ -37,6 +38,7 @@ GST = 12.5
 cost_of_apple = 12  # per piece
 cost_of_mango = 34  # per piece
 
+
 # Quantities of fruits
 qty_of_apples = 5 * DOZEN  # pieces
 qty_of_mangos = 3 * DOZEN  # pieces
@@ -44,6 +46,7 @@ qty_of_mangos = 3 * DOZEN  # pieces
 # Selling Price Computation
 total_sp = cost_of_apple * qty_of_apples + cost_of_mango * qty_of_mangos  # PEDMAS
 print("Total Selling Price :", total_sp)
+
 
 # Discount Calculation
 discount_amount = (total_sp * DISCOUNT) / 100

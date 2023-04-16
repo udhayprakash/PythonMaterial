@@ -11,8 +11,9 @@ Purpose: Identifier Casing
 # Python is case-sensitive language
 animal = "DOG"
 print(animal)
+
 # print(Animal)
-# NameError: name 'Animal' is not defined
+# NameError: name 'Animal' is not defined. Did you mean: 'animal'?
 
 ANIMAL = "PIG"
 print(ANIMAL)

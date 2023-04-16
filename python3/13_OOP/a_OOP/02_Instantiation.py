@@ -34,3 +34,14 @@ print(f"{type(EmptyClass) =}")
 print(f"{EmptyClass =}")
 print(f"type(e1):{type(e1)}")
 print(f"e1      :{e1}")
+
+# EmptyClass implicitly inherits from object
+assert issubclass(EmptyClass, object) is True
+
+
+class EmptyClass(object):
+    pass
+
+
+# EmptyClass implicitly inherits from object
+assert issubclass(EmptyClass, object) is True

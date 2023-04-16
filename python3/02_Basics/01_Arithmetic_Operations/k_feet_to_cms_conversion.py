@@ -5,13 +5,24 @@ Purpose: Feet to centimetres conversion
     1 foot = 12 inches
     1 inch = 2.54 centimetres
 
+Algorithm:
+----------
 Step 1: Get feet values in runtime
 Step 2: compute  from feet to cms
-sTep 3: display the result
+            feet to inches, then
+            inches to centimeters conversion
+Step 3: Display the results
 """
-print("How tall are you in feet and inches?")
-feet = int(input("Feet:"))  # 5
-inches = float(input("Inches:"))  # 8
+# Constants
+FOOT_TO_INCHES = 12
+INCHES_TO_CMS = 2.54
 
-cms = (feet * 12 + inches) * 2.54
-print("Your height in centimetres:", cms)
+print("How tall are you in feet and inches?")
+feet = float(input("Feet:"))
+
+inches = FOOT_TO_INCHES * feet
+centimeters = INCHES_TO_CMS * inches
+
+centimeters = round(centimeters, 2)
+
+print("Your height in centimetres:", centimeters, "cm")
