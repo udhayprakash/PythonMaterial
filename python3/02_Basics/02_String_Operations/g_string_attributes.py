@@ -86,6 +86,13 @@ print('"12 34".isdigit()    :', "12 34".isdigit())
 print('"123edsd".isdigit()  :', "123edsd".isdigit())
 print()
 
+print('"1234".isnumeric()     :', "1234".isnumeric())
+print('"-1234".isnumeric()     :', "-1234".isnumeric())
+print('"1234 ".isnumeric()    :', "1234 ".isnumeric())
+print('"12 34".isnumeric()    :', "12 34".isnumeric())
+print('"123edsd".isnumeric()  :', "123edsd".isnumeric())
+print()
+
 print('"abcD".isalpha()     :', "abcD".isalpha())
 print('"abcd1".isalpha()    :', "abcd1".isalpha())
 print()

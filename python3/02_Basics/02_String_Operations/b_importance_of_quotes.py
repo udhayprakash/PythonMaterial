@@ -30,7 +30,7 @@ print("\n\n")
 # '\''
 # "'"
 # '"'
-# ''' '""' ''''
+# ''' '""' '''
 # """ ''' '""' '''' """
 # "  ''' "
 
@@ -71,6 +71,14 @@ print(
 )
 
 # NOTE 2: triple quote strings are multi-line strings
+
+sql_cmd = """
+    Select  *
+    from table1 t1
+    LEFT JOIN table2 t2 on t1.id = t2.id
+    ORDER BY t1.id;
+"""
+print(sql_cmd)
 
 # Gotcha
 # my_string = 'select * from my_table where column='python' and column2 = "django"'
