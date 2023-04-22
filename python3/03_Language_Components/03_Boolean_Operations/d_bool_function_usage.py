@@ -86,8 +86,8 @@ x = None
 if x is None:
     x = "default"
 
-# Method 2
-x = x if x else "default"
-
-# Method 3
+# Method 2 - Short circuiting
 x = x or "default"
+
+# Method 3 - ternary operation
+x = x if x else "default"

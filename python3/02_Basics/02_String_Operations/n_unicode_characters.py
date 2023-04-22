@@ -21,11 +21,18 @@ import sys
 print(f"{ord('A') =}")  # 65
 print(f"{ord('B') =}")  # 66
 print(f"{ord('C') =}")  # 67
+
+print(f"{ord('Y') =}")  # 89
+print(f"{ord('Z') =}")  # 90
+
 print()
 
 print(f"{ord('a') =}")  # 97
 print(f"{ord('b') =}")  # 98
 print(f"{ord('c') =}")  # 99
+
+print(f"{ord('y') =}")  # 121
+print(f"{ord('z') =}")  # 122
 print()
 
 print(f"{ord('1') =}")  # 49

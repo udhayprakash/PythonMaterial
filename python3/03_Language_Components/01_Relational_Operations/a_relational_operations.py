@@ -11,7 +11,7 @@ Purpose: Relational Operations
      != not equal to
      <> not equal to  ( in python 2 only)
 """
-us_dollar = 81
+us_dollar = 86
 canadian_dollar = 50
 
 print("us_dollar = ", us_dollar)
@@ -50,7 +50,15 @@ print()
 # == value-level equivalence check
 # = assignment operator
 
-74 == 74
-# 74 = 74  SyntaxError: cannot assign to literal
-a = 74
-b = a
+num1 = 34  # Assignment
+
+num1 = 34
+num2 = num1
+
+# 34 = num2 # SyntaxError: cannot assign to literal
+
+
+num1 == 34
+34 == num1
+34 == 34
+34 == 67

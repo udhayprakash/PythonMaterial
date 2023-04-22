@@ -35,6 +35,7 @@ print()
 print("My lucky number is %s" % "12")
 print("My lucky number is %f" % 12.34)
 print("My lucky number is %f" % 12)  # float(12)
+print("My lucky number is %f" % False)
 
 print()  # str()
 print("My lucky number is %s" % True)

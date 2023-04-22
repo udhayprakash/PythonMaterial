@@ -41,7 +41,7 @@ print("{:+}".format(-1234567890.88))  # -1234567890.88
 print()
 
 # similar to str.zfill()
-print("{:=10}".format(12348))  # 12348
+print("{:=10}".format(12348))  #      12348
 print("{:0=10}".format(12348))  # 0000012348
 print("{:a=10}".format(12348))  # aaaaa12348
 print()
@@ -80,7 +80,7 @@ print()
 
 print("{:f}".format(math.pi))  # 3.141593
 print("{:9f}".format(math.pi))  # 3.141593
-print("{:9.3f}".format(math.pi))  # 3.142
+print("{:9.3f}".format(math.pi))  #    3.142
 print()
 
 # To multiply number with 100 and show % in result

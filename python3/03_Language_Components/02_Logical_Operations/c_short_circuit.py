@@ -51,3 +51,9 @@ print()
 
 print(f"{0 or 1 and 2 or 3      = }")  # 2
 print(f"{0 or (1 and 2) or 3    = }")  # 2
+print()
+
+num1 = 234
+
+num1 > 0 and num1 <= 0 and num1 != 0
+# True    and    False

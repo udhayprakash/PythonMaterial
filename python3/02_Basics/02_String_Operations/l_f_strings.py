@@ -64,8 +64,8 @@ print(f"{math.pi:g}")  # 3.14159
 
 print()
 print(f"{math.pi:f}")  # 3.141593
-print(f"{math.pi:9f}")  # 3.141593
-print(f"{math.pi:9.3f}")  # 3.142
+print(f"{math.pi:9f}")  #  3.141593
+print(f"{math.pi:9.3f}")  #     3.142
 print()
 
 print(f"{'quoted string'}")
@@ -83,7 +83,7 @@ print(f'{{{"quoted string"}}}')  # {quoted string}
 # Processing escape sequences
 print(f"x={4 * 10}\n")
 print(rf"x={4 * 10}\n")
-
+print(rf"x={4 * 10}\n")
 
 # format specifier
 width = 10
