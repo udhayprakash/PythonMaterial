@@ -1,3 +1,17 @@
+
+REST APIs
+	urllib3
+	requests
+	aiohttp
+	httpx
+
+GraphQL
+grpc
+	https://grpc.io/docs/languages/python/quickstart/
+
+SOAP
+WebSockets
+
 random module
 Q) https://yesno.wtf/
 Q) https://randomuser.me/  --> imitate it
