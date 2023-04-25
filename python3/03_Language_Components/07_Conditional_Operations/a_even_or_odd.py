@@ -10,11 +10,12 @@ print(f"{number / 2         = }")
 print(f"{number % 2         = }")
 print(f"{number % 2 == 0    = }")
 
+if number != 0:
+    print(f"{number} is non-zero")
+
 if number:
     print(f"{number} is non-zero")
 
-if number != 0:
-    print(f"{number} is non-zero")
 
 """
 It can evaluate that
@@ -24,11 +25,11 @@ It can evaluate that
     number != ""
 """
 
-if number % 2:  # number % 2 != 0
-    print(f"{number} is odd")
-
 if number % 2 == 0:
     print(f"{number} is Even")
+
+if number % 2:  # number % 2 != 0
+    print(f"{number} is odd")
 
 # --------------------
 print()
@@ -46,16 +47,16 @@ if number % 2 == 0:
 # --------------------------------
 
 # Rewriting with else
-if number % 2:
-    print(f"{number} is ODD")
-else:
-    print(f"{number} is EVEN")
-
-# rewriting
 if number % 2 == 0:
     print(f"{number} is EVEN")
 else:
     print(f"{number} is ODD")
+
+# rewriting
+if number % 2:
+    print(f"{number} is ODD")
+else:
+    print(f"{number} is EVEN")
 
 
 # Assignment: Generate even numbers between 45 & 137

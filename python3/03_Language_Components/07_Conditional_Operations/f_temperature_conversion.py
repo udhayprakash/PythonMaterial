@@ -43,4 +43,4 @@ print(
 )
 
 
-# Assignment: str.isnumeric() vs srr.isdigit()
+# Assignment: str.isnumeric() vs str.isdigit()
