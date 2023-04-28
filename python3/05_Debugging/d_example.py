@@ -9,18 +9,20 @@ Purpose: breakpoint hook
 import sys
 
 
-def hello():
+def my_breakpoint_hook_function():
     print("Breakpoint got activated")
+    import ipdb
+
+    ipdb.set_trace()
 
 
-sys.breakpointhook = hello
+sys.breakpointhook = my_breakpoint_hook_function
 
+numbers = range(0, 100)
 
-numbers = range(0, 15)
-
-breakpoint()
 # import pdb;pdb.set_trace()
 # import ipdb;ipdb.set_trace()
+breakpoint()
 
 for each_num in numbers:
     if each_num % 2 == 0:

@@ -3,7 +3,6 @@
 Purpose: Temperature Conversions
     - celsius to fahrenheit
 """
-
 celsius = float(input("Enter temperature, in celsius:"))
 # print(f'{celsius    = }')
 
@@ -31,6 +30,10 @@ print(
     Fahrenheit  : {round(farhenheit, 2)}
 """
 )
+
+import math
+
+farhenheit = math.pi
 
 for i in range(0, 9, 1):
     # print(i, round(farhenheit, i))

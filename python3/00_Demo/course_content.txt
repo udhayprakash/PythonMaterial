@@ -55,10 +55,11 @@
     warnings
 
 05.Debugging
-    Importance of logical errors
-    Debugging with pydevd
-    Debugging with pdb, ipdb
-    breakpoint() function
+	Importance of logical errors
+	Debugging with pydevd
+	Debugging with pdb, ipdb, pudb
+	breakpoint() function
+	PYTHONBREAKPOINT environment variable usage
 
 06.Collections
     Lists

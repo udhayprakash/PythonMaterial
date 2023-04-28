@@ -12,6 +12,7 @@ print(f"{10 + 2}")
 print(f"{10 + 2 =}")
 print(f"{10 + 2 == 12}")
 
+
 if 10 + 2 == 12:
     print("This is True")
 else:

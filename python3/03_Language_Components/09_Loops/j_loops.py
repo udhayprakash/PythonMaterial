@@ -7,7 +7,6 @@ Purpose:
 	sys.exit  - will exit the script execution
 """
 
-
 students = ["akram", "trusha", "bhavana", "jaya", "chaitra"]
 print("break importance ==========")
 for each_student in students:
@@ -21,12 +20,30 @@ for each_student in students:
         continue
     print(each_student)
 
+
 print("pass importance ==========")
 for each_student in students:
     if each_student == "bhavana":
         pass
-        # print("\tline below pass statement")  # interiew Question
+        print("\tline below pass statement")  # interiew Question
     print(each_student)
+
+
+print("2313")
+pass
+print("2313")
+pass
+print("2313")
+pass
+print("2313")
+pass
+pass
+pass
+pass
+pass
+pass
+print("2313")
+
 
 import sys
 
