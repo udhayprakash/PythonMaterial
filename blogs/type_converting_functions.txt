@@ -1,0 +1,45 @@
+List to tuple
+	l=[1,2,3.0435,"udhay"]
+	tuple(l)
+List to String
+	person = ('Diana','Canada','CompSci')
+	s = ' '.join(person)
+	print(s)
+List to dictionary
+	dict(zip(list1,list2))
+List to Set
+	l=[1,2,3.0435,"udhay"]
+	set(l)
+
+
+Tuple to List
+Tuple to String
+Tuple to dictionary
+Tuple to Set
+
+Dictionary to List
+Dictionary to String
+Dictionary to Tuple
+Dictionary to Set
+
+
+Set to List
+Set to String
+Set to Tuple
+Set to Dictionary
+
+Type Converting functions:
+list()
+tuple()
+dict()
+set()
+
+
+Datatype casting (converting)
+int(x)		Converts x to an integer
+long(x)		Converts x to a long integer
+float(x)	Converts x to a floating point number
+str(x)		Converts x to an string.  x can be of the type float. integer or long.
+hex(x)		Converts x integer to a hexadecimal string
+chr(x)		Converts x integer to a character
+ord(x)		Converts character x to an integer

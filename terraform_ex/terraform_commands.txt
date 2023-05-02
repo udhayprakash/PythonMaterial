@@ -1,0 +1,9 @@
+1) Installing Terraform in Windows
+        choco install terraform
+
+2) Upgrade Terraform in Windows
+        choco upgrade terraform
+
+3) Terraform version checks & help
+        terraform version
+        terraform -help

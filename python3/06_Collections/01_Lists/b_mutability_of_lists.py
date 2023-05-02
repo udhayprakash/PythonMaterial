@@ -43,3 +43,8 @@ ml[3] = 3.4
 print("ml           ", ml)
 print("id(ml)       ", id(ml))  # 2184777775552
 print()
+
+ml[1:4] = [2, 2, 2]
+
+print("ml           ", ml)
+print("id(ml)       ", id(ml))

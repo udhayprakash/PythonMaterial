@@ -26,6 +26,7 @@ print("numbers             =", numbers)
 # original object not modified
 print("numbers.__mul__(3)  =", numbers.__mul__(3))
 print("numbers             =", numbers)
+assert numbers * 3 == numbers.__mul__(3)
 print()
 
 # original object IS modified

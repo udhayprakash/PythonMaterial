@@ -1,0 +1,61 @@
+Can someOne explain the behaviour of round() function in python.
+syntax is round(number[, ndigits])
+where, ndigits is the number of digits to which the number must be rounded-off
+
+but, in py2,
+ round(1/3.0)
+=> 0.0
+   round(1/3.0,1)
+=> 0.29999999999999999
+   round(1/3.0,2)
+=> 0.33000000000000002
+   round(1/3.0,3)
+=> 0.33300000000000002
+   round(1/3.0,4)
+=> 0.33329999999999999
+
+And, in py3,
+round(1/3.0)
+=> 0
+   round(1/3.0,1)
+=> 0.29999999999999999
+   round(1/3.0,2)
+=> 0.33000000000000002
+   round(1/3.0,3)
+=> 0.33300000000000002
+   round(1/3.0,4)
+=> 0.33329999999999999
+
+BUT, ONE CAN OBSERVE that correspondingly the number of digits, after decimal are unaltered.
+
+could someOne brief the actual rounding algorithm.?
+
+********************************************************************
+COULD someOne tell what is the exact critical value at which rounding changes
+In python2,
+   round(0.5)
+=> 1.0
+   round(0.49)
+=> 0.0
+   round(0.51)
+=> 1.0
+   round(1.5)
+=> 2.0
+   round(0.4999999999999999999999999)
+=> 1.0
+   round(0.4899999999999999999999999)
+=> 0.0
+   round(0.4989999999999999999999999)
+=> 0.0
+
+In python 3,
+    round(0.49)
+=> 0
+   round(0.50)
+=> 0
+   round(0.51)
+=> 1
+   round(0.500000000000000000001)
+=> 0
+   round(0.50999999999999999999999)
+=> 1

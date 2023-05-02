@@ -1,0 +1,40 @@
+STRING TO INTEGER CONVERSION IN PYTHON
+   int(123)
+=> 123
+   int('123')
+=> 123
+   int('0123')
+=> 123
+   int('0x123')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '0x123'
+
+This is because the logic behind it is int(string, base). If the base value is not mentioned, it will take the default value.
+The default value for base is 10
+   int('0010')
+=> 10
+   int('0010',10)
+=> 10
+   int('0010',2)
+=> 2
+
+   int('0x123',16)  # Hexadecimal number has base=16
+=> 291
+   int('0o123')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '0o123'
+
+   int('0o123',8)  # Octal number has base=8
+=> 83
+   int('0100',2)  # Binary  number has base=2
+=> 4
+
+
+INTEGER TO STRING CONVERSION
+
+
+
+ If you want a hexadecimal or octal representation, use the built-in functions hex() or oct().
+ For fancy formatting, see the String Formatting section, e.g. "{:04d}".format(144) yields '0144' and "{:.3f}".format(1/3) yields '0.333'.

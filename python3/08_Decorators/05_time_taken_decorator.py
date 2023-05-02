@@ -39,3 +39,21 @@ def my_func(num):
 my_func(78)
 my_func(900)
 my_func(9000)
+
+
+@time_taken
+def f1():
+    elements = [1] * 10_000
+    for _ in range(len(elements)):
+        elements.pop()
+
+
+@time_taken
+def f2():
+    elements = [1] * 10_000
+    for _ in range(len(elements)):
+        elements.pop(0)
+
+
+f1()  # 1170200 ns
+f2()  # 8369400 ns

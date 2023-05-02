@@ -42,7 +42,6 @@ ml = [1, 2, 3, 4.3, 5, [6, 7, 8, (9, 10)]]
 #                       0  1  2   --3--
 #                                 0   1
 
-
 print(f"\n{type(ml)} {ml =}")
 print(f"{len(ml) =}")
 
@@ -71,10 +70,8 @@ print("ml[-1]       ", ml[-1])
 print("ml[-1][-1]   ", ml[-1][-1])
 print("ml[-1][-1][0]", ml[-1][-1][0])
 
-
 print(ml[-5] == ml[1])
 assert ml[-5] == ml[1]
-
 
 # Slicing - last value in boundary will not be included
 print("\nml[1:4]      ", ml[1:4])

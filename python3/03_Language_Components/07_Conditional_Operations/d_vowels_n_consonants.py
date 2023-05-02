@@ -7,25 +7,19 @@ Purpose: To check whether the given character
 
 in operator  works with any iterable object
 """
-letter = input("Enter an english alphabet:").strip().lower()
+letter = input("Enter an english alphabet:").strip()
 
-# using the membership operator - 'in'
-# Method 1
-if letter in ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]:
-    print(f"{letter} is a vowel")
+print(f"{letter =}", letter.isalpha())
+
+if len(letter) != 1:
+    print(f"{letter} s INVALID INPUT")
+elif not letter.isalpha():
+    print(f"{letter} is not an alphabet")
 else:
-    print(f"{letter} may be a consonant")
-
-
-# Method 2
-if letter.lower() in ["a", "e", "i", "o", "u"]:  # list - iterable object
-    print(f"{letter} is a vowel")
-else:
-    print(f"{letter} may be a consonant")
-
-
-# Method 3
-if letter.lower() in "aeiou":
-    print(f"{letter} is a vowel")
-else:
-    print(f"{letter} may be a consonant")
+    # in - membership check operator
+    # if letter in ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]:
+    # if letter.lower() in ["a", "e", "i", "o", "u"]:
+    if letter.lower() in "aeiou":
+        print(f"{letter} is a vowel")
+    else:
+        print(f"{letter} may be a consonant")
