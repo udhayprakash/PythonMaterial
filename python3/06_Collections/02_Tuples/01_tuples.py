@@ -31,3 +31,9 @@ mytuple = 1, 2, 3
 print("type(mytuple)    :", type(mytuple))
 print("len(mytuple)     :", len(mytuple))
 print(mytuple)
+print()
+
+mytuple = (1,)
+print("type(mytuple)    :", type(mytuple))
+print("len(mytuple)     :", len(mytuple))
+print(mytuple)

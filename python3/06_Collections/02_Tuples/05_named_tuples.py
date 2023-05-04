@@ -48,6 +48,7 @@ assert student_details2.dob == getattr(student_details2, "dob")
 # student_details2.full_name  # AttributeError: 'Students' object has no attribute 'full_name'
 # getattr(student_details2, 'full_name') # AttributeError: 'Students' object has no attribute 'full_name'
 
+print(f"{'full_name' in dir(student_details2) = }")
 print(f"{hasattr(student_details2, 'full_name') =}")
 
 if hasattr(student_details2, "full_name"):

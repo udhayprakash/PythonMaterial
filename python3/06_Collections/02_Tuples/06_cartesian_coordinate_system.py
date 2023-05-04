@@ -18,6 +18,8 @@ print(line_length)
 
 # ----------------------------------------
 # named tuples
+# Point = namedtuple("Point", ("x", "y"))
+# Point = namedtuple("Point", ["x", "y"])
 Point = namedtuple("Point", "x y")
 pt1 = Point(1.0, 5.0)
 pt2 = Point(2.5, 1.5)

@@ -19,18 +19,19 @@ print()
 
 # Method 1 - To remove duplicates in a list/tuple of elements
 filtered_list = []
-for each_ele in running_ports:
-    if each_ele in filtered_list:
+for each_port in running_ports:
+    if each_port in filtered_list:
         continue
-    filtered_list.append(each_ele)
+    filtered_list.append(each_port)
+
 print("len(filtered_list) ", len(filtered_list))
 print("filtered_list:     ", filtered_list)
 
 print()
-myset = {11, 22, 11, 44, 22, 11}
-print("type(myset)        ", type(myset))
-print("len(myset)         ", len(myset))
-print("myset              ", myset)
+unique_ports = {11, 22, 11, 44, 22, 11}
+print(f"{type(unique_ports) =}")
+print(f"{len(unique_ports)  =}")
+print(f"{unique_ports       =}")
 print()
 
 

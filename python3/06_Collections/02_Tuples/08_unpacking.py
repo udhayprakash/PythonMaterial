@@ -20,6 +20,11 @@ try:
 except ValueError as ex:
     print(ex)
 
+try:
+    p1, p2, p3, p4, p5, p6 = 99, 88, 66, 77, 44
+except ValueError as ex:
+    print(ex)
+
 p = 99, 88, 66, 77, 44
 print(f"p={p} type(p)={type(p)}")
 

@@ -63,7 +63,7 @@
 
 06.Collections
     Lists
-    Tuples
+    Tuples & namedtuples
     Sets
     Dictionaries
         zip() function
