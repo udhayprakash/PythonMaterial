@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 """
 Problem Statement:
 	Assume that price is an integer variable whose value is the price (in US currency) in cents of an item.

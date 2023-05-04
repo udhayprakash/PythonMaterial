@@ -107,3 +107,10 @@ print()
 
 print({0: "0"} | {False: "False"})  # {0: 'False'}
 print({False: "False"} | {0: "0"})  # {False: '0'}
+print()
+
+mydict = {0: "zero", False: "False", 1: "one", True: "True"}
+print(mydict)
+
+mydict = {False: "False", 0: "zero", True: "True", 1: "one"}
+print(mydict)

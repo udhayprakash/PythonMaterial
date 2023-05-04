@@ -72,10 +72,9 @@ print(f"{employee.setdefault('ODI_matches_played', 155) =}")
 pprint(employee)
 print()
 
-
 #  in - operator - membership check
 print(f"{'no_of_catches' in employee            =}")
-print(f"{employee.__contains__('strike_rate')   =}")
+print(f"{employee.__contains__('no_of_catches')   =}")
 
 print(f"{'no_of_wickets' in employee            =}")
 print(f"{employee.__contains__('no_of_wickets') =}")
