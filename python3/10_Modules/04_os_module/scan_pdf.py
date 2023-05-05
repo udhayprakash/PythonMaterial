@@ -1,5 +1,4 @@
 import os
-import os.path
 import re
 
 
@@ -40,7 +39,7 @@ def print_pdf(arg, dir, files):
         print(path)
 
 
-os.path.walk(".", print_pdf, 0)
+os.walk(".", print_pdf, 0)
 
 # This will default to the last definition in the file
-os.path.walk(".", print_pdf, 0)
+os.walk(".", print_pdf, 0)

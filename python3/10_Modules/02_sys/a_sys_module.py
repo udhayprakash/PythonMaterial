@@ -26,3 +26,5 @@ print(
 # cpython -c      python.org
 # Jython  - Java
 # Ironthon- dotnet
+
+print(f"File system encoding is {sys.getfilesystemencoding()}.")

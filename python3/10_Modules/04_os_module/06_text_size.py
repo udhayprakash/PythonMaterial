@@ -3,11 +3,11 @@
 Purpose: Display all text files with size
 greater than 1kb i,e., 1024 bytes
 """
-
 import os
+import sys
 from os.path import join
 
-path = r"C:\Python27"
+path = sys.exec_prefix
 
 for dirname, dirs, files in os.walk(path):
     for filename in files:

@@ -4,7 +4,7 @@ Purpose: sys module
 """
 import sys
 
-print("sys.platform", sys.platform)
+print(f"Computation platform is {sys.platform}.")
 
 if sys.platform == "win32":
     print("you are in windows OS")

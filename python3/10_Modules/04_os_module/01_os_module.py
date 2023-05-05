@@ -34,12 +34,21 @@ print()
 print(os.path.realpath("/home/user/temp.txt"))
 print()
 
+print(os.path.normpath("/path/to/my/../file.txt"))  # "/path/to/file.txt"
+print()
+
 print(os.path.splitext("/home/user/temp.log"))  # ('/home/user/temp', '.log')
 print(os.path.splitext("temp.log"))  # ('temp', '.log')
 print()
 
 print(os.path.splitdrive("/home/user/temp.txt"))  # ('', '/home/user/temp.txt')
 print(os.path.splitdrive(r"C:\user\temp.txt"))  # ('C:', '\\user\\temp.txt')
+print()
+
+print(os.path.isfile("/home/user/temp.txt"))  # False
+print()
+
+print(f"The current directory is: {os.path.abspath('.')}")
 print()
 
 print(os.path.extsep)  # .
