@@ -1,21 +1,3 @@
-# Python list comprehensions can be used to build up lists of answers.
-
-# Squares of numbers from 1 to 99 that contain digit "3".
-a = [x * x for x in range(1, 100) if "3" in str(x)]
-print(a)
-
-# Since a comprehension can be made out of any existing sequence,
-# more complex lists can be created out of existing comprehensions.
-
-# The members of previous list that contain are between 500 and 2000.
-
-b = [x for x in a if 500 < x < 2000]
-print(b)
-
-# List comprehensions can do a lot of work that we later do with loops.
-# For example, let's find all the Unicode characters that are lowercase
-# letters and produce a list of them.
-
 import unicodedata as ud
 
 letter_category = ud.category("a")

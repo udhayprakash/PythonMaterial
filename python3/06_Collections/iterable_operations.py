@@ -44,18 +44,29 @@ values.reverse()
 print(f"{values                 =}")
 print(f"{reversed(values)       =}")
 print(f"{list(reversed(values)) =}")
+print()
 
-# word = 'malayalam'
-# print(f'{word                       = }')
-# print(f'{max(word)                  = }')
-# print(f'{min(word)                  = }')
+word = "malayalam"
 
-# print(f'{max(word, key=values.count)  = }')
-# print(f'{min(word, key=values.count)  = }')
+print(f"{sorted(word)              = }")
+print(f"{sorted(word, reverse=True)= }")
 
-# print(f'{max(list(word), key=values.count)  = }')
-# print(f'{min(list(word), key=values.count)  = }')
+print(f"{max(word)      = }")
+print(f"{max(word, key=word.count)= }")
 
+print(f"{min(word)      = }")
+print(f"{min(word, key=word.count)= }")
+print()
+
+values = [1, "2", "3", 4, "5", "6"]
+
+sorted(values, key=lambda val: int(val))
+sorted(values, key=lambda val: int(val), reverse=True)
+list(reversed(values))
+
+max(values, key=lambda val: int(val))
+min(values, key=lambda val: int(val))
+print()
 
 values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(f"{values =}")

@@ -72,6 +72,39 @@ even_or_odd2 = ["even" if i % 2 == 0 else "odd" for i in range(2, 9)]
 assert even_or_odd == even_or_odd2
 print()
 
+pairs = []
+for ch1 in "Python":
+    for num in "1234":
+        pairs.append((ch1, num))
+
+print(pairs)
+
+pairs2 = [(ch1, num) for ch1 in "Python" for num in "1234"]
+print(pairs2)
+print()
+
+pairs = set()
+for ch1 in "Python":
+    for num in "1234":
+        pairs.add((ch1, num))
+
+print(pairs)
+
+pairs2 = {(ch1, num) for ch1 in "Python" for num in "1234"}
+print(pairs2)
+print()
+
+pairs = set()
+for ch1 in "Python":
+    for num in "1234":
+        if num == "3":
+            pairs.add((ch1, num))
+
+print(pairs)
+pairs2 = {(ch1, num) for ch1 in "Python" for num in "1234" if num == "3"}
+
+print(pairs2)
+
 #########################################
 my_variable = [ch for ch in "Mangalyan"]
 print(type(my_variable), my_variable)
