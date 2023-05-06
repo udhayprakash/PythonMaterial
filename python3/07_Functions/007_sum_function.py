@@ -25,6 +25,9 @@ print(f"result:{result}")
 result = sum([10, 20, 30])
 print(f"result:{result}")
 
+result = sum({10, 20, 30})
+print(f"result:{result}")
+
 result = sum((10, 20, 30))
 print(f"result:{result}")
 
@@ -87,6 +90,7 @@ print(sum(my_data, ()))
 
 print()
 # my_data = [{1, 2}, {3, 4}, {5, 6}, {7, 8}]
+# print(sum(my_data, set()))
 # TypeError: unsupported operand type(s) for +: 'set' and 'set'
 
 
