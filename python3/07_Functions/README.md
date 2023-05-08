@@ -13,27 +13,28 @@ Default Arguments
     mutable default arguments and memory leakage
 
 Variadic Functions
-
-        variable Arguments
-
-        variable keyword arguments
+variable Arguments \*args
+variable keyword arguments \*\*kwargs
 
 Variable Scoping: Global & Local
+LEGB
+Local
+Enclosed
+Global
+Builtin
 
 Recursions
+controlled recursions
+infinite recursions
+Mutually recursions
 
-    controlled recursions
-    infinite recursions
-    Mutually recursions
-
-Lambdas
+Lambdas(or) Anonymous functions
 
 Higher-Order Functions
-
-    zip
-    map
-    filter
-    functools.reduce
+zip
+map
+filter
+functools.reduce
 
 Partial Functions
 

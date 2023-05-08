@@ -1,132 +1,56 @@
 #!/usr/bin/python3
 """
 Purpose: Tic Tac Toe game
-Author: Dhritiman Roy
 """
 
 print("TIC TAC TOE GAME")
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-board_print = (
-    " "
-    + board[6]
-    + " | "
-    + board[7]
-    + " | "
-    + board[8]
-    + "\n"
-    + "-----------"
-    + "\n"
-    + " "
-    + board[3]
-    + " | "
-    + board[4]
-    + " | "
-    + board[5]
-    + "\n"
-    + "-----------"
-    + "\n"
-    + " "
-    + board[0]
-    + " | "
-    + board[1]
-    + " | "
-    + board[2]
-)
-board_print_default = (
-    " "
-    + "7"
-    + " | "
-    + "8"
-    + " | "
-    + "9"
-    + "\n"
-    + "-----------"
-    + "\n"
-    + " "
-    + "4"
-    + " | "
-    + "5"
-    + " | "
-    + "6"
-    + "\n"
-    + "-----------"
-    + "\n"
-    + " "
-    + "1"
-    + " | "
-    + "2"
-    + " | "
-    + "3"
-)
+board_print = f"""{board[6]} | {board[7]} | {board[8]}\
+    -----------\
+    {board[3]} | {board[4]} | {board[5]}\
+    -----------\
+     {board[0]} | {board[1]} | {board[2]}"""
+
+board_print_default = """
+     7 | 8 | 9
+    -----------
+     4 | 5 | 6
+    -----------
+     1 | 2 | 3
+"""
 
 print("")
 print(board_print_default)
 
 
 def p1_input():
+    global board_print
     for i in range(10):
         if i == p_in:
             board[i - 1] = "X"
             board_print = (
-                " "
-                + board[6]
-                + " | "
-                + board[7]
-                + " | "
-                + board[8]
-                + "\n"
-                + "-----------"
-                + "\n"
-                + " "
-                + board[3]
-                + " | "
-                + board[4]
-                + " | "
-                + board[5]
-                + "\n"
-                + "-----------"
-                + "\n"
-                + " "
-                + board[0]
-                + " | "
-                + board[1]
-                + " | "
-                + board[2]
+                f" {board[6]} | {board[7]} | {board[8]}\n"
+                f"-----------\n"
+                f" {board[3]} | {board[4]} | {board[5]}\n"
+                f"-----------\n"
+                f" {board[0]} | {board[1]} | {board[2]}"
             )
             print(board_print)
 
 
 def p2_input():
+    global board_print
     for i in range(10):
         if i == p_in:
             board[i - 1] = "O"
             board_print = (
-                " "
-                + board[6]
-                + " | "
-                + board[7]
-                + " | "
-                + board[8]
-                + "\n"
-                + "-----------"
-                + "\n"
-                + " "
-                + board[3]
-                + " | "
-                + board[4]
-                + " | "
-                + board[5]
-                + "\n"
-                + "-----------"
-                + "\n"
-                + " "
-                + board[0]
-                + " | "
-                + board[1]
-                + " | "
-                + board[2]
+                f" {board[6]} | {board[7]} | {board[8]}\n"
+                f"-----------\n"
+                f" {board[3]} | {board[4]} | {board[5]}\n"
+                f"-----------\n"
+                f" {board[0]} | {board[1]} | {board[2]}"
             )
             print(board_print)
 
@@ -208,26 +132,7 @@ while s != 9:
     t[i] = p_in
     p_in = int(input("> "))
 
-    if (
-        (
-            p_in == t[0]
-            or p_in == t[1]
-            or p_in == t[2]
-            or p_in == t[3]
-            or p_in == t[4]
-            or p_in == t[5]
-            or p_in == t[6]
-            or p_in == t[7]
-            or p_in == t[8]
-            or p_in == t[9]
-            or p_in == t[10]
-            or p_in == t[11]
-            or p_in == t[12]
-            or p_in == t[13]
-        )
-        or p_in < 1
-        or p_in > 9
-    ):
+    if p_in in t[0:14] or p_in < 1 or p_in > 9:
         print("Input not accepted. Try again.\n")
     else:
         if s % 2 == 0:
