@@ -26,7 +26,42 @@ immutable object CANT be edited within function without passing as args
 #
 # assert globals() == locals()
 
-from audioop import reverse
+
+from pprint import pp
+
+# print(f"{globals() = }")
+
+num1 = 100
+
+# print("globals\n")
+# pp(globals())
+# print()
+
+
+# print("locals\n")
+# pp(locals())
+
+
+def myfunc():
+    num1 = 200
+    num2 = 300
+    print("WITHIN FUNCTION")
+    print("globals\n")
+    pp(globals())
+    print()
+
+    print("locals\n")
+    pp(locals())
+
+
+myfunc()
+
+
+print("locals\n")
+pp(locals())
+
+# ----------------------------------------------------------
+
 
 print("\n case 1============")
 pi = 3.141  # immutable - call by value
@@ -124,7 +159,7 @@ print("\n case 7=====   call by reference")
 
 def simple_function(lang_details):
     print(f'\nbefore change ver   = {lang_details["ver"]}')
-    details["ver"] = "3.10"
+    lang_details["ver"] = "3.10"
     print(f'After change ver    = {lang_details["ver"]}')
     # {'ver': '3.10'}
     print(f'\n{id(globals()["details"])}{ globals()["details"]    = }')
@@ -135,11 +170,12 @@ def simple_function(lang_details):
 simple_function(details)
 print("outside function ver = {}".format(details["ver"]))
 
-print("\n case 8=====   call by reference")
+print("\n case 8=====   call by VALUE")
 
 
 def simple_function(lang_details):
     lang_details2 = lang_details.copy()
+
     print(f'\nbefore change ver   = {lang_details2["ver"]}')
     details["ver"] = "3.11"
     print(f'After change ver    = {lang_details2["ver"]}')
@@ -170,6 +206,23 @@ my_list = [1, 2, 3]
 
 
 def simple_function(my_list):
+    print(f"\nbefore change my_list = {my_list}")
+    my_list.append(5)
+    print(f"After change my_list = {my_list}")
+
+
+simple_function(my_list)
+print("outside function new_list = {}".format(my_list))
+
+
+print("\n case 10=====   call by VALUE")
+
+my_list = [1, 2, 3]
+
+
+def simple_function(my_list):
+    my_list = my_list.copy()
+
     print(f"\nbefore change my_list = {my_list}")
     my_list.append(5)
     print(f"After change my_list = {my_list}")
@@ -233,6 +286,11 @@ new_list = [1, 2, 3]
 simple_function(new_list)
 print(f"outside function new_list = {new_list} {id(new_list)}")  # [1, 2, 3, 6]
 
+
 # NOTE:
-# immuatble -- by dfault cal by value; with global, call by ReferenceError
-# mutable -- by dfault is call by refernece; create copy() to call by value
+# immuatble
+#     -- by default call by value;
+#     -- with global, call by Reference
+# mutable
+#     -- by default is call by Reference;
+#     -- create copy() to call by value

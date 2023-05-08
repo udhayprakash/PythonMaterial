@@ -55,8 +55,8 @@ print()
 print(reduce(lambda a, b: a + b, [1, 3, 5, 6, 2]))
 print(reduce(operator.add, [1, 3, 5, 6, 2]))
 
+print(reduce(lambda a, b: a * b, [1, 3, 5, 6, 2]))
 print(reduce(operator.mul, [1, 3, 5, 6, 2]))
-
 
 mystrings = ("I", "am", "confident", "about", "myself")
 print(reduce(operator.add, mystrings))
