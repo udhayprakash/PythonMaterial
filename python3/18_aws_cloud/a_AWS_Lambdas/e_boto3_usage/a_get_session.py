@@ -8,6 +8,9 @@ import boto3
 
 # pip install awscli
 # aws configure
+
+# ref: https://blog.gitguardian.com/how-to-handle-aws-secrets/
+
 session = boto3.Session()
 
 print(

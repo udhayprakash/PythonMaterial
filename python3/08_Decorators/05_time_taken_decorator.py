@@ -23,7 +23,7 @@ def time_taken(func):
         start_time = time.perf_counter_ns()
         result = func(*args, **kwargs)
         end_time = time.perf_counter_ns()
-        print(f"Time Taken: {end_time - start_time} ns")
+        print(f"Time Taken for {func.__name__}: {end_time - start_time} ns")
         return result
 
     return wrapper
