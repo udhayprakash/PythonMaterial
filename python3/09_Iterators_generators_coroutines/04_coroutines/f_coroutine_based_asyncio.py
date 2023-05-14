@@ -6,7 +6,7 @@ import asyncio
 
 # print(dir(asyncio))
 
-# blocking execution- traditional - pytho.java,c, c++
+# blocking execution- traditional - python.java,c, c++
 # statement1 - 5sec
 # statement1 - 5sec
 # statement1 - 5sec

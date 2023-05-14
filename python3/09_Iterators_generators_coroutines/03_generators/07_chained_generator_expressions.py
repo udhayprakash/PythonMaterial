@@ -16,6 +16,19 @@ print(f"{dictCompr} {type(dictCompr)}")
 genExpr = (i for i in range(7))
 print(f"{genExpr} {type(genExpr)}")  # generator
 
+import sys
+
+print(
+    f"""
+
+    {sys.getsizeof(listCompr) =}
+    {sys.getsizeof(setCompr) = }
+    {sys.getsizeof(dictCompr) = }
+    {sys.getsizeof(genExpr) = }
+
+
+"""
+)
 # -----
 integers = list(range(8))
 squared = (i * i for i in integers)

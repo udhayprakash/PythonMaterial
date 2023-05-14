@@ -62,7 +62,7 @@ print()
 for each_key, each_val in names.items():
     print("\t", each_key, "====>", each_val)
 
-
+# for loop_index, each_key, each_val in enumerate( names.items()):
 for each_index, (each_key, each_val) in enumerate(names.items()):
     print("\t", each_index, ":", each_key, "====>", each_val)
 

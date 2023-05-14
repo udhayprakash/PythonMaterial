@@ -1,13 +1,18 @@
-# A generator is a function that, unlike a regular function that always
-# forgets what it has done and starts from beginning each time it is called,
-# a generator remembers where it left off and continues from there at the
-# next call. In Python, generators are an easy way to define iterators.
-
-# First, a sneak preview of the last lecture about defining your own data
-# types as classes. Here is an iterator defined as a proper class with
-# certain "magic" methods to implement the iterator behaviour.
 import itertools as it
 import random
+
+
+def squares(start, end):
+    curr = start
+    while curr < end:
+        yield curr * curr
+        curr += 1
+
+
+print("\nPrinting the squares with generator:")
+for x in squares(1, 10):
+    print(x, end=" ")
+print("\n")
 
 
 class Squares:
@@ -33,25 +38,9 @@ class Squares:
         return "Squares(" + self.start + ", " + self.end + ")"
 
 
-# Iterators are much easier to define as generators. Simply using the
-# keyword yield instead of return makes Python convert that function to a
-# generator type with all the iteration methods loaded in.
-
-
-def squares(start, end):
-    curr = start
-    while curr < end:
-        yield curr * curr
-        curr += 1
-
-
 print("Printing the squares with Squares class:")
 for x in Squares(1, 10):
     print(x, end=" ")
-print("\nPrinting the squares with generator:")
-for x in squares(1, 10):
-    print(x, end=" ")
-print("\n")
 
 # So far, both examples generated a finite sequence. But there is nothing in
 # the laws of nature or man that says that a sequence couldn't be infinite.
