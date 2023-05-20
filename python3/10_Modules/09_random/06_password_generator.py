@@ -2,11 +2,19 @@ import random
 
 alphabet = "abcdefghijklmnopqrstuvwxyz .,!@_-(*)-+/|$%&=?^"
 pw_length = 34  # can change the length of your password by changing this number
-mypw = ""
 
+
+mypw = "".join(random.sample(alphabet, pw_length))
+print(mypw)
+print()
+
+mypw = ""
 for i in range(pw_length):
     next_index = random.randrange(len(alphabet))
     mypw += alphabet[next_index]
+print(mypw)
+print()
+
 
 # replace 1 or 2 characters with a number
 for i in range(random.randrange(1, 3)):

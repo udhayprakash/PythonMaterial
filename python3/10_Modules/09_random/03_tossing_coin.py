@@ -1,3 +1,4 @@
+# coin -- head/tail
 import random
 
 outcomes = {
@@ -6,8 +7,10 @@ outcomes = {
 }
 sides = list(outcomes.keys())  # ['heads', 'tails']
 
+
 for i in range(10000):
-    outcomes[random.choice(sides)] += 1
+    outcome = random.choice(sides)
+    outcomes[outcome] += 1
 
 print("In 10000 tosses,")
 print("\tHeads:", outcomes["heads"])

@@ -1,15 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Purpose:
+Purpose: To copy a file from one directory, to another
 """
+
 import os
-from shutil import copyfile
+import shutil
 
-SOURCE_FILE = "test_dir_1/test_file_1.txt"
-DESTINATION_FILE = "test_dir_2/test_file_1.txt"
 
-if os.path.exists(DESTINATION_FILE):
-    print("file already exists. So, deleting")
-    os.remove(DESTINATION_FILE)
+def copy_file(src_dir, dest_dir, filename):
+    source_path = os.path.join(src_dir, filename)
+    dest_path = os.path.join(dest_dir, filename)
 
-copyfile(SOURCE_FILE, DESTINATION_FILE)
+    if os.path.exists(dest_path):
+        print("file already exists. So, deleting")
+        os.remove(dest_path)
+
+    shutil.copyfile(source_path, dest_path)
+
+
+copy_file("test_dir_1", "test_dir_2", "test_file_1.txt")
