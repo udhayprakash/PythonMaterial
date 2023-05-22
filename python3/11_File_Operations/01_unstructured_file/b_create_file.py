@@ -2,7 +2,7 @@
 """
 Purpose: creating file and adding content
 """
-fh = open("b_create_file.txt", mode="w", encoding="utf-8")
+fh = open("b_second_file.txt", mode="w", encoding="utf-8")
 
 print("Name of the file : ", fh.name)
 print("Opening mode     : ", fh.mode)
@@ -24,7 +24,7 @@ except ValueError as ve:
 
 
 # ---- REOPENING the same file in write mode
-gh = open("b_create_file.txt", mode="w", encoding="utf-8")
+gh = open("b_second_file.txt", mode="w", encoding="utf-8")
 gh.write("This is third line\n")
 
 gh.flush()
@@ -36,7 +36,7 @@ gh.close()
 
 
 # ----Adding content to existing file
-mh = open("b_create_file.txt", mode="a")
+mh = open("b_second_file.txt", mode="a")
 mh.write("This is fourth line\n")
 
 mh.flush()
@@ -44,10 +44,10 @@ mh.close()
 
 
 # The truncate() method resizes the file to the given number of bytes.
-f = open("b_create_file.txt", "a")
+f = open("b_second_file.txt", "a")
 f.truncate(20)
 f.close()
 
 # open and read the file after the truncate:
-f = open("b_create_file.txt", "r")
+f = open("b_second_file.txt", "r")
 print(f.read())

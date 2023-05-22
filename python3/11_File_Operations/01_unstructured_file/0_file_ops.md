@@ -9,7 +9,7 @@
         Archive files: .zip, .rar, .iso, .7z etc.
         Executable files: .exe, .dll, .class etc.
 
-    2) Text files (fies without encoding)
+    2) Text files (files without encoding)
         Web standards: html, XML, CSS, JSON etc.
         Source code: c, app, js, py, java etc.
         Documents: txt, tex, RTF etc.

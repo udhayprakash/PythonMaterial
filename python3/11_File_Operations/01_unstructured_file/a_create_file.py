@@ -10,23 +10,23 @@ Purpose:
         default is read mode
 
 """
-# open('a_create_file.txt')
-# FileNotFoundError: [Errno 2] No such file or directory: 'a_create_file.txt'
+# open('a_first_file.txt')
+# FileNotFoundError: [Errno 2] No such file or directory: 'a_first_file.txt'
 
-# open('a_create_file.txt', mode='r')
-# # FileNotFoundError: [Errno 2] No such file or directory: 'a_create_file.txt'
+# open('a_first_file.txt', mode='r')
+# # FileNotFoundError: [Errno 2] No such file or directory: 'a_first_file.txt'
 
-# open('a_create_file.txt', mode='w')
+# open('a_first_file.txt', mode='w')
 
-file_handler = open("a_create_file.txt", mode="w")
+file_handler = open("a_first_file.txt", mode="w")
 print(f"{type(file_handler) =}")
 print(f"{file_handler       =}")
-# <_io.TextIOWrapper name='a_create_file.txt' mode='w' encoding='cp1252'>
+# <_io.TextIOWrapper name='a_first_file.txt' mode='w' encoding='cp1252'>
 print()
 
-file_handler = open("a_create_file.txt", mode="w", encoding="utf-8")
+file_handler = open("a_first_file.txt", mode="w", encoding="utf-8")
 print(f"{file_handler       =}")
-# <_io.TextIOWrapper name='a_create_file.txt' mode='w' encoding='utf-8'>
+# <_io.TextIOWrapper name='a_first_file.txt' mode='w' encoding='utf-8'>
 print()
 
 # To add content to file

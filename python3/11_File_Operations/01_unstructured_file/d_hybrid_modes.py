@@ -4,13 +4,13 @@ Purpose: hybrid file operation modes
     r+, w+, a+
 """
 # r+ -> ensure that file is already present
-gh = open("b_create_file.txt", "r+")
+gh = open("b_second_file.txt", "r+")
 
 print(f"{gh.name       =}")
 print(f"{gh.mode       =}")
 
 print(f"{gh.writable() =}")
-gh.write("This is written in w+ mode")
+gh.write("This is written in r+ mode")
 gh.flush()
 
 print(f"{gh.readable() =}")
@@ -42,3 +42,12 @@ file_content = gh.read()
 print(f"after seek(0): {file_content =}")
 
 gh.close()
+
+
+"""
+NOTE:
+
+    r+  --- file should present
+    w+  ---   write/read
+    a+  ---  append/read
+"""

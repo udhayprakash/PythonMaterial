@@ -3,7 +3,7 @@
 Purpose: reading existing file
     - If file is not present, it throws an error
 """
-fh1 = open("b_create_file.txt", mode="r", encoding="utf-8")
+fh1 = open("b_second_file.txt", mode="r", encoding="utf-8")
 
 print("Name of the file : ", fh1.name)
 print("Opening mode     : ", fh1.mode)

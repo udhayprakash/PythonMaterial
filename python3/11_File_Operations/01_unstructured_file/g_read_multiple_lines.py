@@ -5,7 +5,8 @@ Purpose: file read operations
     fh.readline()
     fh.readlines()
 """
-fh = open("e_write_multiple_lines.tsf", "r")
+fh = open("e_write_multiple_lines.upp", "r")
+
 
 partial_content = fh.read(7)
 print(f"{partial_content  =}")  # str type
@@ -21,6 +22,7 @@ print(f"{current_line       =}")
 print("\ncurrent  fh.tell()", fh.tell())
 current_line = fh.readline()  # -> str
 print(f"{current_line       =}")
+
 
 # ----------------------------------------------
 print("\ncurrent  fh.tell()", fh.tell())

@@ -9,7 +9,7 @@ Ans) depends on the system clock cycle
 """
 # Method 1: traditional
 try:
-    fh = open("e_write_multiple_lines.tsf", "r")
+    fh = open("e_write_multiple_lines.upp", "r")
 
     data = fh.read()
     print(data)
@@ -20,7 +20,7 @@ finally:
 
 
 # Method 2: with context manager
-with open("e_write_multiple_lines.tsf", "r") as gh:
+with open("e_write_multiple_lines.upp", "r") as gh:
     data = gh.read()
 
 print(data)
