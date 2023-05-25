@@ -19,11 +19,12 @@ s.close()
 
 # ---------------
 # By defaults, shelve do not track modifications to volatile objects.
-s = shelve.open("myshelve.db")
-print("before", s["key1"])
-s["key1"]["new_value"] = "this was not here before"
-print("after", s["key1"])
-s.close()
+with shelve.open("myshelve.db") as fh:
+    print("before:", fh["key1"])
+
+    fh["key1"]["new_value"] = "this was not here before"
+
+    print("after:", fh["key1"])
 
 
 s = shelve.open("myshelve.db")
@@ -38,9 +39,7 @@ print("after", s["key1"])
 
 s.close()
 
-s = shelve.open("myshelve.db", writeback=True)
-print(s["key1"])
-s.close()
+with shelve.open("myshelve.db") as fh:  # modifications are reflected
+    print(fh["key1"])
 
-# Note: Shelve must not be opened with writeback enabled,
-# unless it is essential
+# Note: Shelve must not be opened with writeback enabled,  unless it is essential

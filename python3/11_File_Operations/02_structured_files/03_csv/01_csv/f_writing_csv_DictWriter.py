@@ -5,9 +5,10 @@ Purpose: Writing csv using csv module
 """
 import csv
 
-with open("other_file.csv", "w", newline="") as gh:
+with open("second.csv", mode="w") as fh:
     header_names = ("sno", "name", "age", "designation")
-    writer = csv.DictWriter(gh, delimiter=",", fieldnames=header_names)
+
+    writer = csv.DictWriter(fh, delimiter=",", fieldnames=header_names)
 
     # To write the headers
     writer.writeheader()
@@ -20,7 +21,8 @@ with open("other_file.csv", "w", newline="") as gh:
         [
             {"sno": 2, "name": "hiral", "age": 12, "designation": "software"},
             {"sno": 3, "name": "neha", "age": 13, "designation": "business"},
+            {"sno": 4, "name": "neha", "age": 13},  # , "designation": "business"},
+            {"sno": 5, "name": "neha"},  # , "age": 13} #, "designation": "business"},
+            {"sno": 6, "designation": "business"},
         ]
     )
-
-    gh.close()

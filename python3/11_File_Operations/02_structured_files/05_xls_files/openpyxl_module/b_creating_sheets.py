@@ -14,6 +14,7 @@ def create_worksheets(path):
     # Insert a worksheet
     workbook.create_sheet(index=1, title="Second sheet")
     print(workbook.sheetnames)  # ['Sheet', 'Second sheet', 'Sheet1']
+
     workbook.save(path)
 
 

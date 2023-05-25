@@ -3,7 +3,7 @@ Purpose: Parsing TOML string
 
     In python 3.11, tomllib module is added to builtin modules
 """
-import tomllib
+import toml
 
 toml_str = """
 [build]
@@ -14,5 +14,5 @@ python-implementation = "CPython"
 tryceratops = "^1.1.0"
 """
 
-data = tomllib.loads(toml_str)
+data = toml.loads(toml_str)
 print(data)

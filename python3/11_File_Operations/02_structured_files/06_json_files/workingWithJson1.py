@@ -34,14 +34,13 @@ tup1 = "Red", "Black", "White"
 print(json.dumps(tup1))
 
 print("-" * 70)
-# Python string to JSON string
 
+# Python string to JSON string
 string1 = "Python and JSON"
 print(json.dumps(string1))
 
 print("-" * 70)
 # Python Boolean values to JSON Boolean values
-
 x = True
 print((json.dumps(x)))
 

@@ -15,3 +15,10 @@ my_dict = {"a": 1, "b": True, "c": False, "d": None}
 # python object to yaml
 yaml_string1 = yaml.dump(my_dict)
 print(type(yaml_string1), yaml_string1)
+
+
+my_dict = {"a": 1, "b": True, "c": False, "d": (None,), "e": {"name": "Gudo"}}
+
+# python object to yaml
+yaml_string1 = yaml.dump(my_dict)
+print(yaml_string1)

@@ -16,7 +16,13 @@ if len(sys.argv) != 2:
 
 # load json data
 json_data = json.loads(open(sys.argv[1]).read())
+
 # convert unicode to string
 converted_json_data = json.dumps(json_data)
+
 # output yaml
-print(yaml.dump(yaml.load(converted_json_data), default_flow_style=False))
+print(
+    yaml.dump(
+        yaml.load(converted_json_data, Loader=yaml.FullLoader), default_flow_style=False
+    )
+)
