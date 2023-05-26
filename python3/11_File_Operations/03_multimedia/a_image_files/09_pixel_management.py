@@ -1,7 +1,6 @@
 from PIL import Image
 
-original_image = Image.open("strawberries.png")
-# original_image = Image.open("cameraman.jpg")
+original_image = Image.open("images/strawberries.png")
 
 width, height = original_image.size
 
@@ -14,3 +13,4 @@ for x in range(width):
         original_image.putpixel(pixel_coordinate, negative_color)
 
 original_image.show()
+original_image.save("images/result.png")

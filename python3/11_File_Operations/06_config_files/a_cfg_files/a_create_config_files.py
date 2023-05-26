@@ -1,23 +1,30 @@
 #!/usr/bin/python
 """
 Purpose: Reading (Parsing) config files
+
+    python 2.x - ConfigParser
+    python 3.x - configparser
+
 """
 
-# python 2.x - ConfigParser
-# python 3.x - configparser
+import configparser
 
-import configparser as ConfigParser
+# print(dir(configparser))
 
-config = ConfigParser.RawConfigParser()
+config = configparser.RawConfigParser()
+
 
 config.add_section("Section1")
 config.set("Section1", "an_int", "15")
 config.set("Section1", "a_bool", "true")
 config.set("Section1", "a_float", "3.1415")
-config.set("Section1", "baz", "fun")
-config.set("Section1", "bar", "Python")
-config.set("Section1", "foo", "%(bar)s is %(baz)s!")
+
+config.add_section("Section2")
+config.set("Section2", "baz", "fun")
+config.set("Section2", "bar", "Python")
+config.set("Section2", "foo", "%(bar)s is %(baz)s!")
+
 
 # Writing our configuration file to 'example.cfg'
-with open("example.cfg", "w") as configfile:
+with open("example.cfg", "w", encoding="utf-8") as configfile:
     config.write(configfile)

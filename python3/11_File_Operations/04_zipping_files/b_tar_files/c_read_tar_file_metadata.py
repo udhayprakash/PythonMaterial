@@ -1,10 +1,12 @@
-#!/usr/bin/python
 """
 Purpose: Working with tar files
 """
-
+import os
 import tarfile
 import time
+
+os.makedirs("files", exist_ok=True)
+os.chdir("files")
 
 for file_name in ("fileThree.txt", "tarFileOne.tar", "some.txt"):
     try:
