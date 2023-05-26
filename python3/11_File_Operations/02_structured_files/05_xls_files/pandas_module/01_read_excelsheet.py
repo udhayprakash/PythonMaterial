@@ -1,7 +1,3 @@
-# openpyxl, XlsWriter, pandas,
-
-
-# Import pandas
 import pandas as pd
 
 # Assign spreadsheet filename to `file`

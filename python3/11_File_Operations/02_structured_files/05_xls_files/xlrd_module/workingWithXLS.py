@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 try:
     import xlrd
 except ImportError as ie:

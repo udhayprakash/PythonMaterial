@@ -1,10 +1,10 @@
-##############################################################################
-#
-# Simple Python program to benchmark several Python Excel writing modules.
-#
-# python bench_excel_writers.py [num_rows] [num_cols]
-#
-#
+"""
+Purpose:
+    Simple Python program to benchmark several Python Excel writing modules.
+
+    USAGE:
+        python bench_excel_writers.py [num_rows] [num_cols]
+"""
 
 import sys
 from time import clock

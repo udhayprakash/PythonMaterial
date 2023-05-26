@@ -24,6 +24,6 @@ def PassProtect(Path, Pass):
 
 
 PassProtect(
-    r"D:\MEGAsync\Python-related\PythonMaterial\python3\11_File_Operations\02_structured_files\05_xls_files\openpyxl_module\wrap.xlsx",
+    "wrap.xlsx",
     "DesiredPasswordGoesHere",
 )

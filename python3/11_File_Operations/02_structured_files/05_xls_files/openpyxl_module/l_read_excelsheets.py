@@ -1,10 +1,7 @@
-from __future__ import print_function
-
-# Import `load_workbook` module from `openpyxl`
 from openpyxl import load_workbook
 
 # Load in the workbook
-wb = load_workbook("./test.xlsx")
+wb = load_workbook("../files/test.xlsx")
 
 # Get sheet names
 print(wb.get_sheet_names())
