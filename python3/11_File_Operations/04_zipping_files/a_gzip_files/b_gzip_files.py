@@ -1,25 +1,30 @@
+#!/usr/bin/python
+"""
+Purpose: GZip File operations
+"""
 import gzip
 
-# compress a gzip file
-input_fh = open("/Users/joe/xxtest", "rb")
-s = input_fh.read()
-input_fh.close()
+# Compress the file
+fp = open("zen.txt", "rb")
+data = fp.read()
+bindata = bytearray(data)
+with gzip.open("zen.txt.gz", "wb") as f:
+    f.write(bindata)
 
-output = gzip.GzipFile("/Users/joe/xxtest.gz", "wb")
-output.write(s)
-output.close()
+# uncompressed file from gzip archive
+fp = open("zen1.txt", "wb")
+with gzip.open("zen.txt.gz", "rb") as f:
+    bindata = f.read()
+    fp.write(bindata)
+    fp.close()
+print()
 
-print("done")
+# ----------------
+f = gzip.GzipFile("testnew.txt.gz", "wb")
+data = b"Python - Batteries included"
+f.write(data)
+f.close()
 
-
-# ----------------------------------------
-# decompress a gzip file
-input_fh = gzip.GzipFile("/Users/joe/xxtest.gz", "rb")
-s = input_fh.read()
-input_fh.close()
-
-output = open("/Users/joe/xxtest", "wb")
-output.write(s)
-output.close()
-
-print("done")
+f = gzip.GzipFile("testnew.txt.gz", "rb")
+data = f.read()
+print(data)  # b'Python - Batteries included'
