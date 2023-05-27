@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Configuring Logging Level
 """
@@ -22,8 +21,10 @@ logging.log(logging.ERROR, "This is a error3")
 logging.log(logging.CRITICAL, "This is a critical3")
 print()
 
+# SDLC -
+#   dev --> testing --> staging/UAT ---> production
 
-# -------------------
+
 def addition(n1, n2):
     logging.debug("addition function - start")
     return n1 + n2

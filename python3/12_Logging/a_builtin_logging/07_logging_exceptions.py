@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Logging error trace
 
@@ -24,6 +23,11 @@ for i in range(10):
     try:
         logging.info("i + 1: %d" % (i + 1))
     except Exception as ex:
+        # print(ex)
+        # print(repr(ex))
+
         # logging.error(ex)
+        # logging.error(repr(ex))
+
         # logging.error(ex, exc_info=True)
         logging.exception(ex)

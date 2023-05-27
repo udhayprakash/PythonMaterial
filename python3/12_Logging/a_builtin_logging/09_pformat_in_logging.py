@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import logging
 from pprint import pformat, pprint
 
@@ -21,6 +20,7 @@ data = [
 
 print(data)
 print()
+
 pprint(data)
 
 logging.basicConfig(
@@ -30,9 +30,10 @@ logging.basicConfig(
     filemode="w",
 )
 
-logging.debug(data)
+logging.info(data)
+
 logging.debug("Logging pformatted data")
 
 formatted = pformat(data)
 for line in formatted.splitlines():
-    logging.debug(line.rstrip())
+    logging.info(line.rstrip())

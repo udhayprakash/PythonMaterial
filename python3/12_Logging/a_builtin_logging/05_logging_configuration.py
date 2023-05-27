@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Adding Logging configuration
 
@@ -27,16 +26,15 @@ import logging
 
 # Time in log
 logging.basicConfig(
+    level=logging.DEBUG,
     filename="logs/05_logging.log",  # filemode='w',
     format="%(asctime)s %(levelname)8s %(name)s %(message)s",
     datefmt="%d-%b-%Y %I:%M:%S %p",
-    level=logging.DEBUG,
 )
 
 logging.info("Logging app started")
 logging.warning("An example logging message.")
 logging.warning("Another log message")
-print()
 
 # NOTE: based on the logging level placed, the logs will be placed.
 # If the path is not specified, the log file will be created in

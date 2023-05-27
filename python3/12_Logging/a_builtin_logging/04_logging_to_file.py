@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: logging to log file
     .log
@@ -8,7 +7,9 @@ import logging
 # basicConfig - to set the format of log test
 
 logging.basicConfig(
-    filename="logs/04_logging.log", filemode="w", level=logging.DEBUG  # 'a' - default
+    level=logging.DEBUG,
+    filename="logs/04_logging.log",
+    filemode="w",  # 'a' - default
 )
 
 logging.debug("This is a debug1")

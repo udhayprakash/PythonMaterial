@@ -1,0 +1,5 @@
+[
+  { "Name": "Gudo", "Age": 25, "Country": "USA", "Grade": 0.76 },
+  { "Name": "Jane", "Age": 30, "Country": "Canada", "Grade": 0.87 },
+  { "Name": "Mike", "Age": 35, "Country": "UK", "Grade": 0.75 }
+]

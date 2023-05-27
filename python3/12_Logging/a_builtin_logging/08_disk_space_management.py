@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import logging as lg
 
 lg.basicConfig(

@@ -10,10 +10,10 @@ logging.basicConfig(level=logging.DEBUG)
 
 logging.debug("This is a debug1")
 
-
 # To disable the logging completely
+
 # Method 1
-# logging.disable(sys.maxint) # Python 2
+# # logging.disable(sys.maxint) # Python 2
 # logging.disable(sys.maxsize)  # Python 3
 
 # Method 2
@@ -37,8 +37,9 @@ def addition(n1, n2):
 addition(1, 2)
 addition(1, 2)
 addition(1, 2)
+
+logging.getLogger().disabled = False
 addition(1, 2)
 addition(1, 2)
 
-logging.getLogger().disabled = False
 logging.info("Last statement")

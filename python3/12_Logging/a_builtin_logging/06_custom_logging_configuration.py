@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Adding Logging configuration
 
@@ -8,9 +7,15 @@ Purpose: Adding Logging configuration
 """
 import logging
 
-FORMAT = "%(asctime)-15s %(client_ip)s %(name)9s %(user)-8s %(message)s"
-logging.basicConfig(format=FORMAT)
+logging.basicConfig(
+    format="%(asctime)-15s %(client_ip)s %(name)9s %(user)-8s %(message)s"
+)
+
 d = {"client_ip": "192.168.0.1", "user": "fbloggs"}
+
+logging.info("This is info message", extra=d)
+logging.error("This is error message", extra=d)
+
 
 # Method 1
 logging.basicConfig(
@@ -20,6 +25,7 @@ logging.basicConfig(
     level=logging.DEBUG,
 )
 logging.warning("Protocol problem: %s", "connection reset", extra=d)
+
 
 # Method 2
 logger = logging.getLogger("TCPserver")

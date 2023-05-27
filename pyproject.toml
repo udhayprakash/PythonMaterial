@@ -51,6 +51,7 @@ python-docx = "^0.8.11"
 deltalake = "^0.9.0"
 reportlab = "^4.0.0"
 pypdf2 = "^3.0.1"
+tablib = {extras = ["all"], version = "^3.4.0"}
 
 
 [tool.poetry.group.dev.dependencies]

@@ -3,7 +3,7 @@ from configparser import ConfigParser
 parser = ConfigParser()
 parser.read("multisection.ini")
 
-for section in ("wiki", "none"):
+for section in ("bug_tracker", "wiki", "none"):
     print("%s section exists: %s" % (section, parser.has_section(section)))
     if parser.has_section(section):
         for candidate in ("username", "password", "url", "description"):

@@ -1,7 +1,18 @@
-from configparser import ConfigParser
+import configparser
 
-parser = ConfigParser()
-parser.read("multisection.ini")
+p1 = configparser.ConfigParser()
+p1.read("simple.ini")
 
-for candidate in ["wiki", "bug_tracker", "dvcs"]:
-    print("%-12s: %s" % (candidate, parser.has_section(candidate)))
+print(p1.has_section("bug_tracker"))
+
+for candidate in ("bug_tracker", "wiki"):
+    print(candidate, p1.has_section(candidate))
+
+print()
+
+
+p2 = configparser.ConfigParser()
+p2.read("multisection.ini")
+
+for candidate in ("bug_tracker", "wiki"):
+    print(candidate, p2.has_section(candidate))

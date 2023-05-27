@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Logging
 """
@@ -15,18 +14,20 @@ print()
 
 logging.debug("This is debug message")
 logging.info("This is info message")
+
 # Default logging level is warning
 logging.warning("This is warning message")
 logging.error("This is error message")
 logging.critical("This is critical message")
 print()
 
-
 # Formatting logs
 logging.error("This is %dth error of %s application" % (5, "polls"))
 logging.error("This is %dth error of %s application", 5, "polls")
+
 print("This is %dth error of %s application", 5, "polls")
 print("This is 5th error of polls application", 5, "polls")
+
 # logging.error('This is 5th error of polls application', 5, 'polls')
 # TypeError: not all arguments converted during string formatting
 print()
