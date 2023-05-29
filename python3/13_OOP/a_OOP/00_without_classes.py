@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: without OOPS, solving a problem
 
@@ -23,28 +22,27 @@ balance = 0
 def deposit(amount):
     global balance
     print(f"\tDeposited {amount}")
-    balance += amount
+    balance = balance + amount
     return balance
 
 
-def withdraw(amount):
+def withdrawl(amount):
     global balance
     print(f"\tWithdrawn {amount}")
-    balance -= amount
+    balance = balance - amount
     return balance
 
 
 if __name__ == "__main__":
-    # Priyanka
-    print(f"\nPriyanka initial balance :{balance}")
+    # Sudha
+    print(f"\nSudha initial balance   :{balance}")
+
     deposit(1000)
-    print(f"Priyanka current balance :{balance}")
+    print(f"nSudha's current balance :{balance}")
 
-    deposit(2500)
-    print(f"Priyanka current balance :{balance}")
+    withdrawl(200)
+    print(f"nSudha's current balance :{balance}")
+    print("----------------------------------------")
 
-    withdraw(750)
-    print(f"Priyanka current balance :{balance}")
-
-    # Varun
-    print(f"\nVarun    initial balance :{balance}")
+    # Sai
+    print(f"\nSai initial balance   :{balance}")

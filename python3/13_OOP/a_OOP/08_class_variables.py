@@ -1,17 +1,15 @@
-#!/usr/bin/python
 """
 Purpose: Importance of Class Variables
 """
 
 
-# class definition
 class Employee(object):
     """
     common base class for employees
     """
 
     emp_count = 0  # class variable
-    emp_id = 0  # Class variable
+    emp_id = 0  # class variable
 
     def __init__(self, name, salary=20000):
         """
@@ -31,7 +29,7 @@ class Employee(object):
         """
         print(f"Total Employees count(before): {Employee.emp_count}")
 
-        self.emp_count += 10
+        self.emp_count += 1
         print(f"self.emp_count               : {self.emp_count}")
 
         print(f"Total Employees count(after): {Employee.emp_count}")

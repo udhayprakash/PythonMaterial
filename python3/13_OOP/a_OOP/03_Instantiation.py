@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Understanding Class instantiation
 """
@@ -15,41 +14,59 @@ class MyClassName:
 # Instantiation
 c1 = MyClassName()
 print(f"c1: {c1}")
-
-# print(dir(c1))
-# ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__',
-# '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__',
-# '__hash__', '__init__', '__init_subclass__', '__le__',
-# '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
-# '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
-# '__str__', '__subclasshook__', '__weakref__'
-# 'hello_world', 'number]
+print(f"{id(c1) = }")
+print(f"{dir(c1) = }")
+print()
 
 print(f"callable(c1.number)     :{callable(c1.number)}")
-
 print(f"c1.number               :{c1.number}")
+
 # print(f'c1.number2              :{c1.number2}')
-# AttributeError: 'MyClassName' object has no attribute 'number2'
+# AttributeError: 'MyClassName' object has no attribute 'number2'. Did you mean: 'number'?
 
 print(f'getattr(c1, "number")   :{getattr(c1, "number")}')
 
+# checks
 print(f'\nhasattr(c1, "number")   :{hasattr(c1, "number")}')
 print(f"'number' in dir(c1)     :{'number' in dir(c1)}")
 
+# classes are mutable objects
 c1.number = 1000
 print(f'\ngetattr(c1, "number")   :{getattr(c1, "number")}')
+print(f"{id(c1) = }")
 
-setattr(c1, "number", 3333)
-print(f'getattr(c1, "number")   :{getattr(c1, "number")}')
 
-delattr(c1, "number")  # classes are mutable objects
-# del c1.number
+setattr(c1, "number3", 3333)
+print(f'getattr(c1, "number3")   :{getattr(c1, "number3")}')
+
+c1.number4 = 4444
+print(f'getattr(c1, "number4")   :{getattr(c1, "number4")}')
+print(f"{dir(c1) = }")
+
+
+delattr(c1, "number")
+del c1.number3
+print(f"{dir(c1) = }")
+
+print(f"{c1.number =}")
+# print(f"{c1.number3 =}")  # AttributeError
+
+delattr(c1, "number4")
+# print(f"{c1.number4 =}")  # AttributeError
+
+"""
+NOTE: Both delattr and del can delete any attribute, except onces
+defined in class definition
+
+"""
+print()
 
 print(f"\ncallable(c1.hello_world):{callable(c1.hello_world)}")
 print(f"c1.hello_world          :{c1.hello_world}")
 print(f"c1.hello_world()        :{c1.hello_world()}")
 
 assert c1.hello_world() == MyClassName.hello_world(c1)
+
 
 # ----------------------
 
@@ -59,6 +76,7 @@ class EmptyClass:
 
 
 e1 = EmptyClass()
+
 print()  # check  for user-defined objects
 print(f"isinstance(c1, MyClassName) :{isinstance(c1, MyClassName)}")  # True
 print(f"isinstance(c1, MyClassName) :{isinstance(c1, EmptyClass)}")  # False

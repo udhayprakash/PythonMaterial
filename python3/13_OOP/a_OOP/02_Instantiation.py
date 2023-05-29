@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: classes (OOP) introduction
 
@@ -9,9 +8,9 @@ Purpose: classes (OOP) introduction
 
 PEP 8 -> class names should be in CamelCasing
 """
+
+
 # Function Definition
-
-
 def hello():
     pass
 
@@ -29,11 +28,16 @@ class EmptyClass:
 
 # Class call - Instantiation
 # - process for creating instance from a class
+EmptyClass()
+
 e1 = EmptyClass()
-print(f"{type(EmptyClass) =}")
+
+print(f"{type(EmptyClass) =}")  # <class 'type'>
 print(f"{EmptyClass =}")
-print(f"type(e1):{type(e1)}")
+
+print(f"type(e1):{type(e1)}")  # <class '__main__.EmptyClass'>
 print(f"e1      :{e1}")
+
 
 # EmptyClass implicitly inherits from object
 assert issubclass(EmptyClass, object) is True

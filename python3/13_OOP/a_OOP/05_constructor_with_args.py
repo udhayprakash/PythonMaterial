@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Constructor with args
 """
@@ -7,7 +6,6 @@ Purpose: Constructor with args
 # class definition
 class Animal:
     def __init__(self, name):
-        print("\nConstructor called")
         self.name = name
 
     def walk(self):
@@ -16,10 +14,14 @@ class Animal:
 
 if __name__ == "__main__":
     # Instantiation
-    # Animal()  # TypeError: __init__() missing 1 required positional argument: 'name'
+
+    # Animal()
+    # TypeError: Animal.__init__() missing 1 required positional argument: 'name'
 
     duck = Animal("Duck")
-    # Animal.__init__(duck, 'Duck')
+    # Animal.__init__(duck, "Duck")
+
+    print(duck)
 
     # TO retrieve the instance variables
     print(vars(duck))

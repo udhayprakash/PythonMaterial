@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: without OOPS, solving a problem
 
@@ -17,40 +16,43 @@ Purpose: without OOPS, solving a problem
             Transaction 2 - withdraw  550        2950
 
 """
+# balance = 0
 
 
-def creat_account():
+def create_account():
     return {"balance": 0}
 
 
 def deposit(account, amount):
     print(f"\tDeposited {amount}")
-    # balance += amount
-    account["balance"] += amount
+    # balance = balance + amount
+    account["balance"] = account["balance"] + amount
 
 
-def withdraw(account, amount):
+def withdrawl(account, amount):
     print(f"\tWithdrawn {amount}")
-    # balance -= amount
-    account["balance"] -= amount
+    # balance = balance - amount
+    account["balance"] = account["balance"] - amount
 
 
 if __name__ == "__main__":
-    # Priyanka
-    Priyanka = creat_account()  # {'balance': 0}
-    print(f'Priyanka initial balance :{Priyanka["balance"]}')  # 0
-    deposit(Priyanka, 1000)
-    print(f'Priyanka current balance :{Priyanka["balance"]}')  # 1000
+    # Sudha
+    sudha = create_account()  # {'balance': 0}
+    print(f"\nSudha initial balance   :{sudha['balance']}")
 
-    deposit(Priyanka, 2500)
-    print(f'Priyanka current balance :{Priyanka["balance"]}')
+    deposit(sudha, 1000)  # {'balance': 1000}
+    print(f"nSudha's current balance :{sudha['balance']}")
 
-    withdraw(Priyanka, 750)
-    print(f'Priyanka current balance :{Priyanka["balance"]}')
-
+    withdrawl(sudha, 200)  # {'balance': 800}
+    print(f"nSudha's current balance :{sudha['balance']}")
     print("----------------------------------------")
-    # UDahy
-    udhay = creat_account()
-    print(f'udhay initial balance :{udhay["balance"]}')  # 0
-    deposit(udhay, 1000)
-    print(f'udhay current balance :{udhay["balance"]}')  # 1000
+
+    # Sai
+    sai = create_account()  # {'balance': 0}
+    print(f"\nSai initial balance   :{sai['balance']}")
+
+    deposit(sai, 3500)  # {'balance': 3500}
+    print(f"sai's current balance :{sai['balance']}")
+
+    withdrawl(sai, 550)  # {'balance': :2950}
+    print(f"sai's current balance :{sai['balance']}")
