@@ -52,6 +52,7 @@ deltalake = "^0.9.0"
 reportlab = "^4.0.0"
 pypdf2 = "^3.0.1"
 tablib = {extras = ["all"], version = "^3.4.0"}
+pandas = "^2.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
