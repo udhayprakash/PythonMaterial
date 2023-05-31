@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Dunder( Double underscore) Methods
 
@@ -8,6 +7,7 @@ print(num1 + 22)
 print(num1.__add__(22))
 
 assert num1 + 22 == num1.__add__(22)
+print()
 
 
 class Person:
@@ -18,18 +18,19 @@ class Person:
     def __add__(self, other):
         return Person(self.name, other.surname)
 
-    def __repr__(self) -> str:
-        # return f'{self.name} {self.surname}'
+    def __str__(self):
+        # return "Hello"
+        # return f"{self.name}_{self.surname}"
         return " ".join((self.name, self.surname)).title()
 
 
 father = Person("FatherName", "FatherSurname")
 print(father)
 
-
 mother = Person("MotherName", "MotherSurname")
 print(mother)
-
 print()
-print(mother + father)
+
+
 print(mother.__add__(father))
+print(mother + father)

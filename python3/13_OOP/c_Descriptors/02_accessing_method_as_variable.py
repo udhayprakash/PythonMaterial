@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: newly style classes better support property decorator
 
@@ -19,16 +18,25 @@ class Person:
     def full_name(self):
         return self.first + " " + self.last
 
+    @property
+    def full_name_in_upper_case(self):
+        # return (self.first + " " + self.last).upper()
+        return self.full_name.upper()
+
 
 person1 = Person("Udhay", "Prakash")
-print(person1.email())
-
 
 print(f"person1.first      :{person1.first}")
 print(f"person1.last       :{person1.last}")
 
+print(person1.email())
+print()
+
+# person1.full_name()
+# TypeError: 'str' object is not callable
+
 # After placing property decorator, method
 # should be accessed like a variable
 
-print(f"person1.full_name  :{person1.full_name}")
-# print(f'person1.full_name():{person1.full_name()}')  # TypeError: 'str' object is not callable
+print(f"{person1.full_name =}")
+print(f"{person1.full_name_in_upper_case =}")

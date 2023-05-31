@@ -1,10 +1,12 @@
-#!/usr/bin/python
 """
 Purpose: Single Inheritance
 
     One Parent
     Two child
 
+    car
+        volvo
+        Audi
 """
 
 
@@ -59,12 +61,15 @@ car1.Get_Engine()
 car1.Auto_Gear()
 car1.hello()
 
+
 car2 = Volvo("V189B", 22222, 33333, "Not Available")
 car2.Get_Chasis()
 car2.Get_Engine()
 
 car2.Auto_Drive()
 car2.hello()
+print()
+
 
 # Method Resolution Order
 print(Cars.__mro__)
@@ -75,6 +80,8 @@ print(Bmw.__mro__)
 
 print(Volvo.__mro__)
 # (<class '__main__.Volvo'>, <class '__main__.Cars'>, <class 'object'>)
+print()
+
 
 print(f"{issubclass(Bmw, Cars)= }")  # True
 print(f"{issubclass(Volvo, Cars)= }")  # True

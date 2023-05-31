@@ -26,5 +26,18 @@ class Cell(object):
 
 
 c = Cell()
+print(f"{c.alive =}")
+
+
+c.set_state(True)
+print(f"{c.alive =}")
+
 c.set_alive()
-print(c.alive)
+print(f"{c.alive =}")
+
+
+c.set_state(False)
+print(f"{c.alive =}")
+
+c.set_dead()
+print(f"{c.alive =}")

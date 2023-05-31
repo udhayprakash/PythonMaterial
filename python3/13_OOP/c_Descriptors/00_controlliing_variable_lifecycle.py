@@ -33,6 +33,7 @@ class subject:
 s = subject("udhay")
 print()
 
+print(f"{s.dozen = }")
 print(f"{s.name = }")
 print()
 
@@ -40,6 +41,7 @@ s.name = "Prakash"
 print(f"{s.name = }")
 print()
 
+# s.dozen =13
 print(vars(s))
 print(f"{s._name = }")
 # NOTE: These methods wont be called if we are accessing the Protected variables
@@ -47,6 +49,10 @@ print(f"{s._name = }")
 print("===========================")
 del s.name
 print(vars(s))
+
+# print(f"{s.name = }")   # AttributeError
+# print(f"{s._name = }")  # AttributeError
+
 try:
     s.name
 except AttributeError as ex:

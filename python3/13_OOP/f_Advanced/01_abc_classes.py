@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Abstract Classes
     - classes that contain one or more abstract methods.
@@ -6,6 +5,17 @@ Purpose: Abstract Classes
         - method that is declared, but contains no implementation.
     - Abstract classes cannot be instantiated, and require subclasses
       to provide implementations for the abstract methods.
+
+webScrapping
+    - tesla
+    MSFT
+
+
+    fotowebsite
+    getwebpage
+    getpdfs
+    extract the content
+    dumptodb
 """
 from abc import ABC, abstractmethod
 
@@ -105,6 +115,7 @@ try:
     a4 = AbstractClassExample4("Python")
 except TypeError as ex:
     print(ex)
+
 
 # Can't instantiate abstract class AbstractClassExample4 with abstract method say_hello
 

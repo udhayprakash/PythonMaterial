@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Usage of Dunder (magic or Double underscore) methods
 
@@ -40,11 +39,7 @@ class RationalNumber:
 
     __repr__ = __str__
 
-    def __del__(self):
-        print("deleting the instance")
 
-
-# Main
 a = RationalNumber(1, 2)  # a.n = 1,a.d=2
 b = RationalNumber(2)
 c = 29
@@ -55,11 +50,18 @@ print(isinstance(c, RationalNumber))  # False
 print(isinstance(c, int))  # True
 print()
 
+
 print(a.__add__(b))
 print(a + b)  # same as a.__add__(b)
 
+print(a.__add__(c))
+print(a + c)  # same as a.__add__(c)
+print()
+
+
 print(a.__sub__(b))
 print(a - b)  # same as a.__sub__(b)
+print()
 
 print(a.__str__())
 print(str(a))  # same as a.__str__()

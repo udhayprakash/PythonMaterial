@@ -168,6 +168,7 @@
     reprlib module
     creating context manager class
     Dataclasses
+    Abstract Classes
 
 14. Code Quality
     typing

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Context Manager
 """
@@ -13,9 +12,8 @@ f.close()
 with open("06_context_manager.txt", "w") as f:
     f.write("I am good")
 
+
 ##############################################
-
-
 class ManagedFile:
     def __init__(self, file_name, mode="r"):
         self.name = file_name

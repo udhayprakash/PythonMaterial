@@ -1,8 +1,16 @@
-# /usr/bin/python
 """
 Purpose: Creating custom iterator class using
   __iter__ and __next__
 """
+# mylist = [1, 2, 3, 4, 5]
+# print(mylist)
+
+# mylist_iter = iter(mylist)
+# print(mylist_iter)
+# print(next(mylist_iter))
+# print(next(mylist_iter))
+# print(next(mylist_iter))
+# print()
 
 
 class PowTwo:

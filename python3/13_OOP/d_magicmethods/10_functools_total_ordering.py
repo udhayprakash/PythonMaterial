@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: functools.total_ordering
     - provide a way to provide automatic comparison functions.

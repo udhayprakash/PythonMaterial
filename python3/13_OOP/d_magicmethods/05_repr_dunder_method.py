@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: __repr__
 """
@@ -19,6 +18,7 @@ class TheProblem:
 
 
 # NOTE: print will call __str__ if present, else __repr__
+
 
 p1 = TheProblem(range(50))
 print(p1)  # str is called
@@ -42,6 +42,10 @@ class Solution:
 
 p2 = Solution(range(50))
 print(p2)
+
+# print(
+#     f"{p1 =}"
+# )
 
 
 # --------------------------------------------

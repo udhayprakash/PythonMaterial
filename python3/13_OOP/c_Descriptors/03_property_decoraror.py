@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: newly style classes better support property decorator
 

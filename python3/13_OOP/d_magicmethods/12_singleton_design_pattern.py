@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: To create a class with singleton design pattern
     It means, If an instance of that class is already created,
@@ -18,13 +17,14 @@ class Singleton(Exception):
 
 
 s = Singleton()
-pprint(vars(Singleton))
+# pprint(vars(Singleton))
 print()
 
 # Doesnt allow to create second instance
-d = Singleton()
-
-# ----
+try:
+    d = Singleton()
+except Exception as ex:
+    print(ex)
 
 
 # Question: __new__ vs __init__
@@ -40,7 +40,6 @@ class Logger(object):
 
 
 l1 = Logger()
-pprint(vars(Logger))
 
 print(f"l1:{l1}")
 print(vars(l1))

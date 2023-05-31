@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Data classes
   Introduced in python 3.7 (with PEP 557) to reduce the boilerplate code
@@ -35,7 +34,6 @@ print(f"{a1 == a2 =}")
 
 # print(a.__repr__())
 # print(vars(a))
-
 print("-" * 40)
 
 

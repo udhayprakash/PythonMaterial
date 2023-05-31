@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Single Inheritance
 
@@ -30,8 +29,8 @@ class Account:
 
 
 # a1 = Account()
-# print(vars(a1))  # {'balance': 0}
-# print(dir(a1))   # ['balance',t' 'deposit', 'withdraw']
+# print(vars(a1))
+# print(dir(a1))
 
 
 class MinimumBalanceAccount(Account):
@@ -45,7 +44,7 @@ class MinimumBalanceAccount(Account):
 
     def withdraw(self, amount):
         if self.balance - amount < 100:
-            print("PLease maintain minimum balance. transaction failed!!!")
+            print("Please maintain minimum balance. transaction failed!!!")
         else:
             Account.withdraw(self, amount)
 
@@ -59,11 +58,15 @@ print(dir(a2))  # 'balance', 'deposit', 'withdraw'
 print(Account.__mro__)
 # (<class '__main__.Account'>, <class 'object'>)
 
+
 print(MinimumBalanceAccount.__mro__)
 # (<class '__main__.MinimumBalanceAccount'>, <class '__main__.Account'>, <class 'object'>)
 
 
 print(f"Initial balance     :{a2.balance}")
+print(dir(a2))
+print()
+
 a2.deposit(1300)
 print(f"After deposit(1300) :{a2.balance}")
 

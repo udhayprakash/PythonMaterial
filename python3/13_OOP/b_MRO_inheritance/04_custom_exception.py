@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Custom Exception Class
 """
@@ -6,8 +5,8 @@ Purpose: Custom Exception Class
 # raise Exception('this is error')
 
 
-# class InvalidAge(Exception):
-#     pass
+class InvalidAge(Exception):
+    pass
 
 
 # raise InvalidAge('your age is less than 18, to vote')

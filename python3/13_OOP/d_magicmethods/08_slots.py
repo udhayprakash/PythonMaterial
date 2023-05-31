@@ -1,11 +1,7 @@
-#!/usr/bin/python
 """
 Purpose: __slots__ importance
-
     pip install pympler --user
 """
-
-
 import sys
 
 from pympler.asizeof import asizeof
@@ -36,8 +32,7 @@ print()
 
 class SlottedClass:
     """
-    when __slots__ is present, it wont allow
-    to create dynamic attributes
+    when __slots__ is present, it wont allow to create dynamic attributes
     """
 
     __slots__ = ("foo", "bar")
@@ -73,8 +68,8 @@ print(f"{sys.getsizeof(o) =}")
 print(f"{sys.getsizeof(c) =}")
 
 # pympler.asizeof can be used to investigate how much memory
-# certain Python objects consume. In contrast to sys.getsizeof,
-# asizeof sizes objects recursively.
+# certain Python objects consume.
+# In contrast to sys.getsizeof, asizeof sizes objects recursively.
 
 print(f"{asizeof(o) =}")
 print(f"{asizeof(c) =}")
@@ -93,4 +88,7 @@ class B(A):
 
 
 a = A()
+print(dir(a))  #  'w', 'x', 'y', 'z'
+
 b = B()
+print(dir(b))  #  'w', 'x', 'y', 'z'

@@ -1,9 +1,8 @@
-#!/usr/bin/python
 """
 Purpose:
-In composition, we do not inherit from the base class
-but establish relationships between classes through the
-use of instance variables that are references to other objects.
+    In composition, we do not inherit from the base class
+    but establish relationships between classes through the
+    use of instance variables that are references to other objects.
 """
 
 
@@ -32,6 +31,9 @@ class MarsRoverComp:
 
 
 if __name__ == "__main__":
+    print(MarsRoverComp.__mro__)
+    # (<class '__main__.MarsRoverComp'>, <class 'object'>)
+
     m = MarsRoverComp("mars_rover2", "till Mars", "ISRO")
     # for each_attribute in dir(m):
     #     print(each_attribute)
@@ -44,6 +46,3 @@ if __name__ == "__main__":
 
     print(f"m.maker          :{m.maker}")
     print(m.get_maker())
-
-    print(f"{MarsRoverComp.__mro__ =}")
-    # (<class '__main__.MarsRoverComp'>, <class 'object'>)
