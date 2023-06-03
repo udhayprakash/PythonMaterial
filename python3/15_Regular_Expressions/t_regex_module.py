@@ -1,6 +1,8 @@
-#!/usr/bin/python
 """
-Purpose: Regular Expressions
+Purpose: Using regex module
+
+    pip install -U regex --user
+
 """
 import re
 
@@ -13,7 +15,7 @@ print(regex.findall(r"\p{L}+", "fox:αλεπού,eagle:αετός"))
 print(regex.findall(r"\p{Greek}+", "fox:αλεπού,eagle:αετός"))
 print(regex.findall(r"\p{Word}+", "φοο12,βτ_4,foo"))
 print(regex.sub(r"\P{L}+", r"", "φοο12,βτ_4,foo"))
-
+print()
 
 re.findall(r"[[:word:]]+", "fox:αλεπού,eagle:αετός", flags=re.A)
 regex.findall(r"[[:word:]]+", "fox:αλεπού,eagle:αετός", flags=re.A)

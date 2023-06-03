@@ -32,7 +32,6 @@ print(re.split(r"(,)", "apple,banana,orange,grape"))  # retains , too
 
 print("\n Splitting and excluding the delimiter")
 print(re.split(r"(?<=,)", "apple,banana,orange,grape"))
-
 print()
 
 print("\n Splitting by multiple delimiters")

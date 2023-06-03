@@ -24,6 +24,19 @@ print(re.sub(r"(SIX|SEVEN)", lambda res: res.group(1) + "teen", "FIVE,SIX,SEVEN,
 print(re.sub(r"(SIX|SEVEN)", r"\1teen", "FIVE,SIX,SEVEN,EIGHT"))
 print()
 
+text = """
+
+hello  hello
+goodbye
+bye   bye bye
+hello goodbye
+"""
+
+# To remove duplicate words, linewise
+pattern = r"(?P<word>\b\w+\b)\s+(?P=word)\b"
+result = re.sub(pattern, r"\g<word>", text)
+print(result)
+print()
 # --------------------------------------------
 counter = 1
 

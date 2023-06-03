@@ -1,32 +1,4 @@
-6. Pattern Matching
-
-Introduction
-
-# Note: regexes are used less often in Python than in Perl as tasks are often
-# covered by string methods, or specialised objects, modules, or packages.
-
-import re                   # "re" is the regular expression module.
-re.search("sheep",meadow)   # returns a MatchObject is meadow contains "sheep".
-if not re.search("sheep",meadow):
-    print "no sheep on this meadow only a fat python."
-# replacing strings is not done by "re"gular expressions.
-meadow = meadow.replace("old","new")   # replace "old" with "new" and assign result.
-#-----------------------------
-re.search("ovine",meadow)
-
-meadow = """Fine bovines demand fine toreadors.
-Muskoxen are polar ovibovine species.
-Grooviness went out of fashion decades ago."""
-
-meadow = "Ovines are found typically in ovaries."
-
-if re.search(r"\bovines\b",meadow,re.I) : print "Here be sheep!"
-#-----------------------------
-# The tricky bit
-mystr = "good food"
-re.sub("o*","e",mystr,1) # gives 'egood food'
-
-echo ababacaca | python -c "import sys,re; print re.search('(a|ba|b)+(a|ac)+',sys.stdin.read()).group()"
+echo ababacaca | python -c "import sys,re; print(re.search('(a|ba|b)+(a|ac)+',sys.stdin.read()).group())"
 #-----------------------------
 # pattern matching modifiers
 # assume perl code iterates over some file
@@ -36,21 +8,6 @@ for ln = fileinput.input():
     if len(fnd) > 0:
         print "Found number %s" % (fnd[0])
 # ----------------------------
-digits = "123456789"
-nonlap = re.findall("(\d\d\d)", digits)
-yeslap = ["not yet"]
-print "Non-overlapping:",",".join(nonlap)
-print "Overlapping    :",",".join(yeslap)
-# ----------------------------
-mystr = "And little lambs eat ivy"
-fnd = re.search("(l[^s]*s)", mystr)
-print "(%s) (%s) (%s)" % (mystr[:fnd.start()], fnd.group(), mystr[fnd.end():])
-# (And ) (little lambs) ( eat ivy)
-Copying and Substituting Simultaneously
-
-import re
-dst = re.sub("this","that",src)
-#-----------------------------
 # strip to basename
 basename = re.sub(".*/(?=[^/]+)","",progname)
 
@@ -129,7 +86,6 @@ Matching Words
 re.search("\Bis\B","this thistle") # matches on thistle not on this
 re.search("\Bis\B","vis-a-vis")    # does not match
 Commenting Regular Expressions
-
 #-----------------------------
 #!/usr/bin/python
 # resname - change all "foo.bar.com" style names in the input stream
@@ -265,10 +221,8 @@ if len(fnd):
     print "Last fish is %s." % (fnd[0])
 else:
     print "Failed!"
-Matching Multiple Lines
 
 # Matching Multiple Lines
-#
 #!/usr/bin/python
 # killtags - very bad html tag killer
 import re
@@ -299,7 +253,7 @@ for paragraph in text.split("\n"):   # split on unix end of lines
     print p
 ## ----------------------------
 # the one liner does not run.
-# python -c 'import sys,re; for p in open(sys.argv[1]).read().split("\n\n"): print re.sub(r"(?ms)\A(Chapter\s+\d+\s*:.*)","<h1>\g0</h1>",p)'
+# python -c 'import sys,re; for p in open(sys.argv[1]).read().split("\n\n"): print(re.sub(r"(?ms)\A(Chapter\s+\d+\s*:.*)","<h1>\g0</h1>",p))'
 ## ----------------------------
 match = re.compile(r"(?ms)^START(.*?)^END")
      # s makes . span line boundaries
@@ -310,7 +264,7 @@ for paragraph in open(sys.argv[1]).read().split("\n\n"):
     chunk += 1
     fnd = match.findall(paragraph)
     if fnd:
-        print "chunk %d in %s has <<%s>>" % (chunk,sys.argv[1],">>,<<".join(fnd))
+        print("chunk %d in %s has <<%s>>" % (chunk,sys.argv[1],">>,<<".join(fnd)))
 ## ----------------------------
 Reading Records with a Pattern Separator
 
@@ -325,7 +279,7 @@ pattern = r"x"
 chunks = re.split(pattern, open(sys.argv[1]).read())
 ##-----------------------------
 chunks = re.split(r"(?m)^\.(Ch|Se|Ss)$",open(sys.argv[1]).read())
-print "I read %d chunks." % (len(chunks))
+print(f"I read {len(chunks)} chunks.")
 # without delimiters
 chunks = re.split(r"(?m)^\.(?:Ch|Se|Ss)$",open(sys.argv[1]).read())
 
@@ -380,7 +334,7 @@ def extract_range(myfile, start, finish):
             break
 
 for line in extract_range(open("/etc/passwd"), 3, 5):
-    print line
+    print(line)
 
 def patterned_range(myfile, startpat, endpat=None):
     startpat = re.compile(startpat)
@@ -416,15 +370,14 @@ tests = (("list.?",r"^list\..$"),
 def glob2pat(globstr):
     pat = globstr.replace("\\",r"\\")
     pat = pat.replace(".",r"\.").replace("?",r".").replace("*",r".*")
-
     return "^"+pat+"$"
 
 for globstr, patstr in tests:
     g2p = glob2pat(globstr)
     if g2p != patstr:
-        print globstr, "failed! Should be", patstr, "but was", g2p
-Speeding Up Interpolated Matches
+        print(globstr, "failed! Should be", patstr, "but was", g2p)
 
+# Speeding Up Interpolated Matches
 
 # download the following standalone program
 #!/usr/bin/python
@@ -436,10 +389,7 @@ popstates = ["CO","ON","MI","WI","MN"]
 for line in fileinput.input():
     for state in popstates:
         if re.search(r"\b"+state+r"\b",line):
-            print line
-
-
-
+            print(line)
 #-----------------------------
 # download the following standalone program
 #!/usr/bin/python
@@ -468,9 +418,7 @@ popstates = ["CO","ON","MI","WI","MN"]
 state_re = re.compile(r"\b(?:"+"|".join(popstates)+r")\b")
 for line in fileinput.input():
     if state_re.search(line):
-        print line
-
-
+        print(line)
 #-----------------------------
 # download the following standalone program
 #!/usr/bin/python
@@ -494,17 +442,11 @@ any = build_match_any(("Tom","Nat"))
 all = build_match_all(("Tom","Nat"))
 for line in fileinput.input():
     if any.search(line):
-        print "any:", line
+        print("any:", line)
     if all(line):
-        print "all:", line
-
-
-
+        print("all:", line)
 #-----------------------------
-Testing for a Valid Pattern
-
 # Testing for a Valid Pattern
-
 import re
 while True:
     pat = input("Pattern? ")
@@ -524,7 +466,6 @@ def is_valid_pattern(pat):
     return True
 
 # ----
-
 # download the following standalone program
 #!/usr/bin/python
 # paragrep - trivial paragraph grepper
@@ -548,19 +489,14 @@ for filename in filter(os.path.isfile,sys.argv[2:]):
         for para in open(filename).read().split("\n\n"):
                 parano += 1
                 if pat_re.search(para):
-                        print filename, parano, para, "\n"
-
-
-
+                        print(filename, parano, para, "\n")
 # ----
-
 # as we dont evaluate patterns the attack ::
 #
 #   $pat = "You lose @{[ system('rm -rf *']} big here";
 #
 # does not work.
 Honoring Locale Settings in Regular Expressions
-
 
 # download the following standalone program
 #!/usr/bin/python
@@ -664,8 +600,6 @@ print re.findall("""
     """, re.VERBOSE, txt)
 ##-----------------------------
 Detecting Duplicate Words
-
-##-----------------------------
 text = """
 This is a test
 test of the duplicate word finder.
@@ -812,7 +746,6 @@ if re.match("""
 ##-----------------------------
 Matching Multiple-Byte Characters
 
-# @@INCOMPLETE@@
 # @@INCOMPLETE@@
 Matching a Valid Mail Address
 
@@ -1106,4 +1039,3 @@ for line in file(fname, "Ur"):          #Universal newlines
 # DON'T DO THIS
 lines = [re.sub(r"^([^\012\015]*)(\012\015?|\015\012?)", "", line)
          for line in file(fname)]
-##-----------------------------
