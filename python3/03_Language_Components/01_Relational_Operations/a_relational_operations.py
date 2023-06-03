@@ -62,3 +62,23 @@ num1 == 34
 34 == num1
 34 == 34
 34 == 67
+print()
+
+str1 = "abc"
+str2 = "abc"
+print(f"{str1 == str2 =}")
+print(f"{str1 >  str2 =}")
+print(f"{str1 >= str2 =}")
+print(f"{str1 <  str2 =}")
+print(f"{str1 <= str2 =}")
+print(f"{str1 != str2 =}")
+print()
+
+str1 = "abc"
+str2 = "bc"
+print(f"{str1 == str2 =}")
+print(f"{str1 >  str2 =}")
+print(f"{str1 >= str2 =}")
+print(f"{str1 <  str2 =}")
+print(f"{str1 <= str2 =}")
+print(f"{str1 != str2 =}")

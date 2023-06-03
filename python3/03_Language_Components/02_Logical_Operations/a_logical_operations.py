@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: Logical Operations
     - Will result in a boolean value (True or False)
