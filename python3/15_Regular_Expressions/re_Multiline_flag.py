@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import re
 
 string = "we had class on regular expressions\nThis is a python class.\nThe class is at 10pm IST"

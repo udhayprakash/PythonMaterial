@@ -1,7 +1,5 @@
-#!/usr/bin/python
 """
-purpose: regular expression  demo
-
+Purpose: ASCII, UNICODE, LOCALE flags
 """
 
 import re

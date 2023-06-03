@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: regular expression
 
@@ -13,29 +12,27 @@ Purpose: regular expression
 To escape any re operator in pattern, place a \ before it, or enclose in []
 """
 
+
 import re
 
 # identify decimal number
 print(re.findall(r"\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['12', '21323', '3', '23432', '234', '23', '234324', '0', '000003243']
+print()
 
 # only floating point values
-print(re.findall(r"\d+.\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['12 21323', '3 23432', '234 23', '234324', '0.000003243']
+print(re.findall(r"\d+.", "12 21323.3 23432.234 23.234324 -0.000003243"))
+print(re.findall(r"\d+\.", "12 21323.3 23432.234 23.234324 -0.000003243"))
+print()
 
 print(re.findall(r"\d+\.\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['21323.3', '23432.234', '23.234324', '0.000003243']
-
 print(re.findall(r"\d+[.]\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['21323.3', '23432.234', '23.234324', '0.000003243']
+print()
 
 # both integer and floating point values
 print(re.findall(r"\d+\.?\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['12', '21323.3', '23432.234', '23.234324', '0.000003243']
-
 print(re.findall(r"\d+[.]?\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
-# ['12', '21323.3', '23432.234', '23.234324', '0.000003243']
+print()
 
-re.findall(
-    "-?\d+[.]\d+", "12 21323.3 23432.234 23.234324 -0.000003243"
-)  # ngative floating point
+# negative floating point
+print(re.findall(r"-\d+[.]?\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))
+print(re.findall(r"-?\d+[.]?\d+", "12 21323.3 23432.234 23.234324 -0.000003243"))

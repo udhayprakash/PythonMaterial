@@ -13,6 +13,6 @@ hello goodbye
 """
 
 # To remove duplicate words, linewise
-pat = re.compile(r"^(?P<x>\S*) (\s+(?P=x)) +\s*$", re.MULTILINE)
-result = pat.sub("\g<x>", text)
+pat = re.compile(r"(?P<word>\S*) (\s+(?P=word)) +\s*$", re.MULTILINE)
+result = pat.sub("\g<word>", text)
 print(result)
