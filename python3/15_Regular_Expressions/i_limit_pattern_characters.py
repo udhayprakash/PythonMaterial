@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -16,10 +15,12 @@ result = re.search(".....", "PyTHOn Programming is good", re.I)
 if result:
     print(f"result.group():{result.group()}")
 
+
 # To get 5 characters, from start of string
 result = re.search("^.....", "PyTHOn Programming is good", re.I)
 if result:
     print(f"result.group():{result.group()}")
+
 
 # To get 5 characters, from end of string
 result = re.search(".....$", "PyTHOn Programming is good", re.I)
@@ -31,13 +32,20 @@ if result:
 result = re.search("^.....$", "PyTHOn Programming is good", re.I)
 print(f"result:{result}")  # None
 
+
 # To get the target string with 4 characters only
 result = re.search("^....$", "PyTHOn Programming is good", re.I)
 print(f"result:{result}")  # None
 
+
 # To get the target string with 5 characters only
 result = re.search("^.....$", "udhay", re.I)
 print(f"result:{result}")
+
+# To get the target string with 5 characters only
+result = re.search("\A.....\Z", "udhay", re.I)
+print(f"result:{result}")
+print()
 
 # To get the target string with 5 characters only
 result = re.search("^.....$", "udhaya", re.I)

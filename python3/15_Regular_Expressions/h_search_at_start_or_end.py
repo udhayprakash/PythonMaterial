@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: Regular Expressions
 
@@ -12,6 +11,7 @@ pattern
     \Z | Matches the expression to its left at the absolute end of a string whether in single or multi-line mode.
 
 """
+
 import re
 
 # Method 1 - using ^ and $
@@ -22,11 +22,14 @@ result = re.search("abc$", "ABC123abc", re.I)
 print(f"\nresult:{result}")
 if result:
     print(f"result.group():{result.group()}")  # abc
+print()
+
 
 result = re.search("^abc", "ABC123abc", re.I)
 print(f"\nresult:{result}")
 if result:
     print(f"result.group():{result.group()}")  # ABC
+print()
 
 # Method 2 - using \A and \Z
 result = re.search("abc\Z", "ABC123abc", re.I)
