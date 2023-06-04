@@ -4,6 +4,7 @@
 default_language_version:
   python: python3.11
 
+exclude: "python3/14_Code_Quality/python_2to3_ex.py|python3/01_Introduction/|python3/14_Code_Quality/00_static_code_analyses/"
 fail_fast: false
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -63,7 +64,7 @@ repos:
         language_version: python3
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.23.0 # checks for Github Actions CI config files
+    rev: 0.23.1 # checks for Github Actions CI config files
     hooks:
       - id: check-github-actions
       - id: check-github-workflows
@@ -86,5 +87,3 @@ repos:
   #     - id: bandit
   #       args: ["-ll"]
   #       files: .py$
-
-exclude: "python3/14_Code_Quality/python_2to3_ex.py|python3/01_Introduction/"

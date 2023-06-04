@@ -4,7 +4,6 @@ Purpose: Calculating simple area.
 
 """
 import doctest
-import math
 
 
 def power(x, y, /, mod=None):
