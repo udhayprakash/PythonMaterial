@@ -29,6 +29,12 @@ print(
         "I love apple pie, but not apple juice or apple cider.",
     )
 )
+print(
+    re.findall(
+        r"\w+(?=\d+)",
+        "apple apple123 ball ball3 cat45.5 dog",
+    )
+)
 
 print("\nNegative LookAhead")
 print(
@@ -37,6 +43,13 @@ print(
         "I love apple pie, but not apple juice or apple cider.",
     )
 )
+print(
+    re.findall(
+        r"\w+(?!\d+)",
+        "apple apple123 ball ball3 cat45.5 dog",
+    )
+)
+
 
 print("\nLookahead with Capturing Group")
 print(
@@ -64,3 +77,29 @@ urls = [
 pattern = r"(/[^/]+)(?=\b|$)"
 paths = [re.search(pattern, url).group(1) for url in urls]
 print(paths)
+print()
+
+# ------------------------------------------------
+print("\nPositive lookbehind assertion (?<=...)")
+result = re.findall(r"(?<=I love )\w+", "I love Python")
+print(result)
+
+print("\nNegative lookbehind assertion (?<!...)")
+result = re.findall(r"\b(?<!not )\w+\b", "I love Python, but not Java")
+print(result)
+print()
+
+# ------------------------------------------------
+# Matching the same text as a named group (?P=name):
+
+print(re.findall(r"(?P<word>\w+)\s(?P=word)", "apple apple apple"))
+print(re.findall(r"(?P<word>\w+)\s(?P=word)", "Hello Hello World World"))
+
+text = """
+    Server IP: 192.168.0.1, Client IP: 10.0.0.1
+    Server IP: 192.168.0.2, Client IP: 192.168.0.2
+    Server IP: 10.0.0.1, Client IP: 10.0.0.1
+"""
+pattern = r"Server IP: (?P<server_ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}), Client IP: (?P=server_ip)"
+results = re.findall(pattern, text)
+print(results)
