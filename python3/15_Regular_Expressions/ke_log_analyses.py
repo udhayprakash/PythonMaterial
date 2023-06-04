@@ -1,6 +1,5 @@
-#!/usr/bin/python
 """
-purpose: regular expression  demo
+Purpose: Log Analyses using regular expressions
 
 To get all CRITICAL level log lines in log file
 """

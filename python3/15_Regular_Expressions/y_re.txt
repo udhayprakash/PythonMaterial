@@ -36,10 +36,10 @@ Matching Letters
 #    remainder of this section too!]
 import re
 if re.match("^[A-Za-z]+$",line):
-    print "pure alphabetic"
+    print("pure alphabetic")
 ##---------------------------
 if re.match(r"^[^\W\d_]+$", line, re.LOCALE):
-    print "pure alphabetic"
+    print("pure alphabetic")
 ##---------------------------
 import re
 import locale
@@ -230,7 +230,7 @@ import sys
 
 text = open(sys.argv[1]).read()        # read the whole file
 text = re.sub("(?ms)<.*?>","",text)    # strip tags (terrible
-print text
+print(text)
 ## ----------------------------
 #!/usr/bin/python
 # headerfy: change certain chapter headers to html
@@ -250,7 +250,7 @@ match = re.compile(r"""(?xms)          # re.VERBOSE, re.MULTILINE, and re.DOTALL
 text = open(sys.argv[1]).read()        # read the whole file
 for paragraph in text.split("\n"):   # split on unix end of lines
     p = match.sub("<h1>\g<chapter></h1>",paragraph)
-    print p
+    print(p)
 ## ----------------------------
 # the one liner does not run.
 # python -c 'import sys,re; for p in open(sys.argv[1]).read().split("\n\n"): print(re.sub(r"(?ms)\A(Chapter\s+\d+\s*:.*)","<h1>\g0</h1>",p))'
@@ -401,12 +401,11 @@ popstates = ["CO","ON","MI","WI","MN"]
 state_re = []
 for state in popstates:
     state_re.append(re.compile(r"\b"+state+r"\b"))
+
 for line in fileinput.input():
     for state in state_re:
         if state.search(line):
-            print line
-
-
+            print(line)
 #-----------------------------
 # download the following standalone program
 #!/usr/bin/python
@@ -428,11 +427,13 @@ import re
 
 def build_match_any(words):
     return re.compile("|".join(words))
+
 def uniq(arr):
     seen = {}
     for item in arr:
         seen[item] = seen.get(item, 0) + 1
     return seen.keys()
+
 def build_match_all(words):
     r = re.compile("|".join(words))
     c = lambda line: len(uniq(r.findall(line)))>=len(words)
