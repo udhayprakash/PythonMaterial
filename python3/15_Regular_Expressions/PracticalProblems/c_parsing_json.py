@@ -14,6 +14,7 @@ payload_str = """{
 	}
 
 }"""
+
 # create pattern
 pattern = r""
 for each_node in "a/a1/b1/c1".split("/"):
