@@ -2,6 +2,8 @@
 """
 Purpose: Static Code Analyses, using pylint
 
+    pip install -U pylint --user
+
     python -m pylint script.py
 
 """

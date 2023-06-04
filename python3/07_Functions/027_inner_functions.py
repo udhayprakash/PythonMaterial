@@ -2,6 +2,8 @@
 """
 Purpose: Inner function example
     Scoping - LEGB
+
+    Inner Functions ACT as ENCAPSULATION
 """
 from math import pi  # Builtin
 

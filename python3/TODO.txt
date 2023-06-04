@@ -9,12 +9,6 @@ xml
 Encoding
     https://stackabuse.com/run-length-encoding/
 
-recursive functions
-    https://stackabuse.com/understanding-recursive-functions-with-python/
-        take diagram from this link
-inner/nested functions
-    https://stackabuse.com/python-nested-functions/
-
 modules
     https://stackabuse.com/python-circular-imports/
 

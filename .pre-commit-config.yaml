@@ -1,5 +1,9 @@
 # Pre-commit framework Configuration
 # See https://pre-commit.com for more information
+
+default_language_version:
+  python: python3.11
+
 fail_fast: false
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
