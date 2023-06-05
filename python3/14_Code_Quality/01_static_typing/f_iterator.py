@@ -1,12 +1,10 @@
-#!/usr/bin/python
 """
 Purpose: Static typing
 """
 from typing import Iterator
 
+
 # Using Dynamic typing
-
-
 def fib(n):
     a, b = 0, 1
     while a < n:

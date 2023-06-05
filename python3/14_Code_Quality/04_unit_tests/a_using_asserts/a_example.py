@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: unit testing using asserts
 
@@ -11,11 +10,13 @@ print(2 + 3 == 5)
 assert 2 + 3 == 5
 assert 2 + 3 == 5, "2+ 3 is Not resulting to 5"
 
+
 print(2 + 3 == 6)
 try:
     assert 2 + 3 == 6, "2+ 3 is Not resulting to 6"
 except AssertionError as ex:
     print(ex)
+
 
 try:
     assert 10 - 34 > 3

@@ -25,10 +25,13 @@ def hello2(name):
 
 
 print(dis.dis(hello2))
-
+print()
 
 # bytecode analyses
 
 bytecode = dis.Bytecode(hello2)
 for instr in bytecode:
     print(instr.opname)
+
+
+# Assignment : where compound operators are benifical

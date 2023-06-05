@@ -1,8 +1,6 @@
-#!/usr/bin/python
 """
 Purpose: Static typing with mypy
 
-from python 3.6, mypy will come builtin. no need to import
 """
 
 
@@ -21,4 +19,4 @@ def hello1(name: str) -> None:
 
 
 hello1("Python")
-hello1(321323)  # NO error
+# hello1(321323)  # NO error

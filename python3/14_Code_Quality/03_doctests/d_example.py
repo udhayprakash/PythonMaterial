@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Calculating simple area.
 

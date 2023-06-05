@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-
 def hello(name="world!"):
     """
     >>> hello()

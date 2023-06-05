@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Static typing
 """
@@ -9,18 +8,21 @@ my_data = ("Adam", 10, 5.7)
 print(f"{my_data =}")
 
 # Adding Typing
-my_data: Tuple[str, int, float] = ("Adam", 10, 5.7)
-print(f"{my_data =}")
+my_data2: Tuple[str, int, float] = ("Adam", 10, 5.7)
+print(f"{my_data2 =}")
+
 
 # --------------------------------
 # A list of integers
+
 # Traditional Approach
 numbers = [1, 2, 3, 4, 5, 6]
 print(f"numbers:{numbers}")
 
 # Adding Typing
-numbers: List[int] = [1, 2, 3, 4, 5, 6]
-print(f"numbers:{numbers}")
+numbers2: List[int] = [1, 2, 3, 4, 5, 6]
+print(f"numbers2:{numbers2}")
+
 
 # -------------------------------------
 # List of Tuples - Alias

@@ -1,6 +1,5 @@
-#!/usr/bin/python
 """
-Purpose: Calculating simple area.
+Purpose:
 
 """
 import doctest
@@ -34,3 +33,8 @@ def power(x, y, /, mod=None):
 if __name__ == "__main__":
     # doctest.testmod()
     doctest.testmod(optionflags=doctest.ELLIPSIS)
+
+
+# - python -m doctest e_example.py
+
+# Assigment : Generators check

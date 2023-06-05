@@ -3,6 +3,7 @@ import unittest
 # print(dir(unittest))
 # help(unittest)
 
+
 print(f"{2 + 3 == 5 = }")  # True
 assert 2 + 3 == 5
 
@@ -35,6 +36,7 @@ class TestCheck(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=4)
+
 
 """
 self.assertEqual(a, b) - Checks that a is equal to b

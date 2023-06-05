@@ -7,7 +7,7 @@ Purpose: Profiling with memory profiler
 from memory_profiler import profile
 
 
-# @profile
+@profile
 def func1():
     mylist1 = []
     for i in range(10_000):
@@ -16,7 +16,7 @@ def func1():
 
 @profile
 def memory_intensive():
-    small_list = [None] * 1000000
+    small_list = [None] * 10
     big_list = [None] * 10000000
     del big_list
     return small_list
@@ -43,3 +43,5 @@ if __name__ == "__main__":
     memory_intensive()
     my_func()
     my_func2()
+
+# Assignment : TRy for a method in a class, and entire class

@@ -1,8 +1,6 @@
-#!/usr/bin/python
 """
 Purpose: Static typing with mypy
 
-from python 3.6, mypy will come builtin. no need to import
 """
 
 
@@ -17,9 +15,9 @@ print(result)
 
 # -------------------------------
 # Method 2 : Adding Typing
-def hello(name: str) -> str:
+def hello2(name: str) -> str:
     return f"Hello {name}"
 
 
-result = hello("Python")
+result = hello2("Python")
 print(result)

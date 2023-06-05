@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Adding doctest
 """
@@ -12,6 +11,8 @@ def square(x):
     81
     >>> square(-9)
     81
+    >>> square(0.09)
+    0.0081
     >>> square(0.009)
     8.099999999999999e-05
     >>> square(-0.009)
@@ -23,4 +24,4 @@ def square(x):
 if __name__ == "__main__":
     doctest.testmod()
 
-    # print(f'{square(2) =}')
+    print(f"{square(2) =}")
