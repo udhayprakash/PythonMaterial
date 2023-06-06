@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Testing division functionality in calculator
 """

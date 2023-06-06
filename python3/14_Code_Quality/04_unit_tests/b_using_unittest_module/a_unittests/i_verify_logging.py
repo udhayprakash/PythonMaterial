@@ -1,7 +1,6 @@
 """
 Purpose:
 
-
 self.assertWarns(expected_warning, callable, *args, **kwargs) - Checks that the callable callable raises a warning of type expected_warning when called with the arguments args and keyword arguments kwargs.
 self.assertLogs(logger=None, level=None) - Checks that messages have been logged to the specified logger at the specified level. This method can be used to test logging output.
 self.assertWarnsRegex(expected_warning, regex, callable, *args, **kwargs) - Checks that the callable callable raises a warning of type expected_warning with a message that matches the regular expression regex when called with the arguments args and keyword arguments kwargs.

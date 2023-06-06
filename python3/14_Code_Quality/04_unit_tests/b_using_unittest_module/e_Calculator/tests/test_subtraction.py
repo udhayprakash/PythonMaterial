@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Testing subtraction functionality in calculator
 """

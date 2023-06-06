@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: unit testing with unittest module
 """
@@ -43,6 +42,6 @@ if __name__ == "__main__":
 # . Sucesss/ok
 # s - skipped
 # x - expected failure
-
+# F - Failure
 
 # OK (skipped=2, expected failures=1)

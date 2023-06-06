@@ -14,9 +14,10 @@ class TestAddition(unittest.TestCase):
         self.assertEqual(addition(10, 20), 30)
         self.assertEqual(addition(10, 20.0), 30.0)
         self.assertEqual(addition(10.0, 20), 30.0)
+        self.assertEqual(addition(10.0, 20.0), 30.0)
 
-    def test02_addition_positive(self):
-        print("In test case - test02_addition_positive")
+    def test02_addition_positive_critical(self):
+        print("In test case - test02_addition_positive_critical")
         self.assertEqual(addition(10.0, "20"), 30.0)
         self.assertEqual(addition("10.0", 20), 30.0)
         self.assertEqual(addition("10.0", "20"), 30.0)
@@ -24,8 +25,10 @@ class TestAddition(unittest.TestCase):
     @unittest.skip("skipping for some reason")
     def test03_addition_positive(self):
         print("In test case - test03_addition_positive")
-        assert addition(10, 20) == 30
+        # assert addition(10, 20) == 30
         self.assertAlmostEqual(addition(10, 20), 30)
+        self.assertAlmostEqual(addition(10, 20), 30.000000000001)
+        self.assertNotEqual(addition(10, 20), 31)
 
     def test04_addition_negative(self):
         if 2 < 3:  # conditional skipping
@@ -37,4 +40,4 @@ class TestAddition(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=True, failfast=False)

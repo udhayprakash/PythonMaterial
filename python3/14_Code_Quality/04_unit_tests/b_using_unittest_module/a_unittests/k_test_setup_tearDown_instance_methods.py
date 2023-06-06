@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: unit testing
 
@@ -6,6 +5,7 @@ Purpose: unit testing
         - born  - setup method
         - before death - tearDown method
 """
+
 
 import unittest
 
@@ -30,7 +30,6 @@ class TestCaseDemo(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-
 """
 setUp method execution ...
 In test01_something
@@ -43,10 +42,4 @@ tearDown method execution ...
 setUp method execution ...
 In test03_someotherthing
 tearDown method execution ...
-.
-----------------------------------------------------------------------
-Ran 3 tests in 0.001s
-
-OK
-
 """

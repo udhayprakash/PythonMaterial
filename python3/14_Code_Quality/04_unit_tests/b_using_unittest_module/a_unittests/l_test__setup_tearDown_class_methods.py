@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: unit testing
 
@@ -20,7 +19,6 @@ setupClass
 
 tearDownClass
 """
-
 
 import unittest
 
@@ -69,8 +67,5 @@ setUpClass method executed ...
         tearDown method execution ...
 .tearDownClass method executed ...
 
-----------------------------------------------------------------------
-Ran 3 tests in 0.001s
 
-OK
 """

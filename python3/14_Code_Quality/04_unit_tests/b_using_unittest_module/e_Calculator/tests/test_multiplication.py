@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Testing multiplication functionality in calculator
 """

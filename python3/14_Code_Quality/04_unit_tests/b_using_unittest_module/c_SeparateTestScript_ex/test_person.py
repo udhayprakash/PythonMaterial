@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: unit tests for person.py file
 """

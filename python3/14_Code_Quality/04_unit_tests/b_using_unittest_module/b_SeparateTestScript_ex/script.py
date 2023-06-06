@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-
 def add_one(x):
     """
     >>> add_one(33)
