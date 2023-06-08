@@ -1,0 +1,155 @@
+Contents of this server:
+
+/pub
+      all publicly accessable data on this server
+
+/pub/os
+	Several operating system trees
+
+/pub/os/BSD/
+	Trees for FreeBSD, NetBSD and OpenBSD
+
+/pub/os/BSD/FreeSBIE
+	A live CD based on FreeBSD
+
+/pub/os/Linux
+	Lots of Linux material
+
+/pub/os/Linux/system
+	General Linux related system software: the kernel, lilo
+
+/pub/os/Linux/distr
+	Many Linux distributions including Mandrake, Fedora, RedHat, Knoppix,
+	Debian, Slackware, ...
+
+/pub/os/Linux/doc
+	Linux Documentation
+
+/pub/documents
+	Trees with FAQs, Internet RFCs and other published materials
+
+/pub/editors
+	Trees for Ted (RTF editor) and Vim
+
+/pub/games/pinball
+	Pinball information
+
+/pub/crypto
+	Trees with crypto material, such as PGP
+
+/pub/languages
+	Trees for several programming languages: GCC, Python, Perl and the
+	Perl CPAN archive, tcl, java JDK
+
+/pub/comp
+	Trees for Next and Apple OS X
+
+/pub/graphics
+	Trees with the Gimp and ImageMagick
+
+/pub/internet
+	Trees with Internet software: apache, lynx, mozilla, squid and
+	information from/about W3C and inn.
+
+/pub/mail
+	Trees with mail handling software, such as metamail, mutt,
+	postfix, sendmail and vm
+
+/pub/networking
+	Trees with networking software: IPv6, kermit, ntop, samba
+
+/pub/office
+	Office oriented software (e.g. OpenOffice)
+
+/pub/security
+	Security and privacy related software: OpenCA, OpenSSH, the COAST
+	document archive, gnupg, modssl, openssl, ssh, tcpwrappers
+
+/pub/textproc
+	Trees with text processing software: TeX, ispell, dictionaries
+
+/pub/borland
+	Borland provided data
+
+/pub/infomac
+	Material from infomac
+
+/pub/mcafee
+	Material provided by McAfee
+
+/pub/netscape
+	Material provided by Netscape
+
+/pub/simtel
+	Material from the SimTel archives
+
+/pub/gnu
+	mirror of the GNU site
+
+/pub/ibiblio
+/pub/metalab
+/pub/sunsite
+	Quick links to a lot of SunSite/Metalab/ibiblio Linux data
+
+/pub/windows/X
+	The X window system: Releases and contribs
+
+/pub/FreeBSD
+/pub/NetBSD
+/pub/OpenBSD
+/pub/ImageMagick
+/pub/vim
+/pub/knoppix
+	All Quick links deeper in the tree
+ion from/about W3C and inn.
+
+/pub/mail
+	Trees with mail handling software, such as metamail, mutt,
+	postfix, sendmail and vm
+
+/pub/networking
+	Trees with networking software: IPv6, kermit, ntop, samba
+
+/pub/office
+	Office oriented software (e.g. OpenOffice)
+
+/pub/security
+	Security and privacy related software: OpenCA, OpenSSH, the COAST
+	document archive, gnupg, modssl, openssl, ssh, tcpwrappers
+
+/pub/textproc
+	Trees with text processing software: TeX, ispell, dictionaries
+
+/pub/borland
+	Borland provided data
+
+/pub/infomac
+	Material from infomac
+
+/pub/mcafee
+	Material provided by McAfee
+
+/pub/netscape
+	Material provided by Netscape
+
+/pub/simtel
+	Material from the SimTel archives
+
+/pub/gnu
+	mirror of the GNU site
+
+/pub/ibiblio
+/pub/metalab
+/pub/sunsite
+	Quick links to a lot of SunSite/Metalab/ibiblio Linux data
+
+/pub/windows/X
+	The X window system: Releases and contribs
+
+/pub/FreeBSD
+/pub/NetBSD
+/pub/OpenBSD
+/pub/ImageMagick
+/pub/vim
+/pub/knoppix
+	All Quick links deeper in the tree
