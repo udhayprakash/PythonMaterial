@@ -1,5 +1,16 @@
 from unittest.mock import Mock
 
+mock = Mock()
+print(mock)
+
+print(f"{mock.name          =}")
+print(f"{mock.age           =}")
+print(f"{mock.salary        =}")
+print(f"{mock.absent_days   =}")
+print(f"{mock.roles         =}")
+print()
+
+
 mock = Mock(
     name="Udhay",
     age=25,
@@ -7,7 +18,7 @@ mock = Mock(
     absent_days=None,
     roles=["SE", "Architect"],
 )
-print(mock)  # <Mock id='1782551724960'>
+print(mock)
 
 print(f"{mock.name          =}")
 print(f"{mock.age           =}")
@@ -26,6 +37,7 @@ mock = Mock(return_values=10)
 mock(1)
 mock(1, 4)
 mock(1, 4, foo="bar")
+
 
 print(f"\n{mock.return_value  =}")
 print(f"{mock.return_values =}")
