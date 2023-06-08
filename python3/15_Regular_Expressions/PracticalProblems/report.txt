@@ -1,0 +1,19 @@
+***********************************************************
+Date/Time:    6/5/2023
+FileName:    somefile.txt
+Report:        Standard Report
+***********************************************************
+Success:    1234
+Failures:    1234
+
+RowID:    100
+Name:    Smith, John
+    This person did not meet the criteria because of x,y,z.
+RowID:    101
+Name:    Smith, Susie
+    This is a warning.
+    This is an error.
+    Criteria was not met.
+RowID:    103
+Name:    Jones, Bob
+    This person had invalid characters in the email field.
