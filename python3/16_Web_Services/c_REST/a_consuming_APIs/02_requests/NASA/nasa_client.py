@@ -44,12 +44,10 @@ for each in response_data.get("collection").get("items"):
 for each_image_url in image_urls:
     response_image = requests.get(each_image_url)
     image_name = each_image_url.split("/")[-1]
-    print("response.headers['content-type']", response.headers["content-type"])
-    with open(f"{image_name}", "w") as g:
-        g.write(response_image.text.encode("utf-8"))
-        g.close()
-
-response = requests.get("")
+    if response.headers["content-type"] == "application/json":
+        with open(f"{image_name}", "wb") as g:
+            g.write(response_image.content)
+            g.close()
 
 # image of day: https://api.nasa.gov/planetary/apod?api_key=jdm0WrfEUq3rfZnUP8XYhvAU7QEnG7SUNY1lmiHP
 
