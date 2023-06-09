@@ -1,0 +1,7 @@
+webscrapping is same as download a web page(s); but, in our desired format.
+
+The first step to web scrapping is the web scanning.
+
+web scanning involves:
+1. Reaching the desired web page.
+2. Identifying the details to the web page.
