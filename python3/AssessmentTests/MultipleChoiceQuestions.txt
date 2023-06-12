@@ -1,0 +1,223 @@
+Q) Which of the following suspends execution in the enter and exit methods?
+	a) async def
+	b) await
+	c) async for
+	d) async with
+
+Ans)  d
+
+Q) Which of the following command line utilities is used to create executable Python zip applications?
+	a) zipapp
+	b) pyzip
+	c) tar
+	d) zipex
+
+Ans) a
+
+Q) Which of the following is NOT a feature of the traceback module?
+	a) It traces down and returns the relationship between the objects and the functions they invoke.
+	b) The traceback result supports both positive and negative limits
+	c) It helps to handle stack traces of Python programs
+	d) It prints the traceback result similar to the one from the Python interpreter
+Ans) c
+
+Q) Which of the following functions will execute a command in the operating system, wait for completion, and return the CompletedProcess instance once the execution is done?
+
+	a) subprocess.exec()
+	b) subprocess.process()
+	c) subprocess.run()
+	d) subprocess.cmd()
+
+Ans) c
+
+Q) Which of the following math functions can find whether two given numbers are approximately equal or not based on the given tolerance for difference?
+	a) math.equals
+	b) math.isclose()
+	c) math.approx()
+	d) math.valid()
+Ans) b
+
+Q) Which of the following functions will retrun DirEntry objects instead of strings while trying to list the contents of the directory?
+	a) os.files()
+	b) os.dirs()
+	c) os.listdir()
+	d) os.scandir()
+Ans) d
+
+Q) Unpackings can't be a part of function calls and display statements.
+	a) True
+	b) False
+
+Ans) b
+
+Q) Which of the following is a valid infix operator which can be used for matrix multiplication?
+	a) @
+	b) X
+	c) .
+	d) []
+
+Ans) a
+
+Q) Which of the following expressions is used to suspend the execution of a co-routine until a response is received?
+	a) suspend
+	b) wait
+	c) pause
+	d) await
+
+Ans) d
+
+Q) Which of the following statements about Python memory management is FALSE?
+	a) Python uses private heap space for memory management.
+	b) Programmers have full control over Python heap space.
+	c) Python memory manager allocates heap space for Python objects.
+	d) Raw memory allocator verifies the availability of space in the private heap for Python objects.
+
+Ans) a
+
+Q) Based on the code snippet below, which of the following will be the output when executed in the interactive mode?
+Line1: >>>a="Welcome"
+Line2: >>>b="Welcome"
+Line3: >>>c="Good-Bye"
+Line4: >>>d="Good-Bye"
+Line5: >>>a is b
+Line6: >>>c is d
+	a) True, False
+	b) False, True
+	c) False, False
+	d) Error at Line 5 and 6: Invalid keyword "is"
+
+Ans) a
+
+Q) Python 3.5 does NOT support Unicode characters
+	a) True
+	b) False
+
+Ans) b
+
+Q) Which of the following is called as a slicing operator in Python?
+	a) ...
+	b) **
+	c) ""
+	d) :
+
+Ans) d
+
+A) Based on the code snippet below, which of the following will be output?
+
+Line 1: for i in range(3):
+Line 2: print(i)
+Line 3: else:
+Line 4: print("Done!")
+
+	a)  1
+		2
+		3
+	b) 	0
+		1
+		2
+	c) 	0
+		1
+		2
+		Done!
+	d) Error at Line 3: Else without if block
+Ans) c
+
+Q) Based on the coe snippet below, which of the following will be the output?
+
+Line1: x=3+2j
+Line2: y=3-2j
+Line3: z=x+y
+Line4: print(z)
+
+	a) 6
+	b) Error at Line 3: Can't add complex numbers
+	c) Error at Line 3: Invalid expressions
+	d) (6+0j)
+Ans) d
+
+Q) Based on the code snippet below, which of the following will be the output?
+Line1: names=['a','b','c']
+Line2: names_copy=names
+Line3: names_copy[2]='h'
+Line4: print(names)
+Line5: print(names_copy)
+
+	a) 	['a','b','c']
+		['a','b','h']
+	b) 	['a','b','h']
+		['a','b','h']
+	c) 	['a','b','c']
+		['a','b','c']
+	d) 	['a','b','h']
+		['a','b','c']
+Ans) b
+
+Q) Which of the following code snippets is a valid usage fo constructors?
+
+	a) 	class Test:
+			def init(self, name):
+				print(name)
+		t = Test("Joe")
+	b) 	class Test:
+			def Test(self, name):
+				print(name)
+		Test t=new Test("Joe")
+	c) 	class Test:
+			def __init__(self, name):
+				print(name)
+		t = Test(this, "Joe")
+	d) 	class Test:
+			def __init__(self, name):
+				print(name)
+		t = Test("Joe")
+
+Ans) d
+
+Q) Which of the following is used for commenting a single line in Python?
+	a) !--
+	b) /* */
+	c) #
+	d) //
+
+Ans) c
+
+Q) Which of the following will be the output of the code snippet below?
+Line1 >>> def welcome(name):
+Line2 ... retrun "Welcome "+name, "Good-Bye "+name
+Line3 ...
+Line4 >>> wish = welcome("Joe")
+Line5 >>> print(wish)
+
+	a) Error at Line 2: Return statement cannot return more than one value
+	b) ('Welcome Joe')
+	c) ('Good Bye Joe')
+	d) ('Welcome Joe', 'Good Bye Joe')
+
+Ans) d
+
+Q) Which of the following statements will NOT print all the elements of the list below in alphabetical order?
+
+>>>letters=["d","e","a","g","b"]
+
+	a) 	letters.sort()
+		print(letters[:])
+	b) 	letters.sort()
+		print(letters[0:])
+	c) 	letters.sort()
+		print(letters[:-3])
+	d) 	letters.sort()
+		print(letters[:10])
+
+Ans) c
+
+Q) Based on the code snippet below, which of the following will be the output order of numbers?
+
+Line 1 >>>numbers=(22,33,66,11,99,44,88,22,55,77)
+>>>numbers
+
+	a) Set([11,22,22,33,44,55,66,77,88,99]
+	b) Set([11,22,33,44,55,66,77,88,99])
+	c) Error at Line 1: Duplicate number not allowed in sets
+	d) The output order cannot be determined
+
+Ans) d
