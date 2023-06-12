@@ -33,5 +33,18 @@ bytecode = dis.Bytecode(hello2)
 for instr in bytecode:
     print(instr.opname)
 
+"""
+Breaking a .py file into a tree of "tokens"
 
+python3 -m tokenize helloworld.py
+
+Turning that into an "abstract syntax tree"
+
+python3 -m ast helloworld.py
+
+Then "disassembling" that to bytecode
+
+python3 -m dis helloworld.py
+
+"""
 # Assignment : where compound operators are benifical

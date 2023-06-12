@@ -1,3 +1,7 @@
+"""
+Purpose:
+
+"""
 from http.server import BaseHTTPRequestHandler
 
 

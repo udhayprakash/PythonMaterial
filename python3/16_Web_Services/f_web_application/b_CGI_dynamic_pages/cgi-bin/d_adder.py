@@ -1,4 +1,8 @@
-#!/usr/bin/python
+"""
+Purpose: CGI
+    CGI - Common Gateway Interface
+
+"""
 import cgi  # NEW
 
 
