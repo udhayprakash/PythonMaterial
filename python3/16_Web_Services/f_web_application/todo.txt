@@ -4,18 +4,19 @@ help to find the managers and number of reportees to each manager
 
 Sample API Response :
 
-{"emp_list":[
-{ "A":"C" },
-{ "B": "C" },
-{ "C": "F" },
-{ "D": "E" },
-{ "E": "F" },
-{ "F": "F" }]
+{
+    "emp_list":[
+        { "A":"C" },
+        { "B": "C" },
+        { "C": "F" },
+        { "D": "E" },
+        { "E": "F" },
+        { "F": "F" }
+    ]
 }
 
 In this example C is manager of A,
-C is also manager of B, F is manager
-of C and so on.
+C is also manager of B, F is manager of C and so on.
 
 
 Write a function to get no of employees under each manager in the hierarchy

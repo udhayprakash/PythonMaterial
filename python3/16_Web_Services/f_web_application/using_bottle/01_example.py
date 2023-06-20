@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Creating a REST API using bottle framework
 """
