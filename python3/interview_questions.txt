@@ -340,3 +340,11 @@ Q31) What is the result of this program:
     methods = str.swapcase(method[:-1])
     x(methods)
 Ans) METHOD
+
+
+Q32) What statement best describes the gang of four design patterns called memento and observer
+
+    a) Memento captures and restores and objects internal state whereas observer notifies multiple classes of changes
+    b)   Momento Alterss and objects behaviour when its state changes. Observer encapsulates an algorithm inside a class
+    c) Mamunto defers the exact steps of an algorithm to a subclass. Observer defines a new
+Ans) a
