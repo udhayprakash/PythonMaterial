@@ -57,6 +57,7 @@ avro = "^1.11.1"
 sklearn = "^0.0.post5"
 memory-profiler = "^0.61.0"
 graphene = "^3.2.2"
+plotext = "^5.2.8"
 
 
 [tool.poetry.group.dev.dependencies]
