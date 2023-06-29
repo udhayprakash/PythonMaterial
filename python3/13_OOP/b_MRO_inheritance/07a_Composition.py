@@ -1,8 +1,11 @@
 """
-Purpose:
+Purpose: Composition
+
     In composition, we do not inherit from the base class
     but establish relationships between classes through the
     use of instance variables that are references to other objects.
+
+    composition is used as an alternative to inheritance to achieve loose coupling between classes.
 """
 
 
