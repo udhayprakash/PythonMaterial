@@ -64,22 +64,22 @@ repos:
         language_version: python3
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.23.1 # checks for Github Actions CI config files
+    rev: 0.23.2 # checks for Github Actions CI config files
     hooks:
       - id: check-github-actions
       - id: check-github-workflows
 
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.3.0
-    hooks:
-      - id: mypy
-        files: ^01_static_typing/
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v1.4.1
+  #   hooks:
+  #     - id: mypy
+  #       files: ^01_static_typing/
 
-  - repo: https://github.com/pypa/pip-audit
-    rev: v2.5.6
-    hooks:
-      - id: pip-audit
-        # args: ["-r", "requirements.txt"]
+  # - repo: https://github.com/pypa/pip-audit
+  #   rev: v2.6.0
+  #   hooks:
+  #     - id: pip-audit
+  #       # args: ["-r", "requirements.txt"]
 
   # - repo: https://github.com/PyCQA/bandit
   #   rev: 1.7.5
