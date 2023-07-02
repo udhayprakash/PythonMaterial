@@ -51,3 +51,12 @@ def admin():
 
 if __name__ == "__main__":
     app.run(debug=False)
+
+# curl http://127.0.0.1:5000/echo
+# curl http://127.0.0.1:5000/echo?message=Hello%20World
+# curl http://127.0.0.1:5000/echo?message=Hello%20World&extra_param=value
+
+
+# curl -X POST -H "Content-Type: application/json" -H "Admin-Auth: 1234" -d '{"banner": true}' http://127.0.0.1:5000/set_banner
+# curl -X POST -H "Content-Type: application/json" -d '{"banner": true}' http://127.0.0.1:5000/set_banner
+# curl -X POST -H "Content-Type: application/json" -d '{"banner_text": "Welcome to our website!"}' http://127.0.0.1:5000/set_banner
