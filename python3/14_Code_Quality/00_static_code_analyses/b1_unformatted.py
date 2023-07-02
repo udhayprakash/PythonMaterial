@@ -1,8 +1,8 @@
 # Unused import
-import sys
+import os
 # Enforcing consistent import order
 import sys
-import os
+
 # Detecting unused variables
 
 
