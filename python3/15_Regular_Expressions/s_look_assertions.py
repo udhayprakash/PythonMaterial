@@ -1,19 +1,21 @@
 """
 Purpose: Look assertion
+                = Positive
+                ! Negative
 
-        1) Positive Lookahead   (?=...)
+        1) Positive Lookahead   (?=pattern)
             - Matches if the pattern inside the lookahead assertion is present ahead.
             - Ex: apple(?= pie) matches "apple" only if it is followed by the word "pie".
 
-        2) Negative Lookahead   (?!...)
+        2) Negative Lookahead   (?!pattern)
             - Matches if the pattern inside the lookahead assertion is not present ahead.
             - Ex: apple(?! pie) matches "apple" only if it is not followed by the word "pie".
 
-        3) Positive Lookbehind   (?<=...)
+        3) Positive Lookbehind   (?<=pattern)
             - Matches if the pattern inside the lookbehind assertion is present behind.
             - Ex: (?<=good )morning matches "morning" only if it is preceded by the word "good".
 
-        4) Negative Lookbehind   (?<=...)
+        4) Negative Lookbehind   (?<=pattern)
             - Matches if the pattern inside the lookbehind assertion is not present behind.
             - Ex: (?<!not )good morning matches "good morning" only if it is not preceded by the word "not".
 

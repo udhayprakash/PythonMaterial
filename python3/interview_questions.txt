@@ -348,3 +348,18 @@ Q32) What statement best describes the gang of four design patterns called memen
     b)   Momento Alterss and objects behaviour when its state changes. Observer encapsulates an algorithm inside a class
     c) Mamunto defers the exact steps of an algorithm to a subclass. Observer defines a new
 Ans) a
+
+Q33) Which relationship best illustrates an abstract concrete class relationship
+
+    a) Cat kitten
+    b) Planet Moon
+    c) Truck window
+    d) Colour red
+Ans) a
+
+Q34) What is the reference to an object
+    a) It is a shallow pointer that contains address of an object
+    b) It is a physical address of an object
+    c) It is the address where the variables and methods of an object are stored
+    d) It is address of a variable only; not the methods of an object
+Ans) a
