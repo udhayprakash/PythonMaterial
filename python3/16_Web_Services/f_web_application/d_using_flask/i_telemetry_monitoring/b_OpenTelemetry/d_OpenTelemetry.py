@@ -1,9 +1,10 @@
-#!/usr/bin/python
 """
 Purpose:
-    OpenTelemetry promises to solve this complexity by providing a vendor-agnostic
-    standard for observability, allowing users to decouple instrumentation and
+    OpenTelemetry provides a vendor-agnostic standard for observability,
+    allowing users to decouple instrumentation and
     routing from storage and query.
+
+    pip install opentelemetry-api opentelemetry-sdk
 
 """
 from random import randint
@@ -20,7 +21,6 @@ provider.add_span_processor(processor)
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
-# pip install opentelemetry-api opentelemetry-sdk
 
 app = Flask(__name__)
 
@@ -78,7 +78,7 @@ def roll_sum(sides, rolls):
 
 
 if __name__ == "__main__":
-    app.run(debug=false, port=8081)
+    app.run(debug=False, port=8081)
 
 
 # curl "http://127.0.0.1:8081/roll?sides=10&rolls=1"
