@@ -6,16 +6,6 @@ Purpose: Abstract Classes
     - Abstract classes cannot be instantiated, and require subclasses
       to provide implementations for the abstract methods.
 
-webScrapping
-    - tesla
-    MSFT
-
-
-    fotowebsite
-    getwebpage
-    getpdfs
-    extract the content
-    dumptodb
 """
 from abc import ABC, abstractmethod
 

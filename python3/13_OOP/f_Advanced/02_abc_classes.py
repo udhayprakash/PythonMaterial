@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: Abstract Base classes
 

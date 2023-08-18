@@ -1,22 +1,19 @@
+"""
+Making your class extend ABC forbids creation of objects of this type.
+This type serves as abstract superclass that guarantees that all its
+subclasses that will ever exist will have certain methods in them.
+
+Shape hierarchy is a standard example of class inheritance, other
+than the Animal class hierarchy, both quite a bit cliched. But all
+cliches became that way by being so good that everybody and their
+brother kept using them!
+"""
 from abc import ABC, abstractmethod
-
-# Making your class extend ABC forbids creation of objects of this type.
-# This type serves as abstract superclass that guarantees that all its
-# subclasses that will ever exist will have certain methods in them.
-
-# Shape hierarchy is a standard example of class inheritance, other
-# than the Animal class hierarchy, both quite a bit cliched. But all
-# cliches became that way by being so good that everybody and their
-# brother kept using them!
 
 
 class Shape(ABC):
-    # A class attribute, so the same value is shared by everyone.
     count = 0
 
-    # This method is executed automatically at every object creation.
-    # Even though Shape is an abstract class, subclass objects can
-    # still be created, and we want them to count as Shapes.
     def __init__(self):
         Shape.count += 1
 
@@ -25,7 +22,6 @@ class Shape(ABC):
     # be totally reasonable in some situations.)
     @abstractmethod
     def name(self):
-        # Python do-nothing statement for situations like this.
         pass
 
     @abstractmethod
@@ -120,10 +116,13 @@ if __name__ == "__main__":
     # Let's create some objects to demonstrate how classes work.
     r1 = Rectangle(2, 3)
     print(f"Created: {r1}.")
+
     r2 = Rectangle(5, 5)
     print(f"Created: {r2}.")
+
     c = Circle(10)
     print(f"Created: {c}.")
+
     d = Circle(5)
     print(f"Created: {d}.")
 
@@ -141,8 +140,7 @@ if __name__ == "__main__":
 
     # First, take the original names for safekeeping.
     tmp1, tmp2 = c.name, c.area
-    # Lambdas can be defined to take no parameters, thus behaving
-    # essentially as data.
+    # Lambdas can be defined to take no parameters, thus behaving essentially as data.
     c.name = lambda: "Bob"
     c.area = lambda: randint(1, 100)
     print(f"\nObject c is now: {c}")  # Bob
@@ -156,8 +154,7 @@ if __name__ == "__main__":
     # Demonstrate an object decorator in action.
     s1 = Scaled(r1, 2)
     print(f"Created: {s1}.")
-    # Why not? Scalers are shapes, same way as any other shape.
-    # Therefore they can be further decorated.
+    # Why not? Scalers are shapes, same way as any other shape. Therefore they can be further decorated.
     s2 = Scaled(s1, 3)
     print(f"Created: {s2}.")
 

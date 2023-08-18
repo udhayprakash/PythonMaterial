@@ -363,3 +363,63 @@ Q34) What is the reference to an object
     c) It is the address where the variables and methods of an object are stored
     d) It is address of a variable only; not the methods of an object
 Ans) a
+
+
+Does Python have OOps concepts?
+Explain how to delete a file in Python?
+Explain how you can set up the Database in Django
+Explain Python Functions?
+How are arguments passed by value or by reference?
+How can we make forms in Python?
+How can you generate random numbers in Python?
+How do you copy an object in Python?
+How do you debug a Python program?
+How do you insert an object at a given index in Python?
+How is memory managed in Python?
+How is Python an interpreted language?
+How to comment multiple lines in python?
+How to create a Unicode string in Python?
+How to install Python on Windows and set path variable?
+How to remove leading whitespaces from a string in the Python?
+How to remove values to a python array?
+How to remove whitespaces from a string in Python?
+How Will You Understand Dimensions and Measures?
+Is Python a compiled language or an interpreted language?
+What are decorators in Python?
+What are Dict and List comprehensions?
+What are functions in Python?
+What are global, protected and private attributes in Python?
+What are iterators in Python?
+What are modules and packages in Python?
+What are negative indexes and why are they used?
+What are python modules?
+What are Python’s dictionaries?
+What are the applications of Python?
+What are the common built-in data types in Python?
+What are the different file processing modes supported by Python?
+What are unittests in Python?
+What do you mean by Python literals?
+What is a dictionary in Python?
+What is a dynamically typed language?
+What is a function in Python programming?
+What is a negative index in Python?
+What is docstring in Python?
+What is GIL in Python?
+What is monkey patching?
+What is Python?
+What is self in Python?
+What is slicing in Python?
+What is swapcase function in Python?
+What is the difference between an array and a list?
+What is the difference between NumPy and SciPy?
+What is the difference between Python Arrays and lists?
+What is the difference between range & xrange?
+What is the maximum possible length of an identifier?
+What is the pass statement in Python?
+What is the process of compilation and linking in python?
+What is the usage of enumerate () function in Python?
+What is the use of break statement?
+What is the Use of Dual-axis? How Do You Create One?
+What is type conversion in Python?
+What type of language is python? Programming or scripting?
+Which one of these is floor division?

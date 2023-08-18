@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose:
     An abstract class exists only so that other "concrete"
