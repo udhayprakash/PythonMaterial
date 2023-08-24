@@ -1,32 +1,40 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
+cache = [{"fruit": "mango"}, {"fruit": "apple"}]  # O(N)
+
+# cache = {
+#     "fruit": "mango",   # O(1)
+# }
+
 
 @app.get("/")
-async def hello():
-    return {"Hello": "World"}
+async def default_endpoint():
+    return {"status": "Hellowold"}
 
 
-@app.get("/component/{component_id}")
-async def get_component(component_id):
-    return {"component_id": component_id}
+@app.get("/cache")
+async def cache_endpoint():
+    return {"cache": cache}
+
+
+@app.post("/cache")
+async def cache_add(key, value):
+    if {key: value} in cache:
+        return {"status": "Already existng", "cache": cache}
+
+    cache.append({key: value})
+    return {"status": "Added Item", "cache": cache}
+
+
+@app.delete("/cache")
+async def cache_delete(key, value):
+    for record in cache:
+        if {key: value} == record:
+            cache.remove(record)
+            return {"status": "delete an element", "cache": cache}
+    return HTTPException(status_code=404, detail="Item not found")
 
 
 # python -m uvicorn project1:app --reload
-
-
-# http://127.0.0.1:8000/openapi.json
-# http://127.0.0.1:8000/docs
-# http://127.0.0.1:8000/redoc
-
-"""`
-~!curl 127.0.0.1:8000/
-{"Hello":"World"}
-~!curl 127.0.0.1:8000/component/
-{"detail":"Not Found"}
-~!curl 127.0.0.1:8000/component/udhay
-{"component_id":"udhay"}
-~!curl 127.0.0.1:8000/component/something
-{"component_id":"something"}
-"""
