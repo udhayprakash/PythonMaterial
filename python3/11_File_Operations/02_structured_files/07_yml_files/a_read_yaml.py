@@ -21,7 +21,7 @@ import yaml
 
 # scalar values to python dictionary
 with open("items.yaml") as f:
-    data = yaml.load(f, Loader=yaml.FullLoader)
+    data = yaml.load(f, Loader=yaml.SafeLoader)
     pprint(data)
 
     f.close()
