@@ -5,6 +5,7 @@ Purpose: Parsing html using lxml
 from io import StringIO
 
 from lxml import etree
+import lxml.etree
 
 # Feeding RAW XML for Serialisation
 html = etree.XML(
@@ -21,13 +22,13 @@ print(etree.tostring(html, pretty_print=True, xml_declaration=True).decode("utf-
 
 # The parse() function can be used to parse from files and file-like objects
 title = StringIO("<title>Title Here</title>")
-tree = etree.parse(title)
+tree = etree.parse(title, parser=lxml.etree.XMLParser(resolve_entities=False))
 print(etree.tostring(tree).decode("utf-8"))
 
 
 # The fromstring() function can be used to parse Strings:
 title = "<title>Title Here</title>"
-root = etree.fromstring(title)
+root = etree.fromstring(title, parser=lxml.etree.XMLParser(resolve_entities=False))
 print(root.tag)
 print(etree.tostring(root).decode("utf-8"))
 
