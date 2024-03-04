@@ -23,6 +23,6 @@ converted_json_data = json.dumps(json_data)
 # output yaml
 print(
     yaml.dump(
-        yaml.load(converted_json_data, Loader=yaml.FullLoader), default_flow_style=False
+        yaml.load(converted_json_data, Loader=yaml.SafeLoader), default_flow_style=False
     )
 )
