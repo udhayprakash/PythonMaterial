@@ -8,7 +8,7 @@ cars = [
 ]
 
 file_loader = FileSystemLoader("templates")
-env = Environment(loader=file_loader)
+env = Environment(loader=file_loader, autoescape=True)
 
 template = env.get_template("sumprices.txt")
 
