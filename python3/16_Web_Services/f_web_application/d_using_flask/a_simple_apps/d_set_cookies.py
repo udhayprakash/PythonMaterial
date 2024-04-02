@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     # return '<h1>Hello World!</h1>'
     response = make_response("<h1>This document carries a cookie!</h1>")
-    response.set_cookie("answer", "42")
+    response.set_cookie("answer", "42", secure=True, httponly=True, samesite='Lax')
     return response
 
 
