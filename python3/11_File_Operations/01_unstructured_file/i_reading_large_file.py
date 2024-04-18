@@ -8,7 +8,7 @@ from functools import partial
 def read_from_file(file_name):
     """Method 1 - reading one line per iteration"""
     with open(file_name, "r") as fp:
-        yield fp.readline()
+        yield fp.readline(5_000_000)
 
 
 def read_from_file2(file_name, block_size=1024 * 8):
