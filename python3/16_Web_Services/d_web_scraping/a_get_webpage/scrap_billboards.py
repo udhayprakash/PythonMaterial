@@ -1,9 +1,8 @@
-import lxml
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 URL = "https://www.billboard.com/charts/hot-100/"
-r = requests.get(URL, timeout=60)
+r = safe_requests.get(URL, timeout=60)
 
 doc = BeautifulSoup(r.content, "lxml")
 structured_doc = doc.prettify()

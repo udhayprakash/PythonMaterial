@@ -5,16 +5,15 @@
 import operator
 import os
 import sys
-
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 # global dictionary to store the count of tags processed so far
 tag_count_dict = {}
 
 
 def get_soup_from_link(link):
-    html_text = requests.get(link, timeout=5).text
+    html_text = safe_requests.get(link, timeout=5).text
     soup = BeautifulSoup(html_text, "html.parser")
     return soup
 

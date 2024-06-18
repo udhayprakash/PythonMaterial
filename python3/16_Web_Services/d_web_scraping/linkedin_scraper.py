@@ -1,8 +1,7 @@
 import json
-
-import requests
 import urllib3
 from lxml import html
+from security import safe_requests
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -14,7 +13,7 @@ def linkedin_companies_parser(url):
                 "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
             }
             print("Fetching :", url)
-            response = requests.get(url, headers=headers, verify=True, timeout=5)
+            response = safe_requests.get(url, headers=headers, verify=True, timeout=5)
             formatted_response = response.content.replace("<!--", "").replace("-->", "")
             doc = html.fromstring(formatted_response)
             datafrom_xpath = doc.xpath(

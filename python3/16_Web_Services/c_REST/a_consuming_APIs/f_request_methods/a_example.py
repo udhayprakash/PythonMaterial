@@ -1,9 +1,9 @@
 #!/usr/bin/python
 import json
-import urllib
 import urllib.request
 
 import requests
+from security import safe_requests
 
 # How to: Send a GET request
 print(requests.get("http://mock.kite.com/text", timeout=60).text)
@@ -16,7 +16,7 @@ print(r.text)
 # How to: Send a GET request with query parameters
 url = "http://mock.kite.com/queryparams"
 params = {"a": 1, "b": 2}
-print(requests.get(url, params, timeout=60).text)
+print(safe_requests.get(url, params, timeout=60).text)
 
 # How to: Send the URL parameters of a GET request in order
 p = (("first", "first_value"), ("second", "second_value"))
@@ -26,7 +26,7 @@ print(r.url)
 # How to: Send a GET request with custom headers
 url = "http://mock.kite.com/echo"
 headers = {"custom-header": "custom"}
-print(requests.get(url, headers=headers, timeout=60).text)
+print(safe_requests.get(url, headers=headers, timeout=60).text)
 
 # How to: Retrieve the contents of a page before redirecting
 r = requests.get("http://mock.kite.com/redirect", timeout=60)
@@ -36,7 +36,7 @@ print(redirected_from.content)
 
 # How to: Send a GET request and do not allow redirects
 url = "http://mock.kite.com/redirect"
-print(requests.get(url, allow_redirects=False, timeout=60).text)
+print(safe_requests.get(url, allow_redirects=False, timeout=60).text)
 
 # How to make a request with a user agent in Python
 headers = {
@@ -62,7 +62,7 @@ print(r.elapsed)
 # How to: Set a timeout time for a request
 try:
     url = "http://mock.kite.com/text"
-    r = requests.get(url, timeout=0.0001)
+    r = safe_requests.get(url, timeout=0.0001)
 except requests.exceptions.Timeout as e:
     print(e)
 
@@ -75,7 +75,7 @@ print(response)
 url = "https://www.python.org/static/img/python-logo@2x.png"
 urllib.request.urlretrieve(url, "python_logo.png")
 
-downloaded_obj = requests.get(url, timeout=60)
+downloaded_obj = safe_requests.get(url, timeout=60)
 with open("python_logo.png", "wb") as file:
     file.write(downloaded_obj.content)
 
@@ -88,7 +88,7 @@ file.close()
 
 # How to download large files with requests in Python
 url = "https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv"
-response = requests.get(url, stream=True, timeout=60)
+response = safe_requests.get(url, stream=True, timeout=60)
 
 text_file = open("data.txt", "wb")
 for chunk in response.iter_content(chunk_size=1024):

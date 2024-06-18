@@ -1,7 +1,7 @@
 import csv
 
 import pytest
-import requests
+from security import safe_requests
 
 # Exercise 2.1
 # Create a test data object test_data_zip
@@ -24,7 +24,7 @@ test_data_zip = [
 # to those that are specified in the test data object
 @pytest.mark.parametrize("country_code, zip_code, expected_place", test_data_zip)
 def test_get_location_data_check_place_name(country_code, zip_code, expected_place):
-    response = requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
+    response = safe_requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
     response_body = response.json()
     assert response_body["places"][0]["place name"] == expected_place
 
@@ -56,6 +56,6 @@ def read_data_from_csv():
 def test_get_location_data_check_place_name_with_data_from_csv(
     country_code, zip_code, expected_place
 ):
-    response = requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
+    response = safe_requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
     response_body = response.json()
     assert response_body["places"][0]["place name"] == expected_place

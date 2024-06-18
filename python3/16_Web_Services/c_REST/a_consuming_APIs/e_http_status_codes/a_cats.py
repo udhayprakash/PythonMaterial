@@ -13,9 +13,7 @@ Purpose: To get the http response status codes
 """
 import ctypes
 import os
-from pprint import pp
-
-import requests
+from security import safe_requests
 
 URL = "https://http.cat/{HTTP_CODE}.jpg"
 # url = "https://http.cat/100.jpg"
@@ -26,7 +24,7 @@ def get_status_images(_foldername):
         url = URL.format(HTTP_CODE=each_code)
         # print(url)
 
-        response = requests.get(url, timeout=60)
+        response = safe_requests.get(url, timeout=60)
         # pp(dict(response.headers))
         if (
             response.status_code == 200

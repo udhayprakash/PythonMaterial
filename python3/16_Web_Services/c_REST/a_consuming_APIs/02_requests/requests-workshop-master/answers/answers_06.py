@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 import pytest
 import requests
 import responses
+from security import safe_requests
 
 
 # Exercise 6.1
@@ -108,7 +109,7 @@ def test_using_a_callback_for_dynamic_responses(country_code, zip_code, place):
         split_url = parsed_url.split("/")
         return f"{split_url[-2]} zip code {split_url[-1]} corresponds to {place}"
 
-    response = requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
+    response = safe_requests.get(f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60)
     assert (
         response.json()["value"]
         == f"{country_code} zip code {zip_code} corresponds to {place}"

@@ -4,6 +4,7 @@ from urllib.parse import urlsplit
 
 import requests.exceptions
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 # starting url. replace google with your own url.
 starting_url = "http://www.miet.ac.in"
@@ -31,7 +32,7 @@ while len(unprocessed_urls):
     # get url's content
     print("Crawling URL %s" % url)
     try:
-        response = requests.get(url, timeout=5)
+        response = safe_requests.get(url, timeout=5)
     except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
         # ignore pages with errors and continue with next url
         continue

@@ -1,12 +1,11 @@
 import time
-
-import requests
 from tomorrow import threads
+from security import safe_requests
 
 
 @threads(5)
 def download(url):
-    return requests.get(url, timeout=5)
+    return safe_requests.get(url, timeout=5)
 
 
 if __name__ == "__main__":
