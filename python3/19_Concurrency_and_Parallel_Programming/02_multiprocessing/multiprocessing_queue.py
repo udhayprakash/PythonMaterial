@@ -7,12 +7,12 @@ thread and process safe which make them perfect
 for passing data between different processes
     without potentially corrupting data.
 """
-import random
 from multiprocessing import Process, Queue
+import secrets
 
 
 def rand_num(queue):
-    num = random.random()
+    num = secrets.SystemRandom().random()
     queue.put(num)
 
 

@@ -2,9 +2,9 @@
 Purpose: Access resource
 """
 import logging
-import random
 import threading
 import time
+import secrets
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -29,7 +29,7 @@ class Counter(object):
 
 def worker(c):
     for _ in range(2):
-        pause = random.random()
+        pause = secrets.SystemRandom().random()
         logging.debug("Sleeping %0.02f", pause)
         time.sleep(pause)
         c.increment()

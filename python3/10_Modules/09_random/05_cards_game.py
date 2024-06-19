@@ -2,7 +2,7 @@
 ## A deck of cards has 13 cards each of 4 suits: heart(♥), spade(♠), diamond(♦), club(♣).
 ## THOUGHT PROCESS: Construct an unshuffled deck by using two lists, one for suits, another for cardValues -> Shuffle the deck by iterating over all cards one by one using their indexes, and swapping the index with any random index.
 
-import random
+import secrets
 
 suits = ["♠", "♥", "♦", "♣"]
 cardValues = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
@@ -21,7 +21,7 @@ print("The original deck of cards:\n\n", deck)
 # SHUFFLING CARDS: iterating over all cards one by one using their indexes, swapping the index with any random index
 # Iterate over all cards one by one using their indexes
 for index in range(0, len(deck)):
-    randomCardForSwitching = random.randrange(len(deck))
+    randomCardForSwitching = secrets.SystemRandom().randrange(len(deck))
     # Swapping indexes
     temporaryIndex = deck[index]
     deck[index] = deck[randomCardForSwitching]

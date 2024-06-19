@@ -10,11 +10,11 @@ FIRST_EXCEPTION     The function will return when any future finishes by raising
 ALL_COMPLETED       The function will return when all futures finish or are cancelled.
 """
 import asyncio
-from random import randrange
+import secrets
 
 
 async def foo(n):
-    s = randrange(5)
+    s = secrets.SystemRandom().randrange(5)
     print(f"{n} will sleep for: {s} seconds")
     await asyncio.sleep(s)
     print(f"n: {n}!")

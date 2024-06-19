@@ -1,8 +1,8 @@
 import csv
-import random
 
 from faker import Faker
 from faker.providers import address
+import secrets
 
 fake = Faker()
 fake.add_provider(address)
@@ -43,7 +43,7 @@ def generate_postcode(country):
 # generate 10 records of dummy data
 data = []
 for i in range(10):
-    country = random.choice(countries)
+    country = secrets.choice(countries)
     postcode = generate_postcode(country)
     record = {
         "first_name": fake.first_name(),

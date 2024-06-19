@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import copy
-import random
+import secrets
 
 original_questions = {
     # Format is 'question':[options]
@@ -24,7 +24,7 @@ def shuffle(q):
     selected_keys = []
     i = 0
     while i < len(q):
-        current_selection = random.choice(q.keys())
+        current_selection = secrets.choice(q.keys())
         if current_selection not in selected_keys:
             selected_keys.append(current_selection)
             i += 1
@@ -35,7 +35,7 @@ questions_shuffled = shuffle(questions)
 
 
 for i in questions_shuffled:
-    random.shuffle(questions[i])
+    secrets.SystemRandom().shuffle(questions[i])
     print(
         f"""Where is {i} located?
     {questions[i]}

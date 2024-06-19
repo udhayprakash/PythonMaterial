@@ -10,9 +10,8 @@ For example:
     print 'Finished in {} seconds.'.format(timer.duration())
 
 """
-
-import random
 import time
+import secrets
 
 
 class ExecutionTime:
@@ -32,5 +31,5 @@ print(callable(timer.start_time))
 print(timer.start_time)
 
 sample_list = list()  # []
-my_list = [random.randint(1, 888898) for num in range(1, 1000000) if num % 2 == 0]
+my_list = [secrets.SystemRandom().randint(1, 888898) for num in range(1, 1000000) if num % 2 == 0]
 print("Finished in {} seconds.".format(timer.duration()))

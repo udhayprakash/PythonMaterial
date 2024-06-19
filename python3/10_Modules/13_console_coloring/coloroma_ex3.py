@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 import os
-import random
 import sys
 import time
 
 from colorama import *
+import secrets
 
 width, height = 80, 24
 colors = [
@@ -33,7 +33,7 @@ def main():
     position = middle_x - string_center
 
     while True:
-        color_seed = random.randint(0, len(colors))
+        color_seed = secrets.SystemRandom().randint(0, len(colors))
         color = colors[color_seed]
         print((pos(position, middle_y) + color + string))
         time.sleep(1000)

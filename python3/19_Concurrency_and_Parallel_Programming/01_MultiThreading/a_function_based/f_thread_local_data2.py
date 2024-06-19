@@ -2,8 +2,8 @@
 Purpose: Showing thread specific data
 """
 import logging
-import random
 import threading
+import secrets
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -24,7 +24,7 @@ def show_value(data):
 def worker(data):
     logging.debug("worker - start")
     show_value(data)
-    data.value = random.randint(1, 100)
+    data.value = secrets.SystemRandom().randint(1, 100)
     show_value(data)
 
 

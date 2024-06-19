@@ -9,6 +9,7 @@ cliches became that way by being so good that everybody and their
 brother kept using them!
 """
 from abc import ABC, abstractmethod
+import secrets
 
 
 class Shape(ABC):
@@ -101,11 +102,6 @@ class Scaled(Shape):
     def perimeter(self):
         return self.other.perimeter() * self.scale
 
-
-# Demonstrate the previous classes in action.
-
-from random import randint
-
 if __name__ == "__main__":
     # An abstract class cannot be instantiated.
     try:
@@ -142,7 +138,7 @@ if __name__ == "__main__":
     tmp1, tmp2 = c.name, c.area
     # Lambdas can be defined to take no parameters, thus behaving essentially as data.
     c.name = lambda: "Bob"
-    c.area = lambda: randint(1, 100)
+    c.area = lambda: secrets.SystemRandom().randint(1, 100)
     print(f"\nObject c is now: {c}")  # Bob
     print(f"Object d is now: {d}")  # behaves normally
 

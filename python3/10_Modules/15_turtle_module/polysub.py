@@ -1,5 +1,5 @@
-import random
 import turtle
+import secrets
 
 
 def interp(p1, p2, t):
@@ -19,13 +19,13 @@ def polysub(pts, depth=5, width=0.1):
         else:
             l1 = dist(pts[0], pts[1])
             l2 = dist(pts[1], pts[2])
-            r = random.uniform(0, l1 + l2)
+            r = secrets.SystemRandom().uniform(0, l1 + l2)
             if r < l1:
                 i = 0
             else:
                 i = 1
-            t1 = random.uniform(0.5 - width, 0.5 + width)
-            t2 = random.uniform(0.5 - width, 0.5 + width)
+            t1 = secrets.SystemRandom().uniform(0.5 - width, 0.5 + width)
+            t2 = secrets.SystemRandom().uniform(0.5 - width, 0.5 + width)
             pa = interp(pts[i], pts[i + 1], t1)
             pb = interp(pts[i + 2], pts[(i + 3) % 4], t2)
             subdivide((pts[i], pa, pb, pts[(i + 3) % 4]), depth - 1)
@@ -45,7 +45,7 @@ def render(polys):
         turtle.goto(pts[3])
         turtle.begin_fill()
         turtle.fillcolor(
-            random.randint(64, 192), random.randint(64, 192), random.randint(64, 192)
+            secrets.SystemRandom().randint(64, 192), secrets.SystemRandom().randint(64, 192), secrets.SystemRandom().randint(64, 192)
         )
         turtle.pendown()
         for pt in pts:

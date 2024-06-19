@@ -1,9 +1,9 @@
-import random
 from dataclasses import dataclass, field
+import secrets
 
 
 def random_price():
-    return random.randint(20, 100)
+    return secrets.SystemRandom().randint(20, 100)
 
 
 @dataclass

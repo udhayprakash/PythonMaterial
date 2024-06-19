@@ -11,10 +11,9 @@ Purpose: Synchronization with Barriers
 
 Following snippet demonstrates the use of Barriers.
 """
-
-from random import randrange
 from threading import Barrier, Thread
 from time import ctime, sleep
+import secrets
 
 num = 4
 # 4 threads will need to pass this barrier to get released.
@@ -24,7 +23,7 @@ names = ["Ramesh", "Ganesh", "Mahesh", "Suresh"]
 
 def player():
     name = names.pop()
-    sleep(randrange(2, 10))
+    sleep(secrets.SystemRandom().randrange(2, 10))
     print("%s reached the barrier at: %s" % (name, ctime()))
     b.wait()
 

@@ -1,8 +1,8 @@
 # after http://paulbourke.net/texture_colour/randomtile/
 
-import random
 import turtle
 from math import sqrt
+import secrets
 
 
 def dist(p1, p2):
@@ -13,7 +13,7 @@ def circlefill(n):
     result = []
     s = 400
     while n > 0:
-        cp = (random.uniform(-s, s), random.uniform(-s, s))
+        cp = (secrets.SystemRandom().uniform(-s, s), secrets.SystemRandom().uniform(-s, s))
         rad = min(s / 10, s - cp[0], cp[0] + s, s - cp[1], cp[1] + s)
         for c in result:
             rad = min(rad, dist(c[0], cp) - c[1])
@@ -37,7 +37,7 @@ def render(circs):
         turtle.setheading(90)
         turtle.pendown()
         turtle.fillcolor(
-            random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)
+            secrets.SystemRandom().randint(0, 255), secrets.SystemRandom().randint(0, 255), secrets.SystemRandom().randint(0, 255)
         )
         turtle.begin_fill()
         turtle.circle(c[1])
