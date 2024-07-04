@@ -4,6 +4,7 @@ Purpose:
 """
 import os
 import subprocess
+from security import safe_command
 
 
 def ping_website(site_name):
@@ -12,8 +13,7 @@ def ping_website(site_name):
 
 
 def get_time_delays(site_name):
-    p = subprocess.Popen(
-        f"ping {site_name}", stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    p = safe_command.run(subprocess.Popen, f"ping {site_name}", stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
     output, error = p.communicate()
     if error:

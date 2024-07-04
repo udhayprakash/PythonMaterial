@@ -2,6 +2,7 @@
 
 import os
 import subprocess
+from security import safe_command
 
 base_dir = "/tmp/pid_dir"
 pid_files = ("ut.pid", "ft.pid")
@@ -21,7 +22,7 @@ def check_pid(pid):
 def get_elapsed_time(pid):
     """get the elapsed time of the process with this pid"""
     cmd = f"ps -p {str(pid)} -o pid,etime"
-    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    proc = safe_command.run(subprocess.Popen, cmd, shell=True, stdout=subprocess.PIPE)
     # get data from stdout
     proc.wait()
     results = proc.stdout.readlines()
