@@ -21,7 +21,7 @@ def check_pid(pid):
 def get_elapsed_time(pid):
     """get the elapsed time of the process with this pid"""
     cmd = f"ps -p {str(pid)} -o pid,etime"
-    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    proc = subprocess.Popen(cmd, shell=False, stdout=subprocess.PIPE)
     # get data from stdout
     proc.wait()
     results = proc.stdout.readlines()

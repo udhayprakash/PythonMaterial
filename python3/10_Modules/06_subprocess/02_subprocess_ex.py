@@ -2,9 +2,9 @@ import subprocess
 import sys
 
 if sys.platform == "win32":
-    subprocess.call(["dir", "/x"], shell=True)
+    subprocess.call(["dir", "/x"], shell=False)
 else:
-    subprocess.call(["ls", "-1"], shell=True)
+    subprocess.call(["ls", "-1"], shell=False)
 
 # Command with shell expansion
 if sys.platform == "win32":
