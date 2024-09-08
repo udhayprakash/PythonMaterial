@@ -18,8 +18,8 @@ XML vs HTML
 
 """
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 from xml.etree.ElementTree import Element, SubElement, tostring
+import defusedxml.minidom
 
 root = Element("root")
 
@@ -39,6 +39,6 @@ with open("a_write_xml.xml", "w") as f:
     f.write(result_str)
 
 
-xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
+xmlstr = defusedxml.minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
 with open("a_write_xml2.xml", "w") as f:
     f.write(xmlstr)

@@ -2,7 +2,7 @@
 """
 Purpose: To parse(read) xml string
 """
-import xml.etree.ElementTree as ElementTree
+import defusedxml.ElementTree
 
 input_string = """
 <stuff>
@@ -19,7 +19,7 @@ input_string = """
 </stuff>"""
 
 
-stuff = ElementTree.fromstring(input_string)
+stuff = defusedxml.ElementTree.fromstring(input_string)
 nodes = stuff.findall("users/user")
 print("User count:", len(nodes))
 # print(nodes)

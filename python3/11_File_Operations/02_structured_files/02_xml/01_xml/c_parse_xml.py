@@ -3,9 +3,9 @@
 Purpose: Reading(Parsing) XML
 """
 from pprint import pprint
-from xml.etree.ElementTree import parse
+import defusedxml.ElementTree
 
-tree = parse("books.xml")
+tree = defusedxml.ElementTree.parse("books.xml")
 
 # To check for presence of a particular tag in xml file
 # print(f"{tree.findall('book') =}")

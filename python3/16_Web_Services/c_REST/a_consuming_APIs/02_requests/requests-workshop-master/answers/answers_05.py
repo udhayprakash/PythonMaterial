@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as et
 
 import requests
+import defusedxml.ElementTree
 
 
 # Exercise 5.1
@@ -14,7 +15,7 @@ def test_check_root_of_xml_response():
     response = requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", 
     timeout=60)
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     root = xml_tree.getroot()
     assert root.tag == "account"
@@ -32,7 +33,7 @@ def test_check_specific_element_of_xml_response():
     response = requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", 
     timeout=60)
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     first_name = xml_tree.find("customerId")
     assert first_name.text == "12212"
@@ -48,7 +49,7 @@ def test_check_number_of_accounts_for_12212_greater_than_five():
     response = requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts", 
     timeout=60)
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     accounts = xml_tree.findall(".//account")
     assert len(accounts) > 5
@@ -64,7 +65,7 @@ def test_use_xpath_for_more_sophisticated_checks():
     response = requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts", 
     timeout=60)
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     savings_accounts = xml_tree.findall(".//account/type[.='SAVINGS']")
     assert len(savings_accounts) > 1
