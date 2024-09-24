@@ -15,6 +15,7 @@ Purpose: Pickle file operations
             loads -- from a python string
 """
 import pickle
+import fickling
 
 data = (
     123,
@@ -35,7 +36,7 @@ with open("serialized_data.pkl", "wb") as f:
     f.close()
 
 with open("serialized_data.pkl", "rb") as g:
-    retrieved_data = pickle.load(g)
+    retrieved_data = fickling.load(g)
     print(f"retrieved_data: {retrieved_data} {type(retrieved_data)}")
 
 assert data == retrieved_data
@@ -48,7 +49,7 @@ with open("serialized_data.pkl", "wb") as f:
     f.close()
 
 with open("serialized_data.pkl", "rb") as g:
-    retrieved_data = pickle.load(g)
+    retrieved_data = fickling.load(g)
     print(f"retrieved_data: {retrieved_data} {type(retrieved_data)}")
 
 # cpython - it is c implementation of python
