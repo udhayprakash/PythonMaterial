@@ -2,8 +2,8 @@
 # Fredrik Lundh
 
 import math
-import random
 from tkinter import *
+import secrets
 
 GREY = "grey"
 GREEN = "green"
@@ -48,14 +48,14 @@ def jitterplot(canvas, bbox, data):
 
     # draw markers
     for y in map(lambda y, ys=ystep, yb=ybase: y * ys + yb, data):
-        j = x + (y1 - y0) * 0.1 * (random.random() - 0.5)
+        j = x + (y1 - y0) * 0.1 * (secrets.SystemRandom().random() - 0.5)
         canvas.create_oval(j - 2, y - 2, j + 2, y + 2, fill=WHITE)
 
 
 ################################################################
 # create some random data
 
-data = [random.random() for a in range(200)]
+data = [secrets.SystemRandom().random() for a in range(200)]
 
 # create a drawing canvas
 

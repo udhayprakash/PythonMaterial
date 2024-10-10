@@ -1,7 +1,7 @@
 import copy
-import random
 
 from flask import Flask, render_template, request
+import secrets
 
 app = Flask(__name__)
 
@@ -27,7 +27,7 @@ def shuffle(q):
     selected_keys = []
     i = 0
     while i < len(q):
-        current_selection = random.choice(q.keys())
+        current_selection = secrets.choice(q.keys())
         if current_selection not in selected_keys:
             selected_keys.append(current_selection)
             i = i + 1
@@ -38,7 +38,7 @@ def shuffle(q):
 def quiz():
     questions_shuffled = shuffle(questions)
     for i in questions.keys():
-        random.shuffle(questions[i])
+        secrets.SystemRandom().shuffle(questions[i])
     return render_template("main.html", q=questions_shuffled, o=questions)
 
 

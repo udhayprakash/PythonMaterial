@@ -1,10 +1,10 @@
-import random
 import string
+import secrets
 
 
 def lambda_handler(event, context):
     length = int(event.get("password_length", 8))
-    password = "".join(random.choices(string.ascii_letters + string.digits, k=length))
+    password = "".join(secrets.SystemRandom().choices(string.ascii_letters + string.digits, k=length))
     return {"statusCode": 200, "body": password}
 
 

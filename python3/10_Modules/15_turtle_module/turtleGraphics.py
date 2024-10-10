@@ -1,8 +1,8 @@
 """
 "Turtle Graphics
 """
-import random
 import turtle
+import secrets
 
 turtle.screensize(900, 900)
 c = (0.1, 0.01, 0.3)
@@ -36,7 +36,7 @@ def fractal(a, length, size, angle, t):
     if size < 2:
         tup = (1 - t, 1 - t, 1 - t)
         tup2 = (1 - t, 1 - t, 1 - t)
-        k = random.randint(1, 100)
+        k = secrets.SystemRandom().randint(1, 100)
         if k < 45:
             a.pencolor(tup2)
         elif k > 45 & k <= 75:
@@ -51,7 +51,7 @@ def fractal(a, length, size, angle, t):
     a.speed(0)
     tup2 = (1 - t, t, 1 - t)
     a.begin_fill()
-    k = random.randint(1, 100)
+    k = secrets.SystemRandom().randint(1, 100)
     if k < 70:
         a.pencolor(tup2)
     else:

@@ -1,7 +1,7 @@
 import csv
-import random
 
 from locust import HttpUser, between, task
+import secrets
 
 # pip install locust
 
@@ -20,7 +20,7 @@ class BookUser(HttpUser):
         with open("books.csv", newline="") as csvfile:
             reader = csv.reader(csvfile)
             rows = list(reader)
-        title, author, description = random.choice(rows)
+        title, author, description = secrets.choice(rows)
         self.client.post(
             "/books",
             json={"title": title, "author": author, "description": description},
@@ -32,11 +32,11 @@ class BookUser(HttpUser):
 
     @task(3)
     def update_book(self):
-        book_id = random.randint(1, 100)
+        book_id = secrets.SystemRandom().randint(1, 100)
         with open("books.csv", newline="") as csvfile:
             reader = csv.reader(csvfile)
             rows = list(reader)
-        title, author, description = random.choice(rows)
+        title, author, description = secrets.choice(rows)
         self.client.put(
             f"/books/{book_id}",
             json={"title": title, "author": author, "description": description},
@@ -44,7 +44,7 @@ class BookUser(HttpUser):
 
     @task(4)
     def delete_book(self):
-        book_id = random.randint(1, 100)
+        book_id = secrets.SystemRandom().randint(1, 100)
         self.client.delete(f"/books/{book_id}")
 
 

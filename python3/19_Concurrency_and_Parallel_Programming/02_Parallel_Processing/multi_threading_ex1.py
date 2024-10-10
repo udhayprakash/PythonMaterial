@@ -1,6 +1,6 @@
-import random
 import time
 from threading import Thread
+import secrets
 
 
 class MyThread(Thread):
@@ -9,7 +9,7 @@ class MyThread(Thread):
         self.name = name
 
     def run(self):
-        amount = random.randint(3, 15)
+        amount = secrets.SystemRandom().randint(3, 15)
         time.sleep(amount)
         msg = "{} is running".format(self.name)
         print(msg)

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # _*_ coding:utf-8 _*_
 
-import random
 import time
 from multiprocessing import Process, Queue
+import secrets
 
 
 # 写数据进程执行的代码:
@@ -11,7 +11,7 @@ def write(q):
     for value in ["A", "B", "C"]:
         print("Put %s to queue..." % value)
         q.put(value)
-        time.sleep(random.random())
+        time.sleep(secrets.SystemRandom().random())
 
 
 # 读数据进程执行的代码:

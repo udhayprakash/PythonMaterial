@@ -1,7 +1,7 @@
 import asyncio
-import random
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
+import secrets
 
 
 def return_after_5_secs(message):
@@ -13,7 +13,7 @@ pool = ThreadPoolExecutor(3)
 
 
 async def doit():
-    identify = random.randint(1, 100)
+    identify = secrets.SystemRandom().randint(1, 100)
     future = pool.submit(return_after_5_secs, (f"result: {identify}"))
     awaitable = asyncio.wrap_future(future)
     print(f"waiting result: {identify}")

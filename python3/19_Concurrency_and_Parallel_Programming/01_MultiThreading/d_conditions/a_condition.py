@@ -16,9 +16,9 @@ Purpose: Synchronization using Condition object
 Following code demonstrates the implementation of another simple
 producer-consumer problem with the help of the Condition object.
 """
-import random
 import time
 from threading import Condition, Thread
+import secrets
 
 # 'condition' variable will be used to represent the availability of a produced item.
 condition = Condition()
@@ -29,8 +29,8 @@ values = []
 
 def producer(ntimes):
     for i in range(ntimes):
-        val = f"Producer- { random.randint(1, 10)}"
-        time.sleep(random.randrange(2, 5))  # Sleeps for some time.
+        val = f"Producer- { secrets.SystemRandom().randint(1, 10)}"
+        time.sleep(secrets.SystemRandom().randrange(2, 5))  # Sleeps for some time.
 
         condition.acquire()
         values.append(val)  # writing on shared object
@@ -42,7 +42,7 @@ def producer(ntimes):
 
 def consumer(ntimes):
     for i in range(ntimes):
-        time.sleep(random.randrange(2, 5))  # Sleeps for some time.
+        time.sleep(secrets.SystemRandom().randrange(2, 5))  # Sleeps for some time.
 
         condition.acquire()
         condition.wait()  # Blocks until an item is available for consumption.

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from random import randint
 from turtle import *
+import secrets
 
 
 def create_rectangle(turtle, color, x, y, width, height):
@@ -88,12 +88,12 @@ create_circle(oogway, 220, 180, 60, BG_COLOR)
 
 # now add few stars in sky
 oogway.speed(10)
-number_of_stars = randint(20, 30)
+number_of_stars = secrets.SystemRandom().randint(20, 30)
 # print(number_of_stars)
 for _ in range(0, number_of_stars):
-    x_star = randint(-(screen.window_width() // 2), screen.window_width() // 2)
-    y_star = randint(tree_height, screen.window_height() // 2)
-    size = randint(5, 20)
+    x_star = secrets.SystemRandom().randint(-(screen.window_width() // 2), screen.window_width() // 2)
+    y_star = secrets.SystemRandom().randint(tree_height, screen.window_height() // 2)
+    size = secrets.SystemRandom().randint(5, 20)
     oogway.penup()
     oogway.color("white")
     oogway.goto(x_star, y_star)

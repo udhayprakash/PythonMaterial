@@ -1,16 +1,16 @@
 #!/usr/bin/python
 
-from random import randint
 from turtle import bgcolor, colormode, exitonclick, fd, pencolor, rt, speed
+import secrets
 
 bgcolor("black")
 x = 1
 speed(0)
 
 while x < 400:
-    r = randint(0, 255)
-    g = randint(0, 255)
-    b = randint(0, 255)
+    r = secrets.SystemRandom().randint(0, 255)
+    g = secrets.SystemRandom().randint(0, 255)
+    b = secrets.SystemRandom().randint(0, 255)
 
     colormode(255)
     pencolor(r, g, b)

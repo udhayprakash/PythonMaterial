@@ -11,11 +11,11 @@ Purpose: asyncio
     Takes an optional timeout.
 """
 import asyncio
-from random import randrange
+import secrets
 
 
 async def foo(n):
-    s = randrange(10)
+    s = secrets.SystemRandom().randrange(10)
     print(f"{n} will sleep for: {s} seconds")
     await asyncio.sleep(s)
     return f"{n}!"

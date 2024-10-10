@@ -1,6 +1,6 @@
-import random
 import time
 from threading import Thread
+import secrets
 
 
 class WritingThread(Thread):
@@ -26,7 +26,7 @@ class WritingThread(Thread):
 if __name__ == "__main__":
     files = [f"test{x}.txt" for x in range(1, 6)]
     for filename in files:
-        work_time = random.choice(range(1, 3))
-        number_of_lines = random.choice(range(5, 20))
+        work_time = secrets.choice(range(1, 3))
+        number_of_lines = secrets.choice(range(5, 20))
         thread = WritingThread(filename, number_of_lines, work_time)
         thread.start()

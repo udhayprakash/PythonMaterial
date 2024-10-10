@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import random
 import threading
 import time
+import secrets
 
 
 class WorkerThread(threading.Thread):
@@ -19,7 +19,7 @@ class WorkerThread(threading.Thread):
 
 def worker(name: str, instance_id: int) -> None:
     print(f"Started worker {name} - {instance_id}")
-    worker_time = random.choice(range(1, 5))
+    worker_time = secrets.choice(range(1, 5))
     time.sleep(worker_time)
     print(f"{name} - {instance_id} worker finished in " f"{worker_time} seconds")
 
