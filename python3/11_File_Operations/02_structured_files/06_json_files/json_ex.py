@@ -22,10 +22,9 @@ print(json.dumps(my_tuple))
 
 fh = open("test.json", "w")
 json.dump(my_tuple, fh)
-
-gh = open("test.json", "r")
-# print(json.load(gh))
-data = gh.read()
+with open("test.json", "r") as gh:
+    # print(json.load(gh))
+    data = gh.read()
 # print(json.loads(data, 'utf-8'))
 
 # Default encoding scheme
