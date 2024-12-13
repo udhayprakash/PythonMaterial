@@ -32,8 +32,7 @@ for each_data in data:
     try:
         print(f"{type(each_data)}  {hash(each_data)} {each_data}")
     except TypeError as ex:
-        print(each_data, ex)
-print()
+        print('\t', each_data, ex)print()
 
 # Immutable object
 print(f"{hash(123)              = }")
@@ -56,3 +55,7 @@ for each_obj in [[1, 2], {3, 4}, {"a": 1}]:
 # Conclusion
 # 1. hash can be created for immutable objects only
 # so, immutable objects are also called hashable objects
+
+
+numbers = (1, 2, 3, 4, 5, 6, (7, 8, (9, [10])))
+hash(numbers)
