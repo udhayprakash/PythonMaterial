@@ -32,5 +32,10 @@ print()
 
 A = {1, 2}
 B = {1, 2, 3, 4}
+
 print(A <= B)  # Output: True
+print(A.issubset(B))  # Output: True
+
 print(B >= A)  # Output: True
+print(B.issuperset(A))  # Output: True
+
