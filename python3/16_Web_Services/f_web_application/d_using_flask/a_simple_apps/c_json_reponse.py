@@ -28,7 +28,7 @@ def json_example():
     data = {"key": "value"}
     json_data = json.dumps(data)
 
-    response = make_response(json_data)
+    response = make_response(json_data, {'Content-Type': 'application/json'})
     response.mimetype = "application/json"
     return response
 
