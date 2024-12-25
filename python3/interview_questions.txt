@@ -423,3 +423,28 @@ What is the Use of Dual-axis? How Do You Create One?
 What is type conversion in Python?
 What type of language is python? Programming or scripting?
 Which one of these is floor division?
+
+------------
+foods = [
+  "Apple-1",
+  "Cucumber-5",
+  "Apple-33",
+  "Banana-17",
+  "Strawberry-15",
+  "Strawberry-4",
+  "Apple-4",
+  "Coconut-7",
+  "Banana-18",
+  "Strawberry-23"
+]
+
+# Sort the inputted array alphabetically by the food name and then by the number.
+# All array elements are strings in the format "foodName-number".
+def sortFoods(foods):
+
+  # CODE HERE
+  
+  return foods
+
+print(sortFoods(foods))
+
