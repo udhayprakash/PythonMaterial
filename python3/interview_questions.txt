@@ -365,6 +365,18 @@ Q34) What is the reference to an object
 Ans) a
 
 
+*Easy*
+Q35) What is the difference between a list and a tuple in Python?
+Ans) The main difference is that lists are mutable (i.e., you can change their content) and tuples are immutable.
+
+*Medium*
+Q36) How does Python's garbage collection work? What is the `gc` module?
+Ans) Python's garbage collector works by counting the number of references to an object. When references to an object are removed, the reference count for an object is decremented. When the reference count becomes zero, the object is deallocated. The `gc` module allows you to interface with the garbage collector, including manually running the collector and disabling it temporarily.
+
+*Hard*
+Q37) Can you explain how a Python generator works and where you might use one?
+Ans) A generator in Python is a special type of function that returns an iterable sequence of results, but unlike a normal function, it saves its state between calls. This makes them very memory efficient when dealing with large datasets or streams of data.
+
 Does Python have OOps concepts?
 Explain how to delete a file in Python?
 Explain how you can set up the Database in Django
