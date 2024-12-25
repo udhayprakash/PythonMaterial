@@ -56,3 +56,12 @@ print(signup_form)
 print(new_signup_form)
 print(f"{id(signup_form)     =}")
 print(f"{id(new_signup_form) =}")
+
+
+# ------------
+# all three will create copy from dict
+d = {'lang': 'python', 'version': 3.12}
+e = dict(d)
+e = d.copy(d)
+e = {}
+e.update(d)
