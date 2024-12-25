@@ -448,3 +448,59 @@ def sortFoods(foods):
 
 print(sortFoods(foods))
 
+
+-------
+lst1 = [1, 2, 3]
+
+lst2 = lst1
+lst3 = lst2
+
+del lst2[1:2]
+print(lst3)
+
+
+--------------
+def pair_the_items():
+    item_stack = [1,2, 3, 4]
+    idx = 0
+    item_pairs = zip(item_stack[idx:-1], item_stack[idx+1:])
+    print(type(item_pairs))
+    print(f"item pairs: {list(item_pairs)}")
+
+pair_the_items()
+for i in range(10):
+    if i %2:
+        continue
+    print("i", i, i%10)
+    if i%10:
+        break
+---------------
+list1 = [1, 3, 5, 7, 9]
+list2 = [0, 2, 4, 6, 8]
+print({x: y for x in list1 for y in list2})
+
+---------------------
+d1 = {}
+d1['a'] = 1
+d1['b'] = 2
+
+d2 = d1
+d2['a'] = 10
+print(d1)
+print(d2)
+
+------------------------
+a = {1, 2, 3, 4}
+b = {2, 3, 4, 5}
+c = {3, 4, 5, 6}
+d = {4, 5, 6, 7}
+
+v = a.union(b, c)
+print(v|d)
+
+
+--------------------
+d = {'k1': 'alpha'}
+d.update(key3='gamma')
+d.update({'k1': 'delta'})
+print(d)
