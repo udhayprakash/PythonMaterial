@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """
 Purpose: creating html using lxml
     - lxml has simple syntax and faster in performance
@@ -12,7 +11,14 @@ etree.SubElement(root_elem, "head")
 etree.SubElement(root_elem, "title")
 etree.SubElement(root_elem, "body")
 
+
 print(etree.tostring(root_elem, pretty_print=True).decode("utf-8"))
+
+# <html>
+#   <head/>
+#   <title/>
+#   <body/>
+# </html>
 
 # These html elements can be accessed as a list
 
