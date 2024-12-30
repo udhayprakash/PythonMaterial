@@ -1,28 +1,26 @@
-#!/usr/bin/python
 """
-Purpose: XML to python DICT conversion
+purpose: XML to python DICT conversion
+
+    pip install xmltodict
 """
-from pprint import pprint
 
-try:
-    import xmltodict
-except ModuleNotFoundError as ex:
-    print(repr(ex))
-    from os import system
+import xmltodict
+from pprint import pp
 
-    system("pip install xmltodict --user")
-    import xmltodict
 
-with open("books.xml", "r") as fh:
+
+with open('books.xml', 'r') as fh:
     file_content = fh.read()
-    doc = xmltodict.parse(file_content)
-    pprint(doc)
 
-    mapping = {}
-    for each in doc["catalog"]["book"]:
-        mapping[each["@isbn"]] = each["title"]
+doc = xmltodict.parse(file_content)
+pp(doc)
 
-    pprint(mapping)
+mapping = {}
+for each in doc["catalog"]["book"]:
+    mapping[each["@isbn"]] = each["title"]
+
+pp(mapping)
+
 
 # Assignment:  explore how to convert the dict ,
 # back to xml using this xmltodict module.. Hint: unparse()
