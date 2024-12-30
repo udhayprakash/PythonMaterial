@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Purpose: writing an XML file
     XML - eXtensible Markup Language
@@ -17,28 +16,56 @@ XML vs HTML
 - XML Attribute Values Must Always be Quoted
 
 """
+
+import xml
+
+# print(dir(xml))
+
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-from xml.etree.ElementTree import Element, SubElement, tostring
 
-root = Element("root")
+# print(dir(ET))
 
-child = SubElement(root, "child")
+
+root  = ET.Element("root")
+
+child = ET.SubElement(root, "child")
 child.text = "I am a child"
 
-child2 = SubElement(root, "child2")
+child2 = ET.SubElement(root, "child2")
+# child2.text = "I am second child"
 
-# To a xml string
-# print(tostring(root))
-result_str = tostring(root).decode("utf-8")
+# To display the xml string
+result_str = ET.tostring(root)
 print(result_str)
+# b'<root><child>I am a child</child><child2>I am second child</child2></root>'
+print()
 
 
-# To write an xml file
-with open("a_write_xml.xml", "w") as f:
-    f.write(result_str)
+result_str2 = minidom.parseString(
+    ET.tostring(root)
+).toprettyxml()
+
+print(result_str2)
 
 
-xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
-with open("a_write_xml2.xml", "w") as f:
-    f.write(xmlstr)
+# <?xml version="1.0" ?>
+# <root>
+#         <child>I am a child</child>
+#         <child2>I am second child</child2>
+# </root>
+
+
+
+
+# <?xml version="1.0" ?>
+# <root>
+#         <child>I am a child</child>
+#         <child2/>
+# </root>
+
+
+# writing to file 
+with open('a_write_xml.xml', 'w') as fh:
+    fh.write(result_str2)
+
