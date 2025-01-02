@@ -11,20 +11,39 @@ import csv
 #         continue
 #     print(each_attribute)
 
+# Method 1 
+# fh  = open("my_file.csv", mode="r")
 
-with open("first.csv", mode="r") as fh:
+# # fh.read()
+# file_content = csv.reader(fh, delimiter=",")
+# print(file_content)
+
+# # To skip the header
+# next(file_content, None)
+
+# # print(list(file_content))
+# names = []
+# for eachline in file_content: 
+#     # print(eachline[1])
+#     names.append(eachline[1])
+
+# print(f"{names =}")
+# fh.close()
+
+# Method 2 - using context manager
+with open("my_file.csv", mode="r") as fh:
+
     # fh.read()
-    file_Content = csv.reader(fh, delimiter=",")
-    # print(file_Content)
-    # print(list(file_Content))
+    file_content = csv.reader(fh, delimiter=",")
+    print(file_content)
 
     # To skip the header
-    next(file_Content, None)
+    next(file_content, None)
 
+    # print(list(file_content))
     names = []
-    for each_line in file_Content:
-        # print(each_line)
-        name = each_line[1]
-        names.append(name)
+    for eachline in file_content: 
+        # print(eachline[1])
+        names.append(eachline[1])
 
-print(f"{names =}")
+    print(f"{names =}")
