@@ -19,13 +19,14 @@ quoting_options = [
 for quoting in quoting_options:
     print(quoting)
     # Create a CSV writer with the specified quoting option
-    csv_writer = csv.writer(open("data.csv", "w", newline=""), quoting=quoting)
-
-    # Write the data to the CSV file
-    csv_writer.writerows(data)
+    file_name = f"data_{str(quoting)}.csv"
+    with open(file_name, "w", newline="") as fh:
+        writer= csv.writer(fh,  quoting=quoting)
+        # Write the data to the CSV file
+        writer.writerows(data)
 
     # Read the CSV file to verify the quoting behavior
-    with open("data.csv", "r") as file:
+    with open(file_name, "r") as file:
         csv_reader = csv.reader(file)
         print(f"Quoting option: {quoting}")
 
