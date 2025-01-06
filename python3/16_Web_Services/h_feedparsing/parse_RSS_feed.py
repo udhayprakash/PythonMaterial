@@ -1,9 +1,9 @@
 # Python code to illustrate parsing of XML files
 # importing the required modules
 import csv
-import xml.etree.ElementTree as ET
 
 import requests
+import defusedxml.ElementTree
 
 
 def loadRSS():
@@ -20,7 +20,7 @@ def loadRSS():
 
 def parseXML(xmlfile):
     # create element tree object
-    tree = ET.parse(xmlfile)
+    tree = defusedxml.ElementTree.parse(xmlfile)
 
     # get root element
     root = tree.getroot()
