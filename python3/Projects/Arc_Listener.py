@@ -34,7 +34,6 @@ class Uploads:
         upc = report_json["upc"]
         musicvideo_uuid = report_json["musicvideouuid"]
         isrc_dp_uuid = report_json["isrcdpuuid"]
-        folder = report_json["timestamp"]
         error_spec = report_json["error_spec"]
 
         strDataCapture = "Captured Data for video: " + upc + " and " + unique_key + "\n"
@@ -45,10 +44,8 @@ class Uploads:
 
         cursor = db.cursor()
 
-        sql = (
-            f"select stateId from videos where upc = '{upc}' and isrc = '{unique_key}'"
-        )
-        cursor.execute(sql)
+        sql = "select stateId from videos where upc = ? and isrc = ?"
+        cursor.execute(sql, (upc, unique_key, ))
 
         video = cursor.fetchall()
 

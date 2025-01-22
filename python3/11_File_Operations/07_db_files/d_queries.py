@@ -17,10 +17,10 @@ def select_all_records_by_author(cursor, author):
 
 def select_using_like(cursor, text):
     print("\nLIKE query results:\n")
-    sql = f"""
+    sql = """
     SELECT * FROM books
-    WHERE title LIKE '{text}%'"""
-    cursor.execute(sql)
+    WHERE title LIKE ?"""
+    cursor.execute(sql, ('{0}%'.format(text), ))
     print(cursor.fetchall())
 
 

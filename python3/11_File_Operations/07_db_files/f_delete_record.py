@@ -5,11 +5,11 @@ def delete_author(author):
     conn = sqlite3.connect("books.db")
     cursor = conn.cursor()
 
-    sql = f"""
+    sql = """
     DELETE FROM books
-    WHERE author = '{author}'
+    WHERE author = ?
     """
-    cursor.execute(sql)
+    cursor.execute(sql, (author, ))
     conn.commit()
 
 
