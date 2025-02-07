@@ -3,10 +3,10 @@
 Purpose: HtML parsing, using lxml
     - lxml has simple syntax and faster in performance
 """
-import requests
 from lxml import html
+from security import safe_requests
 
-page = requests.get("https://html.com/", timeout=60)
+page = safe_requests.get("https://html.com/", timeout=60)
 tree = html.fromstring(page.content)
 
 with open("html_webpage.html", mode="w", encoding="utf-8") as f:

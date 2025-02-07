@@ -2,12 +2,12 @@
 from uuid import uuid4
 
 import jwt
-import requests
 from flask import Flask, redirect, session, url_for
 from jwt import PyJWKClient
 from jwt.exceptions import DecodeError
 from requests_oauthlib import OAuth2Session
 from werkzeug.exceptions import InternalServerError, Unauthorized
+from security import safe_requests
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = str(uuid4())
@@ -22,7 +22,7 @@ IDP_CONFIG = {
 
 
 def get_well_known_metadata():
-    response = requests.get(IDP_CONFIG["well_known_url"], timeout=60)
+    response = safe_requests.get(IDP_CONFIG["well_known_url"], timeout=60)
     response.raise_for_status()
     return response.json()
 

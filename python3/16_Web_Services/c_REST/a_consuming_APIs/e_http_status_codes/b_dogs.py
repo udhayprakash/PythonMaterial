@@ -10,9 +10,8 @@ Http response status
     5xx     - server side
 """
 import os
-
-import requests
 from a_cats import create_folder
+from security import safe_requests
 
 
 def get_status_dogs(foldername):
@@ -78,7 +77,7 @@ def get_status_dogs(foldername):
 
     for each_status_code in existing_images_in_dogs_site:
         URL = f"https://httpstatusdogs.com/img/{each_status_code}.jpg"
-        response = requests.get(URL, timeout=60)
+        response = safe_requests.get(URL, timeout=60)
         if (
             response.status_code == 200
             and response.headers["content-type"] == "image/jpeg"

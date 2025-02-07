@@ -7,10 +7,9 @@ Purpose: To get the current location of ISS
 """
 import sys
 from pprint import pp
+from security import safe_requests
 
-import requests
-
-response = requests.get("http://api.open-notify.org/iss-now.json", timeout=5)
+response = safe_requests.get("http://api.open-notify.org/iss-now.json", timeout=5)
 # print(dir(response))
 print(f"{response.status_code =}")
 print(f"{response.url         =}")

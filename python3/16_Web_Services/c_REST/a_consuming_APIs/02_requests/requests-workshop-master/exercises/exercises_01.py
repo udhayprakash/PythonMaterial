@@ -1,11 +1,10 @@
 from pprint import pp
-
-import requests
+from security import safe_requests
 
 # Exercise 1.1
 # Perform a GET request to http://api.zippopotam.us/us/90210
 # Check that the response status code equals 200
-response = requests.get("http://api.zippopotam.us/us/90210", timeout=60)
+response = safe_requests.get("http://api.zippopotam.us/us/90210", timeout=60)
 print(response)
 print(f"{response.status_code =}")
 

@@ -5,10 +5,9 @@ Purpose:
 
     pip install requests
 """
+from security import safe_requests
 
-import requests
-
-response = requests.get(
+response = safe_requests.get(
     "https://www.timeanddate.com/worldclock/india/new-delhi", timeout=5
 )
 # print(response.text)

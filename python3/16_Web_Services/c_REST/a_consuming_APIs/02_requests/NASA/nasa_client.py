@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from pprint import pprint
-
-import requests
+from security import safe_requests
 
 # TO get API key, sign-up at https://api.nasa.gov/index.html#apply-for-an-api-key
 NASA_API_KEY = "jdm0WrfEUq3rfZnUP8XYhvAU7QEnG7SUNY1lmiHP"
@@ -25,7 +24,7 @@ request_params = {
 }
 
 URL = API_ROOT + SEARCH_ENDPOINT
-response = requests.get(URL, params=request_params, timeout=60)
+response = safe_requests.get(URL, params=request_params, timeout=60)
 # pprint(response.json())
 with open("nasa_search_response.json", "w") as f:
     f.write(response.text)
@@ -33,7 +32,7 @@ with open("nasa_search_response.json", "w") as f:
 
 # media details
 URL = API_ROOT + ASSET_ENDPOINT.format(nasa_id="as11-40-5874")
-response = requests.get(URL, timeout=60)
+response = safe_requests.get(URL, timeout=60)
 pprint(response.json())
 response_data = response.json()
 
@@ -42,7 +41,7 @@ for each in response_data.get("collection").get("items"):
     image_urls.append(each.get("href"))
 
 for each_image_url in image_urls:
-    response_image = requests.get(each_image_url, timeout=60)
+    response_image = safe_requests.get(each_image_url, timeout=60)
     image_name = each_image_url.split("/")[-1]
     if response.headers["content-type"] == "application/json":
         with open(f"{image_name}", "wb") as g:

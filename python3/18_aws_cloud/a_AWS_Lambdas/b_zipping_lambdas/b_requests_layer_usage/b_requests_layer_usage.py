@@ -1,8 +1,8 @@
-import requests
+from security import safe_requests
 
 
 def lambda_handler(event, context):
-    response = requests.get("https://www.google.com", timeout=60)
+    response = safe_requests.get("https://www.google.com", timeout=60)
     return {"statusCode": 200, "body": response.content.decode()}
 
 

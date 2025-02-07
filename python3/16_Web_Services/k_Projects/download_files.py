@@ -1,9 +1,8 @@
 import os
 import re
 import zipfile
-
-import requests
 import wget
+from security import safe_requests
 
 
 def download_all_zips_files():
@@ -12,9 +11,9 @@ def download_all_zips_files():
     Finally the function writes all the files to NVD folder on the local disk
     :return:
     """
-    r = requests.get("https://nvd.nist.gov/vuln/data-feeds#JSON_FEED", timeout=60)
+    r = safe_requests.get("https://nvd.nist.gov/vuln/data-feeds#JSON_FEED", timeout=60)
     for filename in re.findall("nvdcve-1.1-[0-9]*\.json\.zip", r.text):
-        r_file = requests.get(
+        r_file = safe_requests.get(
             "https://nvd.nist.gov/feeds/json/cve/1.1/" + filename,
             stream=True,
             timeout=60,

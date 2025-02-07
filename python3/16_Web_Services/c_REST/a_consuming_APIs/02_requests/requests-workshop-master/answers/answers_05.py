@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as et
-
-import requests
+from security import safe_requests
 
 
 # Exercise 5.1
@@ -11,7 +10,7 @@ import requests
 # Check that the root element has no attributes
 # Check that the root element has no text
 def test_check_root_of_xml_response():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", timeout=60
     )
     response_body_as_xml = et.fromstring(response.content)
@@ -29,7 +28,7 @@ def test_check_root_of_xml_response():
 # Find the customerId element in the tree
 # Check that the text of the customerId element is '12212'
 def test_check_specific_element_of_xml_response():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/accounts/12345", timeout=60
     )
     response_body_as_xml = et.fromstring(response.content)
@@ -45,7 +44,7 @@ def test_check_specific_element_of_xml_response():
 # Find all 'account' elements in the entire XML document
 # Check that there are more than 5 of these 'account' elements
 def test_check_number_of_accounts_for_12212_greater_than_five():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts",
         timeout=60,
     )
@@ -62,7 +61,7 @@ def test_check_number_of_accounts_for_12212_greater_than_five():
 #   (Use your creativity with the last one here... There is a solution, but I couldn't
 #    find it on Google.)
 def test_use_xpath_for_more_sophisticated_checks():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts",
         timeout=60,
     )

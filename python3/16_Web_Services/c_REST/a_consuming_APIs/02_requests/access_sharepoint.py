@@ -4,8 +4,7 @@ Purpose: To access sharepoint content
 """
 import sys
 import urllib
-
-import requests
+from security import safe_requests
 
 
 def download_sharepoint_file(sharepoint_url, username, password, file_path):
@@ -15,7 +14,7 @@ def download_sharepoint_file(sharepoint_url, username, password, file_path):
 
     file_path = file_path.replace(" ", "%20")
 
-    response = requests.get(
+    response = safe_requests.get(
         file_path,
         auth=HttpNtlmAuth(domain + "\\" + username, password),
         stream=True,

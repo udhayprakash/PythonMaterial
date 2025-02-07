@@ -1,7 +1,6 @@
 import time
-
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
@@ -13,7 +12,7 @@ site_link_count = 0
 
 for i in range(1, 201):
     url = "http://websitelists.in/website-list-" + str(i) + ".html"
-    response = requests.get(url, headers=headers, timeout=5)
+    response = safe_requests.get(url, headers=headers, timeout=5)
     if response.status_code != 200:
         print(url + str(response.status_code))
         continue

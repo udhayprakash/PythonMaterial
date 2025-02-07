@@ -1,10 +1,9 @@
 import time
-
-import requests
+from security import safe_requests
 
 
 def download(url):
-    return requests.get(url, timeout=60)
+    return safe_requests.get(url, timeout=60)
 
 
 if __name__ == "__main__":

@@ -16,14 +16,13 @@ http request methods
 """
 
 import json
-
-import requests
+from security import safe_requests
 
 # pip install -U requests
 
 
 def get_data_n_write_to_file(URL):
-    response = requests.get(URL, timeout=60)
+    response = safe_requests.get(URL, timeout=60)
     print(response.status_code)
     if 200 <= response.status_code < 300:
         # storing in a json file

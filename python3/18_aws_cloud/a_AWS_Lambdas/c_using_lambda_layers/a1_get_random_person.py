@@ -1,9 +1,9 @@
-import requests
+from security import safe_requests
 
 
 def lambda_handler(event, context):
     url = "https://randomuser.me/api/"
-    response = requests.get(url, timeout=60)
+    response = safe_requests.get(url, timeout=60)
     if response.ok:
         data = response.json()
         return {

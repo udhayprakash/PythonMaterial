@@ -1,6 +1,5 @@
 import json
-
-import requests
+from security import safe_requests
 
 # r = requests.get('https://httpbin.org/stream/5', stream=True)
 
@@ -26,7 +25,7 @@ import requests
 
 
 print("\n\n\n")
-r = requests.get("https://httpbin.org/stream/5", stream=True, timeout=60)
+r = safe_requests.get("https://httpbin.org/stream/5", stream=True, timeout=60)
 
 if r.encoding is None:
     r.encoding = "utf-8"

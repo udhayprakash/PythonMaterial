@@ -1,4 +1,4 @@
-import requests
+from security import safe_requests
 
 
 class Blog:
@@ -6,7 +6,7 @@ class Blog:
         self.name = name
 
     def posts(self):
-        response = requests.get(
+        response = safe_requests.get(
             "https://jsonplaceholder.typicode.com/posts", timeout=60
         )
 

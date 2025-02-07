@@ -2,8 +2,8 @@ import json
 from urllib.parse import urlparse
 
 import pytest
-import requests
 import responses
+from security import safe_requests
 
 
 # Exercise 6.1
@@ -16,7 +16,7 @@ import responses
 def test_get_data_for_us_90210_mock_returns_404():
     responses.add(responses.GET, "http://api.zippopotam.us/us/90210", status=404)
 
-    response = requests.get("http://api.zippopotam.us/us/90210", timeout=60)
+    response = safe_requests.get("http://api.zippopotam.us/us/90210", timeout=60)
     assert response.status_code == 404
 
 
@@ -38,7 +38,7 @@ def test_get_user_with_id_1_mock_returns_404_and_error_message_in_body():
         status=404,
     )
 
-    response = requests.get("http://api.zippopotam.us/us/90210", timeout=60)
+    response = safe_requests.get("http://api.zippopotam.us/us/90210", timeout=60)
     assert response.json()["error"] == "No data exists for US zip code 90210"
 
 
@@ -59,7 +59,7 @@ def test_responses_can_raise_error_on_demand():
     )
 
     with pytest.raises(ValueError) as ve:
-        requests.get("http://api.zippopotam.us/us/ABCDE", timeout=60)
+        safe_requests.get("http://api.zippopotam.us/us/ABCDE", timeout=60)
     assert str(ve.value) == "US uses numerical zip codes only"
 
 
@@ -108,7 +108,7 @@ def test_using_a_callback_for_dynamic_responses(country_code, zip_code, place):
         split_url = parsed_url.split("/")
         return f"{split_url[-2]} zip code {split_url[-1]} corresponds to {place}"
 
-    response = requests.get(
+    response = safe_requests.get(
         f"http://api.zippopotam.us/{country_code}/{zip_code}", timeout=60
     )
     assert (

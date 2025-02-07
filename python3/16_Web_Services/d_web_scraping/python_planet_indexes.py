@@ -1,9 +1,9 @@
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 
 def main():
-    resp = requests.get("http://planetpython.org", timeout=60)
+    resp = safe_requests.get("http://planetpython.org", timeout=60)
 
     soup = BeautifulSoup(resp.text)
 

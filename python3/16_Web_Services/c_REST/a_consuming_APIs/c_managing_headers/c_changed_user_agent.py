@@ -8,8 +8,7 @@ import json
 # Method 1
 import urllib.request
 from pprint import pprint
-
-import requests
+from security import safe_requests
 
 req = urllib.request.Request("http://httpbin.org/user-agent")
 req.add_header("User-agent", "Internet Explorer/2.0")
@@ -21,7 +20,7 @@ response_data = json.loads(response)
 print(f'You are hitting this API with {response_data["user-agent"]}')
 
 
-response = requests.get(
+response = safe_requests.get(
     "http://httpbin.org/user-agent",
     headers={"User-agent": "Internet Explorer/2.0"},
     # faking a browser
