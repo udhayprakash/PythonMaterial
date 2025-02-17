@@ -32,7 +32,8 @@ for each_data in data:
     try:
         print(f"{type(each_data)}  {hash(each_data)} {each_data}")
     except TypeError as ex:
-        print('\t', each_data, ex)print()
+        print('\t', each_data, ex)
+print()
 
 # Immutable object
 print(f"{hash(123)              = }")
