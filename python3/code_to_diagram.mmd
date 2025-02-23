@@ -1,24 +1,70 @@
 graph TD
-    A[Start] --> B[Setup Python Env]
-    B --> C{Parallel Lint}
-    C --> |Flake8| D[Run Flake8]
-    C --> |Black| E[Run Black]
-    D --> F[Security Scan]
-    E --> F
-    F --> G[Unit Tests]
-    G --> H[Integration Tests]
-    H --> I[SonarQube Analysis]
-    I --> J[Build Package]
-    J --> K{Main Branch?}
-    K --> |Yes| L[Publish to PyPI]
-    K --> |No| M[Skip Publish]
-    L --> N[Cleanup]
-    M --> N
-    N --> O{Success?}
-    O --> |No| P[Send Failure Email]
-    O --> |Yes| Q[End]
-    P --> Q
-    
-    style A fill:#90EE90
-    style Q fill:#90EE90
-    style P fill:#FFB6C1
+   A[Start] --> B[Setup Python Env]
+   B --> |Install Dependencies| BA[Pip Install]
+   BA --> |Activate venv| BB[Virtual Env]
+   BB --> C{Parallel Lint}
+   
+   C --> |Flake8| D1[Flake8 Source]
+   C --> |Flake8| D2[Flake8 Tests] 
+   C --> |Black| E1[Black Source]
+   C --> |Black| E2[Black Tests]
+   C --> |Pylint| E3[Pylint Check]
+   C --> |MyPy| E4[Type Check]
+   
+   D1 & D2 & E1 & E2 & E3 & E4 --> F[Security Scan]
+   F --> |Bandit| F1[SAST Scan]
+   F --> |Safety| F2[Dependency Check]
+   F --> |Trivy| F3[Container Scan]
+   
+   F1 & F2 & F3 --> G[Unit Tests]
+   G --> |PyTest| G1[Run Tests]
+   G --> |Coverage| G2[Generate Report]
+   G --> |Artifacts| G3[Store Results]
+   
+   G1 & G2 & G3 --> H[Integration Tests]
+   H --> |API Tests| H1[Test Endpoints]
+   H --> |DB Tests| H2[Test Database]
+   H --> |E2E| H3[Browser Tests]
+   
+   H1 & H2 & H3 --> I[SonarQube Analysis]
+   I --> |Metrics| I1[Code Quality]
+   I --> |Gates| I2[Quality Gates]
+   
+   I1 & I2 --> J[Build Package]
+   J --> |Wheel| J1[Build Wheel]
+   J --> |Sdist| J2[Source Dist]
+   
+   J1 & J2 --> K{Branch Check}
+   K --> |Main| L[Publish]
+   K --> |Feature| M[Skip Publish]
+   
+   L --> |PyPI| L1[Upload PyPI]
+   L --> |Docker| L2[Push Image]
+   L --> |Artifactory| L3[Store Artifact]
+   
+   L1 & L2 & L3 & M --> N[Cleanup]
+   N --> |Workspace| N1[Clean WS]
+   N --> |Docker| N2[Clean Images]
+   N --> |Cache| N3[Clear Cache]
+   
+   N1 & N2 & N3 --> O{Status Check}
+   O --> |Failure| P[Notify]
+   O --> |Success| Q[End]
+   
+   P --> |Email| P1[Send Email]
+   P --> |Slack| P2[Slack Alert]
+   P --> |Jira| P3[Create Ticket]
+   P1 & P2 & P3 --> Q
+   
+   style A fill:#90EE90,stroke:#333,stroke-width:2px
+   style Q fill:#90EE90,stroke:#333,stroke-width:2px
+   style P fill:#FFB6C1,stroke:#333,stroke-width:2px
+   style K fill:#FFD700,stroke:#333,stroke-width:2px
+   style O fill:#FFD700,stroke:#333,stroke-width:2px
+   
+   classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px
+   classDef process fill:#BBE1FA,stroke:#333,stroke-width:1px
+   classDef test fill:#D7FFB8,stroke:#333,stroke-width:1px
+   
+   class B,BA,BB,C,D1,D2,E1,E2,E3,E4 process
+   class G,G1,G2,G3,H,H1,H2,H3 test
