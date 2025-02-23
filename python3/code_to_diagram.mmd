@@ -1,6 +1,24 @@
 graph TD
-    A[Start Pipeline] -->|Trigger| B[Run Backup Script]
-    B --> C[Check Backup Status]
-    C -->|Success| D[Run Python Process]
-    D --> E[End Pipeline]
-    C -->|Failure| F[Notify Error]
+    A[Start] --> B[Setup Python Env]
+    B --> C{Parallel Lint}
+    C --> |Flake8| D[Run Flake8]
+    C --> |Black| E[Run Black]
+    D --> F[Security Scan]
+    E --> F
+    F --> G[Unit Tests]
+    G --> H[Integration Tests]
+    H --> I[SonarQube Analysis]
+    I --> J[Build Package]
+    J --> K{Main Branch?}
+    K --> |Yes| L[Publish to PyPI]
+    K --> |No| M[Skip Publish]
+    L --> N[Cleanup]
+    M --> N
+    N --> O{Success?}
+    O --> |No| P[Send Failure Email]
+    O --> |Yes| Q[End]
+    P --> Q
+    
+    style A fill:#90EE90
+    style Q fill:#90EE90
+    style P fill:#FFB6C1
