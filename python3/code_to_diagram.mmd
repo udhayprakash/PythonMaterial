@@ -1,5 +1,6 @@
-flowchart TD
-    A[Start] --> B[Check Source Dir]
-    B --> C[Create Tar Archive]
-    C --> D[Save to Backup Dir]
-    D --> E[End]
+graph TD
+    A[Start Pipeline] -->|Trigger| B[Run Backup Script]
+    B --> C[Check Backup Status]
+    C -->|Success| D[Run Python Process]
+    D --> E[End Pipeline]
+    C -->|Failure| F[Notify Error]
