@@ -1,12 +1,3 @@
-
-
-sequenceDiagram
-    Client->>+API: POST /api/chat
-    API->>+MessageProcessor: process_message()
-    MessageProcessor->>-API: response
-    API-->>-Client: JSON response
-
-
 flowchart TD
     A[Start] --> B[Check Source Dir]
     B --> C[Create Tar Archive]
