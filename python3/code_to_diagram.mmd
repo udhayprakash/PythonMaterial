@@ -1,0 +1,15 @@
+```
+# chat_api.py
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.post("/api/chat")
+async def chat_endpoint(message: str):
+    return {"response": process_message(message)}
+```
+
+sequenceDiagram
+    Client->>+API: POST /api/chat
+    API->>+MessageProcessor: process_message()
+    MessageProcessor->>-API: response
+    API-->>-Client: JSON response
