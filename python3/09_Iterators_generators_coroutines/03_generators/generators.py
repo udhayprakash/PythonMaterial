@@ -1,5 +1,5 @@
 import itertools as it
-import random
+import secrets
 
 
 def squares(start, end):
@@ -221,7 +221,7 @@ def tabu_generator(n, len_, recent=None):
         recent = n // 2
     tabu = []
     while len_ > 0:
-        v = random.randint(0, n - 1)
+        v = secrets.SystemRandom().randint(0, n - 1)
         if v not in tabu:
             yield v
             tabu.append(v)
@@ -233,7 +233,7 @@ def tabu_generator(n, len_, recent=None):
 # Count how many permutations occur for different values of recent.
 
 for recent in range(0, 6):
-    itemgen = (random.randint(0, 7) for i in tabu_generator(8, 10**5, recent))
+    itemgen = (secrets.SystemRandom().randint(0, 7) for i in tabu_generator(8, 10**5, recent))
     total = 0
     for _ in unique_permutations(itemgen, 8):
         total += 1

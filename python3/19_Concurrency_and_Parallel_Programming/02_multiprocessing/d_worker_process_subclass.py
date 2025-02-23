@@ -1,6 +1,6 @@
 import multiprocessing
-import random
 import time
+import secrets
 
 
 class WorkerProcess(multiprocessing.Process):
@@ -17,7 +17,7 @@ class WorkerProcess(multiprocessing.Process):
 
 def worker(name: str) -> None:
     print(f"Started worker {name}")
-    worker_time = random.choice(range(1, 5))
+    worker_time = secrets.choice(range(1, 5))
     time.sleep(worker_time)
     print(f"{name} worker finished in {worker_time} seconds")
 

@@ -1,8 +1,8 @@
 import base64
 import os
-import random
 import sys
 from functools import reduce
+import secrets
 
 # These examples are not in individual functions in the chapter, but
 # to isolate them, they are separated into individual functions here
@@ -189,7 +189,7 @@ def os_system_sample():
 
 
 def _gen_salt():
-    salt = [chr(random.randint(0, 255)) for i in range(4)]
+    salt = [chr(secrets.SystemRandom().randint(0, 255)) for i in range(4)]
     return "".join(salt)
 
 

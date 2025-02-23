@@ -1,6 +1,6 @@
 # cipherwheel.py
 import string
-from random import randrange
+import secrets
 
 # functions for encryption and decryption
 
@@ -11,7 +11,7 @@ def encrypt(m):
     outer_wheel = inner_wheel
     # calculate random secret key
     while True:
-        key = randrange(26)
+        key = secrets.SystemRandom().randrange(26)
         if key != 0:
             break
     cipher_dict = {}

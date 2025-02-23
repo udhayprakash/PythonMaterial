@@ -1,11 +1,11 @@
 import turtle as tt
-from random import randint, sample
+import secrets
 
 
 def draw():
-    size = randint(40, 300)
+    size = secrets.SystemRandom().randint(40, 300)
     angles = (144, 150, 157.5, 160, 165)
-    angle = sample(angles, 1)[0]
+    angle = secrets.SystemRandom().sample(angles, 1)[0]
 
     colors = [
         ("#922B21", "#E6B0AA"),
@@ -17,11 +17,11 @@ def draw():
         ("#F39C12", "#FDEBD0"),
         ("#BA4A00", "#F6DDCC"),
     ]
-    color = sample(colors, 1)[0]
+    color = secrets.SystemRandom().sample(colors, 1)[0]
     tt.color(color[0], color[1])
 
-    x_pos = randint(-200, 200)
-    y_pos = randint(-200, 200)
+    x_pos = secrets.SystemRandom().randint(-200, 200)
+    y_pos = secrets.SystemRandom().randint(-200, 200)
     tt.pu()
     tt.setpos(x_pos, y_pos)
     start_position = tt.pos()

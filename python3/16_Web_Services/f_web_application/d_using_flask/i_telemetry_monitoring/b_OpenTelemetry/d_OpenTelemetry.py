@@ -8,13 +8,12 @@ Purpose:
 
 """
 
-from random import randint
-
 from flask import Flask, request
 from opentelemetry import trace
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor, ConsoleSpanExporter
+import secrets
 
 provider = TracerProvider()
 processor = BatchSpanProcessor(ConsoleSpanExporter())
@@ -66,7 +65,7 @@ def roll_sum(sides, rolls):
     span = trace.get_current_span()
     sum = 0
     for r in range(0, rolls):
-        result = randint(1, sides)
+        result = secrets.SystemRandom().randint(1, sides)
         span.add_event(
             "log",
             {

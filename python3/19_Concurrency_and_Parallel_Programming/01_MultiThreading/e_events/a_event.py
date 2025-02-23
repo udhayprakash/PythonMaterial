@@ -8,10 +8,9 @@ Purpose: Synchronization with Event
 
 Following snippet demonstrates how Events can be used to trigger actions.
 """
-
-import random
 import time
 from threading import Event, Thread
+import secrets
 
 event = Event()
 
@@ -27,12 +26,12 @@ def waiter(event, nloops):
 
 def setter(event, nloops):
     for _ in range(nloops):
-        time.sleep(random.randrange(2, 5))  # Sleeps for some time.
+        time.sleep(secrets.SystemRandom().randrange(2, 5))  # Sleeps for some time.
         event.set()
 
 
 threads = []
-nloops = random.randrange(3, 6)
+nloops = secrets.SystemRandom().randrange(3, 6)
 
 threads.append(Thread(target=waiter, args=(event, nloops)))
 threads[-1].start()

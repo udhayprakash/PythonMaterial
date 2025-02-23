@@ -17,10 +17,9 @@ Purpose: Synchronization using SemaPhores
 
 Following code demonstrates the use of semaphores in a simple producer-consumer problem.
 """
-
-import random
 import time
 from threading import BoundedSemaphore, Thread
+import secrets
 
 max_items = 5
 
@@ -33,7 +32,7 @@ container = BoundedSemaphore(max_items)
 
 def producer(nloops):
     for _ in range(nloops):
-        time.sleep(random.randrange(2, 5))
+        time.sleep(secrets.SystemRandom().randrange(2, 5))
         print(time.ctime(), end=": ")
         try:
             container.release()
@@ -44,7 +43,7 @@ def producer(nloops):
 
 def consumer(nloops):
     for _ in range(nloops):
-        time.sleep(random.randrange(2, 5))
+        time.sleep(secrets.SystemRandom().randrange(2, 5))
         print(time.ctime(), end=": ")
         """
         In the following if statement we disable the default
@@ -57,11 +56,11 @@ def consumer(nloops):
 
 
 threads = []
-nloops = random.randrange(3, 6)
+nloops = secrets.SystemRandom().randrange(3, 6)
 print("Starting with %s items." % max_items)
 threads.append(Thread(target=producer, args=(nloops,)))
 threads.append(
-    Thread(target=consumer, args=(random.randrange(nloops, nloops + max_items + 2),))
+    Thread(target=consumer, args=(secrets.SystemRandom().randrange(nloops, nloops + max_items + 2),))
 )
 
 

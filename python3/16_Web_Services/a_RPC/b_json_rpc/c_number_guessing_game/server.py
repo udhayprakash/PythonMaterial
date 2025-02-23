@@ -1,10 +1,10 @@
 import json
-import random
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import secrets
 
 class NumberGuessingGame:
     def __init__(self):
-        self.target_number = random.randint(1, 100)
+        self.target_number = secrets.SystemRandom().randint(1, 100)
         self.guesses = 0
 
     def guess(self, number):

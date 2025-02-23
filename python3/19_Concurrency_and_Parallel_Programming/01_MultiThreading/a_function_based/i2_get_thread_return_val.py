@@ -1,6 +1,6 @@
-import random
 import threading
 import time
+import secrets
 
 
 class ThreadWithResult(threading.Thread):
@@ -19,7 +19,7 @@ def function_to_thread(n):
         print(f"still running thread {n}")
         count += 1
         time.sleep(3)
-    result = random.random()
+    result = secrets.SystemRandom().random()
     print(f"Return value of thread {n} should be: {result}")
     return result
 
