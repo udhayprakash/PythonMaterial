@@ -1,5 +1,6 @@
 import os
 import subprocess
+from security import safe_command
 
 
 def execute_command(cmd):
@@ -13,8 +14,7 @@ execute_command("ipconfigjhg")  # 1
 
 
 def get_execution_result(cmd):
-    p = subprocess.Popen(
-        cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    p = safe_command.run(subprocess.Popen, cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
     output, err = p.communicate()
 
