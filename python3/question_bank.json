@@ -1,22 +1,98 @@
 [
     {
+        "id": 1,
         "question": "What is a key difference between Python 2 and Python 3 regarding the print statement?",
-        "options": [
-            "In Python 3, print is a function and requires parentheses.",
-            "Python 2 uses print() while Python 3 uses printf().",
-            "Python 2 doesn't support print statements.",
-            "There is no difference; print works the same in both."
-        ],
-        "correctAnswer": "A"
+        "options": {
+            "a": "In Python 3, print is a function and requires parentheses.",
+            "b": "Python 2 uses print() while Python 3 uses printf().",
+            "c": "Python 2 doesn't support print statements.",
+            "d": "There is no difference; print works the same in both."
+        },
+        "answer": "a",
+        "difficulty": "basic",
+        "keywords": ["python2", "python3", "print", "syntax"],
+        "explanation": {
+            "text": "In Python 2, print is a statement (e.g., print 'hello'), while in Python 3, it’s a function (e.g., print('hello')).",
+            "resources": [
+                {"type": "link", "url": "https://docs.python.org/3/library/functions.html#print", "description": "Python 3 - print function"},
+                {"type": "link", "url": "https://docs.python.org/2/reference/simple_stmts.html#the-print-statement", "description": "Python 2 - print statement"}
+            ]
+        }
     },
     {
-        "question": "How does division differ between Python 2 and Python 3?",
-        "options": [
-            "In Python 3, division of integers using / results in a float.",
-            "Python 2 has no division operator.",
-            "Python 3 uses // for division, and Python 2 uses /.",
-            "Division behavior is identical in both Python 2 and 3."
-        ],
-        "correctAnswer": "A"
+        "id": 2,
+        "question": "What will be the output of `3 / 2` in Python 3?",
+        "options": {
+            "a": "1",
+            "b": "1.5",
+            "c": "2",
+            "d": "Error"
+        },
+        "answer": "b",
+        "difficulty": "basic",
+        "keywords": ["python3", "division", "operators"],
+        "explanation": {
+            "text": "In Python 3, the / operator performs true division, so 3 / 2 results in 1.5 (a float).",
+            "resources": [
+                {"type": "link", "url": "https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations", "description": "Python 3 - Binary Arithmetic Operations"}
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "question": "What does the `lambda` keyword do in Python?",
+        "options": {
+            "a": "Defines a named function.",
+            "b": "Creates an anonymous function.",
+            "c": "Imports a module.",
+            "d": "Declares a loop."
+        },
+        "answer": "b",
+        "difficulty": "medium",
+        "keywords": ["functions", "lambda", "anonymous"],
+        "explanation": {
+            "text": "The `lambda` keyword creates an anonymous (unnamed) function, often used for short, inline operations (e.g., lambda x: x + 1).",
+            "resources": [
+                {"type": "link", "url": "https://docs.python.org/3/reference/expressions.html#lambda", "description": "Python 3 - Lambda Expressions"}
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "question": "Which of these is NOT a valid way to handle exceptions in Python?",
+        "options": {
+            "a": "try-except",
+            "b": "try-finally",
+            "c": "catch-throw",
+            "d": "try-except-else"
+        },
+        "answer": "c",
+        "difficulty": "medium",
+        "keywords": ["exceptions", "error-handling"],
+        "explanation": {
+            "text": "Python uses try-except, not catch-throw (which is from languages like Java). The else clause can also be used with try-except.",
+            "resources": [
+                {"type": "link", "url": "https://docs.python.org/3/tutorial/errors.html#handling-exceptions", "description": "Python 3 - Handling Exceptions"}
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "question": "What is the output of `[x for x in range(5) if x % 2 == 0]`?",
+        "options": {
+            "a": "[0, 1, 2, 3, 4]",
+            "b": "[0, 2, 4]",
+            "c": "[1, 3]",
+            "d": "[2, 4]"
+        },
+        "answer": "b",
+        "difficulty": "difficult",
+        "keywords": ["list-comprehension", "loops", "conditionals"],
+        "explanation": {
+            "text": "This list comprehension filters even numbers from range(5), resulting in [0, 2, 4].",
+            "resources": [
+                {"type": "link", "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions", "description": "Python 3 - List Comprehensions"}
+            ]
+        }
     }
 ]
