@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is a key difference between Python 2 and Python 3 regarding the print statement?",
+        "options": [
+            "In Python 3, print is a function and requires parentheses.",
+            "Python 2 uses print() while Python 3 uses printf().",
+            "Python 2 doesn't support print statements.",
+            "There is no difference; print works the same in both."
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "question": "How does division differ between Python 2 and Python 3?",
+        "options": [
+            "In Python 3, division of integers using / results in a float.",
+            "Python 2 has no division operator.",
+            "Python 3 uses // for division, and Python 2 uses /.",
+            "Division behavior is identical in both Python 2 and 3."
+        ],
+        "correctAnswer": "A"
+    }
+]
