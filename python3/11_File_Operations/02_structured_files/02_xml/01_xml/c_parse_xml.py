@@ -1,11 +1,10 @@
 """
 Purpose: Reading(Parsing) XML
 """
-
-import xml.etree.ElementTree as ET
 from pprint import pp
+import defusedxml.ElementTree
 
-tree = ET.parse("books.xml")
+tree = defusedxml.ElementTree.parse("books.xml")
 
 # print(dir(tree))
 

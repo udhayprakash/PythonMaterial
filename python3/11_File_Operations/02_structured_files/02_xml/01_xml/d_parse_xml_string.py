@@ -1,8 +1,7 @@
 """
 Purpose: To parse(read) xml string
 """
-
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree
 
 input_string = """
 <stuff>
@@ -18,7 +17,7 @@ input_string = """
     </users>
 </stuff>"""
 
-stuff_tree = ET.fromstring(input_string)
+stuff_tree = defusedxml.ElementTree.fromstring(input_string)
 
 nodes = stuff_tree.findall("users")  # child level
 print(nodes)

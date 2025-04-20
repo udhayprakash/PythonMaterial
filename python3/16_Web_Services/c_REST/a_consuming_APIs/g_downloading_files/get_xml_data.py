@@ -1,8 +1,8 @@
 from numbers import Number
 from typing import Optional
-from xml.dom.minidom import parseString
 
 import requests
+import defusedxml.minidom
 
 SETTINGS = {
     "currency": "THB",
@@ -19,7 +19,7 @@ def check_exchange_rate(
     res = requests.get(URL, timeout=60)
 
     # we have to parse XML (unfortunately I did not find a .json API)
-    parsed = parseString(
+    parsed = defusedxml.minidom.parseString(
         str(res.content.decode("utf-8")).replace("\n", "").replace("\t", "")
     )
     currency_rates = parsed.childNodes[0].childNodes[2].childNodes[0].childNodes

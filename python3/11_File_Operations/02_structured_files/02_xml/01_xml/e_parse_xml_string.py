@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import xml.etree.ElementTree as ElementTree
+import defusedxml.ElementTree
 
 data = """
 <person>
@@ -11,6 +11,6 @@ data = """
    <email hide="yes"/>
 </person>"""
 
-tree = ElementTree.fromstring(data)
+tree = defusedxml.ElementTree.fromstring(data)
 print("Name:", tree.find("name").text)
 print("Attr:", tree.find("email").get("hide"))

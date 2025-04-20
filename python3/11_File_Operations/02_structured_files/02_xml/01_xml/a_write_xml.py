@@ -22,7 +22,7 @@ import xml
 # print(dir(xml))
 
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
+import defusedxml.minidom
 
 # print(dir(ET))
 
@@ -42,7 +42,7 @@ print(result_str)
 print()
 
 
-result_str2 = minidom.parseString(
+result_str2 = defusedxml.minidom.parseString(
     ET.tostring(root)
 ).toprettyxml()
 
