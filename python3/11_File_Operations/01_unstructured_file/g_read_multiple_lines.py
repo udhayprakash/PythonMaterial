@@ -15,12 +15,12 @@ print(f"{partial_content  =}")  # str type
 print("\ncurrent  fh.tell()", fh.tell())
 
 # TO read current line, from cursor position, till end of line
-current_line = fh.readline()  # -> str
+current_line = fh.readline(5_000_000)  # -> str
 print(f"\n{type(current_line) =}")  # str type
 print(f"{current_line       =}")
 
 print("\ncurrent  fh.tell()", fh.tell())
-current_line = fh.readline()  # -> str
+current_line = fh.readline(5_000_000)  # -> str
 print(f"{current_line       =}")
 
 
