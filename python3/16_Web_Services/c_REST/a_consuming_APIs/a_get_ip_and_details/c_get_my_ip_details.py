@@ -6,12 +6,12 @@ Purpose: Getting IP details
 
 python -m pip install -U requests --user
 """
-import requests
+from security import safe_requests
 
 
 def get_response(url):
     file_extension = url.split("/")[-1] or "html"
-    response = requests.get(url, timeout=60)
+    response = safe_requests.get(url, timeout=60)
     with open("result.{}".format(file_extension), "wb") as f:
         f.write(response.content)
         f.close()

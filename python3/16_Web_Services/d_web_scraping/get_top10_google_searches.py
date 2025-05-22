@@ -10,7 +10,7 @@ import webbrowser
 
 import bs4
 import pyperclip
-import requests
+from security import safe_requests
 
 
 def start():
@@ -21,7 +21,7 @@ def start():
         # search for the keyword copied in the clipboard
         keyword = pyperclip.paste()
 
-    res = requests.get("https://google.com/search?q=" + keyword, timeout=60)
+    res = safe_requests.get("https://google.com/search?q=" + keyword, timeout=60)
     soup = bs4.BeautifulSoup(res.text, "lxml")
     links = soup.select(".r a")
     tab_counts = min(10, len(links))

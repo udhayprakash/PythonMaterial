@@ -1,12 +1,11 @@
 from collections import defaultdict
-
-import requests
 from lxml import html
+from security import safe_requests
 
 
 def get_stocks(url):
     # Make Request
-    page = requests.get(url, timeout=60)
+    page = safe_requests.get(url, timeout=60)
     # Parse/Scrape
     tree = html.fromstring(page.text)
     xpath = '//*[@id="mw-content-text"]/table[1]'

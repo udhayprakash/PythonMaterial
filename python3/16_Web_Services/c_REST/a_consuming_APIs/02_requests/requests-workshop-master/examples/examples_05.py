@@ -1,10 +1,9 @@
 import xml.etree.ElementTree as et
-
-import requests
+from security import safe_requests
 
 
 def test_check_root_of_xml_response():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )
@@ -16,7 +15,7 @@ def test_check_root_of_xml_response():
 
 
 def test_check_specific_element_of_xml_response():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )
@@ -29,7 +28,7 @@ def test_check_specific_element_of_xml_response():
 
 # https://docs.python.org/3/library/xml.etree.elementtree.html#elementtree-xpath
 def test_use_xpath_for_more_sophisticated_checks():
-    response = requests.get(
+    response = safe_requests.get(
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )

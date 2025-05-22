@@ -4,15 +4,15 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import numpy as np
-import requests
 from PIL import Image
+from security import safe_requests
 
 IMAGE_FOLDER = Path(".").absolute() / "demo"
 
 
 def download_image(img_url: str, save_loc: Path) -> np.ndarray:
     img_url = img_url.replace("\n", "")
-    img_bytes = requests.get(img_url, timeout=60).content
+    img_bytes = safe_requests.get(img_url, timeout=60).content
     img_name = img_url.split("/")[-1].replace("\n", "")
 
     save_loc.mkdir(parents=True, exist_ok=True)

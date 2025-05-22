@@ -3,9 +3,9 @@
 Purpose: scraping
 """
 import lxml.html
-import requests
+from security import safe_requests
 
-res = requests.get("https://pydata.org/nyc2018/schedule/", timeout=5)
+res = safe_requests.get("https://pydata.org/nyc2018/schedule/", timeout=5)
 print(res.status_code)
 print(res.text)
 tree = lxml.html.fromstring(res.text)

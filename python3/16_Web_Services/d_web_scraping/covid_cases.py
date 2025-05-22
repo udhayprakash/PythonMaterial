@@ -1,11 +1,10 @@
 import time
-
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 while True:
     # Make a request to the website
-    response = requests.get("https://www.worldometers.info/coronavirus/", timeout=60)
+    response = safe_requests.get("https://www.worldometers.info/coronavirus/", timeout=60)
 
     # Use BeautifulSoup to parse the HTML content
     soup = BeautifulSoup(response.content, "html.parser")

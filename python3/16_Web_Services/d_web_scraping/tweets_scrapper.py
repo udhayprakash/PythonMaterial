@@ -4,9 +4,8 @@
 
 import json
 import sys
-
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 
 def usage():
@@ -35,7 +34,7 @@ def start(username=None):
     print("\n\nDownloading tweets for " + username)
     response = None
     try:
-        response = requests.get(url, timeout=60)
+        response = safe_requests.get(url, timeout=60)
     except Exception as e:
         print(repr(e))
         sys.exit(1)
@@ -103,7 +102,7 @@ def get_tweets_data(username, soup):
 
         next_response = None
         try:
-            next_response = requests.get(next_url, timeout=60)
+            next_response = safe_requests.get(next_url, timeout=60)
         except Exception as e:
             # in case there is some issue with request. None encountered so far.
             print(e)

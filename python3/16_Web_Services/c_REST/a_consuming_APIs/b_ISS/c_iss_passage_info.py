@@ -8,8 +8,7 @@ Purpose:
      http://api.open-notify.org/iss-pass.json?lat=23&lon=21
 """
 from pprint import pp
-
-import requests
+from security import safe_requests
 
 URL = "http://api.open-notify.org/iss-pass.json"
 
@@ -17,7 +16,7 @@ latitude = input("Enter the latitude:")
 longitude = input("Enter the longitude:")
 # 17.3850° N, 78.4867° E
 
-response = requests.get(URL, params={"lat": latitude, "lon": longitude}, timeout=5)
+response = safe_requests.get(URL, params={"lat": latitude, "lon": longitude}, timeout=5)
 
 print(f"{response.url         =}")
 print(f"{response.status_code =}")

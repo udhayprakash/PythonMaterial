@@ -7,10 +7,9 @@ Purpose: To get the Astronomers living in ISS now
 
 import sys
 from pprint import pp
+from security import safe_requests
 
-import requests
-
-response = requests.get("http://api.open-notify.org/astros.json", timeout=60)
+response = safe_requests.get("http://api.open-notify.org/astros.json", timeout=60)
 # print(dir(response))
 print(f"{response.status_code =}")
 print(f"{response.url         =}")

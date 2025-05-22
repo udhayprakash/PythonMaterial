@@ -8,8 +8,8 @@ I hope it helps the windows' users.
 from time import sleep
 
 import gntp.notifier
-import requests
 from bs4 import BeautifulSoup
+from security import safe_requests
 
 # register
 
@@ -39,7 +39,7 @@ def show_message(score):
 
 url = "http://static.cricinfo.com/rss/livescores.xml"
 while True:
-    r = requests.get(url, timeout=60)
+    r = safe_requests.get(url, timeout=60)
     if r.status_code != 200:
         break
     soup = BeautifulSoup(r.text)

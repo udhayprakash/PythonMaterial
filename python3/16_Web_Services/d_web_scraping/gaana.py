@@ -1,9 +1,8 @@
 import os
 from time import sleep
-
-import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from security import safe_requests
 
 # creates directory in pc
 os.mkdir(r"C:\Users\udhayPrakash\Desktop\Gaana", 755)
@@ -16,7 +15,7 @@ title = []
 
 # saves links and song names
 def scaper(url):
-    soup = BeautifulSoup(requests.get(url, timeout=60).content, "lxml")
+    soup = BeautifulSoup(safe_requests.get(url, timeout=60).content, "lxml")
     data = soup.findAll("div", {"playlist_thumb_det"})
     for line in data:
         link = str(line.contents[1])

@@ -1,4 +1,4 @@
-import requests
+from security import safe_requests
 
 
 def download(url):
@@ -6,7 +6,7 @@ def download(url):
 
     :arg url: URL of the file to be downloaded.
     """
-    req = requests.get(url, timeout=60)
+    req = safe_requests.get(url, timeout=60)
     # First let us check non existing files.
     if req.status_code == 404:
         print("No such file found at %s" % url)

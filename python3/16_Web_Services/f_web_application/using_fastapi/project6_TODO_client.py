@@ -1,4 +1,5 @@
 import requests
+from security import safe_requests
 
 URL = "http://localhost:8000"
 
@@ -7,7 +8,7 @@ item = {"id": 1, "name": "Foo", "price": 29.99}
 response = requests.post(f"{URL}/items", json=item, timeout=60)
 
 # Get item
-response = requests.get(f"{URL}/items/1", timeout=60)
+response = safe_requests.get(f"{URL}/items/1", timeout=60)
 
 # Update item
 updated_item = {"id": 1, "name": "Bar", "price": 39.99}

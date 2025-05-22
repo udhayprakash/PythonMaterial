@@ -6,8 +6,8 @@ Purpose:
 from time import sleep
 
 import pynotify
-import requests
 from scrapy.selector import HtmlXPathSelector
+from security import safe_requests
 
 
 def sendmessage(title, message):
@@ -19,9 +19,9 @@ def sendmessage(title, message):
 
 url = "http://www.thehindu.com/"
 while True:
-    r = requests.get(url, timeout=5)
+    r = safe_requests.get(url, timeout=5)
     while r.status_code != 200:
-        r = requests.get(url, timeout=5)
+        r = safe_requests.get(url, timeout=5)
 
         response = r.text
         xxs = HtmlXPathSelector(text=response)

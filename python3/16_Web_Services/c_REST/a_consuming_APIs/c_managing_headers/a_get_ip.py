@@ -4,10 +4,9 @@ Purpose: Get IP address
     http://httpbin.org/ip
 """
 from pprint import pprint
+from security import safe_requests
 
-import requests
-
-response = requests.get("http://httpbin.org/ip", timeout=60)
+response = safe_requests.get("http://httpbin.org/ip", timeout=60)
 print(f"{response.status_code =}")
 print(f"{response.url         =}")
 
