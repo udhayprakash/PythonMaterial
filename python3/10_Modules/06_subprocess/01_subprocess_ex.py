@@ -10,8 +10,8 @@ import sys
 if sys.platform in ("linux", "linux2", "darwin"):
     cmd = "ifconfig"
     os.system(cmd)
-    subprocess.call(cmd, shell=True)
-    myprocess = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    subprocess.call(cmd, shell=False)
+    myprocess = subprocess.Popen(cmd, shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     output, err = myprocess.communicate()
     print("output==============\n", output)
     print("err=================\n", err)

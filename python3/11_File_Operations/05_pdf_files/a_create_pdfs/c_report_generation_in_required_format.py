@@ -109,8 +109,7 @@ class form:
             process = subprocess.Popen(
                 [path_to_pdf],
                 bufsize=2048,
-                shell=True,
-                stdin=subprocess.PIPE,
+                shell=False, stdin=subprocess.PIPE,
                 stdout=subprocess.PIPE,
             )
             process.wait()
