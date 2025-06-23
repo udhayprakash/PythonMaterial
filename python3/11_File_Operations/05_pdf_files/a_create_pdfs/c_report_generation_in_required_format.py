@@ -10,6 +10,7 @@ from reportlab.lib.units import inch
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.platypus import Paragraph, SimpleDocTemplate
+from security import safe_command
 
 
 class form:
@@ -106,8 +107,7 @@ class form:
             path_to_pdf = os.path.abspath(
                 os.path.join(os.path.expanduser("~"), "Desktop") + "\hello1.pdf"
             )
-            process = subprocess.Popen(
-                [path_to_pdf],
+            process = safe_command.run(subprocess.Popen, [path_to_pdf],
                 bufsize=2048,
                 shell=True,
                 stdin=subprocess.PIPE,
