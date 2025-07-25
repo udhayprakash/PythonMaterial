@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as et
 
 import requests
+import defusedxml.ElementTree
 
 
 def test_check_root_of_xml_response():
@@ -8,7 +9,7 @@ def test_check_root_of_xml_response():
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     root = xml_tree.getroot()
     assert root.tag == "customer"
@@ -20,7 +21,7 @@ def test_check_specific_element_of_xml_response():
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     first_name = xml_tree.find("firstName")
     assert first_name.text == "John"
@@ -33,7 +34,7 @@ def test_use_xpath_for_more_sophisticated_checks():
         "http://parabank.parasoft.com/parabank/services/bank/customers/12212",
         timeout=60,
     )
-    response_body_as_xml = et.fromstring(response.content)
+    response_body_as_xml = defusedxml.ElementTree.fromstring(response.content)
     xml_tree = et.ElementTree(response_body_as_xml)
     address_children = xml_tree.findall(".//address/*")
     assert len(address_children) == 4
