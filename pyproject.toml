@@ -16,7 +16,7 @@ ipython = "^8.5.0"
 
 
 [tool.poetry.group.dev.dependencies]
-nbconvert = {extras = ["webpdf"], version = "^7.2.5"}
+nbconvert = {extras = ["webpdf"], version = "^7.17.0"}
 setuptools = "^67.4.0"
 pyclean = "^2.7.0"
 pylint = "^2.17.4"
