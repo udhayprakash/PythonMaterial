@@ -1,27 +1,27 @@
-1. which OS are you using ?
-2. whether you installed Python already or not?
+1. Which OS are you using?
+2. Have you installed Python already?
 
 
 Python
     - installation
-        - except in windows, in all other os, you can find python pre-installed
+        - except on Windows, Python is usually preinstalled on other operating systems
     - distributions
         - python.org/downloads   100
-        - anaconda python        free : 130   enterprise: 250
-        - active python
-        - python(x,y)          150  comminutu
-        - chocalaty python
-    - domains/fields in which python is used
+        - Anaconda Python        free : 130   enterprise: 250
+        - ActivePython
+        - python(x,y)          150  community
+        - Chocolatey Python
+    - domains/fields in which Python is used
         - https://udhayprakash.blogspot.com/2015/07/world-made-with-python.html
     - Python is platform independent
         -
 
-OS - MAC /unix/linux
-     - python 2
-     - python 3
+OS - MAC / Unix / Linux
+     - Python 2
+     - Python 3
 
-windows
-    - python2 or 3
+Windows
+    - Python 2 or 3
 
 
 platform independent language
@@ -29,40 +29,40 @@ platform independent language
 
 
 
-c & c++ - fastestly language
+C & C++ - fastest language
     - win32
     - win64
 
-java - platform independent
+Java - platform independent
     - .jar
 
 
-python - platform independent
+Python - platform independent
     - precise code
-    - read
+    - readable
 
 
 compiler based language
-    - c, c++, java
+    - C, C++, Java
 
-    code - > linkage - > assembly _> machine level
+    code -> linkage -> assembly -> machine level
 
-interpreter based languages
-    - python
+interpreter based language
+    - Python
 
-    code -> each line -> interpreter -> byte code -> assembly _> machine level
-    python is slow
+    code -> each line -> interpreter -> bytecode -> assembly -> machine level
+    Python is slower
 
     project takes - 100 days
-                -  40 days
+                - 40 days
 
 
-android - kivy
+Android - Kivy
 
 
 aspect oriented programming
-    - bash, shell,
+    - bash, shell
 functional oriented programming
-    - c,
+    - C
 object oriented programming
-    - java, c++
+    - Java, C++
