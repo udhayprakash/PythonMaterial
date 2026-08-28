@@ -13,7 +13,9 @@
 ### Jinja Delimiters
 
     - Jinja uses various delimiters in the template strings.
+{% raw %}
         -  {% %} - statements
         -  {{ }} - expressions to print to the template output.
         -  {# #} - comments which are not included in the template output.
         -  #  ## - line statements
+{% endraw %}
