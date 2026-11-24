@@ -2937,4 +2937,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c66f315f40f6728d223a4d5e5bdfbedc4dd1149f28b3c9b335965738f98e92f0"
+content-hash = "4de2a9ea26154928f743b210f7d6ab989202a70f9aadcb42228d8f1168570edd"
