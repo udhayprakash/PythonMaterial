@@ -19,7 +19,7 @@ ipython = "^8.5.0"
 nbconvert = {extras = ["webpdf"], version = "^7.17.0"}
 setuptools = ">=67.4,<84.0"
 pyclean = "^2.7.0"
-pylint = "^2.17.4"
+pylint = ">=2.17.4,<5.0.0"
 autopep8 = "^2.0.2"
 ipykernel = "^6.29.5"
 
